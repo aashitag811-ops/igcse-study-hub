@@ -207,11 +207,11 @@ export default function BrowsePage() {
     }
   };
 
-  const handleEdit = async (updatedData: any) => {
+  const handleEdit = async (updatedData: Record<string, any>) => {
     const supabase = createClient();
     const { error } = await supabase
       .from('resources')
-      .update(updatedData)
+      .update(updatedData as any)
       .eq('id', editingResource!.id);
 
     if (!error) {
