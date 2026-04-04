@@ -196,30 +196,45 @@ export default function BrowsePage() {
 
         setUserVotes(prev => new Set(prev).add(resourceId));
 
-        setResources(prev =>
-          prev.map(r =>
+        // Update resources and re-sort if needed
+        setResources(prev => {
+          const updated = prev.map(r =>
             r.id === resourceId
               ? { ...r, upvote_count: count || 0 }
               : r
-          )
-        );
+          );
+          
+          // Re-sort if sorting by popular
+          if (sortBy === 'popular') {
+            return updated.sort((a, b) => b.upvote_count - a.upvote_count);
+          }
+          return updated;
+        });
       }
     }
   };
 
-  const handleEdit = async (updatedData: Record<string, any>) => {
+  const handleEdit = async (updatedResource: Partial<Resource>) => {
+    if (!editingResource) return;
+
     const supabase = createClient();
     const { error } = await supabase
       .from('resources')
-      .update(updatedData as any)
-      .eq('id', editingResource!.id);
+      .update({
+        title: updatedResource.title,
+        description: updatedResource.description,
+        link: updatedResource.link,
+        resource_type: updatedResource.resource_type,
+        subject: updatedResource.subject
+      } as any)
+      .eq('id', editingResource.id);
 
     if (!error) {
       // Update local state
       setResources(prev =>
         prev.map(r =>
           r.id === editingResource!.id
-            ? { ...r, ...updatedData }
+            ? { ...r, ...updatedResource }
             : r
         )
       );
