@@ -507,7 +507,7 @@ export default function Home() {
                     }}
                   >
                     {/* Resource Count Badge */}
-                    {resourceCount >= 21 && (
+                    {resourceCount > 0 && (
                       <div style={{
                         position: 'absolute',
                         top: '0.75rem',
@@ -518,16 +518,21 @@ export default function Home() {
                         borderRadius: '9999px',
                         fontSize: '0.75rem',
                         fontWeight: '700',
-                        border: `1px solid ${colors.border}`
+                        border: `1px solid ${colors.border}`,
+                        zIndex: 10
                       }}>
-                        {resourceCount - 1}+
+                        {resourceCount}
                       </div>
                     )}
                     
                     <div style={{
-                      fontSize: '3rem',
+                      fontSize: subject.code === '0549' || subject.code === '0520' ? '1.5rem' : '3rem',
                       marginBottom: '0.75rem',
-                      textAlign: 'center'
+                      textAlign: 'center',
+                      height: '3rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
                     }}>
                       {subject.icon}
                     </div>
@@ -715,7 +720,7 @@ export default function Home() {
                                     width="20"
                                     height="20"
                                     viewBox="0 0 24 24"
-                                    fill={hasVoted ? 'url(#blueGradientCarousel)' : 'none'}
+                                    fill={hasVoted ? `url(#blueGradientCarousel-${resource.id})` : 'none'}
                                     stroke={hasVoted ? '#3B82F6' : '#9CA3AF'}
                                     strokeWidth="2"
                                     style={{
@@ -724,13 +729,15 @@ export default function Home() {
                                         : 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1))'
                                     }}
                                   >
-                                    <defs>
-                                      <linearGradient id="blueGradientCarousel" x1="0%" y1="0%" x2="0%" y2="100%">
-                                        <stop offset="0%" style={{ stopColor: '#93C5FD', stopOpacity: 1 }} />
-                                        <stop offset="50%" style={{ stopColor: '#60A5FA', stopOpacity: 1 }} />
-                                        <stop offset="100%" style={{ stopColor: '#3B82F6', stopOpacity: 1 }} />
-                                      </linearGradient>
-                                    </defs>
+                                    {hasVoted && (
+                                      <defs>
+                                        <linearGradient id={`blueGradientCarousel-${resource.id}`} x1="0%" y1="0%" x2="0%" y2="100%">
+                                          <stop offset="0%" style={{ stopColor: '#93C5FD', stopOpacity: 1 }} />
+                                          <stop offset="50%" style={{ stopColor: '#60A5FA', stopOpacity: 1 }} />
+                                          <stop offset="100%" style={{ stopColor: '#3B82F6', stopOpacity: 1 }} />
+                                        </linearGradient>
+                                      </defs>
+                                    )}
                                     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                                   </svg>
                                   <span style={{
@@ -789,6 +796,131 @@ export default function Home() {
               </div>
             </div>
           )}
+
+          {/* Smart Paper Marking Section */}
+          <div style={{ marginTop: '5rem' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              borderRadius: '1.5rem',
+              padding: '3rem 2rem',
+              boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+              {/* Decorative Background Pattern */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                opacity: 0.1,
+                backgroundImage: 'radial-gradient(circle at 20px 20px, white 2px, transparent 0)',
+                backgroundSize: '40px 40px'
+              }} />
+              
+              <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+                <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎯</div>
+                <h2 style={{
+                  fontSize: '2.5rem',
+                  fontWeight: '700',
+                  color: 'white',
+                  marginBottom: '1rem',
+                  fontFamily: "'Pacifico', cursive"
+                }}>
+                  Smart Paper Marking
+                </h2>
+                <p style={{
+                  fontSize: '1.25rem',
+                  color: 'rgba(255, 255, 255, 0.9)',
+                  marginBottom: '0.5rem',
+                  maxWidth: '800px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'
+                }}>
+                  Practice with real IGCSE past papers and get instant feedback
+                </p>
+                <p style={{
+                  fontSize: '1rem',
+                  color: 'rgba(255, 255, 255, 0.8)',
+                  marginBottom: '2rem',
+                  maxWidth: '700px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'
+                }}>
+                  Our algorithm-based marking system analyzes your answers using advanced fuzzy matching,
+                  providing detailed feedback on each question. Save time and improve faster! ⚡
+                </p>
+                
+                <div style={{
+                  display: 'flex',
+                  gap: '1rem',
+                  justifyContent: 'center',
+                  flexWrap: 'wrap',
+                  marginBottom: '2rem'
+                }}>
+                  <div style={{
+                    background: 'rgba(255, 255, 255, 0.2)',
+                    backdropFilter: 'blur(10px)',
+                    padding: '1rem 1.5rem',
+                    borderRadius: '0.75rem',
+                    border: '1px solid rgba(255, 255, 255, 0.3)'
+                  }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: '700', color: 'white' }}>✓</div>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.9)' }}>Instant Feedback</div>
+                  </div>
+                  <div style={{
+                    background: 'rgba(255, 255, 255, 0.2)',
+                    backdropFilter: 'blur(10px)',
+                    padding: '1rem 1.5rem',
+                    borderRadius: '0.75rem',
+                    border: '1px solid rgba(255, 255, 255, 0.3)'
+                  }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: '700', color: 'white' }}>🎯</div>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.9)' }}>Smart Matching</div>
+                  </div>
+                  <div style={{
+                    background: 'rgba(255, 255, 255, 0.2)',
+                    backdropFilter: 'blur(10px)',
+                    padding: '1rem 1.5rem',
+                    borderRadius: '0.75rem',
+                    border: '1px solid rgba(255, 255, 255, 0.3)'
+                  }}>
+                    <div style={{ fontSize: '1.5rem', fontWeight: '700', color: 'white' }}>⏱️</div>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.9)' }}>Time Saving</div>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => router.push('/practice')}
+                  style={{
+                    padding: '1rem 3rem',
+                    fontSize: '1.125rem',
+                    fontWeight: '700',
+                    borderRadius: '0.75rem',
+                    color: '#667eea',
+                    background: 'white',
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s',
+                    boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+                    fontFamily: "'Righteous', cursive",
+                    letterSpacing: '0.05em'
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px) scale(1.05)';
+                    e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.2)';
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                    e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
+                  }}
+                >
+                  START PRACTICING →
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

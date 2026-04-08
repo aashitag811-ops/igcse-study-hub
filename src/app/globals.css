@@ -6,15 +6,49 @@
 
 @layer base {
   :root {
-    --color-primary: #3b82f6;
-    --color-secondary: #8b5cf6;
-    --color-success: #10b981;
+    --color-primary: #4F46E5;
+    --color-secondary: #7C3AED;
+    --color-accent: #22C55E;
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #F1F5F9;
+    --bg-tertiary: #E2E8F0;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #94A3B8;
+    --border-color: #E2E8F0;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
+    --input-bg: #FFFFFF;
+    --input-border: #CBD5E1;
+  }
+  
+  [data-theme="dark"] {
+    --color-primary: #818CF8;
+    --color-secondary: #A78BFA;
+    --color-accent: #4ADE80;
+    --bg-primary: #0F172A;
+    --bg-secondary: #1E293B;
+    --bg-tertiary: #334155;
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-tertiary: #94A3B8;
+    --border-color: #334155;
+    --card-bg: #1E293B;
+    --card-border: #334155;
+    --input-bg: #1E293B;
+    --input-border: #475569;
+  }
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    background: linear-gradient(to right, #4F46E5, #7C3AED);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

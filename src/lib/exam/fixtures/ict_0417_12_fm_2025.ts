@@ -179,6 +179,30 @@ export const ICT_0417_12_FM_2025_RULES: MarkRule[] = [
     ],
   },
   {
+    qid: '6',
+    answerType: 'long_response',
+    maxMarks: 4,
+    selectCount: 2,
+    points: [
+      { id: 'access_anywhere', acceptable: ['access files from anywhere', 'access from any location'], marks: 2 },
+      { id: 'automatic_backup', acceptable: ['automatic backup', 'files backed up automatically'], marks: 2 },
+      { id: 'collaboration', acceptable: ['easy collaboration', 'share files easily'], marks: 2 },
+      { id: 'no_physical_storage', acceptable: ['no need for physical storage', 'saves physical space'], marks: 2 },
+    ],
+  },
+  {
+    qid: '7',
+    answerType: 'long_response',
+    maxMarks: 4,
+    selectCount: 2,
+    points: [
+      { id: 'internet_required', acceptable: ['requires internet connection', 'need internet access'], marks: 2 },
+      { id: 'security_concerns', acceptable: ['security concerns', 'data could be hacked'], marks: 2 },
+      { id: 'subscription_cost', acceptable: ['subscription costs', 'monthly fees'], marks: 2 },
+      { id: 'limited_control', acceptable: ['limited control over data', 'depends on provider'], marks: 2 },
+    ],
+  },
+  {
     qid: '8c',
     answerType: 'list_n',
     maxMarks: 1,
@@ -187,6 +211,48 @@ export const ICT_0417_12_FM_2025_RULES: MarkRule[] = [
       { id: 'ssd', acceptable: ['ssd', 'solid state drive'], marks: 1, strictness: 'acronym' },
       { id: 'pen_drive', acceptable: ['pen drive', 'usb flash drive'], marks: 1 },
       { id: 'memory_card_reader', acceptable: ['memory card reader'], marks: 1 },
+    ],
+  },
+  {
+    qid: '9',
+    answerType: 'short_text',
+    maxMarks: 2,
+    components: [
+      { id: 'network_definition', description: 'Network of computers', marks: 1, acceptable: ['network of computers', 'connected computers'] },
+      { id: 'limited_area', description: 'Limited geographical area', marks: 1, acceptable: ['limited area', 'small geographical area', 'single building'] },
+    ],
+  },
+  {
+    qid: '10',
+    answerType: 'list_n',
+    maxMarks: 2,
+    selectCount: 2,
+    points: [
+      { id: 'share_resources', acceptable: ['share resources', 'share printers', 'share files'], marks: 1 },
+      { id: 'central_backup', acceptable: ['central backup', 'centralized data storage'], marks: 1 },
+      { id: 'communication', acceptable: ['easy communication', 'email between users'], marks: 1 },
+      { id: 'cost_effective', acceptable: ['cost effective', 'share expensive equipment'], marks: 1 },
+    ],
+  },
+  {
+    qid: '11',
+    answerType: 'long_response',
+    maxMarks: 4,
+    components: [
+      { id: 'router_function', description: 'Router connects networks', marks: 2, acceptable: ['router connects different networks', 'router connects to internet'] },
+      { id: 'switch_function', description: 'Switch connects devices', marks: 2, acceptable: ['switch connects devices in same network', 'switch connects computers in LAN'] },
+    ],
+  },
+  {
+    qid: '12',
+    answerType: 'long_response',
+    maxMarks: 4,
+    selectCount: 2,
+    points: [
+      { id: 'range_check', acceptable: ['range check', 'checks value within range'], marks: 2 },
+      { id: 'type_check', acceptable: ['type check', 'checks correct data type'], marks: 2 },
+      { id: 'length_check', acceptable: ['length check', 'checks correct length'], marks: 2 },
+      { id: 'format_check', acceptable: ['format check', 'checks correct format'], marks: 2 },
     ],
   },
   {

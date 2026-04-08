@@ -1,0 +1,275 @@
+# 📚 Old Library Theme - Visual Mockup
+
+## Homepage Preview (Light Mode - Bulb ON)
+
+```
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║                        🏛️ IGCSE STUDY LIBRARY 🏛️                        ║
+║                                                                           ║
+║   ┌─────┐                                                    ╱╲          ║
+║   │ 🏠  │  Browse  Upload  Profile                          ╱  ╲         ║
+║   └─────┘                                                  │    │        ║
+║                                                            │ 💡 │ ← ON   ║
+║                                                            │    │        ║
+║                                                             ╲  ╱         ║
+║                                                              ╲╱          ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                           ║
+║  Background: Warm aged paper (#f5f1e8)                                   ║
+║                                                                           ║
+║   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ║
+║   │╔═══════════╗│  │╔═══════════╗│  │╔═══════════╗│  │╔═══════════╗│  ║
+║   │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  ║
+║   │║  │ 🧮  │  ║│  │║  │ 🧪  │  ║│  │║  │ 🌍  │  ║│  │║  │ 💻  │  ║│  ║
+║   │║  └─────┘  ║│  │║  └─────┘  ║│  │║  └─────┘  ║│  │║  └─────┘  ║│  ║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│  ║
+║   │║   MATHS   ║│  │║  SCIENCE  ║│  │║ GEOGRAPHY ║│  │║    ICT    ║│  ║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│  ║
+║   │║ 156 Res.  ║│  │║  89 Res.  ║│  │║  67 Res.  ║│  │║  45 Res.  ║│  ║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│  ║
+║   │╚═══════════╝│  │╚═══════════╝│  │╚═══════════╝│  │╚═══════════╝│  ║
+║   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘  ║
+║    Scroll Card      Scroll Card      Scroll Card      Scroll Card      ║
+║                                                                      ║   ║
+║   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐ ║║
+║   │╔═══════════╗│  │╔═══════════╗│  │╔═══════════╗│  │╔═══════════╗│ ║║
+║   │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  │║  ┌─────┐  ║│ ║║
+║   │║  │ 📖  │  ║│  │║  │ हिं │  ║│  │║  │ Fra │  ║│  │║  │ 🎨  │  ║│ ║║
+║   │║  └─────┘  ║│  │║  └─────┘  ║│  │║  └─────┘  ║│  │║  └─────┘  ║│ ║║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│ ║║
+║   │║  ENGLISH  ║│  │║   HINDI   ║│  │║  FRENCH   ║│  │║    ART    ║│ ║║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│ ║║
+║   │║ 234 Res.  ║│  │║  12 Res.  ║│  │║  18 Res.  ║│  │║  34 Res.  ║│ ║║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│ ║║
+║   │╚═══════════╝│  │╚═══════════╝│  │╚═══════════╝│  │╚═══════════╝│ ║║
+║   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘ ║║
+║                                                                      ║ ║║
+║                                                                      ║ ║║
+║                                                                      ║ ║║
+║                                                              LADDER  ║ ║║
+║                                                                ═══   ║ ║║
+║                                                                      ║ ║║
+║                                                                ═══   ║ ║║
+║                                                                      ║ ║║
+╚══════════════════════════════════════════════════════════════════════╩═╝║
+                                                                         ║
+                                                                         ║
+```
+
+## Homepage Preview (Dark Mode - Bulb OFF)
+
+```
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║                        🏛️ IGCSE STUDY LIBRARY 🏛️                        ║
+║                                                                           ║
+║   ┌─────┐                                                    ╱╲          ║
+║   │ 🏠  │  Browse  Upload  Profile                          ╱  ╲         ║
+║   └─────┘                                                  │    │        ║
+║                                                            │ 🔌 │ ← OFF  ║
+║                                                            │    │        ║
+║                                                             ╲  ╱         ║
+║                                                              ╲╱          ║
+╠═══════════════════════════════════════════════════════════════════════════╣
+║                                                                           ║
+║  Background: Dark wood/shadows (#1a1410)                                 ║
+║  Text: Faded parchment (#e8dcc8)                                         ║
+║                                                                           ║
+║   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ║
+║   │╔═══════════╗│  │╔═══════════╗│  │╔═══════════╗│  │╔═══════════╗│  ║
+║   │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  │║  ┌─────┐  ║│  ║
+║   │║  │ 🧮  │  ║│  │║  │ 🧪  │  ║│  │║  │ 🌍  │  ║│  │║  │ 💻  │  ║│  ║
+║   │║  └─────┘  ║│  │║  └─────┘  ║│  │║  └─────┘  ║│  │║  └─────┘  ║│  ║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│  ║
+║   │║   MATHS   ║│  │║  SCIENCE  ║│  │║ GEOGRAPHY ║│  │║    ICT    ║│  ║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│  ║
+║   │║ 156 Res.  ║│  │║  89 Res.  ║│  │║  67 Res.  ║│  │║  45 Res.  ║│  ║
+║   │║           ║│  │║           ║│  │║           ║│  │║           ║│  ║
+║   │╚═══════════╝│  │╚═══════════╝│  │╚═══════════╝│  │╚═══════════╝│  ║
+║   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘  ║
+║    Dark Scroll      Dark Scroll      Dark Scroll      Dark Scroll      ║
+║    (#2a2218)        (#2a2218)        (#2a2218)        (#2a2218)    ║   ║
+║                                                                      ║   ║
+║                                                              LADDER  ║   ║
+║                                                                ═══   ║   ║
+║                                                                      ║   ║
+╚══════════════════════════════════════════════════════════════════════╩═══╝
+```
+
+## Scroll Card Detail (Light Mode)
+
+```
+        ┌─────────────────────────────────┐
+        │  ╔═══════════════════════════╗  │ ← Rolled top edge
+        │  ║                           ║  │   (curved shadow)
+        │  ║      ┌─────────────┐      ║  │
+        │  ║      │             │      ║  │
+        │  ║      │     🧮      │      ║  │ ← Large icon
+        │  ║      │             │      ║  │
+        │  ║      └─────────────┘      ║  │
+        │  ║                           ║  │
+        │  ║       MATHEMATICS         ║  │ ← Subject name
+        │  ║                           ║  │   (Cinzel font)
+        │  ║                           ║  │
+        │  ║     156 Resources         ║  │ ← Counter
+        │  ║                           ║  │   (Crimson Text)
+        │  ║                           ║  │
+        │  ╚═══════════════════════════╝  │ ← Rolled bottom edge
+        └─────────────────────────────────┘
+
+Colors:
+- Background: #faf7f0 (light parchment)
+- Border: #c4a57b (aged paper edge)
+- Text: #2d1810 (dark brown ink)
+- Shadow: Multiple layers for depth
+
+Hover Effect:
+- Lifts up slightly (translateY: -4px)
+- Shadow intensifies
+- Subtle unfurl animation
+```
+
+## Hanging Bulb Detail
+
+### Light Mode (ON)
+```
+        ╱╲
+       ╱  ╲  ← Thin cord (#8b6914)
+      │    │
+      │    │
+     ┌┴────┴┐
+    ╱  ☀️   ╲  ← Glowing bulb
+   │  💡💡  │    Yellow (#ffd700)
+   │  💡💡  │    Radial glow effect
+    ╲      ╱
+     ╲    ╱
+      ╲  ╱
+       ╲╱
+
+Animation: Gentle swing (±2deg, 3s)
+Glow: box-shadow with yellow
+```
+
+### Dark Mode (OFF)
+```
+        ╱╲
+       ╱  ╲  ← Thin cord (#4a3f2f)
+      │    │
+      │    │
+     ┌┴────┴┐
+    ╱       ╲  ← Dark bulb
+   │   🔌   │    Gray (#3a3a3a)
+   │        │    No glow
+    ╲      ╱
+     ╲    ╱
+      ╲  ╱
+       ╲╱
+
+Animation: Same gentle swing
+No glow effect
+```
+
+## Ladder Detail
+
+```
+Fixed Position (Right Side)
+
+║                    ← Vertical rail
+║                       (Dark wood)
+║  ═══════════       ← Rung
+║                       (Horizontal)
+║
+║  ═══════════       ← Rung
+║
+║
+║  ═══════════       ← Rung
+║
+║
+║  ═══════════       ← Rung
+║
+║
+║  ═══════════       ← Rung
+║
+
+Scroll Behavior:
+- Scroll Down → Ladder moves UP (climbing up)
+- Scroll Up → Ladder moves DOWN (climbing down)
+- Parallax: 0.5x scroll speed
+- Smooth transform transition
+```
+
+## Color Swatches
+
+### Light Mode Palette
+```
+┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐
+│#f5f1e8 │ │#faf7f0 │ │#2d1810 │ │#8b6914 │ │#c4a57b │
+│  BG    │ │ Card   │ │ Text   │ │Accent  │ │Border  │
+└────────┘ └────────┘ └────────┘ └────────┘ └────────┘
+ Aged      Light      Dark       Antique    Aged
+ Paper     Scroll     Ink        Gold       Edge
+```
+
+### Dark Mode Palette
+```
+┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐
+│#1a1410 │ │#2a2218 │ │#e8dcc8 │ │#d4af37 │ │#4a3f2f │
+│  BG    │ │ Card   │ │ Text   │ │Accent  │ │Border  │
+└────────┘ └────────┘ └────────┘ └────────┘ └────────┘
+ Dark      Dark       Faded      Warm       Dark
+ Wood      Scroll     Parchment  Gold       Edge
+```
+
+## Typography Examples
+
+```
+╔═══════════════════════════════════════╗
+║                                       ║
+║   IGCSE STUDY LIBRARY                ║  ← Cinzel Bold (32px)
+║                                       ║
+║   Explore Ancient Knowledge          ║  ← Cinzel Regular (24px)
+║                                       ║
+║   Browse through our collection      ║  ← Crimson Text (16px)
+║   of study materials and resources   ║
+║                                       ║
+║   "Knowledge is Power"               ║  ← IM Fell English Italic
+║                                       ║
+╚═══════════════════════════════════════╝
+```
+
+## Animation Timeline
+
+```
+Page Load:
+0.0s  │ Bulb drops from top
+0.2s  │ Header fades in
+0.4s  │ Card 1 unfurls
+0.5s  │ Card 2 unfurls
+0.6s  │ Card 3 unfurls
+0.7s  │ Card 4 unfurls
+0.8s  │ Card 5 unfurls
+...   │ (Continue for all cards)
+1.0s  │ Ladder slides in from right
+1.2s  │ All animations complete
+```
+
+## Responsive Breakpoints
+
+```
+Desktop (1200px+)          Tablet (768-1199px)       Mobile (<768px)
+┌──┬──┬──┬──┐             ┌──────┬──────┐           ┌────────────┐
+│  │  │  │  │             │      │      │           │            │
+│  │  │  │  │             │      │      │           │            │
+└──┴──┴──┴──┘             └──────┴──────┘           └────────────┘
+┌──┬──┬──┬──┐             ┌──────┬──────┐           ┌────────────┐
+│  │  │  │  │             │      │      │           │            │
+│  │  │  │  │             │      │      │           │            │
+└──┴──┴──┴──┘             └──────┴──────┘           └────────────┘
+  4 columns                  2 columns                 1 column
+  Ladder visible             Ladder smaller            Ladder hidden
+```
+
+---
+
+**This mockup shows the complete visual design of the old library theme!** 📚✨
