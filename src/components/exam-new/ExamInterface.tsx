@@ -1,469 +1,444 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ExamPaper, QuestionPart, ExamState, QuestionStatus } from '@/lib/exam-new/types';
+import React, { useState, useEffect, useCallback } from 'react';
+import { ExamPaper, StudentAnswer } from '@/lib/exam-new/types';
+import QuestionRendererSimple from './QuestionRendererSimple';
 
 interface ExamInterfaceProps {
   examPaper: ExamPaper;
-  onSubmit?: (answers: { [questionId: string]: string }) => void;
+  onSubmit: (answers: { [questionId: string]: StudentAnswer }) => void;
 }
 
 export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
-  const [examState, setExamState] = useState<ExamState>({
-    answers: {},
-    statuses: {},
-    startTime: Date.now(),
-    timeRemaining: examPaper.duration * 60 // Convert minutes to seconds
+  // Generate unique storage key for this paper
+  const storageKey = `exam_answers_${examPaper.subject}_${examPaper.season}_${examPaper.year}_${examPaper.variant}`;
+  
+  // Load saved answers from localStorage on mount
+  const [answers, setAnswers] = useState<{ [questionId: string]: StudentAnswer }>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch (e) {
+          console.error('Failed to parse saved answers:', e);
+        }
+      }
+    }
+    return {};
   });
+  
+  const [timeRemaining, setTimeRemaining] = useState(examPaper.duration * 60); // Convert to seconds
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
 
-  const [activeQuestionId, setActiveQuestionId] = useState<string | null>(null);
-  const questionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-
-  // Initialize statuses for all question parts
+  // Auto-save answers to localStorage whenever they change
   useEffect(() => {
-    const initialStatuses: { [key: string]: QuestionStatus } = {};
-    examPaper.questions.forEach(q => {
-      q.parts.forEach(part => {
-        initialStatuses[part.id] = {
-          attempted: false,
-          flagged: false,
-          answered: false
-        };
-      });
-    });
-    setExamState(prev => ({ ...prev, statuses: initialStatuses }));
-  }, [examPaper]);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(storageKey, JSON.stringify(answers));
+    }
+  }, [answers, storageKey]);
 
   // Timer countdown
   useEffect(() => {
-    const interval = setInterval(() => {
-      setExamState(prev => {
-        const newTimeRemaining = prev.timeRemaining - 1;
-        if (newTimeRemaining <= 0) {
-          clearInterval(interval);
+    const timer = setInterval(() => {
+      setTimeRemaining((prev) => {
+        if (prev <= 1) {
+          clearInterval(timer);
           // Auto-submit when time runs out
-          if (onSubmit) {
-            onSubmit(prev.answers);
-          }
-          return { ...prev, timeRemaining: 0 };
+          handleSubmit();
+          return 0;
         }
-        return { ...prev, timeRemaining: newTimeRemaining };
+        return prev - 1;
       });
     }, 1000);
 
-    return () => clearInterval(interval);
-  }, [onSubmit]);
+    return () => clearInterval(timer);
+  }, []);
 
   // Format time as HH:MM:SS
-  const formatTime = (seconds: number): string => {
+  const formatTime = (seconds: number) => {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
     return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
-  // Handle answer change
-  const handleAnswerChange = (questionId: string, value: string) => {
-    setExamState(prev => ({
-      ...prev,
-      answers: { ...prev.answers, [questionId]: value },
-      statuses: {
-        ...prev.statuses,
+  // Handle answer change with auto-save
+  const handleAnswerChange = useCallback((questionId: string, answer: string | string[], flagged?: boolean) => {
+    setAnswers(prev => {
+      const newAnswers = {
+        ...prev,
         [questionId]: {
-          ...prev.statuses[questionId],
-          attempted: true,
-          answered: value.trim().length > 0
+          questionId,
+          answer,
+          flagged: flagged || prev[questionId]?.flagged || false
         }
-      }
-    }));
-  };
+      };
+      return newAnswers;
+    });
+  }, []);
 
-  // Toggle flag status
+  // Toggle flag for review
   const toggleFlag = (questionId: string) => {
-    setExamState(prev => ({
+    setAnswers(prev => ({
       ...prev,
-      statuses: {
-        ...prev.statuses,
-        [questionId]: {
-          ...prev.statuses[questionId],
-          flagged: !prev.statuses[questionId]?.flagged
-        }
+      [questionId]: {
+        ...prev[questionId],
+        questionId,
+        answer: prev[questionId]?.answer || '',
+        flagged: !prev[questionId]?.flagged
       }
     }));
   };
 
-  // Scroll to question
-  const scrollToQuestion = (questionId: string) => {
-    const element = questionRefs.current[questionId];
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setActiveQuestionId(questionId);
-    }
-  };
-
-  // Get all question IDs for navigation
-  const getAllQuestionIds = (): string[] => {
-    const ids: string[] = [];
-    examPaper.questions.forEach(q => {
-      q.parts.forEach(part => {
-        if (part.level === 0 || part.level === 1) {
-          ids.push(part.id);
-        }
-      });
+  // Get all question IDs recursively
+  const getAllQuestionIds = (questions: any[], prefix = ''): string[] => {
+    let ids: string[] = [];
+    questions.forEach((q) => {
+      const qId = prefix ? `${prefix}.${q.number}` : q.number;
+      
+      // Only add terminal questions (those with marks and no subparts)
+      if ((q.marks !== null && q.marks !== undefined) && (!q.subparts || q.subparts.length === 0)) {
+        ids.push(qId);
+      }
+      
+      if (q.subparts && q.subparts.length > 0) {
+        ids = ids.concat(getAllQuestionIds(q.subparts, qId));
+      }
     });
     return ids;
   };
 
-  // Get status color
-  const getStatusColor = (questionId: string): string => {
-    const status = examState.statuses[questionId];
-    if (!status) return '#e2e8f0'; // gray - not loaded
-    if (status.flagged) return '#fbbf24'; // yellow - flagged
-    if (status.answered) return '#10b981'; // green - answered
-    if (status.attempted) return '#f59e0b'; // orange - attempted but not answered
-    return '#ef4444'; // red - not attempted
-  };
+  const allQuestionIds = getAllQuestionIds(examPaper.questions);
 
-  // Check if a part has children (sub-parts)
-  const hasChildren = (partId: string, allParts: QuestionPart[]): boolean => {
-    return allParts.some(p => p.parentId === partId);
-  };
-
-  // Render question part with proper indentation
-  const renderQuestionPart = (part: QuestionPart, question: any, allParts: QuestionPart[]) => {
-    const indentLevel = part.level * 30; // 30px per level
-    const hasSubParts = hasChildren(part.id, allParts);
-    const shouldShowInput = !hasSubParts && part.marks > 0; // Only show input if no children and has marks
+  // Get question status
+  const getQuestionStatus = (questionId: string) => {
+    const answer = answers[questionId];
     
-    return (
-      <div
-        key={part.id}
-        ref={el => { questionRefs.current[part.id] = el; }}
-        style={{
-          marginLeft: `${indentLevel}px`,
-          marginBottom: shouldShowInput ? '20px' : '10px',
-          position: 'relative'
-        }}
-      >
-        {/* Question label and text */}
-        <div style={{ marginBottom: shouldShowInput ? '10px' : '5px' }}>
-          {part.level === 0 && (
-            <div style={{
-              fontSize: '1.2rem',
-              fontWeight: '700',
-              color: '#1a202c',
-              marginBottom: '10px'
-            }}>
-              Question {question.number}
-            </div>
-          )}
-          {part.level === 1 && (
-            <div style={{
-              fontSize: '1rem',
-              fontWeight: '600',
-              color: '#2d3748',
-              marginBottom: '8px'
-            }}>
-              ({part.id.slice(-1)})
-            </div>
-          )}
-          {part.level === 2 && (
-            <div style={{
-              fontSize: '0.95rem',
-              fontWeight: '600',
-              color: '#4a5568',
-              marginBottom: '8px'
-            }}>
-              ({part.id.slice(-2)})
-            </div>
-          )}
-          
-          {part.text && (
-            <div style={{
-              fontSize: '0.95rem',
-              color: '#4a5568',
-              lineHeight: '1.6',
-              marginBottom: shouldShowInput ? '12px' : '8px'
-            }}>
-              {part.text}
-            </div>
-          )}
-        </div>
-
-        {/* Answer input box - only show if this is a leaf node */}
-        {shouldShowInput && (
-          <>
-            <div style={{ position: 'relative' }}>
-              <textarea
-                value={examState.answers[part.id] || ''}
-                onChange={(e) => handleAnswerChange(part.id, e.target.value)}
-                placeholder="Type your answer here..."
-                style={{
-                  width: '100%',
-                  minHeight: '80px',
-                  padding: '12px',
-                  fontSize: '0.95rem',
-                  border: '2px solid #e2e8f0',
-                  borderRadius: '8px',
-                  background: '#f0f9ff',
-                  resize: 'vertical',
-                  fontFamily: 'inherit',
-                  outline: 'none',
-                  transition: 'all 0.3s'
-                }}
-                onFocus={(e) => {
-                  e.target.style.borderColor = '#3b82f6';
-                  e.target.style.background = '#eff6ff';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = '#e2e8f0';
-                  e.target.style.background = '#f0f9ff';
-                }}
-              />
-              
-              {/* Marks badge */}
-              <div style={{
-                position: 'absolute',
-                bottom: '-10px',
-                right: '10px',
-                background: 'white',
-                border: '2px solid #e2e8f0',
-                borderRadius: '6px',
-                padding: '4px 10px',
-                fontSize: '0.85rem',
-                fontWeight: '600',
-                color: '#4a5568'
-              }}>
-                [{part.marks}]
-              </div>
-            </div>
-
-            {/* Flag button */}
-            <button
-              onClick={() => toggleFlag(part.id)}
-              style={{
-                marginTop: '15px',
-                padding: '6px 12px',
-                fontSize: '0.85rem',
-                background: examState.statuses[part.id]?.flagged ? '#fbbf24' : 'white',
-                color: examState.statuses[part.id]?.flagged ? 'white' : '#6b7280',
-                border: '2px solid #e2e8f0',
-                borderRadius: '6px',
-                cursor: 'pointer',
-                fontWeight: '600',
-                transition: 'all 0.3s'
-              }}
-              onMouseEnter={(e) => {
-                if (!examState.statuses[part.id]?.flagged) {
-                  e.currentTarget.style.borderColor = '#fbbf24';
-                  e.currentTarget.style.color = '#fbbf24';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (!examState.statuses[part.id]?.flagged) {
-                  e.currentTarget.style.borderColor = '#e2e8f0';
-                  e.currentTarget.style.color = '#6b7280';
-                }
-              }}
-            >
-              {examState.statuses[part.id]?.flagged ? '🚩 Flagged for Review' : '🏳️ Mark for Review'}
-            </button>
-          </>
-        )}
-      </div>
+    // Check if answered first
+    const isAnswered = answer?.answer && (
+      (typeof answer.answer === 'string' && answer.answer.trim().length > 0) ||
+      (Array.isArray(answer.answer) && answer.answer.some(item =>
+        item && typeof item === 'string' && item.trim().length > 0
+      ))
     );
+    
+    // Answered questions show as answered even if flagged
+    if (isAnswered) return 'answered';
+    
+    // Only show flagged if not answered
+    if (answer?.flagged) return 'flagged';
+    
+    return 'unanswered';
+  };
+
+  // Handle submit and clear localStorage
+  const handleSubmit = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem(storageKey);
+    }
+    onSubmit(answers);
+  };
+
+  // Calculate progress percentage
+  const calculateProgress = () => {
+    const totalQuestions = allQuestionIds.length;
+    const answeredQuestions = allQuestionIds.filter(qId => {
+      const answer = answers[qId];
+      if (!answer?.answer) return false;
+      
+      // For string answers
+      if (typeof answer.answer === 'string') {
+        return answer.answer.trim().length > 0;
+      }
+      
+      // For array answers (MCQ, numbered lists, etc.)
+      if (Array.isArray(answer.answer)) {
+        // Check if at least one item has content
+        return answer.answer.some(item =>
+          item && typeof item === 'string' && item.trim().length > 0
+        );
+      }
+      
+      return false;
+    }).length;
+    return totalQuestions > 0 ? Math.round((answeredQuestions / totalQuestions) * 100) : 0;
+  };
+
+  const progress = calculateProgress();
+
+  // Get time color based on remaining time
+  const getTimeColor = () => {
+    const percentage = (timeRemaining / (examPaper.duration * 60)) * 100;
+    if (percentage <= 10) return '#ef4444'; // Red
+    if (percentage <= 25) return '#f59e0b'; // Orange
+    return '#22c55e'; // Green
   };
 
   return (
-    <div style={{ 
-      display: 'flex', 
-      minHeight: '100vh',
-      background: '#f5f5f5'
-    }}>
-      {/* Main content area */}
-      <div style={{ 
-        flex: 1, 
+    <div style={{ display: 'flex', minHeight: '100vh', background: '#f8fafc' }}>
+      {/* Side Navigation */}
+      <div style={{
+        width: '280px',
+        background: 'white',
+        borderRight: '2px solid #e2e8f0',
         padding: '20px',
-        maxWidth: '900px',
-        margin: '0 auto'
+        position: 'fixed',
+        height: '100vh',
+        overflowY: 'auto',
+        boxShadow: '2px 0 10px rgba(0,0,0,0.05)'
       }}>
-        {/* Header with timer */}
+        {/* Timer */}
         <div style={{
-          background: 'white',
+          background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
           padding: '20px',
           borderRadius: '12px',
-          marginBottom: '20px',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center'
+          marginBottom: '24px',
+          textAlign: 'center',
+          color: 'white'
         }}>
-          <div>
-            <h1 style={{ 
-              fontSize: '1.5rem', 
-              fontWeight: '700', 
-              color: '#1a202c',
-              margin: 0
-            }}>
-              {examPaper.subject} - {examPaper.season} {examPaper.year}
-            </h1>
-            <p style={{ 
-              fontSize: '0.9rem', 
-              color: '#6b7280',
-              margin: '5px 0 0 0'
-            }}>
-              Variant {examPaper.variant} • Total Marks: {examPaper.totalMarks}
-            </p>
+          <div style={{ fontSize: '0.85rem', opacity: 0.9, marginBottom: '8px' }}>
+            Time Remaining
           </div>
-          
-          {/* Timer */}
           <div style={{
-            background: examState.timeRemaining < 600 ? '#fee2e2' : '#eff6ff',
-            padding: '15px 25px',
-            borderRadius: '10px',
-            border: `2px solid ${examState.timeRemaining < 600 ? '#fca5a5' : '#93c5fd'}`
+            fontSize: '1.8rem',
+            fontWeight: '700',
+            fontFamily: 'monospace',
+            color: getTimeColor()
           }}>
-            <div style={{ 
-              fontSize: '0.75rem', 
-              color: '#6b7280',
-              marginBottom: '5px',
-              textAlign: 'center'
-            }}>
-              Time Remaining
-            </div>
-            <div style={{ 
-              fontSize: '1.8rem', 
-              fontWeight: '700',
-              color: examState.timeRemaining < 600 ? '#dc2626' : '#2563eb',
-              fontFamily: 'monospace'
-            }}>
-              {formatTime(examState.timeRemaining)}
-            </div>
+            {formatTime(timeRemaining)}
           </div>
         </div>
 
-        {/* Questions */}
-        <div style={{
-          background: 'white',
-          padding: '30px',
-          borderRadius: '12px',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-        }}>
-          {examPaper.questions.map(question => (
-            <div key={question.number} style={{ marginBottom: '40px' }}>
-              {question.parts.map(part => renderQuestionPart(part, question, question.parts))}
-            </div>
-          ))}
+        {/* Progress Bar */}
+        <div style={{ marginBottom: '24px' }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: '8px'
+          }}>
+            <span style={{ fontSize: '0.85rem', fontWeight: '600', color: '#475569' }}>
+              Progress
+            </span>
+            <span style={{ fontSize: '0.85rem', fontWeight: '700', color: '#4F46E5' }}>
+              {progress}%
+            </span>
+          </div>
+          <div style={{
+            height: '8px',
+            background: '#e2e8f0',
+            borderRadius: '5px',
+            overflow: 'hidden'
+          }}>
+            <div style={{
+              height: '100%',
+              background: 'linear-gradient(90deg, #4F46E5 0%, #7C3AED 100%)',
+              borderRadius: '5px',
+              width: `${progress}%`,
+              transition: 'width 0.3s ease'
+            }} />
+          </div>
         </div>
 
-        {/* Submit button */}
-        <div style={{ 
-          marginTop: '30px',
-          textAlign: 'center'
-        }}>
-          <button
-            onClick={() => onSubmit && onSubmit(examState.answers)}
-            style={{
-              padding: '15px 40px',
-              fontSize: '1.1rem',
-              fontWeight: '600',
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-              color: 'white',
-              border: 'none',
-              borderRadius: '10px',
-              cursor: 'pointer',
-              boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)',
-              transition: 'all 0.3s'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.5)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.4)';
-            }}
-          >
-            Submit Exam
-          </button>
+        {/* Paper Info */}
+        <div style={{ marginBottom: '24px' }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>
+            {examPaper.subject}
+          </h3>
+          <div style={{ fontSize: '0.85rem', color: '#64748b' }}>
+            {examPaper.season} {examPaper.year} • Variant {examPaper.variant}
+          </div>
+          <div style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '4px' }}>
+            Total: {examPaper.totalMarks} marks
+          </div>
         </div>
-      </div>
 
-      {/* Side navigation panel */}
-      <div style={{
-        width: '250px',
-        background: 'white',
-        padding: '20px',
-        boxShadow: '-2px 0 8px rgba(0,0,0,0.1)',
-        position: 'sticky',
-        top: 0,
-        height: '100vh',
-        overflowY: 'auto'
-      }}>
-        <h3 style={{ 
-          fontSize: '1rem', 
-          fontWeight: '700',
-          color: '#1a202c',
-          marginBottom: '15px'
-        }}>
-          Question Navigator
-        </h3>
+        {/* Question Navigation */}
+        <div>
+          <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: '#475569', marginBottom: '12px' }}>
+            Questions
+          </h4>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px' }}>
+            {allQuestionIds.map((qId, idx) => {
+              const status = getQuestionStatus(qId);
+              let bgColor = '#f1f5f9'; // unanswered
+              let textColor = '#64748b';
+              
+              if (status === 'answered') {
+                bgColor = '#dcfce7';
+                textColor = '#16a34a';
+              } else if (status === 'flagged') {
+                bgColor = '#fef3c7';
+                textColor = '#d97706';
+              }
 
-        <div style={{ 
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '8px',
-          marginBottom: '20px'
-        }}>
-          {getAllQuestionIds().map(qId => (
-            <button
-              key={qId}
-              onClick={() => scrollToQuestion(qId)}
-              style={{
-                padding: '10px',
-                fontSize: '0.85rem',
-                fontWeight: '600',
-                background: getStatusColor(qId),
-                color: 'white',
-                border: activeQuestionId === qId ? '3px solid #1a202c' : 'none',
-                borderRadius: '6px',
-                cursor: 'pointer',
-                transition: 'all 0.3s'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              {qId}
-            </button>
-          ))}
+              return (
+                <button
+                  key={qId}
+                  onClick={() => {
+                    const element = document.getElementById(`question-${qId}`);
+                    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }}
+                  style={{
+                    padding: '10px',
+                    background: bgColor,
+                    color: textColor,
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontSize: '0.85rem',
+                    fontWeight: '600',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                  }}
+                >
+                  {qId}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Legend */}
-        <div style={{ 
-          fontSize: '0.75rem',
-          color: '#6b7280',
-          borderTop: '1px solid #e2e8f0',
-          paddingTop: '15px'
-        }}>
-          <div style={{ marginBottom: '8px', fontWeight: '600' }}>Legend:</div>
-          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '6px' }}>
-            <div style={{ width: '16px', height: '16px', background: '#10b981', borderRadius: '3px', marginRight: '8px' }}></div>
-            <span>Answered</span>
+        <div style={{ marginTop: '24px', padding: '16px', background: '#f8fafc', borderRadius: '10px' }}>
+          <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '10px', fontWeight: '600' }}>
+            Legend
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '6px' }}>
-            <div style={{ width: '16px', height: '16px', background: '#fbbf24', borderRadius: '3px', marginRight: '8px' }}></div>
-            <span>Flagged</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '6px' }}>
-            <div style={{ width: '16px', height: '16px', background: '#ef4444', borderRadius: '3px', marginRight: '8px' }}></div>
-            <span>Not Attempted</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.8rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ width: '16px', height: '16px', background: '#dcfce7', borderRadius: '4px' }}></div>
+              <span style={{ color: '#64748b' }}>Answered</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ width: '16px', height: '16px', background: '#fef3c7', borderRadius: '4px' }}></div>
+              <span style={{ color: '#64748b' }}>Flagged</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ width: '16px', height: '16px', background: '#f1f5f9', borderRadius: '4px' }}></div>
+              <span style={{ color: '#64748b' }}>Unanswered</span>
+            </div>
           </div>
         </div>
+
+        {/* Submit Button */}
+        <button
+          onClick={() => setShowSubmitConfirm(true)}
+          style={{
+            width: '100%',
+            marginTop: '24px',
+            padding: '14px',
+            background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+            color: 'white',
+            border: 'none',
+            borderRadius: '10px',
+            fontSize: '1rem',
+            fontWeight: '600',
+            cursor: 'pointer',
+            transition: 'all 0.3s',
+            boxShadow: '0 4px 12px rgba(34, 197, 94, 0.3)'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.boxShadow = '0 6px 16px rgba(34, 197, 94, 0.4)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(34, 197, 94, 0.3)';
+          }}
+        >
+          Submit Exam
+        </button>
       </div>
+
+      {/* Main Content */}
+      <div style={{ marginLeft: '280px', flex: 1, padding: '40px', maxWidth: '900px' }}>
+        <div style={{ background: 'white', padding: '40px', borderRadius: '16px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+          {examPaper.questions.map((question, idx) => (
+            <div key={idx} id={`question-${question.number}`}>
+              <QuestionRendererSimple
+                question={question}
+                questionPath={question.number}
+                answers={answers}
+                onAnswerChange={handleAnswerChange}
+                level={0}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Submit Confirmation Modal */}
+      {showSubmitConfirm && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'rgba(0, 0, 0, 0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000
+        }}>
+          <div style={{
+            background: 'white',
+            padding: '40px',
+            borderRadius: '16px',
+            maxWidth: '400px',
+            textAlign: 'center'
+          }}>
+            <div style={{ fontSize: '3rem', marginBottom: '20px' }}>⚠️</div>
+            <h3 style={{ fontSize: '1.5rem', color: '#1e293b', marginBottom: '12px' }}>
+              Submit Exam?
+            </h3>
+            <p style={{ color: '#64748b', marginBottom: '24px' }}>
+              Are you sure you want to submit? You won't be able to change your answers after submission.
+            </p>
+            <div style={{ display: 'flex', gap: '12px' }}>
+              <button
+                onClick={() => setShowSubmitConfirm(false)}
+                style={{
+                  flex: 1,
+                  padding: '12px',
+                  background: '#f1f5f9',
+                  color: '#475569',
+                  border: 'none',
+                  borderRadius: '10px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer'
+                }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSubmit}
+                style={{
+                  flex: 1,
+                  padding: '12px',
+                  background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '10px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer'
+                }}
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
