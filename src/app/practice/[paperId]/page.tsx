@@ -8,7 +8,7 @@ import { ExamPaper } from '@/lib/exam-new/types';
 export default function PaperSolvingPage() {
   const params = useParams();
   const router = useRouter();
-  const paperPath = decodeURIComponent(params.paperId as string);
+  const paperId = params.paperId as string;
 
   const [examPaper, setExamPaper] = useState<ExamPaper | null>(null);
   const [loading, setLoading] = useState(true);
@@ -18,14 +18,21 @@ export default function PaperSolvingPage() {
     async function loadPaper() {
       try {
         setLoading(true);
-        const response = await fetch(`/api/exam/parse?path=${encodeURIComponent(paperPath)}`);
+        
+        // Load JSON file from public/papers
+        const response = await fetch(`/papers/${paperId}.json`);
         
         if (!response.ok) {
-          const errorData = await response.json();
-          throw new Error(errorData.error || 'Failed to load paper');
+          throw new Error('Paper not found');
         }
 
         const data = await response.json();
+        
+        // Check if paper has questions
+        if (!data.questions || data.questions.length === 0) {
+          throw new Error('This paper has no questions yet. Please convert it first using the Python script.');
+        }
+        
         setExamPaper(data);
       } catch (err) {
         console.error('Error loading paper:', err);
@@ -36,19 +43,31 @@ export default function PaperSolvingPage() {
     }
 
     loadPaper();
-  }, [paperPath]);
+  }, [paperId]);
 
-  const handleSubmit = (answers: { [questionId: string]: string }) => {
-    // TODO: Implement submission logic
+  const handleSubmit = (answers: { [questionId: string]: any }) => {
+    // TODO: Implement grading logic
     console.log('Submitted answers:', answers);
-    alert('Exam submitted! (Grading functionality coming soon)');
+    
+    // Calculate basic stats
+    const totalQuestions = Object.keys(answers).length;
+    const answeredQuestions = Object.values(answers).filter(a => {
+      if (typeof a.answer === 'string') return a.answer.trim().length > 0;
+      if (Array.isArray(a.answer)) return a.answer.length > 0;
+      return false;
+    }).length;
+
+    alert(`Exam submitted!\n\nAnswered: ${answeredQuestions}/${totalQuestions} questions\n\n(Grading functionality coming soon)`);
+    
+    // Redirect back to selection page
+    router.push('/practice');
   };
 
   if (loading) {
     return (
       <div style={{ 
         minHeight: '100vh', 
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -60,7 +79,7 @@ export default function PaperSolvingPage() {
         <div style={{ fontSize: '3rem' }}>📄</div>
         <div>Loading exam paper...</div>
         <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>
-          Extracting questions from PDF
+          Reading questions from JSON
         </div>
       </div>
     );
@@ -70,7 +89,7 @@ export default function PaperSolvingPage() {
     return (
       <div style={{ 
         minHeight: '100vh', 
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -93,7 +112,8 @@ export default function PaperSolvingPage() {
           </h2>
           <p style={{ 
             color: '#6b7280',
-            marginBottom: '25px'
+            marginBottom: '25px',
+            lineHeight: '1.6'
           }}>
             {error}
           </p>
@@ -101,7 +121,7 @@ export default function PaperSolvingPage() {
             onClick={() => router.push('/practice')}
             style={{
               padding: '12px 24px',
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
               color: 'white',
               border: 'none',
               borderRadius: '10px',
@@ -123,11 +143,11 @@ export default function PaperSolvingPage() {
 
   return (
     <div>
-      {/* Back button overlay */}
+      {/* Exit button overlay - top right, red */}
       <div style={{
         position: 'fixed',
         top: '20px',
-        left: '20px',
+        right: '20px',
         zIndex: 1000
       }}>
         <button
@@ -137,27 +157,27 @@ export default function PaperSolvingPage() {
             }
           }}
           style={{
-            background: 'white',
-            border: '2px solid #e2e8f0',
+            background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+            border: 'none',
             borderRadius: '10px',
             padding: '12px 24px',
             fontSize: '1rem',
             fontWeight: '600',
-            color: '#4a5568',
+            color: 'white',
             cursor: 'pointer',
             transition: 'all 0.3s',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+            boxShadow: '0 4px 12px rgba(239, 68, 68, 0.3)'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.borderColor = '#cbd5e0';
-            e.currentTarget.style.transform = 'translateX(-4px)';
+            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.boxShadow = '0 6px 16px rgba(239, 68, 68, 0.4)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.borderColor = '#e2e8f0';
-            e.currentTarget.style.transform = 'translateX(0)';
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(239, 68, 68, 0.3)';
           }}
         >
-          ← Exit Exam
+          Exit Exam ✕
         </button>
       </div>
 
