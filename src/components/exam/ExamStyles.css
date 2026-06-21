@@ -487,4 +487,256 @@ textarea:focus {
   }
 }
 
+/* Table Renderer Styles */
+.tables-section {
+  margin: 40px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+}
+
+.tables-heading {
+  color: #1a202c;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.table-container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.table-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e2e8f0;
+  flex-wrap: wrap;
+}
+
+.table-label {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1.05rem;
+}
+
+.table-info {
+  color: #718096;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  background: #edf2f7;
+  border-radius: 12px;
+}
+
+.table-strategy {
+  color: #667eea;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  background: #e6f0ff;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.extracted-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.extracted-table thead {
+  background: #f3f4f6;
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.extracted-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  border-right: 1px solid #e5e7eb;
+}
+
+.extracted-table th:last-child {
+  border-right: none;
+}
+
+.extracted-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s;
+}
+
+.extracted-table tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+.extracted-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.extracted-table td {
+  padding: 12px 16px;
+  color: #4a5568;
+  border-right: 1px solid #edf2f7;
+}
+
+.extracted-table td:last-child {
+  border-right: none;
+}
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+  
+  .extracted-table {
+    font-size: 0.85rem;
+  }
+  
+  .extracted-table th,
+  .extracted-table td {
+    padding: 8px 12px;
+  }
+  
+  .table-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Tick Table Styles */
+.tick-table-container {
+  margin: 20px 0;
+}
+
+.tick-table thead {
+  background: #f9fafb;
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.tick-table th {
+  padding: 12px 16px;
+  text-align: center;
+  font-weight: 600;
+  border-right: none;
+}
+
+.tick-table tbody tr {
+  border-bottom: none !important;
+}
+
+.tick-table .label-cell {
+  font-weight: 500;
+  color: #374151;
+  text-align: left;
+  padding: 14px 16px;
+}
+
+.tick-table .checkbox-cell {
+  text-align: center;
+  padding: 14px 12px;
+}
+
+.tick-table td {
+  border-right: none !important;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.tick-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+}
+
+.checkbox-custom {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #4b5563;
+  border-radius: 6px;
+  background: #ffffff;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.tick-checkbox:checked + .checkbox-custom {
+  background: #1f2937;
+  border-color: #1f2937;
+  transform: scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.tick-checkbox:checked + .checkbox-custom::after {
+  content: '✓';
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+}
+
+.checkbox-label:hover .checkbox-custom {
+  border-color: #1f2937;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.tick-checkbox:focus + .checkbox-custom {
+  outline: 3px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Ensure checkbox cells are visible */
+.tick-table .checkbox-cell {
+  text-align: center;
+  padding: 14px 12px;
+  min-width: 60px;
+}
+
+.checkbox-label {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  min-height: 28px;
+  min-width: 28px;
+}
+
 /* Made with Bob */

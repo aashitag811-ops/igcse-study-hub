@@ -106,14 +106,30 @@ class CambridgeICTConverter:
 
 def extract_text_from_pdf(pdf_content):
     """Extract text from PDF bytes"""
-    pdf_file = io.BytesIO(pdf_content)
-    pdf_reader = PyPDF2.PdfReader(pdf_file)
-    
-    text = ""
-    for page in pdf_reader.pages:
-        text += page.extract_text() + "\n"
-    
-    return text
+    try:
+        pdf_file = io.BytesIO(pdf_content)
+        pdf_reader = PyPDF2.PdfReader(pdf_file, strict=False)
+        
+        text = ""
+        for page in pdf_reader.pages:
+            try:
+                text += page.extract_text() + "\n"
+            except Exception as e:
+                print(f"⚠️  Warning: Could not extract text from a page: {e}")
+                continue
+        
+        if not text.strip():
+            raise Exception("No text could be extracted from PDF")
+        
+        return text
+    except PyPDF2.errors.PdfReadError as e:
+        print(f"❌ PDF Read Error: {e}")
+        print("This PDF might be corrupted or have an unusual format.")
+        print("Try downloading it manually and checking if it opens correctly.")
+        raise
+    except Exception as e:
+        print(f"❌ Error extracting text: {e}")
+        raise
 
 
 def download_from_papacambridge(year, season_code, variant):

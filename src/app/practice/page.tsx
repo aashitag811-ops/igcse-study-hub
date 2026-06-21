@@ -1,4 +1,4 @@
-'use client';
+ 'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
@@ -44,7 +44,8 @@ export default function PracticeSelectionPage() {
         const paperFiles = [
           'sample_test.json', // Sample paper for testing
           '0417_m20_qp_12.json', '0417_m21_qp_12.json', '0417_m22_qp_12.json',
-          '0417_m23_qp_12.json', '0417_m24_qp_12.json', '0417_s20_qp_11.json',
+          '0417_m23_qp_12.json', '0417_m24_qp_12.json',
+          '0417_s20_qp_11.json', '0417_s20_qp_12.json', '0417_s20_qp_13.json',
           '0417_s21_qp_11.json', '0417_s21_qp_12.json', '0417_s21_qp_13.json',
           '0417_s22_qp_11.json', '0417_s22_qp_12.json', '0417_s22_qp_13.json',
           '0417_s23_qp_11.json', '0417_s23_qp_12.json', '0417_s23_qp_13.json',
@@ -70,11 +71,13 @@ export default function PracticeSelectionPage() {
           }
 
           // Parse filename: 0417_m20_qp_12.json
-          // Format: {code}_{seasonCode}{yearShort}_qp_1{variant}.json
-          const match = filename.match(/(\d{4})_([msw])(\d{2})_qp_1(\d)\.json/);
+          // Format: {code}_{seasonCode}{yearShort}_qp_{variant}.json
+          const match = filename.match(/(\d{4})_([msw])(\d{2})_qp_(\d{1,2})\.json/);
           if (!match) continue;
 
-          const [, code, seasonCode, yearShort, variant] = match;
+          const [, code, seasonCode, yearShort, variantStr] = match;
+          // Extract last digit as variant (11→1, 12→2, 13→3)
+          const variant = variantStr.length === 2 ? variantStr.charAt(1) : variantStr;
           const year = 2000 + parseInt(yearShort);
           const season = SEASON_CODES[seasonCode];
 

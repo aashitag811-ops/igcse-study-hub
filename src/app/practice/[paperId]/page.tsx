@@ -28,6 +28,10 @@ export default function PaperSolvingPage() {
 
         const data = await response.json();
         
+        console.log('[Practice Page] Loaded paper data:', data);
+        console.log('[Practice Page] Has tables?', !!data.tables);
+        console.log('[Practice Page] Tables:', data.tables);
+        
         // Check if paper has questions
         if (!data.questions || data.questions.length === 0) {
           throw new Error('This paper has no questions yet. Please convert it first using the Python script.');
@@ -143,44 +147,6 @@ export default function PaperSolvingPage() {
 
   return (
     <div>
-      {/* Exit button overlay - top right, red */}
-      <div style={{
-        position: 'fixed',
-        top: '20px',
-        right: '20px',
-        zIndex: 1000
-      }}>
-        <button
-          onClick={() => {
-            if (confirm('Are you sure you want to leave? Your progress will be lost.')) {
-              router.push('/practice');
-            }
-          }}
-          style={{
-            background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
-            border: 'none',
-            borderRadius: '10px',
-            padding: '12px 24px',
-            fontSize: '1rem',
-            fontWeight: '600',
-            color: 'white',
-            cursor: 'pointer',
-            transition: 'all 0.3s',
-            boxShadow: '0 4px 12px rgba(239, 68, 68, 0.3)'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px)';
-            e.currentTarget.style.boxShadow = '0 6px 16px rgba(239, 68, 68, 0.4)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 4px 12px rgba(239, 68, 68, 0.3)';
-          }}
-        >
-          Exit Exam ✕
-        </button>
-      </div>
-
       {/* Exam Interface */}
       <ExamInterface examPaper={examPaper} onSubmit={handleSubmit} />
     </div>

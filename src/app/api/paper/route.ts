@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { extractPaperToStructuredJson } from '@/lib/exam/paper-extraction';
 import { ICT_0417_12_FM_2025_PAPER_ID } from '@/lib/exam/fixtures/ict_0417_12_fm_2025';
 import { Session } from '@/lib/exam/types';
+import fs from 'fs';
+import path from 'path';
 
 function isValidSession(session: string): session is Session {
   return session === 'feb_march' || session === 'may_june' || session === 'oct_nov';
@@ -29,7 +31,27 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  // TODO: Replace sample text with OCR/text extraction from storage based on selector.
+  // Try to load from JSON file first
+  const sessionCode = sessionRaw === 'may_june' ? 's' : sessionRaw === 'feb_march' ? 'm' : 'w';
+  const yearShort = year.toString().slice(-2);
+  const paperVariantStr = `${paper}${variant}`;
+  const paperId = `${subjectCode}_${sessionCode}${yearShort}_qp_${paperVariantStr}`;
+  const jsonPath = path.join(process.cwd(), 'public', 'papers', `${paperId}.json`);
+
+  try {
+    // Check if JSON file exists
+    if (fs.existsSync(jsonPath)) {
+      const jsonData = fs.readFileSync(jsonPath, 'utf-8');
+      const paperData = JSON.parse(jsonData);
+      console.log(`[API] Loaded paper from JSON: ${paperId}`);
+      return NextResponse.json(paperData);
+    }
+  } catch (error) {
+    console.error(`[API] Error loading JSON file ${paperId}:`, error);
+  }
+
+  // Fallback to hardcoded data for the calibration paper
+  console.log(`[API] Using hardcoded data (JSON not found): ${paperId}`);
   const parsed = extractPaperToStructuredJson({
     selector: { subjectCode, year, session: sessionRaw, paper, variant },
     title: `${subjectCode}/${paper}${variant} ${year} ${sessionRaw}`,
