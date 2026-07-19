@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import { useRouter } from 'next/navigation';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
-export default function LoginPage() {
-  const [isLogin, setIsLogin] = useState(true); // true = Sign In, false = Sign Up
+function LoginPageContent() {
+  const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
@@ -14,7 +15,27 @@ export default function LoginPage() {
   const [message, setMessage] = useState('');
   const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [showForgotUsername, setShowForgotUsername] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const router = useRouter();
+
+  // Sync with theme
+  useEffect(() => {
+    const theme = document.documentElement.getAttribute('data-theme');
+    setIsDarkMode(theme === 'dark');
+    
+    // Listen for theme changes
+    const observer = new MutationObserver(() => {
+      const newTheme = document.documentElement.getAttribute('data-theme');
+      setIsDarkMode(newTheme === 'dark');
+    });
+    
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+    
+    return () => observer.disconnect();
+  }, []);
 
   const handleEmailAuth = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,7 +47,6 @@ export default function LoginPage() {
 
     try {
       if (isLogin) {
-        // Login
         const { data, error } = await supabase.auth.signInWithPassword({
           email,
           password,
@@ -37,7 +57,6 @@ export default function LoginPage() {
         setMessage('Login successful! Redirecting...');
         setTimeout(() => router.push('/'), 1500);
       } else {
-        // Sign up
         const { data, error } = await supabase.auth.signUp({
           email,
           password,
@@ -121,7 +140,6 @@ export default function LoginPage() {
     const supabase = createClient();
 
     try {
-      // Fetch the user's profile to get their username
       const { data: profiles, error } = await supabase
         .from('profiles')
         .select('username, full_name')
@@ -143,104 +161,54 @@ export default function LoginPage() {
   };
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      display: 'flex',
-      background: 'linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 50%, #FCE7F3 100%)'
-    }}>
-      {/* Left Side - Form */}
-      <div style={{
-        flex: 1,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '2rem'
-      }}>
-        <div style={{
-          width: '100%',
-          maxWidth: '28rem',
-          background: 'white',
-          borderRadius: '1rem',
-          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
-          padding: '2.5rem'
-        }}>
-          {/* Logo/Title */}
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-            <h1 style={{
-              fontSize: '2rem',
-              fontWeight: '700',
-              background: 'linear-gradient(90deg, #2563EB 0%, #9333EA 50%, #EC4899 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              fontFamily: "'Dancing Script', cursive",
-              marginBottom: '0.5rem'
-            }}>
-              IGCSE Study Hub
-            </h1>
-            <p style={{ color: '#6B7280', fontSize: '0.875rem' }}>
-              {isLogin ? 'Welcome back! Sign in to continue' : 'Create your account to get started'}
+    <div className={`min-h-screen w-screen flex ${isDarkMode ? 'bg-zinc-950' : 'bg-slate-50'}`}>
+      {/* LEFT PANEL: Auth Form */}
+      <div className={`w-full lg:w-[40%] flex flex-col justify-center px-8 sm:px-16 ${isDarkMode ? 'bg-zinc-900/50 border-zinc-800/80' : 'bg-white border-slate-200'} border-r backdrop-blur-md relative`}>
+        {/* Back to Home Link */}
+        <a
+          href="/"
+          className={`absolute top-6 left-6 flex items-center gap-2 ${isDarkMode ? 'text-amber-400 hover:text-amber-300' : 'text-amber-600 hover:text-amber-700'} transition-colors text-sm font-medium`}
+        >
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Archive
+        </a>
+
+        <div className="max-w-md w-full mx-auto space-y-8">
+          {/* Header */}
+          <div className="text-center lg:text-left">
+            <h2 className={`font-serif text-4xl font-bold tracking-wide ${isDarkMode ? 'text-amber-400' : 'text-amber-600'} mb-2`}>
+              Student Archive
+            </h2>
+            <p className={`text-sm ${isDarkMode ? 'text-zinc-400' : 'text-slate-600'} font-light`}>
+              {isLogin ? 'Welcome back. Enter your credentials to continue.' : 'Create your archive account to begin.'}
             </p>
           </div>
 
           {/* Error/Success Messages */}
           {error && (
-            <div style={{
-              padding: '0.75rem',
-              marginBottom: '1rem',
-              background: '#FEE2E2',
-              border: '1px solid #EF4444',
-              borderRadius: '0.5rem',
-              color: '#DC2626',
-              fontSize: '0.875rem'
-            }}>
+            <div className={`p-3 ${isDarkMode ? 'bg-red-950/50 border-red-900/50 text-red-400' : 'bg-red-50 border-red-200 text-red-700'} border rounded-lg text-sm`}>
               {error}
             </div>
           )}
 
           {message && (
-            <div style={{
-              padding: '0.75rem',
-              marginBottom: '1rem',
-              background: '#D1FAE5',
-              border: '1px solid #10B981',
-              borderRadius: '0.5rem',
-              color: '#059669',
-              fontSize: '0.875rem'
-            }}>
+            <div className={`p-3 ${isDarkMode ? 'bg-emerald-950/50 border-emerald-900/50 text-emerald-400' : 'bg-emerald-50 border-emerald-200 text-emerald-700'} border rounded-lg text-sm`}>
               {message}
               {message.includes('email') && (
-                <div style={{ marginTop: '0.5rem', fontSize: '0.75rem', fontStyle: 'italic' }}>
-                  📧 Please check your spam/junk folder if you don't see the email in your inbox.
+                <div className="mt-2 text-xs italic text-emerald-500">
+                  📧 Check your spam/junk folder if needed
                 </div>
               )}
             </div>
           )}
 
-          {/* Google Sign In */}
+          {/* Google OAuth */}
           <button
             onClick={handleGoogleAuth}
             disabled={loading}
-            style={{
-              width: '100%',
-              padding: '0.75rem',
-              marginBottom: '1.5rem',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '0.5rem',
-              background: 'white',
-              border: '2px solid #E5E7EB',
-              borderRadius: '0.5rem',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              color: '#374151',
-              cursor: loading ? 'not-allowed' : 'pointer',
-              transition: 'all 0.15s',
-              opacity: loading ? 0.6 : 1
-            }}
-            onMouseOver={(e) => !loading && (e.currentTarget.style.background = '#F9FAFB')}
-            onMouseOut={(e) => (e.currentTarget.style.background = 'white')}
+            className={`w-full flex items-center justify-center gap-3 ${isDarkMode ? 'bg-zinc-800/80 hover:bg-zinc-700 text-zinc-100 border-zinc-700/60' : 'bg-white hover:bg-slate-50 text-slate-700 border-slate-300'} border py-3 px-4 rounded-xl font-medium transition-all duration-200 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed`}
           >
             <svg width="18" height="18" viewBox="0 0 18 18">
               <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"/>
@@ -248,31 +216,21 @@ export default function LoginPage() {
               <path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707 0-.593.102-1.17.282-1.709V4.958H.957C.347 6.173 0 7.548 0 9c0 1.452.348 2.827.957 4.042l3.007-2.335z"/>
               <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/>
             </svg>
-            Continue with Google
+            <span className="text-sm">Continue with Google</span>
           </button>
 
           {/* Divider */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            marginBottom: '1.5rem'
-          }}>
-            <div style={{ flex: 1, height: '1px', background: '#E5E7EB' }}></div>
-            <span style={{ padding: '0 1rem', color: '#9CA3AF', fontSize: '0.875rem' }}>or</span>
-            <div style={{ flex: 1, height: '1px', background: '#E5E7EB' }}></div>
+          <div className={`relative flex py-2 items-center ${isDarkMode ? 'text-zinc-600' : 'text-slate-400'}`}>
+            <div className={`flex-grow border-t ${isDarkMode ? 'border-zinc-800' : 'border-slate-300'}`}></div>
+            <span className="flex-shrink mx-4 text-xs tracking-widest uppercase font-light">or</span>
+            <div className={`flex-grow border-t ${isDarkMode ? 'border-zinc-800' : 'border-slate-300'}`}></div>
           </div>
 
           {/* Email/Password Form */}
-          <form onSubmit={handleEmailAuth}>
+          <form onSubmit={handleEmailAuth} className="space-y-5">
             {!isLogin && (
-              <div style={{ marginBottom: '1rem' }}>
-                <label style={{
-                  display: 'block',
-                  marginBottom: '0.5rem',
-                  fontSize: '0.875rem',
-                  fontWeight: '600',
-                  color: '#374151'
-                }}>
+              <div>
+                <label className={`block text-xs font-medium tracking-wider uppercase ${isDarkMode ? 'text-zinc-400' : 'text-slate-600'} mb-1.5`}>
                   Full Name
                 </label>
                 <input
@@ -280,60 +238,28 @@ export default function LoginPage() {
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   required={!isLogin}
-                  style={{
-                    width: '100%',
-                    padding: '0.75rem',
-                    border: '1px solid #D1D5DB',
-                    borderRadius: '0.5rem',
-                    fontSize: '0.875rem',
-                    outline: 'none',
-                    transition: 'border-color 0.15s'
-                  }}
-                  onFocus={(e) => e.currentTarget.style.borderColor = '#2563EB'}
-                  onBlur={(e) => e.currentTarget.style.borderColor = '#D1D5DB'}
+                  className={`w-full ${isDarkMode ? 'bg-zinc-950/60 border-zinc-800 text-zinc-100 placeholder-zinc-600' : 'bg-white border-slate-300 text-slate-900 placeholder-slate-400'} border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all text-sm`}
                   placeholder="John Doe"
                 />
               </div>
             )}
 
-            <div style={{ marginBottom: '1rem' }}>
-              <label style={{
-                display: 'block',
-                marginBottom: '0.5rem',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                color: '#374151'
-              }}>
-                Email
+            <div>
+              <label className={`block text-xs font-medium tracking-wider uppercase ${isDarkMode ? 'text-zinc-400' : 'text-slate-600'} mb-1.5`}>
+                Email Address
               </label>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                style={{
-                  width: '100%',
-                  padding: '0.75rem',
-                  border: '1px solid #D1D5DB',
-                  borderRadius: '0.5rem',
-                  fontSize: '0.875rem',
-                  outline: 'none',
-                  transition: 'border-color 0.15s'
-                }}
-                onFocus={(e) => e.currentTarget.style.borderColor = '#2563EB'}
-                onBlur={(e) => e.currentTarget.style.borderColor = '#D1D5DB'}
+                className={`w-full ${isDarkMode ? 'bg-zinc-950/60 border-zinc-800 text-zinc-100 placeholder-zinc-600' : 'bg-white border-slate-300 text-slate-900 placeholder-slate-400'} border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all text-sm`}
                 placeholder="you@example.com"
               />
             </div>
 
-            <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{
-                display: 'block',
-                marginBottom: '0.5rem',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                color: '#374151'
-              }}>
+            <div>
+              <label className={`block text-xs font-medium tracking-wider uppercase ${isDarkMode ? 'text-zinc-400' : 'text-slate-600'} mb-1.5`}>
                 Password
               </label>
               <input
@@ -342,29 +268,14 @@ export default function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 minLength={6}
-                style={{
-                  width: '100%',
-                  padding: '0.75rem',
-                  border: '1px solid #D1D5DB',
-                  borderRadius: '0.5rem',
-                  fontSize: '0.875rem',
-                  outline: 'none',
-                  transition: 'border-color 0.15s'
-                }}
-                onFocus={(e) => e.currentTarget.style.borderColor = '#2563EB'}
-                onBlur={(e) => e.currentTarget.style.borderColor = '#D1D5DB'}
+                className={`w-full ${isDarkMode ? 'bg-zinc-950/60 border-zinc-800 text-zinc-100 placeholder-zinc-600' : 'bg-white border-slate-300 text-slate-900 placeholder-slate-400'} border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all text-sm`}
                 placeholder="••••••••"
               />
             </div>
 
-            {/* Forgot Password/Username Links */}
+            {/* Forgot Links */}
             {isLogin && (
-              <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                marginBottom: '1.5rem',
-                fontSize: '0.75rem'
-              }}>
+              <div className="flex justify-between text-xs">
                 <button
                   type="button"
                   onClick={() => {
@@ -372,14 +283,7 @@ export default function LoginPage() {
                     setError('');
                     setMessage('');
                   }}
-                  style={{
-                    color: '#2563EB',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer',
-                    textDecoration: 'underline',
-                    padding: 0
-                  }}
+                  className={`${isDarkMode ? 'text-amber-400 hover:text-amber-300' : 'text-amber-600 hover:text-amber-700'} transition-colors`}
                 >
                   Forgot password?
                 </button>
@@ -390,14 +294,7 @@ export default function LoginPage() {
                     setError('');
                     setMessage('');
                   }}
-                  style={{
-                    color: '#2563EB',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer',
-                    textDecoration: 'underline',
-                    padding: 0
-                  }}
+                  className={`${isDarkMode ? 'text-amber-400 hover:text-amber-300' : 'text-amber-600 hover:text-amber-700'} transition-colors`}
                 >
                   Forgot username?
                 </button>
@@ -406,52 +303,24 @@ export default function LoginPage() {
 
             {/* Forgot Password Modal */}
             {showForgotPassword && (
-              <div style={{
-                padding: '1rem',
-                marginBottom: '1rem',
-                background: '#EFF6FF',
-                border: '1px solid #BFDBFE',
-                borderRadius: '0.5rem'
-              }}>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: '600', marginBottom: '0.5rem', color: '#1E40AF' }}>
-                  Reset Password
-                </h3>
-                <p style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.75rem' }}>
-                  Enter your email address and we'll send you a link to reset your password.
+              <div className={`p-4 ${isDarkMode ? 'bg-zinc-800/50 border-zinc-700/50' : 'bg-slate-100 border-slate-300'} border rounded-lg`}>
+                <h3 className={`text-sm font-semibold mb-2 ${isDarkMode ? 'text-amber-400' : 'text-amber-600'}`}>Reset Password</h3>
+                <p className={`text-xs ${isDarkMode ? 'text-zinc-400' : 'text-slate-600'} mb-3`}>
+                  Enter your email to receive a password reset link.
                 </p>
-                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                <div className="flex gap-2">
                   <button
                     type="button"
                     onClick={handleForgotPassword}
                     disabled={loading}
-                    style={{
-                      flex: 1,
-                      padding: '0.5rem',
-                      background: '#2563EB',
-                      color: 'white',
-                      border: 'none',
-                      borderRadius: '0.375rem',
-                      fontSize: '0.75rem',
-                      fontWeight: '600',
-                      cursor: loading ? 'not-allowed' : 'pointer',
-                      opacity: loading ? 0.6 : 1
-                    }}
+                    className={`flex-1 px-3 py-2 bg-amber-500 hover:bg-amber-600 ${isDarkMode ? 'text-zinc-950' : 'text-white'} rounded-lg text-xs font-semibold transition-colors disabled:opacity-50`}
                   >
-                    Send Reset Link
+                    Send Link
                   </button>
                   <button
                     type="button"
                     onClick={() => setShowForgotPassword(false)}
-                    style={{
-                      padding: '0.5rem 1rem',
-                      background: 'white',
-                      color: '#6B7280',
-                      border: '1px solid #D1D5DB',
-                      borderRadius: '0.375rem',
-                      fontSize: '0.75rem',
-                      fontWeight: '600',
-                      cursor: 'pointer'
-                    }}
+                    className={`px-3 py-2 ${isDarkMode ? 'bg-zinc-700 hover:bg-zinc-600 text-zinc-200' : 'bg-slate-200 hover:bg-slate-300 text-slate-700'} rounded-lg text-xs font-semibold transition-colors`}
                   >
                     Cancel
                   </button>
@@ -461,52 +330,24 @@ export default function LoginPage() {
 
             {/* Forgot Username Modal */}
             {showForgotUsername && (
-              <div style={{
-                padding: '1rem',
-                marginBottom: '1rem',
-                background: '#EFF6FF',
-                border: '1px solid #BFDBFE',
-                borderRadius: '0.5rem'
-              }}>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: '600', marginBottom: '0.5rem', color: '#1E40AF' }}>
-                  Retrieve Username
-                </h3>
-                <p style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.75rem' }}>
-                  Enter your email address to retrieve your username.
+              <div className={`p-4 ${isDarkMode ? 'bg-zinc-800/50 border-zinc-700/50' : 'bg-slate-100 border-slate-300'} border rounded-lg`}>
+                <h3 className={`text-sm font-semibold mb-2 ${isDarkMode ? 'text-amber-400' : 'text-amber-600'}`}>Retrieve Username</h3>
+                <p className={`text-xs ${isDarkMode ? 'text-zinc-400' : 'text-slate-600'} mb-3`}>
+                  Enter your email to retrieve your username.
                 </p>
-                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                <div className="flex gap-2">
                   <button
                     type="button"
                     onClick={handleForgotUsername}
                     disabled={loading}
-                    style={{
-                      flex: 1,
-                      padding: '0.5rem',
-                      background: '#2563EB',
-                      color: 'white',
-                      border: 'none',
-                      borderRadius: '0.375rem',
-                      fontSize: '0.75rem',
-                      fontWeight: '600',
-                      cursor: loading ? 'not-allowed' : 'pointer',
-                      opacity: loading ? 0.6 : 1
-                    }}
+                    className={`flex-1 px-3 py-2 bg-amber-500 hover:bg-amber-600 ${isDarkMode ? 'text-zinc-950' : 'text-white'} rounded-lg text-xs font-semibold transition-colors disabled:opacity-50`}
                   >
                     Get Username
                   </button>
                   <button
                     type="button"
                     onClick={() => setShowForgotUsername(false)}
-                    style={{
-                      padding: '0.5rem 1rem',
-                      background: 'white',
-                      color: '#6B7280',
-                      border: '1px solid #D1D5DB',
-                      borderRadius: '0.375rem',
-                      fontSize: '0.75rem',
-                      fontWeight: '600',
-                      cursor: 'pointer'
-                    }}
+                    className={`px-3 py-2 ${isDarkMode ? 'bg-zinc-700 hover:bg-zinc-600 text-zinc-200' : 'bg-slate-200 hover:bg-slate-300 text-slate-700'} rounded-lg text-xs font-semibold transition-colors`}
                   >
                     Cancel
                   </button>
@@ -517,35 +358,14 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                background: 'linear-gradient(145deg, #2563EB, #1D4ED8)',
-                color: 'white',
-                border: 'none',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                cursor: loading ? 'not-allowed' : 'pointer',
-                transition: 'all 0.15s',
-                boxShadow: '0 8px 16px rgba(37, 99, 235, 0.4)',
-                opacity: loading ? 0.6 : 1
-              }}
-              onMouseDown={(e) => !loading && (e.currentTarget.style.transform = 'translateY(2px) scale(0.98)')}
-              onMouseUp={(e) => (e.currentTarget.style.transform = 'translateY(0) scale(1)')}
-              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0) scale(1)')}
+              className={`w-full bg-amber-500 hover:bg-amber-600 ${isDarkMode ? 'text-zinc-950' : 'text-white'} font-bold py-3.5 px-4 rounded-xl shadow-lg ${isDarkMode ? 'shadow-amber-950/20' : 'shadow-amber-500/20'} transition-all duration-150 tracking-wide text-sm mt-2 disabled:opacity-50 disabled:cursor-not-allowed`}
             >
               {loading ? 'Please wait...' : isLogin ? 'Sign In' : 'Create Account'}
             </button>
           </form>
 
           {/* Toggle Login/Signup */}
-          <div style={{
-            marginTop: '1.5rem',
-            textAlign: 'center',
-            fontSize: '0.875rem',
-            color: '#6B7280'
-          }}>
+          <div className={`text-center text-sm ${isDarkMode ? 'text-zinc-400' : 'text-slate-600'}`}>
             {isLogin ? "Don't have an account? " : "Already have an account? "}
             <button
               onClick={() => {
@@ -553,14 +373,7 @@ export default function LoginPage() {
                 setError('');
                 setMessage('');
               }}
-              style={{
-                color: '#2563EB',
-                fontWeight: '600',
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                textDecoration: 'underline'
-              }}
+              className={`${isDarkMode ? 'text-amber-400 hover:text-amber-300' : 'text-amber-600 hover:text-amber-700'} font-semibold transition-colors`}
             >
               {isLogin ? 'Sign up' : 'Sign in'}
             </button>
@@ -568,57 +381,60 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* Right Side - Features */}
-      <div style={{
-        flex: 1,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '2rem',
-        background: 'linear-gradient(135deg, #2563EB 0%, #9333EA 100%)',
-        color: 'white'
-      }}>
-        <div style={{ maxWidth: '28rem' }}>
-          <h2 style={{
-            fontSize: '2.5rem',
-            fontWeight: '700',
-            marginBottom: '1.5rem',
-            fontFamily: "'Pacifico', cursive"
-          }}>
-            Join Our Community
-          </h2>
-          <p style={{
-            fontSize: '1.125rem',
-            marginBottom: '2rem',
-            opacity: 0.9,
-            lineHeight: '1.75'
-          }}>
-            Access thousands of study resources shared by IGCSE students worldwide.
+      {/* RIGHT PANEL: Hero Section */}
+      <div className={`hidden lg:flex lg:w-[60%] relative ${isDarkMode ? 'bg-zinc-900' : 'bg-gradient-to-br from-amber-50 to-slate-100'} items-center p-16 overflow-hidden`}>
+        {/* Background effects */}
+        {isDarkMode ? (
+          <>
+            <div className="absolute inset-0 bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-800"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.8)_100%)]"></div>
+            <div className="absolute top-20 right-20 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 left-20 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl"></div>
+          </>
+        ) : (
+          <>
+            <div className="absolute top-20 right-20 w-64 h-64 bg-amber-200/30 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 left-20 w-96 h-96 bg-amber-300/20 rounded-full blur-3xl"></div>
+          </>
+        )}
+
+        <div className="relative z-10 max-w-xl space-y-6">
+          <h1 className={`font-serif text-5xl font-medium tracking-tight ${isDarkMode ? 'text-zinc-100' : 'text-slate-900'} leading-tight`}>
+            Join Our Global <span className={`${isDarkMode ? 'text-amber-400' : 'text-amber-600'} italic`}>Academic</span> Community
+          </h1>
+          
+          <p className={`${isDarkMode ? 'text-zinc-400' : 'text-slate-600'} text-base leading-relaxed font-light`}>
+            Gain immediate access to thousands of structured past papers, comprehensive study guides, and collaborative resources across all Cambridge IGCSE subjects.
           </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          {/* Feature List */}
+          <div className="space-y-4 pt-4">
             {[
-              { icon: '📚', title: 'Vast Resource Library', desc: 'Notes, flashcards, and revision guides for all subjects' },
-              { icon: '🤝', title: 'Student Community', desc: 'Share and discover resources from peers' },
+              { icon: '📝', title: 'Automarked Past Papers', desc: 'Instant feedback on practice papers with detailed solutions' },
+              { icon: '🤝', title: 'Student Community', desc: 'Share and discover resources from peers worldwide' },
               { icon: '⭐', title: 'Quality Content', desc: 'Upvote system ensures the best resources rise to the top' }
             ].map((feature, i) => (
-              <div key={i} style={{ display: 'flex', gap: '1rem' }}>
-                <div style={{ fontSize: '2rem' }}>{feature.icon}</div>
+              <div key={i} className="flex gap-4 items-start">
+                <div className="text-3xl">{feature.icon}</div>
                 <div>
-                  <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.25rem' }}>
-                    {feature.title}
-                  </h3>
-                  <p style={{ opacity: 0.8, fontSize: '0.875rem' }}>
-                    {feature.desc}
-                  </p>
+                  <h3 className={`${isDarkMode ? 'text-zinc-200' : 'text-slate-800'} font-semibold mb-1`}>{feature.title}</h3>
+                  <p className={`${isDarkMode ? 'text-zinc-500' : 'text-slate-600'} text-sm`}>{feature.desc}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
+
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <ThemeProvider>
+      <LoginPageContent />
+    </ThemeProvider>
   );
 }
 
