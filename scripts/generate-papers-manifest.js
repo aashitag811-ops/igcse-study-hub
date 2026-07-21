@@ -4,7 +4,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const files = fs.readdirSync(path.join(__dirname, '../public/papers')).filter(f => f.endsWith('.json'));
+const papersDir = path.join(__dirname, '../public/papers');
+const imagesDir = path.join(__dirname, '../public/images');
+
+const files = fs.readdirSync(papersDir).filter(f => f.endsWith('.json'));
 
 // Build a set of all _qp_ paper base IDs so we can skip short-format dupes
 const qpIds = new Set(
@@ -21,7 +24,16 @@ for (const file of files) {
   // Pattern 1: 0610_m20_qp_22  (canonical format with images)
   let m = base.match(/^(\d{4})_([msw])(\d{2})_qp_(\d)(\d)$/);
   if (m) {
-    papers.push({ id: base, subjectCode: m[1], year: 2000 + parseInt(m[3]), session: m[2], component: parseInt(m[4]), variant: parseInt(m[5]) });
+    // Only include if the JSON actually has imageUrl on first question
+    // OR if there's no image system for this subject (accounting, economics text papers)
+    const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
+    const qs = d.questions || [];
+    const hasImage = qs.length > 0 && qs[0].imageUrl;
+    const hasOptions = qs.length > 0 && qs[0].options && qs[0].options.length > 0;
+    // Include if: has images (image-based MCQ) OR has text options (text-based MCQ like accounting)
+    if (hasImage || hasOptions) {
+      papers.push({ id: base, subjectCode: m[1], year: 2000 + parseInt(m[3]), session: m[2], component: parseInt(m[4]), variant: parseInt(m[5]) });
+    }
     continue;
   }
 
@@ -30,7 +42,13 @@ for (const file of files) {
   if (m) {
     const qpEquivalent = `${m[1]}_${m[2]}${m[3]}_qp_${m[4]}${m[5]}`;
     if (qpIds.has(qpEquivalent)) continue; // skip — the _qp_ version is already included
-    papers.push({ id: base, subjectCode: m[1], year: 2000 + parseInt(m[3]), session: m[2], component: parseInt(m[4]), variant: parseInt(m[5]) });
+    const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
+    const qs = d.questions || [];
+    const hasImage = qs.length > 0 && qs[0].imageUrl;
+    const hasOptions = qs.length > 0 && qs[0].options && qs[0].options.length > 0;
+    if (hasImage || hasOptions) {
+      papers.push({ id: base, subjectCode: m[1], year: 2000 + parseInt(m[3]), session: m[2], component: parseInt(m[4]), variant: parseInt(m[5]) });
+    }
   }
 }
 
