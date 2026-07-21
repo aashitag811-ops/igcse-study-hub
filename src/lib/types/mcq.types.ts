@@ -7,7 +7,7 @@ export interface MCQQuestion {
   questionNumber: number;
   questionText: string;
   options: MCQOption[];
-  correctAnswer: 'A' | 'B' | 'C' | 'D';
+  correctAnswer: 'A' | 'B' | 'C' | 'D' | 'DISCOUNTED';
   imageUrl?: string;
 }
 
@@ -41,7 +41,7 @@ export interface ExamResult {
   answers: {
     questionNumber: number;
     userAnswer: 'A' | 'B' | 'C' | 'D' | null;
-    correctAnswer: 'A' | 'B' | 'C' | 'D';
+    correctAnswer: 'A' | 'B' | 'C' | 'D' | 'DISCOUNTED';
     isCorrect: boolean;
   }[];
 }

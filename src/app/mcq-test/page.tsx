@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 interface FilterState {
@@ -9,7 +9,7 @@ interface FilterState {
   session: string;
 }
 
-export default function MCQSelectionDashboard() {
+function MCQSelectionDashboardContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   
@@ -321,6 +321,14 @@ export default function MCQSelectionDashboard() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function MCQSelectionDashboard() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <MCQSelectionDashboardContent />
+    </Suspense>
   );
 }
 

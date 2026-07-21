@@ -9,7 +9,7 @@ interface MCQQuestionProps {
   selectedAnswer?: 'A' | 'B' | 'C' | 'D';
   onAnswerSelect: (answer: 'A' | 'B' | 'C' | 'D') => void;
   isSubmitted: boolean;
-  correctAnswer?: 'A' | 'B' | 'C' | 'D';
+  correctAnswer?: 'A' | 'B' | 'C' | 'D' | 'DISCOUNTED';
 }
 
 export function MCQQuestion({

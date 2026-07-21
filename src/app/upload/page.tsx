@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import { SUBJECTS } from '@/lib/constants/subjects';
 import { RESOURCE_TYPES } from '@/lib/constants/resourceTypes';
 
-export default function UploadPage() {
+function UploadPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [user, setUser] = useState<any>(null);
@@ -458,6 +458,14 @@ export default function UploadPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function UploadPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <UploadPageContent />
+    </Suspense>
   );
 }
 

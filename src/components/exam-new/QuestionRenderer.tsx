@@ -300,10 +300,17 @@ function inferWordBankItems(question: ExamQuestion): string[] {
 
 function getQuestionImage(question: ExamQuestion) {
   if (question.promptImage?.src) return question.promptImage;
-  if (question.hasImage && question.image) {
+  if (question.hasImage && question.imageUrl) {
     return {
-      src: question.image,
+      src: question.imageUrl,
       alt: question.imageAlt || 'Question prompt image',
+      mode: question.imageMode || 'full-width',
+    };
+  }
+  if (question.hasImage && question.image?.url) {
+    return {
+      src: question.image.url,
+      alt: question.image.alt || question.imageAlt || 'Question prompt image',
       mode: question.imageMode || 'full-width',
     };
   }
@@ -506,14 +513,14 @@ export function QuestionRenderer({ question, questionPath, answers, onAnswerChan
   const renderPairedNotebook = () => {
     const pairCount = Math.max(1, Math.ceil((question.marks || 2) / 2));
     const value = Array.isArray(currentAnswer?.answer)
-      ? (currentAnswer.answer as PairedAnswerItem[])
+      ? (currentAnswer.answer as unknown as PairedAnswerItem[])
       : Array.from({ length: pairCount }, () => ({ method: '', description: '' }));
 
     const handlePairChange = (index: number, field: keyof PairedAnswerItem, fieldValue: string) => {
       const next = [...value];
       next[index] = next[index] || { method: '', description: '' };
       next[index] = { ...next[index], [field]: fieldValue };
-      onAnswerChange(questionPath, next);
+      onAnswerChange(questionPath, next as unknown as string[]);
     };
 
     return (
@@ -547,14 +554,14 @@ export function QuestionRenderer({ question, questionPath, answers, onAnswerChan
       if (next[key] === header) delete next[key];
       else next[key] = header;
       if (!next.__note) delete next.__note;
-      onAnswerChange(questionPath, next);
+      onAnswerChange(questionPath, next as unknown as string);
     };
 
     const handleNoteChange = (value: string) => {
       const next = { ...stored };
       if (value.trim()) next.__note = value;
       else delete next.__note;
-      onAnswerChange(questionPath, next);
+      onAnswerChange(questionPath, next as unknown as string);
     };
 
     return (
