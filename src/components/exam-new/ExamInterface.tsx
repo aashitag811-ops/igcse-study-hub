@@ -3,8 +3,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ExamPaper, StudentAnswer } from '@/lib/exam-new/types';
 import QuestionRendererSimple from './QuestionRendererSimple';
-import { TableRenderer } from '../exam/TableRenderer';
-import '../exam/ExamStyles.css'; // Import table styles
 
 interface ExamInterfaceProps {
   examPaper: ExamPaper;
@@ -33,30 +31,7 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
   const [timeRemaining, setTimeRemaining] = useState(examPaper.duration * 60); // Convert to seconds
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
-  const [sidebarWidth, setSidebarWidth] = useState(220);
-  const [isResizing, setIsResizing] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  // Toggle fullscreen
-  const toggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
-      setIsFullscreen(true);
-    } else {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  };
-
-  // Listen for fullscreen changes
-  useEffect(() => {
-    const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
-    };
-    document.addEventListener('fullscreenchange', handleFullscreenChange);
-    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
-  }, []);
+  const [zoom, setZoom] = useState<number>(1.0); // Zoom state for scaling
 
   // Auto-save answers to localStorage whenever they change
   useEffect(() => {
@@ -65,10 +40,8 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
     }
   }, [answers, storageKey]);
 
-  // Timer countdown (pauses when isPaused is true)
+  // Timer countdown
   useEffect(() => {
-    if (isPaused) return; // Don't run timer when paused
-    
     const timer = setInterval(() => {
       setTimeRemaining((prev) => {
         if (prev <= 1) {
@@ -82,32 +55,7 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [isPaused]);
-
-  // Handle sidebar resizing
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!isResizing) return;
-      const newWidth = e.clientX;
-      if (newWidth >= 180 && newWidth <= 400) {
-        setSidebarWidth(newWidth);
-      }
-    };
-
-    const handleMouseUp = () => {
-      setIsResizing(false);
-    };
-
-    if (isResizing) {
-      document.addEventListener('mousemove', handleMouseMove);
-      document.addEventListener('mouseup', handleMouseUp);
-    }
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
-    };
-  }, [isResizing]);
+  }, []);
 
   // Format time as HH:MM:SS
   const formatTime = (seconds: number) => {
@@ -151,12 +99,6 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
     questions.forEach((q) => {
       const qId = prefix ? `${prefix}.${q.number}` : q.number;
       
-      // For fill-in-blank questions, add the parent question, not subparts
-      if (q.type === 'fill_in_blank') {
-        ids.push(qId);
-        return; // Don't recurse into subparts
-      }
-      
       // Only add terminal questions (those with marks and no subparts)
       if ((q.marks !== null && q.marks !== undefined) && (!q.subparts || q.subparts.length === 0)) {
         ids.push(qId);
@@ -173,36 +115,9 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
 
   // Get question status
   const getQuestionStatus = (questionId: string) => {
-    // For fill-in-blank questions, check if any subpart is answered
-    const subpartAnswers = Object.keys(answers).filter(key => key.startsWith(questionId + '.'));
-    
-    if (subpartAnswers.length > 0) {
-      // Check if any subpart is flagged
-      const anyFlagged = subpartAnswers.some(key => answers[key]?.flagged);
-      if (anyFlagged) return 'flagged';
-      
-      // Check if any subpart is answered
-      const anyAnswered = subpartAnswers.some(key => {
-        const answer = answers[key];
-        return answer?.answer && (
-          (typeof answer.answer === 'string' && answer.answer.trim().length > 0) ||
-          (Array.isArray(answer.answer) && answer.answer.some(item =>
-            item && typeof item === 'string' && item.trim().length > 0
-          ))
-        );
-      });
-      
-      if (anyAnswered) return 'answered';
-      return 'unanswered';
-    }
-    
-    // For regular questions, check the question itself
     const answer = answers[questionId];
     
-    // If flagged, always show as flagged regardless of answer status
-    if (answer?.flagged) return 'flagged';
-    
-    // Check if answered
+    // Check if answered first
     const isAnswered = answer?.answer && (
       (typeof answer.answer === 'string' && answer.answer.trim().length > 0) ||
       (Array.isArray(answer.answer) && answer.answer.some(item =>
@@ -210,8 +125,11 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
       ))
     );
     
-    // Show as answered only if not flagged
+    // Answered questions show as answered even if flagged
     if (isAnswered) return 'answered';
+    
+    // Only show flagged if not answered
+    if (answer?.flagged) return 'flagged';
     
     return 'unanswered';
   };
@@ -259,461 +177,340 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
     return '#22c55e'; // Green
   };
 
+  // Zoom handlers
+  const handleZoomIn = () => setZoom(prev => Math.min(prev + 0.1, 1.3));  // Max 130%
+  const handleZoomOut = () => setZoom(prev => Math.max(prev - 0.1, 0.7)); // Min 70%
+
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', background: '#f8fafc', position: 'relative' }}>
-      {/* Full Screen Pause Overlay - Covers Everything */}
-      {isPaused && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'white',
-          zIndex: 9999,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
-        }}>
-          <div style={{
-            width: '120px',
-            height: '120px',
-            border: '3px solid #1f2937',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '32px',
-            cursor: 'pointer',
-            transition: 'all 0.15s',
-            position: 'relative',
-            background: 'white',
-            boxShadow: '0 6px 0 #d1d5db, 0 8px 16px rgba(0, 0, 0, 0.2)',
-            top: '0'
-          }}
-          onClick={() => setIsPaused(false)}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = '#f9fafb';
-            e.currentTarget.style.boxShadow = '0 8px 0 #d1d5db, 0 10px 20px rgba(0, 0, 0, 0.25)';
-            e.currentTarget.style.top = '-2px';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'white';
-            e.currentTarget.style.boxShadow = '0 6px 0 #d1d5db, 0 8px 16px rgba(0, 0, 0, 0.2)';
-            e.currentTarget.style.top = '0';
-          }}
-          onMouseDown={(e) => {
-            e.currentTarget.style.boxShadow = '0 3px 0 #d1d5db, 0 4px 8px rgba(0, 0, 0, 0.2)';
-            e.currentTarget.style.top = '3px';
-          }}
-          onMouseUp={(e) => {
-            e.currentTarget.style.boxShadow = '0 6px 0 #d1d5db, 0 8px 16px rgba(0, 0, 0, 0.2)';
-            e.currentTarget.style.top = '0';
-          }}
-          >
-            {/* CSS Triangle - properly centered */}
-            <div style={{
-              width: 0,
-              height: 0,
-              borderLeft: '30px solid #1f2937',
-              borderTop: '20px solid transparent',
-              borderBottom: '20px solid transparent',
-              marginLeft: '8px' // Slight offset to visually center the triangle
-            }} />
-          </div>
-          <h1 style={{
-            fontSize: '2rem',
-            color: '#1f2937',
-            marginBottom: '12px',
-            fontWeight: '600',
-            fontFamily: 'inherit'
-          }}>
-            Exam Paused
-          </h1>
-          <p style={{
-            fontSize: '1rem',
-            color: '#6b7280',
-            marginBottom: '40px',
-            textAlign: 'center',
-            maxWidth: '500px',
-            fontFamily: 'inherit'
-          }}>
-            Take a break. Your progress is saved.<br/>
-            Click the play button to resume.
-          </p>
-          <div style={{
-            padding: '16px 32px',
-            background: '#f9fafb',
-            border: '1px solid #e5e7eb',
-            borderRadius: '8px',
-            fontSize: '0.875rem',
-            color: '#6b7280',
-            fontFamily: 'inherit'
-          }}>
-            Time Remaining: <strong style={{ color: '#1f2937', fontSize: '1.25rem', marginLeft: '8px' }}>{formatTime(timeRemaining)}</strong>
-          </div>
-        </div>
-      )}
-      
-      {/* Side Navigation */}
-      <div style={{
-        width: `${sidebarWidth}px`,
+    <div style={{
+      width: '100vw',
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden',
+      background: '#FAF6EE'
+    }}>
+      {/* Top Header Bar with Timer, Zoom Controls, and Progress */}
+      <header style={{
+        height: '64px',
+        width: '100%',
         background: 'white',
-        borderRight: '1px solid #e5e7eb',
-        padding: '20px',
-        position: 'fixed',
-        height: '100vh',
-        overflowY: 'auto',
-        transition: isResizing ? 'none' : 'width 0.2s ease',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+        borderBottom: '2px solid #e2e8f0',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: '0 24px',
+        zIndex: 50,
+        flexShrink: 0,
+        position: 'relative'
       }}>
-        {/* Timer */}
-        <div style={{
-          background: '#f9fafb',
-          border: '1px solid #e5e7eb',
-          padding: '16px',
-          borderRadius: '8px',
-          marginBottom: '20px',
-          textAlign: 'center'
-        }}>
-          <div style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '8px', fontFamily: 'inherit' }}>
-            Time Remaining
-          </div>
-          <div style={{
-            fontSize: '1.5rem',
-            fontWeight: '600',
-            fontFamily: 'monospace',
-            color: '#1f2937'
-          }}>
-            {formatTime(timeRemaining)}
-          </div>
-        </div>
-
-        {/* Progress Bar */}
-        <div style={{ marginBottom: '20px' }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginBottom: '8px'
-          }}>
-            <span style={{ fontSize: '0.75rem', fontWeight: '500', color: '#6b7280', fontFamily: 'inherit' }}>
-              Progress
-            </span>
-            <span style={{ fontSize: '0.75rem', fontWeight: '600', color: '#1f2937', fontFamily: 'inherit' }}>
-              {progress}%
-            </span>
-          </div>
-          <div style={{
-            height: '6px',
-            background: '#e5e7eb',
-            borderRadius: '3px',
-            overflow: 'hidden'
-          }}>
-            <div style={{
-              height: '100%',
-              background: '#22c55e',
-              borderRadius: '3px',
-              width: `${progress}%`,
-              transition: 'width 0.3s ease'
-            }} />
-          </div>
-        </div>
-
-        {/* Paper Info */}
-        <div style={{ marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid #e5e7eb' }}>
-          <h3 style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1f2937', marginBottom: '8px', fontFamily: 'inherit' }}>
-            {examPaper.subject}
-          </h3>
-          <div style={{ fontSize: '0.75rem', color: '#6b7280', fontFamily: 'inherit' }}>
-            {examPaper.season} {examPaper.year} • Variant {examPaper.variant}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: '#6b7280', marginTop: '4px', fontFamily: 'inherit' }}>
-            Total: {examPaper.totalMarks} marks
-          </div>
-        </div>
-
-        {/* Question Navigation */}
-        <div>
-          <h4 style={{ fontSize: '0.75rem', fontWeight: '600', color: '#6b7280', marginBottom: '12px', fontFamily: 'inherit' }}>
-            Questions
-          </h4>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '6px' }}>
-            {allQuestionIds.map((qId, idx) => {
-              const status = getQuestionStatus(qId);
-              let bgColor = '#f9fafb'; // unanswered
-              let textColor = '#6b7280';
-              let borderColor = '#e5e7eb';
-              
-              if (status === 'answered') {
-                bgColor = '#f0fdf4';
-                textColor = '#16a34a';
-                borderColor = '#bbf7d0';
-              } else if (status === 'flagged') {
-                bgColor = '#fef3c7';
-                textColor = '#d97706';
-                borderColor = '#fde68a';
-              }
-
-              return (
-                <button
-                  key={qId}
-                  onClick={() => {
-                    const element = document.getElementById(`question-${qId}`);
-                    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }}
-                  style={{
-                    padding: '8px',
-                    background: bgColor,
-                    color: textColor,
-                    border: `1px solid ${borderColor}`,
-                    borderRadius: '4px',
-                    fontSize: '0.75rem',
-                    fontWeight: '500',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s',
-                    fontFamily: 'inherit'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = textColor;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = borderColor;
-                  }}
-                >
-                  {qId}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Legend */}
-        <div style={{ marginTop: '20px', padding: '12px', background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '6px' }}>
-          <div style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '10px', fontWeight: '600', fontFamily: 'inherit' }}>
-            Legend
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.75rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <div style={{ width: '14px', height: '14px', background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '3px' }}></div>
-              <span style={{ color: '#6b7280', fontFamily: 'inherit' }}>Answered</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <div style={{ width: '14px', height: '14px', background: '#fef3c7', border: '1px solid #fde68a', borderRadius: '3px' }}></div>
-              <span style={{ color: '#6b7280', fontFamily: 'inherit' }}>Flagged</span>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <div style={{ width: '14px', height: '14px', background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '3px' }}></div>
-              <span style={{ color: '#6b7280', fontFamily: 'inherit' }}>Unanswered</span>
-            </div>
-          </div>
-        </div>
-
-        
-        {/* Resize Handle */}
-        <div
-          onMouseDown={() => setIsResizing(true)}
+        {/* Student Archive Link */}
+        <a
+          href="/"
           style={{
             position: 'absolute',
-            right: 0,
-            top: 0,
-            bottom: 0,
-            width: '8px',
-            cursor: 'ew-resize',
-            background: isResizing ? '#4F46E5' : 'transparent',
-            transition: 'background 0.2s',
-            zIndex: 10
+            left: '8px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            padding: '6px 12px',
+            background: 'linear-gradient(135deg, #C9A84C 0%, #E2C97A 100%)',
+            color: '#0A0806',
+            borderRadius: '8px',
+            fontWeight: '700',
+            fontSize: '0.875rem',
+            textDecoration: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '4px',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+            transition: 'all 0.2s'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = '#e2e8f0';
+            e.currentTarget.style.background = 'linear-gradient(135deg, #E2C97A 0%, #C9A84C 100%)';
+            e.currentTarget.style.transform = 'translateY(-50%) scale(1.05)';
           }}
           onMouseLeave={(e) => {
-            if (!isResizing) e.currentTarget.style.background = 'transparent';
+            e.currentTarget.style.background = 'linear-gradient(135deg, #C9A84C 0%, #E2C97A 100%)';
+            e.currentTarget.style.transform = 'translateY(-50%) scale(1)';
           }}
-        />
-      </div>
-
-      {/* Main Content */}
-      <div style={{ marginLeft: `${sidebarWidth}px`, flex: 1, display: 'flex', flexDirection: 'column', height: '100vh', transition: isResizing ? 'none' : 'margin-left 0.2s ease' }}>
-        
-        {/* Fixed Header Bar with 3 Buttons */}
+          title="Back to Student Archive"
+        >
+          <svg style={{ width: '16px', height: '16px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          SA
+        </a>
+        {/* Timer - with left margin to avoid SA button */}
         <div style={{
-          position: 'sticky',
-          top: 0,
-          zIndex: 100,
-          background: 'white',
-          borderBottom: '1px solid #e5e7eb',
-          padding: '16px 40px',
           display: 'flex',
           alignItems: 'center',
           gap: '12px',
-          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+          background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
+          padding: '8px 16px',
+          borderRadius: '8px',
+          color: 'white',
+          marginLeft: '80px'
         }}>
-          {/* Submit Button */}
-          <button
-            onClick={() => setShowSubmitConfirm(true)}
-            style={{
-              padding: '10px 20px',
-              background: '#1f2937',
-              color: 'white',
-              border: 'none',
-              borderRadius: '12px',
-              fontSize: '0.875rem',
-              fontWeight: '500',
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-              whiteSpace: 'nowrap',
-              fontFamily: 'inherit',
-              boxShadow: '0 4px 0 #111827, 0 6px 12px rgba(0, 0, 0, 0.2)',
-              position: 'relative',
-              top: '0'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 6px 0 #111827, 0 8px 16px rgba(0, 0, 0, 0.25)';
-              e.currentTarget.style.top = '-2px';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 4px 0 #111827, 0 6px 12px rgba(0, 0, 0, 0.2)';
-              e.currentTarget.style.top = '0';
-            }}
-            onMouseDown={(e) => {
-              e.currentTarget.style.boxShadow = '0 2px 0 #111827, 0 3px 6px rgba(0, 0, 0, 0.2)';
-              e.currentTarget.style.top = '2px';
-            }}
-            onMouseUp={(e) => {
-              e.currentTarget.style.boxShadow = '0 4px 0 #111827, 0 6px 12px rgba(0, 0, 0, 0.2)';
-              e.currentTarget.style.top = '0';
-            }}
-          >
-            Submit
-          </button>
+          <span style={{ fontSize: '0.85rem', opacity: 0.9 }}>⏱️</span>
+          <span style={{
+            fontSize: '1.2rem',
+            fontWeight: '700',
+            fontFamily: 'monospace',
+            color: getTimeColor()
+          }}>
+            {formatTime(timeRemaining)}
+          </span>
+        </div>
 
-          {/* Pause/Resume Button */}
+        {/* Zoom Controls */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          background: '#f1f5f9',
+          padding: '4px',
+          borderRadius: '8px'
+        }}>
           <button
-            onClick={() => setIsPaused(!isPaused)}
+            onClick={handleZoomOut}
             style={{
-              padding: '10px 20px',
+              width: '32px',
+              height: '32px',
               background: 'white',
-              color: '#1f2937',
-              border: '2px solid #e5e7eb',
-              borderRadius: '12px',
-              fontSize: '0.875rem',
-              fontWeight: '500',
+              border: '1px solid #e2e8f0',
+              borderRadius: '6px',
               cursor: 'pointer',
-              transition: 'all 0.15s',
-              whiteSpace: 'nowrap',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              fontFamily: 'inherit',
-              boxShadow: '0 4px 0 #d1d5db, 0 6px 12px rgba(0, 0, 0, 0.15)',
-              position: 'relative',
-              top: '0'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#f9fafb';
-              e.currentTarget.style.boxShadow = '0 6px 0 #d1d5db, 0 8px 16px rgba(0, 0, 0, 0.2)';
-              e.currentTarget.style.top = '-2px';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'white';
-              e.currentTarget.style.boxShadow = '0 4px 0 #d1d5db, 0 6px 12px rgba(0, 0, 0, 0.15)';
-              e.currentTarget.style.top = '0';
-            }}
-            onMouseDown={(e) => {
-              e.currentTarget.style.boxShadow = '0 2px 0 #d1d5db, 0 3px 6px rgba(0, 0, 0, 0.15)';
-              e.currentTarget.style.top = '2px';
-            }}
-            onMouseUp={(e) => {
-              e.currentTarget.style.boxShadow = '0 4px 0 #d1d5db, 0 6px 12px rgba(0, 0, 0, 0.15)';
-              e.currentTarget.style.top = '0';
-            }}
-          >
-            <div style={{
-              width: '18px',
-              height: '18px',
-              border: '2px solid #1f2937',
-              borderRadius: '50%',
+              fontSize: '1.2rem',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '10px',
-              color: '#1f2937'
-            }}>
-              {isPaused ? '▶' : '❚❚'}
-            </div>
-            {isPaused ? 'Resume' : 'Pause'}
-          </button>
-
-          {/* Spacer */}
-          <div style={{ flex: 1 }}></div>
-
-          {/* Fullscreen Toggle */}
-          <button
-            onClick={toggleFullscreen}
-            style={{
-              padding: '10px 20px',
-              background: 'white',
-              color: '#6b7280',
-              border: '2px solid #e5e7eb',
-              borderRadius: '12px',
-              fontSize: '0.875rem',
-              fontWeight: '500',
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-              whiteSpace: 'nowrap',
-              fontFamily: 'inherit',
-              boxShadow: '0 4px 0 #d1d5db, 0 6px 12px rgba(0, 0, 0, 0.15)',
-              position: 'relative',
-              top: '0'
+              transition: 'all 0.2s'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#f9fafb';
-              e.currentTarget.style.boxShadow = '0 6px 0 #d1d5db, 0 8px 16px rgba(0, 0, 0, 0.2)';
-              e.currentTarget.style.top = '-2px';
+              e.currentTarget.style.background = '#4F46E5';
+              e.currentTarget.style.color = 'white';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'white';
-              e.currentTarget.style.boxShadow = '0 4px 0 #d1d5db, 0 6px 12px rgba(0, 0, 0, 0.15)';
-              e.currentTarget.style.top = '0';
-            }}
-            onMouseDown={(e) => {
-              e.currentTarget.style.boxShadow = '0 2px 0 #d1d5db, 0 3px 6px rgba(0, 0, 0, 0.15)';
-              e.currentTarget.style.top = '2px';
-            }}
-            onMouseUp={(e) => {
-              e.currentTarget.style.boxShadow = '0 4px 0 #d1d5db, 0 6px 12px rgba(0, 0, 0, 0.15)';
-              e.currentTarget.style.top = '0';
+              e.currentTarget.style.color = 'black';
             }}
           >
-            {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
+            −
+          </button>
+          <span style={{
+            fontSize: '0.9rem',
+            fontWeight: '600',
+            color: '#475569',
+            minWidth: '50px',
+            textAlign: 'center'
+          }}>
+            {Math.round(zoom * 100)}%
+          </span>
+          <button
+            onClick={handleZoomIn}
+            style={{
+              width: '32px',
+              height: '32px',
+              background: 'white',
+              border: '1px solid #e2e8f0',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontSize: '1.2rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'all 0.2s'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = '#4F46E5';
+              e.currentTarget.style.color = 'white';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'white';
+              e.currentTarget.style.color = 'black';
+            }}
+          >
+            +
           </button>
         </div>
 
-        {/* Scrollable Content Area */}
-        <div style={{ flex: 1, overflowY: 'auto', padding: '24px', maxWidth: '1200px' }}>
-            <div style={{ background: 'white', padding: '24px', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-              {examPaper.questions.map((question, idx) => {
-                // Calculate which page this question is likely on
-                // Rough estimate: ~2-3 questions per page
-                const estimatedPage = Math.floor(idx / 2.5) + 2; // +2 because page 1 is cover
+        {/* Progress Indicator */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px'
+        }}>
+          <span style={{ fontSize: '0.9rem', fontWeight: '600', color: '#475569' }}>
+            Answered:
+          </span>
+          <span style={{ fontSize: '1.1rem', fontWeight: '700', color: '#4F46E5' }}>
+            {allQuestionIds.filter(qId => getQuestionStatus(qId) === 'answered').length}/{allQuestionIds.length}
+          </span>
+        </div>
+      </header>
+
+      {/* Main Content Area with Sidebar and Questions */}
+      <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
+        {/* Side Navigation */}
+        <div style={{
+          width: '280px',
+          background: 'white',
+          borderRight: '2px solid #e2e8f0',
+          padding: '20px',
+          overflowY: 'auto',
+          flexShrink: 0,
+          boxShadow: '2px 0 10px rgba(0,0,0,0.05)'
+        }}>
+          {/* Progress Bar */}
+          <div style={{ marginBottom: '24px' }}>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginBottom: '8px'
+            }}>
+              <span style={{ fontSize: '0.85rem', fontWeight: '600', color: '#475569' }}>
+                Progress
+              </span>
+              <span style={{ fontSize: '0.85rem', fontWeight: '700', color: '#4F46E5' }}>
+                {progress}%
+              </span>
+            </div>
+            <div style={{
+              height: '8px',
+              background: '#e2e8f0',
+              borderRadius: '5px',
+              overflow: 'hidden'
+            }}>
+              <div style={{
+                height: '100%',
+                background: 'linear-gradient(90deg, #4F46E5 0%, #7C3AED 100%)',
+                borderRadius: '5px',
+                width: `${progress}%`,
+                transition: 'width 0.3s ease'
+              }} />
+            </div>
+          </div>
+
+          {/* Paper Info */}
+          <div style={{ marginBottom: '24px' }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '8px' }}>
+              {examPaper.subject}
+            </h3>
+            <div style={{ fontSize: '0.85rem', color: '#64748b' }}>
+              {examPaper.season} {examPaper.year} • Variant {examPaper.variant}
+            </div>
+            <div style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '4px' }}>
+              Total: {examPaper.totalMarks} marks
+            </div>
+          </div>
+
+          {/* Question Navigation */}
+          <div>
+            <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: '#475569', marginBottom: '12px' }}>
+              Questions
+            </h4>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px' }}>
+              {allQuestionIds.map((qId, idx) => {
+                const status = getQuestionStatus(qId);
+                let bgColor = '#f1f5f9'; // unanswered
+                let textColor = '#64748b';
                 
-                // Get tables for this question's estimated page and adjacent pages
-                const questionTables: { [page: string]: any[] } = {};
-                if ((examPaper as any).tables) {
-                  for (let p = estimatedPage - 1; p <= estimatedPage + 1; p++) {
-                    const pageKey = p.toString();
-                    if ((examPaper as any).tables[pageKey]) {
-                      questionTables[pageKey] = (examPaper as any).tables[pageKey];
-                    }
-                  }
+                if (status === 'answered') {
+                  bgColor = '#dcfce7';
+                  textColor = '#16a34a';
+                } else if (status === 'flagged') {
+                  bgColor = '#fef3c7';
+                  textColor = '#d97706';
                 }
-                
-                const hasTables = Object.keys(questionTables).length > 0;
-                
+
                 return (
+                  <button
+                    key={qId}
+                    onClick={() => {
+                      const element = document.getElementById(`question-${qId}`);
+                      element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                    style={{
+                      padding: '10px',
+                      background: bgColor,
+                      color: textColor,
+                      border: 'none',
+                      borderRadius: '8px',
+                      fontSize: '0.85rem',
+                      fontWeight: '600',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'scale(1.05)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }}
+                  >
+                    {qId}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Legend */}
+          <div style={{ marginTop: '24px', padding: '16px', background: '#f8fafc', borderRadius: '10px' }}>
+            <div style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '10px', fontWeight: '600' }}>
+              Legend
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.8rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ width: '16px', height: '16px', background: '#dcfce7', borderRadius: '4px' }}></div>
+                <span style={{ color: '#64748b' }}>Answered</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ width: '16px', height: '16px', background: '#fef3c7', borderRadius: '4px' }}></div>
+                <span style={{ color: '#64748b' }}>Flagged</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <div style={{ width: '16px', height: '16px', background: '#f1f5f9', borderRadius: '4px' }}></div>
+                <span style={{ color: '#64748b' }}>Unanswered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content with Zoom Transform */}
+        <main style={{
+          flex: 1,
+          width: '100%',
+          overflowY: 'auto',
+          overflowX: 'hidden'
+        }}>
+          <div
+            style={{
+              transform: `scale(${zoom})`,
+              transformOrigin: 'top center',
+              width: `${100 / zoom}%`,
+              minHeight: '100%',
+              transition: 'transform 0.15s ease-out'
+            }}
+          >
+            <div style={{
+              padding: '24px 16px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '32px'
+            }}>
+              {/* Questions Container */}
+              <div style={{
+                maxWidth: '900px',
+                margin: '0 auto',
+                width: '100%',
+                background: 'white',
+                padding: '40px',
+                borderRadius: '16px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.05)'
+              }}>
+                {examPaper.questions.map((question, idx) => (
                   <div key={idx} id={`question-${question.number}`}>
                     <QuestionRendererSimple
                       question={question}
@@ -721,36 +518,69 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
                       answers={answers}
                       onAnswerChange={handleAnswerChange}
                       level={0}
-                      hasTables={hasTables}
                     />
-                    
-                    {/* Render tables associated with this question */}
-                    {hasTables && (
-                      <TableRenderer
-                        tables={questionTables}
-                        onAnswerChange={(tableId, tableAnswers) => {
-                          handleAnswerChange(`table_${tableId}`, JSON.stringify(tableAnswers));
-                        }}
-                        savedAnswers={
-                          Object.keys(answers)
-                            .filter(key => key.startsWith('table_'))
-                            .reduce((acc, key) => {
-                              const tableId = key.replace('table_', '');
-                              try {
-                                acc[tableId] = JSON.parse(answers[key].answer as string);
-                              } catch (e) {
-                                // Invalid JSON, skip
-                              }
-                              return acc;
-                            }, {} as { [tableId: string]: { [rowIndex: number]: number } })
-                        }
-                      />
-                    )}
                   </div>
-                );
-              })}
+                ))}
+              </div>
+
+              {/* Submit Button Section - Natural Flow at End */}
+              <div style={{
+                maxWidth: '900px',
+                margin: '0 auto',
+                width: '100%',
+                paddingTop: '48px',
+                paddingBottom: '96px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                borderTop: '2px dashed #cbd5e1'
+              }}>
+                <h3 style={{
+                  fontSize: '1.25rem',
+                  fontWeight: '700',
+                  color: '#1e293b',
+                  marginBottom: '8px'
+                }}>
+                  Finished with your exam?
+                </h3>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: '#64748b',
+                  marginBottom: '24px',
+                  textAlign: 'center'
+                }}>
+                  Make sure you have answered all questions before submitting.
+                </p>
+                <button
+                  onClick={() => setShowSubmitConfirm(true)}
+                  style={{
+                    background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '16px',
+                    padding: '16px 48px',
+                    fontSize: '1.125rem',
+                    fontWeight: '700',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s',
+                    boxShadow: '0 4px 16px rgba(245, 158, 11, 0.4)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(245, 158, 11, 0.5)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 16px rgba(245, 158, 11, 0.4)';
+                  }}
+                >
+                  Submit Exam
+                </button>
+              </div>
             </div>
-        </div>
+          </div>
+        </main>
       </div>
 
       {/* Submit Confirmation Modal */}
@@ -761,42 +591,24 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'rgba(0, 0, 0, 0.4)',
+          background: 'rgba(0, 0, 0, 0.5)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          zIndex: 1000,
-          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+          zIndex: 1000
         }}>
           <div style={{
             background: 'white',
-            padding: '32px',
-            borderRadius: '8px',
+            padding: '40px',
+            borderRadius: '16px',
             maxWidth: '400px',
-            textAlign: 'center',
-            border: '1px solid #e5e7eb'
+            textAlign: 'center'
           }}>
-            <div style={{
-              fontSize: '2.5rem',
-              marginBottom: '16px',
-              color: '#f59e0b'
-            }}>⚠</div>
-            <h3 style={{
-              fontSize: '1.25rem',
-              color: '#1f2937',
-              marginBottom: '12px',
-              fontWeight: '600',
-              fontFamily: 'inherit'
-            }}>
+            <div style={{ fontSize: '3rem', marginBottom: '20px' }}>⚠️</div>
+            <h3 style={{ fontSize: '1.5rem', color: '#1e293b', marginBottom: '12px' }}>
               Submit Exam?
             </h3>
-            <p style={{
-              color: '#6b7280',
-              marginBottom: '24px',
-              fontSize: '0.875rem',
-              lineHeight: '1.5',
-              fontFamily: 'inherit'
-            }}>
+            <p style={{ color: '#64748b', marginBottom: '24px' }}>
               Are you sure you want to submit? You won't be able to change your answers after submission.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
@@ -804,22 +616,14 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
                 onClick={() => setShowSubmitConfirm(false)}
                 style={{
                   flex: 1,
-                  padding: '10px 20px',
-                  background: 'white',
-                  color: '#6b7280',
-                  border: '1px solid #e5e7eb',
-                  borderRadius: '6px',
-                  fontSize: '0.875rem',
-                  fontWeight: '500',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s',
-                  fontFamily: 'inherit'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#f9fafb';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'white';
+                  padding: '12px',
+                  background: '#f1f5f9',
+                  color: '#475569',
+                  border: 'none',
+                  borderRadius: '10px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer'
                 }}
               >
                 Cancel
@@ -828,22 +632,14 @@ export function ExamInterface({ examPaper, onSubmit }: ExamInterfaceProps) {
                 onClick={handleSubmit}
                 style={{
                   flex: 1,
-                  padding: '10px 20px',
-                  background: '#22c55e',
+                  padding: '12px',
+                  background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
                   color: 'white',
                   border: 'none',
-                  borderRadius: '6px',
-                  fontSize: '0.875rem',
-                  fontWeight: '500',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s',
-                  fontFamily: 'inherit'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#16a34a';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#22c55e';
+                  borderRadius: '10px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer'
                 }}
               >
                 Submit

@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { InputFactory } from './InputFactory';
-import { TableRenderer } from './TableRenderer';
 import { PaperQuestion, ParsedPaper } from '@/lib/exam/types';
 import './ExamStyles.css';
 
@@ -54,9 +53,6 @@ export const PaperRenderer: React.FC<PaperRendererProps> = ({ paperId }) => {
         }
         
         const data = await response.json();
-        console.log('[PaperRenderer] Loaded paper data:', data);
-        console.log('[PaperRenderer] Has tables?', !!data.tables);
-        console.log('[PaperRenderer] Tables data:', data.tables);
         setPaper(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load paper');
@@ -228,9 +224,6 @@ export const PaperRenderer: React.FC<PaperRendererProps> = ({ paperId }) => {
       <div className="questions-container">
         {paper.questions.map(question => renderQuestion(question))}
       </div>
-
-      {/* Render detected tables if available */}
-      {(paper as any).tables && <TableRenderer tables={(paper as any).tables} />}
 
       <div className="submit-section">
         <button

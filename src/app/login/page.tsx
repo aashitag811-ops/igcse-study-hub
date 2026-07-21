@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import { useRouter } from 'next/navigation';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 function LoginPageContent() {
   const [isLogin, setIsLogin] = useState(true);
@@ -426,6 +427,8 @@ function LoginPageContent() {
         </div>
       </div>
 
+      {/* Use existing ThemeToggle component */}
+      <ThemeToggle />
     </div>
   );
 }

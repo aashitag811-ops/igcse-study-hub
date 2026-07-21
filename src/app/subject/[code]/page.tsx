@@ -8,6 +8,7 @@ import { RESOURCE_TYPES } from '@/lib/constants/resourceTypes';
 import { HeartIcon, CreatorBadge } from '@/components/HeartIcon';
 import { EditResourceModal } from '@/components/EditResourceModal';
 import { AnimatedCounter } from '@/components/AnimatedCounter';
+import BackButton from '@/components/BackButton';
 
 interface Resource {
   id: string;
@@ -95,8 +96,10 @@ export default function SubjectDetailPage() {
       countQuery = countQuery.eq('resource_type', selectedType);
     }
 
-    const { count } = await countQuery;
-    setTotalCount(count || 0);
+    const { count, error: countError } = await countQuery;
+    if (!countError) {
+      setTotalCount(count || 0);
+    }
 
     // Build query for data with pagination
     let query = supabase
@@ -132,6 +135,8 @@ export default function SubjectDetailPage() {
 
     if (error) {
       console.error('Error fetching resources:', error);
+      // Set empty array if database is not configured
+      setResources([]);
     } else {
       setResources(data || []);
     }
@@ -314,6 +319,7 @@ export default function SubjectDetailPage() {
 
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 50%, #FCE7F3 100%)' }}>
+      <BackButton />
       {/* Navigation Bar */}
       <nav style={{
         background: 'rgba(255, 255, 255, 0.9)',
@@ -431,6 +437,105 @@ export default function SubjectDetailPage() {
           </div>
         </div>
       </div>
+
+      {/* MCQ Practice Section - For all MCQ subjects */}
+      {['0610', '0620', '0625', '0580', '0455', '0417', '0452'].includes(code) && (
+        <div style={{ maxWidth: '1280px', margin: '2rem auto 0', padding: '0 1rem' }}>
+          <div style={{
+            background: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
+            borderRadius: '1rem',
+            padding: '2rem',
+            boxShadow: '0 10px 25px rgba(16, 185, 129, 0.3)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '2rem'
+          }}>
+            <div style={{ flex: 1 }}>
+              <h2 style={{
+                fontSize: '1.75rem',
+                fontWeight: '700',
+                color: 'white',
+                marginBottom: '0.5rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem'
+              }}>
+                <span style={{ fontSize: '2rem' }}>📝</span>
+                Practice Past Papers
+              </h2>
+              <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1rem', marginBottom: '1.5rem' }}>
+                Test your knowledge with timed MCQ papers. Get instant feedback with auto-correction and detailed results!
+              </p>
+              <div style={{ display: 'flex', gap: '1rem' }}>
+                <button
+                  onClick={() => router.push(`/practice?mode=test&subject=${code}`)}
+                  style={{
+                    padding: '0.75rem 2rem',
+                    background: 'white',
+                    color: '#059669',
+                    border: 'none',
+                    borderRadius: '0.75rem',
+                    fontSize: '1rem',
+                    fontWeight: '700',
+                    cursor: 'pointer',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                    transition: 'all 0.2s',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.2)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                  }}
+                >
+                  Auto-marked
+                  <span style={{ fontSize: '1.25rem' }}>→</span>
+                </button>
+                <button
+                  onClick={() => router.push(`/practice?mode=view&subject=${code}`)}
+                  style={{
+                    padding: '0.75rem 2rem',
+                    background: 'rgba(255, 255, 255, 0.2)',
+                    color: 'white',
+                    border: '2px solid white',
+                    borderRadius: '0.75rem',
+                    fontSize: '1rem',
+                    fontWeight: '700',
+                    cursor: 'pointer',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                    transition: 'all 0.2s',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.2)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                  }}
+                >
+                  View Mode
+                  <span style={{ fontSize: '1.25rem' }}>→</span>
+                </button>
+              </div>
+            </div>
+            <div style={{ fontSize: '6rem', opacity: 0.2 }}>
+              🎯
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Main Content */}
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '2rem 1rem', display: 'flex', gap: '2rem' }}>

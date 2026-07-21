@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fredoka } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const fredoka = Fredoka({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={fredoka.className}>
         <ThemeProvider>
           {children}
+          <ThemeToggle />
         </ThemeProvider>
       </body>
     </html>

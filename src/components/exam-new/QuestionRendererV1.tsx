@@ -84,39 +84,16 @@ const QuestionRendererV1: React.FC<QuestionRendererV1Props> = ({
     );
   }
 
-  // 3. Default Standard Question with Auto-Expanding Textarea
-  const textareaRef = React.useRef<HTMLTextAreaElement>(null);
-  
-  // Auto-resize function
-  const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    onAnswerChange(e.target.value);
-    
-    // Auto-expand the textarea
-    if (textareaRef.current) {
-      textareaRef.current.style.height = 'auto';
-      textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px';
-    }
-  };
-  
-  // Set initial height on mount
-  React.useEffect(() => {
-    if (textareaRef.current && answer) {
-      textareaRef.current.style.height = 'auto';
-      textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px';
-    }
-  }, [answer]);
-  
+  // 3. Default Standard Question
   return (
     <div className="standard-q mb-6">
       <p className="mb-3"><strong>{question.id}.</strong> {question.text}</p>
-      <textarea
-        ref={textareaRef}
-        className="w-full border rounded p-3 focus:ring-2 focus:ring-blue-500 outline-none resize-none overflow-hidden"
+      <textarea 
+        className="w-full border rounded p-3 focus:ring-2 focus:ring-blue-500 outline-none" 
         rows={Math.max(3, question.marks || 1)}
         placeholder="Enter your response..."
         value={answer || ''}
-        onChange={handleTextareaChange}
-        style={{ minHeight: `${Math.max(3, question.marks || 1) * 1.5}rem` }}
+        onChange={(e) => onAnswerChange(e.target.value)}
       />
       <span className="text-gray-500 text-sm mt-1 block">[{question.marks} marks]</span>
     </div>
