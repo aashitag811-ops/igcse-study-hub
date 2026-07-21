@@ -59,16 +59,18 @@ export default function MCQExamPage() {
     const loadPaper = async () => {
       try {
         // Validate paper ID format and check if it's an MCQ paper
-        // Format: 0455_m25_qp_22 or 0455_s25_qp_12
+        // Format 1: 0455_m25_qp_22  (with _qp_)
+        // Format 2: 0610_m25_12     (without _qp_)
         const paperIdParts = paperId.split('_');
-        if (paperIdParts.length < 4) {
+        if (paperIdParts.length < 3) {
           throw new Error('Invalid paper ID format');
         }
-        
+
         const subjectCode = paperIdParts[0];
         const sessionYear = paperIdParts[1]; // e.g., "m25", "s25"
         const year = parseInt('20' + sessionYear.substring(1)); // Extract year: "m25" -> 2025
-        const componentStr = paperIdParts[3]; // e.g., "22", "12"
+        // Handle both formats: _qp_22 (part[3]) and _12 (part[2])
+        const componentStr = paperIdParts.length >= 4 ? paperIdParts[3] : paperIdParts[2]; // e.g., "22", "12"
         const component = parseInt(componentStr.substring(0, 1)); // First digit is component: "22" -> 2, "12" -> 1
         
         // Server-side validation: Check if this paper should have MCQ test mode
