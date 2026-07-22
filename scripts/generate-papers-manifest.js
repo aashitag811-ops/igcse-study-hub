@@ -5,7 +5,6 @@ const fs = require('fs');
 const path = require('path');
 
 const papersDir = path.join(__dirname, '../public/papers');
-const imagesDir = path.join(__dirname, '../public/images');
 
 const files = fs.readdirSync(papersDir).filter(f => f.endsWith('.json'));
 
@@ -21,19 +20,26 @@ const papers = [];
 for (const file of files) {
   const base = file.replace('.json', '');
 
-  // Pattern 1: 0610_m20_qp_22  (canonical format with images)
+  // Pattern 1: 0610_m20_qp_22  (canonical format)
   let m = base.match(/^(\d{4})_([msw])(\d{2})_qp_(\d)(\d)$/);
   if (m) {
-    // Only include if the JSON actually has imageUrl on first question
-    // OR if there's no image system for this subject (accounting, economics text papers)
     const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
     const qs = d.questions || [];
-    const hasImage = qs.length > 0 && qs[0].imageUrl;
-    const hasOptions = qs.length > 0 && qs[0].options && qs[0].options.length > 0;
-    // Include if: has images (image-based MCQ) OR has text options (text-based MCQ like accounting)
-    if (hasImage || hasOptions) {
-      papers.push({ id: base, subjectCode: m[1], year: 2000 + parseInt(m[3]), session: m[2], component: parseInt(m[4]), variant: parseInt(m[5]) });
-    }
+    const hasImage = qs.length > 0 && !!qs[0].imageUrl;
+    // hasTextOptions = parsed with text only (wrong parse) - view only
+    const hasTextOptions = qs.length > 0 && !qs[0].imageUrl && qs[0].options && qs[0].options.length > 0;
+    const isEmpty = qs.length === 0;
+
+    papers.push({
+      id: base,
+      subjectCode: m[1],
+      year: 2000 + parseInt(m[3]),
+      session: m[2],
+      component: parseInt(m[4]),
+      variant: parseInt(m[5]),
+      // testModeAvailable = true only if image-based MCQ
+      testModeAvailable: hasImage,
+    });
     continue;
   }
 
@@ -41,14 +47,21 @@ for (const file of files) {
   m = base.match(/^(\d{4})_([msw])(\d{2})_(\d)(\d)$/);
   if (m) {
     const qpEquivalent = `${m[1]}_${m[2]}${m[3]}_qp_${m[4]}${m[5]}`;
-    if (qpIds.has(qpEquivalent)) continue; // skip — the _qp_ version is already included
+    if (qpIds.has(qpEquivalent)) continue; // skip — _qp_ version already included
+
     const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
     const qs = d.questions || [];
-    const hasImage = qs.length > 0 && qs[0].imageUrl;
-    const hasOptions = qs.length > 0 && qs[0].options && qs[0].options.length > 0;
-    if (hasImage || hasOptions) {
-      papers.push({ id: base, subjectCode: m[1], year: 2000 + parseInt(m[3]), session: m[2], component: parseInt(m[4]), variant: parseInt(m[5]) });
-    }
+    const hasImage = qs.length > 0 && !!qs[0].imageUrl;
+
+    papers.push({
+      id: base,
+      subjectCode: m[1],
+      year: 2000 + parseInt(m[3]),
+      session: m[2],
+      component: parseInt(m[4]),
+      variant: parseInt(m[5]),
+      testModeAvailable: hasImage,
+    });
   }
 }
 
@@ -68,6 +81,7 @@ export interface PaperEntry {
   session: string;
   component: number;
   variant: number;
+  testModeAvailable: boolean;
 }
 
 const papers: PaperEntry[] = ${JSON.stringify(papers, null, 2)};
@@ -78,7 +92,11 @@ export default papers;
 fs.writeFileSync(path.join(__dirname, '../src/lib/data/papers-manifest.ts'), out);
 console.log(`Generated ${papers.length} papers → src/lib/data/papers-manifest.ts`);
 
-// Breakdown
 const bySubject = {};
-for (const p of papers) bySubject[p.subjectCode] = (bySubject[p.subjectCode] || 0) + 1;
-console.log(JSON.stringify(bySubject, null, 2));
+const testReady = {};
+for (const p of papers) {
+  bySubject[p.subjectCode] = (bySubject[p.subjectCode] || 0) + 1;
+  if (p.testModeAvailable) testReady[p.subjectCode] = (testReady[p.subjectCode] || 0) + 1;
+}
+console.log('Total by subject:', JSON.stringify(bySubject));
+console.log('Test-mode ready:', JSON.stringify(testReady));

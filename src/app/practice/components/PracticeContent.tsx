@@ -18,6 +18,7 @@ interface PaperMetadata {
   paperComponent: number;
   variant: number;
   filename: string;
+  testModeAvailable: boolean;
 }
 
 const SEASON_CODES: { [key: string]: string } = {
@@ -61,7 +62,8 @@ export default function PracticeContent() {
             season,
             paperComponent: paper.component,
             variant: paper.variant,
-            filename: `${paper.id}.json`
+            filename: `${paper.id}.json`,
+            testModeAvailable: paper.testModeAvailable ?? false,
           };
         });
 
@@ -195,23 +197,9 @@ export default function PracticeContent() {
   );
 
   const subjectCode = selectedSubject.split(' ').pop() || '';
-  
-  // Check if test mode is available for this subject-component combination
-  let testModeEnabled = isTestModeAvailable(subjectCode, selectedPaperComponent.toString());
-  
-  // Disable test mode for theory papers (pre-2016 science papers 2 & 3)
-  const isTheoryPaper = (
-    // Chemistry pre-2016: Papers 2 & 3 are theory (2010-2015)
-    (subjectCode === '0620' && selectedYear <= 2015 && (selectedPaperComponent === 2 || selectedPaperComponent === 3)) ||
-    // Biology pre-2016: Papers 2 & 3 are theory (2010-2015)
-    (subjectCode === '0610' && selectedYear <= 2015 && (selectedPaperComponent === 2 || selectedPaperComponent === 3)) ||
-    // Physics pre-2016: Papers 2 & 3 are theory (2010-2015)
-    (subjectCode === '0625' && selectedYear <= 2015 && (selectedPaperComponent === 2 || selectedPaperComponent === 3))
-  );
-  
-  if (isTheoryPaper) {
-    testModeEnabled = false;
-  }
+
+  // Test mode is only available if the selected paper has image-based MCQ questions
+  const testModeEnabled = selectedPaper?.testModeAvailable ?? false;
 
   const handleViewPastPapers = () => {
     if (selectedPaper) {
