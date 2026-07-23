@@ -208,26 +208,9 @@ export default function PracticeContent() {
   };
 
   const handleStartPractice = () => {
+    // testModeEnabled is only true when the paper has full image-based MCQ
     if (selectedPaper && testModeEnabled) {
-      // Check if this is Chemistry pre-2015 (theory papers, not MCQ)
-      const isChemistryPre2015 = subjectCode === '0620' && selectedYear < 2015;
-      
-      // If Chemistry pre-2015, force View Mode (PDF viewer)
-      if (isChemistryPre2015) {
-        router.push(`/view-papers/${selectedPaper.id}`);
-        return;
-      }
-      
-      // Check if this is an MCQ paper (Paper 1 or Paper 2 for most subjects)
-      const isMCQPaper = selectedPaperComponent === 1 || selectedPaperComponent === 2;
-      
-      if (isMCQPaper) {
-        // Use mcq-exam route for MCQ papers
-        router.push(`/mcq-exam/${selectedPaper.id}`);
-      } else {
-        // Use practice route for written papers
-        router.push(`/practice/${selectedPaper.id}`);
-      }
+      router.push(`/mcq-exam/${selectedPaper.id}`);
     }
   };
 

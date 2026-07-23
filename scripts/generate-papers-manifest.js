@@ -25,10 +25,15 @@ for (const file of files) {
   if (m) {
     const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
     const qs = d.questions || [];
-    const hasImage = qs.length > 0 && !!qs[0].imageUrl;
-    // hasTextOptions = parsed with text only (wrong parse) - view only
-    const hasTextOptions = qs.length > 0 && !qs[0].imageUrl && qs[0].options && qs[0].options.length > 0;
-    const isEmpty = qs.length === 0;
+
+    // Skip completely empty papers — nothing to show
+    if (qs.length === 0) continue;
+
+    // testModeAvailable = ALL questions have a subject-folder imageUrl (not /images/mcq/ partial path)
+    // MIXED_IMG_TEXT (some mcq-path images + text options) = broken parse = view only
+    const allHaveSubjectImg = qs.every(q => q.imageUrl && !q.imageUrl.includes('/images/mcq/'));
+    const anyMcqPath = qs.some(q => q.imageUrl && q.imageUrl.includes('/images/mcq/'));
+    const testModeAvailable = allHaveSubjectImg && !anyMcqPath;
 
     papers.push({
       id: base,
@@ -37,8 +42,7 @@ for (const file of files) {
       session: m[2],
       component: parseInt(m[4]),
       variant: parseInt(m[5]),
-      // testModeAvailable = true only if image-based MCQ
-      testModeAvailable: hasImage,
+      testModeAvailable,
     });
     continue;
   }
@@ -51,7 +55,11 @@ for (const file of files) {
 
     const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
     const qs = d.questions || [];
-    const hasImage = qs.length > 0 && !!qs[0].imageUrl;
+    if (qs.length === 0) continue;
+
+    const allHaveSubjectImg = qs.every(q => q.imageUrl && !q.imageUrl.includes('/images/mcq/'));
+    const anyMcqPath = qs.some(q => q.imageUrl && q.imageUrl.includes('/images/mcq/'));
+    const testModeAvailable = allHaveSubjectImg && !anyMcqPath;
 
     papers.push({
       id: base,
@@ -60,7 +68,7 @@ for (const file of files) {
       session: m[2],
       component: parseInt(m[4]),
       variant: parseInt(m[5]),
-      testModeAvailable: hasImage,
+      testModeAvailable,
     });
   }
 }
