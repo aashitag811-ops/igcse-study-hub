@@ -49,7 +49,7 @@ for (const file of files) {
     // Accounting pre-2020 = combined theory+MCQ format, not pure MCQ
     if (subjectCode === '0452' && year < 2020) testModeAvailable = false;
     // Non-MCQ subjects
-    if (['0417','0520','0549','0580','0606','0500','0457'].includes(subjectCode)) testModeAvailable = false;
+    if (['0417','0450','0520','0549','0580','0606','0500','0457'].includes(subjectCode)) testModeAvailable = false;
 
     papers.push({
       id: base,
@@ -83,7 +83,7 @@ for (const file of files) {
 
     if (subjectCode2 === '0455' && component2 === 2) testModeAvailable = false;
     if (subjectCode2 === '0452' && year2 < 2020) testModeAvailable = false;
-    if (['0417','0520','0549','0580','0606','0500','0457'].includes(subjectCode2)) testModeAvailable = false;
+    if (['0417','0450','0520','0549','0580','0606','0500','0457'].includes(subjectCode2)) testModeAvailable = false;
 
     papers.push({
       id: base,
