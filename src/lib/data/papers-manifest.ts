@@ -5170,6 +5170,15 @@ const papers: PaperEntry[] = [
     "testModeAvailable": true
   },
   {
+    "id": "0620_m25_qp_12",
+    "subjectCode": "0620",
+    "year": 2025,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": true
+  },
+  {
     "id": "0620_m25_qp_22",
     "subjectCode": "0620",
     "year": 2025,
@@ -6304,6 +6313,15 @@ const papers: PaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "0620_s16_qp_12",
+    "subjectCode": "0620",
+    "year": 2016,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": true
+  },
+  {
     "id": "0620_s16_qp_22",
     "subjectCode": "0620",
     "year": 2016,
@@ -6653,6 +6671,15 @@ const papers: PaperEntry[] = [
     "component": 1,
     "variant": 3,
     "testModeAvailable": false
+  },
+  {
+    "id": "0620_s12_qp_12",
+    "subjectCode": "0620",
+    "year": 2012,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": true
   },
   {
     "id": "0620_s12_qp_22",
@@ -8113,6 +8140,15 @@ const papers: PaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "0625_s15_qp_12",
+    "subjectCode": "0625",
+    "year": 2015,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": true
+  },
+  {
     "id": "0625_s15_qp_22",
     "subjectCode": "0625",
     "year": 2015,
@@ -8210,6 +8246,15 @@ const papers: PaperEntry[] = [
     "component": 1,
     "variant": 3,
     "testModeAvailable": false
+  },
+  {
+    "id": "0625_w14_qp_12",
+    "subjectCode": "0625",
+    "year": 2014,
+    "session": "w",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": true
   },
   {
     "id": "0625_w14_qp_22",
