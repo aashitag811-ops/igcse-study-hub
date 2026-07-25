@@ -214,6 +214,12 @@ export default function PracticeContent() {
     }
   };
 
+  const handleStartPracticeMode = () => {
+    if (selectedPaper && testModeEnabled) {
+      router.push(`/practice/${selectedPaper.id}`);
+    }
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
@@ -392,6 +398,7 @@ export default function PracticeContent() {
         <StudyModeSelector
           onViewPapers={handleViewPastPapers}
           onStartPractice={handleStartPractice}
+          onStartPracticeMode={handleStartPracticeMode}
           isPaperSelected={!!selectedPaper}
           isTestModeEnabled={testModeEnabled}
           testModeMessage={getTestModeUnavailableMessage()}
