@@ -29,11 +29,27 @@ for (const file of files) {
     // Skip completely empty papers — nothing to show
     if (qs.length === 0) continue;
 
-    // testModeAvailable = ALL questions have a subject-folder imageUrl (not /images/mcq/ partial path)
-    // MIXED_IMG_TEXT (some mcq-path images + text options) = broken parse = view only
+    const subjectCode = m[1];
+    const year = 2000 + parseInt(m[3]);
+    const component = parseInt(m[4]); // first digit of variant e.g. "12" -> component 1
+    const variant = parseInt(m[5]);   // second digit
+
+    // testModeAvailable rules:
+    // - ALL questions must have a subject-folder imageUrl (not /images/mcq/ partial path)
+    // - Economics Paper 2 (component 2) = theory, never test mode
+    // - Accounting pre-2020 = mixed format, never test mode
+    // - Sciences Paper 1/2 variant 2 only = test mode if images present
     const allHaveSubjectImg = qs.every(q => q.imageUrl && !q.imageUrl.includes('/images/mcq/'));
     const anyMcqPath = qs.some(q => q.imageUrl && q.imageUrl.includes('/images/mcq/'));
-    const testModeAvailable = allHaveSubjectImg && !anyMcqPath;
+
+    let testModeAvailable = allHaveSubjectImg && !anyMcqPath;
+
+    // Economics Paper 2 = structured theory essay, not MCQ
+    if (subjectCode === '0455' && component === 2) testModeAvailable = false;
+    // Accounting pre-2020 = combined theory+MCQ format, not pure MCQ
+    if (subjectCode === '0452' && year < 2020) testModeAvailable = false;
+    // Non-MCQ subjects
+    if (['0417','0520','0549','0580','0606','0500','0457'].includes(subjectCode)) testModeAvailable = false;
 
     papers.push({
       id: base,
@@ -57,16 +73,24 @@ for (const file of files) {
     const qs = d.questions || [];
     if (qs.length === 0) continue;
 
+    const subjectCode2 = m[1];
+    const year2 = 2000 + parseInt(m[3]);
+    const component2 = parseInt(m[4]);
+
     const allHaveSubjectImg = qs.every(q => q.imageUrl && !q.imageUrl.includes('/images/mcq/'));
     const anyMcqPath = qs.some(q => q.imageUrl && q.imageUrl.includes('/images/mcq/'));
-    const testModeAvailable = allHaveSubjectImg && !anyMcqPath;
+    let testModeAvailable = allHaveSubjectImg && !anyMcqPath;
+
+    if (subjectCode2 === '0455' && component2 === 2) testModeAvailable = false;
+    if (subjectCode2 === '0452' && year2 < 2020) testModeAvailable = false;
+    if (['0417','0520','0549','0580','0606','0500','0457'].includes(subjectCode2)) testModeAvailable = false;
 
     papers.push({
       id: base,
       subjectCode: m[1],
-      year: 2000 + parseInt(m[3]),
+      year: year2,
       session: m[2],
-      component: parseInt(m[4]),
+      component: component2,
       variant: parseInt(m[5]),
       testModeAvailable,
     });

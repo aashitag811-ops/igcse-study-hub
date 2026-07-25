@@ -381,8 +381,8 @@ def main():
             expected_questions = int(sys.argv[idx + 1])
     
     # Build file paths
-    qp_path = f"scripts/{paper_id}.pdf"
-    ms_path = f"scripts/{paper_id.replace('_qp_', '_ms_')}.pdf"
+    qp_path = f"scripts/pastpapers/{paper_id}.pdf"
+    ms_path = f"scripts/pastpapers/{paper_id.replace('_qp_', '_ms_')}.pdf"
     
     # Check if files exist
     if not os.path.exists(qp_path):
