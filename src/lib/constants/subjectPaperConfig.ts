@@ -13,16 +13,9 @@ export interface SubjectConfig {
 }
 
 export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
-  // SCIENCES — Bio/Chem/Physics share identical structure
-  // Paper 1 = Core MCQ (40q, 40 marks, 45min) — Exam Mode ✓
-  // Paper 2 = Extended MCQ (40q, 40 marks, 45min) — Exam Mode ✓
-  // Paper 3 = Core Theory (80 marks, 1h15m) — View Mode only
-  // Paper 4 = Extended Theory (80 marks, 1h15m) — View Mode only
-  // Paper 5 = Practical Test (40 marks, 1h) — View Mode only
-  // Paper 6 = Alternative to Practical (40 marks, 1h) — View Mode only
+  // SCIENCES — Bio/Chem/Physics: Papers 1+2 = MCQ (Exam Mode ✓), Papers 3–6 = View only
   '0610': {
-    code: '0610',
-    name: 'Biology',
+    code: '0610', name: 'Biology',
     papers: [1, 2, 3, 4, 5, 6],
     paperDescriptions: {
       1: 'Core MCQ (40 questions)',
@@ -34,8 +27,7 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
     }
   },
   '0620': {
-    code: '0620',
-    name: 'Chemistry',
+    code: '0620', name: 'Chemistry',
     papers: [1, 2, 3, 4, 5, 6],
     paperDescriptions: {
       1: 'Core MCQ (40 questions)',
@@ -47,8 +39,7 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
     }
   },
   '0625': {
-    code: '0625',
-    name: 'Physics',
+    code: '0625', name: 'Physics',
     papers: [1, 2, 3, 4, 5, 6],
     paperDescriptions: {
       1: 'Core MCQ (40 questions)',
@@ -60,13 +51,9 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
     }
   },
 
-  // MATHEMATICS
-  // Pre-2025: Core P1(35%)+P3(65%), Extended P2(35%)+P4(65%), all calculator
-  // 2025+: Core P1(Non-Calc,50%)+P3(Calc,50%), Extended P2(Non-Calc,70m)+P4(Calc,130m)
-  // MCQ Count: 0
+  // MATHEMATICS — View Mode only (no MCQ)
   '0580': {
-    code: '0580',
-    name: 'Mathematics',
+    code: '0580', name: 'Mathematics',
     papers: [1, 2, 3, 4],
     paperDescriptions: {
       1: 'Core / Non-Calculator',
@@ -75,43 +62,34 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
       4: 'Extended / Calculator'
     }
   },
-  // Additional Mathematics — unchanged two-paper pure math, 80 marks each, MCQ: 0
   '0606': {
-    code: '0606',
-    name: 'Additional Mathematics',
+    code: '0606', name: 'Additional Mathematics',
     papers: [1, 2],
     paperDescriptions: {
-      1: 'Pure Mathematics 1 (80 marks)',
-      2: 'Pure Mathematics 2 (80 marks)'
+      1: 'Pure Mathematics 1',
+      2: 'Pure Mathematics 2'
     }
   },
 
   // BUSINESS & ECONOMICS
   '0450': {
-    code: '0450',
-    name: 'Business Studies',
+    code: '0450', name: 'Business Studies',
     papers: [1, 2],
     paperDescriptions: {
       1: 'Short Answer and Data Response',
       2: 'Case Study'
     }
   },
-  // Accounting: Pre-2020 P1 was mixed theory+MCQ. Post-2020 P1 = 35 MCQ standalone — Exam Mode ✓
-  // Paper 2 = Structured ledger paper (120 marks, 1h45m) — View Mode only
   '0452': {
-    code: '0452',
-    name: 'Accounting',
+    code: '0452', name: 'Accounting',
     papers: [1, 2],
     paperDescriptions: {
-      1: 'Multiple Choice (35 questions, post-2020)',
+      1: 'Multiple Choice (35 questions)',
       2: 'Structured Written Paper'
     }
   },
-  // Economics: Paper 1 = 30 MCQ (30 marks, 45min) — Exam Mode ✓
-  // Paper 2 = Structured data response + essays (80 marks, 2h15m) — View Mode only
   '0455': {
-    code: '0455',
-    name: 'Economics',
+    code: '0455', name: 'Economics',
     papers: [1, 2],
     paperDescriptions: {
       1: 'Multiple Choice (30 questions)',
@@ -119,22 +97,17 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
     }
   },
 
-  // LANGUAGES
-  // First Language English — MCQ: 0
-  // Pre-2020: shorter texts. 2020+: P1 Reading (80m, 2h), P2 Directed Writing (80m, 2h)
+  // LANGUAGES — View Mode only
   '0500': {
-    code: '0500',
-    name: 'First Language English',
+    code: '0500', name: 'First Language English',
     papers: [1, 2],
     paperDescriptions: {
-      1: 'Reading (80 marks)',
-      2: 'Directed Writing and Composition (80 marks)'
+      1: 'Reading',
+      2: 'Directed Writing and Composition'
     }
   },
-  // French: P1 Listening (MCQ sections present), P2 Reading, P4 Writing — View Mode only
   '0520': {
-    code: '0520',
-    name: 'French - Foreign Language',
+    code: '0520', name: 'French - Foreign Language',
     papers: [1, 2, 4],
     paperDescriptions: {
       1: 'Listening',
@@ -142,10 +115,8 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
       4: 'Writing'
     }
   },
-  // Hindi: P1 Reading & Writing, P2 Listening, Component 3 Speaking — View Mode only
   '0549': {
-    code: '0549',
-    name: 'Hindi as a Second Language',
+    code: '0549', name: 'Hindi as a Second Language',
     papers: [1, 2],
     paperDescriptions: {
       1: 'Reading and Writing',
@@ -153,25 +124,21 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
     }
   },
 
-  // TECHNOLOGY & PERSPECTIVES
-  // ICT: P1 Theory (80m, 2h), P2 Practical A (70m, 2h15m), P3 Practical B (70m, 2h15m) — View Mode only
+  // TECHNOLOGY & PERSPECTIVES — View Mode only
   '0417': {
-    code: '0417',
-    name: 'Information and Communication Technology',
+    code: '0417', name: 'Information and Communication Technology',
     papers: [1, 2, 3],
     paperDescriptions: {
-      1: 'Theory (80 marks)',
-      2: 'Practical Test A (70 marks)',
-      3: 'Practical Test B (70 marks)'
+      1: 'Theory',
+      2: 'Practical Test A',
+      3: 'Practical Test B'
     }
   },
-  // Global Perspectives: Component 1 Written Exam (70m, 1h15m), Components 2&3 = coursework — View Mode only
   '0457': {
-    code: '0457',
-    name: 'Global Perspectives',
+    code: '0457', name: 'Global Perspectives',
     papers: [1],
     paperDescriptions: {
-      1: 'Written Examination (70 marks)'
+      1: 'Written Examination'
     }
   }
 };
