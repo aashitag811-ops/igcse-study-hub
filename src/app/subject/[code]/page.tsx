@@ -469,7 +469,7 @@ export default function SubjectDetailPage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem' }}>
                 <button
-                  onClick={() => router.push(`/practice?mode=test&subject=${code}`)}
+                  onClick={() => router.push(`/practice?subject=${code}`)}
                   style={{
                     padding: '0.75rem 2rem',
                     background: 'white',
@@ -498,7 +498,7 @@ export default function SubjectDetailPage() {
                   <span style={{ fontSize: '1.25rem' }}>→</span>
                 </button>
                 <button
-                  onClick={() => router.push(`/practice?mode=view&subject=${code}`)}
+                  onClick={() => router.push(`/practice?subject=${code}`)}
                   style={{
                     padding: '0.75rem 2rem',
                     background: 'rgba(255, 255, 255, 0.2)',
