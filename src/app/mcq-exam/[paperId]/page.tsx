@@ -73,31 +73,18 @@ export default function MCQExamPage() {
         const componentStr = paperIdParts.length >= 4 ? paperIdParts[3] : paperIdParts[2]; // e.g., "22", "12"
         const component = parseInt(componentStr.substring(0, 1)); // First digit is component: "22" -> 2, "12" -> 1
         
-        // Server-side validation: Check if this paper should have MCQ test mode
-        const isTheoryPaper = (
-          // Chemistry pre-2016: Papers 2 & 3 are theory (2010-2015)
-          (subjectCode === '0620' && year <= 2015 && (component === 2 || component === 3)) ||
-          // Biology pre-2016: Papers 2 & 3 are theory (2010-2015)
-          (subjectCode === '0610' && year <= 2015 && (component === 2 || component === 3)) ||
-          // Physics pre-2016: Papers 2 & 3 are theory (2010-2015)
-          (subjectCode === '0625' && year <= 2015 && (component === 2 || component === 3)) ||
-          // Economics Paper 2 is NOT MCQ (Structured Questions)
-          (subjectCode === '0455' && component === 2) ||
-          // Biology Paper 4 is Theory (all years) - NEW INTERACTIVE THEORY SUPPORT
-          (subjectCode === '0610' && component === 4)
-        );
-        
-        // Check if this is a supported interactive theory paper (Biology Paper 4)
+        // Only redirect papers that are structurally never MCQ regardless of year
+        // Economics Paper 2 = structured essay questions, never MCQ
+        const isEconTheory = (subjectCode === '0455' && component === 2);
+        // Biology Paper 4 = interactive theory workspace
         const isInteractiveTheoryPaper = (subjectCode === '0610' && component === 4);
-        
-        if (isTheoryPaper) {
-          if (isInteractiveTheoryPaper) {
-            // Redirect to new interactive theory workspace
-            router.push(`/theory-exam/${paperId}`);
-          } else {
-            // Redirect to PDF viewer for other theory papers
-            router.push(`/view-papers/${paperId}`);
-          }
+
+        if (isInteractiveTheoryPaper) {
+          router.push(`/theory-exam/${paperId}`);
+          return;
+        }
+        if (isEconTheory) {
+          router.push(`/view-papers/${paperId}`);
           return;
         }
         

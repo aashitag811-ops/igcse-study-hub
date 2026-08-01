@@ -30,7 +30,8 @@ class ImageMCQParser:
             "0610": "biology",
             "0455": "economics",
             "0620": "chemistry",
-            "0625": "physics"
+            "0625": "physics",
+            "0452": "accounting",
         }
         return subjects.get(self.subject_code, "unknown")
     
@@ -170,7 +171,7 @@ class ImageMCQParser:
                         # Check if text is in footer zone and matches footer patterns
                         if bbox[1] > footer_zone_start:
                             # Look for UCLES, copyright, or paper codes
-                            if any(pattern in text.upper() for pattern in ["UCLES", "©", "0610/", "0455/", "0620/", "0625/"]):
+                            if any(pattern in text.upper() for pattern in ["UCLES", "©", "0610/", "0455/", "0620/", "0625/", "0452/"]):
                                 footer_y = min(footer_y, bbox[1] - 20)  # 20px margin above footer
         
         return footer_y

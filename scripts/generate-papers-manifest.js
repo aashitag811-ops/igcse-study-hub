@@ -46,8 +46,8 @@ for (const file of files) {
 
     // Economics Paper 2 = structured theory essay, not MCQ
     if (subjectCode === '0455' && component === 2) testModeAvailable = false;
-    // Accounting pre-2020 = combined theory+MCQ format, not pure MCQ
-    if (subjectCode === '0452' && year < 2020) testModeAvailable = false;
+    // Accounting pre-2020 = first 10 questions are MCQ - allow if images parsed
+    // (testModeAvailable is already set by allHaveSubjectImg check above)
     // Non-MCQ subjects
     if (['0417','0450','0520','0549','0580','0606','0500','0457'].includes(subjectCode)) testModeAvailable = false;
 
