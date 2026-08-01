@@ -330,11 +330,11 @@ export default function PracticeContent() {
                 <option value="">Select Paper</option>
                 {availablePaperComponents.map(component => {
                   const subjectCode = selectedSubject.split(' ').pop();
-                  const description = getPaperDescription(subjectCode || '', component);
+                  const description = getPaperDescription(subjectCode || '', component, selectedYear);
                   const syllabusLabel = getComponentLabel(subjectCode || '', component.toString(), selectedYear);
                   const disabled = isComponentDisabled(subjectCode || '', component.toString(), selectedYear);
                   
-                  let displayText = `Paper ${component} - ${description}`;
+                  let displayText = description;
                   if (syllabusLabel) {
                     displayText += ` ${syllabusLabel.icon || ''} [${syllabusLabel.label}]`;
                   }

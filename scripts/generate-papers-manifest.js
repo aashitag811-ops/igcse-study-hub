@@ -4,7 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const papersDir = path.join(__dirname, '../public/papers');
+const papersDir  = path.join(__dirname, '../public/papers');
+const pdfsDir    = path.join(__dirname, '../public/pdfs');
 
 const files = fs.readdirSync(papersDir).filter(f => f.endsWith('.json'));
 
@@ -28,6 +29,10 @@ for (const file of files) {
 
     // Skip completely empty papers — nothing to show
     if (qs.length === 0) continue;
+
+    // Skip viewOnly stubs that have no PDF on disk — nothing to show in any mode
+    const isViewOnly = d.viewOnly || (qs[0] && qs[0].viewOnly);
+    if (isViewOnly && !fs.existsSync(path.join(pdfsDir, base + '.pdf'))) continue;
 
     const subjectCode = m[1];
     const year = 2000 + parseInt(m[3]);
