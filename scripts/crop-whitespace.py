@@ -23,8 +23,8 @@ SUBJECT_DIRS = {
 }
 
 WHITE_THRESHOLD = 250   # rows with mean > this = white
-EDGE_PADDING    = 6     # px to keep at top and bottom edges
-MAX_GAP         = 6     # collapse any internal white run longer than this to this many px
+EDGE_PADDING    = 8     # px to keep at top and bottom edges
+MAX_GAP         = 18    # collapse any internal white run longer than this to this many px
 
 
 def compact_image(img_path: Path) -> tuple[bool, int, int]:
@@ -80,8 +80,8 @@ def compact_image(img_path: Path) -> tuple[bool, int, int]:
     new_arr = np.concatenate(kept_rows, axis=0)
     new_h = new_arr.shape[0]
 
-    if new_h >= h - 1:
-        return False, h, new_h  # nothing changed
+    if new_h >= h - 4:
+        return False, h, new_h  # nothing meaningful changed
 
     new_img = Image.fromarray(new_arr.astype(np.uint8))
     new_img.save(img_path, optimize=True)
