@@ -80,7 +80,7 @@ export default function MCQExamPage() {
         const isInteractiveTheoryPaper = (subjectCode === '0610' && component === 4);
 
         if (isInteractiveTheoryPaper) {
-          router.push(`/theory-exam/${paperId}`);
+          router.push(`/igcse/theory-exam/${paperId}`);
           return;
         }
         if (isEconTheory) {
@@ -205,7 +205,7 @@ export default function MCQExamPage() {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Paper Not Available</h2>
             <p className="text-slate-600 mb-6">{error}</p>
             <button
-              onClick={() => router.push('/mcq-test')}
+              onClick={() => router.push('/igcse/practice')}
               className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               ← Back to Selection

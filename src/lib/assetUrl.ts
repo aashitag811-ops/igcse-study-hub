@@ -15,7 +15,10 @@
  *                                      → "<BASE>/images/mcq/0610_m20_qp_22_q1_img0.png"
  */
 
-const BASE = (process.env.NEXT_PUBLIC_ASSET_BASE_URL ?? '').replace(/\/$/, '');
+// Ignore the asset base URL if it points to the known-broken GitHub raw repo
+// (that repo doesn't exist). Fall back to local /api/pdfs/ proxy.
+const _RAW_BASE = (process.env.NEXT_PUBLIC_ASSET_BASE_URL ?? '').replace(/\/$/, '');
+const BASE = _RAW_BASE.includes('raw.githubusercontent.com') ? '' : _RAW_BASE;
 
 /**
  * Returns the full URL for a question-paper or marking-scheme PDF.
