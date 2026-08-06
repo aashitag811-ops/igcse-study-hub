@@ -36,13 +36,13 @@ export default function Header() {
         
         <nav className="flex items-center gap-6">
           <Link
-            href="/browse"
+            href="/igcse/browse"
             className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors"
           >
             Browse
           </Link>
           <Link
-            href="/profile"
+            href="/igcse/profile"
             className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors"
           >
             Profile
