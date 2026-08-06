@@ -203,20 +203,20 @@ export default function PracticeContent() {
 
   const handleViewPastPapers = () => {
     if (selectedPaper) {
-      router.push(`/view-papers/${selectedPaper.id}`);
+      router.push(`/igcse/view-papers/${selectedPaper.id}`);
     }
   };
 
   const handleStartPractice = () => {
     // testModeEnabled is only true when the paper has full image-based MCQ
     if (selectedPaper && testModeEnabled) {
-      router.push(`/mcq-exam/${selectedPaper.id}`);
+      router.push(`/igcse/mcq-exam/${selectedPaper.id}`);
     }
   };
 
   const handleStartPracticeMode = () => {
     if (selectedPaper && testModeEnabled) {
-      router.push(`/practice/${selectedPaper.id}`);
+      router.push(`/igcse/practice/${selectedPaper.id}`);
     }
   };
 

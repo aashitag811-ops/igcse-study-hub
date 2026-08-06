@@ -72,7 +72,7 @@ export default function PastPapersHub() {
             </ul>
 
             <button
-              onClick={() => router.push('/practice?mode=test')}
+              onClick={() => router.push('/igcse/practice?mode=test')}
               className="w-full py-3 bg-gradient-to-r from-[#C9A84C] to-[#E2C97A] text-[#0A0806] rounded-lg font-semibold hover:from-[#E2C97A] hover:to-[#C9A84C] transition-all shadow-lg"
             >
               Start Practice
@@ -169,7 +169,7 @@ export default function PastPapersHub() {
             </div>
 
             <button
-              onClick={() => router.push('/practice?mode=view')}
+              onClick={() => router.push('/igcse/practice?mode=view')}
               className="w-full py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-semibold hover:from-blue-600 hover:to-indigo-700 transition-all shadow-lg"
             >
               Browse Papers

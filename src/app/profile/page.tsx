@@ -51,7 +51,7 @@ export default function ProfilePage() {
     const { data: { user } } = await supabase.auth.getUser();
     
     if (!user) {
-      router.push('/login');
+      router.push('/igcse/login');
       return;
     }
 
@@ -218,7 +218,7 @@ export default function ProfilePage() {
               Browse
             </button>
             <button
-              onClick={() => router.push('/upload')}
+              onClick={() => router.push('/igcse/upload')}
               style={{
                 padding: '0.5rem 1rem',
                 fontSize: '0.875rem',
@@ -488,7 +488,7 @@ export default function ProfilePage() {
                     Start sharing your study materials with the community!
                   </p>
                   <button
-                    onClick={() => router.push('/upload')}
+                    onClick={() => router.push('/igcse/upload')}
                     style={{
                       padding: '0.75rem 1.5rem',
                       background: 'linear-gradient(145deg, #2563EB, #1D4ED8)',

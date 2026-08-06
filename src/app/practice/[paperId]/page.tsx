@@ -73,7 +73,7 @@ export default function PracticePage() {
     <div className="min-h-screen flex items-center justify-center bg-slate-50">
       <div className="text-center space-y-4 max-w-sm">
         <p className="text-red-600 font-medium">{error}</p>
-        <button onClick={() => router.push('/practice')} className="px-4 py-2 bg-amber-600 text-white rounded-lg text-sm">
+        <button onClick={() => router.push('/igcse/practice')} className="px-4 py-2 bg-amber-600 text-white rounded-lg text-sm">
           ← Back
         </button>
       </div>
@@ -136,7 +136,7 @@ export default function PracticePage() {
               className="px-5 py-2.5 bg-amber-600 hover:bg-amber-700 text-white rounded-xl font-semibold text-sm transition-colors">
               Retry
             </button>
-            <button onClick={() => router.push('/practice')} className="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl font-semibold text-sm transition-colors">
+            <button onClick={() => router.push('/igcse/practice')} className="px-5 py-2.5 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl font-semibold text-sm transition-colors">
               Back
             </button>
           </div>
@@ -153,7 +153,7 @@ export default function PracticePage() {
       {/* Header bar */}
       <div className="bg-white border-b border-slate-200 sticky top-0 z-10">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
-          <button onClick={() => router.push('/practice')} className="text-slate-500 hover:text-slate-700 text-sm font-medium flex items-center gap-1">
+          <button onClick={() => router.push('/igcse/practice')} className="text-slate-500 hover:text-slate-700 text-sm font-medium flex items-center gap-1">
             ← Exit
           </button>
           <div className="text-sm font-medium text-slate-700">

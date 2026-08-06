@@ -145,7 +145,7 @@ export default function BrowsePage() {
 
   const handleUpvote = async (resourceId: string) => {
     if (!user) {
-      router.push('/login');
+      router.push('/igcse/login');
       return;
     }
 
@@ -320,7 +320,7 @@ export default function BrowsePage() {
             {user ? (
               <>
                 <button
-                  onClick={() => router.push('/upload')}
+                  onClick={() => router.push('/igcse/upload')}
                   style={{
                     padding: '0.5rem 1rem',
                     fontSize: '0.875rem',
@@ -355,7 +355,7 @@ export default function BrowsePage() {
               </>
             ) : (
               <button
-                onClick={() => router.push('/login')}
+                onClick={() => router.push('/igcse/login')}
                 style={{
                   padding: '0.5rem 1.5rem',
                   fontSize: '0.875rem',
@@ -701,7 +701,7 @@ export default function BrowsePage() {
                           </a>
                         ) : (
                           <button
-                            onClick={() => router.push('/login')}
+                            onClick={() => router.push('/igcse/login')}
                             style={{
                               display: 'inline-block',
                               padding: '0.5rem 1rem',

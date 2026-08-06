@@ -146,7 +146,7 @@ export default function SubjectDetailPage() {
 
   const handleUpvote = async (resourceId: string) => {
     if (!user) {
-      router.push('/login');
+      router.push('/igcse/login');
       return;
     }
 
@@ -374,7 +374,7 @@ export default function SubjectDetailPage() {
                   Upload Resource
                 </button>
                 <button
-                  onClick={() => router.push('/profile')}
+                  onClick={() => router.push('/igcse/profile')}
                   style={{
                     padding: '0.5rem 1rem',
                     fontSize: '0.875rem',
@@ -392,7 +392,7 @@ export default function SubjectDetailPage() {
               </>
             ) : (
               <button
-                onClick={() => router.push('/login')}
+                onClick={() => router.push('/igcse/login')}
                 style={{
                   padding: '0.5rem 1.5rem',
                   fontSize: '0.875rem',
@@ -761,7 +761,7 @@ export default function SubjectDetailPage() {
                             </a>
                           ) : (
                             <button
-                              onClick={() => router.push('/login')}
+                              onClick={() => router.push('/igcse/login')}
                               style={{
                                 display: 'inline-block',
                                 padding: '0.5rem 1rem',
