@@ -77,10 +77,10 @@ export default function ResourcesSection() {
   const handleCardClick = (cardId: string) => {
     switch (cardId) {
       case 'past-papers':
-        router.push('/past-papers');
+        router.push('/igcse/past-papers');
         break;
       case 'profile':
-        router.push('/profile');
+        router.push('/igcse/profile');
         break;
       case 'sign-out':
         // Handle sign out

@@ -48,7 +48,7 @@ export default function Header() {
             Profile
           </Link>
           <Link
-            href="/login"
+            href="/igcse/login"
             className="font-sans text-sm px-4 py-2 rounded-lg border border-[#C9A84C]/30 text-[#C9A84C] hover:bg-[#C9A84C]/10 transition-all"
           >
             Sign In

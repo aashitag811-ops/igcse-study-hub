@@ -21,17 +21,17 @@ export default function Footer() {
             <h3 className="font-display text-lg text-[#C9A84C] mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/browse" className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors">
+                <Link href="/igcse/browse" className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors">
                   Browse Subjects
                 </Link>
               </li>
               <li>
-                <Link href="/profile" className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors">
+                <Link href="/igcse/profile" className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors">
                   My Profile
                 </Link>
               </li>
               <li>
-                <Link href="/upload" className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors">
+                <Link href="/igcse/upload" className="font-sans text-sm text-[#C4B08A] hover:text-[#C9A84C] dark:text-[#C4B08A] dark:hover:text-[#C9A84C] [data-theme='light']_&:text-[#3D2E15] [data-theme='light']_&:hover:text-[#8B6914] transition-colors">
                   Upload Resources
                 </Link>
               </li>
