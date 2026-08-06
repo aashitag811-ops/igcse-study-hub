@@ -141,7 +141,7 @@ function UploadPageContent() {
             }}
             onClick={() => router.push('/')}
           >
-            IGCSE Study Hub
+            Student Archive
           </div>
 
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
