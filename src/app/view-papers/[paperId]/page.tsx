@@ -65,7 +65,7 @@ export default function ViewPapersPage({ params }: PageProps) {
   const paperInfo = parsePaperId(resolvedParams.paperId);
 
   const handleExit = () => {
-    router.push('/practice');
+    router.push('/igcse/practice');
   };
 
   if (!paperInfo) {

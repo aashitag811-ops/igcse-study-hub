@@ -84,7 +84,7 @@ export default function MCQExamPage() {
           return;
         }
         if (isEconTheory) {
-          router.push(`/view-papers/${paperId}`);
+          router.push(`/igcse/view-papers/${paperId}`);
           return;
         }
         
@@ -112,7 +112,7 @@ export default function MCQExamPage() {
         const questions = paperData.questions || [];
         const hasAnyAnswer = questions.some((q: any) => q.correctAnswer && q.correctAnswer.trim() !== '');
         if (questions.length > 0 && !hasAnyAnswer) {
-          router.push(`/view-papers/${paperId}`);
+          router.push(`/igcse/view-papers/${paperId}`);
           return;
         }
 

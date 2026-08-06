@@ -68,7 +68,7 @@ export default function TheoryExamPage({ params }: PageProps) {
             The paper ID format is not recognized.
           </p>
           <button
-            onClick={() => router.push('/mcq-test')}
+            onClick={() => router.push('/igcse/practice')}
             className="px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors"
           >
             Back to Selection
