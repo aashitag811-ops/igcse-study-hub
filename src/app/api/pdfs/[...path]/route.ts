@@ -2,40 +2,21 @@ import { NextRequest, NextResponse } from 'next/server';
 import { readFile, access } from 'fs/promises';
 import { join } from 'path';
 
-// Session name mapping (used for legacy nested-folder fallback)
-const SESSION_MAP: { [key: string]: string } = {
-  'm': 'March',
-  's': 'Summer',
-  'w': 'Winter'
-};
-
-const SUBJECT_MAP: { [key: string]: string } = {
-  '0417': '0417-Information and Communication Technology',
-  '0450': '0450-Business Studies',
-  '0452': '0452-Accounting',
-  '0455': '0455-Economics',
-  '0457': '0457-Global Perspectives',
-  '0500': '0500-First Language English',
-  '0520': '0520-French - Foreign Language',
-  '0549': '0549-Hindi as a Second Language',
-  '0580': '0580-Mathematics',
-  '0606': '0606-Additional Mathematics',
-  '0610': '0610-Biology',
-  '0620': '0620-Chemistry',
-  '0625': '0625-Physics'
-};
+// GitHub LFS media URL — server-side fetch bypasses browser X-Frame-Options restrictions
+const GITHUB_LFS_BASE =
+  'https://media.githubusercontent.com/media/aashitag811-ops/igcse-study-hub/31-july';
 
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ path: string[] }> }
 ) {
-  try {
-    const resolvedParams = await params;
-    const filename = resolvedParams.path.join('/');
+  const resolvedParams = await params;
+  const filename = resolvedParams.path.join('/');
 
-    // ── Primary path: public/pdfs/<filename> (flat structure) ──────────────
-    const flatPath = join(process.cwd(), 'public', 'pdfs', filename);
+  // ── Development: serve from local public/pdfs/ ─────────────────────────────
+  if (process.env.NODE_ENV !== 'production') {
     try {
+      const flatPath = join(process.cwd(), 'public', 'pdfs', filename);
       await access(flatPath);
       const pdfBuffer = await readFile(flatPath);
       return new NextResponse(pdfBuffer, {
@@ -47,49 +28,33 @@ export async function GET(
         },
       });
     } catch {
-      // Not in flat structure — try legacy nested path below
+      // Fall through to GitHub LFS fetch
     }
+  }
 
-    // ── Fallback: scripts/pastpapers/<nested>/<filename> ───────────────────
-    const matchWithVariant = filename.match(/(\d{4})_([msw])(\d{2})_(qp|ms)_(\d)(\d)\.pdf/);
-    const matchER          = filename.match(/(\d{4})_([msw])(\d{2})_(er)\.pdf/);
+  // ── Production: proxy from GitHub LFS (server-side, no browser auth needed) ─
+  try {
+    const lfsUrl = `${GITHUB_LFS_BASE}/public/pdfs/${filename}`;
+    const upstream = await fetch(lfsUrl, {
+      headers: { 'User-Agent': 'StudentArchive-PDF-Proxy/1.0' },
+    });
 
-    if (!matchWithVariant && !matchER) {
+    if (!upstream.ok) {
       return new NextResponse('PDF not found', { status: 404 });
     }
 
-    let subjectCode: string, sessionCode: string, yearShort: string;
+    const pdfBuffer = await upstream.arrayBuffer();
 
-    if (matchER) {
-      [, subjectCode, sessionCode, yearShort] = matchER;
-    } else {
-      [, subjectCode, sessionCode, yearShort] = matchWithVariant!;
-    }
-
-    const year          = `20${yearShort}`;
-    const sessionName   = SESSION_MAP[sessionCode];
-    const subjectFolder = SUBJECT_MAP[subjectCode];
-
-    if (!sessionName || !subjectFolder) {
-      return new NextResponse('PDF not found', { status: 404 });
-    }
-
-    const nestedPath = join(
-      process.cwd(), 'scripts', 'pastpapers',
-      subjectFolder, year, sessionName, filename
-    );
-
-    const pdfBuffer = await readFile(nestedPath);
     return new NextResponse(pdfBuffer, {
       status: 200,
       headers: {
         'Content-Type': 'application/pdf',
         'Content-Disposition': `inline; filename="${filename}"`,
-        'Cache-Control': 'public, max-age=31536000, immutable',
+        'Cache-Control': 'public, max-age=3600',
       },
     });
   } catch (error) {
-    console.error('Error serving PDF:', error);
+    console.error('Error proxying PDF from GitHub LFS:', error);
     return new NextResponse('PDF not found', { status: 404 });
   }
 }
