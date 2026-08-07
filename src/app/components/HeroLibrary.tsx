@@ -653,7 +653,7 @@ function SubjectSpine({ subject, isHovered, onMouseEnter, onMouseLeave, onClick,
           }}
         >
           <div
-            className="font-display text-sm font-medium mb-1 leading-snug"
+            className="font-display text-lg font-medium mb-1 leading-snug"
             style={{ color: 'var(--gold-light)' }}
           >
             {subject.title}
