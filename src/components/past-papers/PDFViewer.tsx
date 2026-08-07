@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 
 interface PDFViewerProps {
   pdfUrl: string;
@@ -9,59 +9,14 @@ interface PDFViewerProps {
 }
 
 export function PDFViewer({ pdfUrl, title, className = '' }: PDFViewerProps) {
-  const [blobUrl, setBlobUrl] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const prevBlobUrl = useRef<string | null>(null);
 
-  useEffect(() => {
-    if (!pdfUrl) return;
-
-    let cancelled = false;
-    setIsLoading(true);
-    setError(null);
-    setBlobUrl(null);
-
-    // Revoke previous blob URL to avoid memory leaks
-    if (prevBlobUrl.current) {
-      URL.revokeObjectURL(prevBlobUrl.current);
-      prevBlobUrl.current = null;
-    }
-
-    fetch(pdfUrl)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.blob();
-      })
-      .then((blob) => {
-        if (cancelled) return;
-        // Force application/pdf MIME type so browser renders it correctly
-        const pdfBlob = new Blob([blob], { type: 'application/pdf' });
-        const url = URL.createObjectURL(pdfBlob);
-        prevBlobUrl.current = url;
-        setBlobUrl(url);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        if (cancelled) return;
-        console.error('PDFViewer fetch error:', err);
-        setError(err.message || 'Failed to load PDF');
-        setIsLoading(false);
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [pdfUrl]);
-
-  // Clean up blob URL on unmount
-  useEffect(() => {
-    return () => {
-      if (prevBlobUrl.current) {
-        URL.revokeObjectURL(prevBlobUrl.current);
-      }
-    };
-  }, []);
+  const handleLoad = () => setIsLoading(false);
+  const handleError = () => {
+    setIsLoading(false);
+    setError('Failed to load PDF.');
+  };
 
   return (
     <div className={`relative w-full h-full ${className}`}>
@@ -107,14 +62,14 @@ export function PDFViewer({ pdfUrl, title, className = '' }: PDFViewerProps) {
         </div>
       )}
 
-      {/* PDF iframe — uses blob: URL to bypass X-Frame-Options and Content-Type issues */}
-      {blobUrl && (
-        <iframe
-          src={`${blobUrl}#view=FitH`}
-          title={title}
-          className="w-full h-full border-0"
-        />
-      )}
+      {/* PDF iframe — proxy returns application/pdf so iframe renders it correctly */}
+      <iframe
+        src={`${pdfUrl}#view=FitH`}
+        title={title}
+        className="w-full h-full border-0"
+        onLoad={handleLoad}
+        onError={handleError}
+      />
     </div>
   );
 }
