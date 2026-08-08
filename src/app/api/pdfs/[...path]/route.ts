@@ -32,12 +32,16 @@ export async function GET(
     }
   }
 
-  // ── Production: proxy from GitHub LFS (server-side, no browser auth needed) ─
+  // ── Production: proxy from GitHub LFS with auth token ─────────────────────
   try {
     const lfsUrl = `${GITHUB_LFS_BASE}/public/pdfs/${filename}`;
-    const upstream = await fetch(lfsUrl, {
-      headers: { 'User-Agent': 'StudentArchive-PDF-Proxy/1.0' },
-    });
+    const headers: Record<string, string> = {
+      'User-Agent': 'StudentArchive-PDF-Proxy/1.0',
+    };
+    if (process.env.GITHUB_TOKEN) {
+      headers['Authorization'] = `token ${process.env.GITHUB_TOKEN}`;
+    }
+    const upstream = await fetch(lfsUrl, { headers });
 
     if (!upstream.ok) {
       return new NextResponse('PDF not found', { status: 404 });
