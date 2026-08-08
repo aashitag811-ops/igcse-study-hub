@@ -113,7 +113,7 @@ export async function GET(
       headers: {
         'Content-Type': 'application/pdf',
         'Content-Disposition': `inline; filename="${filename}"`,
-        'Cache-Control': 'public, max-age=3600',
+        'Cache-Control': 'no-store',  // Prevent Vercel CDN from caching API responses
       },
     });
   } catch (error) {
