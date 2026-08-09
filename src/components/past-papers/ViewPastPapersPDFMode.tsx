@@ -26,6 +26,7 @@ export function ViewPastPapersPDFMode({
   const [showER, setShowER] = useState(false);
   const [erNotes, setErNotes] = useState<Record<string, string>>({});
   const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
+  const [showGeneralER, setShowGeneralER] = useState(false);
   const [isLoadingER, setIsLoadingER] = useState(false);
 
   // Fetch ER notes on mount
@@ -51,12 +52,19 @@ export function ViewPastPapersPDFMode({
 
   const handleERClick = (questionNumber: number) => {
     if (erNotes[questionNumber.toString()]) {
+      setShowGeneralER(false);
       setSelectedQuestion(questionNumber);
     }
   };
 
+  const handleGeneralERClick = () => {
+    setSelectedQuestion(null);
+    setShowGeneralER(true);
+  };
+
   const closeERModal = () => {
     setSelectedQuestion(null);
+    setShowGeneralER(false);
   };
 
   // Generate PDF URLs — uses NEXT_PUBLIC_ASSET_BASE_URL in production (Cloudflare R2)
@@ -162,9 +170,19 @@ export function ViewPastPapersPDFMode({
                 </svg>
                 Question Paper
                 {showER && (
-                  <span className="ml-2 text-xs bg-amber-500 text-white px-2 py-0.5 rounded-full">
-                    ER Available - Click buttons on PDF
-                  </span>
+                  <>
+                    <span className="ml-2 text-xs bg-amber-500 text-white px-2 py-0.5 rounded-full">
+                      ER Available - Click buttons on PDF
+                    </span>
+                    {erNotes['general'] && (
+                      <button
+                        onClick={handleGeneralERClick}
+                        className="ml-2 text-xs bg-amber-100 hover:bg-amber-200 dark:bg-amber-900/30 dark:hover:bg-amber-900/50 text-amber-800 dark:text-amber-200 border border-amber-400 px-2 py-0.5 rounded-full transition-colors font-semibold"
+                      >
+                        General ER Comments
+                      </button>
+                    )}
+                  </>
                 )}
               </h2>
             </div>
@@ -209,13 +227,13 @@ export function ViewPastPapersPDFMode({
         )}
       </div>
 
-      {/* Examiner Report Modal */}
-      {selectedQuestion !== null && (
+      {/* Examiner Report Modal — per-question or general */}
+      {(selectedQuestion !== null || showGeneralER) && (
         <ExaminerReportModal
           isOpen={true}
           onClose={closeERModal}
-          questionNumber={selectedQuestion}
-          erNote={erNotes[selectedQuestion.toString()] || ''}
+          questionNumber={showGeneralER ? null : selectedQuestion}
+          erNote={showGeneralER ? (erNotes['general'] || '') : (erNotes[selectedQuestion!.toString()] || '')}
         />
       )}
     </div>
