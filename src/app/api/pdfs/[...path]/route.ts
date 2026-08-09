@@ -28,7 +28,6 @@ async function fetchLFSFile(filename: string, token: string): Promise<ArrayBuffe
   if (!ptrRes.ok) return null;
 
   const pointer = await ptrRes.text();
-  console.log('LFS pointer (first 150):', pointer.slice(0, 150));
 
   // Parse oid and size from LFS pointer
   const oidMatch   = pointer.match(/oid sha256:([a-f0-9]{64})/);
@@ -40,7 +39,6 @@ async function fetchLFSFile(filename: string, token: string): Promise<ArrayBuffe
 
   const oid  = oidMatch[1];
   const size = parseInt(sizeMatch[1], 10);
-  console.log(`Parsed LFS: oid=${oid.slice(0,8)}... size=${size}`);
 
   // Step 2: Call the Git LFS Batch API to get a signed download URL
   const batchUrl = `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}.git/info/lfs/objects/batch`;
@@ -65,7 +63,6 @@ async function fetchLFSFile(filename: string, token: string): Promise<ArrayBuffe
   }
 
   const batch = await batchRes.json();
-  console.log('LFS batch response:', JSON.stringify(batch).slice(0, 500));
   const downloadUrl = batch?.objects?.[0]?.actions?.download?.href;
   const downloadHeaders = batch?.objects?.[0]?.actions?.download?.header ?? {};
 
