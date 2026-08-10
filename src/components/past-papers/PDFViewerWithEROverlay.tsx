@@ -24,185 +24,174 @@ export function PDFViewerWithEROverlay({
   const [coordinates, setCoordinates] = useState<QuestionCoordinate[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [pdfReady, setPdfReady] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasWrapperRef = useRef<HTMLDivElement>(null);
   const pdfDocRef = useRef<any>(null);
   const renderTasksRef = useRef<any[]>([]);
+  const pageViewportWidthsRef = useRef<number[]>([]); // natural pixel width per page at scale=1
   const [pdfjsLib, setPdfjsLib] = useState<any>(null);
 
-  // Keep a stable ref to onERClick so we don't re-render PDF on every parent render
   const onERClickRef = useRef(onERClick);
   useEffect(() => { onERClickRef.current = onERClick; }, [onERClick]);
 
-  // Keep a stable ref to erNotes
-  const erNotesRef = useRef(erNotes);
-  useEffect(() => { erNotesRef.current = erNotes; }, [erNotes]);
-
-  // Load PDF.js library dynamically
+  // Load PDF.js
   useEffect(() => {
-    const loadPdfJs = async () => {
-      try {
-        const pdfjs = await import('pdfjs-dist');
-        pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@4.0.379/build/pdf.worker.min.mjs`;
-        setPdfjsLib(pdfjs);
-      } catch (err) {
-        console.error('Failed to load PDF.js:', err);
-        setError('Failed to load PDF library');
-      }
-    };
-    loadPdfJs();
+    import('pdfjs-dist').then(pdfjs => {
+      pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@4.0.379/build/pdf.worker.min.mjs`;
+      setPdfjsLib(pdfjs);
+    }).catch(() => setError('Failed to load PDF library'));
   }, []);
 
   // Fetch question coordinates
   useEffect(() => {
-    const fetchCoordinates = async () => {
-      try {
-        const response = await fetch(`/api/question-coords/${paperId}`);
-        if (response.ok) {
-          const data = await response.json();
-          setCoordinates(data.coordinates || []);
-        }
-      } catch (err) {
-        console.error('Failed to fetch coordinates:', err);
-      }
-    };
-    fetchCoordinates();
+    fetch(`/api/question-coords/${paperId}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (data) setCoordinates(data.coordinates || []); })
+      .catch(() => {});
   }, [paperId]);
 
-  // Load and render PDF — inject ER buttons directly into each page wrapper
+  // Render PDF pages into DOM — runs only when pdfUrl or pdfjsLib changes
   useEffect(() => {
     if (!pdfjsLib) return;
 
-    const loadPDF = async () => {
+    let cancelled = false;
+
+    const render = async () => {
+      setIsLoading(true);
+      setError(null);
+      setPdfReady(false);
+
+      renderTasksRef.current.forEach(t => t?.cancel?.());
+      renderTasksRef.current = [];
+      pdfDocRef.current?.destroy();
+      pdfDocRef.current = null;
+      pageViewportWidthsRef.current = [];
+
+      if (canvasWrapperRef.current) canvasWrapperRef.current.innerHTML = '';
+
       try {
-        setIsLoading(true);
-        setError(null);
-
-        // Cancel any ongoing render tasks
-        renderTasksRef.current.forEach(task => task?.cancel?.());
-        renderTasksRef.current = [];
-
-        // Destroy previous doc
-        if (pdfDocRef.current) {
-          pdfDocRef.current.destroy();
-          pdfDocRef.current = null;
-        }
-
-        // Clear previous canvases
-        if (canvasWrapperRef.current) {
-          canvasWrapperRef.current.innerHTML = '';
-        }
-
-        // Load PDF document
-        const loadingTask = pdfjsLib.getDocument(pdfUrl);
-        const pdf = await loadingTask.promise;
+        const pdf = await pdfjsLib.getDocument(pdfUrl).promise;
+        if (cancelled) return;
         pdfDocRef.current = pdf;
 
         const scale = 1.5;
 
-        // Render all pages sequentially
-        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-          const page = await pdf.getPage(pageNum);
+        for (let i = 1; i <= pdf.numPages; i++) {
+          if (cancelled) return;
+          const page = await pdf.getPage(i);
           const viewport = page.getViewport({ scale });
 
-          // Each page gets its own relative wrapper so buttons can be absolutely positioned inside it
-          const pageWrapper = document.createElement('div');
-          pageWrapper.style.cssText = 'position: relative; margin-bottom: 20px; line-height: 0;';
+          // Store natural (scale=1) width for button positioning later
+          const naturalViewport = page.getViewport({ scale: 1 });
+          pageViewportWidthsRef.current.push(naturalViewport.width);
 
-          // Canvas fills wrapper width — CSS scaling
+          const wrapper = document.createElement('div');
+          wrapper.style.cssText = 'position:relative;margin-bottom:20px;line-height:0;';
+          wrapper.setAttribute('data-page', String(i));
+
           const canvas = document.createElement('canvas');
-          canvas.height = viewport.height;
           canvas.width = viewport.width;
-          canvas.style.cssText = 'width: 100%; display: block;';
-          pageWrapper.appendChild(canvas);
+          canvas.height = viewport.height;
+          canvas.style.cssText = 'width:100%;display:block;';
+          wrapper.appendChild(canvas);
+          canvasWrapperRef.current?.appendChild(wrapper);
 
-          if (canvasWrapperRef.current) {
-            canvasWrapperRef.current.appendChild(pageWrapper);
+          const ctx = canvas.getContext('2d');
+          if (ctx) {
+            const task = page.render({ canvasContext: ctx, viewport });
+            renderTasksRef.current.push(task);
+            await task.promise;
           }
-
-          const context = canvas.getContext('2d');
-          if (context) {
-            const renderTask = page.render({ canvasContext: context, viewport });
-            renderTasksRef.current.push(renderTask);
-            await renderTask.promise;
-          }
-
-          // Inject ER buttons for questions on this page
-          // Wait until canvas is in DOM so clientWidth is available
-          const cssWidth = pageWrapper.clientWidth || viewport.width / scale;
-          const cssHeight = cssWidth * (viewport.height / viewport.width);
-
-          coordinates.forEach(coord => {
-            if (coord.page !== pageNum) return;
-            if (!erNotesRef.current[coord.qNum.toString()]) return;
-
-            // coord.topPx is at scale=1.0 (raw PDF units)
-            // We rendered at scale=1.5, then CSS-scaled to cssWidth
-            // So button top = coord.topPx * (cssHeight / (viewport.height / scale))
-            //               = coord.topPx * cssWidth / viewport.width * scale
-            const scaleRatio = cssWidth / (viewport.width / scale);
-            const topCss = coord.topPx * scaleRatio;
-
-            const btn = document.createElement('button');
-            btn.className = 'er-btn';
-            btn.style.cssText = `
-              position: absolute;
-              top: ${topCss}px;
-              left: 8px;
-              z-index: 50;
-              background: #f59e0b;
-              color: #000;
-              font-size: 10px;
-              font-weight: 800;
-              padding: 2px 6px;
-              border-radius: 5px;
-              border: none;
-              cursor: pointer;
-              box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-              line-height: 1.4;
-            `;
-            btn.textContent = `Q${coord.qNum}`;
-            btn.title = `View Examiner Report for Question ${coord.qNum}`;
-            btn.addEventListener('click', () => onERClickRef.current(coord.qNum));
-            pageWrapper.appendChild(btn);
-          });
         }
 
-        setIsLoading(false);
+        if (!cancelled) {
+          setIsLoading(false);
+          setPdfReady(true);
+        }
       } catch (err: any) {
-        if (err?.name === 'RenderingCancelledException') return;
-        console.error('Error loading PDF:', err);
+        if (cancelled || err?.name === 'RenderingCancelledException') return;
         setError(err.message || 'Failed to load PDF');
         setIsLoading(false);
       }
     };
 
-    if (pdfUrl) loadPDF();
+    render();
 
     return () => {
-      renderTasksRef.current.forEach(task => task?.cancel?.());
-      if (pdfDocRef.current) {
-        pdfDocRef.current.destroy();
-        pdfDocRef.current = null;
-      }
+      cancelled = true;
+      renderTasksRef.current.forEach(t => t?.cancel?.());
+      pdfDocRef.current?.destroy();
+      pdfDocRef.current = null;
     };
-    // coordinates is intentionally included — re-render PDF when coords arrive
-  }, [pdfUrl, pdfjsLib, coordinates]);
+  }, [pdfUrl, pdfjsLib]);
+
+  // Inject ER buttons — runs whenever PDF is ready OR coordinates arrive
+  useEffect(() => {
+    if (!pdfReady || !canvasWrapperRef.current) return;
+
+    // Remove old buttons
+    canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
+
+    if (coordinates.length === 0) return;
+
+    coordinates.forEach(coord => {
+      if (!erNotes[coord.qNum.toString()]) return;
+
+      const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
+        `div[data-page="${coord.page}"]`
+      );
+      if (!wrapper) return;
+
+      const canvas = wrapper.querySelector('canvas');
+      if (!canvas) return;
+
+      // canvas.width is at scale=1.5; pageViewportWidthsRef is at scale=1
+      // CSS width = wrapper.clientWidth (100% of container)
+      // topCss = coord.topPx (scale=1 units) * (cssWidth / naturalWidth)
+      const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] || (canvas.width / 1.5);
+      const cssWidth = wrapper.clientWidth || naturalWidth;
+      const topCss = coord.topPx * (cssWidth / naturalWidth);
+
+      const btn = document.createElement('button');
+      btn.className = 'er-btn';
+      btn.style.cssText = [
+        'position:absolute',
+        `top:${topCss}px`,
+        'left:8px',
+        'z-index:50',
+        'background:#f59e0b',
+        'color:#000',
+        'font-size:11px',
+        'font-weight:800',
+        'padding:2px 7px',
+        'border-radius:5px',
+        'border:none',
+        'cursor:pointer',
+        'box-shadow:0 1px 4px rgba(0,0,0,0.35)',
+        'line-height:1.5',
+        'white-space:nowrap',
+      ].join(';');
+      btn.textContent = `Q${coord.qNum}`;
+      btn.title = `Examiner Report — Question ${coord.qNum}`;
+      btn.addEventListener('click', () => onERClickRef.current(coord.qNum));
+      wrapper.appendChild(btn);
+    });
+  }, [pdfReady, coordinates, erNotes]);
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className="relative w-full h-full bg-slate-100 dark:bg-slate-900 overflow-y-auto"
     >
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-slate-100 dark:bg-slate-800 z-50">
           <div className="text-center">
-            <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
             <p className="text-slate-600 dark:text-slate-400 font-medium">Loading PDF...</p>
           </div>
         </div>
       )}
-
       {error && (
         <div className="absolute inset-0 flex items-center justify-center bg-slate-100 dark:bg-slate-800">
           <div className="text-center">
@@ -211,8 +200,6 @@ export function PDFViewerWithEROverlay({
           </div>
         </div>
       )}
-
-      {/* PDF pages — each page wrapper contains its canvas + ER buttons */}
       <div ref={canvasWrapperRef} className="mx-auto max-w-[850px] py-4" />
     </div>
   );
