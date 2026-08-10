@@ -47,8 +47,11 @@ export function PDFViewerWithEROverlay({
   useEffect(() => {
     fetch(`/api/question-coords/${paperId}`)
       .then(r => r.ok ? r.json() : null)
-      .then(data => { if (data) setCoordinates(data.coordinates || []); })
-      .catch(() => {});
+      .then(data => {
+        console.log('[ER] coords fetched:', data);
+        if (data) setCoordinates(data.coordinates || []);
+      })
+      .catch(e => console.error('[ER] coords fetch error:', e));
   }, [paperId]);
 
   // Render PDF pages into DOM — runs only when pdfUrl or pdfjsLib changes
@@ -106,6 +109,7 @@ export function PDFViewerWithEROverlay({
         }
 
         if (!cancelled) {
+          console.log('[ER] PDF ready, pages:', pageViewportWidthsRef.current.length);
           setIsLoading(false);
           setPdfReady(true);
         }
@@ -128,12 +132,16 @@ export function PDFViewerWithEROverlay({
 
   // Inject ER buttons — runs whenever PDF is ready OR coordinates arrive
   useEffect(() => {
+    console.log('[ER] inject effect — pdfReady:', pdfReady, 'coords:', coordinates.length, 'erNotes keys:', Object.keys(erNotes).length);
     if (!pdfReady || !canvasWrapperRef.current) return;
 
     // Remove old buttons
     canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
 
-    if (coordinates.length === 0) return;
+    if (coordinates.length === 0) {
+      console.log('[ER] no coordinates, skipping button injection');
+      return;
+    }
 
     coordinates.forEach(coord => {
       if (!erNotes[coord.qNum.toString()]) return;
@@ -141,7 +149,10 @@ export function PDFViewerWithEROverlay({
       const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
         `div[data-page="${coord.page}"]`
       );
-      if (!wrapper) return;
+      if (!wrapper) {
+        console.warn('[ER] no wrapper for page', coord.page);
+        return;
+      }
 
       const canvas = wrapper.querySelector('canvas');
       if (!canvas) return;
@@ -152,6 +163,7 @@ export function PDFViewerWithEROverlay({
       const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] || (canvas.width / 1.5);
       const cssWidth = wrapper.clientWidth || naturalWidth;
       const topCss = coord.topPx * (cssWidth / naturalWidth);
+      console.log(`[ER] placing Q${coord.qNum} at page ${coord.page} topPx=${coord.topPx} cssWidth=${cssWidth} naturalWidth=${naturalWidth} topCss=${topCss}`);
 
       const btn = document.createElement('button');
       btn.className = 'er-btn';
