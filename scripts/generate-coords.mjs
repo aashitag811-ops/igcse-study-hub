@@ -75,7 +75,8 @@ async function findQuestionCoords(pdfPath, erQuestionNums) {
   const loadingTask = pdfjsLib.getDocument({ data, disableWorker: true });
   const pdf = await loadingTask.promise;
 
-  const found = [];
+  // Collect ALL left-margin numbers per page first, then filter out axis clusters
+  const candidatesPerPage = {};
   const target = new Set(erQuestionNums.map(String));
 
   for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
@@ -85,37 +86,57 @@ async function findQuestionCoords(pdfPath, erQuestionNums) {
     const pageHeight = viewport.height;
     const textContent = await page.getTextContent();
 
+    const pageCandidates = [];
+
     for (const item of textContent.items) {
       const str = item.str.trim();
       if (!str) continue;
-
-      // Match standalone integers only
       if (!/^\d+$/.test(str)) continue;
 
-      const num = str;
-      if (!target.has(num)) continue;
-
-      // x position from transform matrix (element 4)
       const x = item.transform[4];
-      // Only consider items in the left ~20% of the page (question numbers are left-aligned)
+      // Only left ~20% of page
       if (x > pageWidth * 0.20) continue;
 
-      // Convert Y: PDF is bottom-up, we need top-down
       const topPx = Math.round(pageHeight - item.transform[5]);
-
-      found.push({ qNum: parseInt(num), topPx, page: pageNum, text: num });
+      pageCandidates.push({ num: str, x, topPx, pageNum });
     }
+
+    candidatesPerPage[pageNum] = pageCandidates;
   }
 
   await pdf.destroy();
 
+  const found = [];
+
+  for (const [pageNum, candidates] of Object.entries(candidatesPerPage)) {
+    // Detect axis label clusters: 3+ numbers within 200px vertical span
+    // Sort by Y position
+    const sorted = [...candidates].sort((a, b) => a.topPx - b.topPx);
+
+    // Build a set of Y positions that are part of a dense cluster
+    const clusterY = new Set();
+    for (let i = 0; i < sorted.length; i++) {
+      // Count how many other numbers are within 200px of this one
+      const nearby = sorted.filter(c => Math.abs(c.topPx - sorted[i].topPx) < 200);
+      if (nearby.length >= 4) {
+        // This is likely a graph axis — mark all nearby as cluster members
+        nearby.forEach(c => clusterY.add(c.topPx));
+      }
+    }
+
+    for (const c of candidates) {
+      if (!target.has(c.num)) continue;
+      if (clusterY.has(c.topPx)) continue; // skip axis labels
+      found.push({ qNum: parseInt(c.num), topPx: c.topPx, page: parseInt(pageNum), text: c.num });
+    }
+  }
+
   // Deduplicate: keep first occurrence of each question number
   const seen = new Set();
   const deduped = [];
-  for (const item of found) {
-    const key = item.qNum;
-    if (!seen.has(key)) {
-      seen.add(key);
+  for (const item of found.sort((a, b) => a.page - b.page || a.topPx - b.topPx)) {
+    if (!seen.has(item.qNum)) {
+      seen.add(item.qNum);
       deduped.push(item);
     }
   }

@@ -171,7 +171,7 @@ export function PDFViewerWithEROverlay({
         'box-shadow:0 1px 4px rgba(0,0,0,0.35)',
         'line-height:1.5',
         'white-space:nowrap',
-        'transform:translateY(-50%)',
+        'transform:translateY(-100%)',
       ].join(';');
       btn.textContent = `Q${coord.qNum}`;
       btn.title = `Examiner Report — Question ${coord.qNum}`;

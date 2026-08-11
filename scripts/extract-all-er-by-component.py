@@ -120,27 +120,22 @@ def extract_component_notes(er_path, subject_code, component):
                     if q_num.isdigit():
                         q_num_int = int(q_num)
                         if 1 <= q_num_int <= 50 and content:
-                            # Extract first meaningful paragraph
+                            # Extract full examiner comment — join all meaningful lines
                             lines = content.split('\n')
                             meaningful_lines = []
                             
                             for line in lines:
                                 line = line.strip()
-                                # Skip short lines and noise
-                                if line and len(line) > 20 and not is_noise(line):
+                                if line and len(line) > 10 and not is_noise(line):
                                     meaningful_lines.append(line)
                             
                             if meaningful_lines:
-                                # Take first paragraph
-                                er_note = meaningful_lines[0]
+                                # Join all lines into full paragraph
+                                er_note = ' '.join(meaningful_lines)
                                 
-                                # If first line is short, add more lines
-                                if len(er_note) < 100 and len(meaningful_lines) > 1:
-                                    er_note = ' '.join(meaningful_lines[:3])
-                                
-                                # Limit length
-                                if len(er_note) > 500:
-                                    er_note = er_note[:497] + "..."
+                                # Limit to 1500 chars to avoid absurdly long notes
+                                if len(er_note) > 1500:
+                                    er_note = er_note[:1497] + "..."
                                 
                                 er_notes[str(q_num_int)] = er_note
             
