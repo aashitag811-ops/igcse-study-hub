@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { createClient } from '@/lib/supabase/client';
 
 const NAV_ITEMS = [
   { label: 'Dashboard', href: '/' },
@@ -47,9 +48,47 @@ function NavLink({ label, href }: { label: string; href: string }) {
   );
 }
 
-function SignOutLink() {
+function AuthLink({ isSignedIn }: { isSignedIn: boolean }) {
   const [hovered, setHovered] = useState(false);
   const [pressing, setPressing] = useState(false);
+
+  const handleSignOut = async () => {
+    const supabase = createClient();
+    await supabase.auth.signOut();
+    window.location.href = '/igcse/login';
+  };
+
+  if (isSignedIn) {
+    return (
+      <button
+        onClick={handleSignOut}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => { setHovered(false); setPressing(false); }}
+        onMouseDown={() => setPressing(true)}
+        onMouseUp={() => setPressing(false)}
+        style={{
+          fontFamily: SERIF,
+          fontSize: '16px',
+          fontWeight: 500,
+          letterSpacing: '0.03em',
+          color: hovered ? '#e8a090' : '#c47a6a',
+          textDecoration: 'none',
+          padding: '6px 16px',
+          borderRadius: '8px',
+          display: 'inline-block',
+          transition: 'background 0.35s ease, color 0.2s ease, transform 0.1s ease',
+          background: hovered ? 'rgba(180,60,60,0.10)' : 'transparent',
+          transform: pressing ? 'translateY(1px)' : 'translateY(0)',
+          whiteSpace: 'nowrap',
+          cursor: 'pointer',
+          border: 'none',
+          outline: 'none',
+        }}
+      >
+        Sign Out
+      </button>
+    );
+  }
 
   return (
     <Link
@@ -63,29 +102,41 @@ function SignOutLink() {
         fontSize: '16px',
         fontWeight: 500,
         letterSpacing: '0.03em',
-        color: hovered ? '#e8a090' : '#c47a6a',
+        color: hovered ? '#E8D89A' : '#C4B08A',
         textDecoration: 'none',
         padding: '6px 16px',
         borderRadius: '8px',
         display: 'inline-block',
         transition: 'background 0.35s ease, color 0.2s ease, transform 0.1s ease',
-        background: hovered ? 'rgba(180,60,60,0.10)' : 'transparent',
+        background: hovered ? 'rgba(200,168,76,0.10)' : 'transparent',
         transform: pressing ? 'translateY(1px)' : 'translateY(0)',
         whiteSpace: 'nowrap',
       }}
     >
-      Sign Out
+      Sign In
     </Link>
   );
 }
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getSession().then(({ data }) => {
+      setIsSignedIn(!!data.session);
+    });
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsSignedIn(!!session);
+    });
+    return () => subscription.unsubscribe();
   }, []);
 
   return (
@@ -147,9 +198,9 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Sign out — far right */}
+        {/* Sign in / Sign out — far right */}
         <div className="flex-shrink-0">
-          <SignOutLink />
+          <AuthLink isSignedIn={isSignedIn} />
         </div>
 
       </div>

@@ -13,14 +13,17 @@ Just drop them straight into your project folder — no merging needed.
 
 ```
 public/logo.png
-src/app/components/HeroSection.tsx        ← new hero section on the homepage
-src/app/components/ScrollsSection.tsx     ← new landing/features section
-src/components/Header.tsx                 ← updated header buttons UI
-src/components/BackButton.tsx             ← updated back button UI
-src/app/(igcse)/igcse/login/page.tsx      ← redesigned login page
+src/app/components/HeroSection.tsx          ← new hero section on the homepage
+src/app/components/ScrollsSection.tsx       ← new landing/features section
+src/components/Header.tsx                   ← updated header buttons UI + Browse Resources nav item
+src/components/BackButton.tsx               ← updated back button UI
+src/components/HeartIcon.tsx                ← new minimal blue heart + gold star CreatorBadge
+src/app/(igcse)/igcse/login/page.tsx        ← redesigned login page
 src/components/past-papers/ViewPastPapersMode.tsx     ← view mode UI redesign
 src/components/past-papers/ViewPastPapersPDFMode.tsx  ← PDF view mode UI redesign
-src/app/components/ResourcesSection.tsx  ← resources section UI
+src/app/(igcse)/igcse/browse/page.tsx       ← full Browse Resources redesign (dark library aesthetic,
+                                               sidebar, 3-col grid cards, SVG icons, dust particles,
+                                               cursor glow, gold creator badge, default sort = popular)
 ```
 
 ---
@@ -31,16 +34,13 @@ Do NOT just copy them over — open your version and this version side by side a
 
 ```
 src/app/page.tsx
-  → UI side: imports HeroSection + ScrollsSection and adds them to the homepage layout
+  → UI side: imports HeroSection + ScrollsSection, adds them to homepage layout,
+    removes ResourcesSection
   → Your side: check if you changed the homepage structure or added any new sections
 
 src/app/layout.tsx
   → UI side: added Cormorant Garamond + Playfair Display + Inter font imports
   → Your side: check if you changed the ThemeProvider or metadata
-
-src/app/(igcse)/igcse/past-papers/page.tsx
-  → UI side: paper selector page was restyled
-  → Your side: check if you changed any of the data fetching or routing logic here
 
 src/app/(igcse)/igcse/practice/components/StudyModeSelector.tsx
   → UI side: mode tab cards, launch button, colour/layout overhaul
@@ -55,7 +55,7 @@ src/app/(igcse)/igcse/practice/components/PracticeContent.tsx
 ---
 
 ## 🔴 RISKY — MANUAL MERGE REQUIRED
-These are global config/style files. If you've touched either of these, copying blindly will break things.
+These are global config/style files or routing files. Copying blindly will break things.
 
 ```
 src/app/globals.css
@@ -67,6 +67,19 @@ tailwind.config.ts
   → UI side: added custom font variables (--font-heading, --font-display, --font-body)
     and extended the theme with those
   → Your side: if you added custom colours or plugins, merge them in manually
+
+src/app/past-papers/page.tsx
+  → UI side: replaced the old white page with a redirect to /igcse/practice
+  → Your side: if you haven't touched this file, safe to copy. If you have, just make
+    sure it redirects to /igcse/practice instead of rendering the old UI.
+
+src/app/practice/page.tsx
+  → UI side: replaced the old white selector with a redirect to /igcse/practice
+  → Your side: same as above — just ensure it redirects, don't keep the old component.
+
+src/app/(igcse)/igcse/past-papers/page.tsx
+  → UI side: paper selector page was restyled
+  → Your side: check if you changed any of the data fetching or routing logic here
 ```
 
 ---
@@ -80,4 +93,4 @@ tailwind.config.ts
 
 ---
 
-*Branch: 11th-August | Created by: Aashita*
+*Branch: 11th-August | Last updated: 11th August (session 2)*

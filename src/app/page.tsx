@@ -4,7 +4,6 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroLibrary from './components/HeroLibrary';
-import ResourcesSection from './components/ResourcesSection';
 import HeroSection from './components/HeroSection';
 import ScrollsSection from './components/ScrollsSection';
 
@@ -15,7 +14,6 @@ export default function HomePage() {
       <HeroSection />
       <ScrollsSection />
       <HeroLibrary />
-      <ResourcesSection />
       <Footer />
     </main>
   );
