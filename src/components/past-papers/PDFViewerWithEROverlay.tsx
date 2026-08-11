@@ -3,23 +3,28 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 interface QuestionCoordinate {
-  qNum: number;
+  key: string;    // e.g. "1a", "1di", "22"
+  label: string;  // e.g. "Q 1. (a)", "Q 1. (d) (i)", "Q 22"
   topPx: number;
   page: number;
+  // legacy MCQ format support
+  qNum?: number;
 }
 
 interface PDFViewerWithEROverlayProps {
   pdfUrl: string;
   paperId: string;
   erNotes: Record<string, string>;
-  onERClick: (questionNumber: number) => void;
+  erLabels: Record<string, string>;
+  onERClick: (key: string) => void;
 }
 
-export function PDFViewerWithEROverlay({ 
-  pdfUrl, 
+export function PDFViewerWithEROverlay({
+  pdfUrl,
   paperId,
-  erNotes, 
-  onERClick 
+  erNotes,
+  erLabels,
+  onERClick
 }: PDFViewerWithEROverlayProps) {
   const [coordinates, setCoordinates] = useState<QuestionCoordinate[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -62,6 +67,7 @@ export function PDFViewerWithEROverlay({
     if (!pdfjsLib) return;
 
     let cancelled = false;
+    let blobObjectUrl: string | null = null;
 
     const render = async () => {
       setIsLoading(true);
@@ -77,7 +83,16 @@ export function PDFViewerWithEROverlay({
       if (canvasWrapperRef.current) canvasWrapperRef.current.innerHTML = '';
 
       try {
-        const pdf = await pdfjsLib.getDocument(pdfUrl).promise;
+        // Fetch PDF as a blob through our proxy first — prevents CORS failures
+        // that happen when pdfjs tries to load a cross-origin GitHub LFS CDN URL directly.
+        const res = await fetch(pdfUrl);
+        if (cancelled) return;
+        if (!res.ok) throw new Error(`PDF fetch failed: ${res.status}`);
+        const blob = await res.blob();
+        if (cancelled) return;
+        blobObjectUrl = URL.createObjectURL(blob);
+
+        const pdf = await pdfjsLib.getDocument(blobObjectUrl).promise;
         if (cancelled) return;
         pdfDocRef.current = pdf;
 
@@ -93,7 +108,7 @@ export function PDFViewerWithEROverlay({
           pageViewportWidthsRef.current.push(naturalViewport.width);
 
           const wrapper = document.createElement('div');
-          wrapper.style.cssText = 'position:relative;margin-bottom:20px;line-height:0;';
+          wrapper.style.cssText = 'position:relative;margin-bottom:20px;line-height:0;overflow:visible;';
           wrapper.setAttribute('data-page', String(i));
 
           const canvas = document.createElement('canvas');
@@ -129,6 +144,7 @@ export function PDFViewerWithEROverlay({
       renderTasksRef.current.forEach(t => t?.cancel?.());
       pdfDocRef.current?.destroy();
       pdfDocRef.current = null;
+      if (blobObjectUrl) URL.revokeObjectURL(blobObjectUrl);
     };
   }, [pdfUrl, pdfjsLib]);
 
@@ -146,7 +162,10 @@ export function PDFViewerWithEROverlay({
       if (!canvasWrapperRef.current) return;
 
       coordinates.forEach(coord => {
-        if (!erNotes[coord.qNum.toString()]) return;
+        // Support both new format (key/label) and legacy (qNum)
+        const key   = coord.key ?? coord.qNum?.toString() ?? '';
+        const label = coord.label ?? erLabels[key] ?? `Q${key}`;
+        if (!erNotes[key]) return;
 
         const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
           `div[data-page="${coord.page}"]`
@@ -156,18 +175,9 @@ export function PDFViewerWithEROverlay({
         const canvas = wrapper.querySelector('canvas');
         if (!canvas) return;
 
-        // coord.topPx is in scale=1 PDF units.
-        // canvas.width is at scale=1.5 (device pixels).
-        // The canvas CSS width == wrapper.clientWidth (set to 100%).
-        // Scale factor = cssWidth / (canvas.width / 1.5)
         const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] ?? (canvas.width / 1.5);
-        // Fall back to naturalWidth if layout hasn't happened yet (shouldn't occur after rAF)
         const cssWidth = wrapper.clientWidth > 0 ? wrapper.clientWidth : naturalWidth;
         const scale = cssWidth / naturalWidth;
-
-        // Position: centre the button vertically on the question-number baseline.
-        // translateY(-50%) moves the button up by half its own height, aligning
-        // the button's midpoint with the question number text.
         const topCss = coord.topPx * scale;
 
         const btn = document.createElement('button');
@@ -180,7 +190,7 @@ export function PDFViewerWithEROverlay({
           'background:#f59e0b',
           'color:#1a0a00',
           'font-size:10px',
-          'font-weight:800',
+          'font-weight:700',
           'padding:2px 6px',
           'border-radius:4px',
           'border:1.5px solid #d97706',
@@ -191,9 +201,9 @@ export function PDFViewerWithEROverlay({
           'transform:translateY(-50%)',
           'pointer-events:auto',
         ].join(';');
-        btn.textContent = `Q${coord.qNum}`;
-        btn.title = `Examiner Report — Question ${coord.qNum}`;
-        btn.addEventListener('click', () => onERClickRef.current(coord.qNum));
+        btn.textContent = label;
+        btn.title = `Examiner Report — ${label}`;
+        btn.addEventListener('click', () => onERClickRef.current(key));
         wrapper.appendChild(btn);
       });
     });
@@ -206,7 +216,9 @@ export function PDFViewerWithEROverlay({
       if (!canvasWrapperRef.current) return;
       canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
       coordinatesRef.current.forEach(coord => {
-        if (!erNotesRef.current[coord.qNum.toString()]) return;
+        const key   = coord.key ?? coord.qNum?.toString() ?? '';
+        const label = coord.label ?? erLabels[key] ?? `Q${key}`;
+        if (!erNotesRef.current[key]) return;
         const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(`div[data-page="${coord.page}"]`);
         if (!wrapper) return;
         const canvas = wrapper.querySelector('canvas');
@@ -219,14 +231,14 @@ export function PDFViewerWithEROverlay({
         btn.className = 'er-btn';
         btn.style.cssText = [
           'position:absolute', `top:${topCss}px`, 'left:6px', 'z-index:50',
-          'background:#f59e0b', 'color:#1a0a00', 'font-size:10px', 'font-weight:800',
+          'background:#f59e0b', 'color:#1a0a00', 'font-size:10px', 'font-weight:700',
           'padding:2px 6px', 'border-radius:4px', 'border:1.5px solid #d97706',
           'cursor:pointer', 'box-shadow:0 1px 3px rgba(0,0,0,0.4)', 'line-height:1.5',
           'white-space:nowrap', 'transform:translateY(-50%)', 'pointer-events:auto',
         ].join(';');
-        btn.textContent = `Q${coord.qNum}`;
-        btn.title = `Examiner Report — Question ${coord.qNum}`;
-        btn.addEventListener('click', () => onERClickRef.current(coord.qNum));
+        btn.textContent = label;
+        btn.title = `Examiner Report — ${label}`;
+        btn.addEventListener('click', () => onERClickRef.current(key));
         wrapper.appendChild(btn);
       });
     };
@@ -257,7 +269,7 @@ export function PDFViewerWithEROverlay({
           </div>
         </div>
       )}
-      <div ref={canvasWrapperRef} className="mx-auto max-w-[850px] py-4" />
+      <div ref={canvasWrapperRef} className="mx-auto max-w-[850px] py-4 overflow-visible" />
     </div>
   );
 }

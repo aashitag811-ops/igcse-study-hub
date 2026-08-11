@@ -5,20 +5,18 @@ import React from 'react';
 interface ExaminerReportModalProps {
   isOpen: boolean;
   onClose: () => void;
-  // Pass questionNumber for per-question mode, or null for general comments mode
-  questionNumber: number | null;
+  // label is the display string e.g. "Q 1. (a)" or "Q 22"
+  label: string;
   erNote: string;
 }
 
 export function ExaminerReportModal({
   isOpen,
   onClose,
-  questionNumber,
+  label,
   erNote
 }: ExaminerReportModalProps) {
   if (!isOpen) return null;
-
-  const isGeneral = questionNumber === null;
 
   return (
     <>
@@ -39,11 +37,11 @@ export function ExaminerReportModal({
             <div className="flex items-center gap-3">
               <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1">
                 <span className="text-white font-bold text-sm">
-                  {isGeneral ? 'General' : `Q${questionNumber}`}
+                  {label}
                 </span>
               </div>
               <h2 className="text-xl font-bold text-white">
-                {isGeneral ? 'General ER Comments' : 'Examiner Report Insights'}
+                Examiner Report Insights
               </h2>
             </div>
             <button
@@ -78,7 +76,7 @@ export function ExaminerReportModal({
                 </div>
                 <div className="flex-1">
                   <h3 className="text-sm font-semibold text-amber-900 dark:text-amber-100 mb-2 uppercase tracking-wider">
-                    {isGeneral ? 'General Examiner Comments' : 'Cambridge Examiner Feedback'}
+                    Cambridge Examiner Feedback
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-wrap">
                     {erNote}

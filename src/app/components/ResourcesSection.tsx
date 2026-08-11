@@ -57,15 +57,6 @@ const ACTION_CARDS: ActionCard[] = [
     accentColor: '#8BA84C',
     cta: 'View Profile',
   },
-  {
-    id: 'sign-out',
-    title: 'Sign Out',
-    subtitle: 'End Session',
-    description: 'Securely sign out of the Student Archive. Your progress and bookmarks are automatically saved to your account.',
-    icon: <SignOutIcon />,
-    accentColor: '#A84C4C',
-    cta: 'Sign Out',
-  },
 ];
 
 export default function ResourcesSection() {
@@ -154,7 +145,7 @@ export default function ResourcesSection() {
         </div>
 
         {/* Action cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {ACTION_CARDS.map((card, index) => (
             <div
               key={card.id}

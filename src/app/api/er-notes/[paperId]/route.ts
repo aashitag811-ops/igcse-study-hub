@@ -32,8 +32,13 @@ export async function GET(
     const specificPath = path.join(process.cwd(), 'public', 'er-cache', specificFileName);
     
     if (fs.existsSync(specificPath)) {
-      const cachedNotes = JSON.parse(fs.readFileSync(specificPath, 'utf-8'));
-      return NextResponse.json({ notes: cachedNotes });
+      const data = JSON.parse(fs.readFileSync(specificPath, 'utf-8'));
+      // New format: { notes: {...}, labels: {...} }
+      // Old format: { "1": "...", "2": "..." } (flat, no labels)
+      if (data.notes) {
+        return NextResponse.json({ notes: data.notes, labels: data.labels ?? {} });
+      }
+      return NextResponse.json({ notes: data, labels: {} });
     }
     
     // Fallback to general ER notes file: 0417_m20_er_notes.json
@@ -41,12 +46,15 @@ export async function GET(
     const generalPath = path.join(process.cwd(), 'public', 'er-cache', generalFileName);
     
     if (fs.existsSync(generalPath)) {
-      const cachedNotes = JSON.parse(fs.readFileSync(generalPath, 'utf-8'));
-      return NextResponse.json({ notes: cachedNotes });
+      const data = JSON.parse(fs.readFileSync(generalPath, 'utf-8'));
+      if (data.notes) {
+        return NextResponse.json({ notes: data.notes, labels: data.labels ?? {} });
+      }
+      return NextResponse.json({ notes: data, labels: {} });
     }
     
     // No ER notes available
-    return NextResponse.json({ notes: {}, erFileExists: false });
+    return NextResponse.json({ notes: {}, labels: {}, erFileExists: false });
     
   } catch (error) {
     console.error('Error fetching ER notes:', error);

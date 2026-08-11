@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useLayoutEffect } from 'react';
 import { PastPaperData, ViewPastPapersState, ExaminerReport } from '@/lib/types/past-papers.types';
 import { ExaminerReportDrawer } from './ExaminerReportDrawer';
 
@@ -8,6 +8,107 @@ interface ViewPastPapersModeProps {
   paperData: PastPaperData;
   onExit?: () => void;
 }
+
+// ── Reusable button components ──────────────────────────────────────────────
+
+function PaneButton({ label, active, title, onClick }: { label: string; active: boolean; title: string; onClick: () => void }) {
+  const [pressing, setPressing] = React.useState(false);
+  return (
+    <button
+      onClick={onClick}
+      onMouseDown={() => setPressing(true)}
+      onMouseUp={() => setPressing(false)}
+      onMouseLeave={() => setPressing(false)}
+      title={title}
+      style={{
+        fontFamily: 'Inter, system-ui, sans-serif',
+        fontSize: '12px', fontWeight: 700, letterSpacing: '0.12em',
+        padding: '7px 16px', borderRadius: '8px',
+        cursor: 'pointer', outline: 'none', transition: 'all 0.08s ease',
+        transform: pressing ? 'translateY(2px)' : 'translateY(0)',
+        // Navy base — gold top border + bottom shadow when active
+        background: active
+          ? pressing
+            ? 'linear-gradient(180deg, #0e1628 0%, #111e34 100%)'
+            : 'linear-gradient(180deg, #162040 0%, #111830 100%)'
+          : pressing
+            ? 'linear-gradient(180deg, #080c14 0%, #0a0e1a 100%)'
+            : 'linear-gradient(180deg, #0e1422 0%, #0a1020 100%)',
+        color: active ? '#ffffff' : 'rgba(140,160,200,0.55)',
+        textShadow: active ? '0 0 14px rgba(180,210,255,0.25)' : 'none',
+        border: active ? '1px solid rgba(80,120,200,0.30)' : '1px solid rgba(60,80,140,0.15)',
+        borderTop: active ? '1px solid rgba(200,168,76,0.55)' : '1px solid rgba(80,100,160,0.12)',
+        borderBottom: pressing ? '1px solid rgba(0,0,0,0.5)' : active ? '1px solid rgba(0,0,0,0.45)' : '1px solid rgba(0,0,0,0.3)',
+        boxShadow: active && !pressing
+          ? '0 3px 0 rgba(0,0,0,0.5), inset 0 1px 0 rgba(200,168,76,0.12), 0 0 18px rgba(30,60,160,0.18)'
+          : pressing
+            ? 'inset 0 2px 5px rgba(0,0,0,0.5)'
+            : '0 2px 0 rgba(0,0,0,0.35)',
+      }}
+    >
+      {label}
+    </button>
+  );
+}
+
+function SyncButton({ active, onClick }: { active: boolean; onClick: () => void }) {
+  const [pressing, setPressing] = React.useState(false);
+  return (
+    <button
+      onClick={onClick}
+      onMouseDown={() => setPressing(true)}
+      onMouseUp={() => setPressing(false)}
+      onMouseLeave={() => setPressing(false)}
+      title={active ? 'Disable Scroll Sync' : 'Enable Scroll Sync'}
+      style={{
+        padding: '7px 10px', borderRadius: '8px',
+        cursor: 'pointer', outline: 'none', transition: 'all 0.08s ease',
+        transform: pressing ? 'translateY(2px)' : 'translateY(0)',
+        background: active
+          ? pressing ? 'linear-gradient(180deg, #0e1628 0%, #111e34 100%)' : 'linear-gradient(180deg, #162040 0%, #111830 100%)'
+          : pressing ? 'linear-gradient(180deg, #080c14 0%, #0a0e1a 100%)' : 'linear-gradient(180deg, #0e1422 0%, #0a1020 100%)',
+        color: active ? '#ffffff' : 'rgba(140,160,200,0.45)',
+        border: active ? '1px solid rgba(80,120,200,0.30)' : '1px solid rgba(60,80,140,0.15)',
+        borderTop: active ? '1px solid rgba(200,168,76,0.55)' : '1px solid rgba(80,100,160,0.12)',
+        borderBottom: pressing ? '1px solid rgba(0,0,0,0.5)' : '1px solid rgba(0,0,0,0.35)',
+        boxShadow: active && !pressing ? '0 3px 0 rgba(0,0,0,0.5), inset 0 1px 0 rgba(200,168,76,0.12)' : pressing ? 'inset 0 2px 5px rgba(0,0,0,0.5)' : '0 2px 0 rgba(0,0,0,0.35)',
+      }}
+    >
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+      </svg>
+    </button>
+  );
+}
+
+function ExitButton({ onClick }: { onClick: () => void }) {
+  const [pressing, setPressing] = React.useState(false);
+  return (
+    <button
+      onClick={onClick}
+      onMouseDown={() => setPressing(true)}
+      onMouseUp={() => setPressing(false)}
+      onMouseLeave={() => setPressing(false)}
+      style={{
+        fontFamily: 'Inter, system-ui, sans-serif',
+        fontSize: '12px', fontWeight: 600, letterSpacing: '0.06em',
+        padding: '7px 16px', borderRadius: '8px',
+        cursor: 'pointer', outline: 'none', transition: 'all 0.08s ease',
+        transform: pressing ? 'translateY(2px)' : 'translateY(0)',
+        background: pressing ? 'linear-gradient(180deg, #120608 0%, #160a0a 100%)' : 'linear-gradient(180deg, #1e0a0a 0%, #160808 100%)',
+        color: pressing ? 'rgba(200,120,110,0.7)' : '#c06060',
+        border: '1px solid rgba(160,60,60,0.22)',
+        borderTop: '1px solid rgba(200,80,80,0.32)',
+        borderBottom: pressing ? '1px solid rgba(0,0,0,0.5)' : '1px solid rgba(0,0,0,0.4)',
+        boxShadow: pressing ? 'inset 0 2px 5px rgba(0,0,0,0.5)' : '0 3px 0 rgba(0,0,0,0.45), inset 0 1px 0 rgba(200,80,80,0.08)',
+      }}
+    >
+      Exit
+    </button>
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────────────
 
 export function ViewPastPapersMode({ paperData, onExit }: ViewPastPapersModeProps) {
   const [state, setState] = useState<ViewPastPapersState>({
@@ -18,6 +119,49 @@ export function ViewPastPapersMode({ paperData, onExit }: ViewPastPapersModeProp
     selectedERQuestion: null,
     scrollSyncEnabled: true,
   });
+
+  // Draggable split — % width of the LEFT (QP) pane
+  const [splitPct, setSplitPct] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = sessionStorage.getItem('vpp-split');
+      return saved ? Number(saved) : 50;
+    }
+    return 50;
+  });
+  const isDragging = useRef(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    sessionStorage.setItem('vpp-split', String(splitPct));
+  }, [splitPct]);
+
+  const onDividerMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    isDragging.current = true;
+    document.body.style.cursor = 'col-resize';
+    document.body.style.userSelect = 'none';
+  }, []);
+
+  useEffect(() => {
+    const onMouseMove = (e: MouseEvent) => {
+      if (!isDragging.current || !containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const pct = ((e.clientX - rect.left) / rect.width) * 100;
+      setSplitPct(Math.min(75, Math.max(25, pct)));
+    };
+    const onMouseUp = () => {
+      if (!isDragging.current) return;
+      isDragging.current = false;
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    };
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mouseup', onMouseUp);
+    };
+  }, []);
 
   const qpPaneRef = useRef<HTMLDivElement>(null);
   const msPaneRef = useRef<HTMLDivElement>(null);
@@ -107,156 +251,139 @@ export function ViewPastPapersMode({ paperData, onExit }: ViewPastPapersModeProp
     ? paperData.examinerReports.find(er => er.questionNumber === state.selectedERQuestion)
     : null;
 
-  // Calculate layout classes
-  const getLayoutClasses = () => {
-    if (state.showQP && state.showMS) {
-      return 'grid grid-cols-2 gap-4';
-    }
-    return 'grid grid-cols-1';
-  };
-
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
+    <div className="min-h-screen" style={{ background: '#0a0c10' }}>
       {/* Header */}
-      <div className="sticky top-0 z-30 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm">
-        <div className="max-w-[1920px] mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            {/* Title */}
-            <div>
-              <h1 className="text-xl font-bold text-slate-900 dark:text-white">
+      <div className="sticky top-0 z-30" style={{
+        background: 'linear-gradient(180deg, #0d1018 0%, #0a0c14 100%)',
+        borderBottom: '1px solid rgba(200,168,76,0.12)',
+        boxShadow: '0 2px 20px rgba(0,0,0,0.4)',
+      }}>
+        <div className="max-w-[1920px] mx-auto px-6 py-3">
+          <div className="flex items-center justify-between gap-6">
+
+            {/* Title — padded left so logo doesn't clip text */}
+            <div style={{ paddingLeft: '4px', minWidth: 0 }}>
+              <h1 style={{
+                fontFamily: "'Cormorant Garamond','Cormorant',Georgia,serif",
+                fontSize: '18px', fontWeight: 600,
+                color: '#e8dcc4', letterSpacing: '0.01em',
+                whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
+              }}>
                 {paperData.displayName}
               </h1>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
+              <p style={{
+                fontFamily: "'Cormorant Garamond','Cormorant',Georgia,serif",
+                fontSize: '13px', color: 'rgba(180,150,60,0.65)',
+                marginTop: '2px', letterSpacing: '0.02em',
+                whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
+              }}>
                 {paperData.subjectName} ({paperData.subjectCode})
               </p>
             </div>
 
-            {/* Toggle Matrix Panel */}
-            <div className="flex items-center gap-3">
+            {/* Buttons */}
+            <div className="flex items-center gap-2 flex-shrink-0">
+
               {/* QP Toggle */}
-              <button
-                onClick={() => togglePane('qp')}
-                className={`
-                  px-4 py-2 rounded-lg font-semibold text-sm transition-all border-2
-                  ${state.showQP
-                    ? 'bg-blue-500 text-white border-blue-500 shadow-md'
-                    : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-600 hover:border-blue-400'
-                  }
-                `}
+              <PaneButton
+                label="QP"
+                active={state.showQP}
                 title={state.showQP ? 'Hide Question Paper' : 'Show Question Paper'}
-              >
-                QP
-              </button>
+                onClick={() => togglePane('qp')}
+              />
 
               {/* MS Toggle */}
-              <button
+              <PaneButton
+                label="MS"
+                active={state.showMS}
+                title={state.showMS ? 'Hide Mark Scheme' : 'Show Mark Scheme'}
                 onClick={() => togglePane('ms')}
-                className={`
-                  px-4 py-2 rounded-lg font-semibold text-sm transition-all border-2
-                  ${state.showMS
-                    ? 'bg-green-500 text-white border-green-500 shadow-md'
-                    : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-600 hover:border-green-400'
-                  }
-                `}
-                title={state.showMS ? 'Hide Marking Scheme' : 'Show Marking Scheme'}
-              >
-                MS
-              </button>
+              />
 
               {/* Sync Toggle */}
-              <button
+              <SyncButton
+                active={state.scrollSyncEnabled}
                 onClick={() => setState(prev => ({ ...prev, scrollSyncEnabled: !prev.scrollSyncEnabled }))}
-                className={`
-                  p-2 rounded-lg transition-all border-2
-                  ${state.scrollSyncEnabled
-                    ? 'bg-purple-500 text-white border-purple-500'
-                    : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-600'
-                  }
-                `}
-                title={state.scrollSyncEnabled ? 'Disable Scroll Sync' : 'Enable Scroll Sync'}
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
-              </button>
+              />
 
-              {/* Exit Button */}
-              {onExit && (
-                <button
-                  onClick={onExit}
-                  className="px-4 py-2 rounded-lg font-semibold text-sm bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border-2 border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-600 transition-colors"
-                >
-                  Exit
-                </button>
-              )}
+              {/* Exit */}
+              {onExit && <ExitButton onClick={onExit} />}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Dual-Pane Layout */}
-      <div className={`max-w-[1920px] mx-auto p-6 ${getLayoutClasses()}`}>
-        {/* Left Pane - Question Paper (QP) */}
+      {/* Draggable split-pane layout */}
+      <div
+        ref={containerRef}
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          width: '100%',
+          height: 'calc(100vh - 62px)',
+          overflow: 'hidden',
+          padding: '12px',
+          gap: 0,
+          boxSizing: 'border-box',
+        }}
+      >
+        {/* Left Pane — Question Paper */}
         {state.showQP && (
           <div
             ref={qpPaneRef}
-            className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-y-auto"
-            style={{ maxHeight: 'calc(100vh - 140px)' }}
+            style={{
+              width: state.showMS ? `${splitPct}%` : '100%',
+              height: '100%',
+              overflowY: 'auto',
+              flexShrink: 0,
+              borderRadius: '12px',
+              background: '#111418',
+              border: '1px solid rgba(200,168,76,0.10)',
+            }}
           >
-            <div className="sticky top-0 bg-blue-50 dark:bg-blue-900/20 px-6 py-3 border-b border-blue-200 dark:border-blue-800 z-10">
-              <h2 className="text-lg font-bold text-blue-900 dark:text-blue-100 flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="sticky top-0 z-10 px-5 py-2" style={{ background: '#0d1018', borderBottom: '1px solid rgba(200,168,76,0.10)' }}>
+              <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '15px', fontWeight: 600, color: '#a8c4e8', letterSpacing: '0.02em' }} className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 Question Paper
               </h2>
             </div>
-
-            <div className="p-6 space-y-8">
+            <div className="p-5 space-y-7">
               {paperData.questions.map((question) => {
                 const markingData = paperData.markingScheme.find(ms => ms.questionNumber === question.questionNumber);
                 const examinerReport = paperData.examinerReports.find(er => er.questionNumber === question.questionNumber);
-
                 return (
                   <div
                     key={question.questionNumber}
-                    ref={(el) => {
-                      if (el) questionRefs.current.set(question.questionNumber, el);
-                    }}
+                    ref={(el) => { if (el) questionRefs.current.set(question.questionNumber, el); }}
                     data-question-number={question.questionNumber}
-                    className="border-b border-slate-200 dark:border-slate-700 pb-8 last:border-b-0"
+                    style={{ borderBottom: '1px solid rgba(200,168,76,0.08)', paddingBottom: '28px' }}
+                    className="last:border-b-0"
                   >
-                    {/* Question Number Badge */}
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(80,120,200,0.15)', border: '1px solid rgba(80,120,200,0.25)', color: '#a8c4e8', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '14px', flexShrink: 0 }}>
                         {question.questionNumber}
                       </span>
                       {markingData && (
-                        <span className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-full text-sm font-semibold">
+                        <span style={{ padding: '2px 10px', borderRadius: '20px', background: 'rgba(80,120,200,0.10)', border: '1px solid rgba(80,120,200,0.18)', color: 'rgba(140,170,220,0.7)', fontSize: '12px', fontWeight: 600 }}>
                           {markingData.marksAllocated} {markingData.marksAllocated === 1 ? 'mark' : 'marks'}
                         </span>
                       )}
                     </div>
-
-                    {/* Question Image */}
-                    <div className="bg-slate-50 dark:bg-slate-900 rounded-lg p-4 mb-4">
-                      <img
-                        src={question.questionImgUrl}
-                        alt={`Question ${question.questionNumber}`}
-                        className="w-full h-auto"
-                      />
+                    <div style={{ borderRadius: '8px', overflow: 'hidden', marginBottom: '12px', background: '#ffffff' }}>
+                      <img src={question.questionImgUrl} alt={`Question ${question.questionNumber}`} className="w-full h-auto" />
                     </div>
-
-                    {/* ER Button */}
                     {examinerReport && (
                       <button
                         onClick={() => openERDrawer(question.questionNumber)}
-                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-lg font-semibold text-sm hover:from-amber-600 hover:to-orange-600 transition-all shadow-md hover:shadow-lg"
+                        style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '8px', background: 'linear-gradient(135deg, rgba(180,130,20,0.18), rgba(160,110,10,0.12))', border: '1px solid rgba(200,168,76,0.3)', borderTop: '1px solid rgba(200,168,76,0.45)', color: '#c8a84c', fontSize: '12px', fontWeight: 600, cursor: 'pointer', boxShadow: '0 2px 0 rgba(0,0,0,0.3)' }}
                       >
-                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        ER - View Examiner Report
+                        Examiner Report
                       </button>
                     )}
                   </div>
@@ -266,64 +393,73 @@ export function ViewPastPapersMode({ paperData, onExit }: ViewPastPapersModeProp
           </div>
         )}
 
-        {/* Right Pane - Marking Scheme (MS) */}
+        {/* Draggable divider */}
+        {state.showQP && state.showMS && (
+          <div
+            onMouseDown={onDividerMouseDown}
+            style={{
+              width: '12px', flexShrink: 0, cursor: 'col-resize',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              zIndex: 10,
+            }}
+          >
+            <div style={{
+              width: '3px', height: '64px', borderRadius: '3px',
+              background: 'linear-gradient(180deg, transparent, rgba(200,168,76,0.5), transparent)',
+            }} />
+          </div>
+        )}
+
+        {/* Right Pane — Marking Scheme */}
         {state.showMS && (
           <div
             ref={msPaneRef}
-            className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-y-auto"
-            style={{ maxHeight: 'calc(100vh - 140px)' }}
+            style={{
+              width: state.showQP ? `${100 - splitPct}%` : '100%',
+              height: '100%',
+              overflowY: 'auto',
+              flexShrink: 0,
+              borderRadius: '12px',
+              background: '#111418',
+              border: '1px solid rgba(200,168,76,0.10)',
+            }}
           >
-            <div className="sticky top-0 bg-green-50 dark:bg-green-900/20 px-6 py-3 border-b border-green-200 dark:border-green-800 z-10">
-              <h2 className="text-lg font-bold text-green-900 dark:text-green-100 flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="sticky top-0 z-10 px-5 py-2" style={{ background: '#0d1018', borderBottom: '1px solid rgba(200,168,76,0.10)' }}>
+              <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '15px', fontWeight: 600, color: '#88c8a0', letterSpacing: '0.02em' }} className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                 </svg>
                 Marking Scheme
               </h2>
             </div>
-
-            <div className="p-6 space-y-6">
+            <div className="p-5 space-y-5">
               {paperData.markingScheme.map((ms) => (
                 <div
                   key={ms.questionNumber}
                   data-ms-question={ms.questionNumber}
-                  className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-5 border border-slate-200 dark:border-slate-700"
+                  style={{ borderRadius: '10px', padding: '16px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(200,168,76,0.08)' }}
                 >
-                  {/* Question Header */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-lg font-bold text-slate-900 dark:text-white">
+                  <div className="flex items-center justify-between mb-3">
+                    <span style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '16px', fontWeight: 600, color: '#e8dcc4' }}>
                       Question {ms.questionNumber}
                     </span>
-                    <div className="flex items-center gap-3">
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-bold">
-                        Answer: {ms.correctKey}
+                    <div className="flex items-center gap-2">
+                      <span style={{ padding: '2px 10px', borderRadius: '20px', background: 'rgba(80,160,100,0.12)', border: '1px solid rgba(80,160,100,0.22)', color: '#70b88a', fontSize: '12px', fontWeight: 700 }}>
+                        {ms.correctKey}
                       </span>
-                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-semibold">
-                        {ms.marksAllocated} {ms.marksAllocated === 1 ? 'mark' : 'marks'}
+                      <span style={{ padding: '2px 10px', borderRadius: '20px', background: 'rgba(80,120,200,0.10)', border: '1px solid rgba(80,120,200,0.18)', color: 'rgba(140,170,220,0.7)', fontSize: '12px', fontWeight: 600 }}>
+                        {ms.marksAllocated}m
                       </span>
                     </div>
                   </div>
-
-                  {/* Assessment Criteria */}
-                  <div className="mb-3">
-                    <h4 className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wide mb-2">
-                      Assessment Criteria
-                    </h4>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                      {ms.assessmentCriteria}
-                    </p>
-                  </div>
-
-                  {/* Common Errors */}
+                  <p style={{ fontSize: '13px', color: 'rgba(200,190,160,0.75)', lineHeight: 1.65 }}>{ms.assessmentCriteria}</p>
                   {ms.commonErrors && ms.commonErrors.length > 0 && (
-                    <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
-                      <h4 className="text-xs font-bold text-red-600 dark:text-red-400 uppercase tracking-wide mb-2">
-                        Common Errors
-                      </h4>
-                      <ul className="space-y-1">
-                        {ms.commonErrors.map((error, index) => (
-                          <li key={index} className="text-sm text-slate-600 dark:text-slate-400 flex items-start gap-2">
-                            <span className="text-red-500 mt-0.5">•</span>
+                    <div style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid rgba(200,168,76,0.07)' }}>
+                      <p style={{ fontSize: '10px', fontWeight: 700, letterSpacing: '0.2em', color: 'rgba(200,80,80,0.6)', marginBottom: '6px', textTransform: 'uppercase' }}>Common Errors</p>
+                      <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                        {ms.commonErrors.map((error, i) => (
+                          <li key={i} style={{ display: 'flex', gap: '6px', fontSize: '12px', color: 'rgba(180,140,140,0.65)' }}>
+                            <span style={{ color: 'rgba(200,80,80,0.5)', marginTop: '2px' }}>•</span>
                             <span>{error}</span>
                           </li>
                         ))}

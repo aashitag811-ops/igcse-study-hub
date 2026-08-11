@@ -1,16 +1,32 @@
 import type { Metadata } from "next";
-import { Fredoka } from "next/font/google";
+import { Playfair_Display, Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
-const fredoka = Fredoka({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-heading",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-display",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
+});
 
 export const metadata: Metadata = {
   title: "Student Archive - Discover & Share Study Resources",
   description: "Access thousands of study materials shared by students like you. Find notes, flashcards, revision guides, and more for all your IGCSE subjects.",
   viewport: {
-    width: 'device-width',
+    width: "device-width",
     initialScale: 1,
     maximumScale: 5,
   },
@@ -18,12 +34,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={fredoka.className}>
+      <body className={`${playfair.variable} ${cormorant.variable} ${inter.variable} font-body`}>
         <ThemeProvider>
           {children}
           <ThemeToggle />
