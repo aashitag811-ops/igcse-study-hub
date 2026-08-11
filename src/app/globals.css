@@ -414,3 +414,23 @@ select option {
 }
 
 /* Made with Bob */
+
+/* ── Global button interaction — rise on hover, press down on click ────────── */
+button, a[role="button"] {
+  transition: transform 0.12s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.12s ease !important;
+}
+
+button:hover:not(:disabled), a[role="button"]:hover {
+  transform: translateY(-2px) !important;
+}
+
+button:active:not(:disabled), a[role="button"]:active {
+  transform: translateY(2px) scale(0.97) !important;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.55), 0 0 12px rgba(200,168,76,0.12) !important;
+}
+
+button:disabled {
+  transform: none !important;
+  cursor: not-allowed !important;
+}
+/* ─────────────────────────────────────────────────────────────────────────── */

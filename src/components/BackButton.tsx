@@ -1,20 +1,29 @@
-'use client';
+﻿'use client';
 
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function BackButton() {
-  const router = useRouter();
-
   return (
-    <button
-      onClick={() => router.push('/')}
-      className="fixed top-4 left-4 z-50 flex items-center gap-2 bg-zinc-900/90 hover:bg-zinc-800 text-white px-4 py-2 rounded-lg shadow-lg transition-all backdrop-blur-sm border border-zinc-700/50"
+    <Link
+      href="/"
+      className="fixed top-4 left-4 z-50 group flex items-center"
     >
-      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-      </svg>
-      <span className="font-medium">Home</span>
-    </button>
+      <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-110">
+        <div
+          className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          style={{ boxShadow: '0 0 0 1.5px #C9A84C, 0 0 14px 4px rgba(201,168,76,0.65), 0 0 28px 8px rgba(201,168,76,0.25)' }}
+        />
+        <Image
+          src="/logo.png"
+          alt="Home"
+          width={56}
+          height={56}
+          className="rounded-md object-contain"
+          priority
+        />
+      </div>
+    </Link>
   );
 }
 
