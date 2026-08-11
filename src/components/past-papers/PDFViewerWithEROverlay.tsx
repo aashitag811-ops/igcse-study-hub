@@ -31,9 +31,15 @@ export function PDFViewerWithEROverlay({
   const renderTasksRef = useRef<any[]>([]);
   const pageViewportWidthsRef = useRef<number[]>([]); // natural pixel width per page at scale=1
   const [pdfjsLib, setPdfjsLib] = useState<any>(null);
+  const coordinatesRef = useRef<QuestionCoordinate[]>([]);
+  const erNotesRef = useRef<Record<string, string>>({});
 
   const onERClickRef = useRef(onERClick);
   useEffect(() => { onERClickRef.current = onERClick; }, [onERClick]);
+
+  // Keep refs in sync so the resize handler can read latest values
+  useEffect(() => { coordinatesRef.current = coordinates; }, [coordinates]);
+  useEffect(() => { erNotesRef.current = erNotes; }, [erNotes]);
 
   // Load PDF.js
   useEffect(() => {
@@ -135,50 +141,100 @@ export function PDFViewerWithEROverlay({
 
     if (coordinates.length === 0) return;
 
-    coordinates.forEach(coord => {
-      if (!erNotes[coord.qNum.toString()]) return;
+    // Use rAF to ensure layout is painted so clientWidth is non-zero
+    requestAnimationFrame(() => {
+      if (!canvasWrapperRef.current) return;
 
-      const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
-        `div[data-page="${coord.page}"]`
-      );
-      if (!wrapper) return;
+      coordinates.forEach(coord => {
+        if (!erNotes[coord.qNum.toString()]) return;
 
-      const canvas = wrapper.querySelector('canvas');
-      if (!canvas) return;
+        const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
+          `div[data-page="${coord.page}"]`
+        );
+        if (!wrapper) return;
 
-      // canvas.width is at scale=1.5; pageViewportWidthsRef is at scale=1
-      // CSS width = wrapper.clientWidth (100% of container)
-      // topCss = coord.topPx (scale=1 units) * (cssWidth / naturalWidth)
-      const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] || (canvas.width / 1.5);
-      const cssWidth = wrapper.clientWidth || naturalWidth;
-      const topCss = coord.topPx * (cssWidth / naturalWidth);
+        const canvas = wrapper.querySelector('canvas');
+        if (!canvas) return;
 
-      const btn = document.createElement('button');
-      btn.className = 'er-btn';
-      btn.style.cssText = [
-        'position:absolute',
-        `top:${topCss}px`,
-        'left:8px',
-        'z-index:50',
-        'background:#f59e0b',
-        'color:#000',
-        'font-size:11px',
-        'font-weight:800',
-        'padding:2px 7px',
-        'border-radius:5px',
-        'border:none',
-        'cursor:pointer',
-        'box-shadow:0 1px 4px rgba(0,0,0,0.35)',
-        'line-height:1.5',
-        'white-space:nowrap',
-        'transform:translateY(-100%)',
-      ].join(';');
-      btn.textContent = `Q${coord.qNum}`;
-      btn.title = `Examiner Report — Question ${coord.qNum}`;
-      btn.addEventListener('click', () => onERClickRef.current(coord.qNum));
-      wrapper.appendChild(btn);
+        // coord.topPx is in scale=1 PDF units.
+        // canvas.width is at scale=1.5 (device pixels).
+        // The canvas CSS width == wrapper.clientWidth (set to 100%).
+        // Scale factor = cssWidth / (canvas.width / 1.5)
+        const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] ?? (canvas.width / 1.5);
+        // Fall back to naturalWidth if layout hasn't happened yet (shouldn't occur after rAF)
+        const cssWidth = wrapper.clientWidth > 0 ? wrapper.clientWidth : naturalWidth;
+        const scale = cssWidth / naturalWidth;
+
+        // Position: centre the button vertically on the question-number baseline.
+        // translateY(-50%) moves the button up by half its own height, aligning
+        // the button's midpoint with the question number text.
+        const topCss = coord.topPx * scale;
+
+        const btn = document.createElement('button');
+        btn.className = 'er-btn';
+        btn.style.cssText = [
+          'position:absolute',
+          `top:${topCss}px`,
+          'left:6px',
+          'z-index:50',
+          'background:#f59e0b',
+          'color:#1a0a00',
+          'font-size:10px',
+          'font-weight:800',
+          'padding:2px 6px',
+          'border-radius:4px',
+          'border:1.5px solid #d97706',
+          'cursor:pointer',
+          'box-shadow:0 1px 3px rgba(0,0,0,0.4)',
+          'line-height:1.5',
+          'white-space:nowrap',
+          'transform:translateY(-50%)',
+          'pointer-events:auto',
+        ].join(';');
+        btn.textContent = `Q${coord.qNum}`;
+        btn.title = `Examiner Report — Question ${coord.qNum}`;
+        btn.addEventListener('click', () => onERClickRef.current(coord.qNum));
+        wrapper.appendChild(btn);
+      });
     });
   }, [pdfReady, coordinates, erNotes]);
+
+  // Re-position buttons if the container is resized (e.g. QP/MS toggle)
+  useEffect(() => {
+    if (!canvasWrapperRef.current) return;
+    const injectButtons = () => {
+      if (!canvasWrapperRef.current) return;
+      canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
+      coordinatesRef.current.forEach(coord => {
+        if (!erNotesRef.current[coord.qNum.toString()]) return;
+        const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(`div[data-page="${coord.page}"]`);
+        if (!wrapper) return;
+        const canvas = wrapper.querySelector('canvas');
+        if (!canvas) return;
+        const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] ?? (canvas.width / 1.5);
+        const cssWidth = wrapper.clientWidth > 0 ? wrapper.clientWidth : naturalWidth;
+        const scale = cssWidth / naturalWidth;
+        const topCss = coord.topPx * scale;
+        const btn = document.createElement('button');
+        btn.className = 'er-btn';
+        btn.style.cssText = [
+          'position:absolute', `top:${topCss}px`, 'left:6px', 'z-index:50',
+          'background:#f59e0b', 'color:#1a0a00', 'font-size:10px', 'font-weight:800',
+          'padding:2px 6px', 'border-radius:4px', 'border:1.5px solid #d97706',
+          'cursor:pointer', 'box-shadow:0 1px 3px rgba(0,0,0,0.4)', 'line-height:1.5',
+          'white-space:nowrap', 'transform:translateY(-50%)', 'pointer-events:auto',
+        ].join(';');
+        btn.textContent = `Q${coord.qNum}`;
+        btn.title = `Examiner Report — Question ${coord.qNum}`;
+        btn.addEventListener('click', () => onERClickRef.current(coord.qNum));
+        wrapper.appendChild(btn);
+      });
+    };
+
+    const ro = new ResizeObserver(() => { if (coordinatesRef.current.length > 0) injectButtons(); });
+    ro.observe(canvasWrapperRef.current);
+    return () => ro.disconnect();
+  }, []);
 
   return (
     <div
