@@ -7,14 +7,18 @@ const GITHUB_REPO   = 'igcse-study-hub';
 const GITHUB_BRANCH = '31-july';
 
 /**
- * Fetches a real LFS file from a private GitHub repo.
+ * Gets a signed download URL from GitHub LFS Batch API.
+ *
+ * Instead of proxying bytes through Vercel (which times out on large PDFs),
+ * we resolve the signed URL and redirect the browser to it directly.
+ * The browser then downloads straight from GitHub's LFS CDN.
  *
  * Flow:
- *  1. Fetch the LFS pointer file via GitHub Contents API to get oid + size
- *  2. Call the Git LFS Batch API to get a signed download URL
- *  3. Download the actual file from that URL
+ *  1. Fetch the LFS pointer via GitHub Contents API → get oid + size
+ *  2. Call LFS Batch API → get signed download URL
+ *  3. Return a 302 redirect to that URL
  */
-async function fetchLFSFile(filename: string, token: string): Promise<ArrayBuffer | null> {
+async function getLFSDownloadUrl(filename: string, token: string): Promise<string | null> {
   // Step 1: Get the LFS pointer content
   const ptrUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/public/pdfs/${filename}?ref=${GITHUB_BRANCH}`;
   const ptrRes = await fetch(ptrUrl, {
@@ -25,15 +29,19 @@ async function fetchLFSFile(filename: string, token: string): Promise<ArrayBuffe
     },
   });
 
-  if (!ptrRes.ok) return null;
+  if (!ptrRes.ok) {
+    console.error(`[PDF proxy] pointer fetch failed: ${ptrRes.status} for ${filename}`);
+    return null;
+  }
 
   const pointer = await ptrRes.text();
 
   // Parse oid and size from LFS pointer
-  const oidMatch   = pointer.match(/oid sha256:([a-f0-9]{64})/);
-  const sizeMatch  = pointer.match(/size (\d+)/);
+  const oidMatch  = pointer.match(/oid sha256:([a-f0-9]{64})/);
+  const sizeMatch = pointer.match(/size (\d+)/);
   if (!oidMatch || !sizeMatch) {
-    console.error('Failed to parse LFS pointer:', pointer.slice(0, 200));
+    // Not an LFS pointer — might be the real file already (edge case)
+    console.error('[PDF proxy] not an LFS pointer:', pointer.slice(0, 120));
     return null;
   }
 
@@ -58,24 +66,19 @@ async function fetchLFSFile(filename: string, token: string): Promise<ArrayBuffe
   });
 
   if (!batchRes.ok) {
-    console.error(`LFS batch API failed: ${batchRes.status}`, await batchRes.text());
+    console.error(`[PDF proxy] LFS batch failed: ${batchRes.status}`, await batchRes.text());
     return null;
   }
 
   const batch = await batchRes.json();
-  const downloadUrl = batch?.objects?.[0]?.actions?.download?.href;
-  const downloadHeaders = batch?.objects?.[0]?.actions?.download?.header ?? {};
+  const downloadUrl: string | undefined = batch?.objects?.[0]?.actions?.download?.href;
 
   if (!downloadUrl) {
-    console.error('No download URL in batch response. Error:', batch?.objects?.[0]?.error);
+    console.error('[PDF proxy] no download URL in batch response:', batch?.objects?.[0]?.error);
     return null;
   }
 
-  // Step 3: Download the actual file
-  const fileRes = await fetch(downloadUrl, { headers: downloadHeaders });
-  if (!fileRes.ok) return null;
-
-  return fileRes.arrayBuffer();
+  return downloadUrl;
 }
 
 export async function GET(
@@ -85,7 +88,7 @@ export async function GET(
   const resolvedParams = await params;
   const filename = resolvedParams.path.join('/');
 
-  // ── Development: serve from local public/pdfs/ ─────────────────────────────
+  // ── Development: serve from local public/pdfs/ ──────────────────────────
   if (process.env.NODE_ENV !== 'production') {
     try {
       const flatPath = join(process.cwd(), 'public', 'pdfs', filename);
@@ -100,33 +103,29 @@ export async function GET(
         },
       });
     } catch {
-      // Fall through to LFS fetch
+      // Fall through to LFS redirect
     }
   }
 
-  // ── Production: fetch real file via Git LFS Batch API ──────────────────────
+  // ── Production: redirect browser to signed LFS download URL ─────────────
+  // Redirect instead of proxying bytes — avoids Vercel's serverless timeout
+  // on large PDFs. The browser fetches directly from GitHub's LFS CDN.
   const token = process.env.GITHUB_TOKEN;
   if (!token) {
     return new NextResponse('GITHUB_TOKEN not configured', { status: 503 });
   }
 
   try {
-    const pdfBuffer = await fetchLFSFile(filename, token);
+    const downloadUrl = await getLFSDownloadUrl(filename, token);
 
-    if (!pdfBuffer || pdfBuffer.byteLength < 1000) {
+    if (!downloadUrl) {
       return new NextResponse('PDF not found', { status: 404 });
     }
 
-    return new NextResponse(pdfBuffer, {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/pdf',
-        'Content-Disposition': `inline; filename="${filename}"`,
-        'Cache-Control': 'no-store',  // Prevent Vercel CDN from caching API responses
-      },
-    });
+    // 302 redirect — browser fetches PDF straight from GitHub LFS CDN
+    return NextResponse.redirect(downloadUrl, { status: 302 });
   } catch (error) {
-    console.error('LFS proxy error:', error);
+    console.error('[PDF proxy] error:', error);
     return new NextResponse('PDF not found', { status: 404 });
   }
 }
