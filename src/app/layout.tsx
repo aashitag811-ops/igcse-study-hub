@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Playfair_Display, Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -40,7 +39,6 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${cormorant.variable} ${inter.variable} font-body`}>
         <ThemeProvider>
           {children}
-          <ThemeToggle />
         </ThemeProvider>
       </body>
     </html>

@@ -37,6 +37,7 @@ function PaneBtn({ label, active, title, onClick }: { label: string; active: boo
         transition: 'background 0.15s ease, color 0.15s ease, border-color 0.15s ease',
       }}
     >
+      {/* Gold dot indicator below active */}
       {label}
       {active && (
         <span style={{
@@ -216,6 +217,7 @@ export function ViewPastPapersPDFMode({
         display: 'flex', alignItems: 'center',
       }}>
         <div style={{ width: '100%', maxWidth: '1920px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '24px' }}>
+          {/* Title — left-padded so the fixed site navbar logo doesn't clip it */}
           <div style={{ minWidth: 0, paddingLeft: '72px' }}>
             <h1 style={{
               fontFamily: "'Cormorant Garamond','Cormorant',Georgia,serif",
@@ -233,6 +235,7 @@ export function ViewPastPapersPDFMode({
               {subjectName} ({subjectCode})
             </p>
           </div>
+          {/* Buttons */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
             <PaneBtn label="QP" active={showQP} title={showQP ? 'Hide Question Paper' : 'Show Question Paper'} onClick={() => setShowQP(v => !v)} />
             <PaneBtn label="MS" active={showMS} title={showMS ? 'Hide Mark Scheme' : 'Show Mark Scheme'} onClick={() => setShowMS(v => !v)} />
@@ -246,19 +249,28 @@ export function ViewPastPapersPDFMode({
       <div
         ref={containerRef}
         style={{
-          display: 'flex', flexDirection: 'row',
-          width: '100%', height: `calc(100vh - ${HEADER_H}px)`,
-          overflow: 'hidden', padding: '12px', gap: 0, boxSizing: 'border-box',
+          display: 'flex',
+          flexDirection: 'row',
+          width: '100%',
+          height: `calc(100vh - ${HEADER_H}px)`,
+          overflow: 'hidden',
+          padding: '12px',
+          gap: 0,
+          boxSizing: 'border-box',
         }}
       >
         {/* QP Pane */}
         {showQP && (
           <div style={{
             width: showMS ? `${splitPct}%` : '100%',
-            height: '100%', flexShrink: 0, borderRadius: '12px',
-            overflow: 'hidden', background: '#111418',
+            height: '100%',
+            flexShrink: 0,
+            borderRadius: '12px',
+            overflow: 'hidden',
+            background: '#111418',
             border: '1px solid rgba(200,168,76,0.10)',
-            display: 'flex', flexDirection: 'column',
+            display: 'flex',
+            flexDirection: 'column',
           }}>
             <div style={{ padding: '8px 20px', background: '#0d1018', borderBottom: '1px solid rgba(200,168,76,0.10)', flexShrink: 0, display: 'flex', alignItems: 'center', gap: '10px' }}>
               <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '15px', fontWeight: 600, color: '#a8c4e8', letterSpacing: '0.02em', display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -293,16 +305,52 @@ export function ViewPastPapersPDFMode({
         {showQP && showMS && (
           <div
             onMouseDown={onDividerMouseDown}
-            style={{ width: '36px', flexShrink: 0, cursor: 'col-resize', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10, position: 'relative' }}
+            style={{
+              width: '36px',
+              flexShrink: 0,
+              cursor: 'col-resize',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 10,
+              position: 'relative',
+            }}
           >
-            <div style={{ position: 'absolute', top: 0, bottom: 0, left: '50%', width: '1px', transform: 'translateX(-50%)', background: 'linear-gradient(180deg, transparent 0%, rgba(200,168,76,0.18) 15%, rgba(200,168,76,0.18) 85%, transparent 100%)', pointerEvents: 'none' }} />
-            <svg width="28" height="120" viewBox="0 0 28 120" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ position: 'relative', filter: 'drop-shadow(0 0 4px rgba(200,168,76,0.35))' }}>
+            {/* Full-height hairline */}
+            <div style={{
+              position: 'absolute',
+              top: 0, bottom: 0,
+              left: '50%',
+              width: '1px',
+              transform: 'translateX(-50%)',
+              background: 'linear-gradient(180deg, transparent 0%, rgba(200,168,76,0.18) 15%, rgba(200,168,76,0.18) 85%, transparent 100%)',
+              pointerEvents: 'none',
+            }} />
+            {/* Ornamental SVG — infinity knot with arrow tips (3rd style) */}
+            <svg
+              width="28"
+              height="120"
+              viewBox="0 0 28 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ position: 'relative', filter: 'drop-shadow(0 0 4px rgba(200,168,76,0.35))' }}
+            >
+              {/* Top arrow tip */}
               <line x1="14" y1="0" x2="14" y2="22" stroke="rgba(200,168,76,0.55)" strokeWidth="1"/>
               <polygon points="14,4 11,12 17,12" fill="rgba(200,168,76,0.7)"/>
               <line x1="8" y1="10" x2="14" y2="4" stroke="rgba(200,168,76,0.5)" strokeWidth="0.8"/>
               <line x1="20" y1="10" x2="14" y2="4" stroke="rgba(200,168,76,0.5)" strokeWidth="0.8"/>
-              <path d="M14 48 C10 44, 4 44, 4 52 C4 60, 10 60, 14 56 C18 60, 24 60, 24 52 C24 44, 18 44, 14 48Z" stroke="rgba(200,168,76,0.85)" strokeWidth="1.2" fill="none"/>
+              {/* Centre ornament — infinity / figure-8 knot */}
+              <path
+                d="M14 48 C10 44, 4 44, 4 52 C4 60, 10 60, 14 56 C18 60, 24 60, 24 52 C24 44, 18 44, 14 48Z"
+                stroke="rgba(200,168,76,0.85)"
+                strokeWidth="1.2"
+                fill="none"
+              />
+              {/* Diamond in centre */}
               <rect x="11.5" y="49.5" width="5" height="5" transform="rotate(45 14 52)" stroke="rgba(200,168,76,0.9)" strokeWidth="1" fill="rgba(200,168,76,0.2)"/>
+
+              {/* Bottom arrow tip */}
               <line x1="14" y1="98" x2="14" y2="120" stroke="rgba(200,168,76,0.55)" strokeWidth="1"/>
               <polygon points="14,116 11,108 17,108" fill="rgba(200,168,76,0.7)"/>
               <line x1="8" y1="110" x2="14" y2="116" stroke="rgba(200,168,76,0.5)" strokeWidth="0.8"/>
@@ -315,10 +363,14 @@ export function ViewPastPapersPDFMode({
         {showMS && (
           <div style={{
             width: showQP ? `${100 - splitPct}%` : '100%',
-            height: '100%', flexShrink: 0, borderRadius: '12px',
-            overflow: 'hidden', background: '#111418',
+            height: '100%',
+            flexShrink: 0,
+            borderRadius: '12px',
+            overflow: 'hidden',
+            background: '#111418',
             border: '1px solid rgba(200,168,76,0.10)',
-            display: 'flex', flexDirection: 'column',
+            display: 'flex',
+            flexDirection: 'column',
           }}>
             <div style={{ padding: '8px 20px', background: '#0d1018', borderBottom: '1px solid rgba(200,168,76,0.10)', flexShrink: 0 }}>
               <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '15px', fontWeight: 600, color: '#88c8a0', letterSpacing: '0.02em', display: 'flex', alignItems: 'center', gap: '8px' }}>

@@ -7,6 +7,7 @@ import { SUBJECTS } from '@/lib/constants/subjects';
 import { RESOURCE_TYPES } from '@/lib/constants/resourceTypes';
 import { HeartIcon, CreatorBadge } from '@/components/HeartIcon';
 import { EditResourceModal } from '@/components/EditResourceModal';
+import Header from '@/components/Header';
 
 interface Resource {
   id: string;
@@ -25,6 +26,49 @@ interface Resource {
   };
 }
 
+const SERIF = "'Cormorant Garamond', 'Cormorant', Georgia, serif";
+const SANS = "'DM Sans', 'Inter', system-ui, -apple-system, sans-serif";
+
+// Deterministic dust particles — more of them, bigger, brighter
+const DUST = Array.from({ length: 48 }, (_, i) => ({
+  id: i,
+  size: 1.8 + (i * 5.7 % 3.2),
+  left: (i * 18.3 + 6) % 100,
+  top: (i * 24.7 + 9) % 100,
+  dur: 14 + (i * 3.3 % 12),
+  delay: (i * 2.9) % 10,
+  anim: i % 3,
+}));
+
+// Clean SVG icons matching the screenshot style
+const SidebarIcon = ({ type, size = 15 }: { type: string; size?: number }) => {
+  const p = { width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.5, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
+  switch (type) {
+    case 'all': return <svg {...p}><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>;
+    case 'notes': return <svg {...p}><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>;
+    case 'flashcards': return <svg {...p}><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>;
+    case 'formula-sheets': return <svg {...p}><line x1="19" y1="4" x2="10" y2="4"/><line x1="14" y1="20" x2="5" y2="20"/><line x1="15" y1="4" x2="9" y2="20"/></svg>;
+    case 'hardest-questions': return <svg {...p}><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5" fill="currentColor"/></svg>;
+    case 'sample-answers': return <svg {...p}><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>;
+    case 'revision-guides': return <svg {...p}><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>;
+    case 'youtube': return <svg {...p}><rect x="2" y="6" width="20" height="13" rx="2"/><polygon points="10 9 16 12.5 10 16 10 9" fill="currentColor" stroke="none"/></svg>;
+    case 'popular': return <svg {...p}><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>;
+    case 'newest': return <svg {...p}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
+    default: return <svg {...p}><circle cx="12" cy="12" r="3"/></svg>;
+  }
+};
+
+const NAV_TYPES = [
+  { value: 'all', label: 'All Resources' },
+  { value: 'notes', label: 'Revision Notes' },
+  { value: 'flashcards', label: 'Flashcards' },
+  { value: 'formula-sheets', label: 'Formula Sheets' },
+  { value: 'hardest-questions', label: 'Hardest Questions' },
+  { value: 'sample-answers', label: 'Sample Answers' },
+  { value: 'revision-guides', label: 'Revision Guides' },
+  { value: 'youtube', label: 'YouTube Resources' },
+];
+
 export default function BrowsePage() {
   const router = useRouter();
   const [resources, setResources] = useState<Resource[]>([]);
@@ -33,845 +77,550 @@ export default function BrowsePage() {
   const [userVotes, setUserVotes] = useState<Set<string>>(new Set());
   const [editingResource, setEditingResource] = useState<Resource | null>(null);
   const [userProfile, setUserProfile] = useState<any>(null);
-  
-  // Filters
+
   const [selectedSubject, setSelectedSubject] = useState<string>('all');
   const [selectedType, setSelectedType] = useState<string>('all');
-  const [sortBy, setSortBy] = useState<string>('newest');
+  const [sortBy, setSortBy] = useState<string>('popular');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentPage, setCurrentPage] = useState(1);
   const [totalCount, setTotalCount] = useState(0);
   const ITEMS_PER_PAGE = 10;
 
-  useEffect(() => {
-    fetchData();
-  }, [selectedSubject, selectedType, sortBy, currentPage]);
+  // Cursor-following glow
+  const [glowPos, setGlowPos] = useState({ x: 50, y: 50 });
+  const [glowVisible, setGlowVisible] = useState(false);
 
   useEffect(() => {
-    // Reset to page 1 when filters change
-    setCurrentPage(1);
-  }, [selectedSubject, selectedType, sortBy]);
+    const move = (e: MouseEvent) => {
+      setGlowPos({ x: e.clientX, y: e.clientY });
+      setGlowVisible(true);
+    };
+    const leave = () => setGlowVisible(false);
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseleave', leave);
+    return () => {
+      window.removeEventListener('mousemove', move);
+      window.removeEventListener('mouseleave', leave);
+    };
+  }, []);
+
+  useEffect(() => { fetchData(); }, [selectedSubject, selectedType, sortBy, currentPage]);
+  useEffect(() => { setCurrentPage(1); }, [selectedSubject, selectedType, sortBy]);
 
   const fetchData = async () => {
     setLoading(true);
     const supabase = createClient();
-
-    // Get current user
     const { data: { user } } = await supabase.auth.getUser();
     setUser(user);
 
-    // Get user profile to check if creator
     if (user) {
-      const { data: profile } = await supabase
-        .from('profiles')
-        .select('full_name, email')
-        .eq('id', user.id)
-        .single();
+      const { data: profile } = await supabase.from('profiles').select('full_name, email').eq('id', user.id).single();
       setUserProfile(profile);
     }
-
-    // Fetch user's votes if logged in
     if (user) {
-      const { data: votes } = await supabase
-        .from('votes')
-        .select('resource_id')
-        .eq('user_id', user.id);
-      
-      if (votes) {
-        setUserVotes(new Set(votes.map((v: any) => v.resource_id)));
-      }
+      const { data: votes } = await supabase.from('votes').select('resource_id').eq('user_id', user.id);
+      if (votes) setUserVotes(new Set(votes.map((v: any) => v.resource_id)));
     }
 
-    // Build query for count
-    let countQuery = supabase
-      .from('resources')
-      .select('*', { count: 'exact', head: true });
-
-    if (selectedSubject !== 'all') {
-      countQuery = countQuery.eq('subject', selectedSubject);
-    }
-
-    if (selectedType !== 'all') {
-      countQuery = countQuery.eq('resource_type', selectedType);
-    }
-
+    let countQuery = supabase.from('resources').select('*', { count: 'exact', head: true });
+    if (selectedSubject !== 'all') countQuery = countQuery.eq('subject', selectedSubject);
+    if (selectedType !== 'all') countQuery = countQuery.eq('resource_type', selectedType);
     const { count } = await countQuery;
     setTotalCount(count || 0);
 
-    // Build query for data with pagination
-    let query = supabase
-      .from('resources')
-      .select(`
-        *,
-        profiles (
-          username,
-          full_name,
-          email
-        )
-      `);
-
-    // Filter by subject
-    if (selectedSubject !== 'all') {
-      query = query.eq('subject', selectedSubject);
-    }
-
-    // Filter by resource type
-    if (selectedType !== 'all') {
-      query = query.eq('resource_type', selectedType);
-    }
-
-    // Sort
-    if (sortBy === 'newest') {
-      query = query.order('created_at', { ascending: false });
-    } else if (sortBy === 'popular') {
-      query = query.order('upvote_count', { ascending: false });
-    }
-
-    // Pagination
+    let query = supabase.from('resources').select('*, profiles (username, full_name, email)');
+    if (selectedSubject !== 'all') query = query.eq('subject', selectedSubject);
+    if (selectedType !== 'all') query = query.eq('resource_type', selectedType);
+    if (sortBy === 'newest') query = query.order('created_at', { ascending: false });
+    else if (sortBy === 'popular') query = query.order('upvote_count', { ascending: false });
     const from = (currentPage - 1) * ITEMS_PER_PAGE;
-    const to = from + ITEMS_PER_PAGE - 1;
-    query = query.range(from, to);
-
+    query = query.range(from, from + ITEMS_PER_PAGE - 1);
     const { data, error } = await query;
-
-    if (error) {
-      console.error('Error fetching resources:', error);
-    } else {
-      setResources(data || []);
-    }
-
+    if (!error) setResources(data || []);
     setLoading(false);
   };
 
   const handleUpvote = async (resourceId: string) => {
-    if (!user) {
-      router.push('/igcse/login');
-      return;
-    }
-
+    if (!user) { router.push('/igcse/login'); return; }
     const supabase = createClient();
     const hasVoted = userVotes.has(resourceId);
-
     if (hasVoted) {
-      // Remove vote
-      const { error: deleteError } = await supabase
-        .from('votes')
-        .delete()
-        .eq('resource_id', resourceId)
-        .eq('user_id', user.id);
-
-      if (!deleteError) {
-        // Get actual count from database
-        const { count } = await supabase
-          .from('votes')
-          .select('*', { count: 'exact', head: true })
-          .eq('resource_id', resourceId);
-
-        const upvoteCount = count ?? 0;
-
-        // Update the resources table with the new count
-        await supabase
-          .from('resources')
-          // @ts-expect-error - Supabase type inference issue with update
-          .update({ upvote_count: upvoteCount })
-          .eq('id', resourceId);
-
-        setUserVotes(prev => {
-          const newSet = new Set(prev);
-          newSet.delete(resourceId);
-          return newSet;
-        });
-
-        setResources(prev =>
-          prev.map(r =>
-            r.id === resourceId
-              ? { ...r, upvote_count: upvoteCount }
-              : r
-          )
-        );
-      }
+      await supabase.from('votes').delete().eq('resource_id', resourceId).eq('user_id', user.id);
+      const { count } = await supabase.from('votes').select('*', { count: 'exact', head: true }).eq('resource_id', resourceId);
+      const n = count ?? 0;
+      await supabase.from('resources').update({ upvote_count: n } as any).eq('id', resourceId);
+      setUserVotes(prev => { const s = new Set(prev); s.delete(resourceId); return s; });
+      setResources(prev => prev.map(r => r.id === resourceId ? { ...r, upvote_count: n } : r));
     } else {
-      // Add vote
-      const { error: insertError } = await supabase
-        .from('votes')
-        .insert({ resource_id: resourceId, user_id: user.id } as any);
-
-      if (!insertError) {
-        // Get actual count from database
-        const { count } = await supabase
-          .from('votes')
-          .select('*', { count: 'exact', head: true })
-          .eq('resource_id', resourceId);
-
-        const upvoteCount = count ?? 0;
-
-        // Update the resources table with the new count
-        await supabase
-          .from('resources')
-          // @ts-expect-error - Supabase type inference issue with update
-          .update({ upvote_count: upvoteCount })
-          .eq('id', resourceId);
-
-        setUserVotes(prev => new Set(prev).add(resourceId));
-
-        // Update resources and re-sort if needed
-        setResources(prev => {
-          const updated = prev.map(r =>
-            r.id === resourceId
-              ? { ...r, upvote_count: upvoteCount }
-              : r
-          );
-          
-          // Re-sort if sorting by popular
-          if (sortBy === 'popular') {
-            return updated.sort((a, b) => b.upvote_count - a.upvote_count);
-          }
-          return updated;
-        });
-      }
+      await supabase.from('votes').insert({ resource_id: resourceId, user_id: user.id } as any);
+      const { count } = await supabase.from('votes').select('*', { count: 'exact', head: true }).eq('resource_id', resourceId);
+      const n = count ?? 0;
+      await supabase.from('resources').update({ upvote_count: n } as any).eq('id', resourceId);
+      setUserVotes(prev => new Set(prev).add(resourceId));
+      setResources(prev => {
+        const updated = prev.map(r => r.id === resourceId ? { ...r, upvote_count: n } : r);
+        return sortBy === 'popular' ? updated.sort((a, b) => b.upvote_count - a.upvote_count) : updated;
+      });
     }
   };
 
-  const handleEdit = async (updatedResource: Partial<Resource>) => {
-    if (!editingResource) return;
-
-    // Refresh the page after edit to show updated data
-    window.location.reload();
-  };
+  const handleEdit = async () => { window.location.reload(); };
 
   const handleDelete = async (resourceId: string) => {
-    if (!confirm('Are you sure you want to delete this resource?')) {
-      return;
-    }
-
+    if (!confirm('Are you sure you want to delete this resource?')) return;
     const supabase = createClient();
-    const { error } = await supabase
-      .from('resources')
-      .delete()
-      .eq('id', resourceId);
-
-    if (!error) {
-      setResources(prev => prev.filter(r => r.id !== resourceId));
-    } else {
-      alert('Failed to delete resource');
-    }
+    const { error } = await supabase.from('resources').delete().eq('id', resourceId);
+    if (!error) setResources(prev => prev.filter(r => r.id !== resourceId));
+    else alert('Failed to delete resource');
   };
 
-  const isCreator = (email: string | undefined) => {
-    return email === 'arinjaysaha2010@gmail.com' || email === 'aashitag811@gmail.com';
-  };
+  const isCreator = (email?: string) =>
+    email === 'arinjaysaha2010@gmail.com' || email === 'aashitag811@gmail.com';
+  const canEdit = (r: Resource) => user && r.uploader_id === user.id;
+  const canDelete = (r: Resource) => user && (r.uploader_id === user.id || isCreator(userProfile?.full_name));
 
-  const canEdit = (resource: Resource) => {
-    return user && resource.uploader_id === user.id;
-  };
-
-  const canDelete = (resource: Resource) => {
-    // User can delete their own resources OR creators can delete any resource
-    return user && (resource.uploader_id === user.id || isCreator(userProfile?.full_name));
-  };
-
-  // Filter resources by search query
-  const filteredResources = resources.filter(resource => {
+  const filteredResources = resources.filter(r => {
     if (!searchQuery) return true;
-    const query = searchQuery.toLowerCase();
-    return (
-      resource.title.toLowerCase().includes(query) ||
-      resource.description?.toLowerCase().includes(query) ||
-      resource.profiles?.username?.toLowerCase().includes(query)
-    );
+    const q = searchQuery.toLowerCase();
+    return r.title.toLowerCase().includes(q) || r.description?.toLowerCase().includes(q) || r.profiles?.username?.toLowerCase().includes(q);
   });
 
+  const activeSubject = SUBJECTS.find(s => s.code === selectedSubject);
+
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 50%, #FCE7F3 100%)' }}>
-      {/* Navigation Bar */}
-      <nav style={{
-        background: 'rgba(255, 255, 255, 0.9)',
-        backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
-        position: 'sticky',
-        top: 0,
-        zIndex: 50
-      }}>
-        <div style={{
-          maxWidth: '1280px',
-          margin: '0 auto',
-          padding: '1rem 1.5rem',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center'
-        }}>
-          <div
-            style={{
-              fontSize: '1.5rem',
-              fontWeight: '700',
-              background: 'linear-gradient(90deg, #2563EB 0%, #9333EA 50%, #EC4899 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              fontFamily: "'Dancing Script', cursive",
-              cursor: 'pointer'
-            }}
-            onClick={() => router.push('/')}
-          >
-            IGCSE Study Hub
-          </div>
+    <div style={{ minHeight: '100vh', background: '#0c1018', position: 'relative', overflowX: 'hidden' }}>
 
-          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-            {user ? (
-              <>
-                <button
-                  onClick={() => router.push('/igcse/upload')}
-                  style={{
-                    padding: '0.5rem 1rem',
-                    fontSize: '0.875rem',
-                    fontWeight: '600',
-                    borderRadius: '0.5rem',
-                    color: 'white',
-                    background: 'linear-gradient(145deg, #10B981, #059669)',
-                    border: 'none',
-                    cursor: 'pointer',
-                    transition: 'all 0.15s',
-                    boxShadow: '0 4px 8px rgba(16, 185, 129, 0.3)'
-                  }}
-                >
-                  Upload Resource
-                </button>
-                <button
-                  onClick={() => router.push('/igcse/profile')}
-                  style={{
-                    padding: '0.5rem 1rem',
-                    fontSize: '0.875rem',
-                    fontWeight: '600',
-                    borderRadius: '0.5rem',
-                    color: '#2563EB',
-                    background: 'white',
-                    border: '1px solid #2563EB',
-                    cursor: 'pointer',
-                    transition: 'all 0.15s'
-                  }}
-                >
-                  Profile
-                </button>
-              </>
-            ) : (
-              <button
-                onClick={() => router.push('/igcse/login')}
-                style={{
-                  padding: '0.5rem 1.5rem',
-                  fontSize: '0.875rem',
-                  fontWeight: '600',
-                  borderRadius: '0.5rem',
-                  color: 'white',
-                  background: 'linear-gradient(145deg, #2563EB, #1D4ED8)',
-                  border: 'none',
-                  cursor: 'pointer',
-                  transition: 'all 0.15s',
-                  boxShadow: '0 4px 8px rgba(37, 99, 235, 0.3)'
-                }}
-              >
-                Sign In
-              </button>
-            )}
-          </div>
-        </div>
-      </nav>
-
-      {/* Header */}
-      <div style={{
-        background: 'white',
-        borderBottom: '2px solid #E5E7EB',
-        padding: '2rem 1rem'
-      }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <h1 style={{
-            fontSize: '2.5rem',
-            fontWeight: '700',
-            fontFamily: "'Pacifico', cursive",
-            background: 'linear-gradient(90deg, #2563EB 0%, #9333EA 50%, #EC4899 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-            marginBottom: '0.5rem'
-          }}>
-            Browse Resources
-          </h1>
-          <p style={{ color: '#6B7280', fontSize: '1rem' }}>
-            Explore study materials from all subjects
-          </p>
-        </div>
+      {/* Dust particles */}
+      <div className="pointer-events-none" style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
+        {DUST.map(p => (
+          <div key={p.id} style={{
+            position: 'absolute', width: `${p.size}px`, height: `${p.size}px`,
+            borderRadius: '50%', left: `${p.left}%`, top: `${p.top}%`,
+            background: 'radial-gradient(circle, rgba(255,218,80,1) 0%, rgba(212,175,55,0.65) 50%, transparent 100%)',
+            boxShadow: '0 0 8px rgba(255,210,60,0.95), 0 0 18px rgba(200,160,40,0.55)',
+            animation: `dust${p.anim} ${p.dur}s ease-in-out infinite`,
+            animationDelay: `${p.delay}s`, opacity: 0,
+          }} />
+        ))}
       </div>
 
-      {/* Main Content */}
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '2rem 1rem' }}>
-        {/* Filters Section */}
-        <div style={{
-          background: 'white',
-          borderRadius: '1rem',
-          padding: '1.5rem',
-          marginBottom: '2rem',
-          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+      {/* Cursor-following glow */}
+      <div
+        className="pointer-events-none"
+        style={{
+          position: 'fixed', inset: 0, zIndex: 1,
+          opacity: glowVisible ? 1 : 0,
+          transition: 'opacity 0.4s ease',
+          background: `radial-gradient(circle 360px at ${glowPos.x}px ${glowPos.y}px, rgba(200,168,76,0.07) 0%, rgba(180,140,30,0.03) 50%, transparent 100%)`,
+        }}
+      />
+
+      <Header />
+
+      {/* ── Page layout ── */}
+      <div style={{ display: 'flex', paddingTop: '72px', position: 'relative', zIndex: 2 }}>
+
+        {/* ── Sidebar ── */}
+        <aside style={{
+          width: '210px',
+          flexShrink: 0,
+          borderRight: '1px solid rgba(200,168,76,0.08)',
+          padding: '32px 0',
+          position: 'sticky',
+          top: '72px',
+          height: 'calc(100vh - 72px)',
+          overflowY: 'auto',
+          background: 'rgba(3,6,10,0.6)',
         }}>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: '1rem',
-            marginBottom: '1rem'
-          }}>
-            {/* Subject Filter */}
-            <div>
-              <label style={{
-                display: 'block',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                marginBottom: '0.5rem',
-                color: '#374151'
-              }}>
-                Subject
-              </label>
-              <select
-                value={selectedSubject}
-                onChange={(e) => setSelectedSubject(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '0.5rem',
-                  border: '1px solid #D1D5DB',
-                  borderRadius: '0.5rem',
-                  fontSize: '0.875rem',
-                  cursor: 'pointer'
-                }}
-              >
-                <option value="all">All Subjects</option>
-                {SUBJECTS.map(subject => (
-                  <option key={subject.code} value={subject.code}>
-                    {subject.icon} {subject.name}
-                  </option>
-                ))}
-              </select>
-            </div>
 
-            {/* Resource Type Filter */}
-            <div>
-              <label style={{
-                display: 'block',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                marginBottom: '0.5rem',
-                color: '#374151'
-              }}>
-                Resource Type
-              </label>
-              <select
-                value={selectedType}
-                onChange={(e) => setSelectedType(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '0.5rem',
-                  border: '1px solid #D1D5DB',
-                  borderRadius: '0.5rem',
-                  fontSize: '0.875rem',
-                  cursor: 'pointer'
-                }}
-              >
-                <option value="all">All Types</option>
-                {RESOURCE_TYPES.map(type => (
-                  <option key={type.value} value={type.value}>
-                    {type.icon} {type.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Sort By */}
-            <div>
-              <label style={{
-                display: 'block',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                marginBottom: '0.5rem',
-                color: '#374151'
-              }}>
-                Sort By
-              </label>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '0.5rem',
-                  border: '1px solid #D1D5DB',
-                  borderRadius: '0.5rem',
-                  fontSize: '0.875rem',
-                  cursor: 'pointer'
-                }}
-              >
-                <option value="newest">Newest First</option>
-                <option value="popular">Most Popular</option>
-              </select>
-            </div>
+          {/* Resource type nav */}
+          <div style={{ padding: '0 16px', marginBottom: '32px' }}>
+            <p style={{
+              fontFamily: SANS, fontSize: '10px', fontWeight: 600,
+              letterSpacing: '0.18em', color: 'rgba(200,168,76,0.4)',
+              textTransform: 'uppercase', marginBottom: '10px',
+            }}>Browse Resources</p>
+            {NAV_TYPES.map(item => {
+              const active = selectedType === item.value;
+              return (
+                <button key={item.value} onClick={() => setSelectedType(item.value)} style={{
+                  display: 'flex', alignItems: 'center', gap: '9px',
+                  width: '100%', textAlign: 'left',
+                  padding: '7px 10px', borderRadius: '4px', marginBottom: '2px',
+                  background: active ? 'rgba(200,168,76,0.10)' : 'transparent',
+                  borderLeft: active ? '2px solid rgba(200,168,76,0.6)' : '2px solid transparent',
+                  color: active ? '#D4B96A' : 'rgba(210,190,145,0.72)',
+                  fontFamily: SERIF, fontSize: '14px', fontWeight: active ? 600 : 500,
+                  letterSpacing: '0.02em', cursor: 'pointer',
+                  transition: 'all 0.15s ease',
+                }}>
+                  <span style={{ opacity: active ? 1 : 0.55, display: 'flex', flexShrink: 0 }}><SidebarIcon type={item.value} /></span>
+                  {item.label}
+                </button>
+              );
+            })}
           </div>
 
-          {/* Search Bar */}
-          <div>
-            <label style={{
-              display: 'block',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              marginBottom: '0.5rem',
-              color: '#374151'
+          {/* Divider */}
+          <div style={{ height: '1px', background: 'rgba(200,168,76,0.07)', margin: '0 16px 24px' }} />
+
+          {/* Sort */}
+          <div style={{ padding: '0 16px', marginBottom: '32px' }}>
+            <p style={{
+              fontFamily: SANS, fontSize: '10px', fontWeight: 600,
+              letterSpacing: '0.18em', color: 'rgba(200,168,76,0.4)',
+              textTransform: 'uppercase', marginBottom: '10px',
+            }}>Filter By</p>
+            {[
+              { value: 'popular', label: 'Popular', icon: '🔥' },
+              { value: 'newest', label: 'Newest', icon: '🕐' },
+            ].map(item => {
+              const active = sortBy === item.value;
+              return (
+                <button key={item.value} onClick={() => setSortBy(item.value)} style={{
+                  display: 'flex', alignItems: 'center', gap: '9px',
+                  width: '100%', textAlign: 'left',
+                  padding: '7px 10px', borderRadius: '4px', marginBottom: '2px',
+                  background: active ? 'rgba(200,168,76,0.10)' : 'transparent',
+                  borderLeft: active ? '2px solid rgba(200,168,76,0.6)' : '2px solid transparent',
+                  color: active ? '#D4B96A' : 'rgba(210,190,145,0.72)',
+                  fontFamily: SERIF, fontSize: '14px', fontWeight: active ? 600 : 500,
+                  cursor: 'pointer', transition: 'all 0.15s ease',
+                }}>
+                  <span style={{ opacity: active ? 1 : 0.55, display: 'flex', flexShrink: 0 }}><SidebarIcon type={item.value} /></span>
+                  {item.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Divider */}
+          <div style={{ height: '1px', background: 'rgba(200,168,76,0.07)', margin: '0 16px 24px' }} />
+
+          {/* Subject */}
+          <div style={{ padding: '0 16px' }}>
+            <p style={{
+              fontFamily: SANS, fontSize: '10px', fontWeight: 600,
+              letterSpacing: '0.18em', color: 'rgba(200,168,76,0.4)',
+              textTransform: 'uppercase', marginBottom: '10px',
+            }}>Subject</p>
+            {[{ code: 'all', name: 'All Subjects' }, ...SUBJECTS].map(s => {
+              const active = selectedSubject === s.code;
+              return (
+                <button key={s.code} onClick={() => setSelectedSubject(s.code)} style={{
+                  display: 'flex', alignItems: 'center', gap: '9px',
+                  width: '100%', textAlign: 'left',
+                  padding: '7px 10px', borderRadius: '4px', marginBottom: '2px',
+                  background: active ? 'rgba(200,168,76,0.10)' : 'transparent',
+                  borderLeft: active ? '2px solid rgba(200,168,76,0.6)' : '2px solid transparent',
+                  color: active ? '#D4B96A' : 'rgba(210,190,145,0.72)',
+                  fontFamily: SERIF, fontSize: '14px', fontWeight: active ? 600 : 500,
+                  cursor: 'pointer', transition: 'all 0.15s ease',
+                }}>
+                  <span style={{ opacity: active ? 1 : 0.55, display: 'flex', flexShrink: 0 }}><SidebarIcon type="all" size={13} /></span>
+                  {s.name}
+                </button>
+              );
+            })}
+          </div>
+        </aside>
+
+        {/* ── Main ── */}
+        <main style={{ flex: 1, minWidth: 0, padding: '32px 40px 60px' }}>
+
+          {/* Page header */}
+          <div style={{ marginBottom: '28px', borderBottom: '1px solid rgba(200,168,76,0.08)', paddingBottom: '20px' }}>
+            <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '16px', flexWrap: 'wrap' }}>
+              <div>
+                {/* Main heading — subject name when filtered, otherwise archive title */}
+                <h1 style={{
+                  fontFamily: SERIF,
+                  fontSize: 'clamp(1.5rem, 2.8vw, 2rem)',
+                  fontWeight: 400,
+                  letterSpacing: '0.03em',
+                  lineHeight: 1.2,
+                  margin: '0 0 4px',
+                  color: activeSubject ? '#D4C99A' : '#F0EAD6',
+                  textShadow: activeSubject
+                    ? '0 0 24px rgba(200,168,76,0.18), 0 1px 4px rgba(0,0,0,0.5)'
+                    : 'none',
+                }}>
+                  {activeSubject ? activeSubject.name : 'Browse the Archive'}
+                </h1>
+                <p style={{
+                  fontFamily: SERIF, fontStyle: 'italic',
+                  fontSize: '13px', fontWeight: 400,
+                  color: 'rgba(196,176,138,0.45)',
+                  letterSpacing: '0.02em', margin: 0,
+                }}>
+                  {activeSubject
+                    ? `${activeSubject.name} resources shared by the community`
+                    : 'Resources shared by the community'}
+                </p>
+                {/* Thin gold divider below heading */}
+                <div style={{
+                  marginTop: '10px', height: '1px', width: '120px',
+                  background: 'linear-gradient(to right, rgba(200,168,76,0.35), transparent)',
+                }} />
+              </div>
+
+              {/* Search + upload */}
+              <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexShrink: 0 }}>
+                <div style={{ position: 'relative' }}>
+                  <svg style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', opacity: 0.3 }} width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                  </svg>
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    placeholder="Search the archive..."
+                    style={{
+                      background: 'rgba(255,255,255,0.03)',
+                      border: '1px solid rgba(200,168,76,0.12)',
+                      borderRadius: '6px',
+                      padding: '8px 14px 8px 32px',
+                      color: '#C4B08A',
+                      fontFamily: SANS, fontSize: '13px',
+                      outline: 'none', width: '220px',
+                    }}
+                  />
+                </div>
+                {user && (
+                  <button onClick={() => router.push('/igcse/upload')} style={{
+                    fontFamily: SANS, fontSize: '13px', fontWeight: 500,
+                    color: '#C9A84C',
+                    background: 'rgba(200,168,76,0.07)',
+                    border: '1px solid rgba(200,168,76,0.2)',
+                    borderRadius: '6px', padding: '8px 16px', cursor: 'pointer',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    + Upload
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* Result count */}
+            <p style={{
+              fontFamily: SANS, fontSize: '12px',
+              color: 'rgba(196,176,138,0.35)',
+              marginTop: '12px', letterSpacing: '0.04em',
             }}>
-              Search
-            </label>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by title, description, or uploader..."
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem',
-                outline: 'none'
-              }}
-              onFocus={(e) => e.currentTarget.style.borderColor = '#2563EB'}
-              onBlur={(e) => e.currentTarget.style.borderColor = '#D1D5DB'}
-            />
-          </div>
-
-          {/* Results Count */}
-          <div style={{
-            marginTop: '1rem',
-            padding: '0.75rem',
-            background: '#EFF6FF',
-            borderRadius: '0.5rem',
-            textAlign: 'center',
-            fontSize: '0.875rem',
-            color: '#2563EB',
-            fontWeight: '600'
-          }}>
-            {filteredResources.length} resource{filteredResources.length !== 1 ? 's' : ''} found
-          </div>
-        </div>
-
-        {/* Resources Grid */}
-        {loading ? (
-          <div style={{ textAlign: 'center', padding: '4rem' }}>
-            <div style={{ fontSize: '1.25rem', color: '#6B7280' }}>Loading resources...</div>
-          </div>
-        ) : filteredResources.length === 0 ? (
-          <div style={{
-            background: 'white',
-            borderRadius: '1rem',
-            padding: '3rem',
-            textAlign: 'center',
-            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-          }}>
-            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔍</div>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '0.5rem', color: '#111827' }}>
-              No Resources Found
-            </h3>
-            <p style={{ color: '#6B7280', marginBottom: '1.5rem' }}>
-              Try adjusting your filters or search query
+              {filteredResources.length} {filteredResources.length === 1 ? 'result' : 'results'}
+              {totalCount > ITEMS_PER_PAGE && ` — page ${currentPage} of ${Math.ceil(totalCount / ITEMS_PER_PAGE)}`}
             </p>
           </div>
-        ) : (
-          <div style={{ display: 'grid', gap: '1.5rem' }}>
-            {filteredResources.map((resource) => {
-              const resourceType = RESOURCE_TYPES.find(t => t.value === resource.resource_type);
-              const subject = SUBJECTS.find(s => s.code === resource.subject);
-              const hasVoted = userVotes.has(resource.id);
 
-              const colorMap: Record<string, { bg: string; text: string }> = {
-                blue: { bg: '#EFF6FF', text: '#2563EB' },
-                purple: { bg: '#F5F3FF', text: '#9333EA' },
-                green: { bg: '#D1FAE5', text: '#059669' },
-                emerald: { bg: '#D1FAE5', text: '#10B981' },
-                red: { bg: '#FEE2E2', text: '#DC2626' },
-                yellow: { bg: '#FEF3C7', text: '#D97706' },
-                indigo: { bg: '#E0E7FF', text: '#4F46E5' },
-                cyan: { bg: '#CFFAFE', text: '#0891B2' },
-                orange: { bg: '#FFEDD5', text: '#EA580C' },
-              };
-              const colors = subject ? (colorMap[subject.color] || colorMap.blue) : colorMap.blue;
+          {/* Resource list */}
+          {loading ? (
+            <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '80px' }}>
+              <div style={{
+                width: '28px', height: '28px',
+                border: '1.5px solid rgba(200,168,76,0.15)',
+                borderTopColor: 'rgba(200,168,76,0.6)',
+                borderRadius: '50%',
+                animation: 'spin 0.8s linear infinite',
+              }} />
+            </div>
+          ) : filteredResources.length === 0 ? (
+            <div style={{ paddingTop: '80px', textAlign: 'center' }}>
+              <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '1.1rem', color: 'rgba(196,176,138,0.3)' }}>
+                No resources found in the archive.
+              </p>
+            </div>
+          ) : (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
+              {filteredResources.map((resource) => {
+                const resourceType = RESOURCE_TYPES.find(t => t.value === resource.resource_type);
+                const subject = SUBJECTS.find(s => s.code === resource.subject);
+                const hasVoted = userVotes.has(resource.id);
 
-              return (
-                <div
-                  key={resource.id}
-                  style={{
-                    background: 'white',
-                    borderRadius: '1rem',
-                    padding: '1.5rem',
-                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                    transition: 'all 0.2s',
-                    border: '1px solid #E5E7EB'
-                  }}
-                >
-                  <div style={{ display: 'flex', gap: '1rem' }}>
-                    {/* Upvote Section */}
-                    <div style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      gap: '0.5rem'
-                    }}>
-                      <HeartIcon
-                        filled={hasVoted}
-                        size={28}
-                        onClick={() => handleUpvote(resource.id)}
-                      />
-                      <span style={{
-                        fontSize: '0.875rem',
-                        fontWeight: '700',
-                        color: hasVoted ? '#3B82F6' : '#6B7280'
-                      }}>
-                        {resource.upvote_count}
-                      </span>
-                    </div>
-
-                    {/* Resource Content */}
-                    <div style={{ flex: 1 }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
+                return (
+                  <div
+                    key={resource.id}
+                    style={{
+                      display: 'flex', flexDirection: 'column', gap: '8px',
+                      padding: '14px 16px',
+                      border: '1px solid rgba(200,168,76,0.08)',
+                      borderRadius: '4px',
+                      background: 'rgba(255,255,255,0.015)',
+                      transition: 'border-color 0.15s ease, background 0.15s ease',
+                    }}
+                    onMouseEnter={e => {
+                      (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(200,168,76,0.2)';
+                      (e.currentTarget as HTMLDivElement).style.background = 'rgba(200,168,76,0.03)';
+                    }}
+                    onMouseLeave={e => {
+                      (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(200,168,76,0.08)';
+                      (e.currentTarget as HTMLDivElement).style.background = 'rgba(255,255,255,0.015)';
+                    }}
+                  >
+                    {/* Tags + upvote row */}
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '6px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', minWidth: 0 }}>
+                        {subject && (
+                          <span style={{
+                            fontFamily: SANS, fontSize: '9px', fontWeight: 600,
+                            letterSpacing: '0.14em', textTransform: 'uppercase',
+                            color: 'rgba(200,168,76,0.7)',
+                          }}>
+                            {subject.name}
+                          </span>
+                        )}
+                        {subject && resourceType && <span style={{ color: 'rgba(200,168,76,0.2)', fontSize: '9px' }}>·</span>}
+                        {resourceType && (
+                          <span style={{
+                            fontFamily: SANS, fontSize: '9px', fontWeight: 500,
+                            letterSpacing: '0.1em', textTransform: 'uppercase',
+                            color: 'rgba(196,176,138,0.4)',
+                          }}>
+                            {resourceType.label}
+                          </span>
+                        )}
+                      </div>
+                      {/* Upvote */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
+                        <HeartIcon filled={hasVoted} size={14} onClick={() => handleUpvote(resource.id)} />
                         <span style={{
-                          padding: '0.25rem 0.75rem',
-                          background: colors.bg,
-                          color: colors.text,
-                          borderRadius: '0.25rem',
-                          fontSize: '0.75rem',
-                          fontWeight: '600'
+                          fontFamily: SANS, fontSize: '11px', fontWeight: 600,
+                          color: hasVoted ? '#C9A84C' : 'rgba(196,176,138,0.3)',
                         }}>
-                          {subject?.icon} {subject?.name}
-                        </span>
-                        <span style={{
-                          padding: '0.25rem 0.75rem',
-                          background: '#F3F4F6',
-                          color: '#6B7280',
-                          borderRadius: '0.25rem',
-                          fontSize: '0.75rem',
-                          fontWeight: '600'
-                        }}>
-                          {resourceType?.icon} {resourceType?.label}
-                        </span>
-                        <span style={{ fontSize: '0.75rem', color: '#9CA3AF', display: 'flex', alignItems: 'center' }}>
-                          by {resource.profiles?.full_name || resource.profiles?.username || 'Anonymous'}
-                          {isCreator(resource.profiles?.email) && (
-                            <CreatorBadge />
-                          )}
+                          {resource.upvote_count}
                         </span>
                       </div>
+                    </div>
 
-                      <h3 style={{
-                        fontSize: '1.25rem',
-                        fontWeight: '700',
-                        marginBottom: '0.5rem',
-                        color: '#111827'
-                      }}>
-                        {resource.title}
-                      </h3>
+                    {/* Title */}
+                    <h3 style={{
+                      fontFamily: SERIF, fontSize: '1rem', fontWeight: 500,
+                      color: '#E8DCC4', letterSpacing: '0.01em', lineHeight: 1.3,
+                      margin: 0,
+                    }}>
+                      {resource.title}
+                    </h3>
 
+                    {/* Description — clamped to 2 lines */}
+                    {resource.description && (
                       <p style={{
-                        color: '#6B7280',
-                        marginBottom: '1rem',
-                        lineHeight: '1.5'
+                        fontFamily: SANS, fontSize: '12px',
+                        color: 'rgba(196,176,138,0.45)', lineHeight: 1.55,
+                        margin: 0,
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical' as any,
+                        overflow: 'hidden',
                       }}>
                         {resource.description}
                       </p>
+                    )}
 
-                      <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                    {/* Uploader + actions */}
+                    <div style={{ marginTop: 'auto', paddingTop: '8px', borderTop: '1px solid rgba(200,168,76,0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px' }}>
+                      <span style={{ fontFamily: SANS, fontSize: '11px', color: 'rgba(196,176,138,0.65)', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {resource.profiles?.full_name || resource.profiles?.username || 'Anonymous'}
+                        {isCreator(resource.profiles?.email) && <CreatorBadge />}
+                      </span>
+                      <div style={{ display: 'flex', gap: '6px', flexShrink: 0 }}>
                         {user ? (
-                          <a
-                            href={resource.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{
-                              display: 'inline-block',
-                              padding: '0.5rem 1rem',
-                              background: 'linear-gradient(145deg, #2563EB, #1D4ED8)',
-                              color: 'white',
-                              borderRadius: '0.5rem',
-                              fontSize: '0.875rem',
-                              fontWeight: '600',
-                              textDecoration: 'none',
-                              transition: 'all 0.15s',
-                              boxShadow: '0 4px 8px rgba(37, 99, 235, 0.3)',
-                              cursor: 'pointer'
-                            }}
-                          >
-                            View Resource →
-                          </a>
+                          <a href={resource.link} target="_blank" rel="noopener noreferrer" style={{
+                            fontFamily: SANS, fontSize: '11px', fontWeight: 500,
+                            color: '#C9A84C', border: '1px solid rgba(200,168,76,0.25)',
+                            borderRadius: '3px', padding: '3px 10px',
+                            textDecoration: 'none', cursor: 'pointer',
+                          }}>View →</a>
                         ) : (
-                          <button
-                            onClick={() => router.push('/igcse/login')}
-                            style={{
-                              display: 'inline-block',
-                              padding: '0.5rem 1rem',
-                              background: 'linear-gradient(145deg, #2563EB, #1D4ED8)',
-                              color: 'white',
-                              borderRadius: '0.5rem',
-                              fontSize: '0.875rem',
-                              fontWeight: '600',
-                              border: 'none',
-                              transition: 'all 0.15s',
-                              boxShadow: '0 4px 8px rgba(37, 99, 235, 0.3)',
-                              cursor: 'pointer'
-                            }}
-                          >
-                            Login to View →
-                          </button>
+                          <button onClick={() => router.push('/igcse/login')} style={{
+                            fontFamily: SANS, fontSize: '11px', fontWeight: 500,
+                            color: '#C9A84C', border: '1px solid rgba(200,168,76,0.25)',
+                            borderRadius: '3px', padding: '3px 10px', cursor: 'pointer',
+                            background: 'transparent',
+                          }}>Login →</button>
                         )}
-                        
                         {canEdit(resource) && (
-                          <button
-                            onClick={() => setEditingResource(resource)}
-                            style={{
-                              padding: '0.5rem 1rem',
-                              background: 'white',
-                              color: '#2563EB',
-                              border: '1px solid #2563EB',
-                              borderRadius: '0.5rem',
-                              fontSize: '0.875rem',
-                              fontWeight: '600',
-                              cursor: 'pointer',
-                              transition: 'all 0.15s'
-                            }}
-                          >
-                            ✏️ Edit
-                          </button>
+                          <button onClick={() => setEditingResource(resource)} style={{
+                            fontFamily: SANS, fontSize: '11px', color: 'rgba(196,176,138,0.4)',
+                            border: '1px solid rgba(196,176,138,0.1)', borderRadius: '3px',
+                            padding: '3px 8px', cursor: 'pointer', background: 'transparent',
+                          }}>Edit</button>
                         )}
-                        
                         {canDelete(resource) && (
-                          <button
-                            onClick={() => handleDelete(resource.id)}
-                            style={{
-                              padding: '0.5rem 1rem',
-                              background: 'white',
-                              color: '#EF4444',
-                              border: '1px solid #EF4444',
-                              borderRadius: '0.5rem',
-                              fontSize: '0.875rem',
-                              fontWeight: '600',
-                              cursor: 'pointer',
-                              transition: 'all 0.15s'
-                            }}
-                          >
-                            🗑️ Delete
-                          </button>
+                          <button onClick={() => handleDelete(resource.id)} style={{
+                            fontFamily: SANS, fontSize: '11px', color: 'rgba(180,60,60,0.55)',
+                            border: '1px solid rgba(180,60,60,0.12)', borderRadius: '3px',
+                            padding: '3px 8px', cursor: 'pointer', background: 'transparent',
+                          }}>Del</button>
                         )}
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-
-        {/* Pagination */}
-        {!loading && totalCount > ITEMS_PER_PAGE && (
-          <div style={{
-            marginTop: '2rem',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: '0.5rem'
-          }}>
-            <button
-              onClick={() => {
-                setCurrentPage(prev => Math.max(1, prev - 1));
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              disabled={currentPage === 1}
-              style={{
-                padding: '0.5rem 1rem',
-                background: currentPage === 1 ? '#F3F4F6' : 'white',
-                color: currentPage === 1 ? '#9CA3AF' : '#374151',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
-                fontWeight: '600',
-                fontSize: '0.875rem'
-              }}
-            >
-              ← Previous
-            </button>
-
-            <div style={{
-              display: 'flex',
-              gap: '0.25rem'
-            }}>
-              {Array.from({ length: Math.ceil(totalCount / ITEMS_PER_PAGE) }, (_, i) => i + 1)
-                .filter(page => {
-                  // Show first page, last page, current page, and pages around current
-                  const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
-                  return page === 1 || 
-                         page === totalPages || 
-                         Math.abs(page - currentPage) <= 1;
-                })
-                .map((page, index, array) => {
-                  // Add ellipsis if there's a gap
-                  const prevPage = array[index - 1];
-                  const showEllipsis = prevPage && page - prevPage > 1;
-
-                  return (
-                    <div key={page} style={{ display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
-                      {showEllipsis && (
-                        <span style={{ padding: '0 0.5rem', color: '#9CA3AF' }}>...</span>
-                      )}
-                      <button
-                        onClick={() => {
-                          setCurrentPage(page);
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
-                        }}
-                        style={{
-                          padding: '0.5rem 0.75rem',
-                          background: currentPage === page ? 'linear-gradient(145deg, #2563EB, #1D4ED8)' : 'white',
-                          color: currentPage === page ? 'white' : '#374151',
-                          border: currentPage === page ? 'none' : '1px solid #D1D5DB',
-                          borderRadius: '0.5rem',
-                          cursor: 'pointer',
-                          fontWeight: '600',
-                          fontSize: '0.875rem',
-                          minWidth: '2.5rem'
-                        }}
-                      >
-                        {page}
-                      </button>
-                    </div>
-                  );
-                })}
+                );
+              })}
             </div>
+          )}
 
-            <button
-              onClick={() => {
-                setCurrentPage(prev => Math.min(Math.ceil(totalCount / ITEMS_PER_PAGE), prev + 1));
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              disabled={currentPage >= Math.ceil(totalCount / ITEMS_PER_PAGE)}
-              style={{
-                padding: '0.5rem 1rem',
-                background: currentPage >= Math.ceil(totalCount / ITEMS_PER_PAGE) ? '#F3F4F6' : 'white',
-                color: currentPage >= Math.ceil(totalCount / ITEMS_PER_PAGE) ? '#9CA3AF' : '#374151',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                cursor: currentPage >= Math.ceil(totalCount / ITEMS_PER_PAGE) ? 'not-allowed' : 'pointer',
-                fontWeight: '600',
-                fontSize: '0.875rem'
-              }}
-            >
-              Next →
-            </button>
-          </div>
-        )}
+          {/* Pagination */}
+          {!loading && totalCount > ITEMS_PER_PAGE && (
+            <div style={{ marginTop: '32px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4px' }}>
+              <button
+                onClick={() => { setCurrentPage(p => Math.max(1, p - 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                disabled={currentPage === 1}
+                style={{
+                  fontFamily: SANS, fontSize: '12px',
+                  color: currentPage === 1 ? 'rgba(200,168,76,0.2)' : 'rgba(200,168,76,0.6)',
+                  background: 'transparent', border: '1px solid rgba(200,168,76,0.12)',
+                  borderRadius: '4px', padding: '5px 12px',
+                  cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
+                }}>
+                ← Prev
+              </button>
+              {Array.from({ length: Math.ceil(totalCount / ITEMS_PER_PAGE) }, (_, i) => i + 1)
+                .filter(p => p === 1 || p === Math.ceil(totalCount / ITEMS_PER_PAGE) || Math.abs(p - currentPage) <= 1)
+                .map((page, idx, arr) => (
+                  <div key={page} style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
+                    {arr[idx - 1] && page - arr[idx - 1] > 1 && (
+                      <span style={{ fontFamily: SANS, fontSize: '12px', color: 'rgba(200,168,76,0.2)', padding: '0 2px' }}>…</span>
+                    )}
+                    <button
+                      onClick={() => { setCurrentPage(page); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                      style={{
+                        fontFamily: SANS, fontSize: '12px', minWidth: '30px',
+                        color: currentPage === page ? '#C9A84C' : 'rgba(196,176,138,0.4)',
+                        background: currentPage === page ? 'rgba(200,168,76,0.08)' : 'transparent',
+                        border: currentPage === page ? '1px solid rgba(200,168,76,0.25)' : '1px solid rgba(200,168,76,0.08)',
+                        borderRadius: '4px', padding: '5px 8px', cursor: 'pointer',
+                      }}>
+                      {page}
+                    </button>
+                  </div>
+                ))}
+              <button
+                onClick={() => { setCurrentPage(p => Math.min(Math.ceil(totalCount / ITEMS_PER_PAGE), p + 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                disabled={currentPage >= Math.ceil(totalCount / ITEMS_PER_PAGE)}
+                style={{
+                  fontFamily: SANS, fontSize: '12px',
+                  color: currentPage >= Math.ceil(totalCount / ITEMS_PER_PAGE) ? 'rgba(200,168,76,0.2)' : 'rgba(200,168,76,0.6)',
+                  background: 'transparent', border: '1px solid rgba(200,168,76,0.12)',
+                  borderRadius: '4px', padding: '5px 12px',
+                  cursor: currentPage >= Math.ceil(totalCount / ITEMS_PER_PAGE) ? 'not-allowed' : 'pointer',
+                }}>
+                Next →
+              </button>
+            </div>
+          )}
+        </main>
       </div>
 
-      {/* Edit Modal */}
       {editingResource && (
-        <EditResourceModal
-          resource={editingResource}
-          onClose={() => setEditingResource(null)}
-          onSave={handleEdit}
-        />
+        <EditResourceModal resource={editingResource} onClose={() => setEditingResource(null)} onSave={handleEdit} />
       )}
+
+      <style jsx global>{`
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes dust0 { 0%{transform:translate(0,0);opacity:0} 15%{opacity:.7} 50%{transform:translate(16px,-52px);opacity:.85} 85%{opacity:.5} 100%{transform:translate(0,0);opacity:0} }
+        @keyframes dust1 { 0%{transform:translate(0,0);opacity:0} 15%{opacity:.6} 50%{transform:translate(-18px,-44px);opacity:.75} 85%{opacity:.45} 100%{transform:translate(0,0);opacity:0} }
+        @keyframes dust2 { 0%{transform:translate(0,0);opacity:0} 20%{opacity:.65} 50%{transform:translate(10px,-60px);opacity:.8} 80%{opacity:.4} 100%{transform:translate(0,0);opacity:0} }
+      `}</style>
     </div>
   );
 }
