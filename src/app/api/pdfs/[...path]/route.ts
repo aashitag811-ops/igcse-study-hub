@@ -4,7 +4,7 @@ import { join } from 'path';
 
 const GITHUB_OWNER  = 'aashitag811-ops';
 const GITHUB_REPO   = 'igcse-study-hub';
-const GITHUB_BRANCH = '31-july';
+const GITHUB_BRANCH = 'production';
 
 /**
  * Gets a signed download URL from GitHub LFS Batch API.
