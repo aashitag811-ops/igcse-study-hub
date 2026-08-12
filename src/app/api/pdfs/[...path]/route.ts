@@ -122,8 +122,21 @@ export async function GET(
       return new NextResponse('PDF not found', { status: 404 });
     }
 
-    // 302 redirect — browser fetches PDF straight from GitHub LFS CDN
-    return NextResponse.redirect(downloadUrl, { status: 302 });
+    // Stream bytes back through our proxy — avoids CORS issues from the browser
+    // following a 302 redirect directly to the cross-origin GitHub LFS CDN.
+    const pdfRes = await fetch(downloadUrl);
+    if (!pdfRes.ok) {
+      return new NextResponse('PDF not found', { status: 404 });
+    }
+
+    return new NextResponse(pdfRes.body, {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/pdf',
+        'Content-Disposition': `inline; filename="${filename}"`,
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      },
+    });
   } catch (error) {
     console.error('[PDF proxy] error:', error);
     return new NextResponse('PDF not found', { status: 404 });
