@@ -347,20 +347,22 @@ function parseMCQSection(section) {
   }
 
   // --- Strategy 4: Inline "Question N was/is..." prose (0455 Economics MCQ) ---
-  // Scan the whole section for sentences that start with "Question N"
-  const Q_INLINE_RE = /(?:^|\n)(Question\s+(\d+)\b[^\n]+)/gi;
-  const inlineMatches = [...section.matchAll(Q_INLINE_RE)];
+  // Questions appear as prose paragraphs: "Question 7 was answered correctly...\n
+  // 14% chose option C..." — multi-line, no block separator.
+  // Find each "Question N" start, collect all lines until the next "Question N".
+  const Q_INLINE_HEADER_RE = /(?:^|\n)Question\s+(\d+)\b/gi;
+  const headerMatches = [...section.matchAll(Q_INLINE_HEADER_RE)];
 
-  if (inlineMatches.length > 0) {
-    for (const im of inlineMatches) {
-      const qNum = im[2];
-      const text = im[1].trim()
-        .replace(/\s+\d{4}[A-Za-z].{3,}\d{4}\s*$/, '')
-        .replace(/\s+©\s*\d{4}.*$/, '')
-        .trim();
-      if (!text || isNoiseLine(text)) continue;
-      if (notes[qNum]) notes[qNum] += ' ' + text;
-      else notes[qNum] = text;
+  if (headerMatches.length > 0) {
+    for (let qi = 0; qi < headerMatches.length; qi++) {
+      const qNum     = headerMatches[qi][1];
+      const blockStart = headerMatches[qi].index + (headerMatches[qi][0].startsWith('\n') ? 1 : 0);
+      const blockEnd   = qi + 1 < headerMatches.length
+        ? headerMatches[qi + 1].index
+        : section.length;
+      const text = cleanBlock(section.slice(blockStart, blockEnd).split('\n'));
+      if (!text) continue;
+      notes[qNum] = text;
     }
     return notes;
   }
