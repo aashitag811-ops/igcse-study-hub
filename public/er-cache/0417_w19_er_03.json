@@ -1,0 +1,42 @@
+{
+  "notes": {
+    "1": "Most candidates formatted the top of the spreadsheet with merged cells as specified with a white font on a black background. Some candidates did not centre align this text. A significant number of candidates did not set all three rows 2, 8 and 10 to have a smaller row height than other rows in the spreadsheet (e.g. rows 3 – 7). Text wrap was completed by many candidates as shown, but fewer candidates vertically aligned the contents of row 11 to the middle of each cell. A number of candidates did not set row 11 to contain centre aligned text but most set these cells to have a bold type face.",
+    "2": "Most candidates placed the correct elements in the header and footer as specified, although a few candidates used a capital D on date and/or omitted the colon. Some candidates placed their name, centre number and candidate number in the header instead of the footer.",
+    "3": "Only stronger candidates completed these functions as specified. Many candidates created successful lookup functions to extract the correct data, but a number of candidates used an incorrect range for the VLOOKUP. Some candidates set the external file as SSD.xlxs or Sheet1 rather than the specified CSV file. Cambridge International General Certificate of Secondary Education 0417 Information and Communication Technology November 2019 Few candidates successfully ensured nothing was displayed if the product code column contained no data. However, for those candidates who attempted this part, there were several solutions using the IF statement to test for a blank cell as well as solutions including: =IFNA(VLOOKUP($A12,SSD.CSV!$A$2:$E$106,4,0),””) =IFERROR(VLOOKUP($A12,SSD.CSV!$A$2:$E$106,4,0),””) =IF(ISBLANK($A12),””,VLOOKUP($A12,SSD.CSV!$A$2:$E$106,4,0))",
+    "4": "Most candidates multiplied the correct cells, but fewer candidates displayed a blank cell if the number of items column contained no data.",
+    "5": "This question was answered well by the majority of candidates but some attempted a solution using a COUNT function instead of a SUM function.",
+    "6": "This question was answered well by the majority of candidates but a small number of candidates used a COUNT function instead of a SUM function.",
+    "7": "This question elicited many different responses from candidates. A significant number attempted a nested IF with values entered rather than cell references to the data in columns I and J.",
+    "8": "Almost all candidates completed this step as instructed.",
+    "9": "Most candidates completed this step as instructed.",
+    "10": "Most candidates formatted the unit price and price columns as Euros with 2 decimal places. Fewer candidates formatted cell E25 to contain a percentage value. A small number of candidates also formatted the number of hours column as currency.",
+    "11": "Most candidates saved and printed the spreadsheet as specified showing the values. Some ignored the instruction to print this on a single-page width. Not all candidates displayed the row and column headings and/or the gridlines.",
+    "12": "Most candidates completed this as specified, but a few omitted turning on the row and column headings before printing. Some candidates did not resize all columns to show the formulae in full.",
+    "13": "This question proved challenging for a number of candidates. It required the application of theoretical knowledge to the practical spreadsheet and candidates needed to design their own test for cell G12. Very few candidates were able to identify any of the test data other than the cell ‘A12’. Some candidates completed this question as specified, selecting a range of simple data to test the calculation and the most common items of data selected for cell B12 were 1, 2, 5 or 10 which made the calculations for the outcome somewhat easier than other choices. Cambridge International General Certificate of Secondary Education 0417 Information and Communication Technology November 2019",
+    "14": "Most candidates completed this as specified, but a few did not format the data as shown. A number of candidates did not align the postal code as shown on the question paper.",
+    "15": "Most candidates printed the invoice as specified showing the values. Some ignored the instruction to remove row and column headings. Others did not set the correct print area, often including columns H, I and J within their single-page width.",
+    "16": "A number of candidates omitted this step. The HTML contained a number of errors. Some candidates did not study the files specified in the question paper. A very small number appeared to have re-typed the markup rather than using that which was provided for them. Many candidates identified the need to open h1 and to use closing speech marks for the alt text but did not always specify where these amendments should be made. Some stronger candidates achieved full marks identifying the need for the jpg file extension and that the colspan should have been placed in the table data tags rather than the table row tags. These were often demonstrated in an amended version of the html.",
+    "17": "This question was challenging for a number of candidates. Many candidates printed the original file, either unchanged or with their candidate details added and no other amendments. The filename (including the .css extension) was often omitted from the printout. A number of candidates placed their candidate details at the bottom of the page rather than at the top. The border collapse element was often omitted or set incorrectly. Few candidates set the ‘table,td’ border efficiently with all 3 elements in a joint section, or the fonts efficiently with all common elements in a joint section. A number of candidates specified the font-size in pixels rather than in points.",
+    "18": "Most candidates attached the stylesheets, but a number did not set them in the correct hierarchy. A significant number of candidates included file paths in their attached stylesheets which enabled them to work on the candidates’ computers but not on others with a different file/folder structure."
+  },
+  "labels": {
+    "1": "Q 1",
+    "2": "Q 2",
+    "3": "Q 3",
+    "4": "Q 4",
+    "5": "Q 5",
+    "6": "Q 6",
+    "7": "Q 7",
+    "8": "Q 8",
+    "9": "Q 9",
+    "10": "Q 10",
+    "11": "Q 11",
+    "12": "Q 12",
+    "13": "Q 13",
+    "14": "Q 14",
+    "15": "Q 15",
+    "16": "Q 16",
+    "17": "Q 17",
+    "18": "Q 18"
+  }
+}
