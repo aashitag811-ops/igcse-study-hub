@@ -389,11 +389,11 @@ function parseMCQSection(section) {
       // Sentence-bridge: if this block ends mid-sentence (ends with comma, "In", "and", etc.)
       // pull the opening fragment from the next block (up to first sentence end).
       if (qi + 1 < rawBlocks.length) {
-        const CUT_TAIL_RE = /[,;]\s*$|\b(in|and|or|the|of|a|was|that|to|with|for|at)\s*$/i;
+        const CUT_TAIL_RE = /[,;]\s*$|\b(in|and|or|the|of|a|was|that|to|with|for|at|while|next|question)\s*$/i;
         if (CUT_TAIL_RE.test(text)) {
           const nextClean = cleanBlock(rawBlocks[qi + 1].rawText.split('\n'));
           // Take everything up to (and including) the first sentence-ending punctuation
-          const bridgeM = /^(.+?[.!?]["'\u2019\u201d)\]]*)\s/.exec(nextClean);
+          const bridgeM = /^(.+?[.!?]["'\u2019\u201d)\]]*)(\s|$)/.exec(nextClean);
           if (bridgeM) text = text + ' ' + bridgeM[1];
         }
       }
@@ -452,22 +452,35 @@ function parseMCQSection(section) {
     return notes;
   }
 
-  // --- Strategy 4: Inline "Question N was/is..." prose (0455 Economics MCQ) ---
-  // Questions appear as prose paragraphs: "Question 7 was answered correctly...\n
-  // 14% chose option C..." — multi-line, no block separator.
-  // Find each "Question N" start, collect all lines until the next "Question N".
+  // --- Strategy 4: Inline "Question N was/is..." prose (0455 Economics MCQ, 0520 French) ---
+  // Questions appear as prose paragraphs with "Question N" embedded mid-text, no standalone header.
+  // Sentence-bridge: if a block ends mid-sentence (e.g. French ERs discuss Q17-Q20 in one run-on
+  // block that cuts at a boundary word like "In" or ","), pull in the opening fragment of the
+  // next block to complete the sentence.
   const Q_INLINE_HEADER_RE = /(?:^|\n)Question\s+(\d+)\b/gi;
   const headerMatches = [...section.matchAll(Q_INLINE_HEADER_RE)];
 
   if (headerMatches.length > 0) {
-    for (let qi = 0; qi < headerMatches.length; qi++) {
-      const qNum     = headerMatches[qi][1];
-      const blockStart = headerMatches[qi].index + (headerMatches[qi][0].startsWith('\n') ? 1 : 0);
-      const blockEnd   = qi + 1 < headerMatches.length
-        ? headerMatches[qi + 1].index
-        : section.length;
-      const text = cleanBlock(section.slice(blockStart, blockEnd).split('\n'));
+    // Pre-build raw blocks for sentence-bridging
+    const rawBlocks4 = headerMatches.map((m, qi) => {
+      const blockStart = m.index + (m[0].startsWith('\n') ? 1 : 0);
+      const blockEnd   = qi + 1 < headerMatches.length ? headerMatches[qi + 1].index : section.length;
+      return { qNum: m[1], rawText: section.slice(blockStart, blockEnd) };
+    });
+
+    const CUT_TAIL_RE4 = /[,;]\s*$|\b(in|and|or|the|of|a|was|that|to|with|for|at|while|next|question)\s*$/i;
+    for (let qi = 0; qi < rawBlocks4.length; qi++) {
+      const { qNum, rawText } = rawBlocks4[qi];
+      let text = cleanBlock(rawText.split('\n'));
       if (!text) continue;
+
+      // Sentence-bridge: complete cut-off sentences from the next block
+      if (qi + 1 < rawBlocks4.length && CUT_TAIL_RE4.test(text)) {
+        const nextClean = cleanBlock(rawBlocks4[qi + 1].rawText.split('\n'));
+        const bridgeM = /^(.+?[.!?]["'\u2019\u201d)\]]*)(\s|$)/.exec(nextClean);
+        if (bridgeM) text = text + ' ' + bridgeM[1];
+      }
+
       notes[qNum] = text;
     }
     return notes;
