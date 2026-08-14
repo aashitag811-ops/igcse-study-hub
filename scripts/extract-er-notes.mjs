@@ -117,10 +117,34 @@ function isNoiseLine(line) {
 // For question blocks where sub-parts appear as "(a) text (b) text" inline
 // (common in Add Maths, BST, Physics structured ERs).
 // Returns { "1a": "text", "1b": "text" } or null if no sub-parts found.
+//
+// CRITICAL: A (letter) marker is a real sub-part header ONLY if the character
+// immediately before it (ignoring whitespace) is either:
+//   • nothing  — it is at the very start of the text
+//   • sentence-ending punctuation: . ! ?  (optionally followed by closing " ' ) ])
+// If preceded by a word character / comma / colon it is a prose cross-reference
+// ("in part (a)", "change in (a)(ii)") and must NOT trigger a split.
 
 const INLINE_LETTER_RE = /\(\s*([a-hj-np-uw-z])\s*\)/g;  // (a)-(z) excluding i,o,q,v,x
 const INLINE_ROMAN_WITHIN_RE = /\(\s*(i{1,3}|iv|vi{0,3}|ix|x)\s*\)/gi;
 
+// Returns true if position `pos` in `text` is a valid sub-part boundary:
+// preceded only by start-of-string or sentence-ending punctuation + whitespace.
+function isSubpartBoundary(text, pos) {
+  if (pos === 0) return true;
+  // Walk backwards past any whitespace
+  let i = pos - 1;
+  while (i >= 0 && (text[i] === ' ' || text[i] === '\t')) i--;
+  if (i < 0) return true; // only whitespace before → start of text
+  const ch = text[i];
+  // Accept after . ! ? optionally preceded by closing quotes/brackets
+  return /[.!?'"\u2019\u201d)\]]/.test(ch);
+}
+
+// splitInlineSubparts returns:
+//   null                       — no valid sub-parts found, use whole text as question key
+//   { preamble, parts }        — preamble is text before first (a) (may be empty),
+//                                parts is { "1a": "...", "1b": "...", ... }
 function splitInlineSubparts(qNum, text) {
   // Find all (a),(b),(c)... markers and their positions
   const markers = [];
@@ -132,26 +156,39 @@ function splitInlineSubparts(qNum, text) {
 
   if (markers.length < 2) return null; // need at least 2 sub-parts to split
 
-  // Verify they appear in alphabetical order (a, b, c...) to confirm they're real sub-parts
-  const letters = markers.map(mk => mk.letter);
+  // Keep only markers that sit at a valid sentence boundary
+  const boundaryMarkers = markers.filter(mk => isSubpartBoundary(text, mk.index));
+
+  // Must have at least 2 boundary markers to proceed
+  if (boundaryMarkers.length < 2) return null;
+
+  // Verify the boundary markers appear in alphabetical order starting from 'a'
+  const letters = boundaryMarkers.map(mk => mk.letter);
+  if (letters[0] !== 'a') return null; // must start with (a)
   const isSequential = letters.every((l, i) => i === 0 || l.charCodeAt(0) === letters[i-1].charCodeAt(0) + 1);
   if (!isSequential) return null;
 
-  const result = {};
-  for (let i = 0; i < markers.length; i++) {
-    const start = markers[i].end;
-    const end   = i + 1 < markers.length ? markers[i + 1].index : text.length;
+  // Everything before the first (a) marker is a preamble for the question level
+  const preamble = text.slice(0, boundaryMarkers[0].index).trim();
+
+  const parts = {};
+  for (let i = 0; i < boundaryMarkers.length; i++) {
+    const start = boundaryMarkers[i].end;
+    const end   = i + 1 < boundaryMarkers.length ? boundaryMarkers[i + 1].index : text.length;
     const chunk = text.slice(start, end).trim();
     if (!chunk) continue;
 
-    const letter = markers[i].letter;
+    const letter = boundaryMarkers[i].letter;
 
     // Check for inline roman sub-sub-parts within this chunk
+    // Roman markers must also sit at sentence boundaries within the chunk
     const romanMarkers = [];
     INLINE_ROMAN_WITHIN_RE.lastIndex = 0;
     let rm;
     while ((rm = INLINE_ROMAN_WITHIN_RE.exec(chunk)) !== null) {
-      romanMarkers.push({ roman: rm[1].toLowerCase(), index: rm.index, end: rm.index + rm[0].length });
+      if (isSubpartBoundary(chunk, rm.index)) {
+        romanMarkers.push({ roman: rm[1].toLowerCase(), index: rm.index, end: rm.index + rm[0].length });
+      }
     }
 
     if (romanMarkers.length >= 2) {
@@ -160,14 +197,14 @@ function splitInlineSubparts(qNum, text) {
         const rStart = romanMarkers[ri].end;
         const rEnd   = ri + 1 < romanMarkers.length ? romanMarkers[ri + 1].index : chunk.length;
         const rChunk = chunk.slice(rStart, rEnd).trim();
-        if (rChunk) result[`${qNum}${letter}${romanMarkers[ri].roman}`] = rChunk;
+        if (rChunk) parts[`${qNum}${letter}${romanMarkers[ri].roman}`] = rChunk;
       }
     } else {
-      result[`${qNum}${letter}`] = chunk;
+      parts[`${qNum}${letter}`] = chunk;
     }
   }
 
-  return Object.keys(result).length >= 2 ? result : null;
+  return Object.keys(parts).length >= 2 ? { preamble, parts } : null;
 }
 
 // ── Theory ER parser ──────────────────────────────────────────────────────────
@@ -219,13 +256,28 @@ function parseQuestionBlock(qNum, block, notes) {
     currentLines = [];
   };
 
+  // A sub-part marker at the start of a line is a REAL header only if the
+  // previous non-empty line ended a sentence (period, !, ?) or was itself a
+  // sub-part header (currentLines is empty / just started).
+  //
+  // If the previous line ended mid-sentence (word, comma, 'part', 'in', etc.)
+  // then the marker is a prose cross-reference ("...in part\n(c) but many...")
+  // and should be treated as a continuation of the current block.
+  const prevEndsLine = (lines) => {
+    const last = lines.filter(l => l.trim()).pop();
+    if (!last) return true; // nothing collected yet — allow header
+    // Accept after sentence-ending punctuation, optionally followed by closing
+    // quotes/brackets: e.g. `."` or `.)` or `.'`
+    return /[.!?]["'\u2019\u201d)\]]*\s*$/.test(last.trim());
+  };
+
   for (const rawLine of lines) {
     const line = rawLine.trim();
     if (!line) continue;
 
     // (a) (i) text
     let m = LETTER_ROMAN_RE.exec(line);
-    if (m) {
+    if (m && prevEndsLine(currentLines)) {
       flush();
       const letter = m[1].toLowerCase();
       const roman  = m[2].toLowerCase();
@@ -236,7 +288,7 @@ function parseQuestionBlock(qNum, block, notes) {
 
     // (a) text
     m = LETTER_RE.exec(line);
-    if (m) {
+    if (m && prevEndsLine(currentLines)) {
       flush();
       const letter = m[1].toLowerCase();
       currentKey   = `${qNum}${letter}`;
@@ -246,8 +298,7 @@ function parseQuestionBlock(qNum, block, notes) {
 
     // (i)/(ii)/... standalone
     m = ROMAN_STANDALONE_RE.exec(line);
-    if (m && currentKey) {
-      // Extract current letter from key
+    if (m && currentKey && prevEndsLine(currentLines)) {
       const letterMatch = currentKey.match(/^(\d+)([a-z])/);
       if (letterMatch) {
         flush();
@@ -258,7 +309,7 @@ function parseQuestionBlock(qNum, block, notes) {
       }
     }
 
-    // Continuation line — keep it regardless of noise (noise stripped at flush)
+    // Continuation line
     if (currentKey) currentLines.push(rawLine);
   }
   flush();
@@ -301,8 +352,12 @@ function parseMCQSection(section) {
       const text   = cleanBlock(section.slice(qStart, qEnd).split('\n'));
       if (!text) continue;
       const split = splitInlineSubparts(qNum, text);
-      if (split) Object.assign(notes, split);
-      else notes[qNum] = text;
+      if (split) {
+        if (split.preamble) notes[qNum] = split.preamble;
+        Object.assign(notes, split.parts);
+      } else {
+        notes[qNum] = text;
+      }
     }
     return notes;
   }
@@ -323,8 +378,12 @@ function parseMCQSection(section) {
       // For a range like "5 to 8", store as "5-8" key (or split inline if possible)
       const qNum = qStart_num === qEnd_num ? qStart_num : `${qStart_num}-${qEnd_num}`;
       const split = splitInlineSubparts(qNum, text);
-      if (split) Object.assign(notes, split);
-      else notes[qNum] = text;
+      if (split) {
+        if (split.preamble) notes[qNum] = split.preamble;
+        Object.assign(notes, split.parts);
+      } else {
+        notes[qNum] = text;
+      }
     }
     return notes;
   }
