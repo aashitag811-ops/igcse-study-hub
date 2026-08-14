@@ -87,9 +87,11 @@ function findComponentSection(fullText, subjectCode, component) {
 
 const STANDALONE_NOISE_RE = [
   /^©\s*(UCLES\s*)?\d{4}/i,                              // © UCLES 2024
+  // © with spaced year: "© 20 2 5" or "© 2 0 2 5"
+  /^©\s*\d[\d\s]{3,7}\d\b/i,
   /^\d{4}\/\d{2}\/[A-Z]\/[A-Z]\/\d{2}$/,               // 0606/12/M/J/25
   /^\[?Turn over\]?$/i,
-  /^Cambridge I(GCSE|nternational)\s*$/i,
+  /^Cambridge I(GCSE|nternational)\b/i,
   /^Page \d+$/i,
   /^Principal Examiner Report\s*$/i,
   /^(BIOLOGY|CHEMISTRY|PHYSICS|MATHEMATICS|ECONOMICS|ACCOUNTING|ICT|ENGLISH|FRENCH|HINDI|BUSINESS|GLOBAL PERSPECTIVES)\s*$/i,
@@ -100,7 +102,17 @@ const STANDALONE_NOISE_RE = [
   /^Answers?\s*:/i,                                      // "Answers : (a)(i) 60480"
   // Merged pdfjs header: "0606AdditionalMathematicsMarch2025" or "© 2025 0606 Additional Mathematics"
   /^\d{4}[A-Za-z].{4,}\d{4}$/,
+  // Subject+year header: "0580 Mathematics June 2013" (space after code)
+  /^\d{4}\s+[A-Za-z].{4,}\d{2,4}$/,
+  // "0606 Additional Mathematics March 20 2 5" — spaced year at end (20xx possibly with spaces)
+  /^\d{4}.{6,}20[\d ]{0,6}\d$/,
   /^©\s*\d{4}\s+\d{4}\s+/i,
+  // pdfjs-mangled copyright: "Ac 20 2 5" (© rendered as Ac, year spaced)
+  // 1-4 alpha chars then space then 4-digit year possibly spaced
+  /^[A-Za-z]{1,4}\s+\d[\d\s]{2,8}\d$/,
+  // Standalone page number: "30", "38", "5 A", "12 A"
+  /^\d{1,3}$/,
+  /^\d{1,3}\s+[A-Z]$/,
   // Examiner report boilerplate footer lines
   /^Princip\s*a\s*l Examiner Report/i,
   /^for Teachers\s*$/i,
@@ -246,10 +258,13 @@ function parseQuestionBlock(qNum, block, notes) {
         .map(l => l.trim())
         .filter(Boolean)
         .join(' ')
-        // Strip trailing merged page-header noise e.g. "...text. 0610BiologyMarch2025"
+        // Strip trailing page-header noise: "0610BiologyMarch2025", "0606 ... March 20 2 5"
+        .replace(/\s+\d{4}.{6,}20[\d ]{0,6}\d\s*$/, '')
         .replace(/\s+\d{4}[A-Za-z].{3,}\d{4}\s*$/, '')
-        // Strip trailing boilerplate footer fragments
-        .replace(/\s+©\s*\d{4}.*$/, '')
+        // Strip trailing © lines (normal and spaced-year)
+        .replace(/\s+©\s*\d[\d\s]*\d.*$/, '')
+        // Strip trailing "Ac 2025" / "Ac 20 2 5" pdfjs-mangled copyright
+        .replace(/\s+[A-Za-z]{1,4}\s+\d[\d\s]{2,8}\d\s*$/, '')
         .trim();
       if (clean) notes[currentKey] = clean;
     }
@@ -271,9 +286,17 @@ function parseQuestionBlock(qNum, block, notes) {
     return /[.!?]["'\u2019\u201d)\]]*\s*$/.test(last.trim());
   };
 
+  let inAnswersKey = false; // suppress lines after "Answers :" key at end of block
   for (const rawLine of lines) {
     const line = rawLine.trim();
     if (!line) continue;
+
+    // "Answers : ..." line marks end of question commentary — suppress rest
+    if (/^Answers?\s*:/i.test(line)) { inAnswersKey = true; continue; }
+    if (inAnswersKey) continue;
+
+    // Skip standalone noise lines so they don't corrupt prevEndsLine
+    if (isNoiseLine(line)) continue;
 
     // (a) (i) text
     let m = LETTER_ROMAN_RE.exec(line);
@@ -329,8 +352,10 @@ function cleanBlock(rawLines) {
     .map(l => l.trim())
     .filter(Boolean)
     .join(' ')
+    .replace(/\s+\d{4}.{6,}20[\d ]{0,6}\d\s*$/, '')
     .replace(/\s+\d{4}[A-Za-z].{3,}\d{4}\s*$/, '')
-    .replace(/\s+©\s*\d{4}.*$/, '')
+    .replace(/\s+©\s*\d[\d\s]*\d.*$/, '')
+    .replace(/\s+[A-Za-z]{1,4}\s+\d[\d\s]{2,8}\d\s*$/, '')
     .trim();
 }
 
@@ -345,12 +370,34 @@ function parseMCQSection(section) {
   const singleMatches = [...section.matchAll(Q_SINGLE_RE)];
 
   if (singleMatches.length > 0) {
-    for (let qi = 0; qi < singleMatches.length; qi++) {
-      const qNum   = singleMatches[qi][1];
-      const qStart = singleMatches[qi].index + singleMatches[qi][0].length;
-      const qEnd   = qi + 1 < singleMatches.length ? singleMatches[qi + 1].index : section.length;
-      const text   = cleanBlock(section.slice(qStart, qEnd).split('\n'));
+    // Pre-build raw blocks so we can do sentence-bridging across boundaries
+    const rawBlocks = singleMatches.map((m, qi) => {
+      const blockStart = m.index + m[0].length;
+      const blockEnd   = qi + 1 < singleMatches.length ? singleMatches[qi + 1].index : section.length;
+      return { qNum: m[1], rawText: section.slice(blockStart, blockEnd) };
+    });
+
+    for (let qi = 0; qi < rawBlocks.length; qi++) {
+      const { qNum, rawText } = rawBlocks[qi];
+
+      // Join + splitInlineSubparts — handles BST/Economics/Math/Science styles.
+      // For math papers (0606/0580/0625) sub-parts start at line beginnings too but
+      // cleanBlock joins them and isSubpartBoundary detects the sentence boundaries.
+      let text = cleanBlock(rawText.split('\n'));
       if (!text) continue;
+
+      // Sentence-bridge: if this block ends mid-sentence (ends with comma, "In", "and", etc.)
+      // pull the opening fragment from the next block (up to first sentence end).
+      if (qi + 1 < rawBlocks.length) {
+        const CUT_TAIL_RE = /[,;]\s*$|\b(in|and|or|the|of|a|was|that|to|with|for|at)\s*$/i;
+        if (CUT_TAIL_RE.test(text)) {
+          const nextClean = cleanBlock(rawBlocks[qi + 1].rawText.split('\n'));
+          // Take everything up to (and including) the first sentence-ending punctuation
+          const bridgeM = /^(.+?[.!?]["'\u2019\u201d)\]]*)\s/.exec(nextClean);
+          if (bridgeM) text = text + ' ' + bridgeM[1];
+        }
+      }
+
       const split = splitInlineSubparts(qNum, text);
       if (split) {
         if (split.preamble) notes[qNum] = split.preamble;
