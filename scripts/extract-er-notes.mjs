@@ -171,14 +171,86 @@ function splitInlineSubparts(qNum, text) {
   // Keep only markers that sit at a valid sentence boundary
   const boundaryMarkers = markers.filter(mk => isSubpartBoundary(text, mk.index));
 
+  // ── Grouped-label expansion ────────────────────────────────────────────────
+  // Handles: "(a), (b), (c) and (d) These parts were all well answered."
+  // In this pattern only (a) is at a sentence boundary; (b)(c)(d) follow commas.
+  // Detect the group and treat the entire "(a), (b), (c) and (d) text" block
+  // as a virtual marker at position of (a), then inject the remaining letters
+  // as extra boundary markers pointing to the same shared text.
+  if (boundaryMarkers.length === 1 && boundaryMarkers[0].letter === 'a') {
+    // Match "(a), (b), (c) and (d)" — first item may be followed by separator,
+    // subsequent items may also be followed by separator, last item has no separator.
+    // Pattern: first (x) with separator, then one or more (x) with optional separator
+    const groupRE = /^(\(\s*[a-hj-np-uw-z]\s*\)(?:\s*[,/]\s*|\s+and\s+))+\(\s*[a-hj-np-uw-z]\s*\)/i;
+    const afterA = text.slice(boundaryMarkers[0].index);
+    const gm = groupRE.exec(afterA);
+    if (gm) {
+      // Extract all letters in the matched group header
+      const groupLetterRE = /\(\s*([a-hj-np-uw-z])\s*\)/g;
+      let gl;
+      const groupLetters = [];
+      groupLetterRE.lastIndex = 0;
+      while ((gl = groupLetterRE.exec(gm[0])) !== null) {
+        groupLetters.push(gl[1].toLowerCase());
+      }
+      if (groupLetters.length >= 2 && groupLetters[0] === 'a') {
+        // Shared text starts right after the entire group header
+        const groupHeaderEnd = boundaryMarkers[0].index + gm[0].length;
+        const sharedText = text.slice(groupHeaderEnd).trim();
+        const preamble = text.slice(0, boundaryMarkers[0].index).trim();
+        const parts = {};
+        for (const letter of groupLetters) {
+          if (sharedText) parts[`${qNum}${letter}`] = sharedText;
+        }
+        return Object.keys(parts).length >= 2 ? { preamble, parts } : null;
+      }
+    }
+  }
+
   // Must have at least 2 boundary markers to proceed
   if (boundaryMarkers.length < 2) return null;
 
-  // Verify the boundary markers appear in alphabetical order starting from 'a'
+  // Verify the boundary markers appear in strictly-increasing alphabetical order
+  // starting from 'a'. Gaps are allowed — a letter that appears as a prose ref
+  // (e.g. "(b)" inside "(a)"'s text) won't be at a sentence boundary so it won't
+  // be in boundaryMarkers; skipping it is fine.
+  // Constraints:
+  //   1. Must start with (a)
+  //   2. Must be strictly increasing (no duplicates, no going backwards)
+  //   3. Each gap must be ≤ 3 letters (avoids spurious matches like just (a) and (h))
+  // Letters i, o, q, v, x are excluded from INLINE_LETTER_RE so gaps over them don't count.
+  const EXCLUDED = new Set(['i','o','q','v','x']);
   const letters = boundaryMarkers.map(mk => mk.letter);
   if (letters[0] !== 'a') return null; // must start with (a)
-  const isSequential = letters.every((l, i) => i === 0 || l.charCodeAt(0) === letters[i-1].charCodeAt(0) + 1);
+
+  // Deduplicate: keep only the first occurrence of each letter at a boundary
+  const seenLetters = new Set();
+  const dedupedMarkers = boundaryMarkers.filter(mk => {
+    if (seenLetters.has(mk.letter)) return false;
+    seenLetters.add(mk.letter);
+    return true;
+  });
+  if (dedupedMarkers.length < 2) return null;
+
+  // Verify strictly increasing with allowed gaps (skip EXCLUDED, gap ≤ 3 non-excluded letters)
+  const dedupedLetters = dedupedMarkers.map(mk => mk.letter);
+  const isSequential = dedupedLetters.every((l, idx) => {
+    if (idx === 0) return true;
+    const prevCode = dedupedLetters[idx - 1].charCodeAt(0);
+    const currCode = l.charCodeAt(0);
+    if (currCode <= prevCode) return false; // must be strictly increasing
+    // Count non-excluded letters in the gap
+    let gap = 0;
+    for (let c = prevCode + 1; c < currCode; c++) {
+      if (!EXCLUDED.has(String.fromCharCode(c))) gap++;
+    }
+    return gap <= 3; // allow gaps up to 3 skipped real letters
+  });
   if (!isSequential) return null;
+
+  // Replace boundaryMarkers with deduped version for the rest of the function
+  boundaryMarkers.length = 0;
+  boundaryMarkers.push(...dedupedMarkers);
 
   // Everything before the first (a) marker is a preamble for the question level
   const preamble = text.slice(0, boundaryMarkers[0].index).trim();
@@ -510,6 +582,37 @@ function buildLabels(notes) {
   return labels;
 }
 
+// ── Post-process: split question-level keys with inline (a)(b)(c) sub-parts ──
+// After parsing, some question-level keys (e.g. "1") contain inline sub-part
+// markers "(a) text (b) text (c) text" that weren't resolved at parse time.
+// Run splitInlineSubparts on them and inject the resulting sub-part keys,
+// keeping the question-level key only if there's a preamble.
+function postProcessNotes(notes) {
+  const toDelete = [];
+  const toAdd    = {};
+
+  for (const [key, text] of Object.entries(notes)) {
+    // Only act on bare question-number keys that don't already have sub-parts
+    if (!/^\d+$/.test(key)) continue;
+    if (!text) continue;
+
+    const split = splitInlineSubparts(key, text);
+    if (!split) continue;
+
+    // Don't overwrite sub-part keys already present from the parser
+    const hasExistingSubparts = Object.keys(notes).some(k => k !== key && k.startsWith(key) && /[a-z]/.test(k[key.length]));
+    if (hasExistingSubparts) continue;
+
+    toDelete.push(key);
+    if (split.preamble) toAdd[key] = split.preamble;
+    Object.assign(toAdd, split.parts);
+  }
+
+  for (const key of toDelete) delete notes[key];
+  Object.assign(notes, toAdd);
+  return notes;
+}
+
 // ── Process one ER PDF ────────────────────────────────────────────────────────
 
 async function processErFile(erPath) {
@@ -541,7 +644,8 @@ async function processErFile(erPath) {
     if (!section) continue;
 
     const isTheory = parseInt(component[0]) >= 3;
-    const notes = isTheory ? parseTheorySection(section) : parseMCQSection(section);
+    const rawNotes = isTheory ? parseTheorySection(section) : parseMCQSection(section);
+    const notes = postProcessNotes(rawNotes);
     if (!Object.keys(notes).length) continue;
 
     const output = { notes, labels: buildLabels(notes) };
