@@ -140,8 +140,34 @@ function isNoiseLine(line) {
 const INLINE_LETTER_RE = /\(\s*([a-hj-np-uw-z])\s*\)/g;  // (a)-(z) excluding i,o,q,v,x
 const INLINE_ROMAN_WITHIN_RE = /\(\s*(i{1,3}|iv|vi{0,3}|ix|x)\s*\)/gi;
 
-// Returns true if position `pos` in `text` is a valid sub-part boundary:
-// preceded only by start-of-string or sentence-ending punctuation + whitespace.
+// Returns true if position `pos` in `text` is a valid sub-part boundary.
+// A boundary is one of:
+//   1. Start of string (pos === 0 or only whitespace precedes)
+//   2. Preceded (after stripping whitespace) by sentence-ending punctuation:
+//      . ! ? ' " ) ] ; and their Unicode equivalents
+//   3. Preceded by one or more spaces AND what precedes those spaces is NOT
+//      a short prose-reference word like "part", "in", "of", "see", "for",
+//      "from", "at", "on", "to", "and", "or", "the", "with", "than", "both".
+//      This catches every real boundary: math answers ("7 25 (b)"), MCQ option
+//      text ("D statement ; (b)"), bullet-list endings ("...omitted (b) ..."),
+//      while still correctly rejecting "part (b)", "in (a)", "see (c)" etc.
+//
+// NOTE: This function is used both in splitInlineSubparts (post-process splitting
+// of already-joined text) and in parseQuestionBlock (line-by-line parsing).
+// The prose-word exclusion is what keeps "...in part\n(c) but..." from falsely
+// splitting during line-by-line parsing where prevEndsLine() handles the guard.
+// Prose-reference words: if (letter) is preceded (after whitespace) by one of
+// these words, it is a cross-reference ("in part (a)", "see parts (b)") and must
+// NOT be treated as a sub-part header. All other word-endings are accepted as
+// boundaries (end of MCQ option text, bullet list, math answer, etc.).
+const PROSE_REF_WORDS = new Set([
+  'part','parts','in','of','see','for','from','at','on','to','and','or','the',
+  'with','than','both','between','either','section','sub','question','questions',
+  'only','just','where','here','there','this','that','these','those',
+  'by','as','per','via','any','each','all','no','not','also','above','below',
+  'after','before','except','unlike','like','than','if','when','while',
+  'then','so','do','did','does','was','were','had','has','have','be',
+]);
 function isSubpartBoundary(text, pos) {
   if (pos === 0) return true;
   // Walk backwards past any whitespace
@@ -149,8 +175,22 @@ function isSubpartBoundary(text, pos) {
   while (i >= 0 && (text[i] === ' ' || text[i] === '\t')) i--;
   if (i < 0) return true; // only whitespace before → start of text
   const ch = text[i];
-  // Accept after . ! ? optionally preceded by closing quotes/brackets
-  return /[.!?'"\u2019\u201d)\]]/.test(ch);
+  // Rule 2: sentence-ending punctuation — . ! ? ; : ' " ) ] and Unicode equivalents
+  if (/[.!?;:'"\u2019\u201d)\]]/.test(ch)) return true;
+  // Rule 3: preceded by whitespace AND the word before the whitespace is NOT a
+  // prose-reference word. Catches MCQ option endings ("D statement (b)"), math
+  // answer endings ("7 25 (b)"), bullet list endings, colon-introduced lists, etc.
+  // Rejects "part (b)", "in (a)", "parts (a)", "see (c)", etc.
+  // ALSO rejects comma (',') — too ambiguous, appears in lists like "(a), (b)"
+  // where only (a) is at a real boundary.
+  if (i < pos - 1 && ch !== ',') {
+    // Extract the word (all Latin letters) ending at position i
+    let wordEnd = i;
+    while (wordEnd >= 0 && /[a-zA-Z]/.test(text[wordEnd])) wordEnd--;
+    const word = text.slice(wordEnd + 1, i + 1).toLowerCase();
+    if (!PROSE_REF_WORDS.has(word)) return true;
+  }
+  return false;
 }
 
 // splitInlineSubparts returns:
