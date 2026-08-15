@@ -250,47 +250,41 @@ function splitInlineSubparts(qNum, text) {
   // Must have at least 2 boundary markers to proceed
   if (boundaryMarkers.length < 2) return null;
 
-  // Verify the boundary markers appear in strictly-increasing alphabetical order
-  // starting from 'a'. Gaps are allowed — a letter that appears as a prose ref
-  // (e.g. "(b)" inside "(a)"'s text) won't be at a sentence boundary so it won't
-  // be in boundaryMarkers; skipping it is fine.
-  // Constraints:
-  //   1. Must start with (a)
-  //   2. Must be strictly increasing (no duplicates, no going backwards)
-  //   3. Each gap must be ≤ 3 letters (avoids spurious matches like just (a) and (h))
-  // Letters i, o, q, v, x are excluded from INLINE_LETTER_RE so gaps over them don't count.
-  const EXCLUDED = new Set(['i','o','q','v','x']);
-  const letters = boundaryMarkers.map(mk => mk.letter);
-  if (letters[0] !== 'a') return null; // must start with (a)
+  // Verify the boundary markers form a valid strictly-increasing sequence.
+  // Rules:
+  //   1. Must CONTAIN (a) — trim any boundary markers appearing before (a)
+  //      (e.g. a prose-ref "(b)" that coincidentally sits at a sentence boundary
+  //       before the real (a) block starts)
+  //   2. From (a) onward: strictly increasing, no duplicates
+  //   3. Gaps are allowed — prose-reference occurrences of skipped letters won't
+  //      be at sentence boundaries so they simply won't appear in boundaryMarkers
+  // Letters i, o, q, v, x are excluded from INLINE_LETTER_RE throughout.
 
-  // Deduplicate: keep only the first occurrence of each letter at a boundary
+  // Deduplicate: keep only the first occurrence of each letter
   const seenLetters = new Set();
   const dedupedMarkers = boundaryMarkers.filter(mk => {
     if (seenLetters.has(mk.letter)) return false;
     seenLetters.add(mk.letter);
     return true;
   });
-  if (dedupedMarkers.length < 2) return null;
 
-  // Verify strictly increasing with allowed gaps (skip EXCLUDED, gap ≤ 3 non-excluded letters)
-  const dedupedLetters = dedupedMarkers.map(mk => mk.letter);
-  const isSequential = dedupedLetters.every((l, idx) => {
+  // Find (a) in the deduped list — trim everything before it
+  const aIdx = dedupedMarkers.findIndex(mk => mk.letter === 'a');
+  if (aIdx === -1) return null; // no (a) marker at all → can't form a valid sub-part sequence
+  const fromA = dedupedMarkers.slice(aIdx);
+  if (fromA.length < 2) return null;
+
+  // Verify strictly increasing from (a) onward
+  const fromALetters = fromA.map(mk => mk.letter);
+  const isSequential = fromALetters.every((l, idx) => {
     if (idx === 0) return true;
-    const prevCode = dedupedLetters[idx - 1].charCodeAt(0);
-    const currCode = l.charCodeAt(0);
-    if (currCode <= prevCode) return false; // must be strictly increasing
-    // Count non-excluded letters in the gap
-    let gap = 0;
-    for (let c = prevCode + 1; c < currCode; c++) {
-      if (!EXCLUDED.has(String.fromCharCode(c))) gap++;
-    }
-    return gap <= 3; // allow gaps up to 3 skipped real letters
+    return l.charCodeAt(0) > fromALetters[idx - 1].charCodeAt(0); // strictly increasing
   });
   if (!isSequential) return null;
 
-  // Replace boundaryMarkers with deduped version for the rest of the function
+  // Replace boundaryMarkers with the valid sequence starting from (a)
   boundaryMarkers.length = 0;
-  boundaryMarkers.push(...dedupedMarkers);
+  boundaryMarkers.push(...fromA);
 
   // Everything before the first (a) marker is a preamble for the question level
   const preamble = text.slice(0, boundaryMarkers[0].index).trim();
