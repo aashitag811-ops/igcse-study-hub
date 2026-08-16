@@ -164,8 +164,12 @@ export function PDFViewerWithEROverlay({
       coordinates.forEach(coord => {
         // Support both new format (key/label) and legacy (qNum)
         const key   = coord.key ?? coord.qNum?.toString() ?? '';
-        const label = coord.label ?? erLabels[key] ?? `Q${key}`;
-        if (!erNotes[key]) return;
+        // If the exact key has no ER note, check if any sub-part key exists (e.g. "1" → "1a", "1b"...)
+        const effectiveKey = erNotes[key]
+          ? key
+          : Object.keys(erNotes).find(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? '')) ?? '';
+        if (!effectiveKey) return;
+        const label = coord.label ?? erLabels[effectiveKey] ?? erLabels[key] ?? `Q${key}`;
 
         const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
           `div[data-page="${coord.page}"]`
@@ -203,7 +207,7 @@ export function PDFViewerWithEROverlay({
         ].join(';');
         btn.textContent = label;
         btn.title = `Examiner Report — ${label}`;
-        btn.addEventListener('click', () => onERClickRef.current(key));
+        btn.addEventListener('click', () => onERClickRef.current(effectiveKey));
         wrapper.appendChild(btn);
       });
     });
@@ -217,8 +221,11 @@ export function PDFViewerWithEROverlay({
       canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
       coordinatesRef.current.forEach(coord => {
         const key   = coord.key ?? coord.qNum?.toString() ?? '';
-        const label = coord.label ?? erLabels[key] ?? `Q${key}`;
-        if (!erNotesRef.current[key]) return;
+        const effectiveKey = erNotesRef.current[key]
+          ? key
+          : Object.keys(erNotesRef.current).find(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? '')) ?? '';
+        if (!effectiveKey) return;
+        const label = coord.label ?? erLabels[effectiveKey] ?? erLabels[key] ?? `Q${key}`;
         const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(`div[data-page="${coord.page}"]`);
         if (!wrapper) return;
         const canvas = wrapper.querySelector('canvas');
@@ -238,7 +245,7 @@ export function PDFViewerWithEROverlay({
         ].join(';');
         btn.textContent = label;
         btn.title = `Examiner Report — ${label}`;
-        btn.addEventListener('click', () => onERClickRef.current(key));
+        btn.addEventListener('click', () => onERClickRef.current(effectiveKey));
         wrapper.appendChild(btn);
       });
     };

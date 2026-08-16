@@ -196,7 +196,9 @@ export function ViewPastPapersPDFMode({
   }, [paperId]);
 
   const handleERClick = (key: string) => {
-    if (erNotes[key]) setSelectedKey(key);
+    if (erNotes[key] || Object.keys(erNotes).some(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? ''))) {
+      setSelectedKey(key);
+    }
   };
 
   const qpPdfUrl = pdfUrl(paperId);
@@ -388,14 +390,28 @@ export function ViewPastPapersPDFMode({
       </div>
 
       {/* ER Modal */}
-      {selectedKey !== null && (
-        <ExaminerReportModal
-          isOpen={true}
-          onClose={() => setSelectedKey(null)}
-          label={erLabels[selectedKey] || selectedKey}
-          erNote={erNotes[selectedKey] || ''}
-        />
-      )}
+      {selectedKey !== null && (() => {
+        // If the key has a direct note, use it. Otherwise combine all sub-part notes
+        // (e.g. key="1" → combine "1a","1b","1c"...) so the modal shows all parts.
+        const directNote = erNotes[selectedKey];
+        const subKeys = !directNote
+          ? Object.keys(erNotes)
+              .filter(k => k.startsWith(selectedKey) && /[a-z]/.test(k[selectedKey.length] ?? ''))
+              .sort()
+          : [];
+        const combinedNote = directNote
+          || subKeys.map(k => `(${k.slice(selectedKey.length)}) ${erNotes[k]}`).join(' ');
+        const qLabel = erLabels[selectedKey]
+          || (subKeys.length ? `Q ${selectedKey}` : selectedKey);
+        return (
+          <ExaminerReportModal
+            isOpen={true}
+            onClose={() => setSelectedKey(null)}
+            label={qLabel}
+            erNote={combinedNote}
+          />
+        );
+      })()}
     </div>
   );
 }
