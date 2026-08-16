@@ -62,8 +62,9 @@ async function extractText(pdfPath) {
 // ── Section finder ────────────────────────────────────────────────────────────
 
 function findComponentSection(fullText, subjectCode, component) {
+  // Allow optional spaces around the slash: "Paper 0450/11" OR "Paper 0450 / 11"
   const patterns = [
-    new RegExp(`Paper\\s*${subjectCode}/${component}\\b`, 'i'),
+    new RegExp(`Paper\\s*${subjectCode}\\s*/\\s*${component}\\b`, 'i'),
     new RegExp(`Paper\\s*0*${component}\\b`, 'i'),
   ];
 
@@ -75,7 +76,8 @@ function findComponentSection(fullText, subjectCode, component) {
   if (startPos === -1) return null;
 
   const rest = fullText.slice(startPos + 50);
-  const endM = /Paper\s*\d{4}\/\d{2}\b/i.exec(rest);
+  // End boundary also allows spaces around slash
+  const endM = /Paper\s*\d{4}\s*\/\s*\d{2}\b/i.exec(rest);
   const endPos = endM ? startPos + 50 + endM.index : fullText.length;
 
   return fullText.slice(startPos, endPos);
