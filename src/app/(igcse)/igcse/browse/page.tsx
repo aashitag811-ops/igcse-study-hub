@@ -142,20 +142,21 @@ export default function BrowsePage() {
 
   const handleUpvote = async (resourceId: string) => {
     if (!user) { router.push('/igcse/login'); return; }
-    const supabase = createClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase = createClient() as any;
     const hasVoted = userVotes.has(resourceId);
     if (hasVoted) {
       await supabase.from('votes').delete().eq('resource_id', resourceId).eq('user_id', user.id);
       const { count } = await supabase.from('votes').select('*', { count: 'exact', head: true }).eq('resource_id', resourceId);
       const n = count ?? 0;
-      await supabase.from('resources').update({ upvote_count: n } as any).eq('id', resourceId);
+      await supabase.from('resources').update({ upvote_count: n }).eq('id', resourceId);
       setUserVotes(prev => { const s = new Set(prev); s.delete(resourceId); return s; });
       setResources(prev => prev.map(r => r.id === resourceId ? { ...r, upvote_count: n } : r));
     } else {
-      await supabase.from('votes').insert({ resource_id: resourceId, user_id: user.id } as any);
+      await supabase.from('votes').insert({ resource_id: resourceId, user_id: user.id });
       const { count } = await supabase.from('votes').select('*', { count: 'exact', head: true }).eq('resource_id', resourceId);
       const n = count ?? 0;
-      await supabase.from('resources').update({ upvote_count: n } as any).eq('id', resourceId);
+      await supabase.from('resources').update({ upvote_count: n }).eq('id', resourceId);
       setUserVotes(prev => new Set(prev).add(resourceId));
       setResources(prev => {
         const updated = prev.map(r => r.id === resourceId ? { ...r, upvote_count: n } : r);

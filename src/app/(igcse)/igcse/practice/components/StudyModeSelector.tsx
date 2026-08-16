@@ -116,7 +116,7 @@ export default function StudyModeSelector({
               onMouseUp={e => { e.currentTarget.style.transform = ''; }}
               onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
             >
-              <div className="mb-2">{mode.icon(isActive)}</div>
+              <div className="mb-2">{mode.icon()}</div>
               <span style={{
                 fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
                 fontSize: '14px', fontWeight: isActive ? 600 : 500,
