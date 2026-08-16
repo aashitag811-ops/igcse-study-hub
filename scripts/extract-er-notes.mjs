@@ -333,8 +333,32 @@ const LETTER_ROMAN_RE    = /^\s*\(([a-z])\)\s*\((i{1,3}|iv|vi{0,3}|ix|x)\)\s*(.*
 const LETTER_RE          = /^\s*\(([a-hj-np-uw-z])\)\s*(.*)/;  // excludes i,o,q,v,x
 const ROMAN_STANDALONE_RE = /^\s*\((i{1,3}|iv|vi{0,3}|ix|x)\)\s*(.*)/i;
 
+// Extract Key messages and General comments from the section before "Comments on specific questions"
+function extractPreambleNotes(section, notes) {
+  const csq = /Comments on specific questions/i.exec(section);
+  // Use the full section up to "Comments on specific questions" as preamble
+  const preamble = csq ? section.slice(0, csq.index) : section;
+  if (!preamble.trim()) return;
+
+  // Key messages — everything between "Key messages" header and the next header
+  const kmMatch = /Key messages?\s*\n([\s\S]*?)(?=\nGeneral comments?|\nComments on specific|\nQuestion\s+\d|$)/i.exec(preamble);
+  if (kmMatch) {
+    const km = cleanBlock(kmMatch[1].split('\n'));
+    if (km) notes['key_messages'] = km;
+  }
+
+  // General comments — everything between "General comments" header and end of preamble
+  const gcMatch = /General comments?\s*\n([\s\S]*?)(?=\nComments on specific|\nQuestion\s+\d|$)/i.exec(preamble);
+  if (gcMatch) {
+    const gc = cleanBlock(gcMatch[1].split('\n'));
+    if (gc) notes['general_comments'] = gc;
+  }
+}
+
 function parseTheorySection(section) {
   const notes = {};
+
+  extractPreambleNotes(section, notes);
 
   const csq = /Comments on specific questions/i.exec(section);
   if (csq) section = section.slice(csq.index + csq[0].length);
@@ -470,6 +494,8 @@ function cleanBlock(rawLines) {
 function parseMCQSection(section) {
   const notes = {};
 
+  extractPreambleNotes(section, notes);
+
   const csq = /Comments on specific questions/i.exec(section);
   if (csq) section = section.slice(csq.index + csq[0].length);
 
@@ -600,6 +626,8 @@ function parseMCQSection(section) {
 // ── Label builder ─────────────────────────────────────────────────────────────
 
 function keyToLabel(key) {
+  if (key === 'key_messages')    return 'Key Messages';
+  if (key === 'general_comments') return 'General Comments';
   const m = key.match(/^(\d+)([a-z])((i{1,3}|iv|vi{0,3}|ix|x))?$/);
   if (m) {
     const [, qn, letter, , roman] = m;

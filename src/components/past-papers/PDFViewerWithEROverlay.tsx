@@ -164,12 +164,13 @@ export function PDFViewerWithEROverlay({
       coordinates.forEach(coord => {
         // Support both new format (key/label) and legacy (qNum)
         const key   = coord.key ?? coord.qNum?.toString() ?? '';
-        // If the exact key has no ER note, check if any sub-part key exists (e.g. "1" → "1a", "1b"...)
-        const effectiveKey = erNotes[key]
-          ? key
-          : Object.keys(erNotes).find(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? '')) ?? '';
-        if (!effectiveKey) return;
-        const label = coord.label ?? erLabels[effectiveKey] ?? erLabels[key] ?? `Q${key}`;
+        // Check if this key has ER data — either a direct note or any sub-part (e.g. "1a","1b"...)
+        const hasNote = !!erNotes[key];
+        const hasSubparts = !hasNote && Object.keys(erNotes).some(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? ''));
+        if (!hasNote && !hasSubparts) return;
+        // Always pass the bare question key to the click handler so ViewPastPapersPDFMode
+        // can combine all sub-parts into a single modal view
+        const label = coord.label ?? erLabels[key] ?? `Q ${key}`;
 
         const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
           `div[data-page="${coord.page}"]`
@@ -207,7 +208,7 @@ export function PDFViewerWithEROverlay({
         ].join(';');
         btn.textContent = label;
         btn.title = `Examiner Report — ${label}`;
-        btn.addEventListener('click', () => onERClickRef.current(effectiveKey));
+        btn.addEventListener('click', () => onERClickRef.current(key));
         wrapper.appendChild(btn);
       });
     });
@@ -221,11 +222,10 @@ export function PDFViewerWithEROverlay({
       canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
       coordinatesRef.current.forEach(coord => {
         const key   = coord.key ?? coord.qNum?.toString() ?? '';
-        const effectiveKey = erNotesRef.current[key]
-          ? key
-          : Object.keys(erNotesRef.current).find(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? '')) ?? '';
-        if (!effectiveKey) return;
-        const label = coord.label ?? erLabels[effectiveKey] ?? erLabels[key] ?? `Q${key}`;
+        const hasNote = !!erNotesRef.current[key];
+        const hasSubparts = !hasNote && Object.keys(erNotesRef.current).some(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? ''));
+        if (!hasNote && !hasSubparts) return;
+        const label = coord.label ?? erLabels[key] ?? `Q ${key}`;
         const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(`div[data-page="${coord.page}"]`);
         if (!wrapper) return;
         const canvas = wrapper.querySelector('canvas');
@@ -245,7 +245,7 @@ export function PDFViewerWithEROverlay({
         ].join(';');
         btn.textContent = label;
         btn.title = `Examiner Report — ${label}`;
-        btn.addEventListener('click', () => onERClickRef.current(effectiveKey));
+        btn.addEventListener('click', () => onERClickRef.current(key));
         wrapper.appendChild(btn);
       });
     };

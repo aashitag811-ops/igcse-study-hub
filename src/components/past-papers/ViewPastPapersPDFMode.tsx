@@ -282,9 +282,27 @@ export function ViewPastPapersPDFMode({
                 Question Paper
               </h2>
               {showER && (
-                <span style={{ fontSize: '11px', fontFamily: 'Inter, sans-serif', fontWeight: 600, padding: '2px 10px', borderRadius: '20px', background: 'rgba(180,130,20,0.18)', border: '1px solid rgba(200,168,76,0.35)', color: '#c8a84c', letterSpacing: '0.04em' }}>
-                  ER Available
-                </span>
+                <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: '11px', fontFamily: 'Inter, sans-serif', fontWeight: 600, padding: '2px 10px', borderRadius: '20px', background: 'rgba(180,130,20,0.18)', border: '1px solid rgba(200,168,76,0.35)', color: '#c8a84c', letterSpacing: '0.04em' }}>
+                    ER Available
+                  </span>
+                  {erNotes['key_messages'] && (
+                    <button
+                      onClick={() => setSelectedKey('key_messages')}
+                      style={{ fontSize: '11px', fontFamily: 'Inter, sans-serif', fontWeight: 600, padding: '2px 10px', borderRadius: '20px', background: 'rgba(59,130,246,0.15)', border: '1px solid rgba(59,130,246,0.4)', color: '#60a5fa', letterSpacing: '0.04em', cursor: 'pointer' }}
+                    >
+                      Key Messages
+                    </button>
+                  )}
+                  {erNotes['general_comments'] && (
+                    <button
+                      onClick={() => setSelectedKey('general_comments')}
+                      style={{ fontSize: '11px', fontFamily: 'Inter, sans-serif', fontWeight: 600, padding: '2px 10px', borderRadius: '20px', background: 'rgba(16,185,129,0.15)', border: '1px solid rgba(16,185,129,0.4)', color: '#34d399', letterSpacing: '0.04em', cursor: 'pointer' }}
+                    >
+                      General Comments
+                    </button>
+                  )}
+                </div>
               )}
             </div>
             <div style={{ flex: 1, overflow: 'hidden' }}>
