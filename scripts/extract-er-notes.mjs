@@ -47,11 +47,34 @@ async function extractText(pdfPath) {
       if (!item.str?.trim()) continue;
       const y = Math.round(item.transform[5]);
       if (!rows[y]) rows[y] = [];
-      rows[y].push({ x: item.transform[4], str: item.str });
+      // Store x, width, and str so we can detect real word gaps vs split-word gaps
+      rows[y].push({ x: item.transform[4], w: item.width ?? 0, str: item.str });
     }
     const ys = Object.keys(rows).map(Number).sort((a, b) => b - a);
     for (const y of ys) {
-      const line = rows[y].sort((a, b) => a.x - b.x).map(i => i.str).join(' ').replace(/  +/g, ' ').trim();
+      const sorted = rows[y].sort((a, b) => a.x - b.x);
+      let line = '';
+      for (let i = 0; i < sorted.length; i++) {
+        const item = sorted[i];
+        if (i === 0) {
+          line += item.str;
+        } else {
+          const prev = sorted[i - 1];
+          // Gap between end of previous item and start of this item
+          const prevEnd = prev.x + prev.w;
+          const gap = item.x - prevEnd;
+          // A word-space in typical 10–12pt text is roughly 2–4px at scale=1.
+          // If the gap is negative or very small (< 1.5px) the items are part of
+          // the same word (pdfjs split it mid-character), so join without a space.
+          // If the gap is ≥ 1.5px treat it as a real word boundary → insert space.
+          if (gap < 1.5) {
+            line += item.str;
+          } else {
+            line += ' ' + item.str;
+          }
+        }
+      }
+      line = line.replace(/  +/g, ' ').trim();
       if (line) text += line + '\n';
     }
   }
@@ -397,6 +420,8 @@ function parseQuestionBlock(qNum, block, notes) {
         .replace(/\s+©\s*\d[\d\s]*\d.*$/, '')
         // Strip trailing "Ac 2025" / "Ac 20 2 5" pdfjs-mangled copyright
         .replace(/\s+[A-Za-z]{1,4}\s+\d[\d\s]{2,8}\d\s*$/, '')
+        // Strip trailing standalone subject-name footer e.g. "BUSINESS STUDIES"
+        .replace(TRAILING_SUBJECT_RE, '')
         .trim();
       if (clean) notes[currentKey] = clean;
     }
@@ -478,6 +503,10 @@ function parseQuestionBlock(qNum, block, notes) {
 //  4. Inline prose: "Question N was..." (0455 Economics MCQ)
 // Sub-parts (a),(b),(c) are detected and split where present.
 
+// Trailing subject-name footer e.g. "BUSINESS STUDIES", "BIOLOGY", "ADDITIONAL MATHEMATICS"
+// These appear at the very end of the last question block in a section.
+const TRAILING_SUBJECT_RE = /\s+(?:BUSINESS STUDIES|ADDITIONAL MATHEMATICS|GLOBAL PERSPECTIVES|[A-Z]{4,}(?:\s+[A-Z]{4,})?)\s*$/;
+
 function cleanBlock(rawLines) {
   return rawLines
     .filter(l => !isNoiseLine(l.trim()))
@@ -488,6 +517,7 @@ function cleanBlock(rawLines) {
     .replace(/\s+\d{4}[A-Za-z].{3,}\d{4}\s*$/, '')
     .replace(/\s+©\s*\d[\d\s]*\d.*$/, '')
     .replace(/\s+[A-Za-z]{1,4}\s+\d[\d\s]{2,8}\d\s*$/, '')
+    .replace(TRAILING_SUBJECT_RE, '')
     .trim();
 }
 
