@@ -1,6 +1,13 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+// Curricula available — add more here when ready
+const CURRICULA = [
+  { label: 'IGCSE', href: '/igcse' },
+  { label: 'A Levels', href: '/igcse', comingSoon: true },
+];
 
 const features = [
   {
@@ -10,6 +17,8 @@ const features = [
     headline: 'Everything You Need.\nNothing You Don\'t.',
     description: 'Find carefully curated notes, revision guides, examiner reports, and trusted student resources organised by subject and topic—everything in one searchable archive.',
     cta: 'Explore the Archive',
+    // base path used when a curriculum is chosen — appended with /browse
+    ctaBasePath: '/browse',
   },
   {
     id: 2,
@@ -18,6 +27,7 @@ const features = [
     headline: 'Practice.\nSubmit.\nImprove.',
     description: 'Complete past papers with instant marking and structured feedback. Spend less time checking answers and more time understanding your mistakes.',
     cta: 'Start Practising',
+    ctaBasePath: '/practice',
   },
   {
     id: 3,
@@ -26,8 +36,114 @@ const features = [
     headline: 'Every Mistake Becomes\nYour Next Strength.',
     description: 'Every incorrect answer is automatically archived, grouped by topic, and transformed into targeted revision so you always know exactly what to study next.',
     cta: 'Open Your Vault',
+    ctaBasePath: '/practice',
   },
 ];
+
+// ── Inline curriculum picker popover ────────────────────────────────────────
+
+function CurriculumPopover({
+  open,
+  onClose,
+  basePath,
+}: {
+  open: boolean;
+  onClose: () => void;
+  basePath: string;
+}) {
+  const router = useRouter();
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    if (!open) return;
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) onClose();
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, [open, onClose]);
+
+  if (!open) return null;
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: 'absolute',
+        bottom: 'calc(100% + 10px)',
+        left: 0,
+        background: '#1a1410',
+        border: '1px solid rgba(185,154,82,0.45)',
+        borderRadius: '10px',
+        padding: '8px',
+        minWidth: '180px',
+        boxShadow: '0 16px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(185,154,82,0.12)',
+        zIndex: 50,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '2px',
+      }}
+    >
+      <p style={{
+        fontSize: '9px',
+        letterSpacing: '0.25em',
+        color: 'rgba(185,154,82,0.5)',
+        fontFamily: 'system-ui, sans-serif',
+        fontWeight: 600,
+        textTransform: 'uppercase',
+        padding: '4px 10px 6px',
+      }}>
+        Choose curriculum
+      </p>
+      {CURRICULA.map((c) => (
+        <button
+          key={c.label}
+          disabled={c.comingSoon}
+          onClick={() => {
+            if (!c.comingSoon) {
+              router.push(c.href + basePath);
+              onClose();
+            }
+          }}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '12px',
+            padding: '10px 14px',
+            borderRadius: '7px',
+            background: 'transparent',
+            border: 'none',
+            cursor: c.comingSoon ? 'default' : 'pointer',
+            fontFamily: 'Georgia, serif',
+            fontSize: '15px',
+            fontWeight: 400,
+            color: c.comingSoon ? 'rgba(185,154,82,0.3)' : '#F5EDD6',
+            textAlign: 'left',
+            transition: 'background 0.15s ease, color 0.15s ease',
+          }}
+          onMouseEnter={(e) => {
+            if (!c.comingSoon) {
+              (e.currentTarget as HTMLButtonElement).style.background = 'rgba(185,154,82,0.10)';
+              (e.currentTarget as HTMLButtonElement).style.color = '#E2C97A';
+            }
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
+            (e.currentTarget as HTMLButtonElement).style.color = c.comingSoon ? 'rgba(185,154,82,0.3)' : '#F5EDD6';
+          }}
+        >
+          <span>{c.label}</span>
+          {c.comingSoon
+            ? <span style={{ fontSize: '9px', letterSpacing: '0.15em', color: 'rgba(185,154,82,0.4)', fontFamily: 'system-ui, sans-serif', fontWeight: 600 }}>SOON</span>
+            : <span style={{ color: '#B99A52', fontSize: '13px' }}>→</span>
+          }
+        </button>
+      ))}
+    </div>
+  );
+}
 
 // Deterministic particle data so it doesn't re-randomise on every render
 const DUST = Array.from({ length: 55 }, (_, i) => ({
@@ -52,6 +168,7 @@ const ORBS = Array.from({ length: 5 }, (_, i) => ({
 export default function ScrollsSection() {
   const [visibleFeatures, setVisibleFeatures] = useState<Set<number>>(new Set());
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
+  const [openPopover, setOpenPopover] = useState<number | null>(null);
   const featureRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -268,34 +385,48 @@ export default function ScrollsSection() {
                     {feature.description}
                   </p>
 
-                  <button
-                    className="group relative inline-flex items-center gap-2 bg-transparent border-0 cursor-pointer p-0"
-                    style={{
-                      fontSize: '15px',
-                      color: '#2B2620',
-                      fontWeight: 500,
-                      letterSpacing: '0.01em',
-                      fontFamily: 'Georgia, serif',
-                    }}
-                  >
-                    <span className="relative">
-                      {feature.cta}
-                      <span
-                        className="absolute bottom-0 left-0 h-px transition-transform duration-300 origin-left"
-                        style={{
-                          width: '100%',
-                          transform: 'scaleX(0)',
-                          backgroundColor: '#B99A52',
-                        }}
-                      />
-                    </span>
-                    <span
-                      className="transition-transform duration-300 group-hover:translate-x-1"
-                      style={{ color: '#B99A52' }}
+                  {/* CTA button — opens curriculum popover */}
+                  <div style={{ position: 'relative', display: 'inline-block' }}>
+                    <button
+                      className="group relative inline-flex items-center gap-2 bg-transparent border-0 cursor-pointer p-0"
+                      style={{
+                        fontSize: '15px',
+                        color: '#2B2620',
+                        fontWeight: 500,
+                        letterSpacing: '0.01em',
+                        fontFamily: 'Georgia, serif',
+                      }}
+                      onClick={() => setOpenPopover(openPopover === index ? null : index)}
                     >
-                      →
-                    </span>
-                  </button>
+                      <span className="relative">
+                        {feature.cta}
+                        <span
+                          className="absolute bottom-0 left-0 h-px transition-transform duration-300 origin-left"
+                          style={{
+                            width: '100%',
+                            transform: openPopover === index ? 'scaleX(1)' : 'scaleX(0)',
+                            backgroundColor: '#B99A52',
+                          }}
+                        />
+                      </span>
+                      <span
+                        className="transition-transform duration-300 group-hover:translate-x-1"
+                        style={{
+                          color: '#B99A52',
+                          display: 'inline-block',
+                          transform: openPopover === index ? 'rotate(90deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.2s ease',
+                        }}
+                      >
+                        →
+                      </span>
+                    </button>
+                    <CurriculumPopover
+                      open={openPopover === index}
+                      onClose={() => setOpenPopover(null)}
+                      basePath={feature.ctaBasePath}
+                    />
+                  </div>
                 </div>
               </div>
 
