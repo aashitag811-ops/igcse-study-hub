@@ -3,7 +3,6 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import HeroLibrary from './components/HeroLibrary';
 import HeroSection from './components/HeroSection';
 import ScrollsSection from './components/ScrollsSection';
 
@@ -13,7 +12,6 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <ScrollsSection />
-      <HeroLibrary />
       <Footer />
     </main>
   );

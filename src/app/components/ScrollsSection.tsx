@@ -17,8 +17,8 @@ const features = [
     headline: 'Everything You Need.\nNothing You Don\'t.',
     description: 'Find carefully curated notes, revision guides, examiner reports, and trusted student resources organised by subject and topic—everything in one searchable archive.',
     cta: 'Explore the Archive',
-    // base path used when a curriculum is chosen — appended with /browse
-    ctaBasePath: '/browse',
+    // navigates straight to the curriculum root (e.g. /igcse)
+    ctaBasePath: '',
   },
   {
     id: 2,
