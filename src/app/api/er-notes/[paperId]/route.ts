@@ -2,6 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+// Force dynamic rendering — never cache this route on Vercel's edge.
+// The er-cache JSON files are updated on every deployment; stale edge
+// responses would serve old (pre-fix) ER text to users.
+export const dynamic = 'force-dynamic';
+
 /**
  * API endpoint to fetch Examiner Report notes for a specific paper
  * Returns JSON with question numbers and their corresponding ER notes
@@ -36,9 +41,15 @@ export async function GET(
       // New format: { notes: {...}, labels: {...} }
       // Old format: { "1": "...", "2": "..." } (flat, no labels)
       if (data.notes) {
-        return NextResponse.json({ notes: data.notes, labels: data.labels ?? {} });
+        return NextResponse.json(
+          { notes: data.notes, labels: data.labels ?? {} },
+          { headers: { 'Cache-Control': 'no-store, no-cache, must-revalidate' } }
+        );
       }
-      return NextResponse.json({ notes: data, labels: {} });
+      return NextResponse.json(
+        { notes: data, labels: {} },
+        { headers: { 'Cache-Control': 'no-store, no-cache, must-revalidate' } }
+      );
     }
     
     // Fallback to general ER notes file: 0417_m20_er_notes.json
@@ -48,13 +59,22 @@ export async function GET(
     if (fs.existsSync(generalPath)) {
       const data = JSON.parse(fs.readFileSync(generalPath, 'utf-8'));
       if (data.notes) {
-        return NextResponse.json({ notes: data.notes, labels: data.labels ?? {} });
+        return NextResponse.json(
+          { notes: data.notes, labels: data.labels ?? {} },
+          { headers: { 'Cache-Control': 'no-store, no-cache, must-revalidate' } }
+        );
       }
-      return NextResponse.json({ notes: data, labels: {} });
+      return NextResponse.json(
+        { notes: data, labels: {} },
+        { headers: { 'Cache-Control': 'no-store, no-cache, must-revalidate' } }
+      );
     }
     
     // No ER notes available
-    return NextResponse.json({ notes: {}, labels: {}, erFileExists: false });
+    return NextResponse.json(
+      { notes: {}, labels: {}, erFileExists: false },
+      { headers: { 'Cache-Control': 'no-store, no-cache, must-revalidate' } }
+    );
     
   } catch (error) {
     console.error('Error fetching ER notes:', error);
