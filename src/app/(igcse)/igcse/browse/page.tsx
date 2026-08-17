@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import { SUBJECTS } from '@/lib/constants/subjects';
@@ -69,7 +69,7 @@ const NAV_TYPES = [
   { value: 'youtube', label: 'YouTube Resources' },
 ];
 
-export default function BrowsePage() {
+function BrowsePageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [resources, setResources] = useState<Resource[]>([]);
@@ -626,6 +626,14 @@ export default function BrowsePage() {
         @keyframes dust2 { 0%{transform:translate(0,0);opacity:0} 20%{opacity:.65} 50%{transform:translate(10px,-60px);opacity:.8} 80%{opacity:.4} 100%{transform:translate(0,0);opacity:0} }
       `}</style>
     </div>
+  );
+}
+
+export default function BrowsePage() {
+  return (
+    <Suspense>
+      <BrowsePageInner />
+    </Suspense>
   );
 }
 
