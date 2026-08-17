@@ -24,11 +24,14 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Student Archive - Discover & Share Study Resources",
   description: "Access thousands of study materials shared by students like you. Find notes, flashcards, revision guides, and more for all your IGCSE subjects.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({

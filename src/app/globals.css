@@ -434,3 +434,48 @@ button:disabled {
   cursor: not-allowed !important;
 }
 /* ─────────────────────────────────────────────────────────────────────────── */
+
+/* ── Responsive layout — all screen sizes ─────────────────────────────────── */
+
+/* Base: prevent horizontal overflow on all devices */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Phone (≤ 640px) — comfortable tap targets, readable text */
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+
+  /* Widen containers that use fixed max-widths */
+  .max-w-2xl, .max-w-3xl, .max-w-4xl, .max-w-5xl, .max-w-6xl, .max-w-7xl {
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Spine library — stack vertically on very small screens */
+  .spine-title { font-size: 10px !important; }
+  .subject-spine { padding: 8px 4px !important; }
+}
+
+/* Tablet (641px – 1023px) */
+@media (min-width: 641px) and (max-width: 1023px) {
+  body { font-size: 15px; }
+}
+
+/* Small laptop / 1080p (1024px – 1439px) — default — no overrides needed */
+
+/* Large desktop (≥ 1440px) — cap content width so it doesn't stretch too wide */
+@media (min-width: 1440px) {
+  /* Pages that use a centred column already have max-width — this just
+     ensures the body background fills edge-to-edge. */
+  body { font-size: 16px; }
+}
+
+/* Ultra-wide (≥ 1920px) — slightly larger base type */
+@media (min-width: 1920px) {
+  body { font-size: 17px; }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
