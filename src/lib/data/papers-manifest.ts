@@ -4144,12 +4144,30 @@ const papers: PaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "0452_m19_qp_11",
+    "subjectCode": "0452",
+    "year": 2019,
+    "session": "m",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": true
+  },
+  {
     "id": "0452_m19_qp_12",
     "subjectCode": "0452",
     "year": 2019,
     "session": "m",
     "component": 1,
     "variant": 2,
+    "testModeAvailable": true
+  },
+  {
+    "id": "0452_m19_qp_13",
+    "subjectCode": "0452",
+    "year": 2019,
+    "session": "m",
+    "component": 1,
+    "variant": 3,
     "testModeAvailable": true
   },
   {
@@ -4664,6 +4682,15 @@ const papers: PaperEntry[] = [
     "component": 2,
     "variant": 2,
     "testModeAvailable": false
+  },
+  {
+    "id": "0452_s15_qp_11",
+    "subjectCode": "0452",
+    "year": 2015,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": true
   },
   {
     "id": "0452_s15_qp_12",
@@ -21763,7 +21790,7 @@ const papers: PaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_m15_qp_22",
@@ -21772,7 +21799,7 @@ const papers: PaperEntry[] = [
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_m15_qp_32",
@@ -21808,7 +21835,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s15_qp_12",
@@ -21817,7 +21844,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s15_qp_13",
@@ -21826,7 +21853,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s15_qp_21",
@@ -21844,7 +21871,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s15_qp_23",
@@ -21943,7 +21970,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w15_qp_12",
@@ -21952,7 +21979,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w15_qp_13",
@@ -21979,7 +22006,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w15_qp_23",
@@ -22078,7 +22105,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s14_qp_12",
@@ -22087,7 +22114,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s14_qp_13",
@@ -22096,7 +22123,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s14_qp_21",
@@ -22114,7 +22141,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s14_qp_23",
@@ -22123,7 +22150,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s14_qp_31",
@@ -22213,7 +22240,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w14_qp_12",
@@ -22222,7 +22249,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w14_qp_13",
@@ -22231,7 +22258,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w14_qp_21",
@@ -22249,7 +22276,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w14_qp_23",
@@ -22357,7 +22384,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s13_qp_13",
@@ -22384,7 +22411,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s13_qp_23",
@@ -22492,7 +22519,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w13_qp_13",
@@ -22519,7 +22546,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w13_qp_23",
@@ -22627,7 +22654,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s12_qp_13",
@@ -22654,7 +22681,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s12_qp_23",
@@ -22762,7 +22789,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w12_qp_13",
@@ -22789,7 +22816,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w12_qp_23",
@@ -22897,7 +22924,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s11_qp_13",
@@ -22924,7 +22951,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s11_qp_31",
@@ -23014,7 +23041,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w11_qp_13",
@@ -23041,7 +23068,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w11_qp_23",
@@ -23149,7 +23176,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s10_qp_13",
@@ -23176,7 +23203,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_s10_qp_23",
@@ -23284,7 +23311,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w10_qp_13",
@@ -23311,7 +23338,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0610_w10_qp_23",
@@ -27145,7 +27172,7 @@ const papers: PaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_m15_qp_22",
@@ -27154,7 +27181,7 @@ const papers: PaperEntry[] = [
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_m15_qp_32",
@@ -27190,7 +27217,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s15_qp_12",
@@ -27199,7 +27226,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s15_qp_13",
@@ -27208,7 +27235,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s15_qp_21",
@@ -27217,7 +27244,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s15_qp_22",
@@ -27226,7 +27253,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s15_qp_23",
@@ -27235,7 +27262,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s15_qp_31",
@@ -27325,7 +27352,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w15_qp_12",
@@ -27334,7 +27361,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w15_qp_13",
@@ -27343,7 +27370,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w15_qp_21",
@@ -27352,7 +27379,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w15_qp_22",
@@ -27361,7 +27388,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w15_qp_23",
@@ -27370,7 +27397,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w15_qp_31",
@@ -27460,7 +27487,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s14_qp_12",
@@ -27469,7 +27496,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s14_qp_13",
@@ -27478,7 +27505,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s14_qp_21",
@@ -27487,7 +27514,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s14_qp_22",
@@ -27496,7 +27523,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s14_qp_23",
@@ -27505,7 +27532,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s14_qp_31",
@@ -27595,7 +27622,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w14_qp_12",
@@ -27604,7 +27631,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w14_qp_13",
@@ -27613,7 +27640,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w14_qp_21",
@@ -27622,7 +27649,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w14_qp_22",
@@ -27631,7 +27658,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w14_qp_23",
@@ -27640,7 +27667,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w14_qp_31",
@@ -27730,7 +27757,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s13_qp_12",
@@ -27739,7 +27766,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s13_qp_13",
@@ -27748,7 +27775,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s13_qp_21",
@@ -27757,7 +27784,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s13_qp_22",
@@ -27766,7 +27793,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s13_qp_23",
@@ -27775,7 +27802,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s13_qp_31",
@@ -27865,7 +27892,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w13_qp_12",
@@ -27874,7 +27901,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w13_qp_13",
@@ -27883,7 +27910,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w13_qp_21",
@@ -27892,7 +27919,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w13_qp_22",
@@ -27901,7 +27928,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w13_qp_23",
@@ -27910,7 +27937,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w13_qp_31",
@@ -28000,7 +28027,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s12_qp_12",
@@ -28009,7 +28036,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s12_qp_13",
@@ -28018,7 +28045,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s12_qp_21",
@@ -28027,7 +28054,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s12_qp_22",
@@ -28036,7 +28063,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s12_qp_23",
@@ -28045,7 +28072,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s12_qp_31",
@@ -28135,7 +28162,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w12_qp_12",
@@ -28144,7 +28171,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w12_qp_13",
@@ -28153,7 +28180,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w12_qp_21",
@@ -28162,7 +28189,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w12_qp_22",
@@ -28171,7 +28198,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w12_qp_23",
@@ -28180,7 +28207,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w12_qp_31",
@@ -28270,7 +28297,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s11_qp_12",
@@ -28279,7 +28306,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s11_qp_13",
@@ -28288,7 +28315,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s11_qp_21",
@@ -28297,7 +28324,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s11_qp_22",
@@ -28306,7 +28333,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s11_qp_31",
@@ -28387,7 +28414,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w11_qp_12",
@@ -28396,7 +28423,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w11_qp_13",
@@ -28405,7 +28432,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w11_qp_21",
@@ -28414,7 +28441,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w11_qp_22",
@@ -28423,7 +28450,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w11_qp_23",
@@ -28432,7 +28459,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w11_qp_31",
@@ -28522,7 +28549,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s10_qp_12",
@@ -28531,7 +28558,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s10_qp_13",
@@ -28540,7 +28567,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s10_qp_21",
@@ -28549,7 +28576,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s10_qp_22",
@@ -28558,7 +28585,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s10_qp_23",
@@ -28567,7 +28594,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_s10_qp_31",
@@ -28657,7 +28684,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w10_qp_12",
@@ -28666,7 +28693,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w10_qp_13",
@@ -28675,7 +28702,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w10_qp_21",
@@ -28684,7 +28711,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w10_qp_22",
@@ -28693,7 +28720,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w10_qp_23",
@@ -28702,7 +28729,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0620_w10_qp_31",
@@ -32536,7 +32563,7 @@ const papers: PaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_m15_qp_22",
@@ -32545,7 +32572,7 @@ const papers: PaperEntry[] = [
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_m15_qp_32",
@@ -32581,7 +32608,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s15_qp_12",
@@ -32590,7 +32617,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s15_qp_13",
@@ -32599,7 +32626,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s15_qp_21",
@@ -32608,7 +32635,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s15_qp_22",
@@ -32617,7 +32644,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s15_qp_23",
@@ -32626,7 +32653,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s15_qp_31",
@@ -32716,7 +32743,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w15_qp_12",
@@ -32725,7 +32752,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w15_qp_13",
@@ -32734,7 +32761,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w15_qp_21",
@@ -32743,7 +32770,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w15_qp_22",
@@ -32752,7 +32779,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w15_qp_23",
@@ -32761,7 +32788,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w15_qp_31",
@@ -32851,7 +32878,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s14_qp_12",
@@ -32860,7 +32887,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s14_qp_13",
@@ -32869,7 +32896,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s14_qp_21",
@@ -32878,7 +32905,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s14_qp_22",
@@ -32887,7 +32914,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s14_qp_23",
@@ -32896,7 +32923,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s14_qp_31",
@@ -32986,7 +33013,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w14_qp_12",
@@ -32995,7 +33022,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w14_qp_13",
@@ -33004,7 +33031,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w14_qp_21",
@@ -33013,7 +33040,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w14_qp_22",
@@ -33022,7 +33049,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w14_qp_23",
@@ -33031,7 +33058,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w14_qp_31",
@@ -33121,7 +33148,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s13_qp_12",
@@ -33130,7 +33157,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s13_qp_13",
@@ -33139,7 +33166,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s13_qp_21",
@@ -33148,7 +33175,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s13_qp_22",
@@ -33157,7 +33184,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s13_qp_23",
@@ -33166,7 +33193,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s13_qp_31",
@@ -33256,7 +33283,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w13_qp_12",
@@ -33265,7 +33292,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w13_qp_13",
@@ -33274,7 +33301,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w13_qp_21",
@@ -33283,7 +33310,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w13_qp_22",
@@ -33292,7 +33319,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w13_qp_23",
@@ -33301,7 +33328,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w13_qp_31",
@@ -33391,7 +33418,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s12_qp_12",
@@ -33400,7 +33427,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s12_qp_13",
@@ -33409,7 +33436,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s12_qp_21",
@@ -33418,7 +33445,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s12_qp_22",
@@ -33427,7 +33454,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s12_qp_23",
@@ -33436,7 +33463,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s12_qp_31",
@@ -33526,7 +33553,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w12_qp_12",
@@ -33535,7 +33562,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w12_qp_13",
@@ -33544,7 +33571,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w12_qp_21",
@@ -33553,7 +33580,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w12_qp_22",
@@ -33562,7 +33589,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w12_qp_23",
@@ -33571,7 +33598,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w12_qp_31",
@@ -33661,7 +33688,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s11_qp_12",
@@ -33670,7 +33697,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s11_qp_13",
@@ -33679,7 +33706,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s11_qp_21",
@@ -33688,7 +33715,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s11_qp_22",
@@ -33697,7 +33724,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s11_qp_31",
@@ -33778,7 +33805,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w11_qp_12",
@@ -33787,7 +33814,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w11_qp_13",
@@ -33796,7 +33823,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w11_qp_21",
@@ -33805,7 +33832,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w11_qp_22",
@@ -33814,7 +33841,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w11_qp_23",
@@ -33823,7 +33850,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w11_qp_31",
@@ -33913,7 +33940,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s10_qp_12",
@@ -33922,7 +33949,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s10_qp_13",
@@ -33931,7 +33958,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s10_qp_21",
@@ -33940,7 +33967,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s10_qp_22",
@@ -33949,7 +33976,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s10_qp_23",
@@ -33958,7 +33985,7 @@ const papers: PaperEntry[] = [
     "session": "s",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_s10_qp_31",
@@ -34048,7 +34075,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w10_qp_12",
@@ -34057,7 +34084,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w10_qp_13",
@@ -34066,7 +34093,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w10_qp_21",
@@ -34075,7 +34102,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w10_qp_22",
@@ -34084,7 +34111,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w10_qp_23",
@@ -34093,7 +34120,7 @@ const papers: PaperEntry[] = [
     "session": "w",
     "component": 2,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "0625_w10_qp_31",

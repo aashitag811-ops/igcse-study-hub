@@ -93,14 +93,18 @@ export default function PracticeContent() {
           testModeAvailable: paper.testModeAvailable ?? false,
         }));
         setAvailablePapers(papers);
-        const seed = urlSubjectCode ? papers.find(p => p.subjectCode === urlSubjectCode) : papers[0];
-        if (seed) {
-          setSelectedSubject(seed.subject);
-          const years = papers.filter(p => p.subjectCode === seed.subjectCode).map(p => p.year).sort((a, b) => b - a);
-          const yr = years.includes(2025) ? 2025 : years[0];
-          setSelectedYear(yr);
-          const match = papers.find(p => p.subjectCode === seed.subjectCode && p.year === yr);
-          if (match) { setSelectedSeason(match.season); setSelectedPaperComponent(match.paperComponent); setSelectedVariant(match.variant); }
+        // Only auto-select a subject when ?subject= is explicitly in the URL.
+        // Without it leave the dropdown blank so the user chooses.
+        if (urlSubjectCode) {
+          const seed = papers.find(p => p.subjectCode === urlSubjectCode);
+          if (seed) {
+            setSelectedSubject(seed.subject);
+            const years = papers.filter(p => p.subjectCode === seed.subjectCode).map(p => p.year).sort((a, b) => b - a);
+            const yr = years.includes(2025) ? 2025 : years[0];
+            setSelectedYear(yr);
+            const match = papers.find(p => p.subjectCode === seed.subjectCode && p.year === yr);
+            if (match) { setSelectedSeason(match.season); setSelectedPaperComponent(match.paperComponent); setSelectedVariant(match.variant); }
+          }
         }
       } catch (err) { console.error(err); } finally { setLoading(false); }
     }

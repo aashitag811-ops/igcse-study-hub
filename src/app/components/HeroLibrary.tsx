@@ -150,7 +150,7 @@ export default function HeroLibrary() {
     const allSubjects = [...MATHEMATICS, ...SCIENCES, ...LANGUAGES, ...HUMANITIES];
     const subject = allSubjects.find(s => s.id === subjectId);
     if (subject) {
-      window.location.href = `/igcse/subject/${subject.code}`;
+      window.location.href = `/igcse/browse?subject=${subject.code}`;
     }
   };
 

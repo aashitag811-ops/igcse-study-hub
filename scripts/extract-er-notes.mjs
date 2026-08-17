@@ -503,9 +503,11 @@ function parseQuestionBlock(qNum, block, notes) {
 //  4. Inline prose: "Question N was..." (0455 Economics MCQ)
 // Sub-parts (a),(b),(c) are detected and split where present.
 
-// Trailing subject-name footer e.g. "BUSINESS STUDIES", "BIOLOGY", "ADDITIONAL MATHEMATICS"
+// Trailing subject-name footer e.g. "BUSINESS STUDIES", "INFORMATION AND COMMUNICATION TECHNOLOGY"
 // These appear at the very end of the last question block in a section.
-const TRAILING_SUBJECT_RE = /\s+(?:BUSINESS STUDIES|ADDITIONAL MATHEMATICS|GLOBAL PERSPECTIVES|[A-Z]{4,}(?:\s+[A-Z]{4,})?)\s*$/;
+// Pattern: one or more ALL-CAPS words (3+ letters) separated by spaces, at the very end.
+// Short connector words like AND, OF, TO, FOR are allowed between caps words.
+const TRAILING_SUBJECT_RE = /\s+[A-Z]{3,}(?:\s+(?:AND|OF|TO|FOR|THE|IN)\s+[A-Z]{3,}|\s+[A-Z]{3,})*\s*$/;
 
 function cleanBlock(rawLines) {
   return rawLines

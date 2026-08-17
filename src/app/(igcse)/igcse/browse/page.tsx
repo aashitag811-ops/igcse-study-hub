@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import { SUBJECTS } from '@/lib/constants/subjects';
 import { RESOURCE_TYPES } from '@/lib/constants/resourceTypes';
@@ -71,6 +71,7 @@ const NAV_TYPES = [
 
 export default function BrowsePage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [resources, setResources] = useState<Resource[]>([]);
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<any>(null);
@@ -78,7 +79,9 @@ export default function BrowsePage() {
   const [editingResource, setEditingResource] = useState<Resource | null>(null);
   const [userProfile, setUserProfile] = useState<any>(null);
 
-  const [selectedSubject, setSelectedSubject] = useState<string>('all');
+  const [selectedSubject, setSelectedSubject] = useState<string>(
+    searchParams.get('subject') ?? 'all'
+  );
   const [selectedType, setSelectedType] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('popular');
   const [searchQuery, setSearchQuery] = useState<string>('');

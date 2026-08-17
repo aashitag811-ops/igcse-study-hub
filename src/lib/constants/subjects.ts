@@ -1,10 +1,10 @@
 export const SUBJECTS = [
   {
-    code: '0580',
-    name: 'Mathematics',
-    color: 'blue',
-    icon: '📐',
-    description: 'Algebra, Geometry, Trigonometry, Statistics'
+    code: '0452',
+    name: 'Accounting',
+    color: 'yellow',
+    icon: '📒',
+    description: 'Financial Statements, Bookkeeping, Costing'
   },
   {
     code: '0606',
@@ -14,11 +14,18 @@ export const SUBJECTS = [
     description: 'Advanced Algebra, Calculus, Trigonometry'
   },
   {
-    code: '0625',
-    name: 'Physics',
-    color: 'purple',
-    icon: '⚛️',
-    description: 'Mechanics, Electricity, Waves, Nuclear Physics'
+    code: '0610',
+    name: 'Biology',
+    color: 'emerald',
+    icon: '🧬',
+    description: 'Cell Biology, Genetics, Ecology, Human Biology'
+  },
+  {
+    code: '0450',
+    name: 'Business Studies',
+    color: 'orange',
+    icon: '📊',
+    description: 'Marketing, Finance, Operations, Management'
   },
   {
     code: '0620',
@@ -28,24 +35,24 @@ export const SUBJECTS = [
     description: 'Organic, Inorganic, Physical Chemistry'
   },
   {
-    code: '0610',
-    name: 'Biology',
-    color: 'emerald',
-    icon: '🧬',
-    description: 'Cell Biology, Genetics, Ecology, Human Biology'
+    code: '0478',
+    name: 'Computer Science',
+    color: 'cyan',
+    icon: '🖥️',
+    description: 'Algorithms, Programming, Data Structures'
+  },
+  {
+    code: '0455',
+    name: 'Economics',
+    color: 'yellow',
+    icon: '💰',
+    description: 'Microeconomics, Macroeconomics, Trade'
   },
   {
     code: '0500',
     name: 'English',
     color: 'red',
     icon: '📚',
-    description: 'Reading, Writing, Speaking, Listening'
-  },
-  {
-    code: '0549',
-    name: 'Hindi',
-    color: 'red',
-    icon: 'हिन्दी',
     description: 'Reading, Writing, Speaking, Listening'
   },
   {
@@ -56,18 +63,18 @@ export const SUBJECTS = [
     description: 'Reading, Writing, Speaking, Listening'
   },
   {
-    code: '0455',
-    name: 'Economics',
-    color: 'yellow',
-    icon: '💰',
-    description: 'Microeconomics, Macroeconomics, Trade'
-  },
-  {
     code: '0457',
     name: 'Global Perspectives',
     color: 'indigo',
     icon: '🌍',
     description: 'Critical Thinking, Research, Global Issues'
+  },
+  {
+    code: '0549',
+    name: 'Hindi',
+    color: 'red',
+    icon: 'हिन्दी',
+    description: 'Reading, Writing, Speaking, Listening'
   },
   {
     code: '0417',
@@ -77,18 +84,18 @@ export const SUBJECTS = [
     description: 'Programming, Networks, Data, Systems'
   },
   {
-    code: '0478',
-    name: 'Computer Science',
-    color: 'cyan',
-    icon: '🖥️',
-    description: 'Algorithms, Programming, Data Structures'
+    code: '0580',
+    name: 'Mathematics',
+    color: 'blue',
+    icon: '📐',
+    description: 'Algebra, Geometry, Trigonometry, Statistics'
   },
   {
-    code: '0450',
-    name: 'Business Studies',
-    color: 'orange',
-    icon: '📊',
-    description: 'Marketing, Finance, Operations, Management'
+    code: '0625',
+    name: 'Physics',
+    color: 'purple',
+    icon: '⚛️',
+    description: 'Mechanics, Electricity, Waves, Nuclear Physics'
   },
 ] as const;
 
