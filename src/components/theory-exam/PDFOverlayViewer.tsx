@@ -186,25 +186,29 @@ function PDFPage({
               placeholder=""
               style={{
                 position: 'absolute',
-                // Sit the input ON the dot line — shift up ~70% of line height
+                // Centre the input over the dot line
                 top:   `${lineTop - lineH * 0.72}px`,
                 left:  `${left}px`,
                 width: `${width}px`,
                 height:`${lineH}px`,
-                // Fully transparent background — dots show through
-                background: 'transparent',
-                // Only a bottom border — looks like writing on the printed line
+                // White background covers the dots underneath — notebook look
+                background: active
+                  ? 'rgba(248,252,255,1)'
+                  : lineVal.trim()
+                    ? 'rgba(245,255,245,1)'
+                    : 'rgba(255,255,255,1)',
+                // Solid ruled line at the bottom, thicker than the dots
                 border: 'none',
                 borderBottom: active
-                  ? `1.5px solid rgba(0,90,200,0.55)`
+                  ? `2px solid #3b82f6`
                   : lineVal.trim()
-                    ? `1px solid rgba(30,120,30,0.4)`
-                    : 'none',
+                    ? `2px solid #16a34a`
+                    : `2px solid #94a3b8`,
                 fontFamily: "'Helvetica Neue', Arial, sans-serif",
                 fontSize: `${fontSize}px`,
                 lineHeight: `${lineH}px`,
-                color: '#1a1a6e',          // dark navy — stands out on white paper
-                padding: '0 3px',
+                color: '#1e1b4b',
+                padding: '0 4px',
                 outline: 'none',
                 boxSizing: 'border-box',
                 zIndex: 10,
