@@ -134,32 +134,40 @@ function PDFPage({
       {rendered && blocks.map((block, idx) => {
         if (block.diagramOnly) return null;
 
-        const key      = block.subPartKey ?? `p${pageNum}b${idx}`;
-        const val      = answers[key] ?? '';
-        const active   = focusedKey === key;
+        const key    = block.subPartKey ?? `p${pageNum}b${idx}`;
+        const val    = answers[key] ?? '';
+        const active = focusedKey === key;
 
-        // Line spacing in the PDF (pt) — Cambridge papers use ~26pt ruling
+        // True line spacing between consecutive dot lines
         const LINE_SPACING_PT = (block.lineCount > 1)
           ? (block.yEnd - block.yStart) / (block.lineCount - 1)
           : 26;
 
-        const lineH  = Math.round(LINE_SPACING_PT * scale);
-        const left   = block.xStart * scale;
-        const width  = (block.xEnd - block.xStart) * scale;
+        const lineH    = LINE_SPACING_PT * scale;
+        // Input height = 85% of line spacing so it never bleeds over adjacent text
+        const inputH   = Math.round(lineH * 0.85);
+        const left     = block.xStart * scale;
+        const width    = (block.xEnd - block.xStart) * scale;
         const fontSize = Math.round(10.5 * Math.min(scale, 1.35));
+        // Short blocks (fill-in-the-blank mid-sentence) have narrower width
+        const isInline = width < 260 * scale;
 
-        // Split stored value across lines
         const lines = val.split('\n');
 
-        // One input per dot line
         return Array.from({ length: block.lineCount }, (_, li) => {
-          const lineTop = (block.yStart + li * LINE_SPACING_PT) * scale;
-          const lineVal = lines[li] ?? '';
-          const isLast  = li === block.lineCount - 1;
+          const lineVal  = lines[li] ?? '';
+          const isLast   = li === block.lineCount - 1;
+          const isActive = active;
+
+          // Position: centre the input vertically on each dot line
+          // The dot line sits at yStart + li * spacing; input centres on that
+          const lineY   = (block.yStart + li * LINE_SPACING_PT) * scale;
+          const topPx   = lineY - inputH * 0.8;
 
           return (
             <input
               key={`${key}_L${li}`}
+              id={`${key}_L${li}`}
               type="text"
               value={lineVal}
               onChange={e => {
@@ -169,49 +177,39 @@ function PDFPage({
               }}
               onFocus={() => onFocus(key)}
               onKeyDown={e => {
-                // Enter / ArrowDown → move to next line
                 if ((e.key === 'Enter' || e.key === 'ArrowDown') && !isLast) {
                   e.preventDefault();
-                  const next = document.getElementById(`${key}_L${li + 1}`);
-                  next?.focus();
+                  document.getElementById(`${key}_L${li + 1}`)?.focus();
                 }
-                // ArrowUp → move to previous line
                 if (e.key === 'ArrowUp' && li > 0) {
                   e.preventDefault();
-                  const prev = document.getElementById(`${key}_L${li - 1}`);
-                  prev?.focus();
+                  document.getElementById(`${key}_L${li - 1}`)?.focus();
                 }
               }}
-              id={`${key}_L${li}`}
               placeholder=""
               style={{
                 position: 'absolute',
-                // Centre the input over the dot line
-                top:   `${lineTop - lineH * 0.72}px`,
-                left:  `${left}px`,
-                width: `${width}px`,
-                height:`${lineH}px`,
-                // White background covers the dots underneath — notebook look
-                background: active
-                  ? 'rgba(248,252,255,1)'
-                  : lineVal.trim()
-                    ? 'rgba(245,255,245,1)'
-                    : 'rgba(255,255,255,1)',
-                // Solid ruled line at the bottom, thicker than the dots
-                border: 'none',
-                borderBottom: active
-                  ? `2px solid #3b82f6`
-                  : lineVal.trim()
-                    ? `2px solid #16a34a`
-                    : `2px solid #94a3b8`,
+                top:    `${topPx}px`,
+                left:   `${left}px`,
+                width:  `${width}px`,
+                height: `${inputH}px`,
+                // Always white bg to cover dots
+                background: '#fff',
+                // Active: dark rounded highlight box (like a text editor selection)
+                // Inactive: just a solid black bottom rule
+                border: isActive ? '1.5px solid #111' : 'none',
+                borderBottom: isActive ? '1.5px solid #111' : '2px solid #1a1a1a',
+                borderRadius: isActive ? (isInline ? '6px' : '4px') : '0',
+                boxShadow: isActive ? '0 0 0 3px rgba(0,0,0,0.08)' : 'none',
                 fontFamily: "'Helvetica Neue', Arial, sans-serif",
-                fontSize: `${fontSize}px`,
-                lineHeight: `${lineH}px`,
-                color: '#1e1b4b',
-                padding: '0 4px',
+                fontSize:   `${fontSize}px`,
+                lineHeight: `${inputH}px`,
+                color: '#111',
+                padding: '0 5px',
                 outline: 'none',
                 boxSizing: 'border-box',
                 zIndex: 10,
+                transition: 'border 0.1s, border-radius 0.1s, box-shadow 0.1s',
               } as React.CSSProperties}
             />
           );
