@@ -134,45 +134,84 @@ function PDFPage({
       {rendered && blocks.map((block, idx) => {
         if (block.diagramOnly) return null;
 
-        const top    = block.yStart * scale;
+        const key      = block.subPartKey ?? `p${pageNum}b${idx}`;
+        const val      = answers[key] ?? '';
+        const active   = focusedKey === key;
+
+        // Line spacing in the PDF (pt) — Cambridge papers use ~26pt ruling
+        const LINE_SPACING_PT = (block.lineCount > 1)
+          ? (block.yEnd - block.yStart) / (block.lineCount - 1)
+          : 26;
+
+        const lineH  = Math.round(LINE_SPACING_PT * scale);
         const left   = block.xStart * scale;
         const width  = (block.xEnd - block.xStart) * scale;
-        const height = Math.max(22, (block.yEnd - block.yStart) * scale + 6);
-        const key    = block.subPartKey ?? `p${pageNum}b${idx}`;
-        const val    = answers[key] ?? '';
-        const active = focusedKey === key;
+        const fontSize = Math.round(10.5 * Math.min(scale, 1.35));
 
-        return (
-          <textarea
-            key={key}
-            value={val}
-            onChange={e => onAnswerChange(key, e.target.value)}
-            onFocus={() => onFocus(key)}
-            placeholder=""
-            style={{
-              position: 'absolute',
-              top: `${top - 1}px`, left: `${left}px`,
-              width: `${width}px`, height: `${height}px`,
-              background: active
-                ? 'rgba(255,253,225,0.97)'
-                : val.trim() ? 'rgba(235,255,235,0.93)' : 'rgba(255,255,255,0.86)',
-              border: active
-                ? '1.5px solid rgba(160,110,0,0.75)'
-                : val.trim() ? '1px solid rgba(50,140,50,0.5)' : '1px solid rgba(160,120,0,0.2)',
-              borderRadius: '2px',
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: `${Math.round(11 * Math.min(scale, 1.4))}px`,
-              lineHeight: `${Math.round(26 * scale)}px`,
-              color: '#111',
-              padding: '1px 4px',
-              resize: 'none', outline: 'none', overflow: 'hidden',
-              boxSizing: 'border-box',
-              zIndex: 10,
-              transition: 'background 0.1s, border-color 0.1s',
-              scrollbarWidth: 'none',
-            } as React.CSSProperties}
-          />
-        );
+        // Split stored value across lines
+        const lines = val.split('\n');
+
+        // One input per dot line
+        return Array.from({ length: block.lineCount }, (_, li) => {
+          const lineTop = (block.yStart + li * LINE_SPACING_PT) * scale;
+          const lineVal = lines[li] ?? '';
+          const isLast  = li === block.lineCount - 1;
+
+          return (
+            <input
+              key={`${key}_L${li}`}
+              type="text"
+              value={lineVal}
+              onChange={e => {
+                const newLines = [...lines];
+                newLines[li] = e.target.value;
+                onAnswerChange(key, newLines.join('\n'));
+              }}
+              onFocus={() => onFocus(key)}
+              onKeyDown={e => {
+                // Enter / ArrowDown → move to next line
+                if ((e.key === 'Enter' || e.key === 'ArrowDown') && !isLast) {
+                  e.preventDefault();
+                  const next = document.getElementById(`${key}_L${li + 1}`);
+                  next?.focus();
+                }
+                // ArrowUp → move to previous line
+                if (e.key === 'ArrowUp' && li > 0) {
+                  e.preventDefault();
+                  const prev = document.getElementById(`${key}_L${li - 1}`);
+                  prev?.focus();
+                }
+              }}
+              id={`${key}_L${li}`}
+              placeholder=""
+              style={{
+                position: 'absolute',
+                // Sit the input ON the dot line — shift up ~70% of line height
+                top:   `${lineTop - lineH * 0.72}px`,
+                left:  `${left}px`,
+                width: `${width}px`,
+                height:`${lineH}px`,
+                // Fully transparent background — dots show through
+                background: 'transparent',
+                // Only a bottom border — looks like writing on the printed line
+                border: 'none',
+                borderBottom: active
+                  ? `1.5px solid rgba(0,90,200,0.55)`
+                  : lineVal.trim()
+                    ? `1px solid rgba(30,120,30,0.4)`
+                    : 'none',
+                fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                fontSize: `${fontSize}px`,
+                lineHeight: `${lineH}px`,
+                color: '#1a1a6e',          // dark navy — stands out on white paper
+                padding: '0 3px',
+                outline: 'none',
+                boxSizing: 'border-box',
+                zIndex: 10,
+              } as React.CSSProperties}
+            />
+          );
+        });
       })}
     </div>
   );
