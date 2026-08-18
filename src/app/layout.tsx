@@ -22,8 +22,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Student Archive - Discover & Share Study Resources",
-  description: "Access thousands of study materials shared by students like you. Find notes, flashcards, revision guides, and more for all your IGCSE subjects.",
+  title: "Student Archive – Free IGCSE Past Papers & Study Resources",
+  description: "Free Cambridge IGCSE past papers, mark schemes, examiner reports and interactive practice for Biology, Chemistry, Physics, Maths, ICT and more. Built by students, for students.",
+  keywords: "IGCSE past papers, Cambridge IGCSE, Biology 0610, Chemistry 0620, Physics 0625, free past papers, mark scheme, examiner report, IGCSE practice",
+  openGraph: {
+    title: "Student Archive – Free IGCSE Past Papers",
+    description: "Free Cambridge IGCSE past papers, mark schemes and interactive practice. Biology, Chemistry, Physics, Maths, ICT and more.",
+    url: "https://studentarchive.xyz",
+    siteName: "Student Archive",
+    type: "website",
+  },
+  metadataBase: new URL("https://studentarchive.xyz"),
 };
 
 export const viewport = {

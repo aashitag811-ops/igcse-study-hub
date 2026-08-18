@@ -3,11 +3,19 @@ const nextConfig = {
   images: {
     domains: [],
   },
-  webpack: (config) => {
-    // Fix for react-pdf and pdfjs-dist compatibility with Next.js 15
+  webpack: (config, { isServer }) => {
+    // Fix for pdfjs-dist compatibility with Next.js 15
     config.resolve.alias.canvas = false;
     config.resolve.alias.encoding = false;
-    
+
+    // pdfjs-dist uses top-level await — enable it for the client bundle
+    if (!isServer) {
+      config.experiments = {
+        ...config.experiments,
+        topLevelAwait: true,
+      };
+    }
+
     return config;
   },
 }
