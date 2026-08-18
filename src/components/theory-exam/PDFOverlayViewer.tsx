@@ -136,7 +136,6 @@ function PDFPage({
 
         const key    = block.subPartKey ?? `p${pageNum}b${idx}`;
         const val    = answers[key] ?? '';
-        const active = focusedKey === key;
 
         // True line spacing between consecutive dot lines
         const LINE_SPACING_PT = (block.lineCount > 1)
@@ -144,8 +143,8 @@ function PDFPage({
           : 26;
 
         const lineH    = LINE_SPACING_PT * scale;
-        // Input height = 85% of line spacing so it never bleeds over adjacent text
-        const inputH   = Math.round(lineH * 0.85);
+        // 90% of line spacing — enough room for descenders (g, y, p) without bleeding
+        const inputH   = Math.round(lineH * 0.90);
         const left     = block.xStart * scale;
         const width    = (block.xEnd - block.xStart) * scale;
         const fontSize = Math.round(10.5 * Math.min(scale, 1.35));
@@ -157,17 +156,18 @@ function PDFPage({
         return Array.from({ length: block.lineCount }, (_, li) => {
           const lineVal  = lines[li] ?? '';
           const isLast   = li === block.lineCount - 1;
-          const isActive = active;
+          // Each line has its own focus key so only the clicked line highlights
+          const lineKey  = `${key}_L${li}`;
+          const isActive = focusedKey === lineKey;
 
-          // Position: centre the input vertically on each dot line
-          // The dot line sits at yStart + li * spacing; input centres on that
-          const lineY   = (block.yStart + li * LINE_SPACING_PT) * scale;
-          const topPx   = lineY - inputH * 0.8;
+          // Centre input vertically on each dot line
+          const lineY = (block.yStart + li * LINE_SPACING_PT) * scale;
+          const topPx = lineY - inputH * 0.5;
 
           return (
             <input
-              key={`${key}_L${li}`}
-              id={`${key}_L${li}`}
+              key={lineKey}
+              id={lineKey}
               type="text"
               value={lineVal}
               onChange={e => {
@@ -175,7 +175,7 @@ function PDFPage({
                 newLines[li] = e.target.value;
                 onAnswerChange(key, newLines.join('\n'));
               }}
-              onFocus={() => onFocus(key)}
+              onFocus={() => onFocus(lineKey)}
               onKeyDown={e => {
                 if ((e.key === 'Enter' || e.key === 'ArrowDown') && !isLast) {
                   e.preventDefault();
@@ -193,12 +193,9 @@ function PDFPage({
                 left:   `${left}px`,
                 width:  `${width}px`,
                 height: `${inputH}px`,
-                // Always white bg to cover dots
                 background: '#fff',
-                // Active: dark rounded highlight box (like a text editor selection)
-                // Inactive: just a solid black bottom rule
                 border: isActive ? '1.5px solid #111' : 'none',
-                borderBottom: isActive ? '1.5px solid #111' : '2px solid #1a1a1a',
+                borderBottom: isActive ? '1.5px solid #111' : '1.5px solid #1a1a1a',
                 borderRadius: isActive ? (isInline ? '6px' : '4px') : '0',
                 boxShadow: isActive ? '0 0 0 3px rgba(0,0,0,0.08)' : 'none',
                 fontFamily: "'Helvetica Neue', Arial, sans-serif",
