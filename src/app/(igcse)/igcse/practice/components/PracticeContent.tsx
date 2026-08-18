@@ -124,10 +124,13 @@ export default function PracticeContent() {
 
   const selectedPaper = availablePapers.find(p => p.subject === selectedSubject && p.year === selectedYear && p.season === selectedSeason && p.paperComponent === selectedPaperComponent && p.variant === selectedVariant);
   const testModeEnabled = selectedPaper?.testModeAvailable ?? false;
+  // Paper component 4 = theory structured paper
+  const isTheoryPaper = selectedPaper?.paperComponent === 4;
 
   const handleViewPastPapers = () => { if (selectedPaper) router.push(`/igcse/view-papers/${selectedPaper.id}`); };
   const handleStartPractice = () => { if (selectedPaper && testModeEnabled) router.push(`/igcse/mcq-exam/${selectedPaper.id}`); };
   const handleStartPracticeMode = () => { if (selectedPaper && testModeEnabled) router.push(`/practice/${selectedPaper.id}`); };
+  const handleStartTheoryExam = () => { if (selectedPaper && isTheoryPaper) router.push(`/igcse/theory-exam/${selectedPaper.id}`); };
 
   if (loading) {
     return (
@@ -276,8 +279,10 @@ export default function PracticeContent() {
             onViewPapers={handleViewPastPapers}
             onStartPractice={handleStartPractice}
             onStartPracticeMode={handleStartPracticeMode}
+            onStartTheoryExam={handleStartTheoryExam}
             isPaperSelected={!!selectedPaper}
             isTestModeEnabled={testModeEnabled}
+            isTheoryPaper={isTheoryPaper}
             testModeMessage={getTestModeUnavailableMessage()}
             preferredMode={preferredMode || undefined}
           />

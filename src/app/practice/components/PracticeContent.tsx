@@ -200,6 +200,8 @@ export default function PracticeContent() {
 
   // Test mode is only available if the selected paper has image-based MCQ questions
   const testModeEnabled = selectedPaper?.testModeAvailable ?? false;
+  // Paper component 4 = theory structured paper
+  const isTheoryPaper = selectedPaper?.paperComponent === 4;
 
   const handleViewPastPapers = () => {
     if (selectedPaper) {
@@ -217,6 +219,12 @@ export default function PracticeContent() {
   const handleStartPracticeMode = () => {
     if (selectedPaper && testModeEnabled) {
       router.push(`/igcse/practice/${selectedPaper.id}`);
+    }
+  };
+
+  const handleStartTheoryExam = () => {
+    if (selectedPaper && isTheoryPaper) {
+      router.push(`/igcse/theory-exam/${selectedPaper.id}`);
     }
   };
 
@@ -399,8 +407,10 @@ export default function PracticeContent() {
           onViewPapers={handleViewPastPapers}
           onStartPractice={handleStartPractice}
           onStartPracticeMode={handleStartPracticeMode}
+          onStartTheoryExam={handleStartTheoryExam}
           isPaperSelected={!!selectedPaper}
           isTestModeEnabled={testModeEnabled}
+          isTheoryPaper={isTheoryPaper}
           testModeMessage={getTestModeUnavailableMessage()}
           preferredMode={preferredMode || undefined}
         />

@@ -6,8 +6,10 @@ interface StudyModeSelectorProps {
   onViewPapers: () => void;
   onStartPractice: () => void;
   onStartPracticeMode: () => void;
+  onStartTheoryExam?: () => void;
   isPaperSelected: boolean;
   isTestModeEnabled: boolean;
+  isTheoryPaper?: boolean;
   testModeMessage?: string;
   preferredMode?: string;
 }
@@ -45,13 +47,24 @@ const modes = [
       </svg>
     ),
   },
+  {
+    id: 'theory' as const, label: 'Theory Exam', number: '04', tag: 'THEORY',
+    description: 'Type your answers directly on the question paper — inputs sit over every answer line.',
+    inactiveColor: '#7c5cd8',
+    icon: () => (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: '#ffffff' }}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function StudyModeSelector({
-  onViewPapers, onStartPractice, onStartPracticeMode,
-  isPaperSelected, isTestModeEnabled, testModeMessage, preferredMode,
+  onViewPapers, onStartPractice, onStartPracticeMode, onStartTheoryExam,
+  isPaperSelected, isTestModeEnabled, isTheoryPaper, testModeMessage, preferredMode,
 }: StudyModeSelectorProps) {
-  const [activeMode, setActiveMode] = useState<'study' | 'test' | 'practice'>(() => {
+  const [activeMode, setActiveMode] = useState<'study' | 'test' | 'practice' | 'theory'>(() => {
+    if (preferredMode === 'theory') return 'theory';
     if (!isTestModeEnabled) return 'study';
     if (preferredMode === 'test') return 'test';
     if (preferredMode === 'practice') return 'practice';
@@ -59,14 +72,26 @@ export default function StudyModeSelector({
   });
   const [pressing, setPressing] = useState(false);
 
-  const isLocked = activeMode !== 'study' && !isTestModeEnabled;
-  const isLaunchable = isPaperSelected && !isLocked;
-  const launchLabel = activeMode === 'study' ? 'View Paper' : activeMode === 'test' ? 'Begin Exam' : 'Start Practising';
+  // Theory tab is only relevant when a Paper 4 (theory) is selected
+  const visibleModes = isTheoryPaper
+    ? modes
+    : modes.filter(m => m.id !== 'theory');
+
+  const isTheoryMode = activeMode === 'theory';
+  const isLocked = !isTheoryMode && activeMode !== 'study' && !isTestModeEnabled;
+  const isTheoryLocked = isTheoryMode && !isTheoryPaper;
+  const isLaunchable = isPaperSelected && !isLocked && !isTheoryLocked;
+  const launchLabel =
+    activeMode === 'study' ? 'View Paper' :
+    activeMode === 'test' ? 'Begin Exam' :
+    activeMode === 'theory' ? 'Open Theory Exam' :
+    'Start Practising';
 
   const handleLaunch = () => {
     if (!isLaunchable) return;
     if (activeMode === 'study') onViewPapers();
     else if (activeMode === 'test') onStartPractice();
+    else if (activeMode === 'theory') onStartTheoryExam?.();
     else onStartPracticeMode();
   };
 
@@ -91,8 +116,23 @@ export default function StudyModeSelector({
     >
       {/* Mode tabs */}
       <div className="flex gap-3 mb-5">
-        {modes.map(mode => {
+        {visibleModes.map(mode => {
           const isActive = activeMode === mode.id;
+          const isTheoryTab = mode.id === 'theory';
+          const activeColor = isTheoryTab ? 'rgba(124,92,216,0.35)' : 'rgba(80,120,200,0.35)';
+          const activeColorTop = isTheoryTab ? 'rgba(160,120,240,0.45)' : 'rgba(100,150,240,0.45)';
+          const activeShadow = isTheoryTab
+            ? 'inset 0 1px 0 rgba(160,120,240,0.18), 0 4px 16px rgba(0,0,0,0.4), 0 0 24px rgba(124,92,216,0.15)'
+            : 'inset 0 1px 0 rgba(100,150,240,0.18), 0 4px 16px rgba(0,0,0,0.4), 0 0 24px rgba(60,100,200,0.10)';
+
+          const labelColor = isTheoryTab
+            ? (isTheoryPaper ? '#b39ddb' : '#c05a5a')
+            : (mode.id === 'study' ? '#6ed48a' : (isTestModeEnabled ? '#6ed48a' : '#c05a5a'));
+
+          const labelShadow = isTheoryTab
+            ? (isTheoryPaper ? '0 0 16px rgba(124,92,216,0.35)' : '0 0 12px rgba(180,60,60,0.28)')
+            : (mode.id === 'study' || isTestModeEnabled ? '0 0 16px rgba(80,200,100,0.28)' : '0 0 12px rgba(180,60,60,0.28)');
+
           return (
             <button
               key={mode.id}
@@ -106,11 +146,9 @@ export default function StudyModeSelector({
                 background: isActive
                   ? 'linear-gradient(145deg, rgba(14,20,30,0.97) 0%, rgba(8,14,24,0.99) 100%)'
                   : 'linear-gradient(145deg, rgba(8,12,18,0.85) 0%, rgba(5,8,14,0.92) 100%)',
-                border: isActive ? '1px solid rgba(80,120,200,0.35)' : '1px solid rgba(80,100,160,0.10)',
-                borderTop: isActive ? '1px solid rgba(100,150,240,0.45)' : '1px solid rgba(80,100,160,0.08)',
-                boxShadow: isActive
-                  ? 'inset 0 1px 0 rgba(100,150,240,0.18), 0 4px 16px rgba(0,0,0,0.4), 0 0 24px rgba(60,100,200,0.10)'
-                  : 'inset 0 1px 0 rgba(255,255,255,0.02)',
+                border: isActive ? `1px solid ${activeColor}` : '1px solid rgba(80,100,160,0.10)',
+                borderTop: isActive ? `1px solid ${activeColorTop}` : '1px solid rgba(80,100,160,0.08)',
+                boxShadow: isActive ? activeShadow : 'inset 0 1px 0 rgba(255,255,255,0.02)',
               }}
               onMouseDown={e => { e.currentTarget.style.transform = 'translateY(2px) scale(0.98)'; }}
               onMouseUp={e => { e.currentTarget.style.transform = ''; }}
@@ -121,22 +159,16 @@ export default function StudyModeSelector({
                 fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
                 fontSize: '14px', fontWeight: isActive ? 600 : 500,
                 letterSpacing: '0.01em',
-                color: mode.id === 'study'
-                  ? '#6ed48a'
-                  : isTestModeEnabled
-                    ? '#6ed48a'
-                    : '#c05a5a',
+                color: labelColor,
                 lineHeight: 1.2,
-                textShadow: mode.id === 'study' || isTestModeEnabled
-                  ? '0 0 16px rgba(80,200,100,0.28)'
-                  : '0 0 12px rgba(180,60,60,0.28)',
+                textShadow: labelShadow,
               }}>
                 {mode.label}
               </span>
               <span style={{
                 fontFamily: 'monospace', fontSize: '10px', marginTop: '4px',
                 letterSpacing: '0.18em',
-                color: 'rgba(74,122,181,0.65)',
+                color: isTheoryTab ? 'rgba(124,92,216,0.65)' : 'rgba(74,122,181,0.65)',
               }}>
                 {mode.number} / {mode.tag}
               </span>
@@ -145,23 +177,31 @@ export default function StudyModeSelector({
         })}
       </div>
 
-      {/* Description — always blue, red only when locked */}
+      {/* Description */}
       <p style={{
         fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
         fontSize: '14px',
         fontWeight: 400,
         lineHeight: 1.75,
-        color: isLocked ? '#c05a5a' : '#4a7ab5',
-        textShadow: isLocked
+        color: isLocked || isTheoryLocked
+          ? '#c05a5a'
+          : isTheoryMode
+            ? 'rgba(179,157,219,0.85)'
+            : '#4a7ab5',
+        textShadow: isLocked || isTheoryLocked
           ? '0 0 16px rgba(180,60,60,0.30)'
-          : '0 0 18px rgba(60,100,200,0.35)',
+          : isTheoryMode
+            ? '0 0 18px rgba(124,92,216,0.30)'
+            : '0 0 18px rgba(60,100,200,0.35)',
         minHeight: '2.8rem',
         marginBottom: '20px',
         letterSpacing: '0.01em',
       }}>
         {isLocked
           ? (testModeMessage || 'Not available for this paper type.')
-          : modes.find(m => m.id === activeMode)?.description
+          : isTheoryLocked
+            ? 'Select a Paper 4 (Theory) paper to use Theory Exam mode.'
+            : modes.find(m => m.id === activeMode)?.description
         }
       </p>
 

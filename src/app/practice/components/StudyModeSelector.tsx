@@ -6,8 +6,10 @@ interface StudyModeSelectorProps {
   onViewPapers: () => void;
   onStartPractice: () => void;
   onStartPracticeMode: () => void;
+  onStartTheoryExam?: () => void;
   isPaperSelected: boolean;
   isTestModeEnabled: boolean;
+  isTheoryPaper?: boolean;
   testModeMessage?: string;
   preferredMode?: string; // 'test', 'view', or 'practice'
 }
@@ -16,15 +18,15 @@ export default function StudyModeSelector({
   onViewPapers,
   onStartPractice,
   onStartPracticeMode,
+  onStartTheoryExam,
   isPaperSelected,
   isTestModeEnabled,
+  isTheoryPaper,
   testModeMessage,
   preferredMode
 }: StudyModeSelectorProps) {
-  // Mode tracker state: 'study' (View Papers), 'test' (Exam Mode), or 'practice' (Practice Mode)
-  // Initialize based on preferredMode from URL parameter
-  // Default to 'study' if test mode is disabled (theory papers)
-  const [activeMode, setActiveMode] = useState<'study' | 'test' | 'practice'>(() => {
+  const [activeMode, setActiveMode] = useState<'study' | 'test' | 'practice' | 'theory'>(() => {
+    if (preferredMode === 'theory') return 'theory';
     if (!isTestModeEnabled) return 'study';
     if (preferredMode === 'test') return 'test';
     if (preferredMode === 'practice') return 'practice';
@@ -34,6 +36,7 @@ export default function StudyModeSelector({
   const handleStudyClick = () => setActiveMode('study');
   const handleTestClick = () => setActiveMode('test');
   const handlePracticeClick = () => setActiveMode('practice');
+  const handleTheoryClick = () => setActiveMode('theory');
 
   const handleLaunchStudy = () => {
     if (isPaperSelected) onViewPapers();
@@ -45,6 +48,10 @@ export default function StudyModeSelector({
 
   const handleLaunchPractice = () => {
     if (isPaperSelected && isTestModeEnabled) onStartPracticeMode();
+  };
+
+  const handleLaunchTheory = () => {
+    if (isPaperSelected && isTheoryPaper) onStartTheoryExam?.();
   };
 
   return (
@@ -242,6 +249,53 @@ export default function StudyModeSelector({
             </div>
           )}
         </div>
+
+        {/* --- CARD 4: THEORY EXAM (type on the paper) --- */}
+        {isTheoryPaper && (
+          <div
+            onClick={handleTheoryClick}
+            className={`cursor-pointer group relative flex flex-col justify-between p-8 rounded-2xl border backdrop-blur-md transition-all duration-300 ease-in-out select-none
+              ${activeMode === 'theory'
+                ? 'w-full lg:w-[60%] border-purple-400/40 shadow-lg bg-purple-50/50 shadow-purple-500/10'
+                : 'w-full lg:w-[20%] opacity-60 hover:opacity-90 bg-slate-100/50 border-slate-300'
+              }
+            `}
+          >
+            <div className="flex items-start justify-between">
+              <div className="space-y-2">
+                <div className="flex items-center gap-3">
+                  <svg className={`w-6 h-6 ${activeMode === 'theory' ? 'text-purple-600' : 'text-slate-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                  <h4 className={`font-serif text-xl transition-colors group-hover:text-purple-600 ${activeMode === 'theory' ? 'text-purple-700 font-bold' : 'text-slate-900'}`}>
+                    Theory Exam
+                  </h4>
+                </div>
+
+                {activeMode === 'theory' && (
+                  <p className="text-sm font-light max-w-md transition-opacity duration-300 text-slate-600">
+                    Type your answers directly on the question paper. Inputs sit over every answer line — just like writing in the actual exam booklet.
+                  </p>
+                )}
+              </div>
+
+              <span className="text-xs font-mono uppercase tracking-widest text-slate-400">04 / Theory</span>
+            </div>
+
+            {activeMode === 'theory' && (
+              <div className="mt-6 pt-4 border-t flex justify-between items-center animate-fadeIn border-slate-200">
+                <span className="text-xs font-medium tracking-wide text-purple-600">✓ PDF Overlay Mode</span>
+                <button
+                  onClick={(e) => { e.stopPropagation(); handleLaunchTheory(); }}
+                  disabled={!isPaperSelected}
+                  className="font-bold px-5 py-2 rounded-xl text-sm transition-all shadow-md disabled:opacity-50 disabled:cursor-not-allowed bg-purple-600 hover:bg-purple-700 text-white disabled:hover:bg-purple-600"
+                >
+                  Open Theory Exam
+                </button>
+              </div>
+            )}
+          </div>
+        )}
 
       </div>
     </div>
