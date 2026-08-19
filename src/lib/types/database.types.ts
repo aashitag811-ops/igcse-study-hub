@@ -16,6 +16,16 @@ export interface Database {
         Insert: Omit<Vote, 'id' | 'created_at'>;
         Update: never;
       };
+      mcq_attempts: {
+        Row: McqAttempt;
+        Insert: Omit<McqAttempt, 'id' | 'created_at'>;
+        Update: never;
+      };
+      mcq_wrong_questions: {
+        Row: McqWrongQuestion;
+        Insert: Omit<McqWrongQuestion, 'id' | 'created_at'>;
+        Update: never;
+      };
     };
   };
 }
@@ -75,6 +85,31 @@ export interface UpdateResourceInput {
   resource_type?: string;
   link?: string;
   description?: string;
+}
+
+export interface McqAttempt {
+  id: string;
+  user_id: string;
+  paper_id: string;
+  subject_code: string;
+  score: number;
+  total: number;
+  percentage: number;
+  time_taken_seconds: number;
+  is_practice: boolean;
+  created_at: string;
+}
+
+export interface McqWrongQuestion {
+  id: string;
+  attempt_id: string;
+  user_id: string;
+  paper_id: string;
+  subject_code: string;
+  question_number: number;
+  user_answer: string | null;
+  correct_answer: string;
+  created_at: string;
 }
 
 // Made with Bob

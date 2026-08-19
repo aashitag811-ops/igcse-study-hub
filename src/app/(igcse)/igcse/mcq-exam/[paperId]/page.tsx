@@ -6,6 +6,7 @@ import { MCQPaper } from '@/lib/types/mcq.types';
 import { MCQQuestionCard } from '@/components/mcq/MCQQuestionCard';
 import BackButton from '@/components/BackButton';
 import { pdfUrl } from '@/lib/assetUrl';
+import { createClient } from '@/lib/supabase/client';
 
 type ExamPhase = 'loading' | 'ready' | 'active' | 'completed';
 
@@ -159,11 +160,52 @@ export default function MCQExamPage() {
     });
   };
 
+  // ── Persist attempt to Supabase (fire-and-forget) ──────────
+  const saveAttempt = (isPracticeMode: boolean) => {
+    if (!paper) return;
+    const scorable = paper.questions.filter(q => q.correctAnswer !== 'DISCOUNTED');
+    const discounted = paper.questions.length - scorable.length;
+    const correct = scorable.filter(q => userAnswers.get(q.questionNumber) === q.correctAnswer).length;
+    const pct = Math.round(((correct + discounted) / paper.questions.length) * 100);
+    const subjectCode = paper.code ?? paperId.split('_')[0];
+    const timeLimit = paper.timeLimit ?? 45 * 60;
+    const timeTaken = timeLimit - timeRemaining;
+
+    const wrongQuestions = paper.questions
+      .filter(q => q.correctAnswer !== 'DISCOUNTED' && userAnswers.get(q.questionNumber) !== q.correctAnswer)
+      .map(q => ({
+        questionNumber: q.questionNumber,
+        userAnswer: userAnswers.get(q.questionNumber) ?? null,
+        correctAnswer: q.correctAnswer,
+      }));
+
+    // Only save if signed in — silently skip if not
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data }) => {
+      if (!data.user) return;
+      fetch('/api/mcq-attempts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          paperId,
+          subjectCode,
+          score: correct,
+          total: paper.questions.length,
+          percentage: pct,
+          timeTakenSeconds: Math.max(0, timeTaken),
+          isPractice: isPracticeMode,
+          wrongQuestions,
+        }),
+      }).catch(() => { /* non-fatal */ });
+    });
+  };
+
   const handleSubmitClick = () => {
     setShowSubmitConfirm(true);
   };
 
   const handleConfirmSubmit = () => {
+    saveAttempt(isExtraTime);
     setIsSubmitted(true);
     setIsPaused(true); // Stop timer
     setShowSubmitConfirm(false);
@@ -181,6 +223,7 @@ export default function MCQExamPage() {
   };
 
   const handleTimeUpSubmit = () => {
+    saveAttempt(isExtraTime);
     setIsSubmitted(true);
     setShowTimeUpModal(false);
   };

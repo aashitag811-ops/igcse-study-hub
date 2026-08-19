@@ -194,10 +194,14 @@ function PDFPage({
                 width:  `${width}px`,
                 height: `${inputH}px`,
                 background: '#fff',
-                border: isActive ? '1.5px solid #111' : 'none',
-                borderBottom: isActive ? '1.5px solid #111' : '1.5px solid #1a1a1a',
-                borderRadius: isActive ? (isInline ? '6px' : '4px') : '0',
-                boxShadow: isActive ? '0 0 0 3px rgba(0,0,0,0.08)' : 'none',
+                // Never a box — always just a bottom rule.
+                // Active line: thicker, dark blue rule. Inactive: thin black rule.
+                border: 'none',
+                borderBottom: isActive
+                  ? '2.5px solid #1a56db'
+                  : '1.5px solid #1a1a1a',
+                borderRadius: 0,
+                boxShadow: 'none',
                 fontFamily: "'Helvetica Neue', Arial, sans-serif",
                 fontSize:   `${fontSize}px`,
                 lineHeight: `${inputH}px`,
@@ -206,7 +210,7 @@ function PDFPage({
                 outline: 'none',
                 boxSizing: 'border-box',
                 zIndex: 10,
-                transition: 'border 0.1s, border-radius 0.1s, box-shadow 0.1s',
+                transition: 'border-bottom-color 0.1s, border-bottom-width 0.1s',
               } as React.CSSProperties}
             />
           );
