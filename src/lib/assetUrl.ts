@@ -19,7 +19,7 @@ const BASE = _RAW_BASE.includes('raw.githubusercontent.com') ? '' : _RAW_BASE;
  * @param paperId  e.g. "0610_m20_qp_22"  (no .pdf extension)
  */
 export function pdfUrl(paperId: string): string {
-  if (BASE) return `${BASE}/pdfs/${paperId}.pdf`;
+  if (BASE) return `${BASE}/${paperId}.pdf`;
   // Use /api/pdfs/ proxy — avoids Next.js static file serving of LFS pointer files
   return `/api/pdfs/${paperId}.pdf`;
 }
