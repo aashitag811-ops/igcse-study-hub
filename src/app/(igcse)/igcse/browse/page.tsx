@@ -639,14 +639,14 @@ function BrowsePageInner() {
                 <h3 style={{ fontFamily: SERIF, fontSize: '1.375rem', fontWeight: 600, color: '#E8DCC4', marginBottom: '0.5rem' }}>
                   Delete Resource?
                 </h3>
-                <p style={{ fontFamily: SANS, fontSize: '0.875rem', color: MUTED, lineHeight: 1.6 }}>
+                <p style={{ fontFamily: SANS, fontSize: '0.875rem', color: 'rgba(196,176,138,0.55)', lineHeight: 1.6 }}>
                   <strong style={{ color: '#E8DCC4' }}>"{r?.title}"</strong> will be permanently removed. This cannot be undone.
                 </p>
               </div>
               <div style={{ display: 'flex', gap: '0.75rem' }}>
                 <button
                   onClick={() => setDeleteConfirmId(null)}
-                  style={{ flex: 1, padding: '0.625rem', background: 'transparent', color: MUTED, border: `1px solid ${BORDER}`, borderRadius: '6px', fontFamily: SANS, fontSize: '0.875rem', fontWeight: 600, cursor: 'pointer' }}
+                  style={{ flex: 1, padding: '0.625rem', background: 'transparent', color: 'rgba(196,176,138,0.55)', border: '1px solid rgba(200,168,76,0.12)', borderRadius: '6px', fontFamily: SANS, fontSize: '0.875rem', fontWeight: 600, cursor: 'pointer' }}
                 >
                   Cancel
                 </button>
