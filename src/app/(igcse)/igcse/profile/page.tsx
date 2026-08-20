@@ -7,35 +7,34 @@ import { SUBJECTS } from '@/lib/constants/subjects';
 import { RESOURCE_TYPES } from '@/lib/constants/resourceTypes';
 import type { McqAttempt, McqWrongQuestion } from '@/lib/types/database.types';
 
-// ── Local interfaces ──────────────────────────────────────────────────────────
+// ── Design tokens (match site theme) ─────────────────────────────────────────
+const SERIF = "'Cormorant Garamond', 'Cormorant', Georgia, serif";
+const SANS  = "'DM Sans', 'Inter', system-ui, -apple-system, sans-serif";
+const GOLD  = '#C9A84C';
+const GOLD2 = '#E2C97A';
+const BG    = '#0A0806';
+const SURFACE = '#13100A';
+const SURFACE2 = '#1A1510';
+const BORDER = 'rgba(200,168,76,0.15)';
+const BORDER2 = 'rgba(200,168,76,0.25)';
+const TEXT  = '#E8DCC4';
+const MUTED = '#8A7A5A';
+
+// ── Interfaces ────────────────────────────────────────────────────────────────
 
 interface Resource {
-  id: string;
-  title: string;
-  description: string;
-  link: string;
-  subject: string;
-  resource_type: string;
-  upvote_count: number;
-  created_at: string;
-  uploader_id: string;
+  id: string; title: string; description: string; link: string;
+  subject: string; resource_type: string; upvote_count: number;
+  created_at: string; uploader_id: string;
 }
-
 interface Profile {
-  id: string;
-  email: string;
-  username: string;
-  full_name: string;
-  avatar_url: string;
+  id: string; email: string; username: string; full_name: string; avatar_url: string;
 }
-
 type ActiveTab = 'uploads' | 'upvotes' | 'attempts' | 'weak';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-const SUBJECT_NAME: Record<string, string> = Object.fromEntries(
-  SUBJECTS.map(s => [s.code, s.name])
-);
+const SUBJECT_NAME: Record<string, string> = Object.fromEntries(SUBJECTS.map(s => [s.code, s.name]));
 
 function gradeFromPct(pct: number) {
   if (pct >= 90) return 'A*';
@@ -45,25 +44,19 @@ function gradeFromPct(pct: number) {
   if (pct >= 50) return 'D';
   return 'E';
 }
-
 function gradeColour(pct: number) {
-  if (pct >= 80) return { bg: '#D1FAE5', text: '#059669' };
-  if (pct >= 60) return { bg: '#FEF3C7', text: '#D97706' };
-  return { bg: '#FEE2E2', text: '#DC2626' };
+  if (pct >= 80) return { bg: 'rgba(20,120,60,0.25)', text: '#6EE7A0', border: 'rgba(60,180,100,0.3)' };
+  if (pct >= 60) return { bg: 'rgba(180,120,20,0.20)', text: '#E2C97A', border: 'rgba(200,168,76,0.35)' };
+  return { bg: 'rgba(160,40,40,0.20)', text: '#F09090', border: 'rgba(200,80,80,0.3)' };
 }
-
 function fmtDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
 }
-
 function fmtTime(secs: number) {
-  const m = Math.floor(secs / 60);
-  const s = secs % 60;
+  const m = Math.floor(secs / 60), s = secs % 60;
   return `${m}m ${s}s`;
 }
-
 function paperLabel(paperId: string) {
-  // e.g. 0610_m20_qp_22 → "0610 · Feb/Mar 2020 · P2 V2"
   const m = paperId.match(/^(\d{4})_([msw])(\d{2})(?:_qp)?_(\d)(\d)/);
   if (!m) return paperId;
   const [, code, seas, yr, comp, vari] = m;
@@ -75,24 +68,104 @@ function paperLabel(paperId: string) {
 
 function TabBtn({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
   return (
-    <button
-      onClick={onClick}
-      style={{
-        flex: 1,
-        padding: '1rem 0.5rem',
-        background: active ? '#EFF6FF' : 'white',
-        color: active ? '#2563EB' : '#6B7280',
-        border: 'none',
-        borderBottom: active ? '2px solid #2563EB' : '2px solid transparent',
-        cursor: 'pointer',
-        fontWeight: 600,
-        fontSize: '0.8125rem',
-        transition: 'all 0.15s',
-        whiteSpace: 'nowrap',
-      }}
-    >
+    <button onClick={onClick} style={{
+      flex: 1, padding: '0.875rem 0.5rem',
+      background: active ? 'rgba(200,168,76,0.08)' : 'transparent',
+      color: active ? GOLD2 : MUTED,
+      border: 'none',
+      borderBottom: active ? `2px solid ${GOLD}` : '2px solid transparent',
+      cursor: 'pointer', fontFamily: SERIF, fontWeight: 600,
+      fontSize: '0.9375rem', letterSpacing: '0.03em',
+      transition: 'all 0.18s', whiteSpace: 'nowrap',
+    }}>
       {label}
     </button>
+  );
+}
+
+// ── Stat card ─────────────────────────────────────────────────────────────────
+
+function StatCard({ label, value }: { label: string; value: string | number }) {
+  return (
+    <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderTop: `1px solid ${BORDER2}`, borderRadius: '0.75rem', padding: '1.25rem', textAlign: 'center' }}>
+      <div style={{ fontFamily: SERIF, fontSize: '2rem', fontWeight: 600, color: GOLD2, lineHeight: 1 }}>{value}</div>
+      <div style={{ fontFamily: SANS, fontSize: '0.75rem', color: MUTED, marginTop: '0.4rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{label}</div>
+    </div>
+  );
+}
+
+// ── Empty state ───────────────────────────────────────────────────────────────
+
+function EmptyState({ icon, title, desc, children }: { icon: string; title: string; desc: string; children?: React.ReactNode }) {
+  return (
+    <div style={{ textAlign: 'center', padding: '3rem 1rem' }}>
+      <div style={{ fontSize: '2.5rem', marginBottom: '1rem', opacity: 0.6 }}>{icon}</div>
+      <h3 style={{ fontFamily: SERIF, fontSize: '1.25rem', fontWeight: 600, color: TEXT, marginBottom: '0.5rem' }}>{title}</h3>
+      <p style={{ fontFamily: SANS, fontSize: '0.875rem', color: MUTED, marginBottom: '1.5rem' }}>{desc}</p>
+      {children}
+    </div>
+  );
+}
+
+function GoldBtn({ children, onClick }: { children: React.ReactNode; onClick: () => void }) {
+  return (
+    <button onClick={onClick} style={{
+      padding: '0.625rem 1.5rem',
+      background: 'linear-gradient(180deg, rgba(201,168,76,0.18) 0%, rgba(201,168,76,0.10) 100%)',
+      color: GOLD2, border: `1px solid ${BORDER2}`, borderTop: `1px solid rgba(200,168,76,0.4)`,
+      borderRadius: '0.5rem', fontFamily: SANS, fontSize: '0.875rem', fontWeight: 600,
+      cursor: 'pointer', letterSpacing: '0.04em',
+    }}>
+      {children}
+    </button>
+  );
+}
+
+function LoadingSpinner() {
+  return (
+    <div style={{ textAlign: 'center', padding: '3rem', color: MUTED, fontFamily: SANS }}>
+      <div style={{ width: 32, height: 32, border: `2px solid ${BORDER}`, borderTop: `2px solid ${GOLD}`, borderRadius: '50%', animation: 'spin 0.8s linear infinite', margin: '0 auto 1rem' }} />
+      Loading...
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+    </div>
+  );
+}
+
+// ── Resource card ─────────────────────────────────────────────────────────────
+
+function ResourceCard({ resource, showDelete = false, onDelete, deleteConfirm = false, onConfirmDelete, onCancelDelete }: {
+  resource: Resource; showDelete?: boolean; onDelete?: () => void;
+  deleteConfirm?: boolean; onConfirmDelete?: () => void; onCancelDelete?: () => void;
+}) {
+  const subject = SUBJECTS.find(s => s.code === resource.subject);
+  const resourceType = RESOURCE_TYPES.find(t => t.value === resource.resource_type);
+  return (
+    <div style={{ padding: '1rem 1.25rem', border: `1px solid ${BORDER}`, borderRadius: '0.75rem', background: SURFACE }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', gap: '1rem' }}>
+        <div style={{ flex: 1 }}>
+          <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
+            <span style={{ padding: '2px 8px', background: 'rgba(200,168,76,0.10)', color: GOLD, border: `1px solid ${BORDER}`, borderRadius: '4px', fontSize: '0.75rem', fontFamily: SANS, fontWeight: 600 }}>{subject?.icon} {subject?.name}</span>
+            <span style={{ padding: '2px 8px', background: 'rgba(255,255,255,0.04)', color: MUTED, border: `1px solid ${BORDER}`, borderRadius: '4px', fontSize: '0.75rem', fontFamily: SANS, fontWeight: 600 }}>{resourceType?.icon} {resourceType?.label}</span>
+            <span style={{ padding: '2px 8px', background: 'rgba(200,168,76,0.06)', color: MUTED, border: `1px solid ${BORDER}`, borderRadius: '4px', fontSize: '0.75rem', fontFamily: SANS }}>{resource.upvote_count} upvotes</span>
+          </div>
+          <h4 style={{ fontFamily: SERIF, fontSize: '1rem', fontWeight: 600, color: TEXT, marginBottom: '0.25rem' }}>{resource.title}</h4>
+          <p style={{ fontFamily: SANS, fontSize: '0.8125rem', color: MUTED, marginBottom: '0.5rem' }}>{resource.description}</p>
+          <a href={resource.link} target="_blank" rel="noopener noreferrer" style={{ fontFamily: SANS, fontSize: '0.8125rem', color: GOLD, textDecoration: 'none', letterSpacing: '0.02em' }}>View Resource →</a>
+        </div>
+        {showDelete && (
+          <button onClick={onDelete} style={{ padding: '0.375rem 0.75rem', background: 'rgba(180,40,40,0.15)', color: '#F09090', border: '1px solid rgba(180,40,40,0.25)', borderRadius: '0.5rem', cursor: 'pointer', fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, flexShrink: 0 }}>Delete</button>
+        )}
+      </div>
+      {deleteConfirm && (
+        <div style={{ marginTop: '1rem', padding: '0.875rem', background: 'rgba(180,40,40,0.10)', border: '1px solid rgba(180,40,40,0.25)', borderRadius: '0.5rem' }}>
+          <p style={{ fontFamily: SANS, fontSize: '0.8125rem', color: '#F09090', marginBottom: '0.75rem', fontWeight: 600 }}>Are you sure? This cannot be undone.</p>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <button onClick={onConfirmDelete} style={{ padding: '0.4rem 0.875rem', background: 'rgba(180,40,40,0.3)', color: '#F09090', border: '1px solid rgba(180,40,40,0.4)', borderRadius: '0.5rem', cursor: 'pointer', fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600 }}>Yes, Delete</button>
+            <button onClick={onCancelDelete} style={{ padding: '0.4rem 0.875rem', background: 'transparent', color: MUTED, border: `1px solid ${BORDER}`, borderRadius: '0.5rem', cursor: 'pointer', fontFamily: SANS, fontSize: '0.8125rem' }}>Cancel</button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -100,30 +173,21 @@ function TabBtn({ label, active, onClick }: { label: string; active: boolean; on
 
 export default function ProfilePage() {
   const router = useRouter();
-
   const [user, setUser] = useState<any>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
-
   const [activeTab, setActiveTab] = useState<ActiveTab>('uploads');
-
-  // resource tabs
   const [uploadedResources, setUploadedResources] = useState<Resource[]>([]);
   const [upvotedResources, setUpvotedResources] = useState<Resource[]>([]);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
-
-  // exam tabs
   const [attempts, setAttempts] = useState<McqAttempt[]>([]);
   const [wrongQuestions, setWrongQuestions] = useState<McqWrongQuestion[]>([]);
   const [attemptsLoading, setAttemptsLoading] = useState(false);
   const [wrongLoading, setWrongLoading] = useState(false);
-
-  // edit
   const [isEditing, setIsEditing] = useState(false);
   const [editForm, setEditForm] = useState({ username: '', full_name: '' });
   const [saveMessage, setSaveMessage] = useState('');
 
-  // ── Initial load ────────────────────────────────────────────
   useEffect(() => { fetchProfileData(); }, []);
 
   const fetchProfileData = async () => {
@@ -132,421 +196,240 @@ export default function ProfilePage() {
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) { router.push('/igcse/login'); return; }
     setUser(user);
-
-    const { data: profileData } = await supabase
-      .from('profiles').select('*').eq('id', user.id).single();
+    const { data: profileData } = await supabase.from('profiles').select('*').eq('id', user.id).single();
     if (profileData) {
       setProfile(profileData as Profile);
       setEditForm({ username: (profileData as any).username || '', full_name: (profileData as any).full_name || '' });
     }
-
-    const { data: uploads } = await supabase
-      .from('resources').select('*').eq('uploader_id', user.id).order('created_at', { ascending: false });
+    const { data: uploads } = await supabase.from('resources').select('*').eq('uploader_id', user.id).order('created_at', { ascending: false });
     setUploadedResources(uploads || []);
-
-    const { data: votes } = await supabase
-      .from('votes')
-      .select('resource_id, resources(id,title,description,link,subject,resource_type,upvote_count,created_at,uploader_id)')
-      .eq('user_id', user.id);
+    const { data: votes } = await supabase.from('votes').select('resource_id, resources(id,title,description,link,subject,resource_type,upvote_count,created_at,uploader_id)').eq('user_id', user.id);
     if (votes) setUpvotedResources(votes.map((v: any) => v.resources).filter(Boolean));
-
     setLoading(false);
   };
 
-  // ── Lazy-load exam data on tab switch ───────────────────────
   useEffect(() => {
     if (activeTab === 'attempts' && attempts.length === 0 && !attemptsLoading) {
       setAttemptsLoading(true);
-      fetch('/api/mcq-attempts')
-        .then(r => r.json())
-        .then(d => setAttempts(d.attempts || []))
-        .finally(() => setAttemptsLoading(false));
+      fetch('/api/mcq-attempts').then(r => r.json()).then(d => setAttempts(d.attempts || [])).finally(() => setAttemptsLoading(false));
     }
     if (activeTab === 'weak' && wrongQuestions.length === 0 && !wrongLoading) {
       setWrongLoading(true);
-      fetch('/api/mcq-wrong-questions')
-        .then(r => r.json())
-        .then(d => setWrongQuestions(d.wrongQuestions || []))
-        .finally(() => setWrongLoading(false));
+      fetch('/api/mcq-wrong-questions').then(r => r.json()).then(d => setWrongQuestions(d.wrongQuestions || [])).finally(() => setWrongLoading(false));
     }
   }, [activeTab]);
 
-  // ── Profile save ────────────────────────────────────────────
   const handleSaveProfile = async () => {
     if (!user) return;
     const supabase = createClient();
-    const { error } = await supabase
-      .from('profiles')
-      // @ts-expect-error - Supabase type inference issue
-      .update({ username: editForm.username, full_name: editForm.full_name })
-      .eq('id', user.id);
+    // @ts-expect-error
+    const { error } = await supabase.from('profiles').update({ username: editForm.username, full_name: editForm.full_name }).eq('id', user.id);
     if (error) { setSaveMessage('Error saving profile'); }
-    else {
-      setSaveMessage('Profile updated successfully!');
-      setIsEditing(false);
-      fetchProfileData();
-      setTimeout(() => setSaveMessage(''), 3000);
-    }
+    else { setSaveMessage('Profile updated!'); setIsEditing(false); fetchProfileData(); setTimeout(() => setSaveMessage(''), 3000); }
   };
 
   const handleDeleteResource = async (resourceId: string) => {
     if (!user) return;
     const supabase = createClient();
-    const { error } = await supabase
-      .from('resources').delete().eq('id', resourceId).eq('uploader_id', user.id);
+    const { error } = await supabase.from('resources').delete().eq('id', resourceId).eq('uploader_id', user.id);
     if (!error) { setUploadedResources(prev => prev.filter(r => r.id !== resourceId)); setDeleteConfirm(null); }
   };
 
-  // ── Loading / not-found guards ──────────────────────────────
-  if (loading) {
-    return (
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ fontSize: '1.25rem', color: '#6B7280' }}>Loading profile...</div>
-      </div>
-    );
-  }
-  if (!profile) {
-    return (
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ fontSize: '1.25rem', color: '#6B7280' }}>Profile not found</div>
-      </div>
-    );
-  }
+  if (loading) return (
+    <div style={{ minHeight: '100vh', background: BG, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <LoadingSpinner />
+    </div>
+  );
+  if (!profile) return (
+    <div style={{ minHeight: '100vh', background: BG, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontFamily: SERIF, color: MUTED, fontSize: '1.25rem' }}>Profile not found</span>
+    </div>
+  );
 
-  // ── Wrong-questions grouped by subject ──────────────────────
   const wrongBySubject: Record<string, McqWrongQuestion[]> = {};
-  for (const wq of wrongQuestions) {
-    (wrongBySubject[wq.subject_code] ??= []).push(wq);
-  }
+  for (const wq of wrongQuestions) (wrongBySubject[wq.subject_code] ??= []).push(wq);
+  const avgScore = attempts.length ? Math.round(attempts.reduce((s, a) => s + Number(a.percentage), 0) / attempts.length) + '%' : '—';
 
-  // ── Render ──────────────────────────────────────────────────
+  const inputStyle: React.CSSProperties = {
+    width: '100%', background: 'rgba(6,10,18,0.7)', border: `1px solid ${BORDER}`,
+    borderTop: `1px solid ${BORDER2}`, borderRadius: '8px', padding: '10px 14px',
+    fontFamily: SANS, fontSize: '14px', color: TEXT, outline: 'none',
+  };
+
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 50%, #FCE7F3 100%)' }}>
+    <div style={{ minHeight: '100vh', background: BG, color: TEXT }}>
 
-      {/* Nav */}
-      <nav style={{ background: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(10px)', borderBottom: '1px solid rgba(0,0,0,0.1)', position: 'sticky', top: 0, zIndex: 50 }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '1rem 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div
-            style={{ fontSize: '1.5rem', fontWeight: 700, background: 'linear-gradient(90deg,#2563EB,#9333EA,#EC4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontFamily: "'Dancing Script',cursive", cursor: 'pointer' }}
-            onClick={() => router.push('/')}
-          >
-            IGCSE Study Hub
-          </div>
-          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-            <button onClick={() => router.push('/igcse/browse')} style={{ padding: '0.5rem 1rem', fontSize: '0.875rem', fontWeight: 600, borderRadius: '0.5rem', color: '#2563EB', background: 'white', border: '1px solid #2563EB', cursor: 'pointer' }}>Browse</button>
-            <button onClick={() => router.push('/igcse/upload')} style={{ padding: '0.5rem 1rem', fontSize: '0.875rem', fontWeight: 600, borderRadius: '0.5rem', color: 'white', background: 'linear-gradient(145deg,#10B981,#059669)', border: 'none', cursor: 'pointer', boxShadow: '0 4px 8px rgba(16,185,129,0.3)' }}>Upload</button>
+      {/* Ambient glow */}
+      <div style={{ position: 'fixed', inset: 0, background: 'radial-gradient(ellipse at 50% 0%, rgba(200,168,76,0.04) 0%, transparent 60%)', pointerEvents: 'none', zIndex: 0 }} />
+
+      {/* Header */}
+      <header style={{ position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', background: 'rgba(10,8,6,0.85)', borderBottom: `1px solid ${BORDER}` }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0.875rem 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', textDecoration: 'none' }}>
+            <span style={{ fontFamily: SERIF, fontSize: '1.25rem', fontWeight: 500, color: TEXT, letterSpacing: '0.02em' }}>Student Archive</span>
+          </a>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            {[{ label: 'Browse', href: '/igcse/browse' }, { label: 'Practice', href: '/igcse/practice' }, { label: 'Upload', href: '/igcse/upload' }].map(({ label, href }) => (
+              <a key={href} href={href} style={{ fontFamily: SERIF, fontSize: '0.9375rem', fontWeight: 500, color: MUTED, textDecoration: 'none', padding: '0.375rem 0.875rem', borderRadius: '6px', letterSpacing: '0.03em', transition: 'color 0.18s' }}
+                onMouseEnter={e => (e.currentTarget.style.color = GOLD2)} onMouseLeave={e => (e.currentTarget.style.color = MUTED)}
+              >{label}</a>
+            ))}
           </div>
         </div>
-      </nav>
+      </header>
 
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '2rem 1rem' }}>
+      <div style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '2.5rem 1.5rem' }}>
 
-        {/* Profile header card */}
-        <div style={{ background: 'white', borderRadius: '1rem', padding: '2rem', marginBottom: '2rem', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '1.5rem' }}>
+        {/* Profile card */}
+        <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderTop: `1px solid ${BORDER2}`, borderRadius: '1rem', padding: '2rem', marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
             <div>
-              <h1 style={{ fontSize: '2rem', fontWeight: 700, fontFamily: "'Pacifico',cursive", background: 'linear-gradient(90deg,#2563EB,#9333EA,#EC4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', marginBottom: '0.5rem' }}>
-                My Profile
-              </h1>
-              <p style={{ color: '#6B7280', fontSize: '0.875rem' }}>Manage your resources and profile information</p>
+              <h1 style={{ fontFamily: SERIF, fontSize: '2rem', fontWeight: 500, color: GOLD2, letterSpacing: '0.02em', marginBottom: '0.25rem' }}>My Profile</h1>
+              <p style={{ fontFamily: SANS, fontSize: '0.8125rem', color: MUTED }}>Manage your account and study progress</p>
             </div>
             <button
               onClick={() => setIsEditing(!isEditing)}
-              style={{ padding: '0.5rem 1rem', fontSize: '0.875rem', fontWeight: 600, borderRadius: '0.5rem', color: isEditing ? '#DC2626' : '#2563EB', background: 'white', border: `1px solid ${isEditing ? '#DC2626' : '#2563EB'}`, cursor: 'pointer' }}
+              style={{ fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, padding: '0.5rem 1rem', background: 'transparent', color: isEditing ? '#F09090' : GOLD, border: `1px solid ${isEditing ? 'rgba(180,40,40,0.4)' : BORDER2}`, borderRadius: '6px', cursor: 'pointer', letterSpacing: '0.03em' }}
             >
               {isEditing ? 'Cancel' : 'Edit Profile'}
             </button>
           </div>
 
           {isEditing ? (
-            <div style={{ display: 'grid', gap: '1rem' }}>
-              {[
-                { label: 'Username', key: 'username' as const },
-                { label: 'Full Name', key: 'full_name' as const },
-              ].map(({ label, key }) => (
+            <div style={{ display: 'grid', gap: '1rem', maxWidth: 480 }}>
+              {([['Username', 'username'], ['Full Name', 'full_name']] as const).map(([label, key]) => (
                 <div key={key}>
-                  <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, marginBottom: '0.5rem', color: '#374151' }}>{label}</label>
-                  <input
-                    type="text"
-                    value={editForm[key]}
-                    onChange={e => setEditForm({ ...editForm, [key]: e.target.value })}
-                    style={{ width: '100%', padding: '0.75rem', border: '1px solid #D1D5DB', borderRadius: '0.5rem', fontSize: '0.875rem', outline: 'none' }}
-                    onFocus={e => { e.currentTarget.style.borderColor = '#2563EB'; }}
-                    onBlur={e => { e.currentTarget.style.borderColor = '#D1D5DB'; }}
-                  />
+                  <label style={{ display: 'block', fontFamily: SANS, fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: MUTED, marginBottom: '6px' }}>{label}</label>
+                  <input type="text" value={editForm[key]} onChange={e => setEditForm({ ...editForm, [key]: e.target.value })} style={inputStyle}
+                    onFocus={e => { e.currentTarget.style.borderColor = GOLD; }} onBlur={e => { e.currentTarget.style.borderColor = BORDER; }} />
                 </div>
               ))}
-              <button onClick={handleSaveProfile} style={{ padding: '0.75rem 1.5rem', background: 'linear-gradient(145deg,#2563EB,#1D4ED8)', color: 'white', border: 'none', borderRadius: '0.5rem', fontSize: '0.875rem', fontWeight: 600, cursor: 'pointer' }}>
+              <button onClick={handleSaveProfile} style={{ padding: '0.625rem 1.5rem', background: `linear-gradient(180deg, rgba(201,168,76,0.22) 0%, rgba(201,168,76,0.12) 100%)`, color: GOLD2, border: `1px solid ${BORDER2}`, borderTop: `1px solid rgba(200,168,76,0.4)`, borderRadius: '8px', fontFamily: SANS, fontSize: '0.875rem', fontWeight: 700, cursor: 'pointer', letterSpacing: '0.05em', alignSelf: 'start' }}>
                 Save Changes
               </button>
+              {saveMessage && <p style={{ fontFamily: SANS, fontSize: '0.8125rem', color: '#6EE7A0' }}>{saveMessage}</p>}
             </div>
           ) : (
-            <div style={{ display: 'grid', gap: '0.75rem' }}>
-              {[
-                { label: 'Email', value: profile.email },
-                { label: 'Username', value: profile.username },
-                ...(profile.full_name ? [{ label: 'Full Name', value: profile.full_name }] : []),
-              ].map(({ label, value }) => (
-                <div key={label} style={{ display: 'flex', gap: '0.5rem' }}>
-                  <span style={{ fontWeight: 600, color: '#374151' }}>{label}:</span>
-                  <span style={{ color: '#6B7280' }}>{value}</span>
+            <div style={{ display: 'grid', gap: '0.625rem' }}>
+              {[['Email', profile.email], ['Username', profile.username], ...(profile.full_name ? [['Full Name', profile.full_name]] : [])].map(([label, value]) => (
+                <div key={label} style={{ display: 'flex', gap: '0.75rem', alignItems: 'baseline' }}>
+                  <span style={{ fontFamily: SANS, fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: MUTED, minWidth: 80 }}>{label}</span>
+                  <span style={{ fontFamily: SERIF, fontSize: '1rem', color: TEXT }}>{value}</span>
                 </div>
               ))}
-            </div>
-          )}
-
-          {saveMessage && (
-            <div style={{ marginTop: '1rem', padding: '0.75rem', background: '#D1FAE5', border: '1px solid #10B981', borderRadius: '0.5rem', color: '#059669', fontSize: '0.875rem', textAlign: 'center' }}>
-              {saveMessage}
             </div>
           )}
         </div>
 
-        {/* Stats bar */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(160px,1fr))', gap: '1rem', marginBottom: '2rem' }}>
-          {[
-            { label: 'Resources Uploaded', value: uploadedResources.length, color: '#2563EB' },
-            { label: 'Resources Upvoted',  value: upvotedResources.length,  color: '#9333EA' },
-            { label: 'Exams Attempted',    value: attempts.length,           color: '#0891B2' },
-            {
-              label: 'Avg Score',
-              value: attempts.length
-                ? Math.round(attempts.reduce((s, a) => s + Number(a.percentage), 0) / attempts.length) + '%'
-                : '—',
-              color: '#059669',
-            },
-          ].map(({ label, value, color }) => (
-            <div key={label} style={{ background: 'white', borderRadius: '1rem', padding: '1.5rem', textAlign: 'center', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }}>
-              <div style={{ fontSize: '2.25rem', fontWeight: 700, color, fontFamily: "'Righteous',cursive" }}>{value}</div>
-              <div style={{ color: '#6B7280', fontSize: '0.8125rem', fontWeight: 600 }}>{label}</div>
-            </div>
-          ))}
+        {/* Stats */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
+          <StatCard label="Uploaded" value={uploadedResources.length} />
+          <StatCard label="Upvoted" value={upvotedResources.length} />
+          <StatCard label="Exams" value={attempts.length} />
+          <StatCard label="Avg Score" value={avgScore} />
         </div>
 
         {/* Tabs */}
-        <div style={{ background: 'white', borderRadius: '1rem', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-          <div style={{ display: 'flex', borderBottom: '2px solid #E5E7EB' }}>
-            <TabBtn label={`My Uploads (${uploadedResources.length})`} active={activeTab === 'uploads'} onClick={() => setActiveTab('uploads')} />
-            <TabBtn label={`Upvoted (${upvotedResources.length})`}     active={activeTab === 'upvotes'} onClick={() => setActiveTab('upvotes')} />
-            <TabBtn label={`Exam History (${attempts.length})`}        active={activeTab === 'attempts'} onClick={() => setActiveTab('attempts')} />
-            <TabBtn label="Weak Questions"                              active={activeTab === 'weak'}     onClick={() => setActiveTab('weak')} />
+        <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderRadius: '1rem', overflow: 'hidden' }}>
+          <div style={{ display: 'flex', borderBottom: `1px solid ${BORDER}` }}>
+            <TabBtn label={`Uploads (${uploadedResources.length})`} active={activeTab === 'uploads'} onClick={() => setActiveTab('uploads')} />
+            <TabBtn label={`Upvoted (${upvotedResources.length})`}  active={activeTab === 'upvotes'} onClick={() => setActiveTab('upvotes')} />
+            <TabBtn label={`Exam History (${attempts.length})`}     active={activeTab === 'attempts'} onClick={() => setActiveTab('attempts')} />
+            <TabBtn label="Weak Questions"                           active={activeTab === 'weak'}     onClick={() => setActiveTab('weak')} />
           </div>
 
           <div style={{ padding: '1.5rem' }}>
 
-            {/* ── Uploads tab ── */}
+            {/* Uploads */}
             {activeTab === 'uploads' && (
-              uploadedResources.length === 0 ? (
-                <EmptyState icon="📚" title="No Uploads Yet" desc="Start sharing your study materials with the community!">
-                  <PrimaryBtn onClick={() => router.push('/igcse/upload')}>Upload Resource</PrimaryBtn>
-                </EmptyState>
-              ) : (
-                <div style={{ display: 'grid', gap: '1rem' }}>
-                  {uploadedResources.map(resource => (
-                    <ResourceCard
-                      key={resource.id}
-                      resource={resource}
-                      showDelete
-                      onDelete={() => setDeleteConfirm(resource.id)}
-                      deleteConfirm={deleteConfirm === resource.id}
-                      onConfirmDelete={() => handleDeleteResource(resource.id)}
-                      onCancelDelete={() => setDeleteConfirm(null)}
-                    />
-                  ))}
-                </div>
-              )
+              uploadedResources.length === 0
+                ? <EmptyState icon="📚" title="No Uploads Yet" desc="Share your study materials with the community."><GoldBtn onClick={() => router.push('/igcse/upload')}>Upload Resource</GoldBtn></EmptyState>
+                : <div style={{ display: 'grid', gap: '0.875rem' }}>
+                    {uploadedResources.map(r => <ResourceCard key={r.id} resource={r} showDelete onDelete={() => setDeleteConfirm(r.id)} deleteConfirm={deleteConfirm === r.id} onConfirmDelete={() => handleDeleteResource(r.id)} onCancelDelete={() => setDeleteConfirm(null)} />)}
+                  </div>
             )}
 
-            {/* ── Upvotes tab ── */}
+            {/* Upvoted */}
             {activeTab === 'upvotes' && (
-              upvotedResources.length === 0 ? (
-                <EmptyState icon="👍" title="No Upvoted Resources" desc="Start upvoting resources you find helpful!">
-                  <PrimaryBtn onClick={() => router.push('/igcse/browse')}>Browse Resources</PrimaryBtn>
-                </EmptyState>
-              ) : (
-                <div style={{ display: 'grid', gap: '1rem' }}>
-                  {upvotedResources.map(resource => (
-                    <ResourceCard key={resource.id} resource={resource} />
-                  ))}
-                </div>
-              )
+              upvotedResources.length === 0
+                ? <EmptyState icon="🔖" title="No Upvoted Resources" desc="Upvote resources you find helpful."><GoldBtn onClick={() => router.push('/igcse/browse')}>Browse Resources</GoldBtn></EmptyState>
+                : <div style={{ display: 'grid', gap: '0.875rem' }}>
+                    {upvotedResources.map(r => <ResourceCard key={r.id} resource={r} />)}
+                  </div>
             )}
 
-            {/* ── Exam history tab ── */}
+            {/* Exam History */}
             {activeTab === 'attempts' && (
               attemptsLoading ? <LoadingSpinner /> :
-              attempts.length === 0 ? (
-                <EmptyState icon="📝" title="No Exams Yet" desc="Complete an MCQ exam and your results will appear here.">
-                  <PrimaryBtn onClick={() => router.push('/igcse/practice')}>Start Practising</PrimaryBtn>
-                </EmptyState>
-              ) : (
-                <div style={{ display: 'grid', gap: '0.75rem' }}>
-                  {attempts.map(a => {
-                    const pct = Number(a.percentage);
-                    const { bg, text } = gradeColour(pct);
-                    return (
-                      <div key={a.id} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem', border: '1px solid #E5E7EB', borderRadius: '0.75rem', flexWrap: 'wrap' }}>
-                        {/* Grade badge */}
-                        <div style={{ width: 52, height: 52, borderRadius: '50%', background: bg, color: text, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '1.1rem', flexShrink: 0 }}>
-                          {gradeFromPct(pct)}
-                        </div>
-                        {/* Paper info */}
-                        <div style={{ flex: 1, minWidth: 180 }}>
-                          <div style={{ fontWeight: 700, fontSize: '0.9375rem', color: '#111827', marginBottom: 2 }}>
-                            {paperLabel(a.paper_id)}
+              attempts.length === 0
+                ? <EmptyState icon="📝" title="No Exams Yet" desc="Complete an MCQ exam and your results will appear here."><GoldBtn onClick={() => router.push('/igcse/practice')}>Start Practising</GoldBtn></EmptyState>
+                : <div style={{ display: 'grid', gap: '0.75rem' }}>
+                    {attempts.map(a => {
+                      const pct = Number(a.percentage);
+                      const { bg, text, border } = gradeColour(pct);
+                      return (
+                        <div key={a.id} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem 1.25rem', border: `1px solid ${BORDER}`, borderRadius: '0.75rem', background: SURFACE2, flexWrap: 'wrap' }}>
+                          <div style={{ width: 48, height: 48, borderRadius: '50%', background: bg, border: `1px solid ${border}`, color: text, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: SERIF, fontWeight: 700, fontSize: '1rem', flexShrink: 0 }}>
+                            {gradeFromPct(pct)}
                           </div>
-                          <div style={{ fontSize: '0.8125rem', color: '#6B7280' }}>
-                            {fmtDate(a.created_at)}
-                            {a.is_practice && <span style={{ marginLeft: 8, padding: '1px 6px', background: '#FEF3C7', color: '#B45309', borderRadius: 4, fontSize: '0.75rem', fontWeight: 600 }}>Practice</span>}
+                          <div style={{ flex: 1, minWidth: 160 }}>
+                            <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: '0.9375rem', color: TEXT, marginBottom: 2 }}>{paperLabel(a.paper_id)}</div>
+                            <div style={{ fontFamily: SANS, fontSize: '0.75rem', color: MUTED }}>
+                              {fmtDate(a.created_at)}
+                              {a.is_practice && <span style={{ marginLeft: 8, padding: '1px 6px', background: 'rgba(200,168,76,0.12)', color: GOLD, borderRadius: 4, fontSize: '0.7rem', fontWeight: 600, border: `1px solid ${BORDER}` }}>Practice</span>}
+                            </div>
                           </div>
+                          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                            {[['Score', `${a.score}/${a.total}`], ['%', `${pct}%`], ['Time', fmtTime(a.time_taken_seconds)]].map(([lbl, val]) => (
+                              <div key={lbl} style={{ padding: '0.25rem 0.625rem', background: 'rgba(200,168,76,0.07)', border: `1px solid ${BORDER}`, borderRadius: '0.375rem', textAlign: 'center' }}>
+                                <div style={{ fontFamily: SANS, fontSize: '0.625rem', color: MUTED, textTransform: 'uppercase', letterSpacing: '0.1em' }}>{lbl}</div>
+                                <div style={{ fontFamily: SERIF, fontSize: '0.9375rem', fontWeight: 600, color: GOLD2 }}>{val}</div>
+                              </div>
+                            ))}
+                          </div>
+                          <button onClick={() => router.push(`/igcse/mcq-exam/${a.paper_id}`)} style={{ padding: '0.375rem 0.875rem', background: 'transparent', color: GOLD, border: `1px solid ${BORDER2}`, borderRadius: '6px', fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer', letterSpacing: '0.03em' }}>
+                            Retry
+                          </button>
                         </div>
-                        {/* Score pills */}
-                        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                          <Pill label="Score"   value={`${a.score}/${a.total}`}  bg="#EFF6FF" color="#1D4ED8" />
-                          <Pill label="%"       value={`${pct}%`}               bg={bg}       color={text}    />
-                          <Pill label="Time"    value={fmtTime(a.time_taken_seconds)} bg="#F3F4F6" color="#374151" />
-                        </div>
-                        {/* Retry link */}
-                        <button
-                          onClick={() => router.push(`/igcse/mcq-exam/${a.paper_id}`)}
-                          style={{ padding: '0.4rem 0.875rem', background: '#2563EB', color: 'white', border: 'none', borderRadius: '0.5rem', fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer' }}
-                        >
-                          Retry
-                        </button>
-                      </div>
-                    );
-                  })}
-                </div>
-              )
+                      );
+                    })}
+                  </div>
             )}
 
-            {/* ── Weak questions tab ── */}
+            {/* Weak Questions */}
             {activeTab === 'weak' && (
               wrongLoading ? <LoadingSpinner /> :
-              wrongQuestions.length === 0 ? (
-                <EmptyState icon="🎯" title="No Wrong Answers Recorded" desc="Complete an MCQ exam — questions you get wrong will appear here so you can focus on them.">
-                  <PrimaryBtn onClick={() => router.push('/igcse/practice')}>Start Practising</PrimaryBtn>
-                </EmptyState>
-              ) : (
-                <div style={{ display: 'grid', gap: '1.5rem' }}>
-                  {Object.entries(wrongBySubject).map(([code, qs]) => (
-                    <div key={code}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
-                        <span style={{ fontWeight: 700, fontSize: '1rem', color: '#111827' }}>
-                          {SUBJECT_NAME[code] ?? code}
-                        </span>
-                        <span style={{ padding: '2px 8px', background: '#FEE2E2', color: '#DC2626', borderRadius: 9999, fontSize: '0.75rem', fontWeight: 700 }}>
-                          {qs.length} wrong
-                        </span>
+              wrongQuestions.length === 0
+                ? <EmptyState icon="🎯" title="No Wrong Answers Yet" desc="Questions you get wrong in MCQ exams will appear here."><GoldBtn onClick={() => router.push('/igcse/practice')}>Start Practising</GoldBtn></EmptyState>
+                : <div style={{ display: 'grid', gap: '1.5rem' }}>
+                    {Object.entries(wrongBySubject).map(([code, qs]) => (
+                      <div key={code}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                          <span style={{ fontFamily: SERIF, fontWeight: 600, fontSize: '1rem', color: TEXT }}>{SUBJECT_NAME[code] ?? code}</span>
+                          <span style={{ padding: '2px 8px', background: 'rgba(160,40,40,0.18)', color: '#F09090', border: '1px solid rgba(180,40,40,0.3)', borderRadius: 9999, fontSize: '0.75rem', fontFamily: SANS, fontWeight: 700 }}>{qs.length} wrong</span>
+                        </div>
+                        <div style={{ display: 'grid', gap: '0.5rem' }}>
+                          {qs.map(wq => (
+                            <div key={wq.id} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1rem', border: '1px solid rgba(180,40,40,0.2)', borderRadius: '0.5rem', background: 'rgba(160,40,40,0.06)', flexWrap: 'wrap' }}>
+                              <span style={{ fontFamily: SANS, fontSize: '0.875rem', color: TEXT, flex: 1 }}>
+                                <strong style={{ fontFamily: SERIF }}>{paperLabel(wq.paper_id)}</strong> — Q{wq.question_number}
+                              </span>
+                              <span style={{ fontFamily: SANS, fontSize: '0.8125rem', color: MUTED }}>
+                                You: <strong style={{ color: '#F09090' }}>{wq.user_answer ?? '—'}</strong>
+                                {' · '}Correct: <strong style={{ color: '#6EE7A0' }}>{wq.correct_answer}</strong>
+                              </span>
+                              <span style={{ fontFamily: SANS, fontSize: '0.75rem', color: MUTED }}>{fmtDate(wq.created_at)}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      <div style={{ display: 'grid', gap: '0.5rem' }}>
-                        {qs.map(wq => (
-                          <div key={wq.id} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1rem', border: '1px solid #FECACA', borderRadius: '0.5rem', background: '#FFF5F5', flexWrap: 'wrap' }}>
-                            <span style={{ fontSize: '0.875rem', color: '#374151', flex: 1 }}>
-                              <strong>{paperLabel(wq.paper_id)}</strong> — Q{wq.question_number}
-                            </span>
-                            <span style={{ fontSize: '0.8125rem', color: '#6B7280' }}>
-                              You answered: <strong style={{ color: '#DC2626' }}>{wq.user_answer ?? '—'}</strong>
-                              &nbsp;· Correct: <strong style={{ color: '#059669' }}>{wq.correct_answer}</strong>
-                            </span>
-                            <span style={{ fontSize: '0.75rem', color: '#9CA3AF' }}>{fmtDate(wq.created_at)}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )
+                    ))}
+                  </div>
             )}
 
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-// ── Sub-components ────────────────────────────────────────────────────────────
-
-function EmptyState({ icon, title, desc, children }: { icon: string; title: string; desc: string; children?: React.ReactNode }) {
-  return (
-    <div style={{ textAlign: 'center', padding: '3rem' }}>
-      <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>{icon}</div>
-      <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem', color: '#111827' }}>{title}</h3>
-      <p style={{ color: '#6B7280', marginBottom: '1.5rem' }}>{desc}</p>
-      {children}
-    </div>
-  );
-}
-
-function PrimaryBtn({ children, onClick }: { children: React.ReactNode; onClick: () => void }) {
-  return (
-    <button
-      onClick={onClick}
-      style={{ padding: '0.75rem 1.5rem', background: 'linear-gradient(145deg,#2563EB,#1D4ED8)', color: 'white', border: 'none', borderRadius: '0.5rem', fontSize: '0.875rem', fontWeight: 600, cursor: 'pointer', boxShadow: '0 4px 8px rgba(37,99,235,0.3)' }}
-    >
-      {children}
-    </button>
-  );
-}
-
-function Pill({ label, value, bg, color }: { label: string; value: string; bg: string; color: string }) {
-  return (
-    <div style={{ padding: '0.3rem 0.625rem', background: bg, borderRadius: '0.375rem', textAlign: 'center' }}>
-      <div style={{ fontSize: '0.6875rem', color: '#6B7280', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{label}</div>
-      <div style={{ fontSize: '0.875rem', fontWeight: 700, color }}>{value}</div>
-    </div>
-  );
-}
-
-function LoadingSpinner() {
-  return (
-    <div style={{ textAlign: 'center', padding: '3rem', color: '#6B7280' }}>
-      <div style={{ width: 36, height: 36, border: '3px solid #E5E7EB', borderTop: '3px solid #2563EB', borderRadius: '50%', animation: 'spin 0.8s linear infinite', margin: '0 auto 1rem' }} />
-      Loading...
-      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-    </div>
-  );
-}
-
-function ResourceCard({
-  resource, showDelete = false, onDelete, deleteConfirm = false, onConfirmDelete, onCancelDelete,
-}: {
-  resource: Resource;
-  showDelete?: boolean;
-  onDelete?: () => void;
-  deleteConfirm?: boolean;
-  onConfirmDelete?: () => void;
-  onCancelDelete?: () => void;
-}) {
-  const subject = SUBJECTS.find(s => s.code === resource.subject);
-  const resourceType = RESOURCE_TYPES.find(t => t.value === resource.resource_type);
-  return (
-    <div style={{ padding: '1rem', border: '1px solid #E5E7EB', borderRadius: '0.5rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-        <div style={{ flex: 1 }}>
-          <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
-            <span style={{ padding: '0.25rem 0.5rem', background: '#EFF6FF', color: '#2563EB', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: 600 }}>{subject?.icon} {subject?.name}</span>
-            <span style={{ padding: '0.25rem 0.5rem', background: '#F3F4F6', color: '#6B7280',  borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: 600 }}>{resourceType?.icon} {resourceType?.label}</span>
-            <span style={{ padding: '0.25rem 0.5rem', background: '#FEF3C7', color: '#D97706', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: 600 }}>▲ {resource.upvote_count} upvotes</span>
-          </div>
-          <h4 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '0.25rem', color: '#111827' }}>{resource.title}</h4>
-          <p style={{ fontSize: '0.875rem', color: '#6B7280', marginBottom: '0.5rem' }}>{resource.description}</p>
-          <a href={resource.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.75rem', color: '#2563EB', textDecoration: 'none' }}>View Resource →</a>
-        </div>
-        {showDelete && (
-          <button onClick={onDelete} style={{ padding: '0.5rem', background: '#FEE2E2', color: '#DC2626', border: 'none', borderRadius: '0.5rem', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600, marginLeft: '1rem' }}>Delete</button>
-        )}
-      </div>
-      {deleteConfirm && (
-        <div style={{ marginTop: '1rem', padding: '1rem', background: '#FEF2F2', border: '1px solid #FCA5A5', borderRadius: '0.5rem' }}>
-          <p style={{ fontSize: '0.875rem', color: '#DC2626', marginBottom: '0.75rem', fontWeight: 600 }}>Are you sure you want to delete this resource? This cannot be undone.</p>
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <button onClick={onConfirmDelete} style={{ padding: '0.5rem 1rem', background: '#DC2626', color: 'white', border: 'none', borderRadius: '0.5rem', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600 }}>Yes, Delete</button>
-            <button onClick={onCancelDelete} style={{ padding: '0.5rem 1rem', background: 'white', color: '#6B7280', border: '1px solid #D1D5DB', borderRadius: '0.5rem', cursor: 'pointer', fontSize: '0.875rem', fontWeight: 600 }}>Cancel</button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
