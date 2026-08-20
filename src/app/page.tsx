@@ -8,10 +8,12 @@ import ScrollsSection from './components/ScrollsSection';
 
 export default function HomePage() {
   return (
-    <main className="grain-overlay min-h-screen transition-colors duration-500">
+    <main className="grain-overlay min-h-screen transition-colors duration-500" style={{ background: '#0c1018' }}>
       <Header />
       <HeroSection />
-      <ScrollsSection />
+      <div style={{ marginTop: '-2px' }}>
+        <ScrollsSection />
+      </div>
       <Footer />
     </main>
   );

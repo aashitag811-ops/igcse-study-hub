@@ -26,8 +26,8 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden"
-      style={{ background: '#0c1018' }}>
+    <section className="relative w-full h-screen flex items-center justify-center"
+      style={{ background: '#0c1018', overflow: 'visible' }}>
 
       {/* Dust particles — deterministic, matches browse page */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
@@ -60,19 +60,15 @@ export default function HeroSection() {
           <h1
             className="font-display text-center mb-8"
             style={{
-              fontSize: 'clamp(2.5rem, 5.5vw, 5rem)',
-              lineHeight: 1.15,
+              fontSize: 'clamp(1.75rem, 3.8vw, 3.6rem)',
+              lineHeight: 1.2,
               letterSpacing: '0.01em',
               fontWeight: 300,
               color: '#E8DCC4',
             }}
           >
-            <div style={{ transform: 'translateX(-20px)' }}>
-              Master Your Syllabus.
-            </div>
-            <div style={{ transform: 'translateX(20px)' }}>
-              Archive Your Mistakes.
-            </div>
+            Access Topical Questions, Resources,<br />
+            Examiner Reports and Auto Marked Papers
           </h1>
 
           <p
@@ -86,7 +82,7 @@ export default function HeroSection() {
               textShadow: '0 0 20px rgba(212,175,55,0.25), 0 0 40px rgba(212,175,55,0.12)',
             }}
           >
-            Master past papers, unlock community resources, and target your weakest topics instantly
+            across CIE IGCSE and more to come
           </p>
 
           <div className="flex flex-col items-center gap-3">
