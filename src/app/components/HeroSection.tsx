@@ -54,12 +54,6 @@ export default function HeroSection() {
         background: `radial-gradient(circle 360px at ${glowPos.x}px ${glowPos.y}px, rgba(200,168,76,0.07) 0%, rgba(180,140,30,0.03) 50%, transparent 100%)`,
       }} />
 
-      {/* Subtle ambient centre glow */}
-      <div className="absolute inset-0 pointer-events-none" style={{
-        zIndex: 1,
-        background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(200,168,76,0.05) 0%, transparent 70%)',
-      }} />
-
       {/* Main content */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-8">
         <div className="flex flex-col items-center">
