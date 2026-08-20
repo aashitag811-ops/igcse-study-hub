@@ -26,6 +26,11 @@ export interface Database {
         Insert: Omit<McqWrongQuestion, 'id' | 'created_at'>;
         Update: never;
       };
+      mcq_question_answers: {
+        Row: McqQuestionAnswer;
+        Insert: Omit<McqQuestionAnswer, 'id' | 'created_at'>;
+        Update: never;
+      };
     };
   };
 }
@@ -109,6 +114,18 @@ export interface McqWrongQuestion {
   question_number: number;
   user_answer: string | null;
   correct_answer: string;
+  created_at: string;
+}
+
+export interface McqQuestionAnswer {
+  id: string;
+  attempt_id: string;
+  user_id: string;
+  paper_id: string;
+  question_number: number;
+  user_answer: string | null;
+  correct_answer: string;
+  is_correct: boolean;
   created_at: string;
 }
 

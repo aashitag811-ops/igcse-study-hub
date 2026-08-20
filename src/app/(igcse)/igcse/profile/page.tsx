@@ -414,9 +414,14 @@ export default function ProfilePage() {
                               </div>
                             ))}
                           </div>
-                          <button onClick={() => router.push(`/igcse/mcq-exam/${a.paper_id}`)} style={{ padding: '0.375rem 0.875rem', background: 'transparent', color: GOLD, border: `1px solid ${BORDER2}`, borderRadius: '6px', fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer', letterSpacing: '0.03em' }}>
-                            Retry
-                          </button>
+                          <div style={{ display: 'flex', gap: '0.5rem' }}>
+                            <button onClick={() => router.push(`/igcse/mcq-review/${a.id}`)} style={{ padding: '0.375rem 0.875rem', background: 'rgba(200,168,76,0.08)', color: GOLD2, border: `1px solid ${BORDER2}`, borderRadius: '6px', fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer', letterSpacing: '0.03em' }}>
+                              Review
+                            </button>
+                            <button onClick={() => router.push(`/igcse/mcq-exam/${a.paper_id}`)} style={{ padding: '0.375rem 0.875rem', background: 'transparent', color: MUTED, border: `1px solid ${BORDER}`, borderRadius: '6px', fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, cursor: 'pointer', letterSpacing: '0.03em' }}>
+                              Retry
+                            </button>
+                          </div>
                         </div>
                       );
                     })}

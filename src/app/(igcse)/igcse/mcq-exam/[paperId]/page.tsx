@@ -179,6 +179,14 @@ export default function MCQExamPage() {
         correctAnswer: q.correctAnswer,
       }));
 
+    // All answers (right + wrong) — needed for Review Mode
+    const allAnswers = paper.questions.map(q => ({
+      questionNumber: q.questionNumber,
+      userAnswer: userAnswers.get(q.questionNumber) ?? null,
+      correctAnswer: q.correctAnswer,
+      isCorrect: q.correctAnswer === 'DISCOUNTED' || userAnswers.get(q.questionNumber) === q.correctAnswer,
+    }));
+
     // Only save if signed in — silently skip if not
     const supabase = createClient();
     supabase.auth.getUser().then(({ data }) => {
@@ -195,6 +203,7 @@ export default function MCQExamPage() {
           timeTakenSeconds: Math.max(0, timeTaken),
           isPractice: isPracticeMode,
           wrongQuestions,
+          allAnswers,
         }),
       }).catch(() => { /* non-fatal */ });
     });

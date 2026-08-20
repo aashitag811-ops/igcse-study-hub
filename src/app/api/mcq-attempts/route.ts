@@ -5,7 +5,8 @@ import { createClient } from '@/lib/supabase/server';
 // Body: {
 //   paperId, subjectCode, score, total, percentage,
 //   timeTakenSeconds, isPractice,
-//   wrongQuestions: [{ questionNumber, userAnswer, correctAnswer }]
+//   wrongQuestions: [{ questionNumber, userAnswer, correctAnswer }],
+//   allAnswers:    [{ questionNumber, userAnswer, correctAnswer, isCorrect }]
 // }
 export async function POST(request: NextRequest) {
   const supabase = await createClient();
@@ -20,6 +21,7 @@ export async function POST(request: NextRequest) {
     paperId, subjectCode, score, total, percentage,
     timeTakenSeconds = 0, isPractice = false,
     wrongQuestions = [],
+    allAnswers = [],
   } = body;
 
   if (!paperId || subjectCode == null || score == null || total == null || percentage == null) {
@@ -68,8 +70,33 @@ export async function POST(request: NextRequest) {
       .insert(rows);
 
     if (wqError) {
-      // Non-fatal — attempt is saved, just log
       console.error('mcq_wrong_questions insert error:', wqError);
+    }
+  }
+
+  // Insert all question answers for Review Mode
+  if (allAnswers.length > 0) {
+    const answerRows = allAnswers.map((a: {
+      questionNumber: number;
+      userAnswer: string | null;
+      correctAnswer: string;
+      isCorrect: boolean;
+    }) => ({
+      attempt_id: (attempt as any).id,
+      user_id: user.id,
+      paper_id: paperId,
+      question_number: a.questionNumber,
+      user_answer: a.userAnswer ?? null,
+      correct_answer: a.correctAnswer,
+      is_correct: a.isCorrect,
+    }));
+
+    const { error: aqError } = await (supabase as any)
+      .from('mcq_question_answers')
+      .insert(answerRows);
+
+    if (aqError) {
+      console.error('mcq_question_answers insert error:', aqError);
     }
   }
 
