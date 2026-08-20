@@ -86,7 +86,7 @@ html {
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: #0c1018;
+  background-color: #0c1018 !important;
   color: var(--parchment);
   overflow-x: hidden;
   transition: background-color 0.5s ease, color 0.5s ease;
@@ -94,8 +94,14 @@ body {
 
 /* Light mode body */
 [data-theme='light'] body {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
   color: #1A1510;
+}
+
+/* Dark mode body — force correct background */
+[data-theme='dark'] body,
+.dark body {
+  background-color: #0c1018 !important;
 }
 
 .font-display {

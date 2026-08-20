@@ -145,7 +145,7 @@ export default function Header() {
       style={{
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(12px)' : 'none',
-        background: scrolled ? 'rgba(10,8,4,0.82)' : 'transparent',
+        background: scrolled ? 'rgba(8,10,16,0.88)' : 'transparent',
         borderBottom: scrolled ? '1px solid rgba(200,168,76,0.12)' : '1px solid transparent',
         transition: 'background 0.5s ease, border-color 0.5s ease, backdrop-filter 0.5s ease',
       }}
@@ -185,8 +185,8 @@ export default function Header() {
             borderRadius: '14px',
             // soft brass background fades in on scroll
             background: scrolled
-              ? 'linear-gradient(180deg, rgba(38,28,10,0.72) 0%, rgba(24,18,6,0.80) 100%)'
-              : 'linear-gradient(180deg, rgba(38,28,10,0.38) 0%, rgba(24,18,6,0.44) 100%)',
+              ? 'linear-gradient(180deg, rgba(12,16,24,0.72) 0%, rgba(8,10,16,0.80) 100%)'
+              : 'linear-gradient(180deg, rgba(12,16,24,0.38) 0%, rgba(8,10,16,0.44) 100%)',
             // no border, no shadow — just softness
             border: 'none',
             boxShadow: 'none',
