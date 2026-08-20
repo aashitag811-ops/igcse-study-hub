@@ -5,7 +5,7 @@ import { createClient } from '@/lib/supabase/server';
 // Returns all question answers for a specific attempt (must belong to the signed-in user).
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { attemptId: string } }
+  { params }: { params: Promise<{ attemptId: string }> }
 ) {
   const supabase = await createClient();
 
@@ -14,7 +14,7 @@ export async function GET(
     return NextResponse.json({ error: 'Unauthorised' }, { status: 401 });
   }
 
-  const { attemptId } = params;
+  const { attemptId } = await params;
 
   // First verify the attempt belongs to this user
   const { data: attempt, error: attemptError } = await (supabase as any)
