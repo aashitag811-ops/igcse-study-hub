@@ -3,98 +3,98 @@ export const SUBJECTS = [
     code: '0452',
     name: 'Accounting',
     color: 'yellow',
-    icon: '📒',
+    icon: '',
     description: 'Financial Statements, Bookkeeping, Costing'
   },
   {
     code: '0606',
     name: 'Additional Mathematics',
     color: 'blue',
-    icon: '📈',
+    icon: '',
     description: 'Advanced Algebra, Calculus, Trigonometry'
   },
   {
     code: '0610',
     name: 'Biology',
     color: 'emerald',
-    icon: '🧬',
+    icon: '',
     description: 'Cell Biology, Genetics, Ecology, Human Biology'
   },
   {
     code: '0450',
     name: 'Business Studies',
     color: 'orange',
-    icon: '📊',
+    icon: '',
     description: 'Marketing, Finance, Operations, Management'
   },
   {
     code: '0620',
     name: 'Chemistry',
     color: 'green',
-    icon: '🧪',
+    icon: '',
     description: 'Organic, Inorganic, Physical Chemistry'
   },
   {
     code: '0478',
     name: 'Computer Science',
     color: 'cyan',
-    icon: '🖥️',
+    icon: '',
     description: 'Algorithms, Programming, Data Structures'
   },
   {
     code: '0455',
     name: 'Economics',
     color: 'yellow',
-    icon: '💰',
+    icon: '',
     description: 'Microeconomics, Macroeconomics, Trade'
   },
   {
     code: '0500',
     name: 'English',
     color: 'red',
-    icon: '📚',
+    icon: '',
     description: 'Reading, Writing, Speaking, Listening'
   },
   {
     code: '0520',
     name: 'French',
     color: 'indigo',
-    icon: 'Français',
+    icon: '',
     description: 'Reading, Writing, Speaking, Listening'
   },
   {
     code: '0457',
     name: 'Global Perspectives',
     color: 'indigo',
-    icon: '🌍',
+    icon: '',
     description: 'Critical Thinking, Research, Global Issues'
   },
   {
     code: '0549',
     name: 'Hindi',
     color: 'red',
-    icon: 'हिन्दी',
+    icon: '',
     description: 'Reading, Writing, Speaking, Listening'
   },
   {
     code: '0417',
     name: 'ICT',
     color: 'cyan',
-    icon: '💻',
+    icon: '',
     description: 'Programming, Networks, Data, Systems'
   },
   {
     code: '0580',
     name: 'Mathematics',
     color: 'blue',
-    icon: '📐',
+    icon: '',
     description: 'Algebra, Geometry, Trigonometry, Statistics'
   },
   {
     code: '0625',
     name: 'Physics',
     color: 'purple',
-    icon: '⚛️',
+    icon: '',
     description: 'Mechanics, Electricity, Waves, Nuclear Physics'
   },
 ] as const;

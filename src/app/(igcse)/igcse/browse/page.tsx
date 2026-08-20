@@ -80,6 +80,7 @@ function BrowsePageInner() {
   const [userVotes, setUserVotes] = useState<Set<string>>(new Set());
   const [editingResource, setEditingResource] = useState<Resource | null>(null);
   const [userProfile, setUserProfile] = useState<any>(null);
+  const [deleteConfirmId, setDeleteConfirmId] = useState<string | null>(null);
 
   const [selectedSubject, setSelectedSubject] = useState<string>(
     searchParams.get('subject') ?? 'all'
@@ -173,17 +174,17 @@ function BrowsePageInner() {
   const handleEdit = async () => { window.location.reload(); };
 
   const handleDelete = async (resourceId: string) => {
-    if (!confirm('Are you sure you want to delete this resource?')) return;
     const supabase = createClient();
     const { error } = await supabase.from('resources').delete().eq('id', resourceId);
     if (!error) setResources(prev => prev.filter(r => r.id !== resourceId));
-    else alert('Failed to delete resource');
+    setDeleteConfirmId(null);
   };
 
   const isCreator = (email?: string) =>
     email === 'arinjaysaha2010@gmail.com' || email === 'aashitag811@gmail.com';
-  const canEdit = (r: Resource) => user && r.uploader_id === user.id;
-  const canDelete = (r: Resource) => user && (r.uploader_id === user.id || isCreator(userProfile?.full_name));
+  const isSelfCreator = isCreator(userProfile?.email);
+  const canEdit = (r: Resource) => user && (r.uploader_id === user.id || isSelfCreator);
+  const canDelete = (r: Resource) => user && (r.uploader_id === user.id || isSelfCreator);
 
   const filteredResources = resources.filter(r => {
     if (!searchQuery) return true;
@@ -551,7 +552,7 @@ function BrowsePageInner() {
                           }}>Edit</button>
                         )}
                         {canDelete(resource) && (
-                          <button onClick={() => handleDelete(resource.id)} style={{
+                          <button onClick={() => setDeleteConfirmId(resource.id)} style={{
                             fontFamily: SANS, fontSize: '11px', color: 'rgba(180,60,60,0.55)',
                             border: '1px solid rgba(180,60,60,0.12)', borderRadius: '3px',
                             padding: '3px 8px', cursor: 'pointer', background: 'transparent',
@@ -620,6 +621,46 @@ function BrowsePageInner() {
       {editingResource && (
         <EditResourceModal resource={editingResource} onClose={() => setEditingResource(null)} onSave={handleEdit} />
       )}
+
+      {/* Delete confirmation modal */}
+      {deleteConfirmId && (() => {
+        const r = resources.find(x => x.id === deleteConfirmId);
+        return (
+          <div
+            style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.7)', backdropFilter: 'blur(4px)', zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}
+            onClick={() => setDeleteConfirmId(null)}
+          >
+            <div
+              style={{ background: '#0e1420', border: '1px solid rgba(200,168,76,0.2)', borderTop: '1px solid rgba(200,168,76,0.35)', borderRadius: '0.875rem', padding: '2rem', maxWidth: 440, width: '100%', boxShadow: '0 24px 64px rgba(0,0,0,0.6)' }}
+              onClick={e => e.stopPropagation()}
+            >
+              <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.75rem', opacity: 0.7 }}>🗑️</div>
+                <h3 style={{ fontFamily: SERIF, fontSize: '1.375rem', fontWeight: 600, color: '#E8DCC4', marginBottom: '0.5rem' }}>
+                  Delete Resource?
+                </h3>
+                <p style={{ fontFamily: SANS, fontSize: '0.875rem', color: MUTED, lineHeight: 1.6 }}>
+                  <strong style={{ color: '#E8DCC4' }}>"{r?.title}"</strong> will be permanently removed. This cannot be undone.
+                </p>
+              </div>
+              <div style={{ display: 'flex', gap: '0.75rem' }}>
+                <button
+                  onClick={() => setDeleteConfirmId(null)}
+                  style={{ flex: 1, padding: '0.625rem', background: 'transparent', color: MUTED, border: `1px solid ${BORDER}`, borderRadius: '6px', fontFamily: SANS, fontSize: '0.875rem', fontWeight: 600, cursor: 'pointer' }}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={() => handleDelete(deleteConfirmId)}
+                  style={{ flex: 1, padding: '0.625rem', background: 'rgba(160,40,40,0.25)', color: '#F09090', border: '1px solid rgba(180,40,40,0.4)', borderRadius: '6px', fontFamily: SANS, fontSize: '0.875rem', fontWeight: 700, cursor: 'pointer' }}
+                >
+                  Yes, Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       <style jsx global>{`
         @keyframes spin { to { transform: rotate(360deg); } }

@@ -3,49 +3,49 @@ export const RESOURCE_TYPES = [
     value: 'notes',
     label: 'Revision Notes',
     description: 'Study notes and summaries',
-    icon: '📝'
+    icon: '✦'
   },
   {
     value: 'flashcards',
     label: 'Flashcards',
     description: 'Quick revision flashcards',
-    icon: '🎴'
+    icon: '◈'
   },
   {
     value: 'hardest-questions',
     label: 'Hardest Questions',
     description: 'Challenging practice problems',
-    icon: '🎯'
+    icon: '◆'
   },
   {
     value: 'formula-sheets',
     label: 'Formula Sheets',
     description: 'Essential formulas and equations',
-    icon: '📐'
+    icon: '∑'
   },
   {
     value: 'sample-answers',
     label: 'Sample Answers',
     description: 'Model answers and mark schemes',
-    icon: '✅'
+    icon: '✓'
   },
   {
     value: 'revision-guides',
     label: 'Revision Guides',
     description: 'Comprehensive revision materials',
-    icon: '📖'
+    icon: '§'
   },
   {
     value: 'youtube',
     label: 'YouTube Resources',
     description: 'Video tutorials and explanations',
-    icon: '🎥'
+    icon: '▶'
   },
   {
     value: 'worksheets',
     label: 'Worksheets',
     description: 'Practice worksheets and exercises',
-    icon: '📄'
+    icon: '≡'
   },
 ] as const;
 
