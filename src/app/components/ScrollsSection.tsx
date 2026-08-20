@@ -3,6 +3,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+// Cursor glow state — lifted to section level
+
 // Curricula available — add more here when ready
 const CURRICULA = [
   { label: 'IGCSE', href: '/igcse' },
@@ -170,6 +172,16 @@ export default function ScrollsSection() {
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
   const [openPopover, setOpenPopover] = useState<number | null>(null);
   const featureRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [glowPos, setGlowPos] = useState({ x: 0, y: 0 });
+  const [glowVisible, setGlowVisible] = useState(false);
+
+  useEffect(() => {
+    const move = (e: MouseEvent) => { setGlowPos({ x: e.clientX, y: e.clientY }); setGlowVisible(true); };
+    const leave = () => setGlowVisible(false);
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseleave', leave);
+    return () => { window.removeEventListener('mousemove', move); window.removeEventListener('mouseleave', leave); };
+  }, []);
 
   useEffect(() => {
     const observers = featureRefs.current.map((ref, index) => {
@@ -201,6 +213,14 @@ export default function ScrollsSection() {
       className="relative w-full py-20 px-6"
       style={{ background: '#0c1018', overflow: 'hidden' }}
     >
+      {/* Cursor-following glow — matches browse page exactly */}
+      <div className="pointer-events-none" style={{
+        position: 'fixed', inset: 0, zIndex: 2,
+        opacity: glowVisible ? 1 : 0,
+        transition: 'opacity 0.4s ease',
+        background: `radial-gradient(circle 360px at ${glowPos.x}px ${glowPos.y}px, rgba(200,168,76,0.07) 0%, rgba(180,140,30,0.03) 50%, transparent 100%)`,
+      }} />
+
       {/* ── Slow drifting gold orbs (very subtle ambient blobs) ── */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         {ORBS.map((orb) => (
@@ -236,7 +256,7 @@ export default function ScrollsSection() {
               top: `${p.top}%`,
               background: 'radial-gradient(circle, rgba(255,218,68,1) 0%, rgba(212,175,55,0.5) 55%, transparent 100%)',
               boxShadow: '0 0 6px rgba(255,210,50,0.8), 0 0 14px rgba(185,154,82,0.4)',
-              animation: `dust-${p.anim} ${p.dur}s ease-in-out infinite`,
+              animation: `dust${p.anim} ${p.dur}s ease-in-out infinite`,
               animationDelay: `${p.delay}s`,
               opacity: 0,
             }}
@@ -475,27 +495,6 @@ export default function ScrollsSection() {
           transform: scaleX(1) !important;
         }
 
-        @keyframes dust-0 {
-          0%   { transform: translate(0, 0);          opacity: 0;    }
-          15%  { opacity: 0.85; }
-          50%  { transform: translate(18px, -55px);   opacity: 0.95; }
-          85%  { opacity: 0.7; }
-          100% { transform: translate(0, 0);          opacity: 0;    }
-        }
-        @keyframes dust-1 {
-          0%   { transform: translate(0, 0);          opacity: 0;    }
-          15%  { opacity: 0.75; }
-          50%  { transform: translate(-22px, -48px);  opacity: 0.9;  }
-          85%  { opacity: 0.65; }
-          100% { transform: translate(0, 0);          opacity: 0;    }
-        }
-        @keyframes dust-2 {
-          0%   { transform: translate(0, 0);          opacity: 0;    }
-          20%  { opacity: 0.8; }
-          50%  { transform: translate(12px, -70px);   opacity: 1;    }
-          80%  { opacity: 0.6; }
-          100% { transform: translate(0, 0);          opacity: 0;    }
-        }
         @keyframes orb-drift-0 {
           0%, 100% { transform: translate(-50%, -50%) scale(1);    opacity: 1; }
           50%       { transform: translate(-44%, -58%) scale(1.15); opacity: 0.7; }
