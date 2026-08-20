@@ -467,65 +467,71 @@ function CategorizedShelfRow({
         {/* Books / Subject spines - Split layout */}
         <div className="flex h-full items-end justify-between px-4 gap-8">
           {/* Left category */}
-          <div className="flex items-end gap-1">
-            {/* Category label */}
-            <div className="flex flex-col justify-end pb-3 mr-4 min-w-[35px]">
-              <span
-                className="font-display text-[12px] uppercase tracking-[0.12em] font-semibold text-center"
-                style={{
-                  color: 'var(--gold-light)',
-                  writingMode: 'vertical-rl',
-                  transform: 'rotate(180deg)',
-                  lineHeight: '1.3',
-                  whiteSpace: 'normal',
-                  maxWidth: '160px'
-                }}
-              >
-                {leftCategory}
-              </span>
-            </div>
+          <div className="flex items-end gap-1 relative">
             {leftSubjects.map((subject, index) => (
-              <SubjectSpine
-                key={subject.id}
-                subject={subject}
-                isHovered={hoveredSubject === subject.id}
-                onMouseEnter={() => setHoveredSubject(subject.id)}
-                onMouseLeave={() => setHoveredSubject(null)}
-                onClick={() => onSubjectClick(subject.id)}
-                index={index}
-              />
+              <div key={subject.id} className="relative">
+                {/* Category label above 2nd spine from left */}
+                {index === 1 && (
+                  <span
+                    className="font-display uppercase tracking-[0.15em] font-semibold absolute"
+                    style={{
+                      fontSize: '10px',
+                      color: 'var(--gold-light)',
+                      bottom: 'calc(100% + 8px)',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      whiteSpace: 'nowrap',
+                      opacity: 0.85,
+                      pointerEvents: 'none',
+                    }}
+                  >
+                    {leftCategory}
+                  </span>
+                )}
+                <SubjectSpine
+                  subject={subject}
+                  isHovered={hoveredSubject === subject.id}
+                  onMouseEnter={() => setHoveredSubject(subject.id)}
+                  onMouseLeave={() => setHoveredSubject(null)}
+                  onClick={() => onSubjectClick(subject.id)}
+                  index={index}
+                />
+              </div>
             ))}
           </div>
 
           {/* Right category */}
-          <div className="flex items-end gap-1">
+          <div className="flex items-end gap-1 relative">
             {rightSubjects.map((subject, index) => (
-              <SubjectSpine
-                key={subject.id}
-                subject={subject}
-                isHovered={hoveredSubject === subject.id}
-                onMouseEnter={() => setHoveredSubject(subject.id)}
-                onMouseLeave={() => setHoveredSubject(null)}
-                onClick={() => onSubjectClick(subject.id)}
-                index={index}
-              />
+              <div key={subject.id} className="relative">
+                {/* Category label above 2nd spine from right */}
+                {index === rightSubjects.length - 2 && (
+                  <span
+                    className="font-display uppercase tracking-[0.15em] font-semibold absolute"
+                    style={{
+                      fontSize: '10px',
+                      color: 'var(--gold-light)',
+                      bottom: 'calc(100% + 8px)',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      whiteSpace: 'nowrap',
+                      opacity: 0.85,
+                      pointerEvents: 'none',
+                    }}
+                  >
+                    {rightCategory}
+                  </span>
+                )}
+                <SubjectSpine
+                  subject={subject}
+                  isHovered={hoveredSubject === subject.id}
+                  onMouseEnter={() => setHoveredSubject(subject.id)}
+                  onMouseLeave={() => setHoveredSubject(null)}
+                  onClick={() => onSubjectClick(subject.id)}
+                  index={index}
+                />
+              </div>
             ))}
-            {/* Category label */}
-            <div className="flex flex-col justify-end pb-3 ml-4 min-w-[35px]">
-              <span
-                className="font-display text-[12px] uppercase tracking-[0.12em] font-semibold text-center"
-                style={{
-                  color: 'var(--gold-light)',
-                  writingMode: 'vertical-rl',
-                  transform: 'rotate(180deg)',
-                  lineHeight: '1.3',
-                  whiteSpace: 'normal',
-                  maxWidth: '160px'
-                }}
-              >
-                {rightCategory}
-              </span>
-            </div>
           </div>
         </div>
       </div>
@@ -606,7 +612,7 @@ function SubjectSpine({ subject, isHovered, onMouseEnter, onMouseLeave, onClick,
         <span
           className="font-display text-center leading-tight flex-1 flex items-center justify-center"
           style={{
-            fontSize: '13px',
+            fontSize: '15px',
             fontWeight: 700,
             color: isHovered ? 'var(--gold-light)' : '#FFFFFF',
             letterSpacing: '0.02em',

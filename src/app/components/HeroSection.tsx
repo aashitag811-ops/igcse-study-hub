@@ -82,7 +82,9 @@ export default function HeroSection() {
               textShadow: '0 0 20px rgba(212,175,55,0.25), 0 0 40px rgba(212,175,55,0.12)',
             }}
           >
-            across CIE IGCSE and more to come
+            across CIE{' '}
+            <a href="/igcse" style={{ color: '#E8DCC4', textDecoration: 'underline', textDecorationColor: 'rgba(200,168,76,0.4)', textUnderlineOffset: '3px' }}>IGCSE</a>
+            {' '}and more to come
           </p>
 
           <div className="flex flex-col items-center gap-3">
