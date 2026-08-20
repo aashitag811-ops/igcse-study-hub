@@ -41,6 +41,12 @@ export const RESOURCE_TYPES = [
     description: 'Video tutorials and explanations',
     icon: '🎥'
   },
+  {
+    value: 'worksheets',
+    label: 'Worksheets',
+    description: 'Practice worksheets and exercises',
+    icon: '📄'
+  },
 ] as const;
 
 export type ResourceType = typeof RESOURCE_TYPES[number]['value'];

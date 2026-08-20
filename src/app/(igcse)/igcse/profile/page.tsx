@@ -44,6 +44,8 @@ interface Profile {
 }
 type ActiveTab = 'uploads' | 'upvotes' | 'attempts' | 'weak';
 
+const CREATORS = ['arinjaysaha2010@gmail.com', 'aashitag811@gmail.com'];
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 const SUBJECT_NAME: Record<string, string> = Object.fromEntries(SUBJECTS.map(s => [s.code, s.name]));
@@ -186,6 +188,7 @@ function ResourceCard({ resource, showDelete = false, onDelete, deleteConfirm = 
 export default function ProfilePage() {
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
+  const [userEmail, setUserEmail] = useState<string | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<ActiveTab>('uploads');
@@ -218,6 +221,7 @@ export default function ProfilePage() {
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) { router.push('/igcse/login'); return; }
     setUser(user);
+    setUserEmail(user.email ?? null);
     const { data: profileData } = await supabase.from('profiles').select('*').eq('id', user.id).single();
     if (profileData) {
       setProfile(profileData as Profile);
@@ -314,12 +318,22 @@ export default function ProfilePage() {
               <h1 style={{ fontFamily: SERIF, fontSize: '2rem', fontWeight: 500, color: GOLD2, letterSpacing: '0.02em', marginBottom: '0.25rem' }}>My Profile</h1>
               <p style={{ fontFamily: SANS, fontSize: '0.8125rem', color: MUTED }}>Manage your account and study progress</p>
             </div>
-            <button
-              onClick={() => setIsEditing(!isEditing)}
-              style={{ fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, padding: '0.5rem 1rem', background: 'transparent', color: isEditing ? '#F09090' : GOLD, border: `1px solid ${isEditing ? 'rgba(180,40,40,0.4)' : BORDER2}`, borderRadius: '6px', cursor: 'pointer', letterSpacing: '0.03em' }}
-            >
-              {isEditing ? 'Cancel' : 'Edit Profile'}
-            </button>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              {CREATORS.includes(userEmail ?? '') && (
+                <button
+                  onClick={() => router.push('/igcse/admin/moderate')}
+                  style={{ fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, padding: '0.5rem 1rem', background: 'rgba(200,168,76,0.08)', color: GOLD, border: `1px solid ${BORDER2}`, borderRadius: '6px', cursor: 'pointer', letterSpacing: '0.03em' }}
+                >
+                  ⚖️ Moderation
+                </button>
+              )}
+              <button
+                onClick={() => setIsEditing(!isEditing)}
+                style={{ fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, padding: '0.5rem 1rem', background: 'transparent', color: isEditing ? '#F09090' : GOLD, border: `1px solid ${isEditing ? 'rgba(180,40,40,0.4)' : BORDER2}`, borderRadius: '6px', cursor: 'pointer', letterSpacing: '0.03em' }}
+              >
+                {isEditing ? 'Cancel' : 'Edit Profile'}
+              </button>
+            </div>
           </div>
 
           {isEditing ? (
