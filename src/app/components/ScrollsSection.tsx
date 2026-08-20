@@ -199,7 +199,7 @@ export default function ScrollsSection() {
   return (
     <section
       className="relative w-full py-20 px-6"
-      style={{ background: '#111111', overflow: 'hidden' }}
+      style={{ background: '#0c1018', overflow: 'hidden' }}
     >
       {/* ── Slow drifting gold orbs (very subtle ambient blobs) ── */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
@@ -275,57 +275,28 @@ export default function ScrollsSection() {
                 style={{
                   width: '52%',
                   maxWidth: '620px',
-                  background: '#F5F0E6',
-                  borderRadius: '2px',
+                  background: isHovered ? 'rgba(200,168,76,0.04)' : 'rgba(255,255,255,0.015)',
+                  border: `1px solid ${isHovered ? 'rgba(200,168,76,0.25)' : 'rgba(200,168,76,0.08)'}`,
+                  borderRadius: '4px',
                   padding: '56px 60px 64px',
                   overflow: 'hidden',
                   position: 'relative',
                   cursor: 'default',
-                  // permanent tilt + extra pop on hover
                   transform: isHovered
                     ? `rotate(${cardOnLeft ? 3 : -3}deg) translateY(-12px) scale(1.02)`
                     : `rotate(${cardOnLeft ? 1.5 : -1.5}deg) translateY(0px) scale(1)`,
-                  transition: 'transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease',
-                  // gold ring appears on hover
+                  transition: 'transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease, background 0.2s ease, border-color 0.2s ease',
                   boxShadow: isHovered
-                    ? '0 24px 64px rgba(0,0,0,0.35), 0 0 0 2px rgba(185,154,82,0.9), 0 0 40px rgba(185,154,82,0.35)'
-                    : '0 4px 24px rgba(0,0,0,0.18)',
+                    ? '0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(200,168,76,0.35), 0 0 40px rgba(200,168,76,0.12)'
+                    : '0 4px 24px rgba(0,0,0,0.3)',
                   willChange: 'transform',
                 }}
               >
-                {/* Paper grain */}
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E")`,
-                    opacity: 0.015,
-                  }}
-                />
-
-                {/* Inner light */}
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background: 'radial-gradient(ellipse at 40% 30%, rgba(255,255,255,0.35) 0%, transparent 65%)',
-                  }}
-                />
-
-                {/* Vignette edges */}
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    boxShadow: isHovered
-                      ? 'inset 0 0 80px rgba(30,20,5,0.16), inset 0 0 180px rgba(30,20,5,0.08)'
-                      : 'inset 0 0 60px rgba(0,0,0,0.07)',
-                    transition: 'box-shadow 0.3s ease',
-                  }}
-                />
-
                 {/* Corner marks */}
-                <div className="absolute top-7 left-7 w-10 h-10 opacity-25" style={{ borderTop: '1px solid #B99A52', borderLeft: '1px solid #B99A52' }} />
-                <div className="absolute top-7 right-7 w-10 h-10 opacity-25" style={{ borderTop: '1px solid #B99A52', borderRight: '1px solid #B99A52' }} />
-                <div className="absolute bottom-7 left-7 w-10 h-10 opacity-25" style={{ borderBottom: '1px solid #B99A52', borderLeft: '1px solid #B99A52' }} />
-                <div className="absolute bottom-7 right-7 w-10 h-10 opacity-25" style={{ borderBottom: '1px solid #B99A52', borderRight: '1px solid #B99A52' }} />
+                <div className="absolute top-7 left-7 w-10 h-10" style={{ borderTop: '1px solid rgba(185,154,82,0.3)', borderLeft: '1px solid rgba(185,154,82,0.3)' }} />
+                <div className="absolute top-7 right-7 w-10 h-10" style={{ borderTop: '1px solid rgba(185,154,82,0.3)', borderRight: '1px solid rgba(185,154,82,0.3)' }} />
+                <div className="absolute bottom-7 left-7 w-10 h-10" style={{ borderBottom: '1px solid rgba(185,154,82,0.3)', borderLeft: '1px solid rgba(185,154,82,0.3)' }} />
+                <div className="absolute bottom-7 right-7 w-10 h-10" style={{ borderBottom: '1px solid rgba(185,154,82,0.3)', borderRight: '1px solid rgba(185,154,82,0.3)' }} />
 
                 {/* Ghost chapter number */}
                 <div
@@ -333,8 +304,7 @@ export default function ScrollsSection() {
                   style={{
                     fontSize: '160px',
                     fontWeight: 300,
-                    color: '#2B2620',
-                    opacity: 0.07,
+                    color: 'rgba(200,168,76,0.06)',
                     lineHeight: 1,
                     fontFamily: 'Georgia, serif',
                   }}
@@ -349,7 +319,7 @@ export default function ScrollsSection() {
                     style={{
                       fontSize: '11px',
                       letterSpacing: '0.32em',
-                      color: '#B99A52',
+                      color: 'rgba(200,168,76,0.6)',
                       fontWeight: 600,
                       fontFamily: 'system-ui, -apple-system, sans-serif',
                       textTransform: 'uppercase',
@@ -362,11 +332,11 @@ export default function ScrollsSection() {
                     className="mb-8 whitespace-pre-line"
                     style={{
                       fontSize: 'clamp(2rem, 3vw, 2.8rem)',
-                      color: '#2B2620',
+                      color: '#E8DCC4',
                       fontWeight: 400,
                       lineHeight: 1.2,
                       letterSpacing: '-0.02em',
-                      fontFamily: 'Georgia, serif',
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                     }}
                   >
                     {feature.headline}
@@ -376,10 +346,9 @@ export default function ScrollsSection() {
                     className="mb-10"
                     style={{
                       fontSize: '15.5px',
-                      color: '#2B2620',
+                      color: 'rgba(196,176,138,0.65)',
                       lineHeight: 1.75,
-                      fontFamily: 'Georgia, serif',
-                      opacity: 0.82,
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                     }}
                   >
                     {feature.description}
@@ -391,10 +360,10 @@ export default function ScrollsSection() {
                       className="group relative inline-flex items-center gap-2 bg-transparent border-0 cursor-pointer p-0"
                       style={{
                         fontSize: '15px',
-                        color: '#2B2620',
+                        color: '#C9A84C',
                         fontWeight: 500,
                         letterSpacing: '0.01em',
-                        fontFamily: 'Georgia, serif',
+                        fontFamily: "'Cormorant Garamond', Georgia, serif",
                       }}
                       onClick={() => setOpenPopover(openPopover === index ? null : index)}
                     >
