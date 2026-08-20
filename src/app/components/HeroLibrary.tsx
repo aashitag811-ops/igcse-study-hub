@@ -475,9 +475,9 @@ function CategorizedShelfRow({
                   <span
                     className="font-display uppercase tracking-[0.15em] font-semibold absolute"
                     style={{
-                      fontSize: '10px',
+                      fontSize: '12px',
                       color: 'var(--gold-light)',
-                      bottom: 'calc(100% + 8px)',
+                      bottom: 'calc(100% + 16px)',
                       left: '50%',
                       transform: 'translateX(-50%)',
                       whiteSpace: 'nowrap',
@@ -509,9 +509,9 @@ function CategorizedShelfRow({
                   <span
                     className="font-display uppercase tracking-[0.15em] font-semibold absolute"
                     style={{
-                      fontSize: '10px',
+                      fontSize: '12px',
                       color: 'var(--gold-light)',
-                      bottom: 'calc(100% + 8px)',
+                      bottom: 'calc(100% + 16px)',
                       left: '50%',
                       transform: 'translateX(-50%)',
                       whiteSpace: 'nowrap',
