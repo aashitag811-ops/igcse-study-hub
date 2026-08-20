@@ -496,16 +496,22 @@ html, body {
 
 /* Small laptop / 1080p (1024px – 1439px) — default — no overrides needed */
 
-/* Large desktop (≥ 1440px) — cap content width so it doesn't stretch too wide */
+/* Large desktop (≥ 1440px) — scale library shelf down slightly */
 @media (min-width: 1440px) {
-  /* Pages that use a centred column already have max-width — this just
-     ensures the body background fills edge-to-edge. */
   body { font-size: 16px; }
+  /* Scale the two shelf rows to fit without overflow */
+  .shelf-row { zoom: 0.88; }
 }
 
-/* Ultra-wide (≥ 1920px) — slightly larger base type */
+/* Ultra-wide (≥ 1920px) */
 @media (min-width: 1920px) {
   body { font-size: 17px; }
+  .shelf-row { zoom: 0.78; }
+}
+
+/* Landscape phone / small tablet shelf scaling */
+@media (max-width: 1023px) and (orientation: landscape) {
+  .shelf-row { zoom: 0.72; }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────── */
