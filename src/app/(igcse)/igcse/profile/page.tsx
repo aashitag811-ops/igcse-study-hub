@@ -6,19 +6,31 @@ import { createClient } from '@/lib/supabase/client';
 import { SUBJECTS } from '@/lib/constants/subjects';
 import { RESOURCE_TYPES } from '@/lib/constants/resourceTypes';
 import type { McqAttempt, McqWrongQuestion } from '@/lib/types/database.types';
+import Header from '@/components/Header';
 
-// ── Design tokens (match site theme) ─────────────────────────────────────────
+// ── Design tokens — exact match to browse page ────────────────────────────────
 const SERIF = "'Cormorant Garamond', 'Cormorant', Georgia, serif";
 const SANS  = "'DM Sans', 'Inter', system-ui, -apple-system, sans-serif";
 const GOLD  = '#C9A84C';
-const GOLD2 = '#E2C97A';
-const BG    = '#0A0806';
-const SURFACE = '#13100A';
-const SURFACE2 = '#1A1510';
-const BORDER = 'rgba(200,168,76,0.15)';
-const BORDER2 = 'rgba(200,168,76,0.25)';
+const GOLD2 = '#D4B96A';
+const BG    = '#0c1018';
+const SURFACE  = 'rgba(255,255,255,0.015)';
+const SURFACE2 = 'rgba(255,255,255,0.025)';
+const BORDER   = 'rgba(200,168,76,0.08)';
+const BORDER2  = 'rgba(200,168,76,0.2)';
 const TEXT  = '#E8DCC4';
-const MUTED = '#8A7A5A';
+const MUTED = 'rgba(196,176,138,0.45)';
+
+// ── Dust particles — exact copy from browse page ──────────────────────────────
+const DUST = Array.from({ length: 48 }, (_, i) => ({
+  id: i,
+  size: 1.8 + (i * 5.7 % 3.2),
+  left: (i * 18.3 + 6) % 100,
+  top: (i * 24.7 + 9) % 100,
+  dur: 14 + (i * 3.3 % 12),
+  delay: (i * 2.9) % 10,
+  anim: i % 3,
+}));
 
 // ── Interfaces ────────────────────────────────────────────────────────────────
 
@@ -186,9 +198,19 @@ export default function ProfilePage() {
   const [wrongLoading, setWrongLoading] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [editForm, setEditForm] = useState({ username: '', full_name: '' });
+  const [glowPos, setGlowPos] = useState({ x: 0, y: 0 });
+  const [glowVisible, setGlowVisible] = useState(false);
   const [saveMessage, setSaveMessage] = useState('');
 
   useEffect(() => { fetchProfileData(); }, []);
+
+  useEffect(() => {
+    const move = (e: MouseEvent) => { setGlowPos({ x: e.clientX, y: e.clientY }); setGlowVisible(true); };
+    const leave = () => setGlowVisible(false);
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseleave', leave);
+    return () => { window.removeEventListener('mousemove', move); window.removeEventListener('mouseleave', leave); };
+  }, []);
 
   const fetchProfileData = async () => {
     setLoading(true);
@@ -257,28 +279,33 @@ export default function ProfilePage() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: BG, color: TEXT }}>
+    <div style={{ minHeight: '100vh', background: BG, position: 'relative', overflowX: 'hidden' }}>
 
-      {/* Ambient glow */}
-      <div style={{ position: 'fixed', inset: 0, background: 'radial-gradient(ellipse at 50% 0%, rgba(200,168,76,0.04) 0%, transparent 60%)', pointerEvents: 'none', zIndex: 0 }} />
+      {/* Dust particles */}
+      <div className="pointer-events-none" style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
+        {DUST.map(p => (
+          <div key={p.id} style={{
+            position: 'absolute', width: `${p.size}px`, height: `${p.size}px`,
+            borderRadius: '50%', left: `${p.left}%`, top: `${p.top}%`,
+            background: 'radial-gradient(circle, rgba(255,218,80,1) 0%, rgba(212,175,55,0.65) 50%, transparent 100%)',
+            boxShadow: '0 0 8px rgba(255,210,60,0.95), 0 0 18px rgba(200,160,40,0.55)',
+            animation: `dust${p.anim} ${p.dur}s ease-in-out infinite`,
+            animationDelay: `${p.delay}s`, opacity: 0,
+          }} />
+        ))}
+      </div>
 
-      {/* Header */}
-      <header style={{ position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', background: 'rgba(10,8,6,0.85)', borderBottom: `1px solid ${BORDER}` }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0.875rem 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', textDecoration: 'none' }}>
-            <span style={{ fontFamily: SERIF, fontSize: '1.25rem', fontWeight: 500, color: TEXT, letterSpacing: '0.02em' }}>Student Archive</span>
-          </a>
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            {[{ label: 'Browse', href: '/igcse/browse' }, { label: 'Practice', href: '/igcse/practice' }, { label: 'Upload', href: '/igcse/upload' }].map(({ label, href }) => (
-              <a key={href} href={href} style={{ fontFamily: SERIF, fontSize: '0.9375rem', fontWeight: 500, color: MUTED, textDecoration: 'none', padding: '0.375rem 0.875rem', borderRadius: '6px', letterSpacing: '0.03em', transition: 'color 0.18s' }}
-                onMouseEnter={e => (e.currentTarget.style.color = GOLD2)} onMouseLeave={e => (e.currentTarget.style.color = MUTED)}
-              >{label}</a>
-            ))}
-          </div>
-        </div>
-      </header>
+      {/* Cursor glow */}
+      <div className="pointer-events-none" style={{
+        position: 'fixed', inset: 0, zIndex: 1,
+        opacity: glowVisible ? 1 : 0,
+        transition: 'opacity 0.4s ease',
+        background: `radial-gradient(circle 360px at ${glowPos.x}px ${glowPos.y}px, rgba(200,168,76,0.07) 0%, rgba(180,140,30,0.03) 50%, transparent 100%)`,
+      }} />
 
-      <div style={{ position: 'relative', zIndex: 1, maxWidth: 1100, margin: '0 auto', padding: '2.5rem 1.5rem' }}>
+      <Header />
+
+      <div style={{ position: 'relative', zIndex: 2, maxWidth: 1100, margin: '0 auto', padding: '32px 40px 60px', paddingTop: '96px' }}>
 
         {/* Profile card */}
         <div style={{ background: SURFACE, border: `1px solid ${BORDER}`, borderTop: `1px solid ${BORDER2}`, borderRadius: '1rem', padding: '2rem', marginBottom: '1.5rem' }}>
@@ -430,6 +457,13 @@ export default function ProfilePage() {
           </div>
         </div>
       </div>
+
+      <style jsx global>{`
+        @keyframes dust0 { 0%{transform:translate(0,0);opacity:0} 15%{opacity:.7} 50%{transform:translate(16px,-52px);opacity:.85} 85%{opacity:.5} 100%{transform:translate(0,0);opacity:0} }
+        @keyframes dust1 { 0%{transform:translate(0,0);opacity:0} 15%{opacity:.6} 50%{transform:translate(-18px,-44px);opacity:.75} 85%{opacity:.45} 100%{transform:translate(0,0);opacity:0} }
+        @keyframes dust2 { 0%{transform:translate(0,0);opacity:0} 20%{opacity:.65} 50%{transform:translate(10px,-60px);opacity:.8} 80%{opacity:.4} 100%{transform:translate(0,0);opacity:0} }
+        @keyframes spin { to { transform: rotate(360deg); } }
+      `}</style>
     </div>
   );
 }
