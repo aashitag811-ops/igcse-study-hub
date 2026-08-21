@@ -47,6 +47,12 @@ export const RESOURCE_TYPES = [
     description: 'Practice worksheets and exercises',
     icon: '≡'
   },
+  {
+    value: 'books',
+    label: 'Books',
+    description: 'Textbooks and reference books',
+    icon: '⊞'
+  },
 ] as const;
 
 export type ResourceType = typeof RESOURCE_TYPES[number]['value'];
