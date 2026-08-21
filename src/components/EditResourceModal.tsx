@@ -1,6 +1,44 @@
+'use client';
+
 import React, { useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
 import { SUBJECTS } from '@/lib/constants/subjects';
 import { RESOURCE_TYPES } from '@/lib/constants/resourceTypes';
+
+const SERIF = "'Cormorant Garamond', 'Cormorant', Georgia, serif";
+const SANS  = "'DM Sans', 'Inter', system-ui, sans-serif";
+const GOLD  = '#C9A84C';
+const GOLD2 = '#D4B96A';
+const BG    = '#0e1420';
+const BORDER  = 'rgba(200,168,76,0.08)';
+const BORDER2 = 'rgba(200,168,76,0.2)';
+const TEXT  = '#E8DCC4';
+const MUTED = 'rgba(196,176,138,0.45)';
+
+const inputStyle: React.CSSProperties = {
+  width: '100%',
+  background: 'rgba(6,10,18,0.7)',
+  border: `1px solid ${BORDER}`,
+  borderTop: `1px solid ${BORDER2}`,
+  borderRadius: '8px',
+  padding: '10px 14px',
+  fontFamily: SANS,
+  fontSize: '14px',
+  color: TEXT,
+  outline: 'none',
+  transition: 'border-color 0.18s',
+};
+
+const labelStyle: React.CSSProperties = {
+  display: 'block',
+  fontFamily: SANS,
+  fontSize: '0.7rem',
+  fontWeight: 600,
+  letterSpacing: '0.14em',
+  textTransform: 'uppercase',
+  color: MUTED,
+  marginBottom: '6px',
+};
 
 interface EditResourceModalProps {
   resource: {
@@ -21,7 +59,7 @@ export const EditResourceModal: React.FC<EditResourceModalProps> = ({ resource, 
     subject: resource.subject,
     resource_type: resource.resource_type,
     link: resource.link,
-    description: resource.description || ''
+    description: resource.description || '',
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -30,8 +68,20 @@ export const EditResourceModal: React.FC<EditResourceModalProps> = ({ resource, 
     e.preventDefault();
     setLoading(true);
     setError('');
-
     try {
+      // Save directly via supabase
+      const supabase = createClient();
+      const { error: updateError } = await (supabase as any)
+        .from('resources')
+        .update({
+          title: formData.title,
+          subject: formData.subject,
+          resource_type: formData.resource_type,
+          link: formData.link,
+          description: formData.description,
+        })
+        .eq('id', resource.id);
+      if (updateError) throw updateError;
       await onSave(formData);
       onClose();
     } catch (err: any) {
@@ -41,228 +91,123 @@ export const EditResourceModal: React.FC<EditResourceModalProps> = ({ resource, 
     }
   };
 
+  const focusStyle = (e: React.FocusEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    e.currentTarget.style.borderColor = GOLD;
+    e.currentTarget.style.borderTopColor = GOLD2;
+  };
+  const blurStyle = (e: React.FocusEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    e.currentTarget.style.borderColor = BORDER;
+    e.currentTarget.style.borderTopColor = BORDER2;
+  };
+
   return (
-    <div style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      background: 'rgba(0, 0, 0, 0.5)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      zIndex: 1000,
-      padding: '1rem'
-    }}>
-      <div style={{
-        background: 'white',
-        borderRadius: '1rem',
-        padding: '2rem',
-        maxWidth: '600px',
-        width: '100%',
-        maxHeight: '90vh',
-        overflowY: 'auto'
-      }}>
-        <h2 style={{
-          fontSize: '1.5rem',
-          fontWeight: '700',
-          marginBottom: '1.5rem',
-          color: '#111827'
-        }}>
-          Edit Resource
-        </h2>
+    <div
+      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(4px)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, padding: '1rem' }}
+      onClick={onClose}
+    >
+      <div
+        style={{ background: BG, border: `1px solid ${BORDER}`, borderTop: `1px solid ${BORDER2}`, borderRadius: '1rem', padding: '2rem', maxWidth: 560, width: '100%', maxHeight: '90vh', overflowY: 'auto', boxShadow: '0 24px 64px rgba(0,0,0,0.7)' }}
+        onClick={e => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '1.75rem' }}>
+          <div>
+            <h2 style={{ fontFamily: SERIF, fontSize: '1.625rem', fontWeight: 500, color: GOLD2, letterSpacing: '0.02em', marginBottom: '0.2rem' }}>
+              Edit Resource
+            </h2>
+            <p style={{ fontFamily: SANS, fontSize: '0.8125rem', color: MUTED }}>Changes are saved immediately</p>
+          </div>
+          <button
+            onClick={onClose}
+            style={{ background: 'transparent', border: 'none', color: MUTED, cursor: 'pointer', fontSize: '1.25rem', lineHeight: 1, padding: '0.25rem' }}
+          >
+            ✕
+          </button>
+        </div>
 
         {error && (
-          <div style={{
-            padding: '1rem',
-            marginBottom: '1rem',
-            background: '#FEE2E2',
-            border: '1px solid #EF4444',
-            borderRadius: '0.5rem',
-            color: '#DC2626'
-          }}>
-            {error}
+          <div style={{ padding: '0.75rem 1rem', marginBottom: '1.25rem', background: 'rgba(160,40,40,0.15)', border: '1px solid rgba(180,40,40,0.3)', borderRadius: '0.5rem' }}>
+            <p style={{ fontFamily: SANS, fontSize: '0.8125rem', color: '#F09090' }}>{error}</p>
           </div>
         )}
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} style={{ display: 'grid', gap: '1.125rem' }}>
+
           {/* Title */}
-          <div style={{ marginBottom: '1rem' }}>
-            <label style={{
-              display: 'block',
-              marginBottom: '0.5rem',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              color: '#374151'
-            }}>
-              Title *
-            </label>
-            <input
-              type="text"
-              value={formData.title}
-              onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              required
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem'
-              }}
-            />
+          <div>
+            <label style={labelStyle}>Title *</label>
+            <input type="text" value={formData.title} required
+              onChange={e => setFormData({ ...formData, title: e.target.value })}
+              style={inputStyle} onFocus={focusStyle} onBlur={blurStyle} />
           </div>
 
           {/* Subject */}
-          <div style={{ marginBottom: '1rem' }}>
-            <label style={{
-              display: 'block',
-              marginBottom: '0.5rem',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              color: '#374151'
-            }}>
-              Subject *
-            </label>
-            <select
-              value={formData.subject}
-              onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-              required
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem'
-              }}
-            >
-              {SUBJECTS.map(subject => (
-                <option key={subject.code} value={subject.code}>
-                  {subject.icon} {subject.name}
-                </option>
+          <div>
+            <label style={labelStyle}>Subject *</label>
+            <select value={formData.subject} required
+              onChange={e => setFormData({ ...formData, subject: e.target.value })}
+              style={{ ...inputStyle, cursor: 'pointer', appearance: 'none', WebkitAppearance: 'none' }}
+              onFocus={focusStyle} onBlur={blurStyle}>
+              {SUBJECTS.map(s => (
+                <option key={s.code} value={s.code} style={{ background: '#0c1018' }}>{s.name} ({s.code})</option>
               ))}
             </select>
           </div>
 
           {/* Resource Type */}
-          <div style={{ marginBottom: '1rem' }}>
-            <label style={{
-              display: 'block',
-              marginBottom: '0.5rem',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              color: '#374151'
-            }}>
-              Resource Type *
-            </label>
-            <select
-              value={formData.resource_type}
-              onChange={(e) => setFormData({ ...formData, resource_type: e.target.value })}
-              required
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem'
-              }}
-            >
-              {RESOURCE_TYPES.map(type => (
-                <option key={type.value} value={type.value}>
-                  {type.icon} {type.label}
-                </option>
+          <div>
+            <label style={labelStyle}>Resource Type *</label>
+            <select value={formData.resource_type} required
+              onChange={e => setFormData({ ...formData, resource_type: e.target.value })}
+              style={{ ...inputStyle, cursor: 'pointer', appearance: 'none', WebkitAppearance: 'none' }}
+              onFocus={focusStyle} onBlur={blurStyle}>
+              {RESOURCE_TYPES.map(t => (
+                <option key={t.value} value={t.value} style={{ background: '#0c1018' }}>{t.icon} {t.label}</option>
               ))}
             </select>
           </div>
 
           {/* Link */}
-          <div style={{ marginBottom: '1rem' }}>
-            <label style={{
-              display: 'block',
-              marginBottom: '0.5rem',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              color: '#374151'
-            }}>
-              Link *
-            </label>
-            <input
-              type="url"
-              value={formData.link}
-              onChange={(e) => setFormData({ ...formData, link: e.target.value })}
-              required
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem'
-              }}
-            />
+          <div>
+            <label style={labelStyle}>Link *</label>
+            <input type="url" value={formData.link} required
+              onChange={e => setFormData({ ...formData, link: e.target.value })}
+              style={inputStyle} onFocus={focusStyle} onBlur={blurStyle} />
           </div>
 
           {/* Description */}
-          <div style={{ marginBottom: '1.5rem' }}>
-            <label style={{
-              display: 'block',
-              marginBottom: '0.5rem',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              color: '#374151'
-            }}>
-              Description
-            </label>
-            <textarea
-              value={formData.description}
-              onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-              rows={4}
-              style={{
-                width: '100%',
-                padding: '0.75rem',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem',
-                fontFamily: 'inherit',
-                resize: 'vertical'
-              }}
-            />
+          <div>
+            <label style={labelStyle}>Description</label>
+            <textarea value={formData.description} rows={3}
+              onChange={e => setFormData({ ...formData, description: e.target.value })}
+              style={{ ...inputStyle, resize: 'vertical', fontFamily: SANS }}
+              onFocus={focusStyle as any} onBlur={blurStyle as any} />
           </div>
 
           {/* Buttons */}
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
-            <button
-              type="button"
-              onClick={onClose}
-              style={{
-                padding: '0.75rem 1.5rem',
-                background: 'white',
-                color: '#374151',
-                border: '1px solid #D1D5DB',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                cursor: 'pointer'
-              }}
-            >
+          <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.25rem' }}>
+            <button type="button" onClick={onClose} style={{
+              flex: 1, padding: '0.625rem',
+              background: 'transparent', color: MUTED,
+              border: `1px solid ${BORDER}`, borderRadius: '6px',
+              fontFamily: SANS, fontSize: '0.875rem', fontWeight: 600, cursor: 'pointer',
+            }}>
               Cancel
             </button>
-            <button
-              type="submit"
-              disabled={loading}
-              style={{
-                padding: '0.75rem 1.5rem',
-                background: loading ? '#9CA3AF' : 'linear-gradient(145deg, #2563EB, #1D4ED8)',
-                color: 'white',
-                border: 'none',
-                borderRadius: '0.5rem',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                cursor: loading ? 'not-allowed' : 'pointer'
-              }}
-            >
-              {loading ? 'Saving...' : 'Save Changes'}
+            <button type="submit" disabled={loading} style={{
+              flex: 2, padding: '0.625rem',
+              background: loading ? 'rgba(200,168,76,0.06)' : 'linear-gradient(180deg, rgba(201,168,76,0.22) 0%, rgba(201,168,76,0.12) 100%)',
+              color: loading ? MUTED : GOLD2,
+              border: `1px solid ${loading ? BORDER : BORDER2}`,
+              borderTop: `1px solid ${loading ? BORDER : 'rgba(200,168,76,0.4)'}`,
+              borderRadius: '6px',
+              fontFamily: SERIF, fontSize: '1rem', fontWeight: 600,
+              cursor: loading ? 'not-allowed' : 'pointer', letterSpacing: '0.03em',
+            }}>
+              {loading ? 'Saving…' : 'Save Changes'}
             </button>
           </div>
+
         </form>
       </div>
     </div>
