@@ -14,7 +14,7 @@ const GOLD  = '#C9A84C';
 const GOLD2 = '#D4B96A';
 const GOLD3 = '#E2C97A';
 const BG    = '#0c1018';
-const SIDEBAR_BG = '#080c12';
+const TOPBAR_BG = '#080c12';
 const SURFACE  = 'rgba(255,255,255,0.022)';
 const SURFACE2 = 'rgba(255,255,255,0.038)';
 const BORDER   = 'rgba(200,168,76,0.10)';
@@ -22,7 +22,6 @@ const BORDER2  = 'rgba(200,168,76,0.22)';
 const TEXT  = '#E8DCC4';
 const MUTED = 'rgba(196,176,138,0.5)';
 const MUTED2 = 'rgba(196,176,138,0.35)';
-const SIDEBAR_W = 248;
 
 // ── Interfaces ────────────────────────────────────────────────────────────────
 interface Resource {
@@ -284,46 +283,43 @@ export default function ProfilePage() {
 
   const inputCss: React.CSSProperties = { width: '100%', background: 'rgba(4,8,16,0.8)', border: `1px solid ${BORDER}`, borderRadius: 7, padding: '9px 13px', fontFamily: SANS, fontSize: '0.875rem', color: TEXT, outline: 'none' };
 
-  // ── Nav items data ────────────────────────────────────────────────────────────
-  const nav = [
-    { id: 'overview' as const,  label: 'Overview',       icon: Icons.overview,  section: 'main' },
-    { id: 'uploads' as const,   label: 'My Uploads',     icon: Icons.upload,    section: 'resources', badge: uploads.length },
-    { id: 'upvotes' as const,   label: 'Upvoted',        icon: Icons.bookmark,  section: 'resources', badge: upvoted.length },
-    { id: 'attempts' as const,  label: 'Exam History',   icon: Icons.exam,      section: 'practice',  badge: attempts.length || undefined },
-    { id: 'weak' as const,      label: 'Weak Questions', icon: Icons.weak,      section: 'practice',  badge: wrong.length || undefined },
-  ];
-
   const TOPBAR_H = 56;
+  const TABBAR_H = 48;
+
+  const tabs = [
+    { id: 'overview' as const,  label: 'Overview',       icon: Icons.overview },
+    { id: 'uploads' as const,   label: 'My Uploads',     icon: Icons.upload,   badge: uploads.length },
+    { id: 'upvotes' as const,   label: 'Upvoted',        icon: Icons.bookmark, badge: upvoted.length },
+    { id: 'attempts' as const,  label: 'Exam History',   icon: Icons.exam,     badge: attempts.length || undefined },
+    { id: 'weak' as const,      label: 'Weak Questions', icon: Icons.weak,     badge: wrong.length || undefined },
+  ];
 
   return (
     <>
       {/* Cursor glow */}
       <div className="pointer-events-none" style={{ position: 'fixed', inset: 0, zIndex: 9999, opacity: glowVisible ? 1 : 0, transition: 'opacity 0.4s ease', background: `radial-gradient(circle 380px at ${glowPos.x}px ${glowPos.y}px, rgba(200,168,76,0.055) 0%, transparent 100%)` }} />
 
-      {/* ── Full-width fixed topbar (like examvoid) ──────────────────────── */}
+      {/* ── Fixed topbar ─────────────────────────────────────────────────── */}
       <div style={{
         position: 'fixed', top: 0, left: 0, right: 0, height: TOPBAR_H,
-        background: `${SIDEBAR_BG}f2`, backdropFilter: 'blur(16px)',
+        background: `${TOPBAR_BG}f2`, backdropFilter: 'blur(16px)',
         borderBottom: `1px solid ${BORDER}`,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '0 1.5rem 0 0',
-        zIndex: 200,
+        padding: '0 1.5rem', zIndex: 200,
       }}>
-        {/* Left: logo area (aligns with sidebar width) */}
-        <div style={{ width: SIDEBAR_W, flexShrink: 0, padding: '0 1.125rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.625rem', borderRight: `1px solid ${BORDER}`, height: '100%' }} onClick={() => router.push('/igcse')}>
-          <div>
-            <div style={{ fontFamily: SERIF, fontSize: '1.1rem', fontWeight: 600, color: GOLD2, letterSpacing: '0.02em', lineHeight: 1 }}>StudentArchive</div>
-            <div style={{ fontFamily: SANS, fontSize: '0.6rem', color: MUTED2, letterSpacing: '0.06em', marginTop: 2 }}>IGCSE Study Hub</div>
-          </div>
+        {/* Logo */}
+        <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem' }} onClick={() => router.push('/igcse')}>
+          <div style={{ fontFamily: SERIF, fontSize: '1.2rem', fontWeight: 600, color: GOLD2, letterSpacing: '0.02em' }}>StudentArchive</div>
+          <div style={{ fontFamily: SANS, fontSize: '0.6rem', color: MUTED2, letterSpacing: '0.06em', marginTop: 2 }}>IGCSE</div>
         </div>
 
-        {/* Centre: current section title */}
-        <div style={{ flex: 1, padding: '0 1.5rem', fontFamily: SERIF, fontSize: '1rem', fontWeight: 600, color: TEXT }}>
-          {{ overview: 'Overview', uploads: 'My Uploads', upvotes: 'Upvoted Resources', attempts: 'Exam History', weak: 'Weak Questions' }[view]}
-        </div>
-
-        {/* Right: user + action */}
+        {/* Right: avatar + actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem' }}>
+          {isCreator && (
+            <button onClick={() => router.push('/igcse/admin/moderate')} style={{ display: 'flex', alignItems: 'center', gap: '0.375rem', padding: '0.4rem 0.875rem', background: 'rgba(200,168,76,0.07)', color: GOLD, border: `1px solid ${BORDER2}`, borderRadius: '7px', fontFamily: SANS, fontSize: '0.775rem', fontWeight: 600, cursor: 'pointer' }}>
+              {Icons.shield} <span>Moderation</span>
+            </button>
+          )}
           <button onClick={() => router.push('/igcse/upload')} style={{ display: 'flex', alignItems: 'center', gap: '0.375rem', padding: '0.4rem 0.875rem', background: 'linear-gradient(180deg, rgba(201,168,76,0.2) 0%, rgba(201,168,76,0.1) 100%)', color: GOLD2, border: `1px solid ${BORDER2}`, borderRadius: '7px', fontFamily: SANS, fontSize: '0.775rem', fontWeight: 600, cursor: 'pointer' }}>
             {Icons.upload} <span>Upload</span>
           </button>
@@ -334,76 +330,39 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      {/* ── App shell (below topbar) ──────────────────────────────────────── */}
-      <div style={{ display: 'flex', minHeight: '100vh', background: BG, paddingTop: TOPBAR_H }}>
-
-        {/* ── Fixed left sidebar (starts below topbar) ───────────────────── */}
-        <aside style={{
-          position: 'fixed', top: TOPBAR_H, left: 0, bottom: 0,
-          width: SIDEBAR_W, background: SIDEBAR_BG,
-          borderRight: `1px solid ${BORDER}`,
-          display: 'flex', flexDirection: 'column',
-          zIndex: 100, overflowY: 'auto',
-        }}>
-
-          {/* User identity */}
-          <div style={{ padding: '1rem 1.125rem', borderBottom: `1px solid ${BORDER}` }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <div style={{
-                width: 40, height: 40, borderRadius: '50%', flexShrink: 0,
-                background: 'linear-gradient(135deg, rgba(200,168,76,0.3) 0%, rgba(200,168,76,0.08) 100%)',
-                border: `1.5px solid ${BORDER2}`,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontFamily: SERIF, fontSize: '1rem', fontWeight: 600, color: GOLD2,
-              }}>{initials(profile)}</div>
-              <div style={{ minWidth: 0 }}>
-                <div style={{ fontFamily: SANS, fontSize: '0.8125rem', fontWeight: 600, color: TEXT, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{profile.full_name || profile.username || 'Scholar'}</div>
-                <div style={{ fontFamily: SANS, fontSize: '0.7rem', color: MUTED2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{profile.email}</div>
-              </div>
-            </div>
-            {isCreator && (
-              <div style={{ marginTop: '0.625rem', display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px', background: 'rgba(200,168,76,0.08)', border: `1px solid ${BORDER2}`, borderRadius: 999, fontFamily: SANS, fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.12em', color: GOLD, textTransform: 'uppercase' }}>
-                ✦ Creator
-              </div>
+      {/* ── Tab bar (below topbar, sticky) ───────────────────────────────── */}
+      <div style={{
+        position: 'fixed', top: TOPBAR_H, left: 0, right: 0, height: TABBAR_H,
+        background: `${BG}f0`, backdropFilter: 'blur(12px)',
+        borderBottom: `1px solid ${BORDER}`,
+        display: 'flex', alignItems: 'center',
+        padding: '0 1.5rem', gap: '0.25rem', zIndex: 150,
+        overflowX: 'auto',
+      }}>
+        {tabs.map(t => (
+          <button key={t.id} onClick={() => setView(t.id)} style={{
+            display: 'flex', alignItems: 'center', gap: '0.4rem',
+            padding: '0.4rem 0.75rem', borderRadius: '0.5rem',
+            background: view === t.id ? 'rgba(200,168,76,0.1)' : 'transparent',
+            border: 'none',
+            borderBottom: view === t.id ? `2px solid ${GOLD}` : '2px solid transparent',
+            color: view === t.id ? GOLD2 : MUTED,
+            cursor: 'pointer', fontFamily: SANS, fontSize: '0.8125rem',
+            fontWeight: view === t.id ? 600 : 400,
+            whiteSpace: 'nowrap', flexShrink: 0,
+          }}>
+            <span style={{ display: 'flex', opacity: view === t.id ? 1 : 0.6 }}>{t.icon}</span>
+            {t.label}
+            {!!t.badge && (
+              <span style={{ fontSize: '0.65rem', fontWeight: 700, padding: '1px 5px', borderRadius: 999, background: view === t.id ? 'rgba(201,168,76,0.2)' : 'rgba(255,255,255,0.08)', color: view === t.id ? GOLD : MUTED2 }}>{t.badge}</span>
             )}
-          </div>
+          </button>
+        ))}
+      </div>
 
-          {/* Nav */}
-          <nav style={{ flex: 1, padding: '0.5rem 0.5rem' }}>
-            <NavGroup label="Dashboard" />
-            {nav.filter(n => n.section === 'main').map(n => (
-              <NavItem key={n.id} icon={n.icon} label={n.label} active={view === n.id} badge={n.badge} onClick={() => setView(n.id)} />
-            ))}
-            <NavGroup label="Resources" />
-            {nav.filter(n => n.section === 'resources').map(n => (
-              <NavItem key={n.id} icon={n.icon} label={n.label} active={view === n.id} badge={n.badge} onClick={() => setView(n.id)} />
-            ))}
-            <NavGroup label="Practice" />
-            {nav.filter(n => n.section === 'practice').map(n => (
-              <NavItem key={n.id} icon={n.icon} label={n.label} active={view === n.id} badge={n.badge} onClick={() => setView(n.id)} />
-            ))}
-
-            <div style={{ height: 1, background: BORDER, margin: '0.75rem 0.375rem' }} />
-
-            <NavGroup label="Go to" />
-            <NavItem icon={Icons.browse}   label="Browse Resources" active={false} onClick={() => router.push('/igcse/browse')} />
-            <NavItem icon={Icons.practice} label="Practice MCQs"    active={false} onClick={() => router.push('/igcse/practice')} />
-            <NavItem icon={Icons.home}     label="IGCSE Home"       active={false} onClick={() => router.push('/igcse')} />
-          </nav>
-
-          {/* Bottom actions */}
-          <div style={{ borderTop: `1px solid ${BORDER}`, padding: '0.5rem' }}>
-            <NavItem icon={Icons.edit}   label="Edit Profile"  active={false} onClick={() => { setView('overview'); setEditing(true); }} />
-            {isCreator && <NavItem icon={Icons.shield} label="Moderation" active={false} onClick={() => router.push('/igcse/admin/moderate')} />}
-            <NavItem icon={Icons.logout} label="Back to site"  active={false} onClick={() => router.push('/igcse')} />
-          </div>
-        </aside>
-
-        {/* ── Main scrollable content ─────────────────────────────────────── */}
-        <main style={{ marginLeft: SIDEBAR_W, flex: 1, minHeight: '100vh', overflowY: 'auto' }}>
-
-          {/* Content */}
-          <div style={{ padding: '1.75rem 2rem', maxWidth: 900, margin: '0 auto' }}>
+      {/* ── Page content ─────────────────────────────────────────────────── */}
+      <div style={{ minHeight: '100vh', background: BG, paddingTop: TOPBAR_H + TABBAR_H }}>
+        <div style={{ padding: '1.75rem 2rem', maxWidth: 960, margin: '0 auto' }}>
 
             {/* ── OVERVIEW ───────────────────────────────────────────────── */}
             {view === 'overview' && (
@@ -598,16 +557,10 @@ export default function ProfilePage() {
             )}
 
           </div>
-        </main>
-      </div>
+        </div>
 
-      {/* Mobile fallback: show back link */}
       <style jsx global>{`
         @keyframes spin { to { transform: rotate(360deg); } }
-        @media (max-width: 768px) {
-          aside { transform: translateX(-100%); transition: transform 0.3s ease; }
-          main  { margin-left: 0 !important; }
-        }
       `}</style>
     </>
   );
