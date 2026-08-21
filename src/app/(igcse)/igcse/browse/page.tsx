@@ -53,7 +53,6 @@ const SidebarIcon = ({ type, size = 15 }: { type: string; size?: number }) => {
     case 'revision-guides': return <svg {...p}><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>;
     case 'youtube': return <svg {...p}><rect x="2" y="6" width="20" height="13" rx="2"/><polygon points="10 9 16 12.5 10 16 10 9" fill="currentColor" stroke="none"/></svg>;
     case 'worksheets': return <svg {...p}><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="13" y2="16"/></svg>;
-    case 'books': return <svg {...p}><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>;
     case 'popular': return <svg {...p}><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>;
     case 'newest': return <svg {...p}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
     default: return <svg {...p}><circle cx="12" cy="12" r="3"/></svg>;
@@ -70,7 +69,6 @@ const NAV_TYPES = [
   { value: 'revision-guides', label: 'Revision Guides' },
   { value: 'youtube', label: 'YouTube Resources' },
   { value: 'worksheets', label: 'Worksheets' },
-  { value: 'books', label: 'Books' },
 ];
 
 function BrowsePageInner() {
