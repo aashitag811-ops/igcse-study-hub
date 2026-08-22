@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 // Cursor glow state — lifted to section level
 
 // Curricula available — add more here when ready
-const CURRICULA = [
+const CURRICULA: { label: string; href: string; comingSoon?: boolean }[] = [
   { label: 'IGCSE', href: '/igcse' },
   { label: 'A Levels', href: '/alevels' },
 ];
