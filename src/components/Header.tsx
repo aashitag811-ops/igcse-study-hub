@@ -6,11 +6,18 @@ import Image from 'next/image';
 import { createClient } from '@/lib/supabase/client';
 import NotificationBell from '@/components/NotificationBell';
 
-const NAV_ITEMS = [
+const IGCSE_NAV = [
   { label: 'Dashboard', href: '/' },
-  { label: 'Start Practising', href: '/igcse/practice' },
+  { label: 'Past Papers', href: '/igcse/practice' },
   { label: 'Browse Resources', href: '/igcse/browse' },
   { label: 'Profile', href: '/igcse/profile' },
+];
+
+const ALEVELS_NAV = [
+  { label: 'Dashboard', href: '/' },
+  { label: 'Past Papers', href: '/alevels/practice' },
+  { label: 'Browse Resources', href: '/alevels/browse' },
+  { label: 'Profile', href: '/alevels/profile' },
 ];
 
 const SERIF = "'Cormorant Garamond', 'Cormorant', Georgia, serif";
@@ -122,6 +129,14 @@ function AuthLink({ isSignedIn }: { isSignedIn: boolean }) {
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isSignedIn, setIsSignedIn] = useState(false);
+  const [pathname, setPathname] = useState('');
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+  }, []);
+
+  const isALevels = pathname.startsWith('/alevels');
+  const NAV_ITEMS = isALevels ? ALEVELS_NAV : IGCSE_NAV;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -153,26 +168,56 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-          <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-110">
-            <div
-              className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              style={{ boxShadow: '0 0 0 1.5px #C9A84C, 0 0 14px 4px rgba(201,168,76,0.65), 0 0 28px 8px rgba(201,168,76,0.25)' }}
-            />
-            <Image
-              src="/logo.png"
-              alt="Student Archive"
-              width={56}
-              height={56}
-              className="rounded-md object-contain"
-              priority
-            />
+        {/* Logo + curriculum switcher */}
+        <div className="flex items-center gap-4 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-110">
+              <div
+                className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ boxShadow: '0 0 0 1.5px #C9A84C, 0 0 14px 4px rgba(201,168,76,0.65), 0 0 28px 8px rgba(201,168,76,0.25)' }}
+              />
+              <Image
+                src="/logo.png"
+                alt="Student Archive"
+                width={56}
+                height={56}
+                className="rounded-md object-contain"
+                priority
+              />
+            </div>
+            <span style={{ fontFamily: SERIF, fontSize: '20px', fontWeight: 500, color: '#F5EDD6', letterSpacing: '0.02em' }}>
+              Student Archive
+            </span>
+          </Link>
+
+          {/* IGCSE / A Levels switcher */}
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: '2px',
+            padding: '3px', borderRadius: '8px',
+            background: 'rgba(200,168,76,0.07)',
+            border: '1px solid rgba(200,168,76,0.15)',
+          }}>
+            {[
+              { label: 'IGCSE', href: '/igcse' },
+              { label: 'A Levels', href: '/alevels' },
+            ].map(({ label, href }) => {
+              const active = isALevels ? href === '/alevels' : href === '/igcse';
+              return (
+                <Link key={href} href={href} style={{
+                  fontFamily: SERIF, fontSize: '13px', fontWeight: 500,
+                  padding: '4px 12px', borderRadius: '6px',
+                  color: active ? '#1a1208' : 'rgba(200,168,76,0.6)',
+                  background: active ? '#C9A84C' : 'transparent',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease',
+                  whiteSpace: 'nowrap',
+                }}>
+                  {label}
+                </Link>
+              );
+            })}
           </div>
-          <span style={{ fontFamily: SERIF, fontSize: '20px', fontWeight: 500, color: '#F5EDD6', letterSpacing: '0.02em' }}>
-            Student Archive
-          </span>
-        </Link>
+        </div>
 
         {/* Centre pill — soft brass library tab */}
         <nav
