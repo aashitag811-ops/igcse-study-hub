@@ -24,12 +24,7 @@ const SCIENCES: Subject[] = [
   { id: 'physics',   title: 'Physics',   code: '9702', description: 'Mechanics, waves, electricity, nuclear physics.', color: '#3A2A5E' },
 ];
 
-const TECHNOLOGY: Subject[] = [
-  { id: 'cs-9608', title: 'Computer Science (9608)', code: '9608', description: 'Theory, problem-solving and programming — old syllabus.', color: '#1A2A3A' },
-  { id: 'cs-9618', title: 'Computer Science (9618)', code: '9618', description: 'Theory, problem-solving and advanced programming — new syllabus.', color: '#1E2E3E' },
-];
-
-const HUMANITIES: Subject[] = [
+const COMMERCE: Subject[] = [
   { id: 'business',   title: 'Business',              code: '9609', description: 'Marketing, finance, operations, HR and strategy.', color: '#4A3A2A' },
   { id: 'economics',  title: 'Economics',              code: '9708', description: 'Micro, macro, international trade and development.', color: '#5E4A2A' },
   { id: 'accounting', title: 'Accounting',             code: '9706', description: 'Financial accounting, management accounting, analysis.', color: '#1A3A2A' },
@@ -38,6 +33,11 @@ const HUMANITIES: Subject[] = [
 const LANGUAGES: Subject[] = [
   { id: 'english-lang', title: 'English Language',     code: '9093', description: 'Reading, writing, text analysis and language topics.', color: '#5C3D1A' },
   { id: 'english-gp',   title: 'English General Paper', code: '8021', description: 'Essay writing and comprehension on global topics.', color: '#4C3010' },
+];
+
+const MORE_SUBJECTS: Subject[] = [
+  { id: 'cs-9618', title: 'Computer Science (9618)', code: '9618', description: 'Theory, problem-solving and advanced programming — new syllabus.', color: '#1E2E3E' },
+  { id: 'cs-9608', title: 'Computer Science (9608)', code: '9608', description: 'Theory, problem-solving and programming — old syllabus.', color: '#1A2A3A' },
 ];
 
 // ── SubjectSpine component (reused from IGCSE HeroLibrary) ────────────────────
@@ -212,7 +212,7 @@ export default function HeroLibraryALevels() {
   }, [handleMouseMove]);
 
   const handleSubjectClick = (subjectId: string) => {
-    const all = [...MATHEMATICS, ...SCIENCES, ...TECHNOLOGY, ...HUMANITIES, ...LANGUAGES];
+    const all = [...MATHEMATICS, ...SCIENCES, ...LANGUAGES, ...COMMERCE, ...MORE_SUBJECTS];
     const s = all.find(x => x.id === subjectId);
     if (s) window.location.href = `/alevels/practice?subject=${s.code}`;
   };
@@ -282,29 +282,29 @@ export default function HeroLibraryALevels() {
           onSubjectClick={handleSubjectClick}
         />
 
-        {/* Row 2: Technology + Social Sciences */}
+        {/* Row 2: Languages + Commerce */}
         <ShelfRow
-          leftLabel="Technology"      leftSubjects={TECHNOLOGY}
-          rightLabel="Social Sciences" rightSubjects={HUMANITIES}
+          leftLabel="Languages"  leftSubjects={LANGUAGES}
+          rightLabel="Commerce"  rightSubjects={COMMERCE}
           hoveredSubject={hoveredSubject}
           setHoveredSubject={setHoveredSubject}
           onSubjectClick={handleSubjectClick}
         />
 
-        {/* Row 3: Languages (centred) */}
+        {/* Row 3: More Subjects — left-aligned */}
         <div className="relative mb-1">
           <div className="shelf-row rounded-t-sm" style={{ height: 'clamp(140px,20vh,200px)', background: 'transparent' }}>
             <div className="absolute top-0 left-0 right-0 h-2 opacity-60" style={{ background: 'linear-gradient(180deg,rgba(92,69,32,0.4) 0%,transparent 100%)' }} />
-            <div className="flex h-full items-end justify-center px-4 gap-8">
+            <div className="flex h-full items-end justify-start px-4 gap-8">
               <div className="flex items-end gap-1 relative">
-                {LANGUAGES.map((s, i) => (
+                {MORE_SUBJECTS.map((s, i) => (
                   <div key={s.id} className="relative">
-                    {i === Math.floor(LANGUAGES.length / 2) && (
+                    {i === 0 && (
                       <span className="font-display uppercase tracking-[0.15em] font-semibold absolute" style={{
                         fontSize: '12px', color: 'var(--gold-light)',
                         bottom: 'calc(100% + 16px)', left: '50%', transform: 'translateX(-50%)',
                         whiteSpace: 'nowrap', opacity: 0.85, pointerEvents: 'none',
-                      }}>Languages</span>
+                      }}>More Subjects</span>
                     )}
                     <SubjectSpine subject={s} isHovered={hoveredSubject === s.id}
                       onMouseEnter={() => setHoveredSubject(s.id)}
