@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 // Curricula available — add more here when ready
 const CURRICULA = [
   { label: 'IGCSE', href: '/igcse' },
-  { label: 'A Levels', href: '/igcse', comingSoon: true },
+  { label: 'A Levels', href: '/alevels' },
 ];
 
 const features = [

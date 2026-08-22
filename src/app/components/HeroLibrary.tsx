@@ -201,7 +201,7 @@ export default function HeroLibrary() {
             className="font-display text-[10px] uppercase tracking-[0.4em] font-light"
             style={{ color: 'var(--gold-muted)' }}
           >
-            IGCSE Academic Library
+            Student Archive IGCSE
           </span>
           <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#C9A84C]" />
         </div>

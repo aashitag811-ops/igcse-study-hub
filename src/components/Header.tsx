@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { createClient } from '@/lib/supabase/client';
+import NotificationBell from '@/components/NotificationBell';
 
 const NAV_ITEMS = [
   { label: 'Dashboard', href: '/' },
@@ -198,8 +199,9 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Sign in / Sign out — far right */}
-        <div className="flex-shrink-0">
+        {/* Bell + Sign in / Sign out — far right */}
+        <div className="flex-shrink-0 flex items-center gap-2">
+          <NotificationBell />
           <AuthLink isSignedIn={isSignedIn} />
         </div>
 

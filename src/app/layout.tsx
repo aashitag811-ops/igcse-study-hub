@@ -22,12 +22,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Student Archive – Free IGCSE Past Papers & Study Resources",
-  description: "Free Cambridge IGCSE past papers, mark schemes, examiner reports and interactive practice for Biology, Chemistry, Physics, Maths, ICT and more. Built by students, for students.",
-  keywords: "IGCSE past papers, Cambridge IGCSE, Biology 0610, Chemistry 0620, Physics 0625, free past papers, mark scheme, examiner report, IGCSE practice",
+  title: "Student Archive – Free IGCSE & A Level Past Papers",
+  description: "Free Cambridge IGCSE and A Level past papers, mark schemes, examiner reports and interactive practice. Biology, Chemistry, Physics, Maths, Economics, Accounting and more. Built by students, for students.",
+  keywords: "IGCSE past papers, A Level past papers, Cambridge IGCSE, Cambridge A Level, AS Level, Biology 0610, Chemistry 0620, Physics 0625, Biology 9700, Chemistry 9701, Physics 9702, Mathematics 9709, Economics 9708, free past papers, mark scheme, examiner report",
   openGraph: {
-    title: "Student Archive – Free IGCSE Past Papers",
-    description: "Free Cambridge IGCSE past papers, mark schemes and interactive practice. Biology, Chemistry, Physics, Maths, ICT and more.",
+    title: "Student Archive – Free IGCSE & A Level Past Papers",
+    description: "Free Cambridge IGCSE and A Level past papers, mark schemes and interactive practice. Biology, Chemistry, Physics, Maths, Economics and more.",
     url: "https://studentarchive.xyz",
     siteName: "Student Archive",
     type: "website",

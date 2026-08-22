@@ -38,16 +38,6 @@ const modes = [
     ),
   },
   {
-    id: 'practice' as const, label: 'Practice Mode', number: '03', tag: 'PRACTICE',
-    description: 'Question-by-question walkthrough with instant answer feedback, examiner notes, and a running score tracker.',
-    inactiveColor: '#c05a5a',
-    icon: () => (
-      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: '#ffffff' }}>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
-  },
-  {
     id: 'theory' as const, label: 'Theory Exam', number: '04', tag: 'THEORY',
     description: 'Type your answers directly on the question paper — inputs sit over every answer line.',
     inactiveColor: '#7c5cd8',
@@ -63,11 +53,10 @@ export default function StudyModeSelector({
   onViewPapers, onStartPractice, onStartPracticeMode, onStartTheoryExam,
   isPaperSelected, isTestModeEnabled, isTheoryPaper, testModeMessage, preferredMode,
 }: StudyModeSelectorProps) {
-  const [activeMode, setActiveMode] = useState<'study' | 'test' | 'practice' | 'theory'>(() => {
+  const [activeMode, setActiveMode] = useState<'study' | 'test' | 'theory'>(() => {
     if (preferredMode === 'theory') return 'theory';
     if (!isTestModeEnabled) return 'study';
     if (preferredMode === 'test') return 'test';
-    if (preferredMode === 'practice') return 'practice';
     return 'study';
   });
   const [pressing, setPressing] = useState(false);
@@ -84,15 +73,13 @@ export default function StudyModeSelector({
   const launchLabel =
     activeMode === 'study' ? 'View Paper' :
     activeMode === 'test' ? 'Begin Exam' :
-    activeMode === 'theory' ? 'Open Theory Exam' :
-    'Start Practising';
+    'Open Theory Exam';
 
   const handleLaunch = () => {
     if (!isLaunchable) return;
     if (activeMode === 'study') onViewPapers();
     else if (activeMode === 'test') onStartPractice();
-    else if (activeMode === 'theory') onStartTheoryExam?.();
-    else onStartPracticeMode();
+    else onStartTheoryExam?.();
   };
 
   return (
