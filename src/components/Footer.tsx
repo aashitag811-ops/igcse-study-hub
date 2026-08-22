@@ -43,8 +43,8 @@ export default function Footer() {
             <h3 className="font-display text-lg text-[#C9A84C] mb-4">Support</h3>
             <p className="font-sans text-sm text-[#7A6A4A] dark:text-[#7A6A4A] [data-theme='light']_&:text-[#3D2E15] leading-relaxed">
               Need help? Contact us at<br />
-              <a href="mailto:support@studentathenaeum.com" className="text-[#C9A84C] hover:underline">
-                support@studentathenaeum.com
+              <a href="mailto:studentarchive.support@gmail.com" className="text-[#C9A84C] hover:underline">
+                studentarchive.support@gmail.com
               </a>
             </p>
           </div>
