@@ -214,7 +214,7 @@ export default function HeroLibraryALevels() {
   const handleSubjectClick = (subjectId: string) => {
     const all = [...MATHEMATICS, ...SCIENCES, ...LANGUAGES, ...COMMERCE, ...MORE_SUBJECTS];
     const s = all.find(x => x.id === subjectId);
-    if (s) window.location.href = `/alevels/practice?subject=${s.code}`;
+    if (s) window.location.href = `/alevels/browse?subject=${s.code}`;
   };
 
   return (
