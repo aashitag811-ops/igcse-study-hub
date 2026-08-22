@@ -166,7 +166,15 @@ export default function PracticeContentALevels() {
       </div>
 
       <div className="relative w-full max-w-2xl" style={{ zIndex: 3 }}>
-        <BackButton />
+        <div className="flex items-center justify-between">
+          <BackButton />
+          {/* Curriculum switcher */}
+          <div style={{ display:'flex', alignItems:'center', gap:'2px', padding:'3px', borderRadius:'8px', background:'rgba(200,168,76,0.07)', border:'1px solid rgba(200,168,76,0.15)' }}>
+            {([{ label:'IGCSE', href:'/igcse/practice' }, { label:'A Levels', href:'/alevels/practice' }] as const).map(({ label, href }) => (
+              <a key={href} href={href} style={{ fontFamily: SERIF, fontSize:'13px', fontWeight:500, padding:'4px 12px', borderRadius:'6px', color: href === '/alevels/practice' ? '#1a1208' : 'rgba(200,168,76,0.6)', background: href === '/alevels/practice' ? '#C9A84C' : 'transparent', textDecoration:'none', transition:'all 0.2s ease', whiteSpace:'nowrap' }}>{label}</a>
+            ))}
+          </div>
+        </div>
 
         {/* Heading */}
         <div className="text-center mt-6 mb-10">
