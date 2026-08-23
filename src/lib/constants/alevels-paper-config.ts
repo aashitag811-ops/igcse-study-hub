@@ -4,7 +4,7 @@
  *
  * Key differences from IGCSE:
  *  - No Core/Extended split — AS level papers vs A2 level papers instead
- *  - Sciences: Paper 3 = Advanced Practical Skills (in-lab, NO PDF) — omitted
+ *  - Sciences: Paper 3 = Advanced Practical Skills — IS a real written PDF exam
  *  - Sciences: Paper 5 = Planning, Analysis & Evaluation (IS a PDF)
  *  - CS: Paper 4 = computer-based practical (no PDF)
  *  - Economics has TWO MCQ papers: Paper 1 (AS) and Paper 3 (A2)
@@ -25,16 +25,17 @@ export const ALEVEL_PAPER_CONFIG: { [key: string]: ALevelSubjectConfig } = {
   // ── Sciences ────────────────────────────────────────────────────────────────
   // Paper 1 = MCQ (40q, 1h15m) — image-based
   // Paper 2 = AS Level Structured Questions (1h15m, 60 marks)
-  // Paper 3 = Advanced Practical Skills — HANDWRITTEN IN LAB, no PDF
+  // Paper 3 = Advanced Practical Skills (2h) — written exam with real PDF
   // Paper 4 = A Level Structured Questions (2h, 100 marks)
   // Paper 5 = Planning, Analysis and Evaluation (1h15m, 30 marks)
 
   '9700': {
     code: '9700', name: 'Biology',
-    papers: [1, 2, 4, 5],  // 3 omitted — no PDF
+    papers: [1, 2, 3, 4, 5],
     paperDescriptions: {
       1: 'Paper 1 — Multiple Choice (40 questions, 1h15m)',
       2: 'Paper 2 — AS Level Structured Questions (1h15m)',
+      3: 'Paper 3 — Advanced Practical Skills (2h)',
       4: 'Paper 4 — A Level Structured Questions (2h)',
       5: 'Paper 5 — Planning, Analysis and Evaluation (1h15m)',
     },
@@ -43,10 +44,11 @@ export const ALEVEL_PAPER_CONFIG: { [key: string]: ALevelSubjectConfig } = {
   },
   '9701': {
     code: '9701', name: 'Chemistry',
-    papers: [1, 2, 4, 5],
+    papers: [1, 2, 3, 4, 5],
     paperDescriptions: {
       1: 'Paper 1 — Multiple Choice (40 questions, 1h15m)',
       2: 'Paper 2 — AS Level Structured Questions (1h15m)',
+      3: 'Paper 3 — Advanced Practical Skills (2h)',
       4: 'Paper 4 — A Level Structured Questions (2h)',
       5: 'Paper 5 — Planning, Analysis and Evaluation (1h15m)',
     },
@@ -55,10 +57,11 @@ export const ALEVEL_PAPER_CONFIG: { [key: string]: ALevelSubjectConfig } = {
   },
   '9702': {
     code: '9702', name: 'Physics',
-    papers: [1, 2, 4, 5],
+    papers: [1, 2, 3, 4, 5],
     paperDescriptions: {
       1: 'Paper 1 — Multiple Choice (40 questions, 1h15m)',
       2: 'Paper 2 — AS Level Structured Questions (1h15m)',
+      3: 'Paper 3 — Advanced Practical Skills (2h)',
       4: 'Paper 4 — A Level Structured Questions (2h)',
       5: 'Paper 5 — Planning, Analysis and Evaluation (1h15m)',
     },

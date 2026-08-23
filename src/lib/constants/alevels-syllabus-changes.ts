@@ -84,12 +84,13 @@ export const ALEVEL_SYLLABUS_CONFIGURATIONS: ALevelSyllabusConfig[] = [
     ],
   },
 
-  // ── Sciences — AS vs A2 clarification ───────────────────────────────────────
+  // ── Sciences — paper clarification ──────────────────────────────────────────
   {
     subjectCode: '9700',
     componentLabels: [
       { component: '1', yearRange: {}, label: 'Multiple Choice (AS & A2)' },
       { component: '2', yearRange: {}, label: 'AS Level Structured' },
+      { component: '3', yearRange: {}, label: 'Advanced Practical Skills' },
       { component: '4', yearRange: {}, label: 'A Level Structured' },
       { component: '5', yearRange: {}, label: 'Planning, Analysis & Evaluation' },
     ],
@@ -99,6 +100,7 @@ export const ALEVEL_SYLLABUS_CONFIGURATIONS: ALevelSyllabusConfig[] = [
     componentLabels: [
       { component: '1', yearRange: {}, label: 'Multiple Choice (AS & A2)' },
       { component: '2', yearRange: {}, label: 'AS Level Structured' },
+      { component: '3', yearRange: {}, label: 'Advanced Practical Skills' },
       { component: '4', yearRange: {}, label: 'A Level Structured' },
       { component: '5', yearRange: {}, label: 'Planning, Analysis & Evaluation' },
     ],
@@ -108,6 +110,7 @@ export const ALEVEL_SYLLABUS_CONFIGURATIONS: ALevelSyllabusConfig[] = [
     componentLabels: [
       { component: '1', yearRange: {}, label: 'Multiple Choice (AS & A2)' },
       { component: '2', yearRange: {}, label: 'AS Level Structured' },
+      { component: '3', yearRange: {}, label: 'Advanced Practical Skills' },
       { component: '4', yearRange: {}, label: 'A Level Structured' },
       { component: '5', yearRange: {}, label: 'Planning, Analysis & Evaluation' },
     ],

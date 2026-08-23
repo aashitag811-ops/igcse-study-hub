@@ -62,17 +62,17 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const SUBJECTS = {
   // ── Sciences ──────────────────────────────────────────────────────────────
-  // Paper 3 = Advanced Practical Skills exam (2h, handwritten in lab) — NO PDF on PapaCambridge
+  // Paper 3 = Advanced Practical Skills — IS a real written PDF exam
   // Paper 5 = Planning, Analysis & Evaluation — IS a real PDF
   '9700': { name: 'Biology',
     sessions: ['m','s','w'],
-    papers: ['11','12','13','21','22','23','41','42','43','51','52','53'] },
+    papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53'] },
   '9701': { name: 'Chemistry',
     sessions: ['m','s','w'],
-    papers: ['11','12','13','21','22','23','41','42','43','51','52','53'] },
+    papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53'] },
   '9702': { name: 'Physics',
     sessions: ['m','s','w'],
-    papers: ['11','12','13','21','22','23','41','42','43','51','52','53'] },
+    papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53'] },
 
   // ── Mathematics ───────────────────────────────────────────────────────────
   // 9709 post-2020: Papers 1(Pure1) 2(Pure2) 3(Pure3) 4(Mech) 5(Stats1) 6(Stats2) 7(FurtherMech)
@@ -115,8 +115,8 @@ const SUBJECTS = {
     papers: ['11','12','13','21','22','23'] },
 };
 
-// 2010–2025 → two-digit year suffixes "10" … "25"
-const YEARS = Array.from({ length: 16 }, (_, i) => String(10 + i).padStart(2, '0'));
+// 2010–2026 → two-digit year suffixes "10" … "26"
+const YEARS = Array.from({ length: 17 }, (_, i) => String(10 + i).padStart(2, '0'));
 
 // ── Build full download list for one subject ──────────────────────────────────
 function buildList(code) {

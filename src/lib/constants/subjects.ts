@@ -42,6 +42,13 @@ export const SUBJECTS = [
     description: 'Algorithms, Programming, Data Structures'
   },
   {
+    code: '0510',
+    name: 'English as a Second Language',
+    color: 'red',
+    icon: '',
+    description: 'Reading, Writing, Listening'
+  },
+  {
     code: '0455',
     name: 'Economics',
     color: 'yellow',
@@ -75,6 +82,34 @@ export const SUBJECTS = [
     color: 'red',
     icon: '',
     description: 'Reading, Writing, Speaking, Listening'
+  },
+  {
+    code: '0460',
+    name: 'Geography',
+    color: 'green',
+    icon: '',
+    description: 'Geographical Themes, Skills, Fieldwork'
+  },
+  {
+    code: '0470',
+    name: 'History',
+    color: 'orange',
+    icon: '',
+    description: 'Core Content, Depth Studies, Source Analysis'
+  },
+  {
+    code: '0490',
+    name: 'Religious Studies',
+    color: 'indigo',
+    icon: '',
+    description: 'Beliefs, Teachings, Practices, Expressions of Faith'
+  },
+  {
+    code: '0448',
+    name: 'Travel and Tourism',
+    color: 'orange',
+    icon: '',
+    description: 'Tourism Industry, Marketing, Finance'
   },
   {
     code: '0417',

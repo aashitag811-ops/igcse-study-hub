@@ -71,6 +71,16 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
     }
   },
 
+  // COMPUTER SCIENCE
+  '0478': {
+    code: '0478', name: 'Computer Science',
+    papers: [1, 2],
+    paperDescriptions: {
+      1: 'Paper 1 — Theory',
+      2: 'Paper 2 — Problem-solving and Programming'
+    }
+  },
+
   // BUSINESS & ECONOMICS
   '0450': {
     code: '0450', name: 'Business Studies',
@@ -106,6 +116,15 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
       2: 'Paper 2 — Directed Writing and Composition'
     }
   },
+  '0510': {
+    code: '0510', name: 'English as a Second Language',
+    papers: [1, 2, 3],
+    paperDescriptions: {
+      1: 'Paper 1 — Reading and Writing (Core)',
+      2: 'Paper 2 — Reading and Writing (Extended)',
+      3: 'Paper 3 — Listening'
+    }
+  },
   '0520': {
     code: '0520', name: 'French - Foreign Language',
     papers: [1, 2, 4],
@@ -136,9 +155,47 @@ export const SUBJECT_PAPER_CONFIG: { [key: string]: SubjectConfig } = {
   },
   '0457': {
     code: '0457', name: 'Global Perspectives',
-    papers: [1],
+    papers: [1, 2, 3],
     paperDescriptions: {
-      1: 'Paper 1 — Written Examination'
+      1: 'Paper 1 — Written Examination',
+      2: 'Paper 2 — Written Examination (variant 2)',
+      3: 'Paper 3 — Written Examination (variant 3)'
+    }
+  },
+
+  // HUMANITIES
+  '0470': {
+    code: '0470', name: 'History',
+    papers: [1, 2, 4],
+    paperDescriptions: {
+      1: 'Paper 1 — Core Content (Short Answer)',
+      2: 'Paper 2 — Depth Studies (Source-based)',
+      4: 'Paper 4 — Alternative to Coursework'
+    }
+  },
+  '0460': {
+    code: '0460', name: 'Geography',
+    papers: [1, 2, 4],
+    paperDescriptions: {
+      1: 'Paper 1 — Geographical Themes',
+      2: 'Paper 2 — Geographical Skills',
+      4: 'Paper 4 — Alternative to Coursework'
+    }
+  },
+  '0490': {
+    code: '0490', name: 'Religious Studies',
+    papers: [1, 2],
+    paperDescriptions: {
+      1: 'Paper 1 — Beliefs, Teachings and Practices',
+      2: 'Paper 2 — Expressions of Faith'
+    }
+  },
+  '0448': {
+    code: '0448', name: 'Travel and Tourism',
+    papers: [1, 2],
+    paperDescriptions: {
+      1: 'Paper 1 — Core Module (Short Answer)',
+      2: 'Paper 2 — Option Module (Structured)'
     }
   }
 };

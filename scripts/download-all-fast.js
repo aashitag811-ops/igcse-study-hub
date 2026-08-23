@@ -23,22 +23,34 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 // For each subject: which paper components + variants exist
 // Format: "CV" = component C, variant V (e.g. "12" = paper 1, variant 2)
 const SUBJECTS = {
-  '0610': { name: 'Biology',        sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53','61','62','63'] },
-  '0620': { name: 'Chemistry',      sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53','61','62','63'] },
-  '0625': { name: 'Physics',        sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53','61','62','63'] },
-  '0580': { name: 'Mathematics',    sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43'] },
-  '0606': { name: 'Add Maths',      sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
-  '0455': { name: 'Economics',      sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
-  '0452': { name: 'Accounting',     sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
-  '0450': { name: 'Business',       sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
-  '0417': { name: 'ICT',            sessions: ['s','w'],     papers: ['11','12','13','21','22','31','32'] },
-  '0500': { name: 'English',        sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
-  '0520': { name: 'French',         sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','41','42','43'] },
-  '0549': { name: 'Hindi',          sessions: ['s','w'],     papers: [] }, // no QPs on PapaCambridge
-  '0457': { name: 'Global Persp',   sessions: ['s','w'],     papers: ['11','12','13'] },
+  // ── Sciences ─────────────────────────────────────────────────────────────────
+  '0610': { name: 'Biology',                    sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53','61','62','63'] },
+  '0620': { name: 'Chemistry',                  sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53','61','62','63'] },
+  '0625': { name: 'Physics',                    sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43','51','52','53','61','62','63'] },
+  // ── Mathematics ──────────────────────────────────────────────────────────────
+  '0580': { name: 'Mathematics',                sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33','41','42','43'] },
+  '0606': { name: 'Additional Mathematics',     sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
+  // ── Computer Science ─────────────────────────────────────────────────────────
+  '0478': { name: 'Computer Science',           sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
+  // ── Commerce ─────────────────────────────────────────────────────────────────
+  '0455': { name: 'Economics',                  sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
+  '0452': { name: 'Accounting',                 sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
+  '0450': { name: 'Business Studies',           sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
+  '0417': { name: 'ICT',                        sessions: ['s','w'],     papers: ['11','12','13','21','22','31','32'] },
+  '0448': { name: 'Travel and Tourism',         sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
+  // ── Languages ────────────────────────────────────────────────────────────────
+  '0500': { name: 'First Language English',     sessions: ['m','s','w'], papers: ['11','12','13','21','22','23'] },
+  '0510': { name: 'English as Second Language', sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','31','32','33'] },
+  '0520': { name: 'French',                     sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','41','42','43'] },
+  '0549': { name: 'Hindi',                      sessions: ['s','w'],     papers: ['11','12','21','22'] },
+  // ── Humanities ───────────────────────────────────────────────────────────────
+  '0457': { name: 'Global Perspectives',        sessions: ['s','w'],     papers: ['11','12','13'] },
+  '0470': { name: 'History',                    sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','41','42','43'] },
+  '0460': { name: 'Geography',                  sessions: ['m','s','w'], papers: ['11','12','13','21','22','23','41','42','43'] },
+  '0490': { name: 'Religious Studies',          sessions: ['s','w'],     papers: ['11','12','13','21','22','23'] },
 };
 
-const YEARS = Array.from({length: 16}, (_, i) => String(10 + i).padStart(2,'0')); // 10-25
+const YEARS = Array.from({length: 17}, (_, i) => String(10 + i).padStart(2,'0')); // 10-26
 
 // ── Build full file list ─────────────────────────────────────────────────────
 function buildList(subjectCode) {
