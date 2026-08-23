@@ -1,11 +1,13 @@
 // Run this whenever you add new papers to public/papers/
 // node scripts/generate-papers-manifest.js
+// Covers years 2010–2026
 
 const fs = require('fs');
 const path = require('path');
 
 const papersDir  = path.join(__dirname, '../public/papers');
-const pdfsDir    = path.join(__dirname, '../public/pdfs');
+// NOTE: PDFs are served via /api/pdfs proxy (GitHub LFS), not from a local public/pdfs/ folder.
+// We never check for a local PDF file — view-only stubs are always included.
 
 const files = fs.readdirSync(papersDir).filter(f => f.endsWith('.json'));
 
@@ -24,15 +26,17 @@ for (const file of files) {
   // Pattern 1: 0610_m20_qp_22  (canonical format)
   let m = base.match(/^(\d{4})_([msw])(\d{2})_qp_(\d)(\d)$/);
   if (m) {
+    // Skip A-level subject codes (9xxx, 8xxx) — they go in alevels-papers-manifest
+    if (/^[89]/.test(m[1])) continue;
+
     const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
     const qs = d.questions || [];
 
     // Skip completely empty papers — nothing to show
     if (qs.length === 0) continue;
 
-    // Skip viewOnly stubs that have no PDF on disk — nothing to show in any mode
+    // View-only stubs are always included — PDFs are fetched via /api/pdfs proxy
     const isViewOnly = d.viewOnly || (qs[0] && qs[0].viewOnly);
-    if (isViewOnly && !fs.existsSync(path.join(pdfsDir, base + '.pdf'))) continue;
 
     const subjectCode = m[1];
     const year = 2000 + parseInt(m[3]);
@@ -53,8 +57,8 @@ for (const file of files) {
     if (subjectCode === '0455' && component === 2) testModeAvailable = false;
     // Accounting pre-2020 = first 10 questions are MCQ - allow if images parsed
     // (testModeAvailable is already set by allHaveSubjectImg check above)
-    // Non-MCQ subjects
-    if (['0417','0450','0520','0549','0580','0606','0500','0457'].includes(subjectCode)) testModeAvailable = false;
+    // Non-MCQ subjects — view-only (no MCQ paper structure)
+    if (['0417','0448','0450','0457','0460','0470','0478','0490','0500','0510','0520','0549','0580','0606'].includes(subjectCode)) testModeAvailable = false;
 
     papers.push({
       id: base,
@@ -71,6 +75,9 @@ for (const file of files) {
   // Pattern 2: 0455_m15_12  (no _qp_) — only include if no _qp_ version exists
   m = base.match(/^(\d{4})_([msw])(\d{2})_(\d)(\d)$/);
   if (m) {
+    // Skip A-level subject codes (9xxx, 8xxx)
+    if (/^[89]/.test(m[1])) continue;
+
     const qpEquivalent = `${m[1]}_${m[2]}${m[3]}_qp_${m[4]}${m[5]}`;
     if (qpIds.has(qpEquivalent)) continue; // skip — _qp_ version already included
 

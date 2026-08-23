@@ -13,6 +13,60 @@ export interface ALevelPaperEntry {
 
 const aLevelPapers: ALevelPaperEntry[] = [
   {
+    "id": "8021_s26_qp_11",
+    "subjectCode": "8021",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "8021_s26_qp_12",
+    "subjectCode": "8021",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "8021_s26_qp_13",
+    "subjectCode": "8021",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "8021_s26_qp_21",
+    "subjectCode": "8021",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "8021_s26_qp_22",
+    "subjectCode": "8021",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "8021_s26_qp_23",
+    "subjectCode": "8021",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
     "id": "8021_s25_qp_11",
     "subjectCode": "8021",
     "year": 2025,
@@ -765,6 +819,150 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "year": 2019,
     "session": "w",
     "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_m26_qp_12",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_m26_qp_22",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_m26_qp_32",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_m26_qp_42",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "m",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_11",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_12",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_13",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_21",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_22",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_23",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_31",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_32",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_33",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_41",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_42",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9093_s26_qp_43",
+    "subjectCode": "9093",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -3600,6 +3798,114 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "year": 2014,
     "session": "w",
     "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_11",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_12",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_13",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_21",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_22",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_23",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_31",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_32",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_33",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_41",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_42",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9231_s26_qp_43",
+    "subjectCode": "9231",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -6889,6 +7195,114 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "9609_m26_qp_12",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_m26_qp_22",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_m26_qp_32",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_11",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_12",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_13",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_21",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_22",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_23",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_31",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_32",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9609_s26_qp_33",
+    "subjectCode": "9609",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
     "id": "9609_m25_qp_12",
     "subjectCode": "9609",
     "year": 2025,
@@ -8779,6 +9193,87 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "9618_s26_qp_11",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_12",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_13",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_21",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_22",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_23",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_31",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_32",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9618_s26_qp_33",
+    "subjectCode": "9618",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
     "id": "9618_s25_qp_11",
     "subjectCode": "9618",
     "year": 2025,
@@ -9496,6 +9991,186 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_m26_qp_12",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_m26_qp_22",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_m26_qp_33",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_m26_qp_42",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "m",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_m26_qp_52",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "m",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_11",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_12",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_13",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_21",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_22",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_23",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_31",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_32",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_33",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_41",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_42",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_43",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_51",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_52",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9700_s26_qp_53",
+    "subjectCode": "9700",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -13256,6 +13931,186 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "subjectCode": "9700",
     "year": 2010,
     "session": "w",
+    "component": 5,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_m26_qp_12",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_m26_qp_22",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_m26_qp_33",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_m26_qp_42",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "m",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_m26_qp_52",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "m",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_11",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_12",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_13",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_21",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_22",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_23",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_31",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_32",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_33",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_41",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_42",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_43",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_51",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_52",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9701_s26_qp_53",
+    "subjectCode": "9701",
+    "year": 2026,
+    "session": "s",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -17077,6 +17932,186 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "9702_m26_qp_12",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_m26_qp_22",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_m26_qp_33",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_m26_qp_42",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "m",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_m26_qp_52",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "m",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_11",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_12",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_13",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_21",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_22",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_23",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_31",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_32",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_33",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_41",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_42",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_43",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_51",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_52",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9702_s26_qp_53",
+    "subjectCode": "9702",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
     "id": "9702_m25_qp_12",
     "subjectCode": "9702",
     "year": 2025,
@@ -20893,6 +21928,114 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "9706_m26_qp_12",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_m26_qp_22",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_m26_qp_32",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_11",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_12",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_13",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_21",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_22",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_23",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_31",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_32",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9706_s26_qp_33",
+    "subjectCode": "9706",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
     "id": "9706_m25_qp_12",
     "subjectCode": "9706",
     "year": 2025,
@@ -23733,6 +24876,150 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "year": 2010,
     "session": "w",
     "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_m26_qp_12",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_m26_qp_22",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_m26_qp_32",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_m26_qp_42",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "m",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_11",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_12",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_13",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_21",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_22",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_23",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_31",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_32",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_33",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_41",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_42",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9708_s26_qp_43",
+    "subjectCode": "9708",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -27540,6 +28827,222 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "year": 2010,
     "session": "w",
     "component": 4,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_m26_qp_12",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "m",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_m26_qp_22",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "m",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_m26_qp_32",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "m",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_m26_qp_42",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "m",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_m26_qp_52",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "m",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_m26_qp_62",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "m",
+    "component": 6,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_11",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_12",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_13",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 1,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_21",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_22",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_23",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 2,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_31",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_32",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_33",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 3,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_41",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_42",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_43",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 4,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_51",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_52",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_53",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 5,
+    "variant": 3,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_61",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 6,
+    "variant": 1,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_62",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 6,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9709_s26_qp_63",
+    "subjectCode": "9709",
+    "year": 2026,
+    "session": "s",
+    "component": 6,
     "variant": 3,
     "testModeAvailable": false
   },

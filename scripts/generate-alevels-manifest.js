@@ -9,12 +9,12 @@ const fs   = require('fs');
 const path = require('path');
 
 const PAPERS_DIR = path.join(__dirname, '../public/papers');
-const PDFS_DIR   = path.join(__dirname, '../public/pdfs');
+// NOTE: PDFs are served via /api/pdfs proxy (GitHub LFS), not local disk.
 const OUT_TS     = path.join(__dirname, '../src/lib/data/alevels-papers-manifest.ts');
 
 // A-level subject codes recognised by this script
-// 2010–2025 — matches download script
-const YEAR_RANGE = Array.from({ length: 16 }, (_, i) => 2010 + i);
+// 2010–2026
+const YEAR_RANGE = Array.from({ length: 17 }, (_, i) => 2010 + i);
 
 const ALEVEL_CODES = new Set([
   '9700','9701','9702',   // Sciences
@@ -67,10 +67,8 @@ for (const file of files) {
   const qs = d.questions || [];
   if (qs.length === 0) continue;
 
+  // View-only stubs are always included — PDFs are fetched via /api/pdfs proxy
   const isViewOnly = d.viewOnly || (qs[0] && qs[0].viewOnly);
-
-  // Skip view-only stubs that have no PDF on disk
-  if (isViewOnly && !fs.existsSync(path.join(PDFS_DIR, base + '.pdf'))) continue;
 
   const year      = 2000 + parseInt(m[3]);
   const component = parseInt(m[4]);
