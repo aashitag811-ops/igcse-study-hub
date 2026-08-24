@@ -133,7 +133,7 @@ def get_er_pdf(code: str, sess: str) -> Path | None:
         return cached
 
     url = archive_url(code, filename)
-    print(f'      ↓ {url}')
+    print(f'      -> {url}')
     try:
         r = requests.get(url, timeout=60, stream=True)
         if r.status_code != 200:
@@ -146,7 +146,7 @@ def get_er_pdf(code: str, sess: str) -> Path | None:
             return None
         return cached
     except Exception as e:
-        print(f'      ⚠ download failed: {e}')
+        print(f'      ! download failed: {e}')
         return None
 
 
@@ -162,7 +162,7 @@ def full_text_from_pdf(pdf_path: Path) -> str:
                 lines   = [l for l in raw.split('\n') if not is_noise(l)]
                 text   += '\n'.join(lines) + '\n'
     except Exception as e:
-        print(f'      ⚠ PDF read error: {e}')
+        print(f'      ! PDF read error: {e}')
     return text
 
 
@@ -310,7 +310,8 @@ def process_subject(code: str, components: list[str], sessions: list[str]):
                 continue  # nothing to write for this component
 
             out_path.write_text(json.dumps({'notes': notes, 'labels': labels_map},
-                                           indent=2, ensure_ascii=False))
+                                           indent=2, ensure_ascii=True),
+                                encoding='utf-8')
             written += 1
             total += 1
 
@@ -338,7 +339,7 @@ def main():
         print(f'Unknown argument: {arg}')
         sys.exit(1)
 
-    print(f'\n📋 2026 ER Extractor — {len(subjects)} subjects')
+    print(f'\n2026 ER Extractor -- {len(subjects)} subjects')
     print(f'   Output: {OUTPUT_DIR}\n')
 
     grand_total = 0
@@ -346,7 +347,7 @@ def main():
         sessions = SESSIONS_BY_SUBJECT.get(code, ['m', 's'])
         grand_total += process_subject(code, components, sessions)
 
-    print(f'\n✅ Done — {grand_total} er-cache files written')
+    print(f'\nDone -- {grand_total} er-cache files written')
     print('\nNext step: node scripts/generate-coords-2026.mjs')
 
 
