@@ -84,7 +84,7 @@ export function ExaminerReportModal({
       {/* Modal */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
         <div
-          className="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-hidden pointer-events-auto"
+          className="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col pointer-events-auto"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
@@ -110,8 +110,8 @@ export function ExaminerReportModal({
             </button>
           </div>
 
-          {/* Content */}
-          <div className="p-6 overflow-y-auto max-h-[calc(80vh-80px)]">
+          {/* Content — scrollable, takes all remaining height */}
+          <div className="p-6 overflow-y-auto flex-1 min-h-0">
             {sections ? (
               // Parsed sub-parts — render each as its own card
               <div className="flex flex-col gap-3">
@@ -167,7 +167,7 @@ export function ExaminerReportModal({
                     <h3 className="text-sm font-semibold text-amber-900 dark:text-amber-100 mb-2 uppercase tracking-wider">
                       Cambridge Examiner Feedback
                     </h3>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-wrap">
+                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-wrap break-words">
                       {erNote}
                     </p>
                   </div>
@@ -176,8 +176,8 @@ export function ExaminerReportModal({
             )}
 
             {/* Footer note */}
-            <div className="mt-4 text-xs text-slate-500 dark:text-slate-400 italic">
-              This feedback is extracted from the official Cambridge IGCSE Examiner Report,
+            <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 italic">
+              This feedback is extracted from the official Cambridge Examiner Report,
               highlighting common mistakes and areas where students typically struggle.
             </div>
           </div>

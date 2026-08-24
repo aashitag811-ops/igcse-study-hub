@@ -172,10 +172,14 @@ def extract_global_sections(full_text: str) -> dict[str, str]:
         full_text, re.IGNORECASE
     )
     if km_match:
-        section = full_text[km_match.start(): km_match.start() + 1500]
-        lines = [l.strip() for l in section.split("\n") if l.strip() and len(l.strip()) > 15 and not is_noise(l)]
+        # Capture up to 5000 chars; stop before "Comments on specific questions" or "Question 1"
+        raw = full_text[km_match.start(): km_match.start() + 5000]
+        stop = re.search(r'(?:Comments\s+on\s+specific\s+questions|(?:^|\n)Question\s+1\b)', raw, re.IGNORECASE)
+        if stop:
+            raw = raw[:stop.start()]
+        lines = [l.strip() for l in raw.split("\n") if l.strip() and len(l.strip()) > 15 and not is_noise(l)]
         if lines:
-            result["key_messages"] = " ".join(lines[:6])
+            result["key_messages"] = " ".join(lines)
 
     # General comments
     gc_match = re.search(
@@ -183,10 +187,14 @@ def extract_global_sections(full_text: str) -> dict[str, str]:
         full_text, re.IGNORECASE
     )
     if gc_match:
-        section = full_text[gc_match.start(): gc_match.start() + 2000]
-        lines = [l.strip() for l in section.split("\n") if l.strip() and len(l.strip()) > 15 and not is_noise(l)]
+        # Capture up to 5000 chars; stop before "Comments on specific questions" or "Question 1"
+        raw = full_text[gc_match.start(): gc_match.start() + 5000]
+        stop = re.search(r'(?:Comments\s+on\s+specific\s+questions|(?:^|\n)Question\s+1\b)', raw, re.IGNORECASE)
+        if stop:
+            raw = raw[:stop.start()]
+        lines = [l.strip() for l in raw.split("\n") if l.strip() and len(l.strip()) > 15 and not is_noise(l)]
         if lines:
-            result["general_comments"] = " ".join(lines[:8])
+            result["general_comments"] = " ".join(lines)
 
     return result
 
@@ -224,19 +232,19 @@ def extract_question_notes(section_text: str) -> tuple[dict, dict]:
         sub_parts   = re.split(sub_pattern, content)
 
         if len(sub_parts) > 1:
-            # Has sub-parts — extract each
+            # Has sub-parts — extract each (no char limit — show full feedback)
             for j in range(1, len(sub_parts), 2):
                 sub_label = sub_parts[j].lower()
                 sub_text  = sub_parts[j + 1].strip() if j + 1 < len(sub_parts) else ""
                 sub_lines = [l.strip() for l in sub_text.split("\n") if l.strip() and len(l.strip()) > 8 and not is_noise(l)]
                 if sub_lines:
                     key  = f"{q_int}{sub_label}"
-                    note = " ".join(sub_lines)[:1500]
+                    note = " ".join(sub_lines)
                     notes[key]  = note
                     labels[key] = f"Q {q_int}. ({sub_label})"
         else:
-            # No sub-parts — whole question note
-            note = " ".join(lines)[:1500]
+            # No sub-parts — whole question note (no char limit — show full feedback)
+            note = " ".join(lines)
             key  = str(q_int)
             notes[key]  = note
             labels[key] = f"Q {q_int}"

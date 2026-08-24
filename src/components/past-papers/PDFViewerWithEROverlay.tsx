@@ -3,11 +3,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 interface QuestionCoordinate {
-  key: string;    // e.g. "1a", "1di", "22"
-  label: string;  // e.g. "Q 1. (a)", "Q 1. (d) (i)", "Q 22"
+  key: string;
+  label: string;
   topPx: number;
   page: number;
-  // legacy MCQ format support
   qNum?: number;
 }
 
@@ -19,6 +18,86 @@ interface PDFViewerWithEROverlayProps {
   onERClick: (key: string) => void;
 }
 
+// ── Question-number detection from PDF text content ──────────────────────────
+//
+// Cambridge MCQ papers: each question starts with a bold standalone number
+// on its own text item, e.g. "1", "2", ... "40".
+// Theory papers: "Question 1", "1 (a)", etc.
+// We scan every page's text items and look for a number that:
+//   - matches a key in erNotes
+//   - appears near the top of a text item (y < 80% of page height)
+//   - isn't part of a longer number (not "12" matching key "1")
+
+function buildButtonPositionsFromText(
+  pdfDoc: any,
+  erNotes: Record<string, string>,
+  scale: number,
+): Promise<QuestionCoordinate[]> {
+  // Keys we need to place (only numeric question keys — not key_messages etc.)
+  const numericKeys = Object.keys(erNotes).filter(k => /^\d+$/.test(k));
+  // Also sub-part keys like "1a" — we group by top-level question number
+  const topLevelKeys = new Set<string>();
+  Object.keys(erNotes).forEach(k => {
+    const m = k.match(/^(\d+)/);
+    if (m) topLevelKeys.add(m[1]);
+  });
+
+  return (async () => {
+    const results: QuestionCoordinate[] = [];
+    const placed = new Set<string>();
+
+    for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+      const page = await pdfDoc.getPage(pageNum);
+      const viewport = page.getViewport({ scale: 1 });
+      const pageHeight = viewport.height;
+
+      let textContent: any;
+      try {
+        textContent = await page.getTextContent();
+      } catch {
+        continue;
+      }
+
+      // Each item has: str, transform [a,b,c,d,e,f] where (e,f) = (x, y from bottom)
+      const items: Array<{ str: string; y: number; x: number; fontSize: number }> =
+        textContent.items.map((item: any) => ({
+          str: item.str.trim(),
+          // PDF coords: y=0 at bottom. Convert to topPx (y=0 at top)
+          y: pageHeight - item.transform[5],
+          x: item.transform[4],
+          fontSize: Math.abs(item.transform[3]),
+        }));
+
+      // Look for question number items: standalone integers that match a key
+      // We look for items whose text is EXACTLY a question number (or "Question N")
+      for (const item of items) {
+        if (!item.str) continue;
+
+        // Match "Question 3" or standalone "3" or "3."
+        const mFull = item.str.match(/^(?:Question\s+)?(\d{1,2})\.?\s*$/);
+        if (!mFull) continue;
+        const qNum = mFull[1];
+
+        if (!topLevelKeys.has(qNum)) continue;
+        if (placed.has(qNum)) continue;
+
+        // Skip if the Y position is in the bottom 10% (footer area)
+        if (item.y > pageHeight * 0.92) continue;
+
+        results.push({
+          key: qNum,
+          label: `Q ${qNum}`,
+          topPx: item.y,
+          page: pageNum,
+        });
+        placed.add(qNum);
+      }
+    }
+
+    return results;
+  })();
+}
+
 export function PDFViewerWithEROverlay({
   pdfUrl,
   paperId,
@@ -26,7 +105,6 @@ export function PDFViewerWithEROverlay({
   erLabels,
   onERClick
 }: PDFViewerWithEROverlayProps) {
-  const [coordinates, setCoordinates] = useState<QuestionCoordinate[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pdfReady, setPdfReady] = useState(false);
@@ -34,16 +112,17 @@ export function PDFViewerWithEROverlay({
   const canvasWrapperRef = useRef<HTMLDivElement>(null);
   const pdfDocRef = useRef<any>(null);
   const renderTasksRef = useRef<any[]>([]);
-  const pageViewportWidthsRef = useRef<number[]>([]); // natural pixel width per page at scale=1
+  const pageViewportHeightsRef = useRef<number[]>([]);
+  const pageViewportWidthsRef = useRef<number[]>([]);
   const [pdfjsLib, setPdfjsLib] = useState<any>(null);
-  const coordinatesRef = useRef<QuestionCoordinate[]>([]);
+  // Coords detected from PDF text — takes priority over synthetic coords
+  const textCoordsRef = useRef<QuestionCoordinate[]>([]);
+  // Fallback coords from the JSON file (synthetic)
+  const [fallbackCoords, setFallbackCoords] = useState<QuestionCoordinate[]>([]);
   const erNotesRef = useRef<Record<string, string>>({});
-
   const onERClickRef = useRef(onERClick);
-  useEffect(() => { onERClickRef.current = onERClick; }, [onERClick]);
 
-  // Keep refs in sync so the resize handler can read latest values
-  useEffect(() => { coordinatesRef.current = coordinates; }, [coordinates]);
+  useEffect(() => { onERClickRef.current = onERClick; }, [onERClick]);
   useEffect(() => { erNotesRef.current = erNotes; }, [erNotes]);
 
   // Load PDF.js
@@ -54,15 +133,15 @@ export function PDFViewerWithEROverlay({
     }).catch(() => setError('Failed to load PDF library'));
   }, []);
 
-  // Fetch question coordinates
+  // Fetch fallback coords (only used when text extraction finds nothing for a key)
   useEffect(() => {
     fetch(`/api/question-coords/${paperId}`)
       .then(r => r.ok ? r.json() : null)
-      .then(data => { if (data) setCoordinates(data.coordinates || []); })
+      .then(data => { if (data) setFallbackCoords(data.coordinates || []); })
       .catch(() => {});
   }, [paperId]);
 
-  // Render PDF pages into DOM — runs only when pdfUrl or pdfjsLib changes
+  // Render PDF pages + extract text coords
   useEffect(() => {
     if (!pdfjsLib) return;
 
@@ -78,13 +157,13 @@ export function PDFViewerWithEROverlay({
       renderTasksRef.current = [];
       pdfDocRef.current?.destroy();
       pdfDocRef.current = null;
+      pageViewportHeightsRef.current = [];
       pageViewportWidthsRef.current = [];
+      textCoordsRef.current = [];
 
       if (canvasWrapperRef.current) canvasWrapperRef.current.innerHTML = '';
 
       try {
-        // Fetch PDF as a blob through our proxy first — prevents CORS failures
-        // that happen when pdfjs tries to load a cross-origin GitHub LFS CDN URL directly.
         const res = await fetch(pdfUrl);
         if (cancelled) return;
         if (!res.ok) throw new Error(`PDF fetch failed: ${res.status}`);
@@ -102,9 +181,9 @@ export function PDFViewerWithEROverlay({
           if (cancelled) return;
           const page = await pdf.getPage(i);
           const viewport = page.getViewport({ scale });
-
-          // Store natural (scale=1) width for button positioning later
           const naturalViewport = page.getViewport({ scale: 1 });
+
+          pageViewportHeightsRef.current.push(naturalViewport.height);
           pageViewportWidthsRef.current.push(naturalViewport.width);
 
           const wrapper = document.createElement('div');
@@ -127,6 +206,13 @@ export function PDFViewerWithEROverlay({
         }
 
         if (!cancelled) {
+          // Extract text-based positions for all ER keys
+          try {
+            const textCoords = await buildButtonPositionsFromText(pdf, erNotes, scale);
+            if (!cancelled) textCoordsRef.current = textCoords;
+          } catch {
+            // Fall through to synthetic coords
+          }
           setIsLoading(false);
           setPdfReady(true);
         }
@@ -148,109 +234,91 @@ export function PDFViewerWithEROverlay({
     };
   }, [pdfUrl, pdfjsLib]);
 
-  // Inject ER buttons — runs whenever PDF is ready OR coordinates arrive
-  useEffect(() => {
-    if (!pdfReady || !canvasWrapperRef.current) return;
+  // Build merged coordinates: text-detected takes priority, fallback fills gaps
+  const getMergedCoords = (): QuestionCoordinate[] => {
+    const textCoords = textCoordsRef.current;
+    const textKeys = new Set(textCoords.map(c => c.key));
 
-    // Remove old buttons
+    // Add fallback coords for keys not found via text (e.g. key_messages, general_comments)
+    const extras = fallbackCoords.filter(c => !textKeys.has(c.key));
+
+    return [...textCoords, ...extras];
+  };
+
+  const injectButtons = (coords: QuestionCoordinate[]) => {
+    if (!canvasWrapperRef.current) return;
     canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
 
-    if (coordinates.length === 0) return;
+    coords.forEach(coord => {
+      const key = coord.key ?? coord.qNum?.toString() ?? '';
+      const hasNote = !!erNotesRef.current[key];
+      const hasSubparts = !hasNote && Object.keys(erNotesRef.current).some(
+        k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? '')
+      );
+      if (!hasNote && !hasSubparts) return;
 
-    // Use rAF to ensure layout is painted so clientWidth is non-zero
-    requestAnimationFrame(() => {
-      if (!canvasWrapperRef.current) return;
+      const label = erLabels[key] ?? coord.label ?? `Q ${key}`;
 
-      coordinates.forEach(coord => {
-        // Support both new format (key/label) and legacy (qNum)
-        const key   = coord.key ?? coord.qNum?.toString() ?? '';
-        // Check if this key has ER data — either a direct note or any sub-part (e.g. "1a","1b"...)
-        const hasNote = !!erNotes[key];
-        const hasSubparts = !hasNote && Object.keys(erNotes).some(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? ''));
-        if (!hasNote && !hasSubparts) return;
-        // Always pass the bare question key to the click handler so ViewPastPapersPDFMode
-        // can combine all sub-parts into a single modal view
-        const label = coord.label ?? erLabels[key] ?? `Q ${key}`;
+      const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
+        `div[data-page="${coord.page}"]`
+      );
+      if (!wrapper) return;
 
-        const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
-          `div[data-page="${coord.page}"]`
-        );
-        if (!wrapper) return;
+      const naturalHeight = pageViewportHeightsRef.current[coord.page - 1];
+      const naturalWidth  = pageViewportWidthsRef.current[coord.page - 1];
+      const canvas = wrapper.querySelector('canvas');
+      if (!canvas) return;
 
-        const canvas = wrapper.querySelector('canvas');
-        if (!canvas) return;
+      const cssWidth  = wrapper.clientWidth > 0 ? wrapper.clientWidth : (naturalWidth ?? canvas.width / 1.5);
+      const cssHeight = canvas.offsetHeight > 0 ? canvas.offsetHeight : (cssWidth * (naturalHeight ?? canvas.height) / (naturalWidth ?? canvas.width));
+      const scaleX = cssWidth  / (naturalWidth  ?? (canvas.width  / 1.5));
+      const scaleY = cssHeight / (naturalHeight ?? (canvas.height / 1.5));
 
-        const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] ?? (canvas.width / 1.5);
-        const cssWidth = wrapper.clientWidth > 0 ? wrapper.clientWidth : naturalWidth;
-        const scale = cssWidth / naturalWidth;
-        const topCss = coord.topPx * scale;
+      // topPx is in natural (scale=1) PDF coordinates (y=0 at top of page)
+      const topCss = coord.topPx * scaleY;
 
-        const btn = document.createElement('button');
-        btn.className = 'er-btn';
-        btn.style.cssText = [
-          'position:absolute',
-          `top:${topCss}px`,
-          'left:6px',
-          'z-index:50',
-          'background:#f59e0b',
-          'color:#1a0a00',
-          'font-size:10px',
-          'font-weight:700',
-          'padding:2px 6px',
-          'border-radius:4px',
-          'border:1.5px solid #d97706',
-          'cursor:pointer',
-          'box-shadow:0 1px 3px rgba(0,0,0,0.4)',
-          'line-height:1.5',
-          'white-space:nowrap',
-          'transform:translateY(-50%)',
-          'pointer-events:auto',
-        ].join(';');
-        btn.textContent = label;
-        btn.title = `Examiner Report — ${label}`;
-        btn.addEventListener('click', () => onERClickRef.current(key));
-        wrapper.appendChild(btn);
-      });
+      const btn = document.createElement('button');
+      btn.className = 'er-btn';
+      btn.style.cssText = [
+        'position:absolute',
+        `top:${topCss}px`,
+        'left:6px',
+        'z-index:50',
+        'background:#f59e0b',
+        'color:#1a0a00',
+        'font-size:10px',
+        'font-weight:700',
+        'padding:2px 6px',
+        'border-radius:4px',
+        'border:1.5px solid #d97706',
+        'cursor:pointer',
+        'box-shadow:0 1px 3px rgba(0,0,0,0.4)',
+        'line-height:1.5',
+        'white-space:nowrap',
+        'transform:translateY(-50%)',
+        'pointer-events:auto',
+      ].join(';');
+      btn.textContent = label;
+      btn.title = `Examiner Report — ${label}`;
+      btn.addEventListener('click', () => onERClickRef.current(key));
+      wrapper.appendChild(btn);
     });
-  }, [pdfReady, coordinates, erNotes]);
+  };
 
-  // Re-position buttons if the container is resized (e.g. QP/MS toggle)
+  // Inject buttons when PDF is ready
+  useEffect(() => {
+    if (!pdfReady || !canvasWrapperRef.current) return;
+    requestAnimationFrame(() => {
+      injectButtons(getMergedCoords());
+    });
+  }, [pdfReady, fallbackCoords, erNotes]);
+
+  // Re-inject on resize
   useEffect(() => {
     if (!canvasWrapperRef.current) return;
-    const injectButtons = () => {
-      if (!canvasWrapperRef.current) return;
-      canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
-      coordinatesRef.current.forEach(coord => {
-        const key   = coord.key ?? coord.qNum?.toString() ?? '';
-        const hasNote = !!erNotesRef.current[key];
-        const hasSubparts = !hasNote && Object.keys(erNotesRef.current).some(k => k.startsWith(key) && /[a-z]/.test(k[key.length] ?? ''));
-        if (!hasNote && !hasSubparts) return;
-        const label = coord.label ?? erLabels[key] ?? `Q ${key}`;
-        const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(`div[data-page="${coord.page}"]`);
-        if (!wrapper) return;
-        const canvas = wrapper.querySelector('canvas');
-        if (!canvas) return;
-        const naturalWidth = pageViewportWidthsRef.current[coord.page - 1] ?? (canvas.width / 1.5);
-        const cssWidth = wrapper.clientWidth > 0 ? wrapper.clientWidth : naturalWidth;
-        const scale = cssWidth / naturalWidth;
-        const topCss = coord.topPx * scale;
-        const btn = document.createElement('button');
-        btn.className = 'er-btn';
-        btn.style.cssText = [
-          'position:absolute', `top:${topCss}px`, 'left:6px', 'z-index:50',
-          'background:#f59e0b', 'color:#1a0a00', 'font-size:10px', 'font-weight:700',
-          'padding:2px 6px', 'border-radius:4px', 'border:1.5px solid #d97706',
-          'cursor:pointer', 'box-shadow:0 1px 3px rgba(0,0,0,0.4)', 'line-height:1.5',
-          'white-space:nowrap', 'transform:translateY(-50%)', 'pointer-events:auto',
-        ].join(';');
-        btn.textContent = label;
-        btn.title = `Examiner Report — ${label}`;
-        btn.addEventListener('click', () => onERClickRef.current(key));
-        wrapper.appendChild(btn);
-      });
-    };
-
-    const ro = new ResizeObserver(() => { if (coordinatesRef.current.length > 0) injectButtons(); });
+    const ro = new ResizeObserver(() => {
+      if (pdfDocRef.current) injectButtons(getMergedCoords());
+    });
     ro.observe(canvasWrapperRef.current);
     return () => ro.disconnect();
   }, []);
