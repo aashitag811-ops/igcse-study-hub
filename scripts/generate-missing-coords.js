@@ -69,17 +69,24 @@ function synthesiseCoords(keys, paperId) {
   if (content.length === 0) return coordinates;
 
   if (isMCQStyle(content)) {
-    // MCQ: questions numbered. 40 MCQ ≈ 16 pages, so ~2-3 per page (A4 page ≈ 842px at scale 1).
-    // We place ~3 buttons per page, spaced ~280px apart, starting on page 2 (cover is page 1).
+    // MCQ: questions numbered. Cambridge A4 MCQ layout: ~3 questions per page.
+    // Page 1 = cover/instructions, questions start on page 2.
+    // Use the question NUMBER itself (not its array index) to compute page and position,
+    // so sparse keys like [1,3,27] land on the correct page, not all on the same page.
+    //   q 1–3  → page 2 (positions 0,1,2)
+    //   q 4–6  → page 3
+    //   q 27   → page 2 + floor((27-1)/3) = page 2 + 8 = page 10
     const sorted = content.map(Number).sort((a, b) => a - b);
     const PER_PAGE   = 3;
     const PAGE_START = 2;
     const TOP_FIRST  = 100;
     const STEP       = 280;
 
-    sorted.forEach((qNum, idx) => {
-      const groupIdx = Math.floor(idx / PER_PAGE);
-      const posInGroup = idx % PER_PAGE;
+    sorted.forEach((qNum) => {
+      // qNum is 1-based; treat (qNum-1) as its 0-based rank in a full paper
+      const rank = qNum - 1;
+      const groupIdx = Math.floor(rank / PER_PAGE);
+      const posInGroup = rank % PER_PAGE;
       const page = PAGE_START + groupIdx;
       const topPx = TOP_FIRST + posInGroup * STEP;
       coordinates.push({ key: String(qNum), label: buildLabel(String(qNum)), topPx, page });
