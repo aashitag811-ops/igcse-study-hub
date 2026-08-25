@@ -62,6 +62,7 @@ IGCSE_SUBJECTS = {
     '0450': ['11','12','13','21','22','23'],
     '0500': ['11','12','13','21','22','23'],
     '0417': ['11','12','13','21','22','31','32'],
+    '0457': ['11','12','13'],
 }
 
 ALEVEL_SUBJECTS = {
@@ -82,6 +83,24 @@ ALEVEL_SUBJECTS = {
 # Sessions that have ER PDFs confirmed or likely
 IGCSE_SESSIONS  = ['m', 's', 'w']
 ALEVEL_SESSIONS = ['m', 's', 'w']
+
+# ── BestExamHelp fallback slugs for IGCSE ─────────────────────────────────────
+# Many IGCSE ERs not on Archive.org are available on bestexamhelp.com.
+# URL pattern: /exam/cambridge-igcse/{slug}-{code}/{year}/{code}_{sess}_er.pdf
+BEH_IGCSE_SLUGS: dict[str, str] = {
+    '0417': 'information-communication-technology',
+    '0450': 'business-studies',
+    '0452': 'accounting',
+    '0455': 'economics',
+    '0457': 'global-perspectives',
+    '0500': 'first-language-english',
+    '0549': 'hindi-as-a-second-language',
+    '0580': 'mathematics',
+    '0606': 'additional-mathematics',
+    '0610': 'biology',
+    '0620': 'chemistry',
+    '0625': 'physics',
+}
 
 # ── Noise patterns ─────────────────────────────────────────────────────────────
 # These lines are stripped from the raw PDF text before parsing.
@@ -430,44 +449,64 @@ def extract_question_notes(section: str) -> tuple[dict, dict]:
 
 # ── PDF acquisition ────────────────────────────────────────────────────────────
 
+def _download_to_cache(url: str, dest: Path) -> bool:
+    """Download url → dest. Returns True on success (>10 KB)."""
+    try:
+        r = requests.get(url, timeout=60, stream=True,
+                         headers={'User-Agent': 'Mozilla/5.0'})
+        if r.status_code != 200:
+            return False
+        with open(dest, 'wb') as f:
+            for chunk in r.iter_content(65536):
+                f.write(chunk)
+        if dest.stat().st_size < 10_000:
+            dest.unlink()
+            return False
+        return True
+    except Exception as e:
+        print(f'      ! download failed: {e}')
+        if dest.exists():
+            dest.unlink()
+        return False
+
+
 def get_pdf_path(code: str, session: str) -> Path | None:
     """
     Return path to ER PDF.
     Priority:
       1. scripts/pastpapers-2026/<code>_<session>_er.pdf  (local 2026 folder)
-      2. TEMP_DIR/<code>_<session>_er.pdf                 (already downloaded)
-      3. Archive.org download
+      2. TEMP_DIR/<code>_<session>_er.pdf                 (already cached)
+      3. Archive.org
+      4. BestExamHelp (IGCSE only — has many sessions Archive.org misses)
     """
     filename = f'{code}_{session}_er.pdf'
 
-    # Check local 2026 folder (only for 2026 sessions)
+    # 1. Local 2026 folder
     if session.endswith('26'):
         local = LOCAL_2026 / filename
         if local.exists() and local.stat().st_size > 10_000:
             return local
 
-    # Check temp cache
+    # 2. Already cached
     cached = TEMP_DIR / filename
     if cached.exists() and cached.stat().st_size > 10_000:
         return cached
 
-    # Download from Archive.org
+    # 3. Archive.org
     base = ALEVEL_ARCHIVE if code[0] in ('9', '8') else IGCSE_ARCHIVE
-    url  = f'{base}/{filename}'
-    try:
-        r = requests.get(url, timeout=60, stream=True)
-        if r.status_code != 200:
-            return None
-        with open(cached, 'wb') as f:
-            for chunk in r.iter_content(65536):
-                f.write(chunk)
-        if cached.stat().st_size < 10_000:
-            cached.unlink()
-            return None
+    if _download_to_cache(f'{base}/{filename}', cached):
         return cached
-    except Exception as e:
-        print(f'      ! download failed: {e}')
-        return None
+
+    # 4. BestExamHelp (IGCSE only)
+    slug = BEH_IGCSE_SLUGS.get(code)
+    if slug:
+        yr_full = str(2000 + int(session[1:]))
+        beh_url = (f'https://bestexamhelp.com/exam/cambridge-igcse/'
+                   f'{slug}-{code}/{yr_full}/{filename}')
+        if _download_to_cache(beh_url, cached):
+            return cached
+
+    return None
 
 
 # ── Processing ─────────────────────────────────────────────────────────────────
