@@ -10000,7 +10000,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m26_qp_22",
@@ -10045,7 +10045,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s26_qp_12",
@@ -10054,7 +10054,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s26_qp_13",
@@ -10063,7 +10063,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s26_qp_21",
@@ -10180,7 +10180,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m25_qp_22",
@@ -10216,7 +10216,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s25_qp_12",
@@ -10225,7 +10225,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s25_qp_13",
@@ -10234,7 +10234,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s25_qp_21",
@@ -10324,7 +10324,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w25_qp_12",
@@ -10333,7 +10333,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w25_qp_13",
@@ -10342,7 +10342,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w25_qp_21",
@@ -10432,7 +10432,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m24_qp_22",
@@ -10468,7 +10468,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s24_qp_12",
@@ -10477,7 +10477,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s24_qp_13",
@@ -10486,7 +10486,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s24_qp_21",
@@ -10576,7 +10576,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w24_qp_12",
@@ -10585,7 +10585,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w24_qp_13",
@@ -10594,7 +10594,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w24_qp_21",
@@ -10684,7 +10684,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m23_qp_22",
@@ -10720,7 +10720,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s23_qp_12",
@@ -10729,7 +10729,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s23_qp_13",
@@ -10738,7 +10738,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s23_qp_21",
@@ -10828,7 +10828,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w23_qp_12",
@@ -10837,7 +10837,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w23_qp_13",
@@ -10846,7 +10846,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w23_qp_21",
@@ -10936,7 +10936,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m22_qp_22",
@@ -10972,7 +10972,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s22_qp_12",
@@ -10981,7 +10981,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s22_qp_13",
@@ -10990,7 +10990,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s22_qp_21",
@@ -11080,7 +11080,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w22_qp_12",
@@ -11089,7 +11089,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w22_qp_13",
@@ -11098,7 +11098,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w22_qp_21",
@@ -11188,7 +11188,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m21_qp_22",
@@ -11224,7 +11224,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s21_qp_12",
@@ -11233,7 +11233,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s21_qp_13",
@@ -11242,7 +11242,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s21_qp_21",
@@ -11332,7 +11332,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w21_qp_12",
@@ -11341,7 +11341,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w21_qp_13",
@@ -11350,7 +11350,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w21_qp_21",
@@ -11440,7 +11440,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s20_qp_12",
@@ -11449,7 +11449,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s20_qp_13",
@@ -11458,7 +11458,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s20_qp_21",
@@ -11548,7 +11548,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w20_qp_12",
@@ -11557,7 +11557,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w20_qp_13",
@@ -11566,7 +11566,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w20_qp_21",
@@ -11656,7 +11656,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m19_qp_22",
@@ -11692,7 +11692,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s19_qp_12",
@@ -11701,7 +11701,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s19_qp_13",
@@ -11710,7 +11710,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s19_qp_21",
@@ -11800,7 +11800,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w19_qp_12",
@@ -11809,7 +11809,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w19_qp_13",
@@ -11818,7 +11818,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w19_qp_21",
@@ -11908,7 +11908,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m18_qp_22",
@@ -11944,7 +11944,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s18_qp_12",
@@ -11953,7 +11953,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s18_qp_13",
@@ -11962,7 +11962,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s18_qp_21",
@@ -12052,7 +12052,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w18_qp_12",
@@ -12061,7 +12061,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w18_qp_13",
@@ -12070,7 +12070,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w18_qp_21",
@@ -12160,7 +12160,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m17_qp_22",
@@ -12196,7 +12196,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s17_qp_12",
@@ -12205,7 +12205,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s17_qp_13",
@@ -12214,7 +12214,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s17_qp_21",
@@ -12304,7 +12304,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w17_qp_12",
@@ -12313,7 +12313,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w17_qp_13",
@@ -12322,7 +12322,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w17_qp_21",
@@ -12412,7 +12412,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m16_qp_22",
@@ -12439,7 +12439,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s16_qp_12",
@@ -12448,7 +12448,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s16_qp_13",
@@ -12457,7 +12457,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s16_qp_21",
@@ -12547,7 +12547,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w16_qp_12",
@@ -12556,7 +12556,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w16_qp_13",
@@ -12565,7 +12565,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w16_qp_21",
@@ -12655,7 +12655,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s15_qp_12",
@@ -12664,7 +12664,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s15_qp_13",
@@ -12673,7 +12673,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s15_qp_21",
@@ -12763,7 +12763,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w15_qp_12",
@@ -12772,7 +12772,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w15_qp_13",
@@ -12781,7 +12781,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w15_qp_21",
@@ -12871,7 +12871,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s14_qp_12",
@@ -12880,7 +12880,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s14_qp_13",
@@ -12889,7 +12889,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s14_qp_21",
@@ -12979,7 +12979,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w14_qp_12",
@@ -12988,7 +12988,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w14_qp_13",
@@ -12997,7 +12997,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w14_qp_21",
@@ -13087,7 +13087,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s13_qp_12",
@@ -13096,7 +13096,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s13_qp_13",
@@ -13105,7 +13105,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s13_qp_21",
@@ -13195,7 +13195,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w13_qp_12",
@@ -13204,7 +13204,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w13_qp_13",
@@ -13213,7 +13213,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w13_qp_21",
@@ -13294,7 +13294,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s12_qp_12",
@@ -13303,7 +13303,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s12_qp_13",
@@ -13312,7 +13312,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s12_qp_21",
@@ -13402,7 +13402,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w12_qp_12",
@@ -13411,7 +13411,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w12_qp_13",
@@ -13420,7 +13420,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w12_qp_21",
@@ -13510,7 +13510,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s11_qp_12",
@@ -13519,7 +13519,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s11_qp_13",
@@ -13528,7 +13528,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s11_qp_21",
@@ -13618,7 +13618,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w11_qp_12",
@@ -13627,7 +13627,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w11_qp_13",
@@ -13636,7 +13636,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w11_qp_21",
@@ -13726,7 +13726,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s10_qp_12",
@@ -13735,7 +13735,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s10_qp_13",
@@ -13744,7 +13744,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_s10_qp_21",
@@ -13834,7 +13834,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w10_qp_12",
@@ -13843,7 +13843,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w10_qp_13",
@@ -13852,7 +13852,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_w10_qp_21",
@@ -13942,7 +13942,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m26_qp_22",
@@ -13987,7 +13987,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s26_qp_12",
@@ -13996,7 +13996,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s26_qp_13",
@@ -14005,7 +14005,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s26_qp_21",
@@ -14122,7 +14122,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m25_qp_22",
@@ -14158,7 +14158,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s25_qp_12",
@@ -14167,7 +14167,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s25_qp_13",
@@ -14176,7 +14176,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s25_qp_21",
@@ -14266,7 +14266,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w25_qp_12",
@@ -14275,7 +14275,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w25_qp_13",
@@ -14284,7 +14284,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w25_qp_21",
@@ -14374,7 +14374,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m24_qp_22",
@@ -14410,7 +14410,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s24_qp_12",
@@ -14419,7 +14419,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s24_qp_13",
@@ -14428,7 +14428,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s24_qp_21",
@@ -14518,7 +14518,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w24_qp_12",
@@ -14527,7 +14527,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w24_qp_13",
@@ -14536,7 +14536,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w24_qp_21",
@@ -14626,7 +14626,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m23_qp_22",
@@ -14662,7 +14662,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s23_qp_12",
@@ -14671,7 +14671,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s23_qp_13",
@@ -14680,7 +14680,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s23_qp_21",
@@ -14770,7 +14770,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w23_qp_12",
@@ -14779,7 +14779,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w23_qp_13",
@@ -14788,7 +14788,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w23_qp_21",
@@ -14878,7 +14878,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m22_qp_22",
@@ -14914,7 +14914,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s22_qp_12",
@@ -14923,7 +14923,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s22_qp_13",
@@ -14932,7 +14932,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s22_qp_21",
@@ -15022,7 +15022,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w22_qp_12",
@@ -15031,7 +15031,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w22_qp_13",
@@ -15040,7 +15040,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w22_qp_21",
@@ -15130,7 +15130,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m21_qp_22",
@@ -15166,7 +15166,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s21_qp_12",
@@ -15175,7 +15175,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s21_qp_13",
@@ -15184,7 +15184,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s21_qp_21",
@@ -15274,7 +15274,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w21_qp_12",
@@ -15283,7 +15283,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w21_qp_13",
@@ -15292,7 +15292,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w21_qp_21",
@@ -15382,7 +15382,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m20_qp_22",
@@ -15418,7 +15418,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s20_qp_12",
@@ -15427,7 +15427,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s20_qp_13",
@@ -15436,7 +15436,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s20_qp_21",
@@ -15526,7 +15526,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w20_qp_12",
@@ -15535,7 +15535,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w20_qp_13",
@@ -15544,7 +15544,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w20_qp_21",
@@ -15634,7 +15634,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m19_qp_22",
@@ -15670,7 +15670,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s19_qp_12",
@@ -15679,7 +15679,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s19_qp_13",
@@ -15688,7 +15688,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s19_qp_21",
@@ -15778,7 +15778,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w19_qp_12",
@@ -15787,7 +15787,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w19_qp_13",
@@ -15796,7 +15796,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w19_qp_21",
@@ -15886,7 +15886,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m18_qp_22",
@@ -15922,7 +15922,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s18_qp_12",
@@ -15931,7 +15931,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s18_qp_13",
@@ -15940,7 +15940,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s18_qp_21",
@@ -16030,7 +16030,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w18_qp_12",
@@ -16039,7 +16039,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w18_qp_13",
@@ -16048,7 +16048,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w18_qp_21",
@@ -16138,7 +16138,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m17_qp_22",
@@ -16174,7 +16174,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s17_qp_12",
@@ -16183,7 +16183,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s17_qp_13",
@@ -16192,7 +16192,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s17_qp_21",
@@ -16282,7 +16282,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w17_qp_12",
@@ -16291,7 +16291,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w17_qp_13",
@@ -16300,7 +16300,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w17_qp_21",
@@ -16390,7 +16390,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_m16_qp_22",
@@ -16426,7 +16426,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s16_qp_12",
@@ -16435,7 +16435,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s16_qp_13",
@@ -16444,7 +16444,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s16_qp_21",
@@ -16534,7 +16534,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w16_qp_12",
@@ -16543,7 +16543,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w16_qp_13",
@@ -16552,7 +16552,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w16_qp_21",
@@ -16642,7 +16642,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s15_qp_12",
@@ -16651,7 +16651,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s15_qp_13",
@@ -16660,7 +16660,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s15_qp_21",
@@ -16750,7 +16750,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w15_qp_12",
@@ -16759,7 +16759,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w15_qp_13",
@@ -16768,7 +16768,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w15_qp_21",
@@ -16858,7 +16858,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s14_qp_12",
@@ -16867,7 +16867,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s14_qp_13",
@@ -16876,7 +16876,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s14_qp_21",
@@ -16966,7 +16966,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w14_qp_12",
@@ -16975,7 +16975,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w14_qp_13",
@@ -16984,7 +16984,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w14_qp_21",
@@ -17074,7 +17074,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s13_qp_12",
@@ -17083,7 +17083,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s13_qp_13",
@@ -17092,7 +17092,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s13_qp_21",
@@ -17182,7 +17182,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w13_qp_12",
@@ -17191,7 +17191,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w13_qp_13",
@@ -17200,7 +17200,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w13_qp_21",
@@ -17290,7 +17290,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s12_qp_12",
@@ -17299,7 +17299,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s12_qp_13",
@@ -17308,7 +17308,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s12_qp_21",
@@ -17398,7 +17398,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w12_qp_12",
@@ -17407,7 +17407,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w12_qp_13",
@@ -17416,7 +17416,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w12_qp_21",
@@ -17506,7 +17506,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s11_qp_12",
@@ -17515,7 +17515,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s11_qp_13",
@@ -17524,7 +17524,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s11_qp_21",
@@ -17614,7 +17614,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w11_qp_12",
@@ -17623,7 +17623,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w11_qp_13",
@@ -17632,7 +17632,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w11_qp_21",
@@ -17722,7 +17722,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s10_qp_12",
@@ -17731,7 +17731,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s10_qp_13",
@@ -17740,7 +17740,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_s10_qp_21",
@@ -17830,7 +17830,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w10_qp_12",
@@ -17839,7 +17839,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w10_qp_13",
@@ -17848,7 +17848,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9701_w10_qp_21",
@@ -17938,7 +17938,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m26_qp_22",
@@ -17983,7 +17983,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s26_qp_12",
@@ -17992,7 +17992,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s26_qp_13",
@@ -18001,7 +18001,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s26_qp_21",
@@ -18118,7 +18118,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m25_qp_22",
@@ -18154,7 +18154,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s25_qp_12",
@@ -18163,7 +18163,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s25_qp_13",
@@ -18172,7 +18172,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s25_qp_21",
@@ -18262,7 +18262,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w25_qp_12",
@@ -18271,7 +18271,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w25_qp_13",
@@ -18280,7 +18280,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w25_qp_21",
@@ -18370,7 +18370,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m24_qp_22",
@@ -18406,7 +18406,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s24_qp_12",
@@ -18415,7 +18415,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s24_qp_13",
@@ -18424,7 +18424,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s24_qp_21",
@@ -18514,7 +18514,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w24_qp_12",
@@ -18523,7 +18523,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w24_qp_13",
@@ -18532,7 +18532,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w24_qp_21",
@@ -18622,7 +18622,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m23_qp_22",
@@ -18658,7 +18658,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s23_qp_12",
@@ -18667,7 +18667,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s23_qp_13",
@@ -18676,7 +18676,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s23_qp_21",
@@ -18766,7 +18766,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w23_qp_12",
@@ -18775,7 +18775,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w23_qp_13",
@@ -18784,7 +18784,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w23_qp_21",
@@ -18874,7 +18874,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m22_qp_22",
@@ -18910,7 +18910,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s22_qp_12",
@@ -18919,7 +18919,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s22_qp_13",
@@ -18928,7 +18928,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s22_qp_21",
@@ -19018,7 +19018,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w22_qp_12",
@@ -19027,7 +19027,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w22_qp_13",
@@ -19036,7 +19036,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w22_qp_21",
@@ -19126,7 +19126,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m21_qp_22",
@@ -19162,7 +19162,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s21_qp_12",
@@ -19171,7 +19171,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s21_qp_13",
@@ -19180,7 +19180,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s21_qp_21",
@@ -19270,7 +19270,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w21_qp_12",
@@ -19279,7 +19279,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w21_qp_13",
@@ -19288,7 +19288,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w21_qp_21",
@@ -19378,7 +19378,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m20_qp_22",
@@ -19414,7 +19414,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s20_qp_12",
@@ -19423,7 +19423,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s20_qp_13",
@@ -19432,7 +19432,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s20_qp_21",
@@ -19522,7 +19522,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w20_qp_12",
@@ -19531,7 +19531,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w20_qp_13",
@@ -19540,7 +19540,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w20_qp_21",
@@ -19630,7 +19630,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m19_qp_22",
@@ -19666,7 +19666,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s19_qp_12",
@@ -19675,7 +19675,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s19_qp_13",
@@ -19684,7 +19684,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s19_qp_21",
@@ -19774,7 +19774,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w19_qp_12",
@@ -19783,7 +19783,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w19_qp_13",
@@ -19792,7 +19792,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w19_qp_21",
@@ -19882,7 +19882,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m18_qp_22",
@@ -19918,7 +19918,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s18_qp_12",
@@ -19927,7 +19927,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s18_qp_13",
@@ -19936,7 +19936,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s18_qp_21",
@@ -20026,7 +20026,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w18_qp_12",
@@ -20035,7 +20035,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w18_qp_13",
@@ -20044,7 +20044,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w18_qp_21",
@@ -20134,7 +20134,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m17_qp_22",
@@ -20170,7 +20170,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s17_qp_12",
@@ -20179,7 +20179,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s17_qp_13",
@@ -20188,7 +20188,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s17_qp_21",
@@ -20278,7 +20278,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w17_qp_12",
@@ -20287,7 +20287,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w17_qp_13",
@@ -20296,7 +20296,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w17_qp_21",
@@ -20386,7 +20386,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_m16_qp_22",
@@ -20422,7 +20422,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s16_qp_12",
@@ -20431,7 +20431,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s16_qp_13",
@@ -20440,7 +20440,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s16_qp_21",
@@ -20530,7 +20530,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w16_qp_12",
@@ -20539,7 +20539,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w16_qp_13",
@@ -20548,7 +20548,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w16_qp_21",
@@ -20638,7 +20638,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s15_qp_12",
@@ -20647,7 +20647,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s15_qp_13",
@@ -20656,7 +20656,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s15_qp_21",
@@ -20746,7 +20746,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w15_qp_12",
@@ -20755,7 +20755,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w15_qp_13",
@@ -20764,7 +20764,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w15_qp_21",
@@ -20854,7 +20854,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s14_qp_12",
@@ -20863,7 +20863,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s14_qp_13",
@@ -20872,7 +20872,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s14_qp_21",
@@ -20962,7 +20962,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w14_qp_12",
@@ -20971,7 +20971,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w14_qp_13",
@@ -20980,7 +20980,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w14_qp_21",
@@ -21070,7 +21070,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s13_qp_12",
@@ -21079,7 +21079,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s13_qp_13",
@@ -21088,7 +21088,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s13_qp_21",
@@ -21178,7 +21178,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w13_qp_12",
@@ -21187,7 +21187,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w13_qp_13",
@@ -21196,7 +21196,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w13_qp_21",
@@ -21286,7 +21286,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s12_qp_12",
@@ -21295,7 +21295,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s12_qp_13",
@@ -21304,7 +21304,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s12_qp_21",
@@ -21394,7 +21394,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w12_qp_12",
@@ -21403,7 +21403,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w12_qp_13",
@@ -21412,7 +21412,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w12_qp_21",
@@ -21502,7 +21502,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s11_qp_12",
@@ -21511,7 +21511,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s11_qp_13",
@@ -21520,7 +21520,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s11_qp_21",
@@ -21610,7 +21610,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w11_qp_12",
@@ -21619,7 +21619,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w11_qp_13",
@@ -21628,7 +21628,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w11_qp_21",
@@ -21718,7 +21718,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s10_qp_12",
@@ -21727,7 +21727,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s10_qp_13",
@@ -21736,7 +21736,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_s10_qp_21",
@@ -21826,7 +21826,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w10_qp_12",
@@ -21835,7 +21835,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w10_qp_13",
@@ -21844,7 +21844,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9702_w10_qp_21",
@@ -21934,7 +21934,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m26_qp_22",
@@ -21961,7 +21961,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s26_qp_12",
@@ -21970,7 +21970,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s26_qp_13",
@@ -21979,7 +21979,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s26_qp_21",
@@ -22042,7 +22042,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m25_qp_22",
@@ -22069,7 +22069,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s25_qp_12",
@@ -22078,7 +22078,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s25_qp_13",
@@ -22087,7 +22087,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s25_qp_21",
@@ -22150,7 +22150,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w25_qp_12",
@@ -22159,7 +22159,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w25_qp_13",
@@ -22168,7 +22168,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w25_qp_21",
@@ -22231,7 +22231,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m24_qp_22",
@@ -22258,7 +22258,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s24_qp_12",
@@ -22267,7 +22267,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s24_qp_13",
@@ -22276,7 +22276,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s24_qp_21",
@@ -22339,7 +22339,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w24_qp_12",
@@ -22348,7 +22348,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w24_qp_13",
@@ -22357,7 +22357,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w24_qp_21",
@@ -22420,7 +22420,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m23_qp_22",
@@ -22447,7 +22447,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s23_qp_12",
@@ -22456,7 +22456,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s23_qp_13",
@@ -22465,7 +22465,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s23_qp_21",
@@ -22528,7 +22528,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w23_qp_12",
@@ -22537,7 +22537,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w23_qp_13",
@@ -22546,7 +22546,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w23_qp_21",
@@ -22609,7 +22609,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m22_qp_22",
@@ -22636,7 +22636,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s22_qp_12",
@@ -22645,7 +22645,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s22_qp_13",
@@ -22654,7 +22654,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s22_qp_21",
@@ -22717,7 +22717,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w22_qp_12",
@@ -22726,7 +22726,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w22_qp_13",
@@ -22735,7 +22735,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w22_qp_21",
@@ -22798,7 +22798,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m21_qp_22",
@@ -22825,7 +22825,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s21_qp_12",
@@ -22834,7 +22834,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s21_qp_13",
@@ -22843,7 +22843,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s21_qp_21",
@@ -22906,7 +22906,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w21_qp_12",
@@ -22915,7 +22915,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w21_qp_13",
@@ -22924,7 +22924,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w21_qp_21",
@@ -22987,7 +22987,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m20_qp_22",
@@ -23014,7 +23014,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s20_qp_12",
@@ -23023,7 +23023,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s20_qp_13",
@@ -23032,7 +23032,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s20_qp_21",
@@ -23095,7 +23095,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w20_qp_12",
@@ -23104,7 +23104,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w20_qp_13",
@@ -23113,7 +23113,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w20_qp_21",
@@ -23176,7 +23176,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m19_qp_22",
@@ -23203,7 +23203,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s19_qp_12",
@@ -23212,7 +23212,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s19_qp_13",
@@ -23221,7 +23221,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s19_qp_21",
@@ -23284,7 +23284,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w19_qp_12",
@@ -23293,7 +23293,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w19_qp_13",
@@ -23302,7 +23302,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w19_qp_21",
@@ -23365,7 +23365,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m18_qp_22",
@@ -23392,7 +23392,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s18_qp_12",
@@ -23401,7 +23401,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s18_qp_13",
@@ -23410,7 +23410,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s18_qp_21",
@@ -23473,7 +23473,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w18_qp_12",
@@ -23482,7 +23482,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w18_qp_13",
@@ -23491,7 +23491,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w18_qp_21",
@@ -23554,7 +23554,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m17_qp_22",
@@ -23581,7 +23581,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s17_qp_12",
@@ -23590,7 +23590,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s17_qp_13",
@@ -23599,7 +23599,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s17_qp_21",
@@ -23662,7 +23662,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w17_qp_12",
@@ -23671,7 +23671,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w17_qp_13",
@@ -23680,7 +23680,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w17_qp_21",
@@ -23743,7 +23743,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_m16_qp_22",
@@ -23770,7 +23770,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s16_qp_12",
@@ -23779,7 +23779,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s16_qp_13",
@@ -23788,7 +23788,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s16_qp_21",
@@ -23851,7 +23851,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w16_qp_12",
@@ -23860,7 +23860,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w16_qp_13",
@@ -23869,7 +23869,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w16_qp_21",
@@ -23932,7 +23932,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s15_qp_12",
@@ -23941,7 +23941,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s15_qp_13",
@@ -23950,7 +23950,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s15_qp_21",
@@ -23995,7 +23995,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w15_qp_12",
@@ -24004,7 +24004,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w15_qp_13",
@@ -24013,7 +24013,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w15_qp_21",
@@ -24076,7 +24076,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s14_qp_12",
@@ -24085,7 +24085,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s14_qp_13",
@@ -24094,7 +24094,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s14_qp_21",
@@ -24157,7 +24157,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w14_qp_12",
@@ -24166,7 +24166,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w14_qp_13",
@@ -24175,7 +24175,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w14_qp_21",
@@ -24238,7 +24238,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s13_qp_12",
@@ -24247,7 +24247,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s13_qp_13",
@@ -24256,7 +24256,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s13_qp_21",
@@ -24319,7 +24319,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w13_qp_12",
@@ -24328,7 +24328,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w13_qp_13",
@@ -24337,7 +24337,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w13_qp_21",
@@ -24400,7 +24400,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s12_qp_12",
@@ -24409,7 +24409,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s12_qp_13",
@@ -24418,7 +24418,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s12_qp_21",
@@ -24481,7 +24481,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w12_qp_12",
@@ -24490,7 +24490,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w12_qp_13",
@@ -24499,7 +24499,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w12_qp_21",
@@ -24562,7 +24562,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s11_qp_12",
@@ -24571,7 +24571,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s11_qp_13",
@@ -24580,7 +24580,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s11_qp_21",
@@ -24643,7 +24643,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w11_qp_12",
@@ -24652,7 +24652,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w11_qp_13",
@@ -24661,7 +24661,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w11_qp_21",
@@ -24724,7 +24724,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s10_qp_12",
@@ -24733,7 +24733,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s10_qp_13",
@@ -24742,7 +24742,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_s10_qp_21",
@@ -24805,7 +24805,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w10_qp_12",
@@ -24814,7 +24814,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w10_qp_13",
@@ -24823,7 +24823,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9706_w10_qp_21",
@@ -24886,7 +24886,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m26_qp_22",
@@ -24904,7 +24904,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m26_qp_42",
@@ -24922,7 +24922,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s26_qp_12",
@@ -24931,7 +24931,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s26_qp_13",
@@ -24940,7 +24940,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s26_qp_21",
@@ -24976,7 +24976,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s26_qp_32",
@@ -24985,7 +24985,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s26_qp_33",
@@ -24994,7 +24994,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s26_qp_41",
@@ -25030,7 +25030,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m25_qp_22",
@@ -25048,7 +25048,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m25_qp_42",
@@ -25066,7 +25066,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s25_qp_12",
@@ -25075,7 +25075,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s25_qp_13",
@@ -25084,7 +25084,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s25_qp_21",
@@ -25120,7 +25120,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s25_qp_32",
@@ -25129,7 +25129,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s25_qp_33",
@@ -25138,7 +25138,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s25_qp_41",
@@ -25174,7 +25174,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w25_qp_12",
@@ -25183,7 +25183,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w25_qp_13",
@@ -25192,7 +25192,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w25_qp_21",
@@ -25228,7 +25228,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w25_qp_32",
@@ -25237,7 +25237,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w25_qp_33",
@@ -25246,7 +25246,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w25_qp_41",
@@ -25282,7 +25282,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m24_qp_22",
@@ -25300,7 +25300,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m24_qp_42",
@@ -25318,7 +25318,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s24_qp_13",
@@ -25327,7 +25327,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s24_qp_21",
@@ -25363,7 +25363,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s24_qp_32",
@@ -25372,7 +25372,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s24_qp_33",
@@ -25381,7 +25381,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s24_qp_41",
@@ -25417,7 +25417,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w24_qp_12",
@@ -25426,7 +25426,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w24_qp_13",
@@ -25435,7 +25435,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w24_qp_21",
@@ -25471,7 +25471,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w24_qp_32",
@@ -25480,7 +25480,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w24_qp_33",
@@ -25489,7 +25489,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w24_qp_41",
@@ -25525,7 +25525,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m23_qp_22",
@@ -25543,7 +25543,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m23_qp_42",
@@ -25561,7 +25561,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s23_qp_12",
@@ -25570,7 +25570,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s23_qp_13",
@@ -25579,7 +25579,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s23_qp_21",
@@ -25615,7 +25615,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s23_qp_32",
@@ -25624,7 +25624,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s23_qp_33",
@@ -25633,7 +25633,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s23_qp_41",
@@ -25669,7 +25669,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w23_qp_12",
@@ -25678,7 +25678,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w23_qp_13",
@@ -25687,7 +25687,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w23_qp_21",
@@ -25723,7 +25723,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w23_qp_32",
@@ -25732,7 +25732,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w23_qp_33",
@@ -25741,7 +25741,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w23_qp_41",
@@ -25777,7 +25777,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m22_qp_22",
@@ -25795,7 +25795,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m22_qp_42",
@@ -25813,7 +25813,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s22_qp_12",
@@ -25822,7 +25822,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s22_qp_13",
@@ -25831,7 +25831,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s22_qp_21",
@@ -25867,7 +25867,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s22_qp_32",
@@ -25876,7 +25876,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s22_qp_33",
@@ -25885,7 +25885,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s22_qp_41",
@@ -25921,7 +25921,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w22_qp_12",
@@ -25930,7 +25930,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w22_qp_13",
@@ -25939,7 +25939,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w22_qp_21",
@@ -25975,7 +25975,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w22_qp_32",
@@ -25984,7 +25984,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w22_qp_33",
@@ -25993,7 +25993,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w22_qp_41",
@@ -26029,7 +26029,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m21_qp_22",
@@ -26047,7 +26047,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m21_qp_42",
@@ -26065,7 +26065,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s21_qp_12",
@@ -26074,7 +26074,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s21_qp_13",
@@ -26083,7 +26083,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s21_qp_21",
@@ -26119,7 +26119,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s21_qp_32",
@@ -26128,7 +26128,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s21_qp_33",
@@ -26137,7 +26137,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s21_qp_41",
@@ -26173,7 +26173,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w21_qp_12",
@@ -26182,7 +26182,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w21_qp_13",
@@ -26191,7 +26191,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w21_qp_21",
@@ -26227,7 +26227,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w21_qp_32",
@@ -26236,7 +26236,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w21_qp_33",
@@ -26245,7 +26245,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w21_qp_41",
@@ -26281,7 +26281,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m20_qp_22",
@@ -26299,7 +26299,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m20_qp_42",
@@ -26317,7 +26317,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s20_qp_12",
@@ -26326,7 +26326,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s20_qp_13",
@@ -26335,7 +26335,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s20_qp_21",
@@ -26371,7 +26371,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s20_qp_32",
@@ -26380,7 +26380,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s20_qp_33",
@@ -26389,7 +26389,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s20_qp_41",
@@ -26425,7 +26425,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w20_qp_12",
@@ -26434,7 +26434,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w20_qp_13",
@@ -26443,7 +26443,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w20_qp_21",
@@ -26479,7 +26479,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w20_qp_32",
@@ -26488,7 +26488,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w20_qp_33",
@@ -26497,7 +26497,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w20_qp_41",
@@ -26533,7 +26533,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m19_qp_22",
@@ -26551,7 +26551,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m19_qp_42",
@@ -26569,7 +26569,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s19_qp_12",
@@ -26578,7 +26578,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s19_qp_13",
@@ -26587,7 +26587,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s19_qp_21",
@@ -26623,7 +26623,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s19_qp_32",
@@ -26632,7 +26632,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s19_qp_33",
@@ -26641,7 +26641,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s19_qp_41",
@@ -26677,7 +26677,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w19_qp_12",
@@ -26686,7 +26686,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w19_qp_13",
@@ -26695,7 +26695,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w19_qp_21",
@@ -26731,7 +26731,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w19_qp_32",
@@ -26740,7 +26740,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w19_qp_33",
@@ -26749,7 +26749,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w19_qp_41",
@@ -26785,7 +26785,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m18_qp_22",
@@ -26803,7 +26803,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m18_qp_42",
@@ -26821,7 +26821,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s18_qp_12",
@@ -26830,7 +26830,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s18_qp_13",
@@ -26839,7 +26839,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s18_qp_21",
@@ -26875,7 +26875,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s18_qp_32",
@@ -26884,7 +26884,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s18_qp_33",
@@ -26893,7 +26893,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s18_qp_41",
@@ -26929,7 +26929,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w18_qp_12",
@@ -26938,7 +26938,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w18_qp_13",
@@ -26947,7 +26947,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w18_qp_21",
@@ -26983,7 +26983,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w18_qp_32",
@@ -26992,7 +26992,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w18_qp_33",
@@ -27001,7 +27001,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w18_qp_41",
@@ -27037,7 +27037,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m17_qp_22",
@@ -27055,7 +27055,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m17_qp_42",
@@ -27073,7 +27073,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s17_qp_12",
@@ -27082,7 +27082,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s17_qp_13",
@@ -27091,7 +27091,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s17_qp_21",
@@ -27127,7 +27127,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s17_qp_32",
@@ -27136,7 +27136,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s17_qp_33",
@@ -27145,7 +27145,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s17_qp_41",
@@ -27181,7 +27181,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w17_qp_12",
@@ -27190,7 +27190,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w17_qp_13",
@@ -27199,7 +27199,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w17_qp_21",
@@ -27235,7 +27235,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w17_qp_32",
@@ -27244,7 +27244,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w17_qp_33",
@@ -27253,7 +27253,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w17_qp_41",
@@ -27289,7 +27289,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m16_qp_22",
@@ -27307,7 +27307,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_m16_qp_42",
@@ -27325,7 +27325,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s16_qp_12",
@@ -27334,7 +27334,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s16_qp_13",
@@ -27343,7 +27343,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s16_qp_21",
@@ -27379,7 +27379,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s16_qp_32",
@@ -27388,7 +27388,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s16_qp_33",
@@ -27397,7 +27397,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s16_qp_41",
@@ -27433,7 +27433,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w16_qp_12",
@@ -27442,7 +27442,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w16_qp_13",
@@ -27451,7 +27451,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w16_qp_21",
@@ -27487,7 +27487,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w16_qp_32",
@@ -27496,7 +27496,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w16_qp_33",
@@ -27505,7 +27505,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w16_qp_41",
@@ -27541,7 +27541,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s15_qp_12",
@@ -27550,7 +27550,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s15_qp_13",
@@ -27559,7 +27559,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s15_qp_21",
@@ -27595,7 +27595,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s15_qp_32",
@@ -27604,7 +27604,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s15_qp_33",
@@ -27613,7 +27613,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s15_qp_41",
@@ -27649,7 +27649,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w15_qp_12",
@@ -27658,7 +27658,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w15_qp_13",
@@ -27667,7 +27667,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w15_qp_21",
@@ -27703,7 +27703,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w15_qp_32",
@@ -27712,7 +27712,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w15_qp_33",
@@ -27721,7 +27721,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w15_qp_41",
@@ -27757,7 +27757,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s14_qp_12",
@@ -27766,7 +27766,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s14_qp_13",
@@ -27775,7 +27775,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s14_qp_21",
@@ -27811,7 +27811,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s14_qp_32",
@@ -27820,7 +27820,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s14_qp_33",
@@ -27829,7 +27829,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s14_qp_41",
@@ -27865,7 +27865,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w14_qp_12",
@@ -27874,7 +27874,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w14_qp_13",
@@ -27883,7 +27883,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w14_qp_21",
@@ -27919,7 +27919,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w14_qp_32",
@@ -27928,7 +27928,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w14_qp_33",
@@ -27937,7 +27937,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w14_qp_41",
@@ -27973,7 +27973,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s13_qp_12",
@@ -27982,7 +27982,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s13_qp_13",
@@ -27991,7 +27991,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s13_qp_21",
@@ -28027,7 +28027,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s13_qp_32",
@@ -28036,7 +28036,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s13_qp_33",
@@ -28045,7 +28045,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s13_qp_41",
@@ -28081,7 +28081,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w13_qp_12",
@@ -28090,7 +28090,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w13_qp_13",
@@ -28099,7 +28099,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w13_qp_21",
@@ -28135,7 +28135,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w13_qp_32",
@@ -28144,7 +28144,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w13_qp_33",
@@ -28153,7 +28153,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w13_qp_41",
@@ -28189,7 +28189,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s12_qp_12",
@@ -28198,7 +28198,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s12_qp_13",
@@ -28207,7 +28207,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s12_qp_21",
@@ -28243,7 +28243,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s12_qp_32",
@@ -28252,7 +28252,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s12_qp_33",
@@ -28261,7 +28261,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s12_qp_41",
@@ -28297,7 +28297,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w12_qp_12",
@@ -28306,7 +28306,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w12_qp_13",
@@ -28315,7 +28315,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w12_qp_21",
@@ -28351,7 +28351,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w12_qp_32",
@@ -28360,7 +28360,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w12_qp_33",
@@ -28369,7 +28369,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w12_qp_41",
@@ -28405,7 +28405,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s11_qp_12",
@@ -28414,7 +28414,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s11_qp_13",
@@ -28423,7 +28423,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s11_qp_21",
@@ -28459,7 +28459,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s11_qp_32",
@@ -28468,7 +28468,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s11_qp_33",
@@ -28477,7 +28477,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s11_qp_41",
@@ -28513,7 +28513,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w11_qp_12",
@@ -28522,7 +28522,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w11_qp_13",
@@ -28531,7 +28531,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w11_qp_21",
@@ -28567,7 +28567,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w11_qp_32",
@@ -28576,7 +28576,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w11_qp_33",
@@ -28585,7 +28585,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w11_qp_41",
@@ -28621,7 +28621,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s10_qp_12",
@@ -28630,7 +28630,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s10_qp_13",
@@ -28639,7 +28639,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s10_qp_21",
@@ -28675,7 +28675,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s10_qp_32",
@@ -28684,7 +28684,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s10_qp_33",
@@ -28693,7 +28693,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "s",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_s10_qp_41",
@@ -28729,7 +28729,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w10_qp_12",
@@ -28738,7 +28738,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w10_qp_13",
@@ -28747,7 +28747,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 1,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w10_qp_21",
@@ -28783,7 +28783,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w10_qp_32",
@@ -28792,7 +28792,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w10_qp_33",
@@ -28801,7 +28801,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "w",
     "component": 3,
     "variant": 3,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9708_w10_qp_41",

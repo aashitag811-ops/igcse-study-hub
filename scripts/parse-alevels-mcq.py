@@ -106,6 +106,53 @@ SUBJECT_CONFIG = {
         "image_folder": "9706",
         "note": "A-Level Accounting MCQ — tables and ledger extracts appear as images",
     },
+    # ── IGCSE Sciences: Papers 1 & 2 = MCQ, 40 questions each ───────────────
+    "0610": {
+        "name": "Biology",
+        "mcq_papers": [1, 2],
+        "total_questions": {1: 40, 2: 40},
+        "time_limit_mins": {1: 45, 2: 75},
+        "has_diagrams": True,
+        "image_folder": "0610",
+        "note": "IGCSE Biology MCQ — P1 Core (40q), P2 Extended (40q)",
+    },
+    "0620": {
+        "name": "Chemistry",
+        "mcq_papers": [1, 2],
+        "total_questions": {1: 40, 2: 40},
+        "time_limit_mins": {1: 45, 2: 75},
+        "has_diagrams": True,
+        "image_folder": "0620",
+        "note": "IGCSE Chemistry MCQ — P1 Core (40q), P2 Extended (40q)",
+    },
+    "0625": {
+        "name": "Physics",
+        "mcq_papers": [1, 2],
+        "total_questions": {1: 40, 2: 40},
+        "time_limit_mins": {1: 45, 2: 75},
+        "has_diagrams": True,
+        "image_folder": "0625",
+        "note": "IGCSE Physics MCQ — P1 Core (40q), P2 Extended (40q)",
+    },
+    # ── IGCSE Economics and Accounting: Paper 1 = MCQ ────────────────────────
+    "0455": {
+        "name": "Economics",
+        "mcq_papers": [1],
+        "total_questions": {1: 30},
+        "time_limit_mins": {1: 45},
+        "has_diagrams": False,
+        "image_folder": "0455",
+        "note": "IGCSE Economics MCQ — P1 30q",
+    },
+    "0452": {
+        "name": "Accounting",
+        "mcq_papers": [1],
+        "total_questions": {1: 30},
+        "time_limit_mins": {1: 45},
+        "has_diagrams": False,
+        "image_folder": "0452",
+        "note": "IGCSE Accounting MCQ — P1 30q",
+    },
 }
 
 SESSION_NAMES = {
@@ -450,19 +497,31 @@ def parse_paper(qp_path: str, output_dir: str = "public/papers") -> Optional[Dic
     if images:
         assign_images_to_questions(questions, images, qp_path, total_q)
 
-    # Step 5 — merge answers
+    # Step 5 — deduplicate: keep first occurrence of each question number,
+    # then trim to exactly total_q to avoid false over-detections
+    seen_nums: set = set()
+    deduped = []
+    for q in questions:
+        n = q["questionNumber"]
+        if n not in seen_nums:
+            seen_nums.add(n)
+            deduped.append(q)
+    # Keep only questions 1..total_q
+    questions = [q for q in deduped if 1 <= q["questionNumber"] <= total_q]
+
+    # Step 6 — merge answers
     for q in questions:
         q["correctAnswer"] = answers.get(q["questionNumber"])
 
-    # Step 6 — validate + warn
+    # Step 7 — validate + warn
     missing_answers = [q["questionNumber"] for q in questions if not q["correctAnswer"]]
     if missing_answers:
         print(f"  WARN: Missing answers for questions: {missing_answers}")
 
     if len(questions) < total_q:
-        print(f"  WARN: Only {len(questions)}/{total_q} questions parsed — manual check needed")
+        print(f"  WARN: Only {len(questions)}/{total_q} questions parsed -- manual check needed")
 
-    # Step 7 — build output (same JSON shape as IGCSE MCQ papers)
+    # Step 8 — build output (same JSON shape as IGCSE MCQ papers)
     paper_data = {
         "paperId":        paper_code,
         "paperName":      f"{cfg['name']} {year} {season} Paper {component}",
@@ -483,7 +542,7 @@ def parse_paper(qp_path: str, output_dir: str = "public/papers") -> Optional[Dic
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(paper_data, f, indent=2, ensure_ascii=False)
 
-    print(f"\n  ✓ Saved  : {out_path}")
+    print(f"\n  Saved   : {out_path}")
     print(f"  Questions: {len(questions)}/{total_q}")
     print(f"  Answers  : {len(answers)}/{total_q}")
     return paper_data
