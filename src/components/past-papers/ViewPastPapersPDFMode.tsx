@@ -427,6 +427,7 @@ export function ViewPastPapersPDFMode({
             onClose={() => setSelectedKey(null)}
             label={qLabel}
             erNote={combinedNote}
+            erPdfUrl={erPdfUrl}
           />
         );
       })()}

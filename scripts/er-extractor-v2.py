@@ -273,9 +273,12 @@ def get_component_section(full_text: str, subject_code: str, component: str) -> 
 
 # ── Key messages + general comments extraction ────────────────────────────────
 
-# Phrases that signal the start of per-question content — we stop before these
+# Phrases that signal the start of per-question content — we stop before these.
+# IMPORTANT: "Question N" must be at the START of a line (^) to avoid matching
+# question references that appear mid-sentence inside general comments, e.g.
+# "This was evident in Question 8(a) and Question 10 in this examination."
 SPECIFIC_Q_BOUNDARY = re.compile(
-    r'Comments\s+on\s+specific\s+questions|Question\s+\d',
+    r'Comments\s+on\s+specific\s+questions|(?:^|\n)Question\s+\d',
     re.IGNORECASE,
 )
 

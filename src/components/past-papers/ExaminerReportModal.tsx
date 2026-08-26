@@ -8,6 +8,8 @@ interface ExaminerReportModalProps {
   // label is the display string e.g. "Q 1. (a)" or "Q 22"
   label: string;
   erNote: string;
+  // Optional link to the full Examiner Report PDF
+  erPdfUrl?: string;
 }
 
 // Split a note that contains inline sub-part markers like "(a) text (b) text" into
@@ -63,15 +65,51 @@ function parseInlineSubparts(note: string): { subLabel: string; text: string }[]
   return sections.length >= 2 ? sections : null;
 }
 
+// Normalise PDF-extracted text: collapse single \n (PDF line-wrapping) into spaces,
+// but preserve intentional paragraph breaks (\n\n or more).
+function normalisePdfText(text: string): string {
+  return text
+    // Replace 3+ consecutive newlines with a paragraph marker
+    .replace(/\n{3,}/g, '\n\n')
+    // Replace a single \n (not preceded/followed by another \n) with a space
+    .replace(/([^\n])\n([^\n])/g, '$1 $2')
+    .trim();
+}
+
+// Detect if text appears to be cut off mid-sentence (extraction artefact).
+function isTruncated(text: string): boolean {
+  const t = text.trimEnd();
+  if (t.length === 0) return false;
+  const last = t[t.length - 1];
+  return !['.', '!', '?', ')', '"', "'", ':', ';', '…'].includes(last);
+}
+
+// Render normalised text: split on \n\n for paragraphs, each paragraph as a <p>.
+function NormalisedText({ text, className }: { text: string; className?: string }) {
+  const paragraphs = normalisePdfText(text).split('\n\n').filter(Boolean);
+  if (paragraphs.length <= 1) {
+    return <p className={className}>{normalisePdfText(text)}</p>;
+  }
+  return (
+    <div className={className}>
+      {paragraphs.map((p, i) => (
+        <p key={i} className={i > 0 ? 'mt-3' : ''}>{p}</p>
+      ))}
+    </div>
+  );
+}
+
 export function ExaminerReportModal({
   isOpen,
   onClose,
   label,
-  erNote
+  erNote,
+  erPdfUrl,
 }: ExaminerReportModalProps) {
   if (!isOpen) return null;
 
   const sections = parseInlineSubparts(erNote);
+  const textIsTruncated = isTruncated(erNote);
 
   return (
     <>
@@ -142,9 +180,10 @@ export function ExaminerReportModal({
                             Part {sec.subLabel}
                           </h3>
                         )}
-                        <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
-                          {sec.text}
-                        </p>
+                        <NormalisedText
+                          text={sec.text}
+                          className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm"
+                        />
                       </div>
                     </div>
                   </div>
@@ -167,11 +206,29 @@ export function ExaminerReportModal({
                     <h3 className="text-sm font-semibold text-amber-900 dark:text-amber-100 mb-2 uppercase tracking-wider">
                       Cambridge Examiner Feedback
                     </h3>
-                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-wrap break-words">
-                      {erNote}
-                    </p>
+                    <NormalisedText
+                      text={erNote}
+                      className="text-slate-700 dark:text-slate-300 leading-relaxed break-words text-sm"
+                    />
                   </div>
                 </div>
+              </div>
+            )}
+
+            {/* Truncation warning */}
+            {textIsTruncated && (
+              <div className="mt-3 px-4 py-2 bg-amber-50 dark:bg-amber-900/20 border border-amber-300 dark:border-amber-700 rounded-lg flex items-center gap-2">
+                <svg className="w-4 h-4 text-amber-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-xs text-amber-800 dark:text-amber-300">
+                  This extract may be incomplete.{' '}
+                  {erPdfUrl && (
+                    <a href={erPdfUrl} target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-amber-900">
+                      Open full Examiner Report PDF
+                    </a>
+                  )}
+                </span>
               </div>
             )}
 

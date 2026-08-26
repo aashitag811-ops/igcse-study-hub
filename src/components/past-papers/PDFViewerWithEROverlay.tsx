@@ -115,10 +115,12 @@ export function PDFViewerWithEROverlay({
   const pageViewportHeightsRef = useRef<number[]>([]);
   const pageViewportWidthsRef = useRef<number[]>([]);
   const [pdfjsLib, setPdfjsLib] = useState<any>(null);
-  // Coords detected from PDF text — takes priority over synthetic coords
+  // Coords detected from PDF text — only used for MCQ papers (no _coords.json file)
   const textCoordsRef = useRef<QuestionCoordinate[]>([]);
-  // Fallback coords from the JSON file (synthetic)
+  // Pre-computed coords from the _coords.json file (theory papers — used preferentially)
   const [fallbackCoords, setFallbackCoords] = useState<QuestionCoordinate[]>([]);
+  // true = coords fetch is done; null = still loading
+  const [coordsFetched, setCoordsFetched] = useState(false);
   const erNotesRef = useRef<Record<string, string>>({});
   const onERClickRef = useRef(onERClick);
 
@@ -133,17 +135,23 @@ export function PDFViewerWithEROverlay({
     }).catch(() => setError('Failed to load PDF library'));
   }, []);
 
-  // Fetch fallback coords (only used when text extraction finds nothing for a key)
+  // Fetch pre-computed question coords. Sets coordsFetched=true when done (hit or miss).
   useEffect(() => {
+    setCoordsFetched(false);
     fetch(`/api/question-coords/${paperId}`)
       .then(r => r.ok ? r.json() : null)
-      .then(data => { if (data) setFallbackCoords(data.coordinates || []); })
-      .catch(() => {});
+      .then(data => {
+        setFallbackCoords(data?.coordinates || []);
+        setCoordsFetched(true);
+      })
+      .catch(() => { setFallbackCoords([]); setCoordsFetched(true); });
   }, [paperId]);
 
-  // Render PDF pages + extract text coords
+  // Render PDF pages + optionally extract text coords for MCQ papers
+  // We wait for coordsFetched so we know whether a _coords.json file exists before deciding
+  // whether to run the live text scan.
   useEffect(() => {
-    if (!pdfjsLib) return;
+    if (!pdfjsLib || !coordsFetched) return;
 
     let cancelled = false;
     let blobObjectUrl: string | null = null;
@@ -206,12 +214,16 @@ export function PDFViewerWithEROverlay({
         }
 
         if (!cancelled) {
-          // Extract text-based positions for all ER keys
-          try {
-            const textCoords = await buildButtonPositionsFromText(pdf, erNotes, scale);
-            if (!cancelled) textCoordsRef.current = textCoords;
-          } catch {
-            // Fall through to synthetic coords
+          // Only run live text scan for MCQ papers (no pre-computed coords).
+          // Theory papers have a _coords.json; scanning their text picks up formula sheet
+          // numbers, page numbers, equation digits — causing wrong button positions.
+          if (fallbackCoords.length === 0) {
+            try {
+              const textCoords = await buildButtonPositionsFromText(pdf, erNotes, scale);
+              if (!cancelled) textCoordsRef.current = textCoords;
+            } catch {
+              // leave textCoordsRef empty — buttons just won't show
+            }
           }
           setIsLoading(false);
           setPdfReady(true);
@@ -232,17 +244,16 @@ export function PDFViewerWithEROverlay({
       pdfDocRef.current = null;
       if (blobObjectUrl) URL.revokeObjectURL(blobObjectUrl);
     };
-  }, [pdfUrl, pdfjsLib]);
+  }, [pdfUrl, pdfjsLib, coordsFetched]);
 
-  // Build merged coordinates: text-detected takes priority, fallback fills gaps
+  // Build merged coordinates:
+  // - If pre-computed coords exist, use them exclusively (theory papers).
+  // - Otherwise use text-detected coords (MCQ papers).
   const getMergedCoords = (): QuestionCoordinate[] => {
-    const textCoords = textCoordsRef.current;
-    const textKeys = new Set(textCoords.map(c => c.key));
-
-    // Add fallback coords for keys not found via text (e.g. key_messages, general_comments)
-    const extras = fallbackCoords.filter(c => !textKeys.has(c.key));
-
-    return [...textCoords, ...extras];
+    if (fallbackCoords.length > 0) {
+      return fallbackCoords;
+    }
+    return textCoordsRef.current;
   };
 
   const injectButtons = (coords: QuestionCoordinate[]) => {
