@@ -77,19 +77,17 @@ export function MCQQuestionCard({
         </div>
       )}
 
-      {/* Text-based question (e.g. Accounting) — Cambridge printed layout */}
-      {!question.imageUrl && question.options && question.options.length > 0 && (
+      {/* Text-based question — shown when there's no image OR when there's text + options */}
+      {(!question.imageUrl && question.questionText) && (
         <div className="w-full mb-2 px-2">
-          {/* Question number + stem */}
+          {/* Question stem */}
           <div className="flex gap-4 mb-6">
-            <span className="font-bold text-base text-slate-800 dark:text-[#E2C97A] flex-shrink-0">
-              {question.questionNumber}
-            </span>
             <p className="text-base text-slate-800 dark:text-[#E2C97A] leading-relaxed">
               {question.questionText}
             </p>
           </div>
-          {/* A B C D — Cambridge indented list */}
+          {/* A B C D options — only when parsed */}
+          {question.options && question.options.length > 0 && (
           <div className="flex flex-col gap-3 pl-8">
             {question.options.map((opt) => {
               const isDiscounted = correctAnswer === 'DISCOUNTED';
@@ -120,11 +118,12 @@ export function MCQQuestionCard({
               );
             })}
           </div>
+          )}
         </div>
       )}
 
       {/* A B C D bubble dock — shown for ALL question types */}
-      {(question.imageUrl || (question.options && question.options.length > 0)) && (
+      {true && (
       <div className="mt-6 w-full max-w-sm flex flex-col items-center bg-gray-50/50 dark:bg-[#1A1510] rounded-xl p-4 border border-gray-100 dark:border-[#C9A84C]/30">
         <p className="text-xs font-bold uppercase tracking-wider text-gray-400 dark:text-[#7A6A4A] mb-3">
           Select your answer

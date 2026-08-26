@@ -117,11 +117,26 @@ export default function MCQExamPage() {
           return;
         }
 
+        // Normalise options: A-level papers store options as an object {A: "text", B: "text"}
+        // but MCQQuestionCard expects an array [{letter, text}]. Convert here.
+        paperData.questions = (paperData.questions || []).map((q: any) => {
+          if (q.options && !Array.isArray(q.options)) {
+            const opts = q.options as Record<string, string>;
+            q.options = (['A', 'B', 'C', 'D'] as const)
+              .filter(l => opts[l] !== undefined && opts[l] !== '')
+              .map(l => ({ letter: l, text: opts[l] }));
+          }
+          return q;
+        });
+
+        // timeLimit in JSON is minutes — convert to seconds for the timer
+        const timeLimitSeconds = (paperData.timeLimit || 45) * 60;
+
         // Wait for progress to complete
         await new Promise(resolve => setTimeout(resolve, 2500));
-        
+
         setPaper(paperData);
-        setTimeRemaining(paperData.timeLimit); // timeLimit is already in seconds
+        setTimeRemaining(timeLimitSeconds);
         setPhase('ready');
       } catch (err) {
         console.error('Error loading paper:', err);
@@ -168,8 +183,8 @@ export default function MCQExamPage() {
     const correct = scorable.filter(q => userAnswers.get(q.questionNumber) === q.correctAnswer).length;
     const pct = Math.round(((correct + discounted) / paper.questions.length) * 100);
     const subjectCode = paper.code ?? paperId.split('_')[0];
-    const timeLimit = paper.timeLimit ?? 45 * 60;
-    const timeTaken = timeLimit - timeRemaining;
+    const timeLimitSecs = (paper.timeLimit ?? 45) * 60;
+    const timeTaken = timeLimitSecs - timeRemaining;
 
     const wrongQuestions = paper.questions
       .filter(q => q.correctAnswer !== 'DISCOUNTED' && userAnswers.get(q.questionNumber) !== q.correctAnswer)
@@ -328,7 +343,7 @@ export default function MCQExamPage() {
               </div>
               <div className="p-4 bg-slate-50 rounded-lg">
                 <p className="text-sm text-slate-600 mb-1">Time Limit</p>
-                <p className="text-2xl font-bold text-slate-900">{Math.floor(paper.timeLimit / 60)} min</p>
+                <p className="text-2xl font-bold text-slate-900">{paper.timeLimit} min</p>
               </div>
             </div>
             
