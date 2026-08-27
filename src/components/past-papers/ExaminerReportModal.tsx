@@ -22,8 +22,6 @@ export function ExaminerReportModal({
   const canvasWrapperRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'unavailable'>('idle');
-  // page-index → cumulative top offset in px (for scrolling)
-  const pageOffsetsRef = useRef<number[]>([]);
 
   useEffect(() => {
     if (!isOpen) {
@@ -35,7 +33,6 @@ export function ExaminerReportModal({
     let cancelled = false;
     let blobUrl: string | null = null;
     setStatus('loading');
-    pageOffsetsRef.current = [];
     if (canvasWrapperRef.current) canvasWrapperRef.current.innerHTML = '';
 
     const run = async () => {
@@ -54,15 +51,14 @@ export function ExaminerReportModal({
         if (cancelled) return;
 
         const scale = 1.8;
-        let cumulativeTop = 0;
-        const offsets: number[] = [];
+        // qnum extracted from label e.g. "Q 5. (a)" → "5", "Q 12" → "12"
+        const qnumMatch = targetPage > 0 ? label.match(/Q\s*(\d+)/) : null;
+        const targetQNum = qnumMatch ? qnumMatch[1] : null;
 
         for (let i = 1; i <= pdf.numPages; i++) {
           if (cancelled) return;
           const page = await pdf.getPage(i);
           const vp = page.getViewport({ scale });
-
-          offsets.push(cumulativeTop);
 
           const wrapper = document.createElement('div');
           wrapper.style.cssText = 'position:relative;margin-bottom:8px;flex-shrink:0;';
@@ -78,10 +74,25 @@ export function ExaminerReportModal({
           const ctx = canvas.getContext('2d');
           if (ctx) await page.render({ canvasContext: ctx, viewport: vp }).promise;
 
-          cumulativeTop += canvas.offsetHeight + 8;
+          // On the target page, find exact Y of "Question N" heading
+          if (i === targetPage && targetQNum) {
+            try {
+              const tc = await page.getTextContent();
+              const naturalVp = page.getViewport({ scale: 1 });
+              for (const item of tc.items as any[]) {
+                if (/^Question\s+/i.test(item.str?.trim()) &&
+                    item.str.trim().includes(targetQNum)) {
+                  // item.transform[5] = y from bottom in natural coords
+                  const yFromTop = naturalVp.height - item.transform[5];
+                  // store as data attr so scroll effect can read it
+                  wrapper.setAttribute('data-q-y', String(yFromTop * scale));
+                  break;
+                }
+              }
+            } catch { /* ignore */ }
+          }
         }
 
-        pageOffsetsRef.current = offsets;
         if (!cancelled) setStatus('ready');
       } catch {
         if (!cancelled) setStatus('unavailable');
@@ -95,18 +106,26 @@ export function ExaminerReportModal({
     };
   }, [isOpen, erPdfUrl]);
 
-  // Once ready, scroll so targetPage heading is at the top
+  // Once ready, scroll so "Question N" heading is at the very top
   useEffect(() => {
     if (status !== 'ready') return;
-    const offsets = pageOffsetsRef.current;
-    if (!offsets.length || !scrollContainerRef.current) return;
-
-    // Use the canvas element's actual offsetTop for accuracy
-    const wrapper = canvasWrapperRef.current?.querySelector<HTMLDivElement>(
-      `div[data-page="${targetPage}"]`
-    );
-    const top = wrapper?.offsetTop ?? offsets[targetPage - 1] ?? 0;
-    scrollContainerRef.current.scrollTo({ top, behavior: 'instant' });
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const wrapper = canvasWrapperRef.current?.querySelector<HTMLDivElement>(
+          `div[data-page="${targetPage}"]`
+        );
+        if (!wrapper || !scrollContainerRef.current) return;
+        // If we found the exact Y of the question heading within the page, use it
+        const qY = parseFloat(wrapper.getAttribute('data-q-y') ?? '');
+        // wrapper.offsetTop = top of the page canvas within the scroll container
+        // qY = px offset of the heading within that canvas (at render scale)
+        // Scale qY by the canvas CSS width / canvas pixel width ratio
+        const canvas = wrapper.querySelector('canvas');
+        const cssScale = canvas ? (canvas.offsetWidth / canvas.width) : 1;
+        const scrollTop = wrapper.offsetTop + (isNaN(qY) ? 0 : qY * cssScale);
+        scrollContainerRef.current.scrollTop = scrollTop;
+      });
+    });
   }, [status, targetPage]);
 
   if (!isOpen) return null;
