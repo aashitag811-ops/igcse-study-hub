@@ -63,7 +63,7 @@ export function ExaminerReportModal({
           top: '60px',
           right: '16px',
           bottom: '16px',
-          width: 'min(520px, calc(100vw - 32px))',
+          width: 'min(680px, calc(100vw - 32px))',
           background: '#0d1018',
           border: '1px solid rgba(200,168,76,0.2)',
           borderRadius: '14px',
@@ -167,7 +167,7 @@ export function ExaminerReportModal({
 
           {pdfStatus === 'ready' && blobUrl && (
             <iframe
-              src={`${blobUrl}#toolbar=0&navpanes=0&scrollbar=1&view=FitH`}
+              src={`${blobUrl}#toolbar=0&navpanes=0&scrollbar=1&zoom=150&view=FitH`}
               style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
               title="Examiner Report"
             />
