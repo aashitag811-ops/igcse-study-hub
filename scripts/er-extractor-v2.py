@@ -192,22 +192,25 @@ def is_noise(line: str) -> bool:
 
 # ── PDF text extraction ────────────────────────────────────────────────────────
 
+# Sentinel inserted between pages so we can recover page numbers later.
+PAGE_SENTINEL = '\x00PAGE\x00'
+
 def extract_full_text(pdf_path: Path) -> str:
     """
     Extract all text from a PDF.
     - Strips noise lines.
-    - Converts U+2022 bullets to '\n• ' so they become their own paragraphs.
+    - Inserts PAGE_SENTINEL between pages so page numbers can be recovered.
+    - Converts U+2022 bullets to newline+marker so each bullet is its own line.
     - Keeps all content (no top/bottom exclusion margins that caused truncation).
     """
     full = []
     try:
         with pdfplumber.open(str(pdf_path)) as pdf:
-            for page in pdf.pages:
+            for page_idx, page in enumerate(pdf.pages):
+                # Insert sentinel so we know page boundaries in the joined text
+                full.append(f'{PAGE_SENTINEL}{page_idx + 1}')
                 raw = page.extract_text() or ''
-                # Replace bullet char U+2022 with a newline + marker so each
-                # bullet becomes a separate line.
                 raw = raw.replace('\u2022', '\n\u2022')
-                # Also handle U+25A0 (■) and U+25CF (●) used in older PDFs
                 raw = raw.replace('\u25a0', '\n\u2022').replace('\u25cf', '\n\u2022')
                 lines = raw.split('\n')
                 for line in lines:
@@ -216,6 +219,27 @@ def extract_full_text(pdf_path: Path) -> str:
     except Exception as e:
         print(f'    ! PDF read error: {e}')
     return '\n'.join(full)
+
+
+def get_page_at_offset(full_text: str, offset: int) -> int:
+    """Return the 1-based page number for a character offset in full_text."""
+    current_page = 1
+    sentinel = PAGE_SENTINEL
+    slen = len(sentinel)
+    pos = 0
+    while pos < offset:
+        idx = full_text.find(sentinel, pos)
+        if idx == -1 or idx >= offset:
+            break
+        # Parse the page number after the sentinel
+        nl = full_text.find('\n', idx + slen)
+        num_str = full_text[idx + slen: nl if nl != -1 else idx + slen + 4].strip()
+        try:
+            current_page = int(num_str)
+        except ValueError:
+            pass
+        pos = idx + 1
+    return current_page
 
 
 # ── Section splitting ──────────────────────────────────────────────────────────
@@ -556,9 +580,49 @@ def process_session(code: str, session: str, components: list[str]) -> int:
         if not notes:
             continue
 
+        # ── Build pages dict: question key → page number in ER PDF ──────────
+        # Find the section's offset in full_text so page lookups are relative
+        # to the whole document (sentinels are in full_text, not just section).
+        section_offset = full_text.find(section[:80]) if section else 0
+        pages: dict[str, int] = {}
+
+        # key_messages → page 1 or wherever "Key messages" heading appears
+        km_m = re.search(r'Key\s+messages?\b', full_text[section_offset:], re.IGNORECASE)
+        if km_m and 'key_messages' in notes:
+            pages['key_messages'] = get_page_at_offset(full_text, section_offset + km_m.start())
+
+        # general_comments → page where "General comments" heading appears
+        gc_m = re.search(r'General\s+comments?\b', full_text[section_offset:], re.IGNORECASE)
+        if gc_m and 'general_comments' in notes:
+            pages['general_comments'] = get_page_at_offset(full_text, section_offset + gc_m.start())
+
+        # Per-question: search for "Question N" anchor in full_text
+        for key in notes:
+            if key in ('key_messages', 'general_comments'):
+                continue
+            # Top-level question number (strip sub-part suffix like "a", "bi")
+            m_qnum = re.match(r'^(\d+)', key)
+            if not m_qnum:
+                continue
+            qnum = m_qnum.group(1)
+            if qnum in pages:
+                # Already found this question's page — sub-parts share it
+                pages[key] = pages[qnum]
+                continue
+            # Search for "Question N" (standalone line) in the section text
+            q_anchor = re.search(
+                rf'(?:^|\n)Question\s+{re.escape(qnum)}\b',
+                full_text[section_offset:],
+                re.IGNORECASE,
+            )
+            if q_anchor:
+                pg = get_page_at_offset(full_text, section_offset + q_anchor.start())
+                pages[qnum] = pg
+                pages[key]  = pg
+
         out_path = OUTPUT_DIR / f'{code}_{session}_er_{comp}.json'
         out_path.write_text(
-            json.dumps({'notes': notes, 'labels': labels}, indent=2, ensure_ascii=False),
+            json.dumps({'notes': notes, 'labels': labels, 'pages': pages}, indent=2, ensure_ascii=False),
             encoding='utf-8',
         )
         written += 1

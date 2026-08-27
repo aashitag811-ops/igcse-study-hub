@@ -128,6 +128,7 @@ export function ViewPastPapersPDFMode({
   const [showER, setShowER] = useState(false);
   const [erNotes, setErNotes] = useState<Record<string, string>>({});
   const [erLabels, setErLabels] = useState<Record<string, string>>({});
+  const [erPages, setErPages] = useState<Record<string, number>>({});
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [isLoadingER, setIsLoadingER] = useState(false);
 
@@ -184,6 +185,7 @@ export function ViewPastPapersPDFMode({
           const data = await response.json();
           setErNotes(data.notes || {});
           setErLabels(data.labels || {});
+          setErPages(data.pages || {});
           setShowER(Object.keys(data.notes || {}).length > 0);
         }
       } catch (error) {
@@ -428,6 +430,12 @@ export function ViewPastPapersPDFMode({
             label={qLabel}
             erNote={combinedNote}
             erPdfUrl={erPdfUrl}
+            targetPage={
+              erPages[selectedKey]
+              // sub-parts: try parent question number too
+              ?? erPages[selectedKey.replace(/[a-z]+$/i, '')]
+              ?? 1
+            }
           />
         );
       })()}
