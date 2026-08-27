@@ -119,6 +119,8 @@ export function PDFViewerWithEROverlay({
   const textCoordsRef = useRef<QuestionCoordinate[]>([]);
   // Pre-computed coords from the _coords.json file (theory papers — used preferentially)
   const [fallbackCoords, setFallbackCoords] = useState<QuestionCoordinate[]>([]);
+  // Ref mirror of fallbackCoords so ResizeObserver callback always sees latest value
+  const fallbackCoordsRef = useRef<QuestionCoordinate[]>([]);
   // true = coords fetch is done; null = still loading
   const [coordsFetched, setCoordsFetched] = useState(false);
   const erNotesRef = useRef<Record<string, string>>({});
@@ -141,10 +143,12 @@ export function PDFViewerWithEROverlay({
     fetch(`/api/question-coords/${paperId}`)
       .then(r => r.ok ? r.json() : null)
       .then(data => {
-        setFallbackCoords(data?.coordinates || []);
+        const coords = data?.coordinates || [];
+        setFallbackCoords(coords);
+        fallbackCoordsRef.current = coords;
         setCoordsFetched(true);
       })
-      .catch(() => { setFallbackCoords([]); setCoordsFetched(true); });
+      .catch(() => { setFallbackCoords([]); fallbackCoordsRef.current = []; setCoordsFetched(true); });
   }, [paperId]);
 
   // Render PDF pages + optionally extract text coords for MCQ papers
@@ -246,12 +250,12 @@ export function PDFViewerWithEROverlay({
     };
   }, [pdfUrl, pdfjsLib, coordsFetched]);
 
-  // Build merged coordinates:
+  // Build merged coordinates using refs (safe to call from ResizeObserver callbacks).
   // - If pre-computed coords exist, use them exclusively (theory papers).
   // - Otherwise use text-detected coords (MCQ papers).
   const getMergedCoords = (): QuestionCoordinate[] => {
-    if (fallbackCoords.length > 0) {
-      return fallbackCoords;
+    if (fallbackCoordsRef.current.length > 0) {
+      return fallbackCoordsRef.current;
     }
     return textCoordsRef.current;
   };
@@ -324,14 +328,20 @@ export function PDFViewerWithEROverlay({
     });
   }, [pdfReady, fallbackCoords, erNotes]);
 
-  // Re-inject on resize
+  // Re-inject on resize — observe the outer scroll container so the split-pane
+  // drag (which resizes the container, not the canvas wrapper) also triggers re-injection.
   useEffect(() => {
-    if (!canvasWrapperRef.current) return;
+    if (!containerRef.current) return;
+    let rafId: number;
     const ro = new ResizeObserver(() => {
-      if (pdfDocRef.current) injectButtons(getMergedCoords());
+      // Debounce via rAF to avoid injecting mid-resize on every pixel change
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        if (pdfDocRef.current) injectButtons(getMergedCoords());
+      });
     });
-    ro.observe(canvasWrapperRef.current);
-    return () => ro.disconnect();
+    ro.observe(containerRef.current);
+    return () => { ro.disconnect(); cancelAnimationFrame(rafId); };
   }, []);
 
   return (
