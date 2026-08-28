@@ -50,7 +50,7 @@ export function ExaminerReportModal({
         const pdf = await pdfjs.getDocument(blobUrl).promise;
         if (cancelled) return;
 
-        const scale = 2.5;
+        const scale = 1.8;
         // qnum extracted from label e.g. "Q 5. (a)" → "5", "Q 12" → "12"
         const qnumMatch = targetPage > 0 ? label.match(/Q\s*(\d+)/) : null;
         const targetQNum = qnumMatch ? qnumMatch[1] : null;
