@@ -298,11 +298,14 @@ def get_component_section(full_text: str, subject_code: str, component: str) -> 
 # ── Key messages + general comments extraction ────────────────────────────────
 
 # Phrases that signal the start of per-question content — we stop before these.
-# IMPORTANT: "Question N" must be at the START of a line (^) to avoid matching
-# question references that appear mid-sentence inside general comments, e.g.
-# "This was evident in Question 8(a) and Question 10 in this examination."
+# "Question N" must be:
+#   - at the start of a line (after \n)
+#   - followed only by the question number and optional whitespace/newline
+#     (NOT by sub-part refs like "(a)" or more sentence text)
+# This prevents matching inline refs like "...evident in Question 8(a) and..."
 SPECIFIC_Q_BOUNDARY = re.compile(
-    r'Comments\s+on\s+specific\s+questions|(?:^|\n)Question\s+\d',
+    r'Comments\s+on\s+specific\s+questions'
+    r'|(?:^|\n)Question\s+\d+\s*(?:\n|$)',
     re.IGNORECASE,
 )
 
@@ -338,8 +341,9 @@ def extract_key_messages(section: str) -> str | None:
 def extract_general_comments(section: str) -> str | None:
     """
     Extract 'General comments' block.
-    Stops at 'Comments on specific questions' OR 'Question N'.
+    Stops at 'Comments on specific questions' OR standalone 'Question N' heading.
     Never includes those boundary lines themselves.
+    Also strips trailing page-header fragments (e.g. "0606 Additional Mathematics March 2025").
     """
     m = GENERAL_COMMENTS_RE.search(section)
     if not m:
@@ -347,13 +351,16 @@ def extract_general_comments(section: str) -> str | None:
 
     start = m.end()
     stop = SPECIFIC_Q_BOUNDARY.search(section, start)
-    end = stop.start() if stop else start + 20000  # no arbitrary char limit
+    end = stop.start() if stop else start + 20000
 
     raw = section[start:end]
     lines = [l.strip() for l in raw.split('\n') if l.strip() and len(l.strip()) > 8 and not is_noise(l)]
     if not lines:
         return None
-    return '\n'.join(lines)
+    text = '\n'.join(lines)
+    # Strip trailing page-header that bled in (e.g. "0606 Additional Mathematics March 2025")
+    text = clean_note(text)
+    return text if text.strip() else None
 
 
 # ── Per-question note extraction ───────────────────────────────────────────────
