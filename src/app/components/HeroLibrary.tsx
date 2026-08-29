@@ -143,6 +143,9 @@ const HUMANITIES: Subject[] = [
     color: '#5E2A3A',
     spineWidth: 'w-[7.5%]',
   },
+];
+
+const MORE_SUBJECTS: Subject[] = [
   {
     id: 'history',
     title: 'History',
@@ -187,7 +190,7 @@ export default function HeroLibrary() {
 
   const handleSubjectClick = (subjectId: string) => {
     // Find the subject and navigate to its page using the code
-    const allSubjects = [...MATHEMATICS, ...SCIENCES, ...LANGUAGES, ...HUMANITIES];
+    const allSubjects = [...MATHEMATICS, ...SCIENCES, ...LANGUAGES, ...HUMANITIES, ...MORE_SUBJECTS];
     const subject = allSubjects.find(s => s.id === subjectId);
     if (subject) {
       window.location.href = `/igcse/browse?subject=${subject.code}`;
@@ -295,6 +298,17 @@ export default function HeroLibrary() {
           leftSubjects={LANGUAGES}
           rightCategory="Social Sciences"
           rightSubjects={HUMANITIES}
+          hoveredSubject={hoveredSubject}
+          setHoveredSubject={setHoveredSubject}
+          onSubjectClick={handleSubjectClick}
+        />
+
+        {/* Shelf Row 3: More Subjects */}
+        <CategorizedShelfRow
+          leftCategory="More Subjects"
+          leftSubjects={MORE_SUBJECTS}
+          rightCategory=""
+          rightSubjects={[]}
           hoveredSubject={hoveredSubject}
           setHoveredSubject={setHoveredSubject}
           onSubjectClick={handleSubjectClick}
