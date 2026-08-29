@@ -44,19 +44,22 @@ for (const file of files) {
     const variant = parseInt(m[5]);   // second digit
 
     // testModeAvailable rules:
-    // - ALL questions must have a subject-folder imageUrl (not /images/mcq/ partial path)
+    // - ALL questions must have a subject-folder imageUrl (not /images/mcq/ partial path), OR
+    // - isMcqParsed=true for text-based MCQ papers (e.g. 0452 Accounting, 0455 Economics Paper 1)
     // - Economics Paper 2 (component 2) = theory, never test mode
-    // - Accounting pre-2020 = mixed format, never test mode
-    // - Sciences Paper 1/2 variant 2 only = test mode if images present
+    // - Non-MCQ subjects — view-only (no MCQ paper structure)
     const allHaveSubjectImg = qs.every(q => q.imageUrl && !q.imageUrl.includes('/images/mcq/'));
     const anyMcqPath = qs.some(q => q.imageUrl && q.imageUrl.includes('/images/mcq/'));
 
-    let testModeAvailable = allHaveSubjectImg && !anyMcqPath;
+    // Text-only MCQ papers (isMcqParsed=true, no images needed)
+    const isMcqParsed = !!(d.isMcqParsed);
+
+    let testModeAvailable = (allHaveSubjectImg && !anyMcqPath) || isMcqParsed;
 
     // Economics Paper 2 = structured theory essay, not MCQ
     if (subjectCode === '0455' && component === 2) testModeAvailable = false;
-    // Accounting pre-2020 = first 10 questions are MCQ - allow if images parsed
-    // (testModeAvailable is already set by allHaveSubjectImg check above)
+    // Accounting Paper 2 = structured theory, not MCQ
+    if (subjectCode === '0452' && component === 2) testModeAvailable = false;
     // Non-MCQ subjects — view-only (no MCQ paper structure)
     if (['0417','0448','0450','0457','0460','0470','0478','0490','0500','0510','0520','0549','0580','0606'].includes(subjectCode)) testModeAvailable = false;
 
