@@ -160,8 +160,11 @@ export function ViewPastPapersPDFMode({
   useEffect(() => {
     const onMouseMove = (e: MouseEvent) => {
       if (!isDragging.current || !containerRef.current) return;
+      // Use the inner usable width (subtract 24px padding left+right and 36px divider)
       const rect = containerRef.current.getBoundingClientRect();
-      const pct = ((e.clientX - rect.left) / rect.width) * 100;
+      const innerLeft = rect.left + 12;
+      const innerWidth = rect.width - 24 - 36; // 12px padding each side, 36px divider
+      const pct = ((e.clientX - innerLeft) / innerWidth) * 100;
       setSplitPct(Math.min(75, Math.max(25, pct)));
     };
     const onMouseUp = () => {
@@ -171,7 +174,7 @@ export function ViewPastPapersPDFMode({
       document.body.style.cursor = '';
       document.body.style.userSelect = '';
     };
-    window.addEventListener('mousemove', onMouseMove, { passive: true });
+    window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('mouseup', onMouseUp);
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
