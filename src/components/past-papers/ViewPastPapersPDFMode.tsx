@@ -136,10 +136,11 @@ export function ViewPastPapersPDFMode({
   const [splitPct, setSplitPct] = useState(() => {
     if (typeof window !== 'undefined') {
       const saved = sessionStorage.getItem('vpp-pdf-split');
-      return saved ? Number(saved) : 58;
+      return saved ? Number(saved) : 63;
     }
-    return 58;
+    return 63;
   });
+  const [dragging, setDragging] = useState(false);
   const isDragging = useRef(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -149,7 +150,9 @@ export function ViewPastPapersPDFMode({
 
   const onDividerMouseDown = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     isDragging.current = true;
+    setDragging(true);
     document.body.style.cursor = 'col-resize';
     document.body.style.userSelect = 'none';
   }, []);
@@ -164,10 +167,11 @@ export function ViewPastPapersPDFMode({
     const onMouseUp = () => {
       if (!isDragging.current) return;
       isDragging.current = false;
+      setDragging(false);
       document.body.style.cursor = '';
       document.body.style.userSelect = '';
     };
-    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mousemove', onMouseMove, { passive: true });
     window.addEventListener('mouseup', onMouseUp);
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
@@ -261,8 +265,16 @@ export function ViewPastPapersPDFMode({
           padding: '12px',
           gap: 0,
           boxSizing: 'border-box',
+          position: 'relative',
         }}
       >
+        {/* Drag overlay — blocks iframe from swallowing mouse events during resize */}
+        {dragging && (
+          <div style={{
+            position: 'absolute', inset: 0, zIndex: 50,
+            cursor: 'col-resize',
+          }} />
+        )}
         {/* QP Pane */}
         {showQP && (
           <div style={{
