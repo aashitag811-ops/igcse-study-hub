@@ -4,7 +4,16 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { PDFViewer } from './PDFViewer';
 import { PDFViewerWithEROverlay } from './PDFViewerWithEROverlay';
 import { ExaminerReportModal } from './ExaminerReportModal';
+import { ResourceOverlay } from './ResourceOverlay';
 import { pdfUrl } from '@/lib/assetUrl';
+
+export interface Resource {
+  label: string;
+  /** Path to image, PDF, or HTML in /public, e.g. '/resources/periodic-table.png' */
+  src: string;
+  type: 'image' | 'pdf' | 'html';
+  accent?: 'blue' | 'teal' | 'violet';
+}
 
 interface ViewPastPapersPDFModeProps {
   paperId: string;
@@ -12,6 +21,7 @@ interface ViewPastPapersPDFModeProps {
   subjectName: string;
   displayName: string;
   onExit?: () => void;
+  resources?: Resource[];
 }
 
 // ── Button components ────────────────────────────────────────────────────────
@@ -91,6 +101,45 @@ function ERBtn({ href }: { href: string }) {
   );
 }
 
+function ResourceBtn({ label, accent = 'blue', onClick }: Resource & { onClick: () => void }) {
+  const [pressing, setPressing] = React.useState(false);
+  const colors = {
+    blue:   { bg: ['#081828', '#061420'], bgP: ['#040e18', '#06101a'], text: '#60a5fa', textP: 'rgba(80,140,220,0.6)', border: 'rgba(60,120,220,0.28)', borderT: 'rgba(80,150,240,0.45)' },
+    teal:   { bg: ['#071a16', '#051410'], bgP: ['#040e0c', '#061210'], text: '#34d399', textP: 'rgba(40,180,140,0.6)', border: 'rgba(30,160,120,0.28)', borderT: 'rgba(50,200,150,0.45)' },
+    violet: { bg: ['#120a28', '#0e0820'], bgP: ['#0a0618', '#0c081c'], text: '#a78bfa', textP: 'rgba(140,110,230,0.6)', border: 'rgba(110,80,200,0.28)', borderT: 'rgba(140,110,240,0.45)' },
+  }[accent];
+  return (
+    <button
+      onClick={onClick}
+      onMouseDown={() => setPressing(true)}
+      onMouseUp={() => setPressing(false)}
+      onMouseLeave={() => setPressing(false)}
+      title={`Open ${label}`}
+      style={{
+        fontFamily: 'Inter, system-ui, sans-serif',
+        fontSize: '12px', fontWeight: 600, letterSpacing: '0.06em',
+        padding: '7px 14px', borderRadius: '8px',
+        cursor: 'pointer', outline: 'none', transition: 'all 0.08s ease',
+        transform: pressing ? 'translateY(2px)' : 'translateY(0)',
+        background: pressing
+          ? `linear-gradient(180deg, ${colors.bgP[0]} 0%, ${colors.bgP[1]} 100%)`
+          : `linear-gradient(180deg, ${colors.bg[0]} 0%, ${colors.bg[1]} 100%)`,
+        color: pressing ? colors.textP : colors.text,
+        border: `1px solid ${colors.border}`,
+        borderTop: `1px solid ${colors.borderT}`,
+        borderBottom: pressing ? '1px solid rgba(0,0,0,0.5)' : '1px solid rgba(0,0,0,0.4)',
+        boxShadow: pressing ? 'inset 0 2px 5px rgba(0,0,0,0.5)' : '0 3px 0 rgba(0,0,0,0.45)',
+        display: 'flex', alignItems: 'center', gap: '6px',
+      }}
+    >
+      <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+      {label}
+    </button>
+  );
+}
+
 function ExitBtn({ onClick }: { onClick: () => void }) {
   const [pressing, setPressing] = React.useState(false);
   return (
@@ -121,11 +170,12 @@ function ExitBtn({ onClick }: { onClick: () => void }) {
 // ────────────────────────────────────────────────────────────────────────────
 
 export function ViewPastPapersPDFMode({
-  paperId, subjectCode, subjectName, displayName, onExit
+  paperId, subjectCode, subjectName, displayName, onExit, resources = []
 }: ViewPastPapersPDFModeProps) {
   const [showQP, setShowQP] = useState(true);
   const [showMS, setShowMS] = useState(true);
   const [showER, setShowER] = useState(false);
+  const [activeResource, setActiveResource] = useState<Resource | null>(null);
   const [erNotes, setErNotes] = useState<Record<string, string>>({});
   const [erLabels, setErLabels] = useState<Record<string, string>>({});
   const [erPages, setErPages] = useState<Record<string, number>>({});
@@ -251,6 +301,9 @@ export function ViewPastPapersPDFMode({
             <PaneBtn label="QP" active={showQP} title={showQP ? 'Hide Question Paper' : 'Show Question Paper'} onClick={() => setShowQP(v => !v)} />
             <PaneBtn label="MS" active={showMS} title={showMS ? 'Hide Mark Scheme' : 'Show Mark Scheme'} onClick={() => setShowMS(v => !v)} />
             {showER && <ERBtn href={erPdfUrl} />}
+            {resources.map(r => (
+              <ResourceBtn key={r.label} {...r} onClick={() => setActiveResource(r)} />
+            ))}
             {onExit && <ExitBtn onClick={onExit} />}
           </div>
         </div>
@@ -454,6 +507,16 @@ export function ViewPastPapersPDFMode({
           />
         );
       })()}
+
+      {/* Resource overlay (Periodic Table, Data Sheet, etc.) */}
+      {activeResource && (
+        <ResourceOverlay
+          title={activeResource.label}
+          src={activeResource.src}
+          type={activeResource.type}
+          onClose={() => setActiveResource(null)}
+        />
+      )}
     </div>
   );
 }

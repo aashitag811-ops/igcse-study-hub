@@ -30,6 +30,23 @@ const SEASON_MAP: { [key: string]: string } = {
   'w': 'October/November',
 };
 
+// ── Resources (served from /public/resources/) ────────────────────────────────
+import type { Resource } from '@/components/past-papers/ViewPastPapersPDFMode';
+
+function getResources(code: string, comp: string): Resource[] {
+  if (code === '9701') {
+    const resources: Resource[] = [
+      { label: 'Periodic Table', src: '/resources/periodic-table.png', type: 'image', accent: 'teal' },
+    ];
+    // Qualitative analysis notes — Paper 3 only
+    if (comp === '3') {
+      resources.push({ label: 'Qualitative Analysis', src: '/resources/chem-qualitative-analysis.html', type: 'html', accent: 'blue' });
+    }
+    return resources;
+  }
+  return [];
+}
+
 export default function ALevelsViewPapersPage({ params }: PageProps) {
   const router           = useRouter();
   const { paperId }      = use(params);
@@ -53,6 +70,7 @@ export default function ALevelsViewPapersPage({ params }: PageProps) {
   const season       = SEASON_MAP[sess] ?? sess;
   const year         = 2000 + parseInt(yr);
   const displayName  = `${subjectName} — ${season} ${year} Paper ${comp}`;
+  const resources    = getResources(code, comp);
 
   return (
     <div className="min-h-screen" style={{ background: '#03060a' }}>
@@ -64,6 +82,7 @@ export default function ALevelsViewPapersPage({ params }: PageProps) {
         subjectCode={code}
         subjectName={subjectName}
         displayName={displayName}
+        resources={resources}
       />
     </div>
   );
