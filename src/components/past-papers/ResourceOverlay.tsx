@@ -96,8 +96,7 @@ export function ResourceOverlay({ title, src, type, onClose }: ResourceOverlayPr
               title={title}
               style={{
                 width: '100%',
-                height: type === 'html' ? 'auto' : '70vh',
-                minHeight: type === 'html' ? '500px' : undefined,
+                height: '72vh',
                 border: 'none',
                 borderRadius: '8px',
                 background: '#fff',

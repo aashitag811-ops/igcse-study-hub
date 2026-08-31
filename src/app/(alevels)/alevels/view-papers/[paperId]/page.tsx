@@ -36,7 +36,7 @@ import type { Resource } from '@/components/past-papers/ViewPastPapersPDFMode';
 function getResources(code: string, comp: string): Resource[] {
   if (code === '9701') {
     const resources: Resource[] = [
-      { label: 'Periodic Table', src: '/resources/periodic-table.png', type: 'image', accent: 'teal' },
+      { label: 'Periodic Table', src: '/resources/periodic-table.html', type: 'html', accent: 'teal' },
     ];
     // Qualitative analysis notes — Paper 3 only
     if (comp === '3') {
