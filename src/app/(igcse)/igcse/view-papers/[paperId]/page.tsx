@@ -36,11 +36,15 @@ const SEASON_MAP: { [key: string]: string } = {
   'w': 'October/November'
 };
 
-function getResources(code: string): Resource[] {
+function getResources(code: string, comp: string): Resource[] {
   if (code === '0620') {
-    return [
+    const resources: Resource[] = [
       { label: 'Periodic Table', src: '/resources/periodic-table-igcse.html', type: 'html', accent: 'teal' },
     ];
+    if (comp === '6') {
+      resources.push({ label: 'Qualitative Analysis', src: '/resources/chem-igcse-qualitative-analysis.html', type: 'html', accent: 'blue' });
+    }
+    return resources;
   }
   return [];
 }
@@ -111,7 +115,7 @@ export default function ViewPapersPage({ params }: PageProps) {
         subjectName={paperInfo.subjectName}
         displayName={paperInfo.displayName}
         onExit={handleExit}
-        resources={getResources(paperInfo.subjectCode)}
+        resources={getResources(paperInfo.subjectCode, String(paperInfo.paperComponent))}
       />
     </>
   );
