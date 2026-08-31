@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Periodic Table of Elements</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.5px;
+  background: #fff;
+  color: #111;
+  padding: 14px 10px 20px;
+}
+h1 { text-align: center; font-size: 13.5px; font-weight: bold; margin-bottom: 2px; }
+.group-label { text-align: center; font-size: 11px; margin-bottom: 5px; }
+.pt-grid {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  gap: 2px;
+  margin-bottom: 8px;
+}
+.cell {
+  border: 1px solid #888;
+  padding: 1px 2px;
+  text-align: center;
+  line-height: 1.2;
+  min-height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cell.empty { border: none; min-height: 0; }
+.cell.grp { border: none; font-size: 11px; font-weight: bold; color: #000; min-height: 16px; padding: 0; }
+.cell .num  { font-size: 8.5px; color: #333; }
+.cell .sym  { font-size: 13px; font-weight: bold; }
+.cell .name { font-size: 7.5px; color: #333; }
+.cell .mass { font-size: 8.5px; color: #333; }
+.la-ac-section { margin-top: 8px; }
+.la-ac-row {
+  display: grid;
+  grid-template-columns: 72px repeat(15, 1fr);
+  gap: 2px;
+  margin-bottom: 2px;
+}
+.la-ac-label {
+  display: flex; align-items: center; justify-content: flex-end;
+  font-size: 9.5px; font-style: italic; padding-right: 4px;
+}
+.note { font-size: 11px; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h1>The Periodic Table of Elements</h1>
+<div class="group-label">Group</div>
+
+<div class="pt-grid">
+
+  <!-- Group header row: I II [blank×10] III IV V VI VII VIII -->
+  <div class="cell grp">I</div>
+  <div class="cell grp">II</div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div>
+  <div class="cell grp">III</div>
+  <div class="cell grp">IV</div>
+  <div class="cell grp">V</div>
+  <div class="cell grp">VI</div>
+  <div class="cell grp">VII</div>
+  <div class="cell grp">VIII</div>
+
+  <!-- Period 1 -->
+  <div class="cell"><span class="num">1</span><span class="sym">H</span><span class="name">hydrogen</span><span class="mass">1</span></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div>
+  <div class="cell"><span class="num">2</span><span class="sym">He</span><span class="name">helium</span><span class="mass">4</span></div>
+
+  <!-- Period 2 -->
+  <div class="cell"><span class="num">3</span><span class="sym">Li</span><span class="name">lithium</span><span class="mass">7</span></div>
+  <div class="cell"><span class="num">4</span><span class="sym">Be</span><span class="name">berylium</span><span class="mass">9</span></div>
+  <!-- Key box -->
+  <div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell" style="grid-column:span 4; border:1px solid #555; padding:3px 6px; align-items:flex-start; justify-content:center;">
+    <div style="font-size:8px; color:#333;">atomic number</div>
+    <div style="font-size:13px; font-weight:bold;">atomic symbol</div>
+    <div style="font-size:8px; color:#333;">name</div>
+    <div style="font-size:8px; color:#333;">relative atomic mass</div>
+  </div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell"><span class="num">5</span><span class="sym">B</span><span class="name">boron</span><span class="mass">11</span></div>
+  <div class="cell"><span class="num">6</span><span class="sym">C</span><span class="name">carbon</span><span class="mass">12</span></div>
+  <div class="cell"><span class="num">7</span><span class="sym">N</span><span class="name">nitrogen</span><span class="mass">14</span></div>
+  <div class="cell"><span class="num">8</span><span class="sym">O</span><span class="name">oxygen</span><span class="mass">16</span></div>
+  <div class="cell"><span class="num">9</span><span class="sym">F</span><span class="name">fluorine</span><span class="mass">19</span></div>
+  <div class="cell"><span class="num">10</span><span class="sym">Ne</span><span class="name">neon</span><span class="mass">20</span></div>
+
+  <!-- Period 3 -->
+  <div class="cell"><span class="num">11</span><span class="sym">Na</span><span class="name">sodium</span><span class="mass">23</span></div>
+  <div class="cell"><span class="num">12</span><span class="sym">Mg</span><span class="name">magnesium</span><span class="mass">24</span></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div><div class="cell empty"></div><div class="cell empty"></div>
+  <div class="cell empty"></div>
+  <div class="cell"><span class="num">13</span><span class="sym">Al</span><span class="name">aluminium</span><span class="mass">27</span></div>
+  <div class="cell"><span class="num">14</span><span class="sym">Si</span><span class="name">silicon</span><span class="mass">28</span></div>
+  <div class="cell"><span class="num">15</span><span class="sym">P</span><span class="name">phosphorus</span><span class="mass">31</span></div>
+  <div class="cell"><span class="num">16</span><span class="sym">S</span><span class="name">sulfur</span><span class="mass">32</span></div>
+  <div class="cell"><span class="num">17</span><span class="sym">Cl</span><span class="name">chlorine</span><span class="mass">35.5</span></div>
+  <div class="cell"><span class="num">18</span><span class="sym">Ar</span><span class="name">argon</span><span class="mass">40</span></div>
+
+  <!-- Period 4 -->
+  <div class="cell"><span class="num">19</span><span class="sym">K</span><span class="name">potassium</span><span class="mass">39</span></div>
+  <div class="cell"><span class="num">20</span><span class="sym">Ca</span><span class="name">calcium</span><span class="mass">40</span></div>
+  <div class="cell"><span class="num">21</span><span class="sym">Sc</span><span class="name">scandium</span><span class="mass">45</span></div>
+  <div class="cell"><span class="num">22</span><span class="sym">Ti</span><span class="name">titanium</span><span class="mass">48</span></div>
+  <div class="cell"><span class="num">23</span><span class="sym">V</span><span class="name">vanadium</span><span class="mass">51</span></div>
+  <div class="cell"><span class="num">24</span><span class="sym">Cr</span><span class="name">chromium</span><span class="mass">52</span></div>
+  <div class="cell"><span class="num">25</span><span class="sym">Mn</span><span class="name">manganese</span><span class="mass">55</span></div>
+  <div class="cell"><span class="num">26</span><span class="sym">Fe</span><span class="name">iron</span><span class="mass">56</span></div>
+  <div class="cell"><span class="num">27</span><span class="sym">Co</span><span class="name">cobalt</span><span class="mass">59</span></div>
+  <div class="cell"><span class="num">28</span><span class="sym">Ni</span><span class="name">nickel</span><span class="mass">59</span></div>
+  <div class="cell"><span class="num">29</span><span class="sym">Cu</span><span class="name">copper</span><span class="mass">64</span></div>
+  <div class="cell"><span class="num">30</span><span class="sym">Zn</span><span class="name">zinc</span><span class="mass">65</span></div>
+  <div class="cell"><span class="num">31</span><span class="sym">Ga</span><span class="name">gallium</span><span class="mass">70</span></div>
+  <div class="cell"><span class="num">32</span><span class="sym">Ge</span><span class="name">germanium</span><span class="mass">73</span></div>
+  <div class="cell"><span class="num">33</span><span class="sym">As</span><span class="name">arsenic</span><span class="mass">75</span></div>
+  <div class="cell"><span class="num">34</span><span class="sym">Se</span><span class="name">selenium</span><span class="mass">79</span></div>
+  <div class="cell"><span class="num">35</span><span class="sym">Br</span><span class="name">bromine</span><span class="mass">80</span></div>
+  <div class="cell"><span class="num">36</span><span class="sym">Kr</span><span class="name">krypton</span><span class="mass">84</span></div>
+
+  <!-- Period 5 -->
+  <div class="cell"><span class="num">37</span><span class="sym">Rb</span><span class="name">rubidium</span><span class="mass">85</span></div>
+  <div class="cell"><span class="num">38</span><span class="sym">Sr</span><span class="name">strontium</span><span class="mass">88</span></div>
+  <div class="cell"><span class="num">39</span><span class="sym">Y</span><span class="name">yttrium</span><span class="mass">88</span></div>
+  <div class="cell"><span class="num">40</span><span class="sym">Zr</span><span class="name">zirconium</span><span class="mass">91</span></div>
+  <div class="cell"><span class="num">41</span><span class="sym">Nb</span><span class="name">niobium</span><span class="mass">93</span></div>
+  <div class="cell"><span class="num">42</span><span class="sym">Mo</span><span class="name">molybdenum</span><span class="mass">96</span></div>
+  <div class="cell"><span class="num">43</span><span class="sym">Tc</span><span class="name">technetium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">44</span><span class="sym">Ru</span><span class="name">ruthenium</span><span class="mass">101</span></div>
+  <div class="cell"><span class="num">45</span><span class="sym">Rh</span><span class="name">rhodium</span><span class="mass">103</span></div>
+  <div class="cell"><span class="num">46</span><span class="sym">Pd</span><span class="name">palladium</span><span class="mass">106</span></div>
+  <div class="cell"><span class="num">47</span><span class="sym">Ag</span><span class="name">silver</span><span class="mass">108</span></div>
+  <div class="cell"><span class="num">48</span><span class="sym">Cd</span><span class="name">cadmium</span><span class="mass">112</span></div>
+  <div class="cell"><span class="num">49</span><span class="sym">In</span><span class="name">indium</span><span class="mass">115</span></div>
+  <div class="cell"><span class="num">50</span><span class="sym">Sn</span><span class="name">tin</span><span class="mass">119</span></div>
+  <div class="cell"><span class="num">51</span><span class="sym">Sb</span><span class="name">antimony</span><span class="mass">122</span></div>
+  <div class="cell"><span class="num">52</span><span class="sym">Te</span><span class="name">tellurium</span><span class="mass">128</span></div>
+  <div class="cell"><span class="num">53</span><span class="sym">I</span><span class="name">iodine</span><span class="mass">127</span></div>
+  <div class="cell"><span class="num">54</span><span class="sym">Xe</span><span class="name">xenon</span><span class="mass">131</span></div>
+
+  <!-- Period 6 -->
+  <div class="cell"><span class="num">55</span><span class="sym">Cs</span><span class="name">caesium</span><span class="mass">133</span></div>
+  <div class="cell"><span class="num">56</span><span class="sym">Ba</span><span class="name">barium</span><span class="mass">137</span></div>
+  <div class="cell" style="font-size:8px; color:#555; border:1px solid #aaa; text-align:center;">57–71<br>lanthanoids</div>
+  <div class="cell"><span class="num">72</span><span class="sym">Hf</span><span class="name">hafnium</span><span class="mass">178</span></div>
+  <div class="cell"><span class="num">73</span><span class="sym">Ta</span><span class="name">tantalum</span><span class="mass">181</span></div>
+  <div class="cell"><span class="num">74</span><span class="sym">W</span><span class="name">tungsten</span><span class="mass">184</span></div>
+  <div class="cell"><span class="num">75</span><span class="sym">Re</span><span class="name">rhenium</span><span class="mass">186</span></div>
+  <div class="cell"><span class="num">76</span><span class="sym">Os</span><span class="name">osmium</span><span class="mass">190</span></div>
+  <div class="cell"><span class="num">77</span><span class="sym">Ir</span><span class="name">iridium</span><span class="mass">192</span></div>
+  <div class="cell"><span class="num">78</span><span class="sym">Pt</span><span class="name">platinum</span><span class="mass">195</span></div>
+  <div class="cell"><span class="num">79</span><span class="sym">Au</span><span class="name">gold</span><span class="mass">197</span></div>
+  <div class="cell"><span class="num">80</span><span class="sym">Hg</span><span class="name">mercury</span><span class="mass">201</span></div>
+  <div class="cell"><span class="num">81</span><span class="sym">Tl</span><span class="name">thallium</span><span class="mass">204</span></div>
+  <div class="cell"><span class="num">82</span><span class="sym">Pb</span><span class="name">lead</span><span class="mass">207</span></div>
+  <div class="cell"><span class="num">83</span><span class="sym">Bi</span><span class="name">bismuth</span><span class="mass">209</span></div>
+  <div class="cell"><span class="num">84</span><span class="sym">Po</span><span class="name">polonium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">85</span><span class="sym">At</span><span class="name">astatine</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">86</span><span class="sym">Rn</span><span class="name">radon</span><span class="mass">–</span></div>
+
+  <!-- Period 7 -->
+  <div class="cell"><span class="num">87</span><span class="sym">Fr</span><span class="name">francium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">88</span><span class="sym">Ra</span><span class="name">radium</span><span class="mass">–</span></div>
+  <div class="cell" style="font-size:8px; color:#555; border:1px solid #aaa; text-align:center;">89–103<br>actinoids</div>
+  <div class="cell"><span class="num">104</span><span class="sym">Rf</span><span class="name">rutherfordium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">105</span><span class="sym">Db</span><span class="name">dubnium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">106</span><span class="sym">Sg</span><span class="name">seaborgium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">107</span><span class="sym">Bh</span><span class="name">bohrium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">108</span><span class="sym">Hs</span><span class="name">hassium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">109</span><span class="sym">Mt</span><span class="name">meitnerium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">110</span><span class="sym">Ds</span><span class="name">darmstadtium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">111</span><span class="sym">Rg</span><span class="name">roentgenium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">112</span><span class="sym">Cn</span><span class="name">copernicium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">113</span><span class="sym">Nh</span><span class="name">nihonium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">114</span><span class="sym">Fl</span><span class="name">flerovium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">115</span><span class="sym">Mc</span><span class="name">moscovium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">116</span><span class="sym">Lv</span><span class="name">livermorium</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">117</span><span class="sym">Ts</span><span class="name">tennessine</span><span class="mass">–</span></div>
+  <div class="cell"><span class="num">118</span><span class="sym">Og</span><span class="name">oganesson</span><span class="mass">–</span></div>
+
+</div>
+
+<!-- Lanthanoids -->
+<div class="la-ac-section">
+  <div class="la-ac-row">
+    <div class="la-ac-label">lanthanoids</div>
+    <div class="cell"><span class="num">57</span><span class="sym">La</span><span class="name">lanthanum</span><span class="mass">139</span></div>
+    <div class="cell"><span class="num">58</span><span class="sym">Ce</span><span class="name">cerium</span><span class="mass">140</span></div>
+    <div class="cell"><span class="num">59</span><span class="sym">Pr</span><span class="name">praseodymium</span><span class="mass">141</span></div>
+    <div class="cell"><span class="num">60</span><span class="sym">Nd</span><span class="name">neodymium</span><span class="mass">144</span></div>
+    <div class="cell"><span class="num">61</span><span class="sym">Pm</span><span class="name">promethium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">62</span><span class="sym">Sm</span><span class="name">samarium</span><span class="mass">150</span></div>
+    <div class="cell"><span class="num">63</span><span class="sym">Eu</span><span class="name">europium</span><span class="mass">152</span></div>
+    <div class="cell"><span class="num">64</span><span class="sym">Gd</span><span class="name">gadolinium</span><span class="mass">157</span></div>
+    <div class="cell"><span class="num">65</span><span class="sym">Tb</span><span class="name">terbium</span><span class="mass">159</span></div>
+    <div class="cell"><span class="num">66</span><span class="sym">Dy</span><span class="name">dysprosium</span><span class="mass">163</span></div>
+    <div class="cell"><span class="num">67</span><span class="sym">Ho</span><span class="name">holmium</span><span class="mass">165</span></div>
+    <div class="cell"><span class="num">68</span><span class="sym">Er</span><span class="name">erbium</span><span class="mass">167</span></div>
+    <div class="cell"><span class="num">69</span><span class="sym">Tm</span><span class="name">thulium</span><span class="mass">169</span></div>
+    <div class="cell"><span class="num">70</span><span class="sym">Yb</span><span class="name">ytterbium</span><span class="mass">173</span></div>
+    <div class="cell"><span class="num">71</span><span class="sym">Lu</span><span class="name">lutetium</span><span class="mass">175</span></div>
+  </div>
+  <!-- Actinoids -->
+  <div class="la-ac-row">
+    <div class="la-ac-label">actinoids</div>
+    <div class="cell"><span class="num">89</span><span class="sym">Ac</span><span class="name">actinium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">90</span><span class="sym">Th</span><span class="name">thorium</span><span class="mass">232</span></div>
+    <div class="cell"><span class="num">91</span><span class="sym">Pa</span><span class="name">protactinium</span><span class="mass">231</span></div>
+    <div class="cell"><span class="num">92</span><span class="sym">U</span><span class="name">uranium</span><span class="mass">238</span></div>
+    <div class="cell"><span class="num">93</span><span class="sym">Np</span><span class="name">neptunium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">94</span><span class="sym">Pu</span><span class="name">plutonium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">95</span><span class="sym">Am</span><span class="name">americium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">96</span><span class="sym">Cm</span><span class="name">curium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">97</span><span class="sym">Bk</span><span class="name">berkelium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">98</span><span class="sym">Cf</span><span class="name">californium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">99</span><span class="sym">Es</span><span class="name">einsteinium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">100</span><span class="sym">Fm</span><span class="name">fermium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">101</span><span class="sym">Md</span><span class="name">mendelevium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">102</span><span class="sym">No</span><span class="name">nobelium</span><span class="mass">–</span></div>
+    <div class="cell"><span class="num">103</span><span class="sym">Lr</span><span class="name">lawrencium</span><span class="mass">–</span></div>
+  </div>
+</div>
+
+<p class="note">The volume of one mole of any gas is 24 dm<sup>3</sup> at room temperature and pressure (r.t.p.).</p>
+
+</body>
+</html>

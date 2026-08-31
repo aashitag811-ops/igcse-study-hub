@@ -3,6 +3,7 @@
 import { use } from 'react';
 import { useRouter } from 'next/navigation';
 import { ViewPastPapersPDFMode } from '@/components/past-papers/ViewPastPapersPDFMode';
+import type { Resource } from '@/components/past-papers/ViewPastPapersPDFMode';
 import BackButton from '@/components/BackButton';
 
 interface PageProps {
@@ -34,6 +35,15 @@ const SEASON_MAP: { [key: string]: string } = {
   's': 'May/June',
   'w': 'October/November'
 };
+
+function getResources(code: string): Resource[] {
+  if (code === '0620') {
+    return [
+      { label: 'Periodic Table', src: '/resources/periodic-table-igcse.html', type: 'html', accent: 'teal' },
+    ];
+  }
+  return [];
+}
 
 export default function ViewPapersPage({ params }: PageProps) {
   const router = useRouter();
@@ -101,6 +111,7 @@ export default function ViewPapersPage({ params }: PageProps) {
         subjectName={paperInfo.subjectName}
         displayName={paperInfo.displayName}
         onExit={handleExit}
+        resources={getResources(paperInfo.subjectCode)}
       />
     </>
   );
