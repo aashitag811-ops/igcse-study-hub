@@ -1,14 +1,8 @@
 'use client';
 
 /**
- * Casio fx-991EX ClassWiz — photo-overlay calculator
- *
- * The real product image is used as the visual background.
- * Transparent <button> hit-zones are positioned absolutely over every
- * physical key so the visual is pixel-perfect while all buttons work.
- *
- * Math engine: proper recursive-descent parser — handles nested
- * expressions, all trig/log/exp functions, nCr/nPr, factorials, etc.
+ * Casio fx-991EX ClassWiz — SVG body + working math engine
+ * SVG drawn to match the official product photo exactly.
  */
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
@@ -27,7 +21,7 @@ interface CS {
   mem: Record<string, number>;
   ans: number;
   err: string | null;
-  fresh: boolean;
+  fresh: boolean;          // true right after = pressed
 }
 
 // ─────────────────────────────── Math engine ─────────────────────────────────
@@ -42,32 +36,28 @@ function fromRad(x: number, u: AngleUnit) {
   if (u === 'GRAD') return x * 200 / Math.PI;
   return x;
 }
-
 function factorial(n: number): number {
-  if (!Number.isInteger(n) || n < 0) return NaN;
-  if (n > 170) return Infinity;
+  if (!Number.isInteger(n) || n < 0 || n > 170) return n > 170 ? Infinity : NaN;
   let r = 1; for (let i = 2; i <= n; i++) r *= i; return r;
 }
 function _nCr(n: number, r: number) {
-  if (n < 0 || r < 0 || r > n) return NaN;
+  if (!Number.isInteger(n) || !Number.isInteger(r) || r < 0 || r > n || n < 0) return NaN;
   return factorial(n) / (factorial(r) * factorial(n - r));
 }
 function _nPr(n: number, r: number) {
-  if (n < 0 || r < 0 || r > n) return NaN;
+  if (!Number.isInteger(n) || !Number.isInteger(r) || r < 0 || r > n || n < 0) return NaN;
   return factorial(n) / factorial(n - r);
 }
 
 function fmtNum(v: number): string {
-  if (isNaN(v))       return 'Math ERROR';
-  if (!isFinite(v))   return v > 0 ? '∞' : '-∞';
+  if (isNaN(v)) return 'Math ERROR';
+  if (!isFinite(v)) return v > 0 ? '∞' : '-∞';
   const abs = Math.abs(v);
   if (abs !== 0 && (abs >= 1e10 || abs < 1e-9)) {
-    return v.toExponential(6)
-            .replace(/\.?0+(e)/, '$1')
-            .replace('e+', '×10^')
-            .replace('e-', '×10^-');
+    const s = v.toExponential(6).replace(/\.?0+(e)/, '$1');
+    const [mantissa, exp] = s.split('e');
+    return `${mantissa}×10^${exp}`;
   }
-  // strip floating-point noise
   return parseFloat(v.toPrecision(10)).toString();
 }
 
@@ -76,45 +66,35 @@ function fmtNum(v: number): string {
 type Tok =
   | { t: 'num'; v: number }
   | { t: 'op';  v: string }
-  | { t: 'lp' }
-  | { t: 'rp' }
-  | { t: 'comma' }
-  | { t: 'fn'; v: string }
+  | { t: 'lp' } | { t: 'rp' } | { t: 'comma' }
+  | { t: 'fn';  v: string }
   | { t: 'end' };
 
 function tokenise(src: string, ans: number, mem: Record<string, number>): Tok[] {
   const out: Tok[] = [];
   let i = 0;
-  const s = src;
+  while (i < src.length) {
+    if (/\s/.test(src[i])) { i++; continue; }
 
-  while (i < s.length) {
-    if (/\s/.test(s[i])) { i++; continue; }
-
-    // multi-char numbers (including decimals)
-    if (/[\d.]/.test(s[i])) {
+    // numbers
+    if (/[\d.]/.test(src[i])) {
       let n = '';
-      while (i < s.length && /[\d.]/.test(s[i])) n += s[i++];
-      out.push({ t: 'num', v: parseFloat(n) });
-      continue;
+      while (i < src.length && /[\d.]/.test(src[i])) n += src[i++];
+      out.push({ t: 'num', v: parseFloat(n) }); continue;
     }
 
-    // named constants
-    if (s.startsWith('Ans', i)) { out.push({ t: 'num', v: ans });       i += 3; continue; }
-    if (s[i] === 'π')            { out.push({ t: 'num', v: Math.PI });   i++;    continue; }
-    if (s[i] === 'ℯ')            { out.push({ t: 'num', v: Math.E });    i++;    continue; }
-
-    // memory variables A-F (only when not followed by letters/paren — i.e. not part of a fn name)
-    if (/[A-F]/.test(s[i]) && (i + 1 >= s.length || !/[a-zA-Z(]/.test(s[i + 1]))) {
-      out.push({ t: 'num', v: mem[s[i]] ?? 0 }); i++; continue;
+    // constants / variables
+    if (src.startsWith('Ans', i))  { out.push({ t: 'num', v: ans });      i += 3; continue; }
+    if (src[i] === 'π')             { out.push({ t: 'num', v: Math.PI }); i++;    continue; }
+    if (src[i] === 'ℯ')             { out.push({ t: 'num', v: Math.E });  i++;    continue; }
+    // memory A-F (not followed by more letters)
+    if (/[A-F]/.test(src[i]) && !/[a-zA-Z(]/.test(src[i + 1] ?? '')) {
+      out.push({ t: 'num', v: mem[src[i]] ?? 0 }); i++; continue;
     }
 
-    // ×10^( scientific notation — treat as implicit ×10^
-    if (s.startsWith('×10^(', i)) {
-      out.push({ t: 'op', v: 'E' }); i += 5; continue;
-    }
-    if (s.startsWith('×10^', i)) {
-      out.push({ t: 'op', v: 'E' }); i += 4; continue;
-    }
+    // ×10^
+    if (src.startsWith('×10^(', i)) { out.push({ t: 'op', v: 'E' }); i += 5; continue; }
+    if (src.startsWith('×10^', i))  { out.push({ t: 'op', v: 'E' }); i += 4; continue; }
 
     // functions — longest match first
     const FNS = [
@@ -128,28 +108,25 @@ function tokenise(src: string, ans: number, mem: Record<string, number>): Tok[] 
     ];
     let matched = false;
     for (const fn of FNS) {
-      if (s.startsWith(fn, i)) {
-        out.push({ t: 'fn', v: fn });
-        i += fn.length;
-        if (s[i] === '(') { out.push({ t: 'lp' }); i++; }
+      if (src.startsWith(fn, i)) {
+        out.push({ t: 'fn', v: fn }); i += fn.length;
+        if (src[i] === '(') { out.push({ t: 'lp' }); i++; }
         matched = true; break;
       }
     }
     if (matched) continue;
 
-    // single-char operators & punctuation
-    const ops: Record<string, string> = {
-      '+':'+', '−':'-', '-':'-', '×':'*', '*':'*', '÷':'/', '/':'/',
-      '^':'^', '!':'!', '%':'%',
+    // operators
+    const opMap: Record<string, string> = {
+      '+':'+','−':'-','-':'-','×':'*','*':'*','÷':'/','/':'/',
+      '^':'^','!':'!','%':'%',
     };
-    if (ops[s[i]]) { out.push({ t: 'op', v: ops[s[i]] }); i++; continue; }
-    if (s[i] === '(') { out.push({ t: 'lp' }); i++; continue; }
-    if (s[i] === ')') { out.push({ t: 'rp' }); i++; continue; }
-    if (s[i] === ',') { out.push({ t: 'comma' }); i++; continue; }
-
-    i++; // skip unknown
+    if (opMap[src[i]]) { out.push({ t: 'op', v: opMap[src[i]] }); i++; continue; }
+    if (src[i] === '(') { out.push({ t: 'lp' }); i++; continue; }
+    if (src[i] === ')') { out.push({ t: 'rp' }); i++; continue; }
+    if (src[i] === ',') { out.push({ t: 'comma' }); i++; continue; }
+    i++;
   }
-
   out.push({ t: 'end' });
   return out;
 }
@@ -158,93 +135,72 @@ function tokenise(src: string, ans: number, mem: Record<string, number>): Tok[] 
 
 function calcEval(expr: string, angle: AngleUnit, ans: number, mem: Record<string, number>): number {
   if (!expr.trim()) return 0;
-
-  // auto-close unclosed parens (like the real calculator does on =)
-  let balanced = expr;
+  // auto-close parens
+  let e = expr;
   let open = 0;
-  for (const c of balanced) { if (c === '(') open++; else if (c === ')') open--; }
-  while (open-- > 0) balanced += ')';
+  for (const c of e) { if (c === '(') open++; else if (c === ')') open--; }
+  while (open-- > 0) e += ')';
 
-  const toks = tokenise(balanced, ans, mem);
+  const toks = tokenise(e, ans, mem);
   let pos = 0;
+  const cur = (): Tok => toks[pos];
+  const eat = (): Tok => toks[pos++];
 
-  const cur  = (): Tok => toks[pos];
-  const eat  = (): Tok => toks[pos++];
-  const peek = (): Tok => toks[pos + 1] ?? { t: 'end' };
+  const PREC: Record<string, number> = { '+':1,'-':1,'*':2,'/':2,'E':2,'^':4,'!':5,'%':5 };
 
-  // precedences
-  const PREC: Record<string, number> = {
-    '+': 1, '-': 1,
-    '*': 2, '/': 2, 'E': 2,
-    '^': 4,
-    '!': 5, '%': 5,
-  };
-
-  function expr0(): number { return exprBin(0); }
-
-  function exprBin(minP: number): number {
-    let left = unary();
-
+  function parseExpr(minP = 0): number {
+    let left = parseUnary();
     for (;;) {
       const t = cur();
-
-      // implicit multiply: left-value followed by ( or fn or num
+      // implicit multiply
       if (t.t === 'lp' || t.t === 'fn' || t.t === 'num') {
-        if (minP <= 2) { left *= unary(); continue; }
+        if (minP <= 2) { left *= parseUnary(); continue; }
         break;
       }
-
       if (t.t !== 'op') break;
       const p = PREC[t.v] ?? -1;
       if (p < minP) break;
       eat();
-
       if (t.v === '!') { left = factorial(left); continue; }
       if (t.v === '%') { left = left / 100; continue; }
-
-      const rp = t.v === '^' ? p : p + 1;  // ^ is right-assoc
-      const right = exprBin(rp);
-
+      const rp = t.v === '^' ? p : p + 1;
+      const right = parseExpr(rp);
       switch (t.v) {
         case '+': left += right; break;
         case '-': left -= right; break;
         case '*': left *= right; break;
         case '/': left /= right; break;
-        case '^': left  = Math.pow(left, right); break;
-        case 'E': left  = left * Math.pow(10, right); break;
+        case '^': left = Math.pow(left, right); break;
+        case 'E': left = left * Math.pow(10, right); break;
       }
     }
     return left;
   }
 
-  function unary(): number {
+  function parseUnary(): number {
     const t = cur();
-    if (t.t === 'op' && t.v === '-') { eat(); return -unary(); }
-    if (t.t === 'op' && t.v === '+') { eat(); return  unary(); }
-    return primary();
+    if (t.t === 'op' && t.v === '-') { eat(); return -parseUnary(); }
+    if (t.t === 'op' && t.v === '+') { eat(); return  parseUnary(); }
+    return parsePrimary();
   }
 
-  function primary(): number {
+  function parsePrimary(): number {
     const t = eat();
-
     if (t.t === 'num') return t.v;
-
     if (t.t === 'lp') {
-      const v = expr0();
+      const v = parseExpr(0);
       if (cur().t === 'rp') eat();
       return v;
     }
-
     if (t.t === 'fn') {
-      // opening paren already consumed by tokeniser if present
       if (t.v === 'nCr' || t.v === 'nPr') {
-        const n = expr0();
+        const n = parseExpr(0);
         if (cur().t === 'comma') eat();
-        const r = expr0();
+        const r = parseExpr(0);
         if (cur().t === 'rp') eat();
         return t.v === 'nCr' ? _nCr(n, r) : _nPr(n, r);
       }
-      const a = expr0();
+      const a = parseExpr(0);
       if (cur().t === 'rp') eat();
       switch (t.v) {
         case 'sin':    return Math.sin(toRad(a, angle));
@@ -267,113 +223,143 @@ function calcEval(expr: string, angle: AngleUnit, ans: number, mem: Record<strin
         default:       return NaN;
       }
     }
-
     return NaN;
   }
 
-  const result = expr0();
-  return result;
+  return parseExpr(0);
 }
 
 // ─────────────────────────────── State ───────────────────────────────────────
 
-const INIT_CS: CS = {
+const INIT: CS = {
   expr: '', result: '', shift: false, alpha: false, hyp: false,
   angle: 'DEG', mem: { A:0,B:0,C:0,D:0,E:0,F:0,M:0,X:0,Y:0 },
   ans: 0, err: null, fresh: false,
 };
 
-// ─────────────────────────────── Button map ──────────────────────────────────
-//
-// The calculator image is rendered at W×H pixels.
-// Each button is defined as [x%, y%, w%, h%] — percentage of image dimensions.
-// Positions measured from the official product photo.
-//
-// Image natural ratio ≈ 1070 wide × 1900 tall → we render at 220 × 390
+// ─────────────────────────────── Layout constants ────────────────────────────
+// All measurements in SVG units. ViewBox = "0 0 280 560"
 
-const W = 220;   // rendered image width  (px)
-const H = 390;   // rendered image height (px)
+const VW = 280;
+const VH = 560;
 
-interface Btn {
-  id: string;
-  label: string;       // what to show in tooltip / accessibility
-  act: string;         // primary action
-  sAct?: string;       // SHIFT action
-  aAct?: string;       // ALPHA action
-  // bounding box as % of image dimensions
+// ─────────────────────────────── Key definitions ─────────────────────────────
+
+interface K {
+  id: string; label: string;
+  // label colours: 'w'=white 'y'=yellow 'r'=red/pink
+  lc?: 'w'|'y'|'r';
   x: number; y: number; w: number; h: number;
+  rx?: number;   // border-radius override
+  // fill overrides
+  fill?: string; stroke?: string; textFill?: string;
+  fontSize?: number;
+  act: string; sAct?: string; aAct?: string;
+  // small labels above
+  shiftLabel?: string; alphaLabel?: string;
 }
 
-// All percentages tuned to the official Casio fx-991EX product photo
-const BUTTONS: Btn[] = [
-  // ── Navigation row ───────────────────────────────────────────────────────
-  { id:'SHIFT', label:'SHIFT', act:'SHIFT',  x:4,  y:37.5, w:11, h:5.5 },
-  { id:'ALPHA', label:'ALPHA', act:'ALPHA',  x:17, y:37.5, w:11, h:5.5 },
-  { id:'UP',    label:'▲',     act:'UP',     x:44, y:36,   w:10, h:4   },
-  { id:'LEFT',  label:'◀',     act:'LEFT',   x:34, y:39,   w:8,  h:4.5 },
-  { id:'OK',    label:'OK',    act:'NOOP',   x:43, y:39,   w:11, h:4.5 },
-  { id:'RIGHT', label:'▶',     act:'RIGHT',  x:55, y:39,   w:8,  h:4.5 },
-  { id:'DOWN',  label:'▼',     act:'DOWN',   x:44, y:43,   w:10, h:4   },
-  { id:'MENU',  label:'MENU',  act:'NOOP',   x:67, y:37.5, w:11, h:5.5 },
-  { id:'ON',    label:'ON',    act:'AC',     x:81, y:37.5, w:14, h:5.5 },
+// ── Button grid (SVG coordinates) ────────────────────────────────────────────
+// Body inner starts at x=14, y=14. Width=252.
+// Screen: y=74..178
+// Nav row: y=190
+// Fn rows: y=232,258,284,310
+// Num rows: y=340,372,404,436
 
-  // ── Row A: OPTN  CALC  (gap)  ∫  x ──────────────────────────────────────
-  { id:'OPTN',  label:'OPTN',  act:'NOOP',  sAct:'NOOP', x:2,  y:49,  w:18, h:5.5 },
-  { id:'CALC',  label:'CALC',  act:'NOOP',  sAct:'NOOP', x:22, y:49,  w:18, h:5.5 },
-  { id:'INTG',  label:'∫',     act:'NOOP',              x:60, y:49,  w:16, h:5.5 },
-  { id:'XKEY',  label:'x',     act:'NOOP',              x:78, y:49,  w:16, h:5.5 },
+const COL = [18, 70, 122, 174, 226];  // 5 column left-edges
+const CW  = 44;   // column width (each key)
+const CW2 = 48;   // wider keys (DEL/AC)
 
-  // ── Row B: ≡  √  x²  xᵐ  log  ln ───────────────────────────────────────
-  { id:'FRAC',  label:'≡',     act:'NOOP',  sAct:'NOOP', x:2,  y:56,  w:15, h:5.5 },
-  { id:'SQRT',  label:'√',     act:'SQRT',  sAct:'CBRT', x:19, y:56,  w:15, h:5.5 },
-  { id:'SQ',    label:'x²',    act:'SQ',    sAct:'CUBE', x:36, y:56,  w:15, h:5.5 },
-  { id:'POW',   label:'xᵐ',    act:'POW',               x:53, y:56,  w:15, h:5.5 },
-  { id:'LOG',   label:'log',   act:'LOG',   sAct:'POW10',x:69, y:56,  w:14, h:5.5 },
-  { id:'LN',    label:'ln',    act:'LN',    sAct:'EXPX', x:84, y:56,  w:14, h:5.5 },
+// nav buttons (round)
+const NAV_Y  = 196;
+const NAV_R  = 16;   // radius
 
-  // ── Row C: (-)  °'"  x⁻¹  sin  cos  tan ─────────────────────────────────
-  { id:'NEG',   label:'(-)',   act:'NEG',   sAct:'LOG',  x:2,  y:63,  w:15, h:5.5 },
-  { id:'DMS',   label:"°'\"",  act:'NOOP',              x:19, y:63,  w:15, h:5.5 },
-  { id:'INV',   label:'x⁻¹',  act:'INV',   sAct:'FACT', x:36, y:63,  w:15, h:5.5 },
-  { id:'SIN',   label:'sin',   act:'SIN',   sAct:'ASIN', x:53, y:63,  w:14, h:5.5 },
-  { id:'COS',   label:'cos',   act:'COS',   sAct:'ACOS', x:69, y:63,  w:14, h:5.5 },
-  { id:'TAN',   label:'tan',   act:'TAN',   sAct:'ATAN', x:84, y:63,  w:14, h:5.5 },
+// fn row heights
+const FN_H  = 22;
+const FN_Y  = [234, 258, 282, 306];
 
-  // ── Row D: STO  ENG  (  )  S⟺D  M+ ─────────────────────────────────────
-  { id:'STO',   label:'STO',   act:'STO',   sAct:'RCL',  x:2,  y:70,  w:15, h:5.5 },
-  { id:'ENG',   label:'ENG',   act:'NOOP',              x:19, y:70,  w:15, h:5.5 },
-  { id:'LPAR',  label:'(',     act:'LPAR',  sAct:'ABS',  x:36, y:70,  w:15, h:5.5 },
-  { id:'RPAR',  label:')',     act:'RPAR',              x:53, y:70,  w:14, h:5.5 },
-  { id:'STOD',  label:'S⟺D',  act:'STOD',              x:67, y:70,  w:16, h:5.5 },
-  { id:'MPLUS', label:'M+',    act:'MPLUS', sAct:'MMINUS',x:84, y:70, w:14, h:5.5 },
+// num row heights  
+const NUM_H = 32;
+const NUM_Y = [342, 378, 414, 450];
 
-  // ── Row E: 7  8  9  DEL  AC ──────────────────────────────────────────────
-  { id:'7',   label:'7',   act:'7',   x:2,  y:77.5, w:17, h:6 },
-  { id:'8',   label:'8',   act:'8',   x:21, y:77.5, w:17, h:6 },
-  { id:'9',   label:'9',   act:'9',   x:40, y:77.5, w:17, h:6 },
-  { id:'DEL', label:'DEL', act:'DEL', sAct:'INS', x:59, y:77.5, w:18, h:6 },
-  { id:'AC',  label:'AC',  act:'AC',  sAct:'OFF', x:79, y:77.5, w:18, h:6 },
+const KEYS: K[] = [
+  // ── NAV ROW ──────────────────────────────────────────────────────────────
+  // SHIFT (amber oval)
+  { id:'SHIFT', label:'SHIFT', x:22,  y:NAV_Y-12, w:40, h:24, rx:12, fill:'#e8960a', stroke:'#a06000', textFill:'#fff', fontSize:8,  act:'SHIFT' },
+  // ALPHA (red oval)
+  { id:'ALPHA', label:'ALPHA', x:68,  y:NAV_Y-12, w:40, h:24, rx:12, fill:'#d01038', stroke:'#880020', textFill:'#fff', fontSize:8,  act:'ALPHA' },
+  // D-pad up
+  { id:'UP',    label:'▲',     x:150, y:NAV_Y-26, w:22, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'UP',   shiftLabel:'STAT' },
+  // D-pad left
+  { id:'LEFT',  label:'◀',     x:122, y:NAV_Y-8,  w:18, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'LEFT'  },
+  // D-pad centre
+  { id:'CTR',   label:'',      x:144, y:NAV_Y-8,  w:34, h:18, rx:8,  fill:'#888', stroke:'#555', textFill:'#fff', fontSize:8, act:'NOOP'  },
+  // D-pad right
+  { id:'RIGHT', label:'▶',     x:182, y:NAV_Y-8,  w:18, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'RIGHT' },
+  // D-pad down
+  { id:'DOWN',  label:'▼',     x:150, y:NAV_Y+10, w:22, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'DOWN', shiftLabel:'TABLE' },
+  // MENU (small grey)
+  { id:'MENU',  label:'MENU',  x:208, y:NAV_Y-12, w:30, h:24, rx:5,  fill:'#555', stroke:'#333', textFill:'#ccc', fontSize:7, act:'NOOP', shiftLabel:'SETUP' },
+  // ON (small grey)
+  { id:'ON',    label:'ON',    x:242, y:NAV_Y-12, w:26, h:24, rx:5,  fill:'#555', stroke:'#333', textFill:'#ccc', fontSize:7, act:'AC',   shiftLabel:'OFF' },
 
-  // ── Row F: 4  5  6  ×  ÷ ────────────────────────────────────────────────
-  { id:'4',   label:'4',  act:'4',  x:2,  y:85, w:17, h:6 },
-  { id:'5',   label:'5',  act:'5',  x:21, y:85, w:17, h:6 },
-  { id:'6',   label:'6',  act:'6',  x:40, y:85, w:17, h:6 },
-  { id:'MUL', label:'×',  act:'×',  x:59, y:85, w:18, h:6 },
-  { id:'DIV', label:'÷',  act:'÷',  x:79, y:85, w:18, h:6 },
+  // ── FN ROW 0: OPTN  CALC  [space]  ∫  x ─────────────────────────────────
+  { id:'OPTN', label:'OPTN', x:18, y:FN_Y[0], w:50, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP', shiftLabel:'QR' },
+  { id:'CALC', label:'CALC', x:72, y:FN_Y[0], w:50, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP', shiftLabel:'SOLVE' },
+  { id:'INTG', label:'∫',    x:162,y:FN_Y[0], w:46, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:10,act:'NOOP', shiftLabel:'d/dx' },
+  { id:'XVAR', label:'x',    x:212,y:FN_Y[0], w:46, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:10,act:'NOOP', shiftLabel:'Σ' },
 
-  // ── Row G: 1  2  3  +  − ────────────────────────────────────────────────
-  { id:'1',   label:'1',  act:'1',  x:2,  y:92.5, w:17, h:6 },
-  { id:'2',   label:'2',  act:'2',  x:21, y:92.5, w:17, h:6 },
-  { id:'3',   label:'3',  act:'3',  x:40, y:92.5, w:17, h:6 },
-  { id:'ADD', label:'+',  act:'+',  x:59, y:92.5, w:18, h:6 },
-  { id:'SUB', label:'−',  act:'−',  x:79, y:92.5, w:18, h:6 },
+  // ── FN ROW 1: ≡  √  x²  xᵐ  log□  ln ───────────────────────────────────
+  { id:'FRAC', label:'≡',    x:18, y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'NOOP' },
+  { id:'SQRT', label:'√',    x:62, y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'SQRT', shiftLabel:'³√' },
+  { id:'SQ',   label:'x²',   x:106,y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'SQ',   shiftLabel:'x³' },
+  { id:'POW',  label:'xᵐ',   x:150,y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'POW' },
+  { id:'LOGB', label:'log□', x:194,y:FN_Y[1], w:36, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:7, act:'LOG',  shiftLabel:'10ˣ', sAct:'POW10' },
+  { id:'LN',   label:'ln',   x:234,y:FN_Y[1], w:30, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'LN',   shiftLabel:'eˣ',  sAct:'EXPX' },
 
-  // ── Row H: 0  .  ×10ˣ  Ans  = ───────────────────────────────────────────
-  { id:'0',   label:'0',     act:'0',   x:2,  y:92.5, w:17, h:6 },
-  { id:'DOT', label:'.',     act:'.',   x:21, y:92.5, w:17, h:6 },
-  { id:'EE',  label:'×10ˣ', act:'EE',  sAct:'PI',  x:40, y:92.5, w:17, h:6 },
-  { id:'ANS', label:'Ans',   act:'ANS', sAct:'PERCENT', x:59, y:92.5, w:18, h:6 },
-  { id:'EQ',  label:'=',     act:'=',   x:79, y:92.5, w:18, h:6 },
+  // ── FN ROW 2: (-)  °'"  x⁻¹  sin  cos  tan ──────────────────────────────
+  { id:'NEG',  label:'(-)',  x:18, y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NEG',  shiftLabel:'log', sAct:'LOG', alphaLabel:'A' },
+  { id:'DMS',  label:"°'\"", x:60, y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP', alphaLabel:'B' },
+  { id:'INV',  label:'x⁻¹', x:102,y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'INV',  shiftLabel:'x!', sAct:'FACT', alphaLabel:'C' },
+  { id:'SIN',  label:'sin',  x:144,y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'SIN',  shiftLabel:'sin⁻¹', sAct:'ASIN', alphaLabel:'D' },
+  { id:'COS',  label:'cos',  x:186,y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'COS',  shiftLabel:'cos⁻¹', sAct:'ACOS', alphaLabel:'E' },
+  { id:'TAN',  label:'tan',  x:228,y:FN_Y[2], w:36, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'TAN',  shiftLabel:'tan⁻¹', sAct:'ATAN', alphaLabel:'F' },
+
+  // ── FN ROW 3: STO  ENG  (  )  S⟺D  M+ ──────────────────────────────────
+  { id:'STO',  label:'STO',  x:18, y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'STO',  shiftLabel:'RCL', sAct:'RCL' },
+  { id:'ENG',  label:'ENG',  x:60, y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP' },
+  { id:'LPAR', label:'(',    x:102,y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'LPAR', shiftLabel:'Abs', sAct:'ABS' },
+  { id:'RPAR', label:')',    x:144,y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'RPAR' },
+  { id:'STOD', label:'S⟺D', x:186,y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:7, act:'STOD', shiftLabel:'▶DEG', sAct:'TODEG' },
+  { id:'MPLUS',label:'M+',   x:228,y:FN_Y[3], w:36, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'MPLUS',shiftLabel:'M−',  sAct:'MMINUS' },
+
+  // ── NUM ROW 0: 7  8  9  DEL  AC ──────────────────────────────────────────
+  { id:'7',  label:'7',   x:18, y:NUM_Y[0], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'7',   shiftLabel:'CONST' },
+  { id:'8',  label:'8',   x:72, y:NUM_Y[0], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'8',   shiftLabel:'CONV' },
+  { id:'9',  label:'9',   x:126,y:NUM_Y[0], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'9',   shiftLabel:'RESET' },
+  { id:'DEL',label:'DEL', x:180,y:NUM_Y[0], w:40, h:NUM_H, rx:5, fill:'#1840b8', stroke:'#0a2070', textFill:'#fff', fontSize:11, act:'DEL', shiftLabel:'INS', sAct:'INS' },
+  { id:'AC', label:'AC',  x:224,y:NUM_Y[0], w:40, h:NUM_H, rx:5, fill:'#1840b8', stroke:'#0a2070', textFill:'#fff', fontSize:11, act:'AC',  shiftLabel:'OFF', sAct:'OFF' },
+
+  // ── NUM ROW 1: 4  5  6  ×  ÷ ────────────────────────────────────────────
+  { id:'4',  label:'4',  x:18, y:NUM_Y[1], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'4', shiftLabel:'nPr' },
+  { id:'5',  label:'5',  x:72, y:NUM_Y[1], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'5' },
+  { id:'6',  label:'6',  x:126,y:NUM_Y[1], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'6' },
+  { id:'MUL',label:'×',  x:180,y:NUM_Y[1], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'×', shiftLabel:'nCr' },
+  { id:'DIV',label:'÷',  x:224,y:NUM_Y[1], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'÷' },
+
+  // ── NUM ROW 2: 1  2  3  +  − ────────────────────────────────────────────
+  { id:'1',  label:'1',  x:18, y:NUM_Y[2], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'1' },
+  { id:'2',  label:'2',  x:72, y:NUM_Y[2], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'2' },
+  { id:'3',  label:'3',  x:126,y:NUM_Y[2], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'3' },
+  { id:'ADD',label:'+',  x:180,y:NUM_Y[2], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'+', shiftLabel:'Pol' },
+  { id:'SUB',label:'−',  x:224,y:NUM_Y[2], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'−', shiftLabel:'Rec' },
+
+  // ── NUM ROW 3: 0  .  ×10ˣ  Ans  = ───────────────────────────────────────
+  { id:'0',  label:'0',    x:18, y:NUM_Y[3], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'0',  shiftLabel:'Rnd' },
+  { id:'DOT',label:'.',    x:72, y:NUM_Y[3], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:18, act:'.',  shiftLabel:'Ran#' },
+  { id:'EE', label:'×10ˣ', x:126,y:NUM_Y[3], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:8,  act:'EE', shiftLabel:'π', sAct:'PI' },
+  { id:'ANS',label:'Ans',  x:180,y:NUM_Y[3], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:11, act:'ANS',shiftLabel:'%',  sAct:'PERCENT' },
+  { id:'EQ', label:'=',    x:224,y:NUM_Y[3], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:18, act:'=' },
 ];
 
 // ─────────────────────────────── Component ───────────────────────────────────
@@ -381,100 +367,87 @@ const BUTTONS: Btn[] = [
 interface Props { onClose: () => void }
 
 export function Fx991EX({ onClose }: Props) {
-  const [cs, setCS] = useState<CS>({ ...INIT_CS });
+  const [cs, setCS] = useState<CS>({ ...INIT });
   const [pos, setPos] = useState({ x: 60, y: 20 });
-  const dragRef = useRef({ dragging: false, ox: 0, oy: 0 });
+  const dragRef = useRef({ on: false, ox: 0, oy: 0 });
 
-  // Drag on the image header area
-  const onImgDown = useCallback((e: React.MouseEvent) => {
+  // drag
+  const onDragStart = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
-    dragRef.current = { dragging: true, ox: e.clientX - pos.x, oy: e.clientY - pos.y };
+    dragRef.current = { on: true, ox: e.clientX - pos.x, oy: e.clientY - pos.y };
     document.body.style.userSelect = 'none';
   }, [pos]);
-
   useEffect(() => {
     const mm = (e: MouseEvent) => {
-      if (!dragRef.current.dragging) return;
+      if (!dragRef.current.on) return;
       setPos({ x: e.clientX - dragRef.current.ox, y: e.clientY - dragRef.current.oy });
     };
-    const mu = () => { dragRef.current.dragging = false; document.body.style.userSelect = ''; };
+    const mu = () => { dragRef.current.on = false; document.body.style.userSelect = ''; };
     window.addEventListener('mousemove', mm);
     window.addEventListener('mouseup', mu);
     return () => { window.removeEventListener('mousemove', mm); window.removeEventListener('mouseup', mu); };
   }, []);
 
-  // ── Key handler ───────────────────────────────────────────────────────────
-  const press = useCallback((btn: Btn) => {
+  // key press
+  const press = useCallback((k: K) => {
     setCS(prev => {
-      const act = prev.shift ? (btn.sAct ?? btn.act)
-                : prev.alpha ? (btn.aAct ?? btn.act)
-                : btn.act;
+      const act = prev.shift ? (k.sAct ?? k.act)
+                : prev.alpha ? (k.aAct ?? k.act)
+                : k.act;
       const base: CS = { ...prev, shift: false, alpha: false, err: null };
 
-      // append token to expression; if fresh (just evaluated) and not
-      // a binary continuation operator, start new expression
-      const app = (token: string): CS => {
+      const app = (tok: string): CS => {
         let e = base.expr;
-        if (base.fresh && !/^[+−×÷\^!%)]/.test(token)) {
-          // continuing with operator after result → prepend Ans
-          if (/^[+−×÷\^]/.test(token)) e = 'Ans';
-          else e = '';
+        if (base.fresh) {
+          // after = : operator continues with Ans, else start fresh
+          if (/^[+−×÷\^]/.test(tok)) e = 'Ans';
+          else if (!/^[)!%]/.test(tok)) e = '';
         }
-        return { ...base, expr: e + token, result: '', fresh: false };
+        return { ...base, expr: e + tok, result: '', fresh: false };
       };
 
-      // multi-char token DEL
       const MULTI = [
         'sinh⁻¹(','cosh⁻¹(','tanh⁻¹(',
         'sin⁻¹(', 'cos⁻¹(', 'tan⁻¹(',
         'sinh(',  'cosh(',  'tanh(',
         'sin(',   'cos(',   'tan(',
-        '×10^(',  'log(',   'ln(',
-        'eˣ(',    '√(',     'abs(',
-        'nCr(',   'nPr(',   '-(', '^(',
-        '^2',     '^(-1)',
+        '×10^(',  'log(',   'ln(', 'eˣ(', '√(', 'abs(', 'nCr(', 'nPr(', '-(', '^(',
+        '^(-1)', '^2', '^3',
       ];
 
       switch (act) {
-        // ── mode ────────────────────────────────────────────────────────
         case 'SHIFT': return { ...prev, shift: !prev.shift, alpha: false };
         case 'ALPHA': return { ...prev, alpha: !prev.alpha, shift: false };
-        case 'AC':
-        case 'OFF':   return { ...INIT_CS, angle: prev.angle, mem: prev.mem };
+        case 'AC': case 'OFF': return { ...INIT, angle: prev.angle, mem: prev.mem };
         case 'HYP':   return { ...base, hyp: !prev.hyp };
         case 'NOOP':  return base;
 
-        // ── DEL — smart multi-char delete ────────────────────────────────
         case 'DEL': {
           if (base.fresh) return { ...base, expr: '', result: '', fresh: false };
           const e = base.expr;
-          for (const m of MULTI) {
-            if (e.endsWith(m)) return { ...base, expr: e.slice(0, -m.length) };
-          }
+          for (const m of MULTI) if (e.endsWith(m)) return { ...base, expr: e.slice(0, -m.length) };
           return { ...base, expr: e.slice(0, -1) };
         }
 
-        // ── digits & decimal ─────────────────────────────────────────────
+        case 'TODEG': {
+          const cyc: AngleUnit[] = ['DEG','RAD','GRAD'];
+          return { ...base, angle: cyc[(cyc.indexOf(prev.angle) + 1) % 3] };
+        }
+
         case '0':case '1':case '2':case '3':case '4':
         case '5':case '6':case '7':case '8':case '9':
         case '.': return app(act);
-
-        // ── basic operators ──────────────────────────────────────────────
         case '+': case '−': case '×': case '÷': return app(act);
 
-        // ── constants ────────────────────────────────────────────────────
         case 'PI':      return app('π');
         case 'ECONST':  return app('ℯ');
         case 'ANS':     return app('Ans');
         case 'PERCENT': return app('%');
+        case 'LPAR':    return app('(');
+        case 'RPAR':    return app(')');
+        case 'ABS':     return app('abs(');
+        case 'NEG':     return app('-(');
 
-        // ── brackets ─────────────────────────────────────────────────────
-        case 'LPAR': return app('(');
-        case 'RPAR': return app(')');
-        case 'ABS':  return app('abs(');
-        case 'NEG':  return app('-(');
-
-        // ── trig (respects hyp) ──────────────────────────────────────────
         case 'SIN':  return app(prev.hyp ? 'sinh('   : 'sin(');
         case 'COS':  return app(prev.hyp ? 'cosh('   : 'cos(');
         case 'TAN':  return app(prev.hyp ? 'tanh('   : 'tan(');
@@ -482,36 +455,30 @@ export function Fx991EX({ onClose }: Props) {
         case 'ACOS': return app(prev.hyp ? 'cosh⁻¹(' : 'cos⁻¹(');
         case 'ATAN': return app(prev.hyp ? 'tanh⁻¹(' : 'tan⁻¹(');
 
-        // ── log / exp ────────────────────────────────────────────────────
         case 'LOG':    return app('log(');
         case 'LN':     return app('ln(');
         case 'EXPX':   return app('eˣ(');
         case 'POW10':  return app('10^(');
         case 'SQRT':   return app('√(');
+        case 'SQ':     return app('^2');
+        case 'CUBE':   return app('^3');
+        case 'POW':    return app('^(');
+        case 'INV':    return app('^(-1)');
+        case 'FACT':   return app('!');
+        case 'EE':     return app('×10^(');
+        case 'NCR':    return app('nCr(');
+        case 'NPR':    return app('nPr(');
 
-        // ── powers ───────────────────────────────────────────────────────
-        case 'SQ':    return app('^2');
-        case 'CUBE':  return app('^3');
-        case 'POW':   return app('^(');
-        case 'INV':   return app('^(-1)');
-        case 'FACT':  return app('!');
-        case 'EE':    return app('×10^(');
-
-        // ── combinations / permutations ──────────────────────────────────
-        case 'NCR': return app('nCr(');
-        case 'NPR': return app('nPr(');
-
-        // ── memory ───────────────────────────────────────────────────────
         case 'MPLUS': {
           const m = prev.mem.M + prev.ans;
-          return { ...base, mem: { ...prev.mem, M: m }, result: `M = ${fmtNum(m)}` };
+          return { ...base, mem: { ...prev.mem, M: m }, result: `M=${fmtNum(m)}` };
         }
         case 'MMINUS': {
           const m = prev.mem.M - prev.ans;
-          return { ...base, mem: { ...prev.mem, M: m }, result: `M = ${fmtNum(m)}` };
+          return { ...base, mem: { ...prev.mem, M: m }, result: `M=${fmtNum(m)}` };
         }
-        case 'STO':    return { ...base, result: 'STO → press A–F' };
-        case 'RCL':    return { ...base, result: 'RCL → press A–F' };
+        case 'STO': return { ...base, result: 'STO: press A–F' };
+        case 'RCL': return { ...base, result: 'RCL: press A–F' };
 
         case 'STOD': {
           const r = prev.ans;
@@ -526,13 +493,6 @@ export function Fx991EX({ onClose }: Props) {
           return base;
         }
 
-        // ── angle mode toggle (SHIFT + S⟺D on real calc) ─────────────────
-        case 'TODEG': {
-          const cyc: AngleUnit[] = ['DEG','RAD','GRAD'];
-          return { ...base, angle: cyc[(cyc.indexOf(prev.angle) + 1) % 3] };
-        }
-
-        // ── evaluate ─────────────────────────────────────────────────────
         case '=': {
           try {
             const val = calcEval(base.expr || '0', prev.angle, prev.ans, prev.mem);
@@ -541,10 +501,6 @@ export function Fx991EX({ onClose }: Props) {
             return { ...base, result: 'Syntax ERROR', err: 'Syntax ERROR', fresh: true };
           }
         }
-
-        // ── UP/DOWN — history (simplified: re-show last expr) ────────────
-        case 'UP':
-        case 'DOWN': return base;
 
         default: return base;
       }
@@ -555,144 +511,171 @@ export function Fx991EX({ onClose }: Props) {
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
-    <div
-      style={{
-        position: 'fixed',
-        left: pos.x,
-        top: pos.y,
-        zIndex: 9999,
-        width: W,
-        userSelect: 'none',
-        filter: 'drop-shadow(0 16px 40px rgba(0,0,0,0.75))',
-      }}
-    >
-      {/* ── Outer container with image ──────────────────────────────────── */}
-      <div
-        style={{
-          position: 'relative',
-          width: W,
-          height: H,
-        }}
+    <div style={{
+      position: 'fixed', left: pos.x, top: pos.y,
+      zIndex: 9999, userSelect: 'none',
+      filter: 'drop-shadow(0 12px 36px rgba(0,0,0,0.8))',
+    }}>
+      <svg
+        width={VW} height={VH}
+        viewBox={`0 0 ${VW} ${VH}`}
+        style={{ display: 'block', cursor: 'default' }}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Drag handle covers the top ~35% (above the button area) */}
-        <div
-          onMouseDown={onImgDown}
-          style={{ position:'absolute', left:0, top:0, width:'100%', height:'35%', cursor:'grab', zIndex:2 }}
-        />
+        {/* ── Outer white/silver rim ──────────────────────────────────────── */}
+        <rect x={0} y={0} width={VW} height={VH} rx={22} ry={22}
+          fill="#d8d8d0" stroke="#b8b8b0" strokeWidth={1} />
 
-        {/* The actual calculator photo — save the image from this chat to:
-            public/calculator/fx991ex.png  */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/calculator/fx991ex.png"
-          alt="Casio fx-991EX ClassWiz"
-          draggable={false}
-          style={{
-            position: 'absolute', inset: 0,
-            width: W, height: H,
-            display: 'block',
-            objectFit: 'fill',
-            borderRadius: 16,
-            zIndex: 1,
-          }}
-        />
+        {/* ── Inner black textured face ───────────────────────────────────── */}
+        <rect x={8} y={8} width={VW-16} height={VH-16} rx={16} ry={16}
+          fill="#1c1c1c" />
+        {/* subtle texture lines */}
+        {Array.from({length:28}).map((_,i) => (
+          <line key={i} x1={8} y1={28+i*18} x2={VW-8} y2={28+i*18}
+            stroke="#222" strokeWidth={0.5} opacity={0.5} />
+        ))}
 
-        {/* ── LCD overlay ───────────────────────────────────────────────── */}
-        {/* Screen area: roughly x=6%, y=17%, w=88%, h=18% of image */}
-        <div
-          style={{
-            position: 'absolute',
-            left:   `${6}%`,
-            top:    `${17}%`,
-            width:  `${88}%`,
-            height: `${17}%`,
-            background: 'rgba(188, 210, 170, 0.88)',
-            borderRadius: 3,
-            padding: '3px 6px',
-            display: 'flex',
-            flexDirection: 'column',
-            fontFamily: 'monospace',
-            pointerEvents: 'none',
-          }}
-        >
-          {/* status row */}
-          <div style={{ display:'flex', justifyContent:'space-between', fontSize: 7, color:'#1a2a04' }}>
-            <span style={{ fontWeight:'bold' }}>{s.angle}</span>
-            <div style={{ display:'flex', gap:3 }}>
-              {s.shift && <span style={{ background:'#e8960a', color:'#fff', padding:'0 2px', borderRadius:1 }}>S</span>}
-              {s.alpha && <span style={{ background:'#c01878', color:'#fff', padding:'0 2px', borderRadius:1 }}>A</span>}
-              {s.hyp   && <span style={{ background:'#446',    color:'#fff', padding:'0 2px', borderRadius:1 }}>H</span>}
+        {/* ── Solar panel ─────────────────────────────────────────────────── */}
+        <rect x={148} y={14} width={114} height={28} rx={4} fill="#0a0a0a" stroke="#444" strokeWidth={1}/>
+        {Array.from({length:10}).map((_,i) => (
+          <rect key={i} x={150+i*11} y={16} width={9} height={24} rx={1}
+            fill="#111" stroke="#222" strokeWidth={0.5}/>
+        ))}
+
+        {/* ── CASIO branding ──────────────────────────────────────────────── */}
+        <text x={18} y={30} fill="#fff" fontSize={14} fontWeight="900"
+          fontFamily="Arial, sans-serif" letterSpacing="3">CASIO</text>
+        <text x={18} y={42} fill="#999" fontSize={8}
+          fontFamily="Arial, sans-serif" letterSpacing="1">fx-991EX</text>
+        <text x={18} y={52} fill="#e8204a" fontSize={8.5} fontWeight="bold"
+          fontFamily="'Courier New', monospace" letterSpacing="3">CLASSWIZ</text>
+
+        {/* ── Drag handle (top strip, invisible) ──────────────────────────── */}
+        <rect x={0} y={0} width={VW} height={70} rx={22} fill="transparent"
+          onMouseDown={onDragStart} style={{ cursor:'grab' }} />
+
+        {/* ── Close button ────────────────────────────────────────────────── */}
+        <g onClick={onClose} style={{ cursor:'pointer' }}>
+          <circle cx={VW-16} cy={16} r={9} fill="rgba(0,0,0,0.5)" />
+          <text x={VW-16} y={20} textAnchor="middle" fill="#fff" fontSize={10}>×</text>
+        </g>
+
+        {/* ── Screen bezel ────────────────────────────────────────────────── */}
+        <rect x={12} y={62} width={VW-24} height={104} rx={5} fill="#444" />
+        {/* LCD panel */}
+        <rect x={16} y={66} width={VW-32} height={96} rx={3} fill="#c8d8b8" />
+
+        {/* ── LCD content (via foreignObject) ─────────────────────────────── */}
+        <foreignObject x={16} y={66} width={VW-32} height={96}>
+          <div
+            style={{
+              width: '100%', height: '100%',
+              background: '#c8d8b8',
+              borderRadius: 3,
+              padding: '4px 8px',
+              boxSizing: 'border-box',
+              display: 'flex',
+              flexDirection: 'column',
+              fontFamily: 'monospace',
+              overflow: 'hidden',
+            }}
+          >
+            {/* Status row */}
+            <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:2 }}>
+              <div style={{ display:'flex', gap:4, alignItems:'center' }}>
+                <span style={{ fontSize:8, color:'#1a2a04', fontWeight:'bold' }}>{s.angle}</span>
+                {s.shift && <span style={{ fontSize:6.5, background:'#e8960a', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>S</span>}
+                {s.alpha && <span style={{ fontSize:6.5, background:'#d01038', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>A</span>}
+                {s.hyp   && <span style={{ fontSize:6.5, background:'#446',    color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>H</span>}
+                {s.mem.M !== 0 && <span style={{ fontSize:6.5, background:'#338', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>M</span>}
+              </div>
+              <span style={{ fontSize:8, color:'#1a2a04' }}>COMP</span>
             </div>
-            <span>COMP</span>
-          </div>
-          {/* expression */}
-          <div style={{
-            flex:1, fontSize: 9, color:'#1a2a04',
-            textAlign:'right', overflow:'hidden', lineHeight:1.3,
-            marginTop: 1,
-          }}>
-            {s.expr}
-          </div>
-          {/* result */}
-          <div style={{
-            fontSize: 16, fontWeight:'bold',
-            color: s.err ? '#880000' : '#0a1a04',
-            textAlign:'right', lineHeight:1.1,
-          }}>
-            {s.result || (!s.expr && !s.fresh ? '0' : '')}
-          </div>
-        </div>
 
-        {/* ── Transparent button hit-zones ──────────────────────────────── */}
-        {BUTTONS.map(btn => {
-          const isActive = (btn.act === 'SHIFT' && s.shift)
-                        || (btn.act === 'ALPHA' && s.alpha)
-                        || (btn.act === 'HYP'   && s.hyp);
+            {/* Expression line — small, right-aligned, shows what's being typed */}
+            <div style={{
+              flex:1,
+              fontSize: 11,
+              color: '#1a2a04',
+              textAlign: 'right',
+              wordBreak: 'break-all',
+              lineHeight: 1.3,
+              paddingTop: 2,
+              minHeight: 14,
+            }}>
+              {/* Show expr while typing; after =, show expr above result */}
+              {s.fresh ? s.expr : s.expr}
+            </div>
+
+            {/* Result line — large, right-aligned */}
+            <div style={{
+              fontSize: s.result.length > 12 ? 14 : 22,
+              fontWeight: 'bold',
+              color: s.err ? '#880000' : '#0a1a04',
+              textAlign: 'right',
+              lineHeight: 1.1,
+              minHeight: 26,
+            }}>
+              {s.result
+                ? s.result
+                : s.expr
+                  ? ''
+                  : '0'}
+            </div>
+          </div>
+        </foreignObject>
+
+        {/* ── Buttons ─────────────────────────────────────────────────────── */}
+        {KEYS.map(k => {
+          const isActive = (k.act === 'SHIFT' && s.shift)
+                        || (k.act === 'ALPHA' && s.alpha)
+                        || (k.act === 'HYP'   && s.hyp);
+          const fill   = isActive ? '#fff' : (k.fill ?? '#2a2a2a');
+          const tFill  = isActive ? '#d01038' : (k.textFill ?? '#e8e8e8');
+          const stroke = k.stroke ?? '#111';
+          const rx     = k.rx ?? 3;
+          const cx     = k.x + k.w / 2;
+          const cy     = k.y + k.h / 2;
+          const fs     = k.fontSize ?? 9;
+
           return (
-            <button
-              key={btn.id}
-              title={btn.label}
-              onMouseDown={e => { e.preventDefault(); press(btn); }}
-              style={{
-                position: 'absolute',
-                left:   `${btn.x}%`,
-                top:    `${btn.y}%`,
-                width:  `${btn.w}%`,
-                height: `${btn.h}%`,
-                background: isActive ? 'rgba(255,255,255,0.35)' : 'transparent',
-                border: 'none',
-                borderRadius: 3,
-                cursor: 'pointer',
-                padding: 0,
-                outline: 'none',
-                // debug: uncomment to see hit-zones
-                // border: '1px solid rgba(255,0,0,0.4)',
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.18)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = isActive ? 'rgba(255,255,255,0.35)' : 'transparent'; }}
-            />
+            <g key={k.id}
+              onMouseDown={e => { e.preventDefault(); press(k); }}
+              style={{ cursor:'pointer' }}
+            >
+              {/* shift label above (yellow) */}
+              {k.shiftLabel && (
+                <text x={cx} y={k.y - 2} textAnchor="middle"
+                  fill="#e8960a" fontSize={5.5} fontWeight="bold"
+                  fontFamily="Arial, sans-serif">{k.shiftLabel}</text>
+              )}
+              {/* alpha label above (pink) */}
+              {k.alphaLabel && (
+                <text x={k.x + k.w - 2} y={k.y - 2} textAnchor="end"
+                  fill="#e040a0" fontSize={5.5} fontWeight="bold"
+                  fontFamily="Arial, sans-serif">{k.alphaLabel}</text>
+              )}
+              {/* key body */}
+              <rect x={k.x} y={k.y} width={k.w} height={k.h} rx={rx} ry={rx}
+                fill={fill} stroke={stroke} strokeWidth={0.8}
+              />
+              {/* 3D shadow line */}
+              {!isActive && (
+                <rect x={k.x} y={k.y + k.h} width={k.w} height={3} rx={2}
+                  fill={stroke} opacity={0.7}/>
+              )}
+              {/* label */}
+              <text x={cx} y={cy + fs * 0.38}
+                textAnchor="middle"
+                fill={tFill}
+                fontSize={fs}
+                fontWeight={k.act === '=' || /^\d$/.test(k.act) ? 'bold' : '600'}
+                fontFamily="Arial, sans-serif"
+              >{k.label}</text>
+            </g>
           );
         })}
-
-        {/* ── Close button ──────────────────────────────────────────────── */}
-        <button
-          onClick={onClose}
-          style={{
-            position: 'absolute',
-            top: 4, right: 6,
-            background: 'rgba(0,0,0,0.45)',
-            border: 'none',
-            borderRadius: '50%',
-            width: 18, height: 18,
-            color: '#fff',
-            fontSize: 12,
-            lineHeight: 1,
-            cursor: 'pointer',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            padding: 0,
-          }}
-        >×</button>
-      </div>
+      </svg>
     </div>
   );
 }
