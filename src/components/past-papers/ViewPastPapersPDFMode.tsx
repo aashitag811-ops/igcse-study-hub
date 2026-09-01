@@ -5,6 +5,7 @@ import { PDFViewer } from './PDFViewer';
 import { PDFViewerWithEROverlay } from './PDFViewerWithEROverlay';
 import { ExaminerReportModal } from './ExaminerReportModal';
 import { ResourceOverlay } from './ResourceOverlay';
+import { Fx991EX } from '../calculator/Fx991EX';
 import { pdfUrl } from '@/lib/assetUrl';
 
 export interface Resource {
@@ -22,6 +23,7 @@ interface ViewPastPapersPDFModeProps {
   displayName: string;
   onExit?: () => void;
   resources?: Resource[];
+  showCalculator?: boolean;
 }
 
 // ── Button components ────────────────────────────────────────────────────────
@@ -170,12 +172,13 @@ function ExitBtn({ onClick }: { onClick: () => void }) {
 // ────────────────────────────────────────────────────────────────────────────
 
 export function ViewPastPapersPDFMode({
-  paperId, subjectCode, subjectName, displayName, onExit, resources = []
+  paperId, subjectCode, subjectName, displayName, onExit, resources = [], showCalculator = false
 }: ViewPastPapersPDFModeProps) {
   const [showQP, setShowQP] = useState(true);
   const [showMS, setShowMS] = useState(true);
   const [showER, setShowER] = useState(false);
   const [activeResource, setActiveResource] = useState<Resource | null>(null);
+  const [calcOpen, setCalcOpen] = useState(false);
   const [erNotes, setErNotes] = useState<Record<string, string>>({});
   const [erLabels, setErLabels] = useState<Record<string, string>>({});
   const [erPages, setErPages] = useState<Record<string, number>>({});
@@ -304,6 +307,32 @@ export function ViewPastPapersPDFMode({
             {resources.map(r => (
               <ResourceBtn key={r.label} {...r} onClick={() => setActiveResource(r)} />
             ))}
+            {showCalculator && (
+              <button
+                onClick={() => setCalcOpen(v => !v)}
+                title="Open fx-991EX ClassWiz Calculator"
+                style={{
+                  fontFamily: 'Inter, system-ui, sans-serif',
+                  fontSize: '12px', fontWeight: 600, letterSpacing: '0.06em',
+                  padding: '7px 14px', borderRadius: '8px',
+                  cursor: 'pointer', outline: 'none', transition: 'all 0.08s ease',
+                  background: calcOpen
+                    ? 'linear-gradient(180deg, #1a3a5c 0%, #122840 100%)'
+                    : 'linear-gradient(180deg, #0e2236 0%, #0a1a28 100%)',
+                  color: calcOpen ? '#60b0ff' : '#4090d0',
+                  border: '1px solid rgba(60,140,220,0.28)',
+                  borderTop: '1px solid rgba(80,160,240,0.45)',
+                  borderBottom: '1px solid rgba(0,0,0,0.4)',
+                  boxShadow: '0 3px 0 rgba(0,0,0,0.45)',
+                  display: 'flex', alignItems: 'center', gap: '6px',
+                }}
+              >
+                <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h12a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1-4h-4a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V4a1 1 0 00-1-1z" />
+                </svg>
+                Calculator
+              </button>
+            )}
             {onExit && <ExitBtn onClick={onExit} />}
           </div>
         </div>
@@ -516,6 +545,11 @@ export function ViewPastPapersPDFMode({
           type={activeResource.type}
           onClose={() => setActiveResource(null)}
         />
+      )}
+
+      {/* Floating draggable calculator */}
+      {showCalculator && calcOpen && (
+        <Fx991EX onClose={() => setCalcOpen(false)} />
       )}
     </div>
   );

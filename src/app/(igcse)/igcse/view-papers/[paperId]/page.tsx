@@ -36,6 +36,21 @@ const SEASON_MAP: { [key: string]: string } = {
   'w': 'October/November'
 };
 
+// IGCSE subjects/papers that allow a calculator
+// 0580: Paper 2 (non-calc), Paper 4 (calc) — but also Paper 1 (non-calc), Paper 3 (calc)
+// Simpler: papers 2,4 non-calc; papers 1,3 calc for old spec. New spec: Paper 2 non-calc, Paper 4 calc
+// Conservative: show calc for papers 3,4 for sciences; for maths show for papers 1,3 (calculator papers)
+const IGCSE_CALC_ALL = new Set(['0610','0620','0625','0450','0452','0455','0457','0460','0470','0478','0500','0510','0520','0549']);
+const IGCSE_CALC_PAPERS: Record<string, Set<string>> = {
+  '0580': new Set(['1','3']),  // Paper 1 and 3 are calculator papers
+  '0606': new Set(['1','2']),  // Both papers allow calculator
+};
+
+function allowsCalc(code: string, comp: string): boolean {
+  if (IGCSE_CALC_PAPERS[code]) return IGCSE_CALC_PAPERS[code].has(comp);
+  return IGCSE_CALC_ALL.has(code);
+}
+
 function getResources(code: string, comp: string): Resource[] {
   if (code === '0620') {
     const resources: Resource[] = [
@@ -116,6 +131,7 @@ export default function ViewPapersPage({ params }: PageProps) {
         displayName={paperInfo.displayName}
         onExit={handleExit}
         resources={getResources(paperInfo.subjectCode, String(paperInfo.paperComponent))}
+        showCalculator={allowsCalc(paperInfo.subjectCode, String(paperInfo.paperComponent))}
       />
     </>
   );

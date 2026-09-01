@@ -47,6 +47,16 @@ function getResources(code: string, comp: string): Resource[] {
   return [];
 }
 
+// Subjects where ALL papers allow calculator
+const CALC_ALL = new Set(['9700','9701','9702','9706','9708','9609','9093','8021']);
+// 9709/9231: only papers 2,4,5,6,7 allow calculator (1 and 3 are non-calc)
+const CALC_PAPERS_9709 = new Set(['2','4','5','6','7']);
+
+function allowsCalc(code: string, comp: string): boolean {
+  if (code === '9709' || code === '9231') return CALC_PAPERS_9709.has(comp);
+  return CALC_ALL.has(code);
+}
+
 export default function ALevelsViewPapersPage({ params }: PageProps) {
   const router           = useRouter();
   const { paperId }      = use(params);
@@ -71,6 +81,7 @@ export default function ALevelsViewPapersPage({ params }: PageProps) {
   const year         = 2000 + parseInt(yr);
   const displayName  = `${subjectName} — ${season} ${year} Paper ${comp}`;
   const resources    = getResources(code, comp);
+  const calcAllowed  = allowsCalc(code, comp);
 
   return (
     <div className="min-h-screen" style={{ background: '#03060a' }}>
@@ -83,6 +94,7 @@ export default function ALevelsViewPapersPage({ params }: PageProps) {
         subjectName={subjectName}
         displayName={displayName}
         resources={resources}
+        showCalculator={calcAllowed}
       />
     </div>
   );

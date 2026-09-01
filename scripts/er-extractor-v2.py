@@ -53,6 +53,7 @@ TEMP_DIR.mkdir(parents=True, exist_ok=True)
 # ── Subject tables ─────────────────────────────────────────────────────────────
 IGCSE_SUBJECTS = {
     '0417': ['11','12','13','21','22','31','32'],
+    '0448': ['11','12','13','21','22','23'],
     '0450': ['11','12','13','21','22','23'],
     '0452': ['11','12','13','21','22','23'],
     '0455': ['11','12','13','21','22','23'],
@@ -60,6 +61,7 @@ IGCSE_SUBJECTS = {
     '0460': ['12','22','42'],
     '0470': ['11','12','13','21','22','23','41','42','43'],
     '0478': ['11','12','13','21','22','23'],
+    '0490': ['11','12','13','21','22','23'],
     '0500': ['11','12','13','21','22','23'],
     '0510': ['12','13','21','22','23'],
     '0520': ['11','12','13','21','22','23','41','42','43'],
@@ -90,18 +92,25 @@ ALEVEL_SUBJECTS = {
 IGCSE_SESSIONS  = ['m', 's', 'w']
 ALEVEL_SESSIONS = ['m', 's', 'w']
 
-# ── BestExamHelp fallback slugs for IGCSE ─────────────────────────────────────
-# Many IGCSE ERs not on Archive.org are available on bestexamhelp.com.
-# URL pattern: /exam/cambridge-igcse/{slug}-{code}/{year}/{code}_{sess}_er.pdf
+# ── BestExamHelp fallback slugs ────────────────────────────────────────────────
+# Many ERs not on Archive.org are on bestexamhelp.com.
+# IGCSE URL: /exam/cambridge-igcse/{slug}-{code}/{year}/{filename}
+# A-Level URL: /exam/cambridge-international-as-a-level/{slug}-{code}/{year}/{filename}
+BEH_ALEVEL_SLUGS: dict[str, str] = {
+    '9608': 'computer-science',
+}
+
 BEH_IGCSE_SLUGS: dict[str, str] = {
     '0417': 'information-communication-technology',
+    '0448': 'travel-and-tourism',
     '0450': 'business-studies',
     '0452': 'accounting',
     '0455': 'economics',
     '0457': 'global-perspectives',
     '0460': 'geography',
     '0470': 'history',
-    '0478': 'religious-studies',
+    '0478': 'computer-science',
+    '0490': 'religious-studies',
     '0500': 'first-language-english',
     '0510': 'first-language-chinese',
     '0520': 'first-language-french',
@@ -542,12 +551,21 @@ def get_pdf_path(code: str, session: str) -> Path | None:
     if _download_to_cache(f'{base}/{filename}', cached):
         return cached
 
-    # 4. BestExamHelp (IGCSE only)
+    # 4. BestExamHelp IGCSE
     slug = BEH_IGCSE_SLUGS.get(code)
     if slug:
         yr_full = str(2000 + int(session[1:]))
         beh_url = (f'https://bestexamhelp.com/exam/cambridge-igcse/'
                    f'{slug}-{code}/{yr_full}/{filename}')
+        if _download_to_cache(beh_url, cached):
+            return cached
+
+    # 5. BestExamHelp A-Level
+    slug_al = BEH_ALEVEL_SLUGS.get(code)
+    if slug_al:
+        yr_full = str(2000 + int(session[1:]))
+        beh_url = (f'https://bestexamhelp.com/exam/cambridge-international-as-a-level/'
+                   f'{slug_al}-{code}/{yr_full}/{filename}')
         if _download_to_cache(beh_url, cached):
             return cached
 
