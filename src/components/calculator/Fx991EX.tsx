@@ -1,8 +1,8 @@
 'use client';
 
 /**
- * Casio fx-991EX ClassWiz — SVG body + working math engine
- * SVG drawn to match the official product photo exactly.
+ * Casio fx-991EX ClassWiz — pixel-accurate SVG replica
+ * Layout based on the official Casio fx-991EX product photo.
  */
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
@@ -21,7 +21,7 @@ interface CS {
   mem: Record<string, number>;
   ans: number;
   err: string | null;
-  fresh: boolean;          // true right after = pressed
+  fresh: boolean;
 }
 
 // ─────────────────────────────── Math engine ─────────────────────────────────
@@ -76,291 +76,351 @@ function tokenise(src: string, ans: number, mem: Record<string, number>): Tok[] 
   while (i < src.length) {
     if (/\s/.test(src[i])) { i++; continue; }
 
-    // numbers
     if (/[\d.]/.test(src[i])) {
       let n = '';
       while (i < src.length && /[\d.]/.test(src[i])) n += src[i++];
       out.push({ t: 'num', v: parseFloat(n) }); continue;
     }
 
-    // constants / variables
     if (src.startsWith('Ans', i))  { out.push({ t: 'num', v: ans });      i += 3; continue; }
     if (src[i] === 'π')             { out.push({ t: 'num', v: Math.PI }); i++;    continue; }
     if (src[i] === 'ℯ')             { out.push({ t: 'num', v: Math.E });  i++;    continue; }
-    // memory A-F (not followed by more letters)
     if (/[A-F]/.test(src[i]) && !/[a-zA-Z(]/.test(src[i + 1] ?? '')) {
       out.push({ t: 'num', v: mem[src[i]] ?? 0 }); i++; continue;
     }
 
-    // ×10^
     if (src.startsWith('×10^(', i)) { out.push({ t: 'op', v: 'E' }); i += 5; continue; }
     if (src.startsWith('×10^', i))  { out.push({ t: 'op', v: 'E' }); i += 4; continue; }
 
-    // functions — longest match first
     const FNS = [
-      'sinh⁻¹','cosh⁻¹','tanh⁻¹',
-      'sin⁻¹', 'cos⁻¹', 'tan⁻¹',
-      'sinh',  'cosh',  'tanh',
-      'sin',   'cos',   'tan',
-      'log',   'ln',    'abs',
-      'eˣ',    '√',
-      'nCr',   'nPr',
+      'sinh⁻¹(','cosh⁻¹(','tanh⁻¹(',
+      'sin⁻¹(', 'cos⁻¹(', 'tan⁻¹(',
+      'sinh(',  'cosh(',  'tanh(',
+      'sin(',   'cos(',   'tan(',
+      'log(',   'ln(',    'eˣ(',  '√(', 'abs(',
+      'nCr(',   'nPr(',
     ];
     let matched = false;
     for (const fn of FNS) {
       if (src.startsWith(fn, i)) {
-        out.push({ t: 'fn', v: fn }); i += fn.length;
-        if (src[i] === '(') { out.push({ t: 'lp' }); i++; }
-        matched = true; break;
+        out.push({ t: 'fn', v: fn.slice(0, -1) });
+        out.push({ t: 'lp' });
+        i += fn.length;
+        matched = true;
+        break;
       }
     }
     if (matched) continue;
 
-    // operators
-    const opMap: Record<string, string> = {
-      '+':'+','−':'-','-':'-','×':'*','*':'*','÷':'/','/':'/',
-      '^':'^','!':'!','%':'%',
-    };
-    if (opMap[src[i]]) { out.push({ t: 'op', v: opMap[src[i]] }); i++; continue; }
-    if (src[i] === '(') { out.push({ t: 'lp' }); i++; continue; }
-    if (src[i] === ')') { out.push({ t: 'rp' }); i++; continue; }
-    if (src[i] === ',') { out.push({ t: 'comma' }); i++; continue; }
+    if (src[i] === '(') { out.push({ t: 'lp' });     i++; continue; }
+    if (src[i] === ')') { out.push({ t: 'rp' });     i++; continue; }
+    if (src[i] === ',') { out.push({ t: 'comma' });  i++; continue; }
+
+    if (src.startsWith('nCr', i)) { out.push({ t: 'op', v: 'nCr' }); i += 3; continue; }
+    if (src.startsWith('nPr', i)) { out.push({ t: 'op', v: 'nPr' }); i += 3; continue; }
+
+    const OPS: Record<string,string> = { '+':'+', '−':'-', '×':'*', '÷':'/', '^':'^', '%':'%', '!':'!' };
+    if (OPS[src[i]]) { out.push({ t: 'op', v: OPS[src[i]] }); i++; continue; }
+
     i++;
   }
   out.push({ t: 'end' });
   return out;
 }
 
-// ── Recursive-descent parser ──────────────────────────────────────────────────
-
 function calcEval(expr: string, angle: AngleUnit, ans: number, mem: Record<string, number>): number {
-  if (!expr.trim()) return 0;
   // auto-close parens
-  let e = expr;
-  let open = 0;
-  for (const c of e) { if (c === '(') open++; else if (c === ')') open--; }
-  while (open-- > 0) e += ')';
+  let s = expr;
+  const open = (s.match(/\(/g) || []).length;
+  const close = (s.match(/\)/g) || []).length;
+  if (open > close) s += ')'.repeat(open - close);
 
-  const toks = tokenise(e, ans, mem);
+  const toks = tokenise(s, ans, mem);
   let pos = 0;
-  const cur = (): Tok => toks[pos];
-  const eat = (): Tok => toks[pos++];
+  const peek = () => toks[pos];
+  const eat  = () => toks[pos++];
 
-  const PREC: Record<string, number> = { '+':1,'-':1,'*':2,'/':2,'E':2,'^':4,'!':5,'%':5 };
+  const PREC: Record<string, number> = {
+    '+': 1, '-': 1, '*': 2, '/': 2, 'E': 3, '^': 4, 'nCr': 2, 'nPr': 2
+  };
 
   function parseExpr(minP = 0): number {
     let left = parseUnary();
-    for (;;) {
-      const t = cur();
-      // implicit multiply
-      if (t.t === 'lp' || t.t === 'fn' || t.t === 'num') {
-        if (minP <= 2) { left *= parseUnary(); continue; }
-        break;
-      }
+    while (true) {
+      const t = peek();
       if (t.t !== 'op') break;
       const p = PREC[t.v] ?? -1;
       if (p < minP) break;
       eat();
-      if (t.v === '!') { left = factorial(left); continue; }
-      if (t.v === '%') { left = left / 100; continue; }
-      const rp = t.v === '^' ? p : p + 1;
-      const right = parseExpr(rp);
-      switch (t.v) {
-        case '+': left += right; break;
-        case '-': left -= right; break;
-        case '*': left *= right; break;
-        case '/': left /= right; break;
-        case '^': left = Math.pow(left, right); break;
-        case 'E': left = left * Math.pow(10, right); break;
-      }
+      const right = t.v === '^' ? parseExpr(p) : parseExpr(p + 1);
+      if      (t.v === '+')   left = left + right;
+      else if (t.v === '-')   left = left - right;
+      else if (t.v === '*')   left = left * right;
+      else if (t.v === '/')   left = left / right;
+      else if (t.v === 'E')   left = left * Math.pow(10, right);
+      else if (t.v === '^')   left = Math.pow(left, right);
+      else if (t.v === 'nCr') left = _nCr(left, right);
+      else if (t.v === 'nPr') left = _nPr(left, right);
     }
+    const p1 = peek(); if (p1.t === 'op' && p1.v === '!') { eat(); left = factorial(left); }
+    const p2 = peek(); if (p2.t === 'op' && p2.v === '%') { eat(); left = left / 100; }
     return left;
   }
 
   function parseUnary(): number {
-    const t = cur();
-    if (t.t === 'op' && t.v === '-') { eat(); return -parseUnary(); }
-    if (t.t === 'op' && t.v === '+') { eat(); return  parseUnary(); }
+    const pu = peek(); if (pu.t === 'op' && pu.v === '-') { eat(); return -parsePrimary(); }
     return parsePrimary();
   }
 
   function parsePrimary(): number {
-    const t = eat();
-    if (t.t === 'num') return t.v;
+    const t = peek();
+    if (t.t === 'num') { eat(); return t.v; }
     if (t.t === 'lp') {
-      const v = parseExpr(0);
-      if (cur().t === 'rp') eat();
-      return v;
+      eat(); const v = parseExpr(); if (peek().t === 'rp') eat(); return v;
     }
     if (t.t === 'fn') {
-      if (t.v === 'nCr' || t.v === 'nPr') {
-        const n = parseExpr(0);
-        if (cur().t === 'comma') eat();
-        const r = parseExpr(0);
-        if (cur().t === 'rp') eat();
-        return t.v === 'nCr' ? _nCr(n, r) : _nPr(n, r);
-      }
-      const a = parseExpr(0);
-      if (cur().t === 'rp') eat();
-      switch (t.v) {
-        case 'sin':    return Math.sin(toRad(a, angle));
-        case 'cos':    return Math.cos(toRad(a, angle));
-        case 'tan':    return Math.tan(toRad(a, angle));
-        case 'sin⁻¹': return fromRad(Math.asin(a), angle);
-        case 'cos⁻¹': return fromRad(Math.acos(a), angle);
-        case 'tan⁻¹': return fromRad(Math.atan(a), angle);
-        case 'sinh':   return Math.sinh(a);
-        case 'cosh':   return Math.cosh(a);
-        case 'tanh':   return Math.tanh(a);
-        case 'sinh⁻¹':return Math.asinh(a);
-        case 'cosh⁻¹':return Math.acosh(a);
-        case 'tanh⁻¹':return Math.atanh(a);
-        case 'log':    return Math.log10(a);
-        case 'ln':     return Math.log(a);
-        case 'eˣ':     return Math.exp(a);
-        case '√':      return Math.sqrt(a);
-        case 'abs':    return Math.abs(a);
-        default:       return NaN;
-      }
+      eat();
+      if (peek().t === 'lp') eat();
+      const a = parseExpr();
+      let b: number | undefined;
+      if (peek().t === 'comma') { eat(); b = parseExpr(); }
+      if (peek().t === 'rp') eat();
+      const fn = t.v;
+      if (fn === 'sin')    return Math.sin(toRad(a, angle));
+      if (fn === 'cos')    return Math.cos(toRad(a, angle));
+      if (fn === 'tan')    return Math.tan(toRad(a, angle));
+      if (fn === 'sin⁻¹') return fromRad(Math.asin(a), angle);
+      if (fn === 'cos⁻¹') return fromRad(Math.acos(a), angle);
+      if (fn === 'tan⁻¹') return fromRad(Math.atan(a), angle);
+      if (fn === 'sinh')   return Math.sinh(a);
+      if (fn === 'cosh')   return Math.cosh(a);
+      if (fn === 'tanh')   return Math.tanh(a);
+      if (fn === 'sinh⁻¹') return Math.asinh(a);
+      if (fn === 'cosh⁻¹') return Math.acosh(a);
+      if (fn === 'tanh⁻¹') return Math.atanh(a);
+      if (fn === 'log')    return b !== undefined ? Math.log(b) / Math.log(a) : Math.log10(a);
+      if (fn === 'ln')     return Math.log(a);
+      if (fn === 'eˣ')     return Math.exp(a);
+      if (fn === '√')      return Math.sqrt(a);
+      if (fn === 'abs')    return Math.abs(a);
+      if (fn === 'nCr')    return b !== undefined ? _nCr(a, b) : NaN;
+      if (fn === 'nPr')    return b !== undefined ? _nPr(a, b) : NaN;
+      return NaN;
     }
-    return NaN;
+    return 0;
   }
 
-  return parseExpr(0);
+  return parseExpr();
 }
 
-// ─────────────────────────────── State ───────────────────────────────────────
+// ─────────────────────────────── Initial state ───────────────────────────────
 
 const INIT: CS = {
   expr: '', result: '', shift: false, alpha: false, hyp: false,
-  angle: 'DEG', mem: { A:0,B:0,C:0,D:0,E:0,F:0,M:0,X:0,Y:0 },
-  ans: 0, err: null, fresh: false,
+  angle: 'DEG', mem: { A:0, B:0, C:0, D:0, E:0, F:0, M:0 }, ans: 0, err: null, fresh: false,
 };
 
 // ─────────────────────────────── Layout constants ────────────────────────────
-// All measurements in SVG units. ViewBox = "0 0 280 560"
 
-const VW = 280;
-const VH = 560;
+// ViewBox: 300 wide × 580 tall — matches the slim portrait ratio of the real device
+const VW = 300;
+const VH = 580;
+
+// ── Key geometry ─────────────────────────────────────────────────────────────
+// All measurements in SVG units (px at 1:1).
+
+// Screen area
+const SCR_X = 14;
+const SCR_Y = 60;
+const SCR_W = VW - 28;
+const SCR_H = 96;
+
+// Nav row  (SHIFT / ALPHA / D-pad / MENU / ON)
+const NAV_Y = 176;
+
+// Function rows — 4 rows of 6 small dark keys
+// Real device rows: row0 has 4 wide keys, rows 1-3 have 6 keys each
+const FN_GAP = 5;    // gap between function keys
+const FN_H   = 22;   // height of each fn key
+const FN_Y0  = 222;  // y of first fn row
+const FNR = [FN_Y0, FN_Y0 + FN_H + FN_GAP, FN_Y0 + 2*(FN_H + FN_GAP), FN_Y0 + 3*(FN_H + FN_GAP)];
+
+// Number rows — 4 rows of 5 keys
+const NUM_GAP = 6;
+const NUM_H   = 34;
+const NUM_Y0  = 320;
+const NUMR = [NUM_Y0, NUM_Y0 + NUM_H + NUM_GAP, NUM_Y0 + 2*(NUM_H + NUM_GAP), NUM_Y0 + 3*(NUM_H + NUM_GAP)];
+
+// Key colour palette
+const DARK  = '#252525';  // dark body keys
+const DSTK  = '#111';
+const WHITE = '#e8e8e0';  // white number keys
+const WSTK  = '#b8b8b0';
+const BLUE  = '#1640c8';  // DEL / AC
+const BLSTK = '#0a2070';
+const ORANGE= '#e87810';  // = key
+const ORSTK = '#a04800';
+
+// ─────────────────────────────── Key interface ───────────────────────────────
+
+interface K {
+  id: string;
+  label: string;
+  x: number; y: number; w: number; h: number;
+  rx?: number;
+  fill: string; stroke: string; textFill: string;
+  fontSize?: number;
+  act: string; sAct?: string; aAct?: string;
+  shiftLabel?: string; alphaLabel?: string;
+  bold?: boolean;
+}
 
 // ─────────────────────────────── Key definitions ─────────────────────────────
 
-interface K {
-  id: string; label: string;
-  // label colours: 'w'=white 'y'=yellow 'r'=red/pink
-  lc?: 'w'|'y'|'r';
-  x: number; y: number; w: number; h: number;
-  rx?: number;   // border-radius override
-  // fill overrides
-  fill?: string; stroke?: string; textFill?: string;
-  fontSize?: number;
-  act: string; sAct?: string; aAct?: string;
-  // small labels above
-  shiftLabel?: string; alphaLabel?: string;
+// Helper: evenly space N keys across width W starting at x0, with gap g
+function row(
+  ids: string[], labels: string[], y: number, h: number,
+  fills: string[], strokes: string[], textFills: string[],
+  acts: string[], fontSizes: number[],
+  x0 = 14, totalW = VW - 28, gap = 5,
+  extras: Partial<K>[] = []
+): K[] {
+  const n = ids.length;
+  const kw = (totalW - gap * (n - 1)) / n;
+  return ids.map((id, i) => ({
+    id, label: labels[i],
+    x: x0 + i * (kw + gap), y, w: kw, h,
+    fill: fills[i], stroke: strokes[i], textFill: textFills[i],
+    fontSize: fontSizes[i],
+    act: acts[i],
+    rx: 4,
+    ...extras[i],
+  }));
 }
 
-// ── Button grid (SVG coordinates) ────────────────────────────────────────────
-// Body inner starts at x=14, y=14. Width=252.
-// Screen: y=74..178
-// Nav row: y=190
-// Fn rows: y=232,258,284,310
-// Num rows: y=340,372,404,436
-
-const COL = [18, 70, 122, 174, 226];  // 5 column left-edges
-const CW  = 44;   // column width (each key)
-const CW2 = 48;   // wider keys (DEL/AC)
-
-// nav buttons (round)
-const NAV_Y  = 196;
-const NAV_R  = 16;   // radius
-
-// fn row heights
-const FN_H  = 22;
-const FN_Y  = [234, 258, 282, 306];
-
-// num row heights  
-const NUM_H = 32;
-const NUM_Y = [342, 378, 414, 450];
-
-const KEYS: K[] = [
-  // ── NAV ROW ──────────────────────────────────────────────────────────────
-  // SHIFT (amber oval)
-  { id:'SHIFT', label:'SHIFT', x:22,  y:NAV_Y-12, w:40, h:24, rx:12, fill:'#e8960a', stroke:'#a06000', textFill:'#fff', fontSize:8,  act:'SHIFT' },
-  // ALPHA (red oval)
-  { id:'ALPHA', label:'ALPHA', x:68,  y:NAV_Y-12, w:40, h:24, rx:12, fill:'#d01038', stroke:'#880020', textFill:'#fff', fontSize:8,  act:'ALPHA' },
-  // D-pad up
-  { id:'UP',    label:'▲',     x:150, y:NAV_Y-26, w:22, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'UP',   shiftLabel:'STAT' },
-  // D-pad left
-  { id:'LEFT',  label:'◀',     x:122, y:NAV_Y-8,  w:18, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'LEFT'  },
-  // D-pad centre
-  { id:'CTR',   label:'',      x:144, y:NAV_Y-8,  w:34, h:18, rx:8,  fill:'#888', stroke:'#555', textFill:'#fff', fontSize:8, act:'NOOP'  },
-  // D-pad right
-  { id:'RIGHT', label:'▶',     x:182, y:NAV_Y-8,  w:18, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'RIGHT' },
-  // D-pad down
-  { id:'DOWN',  label:'▼',     x:150, y:NAV_Y+10, w:22, h:18, rx:4,  fill:'#666', stroke:'#333', textFill:'#ddd', fontSize:9, act:'DOWN', shiftLabel:'TABLE' },
-  // MENU (small grey)
-  { id:'MENU',  label:'MENU',  x:208, y:NAV_Y-12, w:30, h:24, rx:5,  fill:'#555', stroke:'#333', textFill:'#ccc', fontSize:7, act:'NOOP', shiftLabel:'SETUP' },
-  // ON (small grey)
-  { id:'ON',    label:'ON',    x:242, y:NAV_Y-12, w:26, h:24, rx:5,  fill:'#555', stroke:'#333', textFill:'#ccc', fontSize:7, act:'AC',   shiftLabel:'OFF' },
-
-  // ── FN ROW 0: OPTN  CALC  [space]  ∫  x ─────────────────────────────────
-  { id:'OPTN', label:'OPTN', x:18, y:FN_Y[0], w:50, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP', shiftLabel:'QR' },
-  { id:'CALC', label:'CALC', x:72, y:FN_Y[0], w:50, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP', shiftLabel:'SOLVE' },
-  { id:'INTG', label:'∫',    x:162,y:FN_Y[0], w:46, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:10,act:'NOOP', shiftLabel:'d/dx' },
-  { id:'XVAR', label:'x',    x:212,y:FN_Y[0], w:46, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:10,act:'NOOP', shiftLabel:'Σ' },
-
-  // ── FN ROW 1: ≡  √  x²  xᵐ  log□  ln ───────────────────────────────────
-  { id:'FRAC', label:'≡',    x:18, y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'NOOP' },
-  { id:'SQRT', label:'√',    x:62, y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'SQRT', shiftLabel:'³√' },
-  { id:'SQ',   label:'x²',   x:106,y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'SQ',   shiftLabel:'x³' },
-  { id:'POW',  label:'xᵐ',   x:150,y:FN_Y[1], w:40, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'POW' },
-  { id:'LOGB', label:'log□', x:194,y:FN_Y[1], w:36, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:7, act:'LOG',  shiftLabel:'10ˣ', sAct:'POW10' },
-  { id:'LN',   label:'ln',   x:234,y:FN_Y[1], w:30, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'LN',   shiftLabel:'eˣ',  sAct:'EXPX' },
-
-  // ── FN ROW 2: (-)  °'"  x⁻¹  sin  cos  tan ──────────────────────────────
-  { id:'NEG',  label:'(-)',  x:18, y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NEG',  shiftLabel:'log', sAct:'LOG', alphaLabel:'A' },
-  { id:'DMS',  label:"°'\"", x:60, y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP', alphaLabel:'B' },
-  { id:'INV',  label:'x⁻¹', x:102,y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'INV',  shiftLabel:'x!', sAct:'FACT', alphaLabel:'C' },
-  { id:'SIN',  label:'sin',  x:144,y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'SIN',  shiftLabel:'sin⁻¹', sAct:'ASIN', alphaLabel:'D' },
-  { id:'COS',  label:'cos',  x:186,y:FN_Y[2], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'COS',  shiftLabel:'cos⁻¹', sAct:'ACOS', alphaLabel:'E' },
-  { id:'TAN',  label:'tan',  x:228,y:FN_Y[2], w:36, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:9, act:'TAN',  shiftLabel:'tan⁻¹', sAct:'ATAN', alphaLabel:'F' },
-
-  // ── FN ROW 3: STO  ENG  (  )  S⟺D  M+ ──────────────────────────────────
-  { id:'STO',  label:'STO',  x:18, y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'STO',  shiftLabel:'RCL', sAct:'RCL' },
-  { id:'ENG',  label:'ENG',  x:60, y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'NOOP' },
-  { id:'LPAR', label:'(',    x:102,y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'LPAR', shiftLabel:'Abs', sAct:'ABS' },
-  { id:'RPAR', label:')',    x:144,y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:11,act:'RPAR' },
-  { id:'STOD', label:'S⟺D', x:186,y:FN_Y[3], w:38, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:7, act:'STOD', shiftLabel:'▶DEG', sAct:'TODEG' },
-  { id:'MPLUS',label:'M+',   x:228,y:FN_Y[3], w:36, h:FN_H, rx:3, fill:'#2a2a2a', stroke:'#111', textFill:'#e8e8e8', fontSize:8, act:'MPLUS',shiftLabel:'M−',  sAct:'MMINUS' },
-
-  // ── NUM ROW 0: 7  8  9  DEL  AC ──────────────────────────────────────────
-  { id:'7',  label:'7',   x:18, y:NUM_Y[0], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'7',   shiftLabel:'CONST' },
-  { id:'8',  label:'8',   x:72, y:NUM_Y[0], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'8',   shiftLabel:'CONV' },
-  { id:'9',  label:'9',   x:126,y:NUM_Y[0], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'9',   shiftLabel:'RESET' },
-  { id:'DEL',label:'DEL', x:180,y:NUM_Y[0], w:40, h:NUM_H, rx:5, fill:'#1840b8', stroke:'#0a2070', textFill:'#fff', fontSize:11, act:'DEL', shiftLabel:'INS', sAct:'INS' },
-  { id:'AC', label:'AC',  x:224,y:NUM_Y[0], w:40, h:NUM_H, rx:5, fill:'#1840b8', stroke:'#0a2070', textFill:'#fff', fontSize:11, act:'AC',  shiftLabel:'OFF', sAct:'OFF' },
-
-  // ── NUM ROW 1: 4  5  6  ×  ÷ ────────────────────────────────────────────
-  { id:'4',  label:'4',  x:18, y:NUM_Y[1], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'4', shiftLabel:'nPr' },
-  { id:'5',  label:'5',  x:72, y:NUM_Y[1], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'5' },
-  { id:'6',  label:'6',  x:126,y:NUM_Y[1], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'6' },
-  { id:'MUL',label:'×',  x:180,y:NUM_Y[1], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'×', shiftLabel:'nCr' },
-  { id:'DIV',label:'÷',  x:224,y:NUM_Y[1], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'÷' },
-
-  // ── NUM ROW 2: 1  2  3  +  − ────────────────────────────────────────────
-  { id:'1',  label:'1',  x:18, y:NUM_Y[2], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'1' },
-  { id:'2',  label:'2',  x:72, y:NUM_Y[2], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'2' },
-  { id:'3',  label:'3',  x:126,y:NUM_Y[2], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'3' },
-  { id:'ADD',label:'+',  x:180,y:NUM_Y[2], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'+', shiftLabel:'Pol' },
-  { id:'SUB',label:'−',  x:224,y:NUM_Y[2], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'−', shiftLabel:'Rec' },
-
-  // ── NUM ROW 3: 0  .  ×10ˣ  Ans  = ───────────────────────────────────────
-  { id:'0',  label:'0',    x:18, y:NUM_Y[3], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:16, act:'0',  shiftLabel:'Rnd' },
-  { id:'DOT',label:'.',    x:72, y:NUM_Y[3], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:18, act:'.',  shiftLabel:'Ran#' },
-  { id:'EE', label:'×10ˣ', x:126,y:NUM_Y[3], w:50, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:8,  act:'EE', shiftLabel:'π', sAct:'PI' },
-  { id:'ANS',label:'Ans',  x:180,y:NUM_Y[3], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:11, act:'ANS',shiftLabel:'%',  sAct:'PERCENT' },
-  { id:'EQ', label:'=',    x:224,y:NUM_Y[3], w:40, h:NUM_H, rx:5, fill:'#f2f2ee', stroke:'#c8c8c0', textFill:'#111', fontSize:18, act:'=' },
+// ── Nav row: custom positions (not evenly spaced — D-pad is big) ──────────────
+const NAV_KEYS: K[] = [
+  // SHIFT — amber pill
+  { id:'SHIFT', label:'SHIFT', x:14,  y:NAV_Y, w:44, h:26, rx:13,
+    fill:'#e8960a', stroke:'#a06000', textFill:'#fff', fontSize:8, act:'SHIFT',
+    shiftLabel:'', bold:true },
+  // ALPHA — red pill
+  { id:'ALPHA', label:'ALPHA', x:62,  y:NAV_Y, w:44, h:26, rx:13,
+    fill:'#cc1030', stroke:'#880020', textFill:'#fff', fontSize:8, act:'ALPHA',
+    shiftLabel:'', bold:true },
+  // D-pad hit zones (drawn separately in SVG)
+  { id:'UP',    label:'', x:122, y:NAV_Y-2,  w:28, h:16, rx:3, fill:'transparent', stroke:'none', textFill:'transparent', act:'UP'   },
+  { id:'LEFT',  label:'', x:108, y:NAV_Y+14, w:16, h:18, rx:3, fill:'transparent', stroke:'none', textFill:'transparent', act:'LEFT' },
+  { id:'CTR',   label:'', x:126, y:NAV_Y+14, w:24, h:18, rx:12,fill:'transparent', stroke:'none', textFill:'transparent', act:'NOOP' },
+  { id:'RIGHT', label:'', x:152, y:NAV_Y+14, w:16, h:18, rx:3, fill:'transparent', stroke:'none', textFill:'transparent', act:'RIGHT'},
+  { id:'DOWN',  label:'', x:122, y:NAV_Y+34, w:28, h:16, rx:3, fill:'transparent', stroke:'none', textFill:'transparent', act:'DOWN' },
+  // MENU
+  { id:'MENU', label:'MENU', x:198, y:NAV_Y,   w:38, h:26, rx:5,
+    fill:'#333', stroke:'#1a1a1a', textFill:'#bbb', fontSize:7.5, act:'NOOP', shiftLabel:'SETUP' },
+  // ON
+  { id:'ON',   label:'ON',   x:244, y:NAV_Y,   w:42, h:26, rx:5,
+    fill:'#333', stroke:'#1a1a1a', textFill:'#bbb', fontSize:7.5, act:'AC', shiftLabel:'OFF' },
 ];
+
+// ── Function row 0: OPTN  CALC  ∫dx  x  (4 keys) ─────────────────────────────
+const FN0_X = 14;
+const FN0_W = VW - 28;
+const FN0_KW = (FN0_W - 3*5) / 4;
+const FN0: K[] = [
+  { id:'OPTN', label:'OPTN', x:FN0_X + 0*(FN0_KW+5), y:FNR[0], w:FN0_KW, h:FN_H, rx:4,
+    fill:DARK, stroke:DSTK, textFill:'#ddd', fontSize:8.5, act:'NOOP', shiftLabel:'QR' },
+  { id:'CALC', label:'CALC', x:FN0_X + 1*(FN0_KW+5), y:FNR[0], w:FN0_KW, h:FN_H, rx:4,
+    fill:DARK, stroke:DSTK, textFill:'#ddd', fontSize:8.5, act:'NOOP', shiftLabel:'SOLVE' },
+  { id:'INTG', label:'∫dx',  x:FN0_X + 2*(FN0_KW+5), y:FNR[0], w:FN0_KW, h:FN_H, rx:4,
+    fill:DARK, stroke:DSTK, textFill:'#ddd', fontSize:9,   act:'NOOP', shiftLabel:'d/dx' },
+  { id:'XVAR', label:'x',    x:FN0_X + 3*(FN0_KW+5), y:FNR[0], w:FN0_KW, h:FN_H, rx:4,
+    fill:DARK, stroke:DSTK, textFill:'#ddd', fontSize:11,  act:'NOOP', shiftLabel:'Σ' },
+];
+
+// ── Function rows 1-3: 6 keys each ───────────────────────────────────────────
+const FN6_KW = (FN0_W - 5*5) / 6;
+function fn6row(rowDefs: {id:string,label:string,act:string,sAct?:string,aAct?:string,shiftLabel?:string,alphaLabel?:string,fontSize?:number}[], yIdx: number): K[] {
+  return rowDefs.map((d, i) => ({
+    id: d.id, label: d.label,
+    x: FN0_X + i * (FN6_KW + 5), y: FNR[yIdx], w: FN6_KW, h: FN_H, rx: 4,
+    fill: DARK, stroke: DSTK, textFill: '#ddd',
+    fontSize: d.fontSize ?? 9,
+    act: d.act, sAct: d.sAct, aAct: d.aAct,
+    shiftLabel: d.shiftLabel, alphaLabel: d.alphaLabel,
+  }));
+}
+
+const FN1: K[] = fn6row([
+  { id:'FRAC', label:'a b/c', act:'NOOP',                        shiftLabel:'d/c',   fontSize:7   },
+  { id:'SQRT', label:'√',    act:'SQRT',  sAct:'CBRT',           shiftLabel:'³√'                  },
+  { id:'SQ',   label:'x²',   act:'SQ',    sAct:'CUBE',           shiftLabel:'x³'                  },
+  { id:'POW',  label:'xᵐ',   act:'POW'                                                            },
+  { id:'LOGB', label:'log',  act:'LOG',   sAct:'POW10',          shiftLabel:'10ˣ'                 },
+  { id:'LN',   label:'ln',   act:'LN',    sAct:'EXPX',           shiftLabel:'eˣ'                  },
+], 1);
+
+const FN2: K[] = fn6row([
+  { id:'NEG',  label:'(-)',  act:'NEG',   sAct:'LOG',            shiftLabel:'log',  alphaLabel:'A' },
+  { id:'DMS',  label:"°'\"", act:'NOOP',                                            alphaLabel:'B', fontSize:8 },
+  { id:'INV',  label:'x⁻¹', act:'INV',   sAct:'FACT',           shiftLabel:'x!',   alphaLabel:'C' },
+  { id:'SIN',  label:'sin',  act:'SIN',   sAct:'ASIN',           shiftLabel:'sin⁻¹',alphaLabel:'D' },
+  { id:'COS',  label:'cos',  act:'COS',   sAct:'ACOS',           shiftLabel:'cos⁻¹',alphaLabel:'E' },
+  { id:'TAN',  label:'tan',  act:'TAN',   sAct:'ATAN',           shiftLabel:'tan⁻¹',alphaLabel:'F' },
+], 2);
+
+const FN3: K[] = fn6row([
+  { id:'STO',  label:'STO',  act:'STO',   sAct:'RCL',            shiftLabel:'RCL'                 },
+  { id:'ENG',  label:'ENG',  act:'NOOP',                         shiftLabel:'←ENG'                },
+  { id:'LPAR', label:'(',    act:'LPAR',  sAct:'ABS',            shiftLabel:'Abs',  fontSize:11    },
+  { id:'RPAR', label:')',    act:'RPAR',                                             fontSize:11    },
+  { id:'STOD', label:'S⟺D', act:'STOD',  sAct:'TODEG',          shiftLabel:'▶DEG', fontSize:7     },
+  { id:'MPLUS',label:'M+',   act:'MPLUS', sAct:'MMINUS',         shiftLabel:'M−'                  },
+], 3);
+
+// ── Number rows ───────────────────────────────────────────────────────────────
+// Row layout: 3 wide white keys + 2 narrower right keys (DEL/AC or operators)
+// Real device: all 5 keys same width in num rows, but = key is orange and same size
+
+const NUM_KW  = (FN0_W - 4*NUM_GAP) / 5;
+
+function numKey(id: string, label: string, x: number, y: number, w: number,
+                fill: string, stroke: string, textFill: string,
+                fontSize: number, act: string,
+                extras: Partial<K> = {}): K {
+  return { id, label, x, y, w, h: NUM_H, rx: 5, fill, stroke, textFill, fontSize, act, ...extras };
+}
+
+const NUM_KEYS: K[] = [
+  // Row 0: 7  8  9  DEL  AC
+  numKey('7',   '7',   FN0_X + 0*(NUM_KW+NUM_GAP), NUMR[0], NUM_KW, WHITE,WSTK,'#111', 18,'7', {shiftLabel:'CONST'}),
+  numKey('8',   '8',   FN0_X + 1*(NUM_KW+NUM_GAP), NUMR[0], NUM_KW, WHITE,WSTK,'#111', 18,'8', {shiftLabel:'CONV'}),
+  numKey('9',   '9',   FN0_X + 2*(NUM_KW+NUM_GAP), NUMR[0], NUM_KW, WHITE,WSTK,'#111', 18,'9', {shiftLabel:'CLR'}),
+  numKey('DEL', 'DEL', FN0_X + 3*(NUM_KW+NUM_GAP), NUMR[0], NUM_KW, BLUE, BLSTK,'#fff',11,'DEL',{shiftLabel:'INS',sAct:'INS'}),
+  numKey('AC',  'AC',  FN0_X + 4*(NUM_KW+NUM_GAP), NUMR[0], NUM_KW, BLUE, BLSTK,'#fff',11,'AC', {shiftLabel:'OFF',sAct:'OFF'}),
+
+  // Row 1: 4  5  6  ×  ÷
+  numKey('4',   '4',   FN0_X + 0*(NUM_KW+NUM_GAP), NUMR[1], NUM_KW, WHITE,WSTK,'#111', 18,'4', {shiftLabel:'nPr'}),
+  numKey('5',   '5',   FN0_X + 1*(NUM_KW+NUM_GAP), NUMR[1], NUM_KW, WHITE,WSTK,'#111', 18,'5'),
+  numKey('6',   '6',   FN0_X + 2*(NUM_KW+NUM_GAP), NUMR[1], NUM_KW, WHITE,WSTK,'#111', 18,'6'),
+  numKey('MUL', '×',   FN0_X + 3*(NUM_KW+NUM_GAP), NUMR[1], NUM_KW, WHITE,WSTK,'#111', 16,'×', {shiftLabel:'nCr'}),
+  numKey('DIV', '÷',   FN0_X + 4*(NUM_KW+NUM_GAP), NUMR[1], NUM_KW, WHITE,WSTK,'#111', 16,'÷'),
+
+  // Row 2: 1  2  3  +  −
+  numKey('1',   '1',   FN0_X + 0*(NUM_KW+NUM_GAP), NUMR[2], NUM_KW, WHITE,WSTK,'#111', 18,'1'),
+  numKey('2',   '2',   FN0_X + 1*(NUM_KW+NUM_GAP), NUMR[2], NUM_KW, WHITE,WSTK,'#111', 18,'2'),
+  numKey('3',   '3',   FN0_X + 2*(NUM_KW+NUM_GAP), NUMR[2], NUM_KW, WHITE,WSTK,'#111', 18,'3'),
+  numKey('ADD', '+',   FN0_X + 3*(NUM_KW+NUM_GAP), NUMR[2], NUM_KW, WHITE,WSTK,'#111', 16,'+', {shiftLabel:'Pol'}),
+  numKey('SUB', '−',   FN0_X + 4*(NUM_KW+NUM_GAP), NUMR[2], NUM_KW, WHITE,WSTK,'#111', 16,'−', {shiftLabel:'Rec'}),
+
+  // Row 3: 0  .  ×10ˣ  Ans  =
+  numKey('0',   '0',    FN0_X + 0*(NUM_KW+NUM_GAP), NUMR[3], NUM_KW, WHITE,WSTK,'#111', 18,'0',  {shiftLabel:'Rnd'}),
+  numKey('DOT', '.',    FN0_X + 1*(NUM_KW+NUM_GAP), NUMR[3], NUM_KW, WHITE,WSTK,'#111', 20,'.', {shiftLabel:'Ran#'}),
+  numKey('EE',  '×10ˣ', FN0_X + 2*(NUM_KW+NUM_GAP), NUMR[3], NUM_KW, WHITE,WSTK,'#111',  8,'EE', {shiftLabel:'π',sAct:'PI'}),
+  numKey('ANS', 'Ans',  FN0_X + 3*(NUM_KW+NUM_GAP), NUMR[3], NUM_KW, WHITE,WSTK,'#111', 10,'ANS',{shiftLabel:'%',sAct:'PERCENT'}),
+  numKey('EQ',  '=',   FN0_X + 4*(NUM_KW+NUM_GAP), NUMR[3], NUM_KW, ORANGE,ORSTK,'#fff',20,'='),
+];
+
+const ALL_KEYS: K[] = [...NAV_KEYS, ...FN0, ...FN1, ...FN2, ...FN3, ...NUM_KEYS];
 
 // ─────────────────────────────── Component ───────────────────────────────────
 
@@ -388,7 +448,6 @@ export function Fx991EX({ onClose }: Props) {
     return () => { window.removeEventListener('mousemove', mm); window.removeEventListener('mouseup', mu); };
   }, []);
 
-  // key press
   const press = useCallback((k: K) => {
     setCS(prev => {
       const act = prev.shift ? (k.sAct ?? k.act)
@@ -399,7 +458,6 @@ export function Fx991EX({ onClose }: Props) {
       const app = (tok: string): CS => {
         let e = base.expr;
         if (base.fresh) {
-          // after = : operator continues with Ans, else start fresh
           if (/^[+−×÷\^]/.test(tok)) e = 'Ans';
           else if (!/^[)!%]/.test(tok)) e = '';
         }
@@ -460,6 +518,7 @@ export function Fx991EX({ onClose }: Props) {
         case 'EXPX':   return app('eˣ(');
         case 'POW10':  return app('10^(');
         case 'SQRT':   return app('√(');
+        case 'CBRT':   return app('nCr(3,');  // approximate — real device has ³√
         case 'SQ':     return app('^2');
         case 'CUBE':   return app('^3');
         case 'POW':    return app('^(');
@@ -477,8 +536,8 @@ export function Fx991EX({ onClose }: Props) {
           const m = prev.mem.M - prev.ans;
           return { ...base, mem: { ...prev.mem, M: m }, result: `M=${fmtNum(m)}` };
         }
-        case 'STO': return { ...base, result: 'STO: press A–F' };
-        case 'RCL': return { ...base, result: 'RCL: press A–F' };
+        case 'STO': return { ...base, result: 'STO → A-F' };
+        case 'RCL': return { ...base, result: 'RCL ← A-F' };
 
         case 'STOD': {
           const r = prev.ans;
@@ -509,12 +568,17 @@ export function Fx991EX({ onClose }: Props) {
 
   const s = cs;
 
+  // ── D-pad geometry ────────────────────────────────────────────────────────
+  const DP_CX = 150;  // centre of d-pad
+  const DP_CY = NAV_Y + 24;
+  const DP_R  = 26;   // outer circle radius
+
   // ── Render ────────────────────────────────────────────────────────────────
   return (
     <div style={{
       position: 'fixed', left: pos.x, top: pos.y,
       zIndex: 9999, userSelect: 'none',
-      filter: 'drop-shadow(0 12px 36px rgba(0,0,0,0.8))',
+      filter: 'drop-shadow(0 16px 40px rgba(0,0,0,0.85))',
     }}>
       <svg
         width={VW} height={VH}
@@ -522,118 +586,174 @@ export function Fx991EX({ onClose }: Props) {
         style={{ display: 'block', cursor: 'default' }}
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* ── Outer white/silver rim ──────────────────────────────────────── */}
-        <rect x={0} y={0} width={VW} height={VH} rx={22} ry={22}
-          fill="#d8d8d0" stroke="#b8b8b0" strokeWidth={1} />
+        {/* ── Outer silver/white rim ─────────────────────────────────────── */}
+        <rect x={0} y={0} width={VW} height={VH} rx={20} ry={20}
+          fill="url(#rimGrad)" stroke="#a0a098" strokeWidth={1} />
 
-        {/* ── Inner black textured face ───────────────────────────────────── */}
-        <rect x={8} y={8} width={VW-16} height={VH-16} rx={16} ry={16}
-          fill="#1c1c1c" />
-        {/* subtle texture lines */}
-        {Array.from({length:28}).map((_,i) => (
-          <line key={i} x1={8} y1={28+i*18} x2={VW-8} y2={28+i*18}
-            stroke="#222" strokeWidth={0.5} opacity={0.5} />
+        {/* ── Inner black textured face ──────────────────────────────────── */}
+        <rect x={7} y={7} width={VW-14} height={VH-14} rx={14} ry={14}
+          fill="#1a1a1a" />
+        {/* subtle horizontal texture lines */}
+        {Array.from({length:32}).map((_,i) => (
+          <line key={i} x1={7} y1={22+i*17} x2={VW-7} y2={22+i*17}
+            stroke="#232323" strokeWidth={0.6} opacity={0.6} />
         ))}
 
-        {/* ── Solar panel ─────────────────────────────────────────────────── */}
-        <rect x={148} y={14} width={114} height={28} rx={4} fill="#0a0a0a" stroke="#444" strokeWidth={1}/>
-        {Array.from({length:10}).map((_,i) => (
-          <rect key={i} x={150+i*11} y={16} width={9} height={24} rx={1}
-            fill="#111" stroke="#222" strokeWidth={0.5}/>
+        {/* ── Gradient defs ─────────────────────────────────────────────── */}
+        <defs>
+          <linearGradient id="rimGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%"   stopColor="#e8e8e0"/>
+            <stop offset="50%"  stopColor="#d0d0c8"/>
+            <stop offset="100%" stopColor="#c0c0b8"/>
+          </linearGradient>
+          <radialGradient id="dpadGrad" cx="50%" cy="35%" r="60%">
+            <stop offset="0%"   stopColor="#d8d8d0"/>
+            <stop offset="100%" stopColor="#888880"/>
+          </radialGradient>
+          <radialGradient id="dpadCtr" cx="50%" cy="40%" r="55%">
+            <stop offset="0%"   stopColor="#b0b0a8"/>
+            <stop offset="100%" stopColor="#606058"/>
+          </radialGradient>
+        </defs>
+
+        {/* ── CASIO branding ─────────────────────────────────────────────── */}
+        <text x={16} y={28} fill="#ffffff" fontSize={16} fontWeight="900"
+          fontFamily="Arial Black, Arial, sans-serif" letterSpacing="2.5">CASIO</text>
+        <text x={16} y={40} fill="#888" fontSize={7.5}
+          fontFamily="Arial, sans-serif" letterSpacing="1.2">fx-991EX</text>
+        {/* CLASSWIZ in hot-pink dot-matrix style */}
+        <text x={16} y={52} fill="#e0205a" fontSize={8} fontWeight="bold"
+          fontFamily="'Courier New', Courier, monospace" letterSpacing="3.5">CLASSWIZ</text>
+
+        {/* ── Solar panel (right of branding) ───────────────────────────── */}
+        <rect x={168} y={14} width={118} height={32} rx={4}
+          fill="#080808" stroke="#3a3a3a" strokeWidth={0.8}/>
+        {Array.from({length:11}).map((_,i) => (
+          <rect key={i} x={170+i*10.5} y={16} width={9} height={28} rx={1.5}
+            fill="#0f0f0f" stroke="#252525" strokeWidth={0.5}/>
         ))}
 
-        {/* ── CASIO branding ──────────────────────────────────────────────── */}
-        <text x={18} y={30} fill="#fff" fontSize={14} fontWeight="900"
-          fontFamily="Arial, sans-serif" letterSpacing="3">CASIO</text>
-        <text x={18} y={42} fill="#999" fontSize={8}
-          fontFamily="Arial, sans-serif" letterSpacing="1">fx-991EX</text>
-        <text x={18} y={52} fill="#e8204a" fontSize={8.5} fontWeight="bold"
-          fontFamily="'Courier New', monospace" letterSpacing="3">CLASSWIZ</text>
-
-        {/* ── Drag handle (top strip, invisible) ──────────────────────────── */}
-        <rect x={0} y={0} width={VW} height={70} rx={22} fill="transparent"
+        {/* ── Drag handle (top area, invisible) ─────────────────────────── */}
+        <rect x={0} y={0} width={VW} height={64} rx={20}
+          fill="transparent"
           onMouseDown={onDragStart} style={{ cursor:'grab' }} />
 
-        {/* ── Close button ────────────────────────────────────────────────── */}
+        {/* ── Close button ──────────────────────────────────────────────── */}
         <g onClick={onClose} style={{ cursor:'pointer' }}>
-          <circle cx={VW-16} cy={16} r={9} fill="rgba(0,0,0,0.5)" />
-          <text x={VW-16} y={20} textAnchor="middle" fill="#fff" fontSize={10}>×</text>
+          <circle cx={VW-14} cy={14} r={10} fill="rgba(0,0,0,0.45)" />
+          <text x={VW-14} y={18.5} textAnchor="middle" fill="#ccc" fontSize={11} fontWeight="bold">×</text>
         </g>
 
-        {/* ── Screen bezel ────────────────────────────────────────────────── */}
-        <rect x={12} y={62} width={VW-24} height={104} rx={5} fill="#444" />
-        {/* LCD panel */}
-        <rect x={16} y={66} width={VW-32} height={96} rx={3} fill="#c8d8b8" />
+        {/* ── Screen bezel ──────────────────────────────────────────────── */}
+        <rect x={SCR_X-2} y={SCR_Y-4} width={SCR_W+4} height={SCR_H+8} rx={6}
+          fill="#333" />
+        {/* LCD panel background */}
+        <rect x={SCR_X} y={SCR_Y} width={SCR_W} height={SCR_H} rx={4}
+          fill="#b8cca8" />
+        {/* subtle LCD scan lines */}
+        {Array.from({length:20}).map((_,i) => (
+          <line key={i} x1={SCR_X} y1={SCR_Y+i*5} x2={SCR_X+SCR_W} y2={SCR_Y+i*5}
+            stroke="#a8bc98" strokeWidth={0.4} opacity={0.7}/>
+        ))}
 
-        {/* ── LCD content (via foreignObject) ─────────────────────────────── */}
-        <foreignObject x={16} y={66} width={VW-32} height={96}>
+        {/* ── LCD content ───────────────────────────────────────────────── */}
+        <foreignObject x={SCR_X} y={SCR_Y} width={SCR_W} height={SCR_H}>
           <div
             style={{
               width: '100%', height: '100%',
-              background: '#c8d8b8',
-              borderRadius: 3,
-              padding: '4px 8px',
+              background: 'transparent',
+              borderRadius: 4,
+              padding: '5px 8px',
               boxSizing: 'border-box',
               display: 'flex',
               flexDirection: 'column',
-              fontFamily: 'monospace',
+              fontFamily: "'Courier New', Courier, monospace",
               overflow: 'hidden',
             }}
           >
-            {/* Status row */}
+            {/* Status bar */}
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:2 }}>
-              <div style={{ display:'flex', gap:4, alignItems:'center' }}>
-                <span style={{ fontSize:8, color:'#1a2a04', fontWeight:'bold' }}>{s.angle}</span>
-                {s.shift && <span style={{ fontSize:6.5, background:'#e8960a', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>S</span>}
-                {s.alpha && <span style={{ fontSize:6.5, background:'#d01038', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>A</span>}
-                {s.hyp   && <span style={{ fontSize:6.5, background:'#446',    color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>H</span>}
-                {s.mem.M !== 0 && <span style={{ fontSize:6.5, background:'#338', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold' }}>M</span>}
+              <div style={{ display:'flex', gap:3, alignItems:'center' }}>
+                <span style={{ fontSize:7.5, color:'#1a2a04', fontWeight:'bold', letterSpacing:1 }}>{s.angle}</span>
+                {s.shift && <span style={{ fontSize:6, background:'#e8960a', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold', lineHeight:'9px' }}>S</span>}
+                {s.alpha && <span style={{ fontSize:6, background:'#cc1030', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold', lineHeight:'9px' }}>A</span>}
+                {s.hyp   && <span style={{ fontSize:6, background:'#446688', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold', lineHeight:'9px' }}>H</span>}
+                {s.mem.M !== 0 && <span style={{ fontSize:6, background:'#335588', color:'#fff', padding:'0 2px', borderRadius:1, fontWeight:'bold', lineHeight:'9px' }}>M</span>}
               </div>
-              <span style={{ fontSize:8, color:'#1a2a04' }}>COMP</span>
+              <span style={{ fontSize:7, color:'#1a2a04', letterSpacing:0.5 }}>COMP</span>
             </div>
 
-            {/* Expression line — small, right-aligned, shows what's being typed */}
+            {/* Expression line */}
             <div style={{
-              flex:1,
+              flex: 1,
               fontSize: 11,
-              color: '#1a2a04',
+              color: '#182a04',
               textAlign: 'right',
               wordBreak: 'break-all',
-              lineHeight: 1.3,
-              paddingTop: 2,
-              minHeight: 14,
+              lineHeight: 1.25,
+              paddingTop: 1,
             }}>
-              {/* Show expr while typing; after =, show expr above result */}
-              {s.fresh ? s.expr : s.expr}
+              {s.expr || (s.fresh ? '' : '')}
             </div>
 
-            {/* Result line — large, right-aligned */}
+            {/* Result line */}
             <div style={{
-              fontSize: s.result.length > 12 ? 14 : 22,
+              fontSize: s.result.length > 14 ? 13 : (s.result.length > 10 ? 16 : 22),
               fontWeight: 'bold',
-              color: s.err ? '#880000' : '#0a1a04',
+              color: s.err ? '#880000' : '#0a1804',
               textAlign: 'right',
               lineHeight: 1.1,
               minHeight: 26,
+              letterSpacing: -0.5,
             }}>
-              {s.result
-                ? s.result
-                : s.expr
-                  ? ''
-                  : '0'}
+              {s.result ? s.result : (!s.expr ? '0' : '')}
             </div>
           </div>
         </foreignObject>
 
-        {/* ── Buttons ─────────────────────────────────────────────────────── */}
-        {KEYS.map(k => {
-          const isActive = (k.act === 'SHIFT' && s.shift)
-                        || (k.act === 'ALPHA' && s.alpha)
-                        || (k.act === 'HYP'   && s.hyp);
-          const fill   = isActive ? '#fff' : (k.fill ?? '#2a2a2a');
-          const tFill  = isActive ? '#d01038' : (k.textFill ?? '#e8e8e8');
-          const stroke = k.stroke ?? '#111';
-          const rx     = k.rx ?? 3;
+        {/* ── Screen corner indicators ───────────────────────────────────── */}
+        {/* Tiny dots in corners of LCD to simulate real display corners */}
+        <circle cx={SCR_X+4}       cy={SCR_Y+4}       r={1.5} fill="#9ab888" />
+        <circle cx={SCR_X+SCR_W-4} cy={SCR_Y+4}       r={1.5} fill="#9ab888" />
+        <circle cx={SCR_X+4}       cy={SCR_Y+SCR_H-4} r={1.5} fill="#9ab888" />
+        <circle cx={SCR_X+SCR_W-4} cy={SCR_Y+SCR_H-4} r={1.5} fill="#9ab888" />
+
+        {/* ── D-pad — circular silver rocker ────────────────────────────── */}
+        {/* Outer circle */}
+        <circle cx={DP_CX} cy={DP_CY} r={DP_R} fill="url(#dpadGrad)" stroke="#606058" strokeWidth={1}/>
+        {/* Darker cross channels to show 4-way rocker shape */}
+        <rect x={DP_CX-8} y={DP_CY-DP_R} width={16} height={DP_R*2}
+          fill="#787870" opacity={0.35} />
+        <rect x={DP_CX-DP_R} y={DP_CY-8} width={DP_R*2} height={16}
+          fill="#787870" opacity={0.35} />
+        {/* Center circle */}
+        <circle cx={DP_CX} cy={DP_CY} r={9} fill="url(#dpadCtr)" stroke="#505048" strokeWidth={0.8}/>
+        {/* Arrow labels */}
+        <text x={DP_CX} y={DP_CY-DP_R+11} textAnchor="middle" fill="#fff" fontSize={9} fontWeight="bold" fontFamily="Arial">▲</text>
+        <text x={DP_CX} y={DP_CY+DP_R-3}  textAnchor="middle" fill="#fff" fontSize={9} fontWeight="bold" fontFamily="Arial">▼</text>
+        <text x={DP_CX-DP_R+5} y={DP_CY+3.5} textAnchor="middle" fill="#fff" fontSize={9} fontWeight="bold" fontFamily="Arial">◀</text>
+        <text x={DP_CX+DP_R-5} y={DP_CY+3.5} textAnchor="middle" fill="#fff" fontSize={9} fontWeight="bold" fontFamily="Arial">▶</text>
+
+        {/* ── Buttons ──────────────────────────────────────────────────────── */}
+        {ALL_KEYS.map(k => {
+          // Skip d-pad ghost keys — they use transparent fill, drawn via d-pad SVG above
+          if (['UP','DOWN','LEFT','RIGHT','CTR'].includes(k.id)) {
+            return (
+              <rect key={k.id}
+                x={k.x} y={k.y} width={k.w} height={k.h}
+                fill="transparent" stroke="none"
+                style={{ cursor:'pointer' }}
+                onMouseDown={e => { e.preventDefault(); press(k); }}
+              />
+            );
+          }
+
+          const isActive = (k.id === 'SHIFT' && s.shift)
+                        || (k.id === 'ALPHA' && s.alpha);
+          const fill   = isActive ? '#fff'    : k.fill;
+          const tFill  = isActive ? '#cc1030' : k.textFill;
+          const stroke = k.stroke;
+          const rx     = k.rx ?? 4;
           const cx     = k.x + k.w / 2;
           const cy     = k.y + k.h / 2;
           const fs     = k.fontSize ?? 9;
@@ -643,38 +763,43 @@ export function Fx991EX({ onClose }: Props) {
               onMouseDown={e => { e.preventDefault(); press(k); }}
               style={{ cursor:'pointer' }}
             >
-              {/* shift label above (yellow) */}
+              {/* shift label */}
               {k.shiftLabel && (
                 <text x={cx} y={k.y - 2} textAnchor="middle"
                   fill="#e8960a" fontSize={5.5} fontWeight="bold"
                   fontFamily="Arial, sans-serif">{k.shiftLabel}</text>
               )}
-              {/* alpha label above (pink) */}
+              {/* alpha label */}
               {k.alphaLabel && (
                 <text x={k.x + k.w - 2} y={k.y - 2} textAnchor="end"
                   fill="#e040a0" fontSize={5.5} fontWeight="bold"
                   fontFamily="Arial, sans-serif">{k.alphaLabel}</text>
               )}
+              {/* key body shadow */}
+              <rect x={k.x} y={k.y+2} width={k.w} height={k.h}
+                rx={rx} ry={rx} fill={stroke} opacity={0.5}/>
               {/* key body */}
-              <rect x={k.x} y={k.y} width={k.w} height={k.h} rx={rx} ry={rx}
-                fill={fill} stroke={stroke} strokeWidth={0.8}
-              />
-              {/* 3D shadow line */}
-              {!isActive && (
-                <rect x={k.x} y={k.y + k.h} width={k.w} height={3} rx={2}
-                  fill={stroke} opacity={0.7}/>
-              )}
-              {/* label */}
-              <text x={cx} y={cy + fs * 0.38}
+              <rect x={k.x} y={k.y} width={k.w} height={k.h}
+                rx={rx} ry={rx} fill={fill} stroke={stroke} strokeWidth={0.7}/>
+              {/* key label */}
+              <text
+                x={cx} y={cy + fs * 0.37}
                 textAnchor="middle"
                 fill={tFill}
                 fontSize={fs}
-                fontWeight={k.act === '=' || /^\d$/.test(k.act) ? 'bold' : '600'}
+                fontWeight={k.id === 'EQ' || /^\d$/.test(k.id) ? 'bold' : '600'}
                 fontFamily="Arial, sans-serif"
               >{k.label}</text>
             </g>
           );
         })}
+
+        {/* ── Bottom brand strip ─────────────────────────────────────────── */}
+        <text x={VW/2} y={VH-10} textAnchor="middle"
+          fill="#444" fontSize={7} fontFamily="Arial, sans-serif" letterSpacing={1}>
+          NATURAL-V.P.A.M.
+        </text>
+
       </svg>
     </div>
   );
