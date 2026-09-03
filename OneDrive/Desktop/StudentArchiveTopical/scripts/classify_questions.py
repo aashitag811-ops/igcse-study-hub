@@ -24,16 +24,27 @@ from supabase import create_client
 # ── Load env ──────────────────────────────────────────────────────────────────
 load_dotenv(Path(__file__).parent.parent / ".env")
 
-GEMINI_API_KEY       = os.getenv("GEMINI_API_KEY")
 SUPABASE_URL         = os.getenv("SUPABASE_URL")
 SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY")
 
-if not all([GEMINI_API_KEY, SUPABASE_URL, SUPABASE_SERVICE_KEY]):
-    print("ERROR: Missing keys in .env file. Need GEMINI_API_KEY, SUPABASE_URL, SUPABASE_SERVICE_KEY")
+_raw_keys = [k for k in [
+    os.getenv("GEMINI_API_KEY"),
+    os.getenv("GEMINI_API_KEY_2"),
+    os.getenv("GEMINI_API_KEY_3"),
+    os.getenv("GEMINI_API_KEY_4"),
+] if k]
+
+if not _raw_keys:
+    print("ERROR: No GEMINI_API_KEY found in .env")
+    sys.exit(1)
+
+if not all([SUPABASE_URL, SUPABASE_SERVICE_KEY]):
+    print("ERROR: Missing SUPABASE_URL or SUPABASE_SERVICE_KEY in .env")
     sys.exit(1)
 
 # ── Clients ───────────────────────────────────────────────────────────────────
-gemini = genai.Client(api_key=GEMINI_API_KEY)
+_clients = [genai.Client(api_key=k) for k in _raw_keys]
+print(f"Loaded {len(_clients)} Gemini API key(s)")
 supabase = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 # ── IGCSE Physics 0625 syllabus ───────────────────────────────────────────────
@@ -102,7 +113,7 @@ def image_path_from_url(image_url: str, paper_id: str) -> Path:
     # Build local path: public/images/physics/0625_m23_qp_22/q1.png
     return BASE_DIR / "public" / clean.lstrip("/")
 
-def classify_with_gemini(image_path: Path, retries: int = 3) -> dict:
+def classify_with_gemini(image_path: Path, model: str = "gemini-2.0-flash-lite") -> dict:
     """Send image to Gemini and return {topic, subtopic}."""
     if not image_path.exists():
         return {"topic": "Unknown", "subtopic": "Unknown"}
@@ -111,27 +122,36 @@ def classify_with_gemini(image_path: Path, retries: int = 3) -> dict:
     suffix = image_path.suffix.lower()
     mime = "image/png" if suffix == ".png" else "image/jpeg"
 
-    for attempt in range(retries):
+    for key_idx, client in enumerate(_clients):
         try:
-            response = gemini.models.generate_content(
-                model="gemini-3.1-flash-lite-preview",
+            response = client.models.generate_content(
+                model=model,
                 contents=[
                     CLASSIFY_PROMPT,
                     types.Part.from_bytes(data=img_data, mime_type=mime),
                 ]
             )
             text = response.text.strip()
-            # Extract JSON even if Gemini adds extra text
             match = re.search(r'\{.*?\}', text, re.DOTALL)
             if match:
                 result = json.loads(match.group())
                 if "topic" in result and "subtopic" in result:
                     return result
         except Exception as e:
-            print(f"    Gemini attempt {attempt+1} failed: {e}")
-            if attempt < retries - 1:
-                time.sleep(2 ** attempt)
-    
+            err = str(e)
+            if "429" in err or "RESOURCE_EXHAUSTED" in err:
+                print(f"\n[FATAL] key{key_idx+1}: quota exhausted — rotate your API key and re-run.")
+                sys.exit(1)
+            elif "403" in err or "PERMISSION_DENIED" in err:
+                print(f"\n[FATAL] key{key_idx+1}: permission denied — check your API key.")
+                sys.exit(1)
+            elif "503" in err or "UNAVAILABLE" in err:
+                print(f"\n[FATAL] key{key_idx+1}: service unavailable — try again later.")
+                sys.exit(1)
+            else:
+                print(f"\n[FATAL] key{key_idx+1}: unexpected error — {err[:120]}")
+                sys.exit(1)
+
     return {"topic": "Unknown", "subtopic": "Unknown"}
 
 def make_question_id(paper_id: str, question_number: int) -> str:
@@ -143,7 +163,7 @@ def session_label(session: str) -> str:
     return mapping.get(session, session)
 
 # ── Main ──────────────────────────────────────────────────────────────────────
-def process_papers(subject_code: str, paper_variant: str, limit: int = None, dry_run: bool = False, max_papers: int = None, year_from: int = None, year_to: int = None, paper_id: str = None):
+def process_papers(subject_code: str, paper_variant: str, limit: int = None, dry_run: bool = False, max_papers: int = None, year_from: int = None, year_to: int = None, paper_id: str = None, model: str = "gemini-2.0-flash-lite"):
     papers_dir = BASE_DIR / "public" / "papers"
 
     # If a specific paper ID is given, just load that one file directly
@@ -191,6 +211,8 @@ def process_papers(subject_code: str, paper_variant: str, limit: int = None, dry
         print(f"\n-- {paper_id} ({len(questions)} questions) --")
 
         for q in questions:
+            if "questionNumber" not in q:
+                continue  # skip viewOnly stubs
             q_num     = q["questionNumber"]
             q_id      = make_question_id(paper_id, q_num)
             image_url = q.get("imageUrl", "")
@@ -211,10 +233,15 @@ def process_papers(subject_code: str, paper_variant: str, limit: int = None, dry
                 continue
 
             # Classify with Gemini
-            classification = classify_with_gemini(img_path)
+            classification = classify_with_gemini(img_path, model=model)
             topic    = classification["topic"]
             subtopic = classification["subtopic"]
             print(f"-> {topic} / {subtopic}", end=" ")
+
+            if topic == "Unknown" or subtopic == "Unknown":
+                print("[SKIP] unknown classification — not inserting")
+                total_skipped += 1
+                continue
 
             if dry_run:
                 print("(dry run, not inserting)")
@@ -245,14 +272,26 @@ def process_papers(subject_code: str, paper_variant: str, limit: int = None, dry
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Classify MCQ questions using Gemini Vision")
-    parser.add_argument("--subject", default="0625",  help="Subject code e.g. 0625")
-    parser.add_argument("--paper",   default="4",     help="Paper number e.g. 4 (matches qp_41, qp_42, qp_43)")
+    parser.add_argument("--subject",    default="0625", help="Subject code e.g. 0625")
+    parser.add_argument("--paper",      default="4",    help="Paper number e.g. 4 (matches qp_41, qp_42, qp_43)")
     parser.add_argument("--limit",      type=int, help="Limit questions per paper (for testing)")
     parser.add_argument("--max-papers", type=int, help="Limit number of papers to process (for testing)")
     parser.add_argument("--year-from",  type=int, help="Start year e.g. 2020")
     parser.add_argument("--year-to",    type=int, help="End year e.g. 2025")
     parser.add_argument("--paper-id",   help="Target a single paper exactly e.g. 0625_s24_qp_23")
-    parser.add_argument("--dry-run", action="store_true", help="Classify but don't insert into DB")
+    parser.add_argument("--dry-run",    action="store_true", help="Classify but don't insert into DB")
+    parser.add_argument("--model",      default="gemini-2.0-flash-lite", help="Gemini model to use")
+    parser.add_argument("--use-key",    type=int, default=None, help="Use only this key slot: 1, 2, 3 or 4")
     args = parser.parse_args()
 
-    process_papers(args.subject, args.paper, args.limit, args.dry_run, args.max_papers, args.year_from, args.year_to, args.paper_id)
+    if args.use_key is not None:
+        idx = args.use_key - 1
+        if idx < 0 or idx >= len(_clients):
+            print(f"ERROR: --use-key {args.use_key} is out of range (only {len(_clients)} key(s) loaded)")
+            sys.exit(1)
+        _clients[:] = [_clients[idx]]
+        _active_key_label = args.use_key  # used in error messages
+        print(f"Restricted to key slot {args.use_key} only")
+
+    print(f"Using model: {args.model}")
+    process_papers(args.subject, args.paper, args.limit, args.dry_run, args.max_papers, args.year_from, args.year_to, args.paper_id, args.model)

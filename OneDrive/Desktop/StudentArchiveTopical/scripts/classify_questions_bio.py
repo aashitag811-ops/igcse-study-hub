@@ -98,24 +98,21 @@ SYLLABUS TAXONOMY — you MUST use ONLY these exact topic and subtopic names:
     Subtopics: Medicinal Drugs and Antibiotics | Drug Effects and Resistance
 
 16. Reproduction
-    Subtopics: Asexual and Sexual Reproduction | Sexual Reproduction in Flowering Plants | Seed Dispersal and Germination | Advantages and Disadvantages of Reproductive Methods
+    Subtopics: Asexual Reproduction | Sexual Reproduction in Animals | Hormonal Control of Reproduction | Fertilisation and Pregnancy | Sexual Reproduction in Plants | Seed Dispersal, Germination and Plant Growth | STIs | Contraception
 
-17. Reproduction in Humans
-    Subtopics: Human Reproductive Systems | Fertilisation and Pregnancy | Hormonal Control of Reproduction | Contraception | Sexually Transmitted Infections
-
-18. Chromosomes, Genes and Proteins
+17. Chromosomes, Genes and Proteins
     Subtopics: Chromosomes and Cell Division | Inheritance | Genes and Protein Synthesis
 
-19. Variation and Selection
+18. Variation and Selection
     Subtopics: Variation | Selection
 
-20. Organisms and their Environment
+19. Organisms and their Environment
     Subtopics: Energy Flow and Food Webs | Nutrient Cycles | Populations
 
-21. Human Influences on Ecosystems
+20. Human Influences on Ecosystems
     Subtopics: Human Pressures on Ecosystems | Conservation
 
-22. Biotechnology and Genetic Modification
+21. Biotechnology and Genetic Modification
     Subtopics: Biotechnology | Genetic Modification
 
 CLASSIFICATION RULES:
@@ -141,6 +138,14 @@ CLASSIFICATION RULES:
 - Questions about reflex arcs → Reflex Actions
 - Questions about insulin, adrenaline, endocrine glands → Hormones
 - Questions about auxin, phototropism → Coordination in Plants
+- Questions about asexual reproduction, binary fission, budding, runners, vegetative propagation → Asexual Reproduction
+- Questions about male/female reproductive systems, gametes, fertilisation in animals → Sexual Reproduction in Animals
+- Questions about the menstrual cycle, FSH, LH, oestrogen, progesterone → Hormonal Control of Reproduction
+- Questions about implantation, gestation, development of the foetus, birth → Fertilisation and Pregnancy
+- Questions about pollination, fertilisation in flowering plants → Sexual Reproduction in Plants
+- Questions about seed dispersal, germination, plant growth → Seed Dispersal, Germination and Plant Growth
+- Questions about HIV/AIDS, gonorrhoea, transmission of STIs → STIs
+- Questions about contraception methods, hormonal contraception → Contraception
 - Questions about Punnett squares, dominant/recessive alleles → Inheritance
 - Questions about mitosis, chromosome number → Chromosomes and Cell Division
 - Questions about natural selection, adaptation → Selection
@@ -191,18 +196,17 @@ def classify_with_gemini(image_path: Path, model: str) -> dict:
         except Exception as e:
             err = str(e)
             if "429" in err or "RESOURCE_EXHAUSTED" in err:
-                print(f"    key{key_idx+1}: quota exhausted, trying next key...")
-                continue
+                print(f"\n[FATAL] key{key_idx+1}: quota exhausted — rotate your API key and re-run.")
+                sys.exit(1)
             elif "403" in err or "PERMISSION_DENIED" in err:
-                print(f"    key{key_idx+1}: permission denied, trying next key...")
-                continue
+                print(f"\n[FATAL] key{key_idx+1}: permission denied — check your API key.")
+                sys.exit(1)
             elif "503" in err or "UNAVAILABLE" in err:
-                print(f"    key{key_idx+1}: service unavailable, retrying in 5s...")
-                time.sleep(5)
-                continue
+                print(f"\n[FATAL] key{key_idx+1}: service unavailable — try again later.")
+                sys.exit(1)
             else:
-                print(f"    key{key_idx+1}: {err[:80]}")
-                time.sleep(2)
+                print(f"\n[FATAL] key{key_idx+1}: unexpected error — {err[:120]}")
+                sys.exit(1)
 
     print(f"    All keys exhausted for model {model}.")
     return {"topic": "Unknown", "subtopic": "Unknown"}
@@ -279,6 +283,11 @@ def process_papers(subject_code: str, paper_variant: str, limit: int = None, dry
             subtopic = classification["subtopic"]
             print(f"-> {topic} / {subtopic}", end=" ")
 
+            if topic == "Unknown" or subtopic == "Unknown":
+                print("[SKIP] unknown classification — not inserting")
+                total_skipped += 1
+                continue
+
             if dry_run:
                 print("(dry run, not inserting)")
                 continue
@@ -314,8 +323,18 @@ if __name__ == "__main__":
     parser.add_argument("--year-to",    type=int,        help="End year e.g. 2025")
     parser.add_argument("--paper-id",                    help="Target a single paper e.g. 0610_s23_qp_22")
     parser.add_argument("--dry-run",    action="store_true", help="Classify but don't insert into DB")
-    parser.add_argument("--model", default="gemini-flash-lite-latest", help="Gemini model to use")
+    parser.add_argument("--model",    default="gemini-flash-lite-latest", help="Gemini model to use")
+    parser.add_argument("--use-key",  type=int, default=None, help="Use only this key slot: 1, 2, or 3")
     args = parser.parse_args()
+
+    # If --use-key is set, keep only that one key in the pool
+    if args.use_key is not None:
+        idx = args.use_key - 1
+        if idx < 0 or idx >= len(_clients):
+            print(f"ERROR: --use-key {args.use_key} is out of range (only {len(_clients)} key(s) loaded)")
+            sys.exit(1)
+        _clients[:] = [_clients[idx]]
+        print(f"Restricted to key slot {args.use_key} only")
 
     print(f"Using model: {args.model}")
     process_papers(args.subject, args.paper, args.limit, args.dry_run, args.max_papers, args.year_from, args.year_to, args.paper_id, args.model)
