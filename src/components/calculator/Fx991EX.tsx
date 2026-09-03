@@ -458,20 +458,24 @@ export function Fx991EX({ onClose }: Props) {
     if(isAlphaOn) bg='#9e1020';
 
     const fs=k.main.length>5?7:k.main.length>4?8:k.main.length>3?9:10;
+    const hasLbl=!!(k.shift||k.alpha);
 
     return(
       <div key={k.id} style={{display:'flex',flexDirection:'column',alignItems:'center',flexShrink:0,width:kw}}>
-        {/* label strip — only rendered if key actually has labels */}
-        <div style={{height:11,width:'100%',display:'flex',alignItems:'center',justifyContent:'space-between',paddingBottom:1,boxSizing:'border-box',visibility:(k.shift||k.alpha)?'visible':'hidden'}}>
-          <span style={{flex:1,textAlign:'center',fontSize:6.5,color:'#e8a000',fontFamily:'sans-serif',lineHeight:1,overflow:'hidden',whiteSpace:'nowrap'}}>
-            {k.shift??''}
-          </span>
+        {/* label strip — only present if there are actual labels */}
+        {hasLbl&&(
+        <div style={{height:10,width:'100%',display:'flex',alignItems:'flex-end',justifyContent:'space-between',marginBottom:1,boxSizing:'border-box'}}>
+          {k.shift
+            ? <span style={{flex:1,textAlign:'center',fontSize:7,color:'#ffbe00',fontFamily:'sans-serif',lineHeight:1,overflow:'hidden',whiteSpace:'nowrap',fontWeight:600,textShadow:'0 0 3px rgba(0,0,0,0.9)'}}>{k.shift}</span>
+            : <span style={{flex:1}}/>
+          }
           {k.alpha&&(
-            <span style={{flex:1,textAlign:'center',fontSize:6.5,color:'#e03050',fontFamily:'sans-serif',lineHeight:1,overflow:'hidden',whiteSpace:'nowrap'}}>
+            <span style={{flex:1,textAlign:'center',fontSize:7,color:'#ff5577',fontFamily:'sans-serif',lineHeight:1,overflow:'hidden',whiteSpace:'nowrap',fontWeight:600,textShadow:'0 0 3px rgba(0,0,0,0.9)'}}>
               {k.alpha}
             </span>
           )}
         </div>
+        )}
         {/* key button */}
         <div
           onMouseDown={e=>{e.preventDefault();press(k);}}
@@ -506,9 +510,11 @@ export function Fx991EX({ onClose }: Props) {
 
     return(
       <div key={k.id} style={{display:'flex',flexDirection:'column',alignItems:'center',flexShrink:0,width:diameter}}>
-        <div style={{height:11,width:'100%',display:'flex',alignItems:'center',justifyContent:'space-between',paddingBottom:1,boxSizing:'border-box',visibility:k.shift?'visible':'hidden'}}>
-          <span style={{flex:1,textAlign:'center',fontSize:6.5,color:'#e8a000',fontFamily:'sans-serif',lineHeight:1}}>{k.shift??''}</span>
+        {k.shift&&(
+        <div style={{height:10,width:'100%',marginBottom:1}}>
+          <span style={{display:'block',textAlign:'center',fontSize:7,color:'#ffbe00',fontFamily:'sans-serif',lineHeight:1,fontWeight:600,textShadow:'0 0 3px rgba(0,0,0,0.9)'}}>{k.shift}</span>
         </div>
+        )}
         <div
           onMouseDown={e=>{e.preventDefault();press(k);}}
           style={{
@@ -627,13 +633,13 @@ export function Fx991EX({ onClose }: Props) {
           </div>
 
           {/* ── LCD screen with black bezel ── */}
-          <div style={{margin:'5px 8px 4px',background:'#111',borderRadius:4,padding:'3px',boxShadow:'inset 0 0 0 1px #000'}}>
+          <div style={{margin:'5px 8px 6px',background:'#111',borderRadius:4,padding:'3px',boxShadow:'inset 0 0 0 1px #000'}}>
             <div style={{
               background:'#b8cc9c',
               borderRadius:2,
-              display:'flex',flexDirection:'column',justifyContent:'flex-end',
-              padding:'3px 6px 4px',
-              minHeight:52,
+              display:'flex',flexDirection:'column',justifyContent:'space-between',
+              padding:'4px 8px 5px',
+              height:74,
               fontFamily:"'Courier New',Courier,monospace",
               overflow:'hidden',
             }}>
@@ -644,29 +650,28 @@ export function Fx991EX({ onClose }: Props) {
                   {/* status */}
                   <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
                     <div style={{display:'flex',gap:3,alignItems:'center'}}>
-                      <span style={{fontSize:8,color:'#1a3204',fontWeight:'bold'}}>{s.angle}</span>
-                      {s.shift&&<span style={{fontSize:7,background:'#bf7e00',color:'#fff',padding:'0 2px',borderRadius:2,fontWeight:'bold'}}>S</span>}
-                      {s.alpha&&<span style={{fontSize:7,background:'#9e1020',color:'#fff',padding:'0 2px',borderRadius:2,fontWeight:'bold'}}>A</span>}
-                      {s.hyp  &&<span style={{fontSize:7,background:'#3a5888',color:'#fff',padding:'0 2px',borderRadius:2,fontWeight:'bold'}}>HYP</span>}
-                      {s.mem.M!==0&&<span style={{fontSize:7,background:'#2a3a66',color:'#fff',padding:'0 2px',borderRadius:2,fontWeight:'bold'}}>M</span>}
+                      <span style={{fontSize:9,color:'#1a3204',fontWeight:'bold'}}>{s.angle}</span>
+                      {s.shift&&<span style={{fontSize:8,background:'#bf7e00',color:'#fff',padding:'0 3px',borderRadius:2,fontWeight:'bold'}}>S</span>}
+                      {s.alpha&&<span style={{fontSize:8,background:'#9e1020',color:'#fff',padding:'0 3px',borderRadius:2,fontWeight:'bold'}}>A</span>}
+                      {s.hyp  &&<span style={{fontSize:8,background:'#3a5888',color:'#fff',padding:'0 3px',borderRadius:2,fontWeight:'bold'}}>HYP</span>}
+                      {s.mem.M!==0&&<span style={{fontSize:8,background:'#2a3a66',color:'#fff',padding:'0 3px',borderRadius:2,fontWeight:'bold'}}>M</span>}
                     </div>
-                    <span style={{fontSize:8,color:'#2a4a04'}}>COMP</span>
+                    <span style={{fontSize:9,color:'#2a4a04'}}>COMP</span>
                   </div>
                   {/* expression */}
                   <div style={{
-                    fontSize:s.expr.length>28?8.5:s.expr.length>20?10.5:12.5,
-                    color:'#1a3204',textAlign:'right',wordBreak:'break-all',lineHeight:1.2,
-                    minHeight:14,
+                    fontSize:s.expr.length>28?10:s.expr.length>20?12:14,
+                    color:'#1a3204',textAlign:'right',wordBreak:'break-all',lineHeight:1.3,
                   }}>
-                    {s.expr?(s.fresh?s.expr:s.expr.slice(0,s.cur)+'▏'+s.expr.slice(s.cur)):<span style={{color:'#7a9a60'}}>0</span>}
+                    {s.expr?(s.fresh?s.expr:s.expr.slice(0,s.cur)+'▏'+s.expr.slice(s.cur)):<span style={{color:'#7a9a60'}}>‌</span>}
                   </div>
                   {/* result */}
                   <div style={{
-                    fontSize:s.result.length>16?11:s.result.length>12?13:s.result.length>8?16:s.result.length>4?20:24,
+                    fontSize:s.result.length>16?12:s.result.length>12?15:s.result.length>8?18:s.result.length>4?22:26,
                     fontWeight:'bold',color:s.err?'#991100':'#0a1a04',
-                    textAlign:'right',lineHeight:1,letterSpacing:-0.3,
+                    textAlign:'right',lineHeight:1,letterSpacing:-0.5,
                   }}>
-                    {s.result}
+                    {s.result||'\u200b'}
                   </div>
                 </>
               )}
