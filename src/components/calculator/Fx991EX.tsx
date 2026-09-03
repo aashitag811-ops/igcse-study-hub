@@ -165,76 +165,82 @@ interface KD{
 // Real device labels (from photo, left→right):
 //   ■b/c (shift=■b/c blue), √ (shift=∛ yellow, alpha=∛ no—actually shift label is ∛ and above shows "∛" in yellow)
 //   x² (shift=x³ yellow), xᵐ (shift=DEC yellow, alpha=HEX purple? no—shift "DEC" only), log□ (shift=10ᵐ yellow, alpha=BIN purple), ln (shift=eˣ yellow, alpha=OCT purple)
+// ── R1: fraction / root / power / log ────────────────────────────────────────
+// Verified against product photo (left→right):
+//   a b/c : SHIFT=■b/c
+//   √     : SHIFT=∛
+//   x²    : SHIFT=x³
+//   xᵐ    : SHIFT=DEC,   ALPHA=HEX
+//   log□  : SHIFT=10ᵐ,   ALPHA=BIN
+//   ln    : SHIFT=eˣ,    ALPHA=OCT
 const R1:KD[]=[
-  {id:'FRAC', main:'a b/c',  shift:'■b/c',   act:'FRAC',  sAct:'IFRAC'},
-  {id:'SQRT', main:'√',      shift:'∛',      act:'SQRT',  sAct:'CBRT'},
-  {id:'SQ',   main:'x²',     shift:'x³',     act:'SQ',    sAct:'CUBE'},
-  {id:'POW',  main:'xᵐ',     shift:'DEC',    act:'POW',   sAct:'TODEC'},
-  {id:'LOG',  main:'log□',   shift:'10ᵐ',    alpha:'BIN', act:'LOG',   sAct:'POW10',  aAct:'NOOP'},
-  {id:'LN',   main:'ln',     shift:'eˣ',     alpha:'OCT', act:'LN',    sAct:'EXPX',   aAct:'NOOP'},
+  {id:'FRAC', main:'a b/c', shift:'■b/c',            act:'FRAC', sAct:'IFRAC'},
+  {id:'SQRT', main:'√',     shift:'∛',               act:'SQRT', sAct:'CBRT'},
+  {id:'SQ',   main:'x²',    shift:'x³',              act:'SQ',   sAct:'CUBE'},
+  {id:'POW',  main:'xᵐ',    shift:'DEC', alpha:'HEX', act:'POW',  sAct:'TODEC', aAct:'NOOP'},
+  {id:'LOG',  main:'log□',  shift:'10ᵐ', alpha:'BIN', act:'LOG',  sAct:'POW10', aAct:'NOOP'},
+  {id:'LN',   main:'ln',    shift:'eˣ',  alpha:'OCT', act:'LN',   sAct:'EXPX',  aAct:'NOOP'},
 ];
-// ── Row 4: (-) / °,, / x⁻¹ / sin / cos / tan ────────────────────────────────
-// Real device labels from photo:
-//   (-) : shift=log yellow left, alpha=A purple right
-//         (the "log" label above is because SHIFT+(-) = log on some modes — actually from photo it says "log" yellow + "A" red above the (-) key)
-//   °,, : shift=∠←f yellow, alpha=B purple (from photo shows "∠←f" and "B")
-//   x⁻¹ : shift=x! yellow, alpha=C purple
-//   sin  : shift=sin⁻¹ yellow, alpha=D purple
-//   cos  : shift=cos⁻¹ yellow, alpha=E purple
-//   tan  : shift=tan⁻¹ yellow, alpha=F purple
+// ── R2: (-) / °,, / x⁻¹ / sin / cos / tan ───────────────────────────────────
+// Verified against product photo:
+//   (-)  : SHIFT=log,     ALPHA=A
+//   °,,  : SHIFT=∠←f,    ALPHA=B
+//   x⁻¹  : SHIFT=x!,     ALPHA=C
+//   sin  : SHIFT=sin⁻¹,  ALPHA=D
+//   cos  : SHIFT=cos⁻¹,  ALPHA=E
+//   tan  : SHIFT=tan⁻¹,  ALPHA=F
 const R2:KD[]=[
-  {id:'NEG',  main:'(-)',    shift:'log',     alpha:'A',   act:'NEG',   sAct:'LOG',    aAct:'MEM_A'},
-  {id:'DMS',  main:"°,\"",  shift:'∠←',     alpha:'B',   act:'DMS',                  aAct:'MEM_B'},
-  {id:'XINV', main:'x⁻¹',   shift:'x!',      alpha:'C',   act:'INV',   sAct:'FACT',   aAct:'MEM_C'},
-  {id:'SIN',  main:'sin',    shift:'sin⁻¹',   alpha:'D',   act:'SIN',   sAct:'ASIN',   aAct:'MEM_D'},
-  {id:'COS',  main:'cos',    shift:'cos⁻¹',   alpha:'E',   act:'COS',   sAct:'ACOS',   aAct:'MEM_E'},
-  {id:'TAN',  main:'tan',    shift:'tan⁻¹',   alpha:'F',   act:'TAN',   sAct:'ATAN',   aAct:'MEM_F'},
+  {id:'NEG',  main:'(-)',   shift:'log',    alpha:'A', act:'NEG',  sAct:'LOG',  aAct:'MEM_A'},
+  {id:'DMS',  main:'°,\'', shift:'∠←f',   alpha:'B', act:'DMS',               aAct:'MEM_B'},
+  {id:'XINV', main:'x⁻¹',  shift:'x!',    alpha:'C', act:'INV',  sAct:'FACT', aAct:'MEM_C'},
+  {id:'SIN',  main:'sin',   shift:'sin⁻¹', alpha:'D', act:'SIN',  sAct:'ASIN', aAct:'MEM_D'},
+  {id:'COS',  main:'cos',   shift:'cos⁻¹', alpha:'E', act:'COS',  sAct:'ACOS', aAct:'MEM_E'},
+  {id:'TAN',  main:'tan',   shift:'tan⁻¹', alpha:'F', act:'TAN',  sAct:'ATAN', aAct:'MEM_F'},
 ];
-// ── Row 5: STO / ENG / ( / ) / S⇔D / M+ ─────────────────────────────────────
-// Real device:
-//   STO  : shift=RECALL yellow
-//   ENG  : shift=∠← yellow (ENG back)
-//   (    : shift=Abs yellow
-//   )    : alpha=, purple
-//   S⇔D  : shift=▶DEC yellow, alpha=a↔y purple
-//   M+   : shift=M− yellow, alpha=M purple
+// ── R3: STO / ENG / ( / ) / S⇔D / M+ ────────────────────────────────────────
+// Verified against product photo:
+//   STO  : SHIFT=RECA (RECALL)
+//   ENG  : SHIFT=←ENG
+//   (    : SHIFT=Abs
+//   )    : ALPHA=,       (no shift label)
+//   S⇔D  : SHIFT=▶DEC,  ALPHA=a↔y
+//   M+   : SHIFT=M−,    ALPHA=M
 const R3:KD[]=[
-  {id:'STO',   main:'STO',   shift:'RECALL',  act:'STO',   sAct:'RCL'},
-  {id:'ENG',   main:'ENG',   shift:'←ENG',    act:'ENG',   sAct:'ENGB'},
-  {id:'LPAR',  main:'(',     shift:'Abs',     act:'LPAR',  sAct:'ABS'},
-  {id:'RPAR',  main:')',     alpha:',',       act:'RPAR',               aAct:'COMMA'},
-  {id:'STOD',  main:'S⇔D',   shift:'▶DEC',    alpha:'a↔y', act:'STOD',  sAct:'TODEC',  aAct:'NOOP'},
-  {id:'MPLUS', main:'M+',    shift:'M−',      alpha:'M',   act:'MPLUS', sAct:'MMINUS', aAct:'MEM_M'},
+  {id:'STO',   main:'STO',  shift:'RECA',           act:'STO',   sAct:'RCL'},
+  {id:'ENG',   main:'ENG',  shift:'←ENG',           act:'ENG',   sAct:'ENGB'},
+  {id:'LPAR',  main:'(',    shift:'Abs',            act:'LPAR',  sAct:'ABS'},
+  {id:'RPAR',  main:')',                alpha:',',  act:'RPAR',               aAct:'COMMA'},
+  {id:'STOD',  main:'S⇔D',  shift:'▶DEC',alpha:'a↔y',act:'STOD', sAct:'TODEC', aAct:'NOOP'},
+  {id:'MPLUS', main:'M+',   shift:'M−', alpha:'M',  act:'MPLUS', sAct:'MMINUS',aAct:'MEM_M'},
 ];
-// ── Number rows ───────────────────────────────────────────────────────────────
-// Row 7–9, ×, ÷
+// ── Number rows ──────────────────────────────────────────────────────────────
 const N0:KD[]=[
-  {id:'7',   main:'7',      shift:'CONST',   act:'7',     col:'w'},
-  {id:'8',   main:'8',      shift:'CONV',    act:'8',     col:'w'},
-  {id:'9',   main:'9',      shift:'RESET',   act:'9',     col:'w'},
-  {id:'DEL', main:'DEL',    shift:'UNDO',    alpha:'INS', act:'DEL',   sAct:'UNDO',   aAct:'INS',  col:'b'},
-  {id:'AC',  main:'AC',     shift:'OFF',     act:'AC',    sAct:'OFF',  col:'b'},
+  {id:'7',   main:'7',     shift:'CONST',             act:'7',   col:'w'},
+  {id:'8',   main:'8',     shift:'CONV',              act:'8',   col:'w'},
+  {id:'9',   main:'9',     shift:'RESET',             act:'9',   col:'w'},
+  {id:'DEL', main:'DEL',   shift:'UNDO', alpha:'INS', act:'DEL', sAct:'UNDO', aAct:'INS', col:'b'},
+  {id:'AC',  main:'AC',    shift:'OFF',               act:'AC',  sAct:'OFF',  col:'b'},
 ];
 const N1:KD[]=[
-  {id:'4',   main:'4',      act:'4',   col:'w'},
-  {id:'5',   main:'5',      act:'5',   col:'w'},
-  {id:'6',   main:'6',      act:'6',   col:'w'},
-  {id:'MUL', main:'×',      alpha:'nPr', act:'×',  aAct:'NPR',  col:'w'},
-  {id:'DIV', main:'÷',      alpha:'nCr', act:'÷',  aAct:'NCR',  col:'w'},
+  {id:'4',   main:'4', act:'4', col:'w'},
+  {id:'5',   main:'5', act:'5', col:'w'},
+  {id:'6',   main:'6', act:'6', col:'w'},
+  {id:'MUL', main:'×', alpha:'nPr', act:'×', aAct:'NPR', col:'w'},
+  {id:'DIV', main:'÷', alpha:'nCr', act:'÷', aAct:'NCR', col:'w'},
 ];
 const N2:KD[]=[
-  {id:'1',   main:'1',      act:'1',   col:'w'},
-  {id:'2',   main:'2',      act:'2',   col:'w'},
-  {id:'3',   main:'3',      act:'3',   col:'w'},
-  {id:'ADD', main:'+',      alpha:'Pol', act:'+',  aAct:'POL',  col:'w'},
-  {id:'SUB', main:'−',      alpha:'Rec', act:'−',  aAct:'REC',  col:'w'},
+  {id:'1',   main:'1', act:'1', col:'w'},
+  {id:'2',   main:'2', act:'2', col:'w'},
+  {id:'3',   main:'3', act:'3', col:'w'},
+  {id:'ADD', main:'+', alpha:'Pol', act:'+', aAct:'POL', col:'w'},
+  {id:'SUB', main:'−', alpha:'Rec', act:'−', aAct:'REC', col:'w'},
 ];
 const N3:KD[]=[
-  {id:'0',   main:'0',      shift:'Rnd',   alpha:'Ranint', act:'0',    sAct:'RND',  aAct:'NOOP', col:'w'},
-  {id:'DOT', main:'•',      shift:'Ran#',  act:'.',        sAct:'RAN',              col:'w'},
-  {id:'EXP', main:'×10ˣ',   shift:'π',     alpha:'e',      act:'EE',   sAct:'PI',   aAct:'EULER',col:'w'},
-  {id:'ANS', main:'Ans',    shift:'%',     alpha:'≈',      act:'ANS',  sAct:'PCT',  aAct:'NOOP', col:'w'},
-  {id:'EQ',  main:'=',      act:'=', col:'o'},
+  {id:'0',   main:'0',     shift:'Rnd',  alpha:'Ranint', act:'0',  sAct:'RND',  aAct:'NOOP', col:'w'},
+  {id:'DOT', main:'.',     shift:'Ran#', alpha:'Ranint', act:'.',  sAct:'RAN',  aAct:'NOOP', col:'w'},
+  {id:'EXP', main:'×10ˣ',  shift:'π',   alpha:'e',      act:'EE', sAct:'PI',   aAct:'EULER',col:'w'},
+  {id:'ANS', main:'Ans',   shift:'%',   alpha:'≈',      act:'ANS',sAct:'PCT',  aAct:'NOOP', col:'w'},
+  {id:'EQ',  main:'=', act:'=', col:'o'},
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -465,28 +471,29 @@ export function Fx991EX({onClose}:Props){
     );
   };
 
-  // ─── Key cell — renders shift label (yellow, left) + alpha label (purple, right) above the key ─
+  // ─── Key cell — shift label (yellow left) + alpha label (purple right) above, always same height ─
+  const LH=11; // label strip height — consistent for every key so rows align
   const keyCell=(k:KD,kw:number,kh:number)=>{
-    let bg='#1e1e1e',fg='#e8e8e8',bdr='#3a3a3a',shadow='0 2px 0 #0a0a0a,inset 0 1px 0 rgba(255,255,255,0.06)';
-    if(k.col==='w'){bg='#f0f0f0';fg='#111';bdr='#bbb';shadow='0 3px 0 #888,inset 0 1px 0 #fff';}
+    let bg='#232323',fg='#e8e8e8',bdr='#3a3a3a',shadow='0 2px 0 #080808,inset 0 1px 0 rgba(255,255,255,0.06)';
+    if(k.col==='w'){bg='#f2f2f2';fg='#111';bdr='#c0c0c0';shadow='0 3px 0 #888,inset 0 1px 0 #fff';}
     if(k.col==='b'){bg='#1749c8';fg='#fff';bdr='#0d2e8a';shadow='0 3px 0 #091d60,inset 0 1px 0 rgba(255,255,255,0.25)';}
     if(k.col==='o'){bg='#e86000';fg='#fff';bdr='#b04800';shadow='0 3px 0 #7a3000,inset 0 1px 0 rgba(255,255,255,0.25)';}
-    const mainFs=k.main.length>5?7.5:k.main.length>4?8.5:k.main.length>3?9.5:11;
-    const hasAbove=!!(k.shift||k.alpha);
+    const mainFs=k.main.length>5?7:k.main.length>4?8:k.main.length>3?9.5:11;
     return(
       <div key={k.id} style={{display:'flex',flexDirection:'column',alignItems:'center',width:kw,flexShrink:0}}>
-        {/* Above-key labels: shift=yellow left, alpha=purple right */}
-        <div style={{height:12,width:'100%',display:'flex',alignItems:'flex-end',justifyContent:'space-between',paddingBottom:1,boxSizing:'border-box',minHeight:hasAbove?12:0,visibility:hasAbove?'visible':'hidden'}}>
-          <span style={{fontSize:6.5,color:'#ffcc00',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1,whiteSpace:'nowrap',maxWidth:'48%',overflow:'hidden',textOverflow:'clip'}}>
-            {k.shift||''}
+        {/* Label strip — always rendered, always LH tall so every key in a row aligns */}
+        <div style={{height:LH,width:'100%',display:'flex',alignItems:'flex-end',justifyContent:'space-between',paddingBottom:1,boxSizing:'border-box'}}>
+          <span style={{fontSize:6,color:'#ffcc00',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1,whiteSpace:'nowrap',overflow:'hidden',maxWidth:'52%'}}>
+            {k.shift??''}
           </span>
-          <span style={{fontSize:6.5,color:'#cc44aa',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1,whiteSpace:'nowrap',maxWidth:'48%',overflow:'hidden',textOverflow:'clip',textAlign:'right'}}>
-            {k.alpha||''}
+          <span style={{fontSize:6,color:'#cc44bb',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1,whiteSpace:'nowrap',overflow:'hidden',maxWidth:'44%',textAlign:'right'}}>
+            {k.alpha??''}
           </span>
         </div>
+        {/* Key body */}
         <div onMouseDown={e=>{e.preventDefault();press(k);}}
-          style={{width:kw,height:kh,background:bg,borderRadius:5,border:`1px solid ${bdr}`,cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',boxSizing:'border-box',flexShrink:0,boxShadow:shadow,userSelect:'none',transition:'filter 0.05s'}}
-          onMouseEnter={e=>{(e.currentTarget as HTMLElement).style.filter='brightness(1.15)';}}
+          style={{width:kw,height:kh,background:bg,borderRadius:4,border:`1px solid ${bdr}`,cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',boxSizing:'border-box',flexShrink:0,boxShadow:shadow,userSelect:'none'}}
+          onMouseEnter={e=>{(e.currentTarget as HTMLElement).style.filter='brightness(1.13)';}}
           onMouseLeave={e=>{(e.currentTarget as HTMLElement).style.filter='';}}>
           <span style={{fontSize:mainFs,color:fg,fontFamily:"'Segoe UI',Arial,sans-serif",fontWeight:k.col==='w'?800:600,lineHeight:1,letterSpacing:-0.2,textAlign:'center',pointerEvents:'none',userSelect:'none'}}>
             {k.main}
@@ -496,21 +503,22 @@ export function Fx991EX({onClose}:Props){
     );
   };
 
-  // ─── Nav button — silver circle, label text rendered above in small print ───
-  const navBtn=(label:string,aboveLeft:string,aboveRight:string,act:string,sAct:string,d:number,isActive?:boolean,activeColor?:string)=>{
+  // ─── Nav button — plain blank silver circle, small text labels printed ABOVE ─
+  const navBtn=(aboveLeft:string,aboveRight:string,act:string,sAct:string,d:number,isActive?:boolean,activeColor?:string)=>{
     const bg=isActive
-      ? (activeColor==='yellow'?'radial-gradient(circle at 38% 32%,#f0c030 0%,#c09000 55%,#8a6000 100%)':'radial-gradient(circle at 38% 32%,#e03060 0%,#a01030 55%,#780820 100%)')
-      : 'radial-gradient(circle at 35% 30%,#909090 0%,#686868 40%,#404040 100%)';
+      ? (activeColor==='yellow'
+          ?'radial-gradient(circle at 38% 32%,#f5cc30 0%,#c09000 55%,#8a6000 100%)'
+          :'radial-gradient(circle at 38% 32%,#e03060 0%,#a01030 55%,#780820 100%)')
+      :'radial-gradient(circle at 35% 30%,#909090 0%,#686868 40%,#404040 100%)';
     return(
       <div style={{display:'flex',flexDirection:'column',alignItems:'center',flexShrink:0,width:d}}>
-        {/* Above-button labels */}
-        <div style={{height:12,width:'100%',display:'flex',alignItems:'flex-end',justifyContent:'space-between',paddingBottom:2,boxSizing:'border-box'}}>
-          <span style={{fontSize:6.5,color:'#ffcc00',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1}}>{aboveLeft}</span>
-          <span style={{fontSize:6.5,color:'#cc44aa',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1}}>{aboveRight}</span>
+        <div style={{height:LH,width:'100%',display:'flex',alignItems:'flex-end',justifyContent:'space-between',paddingBottom:1,boxSizing:'border-box'}}>
+          <span style={{fontSize:6,color:'#ffcc00',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1}}>{aboveLeft}</span>
+          <span style={{fontSize:6,color:'#cc44bb',fontWeight:700,fontFamily:'Arial,sans-serif',lineHeight:1,textAlign:'right'}}>{aboveRight}</span>
         </div>
         <div
-          onMouseDown={e=>{e.preventDefault();setCS(p=>run({id:act,main:label,act,sAct},p));}}
-          style={{width:d,height:d,borderRadius:'50%',background:bg,border:'2px solid #111',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',boxShadow:'0 3px 6px rgba(0,0,0,0.8),inset 0 1px 0 rgba(255,255,255,0.20)',userSelect:'none',flexShrink:0}}
+          onMouseDown={e=>{e.preventDefault();setCS(p=>run({id:act,main:'',act,sAct},p));}}
+          style={{width:d,height:d,borderRadius:'50%',background:bg,border:'2px solid #0d0d0d',cursor:'pointer',boxShadow:'0 3px 6px rgba(0,0,0,0.8),inset 0 1px 0 rgba(255,255,255,0.18)',userSelect:'none',flexShrink:0}}
           onMouseEnter={e=>{(e.currentTarget as HTMLElement).style.filter='brightness(1.18)';}}
           onMouseLeave={e=>{(e.currentTarget as HTMLElement).style.filter='';}}
         />
@@ -519,17 +527,15 @@ export function Fx991EX({onClose}:Props){
   };
 
   const dpad=(sz:number)=>(
-    <div style={{position:'relative',width:sz,height:sz,flexShrink:0,marginTop:12}}>
-      {/* Outer ring */}
-      <div style={{position:'absolute',inset:0,borderRadius:'50%',background:'radial-gradient(circle at 40% 35%,#707070 0%,#484848 50%,#282828 100%)',border:'2px solid #111',boxShadow:'0 3px 8px rgba(0,0,0,0.85),inset 0 1px 0 rgba(255,255,255,0.07)'}}/>
-      {/* Inner centre circle */}
-      <div style={{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',width:Math.round(sz*0.36),height:Math.round(sz*0.36),borderRadius:'50%',background:'radial-gradient(circle at 38% 32%,#888 0%,#585858 50%,#303030 100%)',border:'1px solid #1a1a1a',boxShadow:'0 1px 4px rgba(0,0,0,0.7)',cursor:'pointer'}}/>
-      {/* Arrow zones */}
+    // The d-pad has no label strip above — it sits flush in the nav row
+    <div style={{position:'relative',width:sz,height:sz+LH,flexShrink:0}}>
+      <div style={{position:'absolute',bottom:0,left:0,right:0,height:sz,borderRadius:'50%',background:'radial-gradient(circle at 40% 35%,#707070 0%,#484848 50%,#282828 100%)',border:'2px solid #0d0d0d',boxShadow:'0 3px 8px rgba(0,0,0,0.85),inset 0 1px 0 rgba(255,255,255,0.07)'}}/>
+      <div style={{position:'absolute',bottom:sz*0.32,left:'50%',transform:'translateX(-50%)',width:Math.round(sz*0.36),height:Math.round(sz*0.36),borderRadius:'50%',background:'radial-gradient(circle at 38% 32%,#888 0%,#585858 50%,#303030 100%)',border:'1px solid #1a1a1a',boxShadow:'0 1px 4px rgba(0,0,0,0.7)',cursor:'pointer'}}/>
       {([
-        {l:'▲',a:'CUP',st:{top:3,left:'50%',transform:'translateX(-50%)'}},
-        {l:'▼',a:'CDN',st:{bottom:3,left:'50%',transform:'translateX(-50%)'}},
-        {l:'◀',a:'CL', st:{left:3,top:'50%',transform:'translateY(-50%)'}},
-        {l:'▶',a:'CR', st:{right:3,top:'50%',transform:'translateY(-50%)'}},
+        {l:'▲',a:'CUP',st:{bottom:sz-14,left:'50%',transform:'translateX(-50%)'}},
+        {l:'▼',a:'CDN',st:{bottom:2,    left:'50%',transform:'translateX(-50%)'}},
+        {l:'◀',a:'CL', st:{left:2,      bottom:sz/2-8}},
+        {l:'▶',a:'CR', st:{right:2,     bottom:sz/2-8}},
       ] as const).map(({l,a,st})=>(
         <div key={l} onMouseDown={e=>{e.preventDefault();press({id:l,main:l,act:a});}}
           style={{position:'absolute',...st,width:16,height:16,display:'flex',alignItems:'center',justifyContent:'center',fontSize:10,color:'#d0d0d0',cursor:'pointer',fontWeight:900}}>{l}</div>
@@ -537,42 +543,43 @@ export function Fx991EX({onClose}:Props){
     </div>
   );
 
-  // Layout constants — match photo proportions
-  const W=270, PAD=9, G=4;
-  const IW=W-PAD*2; // 252 inner width
-  // 6 fn-key cols: total = 6*FW + 5*G = IW  →  FW=(252-20)/6 = 38.6 → 38
+  // ── Layout ── W=270, PAD=9 → IW=252
+  const W=270, PAD=9, G=4, IW=252;
+  // 6-col fn rows: FW=(IW-5*G)/6=38.7→38
   const FW=38, FH=22;
-  // 5 num-key cols in bottom section: 5*NW + 4*G = IW  →  NW=(252-16)/5 = 47.2 → 47
+  // 5-col num rows: NW=(IW-4*G)/5=47.2→47
   const NW=47, NH=36;
-  // Nav buttons
+  // Nav circles
   const ND=30;
-  // OPTN/CALC row: 2 wide keys left + 2 wide keys right, gap in middle (d-pad)
-  const WW=Math.floor((IW - ND*2 - G*3) / 4); // ≈ 48
+  // OPTN/CALC/∫f□/x: 4 equal keys across IW, but split with d-pad gap
+  // Looking at the photo: OPTN+CALC take ~38% left, ∫f□+x take ~38% right, d-pad in middle
+  // Total key width = IW - (d-pad width) = 252 - (ND*2+G) = 252-64=188, split 4 ways = 47 each
+  const WW=Math.floor((IW-(ND*2+G)-3*G)/4); // ≈46
 
   const rowSt:React.CSSProperties={display:'flex',flexDirection:'row',gap:G,alignItems:'flex-end',justifyContent:'center',marginBottom:G};
 
   return(
     <div ref={rootRef} style={{position:'fixed',left:pos.x,top:pos.y,zIndex:9999,userSelect:'none',filter:'drop-shadow(0 8px 32px rgba(0,0,0,0.9))'}}>
       {/* White outer shell */}
-      <div style={{width:W,background:'#d8d8d8',borderRadius:16,padding:'4px 4px 8px',boxSizing:'border-box',border:'1px solid #c0c0c0'}}>
-        {/* Black textured body */}
-        <div style={{background:'#1a1a1a',borderRadius:13,overflow:'visible'}}>
+      <div style={{width:W,background:'#d6d6d6',borderRadius:16,padding:'4px 4px 8px',boxSizing:'border-box',border:'1px solid #bcbcbc'}}>
+        {/* Black body */}
+        <div style={{background:'#1c1c1c',borderRadius:13}}>
 
           {/* ── Branding / drag handle ── */}
-          <div onMouseDown={onDrag} style={{padding:'9px 12px 7px',cursor:'grab',background:'#1a1a1a',borderRadius:'13px 13px 0 0',position:'relative'}}>
+          <div onMouseDown={onDrag} style={{padding:'9px 12px 7px',cursor:'grab',background:'#1c1c1c',borderRadius:'13px 13px 0 0',position:'relative'}}>
             <button onClick={onClose} style={{position:'absolute',right:7,top:7,width:18,height:18,borderRadius:'50%',background:'rgba(255,255,255,0.15)',border:'none',color:'#ccc',fontSize:13,fontWeight:'bold',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',lineHeight:1,padding:0,zIndex:1}}>×</button>
-            {/* Solar panel */}
-            <div style={{position:'absolute',right:30,top:9,width:68,height:26,background:'#060b06',border:'1px solid #1a2a1a',borderRadius:4,display:'grid',gridTemplateColumns:'repeat(8,1fr)',gap:1,padding:2}}>
+            {/* Solar panel — top right */}
+            <div style={{position:'absolute',right:12,top:9,width:72,height:28,background:'#060b06',border:'1px solid #1a2a1a',borderRadius:4,display:'grid',gridTemplateColumns:'repeat(8,1fr)',gap:1,padding:2}}>
               {Array.from({length:16}).map((_,i)=><div key={i} style={{background:'#090f09',borderRadius:1}}/>)}
             </div>
-            <div style={{fontSize:20,fontWeight:900,color:'#fff',letterSpacing:3,lineHeight:1,fontFamily:'Arial Black,Arial,sans-serif'}}>CASIO</div>
-            <div style={{fontSize:9,color:'#bbb',letterSpacing:0.5,marginTop:1,fontFamily:'Arial,sans-serif'}}>fx-991EX</div>
+            <div style={{fontSize:21,fontWeight:900,color:'#fff',letterSpacing:3,lineHeight:1,fontFamily:'Arial Black,Arial,sans-serif'}}>CASIO</div>
+            <div style={{fontSize:9,color:'#bbb',letterSpacing:0.5,marginTop:2,fontFamily:'Arial,sans-serif'}}>fx-991EX</div>
             <div style={{fontSize:9,fontWeight:900,color:'#e02050',letterSpacing:4,fontFamily:'Arial Black,Arial,sans-serif',marginTop:1}}>CLASSWIZ</div>
           </div>
 
           {/* ── LCD ── */}
-          <div style={{margin:'4px 9px 5px',background:'#0a0a0a',borderRadius:5,padding:'3px'}}>
-            <div style={{background:'#c8d8aa',borderRadius:3,height:88,display:'flex',flexDirection:'column',padding:'4px 9px 5px',overflow:'hidden'}}>
+          <div style={{margin:'3px 9px 4px',background:'#0a0a0a',borderRadius:5,padding:'3px'}}>
+            <div style={{background:'#c8d8aa',borderRadius:3,height:90,display:'flex',flexDirection:'column',padding:'4px 9px 5px',overflow:'hidden'}}>
               {lcdContent()}
             </div>
           </div>
@@ -580,32 +587,29 @@ export function Fx991EX({onClose}:Props){
           {/* ── Keypad ── */}
           <div style={{padding:`0 ${PAD}px 10px`}}>
 
-            {/* ── Nav row: SHIFT · ALPHA · [d-pad] · MENU · ON ── */}
-            {/* Labels sit ABOVE the buttons */}
+            {/* ── Nav row: [SHIFT ALPHA] [d-pad] [MENU ON] ── */}
+            {/* All items bottom-aligned; label strips (LH) sit above each button */}
             <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',justifyContent:'space-between',marginBottom:5}}>
-              {/* Left pair: SHIFT, ALPHA */}
               <div style={{display:'flex',gap:G,alignItems:'flex-end'}}>
-                {navBtn('','SHIFT','',    'SHIFT','SHIFT', ND, s.shift, 'yellow')}
-                {navBtn('','ALPHA','',    'ALPHA','ALPHA',  ND, s.alpha, 'red')}
+                {navBtn('SHIFT','',    'SHIFT','SHIFT', ND, s.shift, 'yellow')}
+                {navBtn('ALPHA','',    'ALPHA','ALPHA',  ND, s.alpha, 'red')}
               </div>
-              {/* D-pad */}
               {dpad(ND*2+G)}
-              {/* Right pair: MENU (SETUP above), ON (OFF above) */}
               <div style={{display:'flex',gap:G,alignItems:'flex-end'}}>
-                {navBtn('','MENU','SETUP','MENU', 'SETUP', ND)}
-                {navBtn('','ON',  'OFF',  'AC',   'OFF',   ND)}
+                {navBtn('MENU','SETUP','MENU','SETUP',  ND)}
+                {navBtn('ON',  'OFF',  'AC',  'OFF',    ND)}
               </div>
             </div>
 
-            {/* ── OPTN / CALC ····· ∫f□ / x ── */}
+            {/* ── OPTN CALC ····· ∫f□ x ── */}
             <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-end',marginBottom:G}}>
               <div style={{display:'flex',gap:G}}>
-                {keyCell({id:'OPTN',main:'OPTN',shift:'QR',               act:'NOOP'},WW,FH)}
-                {keyCell({id:'CALC',main:'CALC',shift:'SOLVE=',           act:'NOOP'},WW,FH)}
+                {keyCell({id:'OPTN',main:'OPTN',shift:'QR',                act:'NOOP'},WW,FH)}
+                {keyCell({id:'CALC',main:'CALC',shift:'SOLVE=',            act:'NOOP'},WW,FH)}
               </div>
               <div style={{display:'flex',gap:G}}>
-                {keyCell({id:'INTG',main:'∫f□', shift:'d/dx',alpha:'d²/dx²',act:'NOOP'},WW,FH)}
-                {keyCell({id:'XVAR',main:'x',   shift:'Σ',   alpha:'Σ⁻',    act:'XVAR'},WW,FH)}
+                {keyCell({id:'INTG',main:'∫f□', shift:'d/dx', alpha:'d/dx²',act:'NOOP'},WW,FH)}
+                {keyCell({id:'XVAR',main:'x',   shift:'Σ',    alpha:'Σ⁻',   act:'XVAR'},WW,FH)}
               </div>
             </div>
 
@@ -615,7 +619,7 @@ export function Fx991EX({onClose}:Props){
             <div style={rowSt}>{R3.map(k=>keyCell(k,FW,FH))}</div>
 
             {/* Divider */}
-            <div style={{height:1,background:'#303030',margin:'3px 0 5px'}}/>
+            <div style={{height:1,background:'#2e2e2e',margin:'3px 0 4px'}}/>
 
             {/* ── Number rows ── */}
             {[N0,N1,N2,N3].map((row,ri)=>(
