@@ -2,22 +2,44 @@ import { NextRequest, NextResponse } from 'next/server';
 import { readFile, access } from 'fs/promises';
 import { join } from 'path';
 
-const IGCSE_ARCHIVE   = 'https://archive.org/download/student-archive-igcse-pastpapers';
-const ALEVELS_ARCHIVE = 'https://archive.org/download/student-archive-alevels-pastpapers';
+const IGCSE_ARCHIVE    = 'https://archive.org/download/student-archive-igcse-pastpapers';
+const IGCSE91_ARCHIVE  = 'https://archive.org/download/student-archive-igcse91-pastpapers';
+const ALEVELS_ARCHIVE  = 'https://archive.org/download/student-archive-alevels-pastpapers';
+const OLEVEL_ARCHIVE   = 'https://archive.org/download/student-archive-olevel-pastpapers';
 
-// A-level subject codes — filenames starting with these go to the A-level archive item
+// A-level subject codes (9xxx / 8xxx)
 const ALEVEL_PREFIXES = [
   '9700_', '9701_', '9702_',
   '9709_', '9231_',
-  '9608_', '9618_',
-  '9609_', '9708_', '9706_',
+  '9608_', '9618_', '9691_',
+  '9609_', '9708_', '9706_', '9707_',
   '9093_', '8021_',
+  '9489_', '9084_', '9699_', '9698_', '9990_',
+  '9607_', '9713_', '9488_',
+];
+
+// IGCSE (9-1) subject codes — newer graded syllabus
+const IGCSE91_PREFIXES = [
+  '0970_', '0971_', '0972_', '0973_',
+  '0976_', '0977_', '0978_', '0980_',
+  '0984_', '0985_', '0986_', '0987_',
+  '0989_', '0990_', '0992_', '0994_', '0995_',
+  '7184_',
+];
+
+// O-Level subject codes (1xxx–7xxx non-IGCSE)
+const OLEVEL_PREFIXES = [
+  '1123_', '2059_', '2210_', '2281_',
+  '3204_', '4024_', '4037_', '4040_',
+  '5054_', '5070_', '5090_',
+  '7010_', '7094_', '7100_', '7110_', '7115_', '7707_',
 ];
 
 function archiveBaseFor(filename: string): string {
-  return ALEVEL_PREFIXES.some(p => filename.startsWith(p))
-    ? ALEVELS_ARCHIVE
-    : IGCSE_ARCHIVE;
+  if (ALEVEL_PREFIXES.some(p => filename.startsWith(p)))  return ALEVELS_ARCHIVE;
+  if (IGCSE91_PREFIXES.some(p => filename.startsWith(p))) return IGCSE91_ARCHIVE;
+  if (OLEVEL_PREFIXES.some(p => filename.startsWith(p)))  return OLEVEL_ARCHIVE;
+  return IGCSE_ARCHIVE;
 }
 
 export async function GET(

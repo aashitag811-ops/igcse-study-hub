@@ -47,6 +47,12 @@ export const RESOURCE_TYPES = [
     description: 'Practice worksheets and exercises',
     icon: '≡'
   },
+  {
+    value: 'general',
+    label: 'General',
+    description: 'General resources and miscellaneous materials',
+    icon: '◉'
+  },
 ] as const;
 
 export type ResourceType = typeof RESOURCE_TYPES[number]['value'];

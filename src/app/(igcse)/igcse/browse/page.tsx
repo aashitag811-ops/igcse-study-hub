@@ -69,6 +69,7 @@ const NAV_TYPES = [
   { value: 'revision-guides', label: 'Revision Guides' },
   { value: 'youtube', label: 'YouTube Resources' },
   { value: 'worksheets', label: 'Worksheets' },
+  { value: 'general', label: 'General' },
 ];
 
 function BrowsePageInner() {

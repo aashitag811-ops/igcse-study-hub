@@ -149,7 +149,7 @@ const MTOK=['sinh⁻¹(','cosh⁻¹(','tanh⁻¹(','sin⁻¹(','cos⁻¹(','tan�
 // col: 'w'=white num key, 'b'=blue DEL/AC, 'o'=orange =, 'd'=dark fn key (default)
 interface KD{
   id:string; main:string;
-  shift?:string; alpha?:string;
+  shift?:string; alpha?:string; alphaBlue?:string;
   act:string; sAct?:string; aAct?:string;
   col?:'w'|'b'|'o'|'d';
 }
@@ -161,65 +161,76 @@ interface KD{
 // ── Row 2: OPTN / CALC row + ∫f□ / x (wide keys, labels above) ─────────────
 // Rendered inline in JSX
 
-// ── Row 3: fraction / root / power / log ─────────────────────────────────────
-// Real device labels (from photo, left→right):
-//   ■b/c (shift=■b/c blue), √ (shift=∛ yellow, alpha=∛ no—actually shift label is ∛ and above shows "∛" in yellow)
-//   x² (shift=x³ yellow), xᵐ (shift=DEC yellow, alpha=HEX purple? no—shift "DEC" only), log□ (shift=10ᵐ yellow, alpha=BIN purple), ln (shift=eˣ yellow, alpha=OCT purple)
 // ── R1: fraction / root / power / log ────────────────────────────────────────
-// Verified against product photo (left→right):
-//   a b/c : SHIFT=■b/c
-//   √     : SHIFT=∛
-//   x²    : SHIFT=x³
-//   xᵐ    : SHIFT=DEC,   ALPHA=HEX
-//   log□  : SHIFT=10ᵐ,   ALPHA=BIN
-//   ln    : SHIFT=eˣ,    ALPHA=OCT
+// Real photo (left→right):
+//   a b/c : SHIFT(yellow)=■b/c
+//   √     : SHIFT(yellow)=∛
+//   x²    : SHIFT(yellow)=x³
+//   xᵐ    : SHIFT(yellow)=DEC,  ALPHA(blue)=HEX
+//   log□  : SHIFT(yellow)=10ᵐ,  ALPHA(blue)=BIN
+//   ln    : SHIFT(yellow)=eˣ,   ALPHA(blue)=OCT
+// Note: HEX/BIN/OCT labels are BLUE on real device (BASE-N mode), not purple
 const R1:KD[]=[
-  {id:'FRAC', main:'a b/c', shift:'■b/c',            act:'FRAC', sAct:'IFRAC'},
-  {id:'SQRT', main:'√',     shift:'∛',               act:'SQRT', sAct:'CBRT'},
-  {id:'SQ',   main:'x²',    shift:'x³',              act:'SQ',   sAct:'CUBE'},
-  {id:'POW',  main:'xᵐ',    shift:'DEC', alpha:'HEX', act:'POW',  sAct:'TODEC', aAct:'NOOP'},
-  {id:'LOG',  main:'log□',  shift:'10ᵐ', alpha:'BIN', act:'LOG',  sAct:'POW10', aAct:'NOOP'},
-  {id:'LN',   main:'ln',    shift:'eˣ',  alpha:'OCT', act:'LN',   sAct:'EXPX',  aAct:'NOOP'},
+  {id:'FRAC', main:'a b/c', shift:'■b/c',                act:'FRAC', sAct:'IFRAC'},
+  {id:'SQRT', main:'√',     shift:'∛',                   act:'SQRT', sAct:'CBRT'},
+  {id:'SQ',   main:'x²',    shift:'x³',                  act:'SQ',   sAct:'CUBE'},
+  {id:'POW',  main:'xᵐ',    shift:'DEC',  alphaBlue:'HEX', act:'POW',  sAct:'TODEC', aAct:'NOOP'},
+  {id:'LOG',  main:'log□',  shift:'10ᵐ',  alphaBlue:'BIN', act:'LOG',  sAct:'POW10', aAct:'NOOP'},
+  {id:'LN',   main:'ln',    shift:'eˣ',   alphaBlue:'OCT', act:'LN',   sAct:'EXPX',  aAct:'NOOP'},
 ];
-// ── R2: (-) / °,, / x⁻¹ / sin / cos / tan ───────────────────────────────────
-// Verified against product photo:
-//   (-)  : SHIFT=log,     ALPHA=A
-//   °,,  : SHIFT=∠←f,    ALPHA=B
-//   x⁻¹  : SHIFT=x!,     ALPHA=C
-//   sin  : SHIFT=sin⁻¹,  ALPHA=D
-//   cos  : SHIFT=cos⁻¹,  ALPHA=E
-//   tan  : SHIFT=tan⁻¹,  ALPHA=F
+// ── R2: (-) / °," / x⁻¹ / sin / cos / tan ───────────────────────────────────
+// Real photo:
+//   (-)  : SHIFT(yellow)=log,    ALPHA(red)=A
+//   °,"  : SHIFT(yellow)=∠←f,   ALPHA(red)=B
+//   x⁻¹  : SHIFT(yellow)=x!,    ALPHA(red)=C
+//   sin  : SHIFT(yellow)=sin⁻¹, ALPHA(red)=D
+//   cos  : SHIFT(yellow)=cos⁻¹, ALPHA(red)=E
+//   tan  : SHIFT(yellow)=tan⁻¹, ALPHA(red)=F
 const R2:KD[]=[
-  {id:'NEG',  main:'(-)',   shift:'log',    alpha:'A', act:'NEG',  sAct:'LOG',  aAct:'MEM_A'},
-  {id:'DMS',  main:'°,\'', shift:'∠←f',   alpha:'B', act:'DMS',               aAct:'MEM_B'},
-  {id:'XINV', main:'x⁻¹',  shift:'x!',    alpha:'C', act:'INV',  sAct:'FACT', aAct:'MEM_C'},
-  {id:'SIN',  main:'sin',   shift:'sin⁻¹', alpha:'D', act:'SIN',  sAct:'ASIN', aAct:'MEM_D'},
-  {id:'COS',  main:'cos',   shift:'cos⁻¹', alpha:'E', act:'COS',  sAct:'ACOS', aAct:'MEM_E'},
-  {id:'TAN',  main:'tan',   shift:'tan⁻¹', alpha:'F', act:'TAN',  sAct:'ATAN', aAct:'MEM_F'},
+  {id:'NEG',  main:'(-)',    shift:'log',    alpha:'A', act:'NEG',  sAct:'LOG',  aAct:'MEM_A'},
+  {id:'DMS',  main:'°,,"',  shift:'∠←f',   alpha:'B', act:'DMS',               aAct:'MEM_B'},
+  {id:'XINV', main:'x⁻¹',   shift:'x!',    alpha:'C', act:'INV',  sAct:'FACT', aAct:'MEM_C'},
+  {id:'SIN',  main:'sin',    shift:'sin⁻¹', alpha:'D', act:'SIN',  sAct:'ASIN', aAct:'MEM_D'},
+  {id:'COS',  main:'cos',    shift:'cos⁻¹', alpha:'E', act:'COS',  sAct:'ACOS', aAct:'MEM_E'},
+  {id:'TAN',  main:'tan',    shift:'tan⁻¹', alpha:'F', act:'TAN',  sAct:'ATAN', aAct:'MEM_F'},
 ];
 // ── R3: STO / ENG / ( / ) / S⇔D / M+ ────────────────────────────────────────
-// Verified against product photo:
-//   STO  : SHIFT=RECA (RECALL)
-//   ENG  : SHIFT=←ENG
-//   (    : SHIFT=Abs
-//   )    : ALPHA=,       (no shift label)
-//   S⇔D  : SHIFT=▶DEC,  ALPHA=a↔y
-//   M+   : SHIFT=M−,    ALPHA=M
+// Real photo:
+//   STO  : SHIFT(yellow)=RECALL
+//   ENG  : SHIFT(yellow)=←ENG
+//   (    : SHIFT(yellow)=Abs
+//   )    : ALPHA(red)=,       (no shift)
+//   S⇔D  : SHIFT(yellow)=▶DEC, ALPHA(red)=a↔y
+//   M+   : SHIFT(yellow)=M−,  ALPHA(red)=M
 const R3:KD[]=[
-  {id:'STO',   main:'STO',  shift:'RECA',           act:'STO',   sAct:'RCL'},
-  {id:'ENG',   main:'ENG',  shift:'←ENG',           act:'ENG',   sAct:'ENGB'},
-  {id:'LPAR',  main:'(',    shift:'Abs',            act:'LPAR',  sAct:'ABS'},
-  {id:'RPAR',  main:')',                alpha:',',  act:'RPAR',               aAct:'COMMA'},
-  {id:'STOD',  main:'S⇔D',  shift:'▶DEC',alpha:'a↔y',act:'STOD', sAct:'TODEC', aAct:'NOOP'},
-  {id:'MPLUS', main:'M+',   shift:'M−', alpha:'M',  act:'MPLUS', sAct:'MMINUS',aAct:'MEM_M'},
+  {id:'STO',   main:'STO',  shift:'RECALL',          act:'STO',   sAct:'RCL'},
+  {id:'ENG',   main:'ENG',  shift:'←ENG',            act:'ENG',   sAct:'ENGB'},
+  {id:'LPAR',  main:'(',    shift:'Abs',             act:'LPAR',  sAct:'ABS'},
+  {id:'RPAR',  main:')',                 alpha:',',  act:'RPAR',              aAct:'COMMA'},
+  {id:'STOD',  main:'S⇔D',  shift:'▶DEC', alpha:'a↔y', act:'STOD',  sAct:'TODEC', aAct:'NOOP'},
+  {id:'MPLUS', main:'M+',   shift:'M−',   alpha:'M',   act:'MPLUS', sAct:'MMINUS', aAct:'MEM_M'},
 ];
 // ── Number rows ──────────────────────────────────────────────────────────────
+// Real photo labels:
+//   7: SHIFT(yellow)=CONST
+//   8: SHIFT(yellow)=CONV
+//   9: SHIFT(yellow)=RESET
+//   DEL: SHIFT(yellow)=INS,   ALPHA(red)=UNDO    ← INS is yellow-left, UNDO is red-right
+//   AC: SHIFT(yellow)=OFF
+//   ×: ALPHA(red)=nPr
+//   ÷: ALPHA(red)=nCr
+//   +: ALPHA(red)=Pol
+//   −: ALPHA(red)=Rec
+//   0: SHIFT(yellow)=Rnd,  ALPHA(red)=Ranint
+//   .: SHIFT(yellow)=Ran#  (no alpha)
+//   ×10ˣ: SHIFT(yellow)=π, ALPHA(red)=e
+//   Ans: SHIFT(yellow)=%, ALPHA(red)=≈
 const N0:KD[]=[
-  {id:'7',   main:'7',     shift:'CONST',             act:'7',   col:'w'},
-  {id:'8',   main:'8',     shift:'CONV',              act:'8',   col:'w'},
-  {id:'9',   main:'9',     shift:'RESET',             act:'9',   col:'w'},
-  {id:'DEL', main:'DEL',   shift:'UNDO', alpha:'INS', act:'DEL', sAct:'UNDO', aAct:'INS', col:'b'},
-  {id:'AC',  main:'AC',    shift:'OFF',               act:'AC',  sAct:'OFF',  col:'b'},
+  {id:'7',   main:'7',   shift:'CONST',             act:'7',   col:'w'},
+  {id:'8',   main:'8',   shift:'CONV',              act:'8',   col:'w'},
+  {id:'9',   main:'9',   shift:'RESET',             act:'9',   col:'w'},
+  {id:'DEL', main:'DEL', shift:'INS',  alpha:'UNDO', act:'DEL', sAct:'INS',  aAct:'UNDO', col:'b'},
+  {id:'AC',  main:'AC',  shift:'OFF',               act:'AC',  sAct:'OFF',  col:'b'},
 ];
 const N1:KD[]=[
   {id:'4',   main:'4', act:'4', col:'w'},
@@ -236,10 +247,10 @@ const N2:KD[]=[
   {id:'SUB', main:'−', alpha:'Rec', act:'−', aAct:'REC', col:'w'},
 ];
 const N3:KD[]=[
-  {id:'0',   main:'0',     shift:'Rnd',  alpha:'Ranint', act:'0',  sAct:'RND',  aAct:'NOOP', col:'w'},
-  {id:'DOT', main:'.',     shift:'Ran#', alpha:'Ranint', act:'.',  sAct:'RAN',  aAct:'NOOP', col:'w'},
-  {id:'EXP', main:'×10ˣ',  shift:'π',   alpha:'e',      act:'EE', sAct:'PI',   aAct:'EULER',col:'w'},
-  {id:'ANS', main:'Ans',   shift:'%',   alpha:'≈',      act:'ANS',sAct:'PCT',  aAct:'NOOP', col:'w'},
+  {id:'0',   main:'0',    shift:'Rnd',  alpha:'Ranint', act:'0',  sAct:'RND',  aAct:'NOOP', col:'w'},
+  {id:'DOT', main:'.',    shift:'Ran#',                 act:'.',  sAct:'RAN',               col:'w'},
+  {id:'EXP', main:'×10ˣ', shift:'π',   alpha:'e',      act:'EE', sAct:'PI',   aAct:'EULER',col:'w'},
+  {id:'ANS', main:'Ans',  shift:'%',   alpha:'≈',      act:'ANS',sAct:'PCT',  aAct:'NOOP', col:'w'},
   {id:'EQ',  main:'=', act:'=', col:'o'},
 ];
 

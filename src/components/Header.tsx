@@ -35,12 +35,12 @@ function NavLink({ label, href }: { label: string; href: string }) {
       onMouseUp={() => setPressing(false)}
       style={{
         fontFamily: SERIF,
-        fontSize: '16px',
+        fontSize: '15px',
         fontWeight: 500,
         letterSpacing: '0.03em',
         color: hovered ? '#E8D89A' : '#C4B08A',
         textDecoration: 'none',
-        padding: '6px 16px',
+        padding: '6px 12px',
         borderRadius: '8px',
         display: 'inline-block',
         transition: 'background 0.35s ease, color 0.2s ease, transform 0.1s ease',
@@ -166,13 +166,13 @@ export default function Header() {
         transition: 'background 0.5s ease, border-color 0.5s ease, backdrop-filter 0.5s ease',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-2">
 
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-          <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-110">
+        {/* Logo — hide text label below lg so it doesn't crowd nav */}
+        <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
+          <div className="relative w-10 h-10 lg:w-14 lg:h-14 transition-transform duration-300 group-hover:scale-110">
             <div
-              className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{ boxShadow: '0 0 0 1.5px #C9A84C, 0 0 14px 4px rgba(201,168,76,0.65), 0 0 28px 8px rgba(201,168,76,0.25)' }}
             />
             <Image
@@ -180,33 +180,29 @@ export default function Header() {
               alt="Student Archive"
               width={56}
               height={56}
-              className="rounded-md object-contain"
+              className="rounded-full object-contain w-full h-full"
               priority
             />
           </div>
-          <span style={{ fontFamily: SERIF, fontSize: '20px', fontWeight: 500, color: '#F5EDD6', letterSpacing: '0.02em' }}>
+          <span className="hidden lg:inline" style={{ fontFamily: SERIF, fontSize: '20px', fontWeight: 500, color: '#F5EDD6', letterSpacing: '0.02em' }}>
             Student Archive
           </span>
         </Link>
 
-        {/* Centre pill — soft brass library tab */}
+        {/* Centre nav — hidden on mobile, shown md+ as a normal flex row (not absolute) */}
         <nav
-          className="absolute left-1/2"
+          className="hidden md:flex items-center flex-1 justify-center"
           style={{
-            transform: 'translateX(-50%)',
-            display: 'flex',
-            alignItems: 'center',
             gap: '2px',
-            padding: '5px 10px',
+            padding: '5px 6px',
             borderRadius: '14px',
-            // soft brass background fades in on scroll
             background: scrolled
               ? 'linear-gradient(180deg, rgba(12,16,24,0.72) 0%, rgba(8,10,16,0.80) 100%)'
               : 'linear-gradient(180deg, rgba(12,16,24,0.38) 0%, rgba(8,10,16,0.44) 100%)',
-            // no border, no shadow — just softness
             border: 'none',
             boxShadow: 'none',
             transition: 'background 0.5s ease',
+            minWidth: 0,
           }}
         >
           {NAV_ITEMS.map(item => (
@@ -215,7 +211,7 @@ export default function Header() {
         </nav>
 
         {/* Switcher + Bell + Sign in — far right */}
-        <div className="flex-shrink-0 flex items-center gap-3">
+        <div className="flex-shrink-0 flex items-center gap-2">
           {/* IGCSE / A Levels switcher */}
           <div style={{
             display: 'flex', alignItems: 'center', gap: '2px',
@@ -231,7 +227,7 @@ export default function Header() {
               return (
                 <Link key={href} href={href} style={{
                   fontFamily: SERIF, fontSize: '13px', fontWeight: 500,
-                  padding: '4px 12px', borderRadius: '6px',
+                  padding: '4px 10px', borderRadius: '6px',
                   color: active ? '#1a1208' : 'rgba(200,168,76,0.6)',
                   background: active ? '#C9A84C' : 'transparent',
                   textDecoration: 'none',
@@ -247,6 +243,21 @@ export default function Header() {
           <AuthLink isSignedIn={isSignedIn} />
         </div>
 
+        {/* Mobile-only: compact nav links below the main row */}
+      </div>
+
+      {/* Mobile nav row — shown only below md */}
+      <div
+        className="flex md:hidden items-center justify-center gap-1 px-4 pb-2"
+        style={{
+          background: 'rgba(8,10,16,0.60)',
+          borderTop: '1px solid rgba(200,168,76,0.08)',
+          flexWrap: 'wrap',
+        }}
+      >
+        {NAV_ITEMS.map(item => (
+          <NavLink key={item.href} label={item.label} href={item.href} />
+        ))}
       </div>
     </header>
   );

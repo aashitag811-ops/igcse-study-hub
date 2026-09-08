@@ -86,6 +86,63 @@ export const ALEVEL_SUBJECTS = [
     icon: '',
     description: 'Essay Writing, Comprehension, Critical Thinking',
   },
+  // ── Additional A-Level subjects (verified on PapaCambridge) ──────────────
+  {
+    code: '9489',
+    name: 'History (9489)',
+    color: 'orange',
+    icon: '',
+    description: 'Modern History, Source Analysis, Historical Debates (2021–)',
+  },
+  {
+    code: '9084',
+    name: 'Law',
+    color: 'indigo',
+    icon: '',
+    description: 'Contract Law, Criminal Law, Tort, Legal System',
+  },
+  {
+    code: '9699',
+    name: 'Sociology',
+    color: 'purple',
+    icon: '',
+    description: 'Research Methods, Culture, Identity, Social Stratification',
+  },
+  {
+    code: '9990',
+    name: 'Psychology (9990)',
+    color: 'pink',
+    icon: '',
+    description: 'Research Methods, Cognition, Social, Biological Psychology (2018–)',
+  },
+  {
+    code: '9698',
+    name: 'Psychology (9698)',
+    color: 'pink',
+    icon: '',
+    description: 'Research Methods, Cognition, Social Psychology (old syllabus, –2018)',
+  },
+  {
+    code: '9607',
+    name: 'Media Studies',
+    color: 'cyan',
+    icon: '',
+    description: 'Media Forms, Industries, Audiences, Issues & Debates',
+  },
+  {
+    code: '9707',
+    name: 'Business Studies (9707)',
+    color: 'orange',
+    icon: '',
+    description: 'Business Concepts, Strategy, Finance, HR (old syllabus, –2015)',
+  },
+  {
+    code: '9691',
+    name: 'Computing (9691)',
+    color: 'cyan',
+    icon: '',
+    description: 'Theory, Problem-solving, Programming (old syllabus, –2016)',
+  },
 ] as const;
 
 export type ALevelSubjectCode = typeof ALEVEL_SUBJECTS[number]['code'];

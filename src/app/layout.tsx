@@ -25,20 +25,28 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://studentarchive.xyz"),
 
   title: {
-    default: "Student Archive – Free IGCSE & A Level Past Papers",
+    default: "Student Archive – Free Cambridge Past Papers, Topical MCQ & Resources",
     template: "%s | Student Archive",
   },
-  description: "Free Cambridge IGCSE and A Level past papers, mark schemes, examiner reports and interactive practice. Biology, Chemistry, Physics, Maths, Economics, Accounting and more. Built by students, for students.",
+  description: "Free Cambridge past papers across 70+ subjects — IGCSE, A Level, O Level & IGCSE (9-1). Topical questions, MCQ practice, revision resources and integrated examiner reports, mark schemes, revision notes, flashcards and more.",
   keywords: [
     "Student Archive",
     "IGCSE past papers",
     "A Level past papers",
+    "O Level past papers",
     "Cambridge IGCSE",
     "Cambridge A Level",
+    "Cambridge O Level",
+    "IGCSE 9-1",
     "AS Level",
     "free past papers",
+    "topical questions",
+    "topical MCQ",
     "mark scheme",
     "examiner report",
+    "integrated examiner report",
+    "revision notes",
+    "flashcards",
     "Biology 0610",
     "Chemistry 0620",
     "Physics 0625",
@@ -66,8 +74,8 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Student Archive – Free IGCSE & A Level Past Papers",
-    description: "Free Cambridge IGCSE and A Level past papers, mark schemes and interactive practice. Biology, Chemistry, Physics, Maths, Economics and more.",
+    title: "Student Archive – Free Cambridge Past Papers, Topical MCQ & Resources",
+    description: "Free Cambridge past papers across 70+ subjects — IGCSE, A Level, O Level & IGCSE (9-1). Topical questions, MCQ practice, revision resources and integrated examiner reports.",
     url: "https://studentarchive.xyz",
     siteName: "Student Archive",
     type: "website",
@@ -84,8 +92,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Student Archive – Free IGCSE & A Level Past Papers",
-    description: "Free Cambridge IGCSE and A Level past papers, mark schemes and interactive practice.",
+    title: "Student Archive – Free Cambridge Past Papers, Topical MCQ & Resources",
+    description: "Free Cambridge past papers across 70+ subjects — IGCSE, A Level, O Level & IGCSE (9-1). Topical questions, MCQ practice, revision resources and integrated examiner reports.",
     images: ["/og-image.png"],
   },
 

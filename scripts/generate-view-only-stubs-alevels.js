@@ -130,6 +130,74 @@ const SUBJECTS = {
       { c:2, desc:'Paper 2 — Comprehension (1h45m)'  },
     ],
   },
+  // ── Additional verified subjects ──────────────────────────────────────────
+  '9489': {
+    name: 'History (9489)', sessions: ['s','w'], // 2021–2025 only
+    papers: [
+      { c:1, desc:'Paper 1 — Outline Study (1h15m)'       },
+      { c:2, desc:'Paper 2 — In-depth Study (1h45m)'      },
+      { c:3, desc:'Paper 3 — In-depth Study (1h45m)'      },
+      { c:4, desc:'Paper 4 — Historical Investigation'    },
+    ],
+  },
+  '9084': {
+    name: 'Law', sessions: ['s','w'],
+    papers: [
+      { c:1, desc:'Paper 1 — Law Making (1h30m)'          },
+      { c:2, desc:'Paper 2 — Legal System (1h30m)'        },
+      { c:3, desc:'Paper 3 — Law of Contract (1h30m)'     },
+      { c:4, desc:'Paper 4 — Law of Tort (1h30m)'         },
+    ],
+  },
+  '9699': {
+    name: 'Sociology', sessions: ['s','w'],
+    papers: [
+      { c:1, desc:'Paper 1 — Sociological Perspectives & Methods (1h30m)' },
+      { c:2, desc:'Paper 2 — Socialisation, Identity & Methods (1h30m)'   },
+      { c:3, desc:'Paper 3 — Social Inequality & Opportunity (1h30m)'     },
+      { c:4, desc:'Paper 4 — Global Development (1h30m)'                  },
+    ],
+  },
+  '9990': {
+    name: 'Psychology (9990)', sessions: ['s','w'], // 2018–2025 only
+    papers: [
+      { c:1, desc:'Paper 1 — Approaches in Psychology (2h)'               },
+      { c:2, desc:'Paper 2 — Psychology and Applications (2h)'            },
+      { c:3, desc:'Paper 3 — Research Methods (1h30m)'                    },
+      { c:4, desc:'Paper 4 — Advanced Psychology (1h15m)'                 },
+    ],
+  },
+  '9698': {
+    name: 'Psychology (9698)', sessions: ['s','w'], // old syllabus 2010–2018
+    papers: [
+      { c:1, desc:'Paper 1 — Approaches in Psychology (2h)'               },
+      { c:2, desc:'Paper 2 — Psychology as Science (2h)'                  },
+      { c:3, desc:'Paper 3 — Specialist Choices (1h30m)'                  },
+    ],
+  },
+  '9607': {
+    name: 'Media Studies', sessions: ['s'], // summer only; Papers 2 & 4 only
+    papers: [
+      { c:2, desc:'Paper 2 — Media Language & Representation (2h)'        },
+      { c:4, desc:'Paper 4 — Media Issues & Debates (2h)'                 },
+    ],
+  },
+  '9707': {
+    name: 'Business Studies (9707)', sessions: ['s','w'], // old syllabus 2010–2015
+    papers: [
+      { c:1, desc:'Paper 1 — Short Answer & Essay (AS, 1h15m)' },
+      { c:2, desc:'Paper 2 — Data Response (AS, 1h45m)'        },
+      { c:3, desc:'Paper 3 — Case Study (A2, 3h)'              },
+    ],
+  },
+  '9691': {
+    name: 'Computing (9691)', sessions: ['s','w'], // old syllabus 2010–2016
+    papers: [
+      { c:1, desc:'Paper 1 — Theory (2h)'                      },
+      { c:2, desc:'Paper 2 — Problem Solving & Programming (2h)' },
+      { c:3, desc:'Paper 3 — Further Problem Solving (2h)'     },
+    ],
+  },
 };
 
 const YEAR_RANGE   = Array.from({ length: 16 }, (_, i) => 2010 + i); // 2010–2025
