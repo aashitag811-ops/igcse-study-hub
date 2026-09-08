@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=10"/>
 <title>The Periodic Table of Elements</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -10,23 +10,88 @@ html, body {
   width: 100%;
   height: 100%;
   background: #fff;
+  overflow: auto;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+.container {
+  width: 100%;
+  min-height: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 8px;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
+  transform-origin: top left;
+  touch-action: pinch-zoom;
+  /* Force landscape: rotate if the image is taller than wide */
+  max-width: 100%;
 }
 </style>
 </head>
 <body>
+<div class="container">
   <img
     src="/resources/periodic-table-cambridge.png"
     alt="Cambridge AS &amp; A Level Periodic Table of Elements"
     draggable="false"
+    id="pt"
   />
+</div>
+<script>
+// Pinch-to-zoom with touch events
+(function() {
+  const img = document.getElementById('pt');
+  let scale = 1;
+  let lastDist = 0;
+  let originX = 0;
+  let originY = 0;
+
+  function dist(touches) {
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+
+  function midpoint(touches) {
+    return {
+      x: (touches[0].clientX + touches[1].clientX) / 2,
+      y: (touches[0].clientY + touches[1].clientY) / 2,
+    };
+  }
+
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      lastDist = dist(e.touches);
+      const mid = midpoint(e.touches);
+      const rect = img.getBoundingClientRect();
+      originX = ((mid.x - rect.left) / rect.width) * 100;
+      originY = ((mid.y - rect.top) / rect.height) * 100;
+      img.style.transformOrigin = originX + '% ' + originY + '%';
+    }
+  }, { passive: false });
+
+  document.addEventListener('touchmove', function(e) {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      const newDist = dist(e.touches);
+      if (lastDist > 0) {
+        const delta = newDist / lastDist;
+        scale = Math.min(Math.max(scale * delta, 0.5), 8);
+        img.style.transform = 'scale(' + scale + ')';
+      }
+      lastDist = newDist;
+    }
+  }, { passive: false });
+
+  document.addEventListener('touchend', function(e) {
+    if (e.touches.length < 2) lastDist = 0;
+  });
+})();
+</script>
 </body>
 </html>
