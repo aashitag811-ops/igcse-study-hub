@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { createClient } from '@/lib/supabase/client';
 import NotificationBell from '@/components/NotificationBell';
+import PortraitOverlay from '@/components/PortraitOverlay';
 
 const IGCSE_NAV = [
   { label: 'Dashboard', href: '/' },
@@ -156,6 +157,8 @@ export default function Header() {
   }, []);
 
   return (
+    <>
+    <PortraitOverlay />
     <header
       className="fixed top-0 left-0 right-0 z-50"
       style={{
@@ -260,6 +263,7 @@ export default function Header() {
         ))}
       </div>
     </header>
+    </>
   );
 }
 
