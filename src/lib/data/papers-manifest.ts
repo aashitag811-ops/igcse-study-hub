@@ -11,7 +11,7 @@ export interface PaperEntry {
   testModeAvailable: boolean;
 }
 
-const papers: PaperEntry[] = [
+const papers = [
   {
     "id": "0417_m26_qp_12",
     "subjectCode": "0417",
@@ -71420,4 +71420,4 @@ const papers: PaperEntry[] = [
   }
 ];
 
-export default papers;
+export default papers as PaperEntry[];

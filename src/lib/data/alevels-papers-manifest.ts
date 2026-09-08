@@ -11,7 +11,7 @@ export interface ALevelPaperEntry {
   testModeAvailable: boolean;
 }
 
-const aLevelPapers: ALevelPaperEntry[] = [
+const aLevelPapers = [
   {
     "id": "8021_s26_qp_11",
     "subjectCode": "8021",
@@ -62861,4 +62861,4 @@ const aLevelPapers: ALevelPaperEntry[] = [
   }
 ];
 
-export default aLevelPapers;
+export default aLevelPapers as ALevelPaperEntry[];
