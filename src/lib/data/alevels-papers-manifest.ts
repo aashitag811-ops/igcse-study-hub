@@ -11,7333 +11,7 @@ export interface ALevelPaperEntry {
   testModeAvailable: boolean;
 }
 
-const aLevelPapers = [
-  {
-    "id": "8021_s26_qp_11",
-    "subjectCode": "8021",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s26_qp_12",
-    "subjectCode": "8021",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s26_qp_13",
-    "subjectCode": "8021",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s26_qp_21",
-    "subjectCode": "8021",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s26_qp_22",
-    "subjectCode": "8021",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s26_qp_23",
-    "subjectCode": "8021",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s25_qp_11",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s25_qp_12",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s25_qp_13",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s25_qp_21",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s25_qp_22",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s25_qp_23",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w25_qp_11",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w25_qp_12",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w25_qp_13",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w25_qp_21",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w25_qp_22",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w25_qp_23",
-    "subjectCode": "8021",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s24_qp_11",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s24_qp_12",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s24_qp_13",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s24_qp_21",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s24_qp_22",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s24_qp_23",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w24_qp_11",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w24_qp_12",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w24_qp_13",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w24_qp_21",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w24_qp_22",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w24_qp_23",
-    "subjectCode": "8021",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s23_qp_11",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s23_qp_12",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s23_qp_13",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s23_qp_21",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s23_qp_22",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s23_qp_23",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w23_qp_11",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w23_qp_12",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w23_qp_13",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w23_qp_21",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w23_qp_22",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w23_qp_23",
-    "subjectCode": "8021",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s22_qp_11",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s22_qp_12",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s22_qp_13",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s22_qp_21",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s22_qp_22",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s22_qp_23",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w22_qp_11",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w22_qp_12",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w22_qp_13",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w22_qp_21",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w22_qp_22",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w22_qp_23",
-    "subjectCode": "8021",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s21_qp_11",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s21_qp_12",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s21_qp_13",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s21_qp_21",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s21_qp_22",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s21_qp_23",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w21_qp_11",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w21_qp_12",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w21_qp_13",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w21_qp_21",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w21_qp_22",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w21_qp_23",
-    "subjectCode": "8021",
-    "year": 2021,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s20_qp_11",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s20_qp_12",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s20_qp_13",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s20_qp_21",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s20_qp_22",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s20_qp_23",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w20_qp_11",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w20_qp_12",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w20_qp_13",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w20_qp_21",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w20_qp_22",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w20_qp_23",
-    "subjectCode": "8021",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s19_qp_11",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s19_qp_12",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s19_qp_13",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s19_qp_21",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s19_qp_22",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s19_qp_23",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w19_qp_11",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w19_qp_12",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w19_qp_13",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w19_qp_21",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w19_qp_22",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w19_qp_23",
-    "subjectCode": "8021",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s18_qp_11",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s18_qp_12",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s18_qp_13",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s18_qp_21",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s18_qp_22",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s18_qp_23",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w18_qp_11",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w18_qp_12",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w18_qp_13",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w18_qp_21",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w18_qp_22",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w18_qp_23",
-    "subjectCode": "8021",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s17_qp_11",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s17_qp_12",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s17_qp_13",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s17_qp_21",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s17_qp_22",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s17_qp_23",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w17_qp_11",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w17_qp_12",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w17_qp_13",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w17_qp_21",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w17_qp_22",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w17_qp_23",
-    "subjectCode": "8021",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s16_qp_11",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s16_qp_12",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s16_qp_13",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s16_qp_21",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s16_qp_22",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s16_qp_23",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w16_qp_11",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w16_qp_12",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w16_qp_13",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w16_qp_21",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w16_qp_22",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w16_qp_23",
-    "subjectCode": "8021",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s15_qp_11",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s15_qp_12",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s15_qp_13",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s15_qp_21",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s15_qp_22",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s15_qp_23",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w15_qp_11",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w15_qp_12",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w15_qp_13",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w15_qp_21",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w15_qp_22",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w15_qp_23",
-    "subjectCode": "8021",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s14_qp_11",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s14_qp_12",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s14_qp_13",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s14_qp_21",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s14_qp_22",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s14_qp_23",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w14_qp_11",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w14_qp_12",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w14_qp_13",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w14_qp_21",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w14_qp_22",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w14_qp_23",
-    "subjectCode": "8021",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s13_qp_11",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s13_qp_12",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s13_qp_13",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s13_qp_21",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s13_qp_22",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s13_qp_23",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w13_qp_11",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w13_qp_12",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w13_qp_13",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w13_qp_21",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w13_qp_22",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w13_qp_23",
-    "subjectCode": "8021",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s12_qp_11",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s12_qp_12",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s12_qp_13",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s12_qp_21",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s12_qp_22",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s12_qp_23",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w12_qp_11",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w12_qp_12",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w12_qp_13",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w12_qp_21",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w12_qp_22",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w12_qp_23",
-    "subjectCode": "8021",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s11_qp_11",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s11_qp_12",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s11_qp_13",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s11_qp_21",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s11_qp_22",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s11_qp_23",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w11_qp_11",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w11_qp_12",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w11_qp_13",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w11_qp_21",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w11_qp_22",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w11_qp_23",
-    "subjectCode": "8021",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s10_qp_11",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s10_qp_12",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s10_qp_13",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s10_qp_21",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s10_qp_22",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_s10_qp_23",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w10_qp_11",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w10_qp_12",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w10_qp_13",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w10_qp_21",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w10_qp_22",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "8021_w10_qp_23",
-    "subjectCode": "8021",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m26_qp_12",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m26_qp_22",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m26_qp_32",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m26_qp_42",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_11",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_12",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_13",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_21",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_22",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_23",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_31",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_32",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_33",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_41",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_42",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s26_qp_43",
-    "subjectCode": "9093",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_11",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_12",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_13",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_21",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_22",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_23",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_31",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_32",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_33",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_41",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_42",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m25_qp_43",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_11",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_12",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_13",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_21",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_22",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_23",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_31",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_32",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_33",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_41",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_42",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s25_qp_43",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_11",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_12",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_13",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_21",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_22",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_23",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_31",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_32",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_33",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_41",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_42",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w25_qp_43",
-    "subjectCode": "9093",
-    "year": 2025,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_11",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_12",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_13",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_21",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_22",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_23",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_31",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_32",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_33",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_41",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_42",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m24_qp_43",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_11",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_12",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_13",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_21",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_22",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_23",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_31",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_32",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_33",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_41",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_42",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s24_qp_43",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_11",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_12",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_13",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_21",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_22",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_23",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_31",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_32",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_33",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_41",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_42",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w24_qp_43",
-    "subjectCode": "9093",
-    "year": 2024,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_11",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_12",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_13",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_21",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_22",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_23",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_31",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_32",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_33",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_41",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_42",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m23_qp_43",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_11",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_12",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_13",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_21",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_22",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_23",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_31",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_32",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_33",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_41",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_42",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s23_qp_43",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_11",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_12",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_13",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_21",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_22",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_23",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_31",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_32",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_33",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_41",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_42",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w23_qp_43",
-    "subjectCode": "9093",
-    "year": 2023,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_11",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_12",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_13",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_21",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_22",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_23",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_31",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_32",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_33",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_41",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_42",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m22_qp_43",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_11",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_12",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_13",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_21",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_22",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_23",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_31",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_32",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_33",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_41",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_42",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s22_qp_43",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_11",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_12",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_13",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_21",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_22",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_23",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_31",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_32",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_33",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_41",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_42",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w22_qp_43",
-    "subjectCode": "9093",
-    "year": 2022,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_11",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_12",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_13",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_21",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_22",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_23",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_31",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_32",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_33",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_41",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_42",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m21_qp_43",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_11",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_12",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_13",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_21",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_22",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_23",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_31",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_32",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_33",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_41",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_42",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s21_qp_43",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_11",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_12",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_13",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_21",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_22",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_23",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_31",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_32",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_33",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_41",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_42",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w21_qp_43",
-    "subjectCode": "9093",
-    "year": 2021,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_11",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_12",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_13",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_21",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_22",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_23",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_31",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_32",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_33",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_41",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_42",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m20_qp_43",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_11",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_12",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_13",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_21",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_22",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_23",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_31",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_32",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_33",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_41",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_42",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s20_qp_43",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_11",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_12",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_13",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_21",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_22",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_23",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_31",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_32",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_33",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_41",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_42",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w20_qp_43",
-    "subjectCode": "9093",
-    "year": 2020,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_11",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_12",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_13",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_21",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_22",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_23",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_31",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_32",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_33",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_41",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_42",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m19_qp_43",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_11",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_12",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_13",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_21",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_22",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_23",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_31",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_32",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_33",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_41",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_42",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s19_qp_43",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_11",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_12",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_13",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_21",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_22",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_23",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_31",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_32",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_33",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_41",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_42",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w19_qp_43",
-    "subjectCode": "9093",
-    "year": 2019,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_11",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_12",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_13",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_21",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_22",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_23",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_31",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_32",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_33",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_41",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_42",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m18_qp_43",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_11",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_12",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_13",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_21",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_22",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_23",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_31",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_32",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_33",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_41",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_42",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s18_qp_43",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_11",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_12",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_13",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_21",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_22",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_23",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_31",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_32",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_33",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_41",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_42",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w18_qp_43",
-    "subjectCode": "9093",
-    "year": 2018,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_11",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_12",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_13",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_21",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_22",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_23",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_31",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_32",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_33",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_41",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_42",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m17_qp_43",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_11",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_12",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_13",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_21",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_22",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_23",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_31",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_32",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_33",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_41",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_42",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s17_qp_43",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_11",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_12",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_13",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_21",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_22",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_23",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_31",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_32",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_33",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_41",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_42",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w17_qp_43",
-    "subjectCode": "9093",
-    "year": 2017,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_11",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_12",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_13",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_21",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_22",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_23",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_31",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_32",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_33",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_41",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_42",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m16_qp_43",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_11",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_12",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_13",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_21",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_22",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_23",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_31",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_32",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_33",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_41",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_42",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s16_qp_43",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_11",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_12",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_13",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_21",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_22",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_23",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_31",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_32",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_33",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_41",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_42",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w16_qp_43",
-    "subjectCode": "9093",
-    "year": 2016,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_11",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_12",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_13",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_21",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_22",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_23",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_31",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_32",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_33",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_41",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_42",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m15_qp_43",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_11",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_12",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_13",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_21",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_22",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_23",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_31",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_32",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_33",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_41",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_42",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s15_qp_43",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_11",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_12",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_13",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_21",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_22",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_23",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_31",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_32",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_33",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_41",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_42",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w15_qp_43",
-    "subjectCode": "9093",
-    "year": 2015,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_11",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_12",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_13",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_21",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_22",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_23",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_31",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_32",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_33",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_41",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_42",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m14_qp_43",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_11",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_12",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_13",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_21",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_22",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_23",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_31",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_32",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_33",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_41",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_42",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s14_qp_43",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_11",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_12",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_13",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_21",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_22",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_23",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_31",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_32",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_33",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_41",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_42",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w14_qp_43",
-    "subjectCode": "9093",
-    "year": 2014,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_11",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_12",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_13",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_21",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_22",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_23",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_31",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_32",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_33",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_41",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_42",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m13_qp_43",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_11",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_12",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_13",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_21",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_22",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_23",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_31",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_32",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_33",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_41",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_42",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s13_qp_43",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_11",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_12",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_13",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_21",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_22",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_23",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_31",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_32",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_33",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_41",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_42",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w13_qp_43",
-    "subjectCode": "9093",
-    "year": 2013,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_11",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_12",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_13",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_21",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_22",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_23",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_31",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_32",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_33",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_41",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_42",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m12_qp_43",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_11",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_12",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_13",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_21",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_22",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_23",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_31",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_32",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_33",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_41",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_42",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s12_qp_43",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_11",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_12",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_13",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_21",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_22",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_23",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_31",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_32",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_33",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_41",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_42",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w12_qp_43",
-    "subjectCode": "9093",
-    "year": 2012,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_11",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_12",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_13",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_21",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_22",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_23",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_31",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_32",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_33",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_41",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_42",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m11_qp_43",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_11",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_12",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_13",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_21",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_22",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_23",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_31",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_32",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_33",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_41",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_42",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s11_qp_43",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_11",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_12",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_13",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_21",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_22",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_23",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_31",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_32",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_33",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_41",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_42",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w11_qp_43",
-    "subjectCode": "9093",
-    "year": 2011,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_11",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_12",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_13",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_21",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_22",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_23",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_31",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_32",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_33",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_41",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_42",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_m10_qp_43",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_11",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_12",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_13",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_21",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_22",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_23",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_31",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_32",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_33",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_41",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_42",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_s10_qp_43",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_11",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_12",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_13",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_21",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_22",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_23",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_31",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_32",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_33",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_41",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_42",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9093_w10_qp_43",
-    "subjectCode": "9093",
-    "year": 2010,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_11",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_12",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_13",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_21",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_22",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_23",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_31",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_32",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_33",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_41",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_42",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s26_qp_43",
-    "subjectCode": "9231",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_11",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_12",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_13",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_21",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_22",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_23",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_31",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_32",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_33",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_41",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_42",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m25_qp_43",
-    "subjectCode": "9231",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
+const aLevelPapers: ALevelPaperEntry[] = [
   {
     "id": "9231_s25_qp_11",
     "subjectCode": "9231",
@@ -7550,114 +224,6 @@ const aLevelPapers = [
     "subjectCode": "9231",
     "year": 2025,
     "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_11",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_12",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_13",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_21",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_22",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_23",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_31",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_32",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_33",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_41",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_42",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m24_qp_43",
-    "subjectCode": "9231",
-    "year": 2024,
-    "session": "m",
     "component": 4,
     "variant": 3,
     "testModeAvailable": false
@@ -7879,114 +445,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_m23_qp_11",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_12",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_13",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_21",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_22",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_23",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_31",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_32",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_33",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_41",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_42",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m23_qp_43",
-    "subjectCode": "9231",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s23_qp_11",
     "subjectCode": "9231",
     "year": 2023,
@@ -8198,114 +656,6 @@ const aLevelPapers = [
     "subjectCode": "9231",
     "year": 2023,
     "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_11",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_12",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_13",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_21",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_22",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_23",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_31",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_32",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_33",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_41",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_42",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m22_qp_43",
-    "subjectCode": "9231",
-    "year": 2022,
-    "session": "m",
     "component": 4,
     "variant": 3,
     "testModeAvailable": false
@@ -8527,114 +877,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_m21_qp_11",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_12",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_13",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_21",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_22",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_23",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_31",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_32",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_33",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_41",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_42",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m21_qp_43",
-    "subjectCode": "9231",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s21_qp_11",
     "subjectCode": "9231",
     "year": 2021,
@@ -8846,114 +1088,6 @@ const aLevelPapers = [
     "subjectCode": "9231",
     "year": 2021,
     "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_11",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_12",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_13",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_21",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_22",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_23",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_31",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_32",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_33",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_41",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_42",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m20_qp_43",
-    "subjectCode": "9231",
-    "year": 2020,
-    "session": "m",
     "component": 4,
     "variant": 3,
     "testModeAvailable": false
@@ -9175,114 +1309,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_m19_qp_11",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_12",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_13",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_21",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_22",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_23",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_31",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_32",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_33",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_41",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_42",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m19_qp_43",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s19_qp_11",
     "subjectCode": "9231",
     "year": 2019,
@@ -9333,60 +1359,6 @@ const aLevelPapers = [
     "year": 2019,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s19_qp_31",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s19_qp_32",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s19_qp_33",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s19_qp_41",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s19_qp_42",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s19_qp_43",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -9445,168 +1417,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w19_qp_31",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w19_qp_32",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w19_qp_33",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w19_qp_41",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w19_qp_42",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w19_qp_43",
-    "subjectCode": "9231",
-    "year": 2019,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_11",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_12",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_13",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_21",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_22",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_23",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_31",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_32",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_33",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_41",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_42",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m18_qp_43",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s18_qp_11",
     "subjectCode": "9231",
     "year": 2018,
@@ -9657,60 +1467,6 @@ const aLevelPapers = [
     "year": 2018,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s18_qp_31",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s18_qp_32",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s18_qp_33",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s18_qp_41",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s18_qp_42",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s18_qp_43",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -9769,168 +1525,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w18_qp_31",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w18_qp_32",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w18_qp_33",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w18_qp_41",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w18_qp_42",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w18_qp_43",
-    "subjectCode": "9231",
-    "year": 2018,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_11",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_12",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_13",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_21",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_22",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_23",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_31",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_32",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_33",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_41",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_42",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m17_qp_43",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s17_qp_11",
     "subjectCode": "9231",
     "year": 2017,
@@ -9981,60 +1575,6 @@ const aLevelPapers = [
     "year": 2017,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s17_qp_31",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s17_qp_32",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s17_qp_33",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s17_qp_41",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s17_qp_42",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s17_qp_43",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -10093,168 +1633,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w17_qp_31",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w17_qp_32",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w17_qp_33",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w17_qp_41",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w17_qp_42",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w17_qp_43",
-    "subjectCode": "9231",
-    "year": 2017,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_11",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_12",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_13",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_21",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_22",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_23",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_31",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_32",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_33",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_41",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_42",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m16_qp_43",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s16_qp_11",
     "subjectCode": "9231",
     "year": 2016,
@@ -10305,60 +1683,6 @@ const aLevelPapers = [
     "year": 2016,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s16_qp_31",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s16_qp_32",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s16_qp_33",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s16_qp_41",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s16_qp_42",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s16_qp_43",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -10417,168 +1741,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w16_qp_31",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w16_qp_32",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w16_qp_33",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w16_qp_41",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w16_qp_42",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w16_qp_43",
-    "subjectCode": "9231",
-    "year": 2016,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_11",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_12",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_13",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_21",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_22",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_23",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_31",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_32",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_33",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_41",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_42",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m15_qp_43",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s15_qp_11",
     "subjectCode": "9231",
     "year": 2015,
@@ -10629,60 +1791,6 @@ const aLevelPapers = [
     "year": 2015,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s15_qp_31",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s15_qp_32",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s15_qp_33",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s15_qp_41",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s15_qp_42",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s15_qp_43",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -10741,168 +1849,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w15_qp_31",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w15_qp_32",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w15_qp_33",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w15_qp_41",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w15_qp_42",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w15_qp_43",
-    "subjectCode": "9231",
-    "year": 2015,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_11",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_12",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_13",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_21",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_22",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_23",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_31",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_32",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_33",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_41",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_42",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m14_qp_43",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s14_qp_11",
     "subjectCode": "9231",
     "year": 2014,
@@ -10953,60 +1899,6 @@ const aLevelPapers = [
     "year": 2014,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s14_qp_31",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s14_qp_32",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s14_qp_33",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s14_qp_41",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s14_qp_42",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s14_qp_43",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -11065,168 +1957,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w14_qp_31",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w14_qp_32",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w14_qp_33",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w14_qp_41",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w14_qp_42",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w14_qp_43",
-    "subjectCode": "9231",
-    "year": 2014,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_11",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_12",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_13",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_21",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_22",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_23",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_31",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_32",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_33",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_41",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_42",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m13_qp_43",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s13_qp_11",
     "subjectCode": "9231",
     "year": 2013,
@@ -11277,60 +2007,6 @@ const aLevelPapers = [
     "year": 2013,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s13_qp_31",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s13_qp_32",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s13_qp_33",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s13_qp_41",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s13_qp_42",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s13_qp_43",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -11389,168 +2065,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w13_qp_31",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w13_qp_32",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w13_qp_33",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w13_qp_41",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w13_qp_42",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w13_qp_43",
-    "subjectCode": "9231",
-    "year": 2013,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_11",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_12",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_13",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_21",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_22",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_23",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_31",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_32",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_33",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_41",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_42",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m12_qp_43",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s12_qp_11",
     "subjectCode": "9231",
     "year": 2012,
@@ -11601,60 +2115,6 @@ const aLevelPapers = [
     "year": 2012,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s12_qp_31",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s12_qp_32",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s12_qp_33",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s12_qp_41",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s12_qp_42",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s12_qp_43",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -11713,168 +2173,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w12_qp_31",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w12_qp_32",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w12_qp_33",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w12_qp_41",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w12_qp_42",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w12_qp_43",
-    "subjectCode": "9231",
-    "year": 2012,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_11",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_12",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_13",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_21",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_22",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_23",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_31",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_32",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_33",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_41",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_42",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m11_qp_43",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s11_qp_11",
     "subjectCode": "9231",
     "year": 2011,
@@ -11925,60 +2223,6 @@ const aLevelPapers = [
     "year": 2011,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s11_qp_31",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s11_qp_32",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s11_qp_33",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s11_qp_41",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s11_qp_42",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s11_qp_43",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "s",
-    "component": 4,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -12037,168 +2281,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9231_w11_qp_31",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w11_qp_32",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w11_qp_33",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w11_qp_41",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w11_qp_42",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w11_qp_43",
-    "subjectCode": "9231",
-    "year": 2011,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_11",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_12",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_13",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_21",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_22",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_23",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_31",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_32",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_33",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_41",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_42",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_m10_qp_43",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9231_s10_qp_11",
     "subjectCode": "9231",
     "year": 2010,
@@ -12249,1221 +2331,6 @@ const aLevelPapers = [
     "year": 2010,
     "session": "s",
     "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s10_qp_31",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s10_qp_32",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s10_qp_33",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s10_qp_41",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s10_qp_42",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_s10_qp_43",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_11",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_12",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_13",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_21",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_22",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_23",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_31",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_32",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_33",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_41",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_42",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9231_w10_qp_43",
-    "subjectCode": "9231",
-    "year": 2010,
-    "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_11",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_12",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_13",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_21",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_22",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_23",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_31",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_32",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m25_qp_33",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_11",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_12",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_13",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_21",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_22",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_23",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_31",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_32",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s25_qp_33",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_11",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_12",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_13",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_21",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_22",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_23",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_31",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_32",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w25_qp_33",
-    "subjectCode": "9608",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_11",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_12",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_13",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_21",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_22",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_23",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_31",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_32",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m24_qp_33",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_11",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_12",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_13",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_21",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_22",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_23",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_31",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_32",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s24_qp_33",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_11",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_12",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_13",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_21",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_22",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_23",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_31",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_32",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w24_qp_33",
-    "subjectCode": "9608",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_11",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_12",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_13",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_21",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_22",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_23",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_31",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_32",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m23_qp_33",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_11",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_12",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_13",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_21",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_22",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_23",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_31",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_32",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s23_qp_33",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_11",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_12",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_13",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_21",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_22",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_23",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_31",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_32",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w23_qp_33",
-    "subjectCode": "9608",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_11",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_12",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_13",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_21",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_22",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_23",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_31",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_32",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m22_qp_33",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_11",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_12",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_13",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_21",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_22",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_23",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_31",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_32",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s22_qp_33",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_11",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_12",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_13",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_21",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_22",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_23",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_31",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_32",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w22_qp_33",
-    "subjectCode": "9608",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_11",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_12",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_13",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_21",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_22",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_23",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_31",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_32",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m21_qp_33",
-    "subjectCode": "9608",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -13630,87 +2497,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9608_m20_qp_11",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_12",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_13",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_21",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_22",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_23",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_31",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_32",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m20_qp_33",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9608_s20_qp_11",
     "subjectCode": "9608",
     "year": 2020,
@@ -13771,15 +2557,6 @@ const aLevelPapers = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s20_qp_32",
-    "subjectCode": "9608",
-    "year": 2020,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
     "testModeAvailable": false
   },
   {
@@ -13868,87 +2645,6 @@ const aLevelPapers = [
     "subjectCode": "9608",
     "year": 2020,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_11",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_12",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_13",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_21",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_22",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_23",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_31",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_32",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m19_qp_33",
-    "subjectCode": "9608",
-    "year": 2019,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -14116,87 +2812,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9608_m18_qp_11",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_12",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_13",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_21",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_22",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_23",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_31",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_32",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m18_qp_33",
-    "subjectCode": "9608",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9608_s18_qp_11",
     "subjectCode": "9608",
     "year": 2018,
@@ -14354,87 +2969,6 @@ const aLevelPapers = [
     "subjectCode": "9608",
     "year": 2018,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_11",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_12",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_13",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_21",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_22",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_23",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_31",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_32",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m17_qp_33",
-    "subjectCode": "9608",
-    "year": 2017,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -14602,87 +3136,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9608_m16_qp_11",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_12",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_13",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_21",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_22",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_23",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_31",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_32",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m16_qp_33",
-    "subjectCode": "9608",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9608_s16_qp_11",
     "subjectCode": "9608",
     "year": 2016,
@@ -14840,87 +3293,6 @@ const aLevelPapers = [
     "subjectCode": "9608",
     "year": 2016,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_11",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_12",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_13",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_21",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_22",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_23",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_31",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_32",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m15_qp_33",
-    "subjectCode": "9608",
-    "year": 2015,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -15088,1362 +3460,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9608_m14_qp_11",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_12",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_13",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_21",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_22",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_23",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_31",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_32",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m14_qp_33",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_11",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_12",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_13",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_21",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_22",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_23",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_31",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_32",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s14_qp_33",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_11",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_12",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_13",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_21",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_22",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_23",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_31",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_32",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w14_qp_33",
-    "subjectCode": "9608",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_11",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_12",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_13",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_21",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_22",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_23",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_31",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_32",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m13_qp_33",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_11",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_12",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_13",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_21",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_22",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_23",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_31",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_32",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s13_qp_33",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_11",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_12",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_13",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_21",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_22",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_23",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_31",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_32",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w13_qp_33",
-    "subjectCode": "9608",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_11",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_12",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_13",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_21",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_22",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_23",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_31",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_32",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m12_qp_33",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_11",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_12",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_13",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_21",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_22",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_23",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_31",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_32",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s12_qp_33",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_11",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_12",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_13",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_21",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_22",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_23",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_31",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_32",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w12_qp_33",
-    "subjectCode": "9608",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_11",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_12",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_13",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_21",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_22",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_23",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_31",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_32",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m11_qp_33",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_11",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_12",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_13",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_21",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_22",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_23",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_31",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_32",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s11_qp_33",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_11",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_12",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_13",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_21",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_22",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_23",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_31",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_32",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w11_qp_33",
-    "subjectCode": "9608",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_11",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_12",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_13",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_21",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_22",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_23",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_31",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_32",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_m10_qp_33",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_11",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_12",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_13",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_21",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_22",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_23",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_31",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_32",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_s10_qp_33",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_11",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_12",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_13",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_21",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_22",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_23",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_31",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_32",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9608_w10_qp_33",
-    "subjectCode": "9608",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m26_qp_12",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m26_qp_22",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m26_qp_32",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_11",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_12",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_13",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_21",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_22",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_23",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_31",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_32",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s26_qp_33",
-    "subjectCode": "9609",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m25_qp_11",
-    "subjectCode": "9609",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m25_qp_12",
     "subjectCode": "9609",
     "year": 2025,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m25_qp_13",
-    "subjectCode": "9609",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m25_qp_21",
-    "subjectCode": "9609",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -16456,39 +3478,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m25_qp_23",
-    "subjectCode": "9609",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m25_qp_31",
-    "subjectCode": "9609",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m25_qp_32",
     "subjectCode": "9609",
     "year": 2025,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m25_qp_33",
-    "subjectCode": "9609",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -16654,39 +3649,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m24_qp_11",
-    "subjectCode": "9609",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m24_qp_12",
     "subjectCode": "9609",
     "year": 2024,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m24_qp_13",
-    "subjectCode": "9609",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m24_qp_21",
-    "subjectCode": "9609",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -16699,39 +3667,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m24_qp_23",
-    "subjectCode": "9609",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m24_qp_31",
-    "subjectCode": "9609",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m24_qp_32",
     "subjectCode": "9609",
     "year": 2024,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m24_qp_33",
-    "subjectCode": "9609",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -16897,39 +3838,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m23_qp_11",
-    "subjectCode": "9609",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m23_qp_12",
     "subjectCode": "9609",
     "year": 2023,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m23_qp_13",
-    "subjectCode": "9609",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m23_qp_21",
-    "subjectCode": "9609",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -16942,39 +3856,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m23_qp_23",
-    "subjectCode": "9609",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m23_qp_31",
-    "subjectCode": "9609",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m23_qp_32",
     "subjectCode": "9609",
     "year": 2023,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m23_qp_33",
-    "subjectCode": "9609",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -17140,39 +4027,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m22_qp_11",
-    "subjectCode": "9609",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m22_qp_12",
     "subjectCode": "9609",
     "year": 2022,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m22_qp_13",
-    "subjectCode": "9609",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m22_qp_21",
-    "subjectCode": "9609",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -17185,39 +4045,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m22_qp_23",
-    "subjectCode": "9609",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m22_qp_31",
-    "subjectCode": "9609",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m22_qp_32",
     "subjectCode": "9609",
     "year": 2022,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m22_qp_33",
-    "subjectCode": "9609",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -17383,39 +4216,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m21_qp_11",
-    "subjectCode": "9609",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m21_qp_12",
     "subjectCode": "9609",
     "year": 2021,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m21_qp_13",
-    "subjectCode": "9609",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m21_qp_21",
-    "subjectCode": "9609",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -17428,39 +4234,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m21_qp_23",
-    "subjectCode": "9609",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m21_qp_31",
-    "subjectCode": "9609",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m21_qp_32",
     "subjectCode": "9609",
     "year": 2021,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m21_qp_33",
-    "subjectCode": "9609",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -17626,39 +4405,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m20_qp_11",
-    "subjectCode": "9609",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m20_qp_12",
     "subjectCode": "9609",
     "year": 2020,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m20_qp_13",
-    "subjectCode": "9609",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m20_qp_21",
-    "subjectCode": "9609",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -17671,39 +4423,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m20_qp_23",
-    "subjectCode": "9609",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m20_qp_31",
-    "subjectCode": "9609",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m20_qp_32",
     "subjectCode": "9609",
     "year": 2020,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m20_qp_33",
-    "subjectCode": "9609",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -17869,39 +4594,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m19_qp_11",
-    "subjectCode": "9609",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m19_qp_12",
     "subjectCode": "9609",
     "year": 2019,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m19_qp_13",
-    "subjectCode": "9609",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m19_qp_21",
-    "subjectCode": "9609",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -17914,39 +4612,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m19_qp_23",
-    "subjectCode": "9609",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m19_qp_31",
-    "subjectCode": "9609",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m19_qp_32",
     "subjectCode": "9609",
     "year": 2019,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m19_qp_33",
-    "subjectCode": "9609",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -18112,39 +4783,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m18_qp_11",
-    "subjectCode": "9609",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m18_qp_12",
     "subjectCode": "9609",
     "year": 2018,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m18_qp_13",
-    "subjectCode": "9609",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m18_qp_21",
-    "subjectCode": "9609",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -18157,39 +4801,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m18_qp_23",
-    "subjectCode": "9609",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m18_qp_31",
-    "subjectCode": "9609",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m18_qp_32",
     "subjectCode": "9609",
     "year": 2018,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m18_qp_33",
-    "subjectCode": "9609",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -18355,39 +4972,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m17_qp_11",
-    "subjectCode": "9609",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m17_qp_12",
     "subjectCode": "9609",
     "year": 2017,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m17_qp_13",
-    "subjectCode": "9609",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m17_qp_21",
-    "subjectCode": "9609",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -18400,39 +4990,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m17_qp_23",
-    "subjectCode": "9609",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m17_qp_31",
-    "subjectCode": "9609",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m17_qp_32",
     "subjectCode": "9609",
     "year": 2017,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m17_qp_33",
-    "subjectCode": "9609",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -18598,39 +5161,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m16_qp_11",
-    "subjectCode": "9609",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m16_qp_12",
     "subjectCode": "9609",
     "year": 2016,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m16_qp_13",
-    "subjectCode": "9609",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m16_qp_21",
-    "subjectCode": "9609",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -18643,39 +5179,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9609_m16_qp_23",
-    "subjectCode": "9609",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m16_qp_31",
-    "subjectCode": "9609",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9609_m16_qp_32",
     "subjectCode": "9609",
     "year": 2016,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m16_qp_33",
-    "subjectCode": "9609",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -18836,1626 +5345,6 @@ const aLevelPapers = [
     "subjectCode": "9609",
     "year": 2016,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_11",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_12",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_13",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_21",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_22",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_23",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_31",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_32",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m15_qp_33",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_11",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_12",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_13",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_21",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_22",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_23",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_31",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_32",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s15_qp_33",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_11",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_12",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_13",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_21",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_22",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_23",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_31",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_32",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w15_qp_33",
-    "subjectCode": "9609",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_11",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_12",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_13",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_21",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_22",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_23",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_31",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_32",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m14_qp_33",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_11",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_12",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_13",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_21",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_22",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_23",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_31",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_32",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s14_qp_33",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_11",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_12",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_13",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_21",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_22",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_23",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_31",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_32",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w14_qp_33",
-    "subjectCode": "9609",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_11",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_12",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_13",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_21",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_22",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_23",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_31",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_32",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m13_qp_33",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_11",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_12",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_13",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_21",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_22",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_23",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_31",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_32",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s13_qp_33",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_11",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_12",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_13",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_21",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_22",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_23",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_31",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_32",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w13_qp_33",
-    "subjectCode": "9609",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_11",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_12",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_13",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_21",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_22",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_23",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_31",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_32",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m12_qp_33",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_11",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_12",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_13",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_21",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_22",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_23",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_31",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_32",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s12_qp_33",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_11",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_12",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_13",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_21",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_22",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_23",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_31",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_32",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w12_qp_33",
-    "subjectCode": "9609",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_11",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_12",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_13",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_21",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_22",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_23",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_31",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_32",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m11_qp_33",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_11",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_12",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_13",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_21",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_22",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_23",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_31",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_32",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s11_qp_33",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_11",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_12",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_13",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_21",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_22",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_23",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_31",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_32",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w11_qp_33",
-    "subjectCode": "9609",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_11",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_12",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_13",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_21",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_22",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_23",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_31",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_32",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_m10_qp_33",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_11",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_12",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_13",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_21",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_22",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_23",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_31",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_32",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_s10_qp_33",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_11",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_12",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_13",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_21",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_22",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_23",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_31",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_32",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9609_w10_qp_33",
-    "subjectCode": "9609",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_11",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_12",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_13",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_21",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_22",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_23",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_31",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_32",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s26_qp_33",
-    "subjectCode": "9618",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_11",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_12",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_13",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_21",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_22",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_23",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_31",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_32",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m25_qp_33",
-    "subjectCode": "9618",
-    "year": 2025,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -20623,87 +5512,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9618_m24_qp_11",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_12",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_13",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_21",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_22",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_23",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_31",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_32",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m24_qp_33",
-    "subjectCode": "9618",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9618_s24_qp_11",
     "subjectCode": "9618",
     "year": 2024,
@@ -20861,87 +5669,6 @@ const aLevelPapers = [
     "subjectCode": "9618",
     "year": 2024,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_11",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_12",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_13",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_21",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_22",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_23",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_31",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_32",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m23_qp_33",
-    "subjectCode": "9618",
-    "year": 2023,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -21109,87 +5836,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9618_m22_qp_11",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_12",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_13",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_21",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_22",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_23",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_31",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_32",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m22_qp_33",
-    "subjectCode": "9618",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9618_s22_qp_11",
     "subjectCode": "9618",
     "year": 2022,
@@ -21352,87 +5998,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9618_m21_qp_11",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_12",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_13",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_21",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_22",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_23",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_31",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_32",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m21_qp_33",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9618_s21_qp_11",
     "subjectCode": "9618",
     "year": 2021,
@@ -21586,2688 +6151,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9618_w21_qp_33",
-    "subjectCode": "9618",
-    "year": 2021,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_11",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_12",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_13",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_21",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_22",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_23",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_31",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_32",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m20_qp_33",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_11",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_12",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_13",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_21",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_22",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_23",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_31",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_32",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s20_qp_33",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_11",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_12",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_13",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_21",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_22",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_23",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_31",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_32",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w20_qp_33",
-    "subjectCode": "9618",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_11",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_12",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_13",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_21",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_22",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_23",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_31",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_32",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m19_qp_33",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_11",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_12",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_13",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_21",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_22",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_23",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_31",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_32",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s19_qp_33",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_11",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_12",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_13",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_21",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_22",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_23",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_31",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_32",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w19_qp_33",
-    "subjectCode": "9618",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_11",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_12",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_13",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_21",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_22",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_23",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_31",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_32",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m18_qp_33",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_11",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_12",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_13",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_21",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_22",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_23",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_31",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_32",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s18_qp_33",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_11",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_12",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_13",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_21",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_22",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_23",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_31",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_32",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w18_qp_33",
-    "subjectCode": "9618",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_11",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_12",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_13",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_21",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_22",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_23",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_31",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_32",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m17_qp_33",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_11",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_12",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_13",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_21",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_22",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_23",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_31",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_32",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s17_qp_33",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_11",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_12",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_13",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_21",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_22",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_23",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_31",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_32",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w17_qp_33",
-    "subjectCode": "9618",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_11",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_12",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_13",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_21",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_22",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_23",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_31",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_32",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m16_qp_33",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_11",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_12",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_13",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_21",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_22",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_23",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_31",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_32",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s16_qp_33",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_11",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_12",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_13",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_21",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_22",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_23",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_31",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_32",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w16_qp_33",
-    "subjectCode": "9618",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_11",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_12",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_13",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_21",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_22",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_23",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_31",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_32",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m15_qp_33",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_11",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_12",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_13",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_21",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_22",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_23",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_31",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_32",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s15_qp_33",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_11",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_12",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_13",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_21",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_22",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_23",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_31",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_32",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w15_qp_33",
-    "subjectCode": "9618",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_11",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_12",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_13",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_21",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_22",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_23",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_31",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_32",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m14_qp_33",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_11",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_12",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_13",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_21",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_22",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_23",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_31",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_32",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s14_qp_33",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_11",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_12",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_13",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_21",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_22",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_23",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_31",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_32",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w14_qp_33",
-    "subjectCode": "9618",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_11",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_12",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_13",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_21",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_22",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_23",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_31",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_32",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m13_qp_33",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_11",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_12",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_13",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_21",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_22",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_23",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_31",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_32",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s13_qp_33",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_11",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_12",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_13",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_21",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_22",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_23",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_31",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_32",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w13_qp_33",
-    "subjectCode": "9618",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_11",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_12",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_13",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_21",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_22",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_23",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_31",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_32",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m12_qp_33",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_11",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_12",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_13",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_21",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_22",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_23",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_31",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_32",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s12_qp_33",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_11",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_12",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_13",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_21",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_22",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_23",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_31",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_32",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w12_qp_33",
-    "subjectCode": "9618",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_11",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_12",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_13",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_21",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_22",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_23",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_31",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_32",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m11_qp_33",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_11",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_12",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_13",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_21",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_22",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_23",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_31",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_32",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s11_qp_33",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_11",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_12",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_13",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_21",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_22",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_23",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_31",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_32",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w11_qp_33",
-    "subjectCode": "9618",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_11",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_12",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_13",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_21",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_22",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_23",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_31",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_32",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_m10_qp_33",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_11",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_12",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_13",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_21",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_22",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_23",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_31",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_32",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_s10_qp_33",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_11",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_12",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_13",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_21",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_22",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_23",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_31",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_32",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9618_w10_qp_33",
-    "subjectCode": "9618",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m26_qp_12",
     "subjectCode": "9700",
     "year": 2026,
@@ -24275,42 +6158,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9700_m26_qp_22",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m26_qp_33",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m26_qp_42",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m26_qp_52",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
   },
   {
     "id": "9700_s26_qp_11",
@@ -24340,123 +6187,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_s26_qp_21",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_22",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_23",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_31",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_32",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_33",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_41",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_42",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_43",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_51",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_52",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_s26_qp_53",
-    "subjectCode": "9700",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m25_qp_11",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m25_qp_12",
     "subjectCode": "9700",
     "year": 2025,
@@ -24466,56 +6196,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m25_qp_13",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m25_qp_21",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m25_qp_22",
     "subjectCode": "9700",
     "year": 2025,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m25_qp_23",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m25_qp_31",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m25_qp_32",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -24529,15 +6214,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m25_qp_41",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m25_qp_42",
     "subjectCode": "9700",
     "year": 2025,
@@ -24547,39 +6223,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m25_qp_43",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m25_qp_51",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m25_qp_52",
     "subjectCode": "9700",
     "year": 2025,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m25_qp_53",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -24781,15 +6430,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w25_qp_32",
-    "subjectCode": "9700",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w25_qp_33",
     "subjectCode": "9700",
     "year": 2025,
@@ -24853,15 +6493,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m24_qp_11",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m24_qp_12",
     "subjectCode": "9700",
     "year": 2024,
@@ -24871,56 +6502,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m24_qp_13",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m24_qp_21",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m24_qp_22",
     "subjectCode": "9700",
     "year": 2024,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m24_qp_23",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m24_qp_31",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m24_qp_32",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -24934,15 +6520,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m24_qp_41",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m24_qp_42",
     "subjectCode": "9700",
     "year": 2024,
@@ -24952,39 +6529,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m24_qp_43",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m24_qp_51",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m24_qp_52",
     "subjectCode": "9700",
     "year": 2024,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m24_qp_53",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -25186,15 +6736,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w24_qp_32",
-    "subjectCode": "9700",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w24_qp_33",
     "subjectCode": "9700",
     "year": 2024,
@@ -25258,15 +6799,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m23_qp_11",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m23_qp_12",
     "subjectCode": "9700",
     "year": 2023,
@@ -25276,56 +6808,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m23_qp_13",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m23_qp_21",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m23_qp_22",
     "subjectCode": "9700",
     "year": 2023,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m23_qp_23",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m23_qp_31",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m23_qp_32",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -25339,15 +6826,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m23_qp_41",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m23_qp_42",
     "subjectCode": "9700",
     "year": 2023,
@@ -25357,39 +6835,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m23_qp_43",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m23_qp_51",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m23_qp_52",
     "subjectCode": "9700",
     "year": 2023,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m23_qp_53",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -25591,15 +7042,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w23_qp_32",
-    "subjectCode": "9700",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w23_qp_33",
     "subjectCode": "9700",
     "year": 2023,
@@ -25663,15 +7105,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m22_qp_11",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m22_qp_12",
     "subjectCode": "9700",
     "year": 2022,
@@ -25681,56 +7114,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m22_qp_13",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m22_qp_21",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m22_qp_22",
     "subjectCode": "9700",
     "year": 2022,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m22_qp_23",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m22_qp_31",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m22_qp_32",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -25744,15 +7132,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m22_qp_41",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m22_qp_42",
     "subjectCode": "9700",
     "year": 2022,
@@ -25762,39 +7141,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m22_qp_43",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m22_qp_51",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m22_qp_52",
     "subjectCode": "9700",
     "year": 2022,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m22_qp_53",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -25996,15 +7348,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w22_qp_32",
-    "subjectCode": "9700",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w22_qp_33",
     "subjectCode": "9700",
     "year": 2022,
@@ -26068,15 +7411,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m21_qp_11",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m21_qp_12",
     "subjectCode": "9700",
     "year": 2021,
@@ -26086,56 +7420,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m21_qp_13",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m21_qp_21",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m21_qp_22",
     "subjectCode": "9700",
     "year": 2021,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m21_qp_23",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m21_qp_31",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m21_qp_32",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -26149,15 +7438,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m21_qp_41",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m21_qp_42",
     "subjectCode": "9700",
     "year": 2021,
@@ -26167,39 +7447,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m21_qp_43",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m21_qp_51",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m21_qp_52",
     "subjectCode": "9700",
     "year": 2021,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m21_qp_53",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -26401,15 +7654,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w21_qp_32",
-    "subjectCode": "9700",
-    "year": 2021,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w21_qp_33",
     "subjectCode": "9700",
     "year": 2021,
@@ -26473,15 +7717,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m20_qp_11",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m20_qp_12",
     "subjectCode": "9700",
     "year": 2020,
@@ -26491,56 +7726,11 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m20_qp_13",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m20_qp_21",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m20_qp_22",
     "subjectCode": "9700",
     "year": 2020,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m20_qp_23",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m20_qp_31",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m20_qp_32",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -26554,15 +7744,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m20_qp_41",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m20_qp_42",
     "subjectCode": "9700",
     "year": 2020,
@@ -26572,39 +7753,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m20_qp_43",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m20_qp_51",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m20_qp_52",
     "subjectCode": "9700",
     "year": 2020,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m20_qp_53",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -26806,15 +7960,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w20_qp_32",
-    "subjectCode": "9700",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w20_qp_33",
     "subjectCode": "9700",
     "year": 2020,
@@ -26878,15 +8023,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m19_qp_11",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m19_qp_12",
     "subjectCode": "9700",
     "year": 2019,
@@ -26896,56 +8032,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m19_qp_13",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m19_qp_21",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m19_qp_22",
     "subjectCode": "9700",
     "year": 2019,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m19_qp_23",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m19_qp_31",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m19_qp_32",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -26959,15 +8050,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m19_qp_41",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m19_qp_42",
     "subjectCode": "9700",
     "year": 2019,
@@ -26977,39 +8059,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m19_qp_43",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m19_qp_51",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m19_qp_52",
     "subjectCode": "9700",
     "year": 2019,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m19_qp_53",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -27211,15 +8266,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w19_qp_32",
-    "subjectCode": "9700",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w19_qp_33",
     "subjectCode": "9700",
     "year": 2019,
@@ -27283,15 +8329,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m18_qp_11",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m18_qp_12",
     "subjectCode": "9700",
     "year": 2018,
@@ -27301,56 +8338,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m18_qp_13",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m18_qp_21",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m18_qp_22",
     "subjectCode": "9700",
     "year": 2018,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m18_qp_23",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m18_qp_31",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m18_qp_32",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -27364,15 +8356,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m18_qp_41",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m18_qp_42",
     "subjectCode": "9700",
     "year": 2018,
@@ -27382,39 +8365,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m18_qp_43",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m18_qp_51",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m18_qp_52",
     "subjectCode": "9700",
     "year": 2018,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m18_qp_53",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -27616,15 +8572,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w18_qp_32",
-    "subjectCode": "9700",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w18_qp_33",
     "subjectCode": "9700",
     "year": 2018,
@@ -27688,15 +8635,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m17_qp_11",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m17_qp_12",
     "subjectCode": "9700",
     "year": 2017,
@@ -27706,56 +8644,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m17_qp_13",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m17_qp_21",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m17_qp_22",
     "subjectCode": "9700",
     "year": 2017,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m17_qp_23",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m17_qp_31",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m17_qp_32",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -27769,15 +8662,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m17_qp_41",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m17_qp_42",
     "subjectCode": "9700",
     "year": 2017,
@@ -27787,39 +8671,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m17_qp_43",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m17_qp_51",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m17_qp_52",
     "subjectCode": "9700",
     "year": 2017,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m17_qp_53",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -28021,15 +8878,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w17_qp_32",
-    "subjectCode": "9700",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w17_qp_33",
     "subjectCode": "9700",
     "year": 2017,
@@ -28093,15 +8941,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m16_qp_11",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m16_qp_12",
     "subjectCode": "9700",
     "year": 2016,
@@ -28111,56 +8950,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9700_m16_qp_13",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_21",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m16_qp_22",
     "subjectCode": "9700",
     "year": 2016,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_23",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_31",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_32",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -28174,57 +8968,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_m16_qp_41",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_m16_qp_42",
     "subjectCode": "9700",
     "year": 2016,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_43",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_51",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_52",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m16_qp_53",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -28426,15 +9175,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w16_qp_32",
-    "subjectCode": "9700",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w16_qp_33",
     "subjectCode": "9700",
     "year": 2016,
@@ -28493,141 +9233,6 @@ const aLevelPapers = [
     "subjectCode": "9700",
     "year": 2016,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_11",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_12",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_13",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_21",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_22",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_23",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_31",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_32",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_33",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_41",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_42",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_43",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_51",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_52",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m15_qp_53",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -28831,15 +9436,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w15_qp_32",
-    "subjectCode": "9700",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w15_qp_33",
     "subjectCode": "9700",
     "year": 2015,
@@ -28898,141 +9494,6 @@ const aLevelPapers = [
     "subjectCode": "9700",
     "year": 2015,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_11",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_12",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_13",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_21",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_22",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_23",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_31",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_32",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_33",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_41",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_42",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_43",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_51",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_52",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m14_qp_53",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -29236,15 +9697,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w14_qp_32",
-    "subjectCode": "9700",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w14_qp_33",
     "subjectCode": "9700",
     "year": 2014,
@@ -29303,141 +9755,6 @@ const aLevelPapers = [
     "subjectCode": "9700",
     "year": 2014,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_11",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_12",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_13",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_21",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_22",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_23",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_31",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_32",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_33",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_41",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_42",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_43",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_51",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_52",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m13_qp_53",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -29641,15 +9958,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w13_qp_32",
-    "subjectCode": "9700",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w13_qp_33",
     "subjectCode": "9700",
     "year": 2013,
@@ -29708,141 +10016,6 @@ const aLevelPapers = [
     "subjectCode": "9700",
     "year": 2013,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_11",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_12",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_13",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_21",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_22",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_23",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_31",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_32",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_33",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_41",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_42",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_43",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_51",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_52",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m12_qp_53",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -30046,15 +10219,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w12_qp_32",
-    "subjectCode": "9700",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w12_qp_33",
     "subjectCode": "9700",
     "year": 2012,
@@ -30113,141 +10277,6 @@ const aLevelPapers = [
     "subjectCode": "9700",
     "year": 2012,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_11",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_12",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_13",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_21",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_22",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_23",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_31",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_32",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_33",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_41",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_42",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_43",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_51",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_52",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m11_qp_53",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -30451,15 +10480,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w11_qp_32",
-    "subjectCode": "9700",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w11_qp_33",
     "subjectCode": "9700",
     "year": 2011,
@@ -30518,141 +10538,6 @@ const aLevelPapers = [
     "subjectCode": "9700",
     "year": 2011,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_11",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_12",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_13",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_21",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_22",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_23",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_31",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_32",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_33",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_41",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_42",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_43",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_51",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_52",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9700_m10_qp_53",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -30856,15 +10741,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9700_w10_qp_32",
-    "subjectCode": "9700",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9700_w10_qp_33",
     "subjectCode": "9700",
     "year": 2010,
@@ -30937,42 +10813,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m26_qp_22",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m26_qp_33",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m26_qp_42",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m26_qp_52",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_s26_qp_11",
     "subjectCode": "9701",
     "year": 2026,
@@ -31000,123 +10840,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_s26_qp_21",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_22",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_23",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_31",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_32",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_33",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_41",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_42",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_43",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_51",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_52",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s26_qp_53",
-    "subjectCode": "9701",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m25_qp_11",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m25_qp_12",
     "subjectCode": "9701",
     "year": 2025,
@@ -31126,56 +10849,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m25_qp_13",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m25_qp_21",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m25_qp_22",
     "subjectCode": "9701",
     "year": 2025,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m25_qp_23",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m25_qp_31",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m25_qp_32",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -31189,15 +10867,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m25_qp_41",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m25_qp_42",
     "subjectCode": "9701",
     "year": 2025,
@@ -31207,39 +10876,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m25_qp_43",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m25_qp_51",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m25_qp_52",
     "subjectCode": "9701",
     "year": 2025,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m25_qp_53",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -31441,15 +11083,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w25_qp_32",
-    "subjectCode": "9701",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w25_qp_33",
     "subjectCode": "9701",
     "year": 2025,
@@ -31513,15 +11146,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m24_qp_11",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m24_qp_12",
     "subjectCode": "9701",
     "year": 2024,
@@ -31531,56 +11155,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m24_qp_13",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m24_qp_21",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m24_qp_22",
     "subjectCode": "9701",
     "year": 2024,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m24_qp_23",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m24_qp_31",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m24_qp_32",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -31594,15 +11173,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m24_qp_41",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m24_qp_42",
     "subjectCode": "9701",
     "year": 2024,
@@ -31612,39 +11182,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m24_qp_43",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m24_qp_51",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m24_qp_52",
     "subjectCode": "9701",
     "year": 2024,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m24_qp_53",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -31846,15 +11389,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w24_qp_32",
-    "subjectCode": "9701",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w24_qp_33",
     "subjectCode": "9701",
     "year": 2024,
@@ -31918,15 +11452,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m23_qp_11",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m23_qp_12",
     "subjectCode": "9701",
     "year": 2023,
@@ -31936,56 +11461,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m23_qp_13",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m23_qp_21",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m23_qp_22",
     "subjectCode": "9701",
     "year": 2023,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m23_qp_23",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m23_qp_31",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m23_qp_32",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -31999,15 +11479,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m23_qp_41",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m23_qp_42",
     "subjectCode": "9701",
     "year": 2023,
@@ -32017,39 +11488,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m23_qp_43",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m23_qp_51",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m23_qp_52",
     "subjectCode": "9701",
     "year": 2023,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m23_qp_53",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -32251,15 +11695,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w23_qp_32",
-    "subjectCode": "9701",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w23_qp_33",
     "subjectCode": "9701",
     "year": 2023,
@@ -32323,15 +11758,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m22_qp_11",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m22_qp_12",
     "subjectCode": "9701",
     "year": 2022,
@@ -32341,56 +11767,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m22_qp_13",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m22_qp_21",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m22_qp_22",
     "subjectCode": "9701",
     "year": 2022,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m22_qp_23",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m22_qp_31",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m22_qp_32",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -32404,15 +11785,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m22_qp_41",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m22_qp_42",
     "subjectCode": "9701",
     "year": 2022,
@@ -32422,39 +11794,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m22_qp_43",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m22_qp_51",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m22_qp_52",
     "subjectCode": "9701",
     "year": 2022,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m22_qp_53",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -32656,15 +12001,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w22_qp_32",
-    "subjectCode": "9701",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w22_qp_33",
     "subjectCode": "9701",
     "year": 2022,
@@ -32728,15 +12064,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m21_qp_11",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m21_qp_12",
     "subjectCode": "9701",
     "year": 2021,
@@ -32746,56 +12073,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m21_qp_13",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m21_qp_21",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m21_qp_22",
     "subjectCode": "9701",
     "year": 2021,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m21_qp_23",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m21_qp_31",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m21_qp_32",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -32809,15 +12091,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m21_qp_41",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m21_qp_42",
     "subjectCode": "9701",
     "year": 2021,
@@ -32827,39 +12100,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m21_qp_43",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m21_qp_51",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m21_qp_52",
     "subjectCode": "9701",
     "year": 2021,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m21_qp_53",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -33061,15 +12307,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w21_qp_32",
-    "subjectCode": "9701",
-    "year": 2021,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w21_qp_33",
     "subjectCode": "9701",
     "year": 2021,
@@ -33133,15 +12370,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m20_qp_11",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m20_qp_12",
     "subjectCode": "9701",
     "year": 2020,
@@ -33151,56 +12379,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m20_qp_13",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m20_qp_21",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m20_qp_22",
     "subjectCode": "9701",
     "year": 2020,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m20_qp_23",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m20_qp_31",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m20_qp_32",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -33214,15 +12397,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m20_qp_41",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m20_qp_42",
     "subjectCode": "9701",
     "year": 2020,
@@ -33232,39 +12406,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m20_qp_43",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m20_qp_51",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m20_qp_52",
     "subjectCode": "9701",
     "year": 2020,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m20_qp_53",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -33466,15 +12613,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w20_qp_32",
-    "subjectCode": "9701",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w20_qp_33",
     "subjectCode": "9701",
     "year": 2020,
@@ -33538,15 +12676,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m19_qp_11",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m19_qp_12",
     "subjectCode": "9701",
     "year": 2019,
@@ -33556,56 +12685,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m19_qp_13",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m19_qp_21",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m19_qp_22",
     "subjectCode": "9701",
     "year": 2019,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m19_qp_23",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m19_qp_31",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m19_qp_32",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -33619,15 +12703,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m19_qp_41",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m19_qp_42",
     "subjectCode": "9701",
     "year": 2019,
@@ -33637,39 +12712,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m19_qp_43",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m19_qp_51",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m19_qp_52",
     "subjectCode": "9701",
     "year": 2019,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m19_qp_53",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -33871,15 +12919,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w19_qp_32",
-    "subjectCode": "9701",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w19_qp_33",
     "subjectCode": "9701",
     "year": 2019,
@@ -33943,15 +12982,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m18_qp_11",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m18_qp_12",
     "subjectCode": "9701",
     "year": 2018,
@@ -33961,56 +12991,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m18_qp_13",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m18_qp_21",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m18_qp_22",
     "subjectCode": "9701",
     "year": 2018,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m18_qp_23",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m18_qp_31",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m18_qp_32",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -34024,15 +13009,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m18_qp_41",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m18_qp_42",
     "subjectCode": "9701",
     "year": 2018,
@@ -34042,39 +13018,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m18_qp_43",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m18_qp_51",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m18_qp_52",
     "subjectCode": "9701",
     "year": 2018,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m18_qp_53",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -34276,15 +13225,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w18_qp_32",
-    "subjectCode": "9701",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w18_qp_33",
     "subjectCode": "9701",
     "year": 2018,
@@ -34348,15 +13288,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m17_qp_11",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m17_qp_12",
     "subjectCode": "9701",
     "year": 2017,
@@ -34366,56 +13297,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m17_qp_13",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m17_qp_21",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m17_qp_22",
     "subjectCode": "9701",
     "year": 2017,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m17_qp_23",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m17_qp_31",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m17_qp_32",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -34429,15 +13315,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m17_qp_41",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m17_qp_42",
     "subjectCode": "9701",
     "year": 2017,
@@ -34447,39 +13324,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m17_qp_43",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m17_qp_51",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m17_qp_52",
     "subjectCode": "9701",
     "year": 2017,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m17_qp_53",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -34681,15 +13531,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w17_qp_32",
-    "subjectCode": "9701",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w17_qp_33",
     "subjectCode": "9701",
     "year": 2017,
@@ -34753,15 +13594,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m16_qp_11",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m16_qp_12",
     "subjectCode": "9701",
     "year": 2016,
@@ -34771,56 +13603,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9701_m16_qp_13",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m16_qp_21",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m16_qp_22",
     "subjectCode": "9701",
     "year": 2016,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m16_qp_23",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m16_qp_31",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m16_qp_32",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -34834,15 +13621,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m16_qp_41",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m16_qp_42",
     "subjectCode": "9701",
     "year": 2016,
@@ -34852,39 +13630,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_m16_qp_43",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m16_qp_51",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_m16_qp_52",
     "subjectCode": "9701",
     "year": 2016,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m16_qp_53",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -35086,15 +13837,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w16_qp_32",
-    "subjectCode": "9701",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w16_qp_33",
     "subjectCode": "9701",
     "year": 2016,
@@ -35153,141 +13895,6 @@ const aLevelPapers = [
     "subjectCode": "9701",
     "year": 2016,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_11",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_12",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_13",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_21",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_22",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_23",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_31",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_32",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_33",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_41",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_42",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_43",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_51",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_52",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m15_qp_53",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -35491,15 +14098,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w15_qp_32",
-    "subjectCode": "9701",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w15_qp_33",
     "subjectCode": "9701",
     "year": 2015,
@@ -35558,141 +14156,6 @@ const aLevelPapers = [
     "subjectCode": "9701",
     "year": 2015,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_11",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_12",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_13",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_21",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_22",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_23",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_31",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_32",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_33",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_41",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_42",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_43",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_51",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_52",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m14_qp_53",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -35896,15 +14359,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w14_qp_32",
-    "subjectCode": "9701",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w14_qp_33",
     "subjectCode": "9701",
     "year": 2014,
@@ -35963,141 +14417,6 @@ const aLevelPapers = [
     "subjectCode": "9701",
     "year": 2014,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_11",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_12",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_13",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_21",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_22",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_23",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_31",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_32",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_33",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_41",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_42",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_43",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_51",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_52",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m13_qp_53",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -36301,15 +14620,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w13_qp_32",
-    "subjectCode": "9701",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w13_qp_33",
     "subjectCode": "9701",
     "year": 2013,
@@ -36368,141 +14678,6 @@ const aLevelPapers = [
     "subjectCode": "9701",
     "year": 2013,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_11",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_12",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_13",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_21",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_22",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_23",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_31",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_32",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_33",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_41",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_42",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_43",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_51",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_52",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m12_qp_53",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -36706,15 +14881,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w12_qp_32",
-    "subjectCode": "9701",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w12_qp_33",
     "subjectCode": "9701",
     "year": 2012,
@@ -36773,141 +14939,6 @@ const aLevelPapers = [
     "subjectCode": "9701",
     "year": 2012,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_11",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_12",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_13",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_21",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_22",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_23",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_31",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_32",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_33",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_41",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_42",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_43",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_51",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_52",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m11_qp_53",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -37111,15 +15142,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w11_qp_32",
-    "subjectCode": "9701",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w11_qp_33",
     "subjectCode": "9701",
     "year": 2011,
@@ -37178,141 +15200,6 @@ const aLevelPapers = [
     "subjectCode": "9701",
     "year": 2011,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_11",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_12",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_13",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_21",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_22",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_23",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_31",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_32",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_33",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_41",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_42",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_43",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_51",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_52",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_m10_qp_53",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -37378,15 +15265,6 @@ const aLevelPapers = [
     "session": "s",
     "component": 3,
     "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9701_s10_qp_32",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
     "testModeAvailable": false
   },
   {
@@ -37516,15 +15394,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9701_w10_qp_32",
-    "subjectCode": "9701",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9701_w10_qp_33",
     "subjectCode": "9701",
     "year": 2010,
@@ -37597,42 +15466,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m26_qp_22",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m26_qp_33",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m26_qp_42",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m26_qp_52",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_s26_qp_11",
     "subjectCode": "9702",
     "year": 2026,
@@ -37660,123 +15493,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_s26_qp_21",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_22",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_23",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_31",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_32",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_33",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_41",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_42",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_43",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_51",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_52",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_s26_qp_53",
-    "subjectCode": "9702",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m25_qp_11",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m25_qp_12",
     "subjectCode": "9702",
     "year": 2025,
@@ -37786,56 +15502,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m25_qp_13",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m25_qp_21",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m25_qp_22",
     "subjectCode": "9702",
     "year": 2025,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m25_qp_23",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m25_qp_31",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m25_qp_32",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -37849,15 +15520,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m25_qp_41",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m25_qp_42",
     "subjectCode": "9702",
     "year": 2025,
@@ -37867,39 +15529,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m25_qp_43",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m25_qp_51",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m25_qp_52",
     "subjectCode": "9702",
     "year": 2025,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m25_qp_53",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -38101,15 +15736,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w25_qp_32",
-    "subjectCode": "9702",
-    "year": 2025,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w25_qp_33",
     "subjectCode": "9702",
     "year": 2025,
@@ -38173,15 +15799,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m24_qp_11",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m24_qp_12",
     "subjectCode": "9702",
     "year": 2024,
@@ -38191,56 +15808,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m24_qp_13",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m24_qp_21",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m24_qp_22",
     "subjectCode": "9702",
     "year": 2024,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m24_qp_23",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m24_qp_31",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m24_qp_32",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -38254,15 +15826,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m24_qp_41",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m24_qp_42",
     "subjectCode": "9702",
     "year": 2024,
@@ -38272,39 +15835,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m24_qp_43",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m24_qp_51",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m24_qp_52",
     "subjectCode": "9702",
     "year": 2024,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m24_qp_53",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -38506,15 +16042,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w24_qp_32",
-    "subjectCode": "9702",
-    "year": 2024,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w24_qp_33",
     "subjectCode": "9702",
     "year": 2024,
@@ -38578,15 +16105,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m23_qp_11",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m23_qp_12",
     "subjectCode": "9702",
     "year": 2023,
@@ -38596,56 +16114,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m23_qp_13",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m23_qp_21",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m23_qp_22",
     "subjectCode": "9702",
     "year": 2023,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m23_qp_23",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m23_qp_31",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m23_qp_32",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -38659,15 +16132,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m23_qp_41",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m23_qp_42",
     "subjectCode": "9702",
     "year": 2023,
@@ -38677,39 +16141,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m23_qp_43",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m23_qp_51",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m23_qp_52",
     "subjectCode": "9702",
     "year": 2023,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m23_qp_53",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -38911,15 +16348,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w23_qp_32",
-    "subjectCode": "9702",
-    "year": 2023,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w23_qp_33",
     "subjectCode": "9702",
     "year": 2023,
@@ -38983,15 +16411,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m22_qp_11",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m22_qp_12",
     "subjectCode": "9702",
     "year": 2022,
@@ -39001,56 +16420,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m22_qp_13",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m22_qp_21",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m22_qp_22",
     "subjectCode": "9702",
     "year": 2022,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m22_qp_23",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m22_qp_31",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m22_qp_32",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -39064,15 +16438,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m22_qp_41",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m22_qp_42",
     "subjectCode": "9702",
     "year": 2022,
@@ -39082,39 +16447,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m22_qp_43",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m22_qp_51",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m22_qp_52",
     "subjectCode": "9702",
     "year": 2022,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m22_qp_53",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -39316,15 +16654,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w22_qp_32",
-    "subjectCode": "9702",
-    "year": 2022,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w22_qp_33",
     "subjectCode": "9702",
     "year": 2022,
@@ -39388,15 +16717,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m21_qp_11",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m21_qp_12",
     "subjectCode": "9702",
     "year": 2021,
@@ -39406,56 +16726,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m21_qp_13",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m21_qp_21",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m21_qp_22",
     "subjectCode": "9702",
     "year": 2021,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m21_qp_23",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m21_qp_31",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m21_qp_32",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -39469,15 +16744,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m21_qp_41",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m21_qp_42",
     "subjectCode": "9702",
     "year": 2021,
@@ -39487,39 +16753,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m21_qp_43",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m21_qp_51",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m21_qp_52",
     "subjectCode": "9702",
     "year": 2021,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m21_qp_53",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -39721,15 +16960,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w21_qp_32",
-    "subjectCode": "9702",
-    "year": 2021,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w21_qp_33",
     "subjectCode": "9702",
     "year": 2021,
@@ -39793,15 +17023,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m20_qp_11",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m20_qp_12",
     "subjectCode": "9702",
     "year": 2020,
@@ -39811,56 +17032,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m20_qp_13",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m20_qp_21",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m20_qp_22",
     "subjectCode": "9702",
     "year": 2020,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m20_qp_23",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m20_qp_31",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m20_qp_32",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -39874,15 +17050,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m20_qp_41",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m20_qp_42",
     "subjectCode": "9702",
     "year": 2020,
@@ -39892,39 +17059,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m20_qp_43",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m20_qp_51",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m20_qp_52",
     "subjectCode": "9702",
     "year": 2020,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m20_qp_53",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -40126,15 +17266,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w20_qp_32",
-    "subjectCode": "9702",
-    "year": 2020,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w20_qp_33",
     "subjectCode": "9702",
     "year": 2020,
@@ -40198,15 +17329,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m19_qp_11",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m19_qp_12",
     "subjectCode": "9702",
     "year": 2019,
@@ -40216,56 +17338,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m19_qp_13",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m19_qp_21",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m19_qp_22",
     "subjectCode": "9702",
     "year": 2019,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m19_qp_23",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m19_qp_31",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m19_qp_32",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -40279,15 +17356,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m19_qp_41",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m19_qp_42",
     "subjectCode": "9702",
     "year": 2019,
@@ -40297,39 +17365,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m19_qp_43",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m19_qp_51",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m19_qp_52",
     "subjectCode": "9702",
     "year": 2019,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m19_qp_53",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -40531,15 +17572,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w19_qp_32",
-    "subjectCode": "9702",
-    "year": 2019,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w19_qp_33",
     "subjectCode": "9702",
     "year": 2019,
@@ -40603,15 +17635,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m18_qp_11",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m18_qp_12",
     "subjectCode": "9702",
     "year": 2018,
@@ -40621,56 +17644,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m18_qp_13",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m18_qp_21",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m18_qp_22",
     "subjectCode": "9702",
     "year": 2018,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m18_qp_23",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m18_qp_31",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m18_qp_32",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -40684,15 +17662,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m18_qp_41",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m18_qp_42",
     "subjectCode": "9702",
     "year": 2018,
@@ -40702,39 +17671,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m18_qp_43",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m18_qp_51",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m18_qp_52",
     "subjectCode": "9702",
     "year": 2018,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m18_qp_53",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -40936,15 +17878,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w18_qp_32",
-    "subjectCode": "9702",
-    "year": 2018,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w18_qp_33",
     "subjectCode": "9702",
     "year": 2018,
@@ -41008,15 +17941,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m17_qp_11",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m17_qp_12",
     "subjectCode": "9702",
     "year": 2017,
@@ -41026,56 +17950,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m17_qp_13",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m17_qp_21",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m17_qp_22",
     "subjectCode": "9702",
     "year": 2017,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m17_qp_23",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m17_qp_31",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m17_qp_32",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -41089,15 +17968,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m17_qp_41",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m17_qp_42",
     "subjectCode": "9702",
     "year": 2017,
@@ -41107,39 +17977,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m17_qp_43",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m17_qp_51",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m17_qp_52",
     "subjectCode": "9702",
     "year": 2017,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m17_qp_53",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -41341,15 +18184,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w17_qp_32",
-    "subjectCode": "9702",
-    "year": 2017,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w17_qp_33",
     "subjectCode": "9702",
     "year": 2017,
@@ -41413,15 +18247,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m16_qp_11",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m16_qp_12",
     "subjectCode": "9702",
     "year": 2016,
@@ -41431,56 +18256,11 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9702_m16_qp_13",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m16_qp_21",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m16_qp_22",
     "subjectCode": "9702",
     "year": 2016,
     "session": "m",
     "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m16_qp_23",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m16_qp_31",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m16_qp_32",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
     "variant": 2,
     "testModeAvailable": false
   },
@@ -41494,15 +18274,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m16_qp_41",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m16_qp_42",
     "subjectCode": "9702",
     "year": 2016,
@@ -41512,39 +18283,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_m16_qp_43",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m16_qp_51",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_m16_qp_52",
     "subjectCode": "9702",
     "year": 2016,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m16_qp_53",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -41746,15 +18490,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w16_qp_32",
-    "subjectCode": "9702",
-    "year": 2016,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w16_qp_33",
     "subjectCode": "9702",
     "year": 2016,
@@ -41813,141 +18548,6 @@ const aLevelPapers = [
     "subjectCode": "9702",
     "year": 2016,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_11",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_12",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_13",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_21",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_22",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_23",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_31",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_32",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_33",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_41",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_42",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_43",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_51",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_52",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m15_qp_53",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -42151,15 +18751,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w15_qp_32",
-    "subjectCode": "9702",
-    "year": 2015,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w15_qp_33",
     "subjectCode": "9702",
     "year": 2015,
@@ -42218,141 +18809,6 @@ const aLevelPapers = [
     "subjectCode": "9702",
     "year": 2015,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_11",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_12",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_13",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_21",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_22",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_23",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_31",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_32",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_33",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_41",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_42",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_43",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_51",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_52",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m14_qp_53",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -42556,15 +19012,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w14_qp_32",
-    "subjectCode": "9702",
-    "year": 2014,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w14_qp_33",
     "subjectCode": "9702",
     "year": 2014,
@@ -42623,141 +19070,6 @@ const aLevelPapers = [
     "subjectCode": "9702",
     "year": 2014,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_11",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_12",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_13",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_21",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_22",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_23",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_31",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_32",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_33",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_41",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_42",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_43",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_51",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_52",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m13_qp_53",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -42961,15 +19273,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w13_qp_32",
-    "subjectCode": "9702",
-    "year": 2013,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w13_qp_33",
     "subjectCode": "9702",
     "year": 2013,
@@ -43028,141 +19331,6 @@ const aLevelPapers = [
     "subjectCode": "9702",
     "year": 2013,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_11",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_12",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_13",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_21",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_22",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_23",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_31",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_32",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_33",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_41",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_42",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_43",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_51",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_52",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m12_qp_53",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -43366,15 +19534,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w12_qp_32",
-    "subjectCode": "9702",
-    "year": 2012,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w12_qp_33",
     "subjectCode": "9702",
     "year": 2012,
@@ -43433,141 +19592,6 @@ const aLevelPapers = [
     "subjectCode": "9702",
     "year": 2012,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_11",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_12",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_13",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_21",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_22",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_23",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_31",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_32",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_33",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_41",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_42",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_43",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_51",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_52",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m11_qp_53",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -43771,15 +19795,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w11_qp_32",
-    "subjectCode": "9702",
-    "year": 2011,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w11_qp_33",
     "subjectCode": "9702",
     "year": 2011,
@@ -43838,141 +19853,6 @@ const aLevelPapers = [
     "subjectCode": "9702",
     "year": 2011,
     "session": "w",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_11",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_12",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_13",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_21",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_22",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_23",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_31",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_32",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_33",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_41",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_42",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_43",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_51",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_52",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9702_m10_qp_53",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "m",
     "component": 5,
     "variant": 3,
     "testModeAvailable": false
@@ -44176,15 +20056,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9702_w10_qp_32",
-    "subjectCode": "9702",
-    "year": 2010,
-    "session": "w",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9702_w10_qp_33",
     "subjectCode": "9702",
     "year": 2010,
@@ -44257,24 +20128,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9706_m26_qp_22",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m26_qp_32",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_s26_qp_11",
     "subjectCode": "9706",
     "year": 2026,
@@ -44302,69 +20155,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9706_s26_qp_21",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_s26_qp_22",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_s26_qp_23",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_s26_qp_31",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_s26_qp_32",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_s26_qp_33",
-    "subjectCode": "9706",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m25_qp_11",
-    "subjectCode": "9706",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m25_qp_12",
     "subjectCode": "9706",
     "year": 2025,
@@ -44372,24 +20162,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m25_qp_13",
-    "subjectCode": "9706",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m25_qp_21",
-    "subjectCode": "9706",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m25_qp_22",
@@ -44401,39 +20173,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m25_qp_23",
-    "subjectCode": "9706",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m25_qp_31",
-    "subjectCode": "9706",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m25_qp_32",
     "subjectCode": "9706",
     "year": 2025,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m25_qp_33",
-    "subjectCode": "9706",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -44599,15 +20344,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m24_qp_11",
-    "subjectCode": "9706",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m24_qp_12",
     "subjectCode": "9706",
     "year": 2024,
@@ -44615,24 +20351,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m24_qp_13",
-    "subjectCode": "9706",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m24_qp_21",
-    "subjectCode": "9706",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m24_qp_22",
@@ -44644,39 +20362,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m24_qp_23",
-    "subjectCode": "9706",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m24_qp_31",
-    "subjectCode": "9706",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m24_qp_32",
     "subjectCode": "9706",
     "year": 2024,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m24_qp_33",
-    "subjectCode": "9706",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -44842,15 +20533,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m23_qp_11",
-    "subjectCode": "9706",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m23_qp_12",
     "subjectCode": "9706",
     "year": 2023,
@@ -44858,24 +20540,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m23_qp_13",
-    "subjectCode": "9706",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m23_qp_21",
-    "subjectCode": "9706",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m23_qp_22",
@@ -44887,39 +20551,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m23_qp_23",
-    "subjectCode": "9706",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m23_qp_31",
-    "subjectCode": "9706",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m23_qp_32",
     "subjectCode": "9706",
     "year": 2023,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m23_qp_33",
-    "subjectCode": "9706",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -45085,15 +20722,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m22_qp_11",
-    "subjectCode": "9706",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m22_qp_12",
     "subjectCode": "9706",
     "year": 2022,
@@ -45101,24 +20729,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m22_qp_13",
-    "subjectCode": "9706",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m22_qp_21",
-    "subjectCode": "9706",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m22_qp_22",
@@ -45130,39 +20740,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m22_qp_23",
-    "subjectCode": "9706",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m22_qp_31",
-    "subjectCode": "9706",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m22_qp_32",
     "subjectCode": "9706",
     "year": 2022,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m22_qp_33",
-    "subjectCode": "9706",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -45328,15 +20911,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m21_qp_11",
-    "subjectCode": "9706",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m21_qp_12",
     "subjectCode": "9706",
     "year": 2021,
@@ -45344,24 +20918,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m21_qp_13",
-    "subjectCode": "9706",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m21_qp_21",
-    "subjectCode": "9706",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m21_qp_22",
@@ -45373,39 +20929,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m21_qp_23",
-    "subjectCode": "9706",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m21_qp_31",
-    "subjectCode": "9706",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m21_qp_32",
     "subjectCode": "9706",
     "year": 2021,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m21_qp_33",
-    "subjectCode": "9706",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -45571,15 +21100,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m20_qp_11",
-    "subjectCode": "9706",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m20_qp_12",
     "subjectCode": "9706",
     "year": 2020,
@@ -45587,24 +21107,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m20_qp_13",
-    "subjectCode": "9706",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m20_qp_21",
-    "subjectCode": "9706",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m20_qp_22",
@@ -45616,39 +21118,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m20_qp_23",
-    "subjectCode": "9706",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m20_qp_31",
-    "subjectCode": "9706",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m20_qp_32",
     "subjectCode": "9706",
     "year": 2020,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m20_qp_33",
-    "subjectCode": "9706",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -45814,15 +21289,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m19_qp_11",
-    "subjectCode": "9706",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m19_qp_12",
     "subjectCode": "9706",
     "year": 2019,
@@ -45830,24 +21296,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m19_qp_13",
-    "subjectCode": "9706",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m19_qp_21",
-    "subjectCode": "9706",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m19_qp_22",
@@ -45859,39 +21307,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m19_qp_23",
-    "subjectCode": "9706",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m19_qp_31",
-    "subjectCode": "9706",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m19_qp_32",
     "subjectCode": "9706",
     "year": 2019,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m19_qp_33",
-    "subjectCode": "9706",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -46057,15 +21478,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m18_qp_11",
-    "subjectCode": "9706",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m18_qp_12",
     "subjectCode": "9706",
     "year": 2018,
@@ -46073,24 +21485,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m18_qp_13",
-    "subjectCode": "9706",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m18_qp_21",
-    "subjectCode": "9706",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m18_qp_22",
@@ -46102,39 +21496,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m18_qp_23",
-    "subjectCode": "9706",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m18_qp_31",
-    "subjectCode": "9706",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m18_qp_32",
     "subjectCode": "9706",
     "year": 2018,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m18_qp_33",
-    "subjectCode": "9706",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -46300,15 +21667,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m17_qp_11",
-    "subjectCode": "9706",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m17_qp_12",
     "subjectCode": "9706",
     "year": 2017,
@@ -46316,24 +21674,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m17_qp_13",
-    "subjectCode": "9706",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m17_qp_21",
-    "subjectCode": "9706",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m17_qp_22",
@@ -46345,39 +21685,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m17_qp_23",
-    "subjectCode": "9706",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m17_qp_31",
-    "subjectCode": "9706",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m17_qp_32",
     "subjectCode": "9706",
     "year": 2017,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m17_qp_33",
-    "subjectCode": "9706",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -46543,15 +21856,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m16_qp_11",
-    "subjectCode": "9706",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m16_qp_12",
     "subjectCode": "9706",
     "year": 2016,
@@ -46559,24 +21863,6 @@ const aLevelPapers = [
     "component": 1,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9706_m16_qp_13",
-    "subjectCode": "9706",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m16_qp_21",
-    "subjectCode": "9706",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
   },
   {
     "id": "9706_m16_qp_22",
@@ -46588,39 +21874,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m16_qp_23",
-    "subjectCode": "9706",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m16_qp_31",
-    "subjectCode": "9706",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_m16_qp_32",
     "subjectCode": "9706",
     "year": 2016,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m16_qp_33",
-    "subjectCode": "9706",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -46781,87 +22040,6 @@ const aLevelPapers = [
     "subjectCode": "9706",
     "year": 2016,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_11",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_12",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_13",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_21",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_22",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_23",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_31",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_32",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m15_qp_33",
-    "subjectCode": "9706",
-    "year": 2015,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -47029,87 +22207,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m14_qp_11",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_12",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_13",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_21",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_22",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_23",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_31",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_32",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m14_qp_33",
-    "subjectCode": "9706",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_s14_qp_11",
     "subjectCode": "9706",
     "year": 2014,
@@ -47267,87 +22364,6 @@ const aLevelPapers = [
     "subjectCode": "9706",
     "year": 2014,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_11",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_12",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_13",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_21",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_22",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_23",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_31",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_32",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m13_qp_33",
-    "subjectCode": "9706",
-    "year": 2013,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -47515,87 +22531,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m12_qp_11",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_12",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_13",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_21",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_22",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_23",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_31",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_32",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m12_qp_33",
-    "subjectCode": "9706",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_s12_qp_11",
     "subjectCode": "9706",
     "year": 2012,
@@ -47758,87 +22693,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9706_m11_qp_11",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_12",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_13",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_21",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_22",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_23",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_31",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_32",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m11_qp_33",
-    "subjectCode": "9706",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9706_s11_qp_11",
     "subjectCode": "9706",
     "year": 2011,
@@ -47996,87 +22850,6 @@ const aLevelPapers = [
     "subjectCode": "9706",
     "year": 2011,
     "session": "w",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_11",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_12",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_13",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_21",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_22",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_23",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_31",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_32",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9706_m10_qp_33",
-    "subjectCode": "9706",
-    "year": 2010,
-    "session": "m",
     "component": 3,
     "variant": 3,
     "testModeAvailable": false
@@ -48253,15 +23026,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m26_qp_22",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m26_qp_32",
     "subjectCode": "9708",
     "year": 2026,
@@ -48269,15 +23033,6 @@ const aLevelPapers = [
     "component": 3,
     "variant": 2,
     "testModeAvailable": true
-  },
-  {
-    "id": "9708_m26_qp_42",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
   },
   {
     "id": "9708_s26_qp_11",
@@ -48307,33 +23062,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_s26_qp_21",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_s26_qp_22",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_s26_qp_23",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_s26_qp_31",
     "subjectCode": "9708",
     "year": 2026,
@@ -48361,42 +23089,6 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_s26_qp_41",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_s26_qp_42",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_s26_qp_43",
-    "subjectCode": "9708",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m25_qp_11",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m25_qp_12",
     "subjectCode": "9708",
     "year": 2025,
@@ -48406,48 +23098,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m25_qp_13",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m25_qp_21",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m25_qp_22",
     "subjectCode": "9708",
     "year": 2025,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m25_qp_23",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m25_qp_31",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -48460,39 +23116,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m25_qp_33",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m25_qp_41",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m25_qp_42",
     "subjectCode": "9708",
     "year": 2025,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m25_qp_43",
-    "subjectCode": "9708",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -48712,15 +23341,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m24_qp_11",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m24_qp_12",
     "subjectCode": "9708",
     "year": 2024,
@@ -48730,48 +23350,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m24_qp_13",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m24_qp_21",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m24_qp_22",
     "subjectCode": "9708",
     "year": 2024,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m24_qp_23",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m24_qp_31",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -48784,39 +23368,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m24_qp_33",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m24_qp_41",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m24_qp_42",
     "subjectCode": "9708",
     "year": 2024,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m24_qp_43",
-    "subjectCode": "9708",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -49036,15 +23593,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m23_qp_11",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m23_qp_12",
     "subjectCode": "9708",
     "year": 2023,
@@ -49054,48 +23602,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m23_qp_13",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m23_qp_21",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m23_qp_22",
     "subjectCode": "9708",
     "year": 2023,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m23_qp_23",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m23_qp_31",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -49108,39 +23620,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m23_qp_33",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m23_qp_41",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m23_qp_42",
     "subjectCode": "9708",
     "year": 2023,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m23_qp_43",
-    "subjectCode": "9708",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -49360,15 +23845,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m22_qp_11",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m22_qp_12",
     "subjectCode": "9708",
     "year": 2022,
@@ -49378,48 +23854,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m22_qp_13",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m22_qp_21",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m22_qp_22",
     "subjectCode": "9708",
     "year": 2022,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m22_qp_23",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m22_qp_31",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -49432,39 +23872,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m22_qp_33",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m22_qp_41",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m22_qp_42",
     "subjectCode": "9708",
     "year": 2022,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m22_qp_43",
-    "subjectCode": "9708",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -49684,15 +24097,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m21_qp_11",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m21_qp_12",
     "subjectCode": "9708",
     "year": 2021,
@@ -49702,48 +24106,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m21_qp_13",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m21_qp_21",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m21_qp_22",
     "subjectCode": "9708",
     "year": 2021,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m21_qp_23",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m21_qp_31",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -49756,39 +24124,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m21_qp_33",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m21_qp_41",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m21_qp_42",
     "subjectCode": "9708",
     "year": 2021,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m21_qp_43",
-    "subjectCode": "9708",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -50008,15 +24349,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m20_qp_11",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m20_qp_12",
     "subjectCode": "9708",
     "year": 2020,
@@ -50026,48 +24358,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m20_qp_13",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m20_qp_21",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m20_qp_22",
     "subjectCode": "9708",
     "year": 2020,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m20_qp_23",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m20_qp_31",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -50080,39 +24376,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m20_qp_33",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m20_qp_41",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m20_qp_42",
     "subjectCode": "9708",
     "year": 2020,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m20_qp_43",
-    "subjectCode": "9708",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -50332,15 +24601,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m19_qp_11",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m19_qp_12",
     "subjectCode": "9708",
     "year": 2019,
@@ -50350,48 +24610,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m19_qp_13",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m19_qp_21",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m19_qp_22",
     "subjectCode": "9708",
     "year": 2019,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m19_qp_23",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m19_qp_31",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -50404,39 +24628,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m19_qp_33",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m19_qp_41",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m19_qp_42",
     "subjectCode": "9708",
     "year": 2019,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m19_qp_43",
-    "subjectCode": "9708",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -50656,15 +24853,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m18_qp_11",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m18_qp_12",
     "subjectCode": "9708",
     "year": 2018,
@@ -50674,48 +24862,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m18_qp_13",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m18_qp_21",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m18_qp_22",
     "subjectCode": "9708",
     "year": 2018,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m18_qp_23",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m18_qp_31",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -50728,39 +24880,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m18_qp_33",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m18_qp_41",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m18_qp_42",
     "subjectCode": "9708",
     "year": 2018,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m18_qp_43",
-    "subjectCode": "9708",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -50980,15 +25105,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m17_qp_11",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m17_qp_12",
     "subjectCode": "9708",
     "year": 2017,
@@ -50998,48 +25114,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m17_qp_13",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m17_qp_21",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m17_qp_22",
     "subjectCode": "9708",
     "year": 2017,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m17_qp_23",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m17_qp_31",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -51052,39 +25132,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m17_qp_33",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m17_qp_41",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m17_qp_42",
     "subjectCode": "9708",
     "year": 2017,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m17_qp_43",
-    "subjectCode": "9708",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -51304,15 +25357,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m16_qp_11",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m16_qp_12",
     "subjectCode": "9708",
     "year": 2016,
@@ -51322,48 +25366,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m16_qp_13",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m16_qp_21",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m16_qp_22",
     "subjectCode": "9708",
     "year": 2016,
     "session": "m",
     "component": 2,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m16_qp_23",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m16_qp_31",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -51376,39 +25384,12 @@ const aLevelPapers = [
     "testModeAvailable": true
   },
   {
-    "id": "9708_m16_qp_33",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m16_qp_41",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_m16_qp_42",
     "subjectCode": "9708",
     "year": 2016,
     "session": "m",
     "component": 4,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m16_qp_43",
-    "subjectCode": "9708",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -51623,114 +25604,6 @@ const aLevelPapers = [
     "subjectCode": "9708",
     "year": 2016,
     "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_11",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_12",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_13",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_21",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_22",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_23",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_31",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_32",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_33",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_41",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_42",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m15_qp_43",
-    "subjectCode": "9708",
-    "year": 2015,
-    "session": "m",
     "component": 4,
     "variant": 3,
     "testModeAvailable": false
@@ -51952,114 +25825,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m14_qp_11",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_12",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_13",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_21",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_22",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_23",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_31",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_32",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_33",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_41",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_42",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m14_qp_43",
-    "subjectCode": "9708",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_s14_qp_11",
     "subjectCode": "9708",
     "year": 2014,
@@ -52271,114 +26036,6 @@ const aLevelPapers = [
     "subjectCode": "9708",
     "year": 2014,
     "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_11",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_12",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_13",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_21",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_22",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_23",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_31",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_32",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_33",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_41",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_42",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m13_qp_43",
-    "subjectCode": "9708",
-    "year": 2013,
-    "session": "m",
     "component": 4,
     "variant": 3,
     "testModeAvailable": false
@@ -52600,114 +26257,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m12_qp_11",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_12",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_13",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_21",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_22",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_23",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_31",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_32",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_33",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_41",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_42",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m12_qp_43",
-    "subjectCode": "9708",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_s12_qp_11",
     "subjectCode": "9708",
     "year": 2012,
@@ -52919,114 +26468,6 @@ const aLevelPapers = [
     "subjectCode": "9708",
     "year": 2012,
     "session": "w",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_11",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_12",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_13",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_21",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_22",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_23",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_31",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_32",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_33",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_41",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_42",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m11_qp_43",
-    "subjectCode": "9708",
-    "year": 2011,
-    "session": "m",
     "component": 4,
     "variant": 3,
     "testModeAvailable": false
@@ -53248,114 +26689,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9708_m10_qp_11",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_12",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_13",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_21",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_22",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_23",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_31",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_32",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_33",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_41",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_42",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9708_m10_qp_43",
-    "subjectCode": "9708",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9708_s10_qp_11",
     "subjectCode": "9708",
     "year": 2010,
@@ -53572,255 +26905,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m26_qp_12",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m26_qp_22",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m26_qp_32",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m26_qp_42",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m26_qp_52",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m26_qp_62",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "m",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_11",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_12",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_13",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_21",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_22",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_23",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_31",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_32",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_33",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_41",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_42",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_43",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_51",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_52",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_53",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_61",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_62",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s26_qp_63",
-    "subjectCode": "9709",
-    "year": 2026,
-    "session": "s",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_11",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m25_qp_12",
     "subjectCode": "9709",
     "year": 2025,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_13",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_21",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -53833,48 +26923,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m25_qp_23",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_31",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m25_qp_32",
     "subjectCode": "9709",
     "year": 2025,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_33",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_41",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -53887,24 +26941,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m25_qp_43",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_51",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m25_qp_52",
     "subjectCode": "9709",
     "year": 2025,
@@ -53914,66 +26950,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m25_qp_53",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_61",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m25_qp_62",
     "subjectCode": "9709",
     "year": 2025,
     "session": "m",
     "component": 6,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_63",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_71",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_72",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m25_qp_73",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -54135,33 +27117,6 @@ const aLevelPapers = [
     "year": 2025,
     "session": "s",
     "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s25_qp_71",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "s",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s25_qp_72",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "s",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s25_qp_73",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "s",
-    "component": 7,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -54328,66 +27283,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_w25_qp_71",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "w",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w25_qp_72",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "w",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w25_qp_73",
-    "subjectCode": "9709",
-    "year": 2025,
-    "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_11",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m24_qp_12",
     "subjectCode": "9709",
     "year": 2024,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_13",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_21",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -54400,48 +27301,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m24_qp_23",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_31",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m24_qp_32",
     "subjectCode": "9709",
     "year": 2024,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_33",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_41",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -54454,24 +27319,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m24_qp_43",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_51",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m24_qp_52",
     "subjectCode": "9709",
     "year": 2024,
@@ -54481,66 +27328,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m24_qp_53",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_61",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m24_qp_62",
     "subjectCode": "9709",
     "year": 2024,
     "session": "m",
     "component": 6,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_63",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_71",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_72",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m24_qp_73",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -54702,33 +27495,6 @@ const aLevelPapers = [
     "year": 2024,
     "session": "s",
     "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s24_qp_71",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "s",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s24_qp_72",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "s",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s24_qp_73",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "s",
-    "component": 7,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -54895,66 +27661,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_w24_qp_71",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "w",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w24_qp_72",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "w",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w24_qp_73",
-    "subjectCode": "9709",
-    "year": 2024,
-    "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_11",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m23_qp_12",
     "subjectCode": "9709",
     "year": 2023,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_13",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_21",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -54967,48 +27679,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m23_qp_23",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_31",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m23_qp_32",
     "subjectCode": "9709",
     "year": 2023,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_33",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_41",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -55021,24 +27697,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m23_qp_43",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_51",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m23_qp_52",
     "subjectCode": "9709",
     "year": 2023,
@@ -55048,66 +27706,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m23_qp_53",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_61",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m23_qp_62",
     "subjectCode": "9709",
     "year": 2023,
     "session": "m",
     "component": 6,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_63",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_71",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_72",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m23_qp_73",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -55269,33 +27873,6 @@ const aLevelPapers = [
     "year": 2023,
     "session": "s",
     "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s23_qp_71",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "s",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s23_qp_72",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "s",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s23_qp_73",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "s",
-    "component": 7,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -55462,66 +28039,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_w23_qp_71",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "w",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w23_qp_72",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "w",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w23_qp_73",
-    "subjectCode": "9709",
-    "year": 2023,
-    "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_11",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m22_qp_12",
     "subjectCode": "9709",
     "year": 2022,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_13",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_21",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -55534,48 +28057,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m22_qp_23",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_31",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m22_qp_32",
     "subjectCode": "9709",
     "year": 2022,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_33",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_41",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -55588,24 +28075,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m22_qp_43",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_51",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m22_qp_52",
     "subjectCode": "9709",
     "year": 2022,
@@ -55615,66 +28084,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m22_qp_53",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_61",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m22_qp_62",
     "subjectCode": "9709",
     "year": 2022,
     "session": "m",
     "component": 6,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_63",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_71",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_72",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m22_qp_73",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -55836,33 +28251,6 @@ const aLevelPapers = [
     "year": 2022,
     "session": "s",
     "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s22_qp_71",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "s",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s22_qp_72",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "s",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s22_qp_73",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "s",
-    "component": 7,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -56029,66 +28417,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_w22_qp_71",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "w",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w22_qp_72",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "w",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w22_qp_73",
-    "subjectCode": "9709",
-    "year": 2022,
-    "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_11",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m21_qp_12",
     "subjectCode": "9709",
     "year": 2021,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_13",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_21",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -56101,48 +28435,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m21_qp_23",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_31",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m21_qp_32",
     "subjectCode": "9709",
     "year": 2021,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_33",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_41",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -56155,24 +28453,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m21_qp_43",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_51",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m21_qp_52",
     "subjectCode": "9709",
     "year": 2021,
@@ -56182,66 +28462,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m21_qp_53",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_61",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m21_qp_62",
     "subjectCode": "9709",
     "year": 2021,
     "session": "m",
     "component": 6,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_63",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_71",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_72",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m21_qp_73",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -56403,33 +28629,6 @@ const aLevelPapers = [
     "year": 2021,
     "session": "s",
     "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s21_qp_71",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "s",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s21_qp_72",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "s",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s21_qp_73",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "s",
-    "component": 7,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -56596,66 +28795,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_w21_qp_71",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "w",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w21_qp_72",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "w",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w21_qp_73",
-    "subjectCode": "9709",
-    "year": 2021,
-    "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_11",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m20_qp_12",
     "subjectCode": "9709",
     "year": 2020,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_13",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_21",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -56668,48 +28813,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m20_qp_23",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_31",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m20_qp_32",
     "subjectCode": "9709",
     "year": 2020,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_33",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_41",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -56722,24 +28831,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m20_qp_43",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_51",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m20_qp_52",
     "subjectCode": "9709",
     "year": 2020,
@@ -56749,66 +28840,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m20_qp_53",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_61",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m20_qp_62",
     "subjectCode": "9709",
     "year": 2020,
     "session": "m",
     "component": 6,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_63",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_71",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_72",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m20_qp_73",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -56970,33 +29007,6 @@ const aLevelPapers = [
     "year": 2020,
     "session": "s",
     "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s20_qp_71",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "s",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s20_qp_72",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "s",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_s20_qp_73",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "s",
-    "component": 7,
     "variant": 3,
     "testModeAvailable": false
   },
@@ -57163,66 +29173,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_w20_qp_71",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "w",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w20_qp_72",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "w",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_w20_qp_73",
-    "subjectCode": "9709",
-    "year": 2020,
-    "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_11",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m19_qp_12",
     "subjectCode": "9709",
     "year": 2019,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_13",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_21",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -57235,48 +29191,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m19_qp_23",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_31",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m19_qp_32",
     "subjectCode": "9709",
     "year": 2019,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_33",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_41",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -57289,48 +29209,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m19_qp_43",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_51",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m19_qp_52",
     "subjectCode": "9709",
     "year": 2019,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_53",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_61",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -57343,39 +29227,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m19_qp_63",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_71",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m19_qp_72",
     "subjectCode": "9709",
     "year": 2019,
     "session": "m",
     "component": 7,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m19_qp_73",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -57730,15 +29587,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_w19_qp_71",
-    "subjectCode": "9709",
-    "year": 2019,
-    "session": "w",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_w19_qp_72",
     "subjectCode": "9709",
     "year": 2019,
@@ -57757,39 +29605,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m18_qp_11",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m18_qp_12",
     "subjectCode": "9709",
     "year": 2018,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_13",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_21",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -57802,48 +29623,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m18_qp_23",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_31",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m18_qp_32",
     "subjectCode": "9709",
     "year": 2018,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_33",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_41",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -57856,48 +29641,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m18_qp_43",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_51",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m18_qp_52",
     "subjectCode": "9709",
     "year": 2018,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_53",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_61",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -57910,39 +29659,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m18_qp_63",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_71",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m18_qp_72",
     "subjectCode": "9709",
     "year": 2018,
     "session": "m",
     "component": 7,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m18_qp_73",
-    "subjectCode": "9709",
-    "year": 2018,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -58324,39 +30046,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m17_qp_11",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m17_qp_12",
     "subjectCode": "9709",
     "year": 2017,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_13",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_21",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -58369,48 +30064,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m17_qp_23",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_31",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m17_qp_32",
     "subjectCode": "9709",
     "year": 2017,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_33",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_41",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -58423,48 +30082,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m17_qp_43",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_51",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m17_qp_52",
     "subjectCode": "9709",
     "year": 2017,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_53",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_61",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -58477,39 +30100,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m17_qp_63",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_71",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m17_qp_72",
     "subjectCode": "9709",
     "year": 2017,
     "session": "m",
     "component": 7,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m17_qp_73",
-    "subjectCode": "9709",
-    "year": 2017,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -58891,39 +30487,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m16_qp_11",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m16_qp_12",
     "subjectCode": "9709",
     "year": 2016,
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_13",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_21",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -58936,48 +30505,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m16_qp_23",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_31",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m16_qp_32",
     "subjectCode": "9709",
     "year": 2016,
     "session": "m",
     "component": 3,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_33",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_41",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -58990,48 +30523,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m16_qp_43",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_51",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m16_qp_52",
     "subjectCode": "9709",
     "year": 2016,
     "session": "m",
     "component": 5,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_53",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_61",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
     "testModeAvailable": false
   },
   {
@@ -59044,39 +30541,12 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m16_qp_63",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_71",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_m16_qp_72",
     "subjectCode": "9709",
     "year": 2016,
     "session": "m",
     "component": 7,
     "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m16_qp_73",
-    "subjectCode": "9709",
-    "year": 2016,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
     "testModeAvailable": false
   },
   {
@@ -59453,195 +30923,6 @@ const aLevelPapers = [
     "subjectCode": "9709",
     "year": 2016,
     "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_11",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_12",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_13",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_21",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_22",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_23",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_31",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_32",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_33",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_41",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_42",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_43",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_51",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_52",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_53",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_61",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_62",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_63",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_71",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_72",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m15_qp_73",
-    "subjectCode": "9709",
-    "year": 2015,
-    "session": "m",
     "component": 7,
     "variant": 3,
     "testModeAvailable": false
@@ -60025,195 +31306,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m14_qp_11",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_12",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_13",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_21",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_22",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_23",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_31",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_32",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_33",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_41",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_42",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_43",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_51",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_52",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_53",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_61",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_62",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_63",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_71",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_72",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m14_qp_73",
-    "subjectCode": "9709",
-    "year": 2014,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_s14_qp_11",
     "subjectCode": "9709",
     "year": 2014,
@@ -60587,195 +31679,6 @@ const aLevelPapers = [
     "subjectCode": "9709",
     "year": 2014,
     "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_11",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_12",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_13",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_21",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_22",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_23",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_31",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_32",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_33",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_41",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_42",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_43",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_51",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_52",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_53",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_61",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_62",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_63",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_71",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_72",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m13_qp_73",
-    "subjectCode": "9709",
-    "year": 2013,
-    "session": "m",
     "component": 7,
     "variant": 3,
     "testModeAvailable": false
@@ -61159,195 +32062,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m12_qp_11",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_12",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_13",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_21",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_22",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_23",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_31",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_32",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_33",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_41",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_42",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_43",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_51",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_52",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_53",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_61",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_62",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_63",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_71",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_72",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m12_qp_73",
-    "subjectCode": "9709",
-    "year": 2012,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_s12_qp_11",
     "subjectCode": "9709",
     "year": 2012,
@@ -61726,195 +32440,6 @@ const aLevelPapers = [
     "testModeAvailable": false
   },
   {
-    "id": "9709_m11_qp_11",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_12",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_13",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_21",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_22",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_23",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_31",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_32",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_33",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_41",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_42",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_43",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_51",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_52",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_53",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_61",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_62",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_63",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_71",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_72",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m11_qp_73",
-    "subjectCode": "9709",
-    "year": 2011,
-    "session": "m",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
     "id": "9709_s11_qp_11",
     "subjectCode": "9709",
     "year": 2011,
@@ -62288,195 +32813,6 @@ const aLevelPapers = [
     "subjectCode": "9709",
     "year": 2011,
     "session": "w",
-    "component": 7,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_11",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_12",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_13",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 1,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_21",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_22",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_23",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 2,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_31",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_32",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_33",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 3,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_41",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_42",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_43",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 4,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_51",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_52",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_53",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 5,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_61",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 6,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_62",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 6,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_63",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 6,
-    "variant": 3,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_71",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 7,
-    "variant": 1,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_72",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
-    "component": 7,
-    "variant": 2,
-    "testModeAvailable": false
-  },
-  {
-    "id": "9709_m10_qp_73",
-    "subjectCode": "9709",
-    "year": 2010,
-    "session": "m",
     "component": 7,
     "variant": 3,
     "testModeAvailable": false
@@ -62861,4 +33197,4 @@ const aLevelPapers = [
   }
 ];
 
-export default aLevelPapers as ALevelPaperEntry[];
+export default aLevelPapers;
