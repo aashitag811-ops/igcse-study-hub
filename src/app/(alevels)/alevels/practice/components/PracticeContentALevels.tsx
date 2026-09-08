@@ -89,7 +89,7 @@ export default function PracticeContentALevels() {
         const data  = await res.json();
         const papers: PaperMetadata[] = data.map((p: any) => ({
           id: p.id,
-          subject: (() => { const n = getALevelSubjectName(p.subjectCode); return n.includes(p.subjectCode) ? n : `${n} ${p.subjectCode}`; })(),
+          subject: `${getALevelSubjectName(p.subjectCode)} ${p.subjectCode}`,
           subjectCode: p.subjectCode,
           year: p.year,
           season: SEASON_CODES[p.session],

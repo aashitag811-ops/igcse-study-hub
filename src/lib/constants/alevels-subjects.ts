@@ -39,14 +39,14 @@ export const ALEVEL_SUBJECTS = [
   },
   {
     code: '9608',
-    name: 'Computer Science (9608)',
+    name: 'Computer Science',
     color: 'cyan',
     icon: '',
     description: 'Theory, Problem-solving, Programming — old syllabus',
   },
   {
     code: '9618',
-    name: 'Computer Science (9618)',
+    name: 'Computer Science',
     color: 'cyan',
     icon: '',
     description: 'Theory, Problem-solving, Advanced Programming — new syllabus',
@@ -89,7 +89,7 @@ export const ALEVEL_SUBJECTS = [
   // ── Additional A-Level subjects (verified on PapaCambridge) ──────────────
   {
     code: '9489',
-    name: 'History (9489)',
+    name: 'History',
     color: 'orange',
     icon: '',
     description: 'Modern History, Source Analysis, Historical Debates (2021–)',
@@ -110,14 +110,14 @@ export const ALEVEL_SUBJECTS = [
   },
   {
     code: '9990',
-    name: 'Psychology (9990)',
+    name: 'Psychology',
     color: 'pink',
     icon: '',
     description: 'Research Methods, Cognition, Social, Biological Psychology (2018–)',
   },
   {
     code: '9698',
-    name: 'Psychology (9698)',
+    name: 'Psychology',
     color: 'pink',
     icon: '',
     description: 'Research Methods, Cognition, Social Psychology (old syllabus, –2018)',
@@ -131,14 +131,14 @@ export const ALEVEL_SUBJECTS = [
   },
   {
     code: '9707',
-    name: 'Business Studies (9707)',
+    name: 'Business Studies',
     color: 'orange',
     icon: '',
     description: 'Business Concepts, Strategy, Finance, HR (old syllabus, –2015)',
   },
   {
     code: '9691',
-    name: 'Computing (9691)',
+    name: 'Computing',
     color: 'cyan',
     icon: '',
     description: 'Theory, Problem-solving, Programming (old syllabus, –2016)',
