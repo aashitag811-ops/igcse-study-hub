@@ -16,6 +16,41 @@ interface PaperMetadata {
 
 const SEASON_CODES: { [key: string]: string } = { m: 'February March', s: 'May June', w: 'October November' };
 
+// Subjects ordered by global Cambridge entry popularity
+const IGCSE_SUBJECT_ORDER: Record<string, number> = {
+  '0580': 1,  // Mathematics
+  '0610': 2,  // Biology
+  '0620': 3,  // Chemistry
+  '0625': 4,  // Physics
+  '0510': 5,  // English as a Second Language
+  '0500': 6,  // First Language English
+  '0606': 7,  // Additional Mathematics
+  '0478': 8,  // Computer Science
+  '0450': 9,  // Business Studies
+  '0455': 10, // Economics
+  '0452': 11, // Accounting
+  '0460': 12, // Geography
+  '0470': 13, // History
+  '0417': 14, // ICT
+  '0457': 15, // Global Perspectives
+  '0475': 16, // English Literature
+  '0520': 17, // French
+  '0549': 18, // Hindi
+  '0490': 19, // Religious Studies
+  '0680': 20, // Environmental Management
+};
+
+function sortSubjectsByPopularity(subjects: string[]): string[] {
+  return [...subjects].sort((a, b) => {
+    const codeA = a.match(/(\d{4})$/)?.[1] ?? '';
+    const codeB = b.match(/(\d{4})$/)?.[1] ?? '';
+    const rankA = IGCSE_SUBJECT_ORDER[codeA] ?? 999;
+    const rankB = IGCSE_SUBJECT_ORDER[codeB] ?? 999;
+    if (rankA !== rankB) return rankA - rankB;
+    return a.localeCompare(b);
+  });
+}
+
 const DUST = Array.from({ length: 38 }, (_, i) => ({
   id: i, size: 1.4 + (i * 6.3 % 2.2),
   left: (i * 19.7 + 5) % 100, top: (i * 27.3 + 11) % 100,
@@ -111,7 +146,7 @@ export default function PracticeContent() {
     fetchPapers();
   }, [urlSubjectCode]);
 
-  const subjects = useMemo(() => Array.from(new Set(availablePapers.map(p => p.subject))).sort(), [availablePapers]);
+  const subjects = useMemo(() => sortSubjectsByPopularity(Array.from(new Set(availablePapers.map(p => p.subject)))), [availablePapers]);
   const availableYears = useMemo(() => Array.from(new Set(availablePapers.filter(p => p.subject === selectedSubject).map(p => p.year))).sort((a, b) => b - a), [availablePapers, selectedSubject]);
   const availableSeasons = useMemo(() => Array.from(new Set(availablePapers.filter(p => p.subject === selectedSubject && p.year === selectedYear).map(p => p.season))), [availablePapers, selectedSubject, selectedYear]);
   const availablePaperComponents = useMemo(() => Array.from(new Set(availablePapers.filter(p => p.subject === selectedSubject && p.year === selectedYear && p.season === selectedSeason).map(p => p.paperComponent))).sort(), [availablePapers, selectedSubject, selectedYear, selectedSeason]);
