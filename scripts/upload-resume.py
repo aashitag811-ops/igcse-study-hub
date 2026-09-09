@@ -24,6 +24,20 @@ PDF_DIR   = Path("scripts/pastpapers")
 CAT_FILE  = Path("scripts/beh-catalogue.json")
 
 ARCHIVE_ITEMS = {
+    "igcse": {
+        "identifier": "student-archive-igcse-pastpapers",
+        "title":      "Student Archive - IGCSE Past Papers",
+        "description": (
+            "Cambridge IGCSE past question papers, mark schemes, examiner reports "
+            "and grade thresholds. Subjects include Biology (0610), Chemistry (0620), "
+            "Physics (0625), Mathematics (0580), Additional Mathematics (0606), "
+            "Computer Science (0478), Business Studies (0450), Economics (0455), "
+            "Accounting (0452), History (0470), Geography (0460), ICT (0417), "
+            "Co-ordinated Sciences (0654), English First Language (0500). "
+            "Hosted for studentarchive.xyz"
+        ),
+        "subject": "IGCSE;Cambridge;Past Papers;Education;CIE",
+    },
     "alevel": {
         "identifier": "student-archive-alevels-pastpapers",
         "title":      "Student Archive - AS & A Level Past Papers",
@@ -44,8 +58,9 @@ ARCHIVE_ITEMS = {
         "description": (
             "Cambridge IGCSE (9-1) graded past question papers and mark schemes. "
             "Subjects include Biology (0970), Chemistry (0971), Physics (0972), "
-            "Mathematics (0980), Computer Science (0984), Economics (0987), "
-            "Business Studies (0986), History (0977), Geography (0976). "
+            "Co-ordinated Sciences (0973), Mathematics (0980), Computer Science (0984), "
+            "Economics (0987), Business Studies (0986), History (0977), Geography (0976), "
+            "Accounting (0985), English First Language (0990), English Literature (0992). "
             "Hosted for studentarchive.xyz"
         ),
         "subject": "IGCSE;IGCSE 9-1;Cambridge;Past Papers;Education;CIE",
@@ -56,8 +71,10 @@ ARCHIVE_ITEMS = {
         "description": (
             "Cambridge O Level past question papers and mark schemes. "
             "Subjects include Biology (5090), Chemistry (5070), Physics (5054), "
-            "Mathematics D (4024), Additional Mathematics (4037), "
-            "Economics (2281), Computer Science (2210), English Language (1123). "
+            "Mathematics D (4024), Additional Mathematics (4037), Statistics (4040), "
+            "Economics (2281), Computer Science (2210), English Language (1123), "
+            "Pakistan Studies (2059), Commerce (7100), Business Studies (7115), "
+            "Principles of Accounts (7110), Accounting (7707). "
             "Hosted for studentarchive.xyz"
         ),
         "subject": "O Level;Cambridge;Past Papers;Education;CIE",

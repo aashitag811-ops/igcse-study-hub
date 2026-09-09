@@ -32,11 +32,9 @@ for (const file of files) {
     const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
     const qs = d.questions || [];
 
-    // Skip completely empty papers — nothing to show
-    if (qs.length === 0) continue;
-
-    // View-only stubs are always included — PDFs are fetched via /api/pdfs proxy
-    const isViewOnly = d.viewOnly || (qs[0] && qs[0].viewOnly);
+    // Include view-only stubs (theory papers) — PDFs fetched via /api/pdfs proxy
+    const isViewOnly = d.viewOnly === true;
+    if (qs.length === 0 && !isViewOnly) continue;
 
     const subjectCode = m[1];
     const year = 2000 + parseInt(m[3]);
@@ -56,6 +54,8 @@ for (const file of files) {
 
     let testModeAvailable = (allHaveSubjectImg && !anyMcqPath) || isMcqParsed;
 
+    // View-only / theory stubs never have test mode
+    if (isViewOnly || qs.length === 0) testModeAvailable = false;
     // Economics Paper 2 = structured theory essay, not MCQ
     if (subjectCode === '0455' && component === 2) testModeAvailable = false;
     // Accounting Paper 2 = structured theory, not MCQ
@@ -86,7 +86,8 @@ for (const file of files) {
 
     const d = JSON.parse(fs.readFileSync(path.join(papersDir, file), 'utf8'));
     const qs = d.questions || [];
-    if (qs.length === 0) continue;
+    const isViewOnly2 = d.viewOnly === true;
+    if (qs.length === 0 && !isViewOnly2) continue;
 
     const subjectCode2 = m[1];
     const year2 = 2000 + parseInt(m[3]);
@@ -96,6 +97,7 @@ for (const file of files) {
     const anyMcqPath = qs.some(q => q.imageUrl && q.imageUrl.includes('/images/mcq/'));
     let testModeAvailable = allHaveSubjectImg && !anyMcqPath;
 
+    if (isViewOnly2 || qs.length === 0) testModeAvailable = false;
     if (subjectCode2 === '0455' && component2 === 2) testModeAvailable = false;
     if (subjectCode2 === '0452' && year2 < 2020) testModeAvailable = false;
     if (['0417','0450','0520','0549','0580','0606','0500','0457'].includes(subjectCode2)) testModeAvailable = false;
