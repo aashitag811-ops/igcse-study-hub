@@ -1,0 +1,502 @@
+{
+  "paperId": "9618_s22_qp_32",
+  "subjectCode": "9618",
+  "session": "s22",
+  "component": "32",
+  "totalMarks": 65,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to assign:\n• 1067 to the BuildingID of BuildingRegister\n• house to the BuildingGroup of BuildingRegister",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The type definition for BuildingRecord is changed. The data type for BuildingGroup is\nchanged to an enumerated type, BuildingType, with values of house, bungalow, apartment\nand farm.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write the type declaration for BuildingType in pseudocode.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Write the new declaration for BuildingGroup in pseudocode.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Write the new pseudocode statement to assign house to BuildingGroup of\nBuildingRegister.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The program is to be rewritten using Object-Oriented Programming (OOP). The data type\nBuildingRecord is to be changed to a class, BuildingClass.\nThe properties for BuildingClass are BuildingID, BuildingGroup, OwnerName,\nBuildingAddress, DateLastSold and PriceLastSold.\nAll the properties are set to PRIVATE, for example:\nPRIVATE PriceLastSold : REAL",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Write the declaration in pseudocode for OwnerName as PRIVATE.\n�����������������������������������������������������������������������������������������������������������������������������������������������������",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Explain why the properties have been set to PRIVATE.\n�����������������������������������������������������������������������������������������������������������������������������������������������������",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Data types can be defined using pseudocode.",
+        "The data type, BuildingRecord, is defined in pseudocode as:",
+        "TYPE BuildingRecord",
+        "DECLARE BuildingID : INTEGER",
+        "DECLARE BuildingGroup : STRING",
+        "DECLARE OwnerName : STRING",
+        "DECLARE BuildingAddress : STRING",
+        "DECLARE DateLastSold : DATE",
+        "DECLARE PriceLastSold : REAL",
+        "ENDTYPE",
+        "A variable, BuildingRegister, is declared in pseudocode as:",
+        "DECLARE BuildingRegister : BuildingRecord"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative language is used to represent the following facts about a school.",
+        "01 teaches(alan, mathematics).",
+        "02 teaches(ioana, geography)."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "teaches(nina, history)."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [
+        {
+          "id": "04a",
+          "label": "(a)",
+          "text": "More facts are to be included. Sam studies history and Nina is his tutor.\nWrite the additional clauses to record these facts.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "04b",
+          "label": "(b)",
+          "text": "Using the variable Student, the goal:\nstudies(Student, history)\nreturns\nStudent = freya, ahmed, kim\nWrite the result returned by the goal:\nstudies(Student, geography)\nStudent = ______",
+          "marks": 1,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "04c",
+          "label": "(c)",
+          "text": "Write the goal, using the variable X, to find all the students who have a tutor that teaches\nthem. For example, Hua has Alan for a tutor and is also taught mathematics by Alan.\n\n3 The TCP/IP protocol suite has four layers. The application layer provides user services.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "04a",
+          "label": "(a)",
+          "text": "Identify two protocols used by this layer. Describe the use of each protocol.\nProtocol 1 ______\nDescription ______\nProtocol 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "04b",
+          "label": "(b)",
+          "text": "Identify two other layers of the TCP/IP protocol suite. Describe the function of each layer.\nLayer 1 ______\nDescription ______\nLayer 2 ______\nDescription ______\n\n4 The following syntax diagrams show the syntax of:\n• a variable\n• an unsigned integer\n• a letter\n• a digit\n• an operator\n• an assignment statement.\nvariable\nletter unsigned integer\nunsigned integer\ndigit digit\nletter digit\nX 1\nY 2\nZ 3\noperator\nassignment\nstatement\nvariable = variable operator variable",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "04a",
+          "label": "(a)",
+          "text": "The following assignment statements are invalid. State the reason in each case.\nX1 = Y2 – 12\nReason ______\nZ = Y12 + Z1\nReason ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "04b",
+          "label": "(b)",
+          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n<letter> has been completed for you.\n<variable> ::= ______\n<unsigned_integer> ::= ______\n<letter> ::= X | Y | Z\n<digit> ::= ______\n<operator> ::= ______\n<assignment_statement> ::= ______",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "04c",
+          "label": "(c)",
+          "text": "The syntax of an assignment statement is changed to allow each of the variables on the\nright-hand side of the ‘=’ symbol to be either a variable or an unsigned integer.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "04ci",
+              "label": "(i)",
+              "text": "Draw a syntax diagram for the new syntax of the assignment statement.",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "04cii",
+              "label": "(ii)",
+              "text": "Write the Backus-Naur Form (BNF) for your syntax diagram.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 28,
+      "text": [
+        "teaches(alan, statistics).",
+        "06 studies(ahmed, history).",
+        "07 studies(freya, history).",
+        "08 studies(kim, history).",
+        "09 studies(freya, geography).",
+        "10 studies(hua, mathematics).",
+        "11 studies(hua, statistics).",
+        "12 studies(hua, geography).",
+        "14 tutors(alan, kim).",
+        "15 tutors(alan, hua).",
+        "16 tutors(alan, freya).",
+        "17 tutors(nina, ahmed).",
+        "These clauses have the following meaning:",
+        "Clause Meaning",
+        "01 Alan teaches mathematics.",
+        "Ahmed studies history.",
+        "Alan is Kim’s tutor."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "There are four basic categories of computer architecture. Single Instruction Single Data (SISD) is",
+        "one architecture.",
+        "Identify the three other categories of computer architecture.",
+        "Describe each category that you identify.",
+        "Architecture 1 ...................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "Architecture 2 ...................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "Architecture 3 ...................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Complete the truth table for this logic circuit.\nINPUT OUTPUT\nA B E F\n0 0\n0 1\n1 0\n1 1",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "State the name of this logic circuit.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "State the purpose of each output E and F.\nPurpose of E ______\nPurpose of F ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A logic circuit has two inputs A and B, and two outputs E and F."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "State how a digital certificate is obtained.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Explain how a digital signature is produced before the message is sent.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Explain how the digital signature can be checked on receipt to ensure that the message\nhas not been altered during transmission.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A digital signature is used to validate the authenticity of an electronic message.",
+        "In order to produce a digital signature, a digital certificate is required."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Complete this pseudocode algorithm for a linear search.\nDECLARE MyList : ARRAY[0:9] OF INTEGER\nDECLARE MaxIndex : INTEGER\nDECLARE Index : INTEGER\nDECLARE Found : BOOLEAN\nDECLARE ValueToFind : ______\nINPUT ValueToFind\nFound ← FALSE\nIndex ← 0\nMaxIndex ← ______\nREPEAT\nIF MyList[Index] = ValueToFind THEN\nFound ← TRUE\nENDIF\nIndex ← ______\nUNTIL Found OR Index > MaxIndex\nIF Found THEN\nOUTPUT \"Value found at position \", Index\nELSE\nOUTPUT ______\nENDIF",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "State the necessary condition for a binary search.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "Describe how to perform a binary search.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biii",
+              "label": "(iii)",
+              "text": "Explain how the performance of a binary search varies according to the number of values\nin the array.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Compare the performance of the algorithms for a binary search and a linear search using\nBig O notation for order of time complexity.",
+          "marks": 3,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A binary search or a linear search can be used to look for a specific value in an array."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "State the reasons for including exception handling routines when writing a program.",
+        "Include an example of an exception in your answer.",
+        "[4]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

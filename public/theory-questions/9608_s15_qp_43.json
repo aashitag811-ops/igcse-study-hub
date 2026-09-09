@@ -1,0 +1,337 @@
+{
+  "paperId": "9608_s15_qp_43",
+  "subjectCode": "9608",
+  "session": "s15",
+  "component": "43",
+  "totalMarks": 63,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A petrol filling station has a single self-service petrol pump.",
+        "A customer can use the petrol pump when it is ready to dispense petrol.",
+        "The pump is in use when the customer takes the nozzle from a holster on the pump.",
+        "The pump dispenses petrol while the customer presses the trigger on the nozzle.",
+        "When the customer replaces the nozzle into the holster, the pump is out of use.",
+        "The cashier must press a reset button to make the pump ready for the next customer to use.",
+        "The petrol pump’s four possible states and the transition from one state to another are as shown in",
+        "the table below.",
+        "Current state Event Next state",
+        "Pump ready Take nozzle Pump in use",
+        "Pump in use Press trigger Pump dispensing",
+        "Pump dispensing Stop pressing trigger Pump in use",
+        "Pump in use Replace nozzle Pump out of use",
+        "Pump out of use Reset pump display Pump ready",
+        "Complete the state transition diagram for the petrol pump:",
+        "start",
+        "[9]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative programming language is used to represent the knowledge base shown below:",
+        "01 dairy_product(cheese).",
+        "02 meat(beef)."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "meat(chicken)."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "meat(lamb)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "made_with(burger, beef)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "made_with(kofta, lamb)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "made_with(quiche, cheese)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "made_with(quiche, egg)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "More facts are to be included.\nLaasi is made with the dairy products milk and yogurt.\nWrite additional clauses to record this.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Using the variable TypeOfMeat, the goal\nmeat(TypeOfMeat)\nreturns\nTypeOfMeat = beef, chicken, lamb\nWrite the result returned by the goal:\nmade_with(quiche, Ingredient)\nIngredient = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Complete the rule to list the dishes made with meat.\ncontains_meat(Dish)\nIF ______\n\n3 An insurance company calculates the cost of car insurance from a basic price.\nThe driver may:\n• get a discount on the basic price of the insurance\n• have to pay an extra charge\nThe decision is arrived at as follows:\n• for a driver aged 25 or over:\n•• 5% discount if no previous accident\n•• no discount if a previous accident\n• for a driver under the age of 25:\n•• 5% discount if no previous accident and licence held for 3 or more years\n•• no discount if a previous accident but licence held for 3 or more years\n•• no discount if no previous accident but licence held for less than 3 years\n•• 10% extra charge if a previous accident and licence held for less than 3 years",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Complete the decision table.\nAge under 25 Y Y Y Y N N N N\nPrevious accident Y Y N N Y Y N N\nConditionsLicence held for 3 or\nY N Y N Y N Y N\nmore years\n10% extra charge\nNo discount\nActions\n5% discount",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Simplify your solution by removing redundancies.\nAge under 25\nPrevious accident\nConditionsLicence held for 3 or\nmore years\n10% extra charge\nNo discount\nActions\n5% discount",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function\nCostPercentageChange. This function returns the percentage change from the basic price\nas an integer. A discount should be shown as a negative integer. An extra charge should be\nshown as a positive integer.\nIdentifier Data type Comment\nDriverAge INTEGER\nAge of driver in years\nHadAccident BOOLEAN\nWhether driver has had a previous accident\nYearsLicenceHeld INTEGER\nNumber of years the driver has held licence\nWrite program code for this function.\nProgramming language ______\n\n4 A sports club stores data about its members. A program is to be written using an object-oriented\nprogramming language.\nA Member class is designed. Two subclasses have been identified:\n• FullMember\n• JuniorMember",
+          "marks": 6,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Draw an inheritance diagram for these classes.",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "The design for the Member class consists of\n• properties\n•• MemberName\n•• MemberID\n•• SubscriptionPaid\n• methods\n•• SetMemberName\n•• SetMemberID\n•• SetSubscriptionPaid\nWrite program code for the class definition of the superclass Member.\nProgramming language ______",
+          "marks": 5,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Additionally a DateOfBirth property is required for the JuniorMember class.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ci",
+              "label": "(i)",
+              "text": "Write program code for the class definition for the subclass JuniorMember.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09cii",
+              "label": "(ii)",
+              "text": "Write program code to create a new instance of JuniorMember. Use identifier\nNewMember with the following data:\nname Ahmed with member ID 12347, born on 12/11/2001, who has paid his subscription.\n\n5 A stack Abstract Data Type (ADT) has these associated operations:\n• create stack\n• add item to stack (push)\n• remove item from stack (pop)\nThe stack ADT is to be implemented as a linked list of nodes.\nEach node consists of data and a pointer to the next node.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "There is one pointer: the top of stack pointer, which points to the last item added to the stack.\nDraw a diagram to show the final state of the stack after the following operations are carried\nout.\nCreateStack\nPush(\"Ali\")\nPush(\"Jack\")\nPop\nPush(\"Ben\")\nPush(\"Ahmed\")\nPop\nPush(\"Jatinder\")\nAdd appropriate labels to the diagram to show the final state of the stack. Use the space on the left\nas a workspace. Show your final answer in the node shapes on the right:",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Using pseudocode, a record type, Node, is declared as follows:\nTYPE Node\nDECLARE Name : STRING\nDECLARE Pointer : INTEGER\nENDTYPE\nThe statement\nDECLARE Stack : ARRAY[1:10] OF Node\nreserves space for 10 nodes in array Stack.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09bi",
+              "label": "(i)",
+              "text": "The CreateStack operation links all nodes and initialises the TopOfStackPointer\nand FreePointer.\nComplete the diagram to show the value of all pointers after CreateStack has been\nexecuted.\nStack\nTopOfStackPointer Name Pointer\n\n\n\nFreePointer",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09bii",
+              "label": "(ii)",
+              "text": "The algorithm for adding a name to the stack is written, using pseudocode, as a\nprocedure with the header\nPROCEDURE Push (NewName)\nWhere NewName is the new name to be added to the stack. The procedure uses the\nvariables as shown in the identifier table.\nIdentifier Data type Description\nStack Array[1:10] OF Node\nNewName STRING\nName to be added\nFreePointer INTEGER\nPointer to next free node in array\nTopOfStackPointer INTEGER Pointer to first node in stack\nTempPointer INTEGER\nTemporary store for copy of FreePointer\nPROCEDURE Push(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nStack[FreePointer].Name ← NewName\n// take a temporary copy and\n// then adjust free pointer\nTempPointer ← FreePointer\nFreePointer ← Stack[FreePointer].Pointer\n// link current node to previous top of stack\nStack[TempPointer].Pointer ← TopOfStackPointer\n// adjust TopOfStackPointer to current node\nTopOfStackPointer ← TempPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure Pop. Use the variables listed in the identifier table.\nPROCEDURE Pop()\n// Report error if Stack is empty\nOUTPUT Stack [______].Name\n// take a copy of the current top of stack pointer\n// update the top of stack pointer\n// link released node to free list\nENDPROCEDURE\n\n6 A recursively defined procedure X is defined below:\nPROCEDURE X(BYVALUE n : INTEGER)\nIF (n = 0) OR (n = 1)\nTHEN\nOUTPUT n\nELSE\nCALL X(n DIV 2)\nOUTPUT (n MOD 2)\nENDIF\nENDPROCEDURE",
+              "marks": 5,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Explain what is meant by recursively defined.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Explain how a stack is used during the execution of a recursive procedure.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Dry run the procedure X by completing the trace table for the procedure call:\nCALL X(40)\nCall\nn (n = 0) OR (n = 1) n DIV 2 n MOD 2\nnumber\n1 40 FALSE 20\nOUTPUT ______",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09d",
+          "label": "(d)",
+          "text": "State the process that is carried out by procedure X.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09e",
+          "label": "(e)",
+          "text": "Write program code for procedure X.\nProgramming language ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 63,
+      "text": [
+        "made_with(quiche, flour).",
+        "These clauses have the following meaning:",
+        "Clause Explanation",
+        "Cheese is a dairy product",
+        "Beef is a meat",
+        "A burger is made with beef"
+      ]
+    }
+  ]
+}

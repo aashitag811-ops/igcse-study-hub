@@ -1,0 +1,504 @@
+{
+  "paperId": "9608_w15_qp_31",
+  "subjectCode": "9608",
+  "session": "w15",
+  "component": "31",
+  "totalMarks": 73,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "A real number is stored as the following two bytes:\nExponent\nMantissa\n0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 1\nCalculate the denary value of this number. Show your working.",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Explain why the floating-point number in part (a)(i) is not normalised.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Normalise the floating-point number in part (a)(i).\nExponent\nMantissa",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write the largest positive number that can be written as a normalised floating-point\nnumber in this format.\nExponent\nMantissa",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Write the smallest positive number that can be written as a normalised floating-point\nnumber in this format.\nExponent\nMantissa",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "If a positive number is added to the number in part (b)(i) explain what will happen.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A student writes a program to output numbers using the following code:\nX 0.0\nFOR i 0 TO 1000\nX X + 0.1\nOUTPUT X\nENDFOR\nThe student is surprised to see that the program outputs the following sequence:\n0.0 0.1 0.2 0.2999999 0.3999999 ……\nExplain why this output has occurred.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "In a particular computer system, real numbers are stored using floating-point representation with:",
+        "• 8 bits for the mantissa, followed by",
+        "• 8 bits for the exponent",
+        "Two’s complement form is used for both mantissa and exponent."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the symbol table below to show its contents after the lexical analysis stage.\nToken\nSymbol\nValue Type\nCounter\n60 Variable\n1.5\n61 Constant",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Each cell below represents one byte of the output from the lexical analysis stage.\nUsing the keyword table and your answer to part (a) complete the output from the lexical\nanalysis.\n60 01",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "This line of code is to be compiled:\nA B + C + D\nAfter the syntax analysis stage, the compiler generates object code. The equivalent code, in\nassembly language, is shown below:\nLDD 234 //loads value B\nADD 235 //adds value C\nSTO 567 //stores result in temporary location\nLDD 567 //loads value from temporary location\nADD 236 //adds value D\nSTO 233 //stores result in A",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Name the final stage in the compilation process that follows this code generation stage.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Rewrite the equivalent code given above to show the effect of it being processed through\nthis final stage.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "State two benefits of the compilation process performing this final stage.\nBenefit 1 ______\nBenefit 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A compiler uses a keyword table and a symbol table. Part of the keyword table is shown below.",
+        "• Tokens for keywords are shown in hexadecimal.",
+        "• All the keyword tokens are in the range 00 – 5F.",
+        "Keyword Token",
+        "IF 4A",
+        "THEN 4B",
+        "ENDIF 4C",
+        "ELSE 4D",
+        "FOR 4E",
+        "STEP 4F",
+        "TO 50",
+        "INPUT 51",
+        "OUTPUT 52",
+        "ENDFOR 53",
+        "Entries in the symbol table are allocated tokens. These values start from 60 (hexadecimal).",
+        "Study the following piece of code:",
+        "Counter 1.5",
+        "INPUT Num1",
+        "// Check values",
+        "IF Counter = Num1",
+        "THEN",
+        "Num1 Num1 + 5.0",
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "State two items that are contained in an email packet apart from the data.",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain the role of routers in sending an email from one email server to another.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Sending an email message is an appropriate use of packet switching.\nExplain why this is the case.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "Packet switching is not always an appropriate solution.\nName an alternative communication method of transferring data in a digital network.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "Name an application for which the method identified in part (d) is an appropriate solution.\nJustify your choice.\nApplication ______\nJustification ______",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "An email is sent from one email server to another using packet switching."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Three descriptions and two types of processor are shown below.\nDraw a line to connect each description to the appropriate type of processor.\nDescription Type of processor\nMakes extensive use of\nRISC\ngeneral purpose registers\nMany addressing modes\nCISC\nare available\nHas a simplified set of\ninstructions",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "In a RISC processor three instructions (A followed by B, followed by C) are processed using\npipelining.\nThe following table shows the five stages that occur when instructions are fetched and\nexecuted.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "The ‘A’ in the table indicates that instruction A has been fetched in time interval 1.\nComplete the table to show the time interval in which each stage of each instruction (A,\nB, C) is carried out.\nTime interval\nStage 1 2 3 4 5 6 7 8 9\nFetch instruction A\nDecode instruction\nExecute instruction\nAccess operand in memory\nWrite result to register",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "The completed table shows how pipelining allows instructions to be carried out more\nrapidly. Each time interval represents one clock cycle.\nCalculate how many clock cycles are saved by the use of pipelining in the above example.\nShow your working.",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Complete the Boolean function that corresponds to the following truth table.\nINPUT OUTPUT\nA B C X\n0 0 0 0\n0 0 1 0\n0 1 0 0\n0 1 1 1\n1 0 0 0\n1 0 1 0\n1 1 0 1\n1 1 1 1\nX = A . B . C + ______\nThe part to the right of the equals sign is known as the sum-of-products.",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "For the truth table above complete the Karnaugh Map (K-map).\nAB\n00 01 11 10\n\nThe K-map can be used to simplify the function in part(a)(i).",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "Draw loop(s) around appropriate groups of 1’s to produce an optimal sum-of-products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5aiv",
+              "label": "(iv)",
+              "text": "Using your answer to part (a)(iii), write the simplified sum-of-products Boolean function.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The truth table for a logic circuit with four inputs is given below:\nINPUT OUTPUT\nA B C D X\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 1\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 1\n1 1 0 1 0\n1 1 1 0 1\n1 1 1 1 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Complete the K-map corresponding to the truth table above.\nAB\nCD",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Draw loop(s) around appropriate groups of 1’s to produce an optimal sum-of-products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5biii",
+              "label": "(iii)",
+              "text": "Using your answer to part (b)(ii), write the simplified sum-of-products Boolean function.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Explain the difference between a program and a process.\n\nA process can be in one of three states: running, ready or blocked.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "For each of the following, the process is moved from the first state to the second state.\nDescribe the conditions that cause each of the following changes of the state of a process:\nFrom running to ready ______\nFrom ready to running ______\nFrom running to blocked ______",
+          "marks": 6,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Explain why a process cannot be moved from the blocked state to the running state.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "Explain the role of the high-level scheduler in a multiprogramming operating system.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A number of processes are being executed in a computer."
+      ]
+    }
+  ]
+}

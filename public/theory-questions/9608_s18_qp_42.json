@@ -1,0 +1,415 @@
+{
+  "paperId": "9608_s18_qp_42",
+  "subjectCode": "9608",
+  "session": "s18",
+  "component": "42",
+  "totalMarks": 64,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "An algorithm has been written in pseudocode to represent the Create collections operation\nfrom the JSP structure diagram. The algorithm is incomplete.\nWrite pseudocode to complete this algorithm.\nREPEAT\nREPEAT\nCALL TakePhoto\nOUTPUT \"Do you want to take another photo?\"\nINPUT AddPhoto\nUNTIL AddPhoto = \"No\"\nREPEAT\nOUTPUT \"Do you want to add another user?\"\nINPUT NewUser\nUNTIL ______ = \"No\"\nOUTPUT \"Do you want to create another collection?\"\nUNTIL NewCollection = \"No\"",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The app is updated. Paul can now add and delete photos from chosen collections. Paul can\nalso delete collections.\nComplete the JSP structure diagram to show the changes.\nCAMplus\nManage\nLog in Log out\ncollections\nManage a\ncollection\nCreate a\ncollection\n* *\nAdd to\nAdd user\ncollection\n\nQuestion 2 begins on the next page.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Paul is using an application (app) called CAMplus. The app allows users to:",
+        "• log in",
+        "• create a new collection of photographs",
+        "• use the camera to take new photographs",
+        "• automatically add new photographs to the new collection",
+        "• share the new collection with other users",
+        "• start another collection or log out of the app.",
+        "The following JSP structure diagram represents the operation of CAMplus.",
+        "CAMplus",
+        "Log in Create collections Log out",
+        "Create a",
+        "collection",
+        "* *",
+        "Add to collection Add user",
+        "Add photo",
+        "Take photo",
+        "to collection"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative language is used to represent the following facts and rules about iguanas and",
+        "lizards.",
+        "01 has(reptile, cold_blood).",
+        "02 has(reptile, air_breathing)."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [
+        {
+          "id": "03a",
+          "label": "(a)",
+          "text": "More facts are to be included.\nA gecko is a type of lizard. It has a maximum size of 182 cm.\nWrite the additional clauses to record these facts.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03b",
+          "label": "(b)",
+          "text": "Using the variable R, the goal\nis_a(R, squamata).\nreturns\nR = iguana, lizard\nWrite the result returned by the goal\nis_a(T, iguana).\nT = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03c",
+          "label": "(c)",
+          "text": "Write the goal, using the variable X, to find what a squamata is.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03d",
+          "label": "(d)",
+          "text": "All iguanas and lizards are squamata. All squamata are reptiles.\nWrite a recursive rule to make all lizards and iguanas inherit the properties of reptiles.\nhas(X, Y)\nIF",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03e",
+          "label": "(e)",
+          "text": "State what the following goal returns.\nNOT(maxsize(cayman, 70)).\n\n3 The arrays PollData[1:10] and CardData[1:10] store data.\nPollData 12 85 52 57 25 11 33 59 56 91\nCardData 11 12 25 33 52 56 57 59 91 85\nAn insertion sort sorts these data.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03a",
+          "label": "(a)",
+          "text": "State why it will take less time to complete an insertion sort on CardData than on PollData.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03b",
+          "label": "(b)",
+          "text": "The following pseudocode algorithm performs an insertion sort on the CardData array.\nComplete the following pseudocode algorithm.\n01 ArraySize ← 10\n02 FOR Pointer ← 2 TO ______\n03 ValueToInsert ← CardData[Pointer]",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "has(reptile, scales).",
+        "05 is_a(squamata, reptile).",
+        "06 is_a(iguana, squamata).",
+        "07 is_a(lizard, squamata).",
+        "08 is_a(green_iguana, iguana).",
+        "09 is_a(cayman, iguana).",
+        "10 is_a(smooth_iguana, iguana).",
+        "12 maxsize(green_iguana, 152).",
+        "13 maxsize(cayman, 90).",
+        "14 maxsize(smooth_iguana, 70).",
+        "These clauses have the following meaning:",
+        "Clause Explanation",
+        "A reptile has cold blood.",
+        "A cayman is a type of iguana.",
+        "The maximum size of a green iguana is 152 cm."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "HolePosition ← ............................................................................................................."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE (HolePosition > 1 AND (.............................................. > ......................... ))"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CardData[HolePosition] ← CardData[..............................................................]"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "HolePosition ← ........................................................................................................."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CardData[HolePosition] ← ........................................................................................"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ci",
+              "label": "(i)",
+              "text": "A binary search algorithm is used to find a specific value in an array.\nExplain why an array needs to be sorted before a binary search algorithm can be used.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10cii",
+              "label": "(ii)",
+              "text": "The current contents of CardData are shown.",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 2,
+      "text": [
+        "ENDFOR",
+        "[7]"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11d",
+          "label": "(d)",
+          "text": "Complete this procedure to carry out a binary search on the array shown in part (c)(ii).\nPROCEDURE BinarySearch(CardData, SearchValue)\nDECLARE Midpoint : INTEGER\nFirst ← 1\nLast ← ARRAYLENGTH(______)\nFound ← FALSE\nWHILE (First <= Last) AND NOT(Found)\nMidpoint ← ______\nIF CardData[Midpoint] = SearchValue\nTHEN\nFound ← TRUE\nELSE\nIF SearchValue < CardData[Midpoint]\nTHEN\nLast ← ______\nELSE\nFirst ← ______\nENDIF\nENDIF\nENDWHILE\nENDPROCEDURE\n\nQuestion 4 begins on the next page.\n4 X-Games is an international extreme sports competition.\nA program will store and process data about the teams in the competition.\n• Each team is made up of members.\n• Members can be added and removed from each team.\n• Each member has a first name, last name, date of birth and gender.\n• Each member can be an official or a competitor.\n• Each official has a job title and may be first-aid trained.\n• Each competitor takes part in one sport.\nThe program is written using object-oriented programming.\nThe program can output the full name and date of birth of any member. For example, “Nadia Abad\n16/05/1995”\nAn introduction about a team member can be output using their name. For example, “Hello, I’m\nNadia Abad”.\nThe program outputs a different version of the introduction for a competitor. This version includes\nthe competitor’s sport. For example, “Hello, I’m Sally Jones and my sport is Skateboard Park.”",
+          "marks": 4,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Complete the following class diagram to show the attributes, methods and inheritance for the\nprogram.\nYou do not need to write the get and set methods.\nMember Team\nFirstName : STRING TeamName : STRING\nLastName : STRING TeamList : ARRAY OF Member\nDateOfBirth : DATE\nGender : STRING\nConstructor() Constructor()\nIntroduction() ______\nDisplayFullnameAndDateOfBirth() ______\nCompetitor Official\nSport : STRING\nConstructor() Constructor()\nIntroduction() DisplayJobTitle()",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Write program code for the Member class.\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Write program code for the Competitor class.\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11d",
+          "label": "(d)",
+          "text": "Omar Ellaboudy is an official at X-Games. He is first-aid trained and his job title is Judge. He\nis male and was born on 17/03/1993.\nWrite program code to create an instance of an object with the identifier BMXJudge. All\nattributes of the instance must be fully initialised.\nProgramming language ______\nProgram code\n\nQuestion 5 begins on the next page.\n5 A company is developing an application program. The project manager has been asked to create\na work breakdown schedule for the project as follows:\nActivity Days to complete Predecessor activity\nA Gather User Requirements 6\nB Design work 4 A\nC Develop server code 4 B\nD Develop application code 5 B\nE User Interface Development 6 B\nF Test server code 2 C\nG Test application 2 D, E\nH Test application/server integration 6 F, G\nI Roll out mobile application 6 H",
+          "marks": 3,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "A GANTT chart is created from the work breakdown schedule. Activities A and B have already\nbeen added to the chart.\nComplete the GANTT chart.\nActivity\nDay\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30\nnumber",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "State which activities can run in parallel on the following days.",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11bi",
+              "label": "(i)",
+              "text": "Day 14",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11bii",
+              "label": "(ii)",
+              "text": "Day 16",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Explain how the project manager will use the GANTT chart to make sure the project is\ncompleted on time.\n\n6 An Abstract Data Type (ADT) is used to create an unordered binary tree. The binary tree is created\nas an array of nodes. Each node consists of a data value and two pointers.\nA record type, Node, is declared using pseudocode.\nTYPE Node\nDECLARE DataValue : STRING\nDECLARE LeftPointer : INTEGER\nDECLARE RightPointer : INTEGER\nENDTYPE\nThe following statement declares an array BinaryTree.\nDECLARE BinaryTree : ARRAY[0:14] OF Node\nA variable, NextNode, points to the next free node.\nThe following diagram shows a possible node.\nArrayIndex DataValue LeftPointer RightPointer\n0 \"Red\" 1 2\nThe commands in the following table create and add nodes to the binary tree.\nCommand Comment\nCreateTree(NodeData)\nSets NextNode to 0.\nWrites NodeData into DataValue at the position NextNode\nUpdates NextNode using NextNode = NextNode + 1\nAttachLeft(NodeData, ParentNode)\nWrites NodeData into DataValue of NextNode\nSets the LeftPointer of node ParentNode to NextNode\nUpdates NextNode using NextNode = NextNode + 1\nAttachRight(NodeData, ParentNode)\nWrites NodeData into DataValue of NextNode\nSets the RightPointer of node ParentNode to NextNode\nUpdates NextNode using NextNode = NextNode + 1",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "The following commands are executed.\nCreateTree(\"Red\")\nAttachLeft(\"Blue\", 0)\nAttachRight(\"Green\", 0)\nThe following diagram shows the current state of the binary tree.\n0 \"Red\" 1 2\n1 \"Blue\" 2 \"Green\"\nWrite on the diagram to show the state of the binary tree after the following commands have\nbeen executed.\nAttachRight(\"Black\", 2)\nAttachLeft(\"Brown\", 2)\nAttachLeft(\"Peach\", 3)\nAttachLeft(\"Yellow\", 1)\nAttachRight(\"Purple\", 1)\nAttachLeft(\"White\", 6)\nAttachLeft(\"Pink\", 7)\nAttachLeft(\"Grey\", 9)\nAttachRight(\"Orange\", 9)",
+          "marks": 5,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "A new command has been added to initialise the pointers of the binary tree to − 1to indicate\nthey are not in use.\nA leaf is a node of the binary tree which has no children. In the case of this binary tree, a node\nwith a LeftPointer of − 1and a RightPointer of − 1is a leaf.\nWrite a recursive function, in program code, to traverse the binary tree and output the value\nof DataValue for each leaf node.\nProgramming language ______\nProgram code\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 42,
+      "text": [
+        "12 25 33 52 56 57 59 85 91",
+        "Explain how a binary search will find the value 25 in CardData.",
+        "[4]"
+      ]
+    }
+  ]
+}

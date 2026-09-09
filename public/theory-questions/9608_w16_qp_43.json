@@ -1,0 +1,455 @@
+{
+  "paperId": "9608_w16_qp_43",
+  "subjectCode": "9608",
+  "session": "w16",
+  "component": "43",
+  "totalMarks": 58,
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the state-transition diagram.\nstart\nDoor open\nno code set\nDoor closed",
+          "marks": 7,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A company wants to simulate the use of a safety deposit box. It will do this with object-oriented\nprogramming (OOP).\nThe following diagram shows the design for the class SafetyDepositBox. This includes the\nproperties and methods.\nSafetyDepositBox\nCode : STRING // 4 digits\nState : STRING // \"Open-NoCode\", \"Open-CodeSet\", \"Closed\"\n// or \"Locked\"\nCreate() // method to create and initialise an object\n// if using Python use __init__\nReset() // clears Code\nSetState() // set state to parameter value\n// and output new state\nSetNewCode() // sets Code to parameter value\n// output message and new code\nStateChange() // reads keypad and takes appropriate action\nWrite program code for the following methods.\nProgramming language ______",
+          "marks": null,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Create()",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Reset()",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "SetState()",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "SetNewCode()",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bv",
+              "label": "(v)",
+              "text": "The user must enter a 4-digit code.\nWrite program code for a function Valid(s : STRING)that returns:\n• TRUE if the input string s consists of exactly 4 digits\n• FALSE otherwise\nProgramming language ______",
+              "marks": 4,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bvi",
+              "label": "(vi)",
+              "text": "Convert the flowchart to program code for the method StateChange(). Use the\nproperties and methods in the original class definition and the Valid() function from\npart (v).\nMETHOD StateChange\nINPUT Chars\nIs State =\nYes Yes\nCALL Reset()\nIs Chars = 'R'?\n\"Open-CodeSet\"?\nNo\nNo\nCALL SetState(\"Open-NoCode\")\nYes Yes\nIs State =\nIs Chars = Code? CALL SetState(\"Open-CodeSet\")\n\"Locked\"?\nNo No\nYes\nIs State =\nCALL SetState(\"Locked\")\n\"Closed\"?\nNo\nIs Chars = \"\"\nYes\nand State =\nCALL SetState(\"Closed\")\n\"Open-CodeSet\"?\nNo\nYes Is State = Yes\nIs Chars a valid\nCALL SetNewCode(Chars)\n\"Open-NoCode\"?\n4-digit code?\nNo No\nCALL SetState(\"Open-CodeSet\")\nOUTPUT \"Error – OUTPUT \"Error –\ncode format does not match\nincorrect\" set code\"\nENDMETHOD\nProgramming language ______",
+              "marks": 12,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bvii",
+              "label": "(vii)",
+              "text": "The company needs to write a program to simulate a safety deposit box. The program\nwill create an object with identifier ThisSafe, which is an instance of the class\nSafetyDepositBox.\nThe main program design is:\ninstantiate ThisSafe (create and initialise ThisSafe)\nloop forever (continually use ThisSafe)\ncall StateChange() method\nend loop\nWrite program code for the main program.\nProgramming language ______",
+              "marks": 4,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "It is possible to declare properties and methods as either public or private.\nThe programmer has modified the class design for SafetyDepositBox as follows:\nSafetyDepositBox\nPRIVATE\nCode : STRING\nState : STRING\nPUBLIC\nCreate()\nStateChange()\nPRIVATE\nReset()\nSetState()\nSetNewCode()",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Describe the effects of declaring the SafetyDepositBox properties as private.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Describe the effects of declaring two methods of the class as public and the other three\nas private.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 40,
+      "text": [
+        "A user can lock a safety deposit box by inputting a 4-digit code. The user can unlock the box with",
+        "the same 4-digit code.",
+        "There is a keypad on the door of the safety deposit box. The following diagram shows the keys on",
+        "the keypad.",
+        "1 2 3",
+        "4 5 6",
+        "7 8 9",
+        "R 0 Enter",
+        "Initially, the safety deposit box door is open and the user has not set a code.",
+        "The operation of the safety deposit box is as follows:",
+        "A) To set a new code the door must be open. The user chooses a 4-digit code and sets it by",
+        "pressing the numerical keys on the keypad, followed by the Enter key. Until the user clears",
+        "this code, it remains the same. (See point E below)",
+        "B) The user can only close the door if the user has set a code.",
+        "C) To lock the door, the user closes the door, enters the set code and presses the Enter key.",
+        "D) To unlock the door, the user enters the set code. The door then opens automatically.",
+        "E) The user clears the code by opening the door and pressing the R key, followed by the Enter",
+        "key. The user can then set a new code. (See point A above)",
+        "The following state transition table shows the transition from one state to another of the safety",
+        "deposit box:",
+        "Current state Event Next state",
+        "Door open, no code set 4-digit code entered Door open, code set",
+        "Door open, code set R entered Door open, no code set",
+        "Door open, code set Close door Door closed",
+        "Door closed Set code entered Door locked",
+        "Door locked Set code entered Door open, code set",
+        "Door locked R entered Door locked"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Name the programming environment you have used when typing in program code.\nList three features of the editor that helped you to write program code.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Explain when and how your programming environment reports a syntax error.\nWhen ______\nHow ______\n\nQuestion 2 continues on page 12.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "The table shows a module definition for BinarySearch in three programming languages.\nStudy one of the examples. Indicate your choice by circling A, B or C:\nA B C\nA) Python\n01 def BinarySearch(List, Low, High, SearchItem):\n02 Index = -1",
+              "marks": null,
+              "type": "list",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Circle the programming language that you have studied:",
+        "Visual Basic (console mode) Python Pascal Delphi (console mode)"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "while (Index == -1) AND (Low <= High):"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Middle = (High + Low) // 2"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "if List[Middle] == SearchItem:"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Index = Middle"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "elif List[Middle] < SearchItem:"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Low = Middle + 1"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "else:"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "High = Middle - 1"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "return(Middle)",
+        "B) Pascal/Delphi",
+        "01 FUNCTION BinarySearch(VAR List : ARRAY OF INTEGER; Low, High,",
+        "SearchItem : INTEGER) : INTEGER;",
+        "02 VAR Index, Middle : INTEGER;",
+        "03 BEGIN",
+        "04 Index := -1;",
+        "05 WHILE (Index = -1) & (Low <= High) DO",
+        "06 BEGIN",
+        "07 Middle := (High + Low) DIV 2;",
+        "08 IF List[Middle] = SearchItem",
+        "09 THEN Index := Middle",
+        "10 ELSE IF List[Middle] < SearchItem",
+        "11 THEN Low := Middle + 1"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE High := Middle - 1;"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "END;"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Result := Middle;"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [
+        {
+          "id": "15b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "15bi",
+              "label": "(i)",
+              "text": "State whether programs written in your programming language are compiled or\ninterpreted.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "15bii",
+              "label": "(ii)",
+              "text": "A programmer corrects the syntax error and tests the function. It does not perform as\nexpected when the search item is not in the list.\nState the type of error: ______\nWrite down the line number where the error occurs.\nWrite the correct code for this line.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "15biii",
+              "label": "(iii)",
+              "text": "State the programming environment you have used when debugging program code.\nName two debugging features and describe how they are used.\n\n3 The following table shows part of the instruction set for a processor which has one general purpose\nregister, the Accumulator (ACC), and an index register (IX).\nInstruction\nExplanation\nOp\nOperand\ncode\nLDM #n\nImmediate addressing. Load the number n to ACC.\nLDD <address> Direct addressing. Load the contents of the given address to ACC.\nIndexed addressing. Form the address from <address> + the contents\nLDX <address> of the index register. Copy the contents of this calculated address to\nACC.\nLDR #n Immediate addressing. Load the number n into IX.\nSTO <address>\nStore the contents of ACC at the given address.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare\nJPE <address>\nwas True.\nFollowing a compare instruction, jump to <address> if the compare\nJPN <address>\nwas False.\nOutput to the screen the character whose ASCII value is stored in\nOUT\nACC.\nEND Return control to the operating system.\nA programmer is writing a program that outputs a string, first in its original order and then in\nreverse order.\nThe program will use locations starting at address NAME to store the characters in the string. The\nlocation with address MAX stores the number of characters that make up the string.\nThe programmer has started to write the program in the table opposite. The Comment column\ncontains descriptions for the missing program instructions.\nComplete the program using op codes from the given instruction set.\nOp\nLabel Operand Comment\ncode\nSTART: // initialise index register to zero\n// initialise COUNT to zero\nLOOP1: // load character from indexed address NAME\n// output character to screen\n// increment index register\n// increment COUNT starts here\n// is COUNT = MAX ?\n// if FALSE, jump to LOOP1\nREVERSE: // decrement index register\n// set ACC to zero\n// store in COUNT\nLOOP2: // load character from indexed address NAME\n// output character to screen\n// decrement index register\n// increment COUNT starts here\n// is COUNT = MAX ?\n// if FALSE, jump to LOOP2\n// end of program\nCOUNT:\nMAX: 4\nNAME: B01000110 // ASCII code in binary for 'F'\nB01010010 // ASCII code in binary for 'R'\nB01000101 // ASCII code in binary for 'E'\nB01000100 // ASCII code in binary for 'D'\n\n4 Commercial software usually undergoes acceptance testing and integration testing.\nDistinguish between the two types of testing by stating:\n• who does the testing\n• when the testing occurs\n• the specific purpose of each type of testing",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "15bi",
+              "label": "(i)",
+              "text": "Acceptance testing\nWho ______\nWhen ______\nPurpose ______",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "15bii",
+              "label": "(ii)",
+              "text": "Integration testing\nWho ______\nWhen ______\nPurpose ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "END;",
+        "C) Visual Basic",
+        "01 Function BinarySearch(ByRef List() As Integer, ByVal Low As Integer,",
+        "ByVal High As Integer, ByVal SearchItem As Integer) As Integer",
+        "02 Dim Index, Middle As Integer",
+        "03 Index = -1",
+        "04 Do While (Index = -1) & (Low <= High)",
+        "05 Middle = (High + Low) \\ 2",
+        "06 If List(Middle) = SearchItem Then",
+        "07 Index = Middle",
+        "08 ElseIf List(Middle) < SearchItem Then",
+        "09 Low = Middle + 1",
+        "10 Else",
+        "11 High = Middle - 1",
+        "12 End If",
+        "13 Loop",
+        "14 BinarySearch = Middle",
+        "15 End Function",
+        "The programming environment reported a syntax error in the BinarySearch code.",
+        "State the line number: .......................................................................................................",
+        "Write the correct code for this line.",
+        "[2]"
+      ]
+    }
+  ]
+}

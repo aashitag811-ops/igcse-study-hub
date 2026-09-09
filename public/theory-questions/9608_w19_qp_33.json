@@ -1,0 +1,523 @@
+{
+  "paperId": "9608_w19_qp_33",
+  "subjectCode": "9608",
+  "session": "w19",
+  "component": "33",
+  "totalMarks": 75,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "A real number is stored as a 12-bit normalised binary number as follows:\nMantissa Exponent\n0 1 0 1 0 0 1 0 0 0 1 0\nCalculate the denary value for this binary number. Show your working.\nWorking ______\nDenary value ______",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Calculate the normalised binary number for −3.75. Show your working.\nMantissa Exponent\nWorking ______",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The number of bits available to represent a real number is increased to 16.\nState the effect of increasing the size of the exponent by 4 bits.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "State why some binary representations can lead to rounding errors.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Complete the following descriptions by inserting the two missing terms.\n______ can occur in the exponent of a floating-point number, when the\nexponent has become too large to be represented using the number of bits available.\nA calculation results in a number so small that it cannot be represented by the number of bits\navailable. This is called ______ .",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Real numbers are stored using floating-point representation in a computer system.",
+        "This representation uses:",
+        "• 8 bits for the mantissa, followed by",
+        "• 4 bits for the exponent.",
+        "Two’s complement form is used for both the mantissa and the exponent."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following syntax diagrams for a programming language show the syntax of:",
+        "• a condition",
+        "• a variable",
+        "• a number",
+        "• a letter",
+        "• a digit",
+        "• an operator",
+        "condition",
+        "variable operator number",
+        "variable",
+        "variable",
+        "letter",
+        "number",
+        "digit digit",
+        "letter",
+        "digit operator",
+        "1 ==",
+        "2 >"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The following conditions are invalid.\nGive the reason in each case.",
+          "marks": null,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "35 > 24\nReason ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "abc := cba\nReason ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "bc < 49\nReason ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagram.\n<operator> ::= ______\n<number> ::= ______\n<variable> ::= ______\n<condition> ::= ______\n\n3 Protocols are essential for communication between computers.",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Explain why protocols are essential for communication between computers.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A protocol used in bus networks is CSMA/CD.\nExplain what is meant by CSMA/CD.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "<"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write the Boolean expression for the truth table as a sum-of-products.\nX = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the Karnaugh Map (K-map) for the truth table above.\nAB\n00 01 11 10\n\nThe K-map can be used to simplify the expression in part (a).",
+          "marks": 1,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Draw loops around appropriate groups in the K-map in part (b) to produce an optimal sum-of-\nproducts.",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Write, using your answer to part (c), a simplified sum-of-products expression for the truth\ntable.\nX = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A Boolean expression produces the following truth table.",
+        "INPUT OUTPUT",
+        "A B C X",
+        "0 0 0 1",
+        "0 0 1 1",
+        "0 1 0 0",
+        "0 1 1 1",
+        "1 0 0 0",
+        "1 0 1 1",
+        "1 1 0 0",
+        "1 1 1 1"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Explain why user-defined data types are necessary.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "An organisation stores data about its employees.\n• Employee ID is a five-digit number, for example, 01234.\n• Employee name is a string, for example, ‘Kiri Moana’.\n• Department is one of three values: Sales, Technical, Customer services.\n• Salary is an integer value in the range 25 000 to 150 000.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Complete the following pseudocode definition of a user-defined data type to store the\nemployee data.\nTYPE Employee\nDECLARE EmployeeID : ______\nDECLARE EmployeeName : STRING\nDECLARE Department : ( ______\n______)\nDECLARE Salary : 25000..150000",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Write a pseudocode statement to declare a variable, NewEmployee of data type\nEmployee.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5biii",
+              "label": "(iii)",
+              "text": "Write a pseudocode statement that assigns 02244 to the EmployeeID of\nNewEmployee.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5biv",
+              "label": "(iv)",
+              "text": "Employee is an example of a record that is a composite data type.\nState two other composite data types.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "An operating system (OS) uses a memory management technique called paging.\nExplain what is meant by the following terms.\nPage ______\nPage frame ______\nPage table ______",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Explain why an operating system needs to use scheduling algorithms.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "State what is meant by an interrupt.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "For a computer system using multi-programming, the low-level scheduler decides which\nprocess will get next use of the processor.\nOne algorithm could be a round-robin, which means every process gets use of the processor\nin sequence for a fixed amount of time (time-slice).\nFor a round-robin algorithm, five processes are currently loaded and get the use of the\nprocessor in the sequence:\nJOB21 – JOBSS – JOBPT – JOB32 – JOB42, then return to JOB21\nProcess JOB32 has just completed its time-slice.\nThe following paragraph describes what happens next. Complete the paragraph by inserting\nthe missing processes.\nInterrupt received from the low-level scheduler. Save all register contents for\nCopy the saved registers for ______ to the CPU.\nThe processor will now process ______ .",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Identify the four layers of the TCP/IP protocol suite.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The TCP/IP protocol suite is responsible for transmitting data across the Internet using packet\nswitching.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Explain why packet switching is used when sending data across the Internet.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Each packet requires a header.\nDescribe the purpose of a packet header.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7biii",
+              "label": "(iii)",
+              "text": "Identify three items that should be contained in a packet header.\nItem 1 ______\nItem 2 ______\nItem 3 ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Identify two data items present in a digital certificate.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The following paragraph describes how a digital signature is produced. Complete the\nparagraph by inserting an appropriate term in each space.\nplain text message. The message digest is ______ with the sender’s",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Digital certificates are used in internet communications. A Certificate Authority (CA) is responsible",
+        "for issuing a digital certificate."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The following incomplete table shows descriptions relating to computer architectures.\nComplete the table by inserting the appropriate terms.\nDescription Term\n• There are several processors.\n• Each processor executes different sets of instructions\non one set of data at the same time.\n• The processor has several ALUs.\n• Each ALU executes the same set of instructions on\ndifferent sets of data at the same time.\n• There is only one processor.\n• The processor executes one set of instructions on one\nset of data.\n• There are several processors.\nD • Each processor executes a different set of instructions. ______\n• Each processor operates on different sets of data.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "State three characteristics of massively parallel computers.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    }
+  ]
+}

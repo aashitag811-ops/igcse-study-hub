@@ -1,0 +1,377 @@
+{
+  "paperId": "9608_s21_qp_43",
+  "subjectCode": "9608",
+  "session": "s21",
+  "component": "43",
+  "totalMarks": 47,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The state-transition diagram shows the different states of the vending machine.\nComplete the state-transition diagram.\nTotal the\nmoney\ninserted\nCancel\nReturn\nmoney\nCheck\nCancel\ncode\nvalid\nCode re-entered\nValid code\nCheck\nSufficient money\ntotal\ninserted",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The vending machine is part of a program that is written using object-oriented programming\n(OOP). The vending machine makes use of two classes that are described in the following\ntables.\nAll attributes are declared as private.\nfoodItem\nname : STRING // the name of the item of food\ncode : STRING // the code to be entered for that item to be\n// selected\ncost : REAL // the cost of the item\nconstructor(nameP, codeP, // creates an instance of foodItem\ncostP) // takes the name, code and cost as parameters\ngetCode() // returns the code for the item\ngetCost() // returns the cost of the item\ngetName() // returns the name of the item\nvendingMachine\nitems : ARRAY[0:3] OF foodItem // stores four items of type foodItem\nmoneyIn : REAL // stores the total money inserted by the\n// user, initialised to 0 in the constructor\nconstructor(item1, item2, // creates an instance of vendingMachine,\nitem3, item4) // takes four objects of type foodItem as\n// parameters and stores them in array items\ninsertMoney() // takes the value of the coin as a parameter\n// and adds it to moneyIn\ncheckValid () // takes a code as a parameter and checks it is\n// valid against the food item codes\ngetItemName() // takes the array index as a parameter and\n// returns the name of the food items",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write program code to declare the class vendingMachine. You are only required to\nwrite program code for the attribute declarations and the constructor.\nIf you are writing in Python, include attribute declarations using comments.\nUse your programming language’s constructor method.\nProgramming language ______\nProgram code",
+              "marks": 4,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The method checkValid() takes the food item code as a parameter. It checks the\ncode against each element in items and returns:\n• –1 if the code is not valid\n• -2 if the code is valid, but the moneyIn is less than the cost of the item\n• the index of the item, if the code is valid and the moneyIn is greater than or equal\nto the cost of the item.\nWrite program code for the method checkValid().\nProgramming language ______\nProgram code",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Four objects of type foodItem are declared with the identifiers:\nchocolate, sweets, sandwich, apple\nWrite program code to declare an instance of vendingMachine with the identifier\nmachineOne and the objects: chocolate, sweets, sandwich, apple.\nProgramming language ______\nProgram code",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A vending machine allows users to insert coins to purchase an item.",
+        "The user then enters the code for the item they would like the machine to dispense (give out). The",
+        "user must re-enter the code until it is valid.",
+        "If the code is valid but the user has not inserted enough money for the item chosen, the machine",
+        "waits for more coins to be inserted. The user then has to re-enter the code.",
+        "The user can press cancel at any time to return the money inserted into the machine."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write pseudocode to define the record type customer.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The customer records are stored in a random file. The location of each record is calculated as\na hash value using:\n(customer.customerID modulus 1000) + 2",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Calculate the hash value for each of the customer IDs in the following table.\nCustomer ID Hash value\n40 125\n10 131",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Two or more records could have the same hash value that results in a collision.\nExplain how the hashing algorithm can be designed to handle collisions.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "The function, getCustomer():\n• takes the customer ID as a parameter\n• passes the customer ID to the function getRecordLocation(), which returns the\ncalculated hash value\n• reads and returns the record from the hashed location in the file\ncustomerRecords.dat\nYou can assume that both the file and the record being accessed exist.\nWrite pseudocode for the function getCustomer().",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Peter uses a record structure, customer, to store data about customers. The data includes:",
+        "• a unique customer ID between 10 000 and 99 999",
+        "• the customer's first name",
+        "• the customer's last name",
+        "• the customer's telephone number (for example, +44 1234567891)."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the Program Evaluation Review Technique (PERT) chart for the tasks in the table.",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "Alix manages a team of programmers who are creating a new computer game.",
+        "Alix has listed some of the tasks, along with their estimated time to complete and their immediate",
+        "predecessors in the following table:",
+        "Time to complete",
+        "Task Description Predecessors",
+        "(weeks)",
+        "A Design character – 1",
+        "Program character",
+        "B A 1",
+        "movement",
+        "C Design level 1 – 2",
+        "D Program level 1 C 2",
+        "E Design robot – 1",
+        "F Program robot movement E 1",
+        "G Integrate character in level 1 B, D 2",
+        "H Integrate robot in level 1 F, G 2",
+        "I Design level 2 C 2",
+        "J Program level 2 D, I 2",
+        "K Test level 1 H 3",
+        "Integrate character and",
+        "L J, K 2",
+        "robot into level 2"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Explain how the tasks in the table can be divided between the team to allow concurrency of\ntasks.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Explain the benefits of the team using program libraries in the development of the program.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Identify two features in an editor that the developers can use to help them create their\nprograms.\nFeature 1 ______\nFeature 2 ______\n\n4 Chon creates a binary tree structure to store options that the user can select from a menu (M) in\nhis program.\nC R\nA G L W",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "There are four new options that need to be added.\nIf option G is selected, the user must choose either option D or option H. If option L is selected,\nthe user must choose either option J or option P.\nComplete the following binary tree by adding options D, H, J and P.\nC R\nA G L W",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Each node in the binary tree is stored using the following record structure:\nTYPE node\nleftPointer : INTEGER\ndata : STRING\nrightPointer : INTEGER\nENDTYPE\nThe tree is stored as a 1D array, binaryTree. Null pointers are represented by –1.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "The table shows the contents of the three fields in each record stored in the 1D array\nbinaryTree.\nComplete the table to show the contents of binaryTree from part (a).\nrootPointer Index leftPointer data rightPointer\n0 M\nfreePointer 1 C\n2 A\n3 L\n4 G",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "7",
+        "2 5",
+        "K L",
+        "9 12 13",
+        "3 2",
+        "8 2",
+        "1 3 6",
+        "[5]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "R"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "W"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "J"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "D"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "P"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "The pseudocode function binarySearch()performs a binary search to find a given value in\nthe global array, dataArray. If the value is found, the function returns its index. If the value\nis not found, the function returns –1.\nComplete the pseudocode for the function binarySearch().\nFUNCTION binarySearch(BYVALUE upper, lower, searchValue : INTEGER)\nRETURNS INTEGER\nDECLARE flag : INTEGER\nDECLARE mid : INTEGER\nflag -2\nmid 0\nWHILE flag <> -1\nmid lower + ((upper − lower) …………………………………………)\nIF upper < lower\nTHEN\nRETURN …………………………………………\nELSE\nIF dataArray(mid) < searchValue\nTHEN\n………………………………………… …………………………………………\nELSE\nIF dataArray(mid) > searchValue\nTHEN\n………………………………………… …………………………………………\nELSE\nRETURN …………………………………………\nENDIF\nENDIF\nENDIF\nENDWHILE\nENDFUNCTION",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "The binary search algorithm can be written recursively.\nWrite program code for a recursive function recursiveBinarySearch().\nProgramming language ______\nProgram code\n\n6 The table shows assembly language instructions for a processor that has one general purpose\nregister, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nLabel Op Operand\ncode\nLDM #n Immediate addressing. Load the number n to ACC\nDirect addressing. Load the contents of the location at\nLDD <address>\nthe given address to ACC\nIndexed addressing. Form the address from <address>\nLDX <address>\n+ the contents of the Index Register. Copy the contents\nof this calculated address to ACC\nLDR #n Immediate addressing. Load the number n to IX\nSTO <address> Store contents of ACC at the given address\nADD <address> Add the contents of the given address to ACC\nINC <register> Add 1 to the contents of the register (ACC or IX)\nBitwise AND operation of the contents of ACC with the\nAND <address>\ncontents of <address>\nBitwise XOR operation of the contents of ACC with the\nXOR <address>\ncontents of <address>\nBitwise OR operation of the contents of ACC with the\nOR <address>\ncontents of <address>\nOutput to screen the character whose ASCII value is\nOUT\nstored in ACC\nCompare the contents of ACC with the contents of\nCMP <address>\n<address>\nCMP #n Compare the contents of ACC with number n\nFollowing a compare instruction, jump to <address> if\nJPE <address>\nthe compare was True\nFollowing a compare instruction, jump to <address> if\nJPN <address>\nthe compare was False\nJMP\nJump to the given address\n<address>\nEND\nReturn control to the operating system\n<label>: <op\nLabels an instruction\n<operand>\ncode>\n<label>: <data>\nGives a symbolic address <label> to the memory\nlocation with contents <data>\nAn algorithm takes each letter of a stored 5-letter word and checks if the letter is upper case.\nIf the letter is upper case, it outputs the letter.\nIf the letter is not upper case, it converts the letter to upper case and then outputs it.\nAll ASCII upper case letters have 010 as the three most significant bits.\nAssume each letter is alphabetic.\nComplete the assembly language program for the algorithm described using the instruction set\nprovided on the previous page.\nInstruction\nComment\nLabel Op code Operand\nLDR #0 // load zero to IX\n// load count and check if it is 5\nJPE endP // jump to end\nLDX word // load letter from indexed address word\n// check if it is upper case\nCMP #0\nJPE output // jump to output if it is upper case\nLDX word // load letter from indexed address word\n// convert to upper case\noutput: OUT // output the character\n// increase count by 1\nINC IX // increase IX by 1\nJMP start // return to start\nendP: end // end the program\nword: B01001000\nB01101111\nB01110101\nB01110011\nB01100101\nmask1: B00100000\nmask2: B11011111\ncount: 0\n\n7 Giles is writing a program that uses a stack.\nThe stack stores up to 1000 integers in the 1D array, stackArray.",
+          "marks": 5,
+          "type": "compare",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "The procedure setUpStack()takes two parameters:\n• the array, stackArray\n• a pointer to the last element pushed onto the stack, topOfStack\nThe procedure initialises all array elements to −1 and the pointer to −1.\nWrite pseudocode for the procedure setUpStack().",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "The function pop() pops and returns the item from the top of the stack. If the stack is empty,\nit returns −1.\nWrite pseudocode for the function pop().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "H",
+        "[4]"
+      ]
+    }
+  ]
+}

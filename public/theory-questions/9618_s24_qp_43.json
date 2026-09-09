@@ -1,0 +1,422 @@
+{
+  "paperId": "9618_s24_qp_43",
+  "subjectCode": "9618",
+  "session": "s24",
+  "component": "43",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The integer numbers will be stored in the global 1D array, DataStored, with space for up to\n20 integers.\nThe global variable NumberItems stores the quantity of items the array contains.\nWrite program code to declare DataStored and NumberItems.\nSave your program as Question1_J24.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The procedure Initialise():\n• prompts the user to input the quantity of numbers the user would like to enter\n• reads the input and validates it is between 1 and 20 (inclusive)\n• prompts the user to input each number and stores each number in DataStored.\nWrite program code for Initialise().\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The main program stores 0 in NumberItems, calls Initialise() and then outputs the\ncontents of DataStored.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Write program code for the main program.\nSave your program.\nCopy and paste the program code into part 1(c)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Test your program by inputting the following data in the order given:\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 1(c)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The procedure BubbleSort() uses a bubble sort to sort the data in DataStored into\nascending numerical order.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Write program code for BubbleSort().\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to call BubbleSort() and then output\nthe contents of DataStored.\nSave your program.\nCopy and paste the program code into part 1(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1diii",
+              "label": "(iii)",
+              "text": "Test your program by inputting the following data in the order given:\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 1(d)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The function BinarySearch():\n• takes the integer parameter DataToFind to search for in the array\n• performs an iterative binary search on the array DataStored\n• returns the index where DataToFind is found in DataStored. If DataToFind is not\nfound, the function returns −1.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "Write program code for the iterative function BinarySearch().\nSave your program.\nCopy and paste the program code into part 1(e)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to:\n• take a number as input from the user\n• call BinarySearch() with the number input\n• output the value returned from the function call as its parameter.\nSave your program.\nCopy and paste the program code into part 1(e)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eiii",
+              "label": "(iii)",
+              "text": "Test your program twice with the following inputs:\nTest 1: 5 1 6 2 8 10 2\nTest 2: 5 1 6 2 8 10 7\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 1(e)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "A program needs to take integer numbers as input, sort the numbers and then search for a specific",
+        "number."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Tree and its constructor.\nDo not declare the other methods.\nUse the appropriate constructor for your programming language.\nAll attributes must be private.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question2_J24.\nCopy and paste the program code into part 2(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "The get methods GetTreeName(), GetGrowth(), GetMaxHeight(),\nGetMaxWidth() and GetEvergreen() each return the relevant attribute.\nWrite program code for the get methods.\nSave your program.\nCopy and paste the program code into part 2(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The text file Trees.txt stores data about 9 trees.\nThe data in the file is stored in the format:\nTree name,Height growth each year,Maximum height,Maximum width,Evergreen\nFor example, the first row of data is:\nBeech,30,400,200,No\nThe tree is a Beech. It can grow 30 cm each year. It has a maximum height of 400 cm.\nIt has a maximum width of 200 cm. It is not evergreen (it loses its leaves).\nThe function ReadData():\n• creates an array of type Tree\n• reads the data from the file\n• raises an exception if the file is not found\n• creates a new object of type Tree for each tree in the file\n• appends each object to the array\n• returns the array.\nWrite program code for ReadData().\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The procedure PrintTrees() takes a Tree object as a parameter and outputs the tree’s\nname, height growth each year, maximum height, maximum width and whether it is evergreen.\nThe output message changes depending on whether it is evergreen.\nIf it is evergreen, it is in the format:\nTreeName has a maximum height MaxHeight a maximum width MaxWidth and grows\nHeightGrowth cm a year. It does not lose its leaves.\nIf it is not evergreen, it is in the format:\nTreeName has a maximum height MaxHeight a maximum width MaxWidth and grows\nHeightGrowth cm a year. It loses its leaves each year.\nWrite program code for PrintTrees().\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The main program calls ReadData(), stores the return value and calls PrintTrees() with\nthe first object in the returned array.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Write program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(d)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 2(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The procedure ChooseTree() takes an array of Tree objects as a parameter.\nThe procedure prompts the user to input their requirements for a tree.\nThe user needs to enter:\n• the maximum height the tree can be in cm\n• the maximum width the tree can be in cm\n• whether they want the tree to be evergreen, or not evergreen.\nA tree meets the requirements if:\n• the tree’s maximum height is not more than the user’s input\nand\n• the tree’s maximum width is not more than the user’s input\nand\n• the tree matches their evergreen input.\nThe procedure creates a new array of all the Tree objects that meet all the requirements.\nThe procedure calls PrintTrees() for each Tree object that meets all the requirements. If\nthere are no trees that meet all the requirements, a suitable message is output.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "Write program code for ChooseTree().\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "The procedure ChooseTree() needs amending. After the procedure has output the list\nof trees that meet all the requirements, the procedure needs to:\n• take as input the name of one of the trees that the user would like to buy from those\nthat meet all the requirements\n• take as input the height of the tree in cm when it is bought\n• calculate and output how many years it will take the tree to grow to its maximum\nheight.\nFor example, the user inputs the tree, Beech. The tree’s height is 40 cm when bought.\nThe tree will take 12 years to reach its maximum height of 400 cm.\nWrite program code to amend ChooseTree().\nSave your program.\nCopy and paste the program code into part 2(e)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eiii",
+              "label": "(iii)",
+              "text": "Write program code to amend the main program to call ChooseTrees().\nTest your program with the following tree requirements:\n• a maximum height of 400 cm\n• a maximum width of 200 cm\n• a tree that is evergreen (does not lose its leaves).\nWhen asked for the tree selection, use the following data:\n• first tree name entered is ‘Blue Conifer’\n• starting height is 100 cm.\nTake a screenshot of the outputs.\nSave your program.\nCopy and paste the screenshot into part 2(e)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 31,
+      "text": [
+        "A computer program will store data about trees.",
+        "The user can enter their requirements for a tree and a suitable tree will be selected.",
+        "The program is written using object‑oriented programming.",
+        "The class Tree stores data about the trees.",
+        "Tree",
+        "TreeName : STRING stores the name of the tree",
+        "HeightGrowth : INTEGER stores the number of cm the tree will grow each year",
+        "MaxHeight : INTEGER stores the maximum height in cm that the tree will grow",
+        "MaxWidth : INTEGER stores the maximum width in cm that the tree will grow",
+        "Evergreen : STRING stores whether the tree keeps its leaves as \"Yes\", or",
+        "loses its leaves as \"No\"",
+        "Constructor() initialises TreeName, HeightGrowth, MaxHeight,",
+        "MaxWidth and Evergreen to its parameter values",
+        "GetTreeName() returns the name of the tree",
+        "GetGrowth() returns the number of cm the tree will grow each year",
+        "GetMaxHeight() returns the maximum height in cm that the tree will grow",
+        "GetMaxWidth() returns the maximum width in cm that the tree will grow",
+        "GetEvergreen() returns whether the tree keeps its leaves or loses its",
+        "leaves"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The main program initialises all the elements in QueueData to a suitable null value,\nQueueHead to −1 and QueueTail to −1.\nWrite program code for the main program.\nSave your program as Question3_J24.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The function Enqueue() takes the data to insert into the queue as a parameter.\nIf the queue is not full, it inserts the parameter in the queue, updates the appropriate pointer(s)\nand returns TRUE. If the queue is full, it returns FALSE.\nWrite program code for Enqueue().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The function Dequeue() returns \"false\" if the queue is empty. If the queue is not empty, it\nreturns the next item in the queue and updates the appropriate pointer(s).\nWrite program code for Dequeue().\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The string values to be stored in the queue are 7 characters long. The first 6 characters are\ndigits and the 7th character is a check digit. The check digit is calculated from the first 6 digits\nusing this algorithm:\n• multiply the digits in position 0, position 2 and position 4 by 1\n• multiply the digits in position 1, position 3 and position 5 by 3\n• calculate the sum of the products (add together the results from all of the multiplications)\n• divide the sum of the products by 10 and round the result down to the nearest integer to\nget the check digit\n• if the check digit equals 10 then it is replaced with 'X'.\nExample:\nData is 954123\nCharacter position 0 1 2 3 4 5\nDigit 9 5 4 1 2 3\nMultiplier 1 3 1 3 1 3\nProduct 9 15 4 3 2 9\nSum of products = 9 + 15 + 4 + 3 + 2 + 9 = 42\nDivide sum of products by 10: 42 / 10 = 4 (rounded down)\nThe check digit = 4. This is inserted into character position 6.\nThe data including the check digit is: 9541234\nA 7‑character string is valid if the 7th character matches the check digit for that data. For\nexample, the data 9541235 is invalid because the 7th character (5) does not match the check\ndigit for 954123.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "The subroutine StoreItems() takes ten 7‑character strings as input from the user and\nuses the check digit to validate each input.\nEach valid input has the check digit removed and is stored in the queue using\nEnqueue().\nAn appropriate message is output if the item is inserted. An appropriate message is\noutput if the queue is already full.\nInvalid inputs are not stored in the queue.\nThe subroutine counts and outputs the number of invalid items that were entered.\nStoreItems() can be a procedure or a function as appropriate.\nWrite program code for StoreItems().\nSave your program.\nCopy and paste the program code into part 3(d)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to:\n• call StoreItems()\n• call Dequeue()\n• output a suitable message if the queue was empty\n• output the returned value if the queue was not empty.\nSave your program.\nCopy and paste the program code into part 3(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3diii",
+              "label": "(iii)",
+              "text": "Test the program with the following inputs in the order given:\n999999X\n1251484\n5500212\n0033585\n9845788\n6666666\n3258746\n8111022\n7568557\n0012353\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(d)(iii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A program reads data from the user and stores the data that is valid in a linear queue.",
+        "The queue is stored as a global 1D array, QueueData, of string values. The array needs space for",
+        "20 elements.",
+        "The global variable QueueHead stores the index of the first element in the queue.",
+        "The global variable QueueTail stores the index of the last element in the queue."
+      ]
+    }
+  ]
+}

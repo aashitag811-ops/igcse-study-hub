@@ -1,0 +1,475 @@
+{
+  "paperId": "9608_w21_qp_42",
+  "subjectCode": "9608",
+  "session": "w21",
+  "component": "42",
+  "totalMarks": 66,
+  "questionCount": 14,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Describe how an insertion sort will sort the data in NumberArray.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Another type of sorting algorithm is a bubble sort.\nThe procedure Bubble() takes an array as a parameter. It performs a bubble sort on the\narray. The sorting algorithm stops as soon as all the elements are in ascending order.\nComplete the procedure Bubble().\nPROCEDURE Bubble(BYREF NumberArray : ARRAY[0 : 99] OF INTEGER)\nDECLARE Outer : INTEGER\nDECLARE Swap : BOOLEAN\nDECLARE Inner : INTEGER\nDECLARE Temp : INTEGER\nOuter LENGTH(NumberArray) - 1\nREPEAT\nInner ______\nSwap FALSE\nREPEAT\nIF NumberArray[Inner] > NumberArray[Inner + 1]\nTHEN\nTemp NumberArray[Inner]\nNumberArray[Inner] NumberArray[Inner + 1]\nNumberArray[Inner + 1] Temp\nSwap ______\nENDIF\nInner Inner + 1\nUNTIL Inner = ______\nOuter Outer - 1\nUNTIL Swap = ______ OR Outer = ______\nENDPROCEDURE",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "An array, NumberArray, stores 100 integer values. The array needs to be sorted into ascending",
+        "numerical order."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Complete the JSP structure diagram for the following pseudocode procedure.",
+        "PROCEDURE Calculate()",
+        "INPUT Number1",
+        "INPUT Number2",
+        "INPUT Command",
+        "IF Command = 1",
+        "THEN",
+        "Value Function1(Number1, Number2)",
+        "ELSE",
+        "IF Command = 2",
+        "THEN",
+        "Value Function2(Number1, Number2)",
+        "ELSE",
+        "Value Function3(Number1, Number2)",
+        "ENDIF",
+        "ENDIF",
+        "OUTPUT Value",
+        "ENDPROCEDURE",
+        "JSP structure diagram",
+        "Calculate",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A user has to choose a new password to create an account. It is recommended that the password",
+        "has at least two of the following elements:",
+        "• upper-case letter",
+        "• numeric character",
+        "• symbol.",
+        "The system outputs:",
+        "• \"Strong\" if there are at least two of the elements",
+        "• \"Medium\" if there is only one of the elements",
+        "• \"Weak\" if there are none of the elements.",
+        "Complete the following decision table for the password system described.",
+        "Rules",
+        "One or more",
+        "upper-case N Y N Y N Y N Y",
+        "letters",
+        "One or more",
+        "Conditions",
+        "numeric N N Y Y N N Y Y",
+        "characters",
+        "One or more",
+        "N N N N Y Y Y Y",
+        "symbols",
+        "Strong",
+        "Actions Medium",
+        "Weak",
+        "[3]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write pseudocode to declare the record with the identifier Node.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Write pseudocode to declare a new node, Node100, and assign 100 to its data value, 1 to\nthe left pointer and 4 to the right pointer.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The ordered binary tree is stored as a 1D global array named BinaryTree of type Node.\nRootNode and FreePointer are declared as global variables.\nA null pointer is represented by –1.\nThe current state of the binary tree is shown in the following table:\nRootNode 0 Index LeftPointer Data RightPointer\n[0] 1 23 3\nFreePointer 6 [1] -1 5 2\n[2] -1 8 4\n[3] 5 100 -1\n[4] -1 9 -1\n[5] -1 88 -1\n[6] -1 null -1\n[7] -1 null -1",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "State the purpose of the free pointer.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Identify an appropriate integer value to represent null data.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4ciii",
+              "label": "(iii)",
+              "text": "Draw the current state of the binary tree.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4civ",
+              "label": "(iv)",
+              "text": "The procedure AddData():\n• takes the node to be added to the tree as a parameter\n• finds the location for the node to be stored\n• stores the node in the next free array index\n• stores –1 in the new node’s LeftPointer and RightPointer\n• updates the pointers in the other nodes\n• updates FreePointer.\nComplete the pseudocode for the procedure AddData().\nPROCEDURE AddData(NewNode)\nBinaryTree[FreePointer] ______\nBinaryTree[FreePointer].LeftPointer -1\nBinaryTree[FreePointer].RightPointer -1\nDECLARE PositionFound : BOOLEAN\nDECLARE PointerCounter : INTEGER\nPositionFound ______\nPointerCounter RootNode\nWHILE NOT ______\nIF ______ < BinaryTree[PointerCounter].Data\nTHEN\nIF BinaryTree[PointerCounter].LeftPointer = −1\nTHEN\nBinaryTree[PointerCounter].LeftPointer FreePointer\nPositionFound TRUE\nELSE\nPointerCounter BinaryTree[PointerCounter].LeftPointer\nENDIF\nELSE\nIF BinaryTree[PointerCounter].RightPointer = -1\nTHEN\nBinaryTree[PointerCounter].RightPointer FreePointer\nPositionFound TRUE\nELSE\nPointerCounter BinaryTree[PointerCounter].RightPointer\nENDIF\nENDIF\nENDWHILE\nFreePointer FreePointer ______\nENDPROCEDURE",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "Each node of a binary tree is a record. Each record has a left pointer, an integer data value",
+        "between 0 and 100 inclusive, and a right pointer.",
+        "For example:",
+        "Item Example data",
+        "LeftPointer 2",
+        "Data 34",
+        "RightPointer 3"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The function is called as follows:\nRecursive(1, 15)\nDry run the function and complete the trace table. Give the final return value.\nTrace table:\nFunction call Num1 Num2 Return value\nFinal return value ______\nWorking ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Rewrite the function Recursive() in pseudocode, using an iterative algorithm.",
+          "marks": 7,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "Study the following recursive pseudocode algorithm.",
+        "FUNCTION Recursive(Num1, Num2 : INTEGER) RETURNS INTEGER",
+        "IF Num1 > Num2",
+        "THEN",
+        "RETURN 10",
+        "ELSE",
+        "IF Num1 = Num2",
+        "THEN",
+        "RETURN Num1",
+        "ELSE",
+        "RETURN Num1 + Recursive(Num1 * 2, Num2)",
+        "ENDIF",
+        "ENDIF",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State which error will be the first retrieved from the stack.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The stack is implemented as a 1D array with the identifier ErrorArray.\nThe pointer LastItem stores the position of the last error in the array.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "The function, AddItemToStack, takes the next error, the array, and pointer as\nparameters.\nIf the stack is full, the function returns FALSE; otherwise it adds the error to the stack,\nchanges the pointer’s value and returns TRUE.\nComplete the following pseudocode for the function AddItemToStack.\nFUNCTION AddItemToStack(BYREF ErrorArray : ARRAY[0 : 99] OF Error,\nBYREF LastItem : INTEGER,\nBYVALUE Error1 : Error) RETURNS BOOLEAN\nIF LastItem = ______\nTHEN\nRETURN ______\nELSE\nErrorArray[LastItem + 1] ______\nLastItem ______\nRETURN ______\nENDIF\nENDFUNCTION",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Explain the reasons why ErrorArray and LastItem are passed by reference, but\nError1 is passed by value.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "The function RemoveItem takes the next error from the stack and returns it.\nIf there are no errors in the stack, it returns the global record NullError.\nComplete the pseudocode algorithm RemoveItem.\nFUNCTION RemoveItem(BYREF ErrorArray : ARRAY[0 : 99] OF Error,\nBYREF LastItem : INTEGER) RETURNS Error\nDECLARE ItemToRemove : Error\nIF ______\nTHEN\nRETURN ______\nELSE\nItemToRemove ErrorArray[______]\nLastItem LastItem - 1\nRETURN ______\nENDFUNCTION",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biv",
+              "label": "(iv)",
+              "text": "The errors that have been processed are stored in a global queue, ErrorComplete.\nThe function Enqueue adds a record to ErrorComplete:\nEnqueue(ErrorToAdd)\nEnqueue() returns TRUE if the record is successfully added to the queue, and returns\nFALSE if the queue is full.\nThe procedure RunError() should:\n• remove a record from the stack using the function RemoveItem()\n• output an appropriate message if there were no records in the stack\n• if an error record is returned, add the record to the queue using the function\nEnqueue()\n• if the record is added to the queue, output an appropriate message\n• if the record is not added to the queue, output an appropriate message.\nComplete the pseudocode procedure RunError().\nPROCEDURE RunError(BYREF ErrorComplete : ARRAY[0 : 99] OF Error,\nBYREF ErrorArray : ARRAY[0 : 99] OF Error)\nENDPROCEDURE",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "Details of errors generated in a program are stored in a stack.",
+        "Details of each error are stored in a record structure, Error."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "The constructor creates a new instance of a box. It takes the size of the box, one item of\ncontent and the lock code as parameters. The strength is initialised to 100.\nWrite program code to create the class and constructor for Box.\nDo not write the code for Unlock() or any of the set or get methods. Use the constructor for\nyour chosen language.\nProgramming language ______\nProgram code ______",
+          "marks": 5,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The player inputs the code to unlock the box. Each time they enter an incorrect code, the\nstrength of the box decreases by 1. If the strength of the box becomes 0, the box automatically\nunlocks.\nThe class Box has a method Unlock() that:\n• takes the code entered as a parameter and checks if it matches the code to unlock the\nbox\n• returns TRUE if the parameter matches the unlock code\n• subtracts 1 from Strength if the parameter does not match the unlock code\n• checks if the new value of Strength is less than 1\n• returns TRUE if the new value of Strength is less than 1, otherwise it returns FALSE.\nWrite program code for the method Unlock().\nProgramming language ______\nProgram code ______",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The text file, Progress.txt, stores data about the player’s previous progress.\nThe procedure LoadGame():\n• opens the text file in read mode\n• takes the data from the file and stores the data in the variable GameData\n• raises an exception with an appropriate message output if it cannot find the file.\nWrite program code for the procedure LoadGame().\nProgramming language ______\nProgram code ______",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A treasure box is hidden within a computer game.",
+        "The box has a code that needs to be entered to allow the user into the box. The box contains up",
+        "to 10 objects that are defined as being of the class FieldObject. The definition for the class Box",
+        "is:",
+        "Box",
+        "Size : STRING // small, medium or large",
+        "Contents : ARRAY[0 : 9] OF FieldObject // the 10 items the box holds",
+        "Lock : STRING // the code to unlock the box",
+        "Strength : INTEGER // the strength of the box",
+        "// decreases by 1 each time an",
+        "// incorrect code is entered",
+        "Constructor() // instantiates an object of the Box",
+        "// class and assigns initial values",
+        "// to the attributes",
+        "Unlock() // checks if the code is correct to",
+        "// unlock the box",
+        "GetContents() // returns the array",
+        "SetSize() // sets the size of the box",
+        "SetContents() // sets the contents of the box",
+        "SetLock() // sets the lock code",
+        "SetStrength() // sets the strength"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A game stores details about characters.",
+        "A declarative programming language is used to represent the following knowledge base:",
+        "01 hair(blonde).",
+        "02 hair(black).",
+        "03 hair(red).",
+        "04 face(glasses).",
+        "05 face(moustache).",
+        "06 face(beard).",
+        "07 person(ismail).",
+        "08 person(anisha)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "person(kim)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "person(kyle)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "has(kyle, glasses)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "has(kyle, beard)."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "has(anisha, red)."
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "has(kyle, black).",
+        "These clauses have the following meaning:",
+        "Clause Explanation",
+        "01 Hair can be blonde",
+        "Glasses can be on the face",
+        "Anisha is a person",
+        "12 Kyle has a beard",
+        "Anisha has red hair",
+        "A person, X, is a selected person if they have black hair and either a moustache or a beard.",
+        "Write a rule to represent this condition.",
+        "SelectedPerson(X)",
+        "IF",
+        "[2]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

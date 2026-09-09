@@ -1,0 +1,382 @@
+{
+  "paperId": "9608_s20_qp_43",
+  "subjectCode": "9608",
+  "session": "s20",
+  "component": "43",
+  "totalMarks": 68,
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State what is meant by an exception.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Give three situations where an exception handling routine would be required.",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Describe the benefits of using exception handling in a program.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Carlos is writing exception handling code for his program."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Programs can be written using recursion.\nTick (✓) one or more boxes to show the features that must be included in a valid recursive\nalgorithm.\nFeature Must be included\nIncrementation\nGeneral case\nBase case\nSelection case\nIt calls itself",
+          "marks": 2,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The following recursive procedure outputs every even number from the positive parameter\nvalue down to and including 2.\nThe procedure checks if the integer parameter is an even or an odd number. If the number is\nodd, the procedure converts it to an even number by subtracting 1 from it.\nThe function MOD(ThisNum : INTEGER, ThisDiv : INTEGER) returns the remainder\nvalue when ThisNum is divided by ThisDiv.\nComplete the pseudocode for the recursive procedure.\nPROCEDURE Count(BYVALUE ………………………………… : INTEGER)\nIF …………………………………(Number, 2) <> 0\nTHEN\nNumber Number – 1\nENDIF\nOUTPUT ……………………………………………………………\nIF Number > 0\nTHEN\n…………………………………(………………………………… – 1)\nENDIF\nENDPROCEDURE",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A program allows guests to input a meal option at a wedding.\nGuests can choose meal option 1 or meal option 2.\nThe program will keep count of the numbers of each meal option chosen.\nThe program ends when a value other than 1 or 2 is entered. It then outputs the count of each\nmeal option.\nPROCEDURE MealsCount(BYREF MealOption1 : INTEGER, MealOption2 : INTEGER)\nDECLARE MealOption : INTEGER\nDECLARE MoreMeals : BOOLEAN\nMoreMeals True\nWHILE MoreMeals = True\nINPUT MealOption\nIF MealOption = 1\nTHEN\nMealOption1 MealOption1 + 1\nELSE\nIF MealOption = 2\nTHEN\nMealOption2 MealOption2 + 1\nELSE\nOUTPUT MealOption1, \" \", MealOption2\nMoreMeals False\nENDIF\nENDIF\nENDWHILE\nENDPROCEDURE\nThe program contains a conditional loop.\nUse pseudocode to rewrite the conditional loop as a recursive algorithm.\nPROCEDURE MealsCount(BYREF MealOption1 : INTEGER, MealOption2 : INTEGER)\nDECLARE MealOption : INTEGER\nENDPROCEDURE",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative programming language is used to represent the following knowledge base.",
+        "01 person(jessica).",
+        "02 person(pradeep).",
+        "03 person(steffi)."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "person(johann)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "sport(football)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "sport(hockey)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "sport(cricket)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "sport(volleyball)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "plays(johann, football)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "plays(steffi, cricket)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "plays(jessica, football)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Elle is a person who plays rugby but refuses to play hockey.\nWrite additional clauses to represent this information.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Write the result returned by the goal:\nplays(X, football).\nX = ______",
+          "marks": 1,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "Y might play X, if Y is a person, X is a sport and Y does not refuse to play X.\nWrite this as a rule.\nmightplay(Y , X)\nIF ______\n\n4 Object-oriented programming has several features. These include inheritance, classes, methods\nand properties.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Describe what is meant by inheritance.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Identify two other features of object-oriented programming.\n\n5 A tennis club is developing a program to store details of the lessons it offers. The programmer has\ndesigned the class Lesson for the details of the lessons.\nThe following class diagram shows the design for the Lesson class.\nLesson\nLessonType : STRING // initialised in constructor to the parameter\n// value passed to the constructor\nInstructor : STRING // initialised in constructor to the parameter\n// value passed to the constructor\nConstructor() // method used to create and initialise an\n// object\nGetLessonType() // returns LessonType value\nGetInstructor() // returns Instructor value\nGetFee() // returns the cost of a lesson\nSetLessonType() // sets the LessonType to the parameter value\nSetInstructor() // sets the Instructor to the parameter value",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Write program code for the Constructor() method.\nUse the appropriate constructor method for your chosen programming language.\nProgramming language ______\nProgram code",
+          "marks": 3,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Write program code for the GetLessonType() method.\nProgramming language ______\nProgram code",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "Fee is the cost that a customer will pay for a lesson.\nThe method GetFee() validates the parameter value. The method is sent a parameter value\nthat represents the skill level of the customer: beginner, intermediate or advanced.\nThe parameter will be a character:\n• 'B' for beginner\n• 'I' for intermediate\n• 'A' for advanced.\nThe method must check the parameter value is a valid character ('B', 'I' or 'A') and\nreturn the correct fee. It must return -1 if it is not a valid character.\nThe fees are:\n• $45 for a beginner\n• $50 for an intermediate\n• $55 for an advanced.\nWrite program code for the GetFee() method.\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12d",
+          "label": "(d)",
+          "text": "The tennis club only offers nine different types of lesson. The lesson objects are stored in a\n1D array.\nWrite pseudocode to declare an array LessonArray to store the nine lesson objects.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12e",
+          "label": "(e)",
+          "text": "The tennis club has the lesson ‘Improve Your Serve’ that has David as the instructor.\nWrite program code to create the lesson ‘Improve Your Serve’ as an instance of the class\nLesson. The object needs to be stored in the third element of the array LessonArray.\nProgramming language ______\nProgram code\n\n6 A theatre company stores customer login details to allow customers to book tickets online.\nA hash table stores login details for 2000 customers.\nEach customer’s details are stored in a record.\nThe declaration for CustomerRecord is:\nTYPE CustomerRecord\nDECLARE UserID : STRING\nDECLARE PINNumber : INTEGER\nENDTYPE\nA 1D array, CustomerDetails, is used to implement the hash table. CustomerDetails is a\nglobal array. The 1D array has 6000 elements.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "The procedure InitialiseHashTable() initialises the hash table. UserID is initialised as\nan empty string, and PINNumber initialised to 0 for all of the records.\nWrite pseudocode for the procedure InitialiseHashTable().",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "The function InsertRecord() is used to insert a new record into the hash table.\nThe function, Hash():\n• takes a UserID as a parameter\n• performs the hashing algorithm\n• returns the calculated index of the user ID within the hash table.\nIf the hash table is full, the function InsertRecord() returns -1. If there is space available\nin the hash table, the record is inserted, and it returns the position of this record in the array.\nComplete the pseudocode for the function.\nFUNCTION InsertRecord(NewRecord : CustomerRecord) RETURNS INTEGER\nDECLARE Count : INTEGER\nDECLARE Index : INTEGER\nCount 0\nIndex Hash(…………………………………………………………………………………………………)\nWHILE (CustomerDetails[Index].UserID <> \"\") ……………………… (Count <= 5999)\nIndex Index + 1\nCount Count + 1\nIF Index > 5999\nTHEN\nENDIF\nENDWHILE\nIF Count > 5999\nTHEN\nELSE\nCustomerDetails[…………………………………………………] …………………………………………\nENDIF\nENDFUNCTION\n\n7 (a) A shirt design company has an order form to order shirts. Customers can order multiple shirts\nusing the same form.\nThe customer details section has the data:\n• name\n• address\n• telephone number.\nThe order details section has the data:\n• shirt ID\n• colour\n• cost.\nA total cost for the order is also calculated.\nThe cost of each shirt is dependent on the size ordered. The sizes customers can order are\nsmall, medium and large.\nComplete the following JSP data structure diagram for the order form.\nOrder Form\nCustomer Details Total Cost",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Each customer’s order is stored as a record in a file. The customers’ orders are stored in the\norder in which they arrive in the file and no key field is used.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "12bi",
+              "label": "(i)",
+              "text": "Identify this type of file structure.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "12bii",
+              "label": "(ii)",
+              "text": "Identify two other types of file structure.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "The procedure UpdateTelephone() allows the shirt company to update the record for a\ncustomer’s details. The procedure will update the telephone number.\nThe program stores customer details as a custom data type, Customer.\nThe definition for this data type is:\nTYPE Customer\nName : STRING\nAddress : STRING\nTelephoneNumber : STRING\nENDTYPE\nThe procedure UpdateTelephone() takes the customer record to be updated and the new\ntelephone number as parameters. It then updates the telephone number in the record.\nComplete the pseudocode for the procedure UpdateTelephone().\nPROCEDURE UpdateTelephone(………………………………… ThisCustomer : Customer,\n………………………………… NewTelephoneNumber : STRING)\nENDPROCEDURE",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12d",
+          "label": "(d)",
+          "text": "The shirt company is looking to implement a system to reward customers. The system\nincludes:\n• 10% discount on orders over $50\n• free gift if order over $50 and if the order is placed on a Monday\n• additional 5% discount if a customer has a loyalty card\n• free delivery for a customer with a loyalty card and spends over $50.\nComplete the following decision table for this system.\nOrder over $50 Y Y Y Y N N N N\nMonday Y Y N N Y Y N N\nConditions\nLoyalty card Y N Y N Y N Y N\nAdditional 5% discount\n10% discount\nFree gift\nActions\nFree delivery\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 50,
+      "text": [
+        "will_not_play(pradeep, cricket).",
+        "These clauses have the following meanings:",
+        "Clause Meaning",
+        "Jessica is a person",
+        "Football is a sport",
+        "09 Johann plays football",
+        "Pradeep refuses to play cricket"
+      ]
+    }
+  ]
+}

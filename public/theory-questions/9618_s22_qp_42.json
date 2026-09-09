@@ -1,0 +1,325 @@
+{
+  "paperId": "9618_s22_qp_42",
+  "subjectCode": "9618",
+  "session": "s22",
+  "component": "42",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write program code to declare the array and pointer as global data structures. Initialise the\npointer to 0.\nSave your program as Question1_J22.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write a procedure to output all 10 elements in the stack and the value of StackPointer.\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The function Push() takes an integer parameter and returns FALSE if the stack is full. If the\nstack is not full, it puts the parameter value on the stack, updates the relevant pointer and\nreturns TRUE.\nWrite program code for the function Push().\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Edit the main program to test the Push() function. The main program needs to:\n• allow the user to enter 11 numbers and attempt to add these to the stack\n• output an appropriate message when a number is added to the stack\n• output an appropriate message when a number is not added to the stack if it is full\n• output the contents of the stack after attempting to add all 11 numbers.\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 5,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Test your program from part 1(d)(i) with the following 11 inputs:\n11 12 13 14 15 16 17 18 19 20 21\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 1(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The function Pop() returns −1 if the stack is empty. If the stack is not empty, it returns the\nelement at the top of the stack and updates the relevant pointer.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "Write program code for the function Pop().\nSave your program.\nCopy and paste the program code into part 1(e)(i) in the evidence document.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "After the code you wrote in the main program for part 1(d)(i), add program code to:\n• remove two elements from the stack using Pop()\n• output the updated contents of the stack.\nTest your program and take a screenshot to show the output.\nCopy and paste the screenshot into part 1(e)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 25,
+      "text": [
+        "A program needs to use a stack data structure. The stack can store up to 10 integer elements.",
+        "A 1D array StackData is used to store the stack globally. The global variable StackPointer",
+        "points to the next available space in the stack and is initialised to 0."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The main program declares a 2D array of 10 by 10 integer elements.\nThe array is initialised with a random number between 1 and 100 in each element.\nWrite program code for the main program.\nSave your program as Question2_J22.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The following bubble sort pseudocode algorithm sorts the data in the first dimension of the 2D\narray into ascending numerical order.\nArrayLength 10\nFOR X 0 TO ArrayLength - 1\nFOR Y 0 TO ArrayLength - 2\nFOR Z 0 TO ArrayLength - Y - 2\nIF ArrayData[X, Z] > ArrayData[X, Z + 1] THEN\nTempValue ArrayData[X, Z]\nArrayData[X, Z] ArrayData[X, Z+1]\nArrayData[X, Z + 1] TempValue\nENDIF\nNEXT Z\nNEXT Y\nNEXT X",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Amend your main program by writing program code to implement the bubble sort\nalgorithm after the initialisation of the array elements.\nYou must not use any built-in sorting functions for your programming language.\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Write program code for a procedure to output all the values in the 2D array. The values\nshould be output as a 2D grid, with values in rows and columns.\nCall the procedure before and after your bubble sort code.\nSave your program.\nCopy and paste the program code into part 2(b)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 2(b)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The following pseudocode function uses recursion to perform a binary search in the first row\nof the array, for the value SearchValue in the array SearchArray.\nThe function returns −1 if the item was not found, or it returns the index where it is found.\nThere are six incomplete statements.\nFUNCTION BinarySearch(SearchArray, Lower, Upper, SearchValue)RETURNS\nINTEGER\nIF Upper >= Lower THEN\nMid (Lower + (Upper – 1)) DIV …………………………………\nIF SearchArray[0, Mid] = ………………………………… THEN\nRETURN …………………………………\nELSE\nIF SearchArray[0, Mid] > SearchValue THEN\nRETURN BinarySearch(SearchArray, …………………………………, Mid – 1,\nSearchValue)\nELSE\nRETURN BinarySearch(SearchArray, Mid + 1, …………………………………,\nSearchValue)\nENDIF\nENDIF\nENDIF\nRETURN …………………………………\nENDFUNCTION\nNote: the arithmetic operator DIV performs integer division, e.g. the result of 10 DIV 3 will be 3.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Write program code for the recursive function BinarySearch().\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
+              "marks": 8,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "In the main program, test the function BinarySearch() twice, outputting the returned\nvalue each time.\nOne test should be for a number that is in the first line of the array.\nOne test should be for a number that is not in the first line of the array.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 2(c)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 23,
+      "text": [
+        "A 2D array stores data entered by a user."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The constructor takes the number and colour of the card as parameters and sets them to the\nprivate attributes.\nWrite program code to declare the class Card and its constructor. Do not write any other\nmethods.\nUse your programming language appropriate constructor.\nAll attributes should be private. If you are writing in Python, include attribute declarations\nusing comments.\nSave your program as Question3_J22.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The two get methods return the associated attribute.\nWrite program code for the get methods GetNumber() and GetColour().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The text file CardValues.txt stores the data for 30 cards, in the order: number, colour.\nFor example, the first card in the text file:\n1 is the number\nred is the colour.\nA 1D array of type Card is declared to store all the cards read in from CardValues.txt\nWrite the main program to:\n• declare an array of type Card with 30 elements\n• read in the data for the 30 cards from CardValues.txt and assign each to the array.\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The program needs to allow all players (maximum of 5) to select 4 cards from the 30 available.\nA card can only be selected once, so the program needs to record which cards have already\nbeen selected.\nThe function, ChooseCard():\n• takes as input an integer to represent an array index from 1 to 30\n• validates that the value is between 1 and 30 inclusive\n• checks if the card is available (it has not already been selected)\n• loops until an available card is selected\n• returns the index of the card if it is available.\nAmend the program to store which cards have already been selected and write program\ncode for the function ChooseCard().\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "The main program needs to allow one player to select all their 4 cards.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Amend the main program to:\n• create an array, Player1, for player 1 of type Card\n• ask player 1 to input 4 integers using the function from part 3(d)\n• store the cards in Player1\n• output the number and colour of the 4 cards in Player1.\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": 5,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Test your program with the following test data:\nTest 1: 1 5 9 10\nTest 2: 2 2 3 4 4 5\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "A programmer is designing a computer game that uses a set of cards.",
+        "Each card has a number and a colour. The cards are saved in the text file CardValues.txt",
+        "The program has a class named Card. The class has the following attributes and methods.",
+        "Card",
+        "Number : INTEGER",
+        "The number of the card",
+        "Colour : STRING",
+        "The colour of the card",
+        "Constructor()",
+        "Takes two values as parameters and sets them to the private",
+        "attributes",
+        "GetNumber()",
+        "Returns the number of the card",
+        "Returns the colour of the card",
+        "GetColour()"
+      ]
+    }
+  ]
+}

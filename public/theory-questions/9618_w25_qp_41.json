@@ -1,0 +1,388 @@
+{
+  "paperId": "9618_w25_qp_41",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "41",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write program code to declare Stack, initialise each element in the array with a null value\nand declare and initialise TopOfStack\nSave your program as Question1_N25.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The function Push() takes an integer parameter. If the stack is full, the function returns\nFALSE. If the stack is not full, the parameter is inserted into the stack, the pointer is updated\nand the function returns TRUE\nWrite the program code for Push()\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The function Pop() returns the next integer in the stack and updates the pointer as\nappropriate. If there is no data in the stack, the function returns the value –999\nWrite program code for Pop()\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The main program generates 40 random integers between 0 and 1000 (inclusive) and attempts\nto insert each one into the stack using the appropriate function. If the return value from the\nfunction call indicates the stack is full, no more integers are generated and \"Stack full\" is\noutput.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 1(d) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The procedure FindValues():\n• pops each integer from the stack until the stack is empty\n• finds and outputs the largest number that was in the stack in an appropriate message\n• finds and outputs the smallest number that was in the stack in an appropriate message.\nWrite program code for FindValues()\nSave your program.\nCopy and paste the program code into part 1(e) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1fi",
+              "label": "(i)",
+              "text": "Extend the main program to call FindValues()\nSave your program.\nCopy and paste the program code into part 1(f)(i) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1fii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 1(f)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A program stores integers in a stack. The stack is represented as a 1D array of 30 elements with",
+        "the identifier Stack",
+        "The global pointer TopOfStack stores the index of the last element inserted into the stack.",
+        "TopOfStack is initialised to –1"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Train and its constructor.\nDo not declare the other methods.\nAll attributes should be private.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question2_N25.\nCopy and paste the program code into part 2(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "The methods GetTrainIDNumber() and GetRoute() return the appropriate attribute.\nWrite program code for GetTrainIDNumber() and GetRoute()\nSave your program.\nCopy and paste the program code into part 2(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The program is tested with four trains:\ntrain ID number route\n12ADV 134\n33ART 20\n9FKF 3\n21VBC 24\nWrite program code to declare an instance of Train for each of the four trains.\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The class Station stores the data about the stations:\nStation\nstores the station ID\nStationID : String\nstores the number of platforms at the station\nNumberPlatforms : Integer\nstores the trains currently at the station platforms\nTrains[0:9] : Train\nstores the number of trains currently at the station\nNumberTrains : Integer\nplatforms\nConstructor() initialises StationID and NumberPlatforms\nto the parameter values, initialises Trains to an\nempty array and NumberTrains to 0\nGetTrains() returns a string containing data about the trains\ncurrently at the station platforms\nAddTrain() takes a Train parameter and stores it if there is a\nplatform available; each platform can only have one\ntrain",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Write program code to declare the class Station and its constructor.\nDo not declare the other methods.\nAll attributes should be private.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
+              "marks": 3,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "The method AddTrain() takes a Train parameter. The method compares the\nattributes NumberTrains and NumberPlatforms to identify if there is a platform\navailable (a platform currently with no train).\nThe method returns FALSE if there are no platforms available.\nIf there is a platform available, the method:\n• stores the Train parameter in the array Trains\n• updates the appropriate attribute(s)\n• returns TRUE\nWrite program code for AddTrain()\nSave your program.\nCopy and paste the program code into part 2(c)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "The method GetTrains() returns the string \"There are no trains\" if there are no\ntrains at the station platforms.\nIf there are trains at the station platforms, the method returns a string in the format:\nThe trains at station <StationID> are:\n<TrainIDNumber> on route number <Route>\nThe line <TrainIDNumber> on route number <Route> is repeated for each train\nat the station platforms.\nFor example: If the station with the station ID \"NT1\" has two trains with the train ID\nnumbers \"48RTG\", \"6UFH\", the method will produce this output:\nThe trains at station NT1 are:\n48RTG on route number 43\n6UFH on route number 12\nWrite program code for GetTrains()\nSave your program.\nCopy and paste the program code into part 2(c)(iii) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The program is tested with two stations:\nnumber of\nstation ID\nplatforms\nSTH 2\nNTH 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Write program code to amend the main program to declare an instance of Station for\neach of the two stations.\nSave your program.\nCopy and paste the program code into part 2(d)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "The four trains attempt to stop at the following stations in the order given:\n• Train 12ADV, station STH\n• Train 33ART, station STH\n• Train 9FKF, station STH\n• Train 21VBC, station NTH\nWrite program code to amend the main program to:\n• add each train to the given station using AddTrain()\n• output \"Station is full\" for any train where the return value indicates it cannot\nbe added to the station\n• output the trains at each station using GetTrains()\nSave your program.\nCopy and paste the program code into part 2(d)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2diii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 2(d)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "A program stores data about trains and train stations using Object-Oriented Programming (OOP).",
+        "The class Train stores the data about the trains:",
+        "Train",
+        "stores the train ID number",
+        "TrainIDNumber : String",
+        "stores the route number the train is travelling",
+        "Route : Integer",
+        "Constructor() initialises TrainIDNumber and Route to the parameter",
+        "values",
+        "GetTrainIDNumber() returns the train ID number",
+        "GetRoute() returns the route number the train is travelling"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The class Record stores data about the records:\nRecord\nKey : Integer stores the integer key field for the data\nData : String stores the string data\nConstructor() initialises Key and Data to its parameter values\nThe attributes Key and Data are public.\nWrite program code to declare the class Record and its constructor.\nUse your programming language appropriate constructor.\nSave your program as Question3_N25.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The procedure InitialiseHashTable() initialises each element in the array to an empty\nor null record.\nWrite program code to declare the global 2D array HashTable and the procedure\nInitialiseHashTable()\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The function Hash():\n• takes an integer key field as a parameter\n• calculates and returns the hash value of the key field.\nThe hash value is the result from the formula: key MOD 100\nWrite program code for Hash()\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The procedure InsertData():\n• takes an object of type Record as a parameter\n• calculates the hash value for the parameter using the appropriate function\n• stores the parameter in the correct position in HashTable\nYou can assume there will be no more than 10 objects that generate the same hash value.\nWrite program code for InsertData()\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "The file \"HashTableData.txt\" stores 200 key values and string data items in the format:\nkey,string\nFor example, the first row in the text file is:\n528,permission\nThe key is 528 and the string data is \"permission\"\nThe procedure ReadData():\n• opens the text file and reads each line\n• splits each line into the key and data\n• calls InsertData() with an object containing each key and matching data.\nWrite program code for ReadData()\nSave your program.\nCopy and paste the program code into part 3(e) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3f",
+          "label": "(f)",
+          "text": "The function GetRecord():\n• takes an integer key field as a parameter\n• calculates the hash value for the key field using the appropriate function\n• searches the hash table for the record with the matching key field\n• returns the data for the record if the record is found\n• returns \"Not found\" if the record is not found.\nWrite program code for GetRecord()\nSave your program.\nCopy and paste the program code into part 3(f) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3g",
+          "label": "(g)",
+          "text": "The main program:\n• calls InitialiseHashTable() and ReadData()\n• takes five integer key fields as input from the user\n• calls GetRecord() with each input and outputs the return value.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3gi",
+              "label": "(i)",
+              "text": "Write program code for the main program.\nSave your program.\nCopy and paste the program code into part 3(g)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3gii",
+              "label": "(ii)",
+              "text": "Test your program with the following five inputs in the order given:\n1128\n1828\n1062\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 3(g)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 25,
+      "text": [
+        "A program stores records in the 2D array HashTable. Each record is stored at a specific index of",
+        "the array that is calculated using a hashing algorithm with the record’s key field.",
+        "The array has 100 × 10 elements. The hashing algorithm uses the key to generate an index",
+        "between 0 and 99 (inclusive). If two key fields generate the same index, there is a collision. Any",
+        "records that have a collision are stored in the next space in the same index.",
+        "For example: In this table two record keys generated the same hash value of 1. Four record keys",
+        "generated the same hash value of 3.",
+        "Index 0 1 2 3 4 5 … 9",
+        "0 record",
+        "1 record record",
+        "3 record record record record",
+        "The program uses Object-Oriented Programming (OOP)."
+      ]
+    }
+  ]
+}

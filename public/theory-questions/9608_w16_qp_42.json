@@ -1,0 +1,484 @@
+{
+  "paperId": "9608_w16_qp_42",
+  "subjectCode": "9608",
+  "session": "w16",
+  "component": "42",
+  "totalMarks": 67,
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the state-transition diagram.\nstart\nCoin inserted\nCancelled\nCoins returned",
+          "marks": 7,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A company wants to simulate the use of a ticket machine. It will do this with object-oriented\nprogramming (OOP).\nThe following diagram shows the design for the class TicketMachine. This includes its\nattributes and methods.\nTicketMachine\nAmount : INTEGER // total value of coins inserted in cents\nState : STRING // \"Idle\", \"Counting\", \"Cancelled\"\n// or \"Accepted\"\nCreate() // method to create and initialise an object\n// if using Python use __init__\nSetState() // set state to parameter value\n// and output new state\nStateChange() // insert coin or press button,\n// then take appropriate action\nCoinInserted() // parameter is a string\n// change parameter to integer\n// and add coin value to Amount\nReturnCoins() // output Amount, then set Amount to zero\nPrintTicket() // print ticket, then set Amount to zero\nWrite program code for the following methods.\nProgramming language ______",
+          "marks": null,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Create()",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "SetState()",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "ReturnCoins()",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "Each coin inserted must be one of the following: 10, 20, 50 or 100 cents.\nWrite program code for a function ValidCoin(s : STRING) that returns:\n• TRUE if the input string is one of \"10\", \"20\", \"50\" or \"100\"\n• FALSE otherwise\nProgramming language ______",
+              "marks": 3,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bv",
+              "label": "(v)",
+              "text": "Write program code for the method CoinInserted()",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bvi",
+              "label": "(vi)",
+              "text": "Convert the flowchart to program code for the method StateChange().\nUse the attributes and methods in the original class definition and the ValidCoin()\nfunction from part (iv).\nMETHOD StateChange\nINPUT NewInput\nIs State =\nYes Yes\nCALL SetState(\"Cancelled\")\nIs NewInput = 'C'?\n\"Counting\"?\nNo\nCALL ReturnCoins()\nNo\nYes Yes\nOUTPUT \"No\nIs NewInput = 'A'? Is Amount = 0?\ncoins inserted\"\nNo\nNo\nCALL SetState(\"Accepted\") CALL PrintTicket()\nYes\nIs NewInput\nCALL CoinInserted(NewInput)\na valid\ncoin?\nNo\nCALL SetState(\"Counting\") CALL SetState(\"Idle\")\nOUTPUT \"Error –\nnot a valid\ncoin\"\nENDMETHOD\nProgramming language ______",
+              "marks": 12,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bvii",
+              "label": "(vii)",
+              "text": "The company needs to write a program to simulate a parking meter. The program\nwill create an object with identifier ParkingMeter, which is an instance of the class\nTicketMachine.\nThe main program design is:\ninstantiate ParkingMeter (create and initialise ParkingMeter)\nloop forever (continually use ParkingMeter)\ncall StateChange() method\nend loop\nWrite program code for the main program.\nProgramming language ______",
+              "marks": 4,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "It is possible to declare attributes and methods as either public or private.\nA programmer has modified the class design for TicketMachine as follows.\nTicketMachine\nPRIVATE\nAmount : INTEGER\nState : STRING\nPUBLIC\nCreate()\nStateChange()\nPRIVATE\nSetState()\nCoinInserted()\nReturnCoins()\nPrintTicket()",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Describe the effects of declaring the TicketMachine attributes as private.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Describe the effects of declaring two methods of the class as public and the other four as\nprivate.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 39,
+      "text": [
+        "The ticket machine in the following diagram accepts the following coins: 10, 20, 50 and 100 cents.",
+        "The ticket machine has:",
+        "• a slot to insert coins",
+        "• a tray to return coins",
+        "• a ticket dispenser",
+        "• two buttons:",
+        "• button A (Accept)",
+        "• button C (Cancel)",
+        "Coin Slot",
+        "Coin",
+        "Ticket dispenser",
+        "return",
+        "tray",
+        "When the user has inserted as many coins as required, they press button A to print the ticket.",
+        "To cancel the transaction, the user can press button C. This makes the machine return the coins.",
+        "Invalid coins have no effect.",
+        "The following state transition table shows the transition from one state to another of the ticket",
+        "machine:",
+        "Current state Event Next state",
+        "Idle Coin inserted Counting",
+        "Counting Coin inserted Counting",
+        "Counting Button C pressed Cancelled",
+        "Cancelled Coins returned Idle",
+        "Counting Button A pressed Accepted",
+        "Accepted Ticket printed Idle"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Commercial software usually undergoes alpha testing and beta testing.",
+        "Distinguish between the two types of testing by stating:",
+        "• who does the testing",
+        "• when the testing occurs",
+        "• the specific purpose of each type of testing"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The numerical difference between the ASCII code of an upper case letter and the ASCII code\nof its lower case equivalent is 32 denary (32 ).\nFor example, 'F' has ASCII code 70 and 'f' has ASCII code 102.\nBit number\n7 6 5 4 3 2 1 0\nASCII code ASCII code in binary\n70 0 1 0 0 0 1 1 0\n0 1 1 0 0 1 1 0\nThe bit patterns differ only at bit number 5. This bit is 1 if the letter is lower case and 0 if the\nletter is upper case.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "A program needs a mask to ensure that a letter is in upper case.\nWrite the binary pattern of the mask in the space provided in the table below.\nBit number\n7 6 5 4 3 2 1 0\nASCII code ASCII code in binary\n70 0 1 0 0 0 1 1 0\n0 1 1 0 0 1 1 0\nMask\nGive the bit-wise operation that needs to be performed using the mask and the\nASCII code.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "A program needs a mask to ensure that a letter is in lower case.\nWrite the binary pattern of the mask in the space provided in the table below.\nBit number\n7 6 5 4 3 2 1 0\nASCII code ASCII code in binary\n70 0 1 0 0 0 1 1 0\n0 1 1 0 0 1 1 0\nMask\nGive the bit-wise operation that needs to be performed using the mask and the\nASCII code.\n\nThe following table shows part of the instruction set for a processor which has one general\npurpose register, the Accumulator (ACC), and an index register (IX).\nInstruction\nExplanation\nOp Operand\ncode\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the given address to\nLDD <address>\nACC.\nIndexed addressing. Form the address from <address> +\nLDX <address>\nthe contents of the index register. Copy the contents of this\ncalculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n into IX.\nSTO <address>\nStore the contents of ACC at the given address.\nINC <register> Add 1 to the contents of the register (ACC or IX).\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the\nJPE <address>\ncompare was True.\nFollowing a compare instruction, jump to <address> if the\nJPN <address>\ncompare was False.\nBitwise AND operation of the contents of ACC with the\nAND #n\noperand.\nBitwise AND operation of the contents of ACC with the\nAND <address>\ncontents of <address>.\nBitwise XOR operation of the contents of ACC with the\nXOR #n\noperand.\nBitwise XOR operation of the contents of ACC with the\nXOR <address>\ncontents of <address>.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nBitwise OR operation of the contents of ACC with the contents\nOR <address>\nof <address>.\nOutput to the screen the character whose ASCII value is\nOUT\nstored in ACC.\nEND Return control to the operating system.\nA programmer is writing a program that will output the first character of a string in upper case and\nthe remaining characters of the string in lower case.\nThe program will use locations from address WORD onwards to store the characters in the string.\nThe location with address LENGTH stores the number of characters that make up the string.\nThe programmer has started to write the program in the following table. The comment column\ncontains descriptions for the missing program instructions.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Complete the program using op codes from the given instruction set.\nOp\nLabel Operand Comment\ncode\nSTART: // initialise index register to zero\n// get first character of WORD\n// ensure it is in upper case using MASK1\n// output character to screen\n// increment index register\n// load 1 into ACC\n// store in COUNT\nLOOP: // load next character from indexed address WORD\n// make lower case using MASK2\n// output character to screen\n// increment COUNT starts here\n// is COUNT = LENGTH ?\n// if FALSE, jump to LOOP\n// end of program\nCOUNT:\nMASK1: // bit pattern for upper case\nMASK2: // bit pattern for lower case\nLENGTH: 4\nWORD: B01100110 // ASCII code in binary for 'f'\nB01110010 // ASCII code in binary for 'r'\nB01000101 // ASCII code in binary for 'E'\nB01000100 // ASCII code in binary for 'D'\n\nQuestion 4 begins on page 15.",
+          "marks": 12,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Name the programming environment you have used when typing in program code.\nList three features of the editor that helped you to write program code.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Explain when and how your programming environment reports a syntax error.\nWhen ______\nHow ______",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "The table shows a module definition for BubbleSort in three programming languages.\nStudy one of the examples. Indicate your choice by circling A, B or C:\nA B C\nA) Python\n01 def BubbleSort(SList, Max):\n02 NoMoreSwaps = False\n03 while NoMoreSwaps == False:\n04 NoMoreSwaps = True",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Circle the programming language that you have studied:",
+        "Visual Basic (console mode) Python Pascal Delphi (console mode)"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "for i in (Max - 1):"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "if SList[i] > SList[i + 1]:"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NoMoreSwaps = True"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Temp = SList[i]"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "SList[i] = SList[i + 1]"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "SList[i + 1] = Temp",
+        "B) Pascal/Delphi",
+        "01 PROCEDURE BubbleSort(VAR SList : ARRAY OF INTEGER; Max : INTEGER);",
+        "02 VAR NoMoreSwaps : BOOLEAN; i, Temp : INTEGER;",
+        "03 BEGIN",
+        "04 REPEAT",
+        "05 NoMoreSwaps := TRUE;",
+        "06 FOR i := 1 TO (Max – 1)",
+        "07 IF SList[i] > SList[i + 1]",
+        "08 THEN",
+        "09 BEGIN",
+        "10 NoMoreSwaps := TRUE;"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Temp := SList[i];"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "SList[i] := SList[i + 1];"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "SList[i + 1] := Temp;"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "END;"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL NoMoreSwaps;"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16bi",
+              "label": "(i)",
+              "text": "State whether programs written in your programming language are compiled or\ninterpreted.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16bii",
+              "label": "(ii)",
+              "text": "A programmer corrects the syntax error and tests the function. It does not perform as\nexpected. The items are not fully in order.\nState the type of error ______\nWrite the line number where the error occurs.\nWrite the correct code for this line.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16biii",
+              "label": "(iii)",
+              "text": "State the programming environment you have used when debugging program code.\nName two debugging features and describe how they are used.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "END;",
+        "C) Visual Basic",
+        "01 Sub BubbleSort(ByRef SList() As Integer, ByVal Max As Integer)",
+        "02 Dim NoMoreSwaps As Boolean, i, Temp As Integer",
+        "03 Do",
+        "04 NoMoreSwaps = True",
+        "05 For i : 0 To (Max – 1)",
+        "06 If SList(i) > SList(i + 1) Then",
+        "07 NoMoreSwaps = True",
+        "08 Temp = SList(i)",
+        "09 SList(i) = SList(i + 1)",
+        "10 SList(i + 1) = Temp",
+        "11 End If",
+        "12 Next",
+        "13 Loop Until (NoMoreSwaps = True)",
+        "14 End Sub",
+        "The programming environment reported a syntax error in the BubbleSort code.",
+        "State the line number ........................................................................................................................",
+        "Write the correct code for this line.",
+        "[2]"
+      ]
+    }
+  ]
+}

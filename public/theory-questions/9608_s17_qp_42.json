@@ -1,0 +1,387 @@
+{
+  "paperId": "9608_s17_qp_42",
+  "subjectCode": "9608",
+  "session": "s17",
+  "component": "42",
+  "totalMarks": 77,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A programmer writes a program that:\n• reads two characters input from the keyboard (you may assume they will be capital\nletters in ascending alphabetical sequence)\n• outputs the alphabetical sequence of characters from the first to the second character.\nFor example, if the characters ‘B’ and ‘F’ are input, the output is:\nBCDEF\nThe programmer has started to write the program in the following table. The Comment column\ncontains descriptions for the missing program instructions, labels and data.\nComplete the following program. Use op codes from the given instruction set.\nOp\nLabel Operand Comment\ncode\nSTART: // INPUT character\n// store in CHAR1\n// INPUT character\n// store in CHAR2\n// initialise ACC to ASCII value of CHAR1\n// output contents of ACC\n// compare ACC with CHAR2\n// if equal jump to end of FOR loop\n// increment ACC\n// jump to LOOP\nENDFOR: END\nCHAR1:\nCHAR2:",
+          "marks": 9,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The programmer now starts to write a program that:\n• converts a positive integer, stored at address NUMBER1, into its negative equivalent in\ntwo’s complement form\n• stores the result at address NUMBER2\nComplete the following program. Use op codes from the given instruction set.\nShow the value stored in NUMBER2.\nOp\nLabel Operand Comment\ncode\nSTART:\nMASK // convert to one's complement\n// convert to two's complement\nEND\nMASK: // show value of mask in binary here\nNUMBER1: B00000101 // positive integer\nNUMBER2: // negative equivalent",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "The following table shows part of the instruction set for a processor which has one general purpose",
+        "register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "LDM #n",
+        "Immediate addressing. Load the number n to ACC.",
+        "LDD <address>",
+        "Direct addressing. Load the contents of the location at the given address",
+        "to ACC.",
+        "LDI <address>",
+        "Indirect addressing. The address to be used is at the given address.",
+        "Load the contents of this second address to ACC.",
+        "LDX <address>",
+        "Indexed addressing. Form the address from <address> + the contents of",
+        "the index register. Copy the contents of this calculated address to ACC.",
+        "STO <address>",
+        "Store the contents of ACC at the given address.",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX).",
+        "CMP <address>",
+        "Compare the contents of ACC with the contents of <address>.",
+        "JMP <address>",
+        "Jump to the given address.",
+        "JPE <address>",
+        "Following a compare instruction, jump to <address> if the compare was",
+        "True.",
+        "JPN <address>",
+        "Following a compare instruction, jump to <address> if the compare was",
+        "False.",
+        "AND <address>",
+        "Bitwise AND operation of the contents of ACC with the contents of",
+        "<address>.",
+        "XOR <address>",
+        "Bitwise XOR operation of the contents of ACC with the contents of",
+        "<address>.",
+        "OR <address>",
+        "Bitwise OR operation of the contents of ACC with the contents of",
+        "<address>.",
+        "IN",
+        "Key in a character and store its ASCII value in ACC.",
+        "OUT",
+        "Output to the screen the character whose ASCII value is stored in ACC.",
+        "END",
+        "Return control to the operating system."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A null pointer is shown as O.\nExplain the meaning of the term null pointer.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The following diagram shows an ordered binary tree after the following data have been\nadded:\nDublin, London, Berlin, Paris, Madrid, Copenhagen\nRootPointer\nDublin\nLondon\nØ Berlin Ø\nCopenhagen\nØ Ø\nParis Ø\nØ Madrid Ø\nAnother data item to be added is Athens.\nMake the required changes to the diagram when this data item is added.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A tree without any nodes Unused nodes are linked together into a free list\nis represented as: as shown:\nRootPointer\nFreePointer\nØ Ø\nThe following diagram shows an array of records that stores the tree shown in part (b).",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Add the relevant pointer values to complete the diagram.\nRootPointer LeftPointer Tree data RightPointer\n0 [0] Dublin\n[1] London\n[2] Berlin\n[3] Paris\n[4] Madrid\nFreePointer [5] Copenhagen\n[6] Athens",
+              "marks": 7,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Give an appropriate numerical value to represent the null pointer for this design. Justify\nyour answer.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "A program is to be written to implement the tree ADT. The variables and procedures to be\nused are listed below:\nIdentifier Data type Description\nData structure to store node data and associated\nNode RECORD\npointers.\nLeftPointer INTEGER\nStores index of start of left subtree.\nRightPointer INTEGER\nStores index of start of right subtree.\nData STRING\nData item stored in node.\nTree ARRAY\nArray to store nodes.\nNewDataItem STRING\nStores data to be added.\nFreePointer INTEGER\nStores index of start of free list.\nRootPointer INTEGER\nStores index of root node.\nNewNodePointer INTEGER\nStores index of node to be added.\nProcedure initialises the root pointer and free pointer\nCreateTree()\nand links all nodes together into the free list.\nProcedure to add a new data item in the correct\nAddToTree()\nposition in the binary tree.\nProcedure that finds the node where a new node is\nto be added.\nProcedure takes the parameter NewDataItem and\nreturns two parameters:\nFindInsertionPoint()\n• Index, whose value is the index of the node\nwhere the new node is to be added\n• Direction, whose value is the direction of the\npointer (“Left” or “Right”).",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Complete the pseudocode to create an empty tree.\nTYPE Node\nENDTYPE\nDECLARE Tree : ARRAY[0 : 9] ______\nDECLARE FreePointer : INTEGER\nDECLARE RootPointer : INTEGER\nPROCEDURE CreateTree()\nDECLARE Index : INTEGER\nFOR Index ← 0 TO 9 // link nodes\nENDFOR\nENDPROCEDURE",
+              "marks": 7,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Complete the pseudocode to add a data item to the tree.\nPROCEDURE AddToTree(BYVALUE NewDataItem : STRING)\n// if no free node report an error\nIF FreePointer ______\nTHEN\nOUTPUT(\"No free space left\")\nELSE // add new data item to first node in the free list\nNewNodePointer ← FreePointer\n// adjust free pointer\nFreePointer ← ______\n// clear left pointer\nTree[NewNodePointer].LeftPointer ← ______\n// is tree currently empty ?\nIF ______\nTHEN // make new node the root node\nELSE // find position where new node is to be added\nIndex ← RootPointer\nCALL FindInsertionPoint(NewDataItem, Index, Direction)\nIF Direction = \"Left\"\nTHEN // add new node on left\nELSE // add new node on right\nENDIF\nENDIF\nENDIF\nENDPROCEDURE",
+              "marks": 8,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The traverse tree operation outputs the data items in alphabetical order. This can be written\nas a recursive solution.\nComplete the pseudocode for the recursive procedure TraverseTree.\nPROCEDURE TraverseTree(BYVALUE Pointer : INTEGER)\nENDPROCEDURE",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 32,
+      "text": [
+        "An ordered binary tree Abstract Data Type (ADT) has these associated operations:",
+        "• create tree",
+        "• add new item to tree",
+        "• traverse tree",
+        "The binary tree ADT is to be implemented as a linked list of nodes.",
+        "Each node consists of data, a left pointer and a right pointer."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The programmer designed the pseudocode for the main program as follows:\nDECLARE Island : IslandClass.Constructor() // instantiate object\nCALL DisplayGrid() // output island squares\nFOR Treasure ← 1 TO 3 // hide 3 treasures\nCALL Island.HideTreasure()\nENDFOR\nCALL StartDig() // user to input location of dig\nCALL DisplayGrid() // output island squares\nWrite program code to implement this pseudocode.\nProgramming language used ______\nProgram code ______",
+          "marks": 3,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Write program code to declare the IslandClass and write the constructor method.\nThe value to represent sand should be declared as a constant.\nProgramming language used ______\nProgram code ______",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The procedure DisplayGrid shows the current grid data. DisplayGrid makes use of the\ngetter method GetSquare of the Island class.\nAn example output is:\n______T______\n______T______\n...X______",
+          "marks": null,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Write program code for the GetSquare(Row, Column) getter method.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Write program code for the DisplayGrid procedure.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "Write program code for the HideTreasure method. Your method should check that the\nrandom location generated does not already contain treasure.\nThe value to represent treasure should be declared as a constant.\nProgramming language used ______\nProgram code ______",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "The DigHole method takes two integers as parameters. These parameters form a valid\ngrid location. The location is marked with 'X' or 'O' as appropriate.\nWrite program code for the DigHole method. The values to represent treasure, found\ntreasure and hole should be declared as constants.\nProgramming language used ______\nProgram code ______",
+              "marks": 3,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "The StartDig procedure:\n• prompts the player for a location to dig\n• validates the user input\n• calls the DigHole method from part (e)(i).\nWrite program code for the StartDig procedure. Ensure that the user input is fully\nvalidated.\nProgramming language used ______\nProgram code ______",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3f",
+          "label": "(f)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3fi",
+              "label": "(i)",
+              "text": "The squares in the IslandClass grid could have been declared as objects of a\nSquare class.\nState the term used to describe the relationship between IslandClass and Square.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3fii",
+              "label": "(ii)",
+              "text": "Draw the appropriate diagram to represent this relationship. Do not list the attributes and\nmethods of the classes.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "A programmer is writing a treasure island game to be played on the computer. The island is",
+        "a rectangular grid, 30 squares by 10 squares. Each square of the island is represented by an",
+        "element in a 2D array. The top left square of the island is represented by the array element [0, 0].",
+        "There are 30 squares across and 10 squares down.",
+        "The computer will:",
+        "• generate three random locations where treasure will be buried",
+        "• prompt the player for the location of one square where the player chooses to dig",
+        "• display the contents of the array by outputting for each square:",
+        "– '.' for only sand in this square",
+        "– 'T' for treasure still hidden in sand",
+        "– 'X' for a hole dug where treasure was found",
+        "– 'O' for a hole dug where no treasure was found.",
+        "Here is an example display after the player has chosen to dig at location [9, 3]:",
+        "........T.....................",
+        ".........T....................",
+        "...X..........................",
+        "The game is to be implemented using object-oriented programming.",
+        "The programmer has designed the class IslandClass. The identifier table for this class is:",
+        "Identifier Data type Description",
+        "2D array to represent the",
+        "Grid ARRAY[0 : 9, 0 : 29] OF CHAR",
+        "squares of the island",
+        "instantiates an object of class",
+        "Constructor() IslandClass and initialises",
+        "all squares to sand",
+        "generates a pair of random",
+        "numbers used as the grid",
+        "HideTreasure()",
+        "location of treasure and",
+        "marks the square with 'T'",
+        "takes as parameters a valid",
+        "grid location and marks the",
+        "DigHole(Row, Column)",
+        "square with 'X' or 'O' as",
+        "appropriate",
+        "takes as parameter a valid",
+        "grid location and returns the",
+        "GetSquare(Row, Column) CHAR",
+        "grid value for that square",
+        "from the IslandClass",
+        "object"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "paperId": "9618_s23_qp_41",
+  "subjectCode": "9618",
+  "session": "s23",
+  "component": "41",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The main program needs to read 25 integer data items from the text file Data.txt into a\nlocal 1D array, DataArray",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write program code to declare the local array DataArray\nSave your program as Question1_J2023.\nCopy and paste the program code into part 1(a)(i) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Amend the main program to read the contents of Data.txt into DataArray\nSave your program.\nCopy and paste the program code into part 1(a)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The procedure PrintArray() takes an integer array as a parameter and outputs the\ncontents of the array in the order they are stored.\nThe items are printed on the same line, for example:\n10 4 5 13 25\nWrite program code for the procedure PrintArray()\nSave your program.\nCopy and paste the program code into part 1(b)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Amend the main program to output the contents of DataArray using the procedure\nPrintArray()\nSave your program.\nCopy and paste the program code into part 1(b)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(b)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The function LinearSearch():\n• takes an integer array and integer search value as parameters\n• counts and returns the number of times the search value is found in the array.\nWrite program code for the function LinearSearch()\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Amend the main program to:\n• prompt the user to input a whole number between 0 and 100 inclusive\n• read and validate the input from the user\n• call LinearSearch() with DataArray and the validated input value\n• output the result in the format:\nThe number 7 is found 2 times.\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Test your program by inputting the number 12.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "A program reads data from a file and searches for specific data."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Vehicle. All attributes must be private.\nYou only need to declare the class and its constructor. Do not declare any other methods.\nUse your programming language’s appropriate constructor.\nIf you are writing program code in Python, include attribute declarations using comments.\nSave your program as Question2_J2023.\nCopy and paste the program code into part 2(a)(i) in the evidence document.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Write program code for the get methods GetCurrentSpeed(),\nGetIncreaseAmount(), GetMaxSpeed() and GetHorizontalPosition()\nSave your program.\nCopy and paste the program code into part 2(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "Write program code for the set methods SetCurrentSpeed() and\nSetHorizontalPosition()\nSave your program.\nCopy and paste the program code into part 2(a)(iii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiv",
+              "label": "(iv)",
+              "text": "The method IncreaseSpeed():\n• adds IncreaseAmount to the current speed\n• adds the updated current speed to the horizontal position.\nThe current speed of a vehicle cannot exceed its maximum speed.\nWrite program code for the method IncreaseSpeed()\nSave your program.\nCopy and paste the program code into part 2(a)(iv) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The child class Helicopter inherits from the parent class Vehicle. A helicopter also has a\nvertical position and changes the vertical position when it increases speed.\nHelicopter\nVerticalPosition : INTEGER stores the vertical position\nVerticalChange : INTEGER stores the amount VerticalPosition changes by\nMaxHeight : INTEGER stores the maximum height the helicopter can reach\nConstructor() takes the ID, maximum speed, increase amount, vertical\nchange and maximum height as parameters\ninitialises the vertical position to 0\nGetVerticalPosition() returns the vertical position\nIncreaseSpeed() changes the current speed, horizontal and vertical\nposition of the helicopter",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Write program code to declare the class Helicopter. You only need to declare the\nclass and its constructor. You do not need to declare the other methods.\nUse your programming language’s appropriate constructor.\nAll attributes must be private.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The Helicopter method IncreaseSpeed() overrides the method from the parent\nclass and:\n• adds the amount of vertical change to the vertical position\n• adds IncreaseAmount to the current speed\n• adds the updated current speed to the horizontal position.\nThe vertical position of a helicopter cannot exceed its maximum height.\nThe current speed of a helicopter cannot exceed its maximum speed.\nWrite program code for the method IncreaseSpeed()\nSave your program.\nCopy and paste the program code into part 2(b)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A procedure needs to output the horizontal position and speed of a vehicle. If the vehicle is a\nhelicopter, it also outputs the vertical position.\nAll outputs must include appropriate messages.\nWrite program code for this procedure.\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The main program needs to:\n• instantiate a car as a new vehicle with the ID \"Tiger\", a maximum speed of 100 and an\nincrease amount of 20\n• instantiate a new helicopter with the ID \"Lion\", a maximum speed of 350, an increase\namount of 40, a vertical change of 3 and a maximum height of 100\n• call IncreaseSpeed() twice for the car and then call the output procedure from\npart 2(c) for the car\n• call IncreaseSpeed() twice for the helicopter and then call the output procedure from\npart 2(c) for the helicopter.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Write program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(d)(i) in the evidence document.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 32,
+      "text": [
+        "A computer game is being designed that will include different vehicles. A prototype for the game is",
+        "being developed using object‑oriented programming.",
+        "The class Vehicle stores data about the vehicles. Each vehicle has an identification name,",
+        "a maximum speed, a current speed and a horizontal position. The value IncreaseAmount is",
+        "added to the current speed each time the vehicle increases its speed.",
+        "Vehicle",
+        "ID : STRING stores the identification name for the vehicle",
+        "MaxSpeed : INTEGER stores the maximum speed",
+        "CurrentSpeed : INTEGER stores the current speed",
+        "IncreaseAmount : INTEGER stores the amount CurrentSpeed increases by",
+        "HorizontalPosition : INTEGER stores the horizontal position",
+        "Constructor() initialises ID, MaxSpeed and IncreaseAmount to the",
+        "parameter values",
+        "initialises both CurrentSpeed and",
+        "HorizontalPosition to 0",
+        "GetCurrentSpeed() returns the current speed",
+        "GetIncreaseAmount() returns the increase amount",
+        "GetHorizontalPosition() returns the horizontal position",
+        "GetMaxSpeed() returns the maximum speed",
+        "SetCurrentSpeed() assigns the parameter to the current speed",
+        "SetHorizontalPosition() assigns the parameter to the horizontal position",
+        "IncreaseSpeed() calculates and stores the new speed and horizontal",
+        "position of the vehicle"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The program contains the following global arrays and variables:\n• 1D array Animal to store the names of up to 20 animals.\n• 1D array Colour to store the names of up to 10 colours.\n• AnimalTopPointer to point to the next free space in the array Animal, initialised to 0.\n• ColourTopPointer to point to the next free space in the array Colour, initialised to 0.\nWrite program code to declare the global arrays and variables.\nSave your program as Question3_J2023.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Study the pseudocode function PushAnimal():\nFUNCTION PushAnimal(DataToPush : STRING) RETURNS BOOLEAN\nIF AnimalTopPointer = 20 THEN\nRETURN FALSE\nELSE\nAnimal[AnimalTopPointer] DataToPush\nAnimalTopPointer AnimalTopPointer + 1\nRETURN TRUE\nENDIF\nENDFUNCTION\nWrite program code for the function PushAnimal()\nSave your program.\nCopy and paste the program code into part 3(b)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Study the pseudocode function PopAnimal():\nFUNCTION PopAnimal() RETURNS STRING\nDECLARE ReturnData : STRING\nIF AnimalTopPointer = 0 THEN\nRETURN \"\"\nELSE\nReturnData Animal[AnimalTopPointer - 1]\nAnimalTopPointer AnimalTopPointer - 1\nRETURN ReturnData\nENDIF\nENDFUNCTION\nWrite program code to declare the function PopAnimal()\nSave your program.\nCopy and paste the program code into part 3(b)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "The procedure ReadData():\n• reads the animal names from the file AnimalData.txt\n• uses PushAnimal() to insert each name onto the stack\n• uses appropriate exception handling if the file does not exist.\nWrite program code for the procedure ReadData()\nSave your program.\nCopy and paste the program code into part 3(b)(iii) in the evidence document.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biv",
+              "label": "(iv)",
+              "text": "The function PushColour() performs the same actions as PushAnimal() but inserts\nan item into Colour.\nThe function PopColour() performs the same actions as PopAnimal() but removes\nthe next item from Colour.\nWrite program code for the functions PushColour() and PopColour()\nSave your program.\nCopy and paste the program code into part 3(b)(iv) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bv",
+              "label": "(v)",
+              "text": "Amend the procedure ReadData() so that it also:\n• reads the colours from the text file ColourData.txt\n• uses PushColour() to insert each colour onto the stack\n• uses appropriate exception handling if the file does not exist.\nSave your program.\nCopy and paste the program code into part 3(b)(v) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The procedure OutputItem():\n• pops the next item from both Animal and Colour\n• outputs the colour and animal on one line, for example \"black horse\"\nIf there is no data in Colour:\n• the animal is pushed back onto Animal\n• \"No colour\" is output.\nIf there is no data in Animal:\n• the colour is pushed back onto Colour\n• \"No animal\" is output.\nWrite program code for the procedure OutputItem()\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The main program:\n• calls the procedure ReadData()\n• calls OutputItem() four times.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "Write program code for the main program.\nSave your program.\nCopy and paste the program code into part 3(d)(i) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(d)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 25,
+      "text": [
+        "A program implements two stacks using 1D arrays. One stack stores the names of colours. One",
+        "stack stores the names of animals."
+      ]
+    }
+  ]
+}

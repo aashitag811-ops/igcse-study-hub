@@ -1,0 +1,215 @@
+{
+  "paperId": "9231_s25_qp_44",
+  "subjectCode": "9231",
+  "session": "s25",
+  "component": "44",
+  "totalMarks": 39,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A random sample of 12 observations of a normal random variable is taken. The results give unbiased",
+        "estimates for the population mean and variance as 10.24 and 0.52 respectively.",
+        "Test, at the 10% significance level, the null hypothesis that the population mean is 10.6 against the",
+        "alternative hypothesis that the population mean is less than 10.6. [4]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Use a Wilcoxon signed-rank test to test whether the average sound level produced by this type of\nmachine is more than 8.00. Use a 5% significance level.",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Give a reason why a Wilcoxon signed-rank test may be more appropriate than a t-test in this case.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The level of sound produced by a particular type of machine was measured for a random sample of 11",
+        "such machines. The results, in suitable units, are shown below.",
+        "Machine A B C D E F G H I J K",
+        "Sound level 7.66 8.48 8.21 7.98 8.01 7.77 8.25 8.11 8.03 8.16 7.92"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A shop selling electrical goods has a team of three salespeople: Avril, Ben and Charlie. The manager",
+        "wishes to investigate whether the salespeople are equally successful at selling particular types of items.",
+        "The following table gives a record of a random sample of 250 sales of laptops, cameras and televisions,",
+        "with the number sold by each of the three salespeople.",
+        "Type of item",
+        "Laptop Camera Television Total",
+        "Avril 31 40 24 95",
+        "Ben 23 45 29 97",
+        "Charlie 21 25 12 58",
+        "Total 75 110 65 250",
+        "Test, at the 10% significance level, whether there is independence between the type of item sold and the",
+        "salesperson. [7]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Show that k = .",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Find the cumulative distribution function of X.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Find the median value of X. \nb l",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Find E .",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "The continuous random variable X has probability density function f given by",
+        "kx 0 G x 1 1,",
+        "f( )x = kx 1 G x G 2,",
+        "0 otherwise."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Find the probability generating function G ( )t of X. \n______ DO NOT WRITE IN THIS MARGIN\nEric also has two fair 6-sided dice with faces numbered 1 to 6. The random variable Y is the number of\nsixes obtained when Eric throws the two dice at the same time. It is given that the probability generating\n25 10 1\nfunction of Y is + t + t .\n36 36 36\nEric throws the three coins and the two dice. The random variable Z is the sum of the number of heads\nobtained and the number of sixes obtained.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Find the probability generating function G ( )t of Z, expressing your answer as a polynomial in t.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Use G ( )t to find E( )Z and Var Z( ).",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Eric has three identical coins, each of which is biased so that the probability of obtaining a head when it",
+        "is thrown is . The random variable X is the number of heads obtained when Eric throws the three coins",
+        "at the same time."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Find the values of x and x for the 10 songs in Lina’s sample. \nMona’s songs have times, y minutes, that are normally distributed. The times for a random sample of 8\nof Mona’s songs are summarised as follows.\n/ /\ny = 24 8. y = 76 98.\nMona claims that the population mean time of her songs is greater than the population mean time of\nLina’s songs.",
+          "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Assuming that the two distributions have the same population variance, test at the 5% significance\nlevel whether there is evidence to support Mona’s claim. \nAdditional page\nIf you use the following page to complete the answer to any question, the question number must be clearly\nshown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Lina and Mona are two statisticians who also write songs. The ‘time’ of a song is the number of minutes",
+        "for which it lasts. For a random sample of 10 of her songs, Lina calculates a 95% confidence interval",
+        "for the population mean time, n minutes. This confidence interval is 2 95. G n G 3 13. . The times,",
+        "x minutes, of Lina’s songs are normally distributed.",
+        "/ /"
+      ]
+    }
+  ]
+}

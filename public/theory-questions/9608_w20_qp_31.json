@@ -1,0 +1,438 @@
+{
+  "paperId": "9608_w20_qp_31",
+  "subjectCode": "9608",
+  "session": "w20",
+  "component": "31",
+  "totalMarks": 71,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The following floating-point number stored is not normalised.\nCalculate the denary value for the floating-point number. Show your working.\nMantissa Exponent\n0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 1\nWorking ______\nDenary value ______",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Normalise the floating-point number given in part (a).\nMantissa Exponent",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Describe one problem that can occur when floating-point numbers are not normalised.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "In a particular computer system, real numbers are stored using floating-point representation with:",
+        "• 12 bits for the mantissa",
+        "• 4 bits for the exponent",
+        "• two’s complement form for both mantissa and exponent."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Identify one composite and three non-composite data types used in the pseudocode.\nComposite data type ______\nNon-composite data type 1 ______\nNon-composite data type 2 ______\nNon-composite data type 3 ______",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Identify the data type in the pseudocode that is enumerated.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A box is red, with medium volume and a price of $10.99.\nWrite pseudocode to store the details of this box in the first element of the array.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Data types can be classified as composite or non-composite.",
+        "A record is declared of type box using the following pseudocode.",
+        "TYPE size = (small, medium, large)",
+        "TYPE box",
+        "DECLARE volume : size",
+        "DECLARE price : REAL",
+        "DECLARE colour : STRING",
+        "ENDTYPE",
+        "DECLARE myBox : ARRAY [1:6] OF box"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Describe the TCP/IP protocol suite.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "A group of over 100 students has produced a movie. The size of the movie file is very\nlarge.\nThe students would like to use peer-to-peer file sharing to share this file with friends and\nfamily.\nIdentify the most appropriate TCP/IP protocol for sharing this file over the Internet and\ndescribe the way this protocol works.\nProtocol ______\nDescription ______",
+              "marks": 5,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Files shared over the Internet are sent using packet switching or circuit switching\nmethods.\nIdentify and describe the most suitable method for the large movie file from part (a)(ii).\nMethod ______\nDescription ______",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "State one benefit and one drawback of the method you identified in part (b)(i).\nBenefit ______\nDrawback ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "The use of the TCP/IP protocol suite is essential for successful communication over the Internet."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write the Boolean expressions for the truth table as sum-of-products.\nX = ______\nY = ______",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the Karnaugh Maps (K-maps) for the truth table.\nOUTPUT X OUTPUT Y\nAB AB\n00 01 11 10 00 01 11 10\n0 0\nC C\n1 1",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The K-maps can be used to simplify one of the expressions in part (a).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Draw loop(s) around appropriate group(s) of 1s to produce an optimal sum-of-products\nfor the single output table that can be simplified in part (b).",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Write the simplified sum-of-products expressions for this output from part (c)(i).",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Identify the common logic circuit given by the truth table in part (a). Give the use of each\noutput.\nLogic circuit ______\nUse of X ______\nUse of Y ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "The following truth table represents a logic circuit with three inputs and two outputs.",
+        "INPUT OUTPUT",
+        "A B C X Y",
+        "0 0 0 0 0",
+        "0 0 1 1 0",
+        "0 1 0 1 0",
+        "0 1 1 0 1",
+        "1 0 0 1 0",
+        "1 0 1 0 1",
+        "1 1 0 0 1",
+        "1 1 1 1 1"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Complete these statements about a virtual machine.",
+        "A virtual machine is ................................................ that emulates a",
+        "................................................ computer system.",
+        "A virtual machine allows multiple ................................................ operating systems to run",
+        "on one computer using a ................................................ operating system.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Give the similarities and differences between a public key and a private key.\nSimilarities ______\nDifferences ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Give the similarities and differences between a digital certificate and a digital signature.\nSimilarities ______\nDifferences ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Give the similarities and differences between phishing and pharming.\nSimilarities ______\nDifferences ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Anita is studying computer science and she is confused about some of the computer security",
+        "terminology as some of the words are similar.",
+        "Anita wants to know the similarities (features that are the same) and differences (features that are",
+        "different) between some of the terms."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "The current contents of addresses 801 to 803 are:\nMost significant bit Least significant bit\n0 1 1 0 1 1 0 0\n0 0 1 0 1 0 0 1\n0 0 1 0 0 0 0 0\nState the information that the current contents of addresses 801 to 803 will provide to the\ndriver.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A lorry has a load that is too heavy and is not secured. It has travelled 120 kilometres and\nused 35.25 litres of fuel.\nComplete the contents of the addresses to record this information.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The following table shows the instructions for the lorry load monitoring system in assembly\nlanguage. There is one general purpose register, the Accumulator (ACC).\nTable 7.1\nInstruction\nExplanation\nLabel Op code Operand\nLDM #n Load the number n to ACC\nLoad the contents of the location at the\nLDD <address>\ngiven address to ACC\nStore the contents of ACC at the given\nSTO <address>\naddress\nBitwise AND operation of the contents of\nAND #n\nACC with the operand\nCMP #n Compare the contents of ACC with number n\nFollowing a compare instruction, jump to\nJPE <address> <address> or <label> if the compare was\nTrue\nJMP <address>\nJump to the given address or label\n<label>: <op code> <operand>\nLabels an instruction\nNote:\n# denotes immediate addressing\nB denotes a binary number, for example B01001010\n& denotes a hexadecimal number, for example &4A",
+          "marks": null,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ci",
+              "label": "(i)",
+              "text": "Write assembly language instructions to set the contents of addresses 801 and 802 to\nzero, and set all four most significant bits of the contents of address 803 to one.\nUse the instruction set from Table 7.1.",
+              "marks": 3,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7cii",
+              "label": "(ii)",
+              "text": "A program written in assembly language, continuously checks the flags. If a flag is set,\nthe program jumps to the error-handling routine at the specified label. For example, if\nthe load is too heavy, the program jumps to the error-handling routine with the label\nTOOHEAVY. The error-handling routine instructions have not been provided.\nA programmer has written most of the instructions for the program in the following table.\nThere are four missing operands.\nComplete the assembly language program by writing the four missing operands.\nLabel Op code Operand\nCHECKLOAD: LDD 803\nAND &F0\nSTO TEMP\nAND &80\nCMP &80\nJPE TOOHEAVY\nLDD TEMP\nAND &40\nCMP\nJPE TOOHIGH\nLDD TEMP\nAND\nCMP &20\nJPE UNSTABLE\nLDD\nAND &10\nCMP &10\nJPE NOTSECURED\nJMP\nTEMP:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A company has a number of lorries that deliver items around the country. The items in each lorry",
+        "are its load. Each lorry has a monitoring system that provides information to the driver about the",
+        "state of the load and other data from each trip.",
+        "• Data is stored in three memory locations with addresses 801 to 803.",
+        "• Location 801 contains the distance travelled in kilometres for the current trip, stored as a",
+        "binary integer.",
+        "• Location 802 contains the quantity of fuel used in litres for the current trip, stored as a",
+        "fixed-point binary number with six places before the binary point and two places after the",
+        "binary point.",
+        "• The four most significant bits of location 803 are flags used to identify problems with the load,",
+        "for example it is too heavy. A flag is set to 1 if there is a problem, or 0 if not.",
+        "The problems are:",
+        "• Bit 7 – load too heavy",
+        "• Bit 6 – load too high",
+        "• Bit 5 – load unstable",
+        "• Bit 4 – load not secured (risk of the load falling off)",
+        "• Bits 0 to 3 are not used"
+      ]
+    }
+  ]
+}

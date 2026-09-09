@@ -1,0 +1,406 @@
+{
+  "paperId": "9618_w25_qp_43",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "43",
+  "totalMarks": 71,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class BoardObject and its constructor.\nDo not declare the other methods.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question1_N25.\nCopy and paste the program code into part 1(a)(i) in the evidence document.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The methods GetCode() and GetValue() return the appropriate attribute.\nWrite program code for GetCode() and GetValue()\nSave your program.\nCopy and paste the program code into part 1(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "The table shows the code and value of five board objects. The table has the variable\nidentifier where each of the objects are stored.\nVariable\nCode Value\nidentifier\nObject1 \"A\" 2\nObject2 \"B\" 3\nObject3 \"C\" 5\nObject4 \"D\" 2\nObject5 \"E\" 7\nWrite program code for the main program to instantiate each of the five board objects\nand store them in the variables with the identifiers given.\nSave your program.\nCopy and paste the program code into part 1(a)(iii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The board objects are placed on a board that is represented by a 0-indexed 2D array:\n• the board is a 10 x 10 grid\n• each position on the board is identified by a row and column number\n• rows are numbered 0 to 9\n• columns are numbered 0 to 9\n• board objects can be placed at a row and column position\n• each board position is initialised with an empty BoardObject, an empty BoardObject\nhas Code = \"-\" and Value = 0\nFor example, the element highlighted in the given board is in row 1 and column 3.\nRow Column\n0 1 2 3 4 5 6 7 8 9\nThe class Board stores the data about the board and where the board objects are placed.\nBoard\nTheBoard : ARRAY[0:9, 0:9] of BoardObject\nstores the board contents as a 2D array of\n10 x 10 elements of type BoardObject\nConstructor()\ninitialises each of TheBoard elements to\nan empty BoardObject with Code = \"-\"\nand Value = 0\nGetObject()\ntakes a row and column number as\nparameters and returns the BoardObject\nat the row, column position\nSetObject()\ntakes a BoardObject, row number and\ncolumn number as parameters. Stores the\nBoardObject in TheBoard at the given\nrow, column position\nDisplayBoard()\noutputs the code of each BoardObject\nstored in TheBoard, one row at a time",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write program code to declare the class Board and its constructor.\nDo not declare the other methods.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 1(b)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The method GetObject() takes a row number and column number as parameters.\nThe method returns the BoardObject stored at the parameter position.\nWrite program code for GetObject()\nSave your program.\nCopy and paste the program code into part 1(b)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "The method SetObject() takes three parameters: a BoardObject, row number and\ncolumn number.\nThe method stores the BoardObject parameter in the row, column position in\nTheBoard\nWrite program code for SetObject()\nSave your program.\nCopy and paste the program code into part 1(b)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "The method DisplayBoard() outputs the Code of each BoardObject stored in\nTheBoard using GetCode()\nEach row in TheBoard is output on one line with a space between each Code\nFor example, the following board contains these four board objects:\n• one object has code \"A\" in row 0 column 7\n• one object has code \"B\" in row 0 column 9\n• one object has code \"C\" in row 1 column 1\n• one object has code \"E\" in row 6 column 5\nThe other board objects are empty. The output for this board will be:\n- - - - - - - A - B\n- C - - - - - - - -\n- - - - - E - - - -\nWrite program code for DisplayBoard()\nSave your program.\nCopy and paste the program code into part 1(b)(iv) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "The table gives the row and column position on the board to store each of the five objects\ncreated in part 1(a)(iii).\nObject column\nrow position\nidentifier position\nObject1 0 0\nObject2 9 9\nObject3\n4 5\nObject4",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "A program stores data for a board game using Object-Oriented Programming (OOP). The game",
+        "has objects that are placed on the board. Each object has a string code (for example \"A\") and an",
+        "integer value (for example, 2).",
+        "The class BoardObject stores the data about the objects that can be placed on the board:",
+        "BoardObject",
+        "Code : String stores the board object’s code",
+        "Value : Integer stores the integer value of the board object",
+        "Constructor() initialises the attributes to the parameter values",
+        "GetCode() returns Code",
+        "GetValue() returns Value"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Amend the main program to:\n• repeatedly take a row position as input until it is between 0 and 9 inclusive\n• repeatedly take a column position as input until it is between 0 and 9 inclusive\n• use the appropriate method(s) to identify if there is an object in the array position\ninput\n• output \"Miss\" if there is an empty BoardObject in that position\n• output the Code and Value if there is a non-empty BoardObject in that position.\nAll outputs must include appropriate messages.\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Test your program by entering this test data in the order given:\nRow position first input: 10\nRow position second input: 4\nColumn position first input: –1\nColumn position second input: 5\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 1(d)(ii) in the evidence document.\n\n2 A program reads string data from a text file into a linear queue and then compresses the data.\nThe queue is created using the global 1D array Queue. The queue can store up to 100 elements.\nEach element is initialised to the empty string \"\"\nThe queue has two pointers that are global to the program:\n• QueueHead that points to the index of the first element in the queue, initialised to –1\n• QueueTail that points to the index of the last element in the queue, initialised to –1\nThe global variable NumberItems stores the number of elements stored in the queue, initialised\nto 0",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write program code to declare and initialise Queue, QueueHead, QueueTail and\nNumberItems\nSave your program as Question2_N25.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The function Enqueue()takes a string as a parameter. The function checks if the queue is\nfull, and returns Boolean FALSE if the queue is full.\nIf the queue is not full, the parameter is inserted into the next position in Queue. The function\nupdates the appropriate pointer(s), updates NumberItems and then returns Boolean TRUE\nWrite program code for Enqueue()\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The function Dequeue() returns the string \"False\" if the queue is empty.\nIf the queue is not empty, the function returns the next element in the queue. The function\nupdates the appropriate pointer(s) and updates NumberItems\nWrite program code for Dequeue()\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The text file BinaryData.txt stores individual binary digits, '1' and '0'. Each digit is on\na new line. For example, the first line in the text file stores '1', the second line stores '1'\nThe procedure ReadData() reads in each line from the text file BinaryData.txt and\ninserts it into the queue using the appropriate method.\nThe procedure needs to work for a text file with any number of lines up to a maximum of 100.\nWrite program code for ReadData()\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The string data in the text file is compressed.\nThe compression algorithm counts the number of times each binary digit appears\nconsecutively, then stores the binary digit followed by the number of times it appears. The\nalgorithm stores the compressed data in a single string.\nFor example, if the text file contains the data:\nThe compression algorithm will create the string \"120313\" because there are two '1' digits,\nfollowed by three '0' digits, followed by three '1' digits.\nThe procedure Compress() uses Dequeue() to remove each element from the queue in\nturn. The procedure then compresses the data following the compression algorithm described.\nThe new compressed string is stored in the global variable NewString\nYou can assume that one binary digit will never appear more than nine times consecutively in\nthe sequence.\nYou can assume that there will always be at least one item in the queue.\nWrite program code for Compress()\nSave your program.\nCopy and paste the program code into part 2(e) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2fi",
+              "label": "(i)",
+              "text": "Write program code for the main program to:\n• call ReadData()\n• call Compress()\n• output the content of the compressed string.\nSave your program.\nCopy and paste the program code into part 2(f)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 2(f)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 29,
+      "text": [
+        "2",
+        "Object5",
+        "8 7",
+        "Write program code to amend the main program to:",
+        "• declare a new instance of Board()",
+        "• store each BoardObject in the position given in the table",
+        "• call DisplayBoard() for the new board object.",
+        "Save your program.",
+        "Copy and paste the program code into part 1(c)(i) in the evidence document.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A 1D array stores 10 integers.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "A recursive function RecursiveCount() takes three parameters:\n• ArrayCopy, an array of integers\n• NumberElements, the number of elements in the array of integers\n• DataToFind, an integer data to find in the array.\nThe function counts and returns the number of times DataToFind is in ArrayCopy\nThe recursive algorithm:\n• returns 0 if there are no elements in ArrayCopy\n• compares the first element in ArrayCopy with DataToFind\n◦ if the element matches, the function returns 1 added to the return value from a\nrecursive call (passing the array without the first element)\n◦ if the element does not match, the function returns the return value from a\nrecursive call (passing the array without the first element).\nWrite program code for RecursiveCount()\nSave your program as Question3_N25.\nCopy and paste the program code into part 3(a)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "The main program stores the following data in a 1D array of integers in the order given:\n0 5 1 2 5 9 9 6 5 0\nThe main program calls RecursiveCount() with the parameters:\n• 0 as the data to find\n• 10 as the number of elements\n• the array of 10 integers.\nThe return value is output.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 3(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 3(a)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The program stores the following string. The string has four statements that are each\nterminated by a semi-colon ';'\n\"x=0;y=1;x=x+y;y++;\"",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Write program code to amend the main program to store the string \"x=0;y=1;x=x+y;y++;\"\nin a local variable.\nSave your program.\nCopy and paste the program code into part 3(b)(i) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "The function SplitData() splits a string parameter into four individual lines of code.\nThe function creates an array of the strings where each line is stored in a new array\nelement without the semi-colon.\nThe function returns the array of strings.\nDo not use an inbuilt function to split the string.\nWrite program code for SplitData()\nSave your program.\nCopy and paste the program code into part 3(b)(ii) in the evidence document.",
+              "marks": 6,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "The main program needs to call SplitData() with the string from part 3(b)(i). The\nmain program then needs to output each element from the returned array on a new line.\nWrite program code to amend the main program.\nSave your program.\nCopy and paste the program code into part 3(b)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biv",
+              "label": "(iv)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 3(b)(iv) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A program is written to perform different individual processes using arrays."
+      ]
+    }
+  ]
+}

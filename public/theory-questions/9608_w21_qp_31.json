@@ -1,0 +1,515 @@
+{
+  "paperId": "9608_w21_qp_31",
+  "subjectCode": "9608",
+  "session": "w21",
+  "component": "31",
+  "totalMarks": 69,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to assign 1234 to the ComputerID of SchoolComputer\nand Lab2 to the ComputerLocation of SchoolComputer.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The type definition for ComputerRecord is changed.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The definition has been extended to include the student identification numbers,\nStudentID, for up to 20 students who can use that computer. Each student identification\nnumber is an integer.\nWrite the extra line of pseudocode needed in the type definition for ComputerRecord.",
+              "marks": 1,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The values for the field ComputerID must be between 1000 and 1999 inclusive.\nRewrite one pseudocode line from the type definition of ComputerRecord to implement\nthe change.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Data about all the computers are stored in a file that uses random file organisation.\nComputerID is used as the key field.\nExplain how a program could search for a record stored in this file.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Data types can be defined using pseudocode.",
+        "The data type, ComputerRecord, is defined by the following pseudocode:",
+        "TYPE ComputerRecord",
+        "DECLARE ComputerID : INTEGER",
+        "DECLARE ComputerType : (Laptop, Desktop, Tablet)",
+        "DECLARE ComputerLocation : (Lab1, Lab2, Lab3, Mobile)",
+        "DECLARE DateTested : DATE",
+        "ENDTYPE",
+        "A variable, SchoolComputer, is declared in pseudocode as:",
+        "DECLARE SchoolComputer : ComputerRecord"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the diagram by writing the names of the three missing layers.\nLayer\nTransport",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "State the purpose of each of the following protocols.\nHTTP ______\nFTP ______\nPOP3 ______\nSMTP ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The TCP/IP protocol suite can be viewed as a stack with four layers."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Identify and draw a diagram of the most appropriate topology for this LAN.\nTopology ______\nDiagram:",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain how devices on the LAN use CSMA/CD.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Hamish is constructing a Local Area Network (LAN) using Ethernet with CSMA/CD."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The truth table for a logic circuit with four inputs is shown.\nINPUT OUTPUT\nP Q R S X\n0 0 0 0 1\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 1\n1 1 1 1 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Write the Boolean algebraic expression for the truth table as a sum-of-products.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Complete the following Karnaugh Map (K-map) for the truth table.\nPQ\n00 01 11 10\nRS",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "The K-map can be used to simplify the expression in part (a)(i).\nDraw loop(s) around appropriate groups in the K-map to produce an optimal\nsum-of-products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4aiv",
+              "label": "(iv)",
+              "text": "Write the simplified sum-of-products from the K-map.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Simplify the expression for X, as represented by the truth table in part (a), using Boolean\nAlgebra.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Flora has written a program that uses the variables a, b, c and d.\nPart of the program contains the following calculations:\na = 2\nb = 5\nc = 7\nd = a * b – (a + b + c)",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Write the Reverse Polish Notation (RPN) for the expression:\na * b – (a + b + c)",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Show the changing contents of the stack as the value for variable d is calculated from\nthe RPN expression.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Convert the following RPN expression back to its original infix form.\nd b * b c d + - + a /",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Explain why expressions are evaluated using RPN.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Explain the way in which a digital signature for the message would be produced.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "State two reasons why a digital signature for the message is required.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The message is encrypted using asymmetric key cryptography before it is sent and decrypted\nwhen it arrives at the head office.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Describe this process of encrypting and decrypting the message.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "State one reason for using asymmetric key cryptography.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Mohammad is working away from his company’s head office. He wants to send a secure message",
+        "over a computer network to the head office."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "Identify the type of system described.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aii",
+              "label": "(ii)",
+              "text": "Justify your answer to part (a)(i).",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aiii",
+              "label": "(iii)",
+              "text": "Identify two types of sensor that could be used by this system.\nState a reason for the use of each sensor.\nSensor 1 ______\nReason ______\nSensor 2 ______\nReason ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A program regularly checks each sensor’s readings. If the value of the reading is out of range,\na warning message is displayed on the screen for that floor.\nA pseudocode algorithm to output the warnings has been written using these identifiers.\nIdentifier Data type Description\nFloorNumber INTEGER Floor number\nSensorNumber INTEGER\nSensor number\nAlways BOOLEAN\nValue to ensure continuous loop\nThe pseudocode algorithm uses:\n• the function CheckSensor(Floor, Sensor) that returns TRUE if the sensor reading\nis out of range and FALSE otherwise\n• the procedure ScreenOut(Floor, Sensor) that outputs the warning message\n\"Problem on Floor\" to the appropriate screen.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Complete the pseudocode algorithm.\n01 Always …………………………………………………………………………\n02 REPEAT\n03 FOR FloorNumber 1 TO …………………………………………………………………………\n04 FOR SensorNumber 1 TO …………………………………………………………………………\n05 IF CheckSensor(FloorNumber, SensorNumber)\n06 THEN\n07 ScreenOut(FloorNumber, SensorNumber)",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A large apartment block has 20 floors. On each floor there is one security camera and four sensors.",
+        "The image from each security camera is output to a display screen for that floor.",
+        "• There are 20 display screens in the reception area on the lowest floor.",
+        "• The data from the sensors are read and processed by a computer system.",
+        "• Warning messages can also be displayed on each display screen."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "If a sensor reading is out of range, a bit is set in a memory location allocated to that floor. The\naddresses for the memory locations are 401 to 420.\nFor example, memory location 401 is used to store the status of the sensors 1 to 4 on floor 1,\nmemory location 402 is used to store the status of the sensors 1 to 4 on floor 2.\nThe table shows data for some of the floors, with sensor 1 on floor 1 set, sensor 2 on floor 2\nset and sensors 3 and 4 on floor 20 set.\nBits\nMemory Sensor number\nlocation\n1 2 3 4 Floor\n0 0 0 0 1 0 0 0 1\n402 0 0 0 0 0 1 0 0\n… … … … … … … … … …\n0 0 0 0 0 0 1 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ci",
+              "label": "(i)",
+              "text": "The data in memory location 410 is shown.\n410 0 0 0 0 0 1 0 1\nState what this data represents.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10cii",
+              "label": "(ii)",
+              "text": "Explain the way in which the data from sensor 3 on floor 7 can be checked.\n\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.",
+              "marks": 5,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "ENDFOR",
+        "12 // delay loop",
+        "13 // delay loop",
+        "14 UNTIL …………………………………………………………………………",
+        "[4]"
+      ]
+    }
+  ]
+}

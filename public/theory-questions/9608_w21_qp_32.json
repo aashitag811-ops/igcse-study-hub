@@ -1,0 +1,551 @@
+{
+  "paperId": "9608_w21_qp_32",
+  "subjectCode": "9608",
+  "session": "w21",
+  "component": "32",
+  "totalMarks": 62,
+  "questionCount": 17,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to assign 567 to the BicycleID of LoanBicycle and\nFALSE to the BicycleAvailable of LoanBicycle.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The type definition for BicycleRecord is changed.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The definition has been extended to include borrower identification numbers,\nBorrowerID, for the last 10 people who borrowed a bicycle. Each identification number\nis an integer.\nWrite the pseudocode statement needed in the type definition of BicycleRecord.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The values for the field BicycleID must be between 500 and 599 inclusive.\nRewrite one pseudocode line from the type definition of BicycleRecord to implement\nthe change.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Data about all the bicycles are stored in a file that uses random file organisation.\nBicycleID is used as the key field.\nExplain how a program could add an extra record to this file.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Data types can be defined using pseudocode.",
+        "The data type, BicycleRecord, is defined in pseudocode as:",
+        "TYPE BicycleRecord",
+        "DECLARE BicycleID : INTEGER",
+        "DECLARE BicycleAvailable : BOOLEAN",
+        "DECLARE BicycleLocation : (RiverSide, BusStation, TrainStation,",
+        "TownSquare, Library)",
+        "DECLARE DateChecked : DATE",
+        "ENDTYPE",
+        "A variable, LoanBicycle, is declared in pseudocode as:",
+        "DECLARE LoanBicycle : BicycleRecord"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the diagram of the stack by writing the names of the three missing layers.\nLayer\nInternet / Network",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Describe the TCP and IP protocols.\nTCP ______\nIP ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The TCP/IP protocol suite can be viewed as a stack with four layers."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The truth table for a logic circuit with four inputs is shown.\nINPUT OUTPUT\nP Q R S X\n0 0 0 0 1\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 1\n1 0 0 0 1\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write the Boolean algebraic expression for the truth table as a sum-of-products.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Complete the following Karnaugh Map (K-map) for the truth table.\nPQ\n00 01 11 10\nRS",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "The K-map can be used to simplify the expression in part (a)(i).\nDraw loop(s) around appropriate groups in the K-map to produce an optimal\nsum-of-products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "3aiv",
+              "label": "(iv)",
+              "text": "Write the simplified sum-of-products from the K-map.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Simplify the expression for X, represented by the truth table in part (a), using Boolean\nAlgebra.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Identify two differences between a wireless network and a wired network.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Identify the hardware device needed to connect the wireless LAN to the Internet. Justify your\nchoice.\nDevice ______\nJustification ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Babar is building a wireless Local Area Network (LAN)."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Flora has written a program that uses the variables p, q, r and s.\nPart of the program contains the following calculations:\np = 5\nq = 4\nr = 1\ns = p * (p - q + r)",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Write the Reverse Polish Notation (RPN) for the expression:\np * (p - q + r)",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Show the changing contents of the stack as the value for s is calculated from the RPN\nexpression.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Convert this RPN expression back to its original infix form.\np q * p q r + - + p /",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Syntax analysis is one stage of the compilation of a program.\nIdentify and describe two other stages of compilation.\nStage 1 ______\nDescription ______\nStage 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Explain why the bank requires a digital signature for the message.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Asymmetric key cryptography is used to keep Lara’s message secure during transmission\nover the Internet.\nDescribe this process of encrypting and decrypting Lara’s message.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Lara has received an email message that appears to be from her bank. She is not sure\nwhether it is authentic.\nState two problems that could occur if Lara opens and responds to this suspicious email\nmessage.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Lara wants to send an important message to her bank over the Internet."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A virtual machine is the software emulation of a computer system using another computer system.",
+        "Describe two benefits and two limitations of using a virtual machine.",
+        "Benefit 1 ...........................................................................................................................................",
+        "Benefit 2 ...........................................................................................................................................",
+        "Limitation 1 .......................................................................................................................................",
+        "Limitation 2 .......................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "Identify the type of system described.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "Justify your answer to part (a)(i).",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiii",
+              "label": "(iii)",
+              "text": "Identify two types of sensor that could be used by this system.\nSensor 1 ______\nSensor 2 ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A program regularly checks each sensor’s readings.\nThe number of empty parking spaces is displayed on the screen for each floor. If there are no\nempty parking spaces on a floor, a message is displayed on the screen to show that the floor\nis full.\nThe pseudocode algorithm to display this information has been written using these identifiers.\nIdentifier Data type Description\nFloorNumber INTEGER\nFloor number\nSpaceNumber INTEGER\nParking space number\nSpaceAvailable INTEGER\nCounts number of empty parking spaces\non a floor\nForEver BOOLEAN\nValue to ensure continuous loop\nThe pseudocode algorithm uses the function CheckSpace(Floor, Space). This function\nreturns TRUE if the parking space is empty and FALSE otherwise.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "Complete the following pseudocode algorithm to check the number of parking spaces\navailable.\n01 ForEver …………………………………………………………………………\n02 REPEAT\n03 FOR FloorNumber 1 TO …………………………………………………………………………\n04 SpaceAvailable 0\n05 FOR SpaceNumber 1 TO …………………………………………………………………………\n06 IF CheckSpace(FloorNumber, SpaceNumber)\n07 THEN\n08 SpaceAvailable SpaceAvailable + 1",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A large car park has 6 floors.",
+        "There is a large screen at the entrance to the car park. This screen displays the number of empty",
+        "parking spaces on each floor.",
+        "• There are 256 parking spaces for cars on each floor.",
+        "• Each parking space has a sensor that detects if a car is parked on it.",
+        "• Data from the sensors are read and processed by a computer system."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF SpaceAvailable > …………………………………………………………………………"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Floor \", …………………………………………………………………………,",
+        "\" empty parking spaces \"…………………………………………………………………………"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Floor \", …………………………………………………………………………, \" full\""
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [
+        {
+          "id": "17c",
+          "label": "(c)",
+          "text": "When a car is parked in a parking space, a bit is set in the appropriate memory location.\n• 32 memory locations are used for each floor with address X01 to X32, where X is the\nnumber of the floor.\n• Each location is one byte in length to hold the data for 8 parking spaces.\nFor example, memory location 101 is used for parking spaces 1 to 8 and memory location\n102 is used for parking spaces 9 to 16.\nThe table shows part of floor 1 with cars parked in parking spaces 4, 11, 16 ... and 255.\nMemory\nBits Parking space number\nlocation\n101 0 0 0 0 1 0 0 0 8 – 1\n102 1 0 0 0 0 1 0 0\n16 – 9\n… … … … … … … … … …\n132 0 1 0 0 0 0 0 0\n256 – 249",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "17ci",
+              "label": "(i)",
+              "text": "The data in memory location 604 is shown.\n604 1 0 0 0 0 0 0 1\nState what this data represents.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "17cii",
+              "label": "(ii)",
+              "text": "Explain the way in which the parking space 254 on floor 5 can be checked to see if it is\nempty.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 5,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "ENDFOR",
+        "19 // delay loop",
+        "20 // delay loop",
+        "21 UNTIL …………………………………………………………………………",
+        "[6]"
+      ]
+    }
+  ]
+}

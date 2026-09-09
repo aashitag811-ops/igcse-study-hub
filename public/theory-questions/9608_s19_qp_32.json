@@ -1,0 +1,437 @@
+{
+  "paperId": "9608_s19_qp_32",
+  "subjectCode": "9608",
+  "session": "s19",
+  "component": "32",
+  "totalMarks": 71,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A computer stores real numbers using floating-point representation. The floating-point\nnumbers have:\n• eight bits for the mantissa\n• four bits for the exponent.\nThe mantissa and exponent are both stored in two’s complement format.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Calculate the denary value of the following floating-point number.\nShow your working.\nMantissa Exponent\n0 0 1 1 0 1 1 1 0 1 0 1\nWorking ______\nAnswer ______",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "State why the floating-point number in part (a)(i) is not normalised.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Give the floating-point number in part (a)(i) in normalised two’s complement format.\nMantissa Exponent",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Convert the denary number +11.625 into a normalised floating-point number.\nShow your working.\nWorking ______\nMantissa Exponent",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Convert the denary number −11.625 into a normalised floating-point number.\nShow your working.\nWorking ______\nMantissa Exponent",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A student enters the following into an interpreter:\nOUTPUT(0.2 * 0.4)\nThe student is surprised to see that the interpreter outputs the following:\n0.08000000000000002\nExplain why the interpreter outputs this value.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Name an alternative method of transferring data across the Internet.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Give an example of a situation where the method you identified in part (a) is more appropriate.\nJustify your choice.\nExample ______\nJustification ______",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Packet switching can be used to transmit data across the Internet.",
+        "Packet switching is not always the most appropriate method of transferring data."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A Boolean algebraic expression produces the following truth table.\nINPUT OUTPUT\nA B C X\n0 0 0 1\n0 0 1 1\n0 1 0 1\n0 1 1 1\n1 0 0 1\n1 0 1 1\n1 1 0 0\n1 1 1 0",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Complete the Karnaugh Map (K-map) for the truth table.\nAB\n00 01 11 10\n\nThe K-map can be used to simplify the expression that produced the truth table in part (a).",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Draw loops around appropriate groups of 1s in the K-map to produce an optimal sum-of-\nproducts.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "Write the simplified sum-of-products Boolean expression for the truth table.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A logic circuit with four inputs produces the following truth table.\nINPUT OUTPUT\nA B C D X\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 1\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 1\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 0",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Complete the K-map for the truth table.\nAB\nCD",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Draw loops around appropriate groups of 1s in the K-map to produce an optimal\nsum-of-products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "Write the simplified sum-of-products Boolean algebraic expression for the truth table.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe the main steps in the evaluation of a Reverse Polish Notation (RPN) expression\nusing a stack.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The infix expression 8 * (5 – 2) – 30 / (2 * 3) converts to:\n8 5 2 – * 30 2 3 * / –\nin Reverse Polish Notation (RPN).\nShow the changing contents of the stack as this RPN expression is evaluated.",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Explain how asymmetric encryption is used to ensure that the message remains private.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "When the government department replies to Sanjeet, it needs to send a verified message.\nExplain how asymmetric encryption can be used to ensure that it is a verified message.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The government’s computer systems are vulnerable to malware.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Describe two vulnerabilities that malware can exploit in computer systems.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "Identify one method that can be used to restrict the effect of malware.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Sanjeet is a member of the public, and he wants to send a private message to a government",
+        "department."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A company sells plant watering systems that automatically turn on water sprinklers when the soil",
+        "becomes too dry.",
+        "The plant watering system has a processor and connecting cables.",
+        "Identify two other hardware devices that are required in this system. State the purpose of each",
+        "device.",
+        "Device 1 ...........................................................................................................................................",
+        "Purpose ............................................................................................................................................",
+        "Device 2 ...........................................................................................................................................",
+        "Purpose ............................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "RISC (Reduced Instruction Set Computing) and CISC (Complex Instruction Set Computing)\nare two types of processor.\nTick (3) one box in each row to show if the statement applies to RISC or CISC processors.\nStatement RISC CISC\nLarger instruction set\nVariable length instructions\nSmaller number of instruction formats\nPipelining is easier\nMicroprogrammed control unit\nMulti-cycle instructions",
+          "marks": 3,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "In parallel processing, a computer can have multiple processors running in parallel.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "State the four basic computer architectures used in parallel processing.",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Describe what is meant by a massively parallel computer.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "A computer process can be in one of three states.\nIdentify and describe two of these states.\nState 1 ______\nDescription ______\nState 2 ______\nDescription ______",
+          "marks": 6,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "One of the main tasks of an operating system is resource management.\nDescribe how an operating system can maximise the use of resources.\nPrimary memory ______\nDisk ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "paperId": "9618_w23_qp_41",
+  "subjectCode": "9618",
+  "session": "w23",
+  "component": "41",
+  "totalMarks": 69,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write program code for the function IterativeVowels().\nSave your program as Question1_N23.\nCopy and paste the program code into part 1(a)(i) in the evidence document.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Write program code to call the function IterativeVowels() with the parameter\n\"house\" from the main program.\nOutput the return value.\nSave your program.\nCopy and paste the program code into part 1(a)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(a)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Rewrite the function IterativeVowels() as a recursive function with the identifier\nRecursiveVowels().\nSave your program.\nCopy and paste the program code into part 1(b)(i) in the evidence document.",
+              "marks": 6,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Write program code to call the function RecursiveVowels() with the parameter\n\"imagine\" from the main program.\nOutput the return value.\nSave your program.\nCopy and paste the program code into part 1(b)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(b)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "This iterative pseudocode algorithm for the function IterativeVowels() takes a string as a",
+        "parameter and counts the number of lower-case vowels in this string.",
+        "The vowels are the letters a, e, i, o and u.",
+        "FUNCTION IterativeVowels(Value : STRING) RETURNS INTEGER",
+        "DECLARE Total : INTEGER",
+        "DECLARE LengthString : INTEGER",
+        "DECLARE FirstCharacter : CHAR",
+        "Total ← 0",
+        "LengthString ← LENGTH(Value)",
+        "FOR X ← 0 TO LengthString - 1",
+        "FirstCharacter ← MID(Value, 0, 1)",
+        "IF FirstCharacter = 'a' OR FirstCharacter = 'e' OR",
+        "FirstCharacter = 'i' OR FirstCharacter = 'o' OR",
+        "FirstCharacter = 'u' THEN",
+        "Total ← Total + 1",
+        "ENDIF",
+        "Value ← MID(Value, 1, LENGTH(Value)-1)",
+        "NEXT X",
+        "RETURN Total",
+        "ENDFUNCTION",
+        "The pseudocode function MID(X, Y, Z) returns Z number of characters from string X, starting",
+        "at the character in position Y. The first character in a string is in position 0, for example:",
+        "MID(\"computer\", 0, 3) returns \"com\"",
+        "The pseudocode function LENGTH(X) returns the number of characters in the string X, for",
+        "example:",
+        "LENGTH(\"computer\") returns 8"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write program code to declare:\n• Queue — a global array with space to store 50 IDs of type string\n• HeadPointer — a global variable to point to the first element in the queue,\ninitialised to −1\n• TailPointer — a global variable to point to the next available space in the queue,\ninitialised to 0.\nSave your program as Question2_N23.\nCopy and paste the program code into part 2(a)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "The procedure Enqueue() takes a string parameter.\nIf the queue is full, the procedure outputs a suitable message. If the queue is not full, the\nprocedure inserts the parameter into the queue and updates the relevant pointer(s).\nWrite program code for Enqueue().\nSave your program.\nCopy and paste the program code into part 2(a)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "The function Dequeue() checks if the queue is empty.\nIf the queue is empty, the function outputs a suitable message and returns the string\n\"Empty\".\nIf the queue is not empty, the function returns the first element in the queue and updates\nthe relevant pointer(s).\nWrite program code for Dequeue().\nSave your program.\nCopy and paste the program code into part 2(a)(iii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A shop sells computer games. Each game has a unique identifier (ID) of string data type.\nThe text file QueueData.txt contains a list of game IDs.\nThe procedure ReadData() reads the data from the text file and inserts each item of data\ninto the array Queue.\nWrite program code for the procedure ReadData().\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Some game IDs appear in the text file more than once.\nThe program needs to total the number of times each game ID appears in the text file.\nThe record structure RecordData has the following fields:\n• ID — a string to store the game ID\n• Total — an integer to store the total number of times that game ID appears in the text\nfile.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Write program code to declare the record structure RecordData.\nIf you are writing in Python, include attribute declarations as comments.\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "The global 1D array Records stores up to 50 items of type RecordData.\nThe global variable NumberRecords stores the number of records currently in the array\nRecords and is initialised to 0.\nWrite program code to declare Records and NumberRecords.\nIf you are writing in Python, include attribute declarations as comments.\nSave your program.\nCopy and paste the program code into part 2(c)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "The pseudocode algorithm for the procedure TotalData():\n• uses Dequeue() to remove an ID from the queue\n• checks whether a RecordData with the returned ID exists in Records\n• increments the total for that ID in the record if the ID already exists\n• creates a new record and stores it in Records if the ID does not exist.\nPROCEDURE TotalData()\nDECLARE DataAccessed : STRING\nDECLARE Flag : BOOLEAN\nDataAccessed ← Dequeue()\nFlag ← FALSE\nIF NumberRecords = 0 THEN\nRecords[NumberRecords].ID ← DataAccessed\nRecords[NumberRecords].Total ← 1\nFlag ← TRUE\nNumberRecords ← NumberRecords + 1\nELSE\nFOR X ← 0 TO NumberRecords - 1\nIF Records[X].ID = DataAccessed THEN\nRecords[X].Total ← Records[X].Total + 1\nFlag ← TRUE\nENDIF\nNEXT X\nENDIF\nIF Flag = FALSE THEN\nRecords[NumberRecords].ID ← DataAccessed\nRecords[NumberRecords].Total ← 1\nNumberRecords ← NumberRecords + 1\nENDIF\nENDPROCEDURE\nWrite program code for the procedure TotalData().\nSave your program.\nCopy and paste the program code into part 2(c)(iii) in the evidence document.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The procedure OutputRecords() outputs the ID and total of each record in Records in the\nformat:\nID 1234 Total 4\nWrite program code for OutputRecords().\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The main program needs to:\n• call ReadData()\n• call TotalData() for each element in the queue\n• call OutputRecords().",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "Write program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(e)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 23,
+      "text": [
+        "A linear queue is implemented using the 1D array, Queue. The index of the first element in the",
+        "array is 0."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Character and its constructor.\nDo not declare the other methods.\nUse your programming language’s appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question3_N23.\nCopy and paste the program code into part 3(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "The get methods GetXPosition() and GetYPosition() each return the relevant\nattribute.\nWrite program code for the get methods.\nSave your program.\nCopy and paste the program code into part 3(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "The set methods SetXPosition() and SetYPosition() each take a value as a\nparameter and add this to the current X or Y position.\nIf the new value exceeds 10 000, it is limited to 10 000.\nIf the new value is below 0, it is limited to 0.\nWrite program code for the set methods.\nSave your program.\nCopy and paste the program code into part 3(a)(iii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiv",
+              "label": "(iv)",
+              "text": "The method Move() takes a string parameter: \"up\", \"down\", \"left\" or \"right\".\nThe table shows the change each direction will make to the X or Y position.\nUse the appropriate method to change the position value.\nDirection Value change\nup Y position + 10\ndown Y position − 10\nleft X position − 10\nright X position + 10\nWrite program code for Move().\nSave your program.\nCopy and paste the program code into part 3(a)(iv) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Write program code to declare a new instance of Character with the identifier Jack.\nThe starting X position is 50 and the starting Y position is 50, the character’s name is Jack.\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The class BikeCharacter inherits from the class Character.\nBikeCharacter\nConstructor()\ntakes Name, XPosition and YPosition as parameters\ncalls its parent class constructor with the appropriate values\nMove()\noverrides the method Move() from the parent class by\nchanging either the X position or the Y position by 20\ninstead of 10",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Write program code to declare the class BikeCharacter and its constructor.\nDo not declare the other method.\nUse your programming language’s appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 3(c)(i) in the evidence document.",
+              "marks": 3,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "The method Move() overrides the method from the parent class.\nThe table shows the change each direction will make to the X or Y position.\nDirection Value change\nup Y position + 20\ndown Y position − 20\nleft X position − 20\nright X position + 20\nWrite program code for Move().\nSave your program.\nCopy and paste the program code into part 3(c)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "Write program code to declare a new instance of BikeCharacter with the identifier Karla.\nThe starting X position is 100, the starting Y position is 50 and the character’s name is Karla.\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Write program code to:\n• take as input which of the two characters the user would like to move\n• take as input the direction the user would like the character to move\n• call the appropriate method to move the character\n• output the character’s new X and Y position in an appropriate format, for example:\n\"Karla's new position is X = 100 Y = 200\"\nAll inputs require appropriate prompts and must be validated.\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Test your program twice with the following inputs.\nTest 1: jack right\nTest 2: karla down\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "A computer game is written using object-oriented programming.",
+        "The game has multiple characters that can move around the screen.",
+        "The class Character stores data about the characters. Each character has a name, a current X",
+        "(horizontal) position and a current Y (vertical) position.",
+        "Character",
+        "Name : STRING",
+        "stores the name of the character as a string",
+        "XPosition : INTEGER",
+        "stores the X position as an integer",
+        "YPosition : INTEGER",
+        "stores the Y position as an integer",
+        "Constructor()",
+        "initialises Name, XPosition and YPosition to its",
+        "parameter values",
+        "GetXPosition()",
+        "returns the X position",
+        "GetYPosition()",
+        "returns the Y position",
+        "SetXPosition()",
+        "adds the parameter to the X position",
+        "validates that the new X position is between 0 and 10 000",
+        "inclusive",
+        "SetYPosition()",
+        "adds the parameter to the Y position",
+        "validates that the new Y position is between 0 and 10 000",
+        "inclusive",
+        "Move()",
+        "takes a direction as a parameter and calls either",
+        "SetXPosition or SetYPosition with an integer value"
+      ]
+    }
+  ]
+}

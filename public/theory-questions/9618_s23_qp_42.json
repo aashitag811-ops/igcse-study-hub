@@ -1,0 +1,367 @@
+{
+  "paperId": "9618_s23_qp_42",
+  "subjectCode": "9618",
+  "session": "s23",
+  "component": "42",
+  "totalMarks": 71,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write program code to declare the global string array Animals to store 10 items.\nSave your program as Question1_J2023.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The main program needs to store the following animals in the array:\nhorse\nlion\nrabbit\nmouse\nbird\ndeer\nwhale\nelephant\nkangaroo\ntiger\nWrite program code to store these animal names in the array.\nThe names must be in lower case and stored in the order given in the list.\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The following pseudocode procedure sorts the array into a descending alphabetical order\nusing only the first character in each animal name.\nThe function LENGTH(DataArray) returns the number of elements in the array DataArray.\nThe function MID(String, Start, Quantity) returns Quantity number of characters\nfrom String starting at index Start. The first character in the string is index 0, for example:\nMID(\"tiger\", 0, 2) will return \"ti\"\nThere are four incomplete statements in the procedure.\nPROCEDURE SortDescending()\nDECLARE ArrayLength : INTEGER\nDECLARE Temp : STRING\nArrayLength LENGTH(Animals)\nFOR X 0 TO ArrayLength - 1\nFOR Y ……………… TO ArrayLength - X - 1\nIF MID(Animals[Y], 0, 1) < MID(Animals[………………], 0, 1) THEN\nTemp Animals[………………]\nAnimals[Y] Animals[Y + 1]\nAnimals[Y + 1] ………………\nENDIF\nNEXT Y\nNEXT X\nENDPROCEDURE\nWrite program code for the procedure SortDescending().\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Write program code to amend the main program to:\n• call the procedure SortDescending()\n• output the sorted contents of the array with each animal name on a new line.\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A 1D array needs to store the names of 10 animals."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write program code to declare a record structure, SaleData, to store the data about each\nsale.\nSave your program as Question2_J2023.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Write program code to:\n• declare a global array, CircularQueue, of 5 items to store the sale records\n• declare the global pointers Head and Tail\n• declare the global variable NumberOfItems\n• initialise all elements of the array CircularQueue to an empty record, where the ID is\nnull (\"\") and quantity is -1\n• initialise Head, Tail and NumberOfItems to 0\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The function Enqueue():\n• takes a new record as a parameter\n• inserts the record in the circular queue at the element pointed to by Tail\n• updates pointers and other variables as required\n• returns −1 if the circular queue is full\n• returns 1 if the record is stored successfully.\nWrite program code for the function Enqueue().\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The function Dequeue():\n• returns a null or empty record if the circular queue is empty\n• returns the first record in the queue if the circular queue is not empty\n• updates pointers and other variables as required.\nWrite program code for the function Dequeue().\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The procedure EnterRecord():\n• takes an ID and quantity as input and creates a sale record\n• uses Enqueue() to insert the record in the circular queue\n• outputs \"Full\" if the record was not inserted in the circular queue\n• outputs \"Stored\" if the record was inserted in the circular queue.\nWrite program code for the procedure EnterRecord().\nSave your program.\nCopy and paste the program code into part 2(e) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "The following sale records need to be entered into the program:\nID Quantity\nADF 10\nOOP 1\nBXW 5\nXXZ 22\nHQR 6\nLLP 3",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2fi",
+              "label": "(i)",
+              "text": "Amend the main program to:\n• use EnterRecord() to input the six records in the table\n• use Dequeue() to remove one record\n• output either the ID and quantity of the removed record, or an error message if the\ncircular queue is empty\n• use EnterRecord() to input the record with the ID \"LLP\" for a second time\n• output the ID and quantity for all the records currently stored in the array\nCircularQueue.\nWrite program code to perform these tasks.\nSave your program.\nCopy and paste the program code into part 2(f)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(f)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 28,
+      "text": [
+        "A business sells a single product. Customers can purchase one or more of this product.",
+        "Each sale has an ID and a quantity, for example \"ABC\" and 2",
+        "The business needs a program to store the data about the sales in a circular queue data structure."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Employee.\nYou only need to declare the class and its constructor. Do not declare any other methods.\nUse your programming language appropriate constructor.\nIf you are writing program code in Python, include attribute declarations using comments.\nSave your program as Question3_J2023.\nCopy and paste the program code into part 3(a)(i) in the evidence document.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "The method GetEmployeeNumber() returns the employee number.\nWrite program code for the method GetEmployeeNumber().\nSave your program.\nCopy and paste the program code into part 3(a)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "The method SetPay():\n• takes a week number and the number of hours worked that week as parameters\n• calculates the pay for that week by multiplying the hourly pay by the number of\nhours worked that week\n• stores the calculated pay in the appropriate index for that week in PayYear2022.\nWrite program code for the method SetPay().\nSave your program.\nCopy and paste the program code into part 3(a)(iii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiv",
+              "label": "(iv)",
+              "text": "The method GetTotalPay() returns the total of all the values in PayYear2022.\nWrite program code for the method GetTotalPay().\nSave your program.\nCopy and paste the program code into part 3(a)(iv) in the evidence document.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The child class Manager inherits from the parent class Employee.\nA manager gets a bonus. This bonus value is a percentage, for example 10.0%.\nWhen calculating the pay, the number of hours the manager worked that week is increased\nby the bonus value.\nManager\nstores the bonus value, for example 10.0 represents a\nBonusValue : REAL\n10.0% increase\nConstructor() takes bonus value, hourly pay, employee number and job title\nas parameters\ninitialises BonusValue to its parameter value\nSetPay() takes the week number and number of hours worked as\nparameters\nincreases the number of hours worked by the bonus value\ncalls the SetPay() method from the parent class",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Write program code to declare the class Manager.\nYou only need to declare the class and its constructor. Do not declare any other methods.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 3(b)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "The Manager method SetPay() overrides the method from the parent class and:\n• takes the week number and number of hours worked as parameters\n• increases the number of hours worked by the bonus value\n• calls SetPay() from the parent class.\nWrite program code for the method SetPay().\nSave your program.\nCopy and paste the program code into part 3(b)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The main program has a global 1D array, EmployeeArray, to store data about\neight employees. Each employee is stored as an object of type Employee.\nThe file Employees.txt stores data about the employees, in the order:\n• hourly pay\n• employee number\n• bonus value (where included)\n• job title.\nOnly employees who are managers have a bonus value saved. For example:\n• The first employee is a Junior Developer, with employee number 12452 and an hourly\npay of $15.22. This employee does not have a bonus value.\n• The third employee is an Interface Manager, with employee number 02586 and an hourly\npay of $22.50. This employee has a bonus value of 5.25%.\nWrite the main program to:\n• declare the array to store data about 8 employees\n• read in the data from the file for each employee\n• instantiate each employee as either Employee (if the employee does not have a bonus\nvalue) or Manager (if the employee has a bonus value).\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The file HoursWeek1.txt stores the number of hours each employee has worked in week 1,\nin the order:\n• employee number\n• number of hours worked.\nFor example, the first set of data is for employee 21548 who has worked 50.0 hours.\nThe procedure EnterHours():\n• reads in the values from the file\n• finds the location of each employee in EmployeeArray\n• calls the method SetPay() for each employee.\nWrite program code for EnterHours().\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "The main program needs to call EnterHours() and use the method GetTotalPay()\nto output the employee number and total pay for each of the eight employees.\nAmend the main program to perform these tasks.\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": null,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 29,
+      "text": [
+        "A company needs a computer program to store data about its employees.",
+        "Part of the program is being written using object‑oriented programming.",
+        "The class Employee stores data about the employees. Each employee has an employee number,",
+        "a job title and hourly pay rate. The class will also store the amount they are paid each week over a",
+        "52‑week year in a 1D array.",
+        "Employee",
+        "HourlyPay : REAL stores the amount each employee gets paid each",
+        "hour",
+        "EmployeeNumber : STRING stores the employee’s unique number",
+        "JobTitle : STRING stores the employee’s job title",
+        "PayYear2022 : ARRAY[0:51] OF REAL stores the amount the employee has been paid each",
+        "week",
+        "Constructor()",
+        "initialises HourlyPay, EmployeeNumber and",
+        "JobTitle from the values passed as parameters",
+        "initialises all 52 elements in PayYear2022 to 0.0",
+        "GetEmployeeNumber()",
+        "returns the employee number",
+        "SetPay()",
+        "takes the week number and number of hours worked",
+        "that week as parameters",
+        "calculates and stores the pay for that week in",
+        "PayYear2022",
+        "GetTotalPay() returns the total of all the values in PayYear2022"
+      ]
+    }
+  ]
+}

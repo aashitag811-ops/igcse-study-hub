@@ -1,0 +1,487 @@
+{
+  "paperId": "9608_s19_qp_42",
+  "subjectCode": "9608",
+  "session": "s19",
+  "component": "42",
+  "totalMarks": 60,
+  "questionCount": 24,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The following is a selection of data showing final marks.\n36, 45, 21, 65, 66, 13, 54, 53, 34\nA linked list of nodes will be used to store the data. Each node consists of the data, a left\npointer and a right pointer. The linked list will be organised as a binary tree.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Complete the binary tree to show how the data above will be organised.\nRootPointer\nThe symbol Ø represents a\nnull pointer\nLeftPointer RightPointer\n21 Ø 45\nØ 66 Ø",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The following diagram shows a 2D array that stores the nodes of the binary tree’s linked\nlist.\nAdd the correct pointer values to complete the diagram, using your answer from\npart (a)(i).\nRootPointer\nIndex LeftPointer Data RightPointer\n0 36\n1 45\nFreePointer",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A company wants an online marking system for an examination."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "21"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "65"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "66"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "13"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "54"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "53"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The company wants to implement a program for the marking system. It will do this with\nobject-oriented programming (OOP).\nMany candidates take the examination. Each examination paper is given a PaperID that is\nmade up of the centre (school) number followed by the candidate number.\nEach examination paper is awarded a grade.\nThe following diagram shows the design for the ExaminationPaper class. This includes\nthe attributes and methods.\nExaminationPaper\nFinalMark : INTEGER // maximum 2 digits, initialised to 0\nGrade : STRING // \"Pass\", \"Merit\", \"Distinction\"\n// or \"Fail\", initialised to \"Fail\"\nPaperID : STRING // centre number followed by the\n// candidate number, for example\n// \"ZZ00991001\"\nCreate() // creates and initialises a new instance\n// of the ExaminationPaper class using\n// language-appropriate constructor\nSetFinalMark() // checks that the mark parameter has a\n// valid value, if so, assigns it to\n// FinalMark\nSetGrade() // sets Grade based on FinalMark\nGetFinalMark() // returns FinalMark\nGetGrade() // returns Grade\nGetPaperID() // returns PaperID",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "The constructor receives the centre number and candidate number as parameter values\nto create PaperID. Other properties are initialised as instructed in the class diagram.\nWrite program code for the Create() constructor method.\nProgramming language ______\nProgram code",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "Get and set methods are used to support the security and integrity of data in\nobject-oriented programming.\nExplain how get and set methods are used to support security and integrity.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biii",
+              "label": "(iii)",
+              "text": "Write program code for the following three get methods.\nProgramming language ______\nGetFinalMark()\nProgram code\nGetGrade()\nProgram code\nGetPaperID()\nProgram code",
+              "marks": 4,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biv",
+              "label": "(iv)",
+              "text": "The method SetFinalMark() checks that its INTEGER parameter Mark is valid. It is\nthen set as the final mark if it is valid. A valid mark is greater than or equal to 0 and less\nthan or equal to 90.\nIf the mark is valid, the method sets the final mark and returns TRUE.\nIf the mark is not valid, the method does not set the final mark and returns FALSE.\nWrite program code for SetFinalMark(Mark : INTEGER).\nProgramming language ______\nProgram code",
+              "marks": 5,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "8bv",
+              "label": "(v)",
+              "text": "Write program code for the method:\nSetGrade(DistMark, MeritMark, PassMark : INTEGER)\nUse the properties in the original class definition.\nGrades are awarded as follows:\nGrade Criteria\n>= DistMark\nDistinction\n>= MeritMark\nMerit\n>= PassMark\nPass\n< PassMark\nFail\nProgramming language ______\nProgram code",
+              "marks": 4,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bvi",
+              "label": "(vi)",
+              "text": "Emily is a candidate who has taken the examination paper. The grades are awarded as\nfollows:\nGrade Criteria\n>= 80\nDistinction\n>= 70\nMerit\n>= 55\nPass\nThe procedure Main() performs the following tasks.\n• allows the centre number, candidate number and mark to be input, with suitable\nprompts\n• assigns an instance of ExaminationPaper to the variable ThisPaper\n• sets the mark for the object\n• sets the grade for the object\n• outputs the grade for the object\nWrite program code for the Main() procedure.\nProgramming language ______\nProgram code",
+              "marks": 8,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The examination paper will be taken by many candidates in centres around the world.\nThe program stores the objects of the ExaminationPaper class in a file. The company has\ndecided to use a hash table, rather than a linked list to store the objects.\nExplain why a hash table is more suitable than a linked list to store the objects.\n\nQuestion 2 begins on the next page.\n2 A stack is an Abstract Data Type (ADT).",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Tick (3) one box to show the statement that describes a stack data structure.\nStatement Tick (3)\nLast in first out\nFirst in first out\nLast in last out",
+          "marks": 1,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A stack contains the values 20, 35, 43, 55.\nTop of stack",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "Show the contents of the stack in part (b) after the following operations.\nPOP()\nPOP()\nPUSH(10)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "Show the contents of the stack from part (b)(i) after these further operations:\nPOP()\nPUSH(50)\nPUSH(55)\nPOP()\nPUSH(65)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biii",
+              "label": "(iii)",
+              "text": "The stack is implemented as a 1D array, with eight elements, and given the identifier\nArrayStack.\nThe global variable Top contains the index of the last element in the stack, or −1 if the\nstack is empty.\nThe function Push():\n• takes as a parameter an INTEGER value to place on the stack\n• adds the value to the top of the stack and returns TRUE to show that the operation\nwas successful\n• returns FALSE if the stack is full.\nWrite an algorithm in pseudocode for the function Push().\n\n3 (a) Identify and describe two features of an editor that can help a programmer to write program\ncode.\nFeature 1 ______\nDescription ______\nFeature 2 ______\nDescription ______",
+              "marks": 7,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A programmer can use three types of test data when testing a program.\nIdentify the three different types of test data.\n\n4 (a) A program has sorted some data in the array, List, in ascending order.\nThe following binary search algorithm is used to search for a value in the array.\n01 ValueFound FALSE\n02 UpperBound LengthOfList - 1\n03 LowerBound 0\n04 NotInList FALSE\n06 WHILE ValueFound = FALSE AND NotInList = FALSE\n07 MidPoint ROUND((LowerBound + UpperBound) / 2)",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 46,
+      "text": [
+        "34",
+        "[6]"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF List[LowerBound] = SearchValue"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ValueFound TRUE"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF List[MidPoint] < SearchValue"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UpperBound MidPoint + 1"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UpperBound MidPoint – 1"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF LowerBound > MidPoint"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NotInList TRUE"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "24",
+      "context": [],
+      "parts": [
+        {
+          "id": "24b",
+          "label": "(b)",
+          "text": "The following is an example of a sorting algorithm. It sorts the data in the array ArrayData.\n01 TempValue \"\"\n02 REPEAT\n03 Sorted TRUE\n04 FOR Count 0 TO 4\n05 IF ArrayData[Count] > ArrayData[Count + 1]\n06 THEN\n07 TempValue ArrayData[Count + 1]\n08 ArrayData[Count + 1] ArrayData[Count]\n09 ArrayData[Count] TempValue\n10 Sorted FALSE\n11 ENDIF\n12 ENDFOR\n13 UNTIL Sorted = TRUE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "24bi",
+              "label": "(i)",
+              "text": "Complete the trace table for the algorithm given in part (b), for the ArrayData values\ngiven in the table.\nArrayData\nCount TempValue Sorted\n0 1 2 3 4 5\n5 20 12 25 32 29",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "24bii",
+              "label": "(ii)",
+              "text": "Rewrite lines 4 to 12 of the algorithm in part (b) using a WHILE loop instead of a FOR\nloop.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "24biii",
+              "label": "(iii)",
+              "text": "Identify the algorithm shown in part (b).",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "24biv",
+              "label": "(iv)",
+              "text": "Identify another sorting algorithm.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "ENDWHILE",
+        "26 IF ValueFound = FALSE",
+        "27 THEN",
+        "28 OUTPUT \"The value is in the list\"",
+        "29 ELSE",
+        "30 OUTPUT \"The value is not found in the list\"",
+        "31 ENDIF",
+        "Note:",
+        "The pseudocode function",
+        "ROUND(Reall : REAL) RETURNS INTEGER",
+        "rounds a number to the nearest integer value.",
+        "For example: ROUND(4.5) returns 5 and ROUND(4.4) returns 4"
+      ]
+    }
+  ]
+}

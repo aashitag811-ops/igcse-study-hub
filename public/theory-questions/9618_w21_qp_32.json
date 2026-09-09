@@ -1,0 +1,457 @@
+{
+  "paperId": "9618_w21_qp_32",
+  "subjectCode": "9618",
+  "session": "w21",
+  "component": "32",
+  "totalMarks": 62,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Numbers are stored in a computer using floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and exponent.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write the normalised floating-point representation of the following unsigned binary\nnumber using this system.\n1011100.011001\nWorking ______\nMantissa Exponent",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "State the consequence of storing the binary number in part (a)(i) as a floating-point\nnumber in this system. Justify your answer.\nConsequence ______\nJustification ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain the reason why binary numbers are stored in normalised form.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw one line from each programming paradigm to its most appropriate description.",
+        "Programming paradigm Description",
+        "Programs using the instruction set of a",
+        "processor",
+        "Declarative",
+        "Programs based on events such as user",
+        "actions or sensor outputs",
+        "Imperative",
+        "Programs using the concepts of class,",
+        "inheritance, encapsulation and",
+        "polymorphism",
+        "Low-level",
+        "Programs with an explicit sequence of",
+        "commands that update the program state,",
+        "with or without procedure calls",
+        "Object-oriented",
+        "Programs that specify the desired result",
+        "rather than how to get to it",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Write pseudocode to create an enumerated type called Parts to include these parts sold in\na computer shop:\nMonitor, CPU, SSD, HDD, LaserPrinter, Keyboard, Mouse",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Write pseudocode to create a pointer type called SelectParts that will reference the\nmemory location in which the current part name is stored.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Enumerated and pointer are two non-composite data types."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following syntax diagrams for a particular programming language show the syntax of:",
+        "• a digit",
+        "• a capital letter",
+        "• a character.",
+        "digit capital letter",
+        "0 A",
+        "1 E",
+        "2 I",
+        "3 O",
+        "4 U"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write the Backus-Naur Form (BNF) notation of the syntax diagram for character.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A password must begin with a character and be followed by one or more digits or capital\nletters.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "State an example of a valid password.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "A valid password is represented by the syntax diagram:\npassword\ncharacter digit\ncapital letter\nWrite the BNF notation of the syntax diagram for password.\n\n5 (a) Compare sequential and serial methods of file organisation.",
+              "marks": 4,
+              "type": "compare",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "State the most suitable method of file access when a record is referenced by a unique\naddress on a disk-type storage medium.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "State the most suitable method of file access when a bank stores its data records in ascending\norder of account number.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "character"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Explain how packet switching is used to transfer messages across the internet.",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Outline the function of a router in packet switching.",
+          "marks": 3,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Write the Boolean expression that corresponds to the given truth table as a sum-of-products.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 1\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 1\nZ = ______",
+          "marks": 3,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Complete the Karnaugh map (K-map) for the given truth table.\nAB\n00 01 11 10\nCD",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Draw loop(s) around appropriate group(s) of 1s in the K-map to produce an optimal\nsum-of-products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "7biii",
+              "label": "(iii)",
+              "text": "Write the Boolean expression from your answer to part b(ii) as a simplified\nsum-of-products.\nZ = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7biv",
+              "label": "(iv)",
+              "text": "Write the simplified Boolean expression for your answer to part b(iii).\nZ = ______",
+              "marks": 1,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Describe the purpose of the Secure Sockets Layer (SSL) and Transport Layer Security (TLS)\nprotocols.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Explain how SSL/TLS protocols are used when a client-server communication is initiated.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The diagram shown represents an artificial neural network.\nOutput\nLayer\nInput\nLayer\nHidden Hidden\nHidden\nLayer 1 Layer 3\nLayer 2",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "State the reason for having multiple hidden layers in an artificial neural network.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "Explain how artificial neural networks enable machine learning.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Find the shortest path between the Home and School nodes using the A* algorithm.\nShow your working in the table provided.\nThe first two rows in the table have been completed.\nHome\nh = 10 9\ng = 1 4\nA C\nB 6\nD 6\nSchool\nNode Cost from Home node (g) Heuristic (h) Total (f = g + h)\nHome 0 14 14\nA 1 10 11\nFinal path",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "State three essential features of recursion.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "Explain the reasons why a stack is a suitable Abstract Data Type (ADT) to implement\nrecursion.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "Identify two ADTs other than a stack.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10d",
+          "label": "(d)",
+          "text": "The function StackFull() checks whether a stack is full.\nThe function uses the variable TopOfStack to represent the pointer to the most recent\nposition used on the stack, and the variable Max to represent the maximum size of the stack.\nAssume TopOfStack and Max are global variables.\nFUNCTION StackFull() RETURNS BOOLEAN\nIF TopOfStack = Max THEN\nRETURN TRUE\nELSE\nRETURN FALSE\nENDIF\nENDFUNCTION\nAn algorithm AddInteger is required to add a new integer data element to a stack.\nThe stack is implemented as an array ArrayStack.\nThe function AddInteger() calls StackFull() and returns an appropriate message.\nComplete the pseudocode for the function AddInteger().\nFUNCTION AddInteger(NewInteger : INTEGER) RETURNS STRING\nENDFUNCTION\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "paperId": "9618_s25_qp_43",
+  "subjectCode": "9618",
+  "session": "s25",
+  "component": "43",
+  "totalMarks": 70,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Queue is a global array of 50 integers with all elements initialised to –1 in the main program.\nThe two pointers are declared as global variables and initialised to –1\nWrite program code to declare and initialise Queue, HeadPointer and TailPointer\nSave your program as Question1_J25.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The function Enqueue():\n• takes an integer parameter to store in the next position in the queue\n• returns FALSE if the queue is full and the parameter cannot be stored in the queue\n• returns TRUE if the parameter is stored in the queue\n• updates the pointers where appropriate.\nWrite program code for Enqueue()\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The function Dequeue():\n• returns the next item in the queue, if the queue is not empty\n• returns –1 if the queue is empty\n• updates the pointers where appropriate.\nWrite program code for Dequeue()\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The text file QueueData.txt stores positive integers. Each integer is on a new line in the\nfile.\nThe procedure CreateQueue():\n• opens the file QueueData.txt\n• reads in each line from the text file and uses Enqueue() to insert each line into the\nqueue\n• outputs \"Queue full\" if any item cannot be inserted into the queue\n• uses exception handling when opening and reading from the text file.\nThe procedure needs to work for a file that contains an unknown number of lines.\nWrite program code for CreateQueue()\nSave your program.\nCopy and paste the program code into part 1(d) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "The main program needs extending to call CreateQueue(). The main program then\nadds together all of the integers stored in the queue, using Dequeue() to access each\ninteger. The total is then output.\nWrite program code to extend the main program.\nSave your program.\nCopy and paste the program code into part 1(e)(i) in the evidence document.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 1(e)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A program reads data from a text file and stores it in a queue. The linear queue Queue is stored as",
+        "a 1D array of up to 50 elements. The queue has the following pointers:",
+        "• HeadPointer – this stores the index of the first element in the queue, initialised to –1",
+        "• TailPointer – this stores the index of the last element in the queue, initialised to –1"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write program code to create DataArray and initialise it with the following data values in the\norder they are written:\n0 3 4 56 67 44 43 32 31 345 45 6 54 1\nSave your program as Question2_J25.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The function InsertionSort() takes an array of integers as a parameter. The function\nsorts the data in the array into ascending numerical order using an insertion sort. The function\nreturns the sorted array.\nWrite program code for InsertionSort()\nYou must not use any inbuilt sorting functions for your programming language.\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The procedure OutputArray() takes an array of integers as a parameter. The procedure\noutputs each element in the array from the first element to the last element. The output is on\none line with a space between each number.\nAn example output is:\n\"0 3 4 56 67 44 43 32 31 345 45 6 54 1\"\nWrite program code for OutputArray()\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "The main program needs extending to:\n• output the content of the unsorted array using OutputArray()\n• sort the array using InsertionSort()\n• output the content of the sorted array using OutputArray()\nWrite program code to extend the main program.\nSave your program.\nCopy and paste the program code into part 2(d)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 2(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The function Search() performs a binary search to find ItemToFind in DataArray\nThe function takes two parameters:\n• DataArray, an array of integers\n• ItemToFind, an integer to find in DataArray\nThe function returns:\n• the index of ItemToFind if it is in DataArray\n• –1 if ItemToFind is not in DataArray\nWrite program code for Search()\nYou must not use any inbuilt searching functions for your programming language.\nSave your program.\nCopy and paste the program code into part 2(e) in the evidence document.",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2fi",
+              "label": "(i)",
+              "text": "The main program needs extending to call Search() with the sorted array four times:\n• the first time to find the index of the integer 0\n• the second time to find the index of the integer 345\n• the third time to find the index of the integer 67\n• the fourth time to find the index of the integer 2\nIf the integer is found in the array, output an appropriate message that includes the index.\nIf the integer is not found, output that it was not found.\nWrite program code to extend the main program.\nSave your program.\nCopy and paste the program code into part 2(f)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 2(f)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A program sorts the data in the 1D array DataArray and searches DataArray for specific",
+        "values.",
+        "DataArray stores 14 integer values and is declared local to the main program."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Node and its constructor.\nDo not declare the other methods.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question3_J25.\nCopy and paste the program code into part 3(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Write program code for the two get methods.\nSave your program.\nCopy and paste the program code into part 3(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "The method SetNextNode() takes an object of type Node as a parameter. The method\nstores the parameter in the attribute NextNode\nWrite program code for SetNextNode()\nSave your program.\nCopy and paste the program code into part 3(a)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The class LinkedList stores the linked list.\nLinkedList\nHeadNode : Node\nstores the first node in the linked list\nConstructor()\ninitialises HeadNode to a null value\nInsertNode()\ncreates a new node using its integer parameter. Sets this\nnode as the new head node and updates NextNode\nRemoveNode()\nfinds the first node that contains its integer parameter and\nremoves this node from the linked list\nTraverse()\nconcatenates and returns the integer data in each node in\nthe linked list",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Write program code to declare the class LinkedList and its constructor.\nDo not declare the other methods.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 3(b)(i) in the evidence document.",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "The method InsertNode():\n• takes an integer as a parameter\n• creates a new node with the parameter as the integer data\n• uses the new node’s method SetNextNode() to store the current HeadNode as\nthe next node\n• replaces HeadNode with the current node.\nWrite program code for InsertNode()\nSave your program.\nCopy and paste the program code into part 3(b)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "The method Traverse() concatenates the integer data from the nodes in the linked\nlist, starting with the node stored in HeadNode. The method returns the final string with\neach integer data separated with a space.\nWrite program code for Traverse()\nSave your program.\nCopy and paste the program code into part 3(b)(iii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biv",
+              "label": "(iv)",
+              "text": "The method RemoveNode() takes an integer parameter to search for and remove from\nthe linked list.\nThe method first checks if the linked list is empty. If the linked list is empty the method\nreturns FALSE\nIf the linked list is not empty, the integer data in HeadNode is compared to the parameter.\nIf it matches the parameter, HeadNode is changed to store the next node.\nIf the parameter does not match, the nodes are followed until either:\n• the node with matching integer data is found. This node is removed, the appropriate\nnodes updated and TRUE returned\n\u0001 or\n• none of the nodes contain matching integer data to the parameter. No nodes are\nremoved and FALSE is returned.\nWrite program code for RemoveNode()\nSave your program.\nCopy and paste the program code into part 3(b)(iv) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "The main program creates a new LinkedList object and uses the appropriate method\nto insert five nodes with the following integer data values in the order given:\n10 20 30 40 50\nThe main program then:\n• calls Traverse()\n• removes the node containing the integer data 30 using RemoveNode()\n• calls Traverse()\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 3(c)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(c)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 29,
+      "text": [
+        "A program stores data in a linked list that is designed using Object‑Oriented Programming (OOP).",
+        "The class Node stores data about the nodes.",
+        "Node",
+        "TheData : Integer",
+        "stores the integer data",
+        "NextNode : Node",
+        "stores the next node in the linked list",
+        "Constructor()",
+        "initialises TheData to its parameter value, initialises NextNode",
+        "to a null value",
+        "GetData()",
+        "returns TheData",
+        "GetNextNode()",
+        "returns NextNode",
+        "SetNextNode()",
+        "takes an object of type Node as a parameter and stores it in",
+        "NextNode"
+      ]
+    }
+  ]
+}

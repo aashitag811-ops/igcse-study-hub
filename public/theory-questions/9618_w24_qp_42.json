@@ -1,0 +1,433 @@
+{
+  "paperId": "9618_w24_qp_42",
+  "subjectCode": "9618",
+  "session": "w24",
+  "component": "42",
+  "totalMarks": 60,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The class EventItem stores data about the events.\nEventItem\nEventName : STRING\nstores the name of the event\nType : STRING stores the type of event, either: jump, swim, run or drive\nDifficulty : INTEGER stores the difficulty of the event from 1 (easiest) to 5\n(hardest)\nConstructor()\ninitialises EventName, Type and Difficulty to its\nparameter values\nGetName()\nreturns the name of the event\nGetDifficulty() returns the difficulty of the event\nGetEventType() returns the type of event",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class EventItem and its constructor.\nDo not declare the other methods.\nUse your programming language’s appropriate constructor.\nAll attributes must be private.\nIf you are writing in Python, include attribute declarations, using comments.\nSave your program as Question1_N24.\nCopy and paste the program code into part 1(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The get methods GetName(), GetDifficulty() and GetEventType() each return\nthe relevant attribute.\nWrite program code for the three get methods.\nSave your program.\nCopy and paste the program code into part 1(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The array Group stores five objects of type EventItem.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write program code to declare Group local to the main program.\nSave your program.\nCopy and paste the program code into part 1(b)(i) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "One group has the following events:\nEvent name Event type Event difficulty\nBridge jump 3\nWater wade swim 4\n100 mile run run 5\nGridlock drive 2\nWall on wall jump 4\nWrite program code to create an instance of EventItem for each of the five events, and\nstore them in Group.\nSave your program.\nCopy and paste the program code into part 1(b)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The class Character stores data about the characters in the game.\nEach character has a skill level for each type of event. The skill level is an integer between\n1 and 5 inclusive. Skill level 1 is the lowest skill level, and skill level 5 is the highest skill level.\nCharacter\nCharacterName : STRING\nstores the name of the character\nJump : INTEGER\nstores the character’s skill level at events of type jump\nSwim : INTEGER\nstores the character’s skill level at events of type swim\nRun : INTEGER\nstores the character’s skill level at events of type run\nDrive : INTEGER\nstores the character’s skill level at events of type drive\nConstructor()\ninitialises CharacterName, Jump, Swim, Run and\nDrive to its parameter values\nGetName()\nreturns the name of the character\nCalculateScore()\ntakes the type of event and difficulty as parameters.\nCalculates and returns the chance of the character\ncompleting the event\nWrite program code to declare the class Character, its constructor and get method.\nUse your programming language’s appropriate constructor.\nAll attributes must be private.\nIf you are writing in Python, include attribute declarations, using comments.\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The method CalculateScore() in the Character class calculates and returns the\npercentage chance of a character completing an event.\nWhen a character’s skill level is greater than or equal to the difficulty of that event, the\npercentage chance of completing the event is 100%.\nWhen a character’s skill level is less than the difficulty of that event, the character’s skill level\nis subtracted from the difficulty of that event. This difference is used to identify the percentage\nchance of success using this table:\nPercentage chance\nDifference\nof success\n1 80",
+          "marks": null,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A computer game is designed for users to select characters. Each character can take part in a",
+        "group of events. Each group has five events. There are four types of event: jump, swim, run, drive.",
+        "The program is written using object-oriented programming."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "60"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "40"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4e",
+          "label": "(e)",
+          "text": "Two characters are attempting each event in the group you created in part 1(b).\nOne character has the name Tarz and the skill levels:\nJump 5\nSwim 3\nRun 5\nDrive 1\nThe second character has the name Geni and the skill levels:\nJump 2\nSwim 2\nRun 3\nDrive 4\nEach Character object is stored in a variable.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ei",
+              "label": "(i)",
+              "text": "Amend the main program to declare and create an instance of a Character object for\nTarz and for Geni.\nSave your program.\nCopy and paste the program code into part 1(e)(i) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4eii",
+              "label": "(ii)",
+              "text": "Both characters Tarz and Geni take part in each event in the group you created in part\n1(b).\nThese steps are repeated for all five events:\n• The percentage chance of each character completing the event is calculated and\ncompared.\n• The character with the highest percentage chance of completing the event gets 1\npoint. Their character name is output together with a message telling them they\nhave won that event.\n• If both characters have the same percentage chance of completing the event, the\nscores do not change, and a message is output stating that the event is a draw.\nWhen the total score for each character has been calculated, the name of the character\nwith the highest score is output stating they have won and the number of points they\nhave. If both characters have the same number of points, a message is output telling\nthem the group is a draw.\nAmend the main program to:\n• calculate the score for each character in each event\n• output the name of the character that wins each event or that the event is a draw\n• output the name of the character that has the most points for the group or that the\ngroup is a draw.\nSave your program.\nCopy and paste the program code into part 1(e)(ii) in the evidence document.",
+              "marks": null,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4eiii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(e)(iii) in the evidence document.\n\n2 A linear queue data structure is designed using a record structure.\nThe record structure Queue has the following fields:\n• QueueArray, a 1D array of up to 100 integer values\n• Headpointer, a variable that stores the index of the first data item in QueueArray\n• Tailpointer, a variable that stores the index of the next free location in QueueArray.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write program code to declare the record structure Queue and its fields.\nIf your programming language does not support record structures, a class can be declared\ninstead.\nIf you are writing in Python, use comments to declare the appropriate data types.\nSave your program as Question2_N24.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The main program creates a new Queue record with the identifier TheQueue. The head\npointer is initialised to –1. The tail pointer is initialised to 0. Each element in the array is\ninitialised with –1.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The pseudocode function Enqueue() inserts an integer value into the queue.\nThe function is incomplete. There are three incomplete statements.\nFUNCTION Enqueue(BYREF AQueue : Queue, BYVAL TheData : INTEGER)\nRETURNS INTEGER\nIF AQueue.Headpointer = -1 THEN\nAQueue.QueueArray[AQueue.Tailpointer] ← ______\nAQueue.Headpointer ← 0\nAQueue.Tailpointer ← AQueue.Tailpointer + 1\nRETURN 1\nELSE\nIF AQueue.Tailpointer > ______ THEN\nRETURN -1\nELSE\nAQueue.QueueArray[AQueue.Tailpointer] ← TheData\nAQueue.Tailpointer ← AQueue.Tailpointer ______\nRETURN 1\nENDIF\nENDIF\nENDFUNCTION\nWrite program code for Enqueue().\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "The function ReturnAllData() accesses TheQueue. It concatenates all the integer\nvalues that have been inserted into the queue’s array, starting from the value stored at\nHeadPointer, with a space between each integer value. The string of concatenated values\nis returned.\nNone of the integer values are removed from the queue.\nWrite program code for ReturnAllData().\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ei",
+              "label": "(i)",
+              "text": "The main program asks the user to enter 10 integers with values of 0 or greater. It reads\neach input repeatedly until a valid number is entered.\nAll 10 valid inputs are added to the queue, using Enqueue().\nIf the value returned from Enqueue() is –1, a message is output to state that the queue\nis full, otherwise a message is output to state that the item has been added to the queue.\nThe function ReturnAllData() is called once all 10 integers have been entered and\nthe return value from the function call is output.\nAmend the main program to perform these actions.\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
+              "marks": 5,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4eii",
+              "label": "(ii)",
+              "text": "Test your program with the following inputs in the order given:\n10 9 –1 8 7 6 5 4 3 2 1\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(e)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4f",
+          "label": "(f)",
+          "text": "The function Dequeue() accesses TheQueue. The function returns –1 if the queue is empty.\nIf the queue is not empty, the function returns the next item in the queue and updates the\nrelevant pointer(s).\nThe data is not replaced or deleted from the queue.\nWrite program code for Dequeue().\nSave your program.\nCopy and paste the program code into part 2(f) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4g",
+          "label": "(g)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4gi",
+              "label": "(i)",
+              "text": "The main program calls Dequeue() twice, and each time it either outputs ‘Queue empty’\nif there is no data in the queue or outputs the return value.\nThe main program then calls ReturnAllData() a second time.\nAmend the main program.\nSave your program.\nCopy and paste the program code into part 2(g)(i) in the evidence document.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4gii",
+              "label": "(ii)",
+              "text": "Test your program with the following inputs in the order given:\n10 9 8 7 6 5 4 3 2 1\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(g)(ii) in the evidence document.\n\n3 The text file HighScoreTable.txt stores the top seven player scores for a game.\nThe data in the file is stored in the order:\nPlayer ID\nGame level\nScore\nEach item of data is stored on a new line. For example, the first set of data in the file is:\nPlayer ID: GHEH\nGame level: 3\nScore: 10",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The data about the players and their scores is stored in a 2D array of strings with the identifier\nHighScores.\nThe first dimension of the array has seven elements: one for each player. The second\ndimension of the array has three elements: one for the player ID, one for the game level and\none for the score. All data is stored in the array as strings.\nHighScores is declared local to the main program, and all elements are initialised to an\nempty string, for example \"\".\nWrite program code to declare and initialise HighScores.\nSave your program as Question3_N24.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The function ReadData() reads the data from HighScoreTable.txt and stores the data\nin a 2D array. The function returns the 2D array.\nThe function uses exception handling when opening and reading data from the file.\nWrite program code for ReadData().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The procedure OutputHighScores() takes a 2D array as a parameter. It outputs each\nplayer’s ID, level and score in the order they are in the array. The outputs are in the format:\nGHEH reached level 3 with a score of 10\nWrite program code for OutputHighScores().\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "The scores in HighScoreTable.txt are not in order.\nThe player scores are first sorted by the game level they reached. For example, all players\nthat reached level 5 are higher in the high score table than players that reached level 4.\nThe players that reached the same level are then sorted in descending order of score.\nAn example sorted high score table is:\nPosition Player ID Game level Score\n1 GFED 5 25\n2 HJKM 4 21\n3 RERR 4 19\n4 TTYU 4 15",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 41,
+      "text": [
+        "20",
+        "For example:",
+        "• A character has a skill level of 3 for events of type run.",
+        "• An event of type run has a difficulty level of 5",
+        "• The character’s skill level is less than the difficulty, therefore the difference is calculated.",
+        "• The difference is the character’s skill level subtracted from the event difficulty, 5 – 3 = 2",
+        "• The difference is 2, therefore the percentage chance of succeeding is 60%",
+        "Write program code for the method CalculateScore() to:",
+        "• take the type of event and difficulty as parameters",
+        "• calculate the percentage chance of the character completing the event",
+        "• return the percentage chance of completing the event as an integer number, for example",
+        "Save your program.",
+        "Copy and paste the program code into part 1(d) in the evidence document.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WSVG 3 20"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PPTR 3 15"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ei",
+              "label": "(i)",
+              "text": "Amend the main program to implement these steps in the order given:\n• call ReadData() and store the returned array in HighScores\n• output \"Before\"\n• call OutputHighScores() with HighScores as a parameter\n• call SortScores() and store the returned array in HighScores\n• output \"After\"\n• call OutputHighScores() with HighScores as a parameter.\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7eii",
+              "label": "(ii)",
+              "text": "Test your program\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "SNQT 2 10",
+        "The function SortScores() uses a bubble sort to sort the data as described and returns the",
+        "sorted array.",
+        "Write program code for SortScores().",
+        "Save your program.",
+        "Copy and paste the program code into part 3(d) in the evidence document.",
+        "[4]"
+      ]
+    }
+  ]
+}

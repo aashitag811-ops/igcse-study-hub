@@ -1,0 +1,358 @@
+{
+  "paperId": "9618_w21_qp_41",
+  "subjectCode": "9618",
+  "session": "w21",
+  "component": "41",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write program code to declare the function Unknown().\nSave your program as question 1.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The main program needs to run all three of the following function calls and output the result\nof each call:\nUnknown(10, 15)\nUnknown(10, 10)\nUnknown(15, 10)",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "For each of the three function calls, the main program needs to:\n• output the value of the two parameters\n• call the function with those parameters\n• output the return value.\nWrite the program code for the main program.\nSave your program.\nCopy and paste the program code into part 1(b)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Take a screenshot to show the output from part (b)(i).\nCopy and paste the screenshot into part 1(b)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Rewrite the function Unknown() as an iterative function, IterativeUnknown().\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 7,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The iterative function needs to be called three times with the same parameters as in part (b).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "For each of the three function calls, the main program needs to:\n• output the value of the two parameters\n• call the iterative function with those parameters\n• output the return value.\nAmend the main program to perform these tasks.\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Take one or more screenshots to show the output of both functions for each set of\nparameters.\nCopy and paste the screenshot(s) into part 1(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "Study the following pseudocode for a recursive function.",
+        "FUNCTION Unknown(BYVAL X, BYVAL Y : INTEGER) RETURNS INTEGER",
+        "IF X < Y THEN",
+        "OUTPUT X + Y",
+        "RETURN (Unknown(X + 1, Y) * 2)",
+        "ELSE",
+        "IF X = Y THEN",
+        "RETURN 1",
+        "ELSE",
+        "OUTPUT X + Y",
+        "RETURN (Unknown(X - 1, Y) DIV 2)",
+        "ENDIF",
+        "ENDIF",
+        "ENDFUNCTION",
+        "The operator DIV returns the integer value after division e.g. 13 DIV 2 would give 6"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The constructor takes the picture description, frame colour, height, and width as parameters\nand sets these to the private attributes.\nWrite the program code to declare the class Picture and its constructor.\nDo not write any other methods.\nUse your language appropriate constructor. All attributes should be private.\nIf you are writing in Python programming language, include attribute declarations using\ncomments.\nSave your program as question 2.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The four get methods return the associated attribute, for example, GetDescription()\nreturns the description of the picture.\nWrite the four get methods.\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The method SetDescription() takes a new description as a parameter, and writes this\nvalue to the appropriate attribute.\nWrite the method SetDescription().\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Write program code to declare an array of type Picture with 100 elements.\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The text file Pictures.txt stores the data for the pictures in the order: description, width,\nheight, colour.\nFor example, for the first picture in the text file:\nFlowers is the description\n45 is the width\n50 is the height\nblack is the frame colour.\nThe data read into the program from the text file is stored in an array of type Picture.\nThe main program and the function will need to access the array data.\nThe function ReadData():\n• opens the file Pictures.txt\n• reads the data from the file\n• creates a new object of type Picture for each picture\n• writes each object to the array\n• raises an exception if the file cannot be found\n• counts and returns the number of pictures in the array.\nWrite program code for the function ReadData().\nSave your program.\nCopy and paste the program code into part 2(e) in the evidence document.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "The main program calls the function ReadData().\nWrite the main program.\nSave your program.\nCopy and paste the program code into part 2(f) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2g",
+          "label": "(g)",
+          "text": "The main program needs to ask the user to input their requirements for a picture. The user\nwill enter the colour of the frame, the maximum width, and the maximum height of the picture.\nThe program will then search the array of pictures, and output the picture description, the\nwidth, and the height of any picture that meets the user’s requirements.\nThe program should allow the user to input the colour in any case (e.g. Silver, silver, or\nSILVER), and still output the correct results.\nEdit the main program to perform the described actions.\nSave your program.\nCopy and paste the program code into part 2(g) in the evidence document.",
+          "marks": 7,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2h",
+          "label": "(h)",
+          "text": "Test your program by inputting the following search criteria:\n• BLACK, 100, 100\n• silver, 25, 25\nTake screenshots to show the output for both search criteria.\nCopy and paste the screenshots into part 2(h) in the evidence document.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "A program, written using object-oriented programming, stores pictures as objects.",
+        "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g.",
+        "black), and a description of the picture (e.g. flowers).",
+        "The class has the following attributes and methods.",
+        "Picture",
+        "Description : STRING // stores a description of the picture",
+        "Width : INTEGER // stores the width e.g. 30",
+        "Height : INTEGER // stores the height e.g. 40",
+        "FrameColour : STRING // stores the colour e.g. black",
+        "Constructor() // takes all four values as parameters and",
+        "sets them to the private attributes",
+        "GetDescription() // returns the description of the picture",
+        "GetHeight() // returns the height",
+        "GetWidth() // returns the width",
+        "GetColour() // returns the frame colour",
+        "SetDescription() // takes the new description as a parameter",
+        "and writes the value to description"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The 2D array, ArrayNodes, is declared with space for 20 nodes.\nEach node has a left pointer, data and right pointer.\nThe program also initialises the:\n• RootPointer to -1 (null); this points to the first node in the binary tree\n• FreeNode to 0; this points to the first empty node in the array.\nWrite program code to declare ArrayNodes, RootPointer and FreeNode in the main\nprogram.\nIf you are writing in Python programming language, include attribute declarations using\ncomments.\nSave your program as question 3.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The procedure AddNode() adds a new node to the array ArrayNodes.\nThe procedure needs to:\n• take the array, root pointer and free node pointer as parameters\n• ask the user to enter the data and read this in\n• add the node to the root pointer if the tree is empty\n• otherwise, follow the pointers to find the position for the data item to be added\n• store the data in the location and update all pointers.\nThere are six incomplete statements in the following pseudocode for the procedure AddNode().\nPROCEDURE AddNode(BYREF ArrayNodes[] : ARRAY OF INTEGER,\nBYREF RootPointer : INTEGER, BYREF FreeNode : INTEGER)\nOUTPUT \"Enter the data\"\nINPUT NodeData\nIF FreeNode <= 19 THEN\nArrayNodes[FreeNode, 0] ← -1\nArrayNodes[FreeNode, 1] ← ………………………………………\nArrayNodes[FreeNode, 2] ← -1\nIF RootPointer = ……………………………………… THEN\nRootPointer ← 0\nELSE\nPlaced ← FALSE\nCurrentNode ← RootPointer\nWHILE Placed = FALSE\nIF NodeData < ArrayNodes[CurrentNode, 1] THEN\nIF ArrayNodes[CurrentNode, 0] = -1 THEN\nArrayNodes[CurrentNode, 0] ← ………………………………………\nPlaced ← TRUE\nELSE\n……………………………………… ← ArrayNodes[CurrentNode, 0]\nENDIF\nELSE\nIF ArrayNodes[CurrentNode, 2] = -1 THEN\nArrayNodes[CurrentNode, 2] ← FreeNode\nPlaced ← ………………………………………\nELSE\nCurrentNode ← ArrayNodes[CurrentNode, 2]\nENDIF\nENDIF\nENDWHILE\nENDIF\nFreeNode ← ……………………………………… + 1\nELSE\nOUTPUT(\"Tree is full\")\nENDIF\nENDPROCEDURE\nWrite program code for the procedure AddNode().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The procedure PrintAll()outputs the data in each element in ArrayNodes, in the order\nthey are stored in the array.\nEach element is printed in a row in the order:\nLeftPointer Data RightPointer\nFor example:\n1 20 -1\n-1 10 -1\nWrite program code for the procedure PrintAll().\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The main program should loop 10 times, each time calling the procedure AddNode(). It\nshould then call the procedure PrintAll().",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "Edit the main program to perform the actions described.\nSave your program.\nCopy and paste the program code into part 3(d)(i) in the evidence document.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "Test the program by entering the data:\nTake a screenshot to show the output after the given data are entered.\nCopy and paste the screenshot into part 3(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "An in-order tree traversal visits the left node, then the root (and outputs this), then visits the\nright node.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Write a recursive procedure, InOrder(), to perform an in-order traversal on the tree\nheld in ArrayNodes.\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": 7,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Test the procedure InOrder() with the same data entered in part (d)(ii).\nTake a screenshot to show the output after entering the data.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 28,
+      "text": [
+        "An ordered binary tree stores integer data in ascending numerical order.",
+        "The data for the binary tree is stored in a 2D array with the following structure:",
+        "LeftPointer Data RightPointer",
+        "Index [0] [1] [2]",
+        "[0] 1 10 2",
+        "[1] -1 5 -1",
+        "-1 16 -1",
+        "[2]",
+        "Each row in the table represents one node on the tree.",
+        "The number -1 represents a null pointer."
+      ]
+    }
+  ]
+}

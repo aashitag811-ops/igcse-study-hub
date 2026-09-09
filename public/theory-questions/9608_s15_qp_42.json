@@ -1,0 +1,423 @@
+{
+  "paperId": "9608_s15_qp_42",
+  "subjectCode": "9608",
+  "session": "s15",
+  "component": "42",
+  "totalMarks": 52,
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A turnstile is a gate which is in a locked state. To open it and pass through, a customer inserts",
+        "a coin into a slot on the turnstile. The turnstile then unlocks and allows the customer to push the",
+        "turnstile and pass through the gate.",
+        "After the customer has passed through, the turnstile locks again. If a customer pushes the turnstile",
+        "while it is in the locked state, it will remain locked until another coin is inserted.",
+        "The turnstile has two possible states: locked and unlocked. The transition from one state to",
+        "another is as shown in the table below.",
+        "Current state Event Next state",
+        "Locked Insert coin Unlocked",
+        "Locked Push Locked",
+        "Unlocked Attempt to insert coin Unlocked",
+        "Unlocked Pass through Locked",
+        "Complete the state transition diagram for the turnstile:",
+        "start",
+        "[5]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative programming language is used to represent the knowledge base shown below:",
+        "01 capital_city(amman).",
+        "02 capital_city(beijing)."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "capital_city(brussels)."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "capital_city(cairo)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "capital_city(london)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "city_in_country(amman, jordan)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "city_in_country(shanghai, china)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "city_in_country(brussels, belgium)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "city_in_country(london, uk)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "city_in_country(manchester, uk)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country_in_continent(belgium, europe)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country_in_continent(china, asia)."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country_in_continent(uk, europe)."
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "city_visited(amman)."
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "city_visited(beijing)."
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "More facts are to be included.\nThe travel writer visited the city of Santiago which is the capital city of Chile, in the continent\nof South America.\nWrite additional clauses to record this.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Using the variable ThisCountry, the goal\ncountry_in_continent(ThisCountry, europe)\nreturns\nThisCountry = belgium, uk\nWrite the result returned by the goal:\ncity_in_country(ThisCity, uk)\nThisCity = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16c",
+          "label": "(c)",
+          "text": "Complete the rule below to list the countries the travel writer has visited.\ncountries_visited(ThisCountry)\nIF ______\n\n3 A shop gives some customers a discount on goods totalling more than $20.\nThe discounts are:\n• 5% for goods totalling more than $100\n• 5% with a discount card\n• 10% with a discount card and goods totalling more than $100",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Complete the decision table.\ngoods totalling\nY Y Y Y N N N N\nmore than $20\ngoods totalling\nY Y N N Y Y N N\nmore than $100\nConditions\nhave discount card Y N Y N Y N Y N\nNo discount\n5% discount\nActions\n10% discount",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Simplify your solution by removing redundancies.\ngoods totalling\nmore than $20\ngoods totalling\nmore than $100\nConditions\nhave discount card\nNo discount\n5% discount\nActions\n10% discount",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16c",
+          "label": "(c)",
+          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function Discount.\nThis function returns the discount amount as an integer.\nIdentifier Data type\nGoodsTotal INTEGER\nHasDiscountCard BOOLEAN\nWrite program code for this function.\nProgramming language ______\n\n4 A payroll program is to be written using an object-oriented programming language. An Employee\nclass is designed. Two subclasses have been identified:\n• HourlyPaidEmployee who is paid a monthly wage calculated from their hourly rate of pay\nand the number of hours worked during the month\n• SalariedEmployee who is paid a monthly wage which is one 12th of their annual salary",
+          "marks": null,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Draw an inheritance diagram for these classes.",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "The design for the Employee class consists of:\n• properties\n•• EmployeeName\n•• EmployeeID\n•• AmountPaidThisMonth\n• methods\n•• SetEmployeeName\n•• SetEmployeeID\n•• CalculatePay\nWrite program code for the class definition of the superclass Employee.\nProgramming language ______",
+          "marks": 5,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16ci",
+              "label": "(i)",
+              "text": "State the properties and/or methods required for the subclass HourlyPaidEmployee.",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16cii",
+              "label": "(ii)",
+              "text": "State the properties and/or methods required for the subclass SalariedEmployee.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "16d",
+          "label": "(d)",
+          "text": "Name the feature of object-oriented program design that allows the method CalculatePay\nto be declared in the superclass Employee.\n\n5 Data is stored in the array NameList[1:10]. This data is to be sorted.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16ai",
+              "label": "(i)",
+              "text": "Complete the pseudocode algorithm for an insertion sort.\nFOR ThisPointer ← 2 TO ______\n// use a temporary variable to store item which is to\n// be inserted into its correct location\nTemp ← NameList[ThisPointer]\nPointer ← ThisPointer – 1\nWHILE (NameList[Pointer] > Temp) AND ______\n// move list item to next location\nNameList[______] ← NameList[______]\nPointer ← ______\nENDWHILE\n// insert value of Temp in correct location\nNameList[______] ← ______\nENDFOR",
+              "marks": 7,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16aii",
+              "label": "(ii)",
+              "text": "A special case is when NameList is already in order. The algorithm in part (a)(i) is\napplied to this special case.\nExplain how many iterations are carried out for each of the loops.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "An alternative sort algorithm is a bubble sort:\nFOR ThisPointer ← 1 TO 9\nFOR Pointer ← 1 TO 9\nIF NameList[Pointer] > NameList[Pointer + 1]\nTHEN\nTemp ← NameList[Pointer]\nNameList[Pointer] ← NameList[Pointer + 1]\nNameList[Pointer + 1] ← Temp\nENDIF\nENDFOR\nENDFOR",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16bi",
+              "label": "(i)",
+              "text": "As in part (a)(ii), a special case is when NameList is already in order. The algorithm in\npart (b) is applied to this special case.\nExplain how many iterations are carried out for each of the loops.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16bii",
+              "label": "(ii)",
+              "text": "Rewrite the algorithm in part (b), using pseudocode, to reduce the number of\nunnecessary comparisons. Use the same variable names where appropriate.\n\n6 A queue Abstract Data Type (ADT) has these associated operations:\n• create queue\n• add item to queue\n• remove item from queue\nThe queue ADT is to be implemented as a linked list of nodes.\nEach node consists of data and a pointer to the next node.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "The following operations are carried out:\nCreateQueue\nAddName(\"Ali\")\nAddName(\"Jack\")\nAddName(\"Ben\")\nAddName(\"Ahmed\")\nRemoveName\nAddName(\"Jatinder\")\nRemoveName\nAdd appropriate labels to the diagram to show the final state of the queue. Use the space on\nthe left as a workspace. Show your final answer in the node shapes on the right:",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Using pseudocode, a record type, Node, is declared as follows:\nTYPE Node\nDECLARE Name : STRING\nDECLARE Pointer : INTEGER\nENDTYPE\nThe statement\nDECLARE Queue : ARRAY[1:10] OF Node\nreserves space for 10 nodes in array Queue.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16bi",
+              "label": "(i)",
+              "text": "The CreateQueue operation links all nodes and initialises the three pointers that need\nto be used: HeadPointer, TailPointer and FreePointer.\nComplete the diagram to show the value of all pointers after CreateQueue has been\nexecuted.\nQueue\nHeadPointer Name Pointer\n\n\n\nTailPointer\n\n\n\nFreePointer",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16bii",
+              "label": "(ii)",
+              "text": "The algorithm for adding a name to the queue is written, using pseudocode, as a\nprocedure with the header:\nPROCEDURE AddName(NewName)\nwhere NewName is the new name to be added to the queue.\nThe procedure uses the variables as shown in the identifier table.\nIdentifier Data type Description\nQueue Array[1:10] OF Node\nArray to store node data\nNewName STRING Name to be added\nFreePointer INTEGER Pointer to next free node in array\nHeadPointer INTEGER Pointer to first node in queue\nTailPointer INTEGER Pointer to last node in queue\nCurrentPointer INTEGER Pointer to current node\nPROCEDURE AddName(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nCurrentPointer ← FreePointer\nQueue[CurrentPointer].Name ← NewName\n// adjust free pointer\nFreePointer ← Queue[CurrentPointer].Pointer\n// if first name in queue then adjust head pointer\nIF HeadPointer = 0\nTHEN\nHeadPointer ← CurrentPointer\nENDIF\n// current node is new end of queue\nQueue[CurrentPointer].Pointer ← 0\nTailPointer ← CurrentPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure RemoveName. Use the variables listed in\nthe identifier table.\nPROCEDURE RemoveName()\n// Report error if Queue is empty\nOUTPUT Queue[…………………………………………………………].Name\n// current node is head of queue\n// update head pointer\n// if only one element in queue then update tail pointer\n// link released node to free list\nENDPROCEDURE\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 6,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 52,
+      "text": [
+        "city_visited(cairo).",
+        "These clauses have the following meaning:",
+        "Clause Explanation",
+        "Amman is a capital city",
+        "06 Amman is a city in the country of Jordan",
+        "11 Belgium is a country in the continent of Europe",
+        "14 The travel writer visited Amman"
+      ]
+    }
+  ]
+}

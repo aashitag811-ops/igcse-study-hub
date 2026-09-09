@@ -1,0 +1,436 @@
+{
+  "paperId": "9608_w21_qp_41",
+  "subjectCode": "9608",
+  "session": "w21",
+  "component": "41",
+  "totalMarks": 73,
+  "questionCount": 14,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Show the state of DataStack and its pointer after the following functions are executed on\nthe current contents.\nPop()\nPop()\nPush(19)\nPop()\nPush(50)\nTopPointer 3 Index Data\n\n\n\n\n[3] 8\n[2] 6\n\n[0] 10",
+          "marks": 7,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write program code for the function Pop().\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Sandy has also used a queue in her program.\nDescribe the ways in which a queue differs from a stack.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "Sandy is writing a program to process data in a stack. The stack is implemented as a 1D array,",
+        "DataStack, which has up to 100 elements.",
+        "The function Push(Value) stores Value on the stack and returns TRUE if Value was added to",
+        "the stack, or FALSE if the stack is full.",
+        "The function Pop() returns the item at the top of the stack, or returns –1 if the stack is empty.",
+        "DataStack and TopPointer are declared as global."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A grade generator program takes the mark a student obtained in a test as input.",
+        "The program calculates and outputs the grade that matches the mark. The grade is either A, B, C,",
+        "D or U.",
+        "Complete the following JSP structure diagram for the grade generator program.",
+        "GradeGenerator",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following pseudocode algorithm performs a binary search on the sorted array ThisArray.",
+        "The algorithm returns either the location of SearchItem in the array, or –1 if SearchItem is not",
+        "in the array.",
+        "The function DIV returns the integer value of the division, for example, 11 DIV 2 returns 5.",
+        "Complete the algorithm by writing the missing pseudocode statements.",
+        "FUNCTION BinarySearch(ThisArray[], LowerBound, UpperBound,",
+        "SearchItem : INTEGER) RETURNS INTEGER",
+        "DECLARE Flag : BOOLEAN",
+        "DECLARE Mid : INTEGER",
+        "Flag -2",
+        "WHILE Flag <> -1",
+        "Mid LowerBound + ((UpperBound – LowerBound) DIV 2)",
+        "IF …………………………………………………………… < ……………………………………………………………",
+        "THEN",
+        "RETURN ……………………………………………………………",
+        "ELSE",
+        "IF ThisArray[Mid] > SearchItem",
+        "THEN",
+        "UpperBound Mid ……………………………………………………………",
+        "ELSE",
+        "IF ThisArray[Mid] < SearchItem",
+        "THEN",
+        "LowerBound Mid ……………………………………………………………",
+        "ELSE",
+        "RETURN ……………………………………………………………",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "ENDWHILE",
+        "ENDFUNCTION",
+        "[6]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Teachers in a school may work on Mondays, Tuesdays and Wednesdays. There are three time",
+        "slots on each day: time slot 1, time slot 2 and time slot 3.",
+        "A teacher is either busy or free.",
+        "The school is using a declarative language to write a program to record which teachers are busy",
+        "in each time slot on each day.",
+        "The following knowledge base is used:",
+        "01 teacher(james).",
+        "02 teacher(jill).",
+        "03 teacher(karl).",
+        "04 teacher(kira)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "day(monday)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "day(tuesday)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "day(wednesday)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "timeSlot(1)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "timeSlot(2)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "timeSlot(3)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "busy(james, monday, 1)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "busy(james, tuesday, 2)."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "busy(karl, monday, 1)."
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "More facts need to be included.\nFred is a teacher who is busy in time slot 1 on Tuesday.\nWrite additional clauses for these facts.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Additional clauses are needed to identify whether Jill is busy in time slot 1 on Monday,\nTuesday, or Wednesday.\nWrite these additional clauses.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "Write a goal, using the variable X, to find all the teachers who are busy in time slot 3 on\nMonday.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14d",
+          "label": "(d)",
+          "text": "Write a rule to find whether a teacher X is free in a specific time slot Y on day Z.\nIsTeacherFree(X, Z, Y)\nIF\n\n5 The recursive algorithm for the Recursion() function is defined in pseudocode as follows:\nFUNCTION Recursion(A, B : INTEGER) RETURNS INTEGER\nIF A <= 100\nTHEN\nRETURN 1\nELSE\nIF A > B\nTHEN\nRETURN 5 + Recursion(A - 1, B)\nELSE\nRETURN 10 + Recursion(A – 10, B)\nENDIF\nENDIF\nENDFUNCTION",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "The function is called with the following pseudocode statement:\nOUTPUT Recursion(104, 102)\nDry run the function and complete the trace table. Give the output the program will produce.\nTrace table:\nA B\nFunction call Return value\nOutput = ______\nWorking ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Rewrite the function Recursion() in pseudocode, using an iterative algorithm.\n\n6 Kobi is writing an application that uses a record structure to store data.",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "14ai",
+              "label": "(i)",
+              "text": "Describe what is meant by a record structure.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "14aii",
+              "label": "(ii)",
+              "text": "The record structure stores the unique ID number (a whole number), first name and last\nname of a customer.\nWrite a pseudocode declaration for the record structure CustomerData.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Kobi’s application stores the records in a random access file.\nThe function StoreRecord():\n• takes a customer record as a parameter\n• uses the function CustomerHash() to calculate and return the hash value for its\nparameter\n• stores the customer record in the returned hash value address.\nAssume there are no collisions.\nComplete the following pseudocode algorithm to write a new record to the random access file.\nPROCEDURE StoreRecord(NewData : ………………………………………………………………………)\nHashValue CustomerHash(NewData.CustomerID)\nFilename \"CustomerRecords.dat\"\nOPENFILE Filename FOR ………………………………………………………………………\nSEEK Filename, ………………………………………………………………………\nPUTRECORD Filename, ………………………………………………………………………\n…………………………………………………………………… Filename\nENDPROCEDURE",
+          "marks": 5,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "Identify two typical features of a debugger and describe how Kobi could use each one during\nthe development of the application.\nFeature 1 ______\nFeature 2 ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14d",
+          "label": "(d)",
+          "text": "Give one benefit and one drawback of Kobi using a program generator whilst developing his\napplication.\nBenefit ______\nDrawback ______\n\n7 Sonya is writing a computer program that requires a user input. The user should input an integer\nbetween 1 and 100. Sonya wants to use exception handling.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Explain the reasons why Sonya should use exception handling in her program.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Write program code to read in the number from the user and raise an exception if the data is\nnot valid.\nProgramming language ______\nProgram code",
+          "marks": 3,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "Give two other examples of where exception handling can be used in a program.\n\n8 Data entered into a computer is stored in an ordered binary tree.\nThe binary tree is stored in a 2D array, BinaryTree.\nThe first element of the array is index 0.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "The current contents of the binary tree are:\n35 67\n2 43 52 77\nComplete the LeftPointer and RightPointer values in the following table for the binary\ntree shown.\nA null pointer is represented by –1.\nRootNode 0 Index LeftPointer Data RightPointer\n[0] 50\n[1] 67\n[2] 77\n[3] 35\n[4] 2",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "A post-order tree traversal outputs the left node, then the right node, then the root node.\nIn the tree given in part (a), the post-order tree traversal would output:\n2 43 35 52 77 67 50\nComplete the following recursive pseudocode algorithm PostOrder().\nPROCEDURE PostOrder(………………………………………………… : INTEGER)\nIF BinaryTree[RootNode, 0] <> -1\nTHEN\n………………………………………………… (BinaryTree[RootNode, …………………………………………………])\nENDIF\nIF BinaryTree[RootNode, 2] <> -1\nTHEN\n………………………………………………… (BinaryTree[RootNode, 2])\nENDIF\nOUTPUT BinaryTree[RootNode, …………………………………………………]\nENDPROCEDURE\n\n9 A program uses a hashing algorithm to store data in the global array, StoredData.\nThe first element of the array is index 0. The array has 10 000 integer elements.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Write a pseudocode declaration for the array StoredData and initialise each element to –1.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "The hashing algorithm calculates the remainder after dividing the data by 1000, and then\nadds 6 to it.\nThe function AddItem()takes the data as a parameter. It calculates the index to store the\ndata using the hashing algorithm.\nIf there is a collision, the function:\n• checks the next index until it finds an index that does not have data in it\n• continues to search from the start of the array, if it reaches the end of the array.\nThe function returns TRUE if the item was successfully added, and FALSE if the array is full.\nWrite program code for the function AddItem().\nProgramming language ______\nProgram code\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 59,
+      "text": [
+        "busy(kira, wednesday, 3).",
+        "These clauses have the following meaning:",
+        "Clause Explanation",
+        "James is a teacher",
+        "05 Monday is a day",
+        "1 is a time slot",
+        "James is busy in time slot 1 on Monday"
+      ]
+    }
+  ]
+}

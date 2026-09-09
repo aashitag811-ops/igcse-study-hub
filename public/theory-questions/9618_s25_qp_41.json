@@ -1,0 +1,382 @@
+{
+  "paperId": "9618_s25_qp_41",
+  "subjectCode": "9618",
+  "session": "s25",
+  "component": "41",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write program code to declare and initialise Queue, HeadPointer, TailPointer and\nNumberItems\nSave your program as Question1_J25.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The function Enqueue():\n• takes an integer as a parameter\n• checks if the queue is full\n• returns FALSE if the queue is full\n• stores the parameter in the next position in the queue and returns TRUE if the queue is\nnot full\n• updates the appropriate pointers and NumberItems\nWrite program code for Enqueue()\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The main program:\n• attempts to store each of the integers 1 to 25 (inclusive) in the queue in ascending\nnumerical order using Enqueue()\n• outputs the integer that was passed to Enqueue() and \"Successful\" if it was stored\nin the queue, or \"Unsuccessful\" if it was not stored in the queue.\nFor example:\n if the integer 5 is passed to Enqueue() and is stored in the queue, the output will\nbe: \"5 Successful\"\n if the integer 23 is passed to Enqueue() and is not stored in the queue, the output\nwill be: \"23 Unsuccessful\"\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The function Dequeue() returns –1 if the queue is empty. If the queue is not empty, the\nfunction returns the next item in the queue, updates the appropriate pointers and updates\nNumberItems\nWrite program code for Dequeue()\nSave your program.\nCopy and paste the program code into part 1(d) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "Write program code to extend the main program to call Dequeue() twice and output the\nreturn value each time.\nSave your program.\nCopy and paste the program code into part 1(e)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 1(e)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A program stores positive integers in a circular queue.",
+        "The queue is stored as a global 1D array of 20 integers with the identifier Queue. Each index is",
+        "initialised with the data –1",
+        "The global variable HeadPointer, initialised to –1, points to the first element in the queue.",
+        "The global variable TailPointer, initialised to –1, points to the last element in the queue.",
+        "The global variable NumberItems, initialised to 0, stores the number of items in the queue."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The function ReadData():\n• prompts the user to enter a filename and reads this filename from the user\n• opens the file and reads each line of data into a 1D array\n• returns the populated 1D array.\nThe function needs to work for a file that contains an unknown number of lines.\nWrite program code for ReadData()\nSave your program as Question2_J25.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The procedure SplitData() takes a 1D string array as a parameter with the identifier\nDataArray\nThe procedure declares six 1D arrays: one array for each colour that appears in the file (red,\ngreen, blue, orange, yellow, pink).\nThe procedure accesses each string in DataArray. The data in each string is split into the\ninteger and the colour. The integer is stored in the array that matches the colour.\nFor example, the first string in DataArray has the integer 10 and the colour red, so the\ninteger 10 is stored in the array for the colour red.\nWrite program code for SplitData()\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The procedure StoreData():\n• takes two parameters: a 1D array DataToStore and a filename\n• opens the text file with the filename that is passed as a parameter\n• appends each item of data from DataToStore to a new line in the text file\n• uses exception handling when opening and writing data to the text file.\nWrite program code for StoreData()\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Each of the six colours has a blank text file where the numbers will be stored. The names of\nthese six text files are:\n• Blue.txt\n• Green.txt\n• Orange.txt\n• Pink.txt\n• Red.txt\n• Yellow.txt\nThe procedure SplitData() needs amending to call StoreData() six times, with each of\nthe six colour arrays and the name of the text file that corresponds to that colour.\nFor example, StoreData() will be called with the red array and the file name \"Red.txt\"\nWrite program code to amend SplitData()\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The main program calls ReadData() and then SplitData()",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "Write program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "Test your program. Input the text \"TheData.txt\" when prompted.\nTake a screenshot of the output(s) and a screenshot showing the content of the file that\nstores the red numbers.\nSave your program.\nCopy and paste the screenshot(s) into part 2(e)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 25,
+      "text": [
+        "A program reads data from a text file, splits the data depending on its content and stores the",
+        "separated data into different files.",
+        "The text file TheData.txt contains 72 lines of data. Each line of data has an integer number and",
+        "a string colour that are separated by a comma. For example, the first line in the file is:",
+        "10,red",
+        "The integer is 10 and the string is \"red\"",
+        "The file contains six different colours: red, green, blue, orange, yellow, pink."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Node and its constructor.\nDo not declare the other methods.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question3_J25.\nCopy and paste the program code into part 3(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Write program code for the three get methods.\nSave your program.\nCopy and paste the program code into part 3(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "The method SetLeft() takes an object of type Node as a parameter. The method\nstores the parameter in the attribute LeftNode\nThe method SetRight() takes an object of type Node as a parameter. The method\nstores the parameter in the attribute RightNode\nWrite program code for SetLeft() and SetRight()\nSave your program.\nCopy and paste the program code into part 3(a)(iii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Write the main program to declare five objects of type Node :\n• Node 1 with the data 10\n• Node 2 with the data 20\n• Node 3 with the data 5\n• Node 4 with the data 15\n• Node 5 with the data 7\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The class Tree stores the tree.\nTree\nFirstNode : Node\nstores the root node in the tree\nConstructor() initialises FirstNode to its parameter value\nGetRootNode() returns the node stored in FirstNode\nInsert() stores its parameter node in the correct position in the\ntree",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Write program code to declare the class Tree and its constructor.\nDo not declare the other methods.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 3(c)(i) in the evidence document.",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Write program code for GetRootNode()\nSave your program.\nCopy and paste the program code into part 3(c)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3ciii",
+              "label": "(iii)",
+              "text": "The method Insert() takes a node as a parameter and then searches the tree to find\nthe position to insert the new node by:\n• checking whether the node’s data is less than or greater than the root node’s data\n• moving to the left node if the data is less than the root node’s data\n• moving to the right node if the data is greater than or equal to the root node’s data\n• repeating until the final position of the node is found and stores the node in that\nposition.\nWrite program code for Insert()\nSave your program.\nCopy and paste the program code into part 3(c)(iii) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The recursive procedure OutputInOrder() outputs the data stored in the binary tree in\nascending numerical order.\nThe procedure takes a Node object as a parameter and then:\n• checks if the left node is null. If there is a left node, the function calls itself with the left\nnode\n• outputs the data of the current node\n• checks if the right node is null. If there is a right node, the function calls itself with the\nright node.\nWrite program code for OutputInOrder()\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Write program code to extend the main program to:\n• create a new object of type Tree with the node containing the data 10 as the first\nnode\n• insert the nodes with the values 20, 5, 15 and 7 into the tree in the order given\n• call OutputInOrder() with the tree’s root node as a parameter.\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "A program stores data in a binary tree that is designed using Object‑Oriented Programming",
+        "(OOP).",
+        "The tree stores data in ascending numerical order, for example:",
+        "20 45",
+        "1 21 33 63",
+        "The class Node stores data about the nodes.",
+        "Node",
+        "NodeData : Integer",
+        "stores the node’s integer data",
+        "LeftNode : Node",
+        "stores the node that is stored to the left of the current",
+        "node, or a null value if there is no node to the left",
+        "RightNode : Node",
+        "stores the node that is stored to the right of the current",
+        "node, or a null value if there is no node to the right",
+        "Constructor()",
+        "initialises NodeData to its parameter value; initialises",
+        "LeftNode and RightNode to a null value",
+        "GetLeft()",
+        "returns LeftNode",
+        "GetRight()",
+        "returns RightNode",
+        "GetData()",
+        "returns NodeData",
+        "SetLeft()",
+        "takes an object of type Node as a parameter and stores",
+        "it in LeftNode",
+        "SetRight()",
+        "takes an object of type Node as a parameter and stores",
+        "it in RightNode"
+      ]
+    }
+  ]
+}

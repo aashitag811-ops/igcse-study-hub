@@ -1,0 +1,630 @@
+{
+  "paperId": "9608_s16_qp_41",
+  "subjectCode": "9608",
+  "session": "s16",
+  "component": "41",
+  "totalMarks": 54,
+  "questionCount": 23,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write pseudocode to declare the type LinkedList.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The 1D array is implemented with an array SurnameList of type LinkedList.\nWrite the pseudocode declaration statement for SurnameList. The lower and upper\nbounds of the array are 1 and 5000 respectively.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The following surnames are organised as a linked list with a start pointer StartPtr.\nStartPtr: 3\n1 2 3 4 5 6 5000\nSurname Liu Yang Chan Wu Zhao Huang\n4 5 6 2 0 1\nPtr\nState the value of the following:",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "SurnameList[4].Surname ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "SurnameList[StartPtr].Ptr ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Pseudocode is to be written to search the linked list for a surname input by the user.\nIdentifier Data type Description\nThisSurname STRING\nThe surname to search for\nCurrent INTEGER\nIndex to array SurnameList\nIndex to array SurnameList. Points to the\nStartPtr INTEGER\nelement at the start of the linked list",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Study the pseudocode in part (c)(ii).\nComplete the table above by adding the missing identifier details.",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Complete the pseudocode.\n01 Current ← ______",
+              "marks": null,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A linked list abstract data type (ADT) is to be used to store and organise surnames.",
+        "This will be implemented with a 1D array and a start pointer. Elements of the array consist of a",
+        "user-defined type. The user-defined type consists of a data value and a link pointer.",
+        "Identifier Data type Description",
+        "LinkedList RECORD",
+        "User-defined type",
+        "Surname STRING",
+        "Surname string",
+        "Ptr INTEGER",
+        "Link pointers for the linked list"
+      ]
+    },
+    {
+      "id": "02",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Current = 0"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT ........................................................................................................."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IsFound ← ................................................................................................."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT ThisSurname"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF ............................................................................. = ThisSurname"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IsFound ← TRUE"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Surname found at position \", Current"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "The recursive procedure X is defined as follows:\n01 PROCEDURE X(Index, Item)\n02 IF MyList[Index] > 0\n03 THEN\n04 IF MyList(Index) >= Item\n05 THEN\n06 MyList[Index] ← MyList[Index + 1]\n07 ENDIF\n08 CALL X(Index + 1, Item)\n09 ENDIF\n10 ENDPROCEDURE\nAn array MyList is used to store a sorted data set of non-zero integers. Unused cells contain\nzero.\n1 2 3 4 5 6 7 8 9 10\nMyList 3 5 8 9 13 16 27 0 0 0",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "14bi",
+              "label": "(i)",
+              "text": "Complete the trace table for the dry-run of the pseudocode for the procedure\nCALL X(1, 9).\nMyList\nIndex Item\n1 2 3 4 5 6 7 8 9 10\n3 5 8 9 13 16 27 0 0 0\n1 9",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "14bii",
+              "label": "(ii)",
+              "text": "State the purpose of procedure X when used with the array MyList.\n\n3 A car hire company hires cars to customers. Each time a car is hired, this is treated as a transaction.\nFor each transaction, the following data are stored.\nFor the customer:\n• customer name\n• ID number\nFor the hire:\n• car registration\n• hire start date\n• number of days hired\nThe transaction data are stored in a text file HIRE-TRANS. The file is made up of a file body,\nF_BODY, and a file trailer, F_TRAILER.\nF_BODY has one transaction, TRANS, on each line.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "The first step in Jackson Structured Programming (JSP) design is to produce a JSP data\nstructure diagram.\nComplete the following JSP data structure diagram.\nHIRE-TRANS\nF_BODY",
+          "marks": 7,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "The computer system will produce many printed reports.\nOne report is CAR_REPORT. This displays all hire data for all cars.\nFor each car, the following data are displayed:\n• the car data\n• a list of all the hires\n• the total number of hires\nA car with zero hires is not included on the report.\nComplete the following CAR_REPORT JSP data structure diagram.\nCAR_REPORT\nCAR\nNo hires One or more hires\nHIRE_LIST\nHIRE\n\n4 When a car reaches a certain age, a safety assessment has to be carried out. A car’s brakes and\ntyres must be tested. The tyre test result and the brakes test result for each car are recorded. If the\ncar passes the assessment, a safety certificate is issued.\nCars have a unique three-character registration.\nThe following knowledge base is used:\n01 car(a05).\n02 car(h04).\n03 car(a03).\n04 car(h07).\n05 car(a23).\n06 car(p05).\n07 car(b04).\n08 carRegYear(a05, 2015).\n09 carRegYear(h04, 2013).\n10 carRegYear(a03, 2008).\n11 carRegYear(h07, 2011).\n12 carRegYear(a23, 2008).\n13 carRegYear(p05, 2014).\n14 carRegYear(b04, 2014).",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "// move to the next list item",
+        "16 ENDIF",
+        "17 UNTIL IsFound = TRUE OR .....................................................................",
+        "18 IF IsFound = FALSE",
+        "19 THEN",
+        "20 OUTPUT \"Not Found\"",
+        "21 ENDIF",
+        "22 ENDIF",
+        "[6]",
+        "2 (a) (i) State what is meant by a recursively defined procedure.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "testBrakes(h07, pass)."
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "testTyres(h07, fail)."
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "testBrakes(a03, fail)."
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "testTyres(a03, fail)."
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "testBrakes(a23, pass)."
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "testTyres(a23, pass)."
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "carAssessmentDue if carRegYear(Car, RegYear)",
+        "and RegYear <= DeadlineYear."
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "22ai",
+              "label": "(i)",
+              "text": "DeadlineYear is assigned value 2011.\nIdentify the car registrations for cars which are due to be tested.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "22aii",
+              "label": "(ii)",
+              "text": "State how clause 22 determines whether or not a safety certificate will be issued.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "If a car fails one of the two tests, a retest is allowed.\nWrite a new rule for this.\nretestAllowed(______) if ______",
+          "marks": 3,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Logic programming uses a data structure called a list.\nA new fact is added to the knowledge base.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "issueCertificate(Car) if testTyres(Car, Result) and",
+        "testBrakes(Car, Result) and Result = pass."
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [
+        {
+          "id": "23d",
+          "label": "(d)",
+          "text": "The predicate conCatCompare is defined as a rule and returns TRUE or FALSE as follows:\nconCatCompare(X, Y, Z)\nConcatenates the lists X and Y and compares the new list with\nlist Z.\nIf equal, the clause evaluates to TRUE, otherwise FALSE.\nConsider the clause:\nconCatCompare(X, Y, [a7,b6,c4])\nIf:\n• the clause evaluates to TRUE\n• and Y represents the list [a7, b6, c4]\nState the value of X.\nX = ______\n5 (a) A program calculates the exam grade awarded from a mark input by the user. The code is\nwritten as a function CalculateGrade.\nThe function:\n• has a single parameter Mark of INTEGER data type\n• returns the grade awarded Grade of STRING data type\nThe logic for calculating the grade is as follows:\nMark Grade\nUnder 40 FAIL\n40 and over and under 55 PASS\n55 and over and under 70 MERIT\n70 and over DISTINCTION\nThe programmer designs the following table for test data:\nMark Description Expected result (Grade)\nNormal\nAbnormal\nExtreme/Boundary",
+          "marks": 1,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "23di",
+              "label": "(i)",
+              "text": "Complete the table above.",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "23dii",
+              "label": "(ii)",
+              "text": "State why this table design is suitable for black box testing.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "23b",
+          "label": "(b)",
+          "text": "When designing and writing program code, explain what is meant by:\n• an exception\n• exception handling",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "23c",
+          "label": "(c)",
+          "text": "A program is to be written to read a list of exam marks from an existing text file into a 1D array.\nEach line of the file stores the mark for one student.\nState three exceptions that a programmer should anticipate for this program.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "23d",
+          "label": "(d)",
+          "text": "The following pseudocode is to read two numbers:\n01 DECLARE Num1 : INTEGER\n02 DECLARE Num2 : INTEGER\n03 DECLARE Answer : INTEGER\n04 TRY\n05 OUTPUT \"First number...\"\n06 INPUT Num1\n07 OUTPUT \"Second number...\"\n08 INPUT Num2\n09 Answer ← Num1 / (Num2 – 6)\n10 OUTPUT Answer\n11 EXCEPT ThisException : EXCEPTION\n12 OUTPUT ThisException.Message\n13 FINALLY\n14 // remainder of the program follows\n30 ENDTRY\nThe programmer writes the corresponding program code.\nA user inputs the number 53 followed by 6. The following output is produced:\nFirst number...53\nSecond number...6\nArithmetic operation resulted in an overflow",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "23di",
+              "label": "(i)",
+              "text": "State the pseudocode line number which causes the exception to be raised.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "23dii",
+              "label": "(ii)",
+              "text": "Explain the purpose of the pseudocode on lines 11 and 12.\n\n6 In a board game, one player has white pieces and the other player has black pieces. Players take\nalternate turns to move one of their pieces. White always makes the first move.\nThe game ends if:\n• a player is unable to make a move when it is their turn. In this case, there is no winner. This is\ncalled ‘stalemate’.\n• a player wins the game as a result of their last move and is called a ‘winner’.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "23a",
+          "label": "(a)",
+          "text": "A state-transition diagram is drawn to clarify how the game is played.\nComplete the following state-transition diagram.\nWHITE\nWINS\nNo move\n:+,7(·6 possible\nTURN\nStalemate\nBLACK moves\nBLACK\n%/$&.·6\nWINS\nTURN\nWinning\nmove",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "23b",
+          "label": "(b)",
+          "text": "The layout of the board at the start of the game is shown below:\n1 2 3 4 5 6 7 8\nThe programmer decides to use a 2D array to represent the board. The index numbering to\nbe used is as shown.\nEach square on the board is either occupied by one piece only, or is empty.\nThe data stored in the array indicate whether or not that square is occupied, and if so, with a\nblack piece or a white piece.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "23bi",
+              "label": "(i)",
+              "text": "Write program code to initialise the contents of the array to represent the board at the\nstart of the game. Use characters as follows for each square:\n'B' represents a black piece\n'W' represents a white piece\n'E' represents an empty square\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______",
+              "marks": 4,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "23bii",
+              "label": "(ii)",
+              "text": "When a piece is to be moved, a procedure will calculate and output the possible\ndestination squares for the moving piece.\nA piece can move one or more squares, in the x or y direction, from its current position.\nThis will be a move:\n• either to an empty square, with no occupied squares on the way\n• or to a square containing a piece belonging to another player, with no occupied\nsquares on the way. The other player’s piece is then removed.\nFor example, for the circled black piece there are nine possible destination squares. Each\nof the two destination squares contains a white piece which would be removed.\n1 2 3 4 5 6 7 8\nThe program requires a procedure ValidMoves.\nIt needs three parameters:\n• PieceColour – colour of the moving piece\n• xCurrent – current x position\n• yCurrent – current y position\nThe procedure will calculate all possible destination\nsquares in the x direction only.\nExample output for the circled black piece is:\nPossible moves are:\nMoving LEFT\n3 4\n2 4 REMOVE piece\nMoving RIGHT\n5 4\n6 4\n7 4\nWrite program code for procedure ValidMoves with the following procedure header:\nPROCEDURE ValidMoves(PieceColour : CHAR, xCurrent : INTEGER,\nyCurrent : INTEGER).\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______",
+              "marks": 5,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "23c",
+          "label": "(c)",
+          "text": "The problem is well suited to an object-oriented design followed by object-oriented\nprogramming.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "23ci",
+              "label": "(i)",
+              "text": "Describe how classes and objects could be used in this problem.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "23cii",
+              "label": "(ii)",
+              "text": "For a class you identified in part(c)(i), state two properties and two methods.\nClass ______\nProperties\nMethods\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 28,
+      "text": [
+        "carList = [a03,p05,b04,h04,h07,a23].",
+        "The following notation and operators are to be used with a list:",
+        "[X|Y] denotes a list with:",
+        "• X the first list element",
+        "• Y the list consisting of the remaining list elements",
+        "[] denotes an empty list"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "paperId": "9608_s20_qp_42",
+  "subjectCode": "9608",
+  "session": "s20",
+  "component": "42",
+  "totalMarks": 65,
+  "questionCount": 14,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A run-time error occurs when Amar attempts to open a file that does not exist.\nState three other reasons why a run-time error may occur.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A program should be written with exception handling routines to manage run-time errors.\nA program reads data from the text file MyData.txt. The program needs to report an\nexception if it attempts to open the file and the file does not exist.\nWrite program code to handle and report this exception.\nProgramming language ______\nProgram code",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Amar is alerted to a run-time error when he runs a program."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The program declares the hash table and initialises the username and password of all the\nrecords to an empty string.\nWrite pseudocode to declare and initialise the hash table.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "A function, SearchHashTable() will search for a customer’s record in the hash table.\nThe function Hash():\n• takes a Username as a parameter\n• performs the hashing algorithm\n• returns the calculated index of the username within the hash table.\nThe function SearchHashTable():\n• takes the username to search for as a parameter\n• uses Hash() to calculate the first index of this username within the hash table\n• returns either the index of the username if found, or –1 if not found.\nComplete the pseudocode for the function SearchHashTable().\nFUNCTION SearchHashTable(BYVALUE SearchUser : STRING) RETURNS ______\nDECLARE Index : INTEGER\nDECLARE Count : INTEGER\nIndex ______ (SearchUser)\nCount 0\nWHILE (CustomerLogIn[Index] ______ <> ______)\nAND(CustomerLogIn[Index].Username <> \"\")\nAND(Count < 2999)\nIndex Index + 1\nCount Count + 1\nIF Index > ______\nTHEN\nIndex 0\nENDIF\nENDWHILE\nIF CustomerLogIn[Index].Username = ______\nTHEN\nRETURN Index\nELSE\nRETURN ______\nENDIF\nENDFUNCTION",
+              "marks": 7,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Explain the purpose of the variable Count in the function SearchHashTable().",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A business is developing a program that stores each customer’s username and password in a",
+        "hash table.",
+        "The hash table will be implemented as a 1D array, CustomerLogIn, of the custom data type",
+        "CustomerRecord.",
+        "The declaration for CustomerRecord is:",
+        "TYPE CustomerRecord",
+        "DECLARE Username : STRING",
+        "DECLARE Password : STRING",
+        "ENDTYPE",
+        "The hash table will store a maximum of 3000 records. The key field will be Username."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Describe what is meant by a recursive algorithm.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A string that is a palindrome, reads the same forwards as it does backwards. For example,\nthe name Anna is a palindrome.\nThe function Substring(Variable, StartingCharacter, NumberOfCharacters)\nreturns one or more characters from a string. The first character is at position 0.\nFor example, the string \"Happy\" is stored in the variable Word.\n• Substring(Word, 1, 1) would return the character \"a\".\n• Substring(Word, 2, 3) would return the characters \"ppy\".\nThe function Length() returns the length of the string as an integer. For example,\nLength(Word) returns 5.\nThe following is a recursive function to find out whether a string is a palindrome. The function\nreturns True if the parameter is a palindrome, and returns False if it is not a palindrome.\nComplete the pseudocode for the recursive algorithm to indicate whether a string is a\npalindrome.\nFUNCTION IsPalindrome(CheckWord : STRING) RETURNS BOOLEAN\nIF ______ <= 1\nTHEN\nRETURN ______\nENDIF\nIF Substring(CheckWord, 0, 1) <>\nSubstring(CheckWord, ______ (CheckWord)-1, 1)\nTHEN\nRETURN ______\nELSE\nRETURN ______(Substring(CheckWord, 1,\nLength(CheckWord)-2))\nENDIF\nENDFUNCTION",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The function FindPower() is a recursive function that calculates the result of a base number\nto the power of the exponent. For example, the result of 2 = 16, as 2*2*2*2 = 16. In this\nexample, 2 is the base number and 4 is the exponent.\nThe base number and the exponent are passed as parameters.\nWrite pseudocode for the recursive function FindPower(). Assume both the base and the\nexponent are positive integers.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Recursive algorithms can be used when creating programs."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A tennis club has a booking form to book lessons with an instructor.\nClub members can book up to five lessons using the booking form.\nThe customer details section has the data:\n• name\n• address\n• telephone number.\nThe lesson details section has the data:\n• lesson type\n• date and time\n• lesson cost.\nThe cost of each lesson is dependent on the customer’s type of membership. The membership\ncan be bronze, silver or gold.\nThe total cost is also calculated.\nComplete the following JSP data structure diagram for the booking form.\nBooking Form\nCustomer Details Total Cost",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "State two programming constructs that are shown in a JSP data structure diagram.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 2,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative programming language is used to represent the following knowledge base.",
+        "01 person(william).",
+        "02 person(deeraj).",
+        "03 person(ingrid).",
+        "04 person(meghan).",
+        "05 country(england)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(spain)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(bangladesh)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(new_zealand)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(malaysia)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(mauritius)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "visited(william, spain)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "visited(ingrid, new_zealand)."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "visited(deeraj, spain)."
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Gina is a person who has visited Cyprus.\nWrite additional clauses to represent this information.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Write the result returned by the goal:\nvisited(X, spain).\nX = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "P might visit C, if P is a person, C is a country and P has not visited C.\nWrite this as a rule.\nmightvisit(P , C)\nIF ______\n\n6 Object-oriented programming has several features. These include containment, classes, methods\nand properties.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Describe what is meant by containment.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Identify two other features of object-oriented programming.\n\n7 A programmer is creating a computer game. The programmer has designed the class, Character,\nfor the characters in the game.\nThe following class diagram shows the design for the Character class.\nCharacter\nName : STRING // initialised in constructor to the parameter\nvalue passed to the constructor\nSkill : INTEGER // initialised in constructor to 0\nHealth : INTEGER // initialised in constructor to 50\nShield : INTEGER // initialised in constructor to a random value\nbetween 1 and 25 (inclusive)\nConstructor() // method used to create and initialise an object\nGetName() // returns Name value\nGetSkill() // returns Skill value\nGetHealth() // returns Health value\nGetShield() // returns Shield value\nSetSkill() // increases Skill by the parameter value\nSetHealth() // increases or decreases Health by the parameter\nvalue\nSetShield() // increases or decreases Shield value by the\nparameter value",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Write program code for the Constructor() method. Use the appropriate constructor\nmethod for your chosen programming language.\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Write program code for the GetSkill() method.\nProgramming language ______\nProgram code",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "The method SetSkill() validates the parameter value and updates the value of Skill.\nThe method is passed an INTEGER parameter that must be between 10 and 25 (inclusive). A\nvalue outside of this is not valid.\nIf the parameter value is valid, the method will increase Skill by the parameter value. The\nmaximum value that Skill can be increased to is 200. For example:\n• Skill currently stores 180\n• it is passed a valid parameter value of 25\n• Skill will now store 200.\nThe method must return:\n• –1 if the parameter value is not valid\n• 1 if the value of Skill is updated and Skill is less than 200\n• 0 if the value of Skill is 200.\nWrite program code for the SetSkill() method.\nProgramming language ______\nProgram code",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14d",
+          "label": "(d)",
+          "text": "There are five characters in the game. All the character objects are stored in a 1D array.\nWrite pseudocode to declare the array, CharacterArray, to store the five character\nobjects.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14e",
+          "label": "(e)",
+          "text": "The game has the character with the name Victory.\nWrite program code to create the character Victory as an instance of the class Character.\nThe object needs to be stored in the first element of the array CharacterArray.\nProgramming language ______\nProgram code\n\nQuestion 8 begins on the next page.\n8 Files can be structured in serial, sequential or random format.\nTick (3) one box in each row to show whether the statement applies to Serial, Sequential or\nRandom format.\nStatement Serial Sequential Random\nUses a hashing algorithm\nNo key field is used when storing data, for example,\nit is stored in chronological order\nCollisions can occur\nLeast efficient for a very large number of records\nMost efficient for a very large number of records\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 32,
+      "text": [
+        "visited(meghan, spain).",
+        "These clauses have the following meanings:",
+        "Clause Meaning",
+        "02 Deeraj is a person",
+        "England is a country",
+        "William has visited Spain"
+      ]
+    }
+  ]
+}

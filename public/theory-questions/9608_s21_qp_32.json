@@ -1,0 +1,471 @@
+{
+  "paperId": "9608_s21_qp_32",
+  "subjectCode": "9608",
+  "session": "s21",
+  "component": "32",
+  "totalMarks": 70,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Convert the binary values of the mantissa and the exponent for each number to their\nseparate denary values.\nA mantissa ______\nA exponent ______\nB mantissa ______\nB exponent ______",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Calculate the denary value of each floating-point number using your values from\npart (a)(i).\nNumber A ______\nNumber B ______",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "State which number, A or B, is stored in normalised floating-point form. Justify your answer.\nNumber ______\nJustification ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "In a computer system, two real numbers, A and B, are stored using floating-point representation",
+        "with:",
+        "• 12 bits for the mantissa",
+        "• 4 bits for the exponent",
+        "• two’s complement form for both mantissa and exponent.",
+        "Number A Mantissa Exponent",
+        "0 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1",
+        "Number B Mantissa Exponent",
+        "1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write the correct descriptions for the two layers and the correct layers for the two descriptions\ngiven in the following table.\nLayer Description\nApplication\nTransport\nHandles transmission of data\nHandles how data is physically sent",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Identify and state the purpose of two communication protocols other than TCP/IP.\nProtocol 1 ______\nPurpose ______\nProtocol 2 ______\nPurpose ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The TCP/IP protocol suite can be viewed as a stack with four layers."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Describe, with the aid of a diagram, a bus topology network.\nDescription ______",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Describe the way in which a bus network uses Ethernet technology for communication.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The truth table for a logic circuit with four inputs is shown.\nINPUT OUTPUT\nP Q R S X\n0 0 0 0 1\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 1\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Write the Boolean expression for the truth table as a sum-of-products.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Complete the Karnaugh Map (K-map) for the truth table.\nPQ\n00 01 11 10\nRS",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "The K-map can be used to simplify the expression in part (a)(i).\nDraw loops around appropriate groups of 1s in the table in part (a)(ii) to produce an\noptimal sum-of-products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4aiv",
+              "label": "(iv)",
+              "text": "Write the simplified sum-of-products expression for your answer to part (a)(iii).\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Simplify your expression for X in part (a)(i) using Boolean algebra. Show your working.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the role of flip-flops in a computer.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe the difference between an SR flip-flop and a JK flip-flop.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Flip-flops are used in computer construction."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Give reasons why each of these statements is invalid.\nX1 = Y - 21\nY3 := Y3 + 1\nX1 = X2 * 7",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n<letter> has been completed for you.\n<letter> ::= X|Y|Z\n<assignment_statement> ::=\n<variable> ::=\n<unsigned_integer> ::=\n<operator> ::=\n<digit> ::=",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "The syntax of an assignment statement is changed to allow for a variable or an unsigned\ninteger before and after the operator.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "Draw an updated syntax diagram for the assignment statement.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "Give the BNF for the revised assignment statement syntax.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The syntax diagrams for a programming language show the syntax of:",
+        "• an assignment statement",
+        "• a variable",
+        "• an unsigned integer",
+        "• a letter",
+        "• an operator",
+        "• a digit",
+        "assignment statement",
+        "unsigned",
+        "variable variable operator",
+        "integer",
+        "variable",
+        "letter digit",
+        "unsigned integer",
+        "digit digit",
+        "letter operator digit",
+        "X +"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "A digital certificate and a digital signature are used to ensure that a message is not changed\nduring transmission.\nWrite an appropriate term in each space to complete the descriptions.\nA digital certificate contains the ______ key of the owner. A digital certificate\nis obtained from the ______ .\nBefore a private message is sent to the owner of the digital certificate, this key is used\nto ______ the message.\nA digital signature is also sent. The message is hashed to produce a ______ ,\nwhich is then encrypted with the sender’s ______ key to obtain the digital",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "State two encryption protocols used in data transmission.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Malware can harm computer systems.\nDescribe two methods that can be used to restrict the effect of malware.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "State the name given to the type of system described.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "Justify your answer to part (i).",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The computer system stores the temperature readings for the four sensors in two’s\ncomplement form and in four eight-bit memory locations with addresses 701 to 704.\n701 Greenhouse 1\n0 0 0 0 1 0 1 0\nGreenhouse 2\n0 0 0 1 0 1 1 1\n703 Greenhouse 3\n0 0 0 0 1 1 1 0\n1 1 1 1 1 1 1 1 Greenhouse 4\nState the greenhouse number(s) where the temperature is out of range and give the value(s)\nof these temperature(s) in denary.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The status of the heaters and the ventilation is shown at location 700.\n• A value of 1 means that the heater is on.\n• A value of 0 (zero) means that the heater is off.\n• A value of 1 means that the ventilation is open.\n• A value of 0 (zero) means that the ventilation is closed.\nThe status of the heaters is shown in the most significant four bits; the status of the ventilation\nis shown in the least significant four bits.\nThe pattern of bits at location 700 shows that the heater for greenhouse 3 is on and the\nventilation for greenhouse 1 is open.\nGreenhouse number\n1 2 3 4 1 2 3 4\n0 0 1 0 1 0 0 0\nHeater Ventilation\nShow the pattern of bits when the heater is on for greenhouses 1 and 2 only and no ventilation\nis open.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "The table shows assembly language instructions for the greenhouse computer system that\nhas one general purpose register, the accumulator (ACC).\nInstruction\nExplanation\nLabel Op code Operand\nLoad the hexadecimal number n to ACC\nLDM &n\nLoad the contents of the location at the given address\nLDD <address>\nto ACC\nStore the contents of ACC at the given address\nSTO <address>\nBitwise AND operation of the contents of ACC with the\nAND &n\nhexadecimal number n\nBits in ACC are shifted denary number n places to the\nLSL #n\nleft. Zeros are introduced at the right hand end\nCompare the contents of ACC with the hexadecimal\nCMP &n\nnumber n\nFollowing a compare instruction, jump to <address>\nJPE <address>\nor <label> if the compare was True\nLabels an instruction\n<label>: <op code> <operand>\nIf the bit for a greenhouse’s heater and the bit for the same greenhouse’s ventilation are both\nset to 1, a routine at label ERROR is executed. This routine has not been provided.",
+          "marks": null,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8di",
+              "label": "(i)",
+              "text": "These assembly language instructions check for an error in the greenhouse 1 system.\nLDD 700\nAND &88\nCMP &88\nJPE ERROR\nExplain the purpose of each instruction.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8dii",
+              "label": "(ii)",
+              "text": "Write the assembly language instructions to check for an error in the greenhouse 2\nsystem.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Four greenhouses are used to grow tomatoes. The temperature inside each greenhouse should",
+        "be kept between 10 and 20 degrees Celsius inclusive.",
+        "Each greenhouse has a temperature sensor.",
+        "A computer system is programmed to control each greenhouse’s temperature by:",
+        "• turning on the heater and closing the ventilation when the temperature falls below 10 degrees",
+        "• turning off the heater and opening the ventilation when the temperature rises above",
+        "20 degrees."
+      ]
+    }
+  ]
+}

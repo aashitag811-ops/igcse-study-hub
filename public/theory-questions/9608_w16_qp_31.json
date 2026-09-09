@@ -1,0 +1,511 @@
+{
+  "paperId": "9608_w16_qp_31",
+  "subjectCode": "9608",
+  "session": "w16",
+  "component": "31",
+  "totalMarks": 65,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Calculate the floating-point representation of + 2.5 in this system. Show your working.\nMantissa Exponent",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Calculate the floating-point representation of − 2.5 in this system. Show your working.\nMantissa Exponent",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Find the denary value for the following binary floating-point number. Show your working.\nMantissa Exponent\n0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 1",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "State whether the floating-point number given in part (c) is normalised or not normalised.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Justify your answer given in part (d)(i).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The system changes so that it now allocates 8 bits to both the mantissa and the exponent.\nState two effects this has on the numbers that can be represented.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "In a particular computer system, real numbers are stored using floating-point representation with:",
+        "• 12 bits for the mantissa",
+        "• 4 bits for the exponent",
+        "• two’s complement form for both mantissa and exponent"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Four statements and four compilation stages are shown below.\nDraw a line to link each statement to the correct compilation stage.\nStatement Compilation stage\nThis stage removes any\ncomments in the program Lexical analysis\nsource code.\nThis stage could be\nSyntax analysis\nignored.\nThis stage checks the\ngrammar of the program Code generation\nsource code.\nThis stage produces a\ntokenised version of the Optimisation\nprogram source code.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Write the Reverse Polish Notation (RPN) for the following expressions.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "(A + B) * (C − D)",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "−A / B * 4 / (C − D)",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "An interpreter is executing a program. The program uses the variables w, x, y and z.\nThe program contains an expression written in infix form. The interpreter converts the infix\nexpression to RPN. The RPN expression is:\nx w z + y − *\nThe interpreter evaluates this RPN expression using a stack.\nThe current values of the variables are:\nw = 1 x = 2 y = 3 z = 4",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Show the changing contents of the stack as the interpreter evaluates the expression.\nThe first entry on the stack has been done for you.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Convert back to its original infix form, the RPN expression:\nx w z + y − *",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "Explain one advantage of using RPN for the evaluation of an expression.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "There are four stages in the compilation of a program written in a high-level language."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A computer operating system (OS) uses paging for memory management.",
+        "In paging:",
+        "• main memory is divided into equal-size blocks, called page frames",
+        "• each process that is executed is divided into blocks of the same size, called pages",
+        "• each process has a page table that is used to manage the pages of this process",
+        "The following table is the incomplete page table for a process X.",
+        "Page Presence Page frame address Additional data",
+        "flag",
+        "1 1 132",
+        "2 1 245",
+        "3 1 232"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "0 0"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "1 542"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The page frame address entry for Page 2 is 245.\nState what the value 245 could represent.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Process X executes until the next instruction is the first instruction in Page 4. Page 4 is not\ncurrently in main memory.\nState a hardware device that could be storing this page.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "When an instruction to be accessed is not present in main memory, its page must be loaded\ninto a page frame. If all page frames are currently in use, the contents of a page frame will be\noverwritten with this new page.\nThe page that is to be replaced is determined by a page replacement algorithm.\nOne possible algorithm is to replace the page that has been resident in main memory for the\nlongest time.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "Give the additional data that would need to be stored in the page table.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "Complete the table entries below to show what happens when Page 4 is swapped into\nmain memory. Assume that Page 5 is the one to be replaced.\nIn the final column, give an example of the data you have identified in part (c)(i).\nPage Presence Page frame address Additional data\nflag\n\nAn alternative algorithm is to replace the page that has been used least.",
+              "marks": 3,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6ciii",
+              "label": "(iii)",
+              "text": "Give the different additional data that the page table would now need to store.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6civ",
+              "label": "(iv)",
+              "text": "In the following table, complete the missing data to show what happens when Page 3 is\nswapped into main memory. Assume that Page 1 is the one to be replaced.\nIn the final column, give an example of the data you have identified in part (c)(iii).\nPage Presence Page frame address Additional data\nflag",
+              "marks": 3,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "Explain why the algorithms given in part (c) may not be the best choice for efficient memory\nmanagement.\nLongest resident ______\nLeast used ______\n\n4 (a) (i) Complete the truth table for this logic circuit.\nInput Output\nX Y A B\n0 0\n0 1\n1 0\n1 1",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6dii",
+              "label": "(ii)",
+              "text": "State the name given to this logic circuit.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6diii",
+              "label": "(iii)",
+              "text": "Name the labels usually given to A and B.\nLabel A ______\nLabel B ______\nExplain why your answers are more appropriate for the A and B labels.",
+              "marks": 4,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Write the Boolean expression corresponding to the following logic circuit:",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Use Boolean algebra to simplify the expression that you gave in part (b)(i).\nShow your working.\n\n5 The TCP/IP protocol suite can be viewed as a stack with four layers.",
+              "marks": 3,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Complete the stack by inserting the names of the three missing layers.\nTransport",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "State how each layer of the stack is implemented.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A computer is currently running two processes:\n• Process 1 is downloading a web page.\n• Process 2 is downloading an email.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Describe two tasks that the Transport layer performs to ensure that the incoming data is\ndownloaded correctly.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Name a protocol that will be used by Process 1.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "Name a protocol that will be used by Process 2.\n\n6 (a) The table below gives descriptions of three types of malware.\nDescription Term\nMalware that attaches itself to another program.\nMalware that redirects the web browser to a fake website.\nEmail that encourages the receiver to access a website and\ngive their banking details.\nComplete the table by adding the correct terms.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Ben wants to send a highly confidential email to Mariah so that only she can read it. Plain text\nand cipher text will be used in this communication.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Explain the terms plain text and cipher text.\nPlain text ______\nCipher text ______",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Explain how the use of asymmetric key cryptography ensures that only Mariah can read\nthe email.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 4,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 35,
+      "text": [
+        "0 0",
+        "135 0 0",
+        "When a particular page of the process is currently in main memory, the Presence flag entry in the",
+        "page table is set to 1.",
+        "If the page is not currently present in memory, the Presence flag is set to 0."
+      ]
+    }
+  ]
+}

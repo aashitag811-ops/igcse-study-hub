@@ -1,0 +1,351 @@
+{
+  "paperId": "9618_w22_qp_42",
+  "subjectCode": "9618",
+  "session": "w22",
+  "component": "42",
+  "totalMarks": 69,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write program code to declare the global 2D array Jobs and the global variable\nNumberOfJobs.\nSave your program as Question1_N22.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The procedure Initialise() stores –1 in each of the array elements and assigns 0 to\nNumberOfJobs.\nWrite program code for the procedure Initialise().\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The procedure AddJob():\n• takes a job number and priority as parameters\n• stores the job in the next free array element\n• outputs ‘Added’ if the job was successfully stored in the array\n• outputs ‘Not added’ if the job was not successfully stored in the array.\nWrite program code for the procedure AddJob().\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The main program should call the procedure Initialise() and then use the AddJob()\nprocedure to store the following jobs in the order given:\nJob number Priority\n12 10\n526 9\n33 8\n12 9\n78 1\nWrite program code for the main program and perform the tasks described.\nSave your program.\nCopy and paste the program code into part 1(d) in the evidence document.",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "When a new job has been added, the array is sorted into ascending numerical order of priority\nusing an insertion sort.\nWrite program code for the procedure InsertionSort() to sort the data into ascending\nnumerical order of priority.\nSave your program.\nCopy and paste the program code into part 1(e) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "The procedure PrintArray() outputs each job number and priority on a line, for example:\n123 priority 1\n39 priority 3\n120 priority 7\nWrite program code for the procedure PrintArray().\nSave your program.\nCopy and paste the program code into part 1(f) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1g",
+          "label": "(g)",
+          "text": "The main program needs to sort the array and then output the contents of the array.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1gi",
+              "label": "(i)",
+              "text": "Amend the main program by writing program code to call procedures InsertionSort()\nand PrintArray().\nSave your program.\nCopy and paste the program code into part 1(g)(i) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1gii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nCopy and paste the screenshot into part 1(g)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 23,
+      "text": [
+        "A computer program is needed to store jobs in order of priority. Each job has a job number",
+        "(for example, 123) and a priority from 1 to 10, with 1 being the highest priority and 10 the lowest.",
+        "The program stores the jobs in a global 2D array.",
+        "The pseudocode declaration for the array is:",
+        "DECLARE Jobs : ARRAY[0:99, 0:1] OF INTEGER",
+        "For example:",
+        "• Jobs[0, 0] stores the job number of the first job.",
+        "• Jobs[0, 1] stores the priority of the first job.",
+        "The global variable, NumberOfJobs, stores the number of jobs currently in the array."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write program code to declare the class Character and its constructor. Do not write\nprogram code for the other methods.\nUse your programming language appropriate constructor.\nAll attributes must be private. If you are writing in Python, include attribute declarations using\ncomments.\nSave your program as Question2_N22.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Write program code for the three get methods for the class Character.\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Write program code for the method ChangePosition().\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The main program has a 1D array of characters. Each character is stored as an object of type\nCharacter.\nThe game has a maximum of 10 characters. The character names, x coordinates and y\ncoordinates are stored in the file Characters.txt in the order:\n• name\n• x coordinate\n• y coordinate.\nFor example, the first character in the file is named Amal, with the x coordinate 0 and the y\ncoordinate 2.\nAmend the main program by writing program code to:\n• declare the array\n• read in all 10 characters from Characters.txt\n• store each character as an object in the array.\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The main program needs to read in a character’s name from the user, search for the character\nin the array and store the index of its position. It repeats until the user enters a name that\nexists in the array.\nAmend the main program by writing program code to perform this task.\nSave your program.\nCopy and paste the program code into part 2(e) in the evidence document.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "The user will enter a letter to identify the direction the chosen character from part 2(e) should\nmove.\n• If ‘A’ is input, the character moves left (x coordinate minus 1).\n• If ‘W’ is input, the character moves up (y coordinate plus 1).\n• If ‘S’ is input, the character moves down (y coordinate minus 1).\n• If ‘D’ is input, the character moves right (x coordinate plus 1).\nAmend the main program by writing program code to:\n• take a letter as input until it is a valid move (A, W, S or D)\n• change the position of the character using the appropriate method.\nSave your program.\nCopy and paste the program code into part 2(f) in the evidence document.",
+          "marks": 7,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2g",
+          "label": "(g)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2gi",
+              "label": "(i)",
+              "text": "When a change to a character’s position has been made, the program needs to output\nthe character’s name and the new x and y coordinates of the character, in the format:\nQui has changed coordinates to X = 83 and Y = 0\nAmend the main program by writing program code to perform these tasks.\nSave your program.\nCopy and paste the program code into part 2(g)(i) in the evidence document.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2gii",
+              "label": "(ii)",
+              "text": "Test your program by inputting the following four items of data in the order given:\nTHOMAS\nqui\nTake a screenshot of the output.\nCopy and paste the screenshot into part 2(g)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 31,
+      "text": [
+        "A computer game is being developed. The game has 10 different characters that are all active in",
+        "the game.",
+        "Part of the game is being written using object-oriented programming.",
+        "The class Character stores data about the characters. Each character has a name and the x",
+        "coordinate and y coordinate of their current position.",
+        "Character",
+        "Name : STRING",
+        "stores the name of the character",
+        "XCoordinate : INTEGER",
+        "stores the x coordinate",
+        "YCoordinate : INTEGER",
+        "stores the y coordinate",
+        "Constructor()",
+        "initialises Name, XCoordinate and YCoordinate from the",
+        "values passed as parameters",
+        "GetName()",
+        "returns the name of the character",
+        "GetX()",
+        "returns the x coordinate of the character",
+        "GetY()",
+        "returns the y coordinate of the character",
+        "ChangePosition()",
+        "takes XChange as an integer parameter and adds it to the",
+        "x coordinate",
+        "takes YChange as an integer parameter and adds it to the",
+        "y coordinate"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A 1D array, Queue, is used to store the data. The head pointer points to the first number\nstored in the queue and the tail pointer points to the next free space in the queue.\nWrite program code to:\n• declare the global array Queue\n• declare the global variable head pointer and assign an appropriate initial value\n• declare the global variable tail pointer and assign an appropriate initial value.\nSave your program as Question3_N22.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The function Enqueue() takes an integer value as a parameter and stores it in the queue. It\nreturns TRUE if the value was successfully stored and FALSE otherwise.\nWrite program code for the function Enqueue().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The main program uses the Enqueue() function to store the numbers 1 to 20 (inclusive)\nin the queue, in ascending numerical order. The program should output ‘Successful’ if all\nnumbers are successfully enqueued, and ‘Unsuccessful’ otherwise.\nAmend the main program by writing program code to perform this task.\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The following iterative pseudocode function calculates the total of all the values stored in the\nqueue.\nFUNCTION IterativeOutput(Start: INTEGER) RETURNS INTEGER\nDECLARE Total : INTEGER\nTotal ← 0\nFOR Count ← Start - 1 TO HeadPointer STEP -1\nTotal ← Total + Queue[Count]\nNEXT Count\nRETURN Total\nENDFUNCTION\nRewrite the function as a recursive function using program code.\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "The main program calls the recursive function from part 3(d) and outputs the value returned.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Amend the main program by writing program code to perform this task.\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A program uses a linear queue to store up to 100 integers."
+      ]
+    }
+  ]
+}

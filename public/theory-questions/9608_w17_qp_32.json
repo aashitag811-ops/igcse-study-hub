@@ -1,0 +1,539 @@
+{
+  "paperId": "9608_w17_qp_32",
+  "subjectCode": "9608",
+  "session": "w17",
+  "component": "32",
+  "totalMarks": 75,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the following diagram to show how the computers, the server and the router could\nbe connected.\nRouter\nServer Computer\nInternet\nComputer Computer\nB C",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "There are four statements in the following table. For each statement, place a tick (3) in the\nappropriate column to indicate whether it is true or false.\nStatement True False\nThe server can send packets to Computer B and the router at the\nsame time.\nComputer C uses the IP address of a web server to send a request for\na web page on the web server.\nComputer B can read a packet sent from Computer A to Computer C.\nThe server can read all incoming packets from the Internet.",
+          "marks": 4,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The user on Computer A and the user on Computer B are both using the Internet at the same\ntime. On a few occasions, Computer A and Computer B start transmitting packets to the\nrouter at exactly the same time. This causes a problem called a collision.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain what is meant by a collision in this context.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "As a result of the collision, both Computer A and Computer B stop transmitting.\nComputer A must carry out a number of steps to ensure the successful transmission of\nits packet.\nGive two of the steps.\nStep 1 ______\nStep 2 ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The LAN topology is redesigned.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Describe the changes that could be made to the LAN topology to overcome the problem\nidentified in part (c).",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Explain how the redesign has overcome the problem.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A Local Area Network (LAN) consists of three computers, one server and a router connected to",
+        "the Internet. The LAN uses a bus topology."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The following diagram shows four descriptions and two types of processor.\nDraw lines to connect each description to the appropriate type of processor.\nDescription Type of processor\nIt has a simplified set of instructions.\nEmphasis is on the hardware rather\nCISC\nthan the software.\nIt makes extensive use of general\nRISC\npurpose registers.\nMany instruction formats are available.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "In a RISC processor, instructions are processed using pipelining.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Explain what is meant by pipelining.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The following table shows the five stages that occur when instructions are fetched and\nexecuted. The table also shows a number of time intervals.\nTwo instructions, D followed by E, are fetched and executed. The ‘E’ in the incomplete\ntable shows that instruction E has been fetched in time interval 2.\nComplete each row of the table.\nTime interval\nStage 1 2 3 4 5 6 7 8\nFetch instruction E\nRead registers and decode instruction\nExecute instruction\nAccess operand in memory\nWrite result to register",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The instruction set for a RISC processor that allows pipelining includes the following\ninstruction.\nInstruction\nExplanation\nOp code Operands\nAdd the integers in registers op1 and op2.\nADD <dest>, <op1>, <op2>\nPlace the result in register dest.\nA program contains the following three instructions.\nADD r3, r2, r1\nADD r5, r4, r3\nADD r10, r9, r8",
+          "marks": null,
+          "type": "place",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Explain why pipelining fails for the first two instructions.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "The instructions were produced by a compiler after translation of a high-level language\nprogram.\nThe compiler is not capable of code optimisation.\nState how the code from the compiler could have been optimised to overcome the\nproblem in part (c)(i).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "This diagram shows how applications P, Q and a software development environment can be\nrun on a virtual machine system.\nSoftware\nApplication P Application Q development\nenvironment\n______A______operating\n______A______operating system 1\nsystem 2\nVirtual machine software / virtual machine monitor\n______B______operating system\nHardware",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "State the operating systems labelled A and B in the diagram.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Application P is executing and requests data from a file.\nDescribe what happens after ______A______operating system 1 has received the data request\nfrom the application.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A software development company uses virtual machines to produce software.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "State one benefit to the company.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Explain two limitations of this approach.\nLimitation 1 ______\nLimitation 2 ______",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Explain why 32 is a valid unsigned integer.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Explain why 32.5 is a valid unsigned number.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n<unsigned_number> ::= ______\n<unsigned_integer> ::= ______\n<digit> ::= ______\n\nThe format of an unsigned number is amended to include numbers with possible exponents.\nIf an unsigned number has an exponent, then the exponent part:\n• will start with an ‘E’\n• be followed by an optional ‘+’ or ‘−’ sign\n• and be completed by an unsigned integer.\nExamples of unsigned numbers with exponents include: 3E2, 3E+3, 3E−32, 3.45E−2",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Redraw the syntax diagram for unsigned number to include numbers that might have\nexponents.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Use your syntax diagram from part (c)(i) to write the BNF for an unsigned number to\ninclude numbers with exponents.\n<unsigned_number> ::= ______",
+              "marks": 4,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "The following syntax diagrams for a particular programming language show the syntax of:",
+        "• an unsigned number",
+        "• an unsigned integer",
+        "• a digit.",
+        "Unsigned number",
+        "Digit",
+        "Unsigned Unsigned",
+        ". 1",
+        "integer integer",
+        "Unsigned integer",
+        "Digit"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the truth table for this NOR gate:\nA B X\n0 0\n0 1\n1 0\n1 1\n\nA SR flip-flop is constructed using two NOR gates.",
+          "marks": 1,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Complete the truth table for the SR flip-flop:\nS R Q Q\nInitially 1 0 1 0\nS changed to 0 0 0\nR changed to 1 0 1\nR changed to 0 0 0\nS and R changed to 1 1 1\n\nAnother type of flip-flop is the JK flip-flop. The JK flip-flop is an improvement on the SR flip-flop.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "The JK flip-flop has three inputs. Two of the inputs are the Set (J) and the Reset (K).\nState the third input.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "There are two problems with the SR flip-flop that the JK flip-flop overcomes.\nState each problem and state why it does not occur for the JK flip-flop.\nProblem 1 ______\nProblem 2 ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State one other type of sensor that could be used with this system.\nJustify your choice.\nSensor ______\nJustification ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Describe why feedback is important in this system.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "The system makes use of a number of parameters. These parameters are used in the\ncode that runs the system.\nState one of the parameters used in controlling the temperature in the greenhouse.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "Explain how the parameter identified in part (c)(i) is used in the feedback process.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "There are eight temperature sensors numbered 1 to 8. Readings from these sensors are\nstored in four 16-bit memory locations. The memory locations have addresses from 4000 to\n4003. Each memory location stores two sensor readings as two unsigned binary integers.\nSensor 1 reading is stored in bits 8 to 15 of address 4000; Sensor 2 reading is stored in bits\n0 to 7 of address 4000 and so on. The diagram shows that the current sensor 1 reading has\na value of 97.\n15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0\n4000 0 1 1 0 0 0 0 1 0 0 1 1 1 0 0 1\n4001 1 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0\n4002 0 0 0 1 0 1 0 0 0 0 0 0 1 1 0 1\n4003 1 0 0 0 0 0 1 0 1 1 0 0 0 1 0 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6di",
+              "label": "(i)",
+              "text": "Give the denary value of the current reading for Sensor 5.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6dii",
+              "label": "(ii)",
+              "text": "The following table shows part of the instruction set for a processor. The processor has\none general purpose register, the Accumulator (ACC).\nInstruction\nExplanation\nOp code Operand\nLDD <address>\nDirect addressing. Load the contents of the location at the given\naddress to ACC.\nAND #n\nBitwise AND operation of the contents of ACC with the operand.\nAND <address>\nBitwise AND operation of the contents of ACC with the contents of\n<address>.\nXOR #n\nBitwise XOR operation of the contents of ACC with the operand.\nXOR <address>\nBitwise XOR operation of the contents of ACC with the contents of\n<address>.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nOR <address>\nBitwise OR operation of the contents of ACC with the contents of\n<address>.\n<address> can be an absolute address or a symbolic address.\nLSL #n\nBits in ACC are shifted n places to the left. Zeros are introduced\non the right hand end.\nLSR #n\nBits in ACC are shifted n places to the right. Zeros are introduced\non the left hand end.\nThe reading for Sensor 5 is used in a calculation. The calculation is carried out by two\nassembly language instructions.\nThe first instruction loads the contents of the 16-bit location that contains the value for\nSensor 5.\nThe second instruction moves the bits in Sensor 5 so that the 16-bit value is the value of\nSensor 5.\nComplete the two instructions in the following code. Use the instruction set provided.\nLDD ______ // load the contents of the 16-bit location\ncontaining the value for Sensor 5 into the\nAccumulator\n______// move the bits in the Accumulator so that the\nAccumulator stores the value of Sensor 5 as an\nunsigned 16-bit binary integer\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The environment in a very large greenhouse is managed by a computer system. The system uses",
+        "a number of different sensors that include temperature sensors. In addition, the system controls a",
+        "number of heaters, windows and sprinklers."
+      ]
+    }
+  ]
+}

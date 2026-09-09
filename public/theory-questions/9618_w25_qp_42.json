@@ -1,0 +1,364 @@
+{
+  "paperId": "9618_w25_qp_42",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "42",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Bird and its constructor.\nDo not declare the other methods.\nAll attributes should be private.\nUse your programming language appropriate constructor.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question1_N25.\nCopy and paste the program code into part 1(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The method GetSpecies() returns the species of the bird.\nWrite program code for GetSpecies()\nSave your program.\nCopy and paste the program code into part 1(a)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "The method GetPosition() returns a string of the bird’s data in the format:\n\"X = \" & <XPosition> & \" Y = \" & <YPosition>\nAn example string for a bird is:\nX = 500.0 Y = 250.0\nWrite program code for GetPosition()\nSave your program.\nCopy and paste the program code into part 1(a)(iii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiv",
+              "label": "(iv)",
+              "text": "If the bird is travelling north, the vertical position increases. If the bird is travelling south,\nthe vertical position decreases.\nIf the bird is travelling east, the horizontal position increases. If the bird is travelling west,\nthe horizontal position decreases.\nThe method Move():\n• takes the direction of travel as a parameter in the form ‘N’ for north, ‘S’ for south,\n‘E’ for east or ‘W’ for west\n• takes the number of minutes that the bird has been flying (to the nearest minute) as\na parameter\n• calculates the distance travelled by the bird using the formula:\ndistance travelled = (distance per hour / 60) * minutes flying\n• updates the vertical or horizontal position using the distance calculated.\nYou do not need to validate the parameters.\nWrite program code for Move()\nSave your program.\nCopy and paste the program code into part 1(a)(iv) in the evidence document.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The main program creates two instances of Bird\nThe first bird is the species ‘Cockatiel’ and flies 71.0 km/h.\nThe second bird is the species ‘Macaw’ and flies 56.0 km/h.\nWrite program code to declare and initialise the two birds.\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "The main program needs to:\n• output a message that includes the species and current X position and Y position for\neach bird\n• prompt the user to select one of the birds to move and take this as an input\n• prompt the user to enter the direction the bird has been travelling and take this as\nan input\n• prompt the user to enter the time to the nearest minute that the bird has been\ntravelling and take this as an input\n• call the appropriate method to update the chosen bird’s position\n• output an update on the bird’s new position.\nEach input needs to repeat until valid data is entered. All outputs must be meaningful.\nWrite program code to amend the main program.\nSave your program.\nCopy and paste the program code into part 1(c)(i) in the evidence document.",
+              "marks": 8,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Test your program four times to meet these criteria:\nTest 1: The Cockatiel travels north for 60 minutes.\nTest 2: The Macaw travels south for 30 minutes.\nTest 3: The Cockatiel travels west for 30 minutes.\nTest 4: The Macaw travels east for 60 minutes.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 1(c)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 28,
+      "text": [
+        "A program stores data about birds using Object-Oriented Programming (OOP).",
+        "The class Bird stores the data about the birds:",
+        "Bird",
+        "DistancePerHour : Real",
+        "stores the number of kilometres per hour (km/h) the bird",
+        "can fly (between 0.0 and 100.0 inclusive)",
+        "Species : String",
+        "stores the species of the bird, for example Pigeon",
+        "XPosition : Real",
+        "stores the current horizontal position of the bird",
+        "YPosition : Real",
+        "stores the current vertical position of the bird",
+        "Constructor()",
+        "initialises Species and DistancePerHour to the",
+        "parameter values; initialises XPosition and YPosition",
+        "to 500.0",
+        "GetPosition()",
+        "returns a string message that contains the horizontal and",
+        "vertical position of the bird",
+        "GetSpecies()",
+        "returns the species of the bird",
+        "Move()",
+        "takes a direction and number of minutes flying (between",
+        "0 and 500 inclusive) as parameters and updates the",
+        "appropriate horizontal or vertical position"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write program code to declare the array local to the main program and store 20 unique\nrandom numbers between 0 and 100 (inclusive) in the array.\nSave your program as Question2_N25.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The procedure PrintArray() takes an integer array as a parameter. The procedure outputs\nthe array contents on a single line with a space between each integer.\nWrite the program code for PrintArray()\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The function BubbleSort():\n• takes an integer array as a parameter\n• sorts the data into ascending order using a bubble sort\n• returns the sorted array.\nThe function needs to work for an array of any length.\nDo not use an inbuilt sorting method.\nWrite program code for BubbleSort()\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "The main program:\n• outputs the contents of the array using PrintArray()\n• sorts the array using BubbleSort()\n• outputs \"Sorted\"\n• outputs the contents of the sorted array using PrintArray()\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(d)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 2(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The recursive function RecursiveBinarySearch() takes four parameters:\n• an integer array\n• the lower bound of the array\n• the upper bound of the array\n• the value to find in the array.\nThe recursive function performs a binary search to find the index of the value in the array.\nThe function returns the index of the value if it is found. The function returns –1 if the value is\nnot found.\nWrite program code for RecursiveBinarySearch()\nSave your program.\nCopy and paste the program code into part 2(e) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2fi",
+              "label": "(i)",
+              "text": "The main program:\n• prompts the user to enter an integer\n• takes the integer as input\n• calls RecursiveBinarySearch() with the sorted array, appropriate lower bound,\nappropriate upper bound and the user’s input as parameters\n• outputs \"Not found\" if the input is not within the array\n• outputs \"Found at position\" and the index if the input is within the array.\nWrite program code to amend the main program.\nSave your program.\nCopy and paste the program code into part 2(f)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fii",
+              "label": "(ii)",
+              "text": "Test your program three times with each of the inputs described:\nTest 1: the smallest number in the array\nTest 2: the largest number in the array\nTest 3: a number not in the array\nTake a screenshot of each output.\nSave your program.\nCopy and paste the screenshot(s) into part 2(f)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "A program stores 20 unique random integers between 0 and 100 (inclusive) in a 1D array that is",
+        "local to the main program."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The binary tree is stored as a global array with the identifier TreeArray. The left pointer, the\ndata and the right pointer of each node are initialised to –1\nThe global variable RootPointer stores the index of the root node in the tree, initialised to\n–1\nThe global variable FreeNode stores the index of the next free node in the array, initialised\nto 0\nWrite program code to declare and initialise TreeArray, RootPointer and FreeNode\nSave your program as Question3_N25.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The procedure AddNode():\n• takes an integer to store in the binary tree as a parameter\n• stores the parameter in the next free node in the array\n• finds the position to store the data in the tree by following the appropriate pointers\n• updates the pointer of the new node’s parent node.\nThe procedure outputs \"The tree is full\" if the parameter cannot be stored because\nthe tree is full.\nWrite program code for AddNode()\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The text file TreeData.txt stores 50 integers. Each integer is on a new line in the file.\nThe main program reads each integer from the file and stores each integer in the binary tree\nin the order they are read.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The procedure WriteAllToFile() stores the content of TreeArray in a new text file with\nthe filename Tree.txt. The file Tree.txt is not provided.\nEach node in TreeArray is stored on one line with a comma separating each value.\nFor example, the current contents of TreeArray are:\nIndex 0 1 2\n0 –1 20 1\n1 –1 30 –1\n49 -1 -1 -1\nAfter writing TreeArray to the text file, Tree.txt will contain:\n–1,20,1\n–1,30,–1\n-1,-1,-1\nWrite program code for WriteAllToFile()\nInclude exception handling when writing to the file.\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Amend the main program to call WriteAllToFile()\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot that shows all of the content stored in the file Tree.txt\nIn this screenshot you need to make sure the filename is visible.\nSave your program.\nCopy and paste the screenshot(s) into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A program stores integers in ascending order in an ordered binary tree. The tree is implemented",
+        "as a 2D array.",
+        "Each node is stored with three values:",
+        "• a pointer to the left node",
+        "• the data",
+        "• a pointer to the right node.",
+        "All null values are stored as –1",
+        "The binary tree can store up to 50 nodes.",
+        "Nodes cannot be deleted from the binary tree."
+      ]
+    }
+  ]
+}

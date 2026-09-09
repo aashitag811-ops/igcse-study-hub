@@ -1,0 +1,364 @@
+{
+  "paperId": "9618_s21_qp_41",
+  "subjectCode": "9618",
+  "session": "s21",
+  "component": "41",
+  "totalMarks": 75,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An unordered linked list uses a 1D array to store the data.",
+        "Each item in the linked list is of a record type, node, with a field data and a field nextNode.",
+        "The current contents of the linked list are:",
+        "startPointer Index data nextNode",
+        "0 1 1",
+        "emptyList 5 1 5 4"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "6 7"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "7 -1"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "2 2"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "0 6"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "0 8"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "56 3"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "0 9"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The following is pseudocode for the record type node.\nTYPE node\nDECLARE data : INTEGER\nDECLARE nextNode : INTEGER\nENDTYPE\nWrite program code to declare the record type node.\nSave your program as question1.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Write program code for the main program.\nDeclare a 1D array of type node with the identifier linkedList, and initialise it with the data\nshown in the table on page 2. Declare the pointers.\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "The procedure outputNodes() takes the array and startPointer as parameters. The\nprocedure outputs the data from the linked list by following the nextNode values.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ci",
+              "label": "(i)",
+              "text": "Write program code for the procedure outputNodes().\nSave your program.\nCopy and paste the program code into part 1(c)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9cii",
+              "label": "(ii)",
+              "text": "Edit the main program to call the procedure outputNodes().\nTake a screenshot to show the output of the procedure outputNodes().\nSave your program.\nCopy and paste the screenshot into part 1(c)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9d",
+          "label": "(d)",
+          "text": "The function, addNode(), takes the linked list and pointers as parameters, then takes as\ninput the data to be added to the end of the linkedList.\nThe function adds the node in the next available space, updates the pointers and returns\nTrue. If there are no empty nodes, it returns False.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9di",
+              "label": "(i)",
+              "text": "Write program code for the function addNode().\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 7,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9dii",
+              "label": "(ii)",
+              "text": "Edit the main program to:\n• call addNode()\n• output an appropriate message depending on the result returned from addNode()\n• call outputNodes() twice; once before calling addNode() and once after calling\naddNode().\nSave your program.\nCopy and paste the program code into part 1(d)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9diii",
+              "label": "(iii)",
+              "text": "Test your program by inputting the data value 5 and take a screenshot to show the\noutput.\nSave your program.\nCopy and paste the screenshot into part 1(d)(iii) in the evidence document.\n\n2 A program stores the following ten integers in a 1D array with the identifier arrayData.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "0 -1"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Write program code for a new program to:\n• declare the global 1D array, arrayData, with ten elements\n• initialise arrayData in the main program using the data values shown.\nSave your program as question2.\nCopy and paste the program code into part 2(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10bi",
+              "label": "(i)",
+              "text": "A function, linearSearch(), takes an integer as a parameter and performs a linear\nsearch on arrayData to find the parameter value. It returns True if it was found and\nFalse if it was not found.\nWrite program code for the function linearSearch().\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10bii",
+              "label": "(ii)",
+              "text": "Edit the main program to:\n• allow the user to input an integer value\n• pass the value to linearSearch() as the parameter\n• output an appropriate message to tell the user whether the search value was found\nor not.\nSave your program.\nCopy and paste the program code into part 2(b)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10biii",
+              "label": "(iii)",
+              "text": "Test your program with one value that is in the array and one value that is not in the\narray.\nTake a screenshot to show the result of each test.\nSave your program.\nCopy and paste the screenshots into part 2(b)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "The following bubble sort pseudocode algorithm sorts the data in theArray into descending\nnumerical order. There are five incomplete statements.\nPROCEDURE bubbleSort()\nDECLARE temp : INTEGER\nFOR x 0 to …………………………………\nFOR y 0 to …………………………………\nIF theArray[y] ………………………………… theArray[y + 1] THEN\ntemp theArray[y]\ntheArray[y] …………………………………\ntheArray[y + 1] …………………………………\nENDIF\nNEXT y\nNEXT x\nENDPROCEDURE\nWrite program code for the procedure bubbleSort() to sort the data in arrayData into\ndescending order.\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.\n\n3 A computer game requires users to travel around a world to find and open treasure chests. Each\ntreasure chest has a mathematics question inside. The user enters the answer. The number of\npoints awarded depends on the number of attempts before the user gives the correct answer.\nThe program will be created using object-oriented programming (OOP).\nThe following class diagram describes the class TreasureChest.\nTreasureChest\nquestion : STRING // stores the question\nanswer : INTEGER // stores the answer\npoints : INTEGER // stores the maximum possible number of\npoints available for this chest\nconstructor() // takes question, answer and points as\nparameters and creates an instance of an\nobject\ngetQuestion() // returns the question\ncheckAnswer() // takes the user’s answer as a parameter and\nreturns True if it is correct,\notherwise returns False\ngetPoints() // takes the number of attempts as a\nparameter and returns the number of\npoints awarded",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Create a new program.\nWrite program code to declare the class TreasureChest.\nDo not write any other methods.\nThe attributes are private.\nIf you are using the Python programming language, include attribute declarations using\ncomments.\nSave your program as question3.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "The text file TreasureChestData.txt stores data for five questions, in the order of\nquestion, answer, points.\nFor example, the first three lines of the file are for the first question:\n2*2 question\n4 answer\n10 points\nWrite program code for the procedure, readData() to:\n• read each question, answer and points from the text file\n• create an object of type TreasureChest for each question\n• declare an array named arrayTreasure of type TreasureChest\n• append each object to the array\n• use exception handling to output an appropriate message if the file is not found.\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 8,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "The main program repeats each question until the user inputs the correct answer. The\nnumber of points awarded depends on the number of attempts before the user gives the\ncorrect answer.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ci",
+              "label": "(i)",
+              "text": "The class TreasureChest has a method getQuestion() that returns the question.\nWrite the method getQuestion().\nSave your program.\nCopy and paste the program code into part 3(c)(i) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10cii",
+              "label": "(ii)",
+              "text": "The class TreasureChest has a method checkAnswer() that takes the user’s\nanswer as a parameter. It returns True if the answer is correct and False otherwise.\nWrite the method checkAnswer().\nSave your program.\nCopy and paste the program code into part 3(c)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10ciii",
+              "label": "(iii)",
+              "text": "The class TreasureChest has a method getPoints() that takes the number of\nattempts as a parameter.\n• If the number of attempts is 1, it returns the value of points.\n• If the number of attempts is 2, it returns the integer value of points divided by\n2 (DIV 2).\n• If the number of attempts is 3 or 4, it returns the integer value of points divided by\n4 (DIV 4).\n• If the number of attempts is not 1 or 2 or 3 or 4, it returns 0 (zero).\nFor example, a question is worth 100 points and the user took 2 attempts to give the\ncorrect answer. The user is awarded 50 points (100 DIV 2).\nWrite the method getPoints().\nSave your program.\nCopy and paste the program code into part 3(c)(iii) in the evidence document.",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10civ",
+              "label": "(iv)",
+              "text": "Write program code for the main program to:\n• call the procedure readData()\n• ask the user to enter a question number between 1 and 5\n• output the question that matches the question number entered by the user\n• check if the answer input by the user is correct using the method checkAnswer()\n• repeat the question until the user inputs the correct answer\n• count how many times the user attempted the question\n• use the method getPoints() to return the number of points awarded\n• output the number of points the user is awarded.\nSave your program.\nCopy and paste the program code into part 3(c)(iv) in the evidence document.",
+              "marks": 7,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10cv",
+              "label": "(v)",
+              "text": "Test the program.\nTake a screenshot showing the input(s) and output(s) for each of the following two tests.\nIn the first test:\n• select question 1 and answer it correctly the first time.\nIn the second test:\n• select question 5 and answer it correctly the second time.\nSave your program.\nCopy and paste the screenshots into part 3(c)(v) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 51,
+      "text": [
+        "5 6 7 1 12 13 15 21 8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "paperId": "9608_w20_qp_41",
+  "subjectCode": "9608",
+  "session": "w20",
+  "component": "41",
+  "totalMarks": 62,
+  "questionCount": 13,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A company is implementing a new software system for their latest product.",
+        "Developing the software will include the following activities:",
+        "Time to complete",
+        "Activity Description Predecessor",
+        "(weeks)",
+        "A Identify requirements 1 –",
+        "B Produce design 3 A",
+        "C Write code 6 B",
+        "D Test modules 4 B",
+        "E Integration testing 2 D",
+        "F Final system black-box testing 2 E",
+        "G Install software 1 F",
+        "H Acceptance testing 2 G",
+        "I Create user documentation 2 G",
+        "J Create training documents 3 G",
+        "K Pilot implementation 4 H",
+        "Complete the GANTT chart to correspond with the given table.",
+        "Week",
+        "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20",
+        "number",
+        "[5]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Tick (3) one or more boxes in each row to indicate whether each statement applies to\nIntegration, Acceptance, Alpha or Beta testing.\nStatement Integration Acceptance Alpha Beta\nSoftware is tested in-house by\ndedicated testers\nSoftware is tested by the client before\nit is signed off\nSoftware is tested by combining\nmodules that have previously been\ntested to check they work as expected\nSoftware is tested using normal,\nabnormal and boundary data\nSoftware is tested by releasing it to\nselected customers, who test it in\nnormal circumstances",
+          "marks": 4,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Identify one other method of testing.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "There are several different types of testing."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Write program code for the Constructor() method.\nUse the appropriate constructor method for your chosen programming language.\nProgramming language ______\nProgram code",
+          "marks": 2,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Write program code for GetPlayerID() method.\nProgramming language ______\nProgram code",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The method SetPlayerID() validates the parameter value. It checks that it is 6 characters\nin length and that the first two characters are \"PL\". The method sets PlayerID to the\nparameter value. It returns TRUE if the parameter value is valid and FALSE if it is not valid.\nThe function Length(Variable) returns the length of the string stored in Variable as an\ninteger.\nThe function Substring(Variable, StartingCharacter, NumberOfCharacters)\ncan be used to return one or more characters from a string. The first character position in a\nstring is 0.\nFor example, when the string \"Computer\" is stored in the variable Message:\nSubstring(Message,1,1) would return the character \"o\".\nWrite pseudocode for the SetPlayerID() method.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The program uses object-oriented programming to store the puzzles.\nOne type of puzzle is a quiz that consists of several questions. The two classes, Quiz and\nQuestion, are defined.\nThe class diagram shows parts of these classes.\nQuiz\nQuizName : STRING // initialised in constructor to\n// parameter\nDifficulty : STRING // initialised in constructor to\n// parameter\nQuizQs : ARRAY[] OF Question // defined with the number of\n// questions passed as a parameter,\n// declared as an array of objects\n// of class Question\nConstructor() // method used to create an instance of the\n// Quiz class and initialise its attributes\nQuestion\nQuestion : STRING\nDifficulty : STRING\nAnswer : STRING\nConstructor() // method used to create an instance of the\n// Question class and initialise its attributes",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "Explain what is meant by containment, using an example from the class diagram.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "Classes, objects and containment are all features of object-oriented programming.\nIdentify and describe one other feature of object-oriented programming.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3diii",
+              "label": "(iii)",
+              "text": "The main program stores the collection of quizzes in the array QuizBank that can store\n100 objects.\nDefine the array QuizBank using pseudocode.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3div",
+              "label": "(iv)",
+              "text": "A new quiz is created with the name ‘Famous people’. The difficulty level is ‘Low’ and it\nconsists of 10 questions.\nWrite program code to declare the quiz object and store it in the first element in\nQuizBank.\nProgramming language ______\nProgram code",
+              "marks": 2,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A programmer is creating a program for a puzzle competition.",
+        "The programmer has designed the PuzzlePlayer class to store details for each player, including",
+        "the player’s score.",
+        "The following diagram shows the design for the PuzzlePlayer class.",
+        "PuzzlePlayer",
+        "PlayerID : STRING // initialised in constructor to \"PL12a3\"",
+        "Name : STRING // initialised in constructor to \"\"",
+        "Score : INTEGER // initialised in constructor to 0",
+        "Constructor() // method used to create an instance of the",
+        "// PuzzlePlayer class and initialise its attributes",
+        "GetPlayerID() // returns PlayerID",
+        "GetName() // returns Name",
+        "GetScore() // returns Score",
+        "SetPlayerID() // validates the parameter value to make sure it",
+        "// is 6 characters in length and starts with",
+        "// \"PL\", then sets PlayerID to this value",
+        "SetName() // sets the Name to the parameter value",
+        "SetScore() // sets the Score to the parameter value"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative programming language is used to represent the following knowledge base.",
+        "01 type(cheddar).",
+        "02 type(brie).",
+        "03 type(paneer).",
+        "04 type(parmesan)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(england)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(france)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(india)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "country(italy)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "hard(parmesan)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "soft(brie)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "strong_smell(brie)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "strong_smell(cheddar)."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "Camembert is a type of soft cheese from France and has a strong smell.\nWrite additional clauses to represent this information.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Stilton (X) could be from England (Y) and Stilton could be a hard cheese, if Stilton is a type of\ncheese, England is a country and Stilton is not a soft cheese.\nWrite this as a rule.\nCheese_Question(X, Y)\nIF ______\n\n5 There are several sorting algorithms. One type of sorting algorithm is an insertion sort.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "Explain how an insertion sort puts a set of data into ascending order.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "The following algorithm performs a bubble sort. It is currently incomplete.\nComplete the algorithm.\nCounter NumberOfItems – 2\nREPEAT\nDataSwapped FALSE\nFOR CurrentValue 0 TO ……………………………………………………………\nIF DataList[CurrentValue] > DataList[CurrentValue + 1]\nTHEN\nValueTemp DataList[……………………………………………………………]\nDataList[CurrentValue] DataList[CurrentValue + 1]\nDataList[CurrentValue + 1] …………………………………………………………\nDataSwapped ……………………………………………………………\nENDIF\nENDFOR\nUNTIL DataSwapped = ……………………………………………………………\n\n6 Consider the following diagram that represents a linked list:\nData Pointer\nA B C D Ø\nThe symbol Ø represents a null pointer.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "A new node with the data value E is added between the nodes that have the data values B\nand C.\nShow the state of the linked list after the node with the data value E is added.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "State why the node with the data value D has a null pointer.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13c",
+          "label": "(c)",
+          "text": "A 1D array, LinkedList, is used to implement the linked list. The array is declared as a\nrecord data type with two fields, Data and Pointer.\nThe global variable StartPointer stores the index of the first node in the list.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "13ci",
+              "label": "(i)",
+              "text": "The following pseudocode algorithm finds a value in a linked list. The algorithm is\nincomplete.\nThe function FindValue(), takes as a parameter, the value to be searched for in the\nlinked list. The function follows the pointers in the linked list. It either returns -1 if the\nvalue is not found, or it returns the pointer to the value if it is found.\nComplete the algorithm.\nFUNCTION FindValue(Value : INTEGER) ……………………………………………………\nDECLARE CurrentPointer : INTEGER\nCurrentPointer StartPointer\nWHILE ………………………………………………… <> NULL\nAND LinkedList[CurrentPointer]. …………………………………… <> …………………………………………\nCurrentPointer LinkedList[……………………………………………………].Pointer\nENDWHILE\nIF LinkedList[CurrentPointer].Data = Value\nTHEN\nRETURN ……………………………………………………\nELSE\nRETURN -1\nENDIF\nENDFUNCTION",
+              "marks": 6,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "13cii",
+              "label": "(ii)",
+              "text": "The function DeleteNode() takes the data to be removed from LinkedList as a\nparameter.\nThe function starts at the first node and follows the pointers to check the data in each\nnode.\nIf the data is found, it removes the node containing that data, updates the pointer and\nreturns TRUE. Otherwise, it returns FALSE.\nWrite pseudocode for DeleteNode().\n\n7 The following table shows part of the instruction set for a processor that has one general purpose\nregister, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the location at the given\nLDD <address>\naddress to ACC.\nIndirect addressing. The address to be used is at the given address.\nLDI <address>\nLoad the contents of this second address to ACC.\nIndexed addressing. Form the address from <address> + the contents\nLDX <address> of the Index Register. Copy the contents of this calculated address to\nACC.\nLDR #n Immediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nIndexed addressing. Form the address from <address> + the contents\nSTX <address>\nof the Index Register. Copy the contents of ACC to this calculated\naddress.\nADD <address> Add the contents of the given address to ACC.\nINC <register> Add 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n Compare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare\nJPE <address>\nwas True.\nFollowing a compare instruction, jump to <address> if the compare\nJPN <address>\nwas False.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT Output to the screen the character whose ASCII value is stored in ACC.\nEND Return control to the operating system.\nThe assembly language program in the table on the opposite page allows a username to be input\nas a string of up to 8 characters in length.\nFor strings of less than 8 characters, the user enters the exclamation mark (!) character to\nindicate that no more characters will be entered. The exclamation mark is not saved as part of the\nusername.\nThe program then outputs each character of the username in the order input.\nThe program will use consecutive memory locations, starting at the address labelled USERNAME,\nstoring one character in each location.\nThe program in the table is incomplete. The comment column contains descriptions for some\nprogram instructions.\nComplete the program using the given instruction set.\nInstruction\nLabel Comment\nOp code Operand\nLDR #0\nLDM #0\n// initialise LENGTH to 0\nSTO LENGTH\nLOOP: IN\n// is character = EXCLAMATION(!)?\n// if TRUE, jump to OUTPUT\n// store character in USERNAME +\ncontents of IX\nINC IX // increment Index Register\n// increment LENGTH\n// is LENGTH = MAX ?\n// if FALSE, jump to LOOP\nOUTPUT: LDR #0\n// initialise COUNT to 0\nLDX USERNAME\nOUT\nINC IX\nLDD COUNT\nINC ACC\n// increment COUNT\nSTO COUNT\n// is COUNT = LENGTH ?\nJPN OUTPUT\nEND // end program\nLENGTH:\nEXCLAMATION: B0010001\nMAX: 8\nCOUNT:\nUSERNAME:\n\n8 Recursion can be used when writing computer programs.\nConsider the following pseudocode algorithm.\n01 FUNCTION NumberPattern(Value1, Value2, EndValue : INTEGER) RETURNS INTEGER\n02 OUTPUT Value1\n03 IF Value1 <= EndValue\n04 THEN\n05 Temp Value2\n06 Value2 Value1\n07 Value1 Value1 + Temp\n08 RETURN NumberPattern(Value1, Value2, EndValue) + 1\n09 ELSE\n10 RETURN 0\n11 ENDIF\n12 ENDFUNCTION",
+              "marks": 7,
+              "type": "compare",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "State the line number in the pseudocode algorithm that shows function NumberPattern()\nis recursive. Justify your choice.\nLine number ______\nJustification ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "The function is called as follows:\nNumberPattern(1,1,12)\nDry run the algorithm and complete the following trace table. State the final value returned.\nShow your working.\nValue1 Value2 Temp EndValue\nOUTPUT RETURN value\nFinal value returned ______\nWorking",
+          "marks": 5,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13c",
+          "label": "(c)",
+          "text": "State the purpose of the algorithm.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 41,
+      "text": [
+        "origin(brie, france).",
+        "These clauses have the following meanings:",
+        "Clause Meaning",
+        "02 Brie is a type of cheese",
+        "06 France is a country",
+        "Parmesan is a hard cheese",
+        "Brie is a soft cheese",
+        "12 Cheddar has a strong smell",
+        "13 Brie is from France"
+      ]
+    }
+  ]
+}

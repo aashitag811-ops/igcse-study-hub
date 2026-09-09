@@ -1,0 +1,419 @@
+{
+  "paperId": "9618_s21_qp_33",
+  "subjectCode": "9618",
+  "session": "s21",
+  "component": "33",
+  "totalMarks": 69,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Calculate the normalised floating-point representation of –7.25 in this system.\nShow your working.\nMantissa Exponent\nWorking ______",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Calculate the denary value of the given binary floating-point number.\nShow your working.\nMantissa Exponent\n1 0 1 1 0 0 0 1 1 1 0 0 0 1 1 1\nWorking ______\nAnswer ______",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The given binary floating-point number is not normalised.\nNormalise the floating-point number. Show your working.\nMantissa Exponent\n0 0 0 0 0 0 0 1 1 1 1 0 0 1 1 1\nMantissa Exponent\nWorking ______",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The denary number 513 cannot be stored accurately as a normalised floating-point number in\nthis computer system.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Explain the reason for this.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Describe an alteration to the way floating-point numbers are stored to enable this number\nto be stored accurately using the same total number of bits.",
+              "marks": null,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Real numbers are stored in a computer system using floating-point representation with:",
+        "• 10 bits for the mantissa",
+        "• 6 bits for the exponent",
+        "• Two’s complement form for both the mantissa and the exponent."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Describe the purpose of a user-defined data type.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Define, using pseudocode, the following enumerated data types:",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "SchoolDay to hold data about the days students are usually in school.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "WeekEnd to hold data about the days that are not school days.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Define, using pseudocode, the composite data type ClubMeet. This will hold data about club\nmembers that includes:\n• first name and last name\n• the two days they attend:\n○ one on a school day\n○ one not on a school day.\nUse the enumerated types you created in part (b).",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw one line to connect each Operating System (OS) term to the most appropriate\ndescription about it.\nOS term Description\nUsing secondary storage to simulate\nadditional main memory\nMulti-tasking\nManaging the processes running on\nthe CPU\nPaging\nManaging the execution of many programs\nthat appear to run at the same time\nInterrupt handling\nLocating non-contiguous blocks of data and\nrelocating them\nScheduling\nTransferring control to another routine when\na service is required\nVirtual memory\nReading/writing same-size blocks of data\nfrom/to secondary storage when required",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain how an interpreter executes a program without producing a complete translated\nversion of it.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Explain why Reverse Polish Notation (RPN) is used to carry out the evaluation of\nexpressions.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Identify, with reasons, a data structure that could be used to evaluate an expression\nin RPN.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Write the infix expression in RPN.\n(a – b) * (a + c) / 7",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Write the RPN expression as an infix expression.\na b / 4 * a b + -",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Evaluate the RPN expression:\na b + c d / /\nwhere a = 17, b = 3, c = 48 and d = 12.\nShow your working.",
+          "marks": 2,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Calculate the shortest distance between the base and each of the other towns in the diagram\nusing Dijkstra’s algorithm.\nShow your working and write your answers in the table provided.\nBase\nTown 1\nTown 2\nTown 3\nTown 6\nTown 4 Town 5\nWorking ______\nAnswers\nTown 1 Town 2 Town 3 Town 4 Town 5 Town 6",
+          "marks": 5,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Explain the use of graphs to aid Artificial Intelligence (AI).",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Give two benefits and two drawbacks of packet switching.",
+        "Benefit 1 ...........................................................................................................................................",
+        "Benefit 2 ...........................................................................................................................................",
+        "Drawback 1 ......................................................................................................................................",
+        "Drawback 2 ......................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Complete the truth table for the given logic circuit. Show your working.\nInputs Working space Outputs\nA B C P Q R Y Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "State the name of the logic circuit.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Write the Boolean expressions for the two outputs Y and Z in the truth table as\nsum-of-products and state the purpose of each output.\nY = ______\nPurpose ______\nZ = ______\nPurpose ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The diagram shows a logic circuit.",
+        "A P",
+        "C R"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "State two factors that may affect the performance of a sorting algorithm.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The given algorithm is a simple bubble sort that arranges a set of scores stored in a one-\ndimensional array into descending order, and orders the corresponding students’ names\nstored into a two-dimensional array in the same order as the scores. All the arrays are indexed\nfrom 1.\nThe contents of both arrays after sorting are shown.\nName\nScore\n1 2\n1 98 1 Smithfield Tom\n2 97 2 Johnson Jane\n… …\n248 5 248 Peters Jade\n249 3 249 Allen John\nYearSize ← 249\nFlag ← TRUE\nWHILE Flag = TRUE\nFlag ← FALSE\nFOR Student ← 1 TO YearSize - 1\nIF Score[Student] < Score[Student + 1] THEN\nTemp1 ← Score[Student]\nTemp2 ← Name[Student,1]\nTemp3 ← Name[Student,2]\nScore[Student] ← Score[Student + 1]\nName[Student,1] ← Name[Student + 1,1]\nName[Student,2] ← Name[Student + 1,2]\nScore[Student + 1] ← Temp1\nName[Student + 1,1] ← Temp2\nName[Student + 1,2] ← Temp3\nFlag ← TRUE\nENDIF\nNEXT Student\nENDWHILE\nWrite an algorithm, using pseudocode, that will perform the same task using an insertion sort.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Describe what is meant by an imperative (procedural) programming language.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Describe what is meant by a declarative programming language.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Identify the programming paradigm for each of these program code examples.\nProgram code example Programming paradigm\nmale(john).\nfemale(ethel).\nparent(john, ethel).\nFOR Counter = 1 TO 20\nX = X * Counter\nNEXT Counter\nStart: LDD Counter\nINC ACC\nSTO Counter\npublic class Vehicle\nprivate speed;\npublic Vehicle()\nspeed = 0;\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    }
+  ]
+}

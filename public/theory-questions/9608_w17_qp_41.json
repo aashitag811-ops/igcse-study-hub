@@ -1,0 +1,410 @@
+{
+  "paperId": "9608_w17_qp_41",
+  "subjectCode": "9608",
+  "session": "w17",
+  "component": "41",
+  "totalMarks": 68,
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A greenhouse has a window that automatically opens and closes depending on the internal",
+        "temperature.",
+        "If the temperature rises above 20 °C, the window half opens. If the temperature rises above 30 °C,",
+        "the window fully opens. If the temperature drops below 25 °C, the window returns to being half",
+        "open. If the temperature drops below 15 °C, the window fully closes.",
+        "The window has three possible states: Closed, Half Open and Fully Open.",
+        "Current state Event Next state",
+        "Closed Temperature rises above 20 °C Half Open",
+        "Half Open Temperature drops below 15 °C Closed",
+        "Half Open Temperature rises above 30 °C Fully Open",
+        "Fully Open Temperature drops below 25 °C Half Open",
+        "Complete the state-transition diagram for the window:",
+        "[7]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "State how repetition is shown in a Jackson Structured Programming (JSP) structure\ndiagram.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "State how selection is shown in a JSP structure diagram.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A simple calculator is to be created.\nThe calculator is to be used as follows:\n• User inputs 2 numbers (x and y).\n• User inputs an operator (+, –, * or /).\n• The calculator computes the answer.\n• The calculator displays the answer.\nDraw a JSP diagram for the calculator. The first element is provided.\nCalculator",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative programming language is used to represent the following knowledge base:",
+        "01 person(jane).",
+        "02 person(ahmed).",
+        "03 person(caroline)."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "person(stuart)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "food(chocolate)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "food(sushi)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "food(pizza)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "food(chilli)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "likes(jane, pizza)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "likes(ahmed, chocolate)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "likes(ahmed, pizza)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "likes(jane, chilli)."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "likes(stuart, sushi)."
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "dislikes(stuart, chocolate)."
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "dislikes(jane, sushi)."
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Mimi is a person who likes chocolate but does not like sushi or lettuce.\nWrite additional clauses to represent this information.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Using the variable PersonName, the goal:\nlikes(PersonName, pizza).\nreturns:\nPersonName = jane, ahmed .\nWrite the result that is returned by the goal:\nlikes(ahmed, FoodItem).\nFoodItem = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16c",
+          "label": "(c)",
+          "text": "B might like A, if B is a person, A is a food and B does not dislike A.\nWrite this as a rule.\nmight_like(______ , ______)\nIF ______\n\n4 The following table shows part of the instruction set for a processor. The processor has one\ngeneral purpose register, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nLDD <address>\nDirect addressing. Load the contents of the location at the given\naddress to ACC.\nLDI <address>\nIndirect addressing. The address to be used is at the given\naddress. Load the contents of this second address to ACC.\nLDX <address>\nIndexed addressing. Form the address from <address> + the\ncontents of the index register. Copy the contents of this\ncalculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nSTX <address>\nIndexed addressing. Form the address from <address> + the\ncontents of the index register. Copy the contents from ACC to\nthis calculated address.\nADD <address>\nAdd the contents of the given address to the ACC.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nJPE <address>\nFollowing a compare instruction, jump to <address> if the\ncompare was True.\nJPN <address>\nFollowing a compare instruction, jump to <address> if the\ncompare was False.\nLSL #n\nBits in ACC are shifted n places to the left. Zeros are introduced\non the right hand end.\nLSR #n\nBits in ACC are shifted n places to the right. Zeros are introduced\non the left hand end.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT\nOutput to the screen the character whose ASCII value is stored\nin ACC.\nEND\nReturn control to the operating system.",
+          "marks": 6,
+          "type": "compare",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "A program stores a letter. The user is allowed nine attempts to guess the stored letter. The\nprogram outputs “?” and the user guesses a letter. If the user guesses the letter, the program\noutputs “*”.\nThe following is pseudocode for this program.\nREPEAT\nOUTPUT '?'\nINPUT GUESS\nIF GUESS = LETTERTOGUESS\nTHEN\nOUTPUT '*'\nBREAK\nELSE\nATTEMPTS ATTEMPTS + 1\nENDIF\nUNTIL ATTEMPTS = 9\nWrite this program. Use the op codes from the instruction set provided.\nLabel Op code Operand Comment\nSTART: LDM #63 // load ASCII value for '?'\n// OUTPUT '?'\n// input GUESS\n// compare with stored letter\n// if correct guess, go to GUESSED\n// increment ATTEMPTS\n// is ATTEMPTS = 9 ?\n// if out of guesses, go to ENDP\n// go back to beginning of loop\nGUESSED: LDM #42 // load ASCII for '*'\n// OUTPUT '*'\nENDP: END // end program\nATTEMPTS: 0\nLETTERTOGUESS: 'a'",
+          "marks": 11,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Five numbers are stored, starting in the location labelled NUMBERS. A program is needed to\nmultiply each of the numbers by 4 and store them back in their original location.\nWrite this program. Use the op codes from the instruction set on the opposite page.\nLabel Op code Operand Comment\nSTART: // initialise the Index Register\n// load the value from NUMBERS\n// multiply by 4\n// store the new value in NUMBERS\n// increment the Index Register\n// increment COUNT\n// is COUNT = 5 ?\n// repeat for next number\nENDP: END\nCOUNT: 0\nNUMBERS: 22\n\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nLDD <address>\nDirect addressing. Load the contents of the location at the given\naddress to ACC.\nLDI <address>\nIndirect addressing. The address to be used is at the given\naddress. Load the contents of this second address to ACC.\nLDX <address>\nIndexed addressing. Form the address from <address> + the\ncontents of the index register. Copy the contents of this\ncalculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nSTX <address>\nIndexed addressing. Form the address from <address> + the\ncontents of the index register. Copy the contents from ACC to\nthis calculated address.\nADD <address>\nAdd the contents of the given address to the ACC.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nJPE <address>\nFollowing a compare instruction, jump to <address> if the\ncompare was True.\nJPN <address>\nFollowing a compare instruction, jump to <address> if the\ncompare was False.\nLSL #n\nBits in ACC are shifted n places to the left. Zeros are introduced\non the right hand end.\nLSR #n\nBits in ACC are shifted n places to the right. Zeros are introduced\non the left hand end.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT\nOutput to the screen the character whose ASCII value is stored\nin ACC.\nEND\nReturn control to the operating system.\n5 Large development projects require careful resource management.",
+          "marks": 10,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16ai",
+              "label": "(i)",
+              "text": "Name an appropriate project management tool that helps the manager to work out the\nestimated length of time it takes for the project to complete.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16aii",
+              "label": "(ii)",
+              "text": "Explain how, during the planning stage of the project, the manager would use the tool\nyou named in part (a)(i).",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16bi",
+              "label": "(i)",
+              "text": "Different programmers have been writing independent modules. The modules now need\nto be combined to create the final system.\nName the type of testing required at this stage.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16bii",
+              "label": "(ii)",
+              "text": "Name the final testing stage required before the system becomes operational.\n\n6 A programmer wants to create a computer simulation of animals searching for food in a desert.\nThe desert is represented by a 40 by 40 grid. Each position in the grid is represented by a pair of\ncoordinates. 'A' represents an animal and 'F' represents food. At the start of the simulation, the\ngrid contains 5 animals and 1 food source.\nThe following is an example of part of the grid.\n0 1 2 3 4 ... 37 38 39\n0 A ..\n1 F ..\n2 .. A\n3 A ..\n38 A .. A\n39 ..\nA timer is used. In each time interval, each animal randomly moves 0 or 1 position in a random\ndirection. The program generates this movement by computing two random numbers, each of\nwhich can be –1, 0 or 1. The program adds the first random number to the across number and the\nsecond random number to the down number representing the animal’s position.\nFor example:\n• if 0 and 1 are generated, the across value does not change, the down value increases by 1\n• if –1 and 1 are generated, the across value decreases by 1, and the down value increases\nby 1.\nEach animal has an individual score. If the animal moves to a position in the grid with food ('F'):\n• the animal’s score increases by 1\n• the food disappears\n• one new animal ('A') is randomly generated and added to the grid (to a maximum of\n20 animals)\n• one new food ('F') is randomly generated and added to the grid.\nThe simulation is to be implemented using object-oriented programming.\nThe programmer has designed two classes, Desert and Animal.\nThe Desert class consists of:\n• attributes\n• Grid\n• StepCounter\n• AnimalList\n• NumberOfAnimals\n• methods\n• Constructor\n• IncrementStepCounter\n• GenerateFood\n• DisplayGrid\nEach attribute consists of a value and a get and set method that allow access to the attributes.\nThe following table describes the attributes and methods for the Animal class.\nIdentifier Data type Description\nInstantiate an object of the Animal\nclass\n• Generate a pair of random numbers\nConstructor()\nbetween 0 and 39.\n• Place animal at that random\nposition.\n• Initialise the animal’s score to 0.\n• Delete the food.\n• Increase the score of the animal that\ncalled the method.\nEatFood()\n• Call the GenerateFood method of\nthe Desert class.\n• Call the Constructor method of\nthe Animal class.\n• Call the\nGenerateChangeInCoordinate\nmethod for each coordinate (across\nor down number) of the animal’s\nMove()\nposition.\n• Moves the animal to the new space.\n• If there is food in the new position,\ncall the EatFood method.\nScore INTEGER\nInitialised to 0\nAcross INTEGER\nThe across value, between 0 and 39\nDown INTEGER\nThe down value, between 0 and 39",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Write program code to declare the attributes and constructor for the Animal class.\nYou only need to write the set and get methods for the attribute Across.\nYou should also write:\n• the constructor for the class\n• set and get methods for the Across attribute only.\nProgramming language ______\nProgram code",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "The Constructor method of the Desert class:\n• initialises an empty grid\n• creates 5 animal objects which are added to the AnimalList (an array of animal objects\ncurrently on the grid)\n• generates one food\n• sets the StepCounter to 0.\nWrite program code for the Constructor method.\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "16ci",
+              "label": "(i)",
+              "text": "The function GenerateChangeInCoordinate:\n• receives a coordinate (across or down number) as a parameter\n• checks whether the coordinate’s value is at a boundary of the grid\n• returns a random change (–1, 0 or 1) that will keep the animal’s position within the\ngrid.\nWrite program code for the GenerateChangeInCoordinate function.\nProgramming language ______\nProgram code",
+              "marks": 4,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "16cii",
+              "label": "(ii)",
+              "text": "The Move method uses the GenerateChangeInCoordinate function to calculate the\nnew Across and Down values for an animal. If there is food in the new position in the\ngrid, the animal eats the food.\nWrite program code for the Move method.\nProgramming language ______\nProgram code",
+              "marks": 4,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "16d",
+          "label": "(d)",
+          "text": "The programmer plans to add a graphic display to the program. The programmer will make\nuse of a program library.\nExplain what is meant by a program library.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 61,
+      "text": [
+        "dislikes(caroline, pizza).",
+        "These clauses have the following meanings:",
+        "Clause Explanation",
+        "Jane is a person",
+        "Chocolate is a food",
+        "Jane likes pizza",
+        "Stuart dislikes (does not like) chocolate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "paperId": "9618_w25_qp_33",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "33",
+  "totalMarks": 46,
+  "questionCount": 13,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "An enumerated data type, Spectrum, is required to hold the names of colours.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write the pseudocode statement for the type declaration of Spectrum to hold the\nnames of the colours available:\nRed, Orange, Yellow, Green, Blue, Indigo, Violet.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Identify two characteristics of the list of values given in an enumerated data type\ndeclaration.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "ColourData is a composite data type to store definitions of colours.\nWrite pseudocode statements to declare ColourData to hold the following fields:\nField Example data\nXYZ12345\nColourCode\nRed\nColour\nWavelength\nFrequency 4.62\nPrimaryColour Yes\nUse the most appropriate data type in each case, including the enumerated data type\nSpectrum from part a(i).\n\n* 0000800000003 * DFD",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Outline the effect of changing the number of bits used to store the mantissa to 10 bits, in this\nsystem.",
+          "marks": 3,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Describe one example of a situation that could cause an overflow to occur and the\nconsequences of such an overflow.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Numbers are stored in a computer system using binary floating‑point representation with:",
+        "• 12 bits for the mantissa",
+        "• 4 bits for the exponent",
+        "• two’s complement form for both the mantissa and the exponent",
+        "• 2 bytes in total."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe how packet switching is used to pass messages across a network. Do not include",
+        "checking for completeness and resending packets in your answer.",
+        "[4]",
+        "* 0000800000004 * DFD"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Identify and describe three protocols that are used in the Application Layer of the TCP/IP protocol",
+        "suite.",
+        "Protocol 1 .........................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "Protocol 2 .........................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "Protocol 3 .........................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "State the purpose of multi‑tasking.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Explain how an operating system ensures that multi‑tasking operates efficiently.\n\n* 0000800000005 * DFD",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD 00 01 11 10\n00 0 0 0 0\n01 1 1 1 0\n11 0 1 1 1\n10 0 0 1 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Draw loop(s) around appropriate group(s) in the K‑map to produce an optimal\nsum‑of‑products.",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "Write the Boolean expression from your answer to part a(i) as a simplified sum‑of‑products.\nDo not carry out any further simplification.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Simplify the following expression using De Morgan’s laws and Boolean algebra.\nShow all the stages in your simplification.\nX = A+B+C+B+C\n\n* 0000800000006 * DFD",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Outline the process of optimisation during the compilation of a program.",
+          "marks": 2,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Write the Reverse Polish Notation (RPN) for the given infix expression:\n((6 + 12) / (16 – 10)) * 18",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The RPN expression\nc a – b d + * b c + /\nis to be evaluated, where:\na = 4, b = 12, c = 24 and d = 6.\nShow the changing contents of the stack as the RPN expression is evaluated.\n\n* 0000800000007 * DFD",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Calculate the shortest distance between the Start node and each of the nodes in the graph using",
+        "Dijkstra’s algorithm.",
+        "Show your working on the graph or in the working space. Write your answers in the table provided.",
+        "Start",
+        "Working ............................................................................................................................................",
+        "Answers:",
+        "T V W X Y Z",
+        "[5]",
+        "* 0000800000008 * DFD"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A company requires a digital certificate to ensure the authenticity of its online communications.",
+        "Outline the process followed to acquire a digital certificate.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Write pseudocode to declare the variables, constant and array required to implement the\nstack.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "Write pseudocode for a procedure to initialise the top and bottom pointers of the stack to\nappropriate values.\n\n* 0000800000009 * DFD",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A stack, StackArray, is to be implemented using pseudocode, to store a maximum of 100 string",
+        "items in an appropriate array. Declarations are required so that the stack has a beginning, an end",
+        "and a maximum size. An array is also required to store the data."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe when the use of recursion would be beneficial and give an example.",
+        "Description .......................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "[3]"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Explain what is meant by an exception.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Identify one example of an exception and give one reason why the exception may cause a\nproblem.\nExample ______\nReason ______\n\n* 0000800000010 * DFD",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "An exception can occur when running a program."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The table shows assembly language instructions for a processor that has one register, the",
+        "Accumulator (ACC).",
+        "Instruction",
+        "Label Opcode Operand Explanation",
+        "LDM #n",
+        "Load the number n to the ACC DO NOT WRITE IN THIS MARGIN",
+        "Load the contents of the location at the given",
+        "LDD <address>",
+        "address to the ACC",
+        "The address to be used is at the given address.",
+        "LDI <address>",
+        "Load the contents of this second address to",
+        "the ACC",
+        "Add the contents of the given address to the",
+        "ADD <address>",
+        "ACC",
+        "ADD #n Add the number n to the ACC",
+        "Subtract the contents of the given address",
+        "SUB <address>",
+        "from the ACC",
+        "SUB #n Subtract the number n from the ACC",
+        "Store the contents of the ACC at the given",
+        "STO <address>",
+        "address",
+        "Gives a symbolic address <label> to the",
+        "<label>: <data>",
+        "memory location with the contents <data>",
+        "# denotes a denary number, e.g. #123",
+        "<label> can be used in place of <address>",
+        "The current contents of memory are:",
+        "Address Contents",
+        "899 63",
+        "* 0000800000011 * DFD",
+        "Write assembly language code, using only the given instruction set to:",
+        "• store the denary value 250 as labelled variable X",
+        "• store the value stored in location 563 as labelled variable Y",
+        "• add the value stored in variable X to the value stored in variable Y",
+        "• subtract the value stored in location 899 from the current value in the Accumulator",
+        "• store the result in variable Total.",
+        "Show the initialisation and values of the variables X, Y and Total in the table provided.",
+        "Label Content",
+        "[7]",
+        "* 0000800000012 * DFD",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

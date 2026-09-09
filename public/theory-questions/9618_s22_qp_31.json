@@ -1,0 +1,459 @@
+{
+  "paperId": "9618_s22_qp_31",
+  "subjectCode": "9618",
+  "session": "s22",
+  "component": "31",
+  "totalMarks": 61,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to assign:\n• A Level Computer Science to Title of LibraryBook\n• FALSE to Fiction of LibraryBook.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The type definition for LibraryRecord is changed.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The value for NumberOfCopies must be between 1 and 10 inclusive.\nWrite the updated line of pseudocode from the type definition of LibraryRecord to\nimplement the change.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Every copy of every book is now uniquely identified by an accession number,\nAccessionNumber, as it is added to the library. Each library record will include one or\nmore accession numbers. Each accession number is an integer.\nWrite the extra line of pseudocode needed in the type definition of LibraryRecord.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A record is a user-defined composite data type.\nExplain what is meant by a user-defined composite data type.\nInclude an example of another user-defined composite data type in your answer.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Data types can be defined using pseudocode.",
+        "The data type, LibraryRecord, is defined in pseudocode as:",
+        "TYPE LibraryRecord",
+        "DECLARE Title : STRING",
+        "DECLARE Fiction : BOOLEAN",
+        "DECLARE Author : STRING",
+        "DECLARE NumberOfCopies : INTEGER",
+        "ENDTYPE",
+        "A variable, LibraryBook, is declared in pseudocode as:",
+        "DECLARE LibraryBook : LibraryRecord"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative language is used to represent the following facts about cats.",
+        "01 type(leopard, wild).",
+        "02 type(lion, wild)."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "type(cheetah, wild)."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "type(savannah, hybrid)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "More facts are to be included. A caracal is a wild cat with short hair.\nWrite the additional clauses to record these facts.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "Using the variable Cat, the goal:\nhair(Cat, medium)\nreturns\nCat = leopard, cheetah, savannah\nWrite the result returned by the goal:\nhair(Cat, long)\nCat = ______",
+          "marks": 1,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05ci",
+              "label": "(i)",
+              "text": "Write the goal, using the variable Pet, to find all the domestic cats.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05cii",
+              "label": "(ii)",
+              "text": "Write the goal, using the variable WildSpotty, to find all the wild cats with spots.\n\n3 Data can be sent over networks using either circuit switching or packet switching.\nDescribe both methods of data transmission. Include a different advantage and disadvantage for\neach method.\nCircuit switching ______\nAdvantage ______\nDisadvantage ______\nPacket switching ______\nAdvantage ______\nDisadvantage ______\n\n4 Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "Describe what is meant by RISC and CISC processors.\nRISC ______\nCISC ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "Identify two differences between RISC and CISC processors.\n\n5 Part of a program’s calculations uses the integer variables j, k, m, n and p.\nj = 3\nk = 2\nm = 10\nn = (j + k)/(j - k)\np = m * (m - j * k)",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "Write the Reverse Polish Notation (RPN) for the expression:\n(j + k)/(j - k)",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05bi",
+              "label": "(i)",
+              "text": "Show the changing contents of the stack as the value for p is calculated from its RPN\nexpression:\nm m j k * - *",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05bii",
+              "label": "(ii)",
+              "text": "Describe the main steps in the evaluation of this RPN expression using a stack.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "State two other uses of a stack.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "type(persian, domestic).",
+        "07 hair(leopard, medium).",
+        "08 hair(lion, short).",
+        "09 hair(cheetah, medium).",
+        "10 hair(savannah, medium).",
+        "11 hair(persian, long).",
+        "13 spots(leopard, yes).",
+        "14 spots(lion, no).",
+        "15 spots(cheetah, yes).",
+        "16 spots(savannah, yes).",
+        "17 spots(persian, no).",
+        "These clauses have the following meaning:",
+        "Clause Meaning",
+        "A leopard is a type of wild cat.",
+        "A lion has short hair.",
+        "A savannah has spots."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A virtual machine is used to emulate a new computer system.",
+        "Describe two benefits and one limitation of using a virtual machine for this purpose.",
+        "Benefit 1 ...........................................................................................................................................",
+        "Benefit 2 ...........................................................................................................................................",
+        "Limitation ..........................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Complete this class inheritance diagram to show the properties, methods and inheritance.\nYarn\nName: STRING\nColour: STRING\nBatchCode: STRING\nWeight: INTEGER\nNumberBalls: INTEGER\nType: STRING\nConstructor()\nEditNumberBalls()\nYarnInfo()\nAcrylic Wool Mix\nPercentage: INTEGER\nConstructor()\nYarnInfo()\nConstructor() Constructor()",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Describe what is meant by the terms properties, methods and inheritance.\nProperties ______\nMethods ______\nInheritance ______",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A program is to be written using Object-Oriented Programming (OOP) for a shop that sells knitting",
+        "yarn. There are three types of yarn: acrylic, wool or mix.",
+        "The following data are stored for each type.",
+        "• Name",
+        "• Colour",
+        "• Batch code",
+        "• Weight",
+        "• Number of balls of yarn in stock (can be edited)",
+        "• Type of yarn",
+        "The following statements apply to yarn.",
+        "• Acrylic can be soft or not soft.",
+        "• Wool can be lamb, merino or alpaca.",
+        "• Mix contains a percentage of acrylic.",
+        "Each type of yarn has a method that will display all the information about the yarn."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "Give two reasons for using key cryptography.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "Give two methods of key cryptography that can be used.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "When there is a secure exchange of key(s), the message is sent.\nThe use of quantum cryptography is being considered for the secure exchange.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "State two possible benefits of using quantum cryptography.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "State two possible drawbacks of using quantum cryptography.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A message is to be sent securely. Software uses a key to encrypt the message before it is sent."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The address 500 contains the value 100 and the address 100 contains the value 20.\nState the addressing mode and the contents of ACC after each instruction has been executed.\nLDM #500 Addressing mode ______\nContents of ACC ______\nLDD 500 Addressing mode ______\nContents of ACC ______\nLDI 500 Addressing mode ______\nContents of ACC ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Use only the given instruction set to write assembly language code to:\n• use the constant 20 which needs to be stored\n• add this constant to the value stored in the address contained in the variable Y\n• store the result in variable Z.\nInstruction\nLabel Opcode Operand\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "label",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The table shows assembly language instructions for a processor that has one general purpose",
+        "register, the Accumulator (ACC).",
+        "Instruction Explanation",
+        "Label Opcode Operand",
+        "LDM #n",
+        "Load the number n to ACC",
+        "LDD <address>",
+        "Load the contents of the given address to ACC",
+        "The address to be used is at the given address",
+        "LDI <address>",
+        "Load the contents of this second address to ACC",
+        "ADD <address> Add the contents of the given address to the ACC",
+        "STO <address> Store the contents of the ACC at the given address",
+        "Gives a symbolic address <label> to the memory",
+        "<label>: <data>",
+        "location with the contents <data>",
+        "<label> can be used in place of <address>",
+        "# denotes a denary number, e.g. #123"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "paperId": "9608_w20_qp_42",
+  "subjectCode": "9608",
+  "session": "w20",
+  "component": "42",
+  "totalMarks": 67,
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Identify two sorting algorithms.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Consider the following pseudocode algorithm.\nLowerBound 0\nUpperBound LengthOfList – 1\nValueFound FALSE\nOUTPUT \"Value to find: \"\nINPUT ValueToFind\nWHILE ValueFound = FALSE AND UpperBound <> LowerBound\nMidPoint (LowerBound + UpperBound)DIV 2\nIF List[MidPoint] = ValueToFind\nTHEN\nValueFound TRUE\nELSE\nIF List[MidPoint] < ValueToFind\nTHEN\nLowerBound MidPoint + 1\nELSE\nUpperBound MidPoint – 1\nENDIF\nENDIF\nENDWHILE\nIF ValueFound = FALSE\nTHEN\nMidPoint (LowerBound + UpperBound) DIV 2\nIF List[MidPoint] = ValueToFind\nTHEN\nOUTPUT \"Item in position \" & MidPoint & \" in list\"\nELSE\nOUTPUT \"Not in list\"\nENDIF\nELSE\nOUTPUT \"Item in position \" & MidPoint & \" in list\"\nENDIF\nNote: DIV is an operator that performs integer division.\nThe array List contains the following values:\n2, 5, 21, 25, 36, 48, 51, 59, 65, 70",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Complete the trace table to show a dry run of the algorithm, when the value 21 is input.\nLowerBound UpperBound ValueFound ValueToFind MidPoint",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Identify this type of searching algorithm.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "The value 59 is input.\nState the number of times the while loop condition is executed.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "State the minimum number of times the while loop condition will be executed to search\nfor a value.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bv",
+              "label": "(v)",
+              "text": "MidPoint is calculated and checked again after the while loop is terminated.\nExplain why this additional calculation and check is necessary.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bvi",
+              "label": "(vi)",
+              "text": "A new data set is used as follows:\n5, 9, 10, 12, 15, 13, 17, 19, 20, 2\nExplain why the algorithm will not find the value 2 in this data set.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "There are several different searching and sorting algorithms."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the GANTT chart for the given activities.\nWeek\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22\nnumber",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "State the activities that form the critical path.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Give three activities that can run in parallel.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Identify another project planning technique that could be used when developing the puzzle\ngame.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A company is developing a new puzzle game application for a mobile phone.",
+        "The development includes the following activities:",
+        "Time taken",
+        "Activity Description Predecessor",
+        "in weeks",
+        "A Identify requirements 2 –",
+        "B Produce design 3 A",
+        "C Focus group feedback on design 2 B",
+        "D Program 5 levels 4 C",
+        "E Graphics development 6 C",
+        "F Focus group testing on 5 levels 2 D",
+        "G Program remaining levels 5 D",
+        "H Combine modules 2 G",
+        "I White-box testing 2 H",
+        "J Black-box testing 2 H",
+        "K User testing 2 H",
+        "L Beta release 2 K"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A declarative programming language is used to represent the following knowledge base.",
+        "01 person(jordan).",
+        "02 person(gita).",
+        "03 person(paolo)."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "person(cassie)."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "animal(cat)."
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "animal(hamster)."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "animal(gecko)."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "animal(fish)."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "has_pet(cassie, gecko)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "has_pet(paolo, fish)."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "has_pet(cassie, cat)."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Clive is a person who has a pet guinea pig and a pet gecko.\nWrite additional clauses to represent this information.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Using the variable PetOwner, the goal:\nhas_pet(PetOwner, cat)\nreturns:\nPetOwner = cassie, jordan\nWrite the result that is returned by the goal:\nhas_pet(cassie, PetAnimals)\nPetAnimals = ______",
+          "marks": 1,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "Z wants a pet Y, if Z is a person and Y is an animal and Z does not have a pet Y.\nWrite this as a rule.\nwants_pet(______ , ______)\nIF ______\n\n4 A programmer wants to create a mobile application to record the number of calories a person eats\nin a day.\nThe programmer has designed the class, FoodItem, to store details for each item of food.\nThe following diagram shows the design for the FoodItem class.\nFoodItem\nFoodID : STRING // initialised in constructor to parameter value\nName : STRING // initialised in constructor to an empty string\nCalories : INTEGER // initialised in constructor to 0\nConstructor() // method used to create an instance of the\n// FoodItem class and initialise its attributes\nGetFoodID() // returns FoodID\nGetName() // returns Name\nGetCalories() // returns Calories\nSetFoodID() // sets the FoodID to the parameter value\nSetName() // sets the Name to the parameter value\nSetCalories() // validates the parameter value to make sure\n// it is a positive integer less than 2000, and\n// then sets Calories to this value",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Write program code for the Constructor() method.\nUse the appropriate constructor method for your chosen programming language.\nProgramming language ______\nProgram code",
+          "marks": 3,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Write program code for the GetCalories() method.\nProgramming language ______\nProgram code",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "The method SetCalories() validates the integer parameter value that is passed to it. It\nchecks that the value is positive and is less than 2000.\nThe method sets Calories to the parameter value and returns TRUE if the parameter value\nis valid. It returns FALSE if the parameter value is not valid.\nWrite pseudocode for the SetCalories() method.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12d",
+          "label": "(d)",
+          "text": "The following is a class diagram for the application.\nCustomerProfile FoodItem\nName : STRING FoodID : STRING\nEmail : STRING Name : STRING\nTotalCalories : INTEGER Calories : INTEGER\nGetName() GetFoodID()\nGetEmail() GetName()\nGetTotalCalories() GetCalories()\nSetName() SetFoodID()\nSetEmail() SetName()\nSetTotalCalories() SetCalories()\nDailyCalories\nDate : DATE\nTotalCalories : INTEGER\nGetDate()\nSetDate()\nGetTotalCalories()\nSetTotalCalories()",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "12di",
+              "label": "(i)",
+              "text": "The attributes of the class, CustomerProfile, are declared as private.\nExplain why it is good practice to declare class attributes as private.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "12dii",
+              "label": "(ii)",
+              "text": "Explain what is meant by inheritance, using an example from the class diagram.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "12diii",
+              "label": "(iii)",
+              "text": "Explain what is meant by polymorphism, using an example from the class diagram.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "12e",
+          "label": "(e)",
+          "text": "Object-oriented programming is an example of a programming paradigm. Another example is\nimperative programming.\nExplain what is meant by the imperative programming paradigm.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12f",
+          "label": "(f)",
+          "text": "Testing is regularly performed during the development of software.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "12fi",
+              "label": "(i)",
+              "text": "Independent modules are combined to create the final program. Testing is performed to\nmake sure they interact correctly.\nIdentify this type of testing.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "12fii",
+              "label": "(ii)",
+              "text": "Testing is performed to prove to the customer that the system works correctly and meets\nthe requirements specified in the design.\nIdentify this type of testing.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "12fiii",
+              "label": "(iii)",
+              "text": "Test plans are used when testing data. One item that would be included in a test plan is\nexample test data.\nIdentify two other items that would appear in a test plan.\n\n5 The following table shows part of the instruction set for a processor that has one general purpose\nregister, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the location at the given\nLDD <address>\naddress to ACC.\nIndirect addressing. The address to be used is at the given address.\nLDI <address>\nLoad the contents of this second address to ACC.\nIndexed addressing. Form the address from <address> + the contents\nLDX <address> of the Index Register. Copy the contents of this calculated address to\nACC.\nLDR #n Immediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nIndexed addressing. Form the address from <address> + the contents\nSTX <address>\nof the Index Register. Copy the contents of ACC to this calculated\naddress.\nADD <address> Add the contents of the given address to ACC.\nINC <register> Add 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n Compare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare\nJPE <address>\nwas True.\nFollowing a compare instruction, jump to <address> if the compare\nJPN <address>\nwas False.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT Output to the screen the character whose ASCII value is stored in ACC.\nEND Return control to the operating system.\nConsider the following pseudocode algorithm:\nLength 0\nINPUT Character\nWHILE Character <> \".\"\nMessage\nMessage & Character\nLength Length + 1\nINPUT Character\nENDWHILE\nComplete the table by writing assembly language code for the algorithm, using the given instruction\nset.\nInstruction\nLabel Comment\nOp code Operand\n// initialise IX to zero\n// initialise LENGTH\nLOOP: // input character\n// is character a FULLSTOP (.) ?\n// jump to ENDP if TRUE\n// store character in MESSAGE +\ncontents of IX\n// increment IX\n// increment LENGTH\n// jump to LOOP\nENDP: END // end program\nLENGTH:\nFULLSTOP: B01100000 // ASCII code for a full stop (.)\nMESSAGE:\n\n6 The following diagram represents a linked list.\nData Pointer\nA B C D Ø\nThe symbol Ø represents a null pointer.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "The node with the data value C is removed from the list.\nShow the new state of the linked list.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "State what happens to the node with the data value C when it is removed from the list.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "State what is meant by a null pointer.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12d",
+          "label": "(d)",
+          "text": "The linked list is implemented as a 1D array, LinkedList. The array is declared as a record\ndata type, with two fields, Data and Pointer.\nThe function FindValue() takes as a parameter, the value to be searched for in the linked\nlist. The function follows the pointers in the linked list. It returns -1 if the value is not found, or\nit returns the pointer to the value if it is found.\nThe global variable StartPointer points to the first element in the list.\nWrite pseudocode for the function FindValue().",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12e",
+          "label": "(e)",
+          "text": "A linked list and a record are both examples of abstract data types.\nIdentify and describe one other abstract data type.\nAbstract data type ______\nDescription ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 47,
+      "text": [
+        "has_pet(jordan, cat).",
+        "These clauses have the following meanings:",
+        "Clause Meaning",
+        "Jordan is a person",
+        "A cat is an animal",
+        "Cassie has a pet gecko"
+      ]
+    }
+  ]
+}

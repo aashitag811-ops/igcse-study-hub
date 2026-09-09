@@ -1,0 +1,456 @@
+{
+  "paperId": "9618_s24_qp_42",
+  "subjectCode": "9618",
+  "session": "s24",
+  "component": "42",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The procedure ReadWords():\n• takes a file name as a parameter\n• opens the file and reads in the data\n• stores the main word in the first element in WordArray\n• stores each answer in a new element in WordArray\n• counts and stores the number of answers.\nWrite program code for the procedure ReadWords().\nSave your program as Question1_J24.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The main program asks the user to enter \"easy\", \"medium\" or \"hard\" and calls\nReadWords()with the filename that matches the user’s input. For example, if the user enters\n\"easy\", the parameter is \"Easy.txt\".\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 1(b) in the evidence document.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "The procedure Play():\n• outputs the main word from the array and the number of answers\n• allows the user to enter words until they enter the word ‘no’ to indicate they want to\nstop\n• outputs whether each word the user enters is an answer or not an answer\n• counts the number of answers the user gets correct\n• replaces each answer that the user gets correct with a null value in the array.\nWrite program code for the procedure Play().\nSave your program.\nCopy and paste the program code into part 1(c)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Amend the procedure Play()so that when the user enters the command to stop, the\nprocedure:\n• outputs the percentage of answers the user entered from the array\n• outputs all the answers that the user did not enter.\nWrite program code to amend Play().\nSave your program.\nCopy and paste the program code into part 1(c)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "The procedure ReadWords()calls Play()after the data in the file has been read.\nWrite program code to amend ReadWords().\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Test your program by inputting these words in the order shown:\neasy\nshe\nout\nno\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 1(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1diii",
+              "label": "(iii)",
+              "text": "Test your program by inputting these words in the order shown:\nhard\nfine\nfined\nidea\nno\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 1(d)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "A program outputs a main word. The program asks the user to enter the different words of 3 or",
+        "more letters that can be made from the letters in the main word. These are called the answers.",
+        "There are 3 files: Easy.txt, Medium.txt and Hard.txt. Each file has the main word on the",
+        "first line. For example, the main word in Easy.txt is house.",
+        "The answers are stored in the file. Each answer is on a new line after the main word. For example,",
+        "Easy.txt has 14 answers that can be made from the letters in house.",
+        "The words read from the text file are stored in the global array WordArray. The number of words",
+        "that can be made from the letters in the main word is stored in the global variable NumberWords."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A binary tree stores data in ascending order. For example:",
+        "8 19"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Node and its constructor.\nDo not declare the other methods.\nUse the appropriate constructor for your programming language.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question2_J24.\nCopy and paste the program code into part 2(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "The get methods GetLeft(), GetRight()and GetData()each return the relevant\nattribute.\nWrite program code for the three get methods.\nSave your program.\nCopy and paste the program code into part 2(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "The set methods SetLeft(), SetRight()and SetData()each take a parameter and\nthen store this in the relevant attribute.\nWrite program code for the three set methods.\nSave your program.\nCopy and paste the program code into part 2(a)(iii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The class TreeClass stores the data about the binary tree.\nTreeClass\nTree[0:19] : Node an array of 20 elements of type Node\nFirstNode : INTEGER stores the index of the first node in the tree\nNumberNodes : INTEGER stores the quantity of nodes in the tree\nConstructor()\ninitialises FirstNode to −1 and NumberNodes to 0\ninitialises each element in Tree to a Node object with the\ndata value of −1\nInsertNode()\ntakes a Node object as a parameter, inserts it in the array\nand updates the pointer for its parent node\nOutputTree()\noutputs the left pointer, data and right pointer of each\nnode in Tree\nNodes cannot be deleted from this tree.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Write program code to declare the class TreeClass and its constructor.\nDo not declare the other methods.\nUse the appropriate constructor for your programming language.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "The method InsertNode()takes a Node object, NewNode, as a parameter and inserts\nit into the array Tree.\nInsertNode()first checks if the tree is empty.\nIf the tree is empty, InsertNode():\n• stores NewNode in the array Tree at index NumberNodes\n• increments NumberNodes\n• stores 0 in FirstNode.\nIf the tree is not empty, InsertNode():\n• stores NewNode in the array Tree at index NumberNodes\n• accesses the data in the array Tree at index FirstNode and compares it to the\ndata in NewNode\n• repeatedly follows the pointers until the correct position for NewNode is found\n• once the position is found, InsertNode()sets the left or right pointer of its parent\nnode\n• increments NumberNodes.\nWrite program code for InsertNode().\nSave your program.\nCopy and paste the program code into part 2(b)(ii) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "The method OutputTree()outputs the left pointer, the data and the right pointer for\neach node that has been inserted into the tree. The outputs are in the order they are\nsaved in the array.\nIf there are no nodes in the array, the procedure outputs ‘No nodes’.\nWrite program code for OutputTree().\nSave your program.\nCopy and paste the program code into part 2(b)(iii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "The main program declares an instance of TreeClass with the identifier TheTree.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "The main program inserts the following integers into the binary tree in the order given:\nThe main program then calls the method OutputTree().\nWrite program code to amend the main program.\nSave your program.\nCopy and paste the program code into part 2(c)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3ciii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 2(c)(iii) in the evidence document.\n\n3 A program sorts an array of integers and searches the array for a particular value.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The array of integers, NumberArray, stores the following data in the order given:\n100 85 644 22 15 8 1\nThe array is declared and initialised local to the main program.\nWrite program code to declare and initialise the array.\nSave your program as Question3_J24.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "The following recursive pseudocode function sorts the array into ascending order using\nan insertion sort and returns the sorted array.\nDECLARE LastItem : INTEGER\nDECLARE CheckItem : INTEGER\nDECLARE LoopAgain : BOOLEAN\nFUNCTION RecursiveInsertion(IntegerArray : ARRAY[] OF INTEGER,\nNumberElements : INTEGER) RETURNS ARRAY[] OF INTEGER\nIF NumberElements <= 1 THEN\nRETURN IntegerArray\nELSE\nCALL RecursiveInsertion(IntegerArray, NumberElements - 1)\nLastItem\nIntegerArray[NumberElements - 1]\nCheckItem NumberElements - 2\nENDIF\nLoopAgain TRUE\nIF CheckItem < 0 THEN\nLoopAgain FALSE\nELSE\nIF IntegerArray[CheckItem] < LastItem THEN\nLoopAgain FALSE\nENDIF\nENDIF\nWHILE LoopAgain\nIntegerArray[CheckItem + 1] IntegerArray[CheckItem]\nCheckItem CheckItem - 1\nIF CheckItem < 0 THEN\nLoopAgain FALSE\nELSE\nIF IntegerArray[CheckItem] < LastItem THEN\nLoopAgain FALSE\nENDIF\nENDIF\nENDWHILE\nIntegerArray[CheckItem + 1] LastItem\nRETURN IntegerArray\nENDFUNCTION\nWrite the program code for the pseudocode function RecursiveInsertion().\nSave your program.\nCopy and paste the program code into part 3(b)(i) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Amend the main program to:\n• call RecursiveInsertion()with the initialised array NumberArray and the\nnumber of elements as parameters\n• output the word ‘Recursive’\n• output the content of the returned array.\nSave your program.\nCopy and paste the program code into part 3(b)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(b)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The function RecursiveInsertion()can be changed to use iteration instead of recursion.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Write program code for the function IterativeInsertion()to perform the same\nprocesses as RecursiveInsertion()but using iteration instead of recursion.\nSave your program.\nCopy and paste the program code into part 3(c)(i) in the evidence document.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to also:\n• call IterativeInsertion()with the original initialised array NumberArray\n• output the word ‘iterative’\n• output the content of the returned array.\nSave your program.\nCopy and paste the program code into part 3(c)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3ciii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(c)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The recursive function BinarySearch()takes the parameters:\n• IntegerArray – an array of integers\n• First – the index of the first array element\n• Last – the index of the last array element\n• ToFind – an integer to search for in the array.\nThe function uses recursion to perform a binary search for ToFind in IntegerArray.\nThe function returns the index where ToFind is stored or returns −1 if ToFind is not in the\narray.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "Write program code for the recursive function BinarySearch().\nSave your program.\nCopy and paste the program code into part 3(d)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to:\n• call BinarySearch()with the sorted array and the integer 644 as the search value\n• output ‘Not found’ if 644 is not found in the array\n• output the index if 644 is found in the array.\nSave your program.\nCopy and paste the program code into part 3(d)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3diii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(d)(iii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 53,
+      "text": [
+        "10",
+        "A computer program stores integers in a binary tree in ascending order. The program uses",
+        "Object‑Oriented Programming (OOP).",
+        "The binary tree is stored as a 1D array of nodes. Each node contains a left pointer, a data value",
+        "and a right pointer.",
+        "The class Node stores the data about a node.",
+        "Node",
+        "LeftPointer : INTEGER",
+        "stores the index of the node to the left in the binary tree",
+        "Data : INTEGER",
+        "stores the node’s data",
+        "RightPointer : INTEGER",
+        "stores the index of the node to the right in the binary tree",
+        "Constructor()",
+        "initialises Data to its parameter value",
+        "initialises LeftPointer and RightPointer to −1",
+        "GetLeft()",
+        "returns the left pointer",
+        "GetRight()",
+        "returns the right pointer",
+        "GetData()",
+        "returns the data value",
+        "SetLeft()",
+        "assigns the parameter to the left pointer",
+        "SetRight()",
+        "assigns the parameter to the right pointer",
+        "SetData()",
+        "assigns the parameter to the data"
+      ]
+    }
+  ]
+}

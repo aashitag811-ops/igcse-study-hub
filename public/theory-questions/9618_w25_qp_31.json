@@ -1,0 +1,493 @@
+{
+  "paperId": "9618_w25_qp_31",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "31",
+  "totalMarks": 72,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write the pseudocode statement to set up a variable for one record of the composite\ndata type, ClubMember.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Write the pseudocode statements to assign the following values to the variable set up in\npart (a)(i):\n• 984632 to Code\n• TRUE to FeesPaid",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "An enumerated data type, Activity, is required, so that a new field, Choice, can be added\nto the composite data type, ClubMember, to allow members to choose an activity.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write the pseudocode statement for the type declaration of Activity to hold the\nnames of the available activities:\nBadminton, Football, Golf, Snooker, Swimming, Tennis.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Write the new pseudocode statement required to update the declaration of Choice in\nthe definition of ClubMember.\n\n* 0000800000003 * DFD",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "The composite record data type, ClubMember, is defined in pseudocode as:",
+        "TYPE ClubMember",
+        "DECLARE Code : INTEGER",
+        "DECLARE LastName : STRING",
+        "DECLARE FirstName : STRING",
+        "DECLARE Telephone : STRING",
+        "DECLARE JoinDate : DATE",
+        "DECLARE Fees : REAL",
+        "DECLARE FeesPaid : BOOLEAN",
+        "ENDTYPE"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write the normalised floating‑point representation of the following positive binary number\nusing this system.\n0.00000001110101101\nMantissa Exponent",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Calculate the normalised binary floating‑point representation of – 76.1875 in this system.\nShow your working.\nMantissa Exponent\nWorking ______\n\n* 0000800000004 * DFD",
+          "marks": 4,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Numbers are stored in a computer system using binary floating‑point representation with:",
+        "• 12 bits for the mantissa",
+        "• 4 bits for the exponent",
+        "• two’s complement form for both the mantissa and the exponent."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Explain why protocols are essential for communication between computer systems.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "POP3 is an email communication protocol.\nIdentify and describe two other communication protocols that are used when sending or\nreceiving emails.\nProtocol 1 ______\nDescription ______\nProtocol 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Describe two ways in which packet switching ensures a complete message is received when\npassing messages across a network.\n\n* 0000800000005 * DFD",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A scheduling routine determines how processes are managed by the operating system.\nIdentify two scheduling routines.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Describe two ways in which the complexities of the computer hardware are hidden from the\nuser.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Identify two items commonly found within a digital certificate.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Explain why a digital certificate is required to validate a digital signature.\n\n* 0000800000006 * DFD",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The diagram shows a logic circuit.\nB Z\nComplete the truth table for the given logic circuit.\nShow your working.\nWorking space\nA B C P Q R S Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n* 0000800000007 * DFD",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Complete the Karnaugh map (K‑map) for the Boolean expression:\nA.B.C + A.B.C + A.B.C + A.B.C\nBC\nA 00 01 11 10",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Draw loop(s) around appropriate group(s) in the K‑map to produce an optimal\nsum‑of‑products.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "Write the Boolean expression from your answer to part b(ii) as a simplified\nsum‑of‑products. Do not carry out any further simplification.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Identify one Artificial Intelligence (AI) algorithm to find the shortest distance between two\npoints on a graph.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Describe Deep Learning.\n\n* 0000800000008 * DFD",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Outline the purpose of lexical analysis during the compilation of a program.",
+          "marks": 2,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Write the Reverse Polish Notation (RPN) for the given infix expression:\n(2 – 6) * (13 + 7) / 5",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The RPN expression:\nd a b + * c a ‑ /\nis to be evaluated, where:\na = 6, b = 12, c = 15 and d = 5.\nShow the changing contents of the stack as the RPN expression is evaluated.\n\n* 0000800000009 * DFD",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "A stack has been implemented using pseudocode to store a maximum of 100 string items\nusing the global variables in the following table:\nInitialisation\nIdentifier Data type Description\nvalue\nBase INTEGER 0\npointer for the bottom of the stack\nTop INTEGER ‑1\npointer for the top of the stack\nStackArray STRING [0:99]\n1D array to implement the stack\nMax INTEGER maximum number of items in the stack 100\nThe value of Top is incremented each time a data item is added to the stack and decremented\nevery time a data item is removed.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "Complete the pseudocode for the function to remove a data item from the stack.\nFUNCTION Pop() ______\nDECLARE DataItem : STRING\nDataItem \"\"\nIF ______ THEN\nDataItem ______\nTop ______\nELSE\nDataItem \"You cannot remove data; the stack is empty\"\nENDIF\nENDFUNCTION",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "Write the pseudocode to output the data item removed from the stack with an appropriate\nmessage.\n\n* 0000800000010 * DFD",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "A stack is used to implement recursion.\nState the three essential features of recursion.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain what is meant by exception handling.",
+        "Include an example of a possible cause of an exception in your answer.",
+        "Explanation .......................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "[3]",
+        "* 0000800000011 * DFD"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Write assembly language code, using only the given instruction set to:\n• store the denary value 100 as a named constant\n• subtract the constant from the value contained in address 632\n• store the result in variable Answer.\nShow the initialisation of the constant and Answer in the table provided.\nLabel Contents",
+          "marks": 6,
+          "type": "label",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "The address 632 contains the value 45.\nState the value of Answer after the code described in part (a) has executed.\n\n* 0000800000012 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The table shows assembly language instructions for a processor that has one register, the",
+        "Accumulator (ACC).",
+        "Instruction",
+        "Label Opcode Operand Explanation",
+        "LDM #n",
+        "Load the number n to ACC",
+        "Load the contents of the location at the given",
+        "LDD <address>",
+        "address to the ACC",
+        "The address to be used is at the given address.",
+        "LDI <address>",
+        "Load the contents of this second address to the",
+        "ACC",
+        "Add the contents of the given address to the",
+        "ADD <address>",
+        "ACC",
+        "Subtract the contents of the given address from",
+        "SUB <address>",
+        "the ACC",
+        "Store the contents of the ACC at the given",
+        "STO <address>",
+        "address",
+        "Gives a symbolic address <label> to the",
+        "<label>: <data>",
+        "memory location with contents <data>",
+        "# denotes a denary number, e.g. #123",
+        "<label> can be used in place of <address>"
+      ]
+    }
+  ]
+}

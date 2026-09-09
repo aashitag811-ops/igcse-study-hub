@@ -1,0 +1,374 @@
+{
+  "paperId": "9608_w19_qp_42",
+  "subjectCode": "9608",
+  "session": "w19",
+  "component": "42",
+  "totalMarks": 51,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Developing the software will involve the following activities:\nTime to\nActivity Description complete Predecessor\n(weeks)\nA Identify requirements 1 –\nB Observe current system 1 A\nC Create algorithm design 3 B\nD Write code 10 C\nE Test modules 7 C\nF White box testing 2 D\nG Black box testing 3 D\nH Install software 1 E, F, G\nAcceptance testing 2 H\nJ Create user documentation 2 H",
+          "marks": null,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Add the correct activities and times to the following Program Evaluation Review\nTechnique (PERT) chart for the software development.\nThree of the activities and times have been done for you.\n1 2 3 4 8",
+              "marks": null,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": null,
+      "text": [
+        "A technology company needs software to calculate how much each employee should be paid."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A bonus payment may be added to an employee’s salary. A pension payment may also be\nsubtracted from an employee’s salary.\nThe company needs to assess what additions and subtractions should be made to the salary\nof each employee. There are three conditions to check:\n• If the employee has worked a public holiday, they receive a 3% bonus payment.\n• If the employee has worked 160 or more hours in a month, they receive an additional 5%\nbonus payment.\n• If the employee pays into a pension, the company subtracts 4% for the pension payment.\nComplete the decision table to show the additions and subtractions.\nRules\nPublic holiday Y Y Y Y N N N N\nConditions Hours >= 160 Y Y N N Y Y N N\nPension Y N Y N Y N Y N\n3% bonus payment\nActions 5% bonus payment\n4% pension payment",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The company decides to implement a program for the software using object-oriented\nprogramming (OOP).\nEach employee has a unique employee ID, name, address and date of birth. There are two\ntypes of employee: salary and apprenticeship.\nSalaried employees are paid a fixed monthly payment. The hours a salary employee works in\na month are recorded to calculate bonus payments. They may receive bonus payments and\nmake pension payments (given in part(b)).\nApprenticeship employees are paid weekly. They receive an hourly rate of pay. Apprenticeship\nemployees do not receive bonus payments or make pension payments.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Complete the following class diagram for the program.\nEmployee\nEmployeeID : STRING\nName : STRING\nAddress : STRING\nDateOfBirth : Date\nConstructor()\nGetEmployeeID()\nGetName()\nGetAddress()\nGetDateOfBirth()\nSetEmployeeID()\nSetName()\nSetAddress()\nSetDateOfBirth()\nSalaryEmployee ApprenticeshipEmployee\nMonthlyPayment : CURRENCY\nHoursThisMonth: REAL\nPublicHoliday : BOOLEAN\nPension : BOOLEAN\nConstructor()\nGetMonthlyPayment() ______\nGetHoursThisMonth()\nGetPublicHoliday()\nGetHourlyRate()\nGetPension()\nGetHoursThisWeek()\nSetMonthlyPayment()\nSetHourlyRate()\nSetHoursThisMonth()\nSetPublicHoliday()\nSetPension()",
+              "marks": 3,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Write program code for the Constructor() in the Employee class.\nAll properties are sent as parameters.\nProgramming language ______\nProgram code",
+              "marks": 4,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "Write program code for the GetEmployeeID()method in the Employee class.\nThe get method returns the value of the EmployeeID property.\nProgramming language ______\nProgram code",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2civ",
+              "label": "(iv)",
+              "text": "Write program code for the SetEmployeeID()method in the Employee class.\nThe set method takes the new value as its parameter.\nProgramming language ______\nProgram code",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cv",
+              "label": "(v)",
+              "text": "Write program code for the SetPension()method in the SalaryEmployee()class.\n• The method takes a new value for Pension as a parameter.\n• If the parameter’s value is valid (it is TRUE or FALSE), the method returns TRUE and\nsets the parameter’s value.\n• Otherwise the method returns FALSE and does not set Pension.\nProgramming language ______\nProgram code\n\nQuestion 1 continues on the next page.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cvi",
+              "label": "(vi)",
+              "text": "A SalaryEmployee is paid a fixed monthly payment.\n• If the employee has worked a public holiday, they receive a 3% bonus payment.\nThis is calculated from their MonthlyPayment.\n• If the employee has worked 160 or more hours in a month, they receive an additional\n5% bonus payment, calculated from their MonthlyPayment.\n• If the employee pays into a pension, 4% will be subtracted from their\nMonthlyPayment.\nMonthly salary is the final payment the employee receives.\nFor example, Chris is a SalaryEmployee. His fixed MonthlyPayment is $1000. He has\nworked a public holiday. He has worked 165 hours this month. He pays into a pension.\n• The public holiday bonus is $30 (3% of $1000)\n• The hours worked bonus payment is $50 (5% of $1000)\n• The pension payment is $40 (4% of $1000)\nChris’s monthly salary is calculated as ($1000 + $30 + $50) − $40 = $1040\nThe function CalculateMonthlySalary()is used to calculate the monthly salary. It:\n• takes a SalaryEmployee as a parameter\n• calculates the bonus payments and pension payment\n• outputs the pension payment and total bonus payment\n• calculates and returns the monthly salary.\nWrite program code for the function CalculateMonthlySalary().\nProgramming language ______\nProgram code",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Noona describes an example of a feature of object-oriented programming (OOP). She says:\n“One method exists in the parent class but is overwritten in the child class, to behave\ndifferently.”\nIdentify the feature Noona has described.\n\n2 The number of cars that cross a bridge is recorded each hour. This number is placed in a circular\nqueue before being processed.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The queue is stored as an array, NumberQueue, with eight elements. The function\nAddToQueue adds a number to the queue. EndPointer and StartPointer are global\nvariables.\nComplete the following pseudocode algorithm for the function AddToQueue.\nFUNCTION AddToQueue(Number : INTEGER) RETURNS BOOLEAN\nDECLARE TempPointer : INTEGER\nCONSTANT FirstIndex = 0\nCONSTANT LastIndex = ______\nTempPointer EndPointer + 1\nIF ______ > LastIndex\nTHEN\nTempPointer ______\nENDIF\nIF TempPointer = StartPointer\nTHEN\nRETURN ______\nELSE\nEndPointer TempPointer\nNumberQueue[EndPointer] ______\nRETURN TRUE\nENDIF\nENDFUNCTION",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Describe how a number is removed from the circular queue to be processed.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A queue is one example of an Abstract Data Type (ADT).\nIdentify three other Abstract Data Types.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 31,
+      "text": [
+        "F",
+        "11 10",
+        "[7]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Identify three different types of test data that the company can use.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The programmer will make use of debugging features, when building and testing a program.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Two debugging features are described in the table.\nWrite the correct name for each debugging feature.\nDescription Name of debugging feature\nA point where the program can be halted to\nsee if the program works to this point.\nOne statement is executed and then the\nprogram waits for input from the programmer\nto move on to the next statement.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Identify and describe one other debugging feature.\nDebugging feature ______\nDescription ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A company wants to test a program to check that it works. They can use different types of test",
+        "data to do this."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A bank wants to analyse how an automated teller machine (ATM) deals with transactions.",
+        "The following state-transition table shows the transitions from one state to another for a transaction.",
+        "Current state Event Next state",
+        "ATM active Insert card Waiting for PIN",
+        "Waiting for PIN Enter PIN Checking PIN",
+        "Waiting for PIN Cancel selected Transaction cancelled",
+        "Checking PIN PIN valid Account accessed",
+        "Checking PIN PIN invalid Waiting for PIN",
+        "Account accessed Cancel selected Transaction cancelled",
+        "Account accessed Input amount to withdraw Checking account",
+        "Checking account Funds available Transaction complete",
+        "Transaction complete Return card and dispense cash ATM active",
+        "Checking account Funds not available Account accessed",
+        "Transaction cancelled Return card ATM active",
+        "Complete the state-transition diagram to correspond with the table.",
+        "Insert card",
+        "Start",
+        "ATM",
+        "Waiting",
+        "active",
+        "for PIN",
+        "Enter PIN",
+        "Transaction Transaction Checking",
+        "complete cancelled PIN",
+        "Checking Account",
+        "account accessed",
+        "Input amount to withdraw",
+        "[8]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "A programmer needs a program that multiplies a binary number by 4.\nThe programmer has started to write the program in the following table. The comment column\ncontains explanations for the missing program instructions.\nWrite the program using the given instruction set.\nInstruction\nLabel Comment\nOp code Operand\n// load contents of NUMBER\n// perform shift to multiply by 4\n// store contents of ACC in NUMBER\n// end program\nNUMBER: B00110110\n\nNote:\n# denotes immediate addressing\nB denotes a binary number, e.g. B01001010\n& denotes a hexadecimal number, e.g. &4A",
+          "marks": 5,
+          "type": "label",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A programmer needs a program that counts the number of lower case letters in a string.\nThe programmer has started to write the program in the following table. The comment column\ncontains explanations for the missing program instructions.\nComplete the program using the given instruction set. A copy of the instruction set is provided\non the opposite page.\nInstruction\nLabel Comment\nOp code Operand\nLDR #0 // initialise Index Register to 0\nSTART: // load the next value from the STRING\n// perform bitwise AND operation with MASK\n// check if result is equal to MASK\n// if FALSE, jump to UPPER\n// increment COUNT\nUPPER: INC IX // increment the Index Register\n// decrement LENGTH\n// is LENGTH = 0 ?\n// if FALSE, jump to START\nEND // end program\nMASK: B00100000 // if bit 5 is 1, letter is lower case\nCOUNT: 0\nLENGTH: 5\nSTRING: B01001000 // ASCII code for 'H'\nB01100001 // ASCII code for 'a'\nB01110000 // ASCII code for 'p'\nB01110000 // ASCII code for 'p'\nB01011001 // ASCII code for 'Y'\n\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the location at the given address to\nLDD <address>\nACC.\nIndirect addressing. The address to be used is at the given address. Load\nLDI <address>\nthe contents of this second address to ACC.\nIndexed addressing. Form the address from <address> + the contents of\nLDX <address>\nthe Index Register. Copy the contents of this calculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nIndexed addressing. Form the address from <address> + the contents of\nSTX <address>\nthe Index Register. Copy the contents from ACC to this calculated address.\nADD <address> Add the contents of the given address to the ACC.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare was\nJPE <address>\nTrue.\nFollowing a compare instruction, jump to <address> if the compare was\nJPN <address>\nFalse.\nAND #n\nBitwise AND operation of the contents of ACC with the operand.\nBitwise AND operation of the contents of ACC with the contents of\nAND <address>\n<address>.\nXOR #n\nBitwise XOR operation of the contents of ACC with the operand.\nBitwise XOR operation of the contents of ACC with the contents of\nXOR <address>\n<address>.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nBitwise OR operation of the contents of ACC with the contents of\nOR <address>\n<address>.\n<address> can be an absolute address or a symbolic address.\nBits in ACC are shifted n places to the left. Zeros are introduced on the\nLSL #n\nright hand end.\nBits in ACC are shifted n places to the right. Zeros are introduced on the\nLSR #n\nleft hand end.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT\nOutput to the screen the character whose ASCII value is stored in ACC.\nEND\nReturn control to the operating system.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "The following table shows part of the instruction set for a processor which has one general purpose",
+        "register, the Accumulator (ACC) and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "LDM #n Immediate addressing. Load the number n to ACC.",
+        "Direct addressing. Load the contents of the location at the given address to",
+        "LDD <address>",
+        "ACC.",
+        "Indirect addressing. The address to be used is at the given address. Load",
+        "LDI <address>",
+        "the contents of this second address to ACC.",
+        "Indexed addressing. Form the address from <address> + the contents of",
+        "LDX <address>",
+        "the Index Register. Copy the contents of this calculated address to ACC.",
+        "LDR #n Immediate addressing. Load the number n to IX.",
+        "STO <address>",
+        "Store the contents of ACC at the given address.",
+        "Indexed addressing. Form the address from <address> + the contents of",
+        "STX <address>",
+        "the Index Register. Copy the contents from ACC to this calculated address.",
+        "ADD <address>",
+        "Add the contents of the given address to the ACC.",
+        "INC <register> Add 1 to the contents of the register (ACC or IX).",
+        "DEC <register>",
+        "Subtract 1 from the contents of the register (ACC or IX).",
+        "JMP <address>",
+        "Jump to the given address.",
+        "CMP <address>",
+        "Compare the contents of ACC with the contents of <address>.",
+        "CMP #n",
+        "Compare the contents of ACC with number n.",
+        "Following a compare instruction, jump to <address> if the compare was",
+        "JPE <address>",
+        "True.",
+        "Following a compare instruction, jump to <address> if the compare was",
+        "JPN <address>",
+        "False.",
+        "AND #n Bitwise AND operation of the contents of ACC with the operand.",
+        "Bitwise AND operation of the contents of ACC with the contents of",
+        "AND <address>",
+        "<address>.",
+        "XOR #n",
+        "Bitwise XOR operation of the contents of ACC with the operand.",
+        "Bitwise XOR operation of the contents of ACC with the contents of",
+        "XOR <address>",
+        "<address>.",
+        "OR #n Bitwise OR operation of the contents of ACC with the operand.",
+        "Bitwise OR operation of the contents of ACC with the contents of",
+        "OR <address>",
+        "<address>.",
+        "<address> can be an absolute address or a symbolic address.",
+        "Bits in ACC are shifted n places to the left. Zeros are introduced on the",
+        "LSL #n",
+        "right hand end.",
+        "Bits in ACC are shifted n places to the right. Zeros are introduced on the",
+        "LSR #n",
+        "left hand end.",
+        "IN Key in a character and store its ASCII value in ACC.",
+        "OUT",
+        "Output to the screen the character whose ASCII value is stored in ACC.",
+        "END",
+        "Return control to the operating system."
+      ]
+    }
+  ]
+}

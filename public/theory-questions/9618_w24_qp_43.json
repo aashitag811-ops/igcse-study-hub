@@ -1,0 +1,486 @@
+{
+  "paperId": "9618_w24_qp_43",
+  "subjectCode": "9618",
+  "session": "w24",
+  "component": "43",
+  "totalMarks": 67,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The text file Data.txt stores string data items. Each data item is on a new line in the text\nfile.\nThe function ReadData():\n• has a local array of strings that can store 45 items\n• reads each line of data and stores it in the array\n• returns the array.\nWrite program code for the function ReadData().\nSave your program as Question1_N24.\nCopy and paste the program code into part 1(a) in the evidence document.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The function FormatArray() takes an array of strings as a parameter. It concatenates the\ncontents of the array into one string with a space between each array element. The function\nreturns the concatenated string.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write program code for FormatArray().\nSave your program.\nCopy and paste the program code into part 1(b)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The main program:\n• calls ReadData() and stores the returned array\n• calls FormatArray() with the returned array and outputs the returned string.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 1(b)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(b)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The function CompareStrings():\n• takes two strings as parameters\n• compares each string, one character at a time, to identify which string comes first\nalphabetically. If the first two characters are the same, the second character of each\nstring is compared. This continues until the two characters are different.\nThe function:\n• returns 1 if the first parameter comes before the second alphabetically\n• returns 2 if the second parameter comes before the first alphabetically.\nWrite program code for CompareStrings().\nAssume that all strings are in lower case.\nAssume that a difference between two strings will always be identified before the end of one\nstring is reached.\nDo not use an in-built string comparison function.\nThe strings must be compared one character at a time.\nSave your program.\nCopy and paste the program code into part 1(c) in the evidence document.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The function Bubble() takes an array of strings as a parameter and sorts the data into\nascending alphabetical order, using a bubble sort. The bubble sort uses CompareStrings()\nto compare each string.\nThe function returns the sorted list.",
+          "marks": null,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Write program code for Bubble().\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to:\n• call Bubble() with the unsorted array as a parameter\n• call FormatArray() with the sorted array and output the returned string.\nSave your program.\nCopy and paste the program code into part 1(d)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1diii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(d)(iii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "A program sorts string data using different sorting methods."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write program code to declare the class Horse and its constructor.\nDo not declare the other methods.\nUse your programming language’s appropriate constructor.\nAll attributes must be private. If you are writing in Python, include attribute declarations\nusing comments.\nSave your program as Question2_N24.\nCopy and paste the program code into part 2(a)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "The get methods GetName() and GetMaxFenceHeight() each return the relevant\nattribute.\nWrite program code for the get methods.\nSave your program.\nCopy and paste the program code into part 2(a)(ii) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The array Horses stores objects of type Horse.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "The program has two horses:\n• The horse named ‘Beauty’ can jump a maximum height of 150 cm and has a success\npercentage rate of 72%.\n• The horse named ‘Jet’ can jump a maximum height of 160 cm and has a success\npercentage rate of 65%.\nWrite program code to:\n• declare the array, Horses, local to the main program with space for two Horse\nobjects\n• store the two horses described in the array\n• output the name of both Horse objects from the array.\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(b)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The class Fence stores data about the fences. Each fence has a height in cm and a risk\nnumber.\nThe risk is a whole number between 1 and 5 inclusive. A risk of 1 means the fence is the\neasiest type to jump. A risk of 5 means the fence is the hardest type to jump.\nFence\nstores the height of the fence in cm\nHeight : INTEGER\nthe height is between 70 and 180 inclusive\nstores the risk as a whole number between 1 and 5\nRisk : INTEGER\ninclusive\nConstructor() initialises Height and Risk to its parameter values\nGetHeight() returns the height of the fence\nGetRisk() returns the risk of the fence",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Write program code to declare the class Fence, its constructor and get methods.\nUse your programming language’s appropriate constructor.\nAll attributes must be private.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "The array Course stores four Fence objects. The user inputs the height and risk for\neach fence, and these are validated before each fence is created.\nAmend the main program to:\n• declare the local array Course\n• take as input the data for four fences from the user\n• loop the input until both the height and risk are valid for each fence\n• create an instance of Fence for each of the four valid fences and store each\ninstance in the array.\nSave your program.\nCopy and paste the program code into part 2(c)(ii) in the evidence document.",
+              "marks": 5,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The chance of a horse jumping a fence without knocking it down is calculated as follows.\nIf the height of the fence is more than the maximum height a horse can jump, the success\npercentage is 20% of the horse’s PercentageSuccess. The risk does not affect this value.\nIf the height of the fence is less than or equal to the maximum height a horse can jump, the\nrisk gives a modifier value to multiply with the horse’s PercentageSuccess.\nThe risk values and their modifiers are given in this table:\nRisk Modifier\n5 0.6\n4 0.7",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "A computer program is designed to simulate horses doing show jumping. In show jumping, horses",
+        "jump over obstacles called fences. A horse successfully jumps a fence if it does not knock the",
+        "fence down.",
+        "The program is written using Object-Oriented Programming (OOP).",
+        "The class Horse stores data about the horses.",
+        "Horse",
+        "stores the name given to the horse",
+        "Name : STRING",
+        "stores the maximum height in cm that the horse can",
+        "MaxFenceHeight : INTEGER",
+        "jump, for example 132",
+        "stores the percentage chance of a horse not knocking",
+        "PercentageSuccess : INTEGER",
+        "down a fence, for example 70 represents a 70% chance",
+        "of jumping a fence successfully",
+        "Constructor() initialises Name, MaxFenceHeight and",
+        "PercentageSuccess to its parameter values",
+        "GetName() returns the name of the horse",
+        "GetMaxFenceHeight() returns the maximum height the horse can jump",
+        "Success() calculates and returns the percentage chance of a horse",
+        "successfully jumping a specific fence"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Write program code to amend the main program to:\n• calculate and output the chance of the first horse jumping each of the four fences without\nknocking each fence down\n• calculate and output the chance of the second horse jumping each of the four fences\nwithout knocking each fence down.\nAll outputs must have appropriate messages including the name of the horse and the\nfence number.\nAn example output for one horse jumping two fences is:\n\"The horse Fox at fence 1 has a 68% chance of success\nThe horse Fox at fence 2 has a 72% chance of success\"\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to:\n• calculate and output the average chance of success for each horse jumping over all\nfour fences without knocking each fence down (the average is the total of values\ndivided by the quantity of values). An example output for one horse jumping all of\nthe fences is:\n\"The horse Fox has an average 70% chance of jumping over all four\nfences\"\n• output the name of the horse that has the highest average chance of success.\nYou can assume that each average will be different.\nAll outputs must have appropriate messages.\nSave your program.\nCopy and paste the program code into part 2(e)(ii) in the evidence document.",
+              "marks": null,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eiii",
+              "label": "(iii)",
+              "text": "Test your program with the following input data for four fences:\nHeight Risk\n152 5\n121 1\n130 3\n145 4\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(e)(iii) in the evidence document.\n\n3 A linked list stores positive integer data in a 2D array. The first dimension of the array stores the\ninteger data. The second dimension of the array stores the pointer to the next node in the linked\nlist.\nA linked list node with no data is initialised with the integer –1. These nodes are linked together as\nan empty list. A pointer of –1 identifies that node as the last node.\nThe linked list can store 20 nodes.\nThe global 2D array LinkedList stores the linked list.\nLinkedList is initialised as an empty list. The data in each node is initialised to –1. Each node’s\npointer stores the index of the next node. The last node stores the pointer value –1, which indicates\nit is the last node.\nThe global variable FirstEmpty stores the index of the first element in the empty list. This is the\nfirst node in the empty linked list when it is initialised, which is index 0.\nThe global variable FirstNode stores the index of the first element in the linked list. There is no\ndata in the linked list when it is initialised, so FirstNode is initialised to –1.\nThis diagram shows the content of the initialised array.\nFirstEmpty = 0\nFirstNode = –1\nIndex Data Pointer\n0 -1 1\n1 -1 2\n2 -1 3\n3 -1 4",
+              "marks": 2,
+              "type": "list",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "0.8",
+        "2 0.9",
+        "1 1.0",
+        "For example:",
+        "• The horse Jet has PercentageSuccess of 65 and MaxFenceHeight of 160.",
+        "• A fence has a height of 140 and a risk of 3.",
+        "• The height of the fence is less than the horse’s MaxFenceHeight, therefore the risk is",
+        "used.",
+        "• The risk of 3 gives the modifier 0.8.",
+        "• The modifier 0.8 is multiplied by the horse’s PercentageSuccess of 65, which gives 52.",
+        "• The chance of the horse successfully jumping this fence is 52%.",
+        "The method Success() in the Horse class:",
+        "• takes the height and risk of a fence as parameters",
+        "• calculates the percentage chance of success for that horse jumping the fence without",
+        "knocking it down",
+        "• returns the calculated percentage chance of success as a real number.",
+        "Write program code for Success().",
+        "Save your program.",
+        "Copy and paste the program code into part 2(d) in the evidence document.",
+        "[5]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write program code for the main program to declare and initialise LinkedList, FirstNode\nand FirstEmpty.\nSave your program as Question3_N24.\nCopy and paste the program code into part 3(a) in the evidence document.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The procedure InsertData() takes five positive integers as input from the user and inserts\nthese into the linked list.\nEach data item is inserted at the front of the linked list.\nThe table shows the steps to follow depending on the state of the linked list:\nLinked list state Steps\ninsert the data in the index pointed to by FirstEmpty\nnot full change the pointer to the index pointed to by FirstNode\nchange the values of FirstNode and FirstEmpty\nfull end the procedure\nAny node that is at the end of the linked list has a pointer of –1.\nWrite program code for InsertData().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
+          "marks": 6,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The procedure OutputLinkedList() outputs the data in the linked list in order by following\nthe pointers from FirstNode.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Write program code for OutputLinkedList().\nSave your program.\nCopy and paste the program code into part 3(c)(i) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Amend the main program to call InsertData() and then OutputLinkedList().\nSave your program.\nCopy and paste the program code into part 3(c)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4ciii",
+              "label": "(iii)",
+              "text": "Test your program with the test data:",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "-1 5",
+        "19 -1 -1"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "The procedure RemoveData() removes a node from the linked list.\nThe procedure takes the data item to be removed from the linked list as a parameter.\nThe procedure checks each node in the linked list, starting with the node FirstNode, until it\nfinds the node to be removed. This node is added to the empty list, and pointers are changed\nas appropriate. The procedure only removes the first occurrence of the parameter.\nAssume that the data item being removed is in the linked list.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5di",
+              "label": "(i)",
+              "text": "Write program code for RemoveData().\nSave your program.\nCopy and paste the program code into part 3(d)(i) in the evidence document.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5dii",
+              "label": "(ii)",
+              "text": "Amend the main program to:\n• call RemoveData() with the parameter 5\n• output the word \"After\"\n• call OutputLinkedList().\nSave your program.\nCopy and paste the program code into part 3(d)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5diii",
+              "label": "(iii)",
+              "text": "Test your program with both sets of given test data:\nTest data set 1: 5 6 8 9 5\nTest data set 2: 10 7 8 5 6\nTake a screenshot of each output.\nSave your program.\nCopy and paste the screenshot(s) into part 3(d)(iii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "1 2 3 8",
+        "Take a screenshot of the output.",
+        "Save your program.",
+        "Copy and paste the screenshot into part 3(c)(iii) in the evidence document.",
+        "[1]"
+      ]
+    }
+  ]
+}

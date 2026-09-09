@@ -1,0 +1,337 @@
+{
+  "paperId": "9608_s17_qp_43",
+  "subjectCode": "9608",
+  "session": "s17",
+  "component": "43",
+  "totalMarks": 68,
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A programmer writes a program that:\n• reads a character from the keyboard (assume it will be a capital letter)\n• outputs the alphabetical sequence of characters from ‘A’ to the character input. For\nexample, if the character ‘G’ is input, the output is:\nABCDEFG\nThe programmer has started to write the program in the table on the following page. The\nComment column contains descriptions for the missing instructions, labels and data.\nComplete the following program. Use op codes from the given instruction set.\nLabel Op code Operand Comment\nSTART: // INPUT character\n// store in CHAR\n// Initialise ACC (ASCII value for 'A' is 65)\n// OUTPUT ACC\n// compare ACC with CHAR\n// if equal jump to end of FOR loop\n// increment ACC\n// jump to LOOP\nENDFOR: END\nCHAR:",
+          "marks": 8,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The programmer now starts to write a program that:\n• tests whether an 8-bit two’s complement integer stored at address NUMBER is positive or\nnegative\n• outputs 'P' for a positive integer and 'N' for a negative integer.\nComplete the following program. Use op codes from the given instruction set.\nShow the required value of MASK in binary.\nLabel Op code Operand Comment\nSTART:\nMASK // set to zero all bits except sign bit\n// compare with 0\n// if not equal jump to ELSE\nTHEN: // load ACC with 'P' (ASCII value 80)\nJMP ENDIF\nELSE: // load ACC with 'N' (ASCII value 78)\nENDIF:\nEND\nNUMBER: B00000101 // integer to be tested\nMASK: // value of mask in binary",
+          "marks": 7,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "The following table shows part of the instruction set for a processor which has one general purpose",
+        "register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op",
+        "Operand",
+        "code",
+        "LDM #n",
+        "Immediate addressing. Load the number n to ACC.",
+        "Direct addressing. Load the contents of the location at the given address",
+        "LDD <address>",
+        "to ACC.",
+        "Indirect addressing. The address to be used is at the given address.",
+        "LDI <address>",
+        "Load the contents of this second address to ACC.",
+        "Indexed addressing. Form the address from <address> + the contents of",
+        "LDX <address>",
+        "the index register. Copy the contents of this calculated address to ACC.",
+        "STO <address>",
+        "Store the contents of ACC at the given address.",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX).",
+        "DEC <register>",
+        "Subtract 1 from the contents of the register (ACC or IX).",
+        "CMP <address>",
+        "Compare the contents of ACC with the contents of <address>.",
+        "JMP <address>",
+        "Jump to given address.",
+        "Following a compare instruction, jump to <address> if the compare was",
+        "JPE <address>",
+        "True.",
+        "Following a compare instruction, jump to <address> if the compare was",
+        "JPN <address>",
+        "False.",
+        "Bitwise AND operation of the contents of ACC with the contents of",
+        "AND <address>",
+        "<address>.",
+        "Bitwise XOR operation of the contents of ACC with the contents of",
+        "XOR <address>",
+        "<address>.",
+        "Bitwise OR operation of the contents of ACC with the contents of",
+        "OR <address>",
+        "<address>.",
+        "IN",
+        "Key in a character and store its ASCII value in ACC.",
+        "OUT",
+        "Output to the screen the character whose ASCII value is stored in ACC.",
+        "END",
+        "Return control to the operating system."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The following pseudocode declares a customer record structure.\nTYPE CustomerRecord\nCustomerID : INTEGER\nData : STRING\nENDTYPE\nThe hash table is to be implemented as a 1D array Customer with elements indexed\n0 to 199. The procedure to create a hash table will declare and initialise the array by storing\n200 records with the CustomerID field in each record set to 0.\nComplete the pseudocode.\nPROCEDURE CreateHashTable()\nENDPROCEDURE",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A hashing function Hash exists, which takes as a parameter the customer ID and returns an\ninteger in the range 0 to 199 inclusive.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "The procedure, InsertRecord, takes as a parameter the customer record to be\ninserted into the hash table.\nThe procedure makes use of the function Hash. Collisions will be managed using open\nhashing. This means a collision is resolved by storing the record in the next available\nlocation. The procedure will generate an error message if the hash table is full.\nComplete the pseudocode for the procedure.\nPROCEDURE InsertRecord(BYVALUE NewCustomer : CustomerRecord)\nTableFull FALSE\n// generate hash value\nIndex ______\nPointer Index // initialise Pointer variable to hash value\n// find a free table element\nWHILE ______\nPointer ______\n// wrap back to beginning of table if necessary\nIF ______\nTHEN\nENDIF\n// check if back to original index\nIF ______\nTHEN\nTableFull TRUE\nENDIF\nENDWHILE\nIF ______\nTHEN\nELSE\nENDIF\nENDPROCEDURE",
+              "marks": 9,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The function SearchHashTable will search for a record in the hash table. The function\ntakes as a parameter the customer ID to be searched for. The function will return the\nposition in the hash table where the record has been saved. If the hash table does not\ncontain the record, the function will return the value −1.\nYou can assume that there is at least one empty record in the hash table.\nComplete the pseudocode for the function.\nFUNCTION SearchHashTable(BYVALUE SearchID : INTEGER) RETURNS INTEGER\n// generate hash value\nIndex\n// check each record from index until found or not there\nWHILE (______)\nAND (______)\n// wrap if necessary\nIF ______\nTHEN\nENDIF\nENDWHILE\n// has customer ID been found ?\nIF ______\nTHEN\nELSE\nENDIF\nENDFUNCTION",
+              "marks": 9,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "A record that is no longer required is deleted.\nState the problem that might be caused by this deletion.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 23,
+      "text": [
+        "A hash table has these associated operations:",
+        "• create hash table",
+        "• insert record",
+        "• search hash table",
+        "A hash table is to be used to store customer records.",
+        "Each record consists of a unique customer ID, the record key, and other customer data."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NameList is a 1D array that stores a sorted list of names. A programmer declares the array in",
+        "pseudocode as follows:",
+        "NameList : Array[0 : 100] OF STRING",
+        "The programmer wants to search the list using a binary search algorithm.",
+        "The programmer decides to write the search algorithm as a recursive function. The function, Find,",
+        "takes three parameters:",
+        "• Name, the string to be searched for",
+        "• Start, the index of the first item in the list to be searched",
+        "• Finish, the index of the last item in the list to be searched",
+        "The function will return the position of the name in the list, or −1 if the name is not found.",
+        "Complete the pseudocode for the recursive function.",
+        "FUNCTION Find(BYVALUE Name : STRING, BYVALUE Start : INTEGER,",
+        "BYVALUE Finish : INTEGER) RETURNS INTEGER",
+        "// base case",
+        "IF .............................................................................................................................................",
+        "THEN",
+        "RETURN −1",
+        "ELSE",
+        "Middle ..................................................................................................................",
+        "IF ................................................................................................................................",
+        "THEN",
+        "RETURN ...........................................................................................................",
+        "ELSE // general case",
+        "IF SearchItem > .........................................................................................",
+        "THEN",
+        "ELSE",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "ENDFUNCTION [7]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "There are two classes, LinkedList and Node.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "State the term used to describe the relationship between these classes.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Draw the appropriate diagram to represent this relationship. Do not list the attributes and\nmethods of the classes.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The design for the Node class consists of:\n• attributes\nData : STRING\nPointer : INTEGER\n• methods\nCreateNode(Data, Pointer)\nSetData(Data)\nSetPointer(Pointer)\nGetData() RETURNS STRING\nGetPointer() RETURNS INTEGER\nThe constructor method sets the attributes to the initial values that are passed as parameters.\nWrite program code for:\n• the Node class declaration\n• the constructor.\nProgramming language used ______\nProgram code",
+          "marks": 5,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The identifier table for the LinkedList class is:\nIdentifier Data type Description\nHeadPointer INTEGER\nPointer to the first node in the ordered list.\nFreeListPointer INTEGER\nPointer to the first node in the free list.\nNodeArray ARRAY[0 : 7] OF Node\n1D array stores the nodes that make the\nordered linked list. The unused nodes are\nlinked together into a free list.\nConstructor()\nConstructor instantiates an object\nof LinkedList class, initialises\nHeadPointer to be a null pointer and links\nall nodes to form the free list.\nFindInsertionPoint()\nProcedure that takes the new data item as\nthe parameter NewData and returns two\nparameters:\n• PreviousPointer, whose value is:\neither pointer to node before the\ninsertion point\nor the null pointer if the new node\nis to be inserted at the beginning\nof the list.\n• NextPointer, whose value is a\npointer to node after the insertion point.\nAddToList(NewString)\nProcedure that takes as a parameter a\nunique string and links it into the correct\nposition in the ordered list.\nOutputListToConsole()\nProcedure to output all the data from the list\npointed to by HeadPointer.\nThe following diagram shows an example of a linked list object. This example list consists of\nthree nodes, linked in alphabetical order of the data strings. The unused nodes are linked to\nform a free list.\nHeadPointer\nBerlin London Paris\nnode node node\nFreeListPointer\nnode node node node\nThe symbol O represents a null pointer.",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Explain the meaning of the term null pointer.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Give an appropriate value to represent the null pointer for this design. Justify your\nanswer.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4ciii",
+              "label": "(iii)",
+              "text": "Write program code for the LinkedList class declaration and the constructor.\nProgramming language used ______\nProgram code",
+              "marks": 7,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4civ",
+              "label": "(iv)",
+              "text": "Write program code to instantiate a linked list object with the contacts identifier.\nProgramming language used ______\nProgram code",
+              "marks": 1,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cv",
+              "label": "(v)",
+              "text": "The OutputListToConsole method is to output all the data stored in the linked list.\nHeadPointer points to the first list node.\nWrite program code for this method.\nProgramming language used ______\nProgram code\n\nQuestion 4 continues on page 14.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cvi",
+              "label": "(vi)",
+              "text": "The structured English for the AddToList(NewString) method is as follows:\nMake a copy of the value of free list pointer, name it NewNodePointer\nStore new data item in free node pointed to by NewNodePointer\nAdjust free list pointer to point to next free node\nIF linked list is currently empty\nTHEN\nMake this node the first node\nSet pointer of this node to null pointer\nELSE\nFind insertion point using the FindInsertionPoint method\n// FindInsertionPoint provides\n// pointer to previous node and pointer to next node\nIF previous pointer is null pointer\nTHEN\nLink this node to front of list\nELSE\nLink this node between previous node and next node\nThe FindInsertionPoint method receives the new data item as the parameter\nNewString. It returns two parameters:\n• PreviousPointer, whose value is:\neither the pointer to the node before the insertion point\nor the null pointer, if the new node is to be inserted at the beginning of the list.\n• NextPointer, whose value is the pointer to the node after the insertion point.\nWrite program code for the AddToList method.\nProgramming language used ______\nProgram code\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 6,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "An ordered linked list Abstract Data Type (ADT) has these associated operations:",
+        "• create list",
+        "• add item to list",
+        "• output list to console",
+        "The ADT is to be implemented using object-oriented programming as a linked list of nodes.",
+        "Each node consists of data and a pointer."
+      ]
+    }
+  ]
+}
