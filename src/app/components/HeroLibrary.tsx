@@ -615,7 +615,7 @@ function SubjectSpine({ subject, isHovered, onMouseEnter, onMouseLeave, onClick,
     <div
       className={`relative cursor-pointer select-none`}
       style={{
-        width: '140px',
+        width: 'clamp(56px, 9vw, 140px)',
         height: '85%',
         alignSelf: 'flex-end',
       }}
