@@ -291,11 +291,11 @@ export default function HeroLibraryALevels() {
           onSubjectClick={handleSubjectClick}
         />
 
-        {/* Row 3: More Subjects — left-aligned */}
+        {/* Row 3: More Subjects — left-aligned + View All button */}
         <div className="relative mb-1">
           <div className="shelf-row rounded-t-sm" style={{ height: 'clamp(140px,20vh,200px)', background: 'transparent' }}>
             <div className="absolute top-0 left-0 right-0 h-2 opacity-60" style={{ background: 'linear-gradient(180deg,rgba(92,69,32,0.4) 0%,transparent 100%)' }} />
-            <div className="flex h-full items-end justify-start px-4 gap-8">
+            <div className="flex h-full items-end px-4 gap-3">
               <div className="flex items-end gap-1 relative">
                 {MORE_SUBJECTS.map((s, i) => (
                   <div key={s.id} className="relative">
@@ -312,6 +312,37 @@ export default function HeroLibraryALevels() {
                       onClick={() => handleSubjectClick(s.id)} />
                   </div>
                 ))}
+              </div>
+              {/* View All Subjects button */}
+              <div className="flex items-end pb-2 ml-4">
+                <a
+                  href="/alevels/subjects"
+                  style={{
+                    fontFamily: "'DM Sans', system-ui, sans-serif",
+                    fontSize: '11px',
+                    fontWeight: 700,
+                    letterSpacing: '0.12em',
+                    textTransform: 'uppercase',
+                    color: 'rgba(201,168,76,0.8)',
+                    background: 'rgba(201,168,76,0.08)',
+                    border: '1px solid rgba(201,168,76,0.3)',
+                    borderRadius: '8px',
+                    padding: '8px 16px',
+                    textDecoration: 'none',
+                    whiteSpace: 'nowrap',
+                    transition: 'all 0.2s ease',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                  }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(201,168,76,0.16)'; (e.currentTarget as HTMLAnchorElement).style.color = '#C9A84C'; (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(201,168,76,0.55)'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(201,168,76,0.08)'; (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(201,168,76,0.8)'; (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(201,168,76,0.3)'; }}
+                >
+                  View All Subjects
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
