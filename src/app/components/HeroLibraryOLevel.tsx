@@ -217,7 +217,7 @@ export default function HeroLibraryOLevel() {
   const handleSubjectClick = (subjectId: string) => {
     const all = [...SCIENCES, ...MATHEMATICS, ...COMPUTING, ...COMMERCE, ...LANGUAGES, ...REGIONAL];
     const s = all.find(x => x.id === subjectId);
-    if (s) window.location.href = `/olevel/past-papers?subject=${s.code}`;
+    if (s) window.location.href = `/olevel/practice?subject=${s.code}`;
   };
 
   return (

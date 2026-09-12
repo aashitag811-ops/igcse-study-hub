@@ -213,7 +213,7 @@ export default function HeroLibraryIGCSE91() {
   const handleSubjectClick = (subjectId: string) => {
     const all = [...SCIENCES, ...MATHEMATICS, ...COMPUTING, ...COMMERCE, ...HUMANITIES, ...LANGUAGES];
     const s = all.find(x => x.id === subjectId);
-    if (s) window.location.href = `/igcse91/past-papers?subject=${s.code}`;
+    if (s) window.location.href = `/igcse91/practice?subject=${s.code}`;
   };
 
   return (
