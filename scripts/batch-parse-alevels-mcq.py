@@ -36,8 +36,10 @@ OUTPUT_DIR = ROOT / "public" / "papers"
 
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-ALEVEL_ARCHIVE = "https://archive.org/download/student-archive-alevels-pastpapers"
-IGCSE_ARCHIVE  = "https://archive.org/download/student-archive-igcse-pastpapers"
+ALEVEL_ARCHIVE  = "https://archive.org/download/student-archive-alevels-pastpapers"
+IGCSE_ARCHIVE   = "https://archive.org/download/student-archive-igcse-pastpapers"
+IGCSE91_ARCHIVE = "https://archive.org/download/student-archive-igcse91-pastpapers"
+OLEVEL_ARCHIVE  = "https://archive.org/download/student-archive-olevel-pastpapers"
 
 # ── load single-paper parser via importlib (hyphens in filename) ──────────────
 
@@ -73,7 +75,73 @@ def alevel_targets(subject_filter=None):
             for yr in range(16, 27):       # m16..m26
                 yield code, f"m{yr:02d}", comp, "2"
 
-# ── IGCSE 2026 target list ────────────────────────────────────────────────────
+# ── IGCSE (all years) MCQ target list ────────────────────────────────────────
+# Sciences have Papers 1 & 2 (core+extended), others have Paper 1 only
+
+IGCSE_ALL_MCQ = {
+    "0610": [1, 2], "0620": [1, 2], "0625": [1, 2],  # existing sciences
+    "0654": [1, 2],                                    # co-ordinated sciences
+    "0478": [1],                                       # computer science
+    "0455": [1],    "0452": [1],                       # existing econ/accounting
+}
+
+def igcse_all_targets(subject_filter=None):
+    for code in sorted(IGCSE_ALL_MCQ):
+        if subject_filter and code != subject_filter:
+            continue
+        for comp in IGCSE_ALL_MCQ[code]:
+            for yr in range(10, 27):       # s10..s26
+                for var in ["1","2","3"]:
+                    yield code, f"s{yr:02d}", comp, var
+            for yr in range(10, 26):       # w10..w25
+                for var in ["1","2","3"]:
+                    yield code, f"w{yr:02d}", comp, var
+            for yr in range(16, 27):       # m16..m26
+                yield code, f"m{yr:02d}", comp, "2"
+
+# ── IGCSE 9-1 (all years) MCQ target list ────────────────────────────────────
+
+IGCSE91_ALL_MCQ = {
+    "0970": [1, 2], "0971": [1, 2], "0972": [1, 2], "0973": [1, 2],  # sciences
+    "0987": [1], "0985": [1],                                           # econ/accounting
+}
+
+def igcse91_all_targets(subject_filter=None):
+    for code in sorted(IGCSE91_ALL_MCQ):
+        if subject_filter and code != subject_filter:
+            continue
+        for comp in IGCSE91_ALL_MCQ[code]:
+            for yr in range(10, 27):       # s10..s26
+                for var in ["1","2","3"]:
+                    yield code, f"s{yr:02d}", comp, var
+            for yr in range(10, 26):       # w10..w25
+                for var in ["1","2","3"]:
+                    yield code, f"w{yr:02d}", comp, var
+            for yr in range(16, 27):       # m16..m26
+                yield code, f"m{yr:02d}", comp, "2"
+
+# ── O-Level (all years) MCQ target list ──────────────────────────────────────
+
+OLEVEL_ALL_MCQ = {
+    "5090": [1], "5070": [1], "5054": [1],    # sciences (40q)
+    "2281": [1], "7100": [1], "7110": [1], "7707": [1],  # commerce/accounts (30q)
+}
+
+def olevel_all_targets(subject_filter=None):
+    for code in sorted(OLEVEL_ALL_MCQ):
+        if subject_filter and code != subject_filter:
+            continue
+        for comp in OLEVEL_ALL_MCQ[code]:
+            for yr in range(10, 27):       # s10..s26
+                for var in ["1","2","3"]:
+                    yield code, f"s{yr:02d}", comp, var
+            for yr in range(10, 26):       # w10..w25
+                for var in ["1","2","3"]:
+                    yield code, f"w{yr:02d}", comp, var
+            for yr in range(16, 27):       # m16..m26
+                yield code, f"m{yr:02d}", comp, "2"
+
+# ── IGCSE 2026 target list (kept for backwards compat) ───────────────────────
 
 IGCSE_2026_MCQ = {
     "0610": [1, 2], "0620": [1, 2], "0625": [1, 2],
@@ -89,9 +157,15 @@ def igcse_2026_targets():
 
 # ── PDF fetch ─────────────────────────────────────────────────────────────────
 
+PASTPAPERS_DIR = Path(__file__).parent / "pastpapers"
+
 def _local(code, sess, comp, var, kind):
-    p = LOCAL_2026 / f"{code}_{sess}_{kind}_{comp}{var}.pdf"
-    return p if p.exists() else None
+    # Check pastpapers-2026 first, then main pastpapers dir
+    p26 = LOCAL_2026 / f"{code}_{sess}_{kind}_{comp}{var}.pdf"
+    if p26.exists():
+        return p26
+    pp = PASTPAPERS_DIR / f"{code}_{sess}_{kind}_{comp}{var}.pdf"
+    return pp if pp.exists() else None
 
 def _get(code, sess, comp, var, kind, archive_base):
     lp = _local(code, sess, comp, var, kind)
@@ -156,31 +230,60 @@ def run_batch(targets, archive_base, label, force):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--subject", help="Limit A-level batch to one code (e.g. 9700)")
-    ap.add_argument("--force",   action="store_true", help="Re-parse even if already done")
-    ap.add_argument("--igcse-2026-only", action="store_true")
-    ap.add_argument("--alevels-only",    action="store_true")
+    ap.add_argument("--subject",      help="Limit to one subject code (e.g. 9700, 0610, 5090)")
+    ap.add_argument("--force",        action="store_true", help="Re-parse even if already done")
+    ap.add_argument("--alevels-only", action="store_true")
+    ap.add_argument("--igcse-only",   action="store_true")
+    ap.add_argument("--igcse91-only", action="store_true")
+    ap.add_argument("--olevel-only",  action="store_true")
     args = ap.parse_args()
 
-    if not args.igcse_2026_only:
-        run_batch(
-            list(alevel_targets(args.subject)),
-            ALEVEL_ARCHIVE,
-            f"A-Level MCQ (all years)",
-            args.force,
-        )
+    subj = args.subject
+    only_one = args.alevels_only or args.igcse_only or args.igcse91_only or args.olevel_only
 
-    if not args.alevels_only:
-        run_batch(
-            list(igcse_2026_targets()),
-            IGCSE_ARCHIVE,
-            "IGCSE 2026 MCQ (m26 + s26)",
-            args.force,
-        )
+    # A-Level MCQ
+    if not only_one or args.alevels_only:
+        if not subj or subj in ALEVEL_MCQ:
+            run_batch(
+                list(alevel_targets(subj)),
+                ALEVEL_ARCHIVE,
+                "A-Level MCQ (all years)",
+                args.force,
+            )
 
-    print("\nDone. Run:")
-    print("  node scripts/generate-alevels-manifest.js")
+    # IGCSE MCQ (all years)
+    if not only_one or args.igcse_only:
+        if not subj or subj in IGCSE_ALL_MCQ:
+            run_batch(
+                list(igcse_all_targets(subj)),
+                IGCSE_ARCHIVE,
+                "IGCSE MCQ (all years)",
+                args.force,
+            )
+
+    # IGCSE 9-1 MCQ (all years)
+    if not only_one or args.igcse91_only:
+        if not subj or subj in IGCSE91_ALL_MCQ:
+            run_batch(
+                list(igcse91_all_targets(subj)),
+                IGCSE91_ARCHIVE,
+                "IGCSE 9-1 MCQ (all years)",
+                args.force,
+            )
+
+    # O-Level MCQ (all years)
+    if not only_one or args.olevel_only:
+        if not subj or subj in OLEVEL_ALL_MCQ:
+            run_batch(
+                list(olevel_all_targets(subj)),
+                OLEVEL_ARCHIVE,
+                "O-Level MCQ (all years)",
+                args.force,
+            )
+
+    print("\nDone. Run to regenerate manifests:")
     print("  node scripts/generate-papers-manifest.js")
+    print("  node scripts/generate-alevels-manifest.js")
 
 if __name__ == "__main__":
     main()
