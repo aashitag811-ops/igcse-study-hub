@@ -28,16 +28,13 @@ export const metadata: Metadata = {
     default: "Student Archive – Free Cambridge Past Papers, Topical MCQ & Resources",
     template: "%s | Student Archive",
   },
-  description: "Free Cambridge past papers across 70+ subjects — IGCSE, A Level, O Level & IGCSE (9-1). Topical questions, MCQ practice, revision resources and integrated examiner reports, mark schemes, revision notes, flashcards and more.",
+  description: "Free Cambridge past papers across IGCSE and A Level. Topical questions, MCQ practice, revision resources and integrated examiner reports, mark schemes, revision notes, flashcards and more.",
   keywords: [
     "Student Archive",
     "IGCSE past papers",
     "A Level past papers",
-    "O Level past papers",
     "Cambridge IGCSE",
     "Cambridge A Level",
-    "Cambridge O Level",
-    "IGCSE 9-1",
     "AS Level",
     "free past papers",
     "topical questions",
@@ -75,7 +72,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Student Archive – Free Cambridge Past Papers, Topical MCQ & Resources",
-    description: "Free Cambridge past papers across 70+ subjects — IGCSE, A Level, O Level & IGCSE (9-1). Topical questions, MCQ practice, revision resources and integrated examiner reports.",
+    description: "Free Cambridge past papers across IGCSE and A Level. Topical questions, MCQ practice, revision resources and integrated examiner reports.",
     url: "https://studentarchive.xyz",
     siteName: "Student Archive",
     type: "website",
@@ -93,7 +90,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Student Archive – Free Cambridge Past Papers, Topical MCQ & Resources",
-    description: "Free Cambridge past papers across 70+ subjects — IGCSE, A Level, O Level & IGCSE (9-1). Topical questions, MCQ practice, revision resources and integrated examiner reports.",
+    description: "Free Cambridge past papers across IGCSE and A Level. Topical questions, MCQ practice, revision resources and integrated examiner reports.",
     images: ["/og-image.png"],
   },
 

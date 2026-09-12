@@ -216,7 +216,7 @@ export default function PracticeContent() {
 
       {/* Curriculum switcher — fixed top-right */}
       <div style={{ position:'fixed', top:'80px', right:'24px', zIndex:50, display:'flex', alignItems:'center', gap:'2px', padding:'3px', borderRadius:'8px', background:'rgba(200,168,76,0.07)', border:'1px solid rgba(200,168,76,0.15)', backdropFilter:'blur(8px)' }}>
-        {([{ label:'IGCSE', href:'/igcse/practice' }, { label:'IGCSE 9-1', href:'/igcse91/practice' }, { label:'O Level', href:'/olevel/practice' }, { label:'A Levels', href:'/alevels/practice' }] as const).map(({ label, href }) => (
+        {([{ label:'IGCSE', href:'/igcse/practice' }, { label:'A Levels', href:'/alevels/practice' }] as const).map(({ label, href }) => (
           <a key={href} href={href} style={{ fontFamily: SERIF, fontSize:'12px', fontWeight:500, padding:'4px 10px', borderRadius:'6px', color: href === '/igcse/practice' ? '#1a1208' : 'rgba(200,168,76,0.6)', background: href === '/igcse/practice' ? '#C9A84C' : 'transparent', textDecoration:'none', transition:'all 0.2s ease', whiteSpace:'nowrap' }}>{label}</a>
         ))}
       </div>
