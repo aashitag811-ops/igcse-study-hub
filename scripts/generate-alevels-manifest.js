@@ -19,7 +19,7 @@ const YEAR_RANGE = Array.from({ length: 17 }, (_, i) => 2010 + i);
 const ALEVEL_CODES = new Set([
   '9700','9701','9702',                   // Sciences
   '9709','9231',                          // Mathematics
-  '9608','9618','9691',                   // Computer Science (all syllabi)
+  '9608','9618','9691','9713',            // Computer Science (all syllabi)
   '9609','9708','9706','9707',            // Business / Economics / Accounting
   '9093','8021',                          // English
   '9489','9084','9699','9698','9990',     // Humanities / Social Sciences

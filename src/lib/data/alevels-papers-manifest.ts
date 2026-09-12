@@ -7723,7 +7723,7 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "session": "m",
     "component": 1,
     "variant": 2,
-    "testModeAvailable": false
+    "testModeAvailable": true
   },
   {
     "id": "9700_m20_qp_22",

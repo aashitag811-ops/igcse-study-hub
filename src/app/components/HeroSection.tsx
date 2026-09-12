@@ -85,8 +85,11 @@ export default function HeroSection() {
             across CIE{' '}
             <a href="/igcse" style={{ color: '#E8DCC4', textDecoration: 'underline', textDecorationColor: 'rgba(200,168,76,0.4)', textUnderlineOffset: '3px' }}>IGCSE</a>
             {', '}
+            <a href="/igcse91" style={{ color: '#E8DCC4', textDecoration: 'underline', textDecorationColor: 'rgba(200,168,76,0.4)', textUnderlineOffset: '3px' }}>IGCSE (9-1)</a>
+            {', '}
+            <a href="/olevel" style={{ color: '#E8DCC4', textDecoration: 'underline', textDecorationColor: 'rgba(200,168,76,0.4)', textUnderlineOffset: '3px' }}>O Level</a>
+            {' and '}
             <a href="/alevels" style={{ color: '#E8DCC4', textDecoration: 'underline', textDecorationColor: 'rgba(200,168,76,0.4)', textUnderlineOffset: '3px' }}>A Levels</a>
-            {' '}and more to come
           </p>
 
           <div className="flex flex-col items-center gap-3">
