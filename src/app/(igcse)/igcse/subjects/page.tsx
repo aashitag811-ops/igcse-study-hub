@@ -110,7 +110,7 @@ function SubjectCard({ subject, onClick }: { subject: Subject; onClick: () => vo
       </div>
       {hovered && (
         <span style={{ fontFamily: SANS, fontSize: '11px', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.05em', marginTop: '2px' }}>
-          Browse papers →
+          View resources →
         </span>
       )}
     </button>
@@ -140,7 +140,7 @@ export default function IGCSESubjectsPage() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '14px' }}>
               {cat.subjects.map(s => (
-                <SubjectCard key={s.code} subject={s} onClick={() => router.push(`/igcse/practice?subject=${s.code}`)} />
+                <SubjectCard key={s.code} subject={s} onClick={() => router.push(`/igcse/subject/${s.code}`)} />
               ))}
             </div>
           </div>
