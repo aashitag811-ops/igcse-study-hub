@@ -111,6 +111,8 @@ function BrowsePageInner() {
     };
   }, []);
 
+  const igcseCodes = SUBJECTS.map(s => s.code);
+
   useEffect(() => { fetchData(); }, [selectedSubject, selectedType, sortBy, currentPage]);
   useEffect(() => { setCurrentPage(1); }, [selectedSubject, selectedType, sortBy]);
 
@@ -129,14 +131,18 @@ function BrowsePageInner() {
       if (votes) setUserVotes(new Set(votes.map((v: any) => v.resource_id)));
     }
 
-    let countQuery = (supabase.from('resources') as any).select('*', { count: 'exact', head: true }).or('status.eq.approved,status.is.null');
-    if (selectedSubject !== 'all') countQuery = countQuery.eq('subject', selectedSubject);
+    let countQuery = (supabase.from('resources') as any)
+      .select('*', { count: 'exact', head: true })
+      .or('status.eq.approved,status.is.null')
+      .in('subject', selectedSubject !== 'all' ? [selectedSubject] : igcseCodes);
     if (selectedType !== 'all') countQuery = countQuery.eq('resource_type', selectedType);
     const { count } = await countQuery;
     setTotalCount(count || 0);
 
-    let query = (supabase.from('resources') as any).select('*, profiles (username, full_name, email)').or('status.eq.approved,status.is.null');
-    if (selectedSubject !== 'all') query = query.eq('subject', selectedSubject);
+    let query = (supabase.from('resources') as any)
+      .select('*, profiles (username, full_name, email)')
+      .or('status.eq.approved,status.is.null')
+      .in('subject', selectedSubject !== 'all' ? [selectedSubject] : igcseCodes);
     if (selectedType !== 'all') query = query.eq('resource_type', selectedType);
     if (sortBy === 'newest') query = query.order('created_at', { ascending: false });
     else if (sortBy === 'popular') query = query.order('upvote_count', { ascending: false });
