@@ -28,6 +28,16 @@ export default function MCQExamPage() {
   const [isExtraTime, setIsExtraTime] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(100); // Zoom percentage (100 = normal)
   const [isNavPanelOpen, setIsNavPanelOpen] = useState(false); // Question navigation panel state
+  const [outOfSyllabusQuestions, setOutOfSyllabusQuestions] = useState<Set<number>>(new Set());
+
+  const toggleOutOfSyllabus = (questionNumber: number) => {
+    setOutOfSyllabusQuestions(prev => {
+      const next = new Set(prev);
+      if (next.has(questionNumber)) next.delete(questionNumber);
+      else next.add(questionNumber);
+      return next;
+    });
+  };
 
   // Handle keyboard events and clicks for pause overlay
   useEffect(() => {
@@ -728,6 +738,8 @@ export default function MCQExamPage() {
                   isSubmitted={isSubmitted}
                   correctAnswer={isSubmitted ? question.correctAnswer : undefined}
                   zoomLevel={100}
+                  isOutOfSyllabus={outOfSyllabusQuestions.has(question.questionNumber)}
+                  onToggleOutOfSyllabus={() => toggleOutOfSyllabus(question.questionNumber)}
                 />
               ))}
 

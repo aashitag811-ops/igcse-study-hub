@@ -12,6 +12,8 @@ interface MCQQuestionCardProps {
   isSubmitted: boolean;
   correctAnswer?: 'A' | 'B' | 'C' | 'D' | 'DISCOUNTED';
   zoomLevel?: number;
+  isOutOfSyllabus?: boolean;
+  onToggleOutOfSyllabus?: () => void;
 }
 
 export function MCQQuestionCard({
@@ -21,164 +23,199 @@ export function MCQQuestionCard({
   isSubmitted,
   correctAnswer,
   zoomLevel = 100,
+  isOutOfSyllabus = false,
+  onToggleOutOfSyllabus,
 }: MCQQuestionCardProps) {
-  const getCircleButtonClassName = (optionLetter: 'A' | 'B' | 'C' | 'D') => {
-    const baseClasses = 'rounded-full flex items-center justify-center font-bold cursor-pointer transition-all duration-200';
-    
-    if (isSubmitted) {
-      // Discounted question — all answers neutral/green
-      if (correctAnswer === 'DISCOUNTED') {
-        return `${baseClasses} bg-gray-100 dark:bg-[#2A1F0E] border-2 border-gray-300 dark:border-[#C9A84C]/20 text-gray-400 dark:text-[#7A6A4A]`;
-      }
-      if (optionLetter === correctAnswer) {
-        return `${baseClasses} bg-green-500 dark:bg-green-600 border-2 border-green-600 dark:border-green-500 text-white shadow-lg`;
-      }
-      if (optionLetter === selectedAnswer && selectedAnswer !== correctAnswer) {
-        return `${baseClasses} bg-red-500 dark:bg-red-600 border-2 border-red-600 dark:border-red-500 text-white shadow-lg`;
-      }
-      return `${baseClasses} bg-gray-50 dark:bg-[#2A1F0E] border-2 border-gray-200 dark:border-[#C9A84C]/20 text-gray-400 dark:text-[#7A6A4A]`;
-    }
-    
-    // During exam
-    if (selectedAnswer === optionLetter) {
-      return `${baseClasses} bg-[#C9A84C] dark:bg-[#E2C97A] border-2 border-[#E2C97A] dark:border-[#C9A84C] text-[#0A0806] dark:text-[#0A0806] shadow-lg scale-110`;
-    }
-    
-    return `${baseClasses} bg-white dark:bg-[#1A1510] border-2 border-[#e5e7eb] dark:border-[#C9A84C]/30 text-[#2A1F0E] dark:text-[#E2C97A] hover:bg-[#f9fafb] dark:hover:bg-[#2A1F0E] hover:scale-105`;
+
+  const getCircleStyle = (letter: 'A' | 'B' | 'C' | 'D'): React.CSSProperties => {
+    const isDiscounted = correctAnswer === 'DISCOUNTED';
+    const isCorrect  = isSubmitted && !isDiscounted && letter === correctAnswer;
+    const isWrong    = isSubmitted && !isDiscounted && letter === selectedAnswer && selectedAnswer !== correctAnswer;
+    const isSelected = !isSubmitted && selectedAnswer === letter;
+
+    if (isCorrect)  return { background: '#22c55e', borderColor: '#16a34a', color: '#fff', transform: 'scale(1.12)', boxShadow: '0 0 0 3px rgba(34,197,94,0.25)' };
+    if (isWrong)    return { background: '#ef4444', borderColor: '#dc2626', color: '#fff', boxShadow: '0 0 0 3px rgba(239,68,68,0.25)' };
+    if (isDiscounted && isSubmitted) return { background: 'rgba(200,168,76,0.08)', borderColor: 'rgba(200,168,76,0.2)', color: 'rgba(200,168,76,0.4)', cursor: 'default' };
+    if (isSelected) return { background: '#C9A84C', borderColor: '#E2C97A', color: '#0A0806', transform: 'scale(1.12)', boxShadow: '0 0 0 3px rgba(201,168,76,0.3)' };
+
+    return {
+      background: 'rgba(255,255,255,0.04)',
+      borderColor: 'rgba(200,168,76,0.25)',
+      color: '#C9A84C',
+    };
   };
 
   return (
     <div
       id={`question-${question.questionNumber}`}
-      className="w-full max-w-3xl mx-auto my-6 p-6 bg-white dark:bg-[#1A1510] rounded-2xl border border-gray-100 dark:border-[#C9A84C]/25 shadow-sm flex flex-col items-center justify-start transition-all duration-200 relative"
-      style={{ height: 'auto', minHeight: '0px', maxHeight: 'none', zIndex: 10 }}
+      style={{
+        background: 'linear-gradient(160deg, rgba(14,20,12,0.97) 0%, rgba(8,12,8,0.99) 100%)',
+        border: isOutOfSyllabus
+          ? '1px solid rgba(251,146,60,0.4)'
+          : '1px solid rgba(200,168,76,0.14)',
+        borderTop: isOutOfSyllabus
+          ? '1px solid rgba(251,146,60,0.5)'
+          : '1px solid rgba(200,168,76,0.22)',
+        borderRadius: '16px',
+        marginBottom: '12px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(200,168,76,0.08)',
+      }}
     >
-      {/* Question Number Badge */}
-      <div className="flex items-center justify-center mb-4">
-        <div className="bg-[#C9A84C] dark:bg-[#E2C97A] text-[#0A0806] px-6 py-2 rounded-full font-bold text-lg shadow-md">
+      {/* Top bar: question number + out-of-syllabus toggle */}
+      <div style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        padding: '12px 18px',
+        borderBottom: '1px solid rgba(200,168,76,0.07)',
+      }}>
+        <span style={{
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontSize: '15px', fontWeight: 600,
+          color: '#C9A84C', letterSpacing: '0.04em',
+        }}>
           Question {question.questionNumber}
-        </div>
+          {correctAnswer === 'DISCOUNTED' && (
+            <span style={{ marginLeft: 8, fontSize: 11, color: 'rgba(200,168,76,0.5)', fontStyle: 'italic' }}>discounted</span>
+          )}
+        </span>
+
+        {!isSubmitted && onToggleOutOfSyllabus && (
+          <button
+            onClick={onToggleOutOfSyllabus}
+            style={{
+              fontFamily: "'DM Sans', system-ui, sans-serif",
+              fontSize: '10px', fontWeight: 600, letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              padding: '4px 10px', borderRadius: '6px',
+              background: isOutOfSyllabus ? 'rgba(251,146,60,0.18)' : 'transparent',
+              border: isOutOfSyllabus ? '1px solid rgba(251,146,60,0.5)' : '1px solid rgba(200,168,76,0.2)',
+              color: isOutOfSyllabus ? '#fb923c' : 'rgba(200,168,76,0.5)',
+              cursor: 'pointer', transition: 'all 0.15s',
+            }}
+          >
+            {isOutOfSyllabus ? '✓ Out of syllabus' : 'Mark out of syllabus'}
+          </button>
+        )}
       </div>
 
-      {/* Full Question as Image - Width controlled by zoom, height follows naturally */}
-      {question.imageUrl && (
-        <div className="w-full h-auto flex items-center justify-center">
-          <div style={{ width: `${zoomLevel}%`, transition: 'width 0.2s ease' }}>
-            <Image
-              src={`${imageUrl(question.imageUrl!)}?v=25`}
-              alt={`Question ${question.questionNumber}`}
-              width={1200}
-              height={1000}
-              className="w-full h-auto object-contain block select-none"
-              priority
-              unoptimized
-            />
-          </div>
-        </div>
-      )}
+      {/* Question content */}
+      <div style={{ padding: '20px 18px 0' }}>
 
-      {/* Text-based question — shown when there's no image OR when there's text + options */}
-      {(!question.imageUrl && question.questionText) && (
-        <div className="w-full mb-2 px-2">
-          {/* Question stem */}
-          <div className="flex gap-4 mb-6">
-            <p className="text-base text-slate-800 dark:text-[#E2C97A] leading-relaxed">
+        {/* Image-based question */}
+        {question.imageUrl && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '8px' }}>
+            <div style={{ width: `${zoomLevel}%`, transition: 'width 0.2s ease' }}>
+              <Image
+                src={`${imageUrl(question.imageUrl)}?v=25`}
+                alt={`Question ${question.questionNumber}`}
+                width={1200}
+                height={1000}
+                style={{ width: '100%', height: 'auto', objectFit: 'contain', display: 'block' }}
+                priority
+                unoptimized
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Text-based question (no image) */}
+        {!question.imageUrl && question.questionText && (
+          <div style={{ marginBottom: '16px' }}>
+            <p style={{
+              fontFamily: "'DM Sans', system-ui, sans-serif",
+              fontSize: '15px', lineHeight: 1.7,
+              color: 'rgba(232,220,196,0.9)',
+            }}>
               {question.questionText}
             </p>
-          </div>
-          {/* A B C D options — only when parsed */}
-          {question.options && question.options.length > 0 && (
-          <div className="flex flex-col gap-3 pl-8">
-            {question.options.map((opt) => {
-              const isDiscounted = correctAnswer === 'DISCOUNTED';
-              const isCorrect  = isSubmitted && !isDiscounted && opt.letter === correctAnswer;
-              const isWrong    = isSubmitted && !isDiscounted && selectedAnswer === opt.letter && selectedAnswer !== correctAnswer;
-              const isSelected = selectedAnswer === opt.letter;
-              return (
-                <div key={opt.letter} className="flex gap-4 items-baseline">
-                  <span className={`font-bold text-base flex-shrink-0 w-5 ${
-                    isCorrect  ? 'text-green-600 dark:text-green-400' :
-                    isWrong    ? 'text-red-600 dark:text-red-400' :
-                    isSelected ? 'text-[#C9A84C] dark:text-[#E2C97A]' :
-                                 'text-slate-800 dark:text-[#E2C97A]'
-                  }`}>
-                    {opt.letter}
-                  </span>
-                  <span className={`text-base leading-relaxed ${
-                    isCorrect  ? 'text-green-700 dark:text-green-300 font-medium' :
-                    isWrong    ? 'text-red-700 dark:text-red-300' :
-                    isSelected ? 'text-[#2A1F0E] dark:text-[#E2C97A] font-medium' :
-                                 'text-slate-700 dark:text-[#C9A84C]/80'
-                  }`}>
-                    {opt.text}
-                    {isCorrect && <span className="ml-2 text-green-500">✓</span>}
-                    {isWrong   && <span className="ml-2 text-red-500">✗</span>}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-          )}
-        </div>
-      )}
 
-      {/* A B C D bubble dock — shown for ALL question types */}
-      {true && (
-      <div className="mt-6 w-full max-w-sm flex flex-col items-center bg-gray-50/50 dark:bg-[#1A1510] rounded-xl p-4 border border-gray-100 dark:border-[#C9A84C]/30">
-        <p className="text-xs font-bold uppercase tracking-wider text-gray-400 dark:text-[#7A6A4A] mb-3">
+            {/* Parsed A/B/C/D text options */}
+            {question.options && Array.isArray(question.options) && question.options.length > 0 && (
+              <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {question.options.map((opt: any) => {
+                  const letter = opt.letter as 'A' | 'B' | 'C' | 'D';
+                  const isDiscounted = correctAnswer === 'DISCOUNTED';
+                  const isCorrect  = isSubmitted && !isDiscounted && letter === correctAnswer;
+                  const isWrong    = isSubmitted && !isDiscounted && letter === selectedAnswer && selectedAnswer !== correctAnswer;
+                  const isSelected = selectedAnswer === letter;
+                  return (
+                    <div
+                      key={letter}
+                      onClick={() => !isSubmitted && onAnswerSelect(letter)}
+                      style={{
+                        display: 'flex', alignItems: 'flex-start', gap: '12px',
+                        padding: '10px 14px', borderRadius: '10px', cursor: isSubmitted ? 'default' : 'pointer',
+                        background: isCorrect ? 'rgba(34,197,94,0.1)' : isWrong ? 'rgba(239,68,68,0.1)' : isSelected ? 'rgba(201,168,76,0.08)' : 'transparent',
+                        border: isCorrect ? '1px solid rgba(34,197,94,0.3)' : isWrong ? '1px solid rgba(239,68,68,0.3)' : isSelected ? '1px solid rgba(201,168,76,0.25)' : '1px solid transparent',
+                        transition: 'all 0.15s',
+                      }}
+                    >
+                      <span style={{
+                        fontFamily: 'monospace', fontSize: '13px', fontWeight: 700, flexShrink: 0,
+                        color: isCorrect ? '#22c55e' : isWrong ? '#ef4444' : isSelected ? '#C9A84C' : 'rgba(200,168,76,0.5)',
+                      }}>{letter}</span>
+                      <span style={{
+                        fontFamily: "'DM Sans', system-ui, sans-serif", fontSize: '14px', lineHeight: 1.6,
+                        color: isCorrect ? '#86efac' : isWrong ? '#fca5a5' : 'rgba(232,220,196,0.85)',
+                      }}>{opt.text}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* A B C D answer dock */}
+      <div style={{ padding: '16px 18px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+        <p style={{
+          fontFamily: "'DM Sans', system-ui, sans-serif",
+          fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em',
+          textTransform: 'uppercase', color: 'rgba(200,168,76,0.35)',
+        }}>
           Select your answer
         </p>
-        <div className="flex gap-3">
-          {['A', 'B', 'C', 'D'].map((letter) => {
-            const isDiscounted = correctAnswer === 'DISCOUNTED';
-            const isSelected = selectedAnswer === letter;
-            const isCorrect = isSubmitted && !isDiscounted && letter === correctAnswer;
-            const isWrong = isSubmitted && !isDiscounted && letter === selectedAnswer && selectedAnswer !== correctAnswer;
-            
-            return (
-              <button
-                key={letter}
-                onClick={() => !isSubmitted && onAnswerSelect(letter as 'A' | 'B' | 'C' | 'D')}
-                disabled={isSubmitted}
-                className={`
-                  w-12 h-12 rounded-xl font-bold text-lg transition-all duration-200
-                  ${isCorrect ? 'bg-green-500 text-white border-4 border-green-600 shadow-lg scale-110' :
-                    isWrong ? 'bg-red-500 text-white border-4 border-red-600 shadow-lg' :
-                    isSelected ? 'bg-[#C9A84C] text-[#0A0806] border-4 border-[#E2C97A] shadow-lg scale-110' :
-                    'bg-white dark:bg-[#2A1F0E] text-[#2A1F0E] dark:text-[#E2C97A] border-2 border-gray-200 dark:border-[#C9A84C]/30 hover:border-[#C9A84C] hover:scale-105'
-                  }
-                  ${!isSubmitted && 'cursor-pointer active:scale-95'}
-                  ${isSubmitted && 'cursor-default'}
-                `}
-                aria-label={`Select option ${letter}`}
-              >
-                {letter}
-                {isCorrect && ' ✓'}
-              </button>
-            );
-          })}
+        <div style={{ display: 'flex', gap: '12px' }}>
+          {(['A','B','C','D'] as const).map(letter => (
+            <button
+              key={letter}
+              onClick={() => !isSubmitted && onAnswerSelect(letter)}
+              disabled={isSubmitted}
+              aria-label={`Select option ${letter}`}
+              style={{
+                width: 48, height: 48, borderRadius: '50%',
+                fontFamily: "'DM Sans', system-ui, sans-serif",
+                fontSize: '16px', fontWeight: 700,
+                border: '2px solid',
+                cursor: isSubmitted ? 'default' : 'pointer',
+                transition: 'all 0.15s ease',
+                ...getCircleStyle(letter),
+              }}
+            >
+              {letter}
+            </button>
+          ))}
         </div>
-      </div>
-      )}
 
-      {/* Show result text after submission */}
-      {isSubmitted && correctAnswer && (
-        correctAnswer === 'DISCOUNTED' ? (
-          <div className="mt-4 p-3 rounded-lg text-center text-sm font-medium border bg-blue-50 dark:bg-[#1A1F2E] text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-900/50">
-            <span className="font-semibold">Question Discounted by Cambridge</span> — Full mark awarded automatically ✓
-          </div>
-        ) : (
-          <div className={`mt-4 p-3 rounded-lg text-center text-sm font-medium border ${
-            selectedAnswer === correctAnswer
-              ? 'bg-green-50 dark:bg-[#2A1F0E] text-green-800 dark:text-green-400 border-green-200 dark:border-green-900/50'
-              : 'bg-red-50 dark:bg-[#2A1F0E] text-red-800 dark:text-red-400 border-red-200 dark:border-red-900/50'
-          }`}>
-            <span className="font-semibold">Your answer:</span> {selectedAnswer || 'Not answered'} |
-            <span className="font-semibold"> Correct answer:</span> {correctAnswer}
-            {selectedAnswer === correctAnswer && ' ✓'}
-          </div>
-        )
-      )}
+        {/* Result line after submission */}
+        {isSubmitted && (
+          correctAnswer === 'DISCOUNTED' ? (
+            <p style={{ fontFamily: "'DM Sans', system-ui, sans-serif", fontSize: '12px', color: '#93c5fd', marginTop: 4 }}>
+              Question discounted by Cambridge — mark awarded automatically ✓
+            </p>
+          ) : (
+            <p style={{
+              fontFamily: "'DM Sans', system-ui, sans-serif", fontSize: '12px', marginTop: 4,
+              color: selectedAnswer === correctAnswer ? '#86efac' : '#fca5a5',
+            }}>
+              {selectedAnswer === correctAnswer
+                ? `Correct ✓`
+                : `Your answer: ${selectedAnswer ?? '—'}  ·  Correct: ${correctAnswer}`}
+            </p>
+          )
+        )}
+      </div>
     </div>
   );
 }

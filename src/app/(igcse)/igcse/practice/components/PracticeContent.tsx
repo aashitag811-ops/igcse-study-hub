@@ -5,8 +5,12 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { getPaperDescription, getSubjectName } from '@/lib/constants/subjectPaperConfig';
 import { getComponentLabel, isComponentDisabled } from '@/lib/constants/syllabusChanges';
 import { getTestModeUnavailableMessage } from '@/lib/constants/testModeSupport';
+import { SUBJECTS } from '@/lib/constants/subjects';
 import StudyModeSelector from './StudyModeSelector';
 import BackButton from '@/components/BackButton';
+
+// Whitelist — only genuine Cambridge IGCSE subject codes
+const IGCSE_CODES = new Set(SUBJECTS.map(s => s.code));
 
 interface PaperMetadata {
   id: string; subject: string; subjectCode: string; year: number;
@@ -119,14 +123,16 @@ export default function PracticeContent() {
         setLoading(true);
         const response = await fetch('/api/available-papers');
         const apiPapers = await response.json();
-        const papers: PaperMetadata[] = apiPapers.map((paper: any) => ({
-          id: paper.id,
-          subject: `${getSubjectName(paper.subjectCode)} ${paper.subjectCode}`,
-          subjectCode: paper.subjectCode, year: paper.year,
-          season: SEASON_CODES[paper.session], paperComponent: paper.component,
-          variant: paper.variant, filename: `${paper.id}.json`,
-          testModeAvailable: paper.testModeAvailable ?? false,
-        }));
+        const papers: PaperMetadata[] = apiPapers
+          .filter((paper: any) => IGCSE_CODES.has(paper.subjectCode))
+          .map((paper: any) => ({
+            id: paper.id,
+            subject: `${getSubjectName(paper.subjectCode)} ${paper.subjectCode}`,
+            subjectCode: paper.subjectCode, year: paper.year,
+            season: SEASON_CODES[paper.session], paperComponent: paper.component,
+            variant: paper.variant, filename: `${paper.id}.json`,
+            testModeAvailable: paper.testModeAvailable ?? false,
+          }));
         setAvailablePapers(papers);
         // Only auto-select a subject when ?subject= is explicitly in the URL.
         // Without it leave the dropdown blank so the user chooses.
