@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { MCQQuestion as MCQQuestionType } from '@/lib/types/mcq.types';
-import Image from 'next/image';
 import { imageUrl } from '@/lib/assetUrl';
+import { SmartMCQImage } from './SmartMCQImage';
 
 interface MCQQuestionCardProps {
   question: MCQQuestionType;
@@ -12,6 +12,8 @@ interface MCQQuestionCardProps {
   isSubmitted: boolean;
   correctAnswer?: 'A' | 'B' | 'C' | 'D' | 'DISCOUNTED';
   zoomLevel?: number;
+  isFlagged?: boolean;
+  onToggleFlag?: () => void;
   isOutOfSyllabus?: boolean;
   onToggleOutOfSyllabus?: () => void;
 }
@@ -23,201 +25,168 @@ export function MCQQuestionCard({
   isSubmitted,
   correctAnswer,
   zoomLevel = 100,
+  isFlagged = false,
+  onToggleFlag,
   isOutOfSyllabus = false,
   onToggleOutOfSyllabus,
 }: MCQQuestionCardProps) {
+  const getCircleClassName = (letter: 'A' | 'B' | 'C' | 'D') => {
+    const base = 'flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-150 border-2 cursor-pointer';
 
-  const getCircleStyle = (letter: 'A' | 'B' | 'C' | 'D'): React.CSSProperties => {
-    const isDiscounted = correctAnswer === 'DISCOUNTED';
-    const isCorrect  = isSubmitted && !isDiscounted && letter === correctAnswer;
-    const isWrong    = isSubmitted && !isDiscounted && letter === selectedAnswer && selectedAnswer !== correctAnswer;
-    const isSelected = !isSubmitted && selectedAnswer === letter;
+    if (isSubmitted) {
+      if (correctAnswer === 'DISCOUNTED') {
+        return `${base} bg-[#F0EAD6] border-[#C9A84C]/30 text-[#7A6A4A]`;
+      }
+      if (letter === correctAnswer) {
+        return `${base} bg-green-500 border-green-600 text-white shadow-md`;
+      }
+      if (letter === selectedAnswer && selectedAnswer !== correctAnswer) {
+        return `${base} bg-red-500 border-red-600 text-white shadow-md`;
+      }
+      return `${base} bg-[#F0EAD6] border-[#C9A84C]/20 text-[#7A6A4A]`;
+    }
 
-    if (isCorrect)  return { background: '#22c55e', borderColor: '#16a34a', color: '#fff', transform: 'scale(1.12)', boxShadow: '0 0 0 3px rgba(34,197,94,0.25)' };
-    if (isWrong)    return { background: '#ef4444', borderColor: '#dc2626', color: '#fff', boxShadow: '0 0 0 3px rgba(239,68,68,0.25)' };
-    if (isDiscounted && isSubmitted) return { background: 'rgba(200,168,76,0.08)', borderColor: 'rgba(200,168,76,0.2)', color: 'rgba(200,168,76,0.4)', cursor: 'default' };
-    if (isSelected) return { background: '#C9A84C', borderColor: '#E2C97A', color: '#0A0806', transform: 'scale(1.12)', boxShadow: '0 0 0 3px rgba(201,168,76,0.3)' };
-
-    return {
-      background: 'rgba(255,255,255,0.04)',
-      borderColor: 'rgba(200,168,76,0.25)',
-      color: '#C9A84C',
-    };
+    if (selectedAnswer === letter) {
+      return `${base} bg-[#C9A84C] border-[#E2C97A] text-[#0A0806] shadow-md scale-110`;
+    }
+    return `${base} bg-white border-slate-300 text-slate-700 hover:border-[#C9A84C] hover:bg-[#FAF7F0] hover:scale-105`;
   };
+
+  const isWrong   = isSubmitted && !!selectedAnswer && selectedAnswer !== correctAnswer && correctAnswer !== 'DISCOUNTED';
+  const isCorrect = isSubmitted && !!selectedAnswer && selectedAnswer === correctAnswer;
 
   return (
     <div
       id={`question-${question.questionNumber}`}
+      className="w-full max-w-3xl mx-auto my-6 rounded-2xl overflow-hidden shadow-md"
       style={{
-        background: 'linear-gradient(160deg, rgba(14,20,12,0.97) 0%, rgba(8,12,8,0.99) 100%)',
-        border: isOutOfSyllabus
-          ? '1px solid rgba(251,146,60,0.4)'
-          : '1px solid rgba(200,168,76,0.14)',
-        borderTop: isOutOfSyllabus
-          ? '1px solid rgba(251,146,60,0.5)'
-          : '1px solid rgba(200,168,76,0.22)',
-        borderRadius: '16px',
-        marginBottom: '12px',
-        overflow: 'hidden',
-        boxShadow: '0 8px 32px rgba(0,0,0,0.45), inset 0 1px 0 rgba(200,168,76,0.08)',
+        outline: isWrong
+          ? '2px solid rgba(239,68,68,0.5)'
+          : isCorrect
+          ? '2px solid rgba(34,197,94,0.4)'
+          : '2px solid transparent',
       }}
     >
-      {/* Top bar: question number + out-of-syllabus toggle */}
-      <div style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '12px 18px',
-        borderBottom: '1px solid rgba(200,168,76,0.07)',
-      }}>
-        <span style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
-          fontSize: '15px', fontWeight: 600,
-          color: '#C9A84C', letterSpacing: '0.04em',
-        }}>
-          Question {question.questionNumber}
-          {correctAnswer === 'DISCOUNTED' && (
-            <span style={{ marginLeft: 8, fontSize: 11, color: 'rgba(200,168,76,0.5)', fontStyle: 'italic' }}>discounted</span>
+      {/* Card header — dark strip */}
+      <div className="bg-[#0A0806] px-5 py-3 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <span className="text-[#C9A84C] font-semibold text-sm tracking-wide">
+            Question {question.questionNumber}
+          </span>
+          {/* Flag button */}
+          {!isSubmitted && onToggleFlag && (
+            <button
+              onClick={onToggleFlag}
+              title={isFlagged ? 'Remove flag' : 'Flag for review'}
+              className="transition-transform duration-150 hover:scale-110 active:scale-95"
+              style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+            >
+              <svg width="14" height="18" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="2" y1="2" x2="2" y2="21" stroke={isFlagged ? '#b91c1c' : '#7A6A4A'} strokeWidth="2" strokeLinecap="round"/>
+                <path d="M2 2 L17 7 L2 14 Z" fill={isFlagged ? '#dc2626' : '#C9A84C'} stroke={isFlagged ? '#b91c1c' : '#C9A84C'} strokeWidth="1.2" strokeLinejoin="round"/>
+              </svg>
+            </button>
           )}
-        </span>
+          {/* After submit: status badge */}
+          {isSubmitted && correctAnswer !== 'DISCOUNTED' && (
+            <span className={`text-xs font-semibold tracking-wide ${
+              !selectedAnswer ? 'text-red-400/70' :
+              selectedAnswer === correctAnswer ? 'text-green-400/80' :
+              'text-red-400/80'
+            }`}>
+              {!selectedAnswer ? 'Unanswered' : selectedAnswer === correctAnswer ? 'Correct' : 'Wrong'}
+            </span>
+          )}
+          {isSubmitted && correctAnswer === 'DISCOUNTED' && (
+            <span className="text-xs font-semibold text-[#C9A84C]/70 tracking-wide">Free Mark</span>
+          )}
+        </div>
 
-        {!isSubmitted && onToggleOutOfSyllabus && (
+        {/* MARK OUT OF SYLLABUS button */}
+        {onToggleOutOfSyllabus && (
           <button
             onClick={onToggleOutOfSyllabus}
-            style={{
-              fontFamily: "'DM Sans', system-ui, sans-serif",
-              fontSize: '10px', fontWeight: 600, letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              padding: '4px 10px', borderRadius: '6px',
-              background: isOutOfSyllabus ? 'rgba(251,146,60,0.18)' : 'transparent',
-              border: isOutOfSyllabus ? '1px solid rgba(251,146,60,0.5)' : '1px solid rgba(200,168,76,0.2)',
-              color: isOutOfSyllabus ? '#fb923c' : 'rgba(200,168,76,0.5)',
-              cursor: 'pointer', transition: 'all 0.15s',
-            }}
+            className={`px-3 py-1 text-xs font-semibold tracking-widest uppercase rounded border transition-colors ${
+              isOutOfSyllabus
+                ? 'bg-red-900/40 border-red-700/60 text-red-300'
+                : 'bg-transparent border-[#C9A84C]/40 text-[#C9A84C]/80 hover:border-[#C9A84C] hover:text-[#C9A84C]'
+            }`}
           >
-            {isOutOfSyllabus ? '✓ Out of syllabus' : 'Mark out of syllabus'}
+            {isOutOfSyllabus ? 'In Syllabus' : 'Mark Out of Syllabus'}
           </button>
         )}
       </div>
 
-      {/* Question content */}
-      <div style={{ padding: '20px 18px 0' }}>
-
-        {/* Image-based question */}
+      {/* White paper area — full question image */}
+      <div className="bg-white px-4 py-4">
         {question.imageUrl && (
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '8px' }}>
+          <div className="w-full flex items-center justify-center">
             <div style={{ width: `${zoomLevel}%`, transition: 'width 0.2s ease' }}>
-              <Image
+              <SmartMCQImage
                 src={`${imageUrl(question.imageUrl)}?v=25`}
                 alt={`Question ${question.questionNumber}`}
-                width={1200}
-                height={1000}
-                style={{ width: '100%', height: 'auto', objectFit: 'contain', display: 'block' }}
-                priority
-                unoptimized
+                className="select-none w-full h-auto"
               />
             </div>
           </div>
         )}
 
-        {/* Text-based question (no image) */}
-        {!question.imageUrl && question.questionText && (
-          <div style={{ marginBottom: '16px' }}>
-            <p style={{
-              fontFamily: "'DM Sans', system-ui, sans-serif",
-              fontSize: '15px', lineHeight: 1.7,
-              color: 'rgba(232,220,196,0.9)',
-            }}>
-              {question.questionText}
-            </p>
-
-            {/* Parsed A/B/C/D text options */}
-            {question.options && Array.isArray(question.options) && question.options.length > 0 && (
-              <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                {question.options.map((opt: any) => {
-                  const letter = opt.letter as 'A' | 'B' | 'C' | 'D';
-                  const isDiscounted = correctAnswer === 'DISCOUNTED';
-                  const isCorrect  = isSubmitted && !isDiscounted && letter === correctAnswer;
-                  const isWrong    = isSubmitted && !isDiscounted && letter === selectedAnswer && selectedAnswer !== correctAnswer;
-                  const isSelected = selectedAnswer === letter;
-                  return (
-                    <div
-                      key={letter}
-                      onClick={() => !isSubmitted && onAnswerSelect(letter)}
-                      style={{
-                        display: 'flex', alignItems: 'flex-start', gap: '12px',
-                        padding: '10px 14px', borderRadius: '10px', cursor: isSubmitted ? 'default' : 'pointer',
-                        background: isCorrect ? 'rgba(34,197,94,0.1)' : isWrong ? 'rgba(239,68,68,0.1)' : isSelected ? 'rgba(201,168,76,0.08)' : 'transparent',
-                        border: isCorrect ? '1px solid rgba(34,197,94,0.3)' : isWrong ? '1px solid rgba(239,68,68,0.3)' : isSelected ? '1px solid rgba(201,168,76,0.25)' : '1px solid transparent',
-                        transition: 'all 0.15s',
-                      }}
-                    >
-                      <span style={{
-                        fontFamily: 'monospace', fontSize: '13px', fontWeight: 700, flexShrink: 0,
-                        color: isCorrect ? '#22c55e' : isWrong ? '#ef4444' : isSelected ? '#C9A84C' : 'rgba(200,168,76,0.5)',
-                      }}>{letter}</span>
-                      <span style={{
-                        fontFamily: "'DM Sans', system-ui, sans-serif", fontSize: '14px', lineHeight: 1.6,
-                        color: isCorrect ? '#86efac' : isWrong ? '#fca5a5' : 'rgba(232,220,196,0.85)',
-                      }}>{opt.text}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
+        {/* Text-based question (e.g. Accounting) */}
+        {!question.imageUrl && question.options && question.options.length > 0 && (
+          <div className="w-full px-2">
+            <div className="flex gap-4 mb-6">
+              <span className="font-bold text-base text-slate-800 flex-shrink-0">
+                {question.questionNumber}
+              </span>
+              <p className="text-base text-slate-800 leading-relaxed">{question.questionText}</p>
+            </div>
+            <div className="flex flex-col gap-3 pl-8">
+              {question.options.map((opt) => {
+                const isDisc = correctAnswer === 'DISCOUNTED';
+                const isC  = isSubmitted && !isDisc && opt.letter === correctAnswer;
+                const isW  = isSubmitted && !isDisc && selectedAnswer === opt.letter && selectedAnswer !== correctAnswer;
+                const isSel = selectedAnswer === opt.letter;
+                return (
+                  <div key={opt.letter} className="flex gap-4 items-baseline">
+                    <span className={`font-bold text-base flex-shrink-0 w-5 ${
+                      isC ? 'text-green-600' : isW ? 'text-red-600' :
+                      isSel ? 'text-[#C9A84C]' : 'text-slate-800'
+                    }`}>{opt.letter}</span>
+                    <span className={`text-base leading-relaxed ${
+                      isC ? 'text-green-700 font-medium' : isW ? 'text-red-700' :
+                      isSel ? 'text-slate-900 font-medium' : 'text-slate-700'
+                    }`}>
+                      {opt.text}
+                      {isC && <span className="ml-2 text-green-500">✓</span>}
+                      {isW && <span className="ml-2 text-red-500">✗</span>}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         )}
       </div>
 
-      {/* A B C D answer dock */}
-      <div style={{ padding: '16px 18px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-        <p style={{
-          fontFamily: "'DM Sans', system-ui, sans-serif",
-          fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em',
-          textTransform: 'uppercase', color: 'rgba(200,168,76,0.35)',
-        }}>
+      {/* A/B/C/D answer dock — below the white area */}
+      <div className="bg-[#F0EAD6] px-5 py-4 flex flex-col items-center gap-3">
+        <p className="text-xs font-bold uppercase tracking-widest text-[#7A6A4A]">
           Select your answer
         </p>
-        <div style={{ display: 'flex', gap: '12px' }}>
-          {(['A','B','C','D'] as const).map(letter => (
+        <div className="flex gap-4">
+          {(['A', 'B', 'C', 'D'] as const).map((letter) => (
             <button
               key={letter}
               onClick={() => !isSubmitted && onAnswerSelect(letter)}
               disabled={isSubmitted}
+              className={getCircleClassName(letter) + (isSubmitted ? ' cursor-default' : '')}
               aria-label={`Select option ${letter}`}
-              style={{
-                width: 48, height: 48, borderRadius: '50%',
-                fontFamily: "'DM Sans', system-ui, sans-serif",
-                fontSize: '16px', fontWeight: 700,
-                border: '2px solid',
-                cursor: isSubmitted ? 'default' : 'pointer',
-                transition: 'all 0.15s ease',
-                ...getCircleStyle(letter),
-              }}
             >
               {letter}
             </button>
           ))}
         </div>
-
-        {/* Result line after submission */}
-        {isSubmitted && (
-          correctAnswer === 'DISCOUNTED' ? (
-            <p style={{ fontFamily: "'DM Sans', system-ui, sans-serif", fontSize: '12px', color: '#93c5fd', marginTop: 4 }}>
-              Question discounted by Cambridge — mark awarded automatically ✓
-            </p>
-          ) : (
-            <p style={{
-              fontFamily: "'DM Sans', system-ui, sans-serif", fontSize: '12px', marginTop: 4,
-              color: selectedAnswer === correctAnswer ? '#86efac' : '#fca5a5',
-            }}>
-              {selectedAnswer === correctAnswer
-                ? `Correct ✓`
-                : `Your answer: ${selectedAnswer ?? '—'}  ·  Correct: ${correctAnswer}`}
-            </p>
-          )
-        )}
       </div>
     </div>
   );
 }
-
-// Made with Bob

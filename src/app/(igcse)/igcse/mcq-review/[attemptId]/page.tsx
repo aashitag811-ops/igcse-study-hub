@@ -8,7 +8,7 @@ import { SUBJECTS } from '@/lib/constants/subjects';
 import type { MCQQuestion, MCQPaper } from '@/lib/types/mcq.types';
 import type { McqQuestionAnswer } from '@/lib/types/database.types';
 
-// ── Helpers ────────────────────────────────────────────────────────────────────
+// ΓöÇΓöÇ Helpers ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
 
 const SUBJECT_NAME: Record<string, string> = Object.fromEntries(
   SUBJECTS.map(s => [s.code, s.name])
@@ -19,7 +19,7 @@ function paperLabel(paperId: string) {
   if (!m) return paperId;
   const [, code, seas, yr, comp, vari] = m;
   const season = seas === 'm' ? 'Feb/Mar' : seas === 's' ? 'May/Jun' : 'Oct/Nov';
-  return `${SUBJECT_NAME[code] ?? code} · ${season} 20${yr} · P${comp}V${vari}`;
+  return `${SUBJECT_NAME[code] ?? code} ┬╖ ${season} 20${yr} ┬╖ P${comp}V${vari}`;
 }
 
 function fmtDate(iso: string) {
@@ -43,7 +43,7 @@ function gradeFromPct(pct: number) {
   return 'E';
 }
 
-// ── Page ───────────────────────────────────────────────────────────────────────
+// ΓöÇΓöÇ Page ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
 
 interface AttemptMeta {
   id: string;
@@ -112,7 +112,7 @@ export default function MCQReviewPage() {
             correctAnswer: (answerMap.get(q.questionNumber)?.correct_answer as any) ?? q.correctAnswer,
           }));
         } else {
-          // No paper JSON — build minimal questions from stored answer rows
+          // No paper JSON ΓÇö build minimal questions from stored answer rows
           mergedQuestions = storedAnswers.map(a => ({
             questionNumber: a.question_number,
             questionText: '',
@@ -137,13 +137,13 @@ export default function MCQReviewPage() {
     load();
   }, [attemptId]);
 
-  // ── Loading ──────────────────────────────────────────────────────────────────
+  // ΓöÇΓöÇ Loading ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
   if (loadState === 'loading') {
     return (
       <div className="min-h-screen bg-[#FAF7F0] dark:bg-[#0A0806] flex items-center justify-center">
         <div className="text-center">
           <div className="w-12 h-12 border-4 border-[#C9A84C]/30 border-t-[#C9A84C] rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-[#7A6A4A] dark:text-[#C4B08A] font-medium">Loading review…</p>
+          <p className="text-[#7A6A4A] dark:text-[#C4B08A] font-medium">Loading reviewΓÇª</p>
         </div>
       </div>
     );
@@ -153,7 +153,7 @@ export default function MCQReviewPage() {
     return (
       <div className="min-h-screen bg-[#FAF7F0] dark:bg-[#0A0806] flex items-center justify-center">
         <div className="text-center max-w-sm">
-          <div className="text-5xl mb-4">⚠️</div>
+          <div className="text-5xl mb-4">ΓÜá∩╕Å</div>
           <h2 className="text-xl font-bold text-[#2A1F0E] dark:text-[#E2C97A] mb-2">Review not available</h2>
           <p className="text-[#7A6A4A] dark:text-[#C4B08A] mb-6 text-sm">
             This attempt may be too old (answers were not stored) or could not be loaded.
@@ -162,14 +162,14 @@ export default function MCQReviewPage() {
             onClick={() => router.push('/igcse/profile')}
             className="px-5 py-2 bg-[#C9A84C] text-[#0A0806] rounded-lg font-semibold hover:bg-[#E2C97A] transition-colors"
           >
-            ← Back to Profile
+            ΓåÉ Back to Profile
           </button>
         </div>
       </div>
     );
   }
 
-  // ── Stats ────────────────────────────────────────────────────────────────────
+  // ΓöÇΓöÇ Stats ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
   const pct = Number(attempt.percentage);
   const grade = gradeFromPct(pct);
   const gradeColor = pct >= 80 ? '#6EE7A0' : pct >= 60 ? '#E2C97A' : '#F09090';
@@ -184,7 +184,7 @@ export default function MCQReviewPage() {
   return (
     <div className="min-h-screen bg-[#FAF7F0] dark:bg-[#0A0806]">
 
-      {/* ── Fixed Header ─────────────────────────────────────────────────────── */}
+      {/* ΓöÇΓöÇ Fixed Header ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ */}
       <div className="fixed top-0 left-0 right-0 bg-[#FAF7F0] dark:bg-[#1A1510] border-b border-[#E5DCC8] dark:border-[#C9A84C]/25 shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 py-3">
 
@@ -201,7 +201,7 @@ export default function MCQReviewPage() {
 
           <div className="flex items-center justify-between pl-20 pr-2">
 
-            {/* Left — score chips */}
+            {/* Left ΓÇö score chips */}
             <div className="flex items-center gap-3 flex-wrap">
               {/* Review Mode badge */}
               <div className="px-3 py-1.5 bg-[#C9A84C]/15 dark:bg-[#2A1F0E] border border-[#C9A84C]/40 rounded-lg">
@@ -235,7 +235,7 @@ export default function MCQReviewPage() {
               </div>
             </div>
 
-            {/* Right — controls */}
+            {/* Right ΓÇö controls */}
             <div className="flex items-center gap-2">
 
               {/* Question navigator */}
@@ -292,7 +292,7 @@ export default function MCQReviewPage() {
                 <button
                   onClick={() => setZoomLevel(v => Math.max(50, v - 10))}
                   className="px-2 py-1 hover:bg-[#C4B08A]/30 dark:hover:bg-[#3D2E15] rounded font-bold text-[#2A1F0E] dark:text-[#E2C97A]"
-                >−</button>
+                >ΓêÆ</button>
                 <span className="px-2 text-xs font-medium text-[#7A6A4A] dark:text-[#C4B08A] min-w-[42px] text-center">{zoomLevel}%</span>
                 <button
                   onClick={() => setZoomLevel(v => Math.min(200, v + 10))}
@@ -321,14 +321,14 @@ export default function MCQReviewPage() {
                 onClick={() => router.push(`/igcse/mcq-exam/${attempt.paper_id}`)}
                 className="px-3 py-2 bg-[#C9A84C] hover:bg-[#E2C97A] text-[#0A0806] rounded-lg font-semibold text-sm transition-colors"
               >
-                🔄 Retry
+                ≡ƒöä Retry
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── Questions ─────────────────────────────────────────────────────────── */}
+      {/* ΓöÇΓöÇ Questions ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ */}
       <div className="pt-20 pb-32 w-full flex flex-col items-center overflow-y-auto">
         <div
           style={{
