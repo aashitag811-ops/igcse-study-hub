@@ -1,0 +1,392 @@
+{
+  "paperId": "0478_w24_qp_22",
+  "subjectCode": "0478",
+  "session": "w24",
+  "component": "22",
+  "totalMarks": 40,
+  "questionCount": 22,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to complete this sentence.",
+        "A solution to a problem may be represented using pseudocode, flowcharts or",
+        "A procedures.",
+        "B processes.",
+        "C structure diagrams.",
+        "D sub-systems.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to complete this sentence.",
+        "A pseudocode example of a selection statement is",
+        "A CALL Sorting(Value1, Value2)",
+        "B DECLARE Count : INTEGER",
+        "C IF X = 7 THEN Y 21 ENDIF",
+        "D WHILE X <> -1 DO",
+        "[1]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw one line to link each flowchart symbol to its correct purpose.\nNot all purposes will be used.\nFlowchart symbol Purpose\nsubroutine\nprocess\nflow\ndecision\nterminator",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "An algorithm needs to total 50 numbers between 1 and 100 inclusive.\nDraw a flowchart that:\n• uses a count-controlled loop from 1 to 50\n• uses an appropriate prompt to ask for a number between 1 and 100\n• totals the numbers as they are entered\n• outputs the total after the loop has completed with an appropriate message.",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Four flowchart symbols and five purposes are shown."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm is intended to sort a pre-populated one-dimensional (1D) array named",
+        "ItemList into alphabetical order using a bubble sort.",
+        "01 DECLARE ItemList : ARRAY[1:100] OF STRING",
+        "02 DECLARE Counter : STRING",
+        "03 DECLARE Limit : INTEGER",
+        "04 DECLARE Pass : INTEGER"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Swapped : BOOLEAN"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Temp : STRING"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Limit 100"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Pass 1"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Temp TRUE"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE Swapped = TRUE OR Pass <= Limit - 1 DO"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Swapped FALSE"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Counter 1 TO Limit – Pass"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF ItemList[Counter] > ItemList[Counter + 1]"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Temp ItemList[Counter]"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ItemList[Counter] ItemList[Counter + 1]"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ItemList[Counter] Temp"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Swapped TRUE"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDCASE"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Pass Pass + 1"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Counter"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Identify the line numbers of five errors in the pseudocode and suggest a correction for each\nerror.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______\nError 5 line number ______\nCorrection ______",
+          "marks": 5,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "A bubble sort algorithm can be written to include features that make it more efficient.\nExplain why the corrected bubble sort algorithm is efficient.\n\n5 Analysis is one stage in the program development life cycle.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "State one other stage in the program development life cycle.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Describe the analysis stage of the program development life cycle.\n\n6 Outline one type of verification check that could be used when inputting data.\n\n7 This pseudocode represents an algorithm.\nAn input of –1 will terminate the algorithm.\nDECLARE Count : INTEGER\nDECLARE Answer : INTEGER\nDECLARE Value : INTEGER\nREPEAT\nINPUT Value\nIF Value <> -1\nTHEN\nAnswer Value\nFOR Count Value - 1 TO 1 STEP -1\nAnswer Answer * Count\nNEXT Count\nOUTPUT Answer\nENDIF\nUNTIL Value = -1",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data:\n5, 6, –1, 20, 9, 4\nValue Count Answer\nOUTPUT",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "State the purpose of this algorithm.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Describe the problem that would be caused in this algorithm if a Value of 1, 0 or less than –1\nwas input.\n\n8 Different types of test data are used during program development to make sure a program works\nas intended. A program being developed takes as input whole numbers that are not greater than\n80.\nIdentify two items of test data to test the whole number limit of 80.\nExplain the reason for your choice of the data in each case.\nTest data 1 ______\nReason for choice ______\nTest data 2 ______\nReason for choice ______\n\n9 Consider the logic expression:\nX = (NOT P OR Q) NAND (Q XOR R)",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for this logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify the logic expression.\nQ X",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Complete the truth table for the given logic expression.\nWorking space\nP Q R X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n10 The function LENGTH(X) calculates the length of a string X\nWrite the pseudocode statements to:\n• allow a line of text to be input to an appropriate variable\n• store this line of text in a text file called Main.txt\n• calculate the length of the line of text and output the text in lower case along with its length\n• store the lower-case line of text in a text file called Lowercase.txt\nMake sure that any variables used are declared and that both text files are closed after they have\nbeen used.\n\n11 A database table called Booking28 stores details of hotel rooms and bookings for the week\nbeginning Monday 7 July 2025.\nRoomNo Type Guests Rate$ Mon Tue Wed Thu Fri Sat Sun\n101D Double 2 99.99 T T T T F T T\n102D Double 2 99.99 T T T F T T T DO NOT WRITE IN THIS MARGIN\n103F Family 4 150.00 T T T T T T T\n104S Single 1 72.50 F T T F T T T\n105S Single 1 72.50 F T T F T T T\n106T Twin 2 120.00 T T T T F T T\n201F Family 4 160.00 F F T T T T T\n202D Double 2 120.00 T F T T T T T\n203T Twin 2 120.00 T F T T T T T\n204T Twin 2 125.00 T F T F T T T\n205S Single 1 79.99 T F T T F T T\n301D Double 2 200.00 F T T F F T T\n302T Twin 2 200.00 T T T T F T T\n303P Suite 4 500.00 T T T T F T T\n304P Suite 6 700.00 F F F F T T T",
+          "marks": 4,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "State the number of fields and records in this database table.\nFields ______\nRecords ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "State the reason why the Type field would not be suitable as a primary key.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "The database uses only the data types:\n• alphanumeric\n• character\n• Boolean\n• integer\n• real\n• date/time.\nComplete the table to show the fields that could have the given data types.\nOnly one field name is required in each box and each field name must be different.\nField Data type\nalphanumeric\nBoolean\nreal\ninteger",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22d",
+          "label": "(d)",
+          "text": "Give the output that would be produced by the structured query language (SQL) statement:\nSELECT RoomNo, Type, Guests, Rate$\nFROM Booking28\nWHERE Mon <> T;\n\n12 A one-dimensional (1D) array Rooms[] contains the names of up to 20 rooms in a house.\nA two-dimensional (2D) array Dimensions[] is used to store the length, width and area of each\nroom.\nThe position of any room’s data is the same in both arrays. For example, the data in index 5 of\nDimensions[] belongs to the room in index 5 of Rooms[]\nThe variable Number stores the number of rooms for which data is to be input. There must be at\nleast 3 rooms but no more than 20.\nWrite a program that meets the following requirements:\n• allows the number of rooms for which data is required to be input, stored and validated\n• allows the name of the room and the length and width of the room, in metres, to be entered\nand stored\n• allows the area of each room to be calculated as length multiplied by width and stored as\nsquare metres rounded to two decimal places\n• calculates the average size of all the rooms by area, in square metres, rounded to two decimal\nplaces\n• finds the largest room and smallest room by area\n• outputs the names of all rooms with their dimensions and area\n• outputs the names of the largest room and smallest room by area\n• outputs the total area of the house and the average size of all the rooms by area.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 36,
+      "text": [
+        "ENDWHILE"
+      ]
+    }
+  ]
+}

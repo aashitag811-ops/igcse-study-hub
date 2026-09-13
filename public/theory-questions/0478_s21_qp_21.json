@@ -1,0 +1,327 @@
+{
+  "paperId": "0478_s21_qp_21",
+  "subjectCode": "0478",
+  "session": "s21",
+  "component": "21",
+  "totalMarks": 37,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers must have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Identify one constant you could have used for Task 1, give the value that would be\nassigned to it and its use.\nConstant ______\nValue ______\nUse ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Identify one variable and one array you could have used for Task 1.\nExplain the use of each one.\nVariable ______\nUse ______\nArray ______\nUse ______",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how you should change your program in Task 1 to allow a tutor to enter up to eight\ncandidates for the election.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm using pseudocode, programming statements or a flowchart to show how\nyour program completes these parts of Task 2:\n• Allows students to enter their unique voter number before casting their vote.\n• Checks whether the student has already voted:\n– if so, supplies a suitable message and does not allow them to vote.\n– if not, stores the unique voter number, but not their vote, in a suitable data structure.\nIt is not necessary to show parts completed in Task 1, including counting of votes for each\ncandidate.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completes these parts of Task 3:\n• Calculate the percentage of the votes that each candidate received from the number of\nvotes cast, excluding abstentions.\n• Display the name of each candidate, the number of votes and the percentage of votes\nthey received from the number of votes cast, excluding abstentions.\n• Display the total number of votes cast in the election and the number of abstentions.\nAny programming statements used in your answer must be fully explained.\n\nSection B",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick ( ) one box in each row to identify if the statement is about validation, verification or both.",
+        "Validation Verification Both",
+        "Statement",
+        "( ) ( ) ( )",
+        "ü ü ü",
+        "Entering the data twice to check if both entries are",
+        "the same.",
+        "Automatically checking that only numeric data has",
+        "been entered.",
+        "Checking data entered into a computer system",
+        "before it is stored or processed.",
+        "Visually checking that no errors have been",
+        "introduced during data entry.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Name and describe the most appropriate programming data type for each of the examples of data",
+        "given. Each data type must be different.",
+        "Data: 37",
+        "Data type name ................................................................................................................................",
+        "Data type description .......................................................................................................................",
+        "Data: Cambridge2021",
+        "Data type name ................................................................................................................................",
+        "Data type description .......................................................................................................................",
+        "Data: 47.86",
+        "Data type name ................................................................................................................................",
+        "Data type description .......................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe what happens in this algorithm.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Write the pseudocode to output the contents of the arrays Score[] and Grade[] along with\nsuitable messages.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Describe how you could change the algorithm to allow teachers to use it with any size of\nclass.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "The pseudocode algorithm shown has been written by a teacher to enter marks for the students in",
+        "her class and then to apply some simple processing.",
+        "Count ← 0",
+        "REPEAT",
+        "INPUT Score[Count]",
+        "IF Score[Count] >= 70",
+        "THEN",
+        "Grade[Count] ← \"A\"",
+        "ELSE",
+        "IF Score[Count] >= 60",
+        "THEN",
+        "Grade[Count] ← \"B\"",
+        "ELSE",
+        "IF Score[Count] >= 50",
+        "THEN",
+        "Grade[Count] ← \"C\"",
+        "ELSE",
+        "IF Score[Count] >= 40",
+        "THEN",
+        "Grade[Count] ← \"D\"",
+        "ELSE",
+        "IF Score[Count] >= 30",
+        "THEN",
+        "Grade[Count] ← \"E\"",
+        "ELSE",
+        "Grade[Count] ← \"F\"",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "Count ← Count + 1",
+        "UNTIL Count = 30"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data:\n50, 75, 99, 28, 82, 150, –1, 672, 80\nValue Diff1 Diff2\nOUTPUT",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe the purpose of the algorithm.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "The flowchart represents an algorithm.",
+        "The algorithm will terminate if –1 is entered.",
+        "START",
+        "INPUT",
+        "Value",
+        "IS",
+        "Yes",
+        "Value =",
+        "–1 ?",
+        "OUTPUT",
+        "\"Reject:",
+        "END",
+        "No",
+        "Abnormal\"",
+        "IS",
+        "Value >= 50",
+        "No",
+        "AND Value",
+        "<= 100 ?",
+        "Yes",
+        "Diff1 100 – Value",
+        "Diff2 Value – 50",
+        "IS",
+        "OUTPUT No",
+        "Diff1 < 1 OR",
+        "\"Accept: Normal\"",
+        "Diff2 < 1 ?",
+        "Yes",
+        "OUTPUT",
+        "\"Accept:",
+        "Extreme\""
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the reason ID could be used as a primary key in the table GENRE.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "State the number of records in the table GENRE.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid to display any genres with overdue books. Only display\nthe ID, GenreName and Overdue fields in order of the number of books overdue from largest\nto smallest.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A library uses a database table, GENRE, to keep a record of the number of books it has in each",
+        "genre.",
+        "ID GenreName Total Available Loaned Overdue",
+        "ABI Autobiography 500 250 250 20",
+        "BIO Biography 650 400 250 0",
+        "EDU Education 20200 10000 10200 1250",
+        "FAN Fantasy 1575 500 1075 13",
+        "GFI General Fiction 35253 23520 11733 0",
+        "GNF General Non-Fiction 25200 12020 13180 0",
+        "HFI Historical Fiction 6300 3500 2800 0",
+        "HNF Historical Non-Fiction 8000 1523 6477 0",
+        "HUM Humour 13500 9580 3920 46",
+        "MYS Mystery 26000 13269 12731 0",
+        "PFI Political Fiction 23561 10523 13038 500",
+        "PNF Political Non-Fiction 1823 750 1073 23",
+        "REF Reference 374 374 0 0",
+        "ROM Romance 18269 16800 1469 0",
+        "SAT Satirical 23567 12500 11067 0",
+        "SCF Science Fiction 36025 25000 11025 0",
+        "SPO Sport 45720 32687 13033 3256",
+        "THR Thriller 86000 46859 39141 0"
+      ]
+    }
+  ]
+}

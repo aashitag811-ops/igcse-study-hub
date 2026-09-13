@@ -1,0 +1,235 @@
+{
+  "paperId": "0478_m20_qp_22",
+  "subjectCode": "0478",
+  "session": "m20",
+  "component": "22",
+  "totalMarks": 41,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State the name of one constant that you could have used for Task 1. Give the value that\nwould be assigned to the constant. State the use of this constant.\nConstant name ______\nValue ______\nUse ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "State the name of the variable that you used to store the amount offered for the trade-in of\nan old car in Task 1. Give the most appropriate data type for this variable. Explain how your\nprogram ensured that any data entered for the trade-in offer was valid.\nVariable name ______\nData type ______\nValidation ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Snazzy Autos has decided to add another model to the cars available in Task 1. The new\nmodel is a convertible, price Rs 6.75 lakh. Explain the changes required to your program for\nTask 1.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a\nflowchart. Assume that Task 1 has been completed.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program completed Task 3. Assume that Task 2 has been completed.\nAny programming statements used in your answer must be fully explained.\n\nSection B starts on page 8.\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm has been written in pseudocode to input 50 numbers. Positive numbers are\nstored in the array PosNum[ ]. Negative numbers are stored in the array NegNum[ ].\nZeros are not included in the positive and negative counts.\nCount ← 0\nPosCount ← Count\nNegCount ← Count\nREPEAT\nINPUT Number\nIF Number > 0\nTHEN\nPosCount ← PosCount + 1\nPosNum[PosCount] ← Number\nELSE\nNegCount ← NegCount + 1\nNegNum[NegCount] ← Number\nENDIF\nCount ← Count + 1\nUNTIL Count >= 50\nOUTPUT \"There are \", PosCount,\" positive numbers\"\nOUTPUT \"There are \", NegCount,\" negative numbers\"\nDescribe the error in the pseudocode and write the correction for this error.\nError ______\nCorrection ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The algorithm needs to be changed so there is no limit to how many numbers can be input.\nWhen the number 9999 is input, the algorithm stops more numbers being input and outputs\nthe results. The number 9999 is not to be stored nor counted as a positive number.\nExplain how you would change the algorithm.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete a trace table for each set of input data:\nSet 1: 88, 74, 60\nTotal Average\nMark1 Mark2 Mark3\nOUTPUT\nSet 2: 20, 33, 67\nTotal Average\nMark1 Mark2 Mark3\nOUTPUT\nSet 3: 79, 91, 70\nTotal Average\nMark1 Mark2 Mark3 OUTPUT",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "It has been decided to include an extra grade of Merit when the average of the marks is 60%\nor more, and less than 80%. Describe the changes that will need to be made to the flowchart.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 3,
+      "text": [
+        "This flowchart inputs student percentage marks for three examinations. If the average of these",
+        "marks is 80% or over then a distinction grade is awarded. If the average of these marks is less",
+        "than 40% then a fail grade is awarded. Otherwise a pass grade is awarded.",
+        "START",
+        "INPUT",
+        "Mark1,Mark2,Mark3",
+        "Total Mark1 +",
+        "Mark2 + Mark3",
+        "Average Total / 3",
+        "IS",
+        "OUTPUT",
+        "Yes",
+        "Average >= 80 ?",
+        "\"Distinction\"",
+        "No",
+        "IS",
+        "Yes",
+        "OUTPUT",
+        "Average < 40 ?",
+        "\"Fail\"",
+        "No",
+        "OUTPUT",
+        "\"Pass\"",
+        "END"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain why validation and verification checks are needed when data is input.",
+        "Include an example of each type of check in your answer.",
+        "[4]",
+        "Question 5 starts on page 14."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Select the most appropriate data type for each field from the four types shown. State the\nreason why you chose the data type.\nSIZE data type ______\nReason ______\nSHAPE data type ______\nReason ______\nWOOD data type ______\nReason ______\nPRICE data type ______\nReason ______\nSOLD data type ______\nReason ______",
+          "marks": 5,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Complete the query-by-example grid below to only display the price of small walnut\nboxes.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "The query-by-example grid from part (b)(i) needs to be changed to show both walnut\nand beech boxes and display the wood used. Only one column needs to be changed.\nWrite the changed column.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A database table, BOX, is used to keep a record of boxes made and sold by a craftsman. Boxes",
+        "are categorised by:",
+        "• SIZE – small, medium or large",
+        "• SHAPE – brief description for example ‘star shaped’",
+        "• WOOD – maple, beech, walnut or ebony",
+        "• PRICE – price in $",
+        "• SOLD – whether the box is sold or not.",
+        "A database management system uses these data types:",
+        "Text Number Currency Boolean"
+      ]
+    }
+  ]
+}

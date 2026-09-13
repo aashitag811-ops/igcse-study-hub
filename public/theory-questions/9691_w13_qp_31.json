@@ -1,0 +1,646 @@
+{
+  "paperId": "9691_w13_qp_31",
+  "subjectCode": "9691",
+  "session": "w13",
+  "component": "31",
+  "totalMarks": 90,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Convert the following infix expressions into reverse Polish notation:\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "(a + b) / 7",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "2 / (3 * Z + 5)",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "What is the value of this reverse Polish expression:\nx y + p q - /\nfor x = 3, y = 9, p = 5 and q = 1 ?\nShow your working.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A binary tree can be used to represent an expression or a statement.\nFor\nExaminer's\nUse\nE *\nM ^\nc 2\nThe diagram shows the binary tree for the infix statement:\nE = M * c ^ 2",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain how the infix form for this statement is produced using a tree traversal.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "What is the reverse Polish notation for this statement?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "Explain how the reverse Polish notation for the statement is produced using a tree\ntraversal.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Describe three advantages that a relational database would have over the use of flat\nfiles.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "What is the relationship between runner and race?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "What is the relationship between club and race?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A database solution is to be developed.\nTwo of the tables are RUNNER and RACE.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Draw an entity-relationship (E-R) diagram showing a database design which can\nbe produced so that the runner and race data are fully normalised.",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Explain how the relationships are implemented.\nFor\nExaminer's\nUse",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The following table design is suggested for RUNNER.\nRUNNER(MemberID, RunnerName, RunnerDOB, ClubName, ClubAddress)\nThis is poorly designed.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Is this table in First Normal Form (1NF)?\nExplain.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Is this table in Second Normal form (2NF)?\nExplain.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2diii",
+              "label": "(iii)",
+              "text": "The table is not in Third Normal Form (3NF).\nExplain.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2div",
+              "label": "(iv)",
+              "text": "Using only the attributes given in the RUNNER table above, produce a new design\nwhich is fully normalised.\nThe table descriptions should be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "Explain why all tables in the final design should be fully normalised.\nFor\nExaminer's\nUse",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "The table to store the race data has the following design:\nRACE(RaceDate, RaceStartTime, StartVenue, Distance,\nOrganisingClubName)\nWrite a Data Manipulation Language (DML) query to report all races after the 1st\nJanuary 2013 which are less than 10km. Display the race date and organising club\nname only.\nUse the keywords SELECT, FROM, WHERE.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "Cross country runners take part in races.",
+        "For",
+        "Examiner's",
+        "Use",
+        "• A runner must be registered with one club only and club names are unique.",
+        "• A club has runners; each runner has a unique national MemberID.",
+        "• Each race is organised by a club and the Club Secretary records which runners are",
+        "entered for each race.",
+        "• Runners may enter any race.",
+        "• There is only one race on any one day.",
+        "At present each club records the data for the competition races it organises. The data is",
+        "stored in flat files."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Most modern computers are designed using Von Neumann architecture.\nExplain what is meant by Von Neumann architecture.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Convert the hexadecimal number 7A to denary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Convert the binary number 0101 1100 to hexadecimal.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "Why do computer scientists often write binary numbers in hexadecimal?\nFor\nExaminer's\nUse",
+              "marks": 1,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The diagram shows a program loaded into main memory starting at memory address\n7A Hex.\nMain memory\n(contents shown in\nAddress Hex.)\n2150\n7A\nA351\n7B\nA552\n7C\nFFFF\n7D\n003C",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "How many bits are used for each main memory location?\n\nThe trace table below is used to show how the contents of the special-purpose\nregisters change as the program is executed.\nThe steps in the fetch stage of the fetch-execute cycle are shown in the first column\nusing register transfer notation. (For example, MAR ← [PC] means the content of the\nProgram Counter is copied to the Memory Address Register.)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Complete the trace table for the fetching of the first program instruction (2150):\n• Show the changing contents of the registers\n• Put a tick in the Address bus/Data bus column to show when the signals on\nthat bus change.\nSpecial purpose registers\nFetch Buses\n(Contents shown in Hex.)\nstage\nPC MAR MDR CIR Address bus Data bus\n7A\nMAR ← [PC]\nPC ← [PC] + 1\nMDR ← [[MAR]]\nCIR ← [MDR]",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The following table shows some of a processor’s instruction set in assembly language.\nFor\nExaminer's\nUse\nInstruction\nExplanation\nOp Code Operand\nDirect addressing. Load the contents of the given address\nLDD <address>\nto ACC\nIndirect addressing. At the given address is the address to\nLDI <address>\nbe used. Load the contents of this second address to ACC\nLIX <address>\nLoad the contents of the address to the Index register (IX)\nIndexed addressing. Form the address as <address> +\nLDX <address>\nthe contents of IX. Copy the contents of this address to ACC\nThe following program is to be executed. Shown are:\n• the first four instructions only of this program\n• the memory locations which are accessed by this program.\nAddress Main memory\nLIX 200\nLDD 201\nLDI 201\nLDX 201\nComplete the trace table below for the first four program instructions.\nShow each change in the contents of the registers.\nRegister\nAccumulator (ACC) Index Register (IX)\nInstruction\nLIX 200\nLDD 201\nLDI 201\nLDX 201",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Explain the difference between a class and an object.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The following scenario is to be implemented with object-oriented programming.\nFor\nExaminer's\nUse\nA library has resources (RESOURCE) available for lending out to borrowers. Resources\ninclude books (BOOK), and recordings (RECORDING). Recordings are available for\neither films (FILM) or music (MUSIC) CDs.\nData stored will include:\n• library ID for every item\n• author for books\n• release date for music CDs and films\n• title for every available item\n• number of tracks for CDs\n• running time for films\n• whether or not on loan\nComplete the class diagram showing the classes and properties only for the data given\nabove.\nRESOURCE\nLibraryID: INTEGER",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Explain what is meant by encapsulation.\nFor\nExaminer's\nUse",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Object-oriented programming is one programming paradigm.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the operation of a stack data structure.\nFor\nExaminer's\nUse\n\nA stack is to be implemented to manage the spooled print jobs sent to a network printer. A\njob reference and the user ID of the network account are recorded for each print job.\nThe stack is implemented using the following user-defined data type and variables.\nTYPE Stack\nJobReference : STRING\nUserID : STRING\nENDTYPE\nIdentifier Data Type Description\nStores the job reference and user ID\nSpoolJob ARRAY[1000] OF Stack\nfor each print job\nStores the index position of the print\nTopOfStack INTEGER\njob currently at the top of the stack\nStores the job reference of the new\nNewReferenceNo STRING\nprint job added to SpoolJob\nStores the user ID of the new print\nNewUserID STRING\njob added to SpoolJob",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The diagram shows the state of SpoolJob and TopOfStack after three print jobs\nwere received from users LEWIS, CHI and SINGH (in that order), a print job was sent\nto the printer, then a new print job received from user HARRIS.\nSpoolJob\n.UserID .JobReference\n1000\nTopOfStack\n2 SINGH HARRIS 17231 17856\n1 CHI 17843\n0 LEWIS 17805",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "What is the value of:\nSpoolJob[2].UserID?\nSpoolJob[TopOfStack - 1].JobReference?",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Spooling a new print job is to be implemented with a procedure PushJob.\nFor\nExaminer's\nUse\nShown below is the incomplete pseudocode for the PushJob procedure.\nUsing the variables and user-defined type given, fill in the missing pseudocode.\nPROCEDURE PushJob\nIF\nTHEN\nOUTPUT \"Stack is already FULL\"\nELSE\nINPUT NewUserID\nTopOfStack ←\nSpoolJob[TopOfStack].JobReference ← NewReferenceNo\nENDIF\nENDPROCEDURE",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Processing a print job is to be implemented with a PopJob procedure.\nComplete the pseudocode for this PopJob procedure.\nPROCEDURE PopJob\nIF TopOfStack =\nTHEN\nOUTPUT \" \"\nELSE\nPROCESS SpoolJob[TopOfStack]\nENDIF\nENDPROCEDURE",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "Explain why the choice of a stack data structure for this application is a poor choice.\nFor\nSuggest an alternative data structure. Examiner's\nUse",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A PC operating system uses a file allocation table (FAT) to manage its hard disk\nsecondary storage.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Describe what is meant by a FAT.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "Explain how the contents of the FAT change when a file is deleted from the hard\ndisk.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "The processor receives an interrupt. This triggers the following sequence of steps.\nFor\nExaminer's\nUse\n1. Save the contents of the Program Counter on the\n2. Also save\n3. Load and run the appropriate\n4. Restore what was saved at step 2\n5. Restore the\n6. Continue execution of the interrupted process\nComplete the statements above.",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Interrupts can be allocated priorities.\nWhile execution is occurring at step 3, a higher priority interrupt is received.\nExplain what additional steps must now be added to the sequence in (b)(i). State\nwhere in the sequence these additions occur.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "One application is the sending of payment data using a debit/credit card for an online\npurchase.\nState two other applications where encryption is used.\nDescribe the reason for encrypting the data for each application.\nApplication 1\nReason\nApplication 2\nReason",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Explain the terms encryption algorithm and encryption key.\nFor\nExaminer's\nUse\nEncryption algorithm\nEncryption key",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Asymmetric encryption uses both a public key and a private key.\nExplain how they work together to encrypt and decrypt a message.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Authorisation and authentication are processes designed to protect the computer\nsystem and data.\nGive one technique used for each.\nAuthorisation\nAuthentication\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "Encryption of data is widely used in computing."
+      ]
+    }
+  ]
+}

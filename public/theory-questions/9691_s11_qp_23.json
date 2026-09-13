@@ -1,0 +1,427 @@
+{
+  "paperId": "9691_s11_qp_23",
+  "subjectCode": "9691",
+  "session": "s11",
+  "component": "23",
+  "totalMarks": 75,
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Draw a suitable layout for the screen.\n\nJodelle first produces her solution using pseudocode. She wants the password to be\n'poppy', the name of her cat.\nAttempt ← 1\nREPEAT\nINPUT Password\nAttempt ← Attempt +1\nUNTIL Password = “poppy” OR Attempt = 3\nIF Password = “poppy”\nTHEN\nOUTPUT “password correct”\nELSE\nOUTPUT “no valid password entered”\nENDIF\nJodelle needs to check whether this pseudocode works.\nFor\nExaminer's\nUse",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Complete the final row of the trace table for this pseudocode using poppy as input.\nPassword\nPassword Attempt\nAttempt Password = ''poppy'' OR Output\n=''poppy'' = 3\nAttempt = 3\npoppy\nTrue\nFalse\nTrue",
+          "marks": 1,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Complete the trace table for this pseudocode code using cat as first input, followed by\npoppy as second input.\nPassword\nPassword Attempt\nAttempt Password = ”poppy” OR Output\n= ”poppy” = 3\nAttempt = 3",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "There is an error in this pseudocode.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "One way to correct this is to change the first line. Rewrite this line to make the\npseudocode correct.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "State the type of error that Jodelle made.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Using the name of Jodelle’s cat was not a good choice of password.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "Give two features to consider when choosing a password which gives greater\nsecurity.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Suggest a better password that Jodelle could use.",
+              "marks": 1,
+              "type": "suggest",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "Jodelle wants to output a comment after each failed password entry.\nIf Attempt = 1 she wants to output “First try is wrong. Please try again”\nOn the second try she wants to output “Password still wrong. One more chance”\nOn the third try she wants to output “No valid password entered”\nIn a high-level language write a program for this idea using a CASE or SELECT\nstatement.\nLanguage\nCode",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "Jodelle needs to write program code that will check the password to her personal computer.",
+        "For",
+        "It checks each attempt to enter the password and closes the screen after three wrong Examiner's",
+        "Use",
+        "attempts.",
+        "She wants the log-in screen to display:",
+        "• a request to enter the password",
+        "• space to enter the password",
+        "• how many attempts have been made",
+        "• a message if the log-in has been unsuccessful",
+        "• a means of returning to the previous screen"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "What value should Amber give each element?",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Define the array and initialise each element of the array using a high-level\nprogramming language of your choice.\nLanguage\nCode",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Write additional code which will search the contents of the array for a particular track\nname. Output the position of this track name in the array. (You may assume the track\nname exists in the array).",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "As her collection grows, Amber decides to hold more information about each track. The\nFor\ndata for each track is structured as a record. Examiner's\nUse\nEach record contains the following data:\n• unique track ID (a whole number between 1 and 150)\n• track name\n• date bought\n• cost\n• solo artist (yes/no)\nComplete the following table.\nField Name Data Type Size of Field (bytes)\nTrackID\nTrackName\nDateBought\nCost\nSoloArtist",
+          "marks": 10,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "Amber stores the names of her favourite song tracks in an array. She has 56 track names",
+        "For",
+        "at the moment and expects to reach 150. She defined the array as one-dimensional, size Examiner's",
+        "Use",
+        "150 and will store strings. She then initialised each element of the array."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the structure diagram to show the modules that will be needed.\nWAGES\nPRINT",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The printout will be different for those staff who receive cash and those who have their\nearnings paid directly to a bank account. Add the next level to the print module.\nPRINT",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Describe two programming techniques that should be used to help other programmers\nmaintain the programming code.\nTechnique 1\nTechnique 2",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "For each employee the hours worked module collects data for five days. If they do not\nFor\nwork on a particular day a zero is entered. Each person can work up to 9 hours a day Examiner's\nUse\nfor up to 5 days a week. The hours are added up; no-one may work more than 40\nhours.\nWrite five sets of test data which test the module for different inputs/outcomes.\nFor each set of test data, give a reason for your choice.\nDay 1 Day 2 Day 3 Day 4 Day 5\nTest 1\nReason\nTest 2\nReason\nTest 3\nReason\nTest 4\nReason\nTest 5\nReason",
+          "marks": 10,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "Explain how it is possible to use the same variable name for different variables in\nFor\ndifferent modules. Examiner's\nUse",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Explain how this can help when modules are programmed separately.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "Kris has written a program that will work out the wages for her staff. The main steps for",
+        "For",
+        "each employee are: to work out the hours worked, work out the total earnings, work out tax Examiner's",
+        "Use",
+        "and finally print out how much will be taken home."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "What value is returned by calc(1)?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "What value is returned by calc(3)?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "What happens if the parameter passed is -1?",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "What changes will need to be made to the pseudocode to address the problem in",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "?",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Rewrite this function in pseudocode as an iterative function.\nFor\nExaminer's\nUse\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The following pseudocode is a recursive function where n is an integer.",
+        "For",
+        "Examiner's",
+        "Use",
+        "FUNCTION calc(n)",
+        "IF n = 1",
+        "THEN",
+        "calc ← 1",
+        "ELSE",
+        "calc ← n * calc(n-1)",
+        "ENDIF",
+        "RETURN"
+      ]
+    }
+  ]
+}

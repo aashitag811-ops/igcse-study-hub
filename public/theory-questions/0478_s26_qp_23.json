@@ -1,0 +1,409 @@
+{
+  "paperId": "0478_s26_qp_23",
+  "subjectCode": "0478",
+  "session": "s26",
+  "component": "23",
+  "totalMarks": 46,
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box to complete this sentence.",
+        "A standard method of solution used for adding together a set of values during iteration is",
+        "A counting.",
+        "B searching.",
+        "C sorting.",
+        "D totalling.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box to identify a programming data type used to store any combination of letters",
+        "and numbers.",
+        "A char",
+        "B Boolean",
+        "C string",
+        "D real",
+        "[1]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Identify the type of test data in each description.",
+          "marks": null,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Data that falls within the accepted parameters of a validation check and is accepted.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Data that is the highest or lowest value to be accepted.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain the purpose of a check digit and give an example of where it could be used.\npurpose ______\nexample ______\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000003 * DFD",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Write the pseudocode for an algorithm to perform a validation check and a verification check\non a new password to meet the following criteria:\n1 Input a new password.\n2 If the password is less than 10 characters in length, ask for it to be input again until it is\nat least 10 characters in length.\n3 If the password is at least 10 characters in length, ask for it to be input a second time.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "If both inputs of the new password match, output a password accepted message."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "If both inputs of the new password do not match, go back to step 1 and ask for the new",
+        "password to be input for the first time.",
+        "Use appropriate input prompts and output messages to make the requirements clear to",
+        "the user.",
+        "Do not declare any arrays or variables for this algorithm.",
+        "[6]",
+        "© Cambridge University Press & Assessment 2026 0478/23/M/J/26 [Turn over",
+        "Trace ID: PC-3BAE9F414C",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "0478/23 Question Paper June 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 0478/23 Question Paper June 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000004 * DFD",
+        "4 This pseudocode algorithm is intended to store the names of up to 250 runners who finish a race.",
+        "The names of the runners are stored in a one‑dimensional (1D) array Runners[] and their time",
+        "in seconds in a one‑dimensional (1D) array Times[]. After the time for each runner has been",
+        "entered into the array, the name of the runner and the time of the runner in minutes and seconds",
+        "are displayed for verification.",
+        "Each runner takes 60 minutes or less to finish the race. A time of 60 minutes would be entered as",
+        "3600 seconds.",
+        "01 DECLARE Runners : ARRAY[1:250] OF STRING",
+        "02 DECLARE Times : ARRAY[1:250] OF INTEGER",
+        "03 DECLARE Index : INTEGER",
+        "04 DECLARE RunName : STRING",
+        "05 DECLARE RunTime : STRING"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE RunMins : INTEGER"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE RunSecs : INTEGER"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Index 1 TO 250"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter a runner’s name and then time (in seconds) \""
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT RunName"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT RunTime"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "RunMins DIV(RunTime, 60)"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "RunSecs DIV(RunTime, 60)"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Runner’s Name: \", RunName"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Time: \", RunMins, \" Minutes \", RunSecs, \" Seconds\""
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Runners[Index] RunMins"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Times[Index] RunTime"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [
+        {
+          "id": "18a",
+          "label": "(a)",
+          "text": "Identify the line numbers of four errors in the pseudocode and suggest corrections.\nerror 1 line number ______\ncorrection ______\nerror 2 line number ______\ncorrection ______\nerror 3 line number ______\ncorrection ______\nerror 4 line number ______\ncorrection ______\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000005 * DFD",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "The algorithm is intended to work for positive finish times that are 3600 seconds or less, but\nany number of seconds can currently be input.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "18bi",
+              "label": "(i)",
+              "text": "Write the pseudocode statements to show how you would change the algorithm so that\nonly times in the correct range could be input. The time taken to finish the race needs to\nbe input again until valid data is input.\nClearly state where in the original algorithm your new statements would be placed.\nDo not rewrite the whole algorithm.",
+              "marks": 5,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "18bii",
+              "label": "(ii)",
+              "text": "Identify one other possible problem with the algorithm.\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26 [Turn over\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000006 * DFD\n5 This flowchart represents an algorithm.\nSTART\nPassCount 0\nFailCount 0\nCount 0\nINPUT Size\nYes No\nIS Size <\n50.0 ?\nPassCount PassCount + 1 FailCount FailCount + 1\nCount Count + 1\nNo\nIS Count = 9\nYes\nOUTPUT \"Number\npassed: \", PassCount\nOUTPUT \"Number\nfailed: \", FailCount\nSTOP\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000007 * DFD",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "18a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm, using the input data:\n49.8, 48.7, 62.5, 49.9, 30.0, 58.2, –12.5, 50.0, 26.7, –49.2, 58.9\nPassCount FailCount Count Size OUTPUT",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "Describe how you would change the flowchart to prevent negative numbers from being input.\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26 [Turn over\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000008 * DFD\n6 The string \"I learnt to program in computer science\" will be stored in the\nvariable Fact",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18a",
+          "label": "(a)",
+          "text": "Complete the pseudocode algorithm to:\n• calculate and output the length of the string stored in the variable Fact\n• output, in upper case, the string stored in the variable Fact\nFact \"I learnt to program in computer science\"",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "Write the pseudocode statements to use a string function to output the word program taken\nfrom the string stored in the variable Fact\nDo not declare any variables.\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000009 * DFD\n7 Consider the logic expression:\nX is 1 if (P = NOT 1 AND Q = 1) XOR (Q = 1 NOR R = 1)",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for the given logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify this logic expression.\nQ X",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "Complete the truth table from the given logic expression.\nworking space\nP Q R X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26 [Turn over\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000010 * DFD\n8 A database table OPTION_SUBJECTS stores some data about a number of subjects taken by\nstudents in a college.\nfield description\nSubjectCode a code such as CSIG01 to represent the subject and level\nSubjectName the name of the subject, for example computer science\nLevel\nthe level of the course, for example IGCSE or A Level\nCourseWork\nwhether or not coursework is included as part of the assessment\nPracticalExams\nthe number of practical exams taken during the course\nTheoryExams the number of theory exams taken during the course\nlength of the course, for example 1 or 2, representing number\nCourseLength\nof years\nthe minimum number of students required for the course to run,\nMinimumClassSize\nfor example 10\nthe maximum number of students admitted to each class, for\nMaximumClassSize\nexample 30",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18a",
+          "label": "(a)",
+          "text": "Identify the most appropriate field in OPTION_SUBJECTS for a primary key.\nGive one reason for your choice.\nprimary key field ______\nreason ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "Identify one appropriate field from OPTION_SUBJECTS for each of the given data types.\nState one reason for your choice in each case.\ninteger data type ______\nreason ______\nBoolean data type ______\nreason ______\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000011 * DFD",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18c",
+          "label": "(c)",
+          "text": "Complete the structured query language (SQL) statement to list only the subject code,\nsubject name and level for the minimum class size of less than 10. The results should be\nlisted in order of subject code, from the lowest to the highest.\nSELECT ______\nFROM ______\nWHERE ______\n______ ;\n\n9 Outline two techniques that can be used to create a maintainable program.\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26 [Turn over\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000012 * DFD\n10 Five rivers show signs of pollution and are to be monitored daily for a period of 30 days.\nThe one‑dimensional (1D) array RiverNames[] stores the names of the rivers.\nThe two‑dimensional (2D) array RiverStats[] stores the daily measurement of biological\noxygen demand (BOD) for each river.\nThe two‑dimensional (2D) array DaysCount[] stores the number of days each river is classed\nas moderately polluted and the number of days each river is classed as highly polluted.\nThe position of the data for any river is the same in all three arrays. For example, the data in\nindex 2 of RiverStats[] belongs to the river in index 2 of RiverNames[]\nWrite a program for the following requirements:\n• Input and store the names of the rivers in the array RiverNames[]\n• For each river, input and store in the array RiverStats[], the daily BOD in milligrams per\nlitre (mg / L) on each of the 30 days.\n• Once all the inputs for the 30 days have been completed, the following statistics are\ncalculated, and when appropriate, stored:\n◦ The average daily reading for each river, rounded to two decimal places.\n◦ The number of days in which the BOD reading was between 2 mg / L and 8 mg / L\ninclusive (moderate pollution) for each river.\n◦ The number of days in which the BOD reading was greater than 8 mg / L (high pollution)\nfor each river.\n• Output for each river, the average daily BOD readings, the number of days with moderate\npollution and the number of days with high pollution.\n• Find and output the name of the river that has the most days with high pollution.\nThe program does not need to identify more than one river with an equally high pollution reading.\nYou must use pseudocode or program code and add comments to explain how your code works.\nDo not declare arrays, variables or constants for this algorithm; assume this has been done.\nYou will need to initialise the arrays and any variables used for counting or totalling before they\nare used.\nAll inputs and outputs must contain suitable messages.\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000013 * DFD\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26 [Turn over\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000014 * DFD\n\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000015 * DFD\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (Cambridge University Press & Assessment) to trace copyright holders, but if any items requiring clearance\nhave unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in our Copyright\nAcknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live\nexamination series.\nCambridge International Education is the name of our awarding body and a part of Cambridge University Press & Assessment, which is a department of the\nUniversity of Cambridge.\n© Cambridge University Press & Assessment 2026 0478/23/M/J/26\nTrace ID: PC-3BAE9F414C\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/23 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/23 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 41,
+      "text": [
+        "NEXT Index"
+      ]
+    }
+  ]
+}

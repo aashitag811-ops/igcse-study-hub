@@ -1,0 +1,229 @@
+{
+  "paperId": "0478_m18_qp_22",
+  "subjectCode": "0478",
+  "session": "m18",
+  "component": "22",
+  "totalMarks": 33,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State the name and data structure that you have used to record student names in Task 1.\nName ______\nData structure ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "State the name of one constant and the name of one variable that you could have used\nin your programmed solution.\nState the value that would be assigned to the constant. State the data type for the\nvariable. Explain what each one would be used for in your programmed solution.\nConstant name ______\nValue ______\nUse ______\nVariable name ______\nData type ______\nUse ______",
+              "marks": 6,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how you would change your program for Task 2 if the maximum group size for each\nsubject is increased to 25.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements\nor a flowchart.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program calculates the total number of spare places in Task 3. Any\nprogramming statements shown in your answer must be fully explained.\n\nSection B",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Find the four errors in the pseudocode and suggest corrections.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": 4,
+          "type": "suggest",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Show, using pseudocode, how you would change the corrected algorithm to print out any\nnumbers between 100 and 200 inclusive.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "An algorithm has been written in pseudocode to input some numbers and print out any numbers",
+        "that are greater than or equal to 100. The number 999 stops the algorithm.",
+        "INPUT Number",
+        "WHILE NUMBERS <> 999 DO",
+        "IF Number > 100 THEN PRINT Number ENDIF",
+        "ENDWHILE",
+        "PRINT Number"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This flowchart inputs the weight in kilograms of a passenger stepping into a lift. The lift can take a",
+        "maximum of eight passengers or a maximum weight of 640 kilograms.",
+        "START",
+        "totalWeight 0",
+        "totalNumber 0",
+        "INPUT Weight",
+        "totalWeight totalWeight + Weight",
+        "totalNumber totalNumber + 1",
+        "Is",
+        "Yes",
+        "totalWeight",
+        "> 640?",
+        "No",
+        "Is",
+        "No",
+        "Yes",
+        "totalNumber",
+        "> 8?",
+        "OUTPUT 'Lift",
+        "overload, step",
+        "out'",
+        "END",
+        "Complete the trace table for the passenger input data:",
+        "50, 70, 65, 100, 95, 50, 55, 85, 70, 75",
+        "Weight totalWeight totalNumber OUTPUT",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program checks if the weight of a baby is at least 2 kilograms.",
+        "Give, with reasons, two different values of test data that could be used for the baby’s weight.",
+        "Each reason must be different.",
+        "Value 1 .............................................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "Value 2 .............................................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain the difference between the programming concepts of sequence and selection. Include",
+        "an example of a programming statement for each concept in your explanation.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Identify the four fields required for the database. Give each field a suitable name and data\ntype. Explain why you chose the data type for each field.\nField 1 Name ______ Data type ______\nExplanation ______\nField 2 Name ______ Data type ______\nExplanation ______\nField 3 Name ______ Data type ______\nExplanation ______\nField 4 Name ______ Data type ______\nExplanation ______",
+          "marks": 8,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Explain why none of these fields could be used as a primary key.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Using the query-by-example grid below, write a query to identify the silver bracelets. Only\ndisplay the number in stock and the price.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A database table, JEWEL, is used to keep a record of jewellery for sale in a shop. Each item of",
+        "jewellery can be made of silver, platinum or gold metal. The shop stocks rings, bracelets and",
+        "necklaces. The number in stock and the price is also stored."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "paperId": "9691_s12_qp_33",
+  "subjectCode": "9691",
+  "session": "s12",
+  "component": "33",
+  "totalMarks": 86,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A database is designed to store data about all aircraft owned by an airline and the flight",
+        "For",
+        "schedules. Examiner's",
+        "Use",
+        "The following table AircraftSchedule was a first attempt at part of the database design.",
+        "Table: AircraftSchedule",
+        "AircraftID Type YearBought FlightCode Departure Arrival",
+        "1 747 1998 2032 Delhi Singapore",
+        "1187 Singapore Melbourne",
+        "1326 Melbourne Tokyo",
+        "1556 Tokyo Delhi"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "747-400 2007 1426 Bristol Amsterdam",
+        "1427 Amsterdam Bristol",
+        "5564 Bristol Rome",
+        "7865 Rome Istanbul"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Explain why the table is not in First Normal Form (1NF).",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Explain your answer in terms of the data above.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The design is changed to the following:\nAircraft (AircraftID, Type, YearBought)\nSchedules (FlightCode, Departure, Arrival)\nUsing the data given in the original table:",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Show what data is now stored in the table Aircraft.\nTable: Aircraft\nAircraftID Type YearBought",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "How many records are now stored in table Schedules?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Explain what is meant by a primary key.\nFor\nExaminer's\nUse",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "What is the primary key of table Aircraft?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "Explain what is meant by a foreign key.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "State what foreign key needs to be added to the Schedules table design.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "An additional table Airport is designed as shown:\nAirport (AirportName, Country, NoOfRunways)\nExplain why this table is in Third Normal Form (3NF).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3f",
+          "label": "(f)",
+          "text": "The normalisation process is designed to eliminate data inconsistency.\nExplain what is meant by data inconsistency.\n\n2 A binary pattern can be used to represent a variety of different data used in a computer\nFor\nsystem. Examiner's\nUse",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The pattern could represent an ASCII character code.\nThe table shows part of the ASCII code table.\nASCII Code Table\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90\nConsider the binary pattern: 0100 1110.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "What character is represented by this binary pattern?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "What is the hexadecimal for this binary pattern?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "A computer system needs to be able to store positive and negative integers.\nTwo possible representations are:\n• sign and magnitude\n• two’s complement.\nDescribe two advantages of using two’s complement.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "The integers -13 and +59 are to be added using two’s complement addition.\nShow your working.\n-13\n+59 +",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Real numbers are to be stored in floating point representation with:\nFor\nExaminer's\nUse\n• 8 bits for the mantissa, followed by\n• 4 bits for the exponent\n• two’s complement used for both the mantissa and the exponent",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Consider the binary pattern:\n1 0 1 0 1 0 0 0 0 1 1 1\nWhat number is this in denary? Show your working.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Explain how you can recognise that the above pattern is normalised.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3ciii",
+              "label": "(iii)",
+              "text": "Show the binary pattern for the smallest negative number (negative sign and large\nmagnitude) which can be stored using a normalised 12-bit floating point\nrepresentation.\nMantissa:\nExponent:\nWork out its denary value.\nDenary: \n3 A linked list is to be implemented with the data structures described in the variable table.\nFor\nThe countries are to be organised in alphabetical order. Examiner's\nUse\nIdentifier Data Type Description\nCountry ARRAY[250] OF STRING\nStores the country names\nArray index which points to the next\nPointer ARRAY[250] OF INTEGER\ncountry in the linked list\nArray index pointing to the first\nHeadPointer INTEGER\ncountry in the linked list\nHeadPointer\nCountry Pointer\nSWEDEN\n1 1\nDENMARK\n2 2\nINDIA\n3 3\nCOLUMBIA",
+              "marks": 3,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "747-400 2007 1090 London New York",
+        "1165 New York Boston"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "4",
+        "BANGLADESH 4"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "5",
+        "NEPAL"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "6",
+        "MAURITIUS"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Complete the above diagram showing all the pointer values for this linked list.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The following pseudocode uses the linked list to output all country names which are\nFor\nalphabetically before a requested country. Examiner's\nUse\nFor example, the user inputs NEPAL – the pseudocode outputs all the values which\nare alphabetically before NEPAL.\nFill in the gaps in the pseudocode.\nINPUT RequestedValue\nIF\nTHEN\n//special case – the list is empty ...\nOUTPUT “Linked list is empty”\nELSE\nCurrent ← HeadPointer\nREPEAT\nIF Country[Current] < RequestedValue\nTHEN\nOUTPUT Country[Current]\nCurrent ←\nELSE\nNoMoreValues ← TRUE\nENDIF\nUNTIL NoMoreValues = TRUE",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "An algorithm is to be designed which inputs a requested country and outputs all the\nFor\nvalues in the linked list after this country. Examiner's\nUse\nDescribe how, using the pointers, this algorithm works.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "A linked list is maintained for capital cities using arrays Capital and Pointer.\nFor\nExaminer's\nAn algorithm is required to delete a value from the linked list.\nUse\nThe algorithm will use the following variables:\nIdentifier Data Type Description\nCurrent INTEGER\nArray index for the current capital\nPrevious INTEGER\nArray index for the previous capital\nThe following diagram shows the first three capitals in the linked list.\nWe are about to delete CANBERRA.\nThe list has been searched from the HeadPointer position until the capital to be\ndeleted, CANBERRA, is found.\nHeadPointer\nBERLIN 3 CANBERRA 7 DHAKA 9\nEtc.\n5 3 7\nPrevious = 5 Current = 3\nDescribe the steps in the algorithm to delete CANBERRA from the linked list.\n(Do not attempt to write the complete algorithm.)\n\n4 Expressions can be written in either infix or reverse Polish notation.\nFor\nExaminer's\nUse",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Evaluate this reverse Polish expression:\n9 6 – 5 *",
+          "marks": 1,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Write the following infix expressions in reverse Polish.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "(c + 5)/(b - c)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "3 * 9 - 6 / 2",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Describe one benefit of storing an expression in reverse Polish.",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "An expression in reverse Polish can be evaluated on a computer system using a stack.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7di",
+              "label": "(i)",
+              "text": "Describe the operation of a stack.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7dii",
+              "label": "(ii)",
+              "text": "A stack is to be implemented as an array with an integer variable to point to the\n‘top of stack’ index position.\nState whether this is a static data structure or a dynamic data structure and explain\nwhy.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7diii",
+              "label": "(iii)",
+              "text": "The reverse Polish expression 4 7 * 2 + 5 / is to be evaluated using a stack.\nFor\nExaminer's\nThe first available location on the stack is 1.\nUse\nShow how the contents of the stack change as this expression is evaluated.\n\n5 (a) Define what is meant by the term computer simulation.\nFor\nExaminer's\nUse",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Give two reasons why a computer system is particularly suited to carrying out a\nsimulation.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "A new road has been built which crosses an existing road at right angles. A new set of\ntraffic control lights is to be installed to control the traffic flows on the existing and new\nroad.\nIdentify three variables which need to be controlled by the software simulation of the\noperation of the traffic lights.\n3",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "The values input to the simulation will affect the outputs produced.\nGive one example for this traffic control light scenario of a change to an input which will\ndirectly affect the output.\nInput change\nEffect on the output\n\n6 The table shows the assembly language instructions for a processor which has one general\nFor\npurpose register – the Accumulator. Examiner's\nUse\nInstruction\nExplanation\nOp Code Operand\nLDD <address>\nLoad using direct addressing\nSTO <address>\nStore the contents of the Accumulator at the given address\nLDI <address>\nLoad using indirect addressing\nLDX <address>\nLoad using indexed addressing\nINC\nAdd 1 to the contents of the Accumulator\nEND\nEnd the program and return to the operating system",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Write on the diagram to explain the assembly language instruction shown below.\nShow the contents of the Accumulator after the execution of the instruction.\nLDD 66\nMain memory\n0110 0000\n0100 0000\n1111 1110\nAccumulator 62\n1111 0000\n0101 1101\n0001 0001\n1010 1000\n1100 0001\n1001 1111",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Write on the diagram to explain the assembly language instruction shown.\nShow the contents of the Accumulator after the execution of the instruction.\nLDI 61\nMain memory\n0110 0000\n0100 0000\n1111 1110\nAccumulator 62\n1111 0000\n0101 1101\n0001 0001\n1010 1000\n1100 0001\n1001 1111",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Trace this assembly language program using the given trace table. The first instruction\nFor\nof the program is loaded into main memory at address 200. Examiner's\nUse\n200 LDD 208\n201 INC\n202 STO 208\n203 LDD 207\n204 INC\n205 STO 207\n206 END\n207 16\n208 150\nMemory Address\n207 208\nAccumulator\n16 150",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Explain the relationship between assembly language instructions and machine code\ninstructions.\n\n7 (a) Explain what is meant by an interrupt.\nFor\nExaminer's\nUse",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "An operating system uses interrupts which have priorities.\nDescribe the sequence of steps which would be carried out by the interrupt handler\nsoftware when an interrupt is received and serviced.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Modern personal computer operating systems support multi-tasking.\nFor\nOne of the modules of such an operating system will be for memory management. Examiner's\nUse\nDescribe two different strategies which could be used to manage the available main\nmemory.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Once a process finishes and memory becomes available, the scheduler will decide\nwhich process/job is to be loaded next.\nState three attributes of a process which are used to assess which job will be the next\nto be loaded into main memory.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 59,
+      "text": [
+        "7",
+        "250 250"
+      ]
+    }
+  ]
+}

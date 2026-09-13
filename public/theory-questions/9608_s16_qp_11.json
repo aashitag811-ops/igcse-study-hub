@@ -1,0 +1,470 @@
+{
+  "paperId": "9608_s16_qp_11",
+  "subjectCode": "9608",
+  "session": "s16",
+  "component": "11",
+  "totalMarks": 62,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Three examples of language translators and four definitions are shown below.",
+        "Draw lines to link each language translator to the correct one or more definitions.",
+        "Language translator Definition",
+        "The software reads the source code",
+        "and reports all errors. The software",
+        "produces an executable file.",
+        "Compiler",
+        "The software reads each statement",
+        "and checks it before running it. The",
+        "software halts when it encounters a",
+        "syntax error.",
+        "Assembler",
+        "The software translates a high-level",
+        "language program into machine code",
+        "for the processor to execute.",
+        "Interpreter",
+        "The software translates low-level",
+        "statements into machine code for the",
+        "processor to execute.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Convert the following denary integer into 8-bit binary.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Convert the following Binary Coded Decimal (BCD) number into denary.\n10000011",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Convert the following denary integer into 8-bit two’s complement.\n-102",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Convert the following hexadecimal number into denary.\n4E",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Describe how special purpose registers are used in the fetch stage of the fetch-execute cycle.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Use the statements A, B, C and D to complete the description of how the fetch-execute cycle\nhandles an interrupt.\nthe address of the Interrupt Service Routine (ISR) is loaded to the Program\nCounter (PC).\nB the processor checks if there is an interrupt.\nC when the ISR completes, the processor restores the register contents.\nD the register contents are saved.\nAt the end of the cycle for the current instruction ______ .\nIf the interrupt flag is set, ______ , ______ and ______ .\nThe interrupted program continues its execution.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe how sampling is used to record the sound clips.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The students use software to compress the sound clips before emailing them.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Circle your chosen method of compression and justify your choice.\nLossy / Lossless\nJustification: ______\n\nStudents also email images to the radio station for use on its website.\nThese are compressed before sending using run-length encoding (RLE).",
+              "marks": 3,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Explain what is meant by run-length encoding.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4biii",
+              "label": "(iii)",
+              "text": "The following diagrams show:\n• the denary colour code that represents each colour\n• the first three rows of a bitmap image\nColour symbol Colour code\n(denary)\nB 153\n0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15\n0 B B B B B B B B B B W W W B B B\n1 B B B B B B B B B W W W W W W B\n2 B B B B B B B W W W W W W W W W\nShow how RLE will compress the first three rows of this image.\nRow 1: ______\nRow 2: ______\nRow 3: ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A group of students broadcast a school radio station on a website. They record their sound clips",
+        "(programmes) in advance and email them to the producer."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Three types of software licensing and four descriptions are shown in the table below.",
+        "Put a tick (✓) in each row to match each description to the appropriate type of software licensing.",
+        "Type of software",
+        "Description Open source Shareware Commercial",
+        "Software is purchased",
+        "before it can be used",
+        "Source code comes with",
+        "the software",
+        "Software is provided free",
+        "on a trial basis",
+        "The software can be",
+        "modified by the user",
+        "[4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A team of software engineers is developing a new e-commerce program for a client.",
+        "State three of the principles of the ACM/IEEE Software Engineering Code of Ethics. Illustrate",
+        "each one, with an example, describing how it will influence their working practices.",
+        "[6]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "State what IP stands for.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The following table shows four possible IP addresses.\nIndicate for each IP address whether it is valid or invalid and give a reason.\nDenary / Valid or\nAddress Reason\nHexadecimal Invalid\n3.2A.6AA.BBBB\nHexadecimal\n2.0.255.1\nDenary\n6.0.257.6\nDenary\nA.78.F4.J8\nHexadecimal",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Describe two differences between public and private IP addresses.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Access to World Wide Web content uses IP addressing."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "The school is considering changing to a DBMS.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "State what DBMS stands for.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "Describe two ways in which the Database Administrator (DBA) could use the DBMS\nsoftware to ensure the security of the student data.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiii",
+              "label": "(iii)",
+              "text": "A feature of the DBMS software is a query processor.\nDescribe how the school secretary could use this software.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiv",
+              "label": "(iv)",
+              "text": "The DBMS has replaced software that used a file-based approach with a relational\ndatabase.\nDescribe how using a relational database has overcome the previous problems\nassociated with a file-based approach.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The database design has three tables to store the classes that students attend.\nSTUDENT(StudentID, FirstName, LastName, Year, TutorGroup)\nCLASS(ClassID, Subject)\nCLASS-GROUP(StudentID, ClassID)\nPrimary keys are not shown.\nThere is a one-to-many relationship between CLASS and CLASS–GROUP.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "Describe how this relationship is implemented.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "Describe the relationship between CLASS-GROUP and STUDENT.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biii",
+              "label": "(iii)",
+              "text": "Write an SQL script to display the StudentID and FirstName of all students who are\nin the tutor group 10B. Display the list in alphabetical order of LastName.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biv",
+              "label": "(iv)",
+              "text": "Write an SQL script to display the LastName of all students who attend the class whose\nClassID is CS1.\n\nQuestion 9 begins on page 12.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A school stores a large amount of data. This includes student attendance, qualification, and",
+        "contact details. The school’s software uses a file-based approach to store this data."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The diagram shows the current contents of a section of main memory and the index register:\n60 0011 0010\n61 0101 1101\n62 0000 0100\n63 1111 1001\n64 0101 0101\n65 1101 1111\n66 0000 1101\n67 0100 1101\n68 0100 0101\n69 0100 0011\n1000 0110 1001\n0 0 0 0 1 0 0 0\nIndex register:",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "Show the contents of the Accumulator after the execution of the instruction:\nLDX 60\nAccumulator:\nShow how you obtained your answer.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "Show the contents of the index register after the execution of the instruction:\nDEC IX\nIndex register:",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Complete the trace table on the opposite page for the following assembly language program.\n50 LDD 100\n51 ADD 102\n52 STO 103\n53 LDX 100\n54 ADD 100\n55 CMP 101\n56 JPE 58\n57 JPN 59\n58 OUT\n59 INC IX\n60 LDX 98\n61 ADD 101\n62 OUT\n63 END\n100 20\n101 100\n102 1\n103 0\nIX (Index Register)\nSelected values from the ASCII character set:\nASCII Code 118 119 120 121 122 123 124 125\nCharacter v w x y z { | }\nTrace table:\nMemory address\nInstruction Working\nACC IX OUTPUT\naddress space\n100 101 102 103\n20 100 1 0 1\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The table shows assembly language instructions for a processor which has one general purpose",
+        "register, the Accumulator (ACC) and an index register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "LDD <address>",
+        "Direct addressing. Load the contents of the given address to ACC.",
+        "Indexed addressing. Form the address from <address> + the contents of the",
+        "LDX <address>",
+        "index register. Copy the contents of this calculated address to ACC.",
+        "STO <address>",
+        "Store contents of ACC at the given address.",
+        "ADD <address>",
+        "Add the contents of the given address to ACC.",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX).",
+        "DEC <register>",
+        "Subtract 1 from the contents of the register (ACC or IX).",
+        "CMP <address>",
+        "Compare contents of ACC with contents of <address>.",
+        "JPE <address> Following a compare instruction, jump to <address> if the compare was True.",
+        "Following a compare instruction, jump to <address> if the compare was",
+        "JPN <address>",
+        "False.",
+        "JMP <address>",
+        "Jump to the given address.",
+        "OUT",
+        "Output to screen the character whose ASCII value is stored in ACC.",
+        "END",
+        "Return control to the operating system."
+      ]
+    }
+  ]
+}

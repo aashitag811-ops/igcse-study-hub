@@ -1,0 +1,449 @@
+{
+  "paperId": "9608_s18_qp_13",
+  "subjectCode": "9608",
+  "session": "s18",
+  "component": "13",
+  "totalMarks": 72,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A web page includes the following HTML and PHP code.",
+        "01 <?php"
+      ]
+    },
+    {
+      "id": "02",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "if(isset($_GET['mark'])) {"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "echo \"Grade: \" . calculateGrade($_GET['mark']);"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "} else {"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "Give the identifier of two variables used in the PHP code.\nIdentifier 1 ______\nIdentifier 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "Give the line number where the PHP code produces an output.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "Describe the purpose of the expression $_GET['mark'] in line 03.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05d",
+          "label": "(d)",
+          "text": "State whether this PHP code will run client-side or server-side.\n\n2 A company writes applications (apps) for smartphones. The company has a relational database,\nPURPLEGAME, which stores the information for one of its online game apps.\nThe database has three tables to store player’s details, dates when they have logged into the app\nand in-app purchase details.\nLOGIN(LoginID, PlayerID, Date)\nPURCHASE(PurchaseID, PlayerID, PurchaseDate, Cost)\nPLAYER(PlayerID, PlayerName, SkillLevel)",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "Draw the entity-relationship (E-R) diagram to show the relationships between the three tables.",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "The database manager is concerned about data integrity.\nState what is meant by data integrity. Give an example of how the manager can ensure data\nintegrity in the PURPLEGAME database.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "The database designer states that the PURPLEGAME database is in Third Normal Form (3NF).\nTick (3) one box to indicate whether this statement is true or false.\nTrue False\nJustify your choice.",
+          "marks": 3,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "05d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05di",
+              "label": "(i)",
+              "text": "The following table shows some sample data for the PLAYER table.\nPlayerID PlayerName SkillLevel\nfly918 Kylie 3\nelephant11 Mehrdad 9\ncandy22 Suzi 15\ngreenGrass Jason 22\nWrite an SQL script to create the PLAYER table.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05dii",
+              "label": "(ii)",
+              "text": "The table, PLAYER, needs to be altered. A new field, DateOfBirth, needs to be added.\nWrite an SQL script to add the DateOfBirth field to the PLAYER table.\n\n3 A computer is designed using the Von Neumann model.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "Describe the role of the Arithmetic and Logic Unit (ALU) and Control Unit (CU) in the Von\nNeumann model.\nALU ______\nCU ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "Describe the role of the Status Register and Program Counter (PC).\nStatus Register ______\nPC ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "H is a register. The current contents of H are:\n1 1 0 0 0 0 0 1\nThe current contents of register H represent an unsigned binary integer.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05ci",
+              "label": "(i)",
+              "text": "Convert the value in register H into denary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05cii",
+              "label": "(ii)",
+              "text": "Convert the value in register H into hexadecimal.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05ciii",
+              "label": "(iii)",
+              "text": "The current contents of register H represent a two’s complement binary integer.\nConvert the value in register H into denary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05civ",
+              "label": "(iv)",
+              "text": "State why register H does not currently contain a Binary Coded Decimal (BCD).\n\n4 Parity bits can be used to verify data.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "The following binary number is transmitted using odd parity.\nAdd the missing parity bit.\nParity\nbit\n0 1 1 1 0 1 0",
+          "marks": 1,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "In the following parity block, the first column contains the parity bits, and the last row contains\nthe parity byte. A device transmits the data using even parity.\nCircle the error in the data being transmitted.\nParity\nData\nbit\n0 0 1 1 0 1 0 1\n1 1 1 1 1 0 0 1\n1 0 1 0 1 0 0 0\n0 0 0 1 1 0 1 1\nParity\n0 1 1 1 1 1 0 1\nbyte",
+          "marks": 1,
+          "type": "circle",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "Four error detection measures are shown.\nDraw one line from each error detection measure to indicate whether it is verification or\nvalidation.\nError detection measure\nType check\nProof reading Verification\nCheck digit Validation\nChecksum\n\nQuestion 5 begins on the next page.\n5 (a) A student needs to design a logic circuit to model the requirements for membership of a\nsnooker club. Membership (X) depends on four criteria, as shown in the table:\nDescription of Binary\nParameter Condition\nparameter value\n1 True\nA Over 18\n0 False\n1 True\nB Recommended\n0 False\n1 True\nC Full-time\n0 False\n1 True\nD Retired\n0 False\nMembership is approved (X = 1) if the person:\n• is over the age of 18 and has been recommended by a pre-existing member and\n• either is working full-time or is retired, but not both.\nDraw a logic circuit to represent the membership requirements.",
+          "marks": 4,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "Complete the truth table for the logic expression: X = (A XOR B) AND NOT C\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 42,
+      "text": [
+        "?>",
+        "07 <form action=\"#\" method=\"get\">",
+        "08 Enter Mark: <input type=\"text\" name=\"mark\" /><br />",
+        "09 <input type=\"submit\" value=\"Calculate\" />",
+        "10 </form>",
+        "12 <?php",
+        "13 }",
+        "15 function calculateGrade($inputMark) {",
+        "16 $gradeChar = \"U\";",
+        "17 if($inputMark >= 80) $gradeChar = \"A\";",
+        "18 else if($inputMark >= 70) $gradeChar = \"B\";",
+        "19 else if($inputMark >= 60) $gradeChar = \"C\";",
+        "20 else if($inputMark >= 50) $gradeChar = \"D\";",
+        "21 else if($inputMark >= 40) $gradeChar = \"E\";",
+        "22 return $gradeChar;",
+        "23 }",
+        "24 ?>"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the minimum number of bits needed to represent each pixel in this image.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Run-length encoding (RLE) is used to store the image with the following colour codes.\nColour Code\nBlack 1A\nWhite 3B\nShow how run-length encoding is used to store the image.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "An image has 30 different colours.\nState the minimum number of bits needed to represent each pixel in the 30-colour image.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "When the image is saved, a header is added to the file.\nState the purpose of the file header. Give two examples of the file header contents.\nPurpose ______\nExample 1 ______\nExample 2 ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6e",
+          "label": "(e)",
+          "text": "Graphics software is used to edit a digital photograph.\nGive three features of graphics software that can be used to edit the photograph.\nDescribe the effect each has on the photograph.\nFeature 1 ______\nEffect ______\nFeature 2 ______\nEffect ______\nFeature 3 ______\nEffect ______",
+          "marks": 6,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A black and white bitmap image is shown."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "The users interact with the computer system through touchscreens.\nDescribe the internal operation of a touchscreen.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Give one output device, other than a touchscreen, that may be part of this computer\nsystem.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Give two input devices, other than a touchscreen, that may be part of this computer\nsystem. State how each device will be used by the visitors.\nDevice 1 ______\nUse ______\nDevice 2 ______\nUse ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Give the most appropriate secondary storage device for this computer system.\nDescribe two reasons for your choice.\nDevice ______\nReason 1 ______\nReason 2 ______",
+          "marks": 5,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "This computer system has Random Access Memory (RAM) and Read Only Memory (ROM).\nState what will be stored in RAM and ROM for this computer system.\nRAM ______\nROM ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A zoo has a computer system for the visitors to access multimedia content about the zoo and its",
+        "animals."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "paperId": "9618_s21_qp_12",
+  "subjectCode": "9618",
+  "session": "s21",
+  "component": "12",
+  "totalMarks": 67,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Give the definition of the following database terms, using an example from the database\nHOUSE_RENTALS for each definition.\nTerm Definition and example\nField\nEntity\nForeign key",
+          "marks": 6,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Tick (3) one box to identify whether the database HOUSE_RENTALS is in Third Normal Form\n(3NF) or not in 3NF.\nJustify your choice using one or more examples from the database HOUSE_RENTALS.\nIn 3NF\nNot in 3NF\nJustification ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Example data from the table RENTAL are given:\nRentalID CustomerID HouseID MonthlyCost DepositPaid\n1 22 15B5L 1000.00 Yes",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Raj owns houses that other people rent from him. He has a database that stores details about",
+        "the people who rent houses, and the houses they rent. The database, HOUSE_RENTALS, has the",
+        "following structure:",
+        "CUSTOMER(CustomerID, FirstName, LastName, DateOfBirth, Email)",
+        "HOUSE(HouseID, HouseNumber, Road, Town, Bedrooms, Bathrooms)",
+        "RENTAL(RentalID, CustomerID, HouseID, MonthlyCost, DepositPaid)"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "13 3F 687.00 No"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "1 12AB 550.00 Yes"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Explain the reasons why it is important that Aisha acts ethically in relation to her team\nmembers.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The team are developing a computer game where the user plays a board game (such as\nchess) against the computer.\nDescribe how the computer would use Artificial Intelligence (AI) to play the board game.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The final game will be released under a licence.\nTick (3) one or more boxes in each row to identify the licence(s) each statement describes.\nFree Open\nCommercial\nStatement Software Source Shareware\nSoftware\nFoundation Initiative\nThe user can edit the source code\nThe user must always pay before being\nable to use the software\nThe user can redistribute the software\nThe user always gets a trial period\n\n3 A logic expression is given:\nS = (A AND B AND C) OR (B XOR C)",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Draw the logic circuit for the given expression.\nB S",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the truth table for the logic expression:\nS = (A AND B AND C) OR (B XOR C)\nWorking space\nA B C S\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n4 The table shows part of the instruction set for a processor. The processor has one general purpose\nregister, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nOpcode Operand\nLDM #n\nImmediate addressing. Load the number n to ACC\nDirect addressing. Load the contents of the location at the given address to\nLDD <address>\nACC\nSTO <address>\nStore contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register> Add 1 to the contents of the register (ACC or IX)\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX)\nCMP <address>\nCompare the contents of ACC with the contents of <address>\nJPE <address> Following a compare instruction, jump to <address> if the compare was True\nJPN <address>\nFollowing a compare instruction, jump to <address> if the compare was False\nJMP <address>\nJump to the given address\nIN Key in a character and store its ASCII value in ACC\nOUT\nOutput to the screen the character whose ASCII value is stored in ACC\nEND\nReturn control to the operating system\n# denotes a denary number, e.g. #123\nThe current contents of the main memory and selected values from the ASCII character set are:\nAddress Instruction ASCII code table (selected codes only)\n70 IN\nASCII code Character\n71 CMP 100 65 A\n72 JPE 80 66 B\n73 CMP 101 67 C\n74 JPE 76 68 D\n75 JMP 80\n76 LDD 102\n77 INC ACC\nSTO 102\nJMP 70\n80 LDD 102\n81 DEC ACC\n82 STO 102\n83 JMP 70\n100 68\n101 65\n102 100",
+          "marks": 2,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the trace table for the program currently in main memory when the following\ncharacters are input:\nA D\nDo not trace the program any further when the third input is required.\nMemory address\nInstruction\nACC\naddress\n100 101 102\n68 65 100",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Some bit manipulation instructions are shown in the table:\nInstruction\nExplanation\nOpcode Operand\nAND #n\nBitwise AND operation of the contents of ACC with the operand\nAND <address> Bitwise AND operation of the contents of ACC with the contents of <address>\nXOR #n Bitwise XOR operation of the contents of ACC with the operand\nXOR <address>\nBitwise XOR operation of the contents of ACC with the contents of <address>\nOR #n\nBitwise OR operation of the contents of ACC with the operand\nOR <address>\nBitwise OR operation of the contents of ACC with the contents of <address>\n<address> can be an absolute address or a symbolic address\n# denotes a denary number, e.g. #123\nThe contents of the memory address 300 are shown:\nBit Number 7 6 5 4 3 2 1 0\n300 0 1 1 0 0 1 1 0",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "The contents of memory address 300 represent an unsigned binary integer.\nWrite the denary value of the unsigned binary integer in memory address 300.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "An assembly language program needs to test if bit number 2 in memory address 300\nis a 1.\nComplete the assembly language instruction to perform this test.\n______ #4",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4biii",
+              "label": "(iii)",
+              "text": "An assembly language program needs to set bit numbers 4, 5, 6 and 7 to 0, but keep\nbits 0 to 3 with their existing values.\nWrite the assembly language instruction to perform this action.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 23,
+      "text": [
+        "3 37 444.50 Yes"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the following descriptions of internal components of a computer by writing the\nmissing terms.\nThe ______ transmits the signals to coordinate events based\non the electronic pulses of the ______ .\nThe ______ carries data to the components, while the\n______ carries the address where data needs to be written to\nor read from.\nThe ______ performs mathematical operations and\nlogical comparisons.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe the ways in which the following factors can affect the performance of his laptop\ncomputer.\nNumber of cores\nClock speed",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Seth accesses both software and data using cloud computing.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Give two benefits of storing data using cloud computing.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "Give two drawbacks of Seth using cloud computing.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "Draw one line from each term to its most appropriate description.\nTerm Description\nIt is only visible to devices within the Local\nArea Network (LAN)\nPublic IP address\nIt increments by 1 each time the device\nconnects to the internet\nA new one is reallocated each time a device\nPrivate IP address\nconnects to the internet\nIt can only be allocated to a router\nDynamic IP address\nIt is visible to any device on the internet\nStatic IP address\nIt does not change each time a device\nconnects to the internet",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "Seth uses a computer for work."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the number of characters that can be represented by the ASCII character set and the\nextended ASCII character set.\nASCII ______\nExtended ASCII ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Explain how a word such as ‘HOUSE’ is represented by the ASCII character set.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Unicode is a different character set.\nThe Unicode value for the character ‘1’ is denary value 49.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "Write the hexadecimal value for the Unicode character ‘1’.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "Write the denary value for the Unicode character ‘5’.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A computer uses the ASCII character set."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Jennifer uses a program library to help her write her computer program.\nDescribe how a program library can be used while writing a computer program.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Jennifer uses an Integrated Development Environment (IDE) to write her computer program.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "The IDE allows Jennifer to use both an interpreter and a compiler while creating her\ncomputer program.\nDescribe the ways in which Jennifer can use both a compiler and an interpreter while\ndeveloping the program.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Identify two debugging tools that a typical IDE can provide.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Jennifer is writing a computer program for her A Level homework."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Describe the difference between the security and privacy of data.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Each employee has a username and password to allow them to log onto a computer. An\nemployee’s access rights to the data on the computers is set to either read-only, or read and\nwrite.\nIdentify one other software-based measure that could be used to restrict the access to the\ndata on the computers.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The company is also concerned about threats posed by networks and the internet.\nIdentify two threats to the data that are posed by networks and the internet.\nThreat 1 ______\nThreat 2 ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A company has several security measures in place to prevent unauthorised access to the data on",
+        "its computers."
+      ]
+    }
+  ]
+}

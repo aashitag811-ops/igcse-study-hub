@@ -1,0 +1,519 @@
+{
+  "paperId": "9608_s21_qp_11",
+  "subjectCode": "9608",
+  "session": "s21",
+  "component": "11",
+  "totalMarks": 70,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw one line from each software licence to its correct description.",
+        "Software licence Description",
+        "A limited version of the software could",
+        "be released and downloaded by anyone,",
+        "but users would need to pay to unlock",
+        "additional features.",
+        "Shareware",
+        "A licence must be purchased to use the",
+        "software.",
+        "Open",
+        "Source",
+        "Users cannot download the software over",
+        "the Internet.",
+        "Commercial",
+        "The original source code is made available",
+        "for other developers who can then modify",
+        "and improve the software.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "One of the drawing objects in the logo is a circle.\nIdentify four properties of the circle.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Describe what is meant by a drawing list using the logo as an example.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Zak could have used a bitmapped image for the logo.\nDescribe two drawbacks of using a bitmapped image for the logo instead of a vector graphic.\nDrawback 1 ______\nDrawback 2 ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Zak’s company holds details about clients in a database.\nGive three security measures that Zak can implement to make sure that only authorised\nemployees can access the data.",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Zak designs a logo for his company. He uses vector graphics software to create the logo."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Trace the program currently in memory using the following trace table.\nMemory address\nInstruction\nACC\naddress\n200 201 202\n2 0 200",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The instruction in memory address 100 needs to be changed. It needs to use indirect\naddressing to load the contents of memory address 200.\nGive the new instruction to replace LDD 200.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Each instruction in the assembly language program is encoded in 16 bits (8-bit op code\nfollowed by an 8-bit operand).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "The instruction CMP 201 has the operand 201.\nConvert the operand 201 into 8-bit binary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "State the maximum number of op codes that can be represented using eight bits.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The status register contains condition flags.\nIdentify three condition flags that can be set in the status register.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "The table shows part of the instruction set for a processor. The processor has one general purpose",
+        "register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "LDD <address>",
+        "Direct addressing. Load the content of the location at the given",
+        "address to ACC.",
+        "LDI <address>",
+        "Indirect addressing. The address to be used is at the given",
+        "address. Load the contents of this second address to ACC.",
+        "DEC <register>",
+        "Subtract 1 from the contents of the register (ACC or IX).",
+        "CMP <address>",
+        "Compare the contents of ACC with the contents of <address>.",
+        "JMP <address>",
+        "Jump to the given address.",
+        "JPE <address>",
+        "Following a compare instruction, jump to <address> if the",
+        "compare was True.",
+        "STO <address>",
+        "Store the contents of ACC at the given address.",
+        "END",
+        "Return control to the operating system.",
+        "The current contents of the main memory are:",
+        "Address Instruction",
+        "100 LDD 200",
+        "101 CMP 201",
+        "102 JPE 106",
+        "103 DEC ACC",
+        "104 STO 200",
+        "105 JMP 101",
+        "106 END",
+        "200 2",
+        "201 0",
+        "202 200"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the truth table for the logic circuit.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Identify three logic gates not used in the logic circuit.\nGate 1 ______\nGate 2 ______\nGate 3 ______",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Consider the following logic circuit:"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the entity relationship (E-R) diagram for the database.\nCOURSE BOOKING CUSTOMER\nCOURSE_EMPLOYEE EMPLOYEE",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe what is meant by referential integrity.\nGive an example from the CUSTOMER and BOOKING tables in your answer.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "A Data Definition Language (DDL) is used to create the structure of the database. One item\nthat can be created is the database.\nIdentify three other items that can be created in the database using the DDL.\n3______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "Part of the EMPLOYEE table is shown.\nEmployeeID FirstName LastName Role Language\n001 Jasmine Chen Leader French\n002 Kenton Archer Leader English\n003 Michael Roux Cook French\n004 Conrad Slavorski Leader Russian\nWrite a Data Manipulation Language (DML) statement to return the first name and last name\nof all employees, who are leaders, and speak either French or English.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A company runs activity courses. It is creating a relational database to store details of the courses",
+        "it runs.",
+        "The database has five tables:",
+        "EMPLOYEE(EmployeeID, FirstName, LastName, Role, Language)",
+        "BOOKING(BookingID, CustomerID, CourseID)",
+        "CUSTOMER(CustomerID, FirstName, LastName)",
+        "COURSE(CourseID, Title, Level, Date)",
+        "COURSE_EMPLOYEE(CourseID, EmployeeID)"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A web page includes HTML, JavaScript and PHP code.",
+        "01 <html>",
+        "02 <body>",
+        "04 <p>",
+        "05 <?PHP",
+        "06 $message = \"Enter the current time\""
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "echo $message"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "?>"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "The page is loaded and the value 16 is entered.\nState the output when the enter button is clicked.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Give the line number where the JavaScript function is called.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Give the identifier names of two variables used in the JavaScript code.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09d",
+          "label": "(d)",
+          "text": "Tick (3) one box in each row to indicate whether each of the following statements is true or\nfalse.\nStatement True False\nThe program contains client-side and server-side code\nThe PHP code in the program will run on the client-side\nLine 19 of the code outputs the message \"Good day\"\nLine 18 of the code contains a conditional statement",
+          "marks": 2,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "09e",
+          "label": "(e)",
+          "text": "Examine the following list of terms:\nbandwidth browser compiler HTML interpreter\nJavaScript PHP router server server-side\ntransmission validation\nComplete the following sentences by filling in the missing terms from the list.\nSome terms may be used more than once. Some terms are not used.\n______ can be performed both client-side and server-side.\nIt is performed more rapidly by the ______ because there is no delay in\ntransmitting and receiving data to and from the ______ .\nIt is also performed on the server-side, because the client’s ______ may\nnot support ______ , so the data will still need checking to avoid errors.\n\n7 This question presents three scenarios.\nTick (3) one box for each scenario to indicate whether you think the behaviour shown is ethical or\nunethical. Justify your choice.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Marina has a very short deadline to create a piece of software for a client. Algorithm A is quick\nto code and simpler to test but has an inefficient run time. Algorithm B is more complex to\ncode and test but has a more efficient run time. She decides to implement algorithm A.\nEthical\nUnethical\nJustification ______",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Doug is managing a project for a client that has fallen behind schedule. He asks all members\nof the project team to work extra hours and to cancel any holiday plans to get the project back\non schedule.\nEthical\nUnethical\nJustification ______",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Debbie is programming a car safety management system. She thinks that the test plan she\nhas been given is not adequate. She decides to discuss her concerns on a public internet\nforum.\nEthical\nUnethical\nJustification ______\n\n8 Jay is developing a computer game that allows users to create stories.",
+          "marks": 2,
+          "type": "discuss",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Jay uses a language translator to develop the computer game.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ai",
+              "label": "(i)",
+              "text": "Tick (3) one or more boxes in each row to identify the language translator(s) each\nstatement describes.\nStatement Assembler Interpreter Compiler\nTranslates and executes each line of source\ncode one line at a time\nTranslates low-level source code into machine\ncode\nMust be present in memory to execute the\ncode\nTranslates high-level source code into\nlow-level code",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aii",
+              "label": "(ii)",
+              "text": "Jay decides to use a compiler to develop the game.\nIdentify two benefits of using a compiler.\nBenefit 1 ______\nBenefit 2 ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "The game generates a story which is stored as a text file.\nJay compresses the text file using lossless compression before sending it by email to his\nfriend.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09bi",
+              "label": "(i)",
+              "text": "Identify two reasons for compressing the text file.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09bii",
+              "label": "(ii)",
+              "text": "Explain the reasons why Jay compresses the text file with lossless compression instead\nof lossy compression.\n\n9 (a) Identify two differences between a public IP address and a private IP address.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Complete the table by identifying the most appropriate term for each description.\nEach term must be different.\nDescription Term\nReceives data packets from a network and\nforwards them onto a similar network\nManages access to a centralised resource\nJoins networks that use different sets of\nrules to transmit data\nMonitors and controls incoming and\noutgoing network traffic based on set criteria\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "</p>",
+        "11 24 hour clock hour<input id = \"Time\" value = \"\">",
+        "12 <button onclick = \"timeOfDay()\">Enter</button>",
+        "14 <script>",
+        "15 function timeOfDay() {",
+        "16 var hour, greeting;",
+        "18 if (hour < 18) {",
+        "19 greeting = \"Good day\";",
+        "20 } else {",
+        "21 greeting = \"Good evening\";",
+        "22 }",
+        "23 alert(greeting);",
+        "24 }",
+        "25 </script>",
+        "27 </body>",
+        "28 </html>"
+      ]
+    }
+  ]
+}

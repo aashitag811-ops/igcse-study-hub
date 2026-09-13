@@ -1,0 +1,392 @@
+{
+  "paperId": "0478_w22_qp_23",
+  "subjectCode": "0478",
+  "session": "w22",
+  "component": "23",
+  "totalMarks": 34,
+  "questionCount": 17,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Identify one constant that you could have used for Task 1.\nState the value that would be assigned to the constant.\nGive a reason why a constant was used rather than a variable.\nConstant name ______\nValue ______\nReason ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Describe the array that you set up in Task 1 to record the customer details.\nInclude the name, data type and sample data for the array in your description.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how your program allowed only two floors or three floors to be chosen but not both.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for the part of Task 2 that calculates the total cost of the bill.\nAssume that the customer details and services required have already been input.\nUse pseudocode, programming statements or a flowchart.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completed Task 3.\nAny programming statements that you include in your answer must be fully explained.\n\nSection B starts on page 8.\nSection B",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the pseudocode algorithm:\n01 FOR Count 1 TO ______\n02 Reading[Count] 0",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "An algorithm has been written to:",
+        "• set all 50 elements of the array Reading[1:50] to zero",
+        "• input values between 35 and 50 inclusive",
+        "• end the process when an input of –1 is made or 50 valid numbers have been entered",
+        "• reject all other values",
+        "• count the number of times each valid value is input",
+        "• output the number of times each value has been input, starting with the lowest value."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Count"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count 1"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please enter next reading \""
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Value"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Value < 35 OR ................................................................................................."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Reading out of range\""
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Reading[Value] ......................................................................................."
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count = Count + 1"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Count <= 50"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "Describe how the algorithm could be changed to output the number of times each value has\nbeen input, starting with the highest value.\n\n3 A check digit is to be used to validate an identification number on input. The identification number\ncontains five digits and the check digit.\nThe check digit is calculated by adding up the first five digits, dividing by 10 and taking the\nremainder.\nFor example, 5 + 1 + 2 + 4 + 3 divided by 10 gives a remainder of 5 so the six-digit\nidentification number would be 512435",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "17ai",
+              "label": "(i)",
+              "text": "Calculate the check digit for 69321\n\nWorking space ______",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "17aii",
+              "label": "(ii)",
+              "text": "State which of these identification numbers have incorrect check digits.\nA 123455\nB 691400\nC 722855\nD 231200\n\nWorking space ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "17bi",
+              "label": "(i)",
+              "text": "Describe an input error that would not be found using this check digit.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "17bii",
+              "label": "(ii)",
+              "text": "Describe a more suitable algorithm to calculate the check digit for this identification\nnumber.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "17c",
+          "label": "(c)",
+          "text": "Identify two other validation checks that could be used when inputting this identification\nnumber.\n\n4 This algorithm makes sure that there are enough wheelbarrows in stock.\nSTART\nStock 10\nTotal 0\nINPUT Sale\nYes\nIs Sale =\nOUTPUT Total\n\"N\"?\nNo\nSTOP\nStock Stock – 1\nYes\nOUTPUT\nIs Stock\n\"Add new stock\"\n< 5?\nNo\nTotal Total + 1 Stock Stock + 10",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using this input data:\n“Y”, “Y”, “Y”, “Y”, “Y”, “Y”, “N”\nStock Total Sale\nOUTPUT",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "Explain how you could extend the algorithm to allow for the sale of more than one wheelbarrow\nat a time.\n\n5 A database table, MUSEUM, is used to keep a record of items in the museum. The table has\nthese fields:\n• ItemCode – code for each type of item, for example ART0005\n• Description – brief description of each item, for example gold coin\n• InStore – whether the item is in store or not, for example Y\n• Century – century when item made, for example 18\n• Country – country of origin, for example China.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "Identify which field you would choose for the primary key.\nState a reason for your choice.\nField ______\nReason ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid to display only the description and the country of origin\nfor those items not in store.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "OUTPUT \"Please enter next reading \"",
+        "19 ENDIF",
+        "20 UNTIL Value = -1 OR Count > 50",
+        "21 Count 35",
+        "22 REPEAT",
+        "23 OUTPUT \"There are \", .....................................................................,",
+        "\" readings of \", Count",
+        "24 Count ...................................................................................................................",
+        "25 UNTIL Count > 50 [6]"
+      ]
+    }
+  ]
+}

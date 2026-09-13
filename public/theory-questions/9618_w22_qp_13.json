@@ -1,0 +1,626 @@
+{
+  "paperId": "9618_w22_qp_13",
+  "subjectCode": "9618",
+  "session": "w22",
+  "component": "13",
+  "totalMarks": 67,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Tick ( ) one box in each row to identify the effect of each action on the accuracy of the\nrecording.\nAccuracy Accuracy Accuracy does\nAction\nincreases decreases not change\nChange the sampling rate from 40 kHz\nto 60 kHz.\nChange the duration of the recording\nfrom 20 minutes to 40 minutes.\nChange the sampling resolution from\n24 bits to 16 bits.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The audio message is recorded with a sampling rate of 50 kHz and a sampling resolution of\n16 bits.\nThe recording is 20 minutes in length.\nCalculate the file size of the recording.\nGive your answer in megabytes and show your working.\nWorking ______\nAnswer ______ megabytes",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A computer uses a buffer when playing the audio message.\nExplain the purpose of a buffer in a computer system using one other example.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A digital audio message needs to be recorded."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the following table by writing the correct answer for each item.\nItem Answer\na suitable field for the primary key in\nCOMPANY\na candidate key in TELESCOPE\nthe degree of relationship between\nTELESCOPE and PHOTOGRAPH",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A Database Management System (DBMS) has several features.\nIdentify the feature that describes the relationship between data and its structure.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Complete the SQL script to return the total number of telescopes owned by the company\nwhose ID begins with HW.\nSELECT ______ (______)\nFROM TELESCOPE\nWHERE ______ LIKE ______;",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Write the SQL script to add one field to the table PHOTOGRAPH to store the resolution of the\nphotograph, e.g. 1920 × 1068.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The photographs are stored as bitmap images.\nComplete the statements about bitmap images by writing the missing words.\nThe ______ of a bitmap image is the number of\nbits that are used to store each pixel.\nMetadata about the image is stored in the ______\nof the file.",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "Describe the purpose of a query processor in a DBMS.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The relational database ASTRONOMY is used to store data about telescopes, the companies that",
+        "own the telescopes and the photographs taken by the telescopes.",
+        "The database has these three tables:",
+        "COMPANY(TelephoneNumber, CompanyID, CompanyName)",
+        "PHOTOGRAPH(PhotoID, TelescopeID, DateTaken, TimeTaken, Elevation)",
+        "TELESCOPE(TelescopeID, CompanyID, SerialNumber)"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw one line from each Operating System (OS) management task to its most appropriate",
+        "description.",
+        "OS Management task Description",
+        "dynamically allocates memory to",
+        "processes",
+        "hardware management",
+        "marks unallocated file storage",
+        "for availability",
+        "security management",
+        "installs programs for devices",
+        "connected to external ports",
+        "memory management",
+        "validates user and",
+        "process authenticity",
+        "process management",
+        "allows processes to transfer",
+        "data to and from each other",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A Central Processing Unit (CPU) contains several special purpose registers and other\ncomponents.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "State the roles of the following registers.\nMemory Address Register (MAR) ______\nMemory Data Register (MDR) ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "State when interrupts are detected during the Fetch-Execute (F-E) cycle.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A computer system contains a system clock.\nDescribe the purpose of the system clock.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Upgrading secondary storage to solid state typically improves the performance of computer\nsystems.\nIdentify one other upgrade to the hardware and explain why it improves the performance of\na computer system.\nUpgrade ______\nExplanation ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for the logic expression:\nX = NOT ((NOT (A AND B)) OR (NOT (B AND C)))\nB X",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Complete the truth table for the logic expression:\nY = (NOT P AND Q) OR (Q AND NOT R)\nWorking space\nP Q R Y\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\nQuestion 6 begins on page 10.",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The current contents of main memory and selected values from the ASCII character set are\ngiven.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Trace the program currently in memory using the trace table.\nMemory address\nInstruction\nAddress Instruction\nACC IX Output\naddress\n100 101 110 111 112\n75 LDR #0\nLDD 100\n1 0 97 98 97\nCMP #2\n78 JPE 91\nLDX 110\nSUB #32\n81 CMP #65\nJPN 86\nLDM #1\n84 ADD 101\nSTO 101\nLDM #1\n87 ADD 100\nSTO 100\nINC IX\n90 JMP 76\nLDD 101\nADD #48\n93 OUT\nEND\n100 1\n111 98\n112 97\nASCII Character\nvalue\n49 1\n50 2\n51 3\n52 4\n65 A\n66 B\n67 C\n68 D",
+              "marks": 4,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "Explain the purpose of relative addressing in an assembly language program.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The following table shows another part of the instruction set for the processor.\nInstruction\nExplanation\nOpcode Operand\nAND #n\nBitwise AND operation of the contents of ACC with the operand\nAND Bn\nBitwise AND operation of the contents of ACC with the binary number n\nAND <address> Bitwise AND operation of the contents of ACC with the contents of <address>\nXOR #n\nBitwise XOR operation of the contents of ACC with the operand\nXOR <address>\nBitwise XOR operation of the contents of ACC with the contents of <address>\nOR #n\nBitwise OR operation of the contents of ACC with the operand\nOR Bn Bitwise OR operation of the contents of ACC with the binary number n\nOR <address> Bitwise OR operation of the contents of ACC with the contents of <address>\nLSL #n\nBits in ACC are shifted logically n places to the left. Zeros are introduced on\nthe right-hand end\nLSR #n\nBits in ACC are shifted logically n places to the right. Zeros are introduced on\nthe left-hand end\n<address> can be an absolute or a symbolic address\n# denotes a denary number, e.g. #123\nB denotes a binary number, e.g. B01001101",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "The current contents of the ACC are:\n0 0 1 1 0 1 1 0\nShow the contents of the ACC after the execution of the following instruction.\nAND B01001100",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "The current contents of the ACC are:\n1 0 0 1 0 1 0 1\nShow the contents of the ACC after the execution of the following instruction.\nOR B01001111",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "The current contents of the ACC are:\n1 0 0 1 1 1 0 1\nShow the contents of the ACC after the execution of the following instruction.\nLSR #2",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "One instruction group is data movement.\nGive the name of one other instruction group.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The following table shows part of the instruction set for a processor. The processor has one",
+        "general purpose register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Opcode Operand",
+        "LDM #n",
+        "Immediate addressing. Load the number n to ACC",
+        "LDD <address>",
+        "Direct addressing. Load the contents of the location at the given",
+        "address to ACC",
+        "LDX <address>",
+        "Indexed addressing. Form the address from <address> + the contents",
+        "of the index register. Copy the contents of this calculated address to",
+        "ACC",
+        "LDR #n",
+        "Immediate addressing. Load the number n to IX",
+        "MOV <register>",
+        "Moves the contents of the accumulator to the given register (IX)",
+        "STO <address>",
+        "Store contents of ACC at the given address",
+        "ADD <address>",
+        "Add the contents of the given address to the ACC",
+        "ADD #n",
+        "Add the denary number n to the ACC",
+        "SUB #n",
+        "Subtract the denary number n from the ACC",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX)",
+        "JMP <address>",
+        "Jump to the given address",
+        "CMP #n",
+        "Compare the contents of ACC with number n",
+        "CMI <address>",
+        "Indirect addressing. The address to be used is at the given address.",
+        "Compare the contents of ACC with the contents of this second",
+        "address",
+        "JPE <address>",
+        "Following a compare instruction, jump to <address> if the compare",
+        "was True",
+        "JPN <address>",
+        "Following a compare instruction, jump to <address> if the compare",
+        "was False",
+        "OUT",
+        "Output to the screen the character whose ASCII value is stored in",
+        "ACC",
+        "END",
+        "Return control to the operating system",
+        "<address> can be an absolute or a symbolic address",
+        "# denotes a denary number, e.g. #123",
+        "B denotes a binary number, e.g. B01001101"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "The diagram shows the hardware and software used to retrieve files stored on the cloud.\nInternet\nLaptop Firewall A Service X\nProvider\nComplete the following table by writing the answer for each row.\nAnswer\nThe name of device A that allows the\nlaptop to connect to the internet\nA type of cloud, X\nAn example of an application, B, that\ncan run on the cloud",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Give one advantage and two disadvantages of transmitting data using satellites instead of\ncopper cables.\nAdvantage 1 ______\nDisadvantage 1 ______\nDisadvantage 2 ______",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Local Area Networks (LANs) can be made up of several subnetworks.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ci",
+              "label": "(i)",
+              "text": "Give two benefits of dividing a network into subnetworks by subnetting the LAN.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7cii",
+              "label": "(ii)",
+              "text": "A subnet mask is used when subnetting a LAN.\nTwo devices on the LAN are located in different subnetworks.\nThe IP addresses and corresponding subnet masks are shown:\nDevice IP address Subnet mask\n10.10.12.1 255.0.0.0\n192.168.12.4 255.255.255.0\nIdentify the following network ID and host ID.\nThe network ID for the device with the IP address 10.10.12.1\nThe host ID for the device with the IP address 192.168.12.4",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "Explain why some programs are distributed under an open source licence.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "Explain how a programmer benefits from distributing a program under a commercial\nlicence.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A commercial program for a vehicle repair garage includes an Artificial Intelligence (AI)\nmodule that can diagnose faults and suggest repairs.\nDescribe one economic impact the AI module may have on the garage.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "Convert the unsigned binary value into hexadecimal.\n10010011\nAnswer ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "Convert the unsigned binary value into denary.\n10010011\nAnswer ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "State two benefits of using Binary Coded Decimal (BCD) to represent values.\nBenefit 1 ______\nBenefit 2 ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Explain the importance of feedback in a control system.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10bi",
+              "label": "(i)",
+              "text": "Identify one sensor that could be used in a car alarm system.\nJustify your choice.\nSensor ______\nJustification ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10bii",
+              "label": "(ii)",
+              "text": "The car alarm is an example of an embedded system.\nDescribe the characteristics of an embedded system.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    }
+  ]
+}

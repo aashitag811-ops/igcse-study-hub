@@ -1,0 +1,361 @@
+{
+  "paperId": "9608_w21_qp_22",
+  "subjectCode": "9608",
+  "session": "w21",
+  "component": "22",
+  "totalMarks": 70,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Design and coding are stages of the program development cycle.\nState two activities from each of these stages.\nDesign stage\nActivity 1 ______\nActivity 2 ______\nCoding stage\nActivity 1 ______\nActivity 2 ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The following is part of a procedure to manage the stock in a shop:\n100 PROCEDURE InitVars()\n101 DECLARE Vs : STRING // program version\n102 DECLARE Pe : REAL // stock item purchase price\n103 DECLARE Exp : STRING // date when item expires\n104 DECLARE S_lr: STRING // supplier ID\n105 DECLARE Rp : REAL // low stock value\n106 DECLARE OUT : BOOLEAN // any items in stock ?\n180 ENDPROCEDURE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Give two reasons why the identifier names used in the procedure InitVars() are not\nexamples of good practice.\nReason 1 ______\nReason 2 ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Complete the following table by writing an appropriate identifier name for each of these\nfour lines in the procedure InitVars().\nLine Appropriate identifier name",
+              "marks": 4,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Line 101 of the procedure needs to be changed because:\n• the identifier should be declared as a fixed value that does not change during\nprogram execution\n• the identifier name is not appropriate\n• the program version should be ver1.5.8\nWrite the new correct statement for line 101.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A program can store characters using either the ASCII or the Unicode character set.\nGive two reasons why Unicode is preferred to the ASCII character set for storing characters.\nReason 1 ______\nReason 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "During the program design, a decision is made to store the loyalty data in a text file called\nLOYALTY.txt. This file holds the membership number and total number of points for each\ncustomer on a single line.\nPart of the program will check whether a particular customer has enough points for a free\nslice of cake.\nDescribe the algorithm for this part of the program using structured English.",
+          "marks": null,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "In another part of the program, the following statements assign values to variables.\nDayOfMonth \"15\"\nIsMember TRUE\nDOB \"22042001\"\nFirstname \"Seanna\"\nLastname \"Adamson\"\nPoints 12\nComplete the table by writing the pseudocode expression that matches the description given\nand the value that each expression evaluates to.\nRefer to the Appendix on pages 18–19 for a list of built-in pseudocode functions and\noperators.\nDescription of expression Pseudocode expression Evaluates to\nEvaluates to TRUE if\nDayOfMonth is within the\nfirst seven days\nof the month\nConcatenates the second\nand third letters of\nFirstname with the last\nthree letters of Lastname\nEvaluates to TRUE if DOB\ncontains eight characters\nEvaluates to TRUE if the\ncustomer is a member and\nhas enough points for a free\nslice of cake",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Another part of the loyalty scheme program will need to access additional files. A filename\ncontains a three-letter extension that represents its file type.\nFor example, the filename \"thisfile.txt\" has the extension \"txt\" and file type \"Text\".\nThe filename will always be in lower case.\nA function GetFileType() returns a string containing the description of the file type.\nThe function uses selection constructs as follows:\nFUNCTION GetFileType(Filename : STRING) RETURNS STRING\nDECLARE FileExt : STRING\nDECLARE FileType : STRING\nFileExt RIGHT(Filename, 3)\nIF FileExt = \"rtf\"\nTHEN\nFileType \"Rich text format\"\nENDIF\nIF FileExt = \"csv\"\nTHEN\nFileType \"Comma separated values\"\nENDIF\nIF FileExt = \"txt\"\nTHEN\nFileType \"Text\"\nELSE\nFileType \"Unknown\"\nENDIF\nRETURN FileExt\nENDFUNCTION\nRewrite the function as follows:\n• Replace the IF structures with a CASE structure.\n• Correct the logic error in the function.\nRefer to the Appendix on pages 18–19 for a list of built-in pseudocode functions and\noperators.",
+          "marks": 4,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A café manager needs a program for a loyalty scheme. A customer is awarded one loyalty point",
+        "for each purchase.",
+        "When a customer has ten or more points, the customer is offered a free slice of cake."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Describe the term decomposition when used to develop algorithms.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain the term transferable skills and state how these skills are used in program\ndevelopment.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A procedure, InitialiseArray(), initialises the array Flower by setting the value of each\nelement to –1.\nWrite pseudocode for the procedure InitialiseArray().",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A procedure called RandomPath() assigns values to the array Flower to store a path\nthrough the flowers in the fields as follows:\n• the first flower to be visited is flower number 10\n• randomly select the next flower to be visited between 1 and 20\n• store the index of the next flower to be visited in the current element of the array Flower\nif the flower has not been visited\n• visit each flower only once\n• repeat until the path has been completed through all flowers.\nAn element of –1 indicates that a flower has not been visited.\nWrite program code for the procedure RandomPath().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 7,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The procedure RandomPath() executes but gives an unexpected result.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "State the type of program error that has occurred and identify how this error can be\ndetected.\nType of program error ______\nMethod of detection ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Assume that the random number has been incorrectly generated in the procedure\nRandomPath().\nState two possible consequences of the incorrect use of the random number function.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A global 1D array Flower represents the flowers in a field and is defined as follows:",
+        "• The array contains 20 elements of type integer.",
+        "• Each element of the array contains a number associated with each flower."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Draw a program flowchart to represent the algorithm for the module.\nVariable and constant declarations are not required in program flowcharts.",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "For each of the following tests, choose three values of the parameters Year and UseSuffix\nthat test three different aspects of the procedure FormatYear().\nState the expected output in each case.\nTest 1\nParameter Value Expected output\nYear\nUseSuffix\nTest 2\nParameter Value Expected output\nYear\nUseSuffix\nTest 3\nParameter Value Expected output\nYear\nUseSuffix",
+          "marks": 6,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Describe two features of black-box testing.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "Describe two features of white-box testing.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "The pseudocode for a procedure FormatYear() is written as follows:",
+        "PROCEDURE FormatYear(Year : INTEGER, UseSuffix : BOOLEAN)",
+        "DECLARE OutYear : STRING",
+        "CONSTANT SUFFIX1 = \"BCE\"",
+        "CONSTANT SUFFIX2 = \"CE\"",
+        "OutYear NUM_TO_STRING(Year)",
+        "IF UseSuffix = TRUE",
+        "THEN",
+        "IF Year < 0",
+        "THEN",
+        "OutYear OutYear & SUFFIX1",
+        "ELSE",
+        "OutYear OutYear & SUFFIX2",
+        "ENDIF",
+        "ENDIF",
+        "OUTPUT OutYear",
+        "ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A programmer has started to define the program module SearchLog().\nModule Description\n• takes the first seven characters of a geocode as a parameter\n• counts the number of times this parameter occurs in the array\nGeoCodeLog\nSearchLog()\n• extracts the date the last photograph was taken at the geocode location\n• returns a string formed by concatenating the count, a single space and\nthe date\nWrite pseudocode for the module SearchLog().",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A text file, Locations.txt, stores data from the array GeoCodeData combined with data\nextracted from the array GeoCodeLog. Each line of the text file contains three items of data in\nthe following format:\n• The geocode stored in each element of the array GeoCodeData followed by a hash\nsymbol (#).\n• The number of times each geocode is found in the array GeoCodeLog followed by the\nhash symbol.\n• The date of the last photograph taken at that location.\nFor example, twelve photographs were taken at geocode V9PG+3P,ChicagoUSA.\nThe last photograph was taken on 09/10/2020.\nThe corresponding entry in the file Locations.txt is:\n\"V9PG+3P,ChicagoUSA#12#09/10/2020\"\nThe program module ExtractArrays() is defined as follows:\nModule Description\n• creates the text file Locations.txt\n• uses SearchLog() to obtain the string of the count and the date of the\nExtractArrays()\nlast photograph for each geocode location\n• writes the entry in the text file Locations.txt\nYou may assume that unused elements of GeoCodeData array are not added to the file\nLocations.txt.\nWrite program code for the module ExtractArrays().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (not inclusive of x)\nExample: RAND(87) could return 35.43\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A geocode string consists of four characters that are followed by:",
+        "• the character '+'",
+        "• two more characters",
+        "• a comma",
+        "• a description of the location.",
+        "For example:",
+        "• The geocode string for Cambridge, UK is \"646A+6R,CambridgeUK\".",
+        "• The geocode string for Chicago, USA is \"V9PG+3P,ChicagoUSA\".",
+        "A program uses two 1D arrays to store data about the locations in which photographs were taken.",
+        "• An array GeoCodeData contains a geocode string for each location. A geocode string is",
+        "added to this array if it does not exist in the array.",
+        "• An array GeoCodeLog contains the first seven characters of the geocode string for each",
+        "photograph, followed by a space and the date when the photograph was taken. The date",
+        "format is DD/MM/YYYY.",
+        "For example, a photograph taken in Cambridge, UK on 21/12/2020 is represented as:",
+        "\"646A+6R 21/12/2020\"",
+        "Assume that:",
+        "• both arrays contain 20 000 elements",
+        "• new data is added to the next unused element",
+        "• unused array elements are indicated by the string \"AAAA+0A\"."
+      ]
+    }
+  ]
+}

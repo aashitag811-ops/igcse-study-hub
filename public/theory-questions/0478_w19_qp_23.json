@@ -1,0 +1,259 @@
+{
+  "paperId": "0478_w19_qp_23",
+  "subjectCode": "0478",
+  "session": "w19",
+  "component": "23",
+  "totalMarks": 41,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers must have meaningful names.\nName two arrays you could use for Task 1. State the data type and purpose of each one.\nArray 1 ______\nData type 1 ______\nPurpose ______\nArray 2 ______\nData type 2 ______\nPurpose ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Name a variable that you used for Task 2. State the data type and purpose of this variable.\nExplain why you chose to use a variable rather than a constant.\nVariable ______\nData type ______\nPurpose ______\nReason for use of a variable ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for Task 1, using either pseudocode, programming statements or a\nflowchart. Assume that the first part of Task 1, the storage and display of tile descriptions,\nprices per box and identification codes has already been done.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how you extended your program to complete Task 2. Any programming statements\nyou use in your answer must be fully explained.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how you could validate the input for percentage waste allowance in Task 3.\n\nSection B",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe the use of a subroutine in a program.",
+        "[2]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Name the three types of loop structure used in pseudocode.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Name the type of statement demonstrated by the use of IF … THEN … ELSE … ENDIF",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Re-write the pseudocode algorithm using a CASE statement.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "The following pseudocode algorithm uses nested IF statements.",
+        "IF Response = 1",
+        "THEN",
+        "X X + Y",
+        "ELSE",
+        "IF Response = 2",
+        "THEN",
+        "X X – Y",
+        "ELSE",
+        "IF Response = 3",
+        "THEN",
+        "X X * Y",
+        "ELSE",
+        "IF Response = 4",
+        "THEN",
+        "X X / Y",
+        "ELSE",
+        "OUTPUT \"No response\"",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data: 10\nFirst Last UserIn Middle Found OUTPUT",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe the function being performed by the algorithm.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The algorithm performs an operation on the array named MyData",
+        "DIV means integer division, so only the whole number part of the result is returned",
+        "e.g. 7 DIV 2 returns a value of 3",
+        "First 0",
+        "Last 16",
+        "Found FALSE",
+        "INPUT UserIn",
+        "WHILE (First <= Last) AND (Found = FALSE) DO",
+        "Middle (First + Last) DIV 2",
+        "IF MyData[Middle] = UserIn",
+        "THEN",
+        "Found TRUE",
+        "ELSE",
+        "IF UserIn < MyData[Middle]",
+        "THEN",
+        "Last Middle - 1",
+        "ELSE",
+        "First Middle + 1",
+        "ENDIF",
+        "ENDIF",
+        "ENDWHILE",
+        "OUTPUT Found",
+        "This table shows the contents of the array: MyData e.g. MyData[2] stores the value 5",
+        "MyData",
+        "Index [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]",
+        "Value 2 3 5 6 8 10 12 13 14 16 18 20 25 27 29 34 36"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw four different flowchart symbols and describe how they are used in a program flowchart.",
+        "Flowchart symbol Description of use",
+        "[4]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "State the number of fields and records required for this database.\nNumber of Fields ______\nNumber of Records ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The data in MARKBOOK is stored under category headings: LastName, FirstName,\nY10TestScore and Y11TestScore.\nState, with a reason, whether any of these headings would be suitable as a primary key.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid to only display the first name, last name and year 10\ntest score of each student who achieved 50 or more in their year 10 test. The output should\nbe in test score order with the highest marks at the top of the list.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A teacher has decided to use a database table as her mark book for her Computer Science class,",
+        "which she has called MARKBOOK. For each student, the following data will be recorded: first",
+        "name, last name, their year 10 test score and their year 11 test score. The class has 32 students."
+      ]
+    }
+  ]
+}

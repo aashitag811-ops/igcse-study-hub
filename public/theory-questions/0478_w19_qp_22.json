@@ -1,0 +1,268 @@
+{
+  "paperId": "0478_w19_qp_22",
+  "subjectCode": "0478",
+  "session": "w19",
+  "component": "22",
+  "totalMarks": 33,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers must have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Describe the data structures that you have used to store the data for the concrete slabs\nin Task 1, include the name, data type and use for each data structure.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "State one variable that you have used in Task 3.\nGive the data type for the variable. State what it is used for.\nVariable name ______\nData type ______\nUse ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how you calculated the volume of a concrete slab in Task 1.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a\nflowchart. Assume that Task 1 has been completed.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how you changed your program for Task 1 to meet the requirements for Task 3.\nInclude and fully explain any altered or additional programming statements.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to select a random number using the function",
+        "RandInt(n), which returns a whole number between 1 and the argument n. The algorithm then",
+        "allows the user to guess the number.",
+        "Number RandInt(100)",
+        "TotalTry 1",
+        "REPEAT",
+        "PRINT \"Enter your guess now, it must be a whole number\"",
+        "INPUT Guess",
+        "IF TotalTry > Number",
+        "THEN",
+        "PRINT \"Too large try again\"",
+        "ENDIF",
+        "IF Guess > Number",
+        "THEN",
+        "PRINT \"Too small try again\"",
+        "ENDIF",
+        "TotalTry Guess + 1",
+        "UNTIL Guess <> Number",
+        "TotalTry TotalTry - 1",
+        "PRINT \"Number of guesses \", TotalTry",
+        "Find the four errors in the pseudocode and suggest a correction to remove each error.",
+        "Error 1 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "Error 2 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "Error 3 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "Error 4 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The flowchart checks the lengths of a batch of 10 ropes. For the batch to be accepted 90% of\nthe lengths need to be between 24.9 and 25.1 metres.\nSTART\nReject 0\nCount 0\nYes\nIs Count =\n10 ?\nNo\nNo\nIs Reject\nCount Count + 1\n<= 1 ?\nINPUT Length\nYes\nOUTPUT \"Batch\nrejected\"\nIs Length <\nYes\n25.1 AND\nLength > 24.9 ?\nNo\nReject Reject + 1\nOUTPUT \"Batch\naccepted\"\nEND\nComplete the trace table for the input data:\n24.88, 25.01, 24.98, 25.00, 25.05, 24.99, 24.97, 25.04, 25.19, 25.07\nReject Count Length\nOUTPUT",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "It has been decided to only reject batches of rope that contain ropes that are too short.\nState the change required to the algorithm.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Explain how the algorithm to reject batches could be improved to make it more effective.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Four validation checks and four descriptions are shown.",
+        "Draw a line to connect each validation check to the correct description.",
+        "Validation Check Description",
+        "Range check Checks that some data is entered.",
+        "Checks for a maximum number of characters",
+        "Presence check",
+        "in the data entered.",
+        "Checks that the characters entered are all",
+        "Length check",
+        "numbers.",
+        "Checks that the value entered is between an",
+        "Type check",
+        "upper value and a lower value.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A programmer writes a program to weigh baskets of fruit in grams, keeping a total of the weight",
+        "and counting the number of baskets. The total weight is stored in a variable Total and the number",
+        "of baskets is stored in a variable BasketCount.",
+        "Explain, including examples of programming statements, how totalling and counting could be used",
+        "in this program.",
+        "Totalling .............................................................................................................................................",
+        "Counting ...........................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain why constants, variables and arrays are used in programming.",
+        "Constants .........................................................................................................................................",
+        "Variables ..........................................................................................................................................",
+        "Arrays ...............................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Explain why the field Item number could not be used as a primary key.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A query-by-example has been written to display only the order number and item numbers of\nany items in progress or not started.\nField:\nItem number Order number Amount Status\nTable: SALES SALES SALES SALES\nSort:\nShow:\n3 3\nCriteria:\nNot Like \"Delivered\"\nor:\nExplain why the query-by-example is incorrect, and write a correct query-by-example.\nExplanation ______\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A database table, SALES, is used to keep a record of items made and sold by a furniture maker.",
+        "Item number Order number Notes Amount Status",
+        "CH001 1921 Smith – six dining chairs 6 Delivered",
+        "TB003 1921 Smith – large table 1 In progress",
+        "CH001 1924 Hue – extra chairs 4 In progress",
+        "CH003 1925 For stock 2 Cancelled",
+        "BN001 1927 Patel – replacement bench 1 Not started",
+        "ST002 1931 Sola – small table 1 Delivered",
+        "CH003 1927 Patel – eight dining chairs with arms 8 Not started",
+        "TB003 1927 Patel – large table 1 Not started"
+      ]
+    }
+  ]
+}

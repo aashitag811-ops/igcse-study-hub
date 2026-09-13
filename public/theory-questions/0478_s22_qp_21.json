@@ -1,0 +1,249 @@
+{
+  "paperId": "0478_s22_qp_21",
+  "subjectCode": "0478",
+  "session": "s22",
+  "component": "21",
+  "totalMarks": 39,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Describe the data structures you could have used in Task 1. Your description should include\ntypes of data structure, names used for data structures, their uses and examples of sample\ndata.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how you could change your program in Task 1 to total all the money collected from\nnew members who have paid.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Describe how data input in Task 1 could be validated to find out if a new member wants to\nwork as a volunteer.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Write an algorithm to show how your program completes Task 3 assuming the option to\nsponsor a wooden plank has been chosen, using pseudocode, programming statements or a\nflowchart. Details completed in Task 1 are not required.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program allows any one of the member or volunteer lists to be selected and\ndisplayed (part of Task 2). Any programming statements used in your answer must be fully\nexplained.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick ( ) one box in each row to identify the most appropriate data type for each description. Only",
+        "one tick ( ) per column.",
+        "Data type",
+        "Description",
+        "Boolean Char Integer Real String",
+        "a single character from the keyboard",
+        "multiple characters from the keyboard",
+        "only one of two possible values",
+        "only whole numbers",
+        "any number",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Give one piece of normal test data and one piece of erroneous test data that could be used to",
+        "validate the input of an email address.",
+        "State the reason for your choice in each case.",
+        "Normal test data ...............................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "Erroneous test data ..........................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete this flowchart:\nSTART\nPassCount 0\nFailCount 0\nCount 0\nYes No\nCount Count + 1\nNo\nYes\nEND",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Write a pseudocode routine that will check that each test result entered into the algorithm is\nbetween 0 and 100 inclusive.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The flowchart shows an algorithm that should allow 60 test results to be entered into the variable",
+        "Score. Each test result is checked to see if it is 50 or more. If it is, the test result is assigned to the",
+        "Pass array. Otherwise, it is assigned to the Fail array."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using this input data:\n8, 66, 606, 6226, 8448, 642, 747, 77, 121\nCounter Value First Last Limit\nOUTPUT",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe the purpose of the algorithm.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The pseudocode represents an algorithm.",
+        "The pre-defined function DIV gives the value of the result of integer division.",
+        "For example, Y = 9 DIV 4 gives the value Y = 2",
+        "The pre-defined function MOD gives the value of the remainder of integer division.",
+        "For example, R = 9 MOD 4 gives the value R = 1",
+        "First ← 0",
+        "Last ← 0",
+        "INPUT Limit",
+        "FOR Counter ← 1 TO Limit",
+        "INPUT Value",
+        "IF Value >= 100",
+        "THEN",
+        "IF Value < 1000",
+        "THEN",
+        "First ← Value DIV 100",
+        "Last ← Value MOD 10",
+        "IF First = Last",
+        "THEN",
+        "OUTPUT Value",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "NEXT Counter"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the number of fields that are in the table GAMES.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "State one important fact that must be true for a field to be a primary key.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid to output all the games that have no stock and that are\non order with the supplier. Display only the GameID, GameName and GamePrice fields in\nalphabetical order of the name of the game.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A computer game shop records its stock levels in a database table called GAMES. The fields used",
+        "in the stock table are shown.",
+        "Name Description",
+        "GameID primary key",
+        "GameName the name of each game",
+        "AgeRestriction the minimum age at which a person is allowed to play each game",
+        "GamePrice the selling price for each game",
+        "NumberStock the quantity of each game currently in stock",
+        "OnOrder whether or not each game is on order from the suppliers",
+        "DateLastOrdered the date the most recent order for each game was placed",
+        "GameDescription a summary of the contents and purpose of each game"
+      ]
+    }
+  ]
+}

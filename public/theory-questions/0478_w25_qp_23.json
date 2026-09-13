@@ -1,0 +1,421 @@
+{
+  "paperId": "0478_w25_qp_23",
+  "subjectCode": "0478",
+  "session": "w25",
+  "component": "23",
+  "totalMarks": 48,
+  "questionCount": 14,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Give three ways of creating a maintainable program.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Four descriptions of programming techniques and five programming techniques are given.",
+        "Draw one line from each description to the relevant technique. Not all techniques will be used.",
+        "Description Programming technique",
+        "output",
+        "adding up a set of numbers",
+        "selection",
+        "displaying the result of a",
+        "calculation",
+        "totalling",
+        "executing a set of instructions",
+        "based on a condition",
+        "iteration",
+        "executing the same set of",
+        "counting",
+        "instructions multiple times",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box to identify the most appropriate data type to store 'M'",
+        "A integer",
+        "B char",
+        "C real",
+        "D Boolean",
+        "[1]",
+        "* 0000800000003 * DFD"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Tickets for a theme park are booked online. An adult ticket costs $12.99 and a child ticket\ncosts $7.99. A booking fee of $1.99 is added to the total cost of each booking.\nWrite an algorithm in pseudocode to:\n• input the number of adult tickets for a booking\n• input the number of child tickets for a booking\n• calculate and output the total cost of the booking using an appropriate message.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Each booking must have at least one adult ticket.\nExplain how the algorithm could be changed to repeatedly ask for the number of adult tickets\nif the number input is less than 1.\nAny code used must be fully explained.\n\n* 0000800000004 * DFD",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The theme park has rules for a person to be able to go on a ride.\nA person can go on a ride (X = 1) only if they:\n• are 1.4 metres tall or over\n• are 12 years old or over\n• do not have a medical condition.\nInput Description Binary value\nunder 1.4 metres 0\n1.4 metres or over 1\nunder 12 years old 0\n12 years old or over 1\ndoes not have a medical condition 0\nhas a medical condition 1",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Write the logic expression for this problem.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Complete the truth table for this problem.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n* 0000800000005 * DFD",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program has been written in pseudocode to input five numbers between 1 and 900 inclusive and",
+        "store the highest number and the lowest number entered.",
+        "01 Lowest 900",
+        "02 Highest 1",
+        "03 FOR Count 1 TO 5",
+        "04 INPUT Number",
+        "05 IF Number < Lowest"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Lowest Number"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Number > Highest"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Highest Number"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using the following numbers:\n563, 21, 376, 99, 400\nCount Number Lowest Highest",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "The algorithm does not work correctly.\nState the reason why the algorithm does not work as expected and explain how the algorithm\ncould be corrected.\nAny code used must be fully explained.\nReason ______\nCorrection ______\n\n* 0000800000006 * DFD\n6 The flowchart represents an algorithm.\nSTART\nPosition –1\nCount 1\nINPUT Name\nIS Name = Yes\nPosition Count\nClassList[Count]\nNo\nCount Count + 1\nNo\nIS Count\n> 5 ?\nYes\nOUTPUT\nPosition\nSTOP\n* 0000800000007 * DFD",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "The algorithm uses the one-dimensional (1D) array ClassList that contains the following\ndata:\nClassList\n1 2 3 4 5\nHenil Sven Ella Asia Ridwan\nComplete the table by writing the output from the flowchart when each of the given names are\ninput.\nName OUTPUT\nRidwan\nYan\nElla",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Identify the standard method of solution used by the flowchart.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "Write the algorithm in pseudocode.\n\n* 0000800000008 * DFD\n7 An algorithm has been written in pseudocode to:\n• input a whole number between 1 and 255 inclusive\n• convert the input to an 8-bit binary number\n• store each bit of the binary number in an array.\nFor example, if the denary number 127 was input, the binary number 01111111 would be stored in\nthe array.\n01 DECLARE BinaryArray : ARRAY[1:8] OF INTEGER\n02 DECLARE DenaryNumber : CHAR\n03 OUTPUT \"Please enter a whole number between 1 and 255 inclusive \"\n04 INPUT DenaryNumber\n05 FOR Count 7 TO 1 STEP -1\n06 BinaryArray[Count] MOD(DenaryNumber,3)\n07 DenaryNumber DIV(DenaryNumber,2)\n08 NEXT Count",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Identify the line numbers of the three errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\n\n* 0000800000009 * DFD",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Identify one programming technique used in the algorithm.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "14ci",
+              "label": "(i)",
+              "text": "The algorithm can accept a number between 1 and 255 inclusive as input.\nTwo validation checks that could be applied to DenaryNumber are a presence check\nand a type check.\nIdentify one other validation check that could be applied to DenaryNumber",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "14cii",
+              "label": "(ii)",
+              "text": "Write the pseudocode to implement the validation check you identified in (c)(i).\nYou do not need to rewrite the whole algorithm.\n\n* 0000800000010 * DFD\n8 A school has set up a database table EquipmentLoan to record details of school equipment\nloaned to students.\nEquipmentID Description Name DateLoaned Returned\nCam01 Digital camera James 23/04/2025 No\nCam04 Digital camera Amir 12/03/2025 Yes DO NOT WRITE IN THIS MARGIN\nGra02 Graphics tablet Nikita 27/04/2025 No\nTab01 Tablet Holly 18/03/2025 Yes\nExt01 External Hard drive Hussein 27/04/2025 Yes\nCam02 Digital camera Emily 10/04/2025 Yes\nTri01 Tripod Emily 10/04/2025 Yes",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "14ai",
+              "label": "(i)",
+              "text": "Give the name of the field that is most appropriate to be the primary key.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "14aii",
+              "label": "(ii)",
+              "text": "State the reason for choosing this field for the primary key.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Complete the structured query language (SQL) statement to list equipment not returned.\nThe list must contain only the descriptions and student names.\nSELECT ______\nFROM ______ DO NOT WRITE IN THIS MARGIN\nWHERE ______ ;\n\n* 0000800000011 * DFD\n9 The variables Name, Age and Found are used in a computer program.\nName holds the name of a person. Age holds the age of a person as a whole number.\nFound holds a flag that can be set to TRUE or FALSE",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to declare the variables Name, Age and Found",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "The procedure StoreData(Name) stores the name of a person in the file People.txt",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "14bi",
+              "label": "(i)",
+              "text": "Write pseudocode statements to:\n• define the procedure with the parameter\n• store the name of the person in the file.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "14bii",
+              "label": "(ii)",
+              "text": "Write the pseudocode that uses the procedure StoreData() to store the name ‘Suella’\nin the file People.txt\n\n* 0000800000012 * DFD\n10 A number game has two players. Random whole numbers are generated for each player. The\nnumbers are compared and players are given points based on the result of the comparison.\nThe two-dimensional (2D) array NumberGenerated[] stores each number generated for each\nplayer. The first dimension stores the player number and the second dimension stores the random\nwhole numbers generated.\nThe game is played as follows:\n• 100 random whole numbers between 1 and 6 inclusive are generated for player 1 and stored\nin the array.\n• 100 random whole numbers between 1 and 6 inclusive are generated for player 2 and stored\nin the array.\n• The first number generated for each player is compared and the player with the higher number\nis awarded 2 points. If the two numbers are the same, both players are awarded 1 point each.\n• The comparisons repeat for all 100 numbers generated.\n• The player with the higher total number of points is output as the winner.\n• If the players have the same total number of points, a new random whole number is generated\nfor each player and compared. This is repeated until one player has a higher number than the\nother player. 2 points are added to that player’s total number of points, making this player the\nwinner.\nWrite a program that meets the following requirements:\n• input and validate the names of the two players\n• generate 100 random whole numbers between 1 and 6 inclusive for each player and store\nthem in the array NumberGenerated[]\n• calculate and store the total number of points for each player\n• output the name and total number of points for each player in descending order of total\nnumber of points.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; assume that this has already been done.\nAll outputs must contain suitable messages.\n* 0000800000013 * DFD\n* 0000800000014 * DFD\n* 0000800000015 * DFD\n\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 38,
+      "text": [
+        "NEXT Count"
+      ]
+    }
+  ]
+}

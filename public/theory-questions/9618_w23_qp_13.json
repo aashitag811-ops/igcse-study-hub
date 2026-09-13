@@ -1,0 +1,461 @@
+{
+  "paperId": "9618_w23_qp_13",
+  "subjectCode": "9618",
+  "session": "w23",
+  "component": "13",
+  "totalMarks": 71,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State what is meant by analogue data.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Draw one line from each term to its most appropriate description.\nTerm Description\nthe number of samples taken\nsampling\nper second\ntaking measurements at regular\nsampling rate\nintervals and storing the values\nthe number of bits used to store\nsampling resolution\neach sample",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 3,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Describe the impact of increasing the image resolution on the quality of a bitmap graphic.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Calculate the file size of a bitmap image using the following information:\n• image resolution of 2048 pixels wide and 1024 pixels high\n• bit depth of 16 bits.\nGive your answer in kibibytes. Show your working.\nWorking ______\nAnswer in kibibytes ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Explain why the company uses a public cloud to store these courses.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Describe two disadvantages of storing data on a public cloud compared to storing data\non a server in a Local Area Network (LAN).",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "State how the following security measures can be used to protect computer systems.\nFirewall ______\nEncryption ______\nPasswords ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The company uses a database, COURSES, to store data about the courses and their tutors.\nEach course starts at different times of the year and may have a different tutor.\nThe database has the following structure:\nCOURSE_INFORMATION(CourseID, Description, Cost)\nTUTOR(TutorID, TelephoneNumber, EmailAddress, TutorName)\nCOURSE_SCHEDULE(CourseID, DateStarted, TutorID)",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Complete the entity‑relationship (E‑R) diagram for the database COURSES.\nCOURSE_SCHEDULE TUTOR\nCOURSE_INFORMATION",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Write the Structured Query Language (SQL) script to return the total number of courses\nthat have started after 9 September 2023.\nThe value returned must have an appropriate field name.",
+              "marks": null,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "An example of a tutor ID is NK16C6.\nAn administrative officer enters the tutor ID into the TUTOR table.\nExplain how data verification can be used when the tutor ID is entered.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A company sells online Computer Science courses to students in different countries.",
+        "The courses are stored on a public cloud."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the truth table for the logic expression:\nY = ((P AND Q) XOR ((NOT Q) OR R)) AND NOT P\nWorking space\nP Q R Y\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Draw a logic circuit for the logic expression:\nY = ((P AND Q) XOR ((NOT Q) OR R)) AND NOT P\nQ Y",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the following features of a typical IDE.\nContext‑sensitive prompts ______\nSingle stepping ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The program is distributed by downloading the source code and its library files from a web\nserver.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Explain the reasons for compressing the files.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "The program files are stored on a new hard disk after they have been downloaded.\nDescribe the reasons why a hard disk formatter is needed for the new hard disk.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A programmer uses an Integrated Development Environment (IDE) to develop a program that",
+        "monitors air quality."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State two benefits to a programmer of distributing a program using a shareware licence.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Explain why it is important for a programmer to join a professional ethical body.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Explain why Static RAM is used in the laptop instead of Dynamic RAM.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Identify two reasons for using Electrically Erasable Programmable ROM (EEPROM) in a\nvirtual reality headset.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Describe how the laser printer makes use of a buffer.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Identify one port that could be used to connect the virtual reality headset to the laptop.\nJustify your choice.\nPort ______\nJustification ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A laptop computer has Static RAM (SRAM).",
+        "A virtual reality headset and a laser printer are connected to the laptop."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Data verification is one method of protecting the integrity of data.\nDescribe one other method of protecting the integrity of data.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "State one difference and one similarity between pharming and phishing.\nDifference ______\nSimilarity ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Explain how the data security risks of malware can be restricted.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "Identify three other components in the Von Neumann model of a computer system.\nDo not include registers or buses in your answers.",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "Identify two differences between special purpose registers and general purpose\nregisters.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "The following incomplete table contains steps of the Fetch‑Execute (F‑E) cycle and their\ndescriptions.\nComplete the table by writing the missing steps using register transfer notation and the\nmissing descriptions.\nStep Description\n______ The address in PC is incremented.\nMDR [[MAR]]\nMAR [PC]\n______ The contents of MDR are copied into CIR.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Interrupts can be caused by software programs or hardware devices.\nState one cause of a software interrupt.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9d",
+          "label": "(d)",
+          "text": "The following statements describe the stages that the CPU performs when an interrupt is\ndetected.\nThere are three missing statements.\nWrite the letter of the missing statements from the table in the correct place to complete the\ndescription.\n1 At the end of each Fetch‑Execute (F‑E) cycle, the processor checks if an interrupt flag is\nset.\n3 If the interrupt priority is high enough, the processor saves the current contents of the\nregisters.\n5 When servicing of the interrupt is complete, the processor restores the registers.\nLetter Stage\nThe address of the Interrupt Service (ISR) handling routine is loaded into the\nProgram Counter (PC).\nB Lower priority interrupts are re‑enabled.\nC The device causing the interrupt transfers data to the CPU.\nThe processor identifies the source of the interrupt and checks the priority of\nthe interrupt.\nE The ISR is incremented.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A computer system is designed using the basic Von Neumann model.",
+        "Registers and buses are components in the Von Neumann model."
+      ]
+    }
+  ]
+}

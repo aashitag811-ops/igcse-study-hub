@@ -1,0 +1,419 @@
+{
+  "paperId": "0478_w15_qp_13",
+  "subjectCode": "0478",
+  "session": "w15",
+  "component": "13",
+  "totalMarks": 46,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Name an application which makes use of the following sensors. A different application should\nbe used in each case.\nTemperature ______\nMagnetic field ______\nMotion ______",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The flowchart on the opposite page shows how a light sensor and microprocessor are used\nto switch a street lamp on or off. When the sensor reading is <= 50 light units, the lamp is\nturned on automatically.\nSeveral of the instructions have been omitted from the flowchart.\nUsing item numbers only from the list below, complete the flowchart:\nItem\nInstruction\nnumber\n1 Count down in minutes",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 3,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Is light reading <= 50?"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Is street lamp already on?"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Is time = 0?"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The microprocessor compares the sensor reading with stored values"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The sensor reading is sent to the microprocessor"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Switch the street lamp off"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Switch street lamp on"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Describe how the sensors and microprocessor are used to monitor the temperature and CO\nlevels and warn the driver if either is out of range.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "The information from seven sensors is sent to an engine management system in the car. The\nstatus of each sensor is stored in an 8-bit register; a value of 1 indicates a fault condition:\nparity bit CO level voltage airbag\ntoo high too low fault\ntemperature fuel pressure oil pressure brake pads\ntoo high too low too low too thin\nFor example, a register showing 0 1 0 1 1 0 0 0 indicates:\n• temperature too high\n• fuel pressure too low\n• voltage too low",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9bi",
+              "label": "(i)",
+              "text": "Identify the fault condition(s) that the following register indicates:\n0 0 1 0 0 1 0 1",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9bii",
+              "label": "(ii)",
+              "text": "The system uses odd parity.\nWrite the correct parity bit in each register.\n1 1 1 0 0 1 0\n0 0 0 1 1 1 0",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9biii",
+              "label": "(iii)",
+              "text": "A car has a faulty airbag and the CO level is too high.\nWrite what should be contained in the 8-bit register.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9biv",
+              "label": "(iv)",
+              "text": "Give the hexadecimal value of the binary number shown in part (iii).\n\n3 A section of computer memory is shown below:\nAddress Contents\n1000 0000 0110 1110\n1000 0001 0101 0001\n1000 0010 1000 1101\n1000 0011 1000 1100\n1000 1100\n1000 1101\n1000 1110\n1000 1111",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "The contents of memory location 1000 0001 are to be read.\nShow the contents of the Memory Address Register (MAR) and the Memory Data\nRegister (MDR) during this read operation:\nMAR\nMDR",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "The value 0111 1001 is to be written into memory location 1000 1110.\nShow the contents of the MAR and MDR during this write operation:\nMAR\nMDR",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aiii",
+              "label": "(iii)",
+              "text": "Show any changes to the computer memory following the read and write operations in\npart (a)(i) and part (a)(ii).\nAddress Contents\n1000 0000 0110 1110\n1000 0001 0101 0001\n1000 0010 1000 1101\n1000 0011 1000 1100\n1000 1100\n1000 1101\n1000 1110\n1000 1111",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Name three other registers used in computers.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "The control unit is part of a computer system.\nWhat is the function of the control unit?\n\n4 (a) Computer ethics involves a number of different topics.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ci",
+              "label": "(i)",
+              "text": "A student made the following statement on an examination paper:\n“It allows a user to have the freedom to run, copy, change and adapt the software and\nthen pass it on to a colleague, friend or family member.”\nIdentify which computer term the student was describing.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9cii",
+              "label": "(ii)",
+              "text": "Explain what is meant by computer ethics.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "The four statements below refer to firewalls and proxy servers.\nStudy each statement.\nTick (9) the appropriate column(s) to indicate whether the statement refers to a firewall\nand/or a proxy server.\nStatement Firewall Proxy server\nSpeeds up access of information from a web server by\nusing a cache\nFilters all Internet traffic coming into and out from a\nuser’s computer, intranet or private network\nHelps to prevent malware, including viruses, from\nentering a user’s computer\nKeeps a list of undesirable websites and IP addresses",
+          "marks": 4,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Explain three ways of preventing accidental loss or corruption of data.\n\n5 A security system records video footage. One minute of video requires 180 MB of storage. The\nrecording system can store several hours of video footage.",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Name and describe a suitable storage device for this recording system.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Calculate how much storage would be needed for 2 hours of video footage.\nShow your working and give the answer in Gigabytes (GB).\n\n6 Passengers fly into an airport from other countries. The airport has a security system that uses:\n• computers\n• scanners\n• digital cameras\nTo gain entry to the country, each passenger must have a passport or identification (ID) card. This\nmust contain a recent photograph and other personal data. The passenger must:\n• place their passport or ID card on a scanner that reads machine-readable characters and\nscans the photograph\n• look towards a camera that takes an image of the passenger’s face\nDescribe how a computer checks whether the image just taken by the camera matches the\nscanned photograph.\n\n7 Name a suitable output device for each of the following applications. A different device should be\nused for each application.\nApplication Suitable output device\nProduction of one-off photographs of\nvery good quality ______\nHigh volume colour printing of\nadvertising flyers ______\nProduction of an object, which is built up\nlayer by layer; used in CAD applications ______\nConverting electrical signals into sound\nShowing enlarged computer output on a\nwall or large screen ______\n\n8 Four input devices are shown in the table below.\nGive an application which makes use of each device and state a reason why the device is\nappropriate for that application.\nYour application must be different in each case.\nInput device Application and reason\nApplication ______\nReason ______\nLight sensor\nApplication ______\nReason ______\nKeyboard\nApplication ______\nReason ______\nBarcode reader\nApplication ______\nReason ______\nTouch screen\n\n9 MP3 file compression reduces the size of a music file by 90%.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "A music track is 80 MB in size.\nCalculate the file size after compression.\nHow many MP3 files of the size calculated above could be stored on an 800 MB CD?",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9bi",
+              "label": "(i)",
+              "text": "Explain how MP3 files retain most of the original music quality.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9bii",
+              "label": "(ii)",
+              "text": "State the type of file compression used in MP3 files.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9biii",
+              "label": "(iii)",
+              "text": "Name another file compression format.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 43,
+      "text": [
+        "Time set to 10 minutes",
+        "[5]",
+        "START",
+        "Read light",
+        "sensor",
+        "Yes",
+        "No",
+        "Yes Yes",
+        "Is street light",
+        "already off?",
+        "No",
+        "No",
+        "Time set to 10",
+        "minutes",
+        "Count down in",
+        "minutes",
+        "Yes Yes",
+        "No No",
+        "Is time",
+        "= 0?",
+        "2 Sensors and a microprocessor monitor a car exhaust for high temperature and high carbon",
+        "monoxide (CO) levels."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Choose five correct terms from the following list to complete the spaces in the sentences below:",
+        "• cypher text",
+        "• encryption algorithm",
+        "• encryption key",
+        "• firewall",
+        "• plain text",
+        "• proxy server",
+        "• symmetric encryption",
+        "....................................................................................... is a security system.",
+        "It uses the same ....................................................................... to encrypt and decrypt a message.",
+        "Before encryption, the message is called ...................................................................................... .",
+        "The ..................................................................................... processes the original message.",
+        "The output is known as ........................................................................... . [5]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International",
+        "Examinations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after",
+        "the live examination series.",
+        "Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local",
+        "Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

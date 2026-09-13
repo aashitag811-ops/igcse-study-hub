@@ -1,0 +1,453 @@
+{
+  "paperId": "9618_s23_qp_21",
+  "subjectCode": "9618",
+  "session": "s23",
+  "component": "21",
+  "totalMarks": 63,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Describe how a typical Integrated Development Environment (IDE) could be used to help\ndebug the program to find the errors in the function Calculate().",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The algorithm for function Calculate() contains the three pseudocode statements shown.\nDescribe the error in each statement or write ‘no error’ if the statement contains no error.\nAssume any variables used are of the correct type for the given function.\nStatement 1: Index STR_TO_NUM((\"27\") + 2)\nError ______\nStatement 2: Index STR_TO_NUM(MID(\"CPE1704TKS\", 4, 2))\nError ______\nStatement 3: IF MONTH(ThisDate) > '6' THEN\nError ______",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The program contains variables with values as follows:\nVariable Value\nActive TRUE\nPoints 75\nExempt FALSE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Complete the table by evaluating each expression.\nExpression Evaluation\n(Points > 99) OR Active\n(Points MOD 2 = 0) OR Exempt\n(Points <= 75) AND (Active OR Exempt)\n(Active OR NOT Active) AND NOT Exempt",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Write expression 4 from the table in part (c)(i) in its simplest form.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A programmer has written a program which includes the function Calculate().",
+        "When the program is run, the function returns an unexpected value."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The algorithm is described as follows:\n1. prompt and input a character and store in MyChar\n2. prompt and input an integer and store in MyCount\n3. generate a string consisting of MyChar repeated MyCount times\n4. output the string.\nDraw a program flowchart to represent the algorithm.\nSTART\nEND",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A different part of the program uses the variable StartDate.\nWrite pseudocode statements to declare StartDate and assign to it the date corresponding\nto 15/11/2005.\nDeclaration ______\nAssignment ______",
+          "marks": 3,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A program contains an algorithm to output a string of a specified length containing identical",
+        "characters."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Identify a suitable structure for storing the information for one customer. Explain the\nadvantage of using this structure.\nStructure ______\nAdvantage ______",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Describe a data structure that could be used to store the information for all customers.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Customers receive points depending on the amount they spend. The number of points\ndepends on the band that the amount falls into:\nBand Amount Points\n1 Less than $10 5 per whole dollar ($)\n2 Between $10 and $100 inclusive 7 per whole dollar ($)\n3 Over $100 10 per whole dollar ($)\nFor example, if the amount is $99.77, this amount is in band 2 and therefore the number of\npoints is 7 × 99, which is 693 points.\nThe algorithm to calculate the points from a given amount is expressed as follows:\n• work out the appropriate band\n• calculate and output the number of points.\nApply the process of stepwise refinement to increase the detail of the algorithm. Structure\nyour algorithm into a sequence of five steps that could be used to produce pseudocode.\nWrite the five steps.",
+          "marks": 5,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "Customers collect points every time they make a purchase at a store.",
+        "A program is used to manage the points system and the table lists some of the information stored",
+        "for one customer.",
+        "Information Data type required",
+        "Name String",
+        "Number of points collected Integer",
+        "Date of birth Date"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Function Replace() will:",
+        "1. take three parameters:",
+        "• a string (the original string)",
+        "• a char (the original character)",
+        "• a char (the new character)",
+        "2. form a new string from the original string where all instances of the original character are",
+        "replaced by the new character",
+        "3. return the new string.",
+        "Write pseudocode for function Replace().",
+        "[6]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Give two reasons why this may not be the most appropriate model to use in this case.\nReason 1 ______\nReason 2 ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Identify a more appropriate program development life cycle model for this scenario.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The website has been running in test mode for several weeks.\nIdentify and describe a final stage of testing that should take place before the website is\nmade available to all customers.\nStage ______\nDescription ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Several companies are developing websites to market a new type of games console. The company",
+        "that is first to create a website that can demonstrate the interactive features of the games console",
+        "will have an advantage over the others. The requirements for the website are likely to change as",
+        "more information about the features of the console are made available.",
+        "One company has decided to develop their website using a program development life cycle based",
+        "on the waterfall model."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A video-conferencing program supports up to six users. Speech from each user is sampled and",
+        "digitised (converted from analogue to digital). Digitised values are stored in array Sample.",
+        "The array Sample consists of 6 rows by 128 columns and is of type integer. Each row contains",
+        "128 digitised sound samples from one user.",
+        "The digitised sound samples from each user are to be processed to produce a single value which",
+        "will be stored in a 1D array Result of type integer. This process will be implemented by procedure",
+        "Mix().",
+        "A procedure Mix() will:",
+        "• calculate the average of each of the 6 sound samples in a column",
+        "• ignore sound sample values of 10 or less",
+        "• store the average value in the corresponding position in Result",
+        "• repeat for each column in array Sample",
+        "The diagram uses example values to illustrate the process:",
+        "1 2 3 ... 126 127 128",
+        "1 20 20 20 30 30 2",
+        "2 20 20 30 50 30 3",
+        "3 20 20 40 40 40 4",
+        "Sample:",
+        "4 20 20 50 40 50 20",
+        "5 20 3 5 6 60 4",
+        "6 20 4 2 4 70 30",
+        "Result: 20 20 35 40 46 25",
+        "Write pseudocode for procedure Mix().",
+        "Assume Sample and Result are global.",
+        "[6]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Decomposition will be used to break down the problem of designing the new module into\nsub-problems.\nIdentify three program modules that could be used in the design and describe their use.\nModule 1 ______\nUse ______\nModule 2 ______\nUse ______\nModule 3 ______\nUse ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The program designer produces a structure chart for the new module. Part of the structure\nchart is shown:\nModule-A()\nModule-B() Module-C() Module-D()",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Explain the relationship between the four modules shown.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Two new modules are added: Module‑X() and Module‑Y().\n• Module‑X() has no parameters.\n• Module‑Y() will take a string and a real number as parameters and return a\nBoolean value.\n• Module‑D() will call either Module‑X() or Module‑Y().\nDraw only the part of the structure chart that represents the relationship between\nModule‑X(), Module‑Y() and Module‑D().",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A school has a computerised library system that allows students to borrow books for a fixed length",
+        "of time. The system uses text files to store details of students, books and loans.",
+        "A new module is to be written which will generate emails to each student who has an overdue",
+        "book."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module IsNewSupp().\nModule SuppExists() has already been written and should be used as part of your solution.\nModule SuppExists() will generate a run-time error if the given parameter is not\n5 characters in length.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A new module has been defined:\nModule Description\nCheckNewItem()\n• called with a parameter of type string representing a line of\nitem information\n• checks to see whether an item with the same ItemNum already\nexists in the file\n• returns TRUE if the ItemNum is not already in the file, otherwise\nreturns FALSE\nWrite efficient pseudocode for module CheckNewItem().",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The program modules SuppExists(), IsNewSupp() and CheckNewItem() are part of a\ngroup of modules that are combined to create a complete stock control program.\nEach module in the program is tested individually during development and is debugged as\nnecessary. It is then added to the program and further testing performed.",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "Identify this method of testing.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "One of the modules does not work properly when it is added to the program.\nDescribe a testing method that can be used to address this problem so that testing can\ncontinue and other modules can be added.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "A new module AddItem() will be used to add information to the Stock.txt file.\nState the file mode that should be used for the algorithm within this module.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8e",
+          "label": "(e)",
+          "text": "A new module FindItem() searches for a given item in the Stock.txt file, which is already\norganised in ascending order of ItemNum.\nDescribe how this organisation may improve the efficiency of the algorithm.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A computer shop assembles computers using items bought from several suppliers. A text file",
+        "Stock.txt contains information about each item.",
+        "Information for each item is stored as a single line in the Stock.txt file in the format:",
+        "<ItemNum><SupplierCode><Description>",
+        "Item information is as follows:",
+        "Format Comment",
+        "unique for each item in the range",
+        "ItemNum 4 numeric characters",
+        "\"0001\" to \"5999\" inclusive",
+        "SupplierCode 5 alphabetic characters to identify the supplier of the item",
+        "Description",
+        "a string a minimum of 12 characters",
+        "The file is organised in ascending order of ItemNum and does not contain all possible values in",
+        "the range.",
+        "A programmer has started to define program modules as follows:",
+        "Module Description",
+        "SuppExists()",
+        "• called with a parameter of type string representing a supplier code",
+        "(already written)",
+        "• returns TRUE if the supplier code is already in use, otherwise returns",
+        "FALSE",
+        "IsNewSupp()",
+        "• called with a parameter of type string representing a new supplier code",
+        "• returns TRUE if the string only contains alphabetic characters (either",
+        "upper or lower case) and the supplier code is not already in use,",
+        "otherwise returns FALSE"
+      ]
+    }
+  ]
+}

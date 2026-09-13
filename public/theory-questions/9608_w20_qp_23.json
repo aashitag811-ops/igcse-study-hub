@@ -1,0 +1,302 @@
+{
+  "paperId": "9608_w20_qp_23",
+  "subjectCode": "9608",
+  "session": "w20",
+  "component": "23",
+  "totalMarks": 68,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A programmer uses the process of stepwise refinement to break down a problem.\nExplain the purpose of stepwise refinement.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Programming languages support different data types. These usually include STRING and\nREAL.\nComplete the table by giving four other data types and an example data value for each.\nData type Example data value",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "An experienced programmer is working on a program that is written in a language she is not\nfamiliar with.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "State one feature of the program that she should be able to recognise.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "State the type of skill that would allow her to recognise this feature.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Give three methods that may be used to identify and locate errors in a program after it has\nbeen written.\nYou may include one feature found in a typical Integrated Development Environment (IDE).",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm is needed to input a list of numbers representing test marks for a class of\n30 students.\nThe algorithm will output the number of students who have a mark greater than 75. It will also\noutput the average mark for the class.\nDocument the algorithm using structured English.",
+          "marks": 8,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Each pseudocode statement in the following table contains an error.\nState the error in each case.\nRefer to the Appendix on page 16 for the list of built-in functions and operators.\nStatement Error\nCode LEFT(3, \"Europe\")\nHour MID(\"ALARM:12:02\", 7, 6)\nSize LENGTH(27.5)\nNum INT(27 / (Count + 3)\nResult \"Conditional\" AND \"Loop\"",
+          "marks": 5,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Part of a program flowchart is shown.\nSet Index to 0\nSet Status to FALSE\nLOOP\nIs\nYES\nStatus = TRUE\nNO\nNO\nIs Index > 100\nSet Status to TopUp()\nYES\nSetLevel(\"Super\")\nSet Index to Index + 1\nWrite program code to implement the flowchart shown. Variable declarations are not\nrequired.\nProgramming language ______\nProgram code",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A global 1D array, ProdNum, of type INTEGER contains 5 000 elements and is used to store",
+        "product numbers.",
+        "A procedure is needed to sort ProdNum into ascending order using a bubble sort algorithm.",
+        "Write program code for the procedure BubbleSort().",
+        "Visual Basic and Pascal: You should include the declaration statements for variables.",
+        "Python: You should show a comment statement for each variable used with its data type.",
+        "Programming language ....................................................................................................................",
+        "Program code",
+        "[7]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The following pseudocode includes a procedure that searches for a value in a 1D array and\noutputs each position in the array where the value is found.\nRefer to the Appendix on page 16 for the list of built-in functions and operators.\nDECLARE NameList : ARRAY [1:100] OF STRING\nDECLARE SearchString : STRING\nPROCEDURE Search()\nDECLARE Index : INTEGER\nFOR Index 1 TO 100\nIF NameList[Index] = SearchString\nTHEN\nOUTPUT \"Found at \" & NUM_TO_STRING(Index)\nENDIF\nENDFOR\nENDPROCEDURE\nThe specification of module Search() changes. The pseudocode needs to be amended to\nmeet a new requirement.\nThe procedure needs to be implemented as a function, Search(), which will:\n• take the search value as a parameter\n• return an integer which is:\n• either the index value where the search value is first found\n• or –1 if the search value is not found.\nWrite the pseudocode for the function Search().",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A change to the specification in part (a) required a modification of the algorithm.\nGive the term used for this type of modification.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "A change to the specification is only one reason to modify an algorithm.\nGive another reason for the modification of an algorithm.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Consider the following pseudocode:\n10 DECLARE VarA : INTEGER\n11 VarA 20\n13 CALL ProcA(VarA)\n14 OUTPUT VarA // first value output\n16 CALL ProcB(VarA)\n17 OUTPUT VarA // second value output\n20 PROCEDURE ProcA(BYVALUE ThisValue : INTEGER)\n21 ThisValue ThisValue + 5\n22 ENDPROCEDURE\n24 PROCEDURE ProcB(BYREF ThisValue : INTEGER)\n25 ThisValue ThisValue + 5\n26 ENDPROCEDURE\nProcedures ProcA() and ProcB() use two methods of passing parameters.\nComplete the following table.\nOutput Explanation\nFirst\nvalue\n(line 14)\nSecond\nvalue\n(line 17)",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4e",
+          "label": "(e)",
+          "text": "The procedures ProcA and ProcB in part (d) are examples of program modules.\nGive two advantages of using program modules in program design.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module AddHashtag().",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Write program code for the module CountHashtag().\nThe module description is repeated here for reference.\nModule Description\n• Called with a message of type STRING\n• Searches the message for hashtags using GetStart()\nCountHashtag()\n• Returns a value representing the number of hashtags in the\nmessage\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Write program code for the module IncrementHashtag().\nThe module description is repeated here for reference.\nModule Description\n• Called with a hashtag of type STRING\n• Increments the value of the appropriate element in the\nIncrementHashtag()\nTagCount array if the hashtag is found\n• Returns TRUE if the hashtag is found, or FALSE if the\nhashtag is not found\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "A procedure, OutputMostPop(), is needed to output the most popular hashtag. The most\npopular hashtag is the one with the highest count value stored in the TagCount array.\nAs a reminder, the program includes two global arrays each containing 10 000 elements:\n• A 1D array, TagString, of type STRING storing each hashtag in a single element of the\narray. All unused array elements contain an empty string (\"\").\n• A 1D array, TagCount, of type INTEGER storing a count of the number of times each\nhashtag is used. The count value in a given element relates to the hashtag value stored\nin the element in the TagString array with the corresponding index value.\nIf the maximum count value occurs once, the procedure will output the corresponding hashtag\nand the count value.\nIt is possible for more than one hashtag to have the same highest count value. In this case,\nthe procedure will output the maximum count value together with the number of hashtags\nwith this maximum count value.\nIn both cases, the procedure must also output a suitable message.\nYou can assume that the arrays contain data for at least one hashtag.\nWrite pseudocode for the OutputMostPop() procedure.\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "A hashtag is used on a social media network to make it easier to find messages with a specific",
+        "theme or content. A hashtag is a string consisting of a hash character ‘#’ followed by a number of",
+        "alphanumeric characters.",
+        "A message may contain several hashtag strings. A hashtag may be terminated by a space",
+        "character, the start of the next hashtag, or by the end of the message.",
+        "For example, the following message contains three hashtags:",
+        "\"#Alarm34 is the result of #BatteryFailure in the #PowerModule\"",
+        "The hashtags in this message are \"#Alarm34\", \"#BatteryFailure\" and \"#PowerModule\".",
+        "A program is being developed to monitor their use.",
+        "The program will include two global arrays each containing 10 000 elements:",
+        "• A 1D array, TagString, of type STRING storing each hashtag in a single element of the",
+        "array. All unused array elements contain an empty string (\"\").",
+        "• A 1D array, TagCount, of type INTEGER storing a count of the number of times each hashtag",
+        "is used. The count value in a given element relates to the hashtag value stored in the element",
+        "in the TagString array with the corresponding index value.",
+        "A developer has started to define the modules. Module GetStart() has already been written.",
+        "Module Description",
+        "• Called with two parameters:",
+        "• a message of type STRING",
+        "• an integer giving the number of the required hashtag;",
+        "for example, GetStart(Message, 3) would search",
+        "GetStart()",
+        "for the third hashtag in the string Message",
+        "• Returns an integer value representing the start position of",
+        "the hashtag in the message, or value −1 if that hashtag",
+        "does not exist",
+        "• Called with a hashtag of type STRING",
+        "• Copies the hashtag to the next free element of the",
+        "TagString array, and sets the corresponding element of",
+        "AddHashtag()",
+        "the TagCount array to 1",
+        "• Returns FALSE if there are no unused elements in the",
+        "TagString array, otherwise returns TRUE",
+        "• Called with a message of type STRING",
+        "• Searches the message for hashtags using GetStart()",
+        "CountHashtag()",
+        "• Returns a value representing the number of hashtags in the",
+        "message",
+        "• Called with a hashtag of type STRING",
+        "• Increments the value of the appropriate element in the",
+        "IncrementHashtag() TagCount array if the hashtag is found",
+        "• Returns TRUE if the hashtag is found, or FALSE if the",
+        "hashtag is not found"
+      ]
+    }
+  ]
+}

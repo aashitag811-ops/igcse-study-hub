@@ -1,0 +1,269 @@
+{
+  "paperId": "0478_m19_qp_22",
+  "subjectCode": "0478",
+  "session": "m19",
+  "component": "22",
+  "totalMarks": 31,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.\nState one constant and one variable that you could have used for Task 1. Give the value that\nwould be assigned to the constant. Give the data type for the variable. Explain what each one\ncould be used for.\nConstant name ______\nValue ______\nUse ______\nVariable name ______\nData type ______\nUse ______",
+          "marks": 6,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how you would need to change your program for Task 1 if there were three bases to\nchoose from (thick, thin and extra crispy).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Write an algorithm for choosing the additional toppings in Task 1, using either\npseudocode, programming statements or a flowchart. Your algorithm must only include\nthis part of Task 1.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Explain how your algorithm in part (c)(i) only allowed valid choices for the additional\npizza toppings.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completed Task 3. Any programming statements used in your\nanswer must be fully explained.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm has been written in pseudocode to input 50 numbers and total only the positive\nnumbers.\nCount ← 1\nTotal ← Count\nREPEAT\nINPUT Number\nIF Number <> 0\nTHEN\nTotal ← Total + Count\nENDIF\nCount ← Count + 1\nUNTIL Count < 50\nPRINT Total\nFind the four errors in the pseudocode and suggest a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": null,
+          "type": "suggest",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Show how you would change the corrected algorithm to only total numbers greater than 0\nand less than 20.\n\nQuestion 3 starts on page 10.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This flowchart inputs the type of passenger for a survey: S for Senior, A for Adult, C for Child. All",
+        "other values are ignored, apart from Z which ends the process.",
+        "START",
+        "Senior 0",
+        "Adult 0",
+        "Child 0",
+        "INPUT Type",
+        "Yes",
+        "Is Type =",
+        "Senior Senior + 1",
+        "\"S\" ?",
+        "No",
+        "Yes",
+        "Is Type =",
+        "Adult Adult + 1",
+        "\"A\" ?",
+        "No",
+        "Yes",
+        "Is Type =",
+        "Child Child + 1",
+        "\"C\" ?",
+        "No",
+        "No",
+        "Is Type =",
+        "\"Z\" ?",
+        "Yes",
+        "OUTPUT \"Seniors \", Senior",
+        "OUTPUT \"Adults \", Adult",
+        "OUTPUT \"Children \", Child",
+        "END",
+        "Complete the trace table for the passenger input data:",
+        "S, S, S, A, C, C, C, A, A, A, A, W, S, S, D, C, Z, D, S",
+        "Senior Adult Child Type OUTPUT",
+        "[5]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "For each of the four groups of statements in the table, place a tick in the correct column to show",
+        "whether it is an example of Selection or Repetition.",
+        "Statements Selection Repetition",
+        "FOR X ← 1 TO 10",
+        "SUM ← SUM + 1",
+        "NEXT X",
+        "WHILE X > 10 DO",
+        "SUM ← SUM + 1",
+        "X ← X - 1",
+        "ENDWHILE",
+        "IF X > 10",
+        "THEN",
+        "SUM ← SUM + 1",
+        "X ← X - 1",
+        "ENDIF",
+        "REPEAT",
+        "SUM ← SUM + 1",
+        "X ← X - 1",
+        "UNTIL X > 10",
+        "[4]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "State whether this is called validation or verification.\nName the check that needs to be used.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "State three different types of test data the programmer would need to use. Give an example\nof each type and the reason that the programmer chose that test data.\nType 1 ______\nExample ______\nReason ______\nType 2 ______\nExample ______\nReason ______\nType 3 ______\nExample ______\nReason ______",
+          "marks": 9,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A programmer restricts input values to less than 90 and greater than 60."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A database table, BIKETYRES, is used to keep a record of tyres for sale in a cycle shop.",
+        "Tyres are categorised by width and diameter in millimetres, whether they have an inner tube and",
+        "the type of terrain for which they are designed.",
+        "Tyre Code Width Diameter Tube Terrain Stock Level",
+        "SLTT 23 700 YES Asphalt 18",
+        "MLNT 24 700 NO Asphalt 23",
+        "LLNT 28 700 NO Asphalt 19",
+        "SLTM 23 700 YES Mixed 22",
+        "MLTM 24 700 YES Mixed 14",
+        "LLTM 28 700 YES Mixed 12",
+        "SLTH 23 700 YES Hard 10",
+        "MLTH 24 700 YES Hard 5",
+        "LLNH 28 700 NO Hard 7",
+        "SLNM 23 700 NO Mixed 12",
+        "MLNM 24 700 NO Mixed 22",
+        "LLNM 28 700 NO Mixed 18",
+        "SSNT 23 650 NO Asphalt 10",
+        "MSNT 24 650 NO Asphalt 8",
+        "SSTM 23 650 YES Mixed 5",
+        "MSNM 24 650 NO Mixed 4",
+        "The query-by-example grid below displays the tyre code and the stock level of all 28 mm width",
+        "tyres suitable for mixed terrain.",
+        "Field: Tyre Code Stock Level Width Terrain",
+        "Table: BIKETYRES BIKETYRES BIKETYRES BIKETYRES",
+        "Sort:",
+        "Show:",
+        "3 3",
+        "Criteria: = 28 = 'Mixed'",
+        "or:",
+        "Alter the query to show the tyre code and stock level in ascending order of stock level for all",
+        "24 mm asphalt terrain tyres. Write the new query in the following query-by-example grid.",
+        "Field:",
+        "Table:",
+        "Sort:",
+        "Show:",
+        "Criteria:",
+        "or:",
+        "[4]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

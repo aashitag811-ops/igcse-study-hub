@@ -1,0 +1,396 @@
+{
+  "paperId": "0478_s23_qp_22",
+  "subjectCode": "0478",
+  "session": "s23",
+  "component": "22",
+  "totalMarks": 34,
+  "questionCount": 20,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to identify the first stage of the program development life cycle.",
+        "A Analysis",
+        "B Coding",
+        "C Design",
+        "D Testing",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Four logic gates and five standard symbols for logic gates are shown.",
+        "Draw one line to link each logic gate to its standard symbol. Not all standard symbols will be used.",
+        "Logic gate Standard symbol",
+        "AND",
+        "OR",
+        "NAND",
+        "NOT",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Identify three different ways that the design of a solution to a problem can be presented.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe the validation checks that the programmer would need to use.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The program needs editing to include a double entry check for the value input.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "State why this check needs to be included.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "The input value needs to be stored in the variable Measurement\nWrite pseudocode to perform the double entry check until a successful input is made.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A program needs to make sure the value input for a measurement meets the following rules:",
+        "• the value is a positive number",
+        "• a value is always input",
+        "• the value is less than 1000."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Circle five file-handling operations.",
+        "calculate close count create input open",
+        "output print read sort search",
+        "test total write",
+        "[5]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "State three different features of a high-level programming language that a programmer could use",
+        "to make sure that their program will be easier to understand by another programmer.",
+        "Give an example for each feature.",
+        "Feature 1 ..........................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "Feature 2 ..........................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "Feature 3 ..........................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to calculate a check digit for a four-digit number.",
+        "The algorithm then outputs the five-digit number including the check digit.",
+        "The algorithm stops when –1 is input as the fourth digit.",
+        "01 Flag FALSE",
+        "02 REPEAT",
+        "03 Total 0",
+        "04 FOR Counter 1 TO 4",
+        "05 OUTPUT \"Enter a digit \", Counter",
+        "06 INPUT Number[Counter]",
+        "07 Total Total + Number * Counter"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Number[Counter] = 0"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Flag TRUE"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Counter"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF NOT Flag"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Number[5] MOD(Total, 10)"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Counter 0 TO 5"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT Number[Counter]"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [
+        {
+          "id": "20a",
+          "label": "(a)",
+          "text": "Give the line number(s) for the statements showing:\nTotalling ______\nCount-controlled loop ______\nPost-condition loop ______",
+          "marks": null,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20b",
+          "label": "(b)",
+          "text": "Identify the three errors in the pseudocode and suggest a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20c",
+          "label": "(c)",
+          "text": "The algorithm does not check that each input is a single digit.\nIdentify the place in the algorithm where this check should occur.\nWrite pseudocode for this check.\nYour pseudocode must make sure that the input is a single digit and checks for –1\nPlace in algorithm ______\nPseudocode ______\n\n8 Consider this logic expression.\nX = (A OR B) AND (NOT B AND C)\nComplete the truth table for this logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n9 This flowchart represents an algorithm.\nSTART\nF 0\nC 1\nIS X[C] < No\nT X[C]\nX[C + 1]?\nYes\nX[C] X[C + 1]\nX[C + 1] T\nF 1\nC C + 1\nNo\nIS C = 5?\nYes\nNo\nIS F = 0?\nYes\nSTOP",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20a",
+          "label": "(a)",
+          "text": "The array X[1:5] used in the flowchart contains this data:\nX[1] X[2] X[3] X[4] X\n10 1 5 7 11\nComplete the trace table by using the data given in the array.\nF C X[1] X[2] X[3] X[4] X[5] T\n10 1 5 7 11",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20b",
+          "label": "(b)",
+          "text": "Describe what the algorithm represented by the flowchart is doing.\n\n10 A music streaming service has a new database table named Songs to store details of songs\navailable for streaming. The table contains the fields:\n• SongNumber – the catalogue number, for example AG123\n• Title – the title of the song\n• Author – the name of the song writer(s)\n• Singer – the name of the singer(s)\n• Genre – the type of music, for example rock\n• Minutes – the length of the song in minutes, for example 3.75\n• Recorded – the date the song was recorded.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20a",
+          "label": "(a)",
+          "text": "Identify the field that will be the most appropriate primary key for this table.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20b",
+          "label": "(b)",
+          "text": "Complete the table to identify the most appropriate data type for the fields in Songs\nField Data type\nSongNumber\nTitle\nRecorded\nMinutes",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20c",
+          "label": "(c)",
+          "text": "Explain the purpose of the structured query language (SQL) statements.\nSUM (Minutes) FROM Songs WHERE Genre = \"rock\";\nCOUNT (Title) FROM Songs WHERE Genre = \"rock\";\n\n11 The variables P and Q are used to store data in a program. P stores a string. Q stores a character.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to declare the variables P and Q, store \"The world\" in P and\nstore 'W' in Q",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20b",
+          "label": "(b)",
+          "text": "Write a pseudocode algorithm to:\n• convert P to upper case\n• find the position of Q in the string P (the first character in this string is in position 1)\n• store the position of Q in the variable Position",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "20c",
+          "label": "(c)",
+          "text": "Give the value of Position after the algorithm has been executed with the data in\nquestion 11(a).\n\n12 A two-dimensional (2D) array Account[] contains account holders’ names and passwords for a\nbanking program.\nA 2D array AccDetails[] has three columns containing the following details:\n• column one stores the balance – the amount of money in the account, for example 250.00\n• column two stores the overdraft limit – the maximum total amount an account holder can\nborrow from the bank after the account balance reaches 0.00, for example 100.00\n• column three stores the withdrawal limit – the amount of money that can be withdrawn at one\ntime, for example 200.00\nThe amount of money in a bank account can be negative (overdrawn) but not by more than the\noverdraft limit.\nFor example, an account with an overdraft limit of 100.00 must have a balance that is greater than\nor equal to –100.00\nSuitable error messages must be displayed if a withdrawal cannot take place, for example if the\noverdraft limit or the size of withdrawal is exceeded.\nThe bank account ID gives the index of each account holder’s data held in the two arrays.\nFor example, account ID 20’s details would be held in:\nAccount[20,1] and Account[20,2]\nAccDetails[20,1] AccDetails[20,2] and AccDetails[20,3]\nThe variable Size contains the number of accounts.\nThe arrays and variable Size have already been set up and the data stored.\nWrite a program that meets the following requirements:\n• checks the account ID exists and the name and password entered by the account holder\nmatch the name and password stored in Account[] before any action can take place\n• displays a menu showing the four actions available for the account holder to choose from:\n1. display balance\n2. withdraw money\n3. deposit money\n4. exit\n• allows an action to be chosen and completed. Each action is completed by a procedure\nwith a parameter of the account ID.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll inputs and outputs must contain suitable messages.\nYou only need to declare any local arrays and local variables that you use.\nYou do not need to declare and initialise the data in the global arrays Account[] and\nAccDetails[] and the variable Size\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "UNTIL Flag"
+      ]
+    }
+  ]
+}

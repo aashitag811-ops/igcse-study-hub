@@ -1,0 +1,358 @@
+{
+  "paperId": "9608_s21_qp_22",
+  "subjectCode": "9608",
+  "session": "s21",
+  "component": "22",
+  "totalMarks": 75,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Maintenance of programs may be needed for a number of different reasons.\nState two types of maintenance and give a reason why each may be needed.\nType ______\nReason ______\nType ______\nReason ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "State why characters need to be represented in ASCII or Unicode before they can be\nprocessed.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Each line of a text file contains several data items. A special character is inserted between\ndata items before the line is written to the file.\nExplain why a special character is used in this way.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Each pseudocode statement in the following table may contain an error due to the incorrect\nuse of the function or operator.\nDescribe the error in each case, or write ‘NO ERROR’ if the statement contains no error.\nRefer to the Appendix on page 18 for the list of built-in pseudocode functions and operators.\nStatement Error\nCode RIGHT(\"Cap\" & \"art\", 4)\nStatus MID(\"Computer\", 7, 5)\nSize LENGTH(\"Password\") * 2\nNextChar CHR('A')\nIndex Index & 3",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Examine the pseudocode and complete the following table:\nAnswer\nThe identifier name of a global variable\nThe name of the loop structure\nThe identifier involved in a data type mismatch\nThe name of a procedure that takes a parameter\nThe name of a function",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Draw a program flowchart to represent the pseudocode algorithm.\nVariable declarations are not required in program flowcharts.",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Study the following pseudocode.",
+        "DECLARE Overload : BOOLEAN",
+        "PROCEDURE LEM()",
+        "DECLARE Status : BOOLEAN",
+        "DECLARE Landed : INTEGER",
+        "Overload FALSE",
+        "Landed FALSE",
+        "WHILE Landed = FALSE",
+        "Status Sample()",
+        "IF Status = TRUE",
+        "THEN",
+        "Landed SubA(42)",
+        "ELSE",
+        "Overload SubB(37)",
+        "IF Overload = TRUE",
+        "THEN",
+        "CALL Display(\"Alarm 1202\")",
+        "ENDIF",
+        "ENDIF",
+        "ENDWHILE",
+        "ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Module names and parameters are features that may be represented on a structure\nchart.\nState two other features than can be represented on a structure chart.\nFeature 1 ______\nFeature 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "The headers for three modules in a program are defined in pseudocode as follows:\nPseudocode module header\nPROCEDURE Create(S2 : INTEGER, P3 : STRING)\nPROCEDURE Modify(S2 : INTEGER, BYREF P4 : STRING)\nFUNCTION Delete(P4 : INTEGER, M4 : STRING) RETURNS INTEGER\nA fourth module, Membership(), may call any one of the three modules.\nDraw a structure chart to represent the information given about the four modules.",
+              "marks": 5,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Draw a diagram to show the stages of the program development cycle. Use arrows to indicate\nhow the stages are linked.",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Using pseudocode, write a post-condition loop to output every odd number between 100\nand 200.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A program contains a global 2D array XRef. The array consists of 100 rows and 3 columns.\nThe array is of data type STRING.\nA function, Search(), takes two parameters Par1 and Par2 as string values and returns an\ninteger value.\nThe function returns:\n• the index number of the first row where:\n• the element in column 1 of that row matches Par1 and\n• either of the other two elements in that row match Par2\n• –1 if no match found in any row.\nWrite program code for the function Search().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 7,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "An Integrated Development Environment (IDE) will be used to develop a program.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "An IDE includes features for program presentation.\nState two of these presentation features.\nFeature 1 ______\nFeature 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Name two IDE features that can help with initial error detection.\nFeature 1 ______\nFeature 2 ______",
+              "marks": 2,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "A function, Verify(), is written in pseudocode.\nWrite the two missing lines to complete the pseudocode.\nFUNCTION Verify(UserID : STRING) RETURNS BOOLEAN\nDECLARE Password : STRING\nOUTPUT \"Please Input your password: \"\nINPUT Password\nResponse Validate(UserID, Password) AND Today()\nENDFUNCTION",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "The function, Verify(), is to be amended as follows:\n• if the UserID is \"Guest\", a password is not required and TRUE should be returned\n• output a message to try again if the password entered is not valid\n• return FALSE if the number of attempts to enter a valid password exceeds three.\nWrite program code for the amended function Verify().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language______\nProgram code",
+              "marks": 6,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write program code for the module StockSummary().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Write pseudocode for the module Restore().",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "The module description of GetValidFilename() is as follows:\nModule Description\n• prompts and inputs a filename\n• validates the filename by checking that it:\n• is between 4 and 10 characters in length (inclusive)\nGetValidFilename() • contains only alphanumeric characters\n• if the filename is invalid, outputs a warning message and\nasks the user to try again\n• otherwise returns the valid filename\nWrite program code for the module GetValidFilename().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar\nIf ThisChar is not an upper case alphabetic character, it is returned unchanged.\nExample: LCASE('W') returns 'w'\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of character ThisChar\nExample: ASC('A') returns 65\nCHR(x : INTEGER) RETURNS CHAR\nreturns the character whose ASCII value is x\nExample: CHR(87) returns 'W'\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A program stores data about stock items in four global 1D arrays as follows:",
+        "Example Initial data",
+        "Array Data type Description",
+        "data value value",
+        "the stock item ID",
+        "StockID STRING \"JBCD0002\" \"\"",
+        "(eight alpha-numeric characters)",
+        "a description of the item",
+        "Description STRING \"soap\" \"\"",
+        "(alphabetic characters only)",
+        "Quantity INTEGER 9 0",
+        "the number in stock",
+        "Cost REAL 1.45 0.0",
+        "the cost of the item",
+        "• Each array contains 10 000 elements.",
+        "• Elements with the same index relate to the same stock item. For example, StockID[3]",
+        "contains the ID for the product whose description is in Description[3].",
+        "• The StockID array is not sorted.",
+        "The program will be modified so that the data from the arrays can be stored in a text file for",
+        "backup. You may assume that a backup file contains only valid stock data.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "• called with two parameters:",
+        "• an array index",
+        "Unpack()",
+        "• a string value read from one line of the backup file",
+        "• extracts the four data values from the string and assigns each",
+        "to the appropriate array",
+        "• called with a string representing the name of a backup file",
+        "• returns FALSE if the file is empty",
+        "• sets all elements of each array to the initial data value as given",
+        "in the table",
+        "Restore() • reads the backup file line by line",
+        "calls Unpack() to extract data from each line and assign",
+        "values to the corresponding arrays",
+        "• returns FALSE if the arrays are full but there are still lines in the",
+        "file, otherwise returns TRUE",
+        "For all items where StockID does not contain the initial value:",
+        "• counts the number of stock entries in the StockID array",
+        "StockSummary()",
+        "• outputs the overall value of all items in stock (cost multiplied by",
+        "the quantity)",
+        "• outputs the number of stock entries"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,640 @@
+{
+  "paperId": "9691_w13_qp_32",
+  "subjectCode": "9691",
+  "session": "w13",
+  "component": "32",
+  "totalMarks": 88,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Convert the following infix expressions into reverse Polish notation:\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "(x - y) / 5",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "2 / (4 * a + 1)",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "What is the value of this reverse Polish expression:\na b + c d - /\nfor a = 7, b = 5, c = 8 and d = 2 ?\nShow your working.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A binary tree can be used to represent an expression or a statement.\nFor\nExaminer's\nUse\n* h\n/ b\n1 2\nThe diagram shows the binary tree for the infix expression:\n1 / 2 * b * h",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain how the infix form for this expression is produced using a tree traversal.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "What is the reverse Polish notation for this expression?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "Explain how the reverse Polish notation is produced using a tree traversal.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Describe three advantages that a relational database would have over the use of flat\nfiles.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "What is the relationship between product and supplier?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "What is the relationship between product and order?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A database solution is to be developed.\nTwo of the tables are PRODUCT and ORDER.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Draw an entity-relationship (E-R) diagram showing a database design which can\nbe produced so that the product and order data are fully normalised.",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Explain how the relationships are implemented.\nFor\nExaminer's\nUse",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The following table design is suggested for PRODUCT.\nPRODUCT(ProductID, ProductDescription, RetailPrice, SupplierID,\nSupplierName, SupplierTelNumber)\nThis is poorly designed.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Is this table in First Norm Form (1NF)?\nExplain.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Is this table in Second Normal form (2NF)?\nExplain.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2diii",
+              "label": "(iii)",
+              "text": "The table is not in Third Normal Form (3NF).\nExplain.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2div",
+              "label": "(iv)",
+              "text": "Using only the attributes given in the PRODUCT table above, produce a new design\nwhich is fully normalised.\nThe table descriptions should be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "Explain why all tables in the final design should be fully normalised.\nFor\nExaminer's\nUse",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "The table to store the order data has the following design:\nORDER(OrderNo, OrderDate, OrderTime, IsPaid, OrderAmountPaid,\nPaymentMethod, CustomerID)\n• IsPaid has data type Boolean\n• PaymentMethod has data type Char with possible values: C - credit card,\nD - debit card, A - account customer\nWrite a Data Manipulation Language (DML) query to report orders which were placed\non the 15 January 2013 and paid for using a debit card. Show the customer ID and\norder number only.\nUse the keywords SELECT, FROM, WHERE.",
+          "marks": 3,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "Customers order products from a website.",
+        "For",
+        "Examiner's",
+        "Use",
+        "• An order contains one or more products.",
+        "• Over time, a customer places many orders.",
+        "• A product will appear on many customer orders.",
+        "• Each product is sourced from a single supplier and a number of suppliers are used.",
+        "• A supplier can supply more than one product.",
+        "At present the company stores and manages all the data using flat files."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Describe what is meant by a register.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Convert the denary number 60 into hexadecimal.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Convert the hexadecimal number 10F into denary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "Why do computer scientists often write binary numbers in hexadecimal?\nFor\nExaminer's\nUse",
+              "marks": 1,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The diagram shows a program loaded into main memory starting at memory address\n30 Hex.\nMain memory\n(contents shown in\nAddress Hex.)\n2150\nA351\nA552\nFFFF\n003C\n103C\n010B\n5A",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "How many bytes are used to store each program instruction?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Describe the steps in the fetch stage of the fetch-execute cycle.\nRefer to the instruction at address 30 to illustrate your answer.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The following table shows some of a processor’s instruction set in assembly language.\nFor\nExaminer's\nUse\nInstruction\nExplanation\nOp Code Operand\nLIX <address> Load the contents of the address to the Index register (IX)\nIndexed addressing. Form the address as <address> +\nLDX <address>\nthe contents of IX. Copy the contents of this address to ACC\nSTO <address>\nStore the contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register>\nAdd 1 to the contents of the register (ACC or IX)\nJMP <address>\nJump to the given address\nThe following program is to be executed.\nShown are:\n• the first six instructions of this program\n• the memory locations which will be accessed by this program.\nMain memory\nAddress contents\nLIX 200\nLDX 200\nADD 204\nSTO 204\nINC IX\nJMP 101\nComplete the trace table below for three iterations of the loop.\nFor\nExaminer's\nUse\nShow each change to the contents of the registers and memory location 204.\nMain memory\nACC IX\naddress 204",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Explain the difference between a class and an object.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The following scenario is to be implemented with object-oriented programming.\nFor\nExaminer's\nUse\nA software company stores data for all employees (EMPLOYEE). The company employs\nadmin staff (ADMIN) and project staff (PROJECTSTAFF). Project staff are either\nprogrammers (PROGRAMMER) or technical authors (TECHAUTHOR).\nData stored will include:\n• employee ID for employees\n• specialist programming language for programmers\n• software specialism for technical authors\n• full time or part time indicator\n• department for admin staff\n• salary grade\n• the project team that project staff are assigned to\nComplete the class diagram showing the classes and properties only for the data given\nabove.\nEMPLOYEE\nEmployeeID: INTEGER",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Explain what is meant by encapsulation.\nFor\nExaminer's\nUse",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Object-oriented programming is one programming paradigm."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Study the table and the algorithm and fill in the gaps.\nIdentifier Data Type Description\nCustomer ARRAY[100] OF STRING\nArray of customer names\nIndex INTEGER\nUsed to index the array elements\nIsFound\nSearchName STRING\nThe requested customer name\n//Serial search algorithm\nFor\nExaminer's\nUse\nINPUT\nIsFound ← FALSE\nIndex ← 1\nREPEAT\nIF = SearchName\nTHEN\nIsFound ← TRUE\nOUTPUT \"Found at position \" Index\nELSE\nENDIF\nUNTIL (IsFound = TRUE) OR\nIF\nTHEN\nOUTPUT \"Customer name was NOT FOUND\"\nENDIF",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "How many comparisons on average will be needed to find a requested customer from\nthe Customer array?",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "A binary search may be an alternative algorithm to a serial search.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "What condition is put on the Customer array for a binary search to be used?\n\nThe following recursive function is for the binary search algorithm.\nFUNCTION BinarySearch(ThisArray, FindValue, Low, High) : INTEGER\nIF High < Low\nTHEN\nRETURN -1 // not found\nELSE\nMiddle ← INT((High + Low) / 2)\nIF ThisArray[Middle] > FindValue\nTHEN\nBinarySearch(ThisArray, FindValue, Low,\nMiddle – 1)\nELSE\nIF (ThisArray[Middle] < FindValue)\nTHEN\nBinarySearch(ThisArray, FindValue,\nMiddle + 1, High)\nELSE\nRETURN Middle // found\nENDIF\nENDIF\nENDIF\nENDFUNCTION",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "How can you recognise that the function is recursive?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5ciii",
+              "label": "(iii)",
+              "text": "A binary search is carried out on the data in the Surname array shown.\nFor\nExaminer's\nUse\nSurname\nBan\nChae\nDang\nHwang\nJeong\nJin\nJo\nJu\nMa\nSo\nSong\nComplete the trace table below for the following function call:\nBinarySearch(Surname, \"Hwang\", 1, 11)\nLow High Middle\nRETURN\n1 11",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "Customer names are stored in the array Customer.",
+        "For",
+        "Examiner's",
+        "Use",
+        "An algorithm is to be designed to perform a serial search of the array for a requested",
+        "customer name.",
+        "The algorithm will use the variables shown in the table."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The integers -126 and -5 are to be added.\nFor\nExaminer's\nUse\nWrite the binary for -126 and -5 using two’s complement. Show the addition in binary\nincluding any carry bits.\n-126\n-5 +\nComment on the answer.",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Real numbers are to be stored using floating point representation with:\n• 8 bits for the mantissa, followed by,\n• 4 bits for the exponent\n• two’s-complement is used for both the mantissa and exponent",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Consider the binary pattern:\n0 1 1 0 1 0 0 0 0 0 1 1\nWhat number is this in denary? Show your working.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Explain how you can recognise that the above number is normalised.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "The representation used 8 bits for the mantissa and 4 bits for the exponent. This is\nFor\nto be redesigned. The number of bits used for the mantissa and the exponent is Examiner's\nUse\nchanged, but the total number of bits remains 12.\nWhat implications does this have for the range and precision of numbers that can\nbe represented?",
+              "marks": null,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "One application is online banking.\nState two other applications where encryption is used.\nDescribe the reason for encrypting the data for each application.\nApplication 1\nReason\nApplication 2\nReason",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Explain the terms plain text and cipher text.\nPlain text\nCipher text",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Symmetric encryption uses a single key.\nExplain how a message is encrypted and decrypted using symmetric encryption.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Authorisation and authentication are processes designed to protect the computer\nFor\nsystem and data. Examiner's\nUse\nGive one technique used for each.\nAuthorisation\nAuthentication\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "The encryption of data is widely used in computing.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "paperId": "9691_w13_qp_21",
+  "subjectCode": "9691",
+  "session": "w13",
+  "component": "21",
+  "totalMarks": 67,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State and justify three of the reasons his teacher could give him for breaking the\nproblem into smaller parts.\nReason 1\nReason 2\nReason 3\n\nJuan decides that the design will include the following modules:\nFor\nExaminer's\nUse\n• update the resource file when a new teaching resource is purchased\no input all the data about the resource\no generate a resource ID for the resource\no store in the resource file\n• update the resource file when a current resource is discarded",
+          "marks": 6,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Describe one diagrammatic method for showing how these modules are related.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Use your method with the modules above.",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Name two features of a high-level programming language that help with this modular\nFor\napproach. Examiner's\nUse",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The Computing Department has a problem keeping track of its teaching resources. Juan, a",
+        "For",
+        "student, has been asked to design and program a solution as his computing project. It will Examiner's",
+        "Use",
+        "be the first large problem he has worked on.",
+        "He intends to write one large program that follows the process right through. His teacher",
+        "tells him to break the problem into smaller parts."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Juan realises that he will have to pass data from one module to another.\nExplain how this is done.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "Juan will need the program to hold large amounts of data. His design will include\nFor\nreading the data from the sequentially-organised resource file into several arrays. Examiner's\nUse\nDescribe three differences between the features of an array and a sequential file.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "Juan wants to use an array, NumberOfCopies to store whole numbers.\nIn a high-level programming language:\n• declare the array of size 5000\n• initialise the array to 0\nProgramming language\nCode\n\n2 (a) Juan has little programming experience, but has to write code for this program. He has\nFor\nwritten the following pseudocode statements. Examiner's\nUse\nFor each statement describe what is wrong and write a correct version.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2fi",
+              "label": "(i)",
+              "text": "IF Index > 5000 OR < 0 THEN OUTPUT \"Error\"\nDescription\nCorrect statement",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fii",
+              "label": "(ii)",
+              "text": "NumberOfCopies[Index] + 1 ← NumberOfCopies[Index]\nDescription\nCorrect statement",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fiii",
+              "label": "(iii)",
+              "text": "NumberOfCopies[Index] ← \"three\"\nDescription\nCorrect statement",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Juan needs to design the code for a part of the program that determines where\nFor\nresources are kept. If the resource has: Examiner's\nUse\n• an ID less than 1001 it will be kept in Cabinet 1\n• an ID between 1001 and 3000 it will be kept in Cabinet 2\no even numbered IDs in Drawer 1\no odd numbered IDs in Drawer 2\n• an ID between 3001 and 5000 it will be kept in Cabinet 3\nWrite pseudocode that processes the variable ResourceID and outputs where the\nresource is kept. Use nested IF statements.",
+          "marks": 6,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "In a high-level programming language write code that processes the variable\nFor\nResourceID and outputs where the resource is kept. Use a CASE/SELECT Examiner's\nUse\nstatement.\nProgramming language\nCode",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "[2]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "An interface is to be designed to add a new resource. The user must:\nFor\nExaminer's\nUse\n• enter the name of the resource\n• choose the type of the resource\n• select the purchase date\nThe program generates and displays:\n• a new resource ID\n• where the resource is kept\nThe user must be able to save the data, clear/cancel the input, and move on to\nentering another resource.\nDesign a graphical user interface (GUI). Pay particular attention to layout and effective\nuse of the controls you would expect to find in a GUI.\nAdd new resource(s)",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A report will show all the items that have been entered on a particular day.\nFor\nExaminer's\nUse\nIt will show each resource ID and where the resource is kept. The resources will be\ngrouped by type.\nDesign the report layout.\n\nAn array, MyResource, size 5000, data type INTEGER, is used to store the resource IDs.\nFor\nExaminer's\nAn array, KeptIn, size 5000, data type STRING, is used to store where a resource is kept.\nUse\nA resource with resource ID MyResource[X] is kept at KeptIn[X], where X is an integer\nvariable.\nMyResource KeptIn\n… ...\n1 1\n… ...\n2 2\nX X\n2408 Cabinet2 Drawer1\n5000 … 5000 …\nJuan writes the pseudocode that searches MyResource for a given resource ID and\noutputs where the resource is kept.\nflag ← 0\nINPUT P\nFOR X ← 1 TO 5000\nIF myresource[X] = P\nTHEN\nOUTPUT keptin[X]\nflag ← 1\nENDIF\nNEXT\nIF flag = 0\nTHEN\nOUTPUT \"Not Found\"\nENDIF",
+          "marks": 5,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Give four techniques that should have been applied to the pseudocode to make it\nFor\neasier to understand. Examiner's\nUse",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "Re-write the pseudocode using a REPEAT – UNTIL loop.\nMake use of the techniques you gave in (c) to produce self-documented code.",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "If Juan were to perform a dry run on the pseudocode using a trace table, state one\nFor\ntype of error he might find. Give an example. Examiner's\nUse\nType 1\nExample\nState another type of error he might find later. Give an example.\nType 2\nExample",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "Juan has written his program and one module appears not to work.\nExplain how Juan can use a break point and stepping to debug his program.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 28,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Juan is also learning about recursion. He writes the pseudocode for a recursive function.",
+        "For",
+        "Examiner's",
+        "Use",
+        "1 FUNCTION Add(N)",
+        "2 DECLARE R",
+        "3 IF N <= 0",
+        "4 THEN"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "R ← 0"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "R ← N + Add(N – 1)"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "RETURN R"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "What is the scope of the variable R?",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "State the line number which shows that this function is recursive.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "List the function calls that are generated by an initial call of Add(3).\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "ENDFUNCTION"
+      ]
+    }
+  ]
+}

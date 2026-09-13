@@ -1,0 +1,385 @@
+{
+  "paperId": "9691_s14_qp_21",
+  "subjectCode": "9691",
+  "session": "s14",
+  "component": "21",
+  "totalMarks": 43,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Draw a suitable layout for the initial screen to let a child choose which multiplication table\nbetween 1 and 10 they want to learn.",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Explain how the child can choose a number using your screen design\nin part (a)(i).",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "If the child chooses the number 7, the screen displays:\n7 Times Table\n=============\n1 × 7 = 7",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "A teacher wants to write a program to help young children learn their multiplication tables."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 14"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 21"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 28"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 35"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 42"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 49"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 56"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "× 7 = 63"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "The teacher wants the program to:\n• show a visual representation of a multiplication\n• ask the child to key in an answer.\nFor example, the multiplication of 3 × 4 is represented as shown.\n3 × 4\n****\n****\n****\nWhat is the answer? _______\nThis grid of asterisks (*) is produced by the procedure call:\nShowMultiplicationGrid(3, 4)\nComplete the pseudocode for this procedure:\nPROCEDURE ShowMultiplicationGrid(Number1, Number2)\nFOR Row \u0001\nFOR Column \u0001\nOUTPUT\nENDFOR\nENDPROCEDURE",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10d",
+          "label": "(d)",
+          "text": "The function CheckAnswerCorrect gives the child three chances to type in the correct\nanswer. The function returns TRUE if the child typed the correct answer, and FALSE if all\nthree attempts are incorrect.\nComplete the flowchart opposite, using the given statements. Label each blank symbol with\nthe correct statement number.\nFUNCTION\nCheckAnswerCorrect(Number1, Number2)\n1 Output “Incorrect. Try again.”\nR \u0001 Number1 * Number2\n2 Output “Correct. Well done!”\n3 Output “You need to practice more.\nThe correct answer is ” R\n4 Output “Type your answer.”\n5 Return FALSE\n6 Is NumberOfTries > 2 ?\nIs AnswerNumber = R ?\n8 Is AnswerString digits only ?\n9 NumberOfTries \u0001 0\nINPUT\n10 NumberOfTries \u0001 NumberOfTries + 1\nAnswerString\nNo\nYes\nConvert AnswerString\nto AnswerNumber\nNo\nNo\nYes Yes\nReturn TRUE\nENDFUNCTION\n\n2 The teacher wants a new program to test children. A sequence of multiplication questions is\ndisplayed. If a child inputs 3 incorrect answers for a question, the program outputs the number of\nquestions the child answers correctly. Then the program stops.\nThe program design uses the following functions and procedures.\nFunction or procedure name Description\nRandom(X)\nA function that returns a whole number in the\nrange 1 to X inclusive\nDisplay(Number1, Number2)\nA procedure that produces the output\n5 × 8 = ?\nwhen Number1 is 5 and Number2 is 8\nCheckAnswerCorrect(Number1, Number2)\nThe procedure from Question 1(d)\nTestScoreTotal\nA function that returns the number of questions\nanswered correctly",
+          "marks": 10,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Complete the pseudocode:\nFUNCTION TestScoreTotal RETURNS\nDECLARE AnswerCorrect, : BOOLEAN\nDECLARE : INTEGER\n// initialise Score\nFinish \u0001 FALSE\nREPEAT\nNumber1 \u0001 // generate two\nNumber2 \u0001 // numbers\nDisplay(Number1, Number2)\nAnswerCorrect \u0001 CheckAnswerCorrect(Number1, Number2)\nIF // was answer correct?\nTHEN Score \u0001 Score + 1\nELSE // flag set to stop program\nENDIF\nUNTIL // is flag set?\nRETURN // return the number of\n// questions answered correctly\nENDFUNCTION",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "During the school day, several children in the class will use this program. The teacher wants\nto store each child’s name and their best test score so far.\nAssume there will be no more than 30 children in the class.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10bi",
+              "label": "(i)",
+              "text": "Two one-dimensional arrays, Name and BestScore, are to store the name and score\nfor each child in the class.\nUse a high-level programming language to declare these two arrays.\nLanguage\nCode",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10bii",
+              "label": "(ii)",
+              "text": "Alternatively, the data for one child could be stored in a record StudentScore.\nUse a high-level programming language to declare StudentScore.\nLanguage\nCode",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10biii",
+              "label": "(iii)",
+              "text": "Use the same programming language as in part (b)(ii) to declare a one-dimensional\narray of records to store the data for the whole class. Use the identifier Student.",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10biv",
+              "label": "(iv)",
+              "text": "Write the program statements to assign the following values to the third record in the\narray:\n• Name: ‘Anji’\n• Score: 15",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "The teacher wants to store in a file the name and best score so far for each of the children.\nA procedure, SaveToFile, is needed to save the data stored in the Student array of\nrecords. The data must be stored in the file StudentFile.\nUse a high-level programming language to write this procedure.\nLanguage\nCode\n\n3 After a child uses the program again, the teacher wants the program to find the child’s record in\nthe array and update the score if it is higher.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ai",
+              "label": "(i)",
+              "text": "A function, FindArrayIndex, is needed to return the array index of the record in\nwhich the child’s name is stored.\nWrite pseudocode for this function.\nAssume:\n• the child’s name exists in the array\n• the children’s names are unique\n• the children’s names are not in any order.\nFUNCTION FindArrayIndex(ChildName : STRING)\nENDFUNCTION",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10aii",
+              "label": "(ii)",
+              "text": "A requested name may not be present in the array.\nDescribe the changes necessary to the design of function FindArrayIndex.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "A child might type in their name with a mixture of upper and lower case letters and the\nprogram must allow for this. For example, ALI and Ali are treated as the same name.\nDescribe how you can ensure that the program treats a name the same regardless of case.\n\n4 Look at this pseudocode function:\nFUNCTION Y(s : STRING) RETURNS STRING\nDECLARE x : INTEGER\nx \u0001 LENGTH(s)\nIF x = 1\nTHEN\nRETURN s\nELSE\nRETURN Y(RIGHT(s, x - 1)) + LEFT(s, 1)\n// RIGHT above returns rightmost x - 1 characters of string s\n// LEFT above returns leftmost character of string s\nENDIF\nENDFUNCTION",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10bi",
+              "label": "(i)",
+              "text": "How can you tell that function Y is recursive?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10bii",
+              "label": "(ii)",
+              "text": "Dry-run the function when it is called with the string ‘BYTE’ as parameter.\nCall\ns x RIGHT (s, x - 1) LEFT (s, 1)\nFunction call Return value\nNumber\nY ('BYTE') 'BYTE'",
+              "marks": 7,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10biii",
+              "label": "(iii)",
+              "text": "What does function Y do?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10biv",
+              "label": "(iv)",
+              "text": "List two features of the pseudocode above that make it easier to understand.\n2",
+              "marks": 2,
+              "type": "list",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10bv",
+              "label": "(v)",
+              "text": "List one feature of the pseudocode above that makes it more difficult to understand.\n1",
+              "marks": 1,
+              "type": "list",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10bvi",
+              "label": "(vi)",
+              "text": "Re-write the pseudocode function as an iterative function.\nFUNCTION Y(s : STRING) RETURNS STRING\nENDFUNCTION\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 39,
+      "text": [
+        "× 7 = 70",
+        "Press any key",
+        "The algorithm to produce this output is The program needs the following three integer",
+        "represented by the flowchart below: variables:",
+        "• Number",
+        "START",
+        "• i",
+        "• Result",
+        "Input",
+        "In a high-level language, write programming",
+        "Number",
+        "statements to implement the algorithm.",
+        "Language",
+        "Output",
+        "Code",
+        "title",
+        "Loop for i",
+        "from 1 to 10",
+        "Result \u0001\u0000i * Number",
+        "Output",
+        "i × Number = Result",
+        "No",
+        "end of loop?",
+        "Yes",
+        "Output",
+        "“Press any key” [6]",
+        "END"
+      ]
+    }
+  ]
+}

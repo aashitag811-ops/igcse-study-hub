@@ -1,0 +1,509 @@
+{
+  "paperId": "9618_s24_qp_13",
+  "subjectCode": "9618",
+  "session": "s24",
+  "component": "13",
+  "totalMarks": 68,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the following description.\nA kibibyte has a ______ prefix. Three kibibytes is the same\nas ______ bytes.\nA megabyte has a ______ prefix. Two terabytes is the same\nas ______ gigabytes.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Convert the denary number 241 to hexadecimal.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "State what is meant by an overflow in binary addition.\n______ DO NOT WRITE IN THIS MARGIN",
+          "marks": 1,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Computers use character sets when representing characters in binary.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Complete the table by identifying the number of bits each of the character sets allocates\nto each character.\nCharacter set Number of bits\nASCII\nextended ASCII\nUnicode",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Explain how the word ‘Clock’ is represented by a character set.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The photograph has a resolution of 4000 pixels wide by 3000 pixels high. The bit depth is\n4 bytes.\nCalculate an estimate for the file size of the photograph in megabytes.\nShow your working.\nWorking ______\nAnswer ______ megabytes",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The photograph is compressed before being uploaded to a web server.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Give three benefits of this photograph being compressed using lossy compression\ninstead of lossless compression.",
+              "marks": 3,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Explain how run-length encoding (RLE) will compress the photograph.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Identify two elements of a bitmap image that can be changed to reduce its file size.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A photograph is stored as a bitmap image."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The current contents of memory are shown:\nAddress Data\n48 51\n52 49\n53 50\nThe current contents of the ACC and IX are shown:\nACC\nIX\nComplete the table by writing the content of the ACC after each program has run.\nProgram number Code ACC content\nLDM #50\nINC ACC\nSUB #1\nLDI 51\nADD 52\nLDR #2\nLDX 50\nDEC ACC\nLDD 52\nSUB 54\nINC ACC",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The processor includes these bit manipulation instructions:\nInstruction\nExplanation\nOpcode Operand\nAND #n/Bn/&n\nBitwise AND operation of the contents of ACC with the operand\nBitwise AND operation of the contents of ACC with the contents of\nAND <address>\n<address>\nXOR #n/Bn/&n\nBitwise XOR operation of the contents of ACC with the operand\nBitwise XOR operation of the contents of ACC with the contents of\nXOR <address>\n<address>\nOR #n/Bn/&n Bitwise OR operation of the contents of ACC with the operand\nBitwise OR operation of the contents of ACC with the contents of\nOR <address>\n<address>\nBits in ACC are shifted logically n places to the left. Zeros are\nLSL #n\nintroduced on the right-hand end\nBits in ACC are shifted logically n places to the right. Zeros are\nLSR #n\nintroduced on the left-hand end\n<address> can be an absolute or a symbolic address\n# denotes a denary number, e.g. #123\nB denotes a binary number, e.g. B01001010\n& denotes a hexadecimal number, e.g. &4A\nThe current contents of memory are shown:\nAddress Data\n100 00001101\n10111110\n11110011\n103 00110111\n104 00000000\nThe current content of the ACC is shown:\n1 1 1 1 1 1 1 1\nComplete the table by writing the content of the ACC after each instruction has run.\nThe binary number 11111111 is reloaded into the ACC before each instruction is run.\nInstruction number Instruction ACC content\n1 LSL #2\n2 XOR 100\nAND 103",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The following table shows part of the instruction set for a processor. The processor has two",
+        "registers: the Accumulator (ACC) and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Opcode Operand",
+        "LDM #n Immediate addressing. Load the number n to ACC",
+        "Direct addressing. Load the contents of the location at the given",
+        "LDD <address>",
+        "address to ACC",
+        "Indirect addressing. The address to be used is at the given address.",
+        "LDI <address>",
+        "Load the contents of this second address to ACC",
+        "Indexed addressing. Form the address from <address> + the contents",
+        "LDX <address>",
+        "of the index register. Copy the contents of this calculated address to",
+        "ACC",
+        "LDR #n Immediate addressing. Load the number n to IX",
+        "Add the number n to the ACC",
+        "ADD #n/Bn/&n",
+        "ADD <address> Add the contents of the given address to the ACC",
+        "DEC <register> Subtract 1 from the contents of the register (ACC or IX)",
+        "SUB #n/Bn/&n Subtract the number n from the ACC",
+        "Subtract the contents of the given address from the ACC",
+        "SUB <address>",
+        "INC <register> Add 1 to the contents of the register (ACC or IX)",
+        "<address> can be an absolute or a symbolic address",
+        "# denotes a denary number, e.g. #123",
+        "B denotes a binary number, e.g. B01001010",
+        "& denotes a hexadecimal number, e.g. &4A"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Identify the relationship between the tables PERFORMANCE and SHOW.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Sample data for the table PERFORMANCE is shown:\nPerformanceID ShowID ShowDate StartTime\n0001 MK12 5/5/2025 13:00\n0002 MK12 5/5/2025 19:30\n0003 MK12 6/5/2025 19:00\n0004 OP3 7/5/2025 18:30",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 1,
+      "text": [
+        "A theatre wants to use a database to store data about the shows that are scheduled, their",
+        "customers and the seats that the customers have booked.",
+        "In the theatre:",
+        "• Each show can take place on multiple dates.",
+        "• Some dates can have more than one performance.",
+        "• There are multiple rows of seats.",
+        "• Each seat can be individually booked by its row letter and seat number, for example row E",
+        "seat 2.",
+        "Part of the database design includes these tables:",
+        "SHOW(ShowID, Title, Duration)",
+        "SEAT(SeatID, RowLetter, SeatNumber)",
+        "PERFORMANCE(PerformanceID, ShowID, ShowDate, StartTime)"
+      ]
+    },
+    {
+      "id": "0005",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OP3 8/5/2025 18:30"
+      ]
+    },
+    {
+      "id": "0006",
+      "context": [],
+      "parts": [
+        {
+          "id": "0006c",
+          "label": "(c)",
+          "text": "Write an SQL script to return the number of times each show is scheduled. For example, in\nthe sample data in part (b), the show MK12 is scheduled three times.\nThe result needs to include the show name and a suitable field name for the number of times\nit is scheduled.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "0006d",
+          "label": "(d)",
+          "text": "Customers give their first name, last name and email address when they are making a\nbooking. One booking can include multiple seats.\nDescribe the additional tables that will need to be included in the database and explain how\nthese tables will be linked within the database.\n\n5 A multimedia design company has an office with a LAN (local area network). The LAN can have\nup to 20 devices connected with cables and other devices connected using wireless access.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "0006a",
+          "label": "(a)",
+          "text": "The company has private cloud storage for its employees to store their work.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "0006ai",
+              "label": "(i)",
+              "text": "Define the term private cloud.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "0006aii",
+              "label": "(ii)",
+              "text": "Describe the benefits to the company of using private cloud storage instead of public\ncloud storage.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "0006b",
+          "label": "(b)",
+          "text": "Part of the internal structure of the wired LAN is a star topology.\nExplain how packets are transmitted between two devices in a star topology.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "0006c",
+          "label": "(c)",
+          "text": "A different part of the network uses the Ethernet protocol.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "0006ci",
+              "label": "(i)",
+              "text": "A collision is detected.\nDescribe how the collision is managed using Carrier Sense Multiple Access/Collision\nDetection (CSMA/CD).",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "0006cii",
+              "label": "(ii)",
+              "text": "Identify two drawbacks of using CSMA/CD.\nDO NOT WRITE IN THIS MARGIN______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "0006d",
+          "label": "(d)",
+          "text": "The devices in the office have static private IP addresses.\nState what is meant by a static private IP address.\n\n6 Each of the following truth tables has three inputs (A, B and C) and one output (X).\nDraw one line to match each truth table with its logic expression.\nTruth table Logic expression\nA B C X\n0 0 0 0\nNOT (A XOR B) AND C\n0 0 1 1\n0 1 0 0\n0 1 1 0\n1 0 0 1\n1 0 1 1\n1 1 0 0\n(A OR C) AND NOT B\n1 1 1 0\nA B C X\n0 0 0 0\n0 0 1 1\n0 1 0 0\nA NAND B NAND C\n0 1 1 0\n1 0 0 0\n1 0 1 0\n1 1 0 0\n1 1 1 1\nA B C X\n(A NAND B) OR C\n0 0 0 1\n0 0 1 1\n0 1 0 1\n0 1 1 1\n1 0 0 1\n1 0 1 1\nNOT (A AND B AND C)\n1 1 0 0\n1 1 1 1",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "OP3 9/5/2025 13:00",
+        "Write a Structured Query Language (SQL) script to define the table PERFORMANCE.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "A robot navigates through the restaurant to the table it is serving.\nComplete the table by identifying two sensors that can be included in the robot and the\npurpose of each sensor in the navigation system.\nSensor Purpose of sensor in navigation system",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The robot uses Artificial Intelligence (AI) to communicate with the customers. The customers\nspeak to the robot to order their food and drinks.\nExplain how AI will be used in this part of the robot.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The navigation system can be considered an example of a control system.\nDescribe how feedback is used in a control system.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "The robot includes a touchscreen for the customer to make their payment.\nDescribe the principal operation of a touchscreen.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7e",
+          "label": "(e)",
+          "text": "Program libraries were used when writing the robot’s software.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ei",
+              "label": "(i)",
+              "text": "State what is meant by a program library.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7eii",
+              "label": "(ii)",
+              "text": "Some program libraries include Dynamic Link Library (DLL) files.\nDescribe the benefits of a programmer using a library with DLL files instead of using a\nlibrary that does not include DLL files.\nDO NOT WRITE IN THIS MARGIN______",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7f",
+          "label": "(f)",
+          "text": "The data from the robots is transmitted to a central computer using a wireless connection.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7fi",
+              "label": "(i)",
+              "text": "Complete the table by identifying and describing two methods of data verification that\ncan be used during data transfer.\nMethod Description",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7fii",
+              "label": "(ii)",
+              "text": "Explain how encryption can protect the security of data during transmission.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "Robots are used to serve food and drink to customers at a restaurant."
+      ]
+    }
+  ]
+}

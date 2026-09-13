@@ -1,0 +1,411 @@
+{
+  "paperId": "0478_s22_qp_22",
+  "subjectCode": "0478",
+  "session": "s22",
+  "component": "22",
+  "totalMarks": 41,
+  "questionCount": 24,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Identify one constant that you could have used for Task 1.\nGive the value and use of the constant.\nConstant ______\nValue ______\nUse ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Identify one variable that you could have used for Task 2.\nGive the data type and use of the variable.\nVariable ______\nData type ______\nUse ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how your program showed the days available for booking in Task 1.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how your program made sure that each booking number allocated in Task 2 was\nunique.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Write an algorithm for the part of Task 2 that inputs the tickets and extra attractions required\nthen calculates the total cost of the booking.\nAssume that the booking is for a single day.\nUse pseudocode, programming statements or a flowchart.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program decides when a family ticket is better value in Task 3.\nAny programming statements that you include in your answer must be fully explained.\n\nSection B starts on page 8\nSection B",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm allows a user to input their password and checks that there are at least eight",
+        "characters in the password. Then, the user is asked to re-input the password to check that both",
+        "inputs are the same. The user is allowed three attempts at inputting a password of the correct",
+        "length and a matching pair of passwords. The pre-defined function LEN(X) returns the number of",
+        "characters in the string, X",
+        "01 Attempt ← 0",
+        "02 REPEAT"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PassCheck ← TRUE"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please enter your password \""
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Password"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF LEN(Password) < 8"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PassCheck ← TRUE"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please re-enter your password \""
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Password2"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Password <> Password"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PassCheck ← FALSE"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Attempt ← Attempt + 1"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL PassCheck OR Attempt <> 3"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF PassCheck"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Password success\""
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Password fail\""
+      ]
+    },
+    {
+      "id": "24",
+      "context": [],
+      "parts": [
+        {
+          "id": "24a",
+          "label": "(a)",
+          "text": "Identify the three errors in the pseudocode and suggest a correction to remove each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24b",
+          "label": "(b)",
+          "text": "The algorithm includes two types of check on the data input.\nIdentify and describe each type of check.\nType of check 1 ______\nDescription ______\nType of check 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24c",
+          "label": "(c)",
+          "text": "Give two sets of test data for this algorithm and a reason for choosing each set.\nEach set of test data and its reason must be different.\nSet 1 ______\nReason ______\nSet 2 ______\nReason ______\n\n3 (a) Describe a one-dimensional array. Include an example of an array declaration.",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24b",
+          "label": "(b)",
+          "text": "Explain how indexing could be used to search for a value stored in a one-dimensional array.\n\n4 This algorithm checks the temperature of hot food being served to customers.\nError\nSTART\nCounter 0\nHot 0\nCold 0\nServe 0\nINPUT Temp\nYes\nError\nIs Temp\n((Hot + Cold) / Counter) * 100\n= –1?\nNo\nYes\nOUTPUT\nIs Temp\nHot Hot + 1\n\"Too Hot\"\n> 86?\nNo\nCounter Counter + 1\nOUTPUT\nError\nYes\nIs Temp\nCold Cold + 1\n< 63?\nNo\nOUTPUT\nServe Serve + 1 \"Too Cold\"\nEND",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using this input data:\n75, 78, 84, 87, 91, 80, 75, 70, 65, 62, –1, 20\nCounter Hot Cold Serve Temp Error\nOUTPUT",
+          "marks": 7,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24b",
+          "label": "(b)",
+          "text": "State how the final output from the algorithm could be improved.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24c",
+          "label": "(c)",
+          "text": "Identify the process in the algorithm that is not required.\n\n5 A database table, NURSE, is used to keep a record of disposable items worn by veterinary nurses.\nThis is part of the table:\nItemNumber Description SingleUse Uses StockLevel ReorderLevel\nDIG1 Glove (pair) Y 1 500 800\nDIA1 Apron Y 1 700 800\nDIM5 Hair net Y 1 650 500\nDIA2 Apron N 5 25 100\nDIS4 Suit N 3 70 50\nDIV9 Shoe cover (pair) Y 1 400 250",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24a",
+          "label": "(a)",
+          "text": "Complete this query-by-example grid to display only the item number and the description of\nsingle use items, where the stock level is below the reorder level.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "24b",
+          "label": "(b)",
+          "text": "Give a reason why the field SingleUse is not required in the table NURSE.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "ENDIF"
+      ]
+    }
+  ]
+}

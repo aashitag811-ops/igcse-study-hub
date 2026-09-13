@@ -1,0 +1,447 @@
+{
+  "paperId": "9618_w25_qp_21",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "21",
+  "totalMarks": 70,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The program contains these variables:\nVariable Data type\nMyChar CHAR\nMyString STRING\nMyInt INTEGER\nMyDOB DATE\nComplete the table by filling in the gaps using functions and/or operators from the insert.\nEach expression must be valid.\nExpression DO NOT WRITE IN THIS MARGIN\nMyString 'X' ______ MyString\nMyChar ______ (\"ABCD\", ______ ,______)\nMyString ______ (______ (MyDOB))\nMyInt ______ (______ (MyString) / 2)",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Different test methods will be used at different stages of the program development.\nComplete the table by identifying the test method that matches the test description.\nThe first row has been completed for you.\nTest description Test method\ncarried out as soon as a program module has been coded alpha\ncarried out as program modules are being combined\ncompleted by the developers without referring to the code\ncompleted by the customer\n\n* 0000800000003 * DFD",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "During the alpha testing stage, an Integrated Development Environment (IDE) is used to help\nlocate an error that has been identified. The IDE report window feature is used to examine\nthe values assigned to variables.\nExplain how two other IDE features are used together with the report window feature to help\nlocate the error.\n\n* 0000800000004 * DFD",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A program is being developed to meet a particular customer requirement."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Data is a global 1D array containing 30 elements of type STRING",
+        "An algorithm will output:",
+        "• all non-blank elements (elements that do not contain an empty string)",
+        "• the final total of the number of elements output.",
+        "Complete the program flowchart to represent the algorithm:",
+        "START",
+        "END",
+        "[5]",
+        "* 0000800000005 * DFD"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write pseudocode to declare the record structure for type RentalRecord",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "A 1D array Rental containing 500 elements is used to store the data for all rental records.\nWrite pseudocode to declare the Rental array.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "State three benefits of using an array of records to store the data for all rentals.\nDO NOT WRITE IN THIS MARGIN1 ______\n\n* 0000800000006 * DFD",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A program is needed to manage individual rentals in a car-hire business.",
+        "The data items for each rental will be held in a record structure of type RentalRecord",
+        "The programmer has started to define the items that will be needed:",
+        "Item Example value Comment",
+        "RentalID \"AB1234\" a unique alpha-numeric value",
+        "CarID 241",
+        "a numeric value used as an array index",
+        "DisCode 'S'",
+        "a letter indicating the type of discount offered",
+        "Start 13/06/2025",
+        "when the rental starts",
+        "Duration 7 the number of days of the rental",
+        "Completed FALSE TRUE when the car is returned and the rental charge paid"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the pseudocode for Store()\nAll variables used in the algorithm must be declared.\nPROCEDURE Store()\nENDPROCEDURE\n\n* 0000800000007 * DFD",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The requirements of the program change:\n• the number of values in the sequence is unknown, but may be higher than 20\n• the values will need to be accessed by another program as data.\nThe data will be stored in a text file instead of an array.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Give two benefits of using a text file instead of an array.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "State any change that will need to be made before each value is written to the file.\n\n* 0000800000008 * DFD",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A program contains a global 1D array Number consisting of 20 elements of type REAL",
+        "A procedure Store() will input a sequence of up to 20 real values, one value at a time. These",
+        "values will be assigned to elements of the array using four steps:",
+        "Step 1: store the first value in the sequence in the first element of the array",
+        "Step 2: check each subsequent value input. If this value is larger than the previous value input,",
+        "then assign the value to the next array element, otherwise go to step 4",
+        "Step 3: repeat from step 2 unless the array is full",
+        "Step 4: output the count of the number of values stored in the array together with a suitable",
+        "message."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Comment on why the programmer chose –1 as the initial value of FoundAt",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Explain the purpose of the outer conditional clause.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "The inner conditional clause ensures that only the index of the first matching element, if\nany, is returned.\nExplain how this clause works.\n\n* 0000800000009 * DFD",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The pseudocode does not use the most appropriate loop construct.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Explain why this is not the most appropriate loop construct.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Suggest and justify a more appropriate loop construct that could be used.\nConstruct ______\nJustification ______\n\n* 0000800000010 * DFD",
+              "marks": 2,
+              "type": "suggest",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A program is being designed in pseudocode.",
+        "The program contains the following declaration for the global array MyData:",
+        "DECLARE MyData : ARRAY[1:10000] OF STRING",
+        "A function FindFirst() is written to search the array for a given string and to return the index of",
+        "the first element where that string is found, or to return –1 if the string is not found.",
+        "The function is written in pseudocode as shown:",
+        "FUNCTION FindFirst(SearchString : STRING) RETURNS INTEGER",
+        "DECLARE Index, FoundAt : INTEGER",
+        "FoundAt –1",
+        "FOR Index 1 TO 10000",
+        "IF MyData[Index] = SearchString THEN // outer conditional clause",
+        "IF FoundAt = –1 THEN // inner conditional clause",
+        "FoundAt Index",
+        "ENDIF",
+        "ENDIF",
+        "NEXT Index",
+        "RETURN FoundAt",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "An incorrect attempt was made to enter 41623. The first two digits were entered incorrectly;\nthe last three digits were entered correctly.\nWhen this number was tested, the check digit was found to be correct and the input was\naccepted.\nIdentify an example of the incorrect attempt to enter 41623 and explain why this number\nwould not be rejected.\nNumber ______\nExplanation ______\n\n* 0000800000011 * DFD",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A module Generate() will take an integer value representing an original number and return\nan integer value representing a new number which includes the check digit.\nThe original number is always at least three digits in length.\nWrite pseudocode for the module Generate()\nAssume that the parameter is valid.\n\n* 0000800000012 * DFD",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Students are learning about a simple check digit method for data validation. In this method, a",
+        "single check digit is appended to the end of an original number to give a new number.",
+        "The students are studying a method which:",
+        "• calculates the sum of all the digits in the original number",
+        "• uses integer division to calculate the remainder when the sum is divided by 10",
+        "• uses the remainder as the check digit",
+        "• appends the check digit to the original number, creating the new number.",
+        "For example:",
+        "original number 4162",
+        "sum of all digits 4 + 1 + 6 + 2 = 13",
+        "remainder when the sum is divided by 10 using integer division 3",
+        "new number 41623",
+        "The method described can be used to detect single-digit errors. For example, if the new number",
+        "is incorrectly input as 41633, then the check digit does not match and the input will be rejected."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "One part of the program contains an algorithm which is represented by a state-transition\ndiagram.\nThe table shows the inputs, outputs and states for the algorithm:\nCurrent state Input Output Next state\nS1 A2 X2 S3\nS1 A1 X1 S2\nS2 A4 X4 S5\nS3 A1 S3\nS3 A3 X3 S2\nS3 A2 X4 S4\nS4 A1 X1 S4\nS4 A3 S2\nS4 A4 X4 S5\nComplete the state-transition diagram to represent the information given in the table.\nA2 | X2\nSTART\nS1\n\n* 0000800000013 * DFD",
+          "marks": 5,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A structure chart is used to document a different part of the program.\nThis part of the program contains six modules:\nPseudocode module header\nPROCEDURE Setup()\nPROCEDURE Restart(H1 : STRING, C1 : INTEGER)\nFUNCTION Modify(B1 : BOOLEAN) RETURNS INTEGER\nPROCEDURE Final(T1 : INTEGER)\nPROCEDURE Update(BYREF R2 : STRING)\nFUNCTION Confirm() RETURNS BOOLEAN\nModule Setup will repeatedly call three of the modules.\nComplete the structure chart to document the information given in the table.\nSetup\nH1\nB1\nR2\n\n* 0000800000014 * DFD",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "There are several different ways to express an algorithm during the design of a program."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write efficient pseudocode for the module OKToBorrow()\n\n* 0000800000016 * DFD",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A second module is defined:\nModule Description\n• called with two parameters of type STRING representing a\nStudentID and a BookID\n• searches the array for the relevant loan record\nReturnBook()\n• when found, sets OnLoan to FALSE and returns TRUE\n• if a loan record is not found, or the book has already been\nreturned, then returns FALSE\nWrite efficient pseudocode for the module ReturnBook()\nAssume that each student is only allowed to borrow each book only once. That means that\nthere will be no more than one loan record for a given combination of student and book.\n* 0000800000017 * DFD",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "It is decided to introduce a system of fines for books that have been borrowed for too long.\nTwo new requirements are defined:\n1. Each loan has a maximum length, represented as a number of days.\n2. Each book in the library will be assigned one of three categories. Each category has a\ndifferent maximum loan length.\nRecord structure and program design changes are needed to meet these two requirements.\nOutline the changes that are necessary to meet the two requirements.\n\n* 0000800000018 * DFD\n* 0000800000019 * DFD\n* 0000800000020 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A program is being developed to manage student book loans from a college library. Students may",
+        "borrow up to five books at a time from the library.",
+        "The programmer has defined a record type to define each loan.",
+        "The record data items are:",
+        "Data item Data type Comment",
+        "StudentID STRING the unique ID of the student who has borrowed the book",
+        "BookID STRING",
+        "the unique ID of the book being borrowed",
+        "OnLoan BOOLEAN",
+        "TRUE if the book has not been returned",
+        "The programmer has defined a global array Loan to store 5000 loan records.",
+        "There are more elements in the array than books in the library. Unused elements have the",
+        "StudentID set to an empty string. These may occur anywhere in the array.",
+        "The programmer has defined the first program module:",
+        "Module Description",
+        "• called with a parameter of type STRING representing a",
+        "StudentID",
+        "OKToBorrow()",
+        "• search the array for loan records for the specified student",
+        "• output a suitable message to say whether the student may, or",
+        "may not, borrow another book",
+        "* 0000800000015 * DFD"
+      ]
+    }
+  ]
+}

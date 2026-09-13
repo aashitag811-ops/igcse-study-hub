@@ -1,0 +1,734 @@
+{
+  "paperId": "9691_s14_qp_32",
+  "subjectCode": "9691",
+  "session": "s14",
+  "component": "32",
+  "totalMarks": 90,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A rule may be recursive.\nExplain what is meant by this and identify the rule above which is recursive.\nRule number",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Use the above rules to explain why [8] is a valid <ArraySubscript>.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Use the above rules to explain why [3917 is an invalid <ArraySubscript>.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The given rules permit an array subscript to start with a zero, i.e. [037] is valid.\nThe programming language however, does not allow an array subscript to start with a\nzero digit. The rules therefore need to be amended.\nComplete the revised list of rules.\n<LeftBr> ::= [\n<RightBr> ::= ]",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The syntax of a high-level programming language is defined using Backus-Naur Form (BNF).",
+        "Five of the rules are shown below.",
+        "1. <LeftBr> ::= [",
+        "2. <RightBr> ::= ]",
+        "3. <Digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9",
+        "4. <Integer> ::= <Digit> | <Digit><Integer> | <Integer><Digit>",
+        "5. <ArraySubscript> ::= <LeftBr><Integer><RightBr>"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "At first, the company used a single table named DepotVehicle. A sample of the table’s\ndata is shown below.\nDepotTown RegistrationNo VehicleType\n0987 SC\n0988 SC\nDhaka\n0991 V\n0945 V\n1431 SC\nKumba\n1476 LC\nExplain why the table is not in normal form.\n\nThe final design uses these four entities:\n• Depot\n• Vehicle\n• Customer\n• Hire.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Consider the relationship between Depot and Vehicle.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Draw the entity-relationship (E-R) diagram.",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Complete the description for the Vehicle and Depot tables using the notation:\nTableName(Attribute1, Attribute2, …)\nwhere the underlined attribute indicates the primary key.\nVehicle(\nDepot(\n)",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The Customer and Hire tables (with the primary keys not shown) are as follows:\nCustomer(CustomerID, CustomerAddress)\nHire(CustomerID, DateBooked, RegistrationNo,\nStartDate, ReturnDate, LicenceChecked, HireCharge)\nConsider the relationship between Customer and Hire.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Draw the E-R diagram.",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Explain how this relationship between Customer and Hire is modelled using the given\nattributes.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The following Data Manipulation Language (DML) query is run:\nSELECT RegistrationNo\nFROM Hire\nWHERE (StartDate < Now() ) AND (ReturnDate > Now() );\nNote: Now() is a function which returns the current date and time.\nDescribe what useful information is produced by the query.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "A query is needed to list the depot and registration number for all small car vehicles.\nWrite the query in Data Manipulation Language (DML).",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "On 05/04/2014, customer 085 booked a vehicle hire. This hire will start on 13/04/2014.\nWhen the customer arrives, the receptionist will check their driving licence. If the licence is\nvalid, the value of the licence check attribute, of the correct Hire record, must be updated.\nComplete the Data Manipulation Language (DML) command to make the change.\nUPDATE Hire\nSET\nWHERE CustomerID = '085' AND\n;",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A company hires vehicles to customers. A database is to be created to record data for all hire",
+        "transactions.",
+        "The company has a number of depots in different towns. Each town has one depot only. A",
+        "number of vehicles are available for hire. Each vehicle is based at one of the depots. Every",
+        "vehicle starts and ends a hire from its base depot.",
+        "Depot data consist of:",
+        "• Depot town name",
+        "• Depot address",
+        "Vehicle data consist of:",
+        "• A unique registration number",
+        "• A vehicle type code. Vehicles are coded as SC – Small Car, LC – Large Car or V – Van.",
+        "• Vehicle mileage",
+        "Customer data consist of:",
+        "• Unique Customer ID",
+        "• Customer address",
+        "Data for each hire transaction consist of:",
+        "• Customer ID",
+        "• Vehicle registration number",
+        "• Date the booking was made",
+        "• Start date of the hire",
+        "• Return date",
+        "• Driving licence check. A check is carried out to confirm that customers have a valid driving",
+        "licence and this is recorded. This check is done when the customer shows their driving",
+        "licence when they collect the vehicle.",
+        "• Hire charge"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Show the data displayed when the following queries are executed.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "ageLimit(maleU16, X)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "player(neville, m, Age)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "player(Who, f, _ )",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiv",
+              "label": "(iv)",
+              "text": "ageLimit(juniorMale, X) and X=15",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The club is about to start a new senior female team. This team’s identifier in the knowledge\nbase will be seniorFemale. The team will have no upper age limit for players.\nTwo females already want to be registered:\n• Azhar, aged 24\n• Asmar, aged 31\nWrite four new facts needed for the knowledge base:",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The following rule is added to the knowledge base:\neligiblePlayer(PlayerX, TeamY) if player(PlayerX, GenderX, AgeX) and\nteamGender(TeamY, GenderY) and GenderX=GenderY.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Describe what this rule is designed to do.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Identify what needs to be added to the above rule to check if a player is eligible to play\nfor a team.",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A football club runs four teams for boys and girls and stores the following data:",
+        "• players",
+        "• team names",
+        "• the upper age limit for each team",
+        "• the gender of each team.",
+        "The following facts are stored in a knowledge base to be used by a logic program.",
+        "Age is stored rather than date of birth to simplify the programming.",
+        "team(juniorFemale).",
+        "team(juniorMale).",
+        "team(femaleU16).",
+        "team(maleU16).",
+        "ageLimit(juniorFemale, 11).",
+        "ageLimit(juniorMale, 11).",
+        "ageLimit(femaleU16, 15).",
+        "ageLimit(maleU16, 15).",
+        "teamGender(juniorFemale, f).",
+        "teamGender(juniorMale, m).",
+        "teamGender(femaleU16, f).",
+        "teamGender(maleU16, m).",
+        "player(bill, m, 16).",
+        "player(moira, f, 13).",
+        "player(imram,f, 14).",
+        "player(jajid, f, 15).",
+        "player(wasim1, m, 14).",
+        "player(wasim2, m, 10).",
+        "player(sarah, f, 11).",
+        "player(paul, m, 13).",
+        "player(neville, m, 12).",
+        "player(lewis, m, 14).",
+        "player(sajid, f, 15)."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Draw a line around the left subtree.",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "State the number of leaf nodes in the current tree.\n\nThe binary tree is implemented in a high-level language with the following\ndata structures:\nVariable Data type Description\nRootPtr\nThe array subscript of the root of the tree\nData\nAn array of animal names\nRightPtr ARRAY[1 : 2000] OF INTEGER\nArray of right pointer values\nLeftPtr ARRAY[1 : 2000] OF INTEGER\nArray of left pointer values",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the two table entries above.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The animals joined the tree in the order:\nELEPHANT, LLAMA, SNAKE, BEAR, LION, CATERPILLAR, TIGER.\nThe diagram below is to show the contents of the arrays and the root pointer variable.\nComplete the diagram.\nRootPtr\nLeftPtr Data RightPtr\nELEPHANT\n2000",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "How many comparisons will be made to locate LION in the current tree?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "An algorithm is designed in pseudocode. It will search the binary tree for a particular\nanimal.\nThe algorithm uses the variables below:\nVariable Data type Description\nSearchAnimal STRING\nAnimal to search for\nCurrent INTEGER\nThe array subscript for the item currently considered\nIsFound BOOLEAN Flag set to TRUE when SearchAnimal is found\nComplete the algorithm below:\n//binary tree search\nINPUT\nIsFound ← FALSE\nCurrent ← RootPtr\nREPEAT\nIF\nTHEN\n//found\nOUTPUT 'Found'\nIsFound ← TRUE\nELSE\nIF SearchAnimal > Data[Current]\nTHEN\n// move right\nELSE\nCurrent ← LeftPtr[Current]\nENDIF\nENDIF\nUNTIL OR Current = 0\nIF\nTHEN\nOUTPUT SearchAnimal ' not found'\nENDIF",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A binary tree is maintained for a list of animals.",
+        "The tree currently has seven animals as shown below:",
+        "ELEPHANT",
+        "BEAR LLAMA",
+        "CATERPILLAR LION SNAKE",
+        "TIGER"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "A computer system stores integers in 8-bit two’s complement form.\nGive the denary number represented by Byte 1 and Byte 2.\nByte 1 Byte 2\n0 1 1 0 0 0 0 1 1 0 0 0 1 1 0 0\nByte 1\nByte 2",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Two bytes together are used to represent a Binary Coded Decimal (BCD) number.\nState the denary number represented by Byte 3 and Byte 4.\nByte 3 Byte 4\n0 1 1 0 0 0 0 1 1 0 0 1 0 1 1 1\nDenary:",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Byte 5 and Byte 6 together represent a 16-bit colour code used in a drawing program.\nByte 5 Byte 6\n0 1 1 0 1 0 1 0 1 1 1 1 0 1 0 1\nThe drawing program displays a colour code as a hexadecimal number.\nState the hexadecimal number for this code.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "Many computer systems need to store and process real numbers.\nA computer uses two bytes to store a real number. The first (Byte 7) stores the mantissa and\nthe second (Byte 8), the exponent. Both mantissa and exponent use two’s complement.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5di",
+              "label": "(i)",
+              "text": "What denary number is represented by Byte 7 and Byte 8?\nByte 7 Byte 8\n0 1 1 0 1 0 0 0 0 0 0 0 0 0 1 1\nShow your working.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5dii",
+              "label": "(ii)",
+              "text": "Without any working out, how can you recognise that this 16-bit pattern (Byte 7 and Byte\n8) is a positive number?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ei",
+              "label": "(i)",
+              "text": "Without any working out, how can you recognise that this 16-bit pattern (Byte 7\nand Byte 8) is normalised?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5eii",
+              "label": "(ii)",
+              "text": "Both of the representations shown below are not normalised.\nWrite in the empty rows the binary for the normalised form for the same value.\nMantissa Exponent\n0 0 1 1 0 0 0 0 0 0 0 0 1 0 1 1\nMantissa Exponent\n1 1 1 0 0 0 1 1 0 0 1 1 0 0 1 1",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5f",
+          "label": "(f)",
+          "text": "A change is made to use the two bytes as a 12-bit mantissa with a 4-bit exponent. Describe\nthe effect of this change on the values that can be represented, compared with the old use of\nthe two bytes.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Describe what is meant by a Local Area Network.\n\nThe following are some comments made by the Chief Executive to the IT Manager.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "“I am concerned that only the staff in the Customer Services team should have access to the\nLAN.”",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "State what authentication technique will be used for this.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Identify what hardware will be in place to restrict the access to the LAN.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "“I understand if the network is to be a wired network, there is a choice about the type of\ncabling used.”\nName and describe two types of cabling. Suggest a benefit for each cable type. The\nbenefits should be different.\nCable type 1\nDescription\nBenefit\nCable type 2\nDescription\nBenefit",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "“Many customer enquiries will be dealt with over the World Wide Web; so each computer in\nthe LAN needs access to the Internet”.\nName the additional hardware needed to provide access to the Internet.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6e",
+          "label": "(e)",
+          "text": "“With the Internet connection, I am concerned that we will get unauthorised access to our\nLAN.”\nName the hardware and/or software needed to prevent unauthorised access.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6f",
+          "label": "(f)",
+          "text": "“Customer Services staff must be able to get access to a centralised store of customer data.\nOur business deals with thousands of customers. They produce millions of transactions.”\nExplain what hardware and software will be needed to enable this.\nHardware\nSoftware",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A business has a customer services section. The business is considering a new Local Area",
+        "Network (LAN) for this section."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Describe what is meant by a computer simulation.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "There are many programs that perform simulation. Weather forecasting is an example of\none.\nData about the atmosphere need to be captured at a number of locations. One example is\nthe capture of temperature data. This is performed with a temperature sensor.\nName two other sensors that can be used to collect weather data.\n2",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "A flight simulator can be used to train pilots. This is another example of a computer\nsimulation.\nWeather forecasting and a flight simulator are different in a number of ways.\nDescribe one key difference between them.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    }
+  ]
+}

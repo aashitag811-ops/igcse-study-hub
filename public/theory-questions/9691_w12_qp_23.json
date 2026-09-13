@@ -1,0 +1,364 @@
+{
+  "paperId": "9691_w12_qp_23",
+  "subjectCode": "9691",
+  "session": "w12",
+  "component": "23",
+  "totalMarks": 68,
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the structure diagram showing these tasks.\nSuper Bikes\nEnter bike\ndetails",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Entering hire rate details has two subtasks:\n• input daily rates\n• input weekly rates\nAdd these to the structure diagram in part (a).",
+          "marks": 1,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The type of each bike is also recorded. The intention of this pseudocode is to allow\nFor\nonly trial, scooter and road as valid bike types. Examiner's\nUse\nINPUT BikeType\nIF ((BikeType = “trial”) AND (BikeType = “scooter”))\nOR (BikeType = “road”)\nTHEN\nOUTPUT BikeType “ is valid”\nELSE\nOUTPUT “Invalid”\nENDIF\nState the output when the BikeType input is:",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "scrambler",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "trial",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "road",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Rewrite the line in the pseudocode in part (c) which needs changing in order to\ncorrectly validate bike types.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "All bike registrations are five characters long, and have the format BKXXX, where\nFor\nX is a digit. Examiner's\nUse\nFor example, BK572 is a valid registration.\nIn a high-level programming language write code that will validate the format of a\nregistration input into the variable BikeReg. (Add extra line numbers if required.)\nProgramming language used\nCode",
+              "marks": 10,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Explain why 487BK is an invalid bike registration.\nFor\nExaminer's\nUse\nState the line number of your code in part (e)(i) which detects that it is invalid.\nLine Number",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "The code in part (e)(i) will be subject to black box testing and white box testing.\nExplain how this testing will be carried out.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1fi",
+              "label": "(i)",
+              "text": "Black box testing",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1fii",
+              "label": "(ii)",
+              "text": "White box testing",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 25,
+      "text": [
+        "Soni decides on the main tasks:",
+        "• enter bike details",
+        "o bike specification",
+        "o service history",
+        "o hire rates",
+        "• enter bike hire details"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the trace table for the flowchart with the first five bike registrations. The\nFor\nvalues to be entered are BK707, BK380, BK162, BK747 and BK913. Examiner's\nUse\nThe row with the headings will also have to be completed.\nBikeSpace\nRow Position Row<=30\n[1,1]\n1 1 TRUE BK707",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "From the flowchart write the module code, using nested REPEAT…UNTIL loops.\nFor\nExaminer's\nEnsure that your code demonstrates good programming practice.\nUse\nRow ← 1\nNo\nRow <= 30?\nTo rest of program\nYes\nPosition ← 1\nNo\nPosition <= 4?\nYes\nInput BikeReg\nNo\nBikeReg <> “BK000”?\nTo rest of program\nYes\nBikeSpace[Row, Position] ← BikeReg\nPosition ← Position + 1\nRow ← Row + 1\nProgramming language used\nFor\nExaminer's\nUse\nCode",
+          "marks": 7,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "One of the modules uses the expression:\nFor\nExaminer's\nUse\nArea /(SpaceWidth * SpaceLength – EmptySpaces)\nState the value of the part of the expression inside the brackets when\nSpaceWidth ← 7\nSpaceLength ← 4\nEmptySpaces ← 28",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "If this expression is used with the above values, there will be an error.\nState the name of this type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "Explain how the programmer can stop this type of error occurring during execution.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "There are a number of debugging tools associated with high-level languages.\nDescribe how breakpoints and a variable watch can be used when developing a\nprogram.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "Super Bikes owns a rectangular parking area with 30 rows; each row has 4 bike spaces.",
+        "For",
+        "Each bike is always parked in the same space. Examiner's",
+        "Use",
+        "The array BikeSpace[30,4] stores the bike registrations.",
+        "Soni uses a flowchart to help him design a module to populate the array with the bike",
+        "registrations.",
+        "Input is terminated using the rogue value “BK000”.",
+        "Row ← 1",
+        "No",
+        "Row <= 30?",
+        "To rest of program",
+        "Yes",
+        "Position ← 1",
+        "No",
+        "Position <= 4?",
+        "Yes",
+        "Input BikeReg",
+        "No",
+        "BikeReg <> “BK000”?",
+        "To rest of program",
+        "Yes",
+        "BikeSpace[Row, Position] ← BikeReg",
+        "Position ← Position + 1",
+        "Row ← Row + 1"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Super Bikes will need a printed report that shows all the hires made in a given month,",
+        "For",
+        "grouped by insurance rating (A, B or C) and the income each hire generated. The report Examiner's",
+        "Use",
+        "should include the total income figure for each insurance group.",
+        "Design the layout of the report.",
+        "[7]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "One file will store the following data:\n• bike registration\n• purchase cost of bike\n• insurance rating (A, B or C only)\n• whether or not service is due\nComplete the following table. Use a single value only for Field Size.\nField Name Data Type Field Size (in bytes)\nBikeReg\nPurchaseCost\nInsuranceRating\nServiceDue",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Estimate the size, in kilobytes, of the file if it stores the details of 1000 bikes. Show your\nFor\nworking. Examiner's\nUse",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Using a high-level programming language, define a bike record with identifier\nHireBike and the fields listed in part (a).\nProgramming language\nCode",
+              "marks": 5,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Bike records are stored in a file SuperBikes.\nFor\nExaminer's\nUse\nWrite the code to read every bike record, count the number of bikes where service\nis due and output the result. You should assume that the file is not already in use.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 9,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "Super Bikes will store the data in files."
+      ]
+    }
+  ]
+}

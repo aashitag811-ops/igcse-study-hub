@@ -1,0 +1,346 @@
+{
+  "paperId": "9608_s20_qp_22",
+  "subjectCode": "9608",
+  "session": "s20",
+  "component": "22",
+  "totalMarks": 60,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Selection and repetition are basic constructs of an algorithm.\nName and describe one other construct.\nName ______\nDescription ______",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Program coding is a transferable skill.\nExplain the term transferable skill.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Count-controlled and post-condition are two types of loop.\nDescribe the characteristics of each of these types of loop.\nCount-controlled ______\nPost-condition ______",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Name three features provided by an Integrated Development Environment (IDE) that assist\nin the coding and initial error detection stages of the program development cycle.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A structure chart is often produced as part of a modular program design. The chart shows the\nhierarchy of modules and the sequence of execution.\nGive two other features the structure chart can show.\nFeature 1 ______\nFeature 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Six program modules implement part of an online shopping program. The following table\ngives the modules and a brief description of each module:\nModule Description\nAllows the user to choose a delivery slot, select items to be added to\nShop()\nthe basket and finally check out\nChooseSlot()\nAllows the user to select a delivery time. Returns a delivery slot number\nFillBasket()\nAllows the user to select items and add them to the basket\nCompletes the order by allowing the user to pay for the items. Returns\nCheckout()\na Boolean value to indicate whether or not payment was successful\nSearch()\nAllows the user to search for a specific item. Returns an item reference\nAdds an item to the basket. Takes an item reference and a quantity as\nAdd()\nparameters",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "The online shopping program has been split into sub-tasks as part of the design process.\nExplain the advantages of decomposing the program into modules. Your explanation\nshould refer to the scenario and modules described in part (b).",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Complete the structure chart for the six modules described in part (b).\nShop()",
+              "marks": 6,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A navigation program includes a function, CheckCourse(). This function is called with a real",
+        "value, Course, and returns an integer value.",
+        "The identifier table and the program flowchart for the function are shown as follows:",
+        "Identifier Type Description",
+        "Course REAL The value passed to CheckCourse()",
+        "Adjust INTEGER",
+        "The value returned by CheckCourse()",
+        "Check INTEGER",
+        "A local variable",
+        "A function that is passed a REAL value representing the",
+        "Deviate() FUNCTION",
+        "course and returns a REAL value representing the current",
+        "deviation",
+        "Alert() PROCEDURE A procedure that generates a warning",
+        "START",
+        "Set Check to integer",
+        "value of",
+        "Deviate(Course)",
+        "Set Adjust to 255",
+        "CASE OF",
+        "Check",
+        "–20 to –1",
+        "Set Adjust to 10",
+        "OTHERWISE",
+        "Set Adjust to 0",
+        "Alert()",
+        "1 to 20",
+        "Set Adjust to –10",
+        "RETURN Adjust",
+        "END",
+        "Write pseudocode to implement the function CheckCourse(). The pseudocode must follow the",
+        "algorithm represented by the flowchart. Declare any local variables used.",
+        "Refer to the Appendix on page 19 for a list of built-in pseudocode functions and operators.",
+        "[7]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Mustafa has developed the following pseudocode to generate ten random integers in the\nrange 1 to 100.\nDECLARE Random : ARRAY [1:10] OF INTEGER\nDECLARE Count, RNum : INTEGER\nFOR Count 1 TO 10\nRnum INT(RAND(100)) + 1\nRandom[Count] RNum\nENDFOR\nRefer to the Appendix on page 19 for a list of built-in pseudocode functions and operators.\nRewrite the pseudocode so that there are no duplicated numbers in the list of random\nnumbers.",
+          "marks": 6,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The changes made to the pseudocode in part (a) were as a result of changes to the program\nrequirement.\nGive the term used to describe changes made for this reason.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Use structured English to describe the algorithm for the function GetName().",
+          "marks": 7,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "The array is to be sorted using an efficient bubble sort algorithm. An efficient bubble sort\nreduces the number of unnecessary comparisons between elements.\nDescribe how this could be achieved.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "A procedure, BubbleSort(), is needed to sort the 1D array Contact into ascending\norder of Name using an efficient bubble sort algorithm.\nWrite program code for the procedure BubbleSort().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code ______\n\nQuestion 6 begins on the next page.",
+              "marks": 8,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "A global 1D array, Contact, of type STRING is used to store a list of names and email addresses.",
+        "There are 1000 elements in the array. Each element stores one data item. The format of each",
+        "data item is as follows:",
+        "<Name>':'<EmailAddress>",
+        "Name and EmailAddress are both variable-length strings.",
+        "For example:",
+        "\"Sharma Himal:hsharma99@stlmail.com\"",
+        "A function, GetName(), is part of the program that processes the array. A data item string will be",
+        "passed to the function as a parameter. The function will return the Name part. Validation is not",
+        "necessary."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Write pseudocode for the module AddTime(). Assume both input parameters are valid.\nRefer to the Appendix on page 19 for a built-in list of pseudocode functions and\noperators.",
+              "marks": 8,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "AddTime() will be tested using white-box testing.\nState the reason for using white-box testing.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aiii",
+              "label": "(iii)",
+              "text": "A run-time error is one type of error that black-box testing can reveal.\nDescribe one other type of error that black-box testing can reveal.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The user will input the desired start time of a hire. A new module will be written to validate the\ninput string as a valid time in 24-hour clock format.\nThe string is already confirmed as being in the format \"NN:NN\", where N is a numeric\ncharacter.\nGive an example of suitable test data that is in this format but which is invalid. Explain your\nanswer.\nTest data ______\nExplanation ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Each time a boat is hired out, details of the hire are added to a text file, Hirelog.txt. Each\nline of the text file corresponds to information about one hire session.\nThe format of each line is as follows:\n<BoatNumber><Date><AmountPaid>\n• BoatNumber is a two-digit numeric string\n• Date is a six-digit numeric string in the format DDMMYY\n• AmountPaid is a variable-length string representing a numeric value, for example\n\"12.75\"\nThe total hire amount from each boat is to be stored in a global array, Total. This array is\ndeclared in pseudocode as follows:\nDECLARE Total : ARRAY [1:17] OF REAL\nThe programmer has defined module GetTotals() as follows:\nModule Description\n• Search through the file Hirelog.txt\nGetTotals() • Extract the AmountPaid each time a boat is hired\n• Store the total of AmountPaid for each boat in the array\nWrite program code for the module GetTotals().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (not inclusive of x)\nExample: RAND(87) could return 35.43\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv\nExample: DIV(10,3) returns 3\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nExample: If x has the value 87.5 then NUM_TO_STRING(x) returns \"87.5\"\nNote: This function will also work if x is of type INTEGER\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nExample: If x has the value \"23.45\" then STRING_TO_NUM(x) returns 23.45\nNote: This function will also work if x is of type CHAR\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": null,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A company hires out rowing boats on a lake. The company has 17 boats numbered from 1 to 17.",
+        "Boats may be hired between 9:00 and 18:00, with a maximum hire duration of 90 minutes.",
+        "The company is developing a program to help manage and record the boat hire process.",
+        "The programmer has decided to store all values relating to hire time as strings. The program will",
+        "use a 24-hour clock format. For example:",
+        "Time (in words) String value",
+        "Nine o’clock in the morning \"09:00\"",
+        "\"10:05\"",
+        "Five minutes past ten o’clock in the morning",
+        "\"14:50\"",
+        "Ten minutes before three o’clock in the afternoon",
+        "The programmer has defined the first module as follows:",
+        "Module Description",
+        "• Takes two parameters:",
+        "StartTime: a STRING value representing a time as described",
+        "AddTime()",
+        "Duration: an INTEGER value representing a duration in minutes",
+        "• Adds the duration to the time to give a new time",
+        "• Returns the new time as a STRING"
+      ]
+    }
+  ]
+}

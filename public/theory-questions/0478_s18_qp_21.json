@@ -1,0 +1,244 @@
+{
+  "paperId": "0478_s18_qp_21",
+  "subjectCode": "0478",
+  "session": "s18",
+  "component": "21",
+  "totalMarks": 43,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "You recorded information for the estimate of the cost of building a computer in Task 1.\nGive a data structure that you created for Task 1, its name, data type and use.\nData structure ______\nName ______\nData type ______\nUse ______",
+              "marks": 4,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Describe the data structures that you have used in Task 2 to record the customer details.\nInclude sample data in the description.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how your program for Task 1 produces a unique estimate number.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for part of Task 2 to check that the chosen processor and chosen RAM\nare in stock, using either pseudocode, programming statements or a flowchart. Assume that\nTask 1 has been completed. Do not check the other components or produce the order.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completes Task 3. Any programming statements used in your\nanswer must be fully explained.\n\nSection B",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write an algorithm to input 1000 numbers. Count how many numbers are positive and how\nmany numbers are zero. Then output the results. Use either pseudocode or a flowchart.",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Give one change you could make to your algorithm to ensure initial testing is more\nmanageable.\n\nQuestion 3 starts on page 8.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data: 5, 7, 0, 1, 2, 3, 4\nDigit(1) Digit(2) Digit(3) Digit(4) Digit(5) Digit(6) Digit(7) Digit(8) Sum OUTPUT\nComplete the trace table for the input data: 4, 3, 1, 0, 2, 3, 1\nDigit(1) Digit(2) Digit(3) Digit(4) Digit(5) Digit(6) Digit(7) Digit(8) Sum OUTPUT",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain how you would change the algorithm to input eight digits (seven digits and the check\ndigit) and output if the check digit entered is correct or not.\n\nQuestion 4 starts on page 10.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The global trade item number (GTIN-8) barcode has seven digits and a check digit.",
+        "This pseudocode algorithm inputs seven digits and calculates the eighth digit, then outputs the",
+        "GTIN-8.",
+        "DIV(X,Y), finds the number of divides in division for example DIV(23,10) is 2.",
+        "MOD(X,Y), finds the remainder in division for example MOD(23,10) is 3.",
+        "FOR Count 1 TO 7",
+        "INPUT Number",
+        "Digit(Count) Number",
+        "NEXT",
+        "Sum (Digit(1)+Digit(3)+Digit(5)+Digit(7))*3+Digit(2)+Digit(4)+Digit(6)",
+        "IF MOD(Sum,10) <> 0",
+        "THEN Digit(8) DIV(Sum,10)*10 + 10 - Sum",
+        "ELSE Digit(8) 0",
+        "ENDIF",
+        "OUTPUT \"GTIN-8\"",
+        "FOR Count 1 TO 8",
+        "OUTPUT Digit(Count)",
+        "NEXT"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A programmer has written a routine to check that prices are below $10.00. These values are used",
+        "as test data.",
+        "10.00 9.99 ten",
+        "Explain why each value was chosen.",
+        "10.00 ................................................................................................................................................",
+        "9.99 ..................................................................................................................................................",
+        "ten ....................................................................................................................................................",
+        "[3]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain the difference between the programming concepts of counting and totalling.",
+        "Include an example of a programming statement for each concept in your explanation.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the number of fields and records in the table.\nFields ______\nRecords ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Give two validation checks that could be performed on the Show Number field.\nValidation check 1 ______\nValidation check 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Using the query-by-example grid, write a query to identify jazz performances that are not sold\nout. Only display the date and the title.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A database table, PERFORMANCE, is used to keep a record of the performances at a local",
+        "theatre.",
+        "Show Number Type Title Date Sold Out",
+        "SN091 Comedy An Evening at Home 01 Sept Yes",
+        "SN102 Drama Old Places 02 Oct No",
+        "SN113 Jazz Acoustic Evening 03 Nov No",
+        "SN124 Classical Mozart Evening 04 Dec Yes",
+        "SN021 Classical Bach Favourites 01 Feb Yes",
+        "SN032 Jazz 30 Years of Jazz 02 Mar Yes",
+        "SN043 Comedy Street Night 03 Apr No",
+        "SN054 Comedy Hoot 04 May No"
+      ]
+    }
+  ]
+}

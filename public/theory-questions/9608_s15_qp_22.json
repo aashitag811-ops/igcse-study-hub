@@ -1,0 +1,463 @@
+{
+  "paperId": "9608_s15_qp_22",
+  "subjectCode": "9608",
+  "session": "s15",
+  "component": "22",
+  "totalMarks": 60,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The identifier table needs to show the variables required to write a program for this algorithm.\nComplete the table.\nIdentifier Data type Description\nRaceHours INTEGER\nThe hours part of the race time.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Before the program is written, the design is amended.\nThe new design includes input of the runner’s current personal best marathon time (in\nseconds).\nThe output will now also show one of the following messages:\n• “Personal best time is unchanged”\n• “New personal best time”\n• “Equals personal best time”",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Show the additional variable needed for the new design.\nIdentifier Data type Description",
+              "marks": 1,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Write program code for the new design.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______",
+              "marks": 7,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The program code will be tested using white-box testing.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain what is meant by white-box testing.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Complete the table heading.\nComplete Test Number 1.\nAdd the data for Test Number 2 and Test Number 3.\nInput values Output\nTest Race Race Race Total time\nnumber hours minutes seconds ______ (seconds) Message\n1 3 4 13 11053 11053",
+              "marks": null,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A marathon runner records their time for a race in hours, minutes and seconds.",
+        "An algorithm is shown below in structured English.",
+        "INPUT race time as hours, minutes and seconds",
+        "CALCULATE race time in seconds",
+        "STORE race time in seconds",
+        "OUTPUT race time in seconds"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "11053"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Pseudocode which uses this procedure is:\nCALL DisplayMenu\nREPEAT\nOUTPUT \"Enter choice (1..4)\"\nINPUT Choice\nUNTIL Choice >= 1 AND Choice <= 4",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Describe what this pseudocode will do.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "State why a loop is required.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The following pseudocode is a revised design.\nCONSTANT i 3\nCALL DisplayMenu\nNoOfAttempts 0\nREPEAT\nOUTPUT \"Enter choice (1..4)\"\nINPUT Choice\nNoOfAttempts NoOfAttempts + 1\nUNTIL (Choice >= 1 AND Choice <= 4) OR NoOfAttempts = i",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Give the maximum number of inputs the user could be prompted to make.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "State why this algorithm is an improvement on the one given in part (a).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The pseudocode is in its initial stage of development.\nThe table below shows the action currently taken by the pseudocode following each menu\nchoice.\nMenu\nDescription Program response\nchoice\nRead data from the Calls a procedure ReadFile which for testing\ncustomer file purposes outputs the message “Read file code”\n2 Add a customer Outputs message “Add customer code”\n3 Search for a customer Outputs message “Search customer code”",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "11053",
+        "[6]",
+        "2 A program displays a menu with choices 1 to 4. The code to display the menu is written as the",
+        "procedure DisplayMenu."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "The algorithm in part (c) is to be amended. The program will:\n• repeatedly display the menu and respond to the user’s choice\n• terminate when the user enters 4\nWrite program code for this final design which will be made up of:\n• the main program\n• procedure ReadFile\n• procedure DisplayMenu\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\n\n3 When the guarantee on a computer runs out, the owner can take out insurance to cover breakdown\nand repairs.\nThe price of the insurance is calculated from:\n• the model of the computer\n• the age of the computer\n• the current insurance rates\nFollowing an enquiry to the insurance company, the customer receives a quotation letter with the\nprice of the insurance.\nA program is to be produced.\nThe structure chart below shows the modular design for this process:\nPremium rates\nPremium rates\naccess premium rates\ndatabase",
+          "marks": 8,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Using the letters A to D, add the labelling to the chart boxes on the opposite page.\nModules\nA Send quotation letter\nB Calculate price\nC Produce insurance quotation\nD Input computer details",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Using the letters E to J, complete the labelling on the chart opposite.\nSome of these letters will be used more than once.\nData items\nE CustomerName\nF CustomerEmail\nG Model\nH Age\nPolicyCharge\nJ PolicyNumber\n\n4 A game is played between two players:\n• they take turns at rolling a six-sided die (numbered 1 to 6) and record their throw\n• a player scores 1 point if their throw is higher than their opponent\n• they each roll the die 20 times\n• if the player’s throw is the same as their opponent, the total points is unchanged\n• the winner is the player with the larger number of points after 20 throws\nThe pseudocode will use variable NoOfThrows as shown.\nIdentifier Data type Description\nNoOfThrows INTEGER Loop control variable",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Complete the pseudocode for the given algorithm.\nFOR ______\nINPUT Player1Throw\nIF Player1Throw > Player2Throw\nTHEN\nENDIF\nIF Player2Throw > Player1Throw\nTHEN\nPlayer2Total Player2Total + 1\nENDIF\nIF Player1Total > Player2Total\nTHEN\nOUTPUT \"Player1 is the winner\"\nELSE\nOUTPUT \"Player2 is the winner\"\nENDIF",
+              "marks": null,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Identify the game result which will produce incorrect output.\n\nQuestion 5 begins on page 12.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "Terminates the program Ends",
+        "Complete the pseudocode for the design in part (b), shown again below, to respond to each",
+        "menu choice.",
+        "CONSTANT i 3",
+        "CALL DisplayMenu",
+        "NoOfAttempts 0",
+        "REPEAT",
+        "OUTPUT \"Enter choice (1..4)\"",
+        "INPUT Choice",
+        "NoOfAttempts NoOfAttempts + 1",
+        "UNTIL (Choice >= 1 AND Choice <= 4) OR NoOfAttempts = i",
+        "[3]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A company creates two new websites, Site X and Site Y, for selling bicycles.",
+        "Various programs are to be written to process the sales data.",
+        "These programs will use data about daily sales made from Site X (using variable SalesX) and",
+        "Site Y (using variable SalesY).",
+        "Data for the first 28 days is shown below.",
+        "SalesDate SalesX SalesY",
+        "1 03/06/2015 0 1",
+        "2 04/06/2015 1 2",
+        "3 05/06/2015 3 8",
+        "4 06/06/2015 0 0",
+        "5 07/06/2015 4 6"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "08/06/2015 4 4"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "09/06/2015 5 9"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "10/06/2015 11 9"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Name the data structure to be used in a program for SalesX.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "The programmer writes a program from the following pseudocode design.\nx 0\nFOR DayNumber 1 TO 7\nIF SalesX[DayNumber] + SalesY[DayNumber] >= 10\nTHEN\nx x + 1\nOUTPUT SalesDate[DayNumber]\nENDIF\nENDFOR\nOUTPUT x",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9bi",
+              "label": "(i)",
+              "text": "Trace the execution of this pseudocode by completing the trace table below.\nx DayNumber\nOUTPUT",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9bii",
+              "label": "(ii)",
+              "text": "Describe, in detail, what this algorithm does.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "The company wants a program to output the total monthly sales for one of the selected\nwebsites.\nThe programmer codes a function with the following function header:\nFUNCTION MonthlyWebSiteSales(ThisMonth : INTEGER, ThisSite : CHAR)\nRETURNS INTEGER\nThe function returns the total number of bicycles sold for the given month and website.\nThe function will use the following:\nIdentifier Data type Description\nRepresents the month number e.g.\nThisMonth INTEGER\n4 represents April\nCoded as:\nThisSite CHAR  X for website X\n Y for Website Y",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ci",
+              "label": "(i)",
+              "text": "Give the number of parameters of this function. ______",
+              "marks": 1,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9cii",
+              "label": "(ii)",
+              "text": "Some of the following function calls may be invalid.\nMark each call with:\n• a tick (✓), for a valid call\n• a cross (✗), for an invalid call\nFor any function calls which are invalid, explain why.\nTick (✓) Explanation\nFunction call\n/ cross (✗) (if invalid)\nMonthlyWebSiteSales(1, \"Y\")\nMonthlyWebSiteSales(11, 'X', 'Y')\nMonthlyWebSiteSales(12, 'X')",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9d",
+          "label": "(d)",
+          "text": "The company decides to offer a discount on selected dates. A program is written to indicate\nthe dates on which a discount is offered.\nThe program creates a text file, DISCOUNT_DATES (with data as shown), for a number of\nconsecutive dates.\n03/06/2015 TRUE\n04/06/2015 FALSE\n05/06/2015 FALSE\n06/06/2015 FALSE\n07/06/2015 FALSE\n08/06/2015 FALSE\n09/06/2015 FALSE\n10/06/2015 TRUE\n11/06/2015 FALSE\n01/07/2015 FALSE\nEach date and discount indicator is separated by a single <Space> character.\nThe discount indicators are:\n• FALSE – indicates a date on which no discount is offered\n• TRUE – indicates a date on which a discount is offered\nA programming language has the built-in function CONCAT defined as follows:\nCONCAT(String1 : STRING, String2 : STRING [, String3 : STRING] )\nRETURNS STRING\nFor example: CONCAT(\"San\", \"Francisco\") returns \"SanFrancisco\"\nCONCAT(\"New\", \"York\", \"City\") returns \"NewYorkCity\"\nThe use of the square brackets indicates that the parameter is optional.\nThe following incomplete pseudocode creates the text file DISCOUNT_DATES.\nComplete the pseudocode.\nOPENFILE \"DISCOUNT_DATES\" FOR ______\nINPUT ______\nWHILE NextDate <>\"XXX\"\nINPUT Discount\n…………..…………………… = CONCAT(NextDate, \" \", Discount)\nWRITEFILE \"DISCOUNT_DATES\", NextLine\nINPUT NextDate\nOUTPUT \"File now created\"\nCLOSEFILE \nQuestion 5(e) continues on page 18.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9e",
+          "label": "(e)",
+          "text": "The DISCOUNT_DATES text file is successfully created.\nThe company now wants a program to:\n• key in a date entered by the user\n• search the text file for this date\n• if found, output one of the following messages:\no “No discount on this date”\no “This is a discount date”\n• if not found, output “Date not found”",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ei",
+              "label": "(i)",
+              "text": "Add to the identifier table to show the variables you need for this new program.\nIdentifier Data type Description\nDISCOUNT_DATES FILE Text file to be used",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "9eii",
+              "label": "(ii)",
+              "text": "Write the program code.\nDo not include any declaration or comment statements for the variables used.\nProgramming language ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 7,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "11/06/2015 4 1",
+        "28 01/07/2015 14 8"
+      ]
+    }
+  ]
+}

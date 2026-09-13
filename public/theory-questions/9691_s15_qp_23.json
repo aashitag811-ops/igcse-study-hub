@@ -1,0 +1,419 @@
+{
+  "paperId": "9691_s15_qp_23",
+  "subjectCode": "9691",
+  "session": "s15",
+  "component": "23",
+  "totalMarks": 72,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A high-level programming language has built-in string handling functions defined as follows:\nMID(ThisString : STRING, x : INTEGER, n : INTEGER) RETURNS STRING\nreturns a string value consisting of n characters from the string ThisString starting from\nposition x.\nFor example: MID(\"STOP\", 3, 2) returns \"OP\"\nIf the function call is not properly formed an error is generated.\nCONCAT(String1 : STRING, String2 : STRING) RETURNS STRING\nreturns a string value consisting of String1 followed by String2.\nFor example: CONCAT(\"HE\", \"LLO\") returns \"HELLO\"\nIf the function call is not properly formed an error is generated.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in string ThisString.\nFor example: LENGTH(\"Hello\") returns 5\nIf the function call is not properly formed an error is generated.\nString1 ← \"RED\"\nString2 ← \"F\"\nWhat will be returned from the following function calls?",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "MID(String1, 3, 1)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "MID(String1, 3, 2)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "CONCAT(String2, String1)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Meena wants to write code to reverse a string stored in the variable Original. The result is\nto be stored in the variable Reverse.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Use all the functions described in part (a) to write the pseudocode required to reverse\nthe string.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "A palindrome is a string that reads the same backwards as forwards.\nComplete the Boolean expression to check whether the two strings, Original and\nReverse, are palindromes.\nIF ______\nTHEN\nOUTPUT \"This is a palindrome\"\nENDIF",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Ali has designed a board game.",
+        "The board consists of numbered squares.",
+        "Slides and ladders connect some of the squares.",
+        "An example layout of a board is:",
+        "30 29 28 27 26",
+        "21 22 23 24 25",
+        "20 19 18 17 16",
+        "11 12 13 14 15",
+        "10 09 08 07 06",
+        "01 02 03 04 05",
+        "The object of the game is for a player to move from the bottom square (Square 01) to the top",
+        "square (Square 30).",
+        "A roll of a 6-sided die determines how many squares the player moves.",
+        "The table below shows example moves. These use the board layout above, with the player currently",
+        "on Square 04.",
+        "Number rolled by die Square moved to Consequence Final position",
+        "2 06 – 06",
+        "The base of a ladder, so"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Ali starts the high level design of his program using pseudocode.\n01 CALL InitialiseArray() // blank board\n02 CALL InputBoardDesign() // add slides and ladders data\n03 TotalMoves ← ______",
+          "marks": null,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "07 19",
+        "climb to top of ladder",
+        "The top of a slide, so",
+        "6 10 03",
+        "move down the slide",
+        "Ali plans to write a program to test different board designs. Each board design will have different",
+        "numbers, positions and lengths for the slides and ladders.",
+        "The program is to test each board design to check that it is possible to complete the game in a",
+        "reasonable number of moves.",
+        "For each board design, the program will simulate playing the game 1000 times and report the",
+        "average number of moves."
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Game ← ..................................................................................................................."
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "// play next game and update TotalMoves"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Ali decides to store the board design in a one-dimensional array Board.\nEach array element represents one square of the board.\nIf the square is the start of a slide or ladder, the array element will store the number of the\nsquare where the slide or ladder ends.\nFor example:\nBoard\n[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [28] [29] \n19 3 12",
+          "marks": 30,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06bi",
+              "label": "(i)",
+              "text": "State what value Ali should use for the array elements that do not contain the start of a\nslide or ladder. Explain your choice.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06bii",
+              "label": "(ii)",
+              "text": "In a high-level programming language, write statements to declare the array Board.\nProgramming language ______\nDeclaration ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06biii",
+              "label": "(iii)",
+              "text": "In the high-level programming language you chose in part (b)(ii), write statements to\ninitialise the array Board before there are any slides or ladders.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "To input a board design, Ali wants the program to read in pairs of numbers in the form a, b\nwhere:\n• a is the start square of a slide or ladder\n• b is the end square of a slide or ladder\n• the rogue value pair 0, 0 terminates the input\nWrite pseudocode for the procedure InputBoardDesign which:\n• reads one or more number pairs\n• updates the initialised array Board\nPROCEDURE InputBoardDesign()\nENDPROCEDURE",
+          "marks": 4,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06di",
+              "label": "(i)",
+              "text": "A high-level programming language has a built-in function that generates a random\nnumber. The function is defined as follows:\nRANDOM(n : INTEGER) RETURNS INTEGER\nreturns an integer value in the range 0 to n inclusive.\nFor example: RANDOM(4) returns 0, 1, 2, 3 or 4\nIf the function call is not properly formed an error is generated.\nAli’s program is to use this random number generator to simulate the rolling of a die.\nComplete the statement to assign a number between 1 and 6 to NumberRolled.\nNumberRolled ← ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06dii",
+              "label": "(ii)",
+              "text": "The function NumberOfMovesInThisGame counts how many moves the player took to\ncomplete the game and returns this value.\nThe game ends when the player reaches the final square (Square 30).\nIf a die roll produces a number that would go beyond the final square the die roll counts\nas a move but the player’s position remains as before.\nComplete the pseudocode on the next page.\nFUNCTION NumberOfMovesInThisGame()\nDECLARE ______\nDECLARE ______\nDECLARE ______\nPlayerPosition ← ______\nMovesSoFar ← ______\n//\nREPEAT\nNumberRolled ← ______\nMovesSoFar ← ______\n// check that move does not go beyond final square\nIF ______\nTHEN // make move\nPlayerPosition ← ______\n// check for slide or ladder and, if required, move\nENDIF\nUNTIL ______\n//\nENDFUNCTION",
+              "marks": 8,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06e",
+          "label": "(e)",
+          "text": "Ali intends to save his board design to a text file.\nIn a high-level programming language write the procedure SaveBoardDesign to save to the\nfile Design.txt:\n• the contents of array Board\n• the value of AverageMovesPerGame calculated for this board design\nProgramming language ______\nCode ______",
+          "marks": 5,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06f",
+          "label": "(f)",
+          "text": "Ali wants to test board designs which have a different number of squares; for example 36\nsquares or 49 squares.\nAli wishes to minimise the changes required to his program code when the number of squares\nfor the board changes.\nExplain what programming language feature he should use.\n\nQuestion 3 begins on Page 12.\n3 (a) Meena has written the algorithm below and wants to check that it works correctly.\nFOR i ← 1 TO 4\nFOR j ← 1 TO 4\nIF Numbers[j] > Numbers[j + 1]\nTHEN\nw ← Numbers[j]\nNumbers[j] ← Numbers[j + 1]\nNumbers[j + 1] ← w\nENDIF\nENDFOR\nENDFOR",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06fi",
+              "label": "(i)",
+              "text": "Dry run the algorithm by completing the trace table.\nFor each iteration, use a new row in the table.\ni j Numbers[j] > w Numbers\nNumbers[j + 1] [1] [2] [3] [4] \n49 98 36 70 51\n– – – –",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06fii",
+              "label": "(ii)",
+              "text": "Explain what Meena’s algorithm does.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06fiii",
+              "label": "(iii)",
+              "text": "State how many iterations of the outer loop have occurred before there are no more\nchanges to the contents of the array.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06fiv",
+              "label": "(iv)",
+              "text": "Describe why this algorithm is inefficient.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06fv",
+              "label": "(v)",
+              "text": "Meena has started to write an improved version of the algorithm.\nComplete the pseudocode.\nn ← 4\nREPEAT\nFOR j ← 1 TO ______\nIF Numbers[j] > Numbers[j + 1]\nTHEN\nw ← Numbers[j]\nNumbers[j] ← Numbers[j + 1]\nNumbers[j + 1] ← w\nENDIF\nENDFOR\nUNTIL ______",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Meena has written the algorithm with some features that make it easier to understand.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06bi",
+              "label": "(i)",
+              "text": "State one such feature.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06bii",
+              "label": "(ii)",
+              "text": "State one other feature that Meena could introduce to this algorithm to make it easier to\nunderstand.\n\n4 A leap year is a year with special numerical properties.\nAhmed is planning to write a function to check whether a year is a leap year.\nHe starts by drawing a flowchart.\nFUNCTION\nIsLeapYear(Year)\nNo No No\nIs Year exactly Is Year exactly\nIs Year exactly\ndivisible by 400? divisible by 100?\ndivisible by 4?\nYes Yes Yes\nRETURN RETURN RETURN RETURN\nTRUE FALSE TRUE FALSE\nENDFUNCTION",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "Using nested IF statements, convert the flowchart into program code.\nHint: The operator MOD gives the remainder of a division.\nProgramming language ______\nCode ______",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Ahmed wants to carry out white box testing of the function.\nGive four integers which thoroughly test the function. For each one, give the expected return\nvalue and justify your choice.\nYear\nExpected Justification\nreturn value",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "When Ahmed has tested the function, he plans to use it in a program.\nGive two types of testing that Ahmed could do with the completed program.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 63,
+      "text": [
+        "TotalMoves ← TotalMoves + NumberOfMovesInThisGame()",
+        "08 AverageMovesPerGame ← ...........................................................................................",
+        "09 OUTPUT AverageMovesPerGame"
+      ]
+    }
+  ]
+}

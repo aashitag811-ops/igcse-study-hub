@@ -1,0 +1,277 @@
+{
+  "paperId": "0478_w15_qp_23",
+  "subjectCode": "0478",
+  "session": "w15",
+  "component": "23",
+  "totalMarks": 42,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "When you performed the tasks, you used variables.\nWrite suitable declarations for two of these.\nState what you used each one for.\nVariable 1 ______\nUse ______\nVariable 2 ______\nUse ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "When you performed the tasks, you may have used constants.\nWrite suitable declarations for two of these.\nState what you used each one for.\nConstant 1 ______\nUse ______\nConstant 2 ______\nUse ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements\nor a flowchart.You should assume that the temperatures taken over the five hours are already\nstored in an array.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain how you completed Task 3. You should assume that Task 2 has been completed.\nYou can include pseudocode or programming statements as part of your explanation.",
+              "marks": 6,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Comment on the efficiency of your design for Task 3.\n\nSection B",
+              "marks": 1,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Read this section of program code that should input 50 numbers and then output the average of",
+        "the positive numbers only.",
+        "1 Total = 0",
+        "2 PosCount = 0"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Counter = 1 TO 50"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Num"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Num < 0 THEN Total = Total + Num"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Num > 0 THEN Counter = Counter + 1"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Average = Total/PosCount"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Counter"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "State the purpose of the pseudocode in part (a).\n\n4 A routine checks the age and height of children who are allowed to enter a play area. The children\nmust be less than 5 years of age and under 1 metre in height.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The first set of test data used is age 3 and height 0.82 metres.\nState what type of test data this is.\nGive a reason for using this test data.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Provide two additional sets of test data. For each, give\n• the type of each set of test data\n• the reason why it is used\nEach type of test data and reason for use must be different.\nSet 1 ______\nType ______\nReason ______\nSet 2 ______\nType ______\nReason ______\n\n5 A motor boat hire company decides to set up a database to keep information about boats that are\navailable for hire. The database table, BOAT, will contain the following fields:\nBoat Name; Model; Engine Power (in hp); Number of Seats; Life Raft (whether there is a life raft\nkept on the boat); Day Price (price for a day’s hire).",
+          "marks": 6,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Give the data type you would choose for each field.\nBoat Name ______\nModel ______\nEngine Power ______\nNumber of Seats ______\nLife Raft ______\nDay Price ______",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "State a validation check that you can perform on each of these fields. Each validation check\nmust be different.\nBoat Name ______\nModel ______\nNumber of Seats ______\nDay Price ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid below to select and show the Boat Name, Model and\nDay Price of a day’s hire for all boats with 4 seats and an Engine Power of more than 100 hp.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "PRINT Num",
+        "There are four errors in this code.",
+        "Locate these errors and suggest code corrections to remove each error.",
+        "[4]",
+        "Question 3 begins on page 8.",
+        "3 (a) This pseudocode inputs an integer. The predefined function DIV gives the value of the",
+        "division, e.g. Y 10 DIV 3 gives the value Y = 3. The predefined function MOD gives the",
+        "value of the remainder, e.g. Y 10 MOD 3 gives the value Y = 1.",
+        "INPUT X",
+        "WHILE X > 15",
+        "DO",
+        "T1 X DIV 16",
+        "T2 X MOD 16",
+        "CASE T2 OF",
+        "10:OUTPUT A",
+        "11:OUTPUT B",
+        "12:OUTPUT C",
+        "13:OUTPUT D",
+        "14:OUTPUT E",
+        "15:OUTPUT F",
+        "OTHERWISE OUTPUT T2",
+        "ENDCASE",
+        "X T1",
+        "ENDWHILE",
+        "CASE X OF",
+        "10:OUTPUT A",
+        "11:OUTPUT B",
+        "12:OUTPUT C",
+        "13:OUTPUT D",
+        "14:OUTPUT E",
+        "15:OUTPUT F",
+        "OTHERWISE OUTPUT X",
+        "ENDCASE",
+        "Complete a trace table for each of the two input values 37 and 191.",
+        "Trace table for input value 37",
+        "X T1 T2 OUTPUT",
+        "Trace table for input value 191",
+        "X T1 T2 OUTPUT",
+        "[4]"
+      ]
+    }
+  ]
+}

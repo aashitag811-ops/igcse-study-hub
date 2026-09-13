@@ -1,0 +1,222 @@
+{
+  "paperId": "0478_s19_qp_23",
+  "subjectCode": "0478",
+  "session": "s19",
+  "component": "23",
+  "totalMarks": 36,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers must have meaningful names.\nDescribe the data structures you have used in Task 1 to record the items available that day.\nInclude some sample data for each data structure you have described.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how your program for Task 1 ensures all the item codes are different.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how your program for Task 2 highlights items where the stock level is low.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Write an algorithm for Task 2 using either pseudocode, programming statements or a\nflowchart. Assume that Task 1 has been completed and the list of items currently available\nhas already been displayed.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program completes Task 3. Any programming statements used in your\nanswer must be fully explained.\n\nQuestion 2 begins on page 8.\nSection B",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm has been written in pseudocode to input the weight of 500 items and reject any\nthat are over-weight or under-weight, then print the percentage rejected.\nCount 1\nReject 0\nOver 62\nUnder 58\nREPEAT\nINPUT ItemWeight\nIF ItemWeight > Over AND ItemWeight < Under\nTHEN\nReject Reject - 1\nENDIF\nCount Count + 1\nUNTIL Count > = 500\nReject Reject / 100\nPRINT \"Percentage rejected is \", Reject\nFind the four errors in the pseudocode and suggest a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": 4,
+          "type": "suggest",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Describe how you would change the corrected algorithm to calculate the number accepted\ninstead of rejected, using a variable Accept, and print a warning if fewer than 50% are\naccepted.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This flowchart inputs the tread depth of five tyres, four on the car and a spare tyre. Any tread",
+        "depth of 1.6 mm or less is rejected. To be potentially roadworthy, a car must have four tyres with a",
+        "tread depth greater than 1.6 mm.",
+        "START",
+        "TreadReject 0",
+        "Count 1",
+        "Is",
+        "Yes",
+        "Count = 6?",
+        "Count Count + 1 No",
+        "Is",
+        "No",
+        "INPUT Depth",
+        "TreadReject",
+        "<= 1?",
+        "Yes",
+        "OUTPUT \"Car is",
+        "not roadworthy\"",
+        "No Is",
+        "Depth <=",
+        "1.6?",
+        "Yes",
+        "TreadReject TreadReject + 1",
+        "OUTPUT \"Car is",
+        "potentially",
+        "roadworthy\"",
+        "END",
+        "Complete Trace table 1 for the tread depth input data:",
+        "1.7, 1.9, 1.4, 1.8, 2.0",
+        "TreadReject Count Depth",
+        "OUTPUT",
+        "Trace table 1",
+        "Complete Trace table 2 for the tread depth input data:",
+        "1.2, 1.9, 1.4, 1.8, 2.4",
+        "TreadReject Count Depth OUTPUT",
+        "Trace table 2",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "For each of the four checks in the table, place a tick in the correct column to show whether it is an",
+        "example of a validation or verification check.",
+        "Statements Validation Verification",
+        "Range check",
+        "Double entry",
+        "Check digit",
+        "Presence check",
+        "[4]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Identify and describe three loop structures that are available in pseudocode.",
+        "Loop structure 1 ...............................................................................................................................",
+        "Description .......................................................................................................................................",
+        "Loop structure 2 ...............................................................................................................................",
+        "Description .......................................................................................................................................",
+        "Loop structure 3 ...............................................................................................................................",
+        "Description .......................................................................................................................................",
+        "[6]",
+        "Question 6 begins on page 14."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Explain why the field Train Number could not be used as a primary key.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A query-by-example has been written to display only the train numbers and platforms of all\ntrains leaving after 08:30 that are late.\nField:\nTrain Number Platform Departure Time Status\nTable: TRAIN TRAIN TRAIN TRAIN\nSort:\nShow:\nCriteria:\n= Y < 08:30\nor:\n= \"Late\"\nExplain why the query-by-example is incorrect, and write a correct query-by-example.\nExplanation ______\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A database table, TRAIN, is used to keep a record of train departures from a station.",
+        "Train Number Platform Destination Departure Time Status",
+        "1A37 1 Newtown 08:00 On time",
+        "2X19 2 Anytown 08:10 Late",
+        "1A29 1 Bigcity 08:15 On time",
+        "1A28 2 Anytown 08:30 Cancelled",
+        "1A67 3 Gardenvillage 08:45 On time",
+        "1A37 1 Newtown 08:50 On time",
+        "1A24 2 Charter Train 09:00 Late",
+        "1A67 3 Gardenvillage 09:15 On time"
+      ]
+    }
+  ]
+}

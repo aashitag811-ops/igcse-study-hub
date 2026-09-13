@@ -1,0 +1,287 @@
+{
+  "paperId": "0478_w22_qp_21",
+  "subjectCode": "0478",
+  "session": "w22",
+  "component": "21",
+  "totalMarks": 29,
+  "questionCount": 13,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Describe the arrays you have set up in Task 1 to record the members’ details. Include in\nyour description the name, data type and sample data for each array.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Explain how your program for Task 1 populated the arrays with the members’ details.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how your program removed the members that have not paid their fees from the\nsystem in Task 3.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for the part of Task 3 that checks the age of all the members, and whether\nthey are in a team, then updates the type of membership and the annual fee if required.\nUse pseudocode, programming statements or a flowchart.",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completes these parts of Task 2:\n• Count the number of members of each membership type who did not pay the annual\nfee.\n• Display these counts as a percentage of the total number of members for each\nmembership type.\nAny programming statements that you include in your answer must be fully explained.\n\nSection B starts on page 8.\nSection B",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the pseudocode algorithm:\n01 FOR Count 1 TO ______\nO2 Reading[Count] 0",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "An algorithm has been written to:",
+        "• set 100 elements of the array Reading[1:100] to zero",
+        "• input integer values between 1 and 100",
+        "• end the process with an input of –1",
+        "• reject all other values",
+        "• count and output the number of times each value is input, starting with the largest value."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Count"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please enter next reading \""
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Value"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE Value <> -1 DO"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Value <= 0 OR ................................................................................................."
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Reading out of range\""
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Reading[Value] ......................................................................................."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Describe how the algorithm could be changed so that it does not output any counts of zero.\n\n3 (a) A PIN (personal identification number) is input into a banking app by the user. Before the PIN\nis accepted, the following validation checks are performed:\n• check 1 – each character must be a digit\n• check 2 – there must be exactly four digits\n• check 3 – the value of the PIN must be between 1000 and 9999 inclusive.\nDescribe each validation check.\nCheck 1 ______\nCheck 2 ______\nCheck 3 ______",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "The PIN can be changed by the user.\nDescribe how the new PIN could be verified before use.\n\nQuestion 4 starts on page 12.\n4 This algorithm makes sure that there are enough fresh bread rolls available for customers to buy.\nSTART\nStock 50\nTotal 0\nINPUT Sold\nYes\nIS Sold =\nOUTPUT Total\n–1?\nNo\nSTOP\nStock Stock – Sold\nYes\nOUTPUT\nIS Stock\n\"Add new stock\"\n< 20?\nNo\nTotal Total + Sold Stock Stock + 50",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using this input data:\n24, 12, 6, 30, 12, 18, –1, 24\nSold Stock Total\nOUTPUT",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Identify the problem that will occur if the input data starts with a value of 70.\nExplain how you would correct this problem.\n\n5 A database table, WAREHOUSE, is used to keep a record of items for sale. The table has these\nfields:\n• ItemCode – code to identify each type of item\n• Description – brief description of each item\n• Manufacturer – name of manufacturer\n• Level – number in stock\n• Price – price in dollars ($).",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "State which field you would choose for the primary key. Give a reason for your choice.\nField ______\nReason ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid to display only the item code and the manufacturer\nwhere the number in stock is below 10.\nField:\nTable:\nSort:\nShow:\no o o o\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "OUTPUT \"Please enter next reading \"",
+        "15 ENDWHILE",
+        "16 Count 100",
+        "17 REPEAT",
+        "18 OUTPUT \"There are \", .............................................................................,",
+        "\" readings of \", Count",
+        "19 Count ...................................................................................................................",
+        "20 UNTIL Count = 0",
+        "[6]"
+      ]
+    }
+  ]
+}

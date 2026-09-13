@@ -1,0 +1,379 @@
+{
+  "paperId": "9691_w12_qp_22",
+  "subjectCode": "9691",
+  "session": "w12",
+  "component": "22",
+  "totalMarks": 69,
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the structure diagram showing these tasks.\nSuper Cars\nEnter car\nhire details",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "State two reasons for dividing the main task into smaller tasks.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Entering car details has two subtasks:\n• input the car's identification details\n• input the hire rates for that car\nAdd these to the structure diagram in part (a).",
+          "marks": 1,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The colour of each car is also recorded. The following pseudocode should validate the\nFor\ncar colour. Examiner's\nUse\nINPUT Colour\nIF (Colour = “blue”) OR (Colour = “black”) OR (Colour = “grey”)\nTHEN\nOUTPUT Colour “ is valid”\nELSE\nOUTPUT “Invalid”\nENDIF\nState the output when the colour input is:",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "green",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Black",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1diii",
+              "label": "(iii)",
+              "text": "grey",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "All car registrations are 6 characters long and have the format XXHIRE, where X is\nFor\na digit. Examiner's\nUse\nFor example, 53HIRE is a valid registration.\nIn a high-level programming language write code that will validate the format of a\ncar registration input into the variable CarReg. (Add extra line numbers if\nrequired.)\nProgramming language used\nCode",
+              "marks": 10,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Explain why 487HIRE is an invalid car registration.\nFor\nExaminer's\nUse\nState the line number of your code in part (e)(i) which detects that it is invalid.\nLine Number",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "Eventually the software will be subject to alpha testing and beta testing.\nSoni is planning each of these testing stages for this software.\nExplain who will do the testing, when the testing would be carried out and what will be\nthe purpose of each testing stage.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1fi",
+              "label": "(i)",
+              "text": "Alpha testing\nwho\nwhen\npurpose",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1fii",
+              "label": "(ii)",
+              "text": "Beta testing\nwho\nwhen\npurpose",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "Soni decides on the main tasks:",
+        "• enter car details",
+        "• enter car hire details for",
+        "o hirer",
+        "o car",
+        "o payment"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the trace table for the flowchart with the first five car registrations. The values\nFor\nto be entered are 52HIRE, 10HIRE, 67HIRE, 24HIRE, and 63HIRE. Examiner's\nUse\nThe row with the headings will also have to be completed.\nParkingSpace\nRow Position Row<=25\n[1,1]\n1 1 TRUE 52HIRE",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "From the flowchart write the module code, using nested WHILE loops.\nFor\nExaminer's\nEnsure that your code demonstrates good programming practice.\nUse\nRow ← 1\nNo\nRow <= 25?\nTo rest of program\nYes\nPosition ← 1\nNo\nPosition <= 4?\nYes\nInput CarReg\nNo\nCarReg <> “00HIRE”?\nTo rest of program\nYes\nParkingSpace[Row, Position] ← CarReg\nPosition ← Position + 1\nRow ← Row + 1\nProgramming language\nFor\nExaminer's\nUse\nCode",
+          "marks": 7,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "One of the modules uses the expression:\nFor\nExaminer's\nUse\nArea /(CarWidth * CarLength – EmptySpaces)\nState the value of the part of the expression inside the brackets when\nCarWidth ← 3\nCarLength ← 4\nEmptySpaces ← 12",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "If this expression is used with the above values, there will be an error.\nState the name of this type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "Explain how the programmer can stop this type of error occurring during execution.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "There are a number of debugging tools associated with high-level languages.\nDescribe how breakpoints and stepping can be used when developing a program.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "Super Cars owns a rectangular car park with 25 rows; each row has 4 parking spaces.",
+        "For",
+        "Each car is always parked in the same space. Examiner's",
+        "Use",
+        "The array ParkingSpace[25,4] stores the car registrations.",
+        "Soni uses a flowchart to help him design a module to populate the array with the car",
+        "registrations.",
+        "Input is terminated using the rogue value “00HIRE”.",
+        "Row ← 1",
+        "No",
+        "Row <= 25?",
+        "To rest of program",
+        "Yes",
+        "Position ← 1",
+        "No",
+        "Position <= 4?",
+        "Yes",
+        "Input CarReg",
+        "No",
+        "CarReg <> “00HIRE”?",
+        "To rest of program",
+        "Yes",
+        "ParkingSpace[Row, Position] ← CarReg",
+        "Position ← Position + 1",
+        "Row ← Row + 1"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "One file will store the following data:\n• car registration\n• make of car\n• date car bought\n• whether on hire or not\nComplete the following table. Use a single value for Field Size.\nField Name Data Type Field Size (in bytes)\nCarReg\nMake\nDateBought\nOnHire",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Estimate the size, in kilobytes, of the file if it stores the details of 100 cars. Show your\nworking.",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Using a high-level programming language, define a car record with identifier\nFor\nHireCar and the fields listed in part (a). Examiner's\nUse\nProgramming language\nCode",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Car records are stored in a file SuperCars.\nWrite a procedure, AddCar(), to add a record to the end of the file. The record is\npassed as the parameter. You should assume that the file is not already in use.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "A parameter can be passed by value or by reference.\nFor\nExaminer's\nUse\nDescribe each method.\nBy value\nBy reference",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "Super Cars will store the data in files.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Super Cars will need a printed report that shows how many times the top 10 cars have",
+        "been hired in a given month, and the income that each generated.",
+        "Design the layout of the report.",
+        "[6]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "University of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of",
+        "Cambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

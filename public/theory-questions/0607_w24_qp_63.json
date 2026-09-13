@@ -1,0 +1,492 @@
+{
+  "paperId": "0607_w24_qp_63",
+  "subjectCode": "0607",
+  "session": "w24",
+  "component": "63",
+  "totalMarks": 40,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write down D(1, 7).",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Find an expression for D(1, w).",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "D(1, w) = 20.\nWrite down the value of w.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain why D(1, n) = D(n, 1).",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "This question is about grids with h = 1.",
+        "A 1 by 2 grid has one diagonal square, so D(1, 2) = 1.",
+        "A 1 by 3 grid has two diagonal squares, so D(1, 3) = 2.",
+        "A 1 by 4 grid has three diagonal squares, so D(1, 4) = 3."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the table.\nYou may use the grids to help you.\n2 by 8 grid\nNumber of rows of Number of diagonal\nTotal\ndiagonal squares squares in each row\nD(2, 8) = + = 22",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A 2 by w grid has h = 2 and width w.\nComplete the table with expressions in terms of w.\n2 by w grid\nNumber of rows of Number of diagonal\nTotal\ndiagonal squares squares in each row\nD(2, w) =",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "This question is about grids with h = 2.",
+        "A 2 by 2 grid has 2 rows each with 1 diagonal square and 1 row of 2 diagonal squares.",
+        "The table shows this.",
+        "2 by 2 grid",
+        "Number of rows of Number of diagonal",
+        "Total",
+        "diagonal squares squares in each row",
+        "2 1 2 # 1 = 2",
+        "1 2 1 # 2 = 2",
+        "D(2, 2) = 2 + 2 = 4",
+        "A 2 by 4 grid has 2 rows of 3 diagonal squares and 1 row of 4 diagonal squares.",
+        "The table shows this.",
+        "2 by 4 grid",
+        "Number of rows of Number of diagonal",
+        "Total",
+        "diagonal squares squares in each row DO NOT WRITE IN THIS MARGIN",
+        "2 3",
+        "2 # 3 = 6",
+        "1 4 1 # 4 = 4",
+        "D(2, 4) = 6 + 4 = 10"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Work out D(3, 8).",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A 3 by w grid has h = 3 and width w.\nComplete the table with expressions in terms of w.\n3 by w grid\nNumber of rows of Number of diagonal\nTotal\ndiagonal squares squares in each row\nD(3, w) =",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "In a 3 by w grid, D(3, w) = 97.\nFind the value of w.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "This question is about grids with h = 3.",
+        "A 3 by 5 grid has 3 rows each with 4 diagonal squares and 2 rows each with 5 diagonal squares.",
+        "The table shows this.",
+        "3 by 5 grid",
+        "Number of rows of Number of diagonal",
+        "Total",
+        "diagonal squares squares in each row",
+        "3 4",
+        "3 # 4 = 12",
+        "2 5 2 # 5 = 10",
+        "D(3, 5) = 12 + 10 = 22"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "In an h by w grid there are:",
+        "• h rows with (w - 1) diagonal squares",
+        "• (h - 1) rows with w diagonal squares.",
+        "Show that D(h, w) = 2hw - (h + w).",
+        "[2]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "D(h, w) = 2hw - (h + w)\nShow that the number of diagonal squares in an n by n grid, D(n, n), is always an even number.",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The width of square grid A is one more than the width of square grid B.\nThe width of square grid B is n.\nThe difference between the number of diagonal squares in the two square grids is 36.\nFind the value of n.",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "This question is about a square grid with n rows and n columns.",
+        "This is an n by n grid."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A grid is a rectangle.",
+        "It has 31 diagonal squares.",
+        "D(h, w) = 2hw - (h + w)",
+        "Find the sizes of the possible rectangular grids when h 1 w.",
+        "[5]",
+        "B MODELLING (QUESTIONS 7 TO 9)",
+        "SAFE OVERTAKING (30 marks)",
+        "You are advised to spend no more than 50 minutes on this part.",
+        "This task looks at the distance travelled by a car when overtaking a truck."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Find the speed of the car.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Find a model for d in terms of t.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Find the distance of the car from the fixed point when t = 7 seconds.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "The table shows the distance of a car from a fixed point on the road at time t seconds.",
+        "Time (t seconds) 0 1 2 3 4 5",
+        "Distance (d metres) 10 12 14 16 18 20",
+        "The graph shows this information.",
+        "DO NOT WRITE IN THIS MARGIN 20",
+        "Distance",
+        "(metres)",
+        "0 1 2 3 4 5",
+        "Time (seconds)"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write down the number of metres the truck is in front of the car when t = 0.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A model for the distance the car travels, in terms of t, is d = 25t.\nThe speed of the truck is 20 m/s.\nFind a model for the distance the truck travels in terms of t.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The car overtakes the truck at point P.\nUse algebra to find the coordinates of point P.\n( ______ , ______ )",
+          "marks": 3,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "When t = 5 the car changes its speed to 30 m/s.\nThe two lines now meet at a different point.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8di",
+              "label": "(i)",
+              "text": "On the axes, sketch the new graph for the car.",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "8dii",
+              "label": "(ii)",
+              "text": "Find the number of seconds the car has travelled from the fixed point when it reaches the\ntruck.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A car and a truck travel in the same direction along a road.",
+        "The sketch graph shows their distances from a fixed point on the road.",
+        "Car",
+        "Truck",
+        "Distance",
+        "(metres)",
+        "Time (seconds)"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "When the car starts overtaking the distance between the front of the car and the front of the truck is\n60 m.\nShow that when the car finishes overtaking the distance between the front of the car and the front\nof the truck is 55 m.",
+          "marks": 1,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "The car starts overtaking the truck at time t = 8 seconds.\nThe car finishes overtaking the truck at time t = k seconds.\nThe sketch graph shows their distances from a fixed point on the road.\nCar\n(40,900)\n55 m\nTruck\nDistance\n(metres)\n60 m\n0 8 k\nTime (seconds)\nThe distance travelled, d metres, and the time taken, t seconds, are measured from a fixed point on\nthe road.\nA model for the distance travelled by the car, in terms of t, is d = 25t.\nFind the speed of the truck and write down a model for the distance travelled by the truck.\nSpeed ______\nModel ______",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "When t = 8, the truck is 60 metres in front of the car.\nFind the time, k seconds, when the car is 55 metres in front of the truck.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9d",
+          "label": "(d)",
+          "text": "Work out the total distance that the car travels when overtaking the truck.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9e",
+          "label": "(e)",
+          "text": "When the car overtakes the truck it travels further than the truck.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ei",
+              "label": "(i)",
+              "text": "Show that the difference between the distances travelled by the car and the truck is 115 metres.",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9eii",
+              "label": "(ii)",
+              "text": "The speed of the car is now x m/s and the speed of the truck is 20 m/s.\nWrite down an expression for the difference in speed between the car and the truck.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9eiii",
+              "label": "(iii)",
+              "text": "Show that a model for the total distance, D metres, the car travels when overtaking the truck\n115x\nis D = .\nx - 20",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9eiv",
+              "label": "(iv)",
+              "text": "The car travels 690 metres when overtaking the truck.\nFind the speed of the car when overtaking the truck.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "This question is about what happens when a car overtakes a truck.",
+        "The diagrams are not to scale.",
+        "In these diagrams, the direction of travel is from left to right.",
+        "The car has length 5 metres.",
+        "The truck has length 15 metres.",
+        "The car moves into the outside lane to overtake the truck when there is a gap of 45 metres between the",
+        "front of the car and the back of the truck.",
+        "Outside lane",
+        "Inside lane",
+        "5 m 45 m 15 m",
+        "The car moves back into the inside lane when there is a gap of 50 metres between the back of the car",
+        "and the front of the truck.",
+        "Outside lane",
+        "Inside lane",
+        "15 m 50 m 5 m"
+      ]
+    }
+  ]
+}

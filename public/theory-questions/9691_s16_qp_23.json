@@ -1,0 +1,367 @@
+{
+  "paperId": "9691_s16_qp_23",
+  "subjectCode": "9691",
+  "session": "s16",
+  "component": "23",
+  "totalMarks": 36,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Zara wants to write a temperature conversion program. The program is to output a table to show",
+        "Fahrenheit temperatures and their Celsius equivalents.",
+        "She writes the program specification:",
+        "• input lower bound and upper bound of Fahrenheit temperatures (whole numbers only)",
+        "• input temperature interval (whole number only)",
+        "• output conversion table (Celsius temperatures rounded to the nearest whole number)",
+        "Example conversion table with lower bound 50, upper bound 90 and interval 5:",
+        "Conversion Table",
+        "Fahrenheit Celsius",
+        "50 10",
+        "55 13",
+        ": :",
+        ": :",
+        "90 32",
+        "The steps to convert a Fahrenheit temperature to a Celsius temperature are:",
+        "• subtract 32 from the Fahrenheit temperature",
+        "• multiply by 5",
+        "• divide by 9"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write program code to implement the flowchart opposite as the procedure VendingMachine.\nProgramming Language ______\nCode ______\n\nPROCEDURE VendingMachine\nINPUT SnackType\nCASE OF\n'A'\nSnackType\nPrice @\u000320\n'B'\nPrice @\u000340\n'C'\nPrice @\u000350\n'D'\nPrice @\u000380\nInitialise Total\nINPUT CoinValue\nTotal @\u0003Total + CoinValue\nNo\nIs Total >=\nPrice?\nYes\nThis is a\nprocedure call\nChangeDue @\u0003Total - Price\nOutputChange\nYes\nIs ChangeDue\n(ChangeDue)\n> 0?\nNo\nOUTPUT\n\"No Change\"\nENDPROCEDURE",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "If any change is to be given, it will be a combination of some or all of the coins: 50 cents,\n20 cents, 10 cents.\nThe program will calculate the coin combination that gives as few coins as possible.\nThis requires calculation of:\n• first, the number of 50-cent coins needed\n• then, if more change is due, the number of 20-cent coins needed\n• finally, if more change is due, the number of 10-cent coins needed",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "A snack for 20 cents was bought using a 100-cent coin. Therefore ChangeDue has the\nvalue 100 − 20 = 80.\nComplete the following table:\nStatement Value Explanation\nX represents ………………………...\nX ← ChangeDue DIV 50 X = ……………\nY represents ………………………...\nY ← ChangeDue MOD 50 …………………………………………\nY = ……………",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The flowchart in part (a) shows the procedure call OutputChange(ChangeDue). This\nprocedure outputs a message summarising the number of each coin value needed to\ngive the correct change.\nWrite program code for the procedure OutputChange.\nProgramming Language ______\nCode ______\n\nQuestion 3 begins on Page 9.",
+              "marks": 7,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "A vending machine dispenses four different types of snack: ‘A’, ‘B’, ‘C’ or ‘D’.",
+        "The vending machine accepts the following coins: 100 cents, 50 cents, 20 cents, 10 cents.",
+        "If the user inserts coins to a greater value than the price of the chosen snack, the machine will",
+        "give change.",
+        "The program controlling the machine is to take as input:",
+        "• the type of snack chosen (‘A’, ‘B’, ‘C’ or ‘D’)",
+        "• the value of each coin inserted",
+        "The program output is:",
+        "• the message “No change”, if the money inserted was exactly the price of the snack",
+        "or",
+        "• a message summarising the number of each coin value needed to give the correct change",
+        "Question 2 continues on page 4."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A social club organises a competition for ten members. The competition consists of eight games.",
+        "All ten competitors take part in all games.",
+        "At the end of each game, each competitor is awarded a score.",
+        "For example, after the first game, the following scores were recorded:",
+        "Game 1",
+        "Competitor Score",
+        "Rowan 23",
+        "Hema 14",
+        "Kai 10",
+        "Ellis 76",
+        "Rory 43",
+        "Arden 23",
+        "Quinn 30",
+        "Charles 16",
+        "Avery 34",
+        "River 31",
+        "The average score for each game is calculated.",
+        "For example, the average score for Game 1 was 30.",
+        "Each individual competitor’s score is compared to the average score for that game.",
+        "Each competitor is awarded a points value as follows:",
+        "• −1 for a score below the average",
+        "• +1 for a score above the average",
+        "• 0 for a score equal to the average",
+        "Therefore, in the given example, competitors receive the following points:",
+        "Game 1",
+        "Competitor Points",
+        "Rowan –1",
+        "Hema –1",
+        "Kai –1",
+        "Ellis +1",
+        "Rory +1",
+        "Arden –1",
+        "Quinn 0",
+        "Charles –1",
+        "Avery +1",
+        "River +1",
+        "A points total is kept for each competitor throughout the competition. At the beginning of the",
+        "competition each competitor’s points total is 0. After each game, each member’s points total is",
+        "updated.",
+        "After all 8 games, the highest possible points total is +8 (better than average in all games); the",
+        "lowest possible points total is –8 (worse than average in all games).",
+        "The competitor with the highest points total at the end of the competition is the winner.",
+        "The social club asks Alessio to write a program to:",
+        "• input each competitor’s score after each game",
+        "• update the competitors’ points totals",
+        "Alessio writes top-level pseudocode:",
+        "PROCEDURE GameResultUpdate",
+        "CALL InputScoresAndCalcAverage(Average)",
+        "CALL UpdatePointsTotals(Average)",
+        "ENDPROCEDURE",
+        "The procedure Initialisation sets up arrays CompetitorName, Score and PointsTotal",
+        "as follows:",
+        "CompetitorName Score PointsTotal",
+        "1 \"Rowan\" 1 0 1 0",
+        "2 \"Hema\" 2 0 2 0",
+        "3 \"Kai\" 3 0 3 0"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "\"Ellis\" 4 0 4 0"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "\"Rory\" 5 0 5 0"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "\"Arden\" 6 0 6 0"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "\"Quinn\" 7 0 7 0"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "\"Charles\" 8 0 8 0"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "\"Avery\" 9 0 9 0"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Complete the pseudocode.",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ai",
+              "label": "(i)",
+              "text": "PROCEDURE InputScoresAndCalcAverage(BYREF Average : ______ )\nDECLARE ______, ______ : INTEGER\nTotalScore ← ______\nFOR x ← ______\nOUTPUT \"Score for \", CompetitorName[x]\n// input scores into Score array\nINPUT ______\nTotalScore ← ______\nENDFOR\nAverage ← ______\nENDPROCEDURE",
+              "marks": null,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10aii",
+              "label": "(ii)",
+              "text": "PROCEDURE UpdatePointsTotals( ______ )\nDECLARE ______ : INTEGER\nFOR ______\nIF Score[i] > Average\nTHEN // increase PointsTotal\nELSE // below average?\nIF ______\nTHEN\nENDIF\nENDPROCEDURE",
+              "marks": null,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10aiii",
+              "label": "(iii)",
+              "text": "Explain the use of BYREF in the procedure heading:\nPROCEDURE InputScoresAndCalcAverage(BYREF Average : ______)",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "The social club wants a printout of the competitor names and points totals after each game in\nrank order (highest points total first).\nTo do this, Alessio writes a pseudocode procedure:\nPROCEDURE SortIntoRankOrder\nREPEAT\nNoMoreSwaps ← TRUE\nFOR x ← 1 TO 9\nIF PointsTotal[x] < PointsTotal[x + 1]\nTHEN\nNoMoreSwaps ← FALSE\nTemp ← PointsTotal[x]\nPointsTotal[x] ← PointsTotal[x + 1]\nPointsTotal[x + 1] ← Temp\nENDIF\nENDFOR\nUNTIL NoMoreSwaps = TRUE\nENDPROCEDURE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10bi",
+              "label": "(i)",
+              "text": "Dry run the procedure call SortIntoRankOrder. Complete the trace table.\nPointsTotal\nNoMore PointsTotal[x] <\nx Temp\nSwaps PointsTotal[x+1]\n[1] [2] [3] [4] [5] [6] [7] [8] [9] \n+5 +3 +4 +2 0 +1 -2 -1 -1 -3\nTRUE",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10bii",
+              "label": "(ii)",
+              "text": "Alessio writes a procedure DisplayRankOrderList. This procedure is to display the\ncompetitors’ names and their points totals in rank order.\nPROCEDURE DisplayRankOrderList\nOUTPUT \" Competitor Table\"\nOUTPUT \"Rank Name Points Total\"\nOUTPUT \"=========================================\"\nFOR i ← 1 TO 10\nOUTPUT i, CompetitorName[i], PointsTotal[i]\nENDFOR\nENDPROCEDURE\nWhen the output is published, some competitors complain that their points total and rank\nare not correct.\nExplain the error that Alessio has made.",
+              "marks": null,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "The social club wants to store the following additional data for each competitor:\n• their scores in all 8 games\n• date of birth\n• telephone number\nAlessio decides that a record structure would be more suitable for his program.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ci",
+              "label": "(i)",
+              "text": "Write program code to define a competitor record with identifier CompetitorRecord\nand the fields CompetitorName, CompetitorTelNumber, DateOfBirth,\nGameScores and PointsTotal.\nProgramming language ______\nCode ______",
+              "marks": null,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10cii",
+              "label": "(ii)",
+              "text": "There is one record for each competitor. Alessio decides to use an array of records to\nstore the 10 competitor records.\nWrite program code to declare the array CompetitorData.\nProgramming language ______\nCode ______",
+              "marks": 3,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10d",
+          "label": "(d)",
+          "text": "The social club want a facility to search for a competitor to find their current rank. This is done\nby searching the array CompetitorData for the competitor’s name.\nComplete the pseudocode for function FindCompetitorRank.\nFUNCTION FindCompetitorRank (SearchName : STRING) RETURNS ______\nDECLARE ______\nREPEAT ______\nUNTIL ______\nRETURN ______\nENDFUNCTION",
+          "marks": 7,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10e",
+          "label": "(e)",
+          "text": "At the end of the day, the computer is shut down. Alessio wants to save the data from the\narray CompetitorData to a new sequential file CompetitorFile.DAT\nWrite program code for a procedure SaveToFile.\nProgramming language ______\nCode ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "\"River\" 10 0 10 0",
+        "Alessio now designs the procedures InputScoresAndCalcAverage and",
+        "UpdatePointsTotals."
+      ]
+    }
+  ]
+}

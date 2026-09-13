@@ -1,0 +1,462 @@
+{
+  "paperId": "9618_s25_qp_22",
+  "subjectCode": "9618",
+  "session": "s25",
+  "component": "22",
+  "totalMarks": 52,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A number of different program life cycles are available for the development of a program.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Explain the need for different program development life cycles.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Coding is a stage in a program development life cycle.\nState one consideration that would influence the choice of programming language.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The program has been in use for a number of months and adaptive maintenance is required.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Give three reasons why adaptive maintenance may be required.",
+              "marks": 3,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "As well as adaptive maintenance, other types of program maintenance may be needed.\nIdentify one other type of program maintenance.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Pseudocode has been used to design modules for the program to control the production line.\nThe table shows four valid pseudocode expressions.\nComplete the table by giving the data type of the evaluated expression.\nExpression Data type\nRIGHT(MachineCode, 4)\nSpeed * 2.5\nNOT Status\nIS_NUM(Check)",
+          "marks": 4,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "A global array Product is used as part of the pseudocode design being developed to control\nthe production line. Product is used to store the number of rejected items each day.\nThe following pseudocode statement is used to assign a value to an element of the array:\nProduct[x, y] 23\nThe lower and upper bound values are shown in the table:\nVariable Lower bound Upper bound\nx 0 99\ny 0 9",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "State the number of dimensions of Product",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "State the total number of elements in array Product",
+              "marks": null,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1diii",
+              "label": "(iii)",
+              "text": "Give the pseudocode declaration for the array Product",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A program is being developed to control the production line in a factory."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Stepwise refinement has been used in the design of the program.\nDescribe stepwise refinement.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "One of the program modules used to calculate employees’ weekly bonus pay has been\ncompleted. The amount of bonus pay they receive is based on the number of hours worked\nand the value of sales made as shown in the table.\nBonus pay and value of sales are both in dollars.\nHours worked Value of sales Bonus pay\nbetween 1 and 40 inclusive 2000 or less 0\nbetween 1 and 40 inclusive above 2000 50\nabove 40 2000 or less 10\nabove 40 above 2000 100",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "The module is tested using white‑box testing.\nState two tests, using valid data, that can be used to test different paths through the\nprogram.\nTest one:\nHours worked ______\nValue of sales ______\nBonus pay ______\nTest two:\nHours worked ______\nValue of sales ______\nBonus pay ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The program to calculate pay uses a number of modules which are each called from\ndifferent places in the program.\nThe program is to be tested using stub testing before all the program modules have\nbeen completed.\nDescribe stub testing.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "The program has been completed and compiles successfully.\nThe program is tested using black‑box testing.\nIdentify and describe one type of error that black‑box testing could detect.\nType of error ______\nDescription ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A program to calculate the pay of employees working for a company is being designed."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm is designed to generate and output two unique random integers. Each integer value",
+        "is between –10 and 10 inclusive.",
+        "If both integers output are negative, a third random integer between 30 and 35 inclusive will be",
+        "generated and output.",
+        "Write pseudocode for this algorithm.",
+        "[8]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm will:",
+        "• input 100 integer values, one value at a time",
+        "• store the first value input into the first location of the array Number",
+        "• store the next input value in the next unused location of the array Number",
+        "• output the contents of Number array in the opposite sequence to that in which the values",
+        "were input.",
+        "Complete the program flowchart to represent the algorithm.",
+        "Variable declarations are not required.",
+        "START",
+        "END",
+        "[6]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the state‑transition diagram for the automated digital camera system.\nstart\nstandby mode",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "At the end of each sequence of pictures, the time is saved as a string in the format\n<HH><MM><SS> where:\n• HH represents the hours using two digits\n• MM represents the minutes using two digits\n• SS represents the seconds using two digits.\nFor example:\n• \"081230\" is stored to represent the time 8:12:30, in the morning\n• \"152235\" is stored to represent the time 15:22:35, in the afternoon.\nEach string is stored on a new line in the text file TimeTaken.txt\nAn algorithm is required to process the content of the text file TimeTaken.txt once it has\nbeen transferred to the computer.\nFor each hour when pictures are taken, output a suitable message showing the hour and the\ntotal number of sequences of pictures taken within that hour.\nExample outputs:\nHour : 15 Total : 32\nHour : 18 Total : 1\nWrite pseudocode for this algorithm.\nAssume the text file TimeTaken.txt contains at least one line.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "An automated digital camera system is used to take a sequence of pictures of animals in a garden.",
+        "During the design of the system, a state‑transition diagram is produced.",
+        "The table details the states in the automated digital camera system along with the events which",
+        "cause the states to change.",
+        "The system starts in standby mode. The sequence of pictures is taken when in active mode.",
+        "Current state Event Next state",
+        "standby mode turn on detect mode",
+        "detect mode turn off standby mode",
+        "detect mode movement detected active mode",
+        "active mode 20 seconds elapsed sequence complete",
+        "active mode turn off standby mode",
+        "sequence complete time saved detect mode"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Two arrays Data and Pointer are accessed by the procedure Place()",
+        "Data and Pointer are both global arrays of type INTEGER",
+        "The contents of these two arrays are shown:",
+        "Data Pointer",
+        "1 1018 1 7",
+        "1007 3",
+        "2 2",
+        "1010 1",
+        "3 3",
+        "4 1056 4 6",
+        "5 1092 5 -1",
+        "1062 5",
+        "6 6",
+        "1034 4"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "7"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "0 8 9 DO NOT WRITE IN THIS MARGIN"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "0 9 10",
+        "0 -1"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ai",
+              "label": "(i)",
+              "text": "Complete the trace table below by dry running the procedure Place() when it is called\nby the statement:\nCALL Place(1043, 2, 8)\nValue Start Unused New Last Current",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10aii",
+              "label": "(ii)",
+              "text": "Complete the diagram showing the contents of the global arrays Data and Pointer\nafter the procedure Place() has run to completion when called as shown in part (a)(i).\nData Pointer\n1018\n1 1\n2 1007 2\n1010\n3 3\n1056\n4 4\n5 1092 5\n1062\n6 6\n7 1034 7\n8 8\n9 9\n10 10",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "The operation carried out by procedure Place() together with the arrays form part of the\nimplementation of an Abstract Data Type (ADT).\nIdentify the ADT and state the operation carried out by procedure Place()\n\n7 A program is being developed to implement a customer loyalty scheme for a coffee shop.\nEach customer has a unique customer ID starting at 10001 with this value increasing by one each\ntime a new customer joins the loyalty scheme.\nFor example, the third customer who joins the loyalty scheme is given the customer ID 10003\nThe loyalty scheme is limited to 1000 customers.\nA customer is awarded a loyalty point every time they buy a coffee.\nThe programmer has decided to use a global 2D array Loyalty of type INTEGER. The array\nLoyalty is made up of 1000 rows and 2 columns. Each row relates to one customer; column 1\ncontains the unique customer ID and column 2 contains the number of customer loyalty points.\nRows in the array Loyalty that are not currently being used have the value of Column 1 set to\n99999\nThe array is sorted in ascending order by customer ID.\nThe programmer has defined a program module:\nModule Description\n• called with parameter of type INTEGER representing a customer ID\n• searches the Loyalty array for this customer ID\n• the search will stop as soon as the customer ID is found\nFindCustomer()\n• the search should efficiently deal with the situation when the\ncustomer ID is not stored in the Loyalty array\n• if the customer ID is found, return an integer value representing the\nloyalty points, otherwise return -1",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Write efficient pseudocode for module FindCustomer()",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "A customer can claim a free coffee for every 11 loyalty points.\nThe programmer has defined a second program module:\nModule Description\n• output the customer ID for each customer who has 11 or\nmore loyalty points\nPointsReport()\n• output the average loyalty points for all customers in the\nLoyalty array along with an appropriate message\nWrite efficient pseudocode for module PointsReport()\nAssume the array contains the data for at least one customer.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "The programmer decides to amend the customer ID; it will be stored as a STRING instead of\nan INTEGER. This means that the 2D array Loyalty can no longer be used.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ci",
+              "label": "(i)",
+              "text": "Explain why the 2D array Loyalty can no longer be used.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10cii",
+              "label": "(ii)",
+              "text": "Explain how a 1D array could be used to store both the loyalty points and the amended\ncustomer ID.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "10",
+        "Study the pseudocode:",
+        "PROCEDURE Place(Value : INTEGER, Start : INTEGER, Unused : INTEGER)",
+        "DECLARE New, Current, Last : INTEGER",
+        "CONSTANT NullPointer = -1",
+        "New Unused",
+        "Last NullPointer",
+        "Current Start",
+        "WHILE Current <> NullPointer AND Data[Current] < Value",
+        "Last Current",
+        "Current Pointer[Current]",
+        "ENDWHILE",
+        "Pointer[New] Pointer[Last]",
+        "Pointer[Last] New",
+        "Data[New] Value",
+        "ENDPROCEDURE"
+      ]
+    }
+  ]
+}

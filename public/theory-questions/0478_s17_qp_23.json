@@ -1,0 +1,293 @@
+{
+  "paperId": "0478_s17_qp_23",
+  "subjectCode": "0478",
+  "session": "s17",
+  "component": "23",
+  "totalMarks": 33,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Name two constants you used for Task 1 and state the value of each one.\nConstant 1 ______\nValue ______\nConstant 2 ______\nValue ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Name two arrays you used for Task 2 and state the purpose of each one.\nArray 1 ______\nPurpose ______\nArray 2 ______\nPurpose ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements\nor a flowchart.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Name and describe one suitable validation check you used for Task 1, and one suitable\nvalidation check for Task 2. Each check MUST be different.\nTask 1\nName ______\nDescription ______\nTask 2\nName ______\nDescription ______",
+              "marks": 4,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "For each validation check in part (c)(i), give an example of suitable test data and explain\nwhy you chose the test data.\nTest data for (c)(i) Task 1 ______\nReason for choice ______\nTest data for (c)(i) Task 2 ______\nReason for choice ______",
+              "marks": 4,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program calculates whether or not you have made a profit (Task 3). Any\nprogramming statements used in your answer must be fully explained.\n\nSection B",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This section of program code asks for 50 numbers to be entered. The total and average of the",
+        "numbers are calculated.",
+        "1 Total = 0",
+        "2 Counter = 50"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PRINT ′When prompted, enter 50 numbers, one at a time′"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PRINT ′Enter a number′"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Number"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total + Number = Total"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Number = Number + 1"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL Counter = 50"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Average = Number * Counter"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Identify, using pseudocode, another loop structure that the algorithm in part (a) could have\nused.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Write an algorithm, using pseudocode, to input a number between 0 and 100 inclusive. The\nalgorithm should prompt for the input and output an error message if the number is outside\nthis range.\n\n6 This flowchart inputs a range of temperatures in degrees Fahrenheit.\nAs each temperature is input, it is compared with the previous highest temperature. If it is higher\nthan the current highest, it replaces the previous highest temperature and then it is converted to\ndegrees Celsius.\nFor ease of calculation, the final step of the Fahrenheit to Celsius conversion has been\napproximated as division by 2.\nWhen –1 is entered, the input process stops and the highest temperature (in both Fahrenheit and\nCelsius) is output.\nSTART\nHighF -100\nHighC -100\nINPUT TempF\nNo Is TempF No\nIs TempF\n> HighF?\n= -1?\nYes\nYes\nHighF TempF\nHighC (TempF-32)/2\nOUTPUT 'The highest temperature is, ',\nHighF, ' Fahrenheit, ',\nHighC, ' Celsius.'\nEND\nComplete the trace table for the input data:\n68, 46, 50, 86, 65, 50, 40, 30, –1\nHighF HighC TempF OUTPUT\n\n7 A television (TV) store has a database table, TVSTOCK, for its new range of televisions. The table\nstores the screen size of each TV, whether it will show 3D, whether the screen is curved or flat,\nif the internet is available on the TV, if it has a built-in hard disk drive and the price. Part of the\ndatabase table is shown below.\nTVID ScreenSize 3D CurvedFlat Internet HDD Price\nTV80CVINT 80 YES CV YES YES $7,000.00\nTV65CVINT 65 YES CV YES YES $5,000.00\nTV60CVINT 60 YES CV YES YES $4,500.00\nTV60FTINT 60 YES FT YES YES $4,000.00\nTV55CVINT 55 YES CV YES NO $3,000.00\nTV55FTINT 55 YES FT YES NO $3,500.00\nTV55FTNIN 55 YES FT NO NO $3,000.00\nTV50CVINT 50 YES CV YES NO $2,500.00\nTV50FTINT 50 YES FT YES NO $2,000.00\nTV50FTNIN 50 YES FT NO NO $1,750.00\nTV42FTINT 42 YES FT YES NO $1,500.00\nTV37FTINT 37 NO FT YES NO $1,200.00\nTV20FTNIN 20 NO FT NO NO $800.00\nTV15FTNIN 15 NO FT NO NO $400.00",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "State the type of the field TVID and give a reason for your choice.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Complete the table with the most appropriate data type for each field.\nField name Data type\nScreenSize\n3D\nCurvedFlat\nInternet\nHDD\nPrice",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Use the query-by-example grid below to provide a list of all of the curved screen TVs that\nhave a built-in hard disk drive. Make sure the list only displays the TVID, the price and the\nscreen size in ascending order of price.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "PRINT ′The average of the numbers you entered is ′, Average",
+        "There are four errors in this code.",
+        "State the line number for each error and write the correct code for that line.",
+        "Error 1 Line number .............................",
+        "Correct code .....................................................................................................................................",
+        "Error 2 Line number .............................",
+        "Correct code .....................................................................................................................................",
+        "Error 3 Line number .............................",
+        "Correct code .....................................................................................................................................",
+        "Error 4 Line number .............................",
+        "Correct code .....................................................................................................................................",
+        "[4]",
+        "3 A satellite navigation system works using destination details entered by the user, either a new",
+        "destination or chosen from previously saved destinations. The satellite navigation system will then",
+        "output directions to the destination in the form of either a visual map or a list of directions.",
+        "A satellite navigation system is an example of a computer system that is made up of sub-systems.",
+        "This structure diagram shows some of its sub-systems.",
+        "Complete the diagram by filling in the empty boxes.",
+        "Satellite navigation system",
+        "Input destination",
+        "Map List",
+        "[2]",
+        "4 For each of the four statements in the table, place a tick in the correct column to show whether it",
+        "is an example of validation or verification.",
+        "Statements Validation Verification",
+        "To automatically check the accuracy of a bar code",
+        "To check if the data input is sensible",
+        "To check if the data input matches the data that has been",
+        "supplied",
+        "To automatically check that all required data fields have been",
+        "completed",
+        "[4]",
+        "5 (a) Describe the purpose of each statement in this algorithm.",
+        "FOR I 1 TO 300",
+        "INPUT Name[I]",
+        "NEXT I",
+        "[2]"
+      ]
+    }
+  ]
+}

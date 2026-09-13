@@ -1,0 +1,235 @@
+{
+  "paperId": "0478_s17_qp_22",
+  "subjectCode": "0478",
+  "session": "s17",
+  "component": "22",
+  "totalMarks": 45,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "For a variable that you have used to record information about the cost of the outing in\nTask 1, state the name, data type and its use.\nVariable name ______\nData type______\nUse______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "State two constants that you could have used for Task 1. Give the value that would be\nassigned to each one and explain what it is used for.\nConstant 1 name______\nValue 1 ______\nUse 1______\nConstant 2 name______\nValue 2 ______\nUse 2______",
+              "marks": 6,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how you would need to change your calculation in Task 1 if each carer were paid\n$20.00 for coming on the outing.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements\nor a flowchart. You can assume that Task 1 has been completed. You do not need to produce\nthe list of people on the outing.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completes Task 3. Any programming statements used in your\nanswer must be fully explained.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write an algorithm to input three different numbers, and then output the largest number. Use\neither pseudocode or a flowchart.",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Give two sets of test data to use with your algorithm in part (a) and explain why you chose\neach set.\nTest data set 1 ______\nReason ______\nTest data set 2 ______\nReason ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This flowchart inputs the weight of items in kilograms to be loaded on a trailer. Any item over",
+        "25 kilograms is rejected. The trailer can take up to 100 kilograms.",
+        "START",
+        "TotalWeight 0",
+        "Reject 0",
+        "INPUT Weight",
+        "Yes",
+        "Is Weight",
+        "Reject Reject + 1",
+        "25?",
+        "No",
+        "TotalWeight TotalWeight + Weight",
+        "Is",
+        "No",
+        "TotalWeight",
+        "100?",
+        "Yes",
+        "TotalWeight TotalWeight – Weight",
+        "OUTPUT 'Weight of items '",
+        "TotalWeight, ' Number of",
+        "items rejected ',Reject",
+        "END",
+        "Complete the trace table for the input data:",
+        "13, 17, 26, 25, 5, 10, 15, 35, 20, 15",
+        "Weight Reject TotalWeight OUTPUT",
+        "[5]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Find the error in the pseudocode and suggest a correction.\nError______\nCorrection ______",
+          "marks": 2,
+          "type": "suggest",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Rewrite the correct algorithm using a more suitable loop structure.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "An algorithm has been written in pseudocode to input 100 numbers and print out the sum.",
+        "A REPEAT … UNTIL loop has been used.",
+        "Count ← 0",
+        "Sum ← 0",
+        "REPEAT",
+        "INPUT Number",
+        "Sum ← Sum + Number",
+        "Count ← Count + 1",
+        "UNTIL Count > 100",
+        "PRINT Sum"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Identify the four fields required for the database. Give each field a suitable name and data\ntype. Provide a sample of data that you could expect to see in the field.\nField 1 name______\nData type ______\nData sample ______\nField 2 name______\nData type ______\nData sample ______\nField 3 name______\nData type ______\nData sample ______\nField 4 name______\nData type ______\nData sample ______",
+          "marks": 8,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "State the field that you would choose as the primary key.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Using the query-by-example grid below, write a query to identify the ear tags of all male\nsheep weighing over 10 kilograms. Only display the ear tags.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A database table, SHEEP, is used to keep a record of the sheep on a farm. Each sheep has a",
+        "unique ear tag, EARnnnn; n is a single digit. The farmer keeps a record of the date of birth, the",
+        "gender and the current weight of each sheep in kilograms."
+      ]
+    }
+  ]
+}

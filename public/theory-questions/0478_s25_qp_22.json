@@ -1,0 +1,423 @@
+{
+  "paperId": "0478_s25_qp_22",
+  "subjectCode": "0478",
+  "session": "s25",
+  "component": "22",
+  "totalMarks": 44,
+  "questionCount": 22,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to complete the description of abstraction.",
+        "Abstraction is part of the analysis stage of the development life cycle. Abstraction means",
+        "A testing the solution to the problem.",
+        "B writing a program using program code.",
+        "C defining the sub-systems that make up the problem.",
+        "D removing details from the problem that are not relevant.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A fence measuring 2 metres in height and 20 metres in length needs painting. The area of the",
+        "fence needs to be calculated so that enough paint for the job is purchased.",
+        "After the task is decomposed, there are three component parts: input, process and output.",
+        "Three component parts and four example descriptions are shown.",
+        "Draw one line from each component part to the most appropriate relevant description.",
+        "Not all descriptions will be used.",
+        "Component part Description",
+        "the height of the fence",
+        "the length of the fence",
+        "process",
+        "The amount of paint required is",
+        "40 square metres.",
+        "output",
+        "the colour of the paint",
+        "input",
+        "The area of fence is calculated as",
+        "40 square metres.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A range check is used to validate that the input temperature is an integer between –100 and 0,",
+        "inclusive.",
+        "Suggest suitable normal, abnormal, extreme and boundary test data to test if this validation check",
+        "is working correctly.",
+        "Normal test data ...............................................................................................................................",
+        "Abnormal test data ...........................................................................................................................",
+        "Extreme test data .............................................................................................................................",
+        "Boundary test data ...........................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "State one reason for using a verification check when inputting data.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Write the pseudocode for an algorithm to perform a double entry verification check, using the\nfollowing criteria:\n• Input 10 numbers and store them in the array Numbers[]\n• Input the same 10 numbers again; as each number is input, compare it with its\ncorresponding number in the array Numbers[]\n◦ if the numbers match, move on to the next number\n◦ if the numbers do not match, display both numbers and ask for the number to be\nre-entered\n◦ store the re-entered number in the corresponding array location and move on to the\nnext number.\n• When all the numbers have been checked, display a message to say the check has\nbeen completed.\nYou do not need to declare any arrays or variables for this algorithm.",
+          "marks": 6,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm should allow 500 names of people and their heights to be entered and",
+        "stored in two one-dimensional (1D) arrays. The name of a person and the height of that person",
+        "are in the same index in both the Names[] and the Heights[] arrays.",
+        "The algorithm performs as follows:",
+        "• at the start, the following data is entered:",
+        "◦ name of person",
+        "◦ height of person in cm",
+        "• the data is stored in the relevant arrays",
+        "• the heights of the people are totalled",
+        "• the shortest person is found",
+        "• at the end, the following is output:",
+        "◦ name of shortest person",
+        "◦ height of shortest person",
+        "◦ average height of all 500 people.",
+        "01 DECLARE Names : ARRAY[1:500] OF REAL",
+        "02 DECLARE Heights : ARRAY[1:500] OF REAL",
+        "03 DECLARE Shortest : REAL",
+        "04 DECLARE Total : REAL",
+        "05 DECLARE Counter : INTEGER"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Index : INTEGER"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Shortest 500"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Index 0"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total 100"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Counter 1 TO 500"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Names[Index]"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Heights[Counter]"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total Counter + Heights[Counter]"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Heights[Counter] < Shortest"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Shortest Heights[Counter]"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Index Counter"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Counter"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The shortest height is \", Heights"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The shortest person is \", Names[Index]"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Identify the line numbers of five errors in the pseudocode and suggest a correction for each\nerror.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______\nError 5 line number ______\nCorrection ______",
+          "marks": 5,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Write the pseudocode statement that will output the average height rounded to one decimal\nplace.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Explain how you could change the corrected algorithm so that it will also:\n• find the height of the tallest person.\n• output the height of the tallest person at the end of the algorithm.\nAny program statements used must be fully explained.\n\n6 This pseudocode is an algorithm.\nDECLARE Word : STRING\nDECLARE V1 : INTEGER\nDECLARE V2 : INTEGER\nDECLARE Number : INTEGER\nDECLARE Index : INTEGER\nDECLARE L1 : CHAR\nDECLARE L2 : CHAR\nDECLARE Continue : BOOLEAN\nINPUT Number\nFOR Index 1 TO Number\nINPUT Word\nContinue TRUE\nV1 1\nV2 LENGTH(Word)\nWHILE Continue = TRUE AND V1 < V2 DO\nL1 SUBSTRING(Word, V1, 1)\nL2 SUBSTRING(Word, V2, 1)\nIF L1 <> L2\nTHEN\nContinue FALSE\nELSE\nV1 V1 + 1\nV2 V2 – 1\nENDIF\nENDWHILE\nIF Continue = TRUE\nTHEN\nOUTPUT \"Successful\"\nELSE\nOUTPUT \"NOT successful\"\nENDIF\nNEXT Index",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm, using the input data:\n2, RACECAR, TREAT\nNumber Index Word Continue V1 V2 L1 L2\nOUTPUT",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "State the purpose of the algorithm on page 6.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Explain how the algorithm knows when all the letters in the word have been checked so that it\ncan stop checking.\n\n7 The flowchart shows an algorithm that is used to input 50 numbers. Each number is stored in the\nvariable Value when it is input. Any number input that is less than or equal to –20 or greater than\nor equal to 50 is rejected and re-input. The accepted numbers are added together as they are\nentered and the total and average of these numbers are output at the end of the algorithm.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Complete the flowchart.\nSTART\nCount 0\nTotal\nYes\nNo\nNo\nYes\nSTOP",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Explain how you would alter the flowchart in 7(a) so that it will individually store each accepted\nvalue as it is entered and then output all the numbers, one after the other, outside of the loop\nthat inputs values.\nYou may include program statements or flowchart symbols in your answer, but they must be\nfully explained.\n\n8 (a) Draw the symbol for an XOR logic gate and complete the truth table for it.\nXOR logic gate symbol:\nTruth table:\nA B X\n0 0\n0 1\n1 0\n1 1",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Consider the logic rules in the following table:\nInput Binary value Description\n0 operator not present\n1 operator present\n0 ignition key present\n1 ignition key not present\n0 operator code correct\n1 operator code not correct\nA crane is a machine with a long arm used to lift heavy objects. The crane will only move:\n• if the operator is present and\n• either the ignition key is present, or the operator code is correct.\nThe crane moving is represented by X = 1.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "22bi",
+              "label": "(i)",
+              "text": "Write the logic expression for the crane moving.\nX = ______",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "22bii",
+              "label": "(ii)",
+              "text": "Complete the truth table for the crane moving.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n9 A database table, CapitalCity, stores data about capital cities from around the world.\nField Description\nIdentification a unique identifier\nName\nthe name of the city\nCountry\nthe name of the country in which the city is located\nContinent\nthe name of the continent in which the city is located\nPopulation the number of people living in the city\nFounded the year the city was founded\nAverageIncome\naverage income of the city’s population, in $, rounded to 2 decimal places\nSubway\nwhether or not the city has an underground railway system",
+              "marks": 4,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Complete the table by writing one appropriate field from CapitalCity for each data type.\nEach field must be different.\nData type Field\nBoolean\ninteger\nreal\ntext DO NOT WRITE IN THIS MARGIN",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Complete the structured query language (SQL) statement to list only the name, country and\npopulation of all the cities in CapitalCity from the continent of Asia.\nSELECT ______\n______ CapitalCity\nWHERE ______ = ______ ;\n\n10 A program is required to allow students to calculate the volume of a number of standard\nthree-dimensional shapes. It will use functions to allow other shapes to be added in the future.\nCuboid\nheight\nvolume = base × depth × height\ndepth\nbase\nTriangular prism\nvolume = 2 × base × depth × height\nheight\ndepth\nbase\nSphere\nvolume = 3 × Pi × radius × radius × radius\nradius\nPi is a constant with value 3.142\nWrite a program that meets the following requirements:\n• Output a menu to ask the user for an input to indicate the shape for which a volume needs to\nbe calculated, from the three shapes given or if they want to stop the program. The program\nmust validate the input.\n• Input the data needed to calculate the volume of the chosen shape, based on the given\nformulae.\n• Create one function for each shape to calculate and return the volume using the given\nformulae. Each function uses the input data as parameters.\n• Output the volume in the main program, rounded to two decimal places.\nThe program continues until the user inputs the stop option from the menu.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll variables and constants used must be declared for this algorithm.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 37,
+      "text": [
+        "OUTPUT \"The average height is \", Total / 500"
+      ]
+    }
+  ]
+}

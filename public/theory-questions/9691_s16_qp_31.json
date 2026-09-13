@@ -1,0 +1,696 @@
+{
+  "paperId": "9691_s16_qp_31",
+  "subjectCode": "9691",
+  "session": "s16",
+  "component": "31",
+  "totalMarks": 88,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A rule may be recursive.\nState what is meant by recursive.\nIdentify the rule which is recursive.\nRule number ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Using the above rules, explain the following statements:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "dog\nis a valid <nounPhrase>",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "a puppy sat\nis an invalid <sentence>",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "a cat slept the snake\nis a valid <sentence>",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "The adverbs quietly, quickly and slowly are to be included in the rules.\nWhen an adverb is used in a sentence it always precedes the verb.\nThe rules are to be changed to make:\nthe cat quietly slept\na valid <sentence>\nThis needs a new rule. Write this new rule.\nIt also needs a change to an existing rule. Write the amended rule.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "The grammar for a language is defined using a set of Backus-Naur rules as follows:",
+        "Rule Number Rule",
+        "<article> ::= a | the",
+        "<verb> ::= sat | walked | ate | slept",
+        "<noun> ::= dog | cat | person | snake",
+        "<nounPhrase> ::= <article><noun> | <noun>",
+        "<verbPhrase> ::= <nounPhrase><verb>",
+        "<sentence> ::= <verbPhrase> | <sentence><nounPhrase>"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A first attempt at the table design is:\nMANAGER(ManagerName, Telephone, BandName, Genre, NumberInBand, SetFee)\nManagerName Telephone BandName Genre NumberInBand SetFee($)\nYi Ling Chen 908765 Rachael Daz Covers 1 200\nJazz Tones Modern jazz 4 450\nLockwood Bros 674442 Midnight Blues Modern jazz 5 350\nLoose Beats Dance 3 400\nAsyraf Duo Covers 2 250\nThe Flying Fleas Hip hop 8 700\nRachael Wang 118976 Li Wei Chen Covers 1 250\nGig Associates 567575 Buster Beats Reggae 6 600\nHits Forever Covers 3 300\nRap Incorporated Hip hop 5 800\nState why the table MANAGER is not in First Normal Form (1NF).",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The database design is changed to:\nBAND(BandName, Genre, NumberInBand, SetFee, ManagerName)\nMANAGER(ManagerName, Telephone)\nThe primary key for each table has not been shown.\nAssume that the band names and manager names are unique.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "State the relationship that exists between BAND and MANAGER.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Explain how this relationship is implemented.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The database is to be re-designed. It will store a date for each booking made.\nA band does not have more than one booking on any one date.\nThis additional table is suggested:\nBOOKING(BandName, BookingDate, Genre, NumberInBand, SetFee)\nDescribe why the table BOOKING is not in Second Normal Form (2NF).",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "There are three issues which the final database design must address:\nIssue 1 - Managers often negotiate a fee which is higher or lower than the set fee.\nIssue 2 - Some bands are now able to perform more than one booking on any one date.\nIssue 3 - The database is to store data for the venue where the band will perform.\nThe final design (not showing all of the primary keys) is:\nBAND(BandName, Genre, NumberInBand, SetFee, ManagerName)\nMANAGER(ManagerName, Telephone)\nBOOKING(BandName, BookingDate, BookingTime, AgreedFee, VenueName)\nVENUE(VenueName, VenueAddress, Capacity)",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "State how Issue 1 has been addressed.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "State how Issue 2 has been addressed.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2diii",
+              "label": "(iii)",
+              "text": "State how Issue 3 has been addressed.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2div",
+              "label": "(iv)",
+              "text": "Complete the table below to show the primary key and any foreign key(s) present in each\ndatabase table.\nForeign key(s)\nTable Primary key\n(if any)\nBAND BandName\nMANAGER ManagerName\nBOOKING\nVENUE",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A number of music bands use a manager to organise their bookings.",
+        "Each manager will manage one or more bands.",
+        "Each band:",
+        "• has one manager",
+        "• has a set fee payable for a booking",
+        "• plays a particular genre of music",
+        "Data for bands and managers are to be organised and stored in a relational database."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Convert the following infix expressions into reverse Polish notation:",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "x / (a + b)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "p ^ 2 + (2 + q) / 3\nNote: ^ denotes ‘to the power of’",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Convert the following reverse Polish expression to infix notation:\n3 a b + c + d + e - *",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The reverse Polish expression RPNString consists of a sequence of characters. Each\ncharacter is either:\n• a single character identifier or digit\n• an operator\nThe following algorithm inputs RPNString and output the corresponding infix expression\nInfixString.\nThe algorithm uses a stack data structure, Stack.\nINPUT RPNString\nWHILE characters in RPNString\nThisChar ← next character\nIF ThisChar is an identifier or digit\nTHEN\nPush ThisChar to Stack\nELSE // next character is an operator\nPop item from Stack and store as Temp\nInfixString ← Temp\n// the & operator concatenates two strings\nInfixString ← ThisChar & InfixString\nPop item from Stack and store as Temp\nInfixString ← Temp & InfixString\nPlace brackets around InfixString\nPush InfixString to Stack\nENDIF\nENDWHILE\nComplete the trace table for the input of the reverse Polish expression:\nx y +\nThe first two iterations of the WHILE loop have been done for you.\nRPNString ThisChar Temp InfixString\nStack contents\nx y + x\ny y",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A computer system stores integers in 8-bit two’s complement form.\nState the two denary numbers represented by Byte 1 and Byte 2.\nByte 1 Byte 2\n0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 1\nByte 1 ______\nByte 2 ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Byte 3 and Byte 4 together are used to represent a Binary Coded Decimal (BCD) number.\nState the denary number.\nByte 3 Byte 4\n1 0 0 1 0 0 1 1 0 0 0 0 0 1 1 1\nDenary ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Byte 5 and Byte 6 together represent a 16-bit colour code used in a drawing program.\nByte 5 Byte 6\n0 1 1 0 1 0 1 0 1 1 1 1 0 1 0 1\nThe drawing program displays the colour code as a hexadecimal number.\nState the hexadecimal number for this colour code. ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Most computer systems need to store and process real numbers.\nA computer uses two bytes to store a real number.\nThe first byte (Byte 7) stores the mantissa. The second byte (Byte 8) stores the exponent.\nBoth mantissa and exponent use two’s complement form.\nByte 7 Byte 8\n1 0 1 0 1 0 0 0 0 0 0 0 1 0 1 1",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "State, without any working out, how you can recognise that this 16-bit pattern (Byte 7\nand Byte 8) is a negative number.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "State the denary values for the mantissa and the exponent represented by Byte 7 and\nByte 8.\nMantissa ______\nExponent ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4diii",
+              "label": "(iii)",
+              "text": "Calculate the denary value represented by Byte 7 and Byte 8.",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4e",
+          "label": "(e)",
+          "text": "State how you can recognise that this 16-bit pattern (Byte 7 and Byte 8) is normalised.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4f",
+          "label": "(f)",
+          "text": "Write the binary patterns for the largest and smallest positive number that can be represented\nwith this 16-bit format for normalised real numbers.\nSmallest\nLargest",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Explain the difference between a static data structure and a dynamic data structure.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "State a benefit gained from using a dynamic data structure to implement a linked list.\n\nThe database initially contains the records of four customers. These have the surnames:\nGREENE, HASAN, ALI and ABBOT.\nThe data are stored as shown below:\n6XUQDPH/LVW\n6XUQDPH 3RLQWHU\n1 *5((1( \u0015\n2 \u0013\n+$6$1\n3 \u0014\n$/,\n4 \u0016\n$%%27\n9999\n100000",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "State the value of:\nSurnameList[HeadSurname].Surname ______\nSurnameList[3].Pointer ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Complete the linked list diagram by adding the data and pointer values for each customer\nnode.\n+HDG6XUQDPH",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "A similar linked list is maintained by the database management software to organise\ncustomers according to the money owed to the company (the balance). The data structure\nused is a second linked list. The pointer to the head of this linked list is HeadBalance.\n+HDG%DODQFH\n20 28\n180 156\n510 0",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5di",
+              "label": "(i)",
+              "text": "A new customer with an outstanding balance of $130 is to be inserted into the linked list.\nOn the diagram above, add the required data to the empty node. Adjust pointer(s) where\nnecessary.",
+              "marks": 3,
+              "type": "list",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5dii",
+              "label": "(ii)",
+              "text": "Describe the method to locate the position in the linked list for inserting a new record.\nInclude how to change the pointer values.\nIgnore the special case in which the linked list is empty so that the new record becomes\nthe first record in the linked list.\nDo not write pseudocode or program code.\n\nQuestion 6 begins on page 16.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A company stores customer data in a database using linked lists.",
+        "An array of records of data type CustomerNode implements a linked list of surnames.",
+        "The linked list stores the surnames in alphabetical order.",
+        "The CustomerNode record has two fields as defined below:",
+        "TYPE CustomerNode",
+        "Surname : STRING",
+        "Pointer : INTEGER",
+        "ENDTYPE",
+        "The linked list is created using the array and variable shown below.",
+        "Identifier Data type Description",
+        "An array to store the surname",
+        "SurnameList ARRAY[1 : 10000] OF CustomerNode",
+        "and pointer values",
+        "Stores the index position of the",
+        "HeadSurname INTEGER",
+        "node at the head of the linked list"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "There are four key features that apply to most robots. They are:\n• mechanical devices\n• movable\n• able to sense their surroundings\n• controlled by a computer program\nOne application of the use of a robot is a paint sprayer on a car production line.\nExplain how the four features listed above apply to this application.\nThe robot is a mechanical device.\nIt is movable.\nIt can sense its surroundings.\nIt is controlled by a computer program.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Name two hardware components that would be found in the paint sprayer.\nExplain how each hardware component is used in the operation of the robot.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "State what is meant by:",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "source code",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aii",
+              "label": "(ii)",
+              "text": "object code",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "During the lexical analysis stage, the compiler will use a keyword table and a symbol table.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Describe, in general, the information contained in a keyword table.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "State three entries that will be in the keyword table for the given program.",
+              "marks": null,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7biii",
+              "label": "(iii)",
+              "text": "Describe, in general, the information contained in a symbol table.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7biv",
+              "label": "(iv)",
+              "text": "State three entries that will be entered in the symbol table for the given program.",
+              "marks": null,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Explain what happens during the lexical analysis stage of compilation. Include how the\ncontents of the keyword table and symbol table are used.",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "The final stage of the compilation process is to optimise the code.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7di",
+              "label": "(i)",
+              "text": "State what is meant by code optimisation.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7dii",
+              "label": "(ii)",
+              "text": "Suggest where in the given program optimisation may be possible.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "The following are the initial lines of a program written in a high-level language.",
+        "// scheduling program",
+        "// program written 09 June 2015",
+        "DECLARE Counter : INTEGER ;",
+        "DECLARE Jobs[1000] : STRING ;",
+        "DECLARE Position[1000]: INTEGER ;",
+        "CONSTANT ChangeRate = 5.0 ;",
+        "// start of main program",
+        "CALL InitialiseGrid ;",
+        "WHILE Counter < 1000",
+        "a = x + y ;",
+        "b = x + y + 7 ;",
+        "This program is about to be translated by the language compiler."
+      ]
+    }
+  ]
+}

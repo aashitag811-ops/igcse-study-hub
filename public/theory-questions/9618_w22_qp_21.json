@@ -1,0 +1,415 @@
+{
+  "paperId": "9618_w22_qp_21",
+  "subjectCode": "9618",
+  "session": "w22",
+  "component": "21",
+  "totalMarks": 65,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "An algorithm includes a number of complex calculations. A programmer is writing a program\nto implement the algorithm and decides to use library routines to provide part of the solution.\nState three possible benefits of using library routines in the development of the program.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The following pseudocode is part of a program that stores names and test marks for use in\nother parts of the program.\nDECLARE Name1, Name2, Name3 : STRING\nDECLARE Mark1, Mark2, Mark3 : INTEGER\nINPUT Name1\nINPUT Mark1\nINPUT Name2\nINPUT Mark2\nINPUT Name3\nINPUT Mark3",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The pseudocode needs to be changed to allow for data to be stored for up to 30 students.\nExplain why it would be good practice to use arrays to store the data.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The following pseudocode statement includes array references:\nOUTPUT \"Student \", Name[Count], \" scored \", Mark[Count]\nState the purpose of the variable Count and give its data type.\nPurpose ______\nData type ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The pseudocode statements in the following table may contain errors.\nState the error in each case or write ‘NO ERROR’ if the statement contains no error.\nAssume that any variables used are of the correct type for the given function.\nStatement Error\nIF EMPTY ← \"\" THEN\nStatus ← IS_NUM(-23.4)\nX ← STR_TO_NUM(\"37\") + 5\nY ← STR_TO_NUM(\"37\" + \"5\")",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Explain the process of abstraction and state four items of data that should be stored each\ntime a car is hired.\nExplanation ______\nItem 1 ______\nItem 2 ______\nItem 3 ______\nItem 4 ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Identify two operations that would be required to process the car hire data.\nOperation 1 ______\nOperation 2 ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A system is being developed to help manage a car hire business. A customer may hire a car for a",
+        "number of days.",
+        "An abstract model needs to be produced."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A 1D array Data of type integer contains 200 elements. Each element has a unique value.",
+        "An algorithm is required to search for the largest value and output it.",
+        "Describe the steps that the algorithm should perform.",
+        "Do not include pseudocode statements in your answer.",
+        "[5]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The following diagram shows an Abstract Data Type (ADT) representation of an ordered\nlinked list. The data item stored in each node is a single character. The data will be accessed\nin alphabetical order.\nThe symbol Ø represents a null pointer.\nStart pointer\n'C' 'J' 'L' Ø",
+          "marks": null,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Nodes with data 'A' and 'K' are added to the linked list. Nodes with data 'J' and 'L' are\ndeleted.\nAfter the changes, the data items still need to be accessed in alphabetical order.\nComplete the diagram to show the new state of the linked list.\nStart pointer\n'C' 'J' 'L'",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "The original data could have been stored in a 1D array in which each element stores a\ncharacter.\nFor example:\n'C' 'J' 'L'\nExplain the advantages of making the changes described in part (a)(i) when the data is\nstored in the linked list instead of an array.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "Explain the disadvantages of making the changes described in part (a)(i) when the data\nis stored in the linked list instead of an array.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A program will store data using a linked list like the one shown in part (a).\nExplain how the linked list can be implemented.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program uses two 1D arrays of type integer. Array1 contains 600 elements and Array2",
+        "contains 200 elements.",
+        "Array1 contains sample values read from a sensor. The sensor always takes three consecutive",
+        "samples and all of these values are stored in Array1.",
+        "A procedure Summarise() will calculate the average of three consecutive values from Array1",
+        "and write the result to Array2. This will be repeated for all values in Array1.",
+        "The diagram below illustrates the process for the first six entries in Array1.",
+        "Array1 Array2",
+        "Comment",
+        "10 15 average of first three values",
+        "20 41",
+        "average of next three values",
+        "Write pseudocode for the procedure Summarise().",
+        "[5]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Part of the validation is implemented by the line:\nIF NOT (Dots >= 1 AND Ats = 1 AND Others > 8) THEN\nState the values that would result in the condition evaluating to TRUE.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Complete the trace table by dry running the function when it is called as follows:\nResult ← IsValid(\"Liz.123@big@net\")\nIndex NextChar Dots Ats Others Valid",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "State the value returned when IsValid() is called using the expression shown in\npart (b)(i).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The following pseudocode algorithm attempts to check whether a string is a valid email address.",
+        "FUNCTION IsValid(InString : STRING) RETURNS BOOLEAN",
+        "DECLARE Index, Dots, Ats, Others : INTEGER",
+        "DECLARE NextChar : CHAR",
+        "DECLARE Valid : BOOLEAN",
+        "Index ← 1",
+        "Dots ← 0",
+        "Ats ← 0",
+        "Others ← 0",
+        "Valid ← TRUE",
+        "REPEAT",
+        "NextChar ← MID(InString, Index, 1)",
+        "CASE OF NextChar",
+        "'.' : Dots ← Dots + 1",
+        "'@' : Ats ← Ats + 1",
+        "IF Ats > 1 THEN",
+        "Valid ← FALSE",
+        "ENDIF",
+        "OTHERWISE : Others ← Others + 1",
+        "ENDCASE",
+        "IF Dots > 1 AND Ats = 0 THEN",
+        "Valid ← FALSE",
+        "ELSE",
+        "Index ← Index + 1",
+        "ENDIF",
+        "UNTIL Index > LENGTH(InString) OR Valid = FALSE",
+        "IF NOT (Dots >= 1 AND Ats = 1 AND Others > 8) THEN",
+        "Valid ← FALSE",
+        "ENDIF",
+        "RETURN Valid",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "A procedure Calculate() will:\n• take an arithmetic expression string as a parameter\n• evaluate the expression\n• output the result.\nAssume:\n• the string contains only numeric digits and a single operator character\n• Value1 and Value2 represent integer values\n• Value1 and Value2 are unsigned (they will not be preceded by ' + ' or ' − ').",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "Write pseudocode for the procedure Calculate().",
+              "marks": 7,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aii",
+              "label": "(ii)",
+              "text": "Calculate() is changed to a function that returns the value of the evaluated\nexpression.\nWrite the header for the function in pseudocode.",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A string representing an arithmetic expression could be in the correct format but be impossible\nto evaluate.\nGive an example of a correctly formatted string and explain why evaluation would be\nimpossible.\nExample string ______\nExplanation ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A simple arithmetic expression is stored as a string in the format:",
+        "<Value1><Operator><Value2>",
+        "An operator character is one of the following: ' + ' ' − ' ' * ' ' / '",
+        "Example arithmetic expression strings:",
+        "\"803+1904\"",
+        "\"34/7\""
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module CheckFile().\n\nFurther modules are defined as follows:\nModule Description\n• takes a line from a project file as a parameter of type string\nCheckLine()\n• returns zero if the line is blank or contains no syntax error,\notherwise returns an error number as an integer\n• takes two parameters:\n○ the name of a project file as a string\n○ the maximum number of errors as an integer\n• uses CheckFile() to test the project file. Outputs an error\nmessage and ends if the project file is not valid\nCountErrors()\n• calls CheckLine() for each line in the project file\n• counts the number of errors\n• outputs the number of errors or a warning message if the\nmaximum number of errors is exceeded",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "CountErrors() is called to check the project file Jim01Prog.txt and to stop if more than\n20 errors are found.\nWrite the pseudocode statement for this call.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Write pseudocode for module CountErrors(). Assume CheckFile() and CheckLine()\nhave been written and can be used in your solution.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "Module CheckLine() includes a check for syntax errors.\nTwo examples of syntax error that cannot be detected from examining a single line are\nthose involving selection and iteration.\nGive two other examples.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "A teacher is designing a program to perform simple syntax checks on programs written by",
+        "students. Student programs are submitted as text files, which are known as project files.",
+        "A project file may contain blank lines.",
+        "The teacher has defined the first program module as follows:",
+        "Module Description",
+        "• takes the name of an existing project file as a parameter of type",
+        "string",
+        "CheckFile()",
+        "• returns TRUE if the file is valid (it contains at least 10 non-blank",
+        "lines), otherwise returns FALSE"
+      ]
+    }
+  ]
+}

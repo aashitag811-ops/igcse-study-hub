@@ -1,0 +1,528 @@
+{
+  "paperId": "9618_w24_qp_11",
+  "subjectCode": "9618",
+  "session": "w24",
+  "component": "11",
+  "totalMarks": 68,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State one difference between a tebibyte and a gigabyte.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Convert the unsigned binary integer into hexadecimal.\n110001100111\nAnswer ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Convert the two’s complement binary number into denary.\n100110010111\nAnswer ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Convert the Binary Coded Decimal (BCD) into denary.\n010101110011\nAnswer ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Subtract the denary number 23 from the two’s complement binary number 01001010\nPerform this calculation using binary subtraction.\nShow your working.\nWorking ______\nAnswer ______",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "State one reason why binary addition and subtraction can result in overflow.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Give one limitation of using a file-based approach to store the data and explain how a\nrelational database addresses this limitation.\nLimitation ______\nExplanation ______",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The shop owner creates a relational database called FIXIT.\nThe database stores data about the customers and the devices for repair.\nSome devices need new parts that are ordered from suppliers.\nThe database FIXIT is designed to include the following tables:\nPART(PartID, Description, Price, SupplierID)\nCUSTOMER(CustomerID, FirstName, LastName, ContactNumber)\nREPAIR(RepairNumber, StartDate, EndDate, CustomerID, Device)\nREPAIR_PART(PartID, RepairNumber, Quantity)",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Complete the entity-relationship (E-R) diagram for the given tables.\nREPAIR_PART PART\nREPAIR CUSTOMER",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The table shows sample data for the table REPAIR_PART.\nPartID RepairNumber Quantity\nACD128SA 0022 3\nPPOR543DWW 0022 1\nTR453 0023 1\nPPOR543DWW 0023 2\nWED5 0024 5\nWrite a Structured Query Language (SQL) script to define the table REPAIR_PART.\nInclude constraints (restrictions) on the data that can be entered into each field where\nappropriate.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "Suppliers send invoices to the company for the parts that are used. A new table,\nINVOICE, stores the data about each invoice and whether it has been paid or not.\nThe design for the table INVOICE is shown:\nINVOICE(InvoiceID, SupplierID, AmountDue, Paid, DatePaid)\nThe table shows sample data for the table INVOICE.\nInvoiceID SupplierID AmountDue Paid DatePaid\n000001 JK675 22.50 TRUE 01/01/2024\n000002 WR443 358.99 FALSE",
+              "marks": null,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A shop repairs electronic devices, for example mobile phones and tablet computers. The shop",
+        "owner stores the data about the repairs using a file-based approach."
+      ]
+    },
+    {
+      "id": "000003",
+      "context": [],
+      "parts": [
+        {
+          "id": "000003c",
+          "label": "(c)",
+          "text": "Complete the table by writing a definition for each of the database terms.\nTerm Definition\nReferential integrity\nCandidate key\nTuple\n\n3 A computer system has a dual-core Central Processing Unit (CPU).",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "000003a",
+          "label": "(a)",
+          "text": "State the purpose of the system clock and the Control Unit (CU) in a CPU.\nSystem clock ______\nCU ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "000003b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "000003bi",
+              "label": "(i)",
+              "text": "The number of cores in the processor affects the performance of the computer system.\nIdentify one other feature of a processor that can affect the performance of a computer\nsystem and state why it affects the performance.\nFeature ______\nReason ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "000003bii",
+              "label": "(ii)",
+              "text": "A solid state (flash) memory drive is automatically recognised by the computer when it is\nplugged into a port in the computer.\nIdentify an appropriate type of port to connect the solid state memory drive to the\ncomputer.\nExplain how this port provides an automatic connection.\nPort ______\nExplanation ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "000003c",
+          "label": "(c)",
+          "text": "Identify two disadvantages of using Dynamic RAM (DRAM) instead of Static RAM (SRAM) in\na computer system.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "000003d",
+          "label": "(d)",
+          "text": "The computer system is used to store data received from a temperature sensor every five\nseconds. The data is stored on an optical disc using an optical disc reader/writer.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "000003di",
+              "label": "(i)",
+              "text": "Describe the principal operation of an optical disc reader/writer.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "000003dii",
+              "label": "(ii)",
+              "text": "The computer uses a buffer when writing data to the optical disc.\nExplain the use of a buffer when writing data to the optical disc.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "JK675 10.21 FALSE",
+        "Write an SQL script to return the total amount due to the supplier with the ID of JK675 for",
+        "all the invoices that have not currently been paid.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The laptop has utility software and an Operating System (OS).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Describe the file management tasks carried out by an OS.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Explain the need for back-up software.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The student compresses the file before it is emailed to their teacher as an attachment.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Explain the benefits to the teacher of the attachment being a compressed file.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Describe one lossless method of compressing a text file.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The student used a program library when writing their program.\nExplain the benefits to the student of using library files when writing a program.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "The program code is written using an Integrated Development Environment (IDE).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "One presentation feature found in a typical IDE is prettyprint.\nIdentify and describe one other presentation feature found in a typical IDE.\nFeature ______\nDescription ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "One debugging feature found in a typical IDE is single stepping.\nIdentify and describe one other debugging feature found in a typical IDE.\nFeature ______\nDescription ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A student uses a laptop to write a program that is saved as a text file."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the table to identify the most appropriate type of sensor for each scenario.\nScenario Type of sensor\nA door is open.\nThe external daylight level is below a set amount.\nA person is detected within 2 metres.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The floodlight (X) and audio alarm (Y) operate according to the following criteria:\nParameter Description of parameter Binary value Condition\n1 Low\nA external daylight level\n0 High\n1 Open\nB front door\n0 Closed\n1 Detected\nC person is within 2 m\n0 Not detected\n1 Open\nD back door\n0 Closed\n1 Switched on\nE security system\n0 Switched off\nThe floodlight turns on (X = 1) if:\n• the security system is switched on\nand\n• the external daylight level is low\nand\n• a person is detected within 2 m.\nThe audio alarm turns on (Y = 1) if:\n• the security system is switched on\nand\n• one or more doors are open, or a person is detected within 2 m.\nWrite logic expressions for the security system.\nX = ______\nY = ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Explain whether the security system is an example of a monitoring system or a control\nsystem.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A security system has both a floodlight (very bright light) and an audio alarm.",
+        "The data from multiple sensors is analysed and used to:",
+        "• turn on the floodlight",
+        "• sound the audio alarm.",
+        "Sensors can be used to detect:",
+        "• if doors are open",
+        "• the external daylight level",
+        "• if people are detected within a set distance."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A car park system uses a camera to record the registration number of each car as it enters and",
+        "leaves the car park.",
+        "Explain how artificial intelligence is used in the car park system to identify the car’s registration",
+        "number.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Give two benefits of distributing software using a shareware software licence.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Give two benefits of distributing software using a commercial software licence.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Software is distributed with a licence."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Describe the purpose of the Status Register (SR).",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Identify two differences between general purpose registers and special purpose registers.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "A computer designed using the Von Neumann model for a computer system contains general",
+        "purpose registers and special purpose registers."
+      ]
+    }
+  ]
+}

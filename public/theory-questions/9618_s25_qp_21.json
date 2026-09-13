@@ -1,0 +1,407 @@
+{
+  "paperId": "9618_s25_qp_21",
+  "subjectCode": "9618",
+  "session": "s25",
+  "component": "21",
+  "totalMarks": 53,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "An identifier table has been used during the design stage.\nComplete the identifier table:\nExample value Explanation Variable name Data type\na category of stock\n\"Fruit\"\nthat is sold in the shop\nwhen an item was\n20/02/2025\nsold\n12.67\nthe cost of an item\nto indicate if an item is\nTRUE\nin stock",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A module Sales() is part of the stock control program.\nThe table contains pseudocode extracts from the module Sales()\nEach extract may include all or part of:\n• assignment\n• selection\n• iteration (repetition).\nComplete the table by placing one or more ticks (✓) in each row:\nPseudocode extract Assignment Selection Iteration\nResult CalculateTotal()\nWHILE IsClosed\nREPEAT\nINPUT Value\nUNTIL Sales[4] > Value\nIF Sales[Current] <= 150 THEN\nDiscount TRUE\nENDIF\nCASE OF Option",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Decomposition has been used to design the program to help the shop manager control the\nstock.\nDescribe decomposition.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A program is being developed to help the manager of a shop control the stock."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The flowchart contains logic errors.\nOne logic error is that BonusPay will not be set to 10 although the ValueOfSales input is\nbetween 2000 and 4000 inclusive.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Explain why this error occurs.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Explain how this error could be corrected.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "There are different ways to reduce the risk of errors when developing the new program, such\nas the use of constants.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "State a value that could be replaced by a constant in the function CalculateBonus()",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Explain how the use of constants helps to reduce the risk of programming errors.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "One other way that can reduce the risk of errors when writing the program is the use of\nlibrary routines.\nExplain how library routines can reduce the risk of programming errors.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "All the logic errors have been corrected, and the program has been coded.\nIdentify and describe two other types of error that the program could contain.\nType of error ______\nDescription ______\nType of error ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A program is being developed to calculate the pay of employees working for a company.",
+        "A function CalculateBonus() calculates bonus pay based on the value of sales.",
+        "Bonus pay is calculated as shown in the table.",
+        "Value of sales Bonus pay",
+        "(in dollars) (in dollars)",
+        "below 2000 0",
+        "between 2000 and 4000 inclusive 10",
+        "above 4000 100",
+        "A flowchart for the function CalculateBonus() has been designed.",
+        "START",
+        "Set BonusPay",
+        "to 0",
+        "INPUT",
+        "ValueOfSales",
+        "Is",
+        "NO",
+        "ValueOfSales",
+        "> 4000 ?",
+        "YES",
+        "Is",
+        "NO",
+        "ValueOfSales",
+        "Set BonusPay",
+        "to 10",
+        ">= 2000 ?",
+        "YES",
+        "Set BonusPay to 100",
+        "RETURN BonusPay",
+        "END"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A student has been asked to create a simple guessing game program. This program will generate",
+        "a random integer value between 1 and 100. It will then repeatedly prompt the user to input an",
+        "integer value until they input the randomly generated value.",
+        "The student has written a structured English description:",
+        "step 1 – randomly generate an integer value between 1 and 100 inclusive",
+        "step 2 – prompt the user to input an integer value",
+        "step 3 – output an appropriate message if the value input was too high; then repeat from step 2",
+        "step 4 – output an appropriate message if the value input was too low; then repeat from step 2",
+        "step 5 – output an appropriate message if the value input was the same value that was randomly",
+        "generated; then end the program.",
+        "Write a pseudocode algorithm from this structured English description.",
+        "Assume no input validation is needed.",
+        "[8]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The outer loop structure used in the algorithm is not the most appropriate one to use.\nState the type of loop structure that would be the most appropriate to use and justify why it is\nthe most appropriate.\nLoop structure ______\nJustification ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the trace table by dry running the algorithm.\nThe first row has been completed.\nChars\nI Key J Chars[J]\n[1] [2] [3] \n2 'D' 'T' 'H' 'R'",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Study the algorithm:",
+        "DECLARE Chars : ARRAY[1:4] OF CHAR",
+        "DECLARE I, J : INTEGER",
+        "DECLARE Key : CHAR",
+        "I 2",
+        "Chars[1] 'D'",
+        "Chars[2] 'T'",
+        "Chars[3] 'H'",
+        "Chars[4] 'R'",
+        "WHILE I <= 4 //Outer loop",
+        "Key Chars[I]",
+        "J I – 1",
+        "WHILE J >= 0 AND Chars[J] > Key //Inner loop",
+        "Chars[J + 1] Chars[J]",
+        "J J – 1",
+        "ENDWHILE",
+        "Chars[J + 1] Key",
+        "I I + 1",
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Stacks and queues are both abstract data types.",
+        "A stack uses a top-of-stack pointer to indicate the location of the last item added to the stack.",
+        "A queue uses two pointers:",
+        "• a front pointer to indicate the location of the next item to be removed from the queue",
+        "• a rear pointer to indicate the location of the next item to be added to the queue.",
+        "A queue can be used to reverse the items stored on a stack.",
+        "For example, if a stack contains six items:",
+        "Initial state of the stack:",
+        "top-of-stack pointer item 6",
+        "item 5",
+        "item 4",
+        "item 3",
+        "item 2",
+        "item 1",
+        "Final state of the stack when the items have been reversed:",
+        "top-of-stack pointer item 1",
+        "item 2",
+        "item 3",
+        "item 4",
+        "item 5",
+        "item 6",
+        "Describe how the queue could be used to reverse the items that are currently stored on the stack.",
+        "Your description must include how the pointers are used in both the stack and queue.",
+        "Assume:",
+        "• The stack initially contains an unknown number of items.",
+        "• The queue can store all the items currently stored on the stack.",
+        "• The queue is initially empty.",
+        "[7]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A test plan is needed to fully test the module.\nComplete the table. The first line has been completed for you.\nAssume the sensors generate only integer values.\nType of test data Test data value Expected outcome\nnormal 36 data item is accepted",
+          "marks": 4,
+          "type": "plan",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Each sensor used in the system has a unique sensor ID number in the range 1 to 50.\nThe program that is used to monitor the speed of each vehicle reads each sensor value\nevery second and stores this value along with the sensor’s unique ID into a global 2D array\nReading\nThe global array Reading has been declared as follows:\nDECLARE Reading : ARRAY[1:2000, 1:2] OF INTEGER\nThe array contains 4000 elements organised as 2000 rows and 2 columns.\nColumn 1 contains the sensor value, and column 2 contains the sensor ID.\nWhen 2000 sensor readings have been taken, the array is full and the system stops taking\nany more sensor readings until the array has been processed.\nA procedure Sort() is needed to sort the array into ascending order of sensor value using\nan efficient bubble sort algorithm.\nWrite efficient pseudocode for the procedure Sort()",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A program monitors the speed of vehicles as they move around a large building site.",
+        "Each vehicle contains a sensor which reads an integer value that represents the speed of the",
+        "vehicle. The value is expected to be in the range 0 to 60 inclusive.",
+        "The sensors cannot read values less than 0.",
+        "A program module has been written to validate the values read by the sensors."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Write pseudocode for module CustomerOrder()",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A text file Loyalty.txt will be used to store the data items for the loyalty scheme. The data\nitems for each customer will be stored on a separate line of the text file where each data item\nis separated by a comma:\n<CustomerID>,<Points>\nThe contents of the text file Loyalty.txt will always be stored in ascending order by\ncustomer ID.\nWhen the data items are read from or written to the text file Loyalty.txt, they may need to\nbe converted to the appropriate data type.\nEach customer has a unique customer ID starting at \"100001\" with this value increasing by\none each time a new customer joins the loyalty scheme.\nWhen a customer joins the loyalty scheme, they are assigned the next customer ID and value\nof points is set to 0.\nFor example, if the loyalty scheme has 204 customers and a new customer joins the loyalty\nscheme, the following line is added to the text file Loyalty.txt:\n\"100205,0\"\nYou can assume that the number of customers in the loyalty scheme will never be more than\n9000.\nThe programmer has defined a program module as follows:\nModule Description\n• called with an integer parameter representing the number of\nnew customers to be added to the loyalty scheme\n• adds a new line, containing the required information, to the\nAddNewCustomers()\ntext file Loyalty.txt for each customer added to the loyalty\nscheme\n• outputs each new customer ID added to the loyalty scheme",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Write pseudocode for module AddNewCustomers()\nAssume that there is at least one customer already in the loyalty scheme.",
+              "marks": 8,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "The requirements for AddNewCustomers() are changed. There may be no existing\ncustomers in the loyalty scheme.\nExplain the changes that will need to be made to the module AddNewCustomers()\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "A program is being developed to implement a customer loyalty scheme for a coffee shop.",
+        "The programmer has decided that the following data items need to be stored for each customer:",
+        "Data item Description",
+        "customer ID a unique six-digit string",
+        "an integer value that is increased by one for every cup of coffee the",
+        "points",
+        "customer orders",
+        "When a customer visits the shop and orders coffee, the scheme operates as follows:",
+        "• The total number of points is increased by the number of coffees ordered.",
+        "• If just one cup of coffee is ordered and the number of points goes above 10, then:",
+        "◦ the cup of coffee they have just ordered is given to them free of charge",
+        "◦ the number of points is reduced by 11.",
+        "• If the order is for multiple coffees and the number of points goes above 10, then:",
+        "◦ they get one coffee free of charge for every 11 points",
+        "◦ the number of points is reduced by 11 for each free coffee.",
+        "For example, the:",
+        "• customer currently has 9 points",
+        "• customer orders 16 cups of coffee",
+        "• total number of points now becomes 25",
+        "• customer gets 2 free coffees and now has 3 points left.",
+        "The programmer has defined a program module that is called every time a customer places an",
+        "order:",
+        "Module Description",
+        "• called with two integer parameters:",
+        "◦ the number of coffees ordered",
+        "CustomerOrder()",
+        "◦ the current number of points",
+        "• output a suitable message giving the number of free coffees",
+        "• return a value for the new points total."
+      ]
+    }
+  ]
+}

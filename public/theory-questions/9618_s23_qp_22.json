@@ -1,0 +1,392 @@
+{
+  "paperId": "9618_s23_qp_22",
+  "subjectCode": "9618",
+  "session": "s23",
+  "component": "22",
+  "totalMarks": 62,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Identify a more appropriate way of representing the postal costs.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Describe the advantages of your answer to part (a)(i) with reference to this program.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The lines of pseudocode contain features that make them easier to understand.\nState three of these features.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Give the appropriate data types for the following variables:\nValidAddress ______\nItemPostalCost ______\nItemStatus ______",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A program calculates the postal cost based on the weight of the item and its destination.",
+        "Calculations occur at various points in the program and these result in the choice of several",
+        "possible postal costs. The programmer has built these postal costs into the program.",
+        "For example, the postal cost of $3.75 is used in the following lines of pseudocode:",
+        "IF Weight < 250 AND ValidAddress = TRUE THEN",
+        "ItemPostalCost 3.75 // set postal cost for item to $3.75",
+        "ItemStatus \"Valid\" // item can be sent",
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write a pseudocode statement, using a function from the insert, to assign the value\ncorresponding to 17/11/2007 to MyDOB.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "MyDOB has been assigned a valid value representing the user’s date of birth.\nWrite a pseudocode statement to calculate the number of months from the month of the\nuser’s birth until the end of the year and to assign this to the variable NumMonths.\nFor example, if MyDOB contains a value representing 02/07/2008, the value 5 would be\nassigned to NumMonths.",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The program will output the day of the week corresponding to MyDOB.\nFor example, given the date 22/06/2023, the program will output \"Thursday\".\nAn algorithm is required. An array will be used to store the names of the days of the week.\nDefine the array and describe the algorithm in four steps.\nDo not use pseudocode statements in your answer.\nArray definition ______\nStep 1 ______\nStep 2 ______\nStep 3 ______\nStep 4 ______",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A program stores a user’s date of birth using a variable MyDOB of type DATE."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The diagram below represents an Abstract Data Type (ADT) implementation of the queue.\nEach data item is stored in a separate location in the data structure. During initial design, the\nqueue is limited to holding a maximum of 10 data items.\nThe operation of this queue may be summarised as follows:\n• The Front of Queue Pointer points to the next data item to be removed.\n• The End of Queue Pointer points to the last data item added.\n• The queue is circular so that locations can be reused.\n5 Red Front of Queue Pointer\n6 Green\n7 Blue\n8 Pink End of Queue Pointer",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Describe how the data items Orange and Yellow are added to the queue shown in the\ndiagram.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "The following diagram shows the state of the queue after several operations have been\nperformed. All queue locations have been used at least once.\n0 D4\n1 D3 End of Queue Pointer\n2 D27\n3 D8",
+              "marks": null,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "A program stores data in a text file. When data is read from the file, it is placed in a queue."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "D33"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "D17 Front of Queue Pointer"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "D2"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "D1"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "D45"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "The design of the queue is completed and the number of locations is increased.\nA function AddToQueue() has been written. It takes a string as a parameter and adds this to\nthe queue. The function will return TRUE if the string was added successfully.\nA procedure FileToQueue() will add each line from the file to the queue. This procedure\nwill end when all lines have been added or when the queue is full.\nDescribe the algorithm for procedure FileToQueue().\nDo not use pseudocode in your answer.\n\n4 A function GetNum() will:\n1. take two parameters: a string and a character\n2. count the number of times that the character occurs in the string\n3. return the count.\nAny comparison between characters needs to be case sensitive. For example, character 'a' and\ncharacter 'A' are not identical.\nWrite pseudocode for function GetNum().\n\n5 A programmer has produced the following pseudocode to output the square root of the numbers\nfrom 1 to 10.\nLine numbers are for reference only.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "D60",
+        "State the number of data items in the queue.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Num : REAL"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Explain why the program gives unexpected results.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Explain why the compiler does not identify this error.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Describe how a typical Integrated Development Environment (IDE) could be used to identify\nthis error.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11d",
+          "label": "(d)",
+          "text": "The pseudocode is converted into program code as part of a larger program.\nDuring compilation, a complex statement generates an error.\nThe programmer does not want to delete the complex statement but wants to change the\nstatement so that it is ignored by the compiler.\nState how this may be achieved.\n\n6 A procedure Square() will take an integer value in the range 1 to 9 as a parameter and output a\nnumber square.\nThe boundary of a number square is made up of the character representing the parameter value.\nThe inside of the number square is made up of the asterisk character (*).\nParameter value 1 2 3 4 ... 9\n1 22 3 33 4 444 ... 999999999\n22 3 * 3 4 * 4 9* 9\n* ******\n3 3 3 4 * *4 9** 9\n*****\n4 4 4 4 9*** 9\n****\nOutput 9* 9\n******\n9* 9\n******\n9** 9\n*****\n9 9\n*******\n999999999\nThe pseudocode OUTPUT command starts each output on a new line. For example, the following\nthree OUTPUT statements would result in the outputs as shown:\nOUTPUT \"Hello\"\nOUTPUT \"ginger\"\nOUTPUT \"cat\"\nResulting output:\nHello\nginger\ncat\nWrite pseudocode for procedure Square().\nParameter validation is not required.\n\n7 A computer system for a shop stores information about each customer. The items of information\ninclude name and address (both postal and email) together with payment details and order history.\nThe system also stores the product categories they are interested in and how they would like to be\ncontacted.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "The shop wants to add a program module that will generate emails to be sent to customers\nwho may be interested in receiving details of new products.",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "11ai",
+              "label": "(i)",
+              "text": "State three items of information that the new module would need. Justify your choice in\neach case.\nInformation ______\nJustification ______\nInformation ______\nJustification ______\nInformation ______\nJustification ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11aii",
+              "label": "(ii)",
+              "text": "Identify two items of customer information that would not be required by the new module.\nJustify your choice in each case.\nInformation ______\nJustification ______\nInformation ______\nJustification ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "The program includes a module to validate a Personal Identification Number (PIN). This is\nused when customers pay for goods using a bank card.\nA state‑transition diagram has been produced for this module.\nThe table show the inputs, outputs and states for this part of the program:\nCurrent state Input Output Next state\nS1 Input PIN S2\nS2 Re‑input PIN Display error S2\nS2 Cancel Re‑prompt S1\nS2 Valid PIN Enable payment S4\nS2 Too many tries Block Account S3\nComplete the state‑transition diagram to represent the information given in the table.\nS2\nSTART\nS1\nCancel | Re-prompt\n\n8 A computer shop assembles computers using items bought from several suppliers. A text file\nStock.txt contains information about each item.\nInformation for each item is stored as a single line in the Stock.txt file in the format:\n<ItemNum><SupplierCode><Description>\nValid item information is as follows:\nFormat Comment\nunique number for each item in the range\nItemNum 4 numeric characters\n″0001″ to ″5999″ inclusive\nSupplierCode 3 alphabetic characters to identify the supplier of the item\nDescription\na string a minimum of 12 characters\nThe file is organised in ascending order of ItemNum and does not contain all possible values in\nthe range.\nA programmer has started to define program modules as follows:\nModule Description\nOnlyAlpha() • called with a parameter of type string\n(already written)\n• returns TRUE if the string contains only alphabetic characters,\notherwise returns FALSE\nCheckInfo()\n• called with a parameter of type string representing a line of item\ninformation\n• checks to see whether the item information in the string is valid\n• returns TRUE if the item information is valid, otherwise returns\nFALSE",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Write pseudocode for module CheckInfo().\nModule OnlyAlpha() should be used as part of your solution.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "A new module is defined as follows:\nModule Description\nAddItem()\n• called with a parameter of type string representing valid information\nfor a new item that is not currently in the Stock.txt file\n• creates a new file NewStock.txt from the contents of the file\nStock.txt and adds the new item information at the appropriate\nplace in the NewStock.txt file\nAs a reminder, the file Stock.txt is organised in ascending order of ItemNum and does not\ncontain all possible values in the range.\nWrite pseudocode for module AddItem().",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "The program contains modules SuppExists() and CheckSupplier(). These have been\nwritten but contain errors. These modules are called from several places in the main program\nand testing of the main program (integration testing) has had to stop.\nIdentify a method that can be used to continue testing the main program before the errors in\nthese modules have been corrected and describe how this would work.\nMethod ______\nDescription ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 34,
+      "text": [
+        "Num 1.0",
+        "40 REPEAT",
+        "41 CALL DisplaySqrt(Num)",
+        "42 Num Num + 1.0",
+        "43 UNTIL Num > 10",
+        "50 PROCEDURE DisplaySqrt(BYREF ThisNum : REAL)",
+        "51 OUTPUT ThisNum",
+        "52 ThisNum SQRT(ThisNum) // SQRT returns the square root",
+        "53 OUTPUT \" has a square root of \", ThisNum",
+        "54 ENDPROCEDURE",
+        "The pseudocode is correctly converted into program code.",
+        "Function SQRT() is a library function and contains no errors.",
+        "The program code compiles without errors, but the program gives unexpected results. These are",
+        "caused by a design error."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "paperId": "9618_s26_qp_22",
+  "subjectCode": "9618",
+  "session": "s26",
+  "component": "22",
+  "totalMarks": 69,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "When the alarm system is initially installed, a password must be created. When the\npassword is initially entered, it is checked to ensure that it follows a set of validation rules. It\nis then permanently stored in the alarm system.\nFor a password to be valid it must follow these validation rules:\nRule 1: contain between six and eight characters inclusive.\nRule 2: contain at least one letter and one digit.\nRule 3: each character can only occur once.\nThe global variable Pass is used to store the password entered.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Complete the pseudocode to declare the variable to be used to hold the password.\nDECLARE Pass : ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Complete the pseudocode to check that a password contains between six and eight\ncharacters inclusive (rule 1).\nIF ______ (Pass) < 6 OR ______ (Pass) > ______ THEN\nOUTPUT \"Error\"\nOUTPUT \"The password has to contain between 6 and 8 characters.\"\nENDIF\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000003 * DFD",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Complete the pseudocode to check that a password entered contains at least one letter\nand one digit character (rule 2).\nDECLARE Index : INTEGER\nDECLARE Character : CHAR\nDECLARE LetterFlag, DigitFlag : ______\nDigitFlag FALSE\nLetterFlag ______\nFOR Index 1 TO ______ (Pass)\nCharacter ______ (Pass, ______ , ______)\nIF ______ (Character) = TRUE THEN\nDigitFlag ______\nELSE\nLetterFlag ______\nENDIF\nNEXT Index\nIF ______ (LetterFlag AND DigitFlag) THEN\nOUTPUT \"Error\"\nOUTPUT \"Password needs at least one letter and one digit.\"\nENDIF",
+              "marks": 7,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A state‑transition diagram is being created as part of the design process for the module,\nwhich will control the alarm system once it has been successfully installed. Two of the states\nalready identified are that the alarm is in:\n• standby mode\n• on mode (alarm system is active).",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Identify two other states that should be part of the state‑transition diagram.\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26 [Turn over\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000004 * DFD",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Two events that will cause a change of state are:\n• entering the password when the alarm system is in standby mode\n• entering the password when the alarm system is in on mode.\nIdentify three other events that would cause a change of state in the state‑transition\ndiagram for the alarm system.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The validation rules from 1(a) are given again:\nFor a password to be valid it must follow these validation rules:\nRule 1: contain between six and eight characters inclusive.\nRule 2: contain at least one letter and one digit.\nRule 3: each character can only occur once.\nComplete the table with test data that could be used to test the validation rules.\nEach example of test data given must:\n• be invalid for the specific rule being tested\n• be valid for the other two rules not being tested\n• test a different aspect of the rule being tested.\nTwo of the tests have been completed for you.\nrule being tested example of test data reason for invalid test data\nrule 1 1A password is too short\nrule 1\nrule 2\nrule 2\nrule 3 PASSWRD2 letters are repeated\nrule 3\nrule 3\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000005 * DFD",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Five outcomes that could be produced at the design stage in the program development\nlifecycle include:\n• state‑transition diagrams\n• pseudocode\n• test strategy\n• test plan\n• structured English.\nIdentify three other outcomes that could be produced at the design stage.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The design and testing stages are two of the stages in the program development lifecycle\nused when developing the program to control the alarm system.\nIdentify two other stages in the program development lifecycle.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "All the individual modules for the alarm system have now been written, tested and debugged\nas necessary. All these modules are combined to form the program, and further testing is\nnow needed.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1fi",
+              "label": "(i)",
+              "text": "Identify this method of testing.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1fii",
+              "label": "(ii)",
+              "text": "One of the modules does not work as expected when added to the program.\nIdentify and describe a testing method that can be used to address this problem, so that\nthe program can continue to be tested.\nmethod ______\ndescription ______\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26 [Turn over\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000006 * DFD",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "A program is being developed to control a simple alarm system to be used in a house. The alarm",
+        "has a control panel with a keypad and a screen to display text.",
+        "The keypad consists of 36 character keys:",
+        "• 26 upper‑case letter keys, allowing A to Z to be entered",
+        "• 10 digit keys, allowing 0 to 9 to be entered."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Explain the purpose of abstraction.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "State four items of data that must be stored each time a tool is hired.\nitem 1 ______\nitem 2 ______\nitem 3 ______\nitem 4 ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The computer system will have to process the tool hire data. One process is to cancel a tool\nhire booking.\nState two other processes that would be required.\nprocess 1 ______\nprocess 2 ______\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000007 * DFD",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A new computer system is being developed to help manage a tool hire business. A customer can",
+        "specify if they want to hire a tool for either half a day or a full day.",
+        "An abstract model for the new system is required."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A computer game uses a text file named WordList.txt containing 10 000 words, all in lower",
+        "case. Each word is unique and is stored on a separate line of the text file.",
+        "An efficient algorithm is needed to check that a word input by the user is stored in",
+        "WordList.txt. If the word is found, the line number where the word is stored must be output. If",
+        "the word is not found, the message \"Not Found\" must be output.",
+        "Complete the steps needed to describe the algorithm.",
+        "Do not include pseudocode statements in your answer.",
+        "The first three steps have been completed for you.",
+        "step 1: set line counter to 0",
+        "step 2: input a word",
+        "step 3: convert the word to lower case",
+        "[6]",
+        "© Cambridge University Press & Assessment 2026 9618/22/M/J/26 [Turn over",
+        "Trace ID: PC-CD04EDCFBD",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "9618/22 Question Paper June 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 9618/22 Question Paper June 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000008 * DFD"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the diagrams to show the state of both stacks after each group of operations has\nbeen performed.\nNote: you must include the top of stack pointer (TOS) and the current web address being\ndisplayed for each group diagram.\nafter group 1\nback stack forward stack\nWeb address currently displayed in the web browser: ______\nafter group 2\nback stack forward stack\nWeb address currently displayed in the web browser: ______\nafter group 3\nback stack forward stack\nWeb address currently displayed in the web browser: ______\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26 [Turn over\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000010 * DFD",
+          "marks": 6,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A stack is an Abstract Data Type (ADT)\nIdentify one other ADT and describe two features of the ADT.\nADT ______\nfeature 1 ______\nfeature 2 ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A desktop web browser stores the history of web addresses visited.",
+        "The web browser uses a back button and forward button to move between web pages",
+        "recently visited.",
+        "Two stacks are used when each of these buttons are clicked:",
+        "• back stack",
+        "• forward stack.",
+        "The back button is clicked to return to a previously visited web page.",
+        "The back button operates as follows:",
+        "• The web address currently being displayed by the browser is pushed onto the forward stack.",
+        "• The web address from the top of the back stack is popped.",
+        "• The web address popped is loaded by the web browser.",
+        "The forward button is clicked to revisit a web page previously visited.",
+        "The forward button operates as follows:",
+        "• The web address currently being displayed by the browser is pushed onto the back stack.",
+        "• The web address from the top of the forward stack is popped.",
+        "• The web address popped is loaded by the web browser.",
+        "The current state of the two stacks:",
+        "back stack forward stack",
+        "www.333.corp TOS",
+        "www.zzz.corp TOS www.111.home",
+        "www.aaa.home www.999.corp",
+        "www.ccc.my www.222.me",
+        "The top of stack pointer is represented by TOS.",
+        "The current web address being displayed by the web browser is: www.bbb.home",
+        "The browsing session continues; the buttons are clicked in sequence in the three groups:",
+        "group 1:",
+        "back button",
+        "group 2:",
+        "forward button",
+        "group 3:",
+        "forward button",
+        "forward button",
+        "forward button",
+        "© Cambridge University Press & Assessment 2026 9618/22/M/J/26",
+        "Trace ID: PC-CD04EDCFBD",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "9618/22 Question Paper June 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 9618/22 Question Paper June 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000009 * DFD"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the change that would have to be made to the bubble sort algorithm (algorithm A)\nso that the Numbers array would be sorted into descending order.\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000011 * DFD",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The programmer rewrites the bubble sort algorithm to make it more efficient.\nStudy algorithm B.\nAssume all the variables have been correctly declared.\nalgorithm B:\nBoundary 999\nREPEAT //Outer Loop\nNoSwaps TRUE\nFOR Index 1 TO Boundary //Inner Loop\nIF Numbers[Index] > Numbers[Index + 1] THEN\n//Start of block to swap neighbouring elements in the array\nTemp Numbers[Index]\nNumbers[Index] Numbers[Index + 1]\nNumbers[Index + 1] Temp\n//End of block to swap neighbouring elements in the array\nNoSwaps FALSE\nENDIF\nNEXT Index\nBoundary Boundary ‑ 1\nUNTIL NoSwaps = TRUE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Explain why the second bubble sort algorithm (algorithm B) is more efficient than the\nfirst bubble sort algorithm (algorithm A). Your answer must refer to both inner and\nouter loops.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "State the situation that will result in the outer loop iterating for the minimum number of\ntimes when the second bubble sort algorithm (algorithm B) is used.\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26 [Turn over\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000012 * DFD",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The programmer has defined a new procedure:\nPROCEDURE Swap(Num1 : INTEGER, Num2 : INTEGER)\nDECLARE Temp : INTEGER\nTemp Num1\nNum1 Num2\nNum2 Temp\nENDPROCEDURE\nThe programmer replaces the block of pseudocode in the algorithm that swaps the values in\ntwo neighbouring elements in the array with a call to this procedure.\nThe block of code:\nTemp Numbers[Index]\nNumbers[Index] Numbers[Index + 1]\nNumbers[Index + 1] Temp\nIs replaced by:\nCALL Swap(Numbers[Index], Numbers[Index + 1])\nThe Swap() procedure will not work as expected when used in the bubble sort algorithm.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Explain why the procedure Swap() will not work as expected.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "Write pseudocode to amend the version of the Swap() procedure given so that it will\nwork as expected.\nThe amended version of the Swap() procedure must not use global variables.\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000013 * DFD\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26 [Turn over\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000014 * DFD",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A programmer has defined a global 1D array Numbers of type INTEGER, which can store 1000",
+        "integers. The lower bound of the array Numbers is set to 1. Each element of the array has been",
+        "initialised with a random integer in the range 200 to 99 999.",
+        "The programmer has written a bubble sort algorithm to sort the array Numbers into",
+        "ascending order.",
+        "Study algorithm A.",
+        "Assume all the variables have been correctly declared.",
+        "algorithm A:",
+        "FOR LoopCounter 1 TO 999 //Outer Loop",
+        "FOR Index 1 TO 999 //Inner Loop",
+        "IF Numbers[Index] > Numbers[Index + 1] THEN",
+        "//Start of block to swap neighbouring elements in the array",
+        "Temp Numbers[Index]",
+        "Numbers[Index] Numbers[Index + 1]",
+        "Numbers[Index + 1] Temp",
+        "//End of block to swap neighbouring elements in the array",
+        "ENDIF",
+        "NEXT Index",
+        "NEXT LoopCounter"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write pseudocode for module AddPadding()\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26 [Turn over\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000016 * DFD",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The programmer has defined a global 2D array Grid to be used to create the cipher text.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Complete the pseudocode statement used to declare the global 2D array Grid\nDECLARE ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "The programmer has defined an additional program module as follows:\nmodule description\n• called with one parameter of type string representing the\ncorrectly padded plain text\n• populate the array Grid using the plain text so that it can\nbe used at a later point to create the cipher text\n• output the contents of the array Grid so it is\ndisplayed row‑by‑row\nusing the original example for the padded plain text:\nPopulateGrid()\nThis∆is∆a∆message∆∆∆∆∆∆∆∆\nthe output would be:\nThis\nis a\nmessa\nge\nWrite pseudocode for module PopulateGrid()\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000017 * DFD\n\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000018 * DFD\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000019 * DFD\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000020 * DFD\nreasonable effort has been made by the publisher (Cambridge University Press & Assessment) to trace copyright holders, but if any items requiring clearance\nhave unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in our Copyright\nAcknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live\nexamination series.\nCambridge International Education is the name of our awarding body and a part of Cambridge University Press & Assessment, which is a department of the\nUniversity of Cambridge.\n© Cambridge University Press & Assessment 2026 9618/22/M/J/26\nTrace ID: PC-CD04EDCFBD\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/",
+              "marks": 8,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "A program is being developed to encrypt a message.",
+        "The following terms are used in the encryption technique to be used:",
+        "term definition",
+        "plain text The original message before it is encrypted.",
+        "cipher text The encrypted version of the plain text.",
+        "The encryption method to be used is based on the algorithm for the Caesar Box Cipher. All plain",
+        "text messages to be encrypted must be 25 characters in length or less. If a message is less than",
+        "25 characters in length, then spaces are added to the end to make the padded plain text the",
+        "required length.",
+        "A square grid of five columns and five rows is used. The padded plain text message is put into",
+        "the grid row by row. The cipher text is obtained by reading the grid column by column.",
+        "For example:",
+        "plain text: This is a message",
+        "The number of characters in the original plain text, including spaces, is 17.",
+        "plain text with added spaces at the end: This∆is∆a∆message∆∆∆∆∆∆∆∆",
+        "The character ∆ is used to indicate a space in the padded plain text.",
+        "The grid filled, row by row, with the padded plain text.",
+        "T h i s ∆",
+        "i s ∆ a ∆",
+        "m e s s a",
+        "g e ∆ ∆ ∆",
+        "∆ ∆ ∆ ∆ ∆",
+        "The cipher text is obtained by reading the grid column by column.",
+        "cipher text: Timg∆hsee∆i∆s∆∆sas∆∆∆∆a∆∆",
+        "The programmer has defined the first program module as:",
+        "module description",
+        "• user prompt for and input of plain text",
+        "• check plain text contains between 1 and 25 characters inclusive DO NOT WRITE IN THIS MARGIN",
+        "• re‑input of plain text until it contains between 1 and 25 characters",
+        "AddPadding()",
+        "• if required, additional space characters are added to the end of",
+        "the plain text to ensure it contains exactly 25 characters",
+        "• return of amended plain text",
+        "© Cambridge University Press & Assessment 2026 9618/22/M/J/26",
+        "Trace ID: PC-CD04EDCFBD",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "9618/22 Question Paper June 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 9618/22 Question Paper June 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000015 * DFD"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "paperId": "0478_s21_qp_23",
+  "subjectCode": "0478",
+  "session": "s21",
+  "component": "23",
+  "totalMarks": 41,
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers must have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Identify one constant you could have used for Task 1. Give the value that would be\nassigned to the constant and explain its use.\nConstant ______\nValue ______\nUse ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Identify one variable you could have used for Task 1 and explain its use.\nVariable ______\nUse ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Describe one array you could have used for Task 1. Include the name, data type, length,\nsample data and use for that array.",
+              "marks": 4,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm for Task 2, using pseudocode, programming statements or a flowchart. It\nis not necessary to show details completed in Task 1.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how you could change your program in Task 1 to allow the number of options\navailable to be increased to six.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program counts the number of times students enter preference 1 (‘strongly\nagree’) for each option (A to E), part of Task 3. Any programming statements used in your\nanswer must be fully explained.\n\nSection B",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw a line to connect each Data Type to the most appropriate Description.",
+        "Data Type Description",
+        "Real Must be a whole number",
+        "String Must be one of two values",
+        "Integer May be any number",
+        "Boolean May contain any combination of characters",
+        "[3]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Identify a suitable validation check that could be used for each piece of normal test data and",
+        "describe how it would be used. Each validation check must be different.",
+        "Test data for entering an email address: id27@cambridgeuniversity.com",
+        "Validation check name .....................................................................................................................",
+        "Description of use ............................................................................................................................",
+        "Test data for entering a year: 2021",
+        "Validation check name .....................................................................................................................",
+        "Description of use ............................................................................................................................",
+        "Test data for entering a name: Ericson-Bower",
+        "Validation check name .....................................................................................................................",
+        "Description of use ............................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The pseudocode algorithm should allow a user to input the number of scores to be entered and",
+        "then enter the scores. The scores are totalled, the total is output and the option to enter another",
+        "set of scores is offered.",
+        "1 Count ← 0",
+        "2 REPEAT",
+        "3 FullScore ← 20",
+        "4 INPUT Number"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR StoreLoop ← 1 TO Number"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Score"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FullScore ← FullScore"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL StoreLoop = Number"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The full score is \", FullScore"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Another set of scores (Y or N)?\""
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT Another"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Another = \"N\""
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count ← 1"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Identify the four errors in the pseudocode and suggest a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Show how you could change the algorithm to store the individual scores in the array\nScoreArray[], then find and print the average score once the scores have all been entered.\n\n5 The flowchart represents an algorithm.\nThe algorithm will terminate if 0 is entered at the Op input.\nSTART\nINPUT\nOp\nIS\nNo\nOp = 0 ?\nYes\nINPUT\nValue1\nINPUT\nValue2\nIS\nYes\nAns Value1 + Value2\nOp = 1 ?\nNo\nEND\nIS\nYes\nAns Value1 - Value2\nOp = 2 ?\nNo\nIS\nYes\nAns Value1 * Value2\nOp = 3 ?\nNo\nIS\nYes\nAns Value1 / Value2\nOp = 4 ?\nNo\nOUTPUT\n\"Input Error\"",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using this input data:\n1, 87, 14, 3, 2, 30, 5, 10, 6, 4, 10, 2, 0, 2, 90, 6\nOp Value1 Value2 Ans OUTPUT",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "State the purpose of the algorithm.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16c",
+          "label": "(c)",
+          "text": "Suggest an addition that could be made to the algorithm to make it more useful.\n\n6 A car hire company uses a database table, TREAD, to store details of the cars. The table has\nfields to represent each car’s licence number, mileage, and the tread depth of each of its four\ntyres.",
+          "marks": 1,
+          "type": "suggest",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Suggest suitable names for each of the fields described.\nField name",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid to display cars where all four tyres have a tread depth\nof less than 2. Display all the fields, using the field names you created in part (a). The output\nshould be sorted by licence number.\nField:\nTable:\nSort:\nShow:\no o o o o o\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "UNTIL Count = 1"
+      ]
+    }
+  ]
+}

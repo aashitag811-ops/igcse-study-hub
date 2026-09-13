@@ -1,0 +1,395 @@
+{
+  "paperId": "9608_w18_qp_22",
+  "subjectCode": "9608",
+  "session": "w18",
+  "component": "22",
+  "totalMarks": 55,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The following table contains statements written in pseudocode.\nShow the type of programming construct each statement represents.\nPut a tick (3) in the appropriate column for each statement.\nRepetition\nStatement Selection Assignment\n(Iteration)\nIndex Index + 5\nFOR Count 1 TO 100\nTempValue[Index] ReadValue(SensorID)\nIF Index < 30\nUNTIL DayNumber > 7\nOTHERWISE OUTPUT \"ERROR\"",
+          "marks": 6,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The following table contains statements written in pseudocode.\nGive the most appropriate data type for the variable used in each statement.\nStatement Data type\nRevision 'B'\nMaxValue 13.3\nArrayFull TRUE\nActivity \"Design\"\nNumberOfEdits 270",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The following table contains statements written in pseudocode.\nComplete the table by evaluating each expression using the values from part (b)(i).\nIf any expression is invalid, write “ERROR” in the Evaluates to column.\nFor the built-in functions list, refer to the Appendix on page 16.\nExpression Evaluates to\nMID(Activity, 3, 4) & \"ature\"\nINT(MaxValue * 2)\nArrayFull AND NumberOfEdits < 300\nASC(Revision + 1)\nActivity = \"Testing\" OR Revision = 'A'",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write pseudocode for the CalcPoints() function.\nYour solution should follow the flowchart as closely as possible.",
+              "marks": 7,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "The value of the total amount spent is calculated by an Electronic Point Of Sale (EPOS)\nsystem. This system does not have the prices of all items. For these items, a valid total\namount has to be entered manually.\nA function, GetTotal(), prompts the user to input this value.\nIf the user enters a valid value greater than 0 and less than 10 000, the function returns\nthe value. The function prompts the user to re-enter the value each time the user enters\nan invalid value.\nWrite pseudocode to complete the GetTotal() function.\nFUNCTION GetTotal() RETURNS REAL\nENDFUNCTION",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The function CalcPoints() is written in a high-level language. It has been checked and it\ndoes not contain any syntax or logic errors.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Name and describe one other type of error that the high-level language code could\ncontain.\nName ______\nDescription ______",
+              "marks": 2,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The function CalcPoints() is tested using white-box testing.\nState two different values of Total that could be used to test different paths through the\nalgorithm. Justify your choices.\nValue ______\nJustification ______\nValue ______\nJustification ______",
+              "marks": null,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Shop customers have a discount card with a unique card number. Customers collect points each",
+        "time they buy items. The number of points they collect depends on:",
+        "• the total amount they spend",
+        "• the number of points already collected.",
+        "The function CalcPoints() takes the card number and the total amount spent as parameters. It",
+        "returns the number of new points collected. A flowchart for the function is shown.",
+        "The function uses the following variables and functions.",
+        "Identifier Data type Description",
+        "CardNum STRING A numeric string representing the unique card number",
+        "OldPoints INTEGER The number of points already collected",
+        "NewPoints INTEGER The number of new points collected",
+        "Total REAL The amount spent",
+        "Takes the card number as a parameter and returns the",
+        "GetPoints() FUNCTION",
+        "number of points already collected",
+        "INT() FUNCTION Refer to the Appendix on page 16",
+        "START",
+        "Is",
+        "YES",
+        "Total > 100 ?",
+        "OldPoints",
+        "NO",
+        "GetPoints(CardNum)",
+        "Is",
+        "NO",
+        "OldPoints > 2000 ?",
+        "YES",
+        "NewPoints INT(Total * 1.2)",
+        "NewPoints 0",
+        "NewPoints INT(Total * 1.1)",
+        "RETURN NewPoints",
+        "END"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Programming is sometimes referred to as a transferable skill.\nYou are asked to work on a program written in a language you are not familiar with.\nExplain how transferable skills would help you work on the program.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Stepwise refinement is often used in the development of an algorithm.\nDescribe stepwise refinement.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "A program needs to search through 1000 elements of an unsorted array to find a given value.\nThe program will output:\n• either the position in the array of the value\n• or the message “Not Found”\nOutline the steps the program needs to follow.\nDo not write pseudocode or program code.\n\nQuestion 4 begins on the next page.",
+          "marks": 4,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Examine the pseudocode. Complete the following table.\nAnswer\nThe identifier name of a local variable\nThe identifier name of a user-defined procedure\nThe identifier name of a user-defined function\nThe number of dimensions of ResultArray\nThe scope of FileData",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Describe in detail the purpose of lines 109 to 117 in the ScanFile() function. Do not\nuse pseudocode in your answer.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The function ScanFile() is to be amended so that the first 7 characters of FileData are\nnot written to the array.\nWrite program code to implement this amended ScanFile() function.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "State how structured programming languages support the implementation of sub-tasks.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "State a benefit of using sub-tasks.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "ResultArray is a 1D array of type STRING. It contains 100 elements.\nWrite program code to declare ResultArray and set all elements to the value \"NO DATA\".\nProgramming language ______\nProgram code\n\nQuestion 5 begins on the next page.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "Part of a program written in pseudocode is shown.",
+        "010 DECLARE NextArrayElement : INTEGER",
+        "100 FUNCTION ScanFile(SearchString: STRING) RETURNS INTEGER",
+        "102 DECLARE FileData : STRING",
+        "103 DECLARE FileLine : INTEGER",
+        "105 NextArrayElement 1",
+        "106 FileLine 1",
+        "107 FileData ReadFileLine(\"DataFile.txt\", FileLine)",
+        "109 WHILE FileData <> \"\"",
+        "110 IF LEFT(FileData, 7) = SearchString",
+        "111 THEN",
+        "112 ResultArray[NextArrayElement] FileData",
+        "113 NextArrayElement NextArrayElement + 1",
+        "114 ENDIF",
+        "115 FileLine FileLine + 1",
+        "116 FileData ReadFileLine(\"DataFile.txt\", FileLine)",
+        "117 ENDWHILE",
+        "119 CALL ScanCompleted()",
+        "120 RETURN FileLine",
+        "122 ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The procedure LineNumber() will:",
+        "• read data from a text file",
+        "• modify each line by adding a line number, and the string (\": \")",
+        "• output each modified line.",
+        "For example, when the procedure reads MyFile.txt, the output is:",
+        "10: <First line of MyFile.txt>",
+        "15: <Second line of MyFile.txt>",
+        "20: <Third line of MyFile.txt>",
+        "350: <Last line of MyFile.txt>",
+        "The procedure takes three parameters:",
+        "Identifier Data type Description",
+        "FileName STRING The name of the text file",
+        "StartNumber INTEGER The first line number to be added",
+        "StepNumber INTEGER The line number increment",
+        "In this example, the procedure call would be:",
+        "CALL LineNumber(\"MyFile.txt\", 10, 5)",
+        "After every 20 lines, the program outputs a message asking whether the user wants to continue.",
+        "The program ends when the user enters an 'N' or the end of file is reached.",
+        "Write pseudocode for the LineNumber() procedure.",
+        "[11]",
+        "Appendix",
+        "Built-in functions (pseudocode)",
+        "Each function returns an error if the function call is not properly formed.",
+        "MID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING",
+        "returns a string of length y starting at position x from ThisString",
+        "Example: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"",
+        "LENGTH(ThisString : STRING) RETURNS INTEGER",
+        "returns the integer value representing the length of ThisString",
+        "Example: LENGTH(\"Happy Days\") returns 10",
+        "LEFT(ThisString : STRING, x : INTEGER) RETURNS STRING",
+        "returns leftmost x characters from ThisString",
+        "Example: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"",
+        "RIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING",
+        "returns rightmost x characters from ThisString",
+        "Example: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"",
+        "NUM_TO_STRING(x : REAL) RETURNS STRING",
+        "returns a string representation of a numeric value.",
+        "Example: If x has the value 87.5 then NUM_TO_STRING(x) will return \"87.5\"",
+        "Note: This function will also work if x is of type integer.",
+        "INT(x : REAL) RETURNS INTEGER",
+        "returns the integer part of x",
+        "Example: INT(27.5415) returns 27",
+        "ASC(ThisChar : CHAR) RETURNS INTEGER",
+        "returns the ASCII value of character ThisChar",
+        "Example: ASC('A') returns 65",
+        "Operators (pseudocode)",
+        "Operator Description",
+        "Concatenates (joins) two strings",
+        "Example: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"",
+        "Performs a logical AND on two Boolean values",
+        "AND",
+        "Example: TRUE AND FALSE produces FALSE",
+        "Performs a logical OR on two Boolean values",
+        "OR",
+        "Example: TRUE OR FALSE produces TRUE"
+      ]
+    }
+  ]
+}

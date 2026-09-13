@@ -1,0 +1,408 @@
+{
+  "paperId": "9618_w23_qp_22",
+  "subjectCode": "9618",
+  "session": "w23",
+  "component": "22",
+  "totalMarks": 57,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The following identifier table shows some of the data that will be stored for each order.\nComplete the identifier table by adding meaningful variable names and appropriate data\ntypes.\nExample\nExplanation Variable name Data type\nvalue\n\"Mr Khan\" The name of the customer\n3 The number of items in the order\nTRUE\nTo indicate whether this is a new customer\n15.75\nThe deposit paid by the customer",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Other variables in the program have example values as shown:\nVariable Example value\nTotal 124.00\nDepRate 2.00\nDescription \"AB12345:Cleaning Brush (small)\"\nComplete the table by evaluating each expression using the example values.\nExpression Evaluates to\n(Total * DepRate) + 1.5\nRIGHT(Description, 7)\n(LENGTH(Description) - 8) > 16\nNUM_TO_STR(INT(DepRate * 10)) & '%'",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The data that needs to be stored for each customer order in part (a) is not all of the same\ntype.\nDescribe an effective way of storing this data for many customer orders while the program is\nrunning.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A shop sells car accessories. A customer order is created if an item cannot be supplied from",
+        "current stock. A program is being developed to create and manage the customer orders."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Draw a program flowchart to represent the algorithm.\nSTART\nEND",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The solution to the algorithm includes iteration.\nGive the name of a suitable loop structure that could be used.\nJustify your answer.\nName ______\nJustification ______",
+          "marks": 2,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "An algorithm will:",
+        "1. input a sequence of integer values, one at a time",
+        "2. ignore all values until the value 27 is input, then sum the remaining values in the sequence",
+        "3. stop summing values when the value 0 is input and then output the sum of the values."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The linked list is implemented using two variables and two 1D arrays as shown.\nThe pointer variables and the elements of the Pointer array store the indices (index numbers)\nof elements in the Data array.\nComplete the diagram to show how the linked list as shown above may be represented using\nthe variables and arrays.\nVariable Value\nStart_Pointer\nFree_List_Pointer\nIndex Data array Pointer array\n1 D32 2\n2 3",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "The diagram represents a linked list Abstract Data Type (ADT).",
+        "• Ptr1 is the start pointer. Ptr2 is the free list pointer.",
+        "• Labels D40, D32, D11 and D100 represent the data items of nodes in the list.",
+        "• Labels F1, F2, F3 and F4 represent the data items of nodes in the free list.",
+        "• The symbol Ø represents a null pointer.",
+        "Ptr1",
+        "D40 D32 D11 D100 Ø",
+        "Ptr2",
+        "F1 F2 F3 F4 Ø"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The original linked list is to be modified. A new node D6 is inserted between nodes D32 and\nD11.\nPtr1\nD40 D32 D11 D100 Ø\nPtr2\nF1 F2 F3 F4 Ø\nThe algorithm required is expressed in four steps as shown.\nComplete the steps.\n1. Assign the data item ______ to ______ .\n2. Set the ______ of this node to point to ______ .\n3. Set Ptr2 to point to ______ .\n4. Set pointer of ______ to point to ______ .\n\n4 A procedure Count() will:\n1. input a value (all values will be positive integers)\n2. count the number of odd values and count the number of even values\n3. repeat from step 1 until the value input is 99\n4. output the two count values, with a suitable message.\nThe value 99 must not be counted.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write pseudocode for the procedure Count().",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The procedure Count() is to be tested.\nTypical test data would consist of odd and even values, for example:\n23, 5, 64, 100, 2002, 1, 8, 900, 99\nThe purpose of this test would be to test a typical mix of even and odd values and check the\ntotals.\nGive three test data sequences that may be used to test different aspects of the procedure.\nDo not include invalid data.\nSequence 1:\nTest data ______\nPurpose of test. ______\nSequence 2:\nTest data ______\nPurpose of test. ______\nSequence 3:\nTest data ______\nPurpose of test. ______",
+          "marks": null,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "D40",
+        "6 F2 7",
+        "[5]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A global 1D array of integers contains four elements, which are assigned values as shown:",
+        "Mix[1] ← 1",
+        "Mix[2] ← 3",
+        "Mix[3] ← 4",
+        "Mix[4] ← 2",
+        "A procedure Process() manipulates the values in the array.",
+        "The procedure is written in pseudocode:",
+        "PROCEDURE Process(Start : INTEGER)",
+        "DECLARE Value, Index, Count : INTEGER",
+        "Index ← Start",
+        "Count ← 0",
+        "REPEAT",
+        "Value ← Mix[Index]",
+        "Mix[Index] ← Mix[Index] - 1",
+        "Index ← Value",
+        "Count ← Count + 1",
+        "UNTIL Count = 5",
+        "Mix[4] ← Count * Index",
+        "ENDPROCEDURE",
+        "Complete the trace table on the opposite page by dry running the procedure when it is called as",
+        "follows:",
+        "CALL Process(3)",
+        "Index Value Count Mix[1] Mix[2] Mix[3] Mix[4]",
+        "[6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A procedure CreateFiles() will take two parameters:\n• a string representing a file name\n• an integer representing the number of files to be created.\nThe procedure will create the number of text files specified.\nEach file is given a different name. Each file name is formed by concatenating the file name\nwith a suffix based on the file number. The suffix is always three characters.\nFor example, the call CreateFiles(\"TestData\", 3) would result in the creation of the\nthree files, TestData.001, TestData.002 and TestData.003.\nEach file will contain a single line. For example, file TestData.002 would contain the string:\nThis is File TestData.002\nWrite pseudocode for CreateFiles().\nAssume both parameters are valid and that the integer value is between 1 and 999, inclusive.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A module CheckFiles() will count the number of files produced by CreateFiles() in\npart (a).\nCheckFiles() will take a string representing a file name and return the number of files\nfound.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Identify the type of module that should be used for CheckFiles().",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Write the module header for CheckFiles().",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "State the file mode that should be used in CheckFiles().",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Complete the structure chart for these modules.\nModule-A()",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Explain the meaning of the diamond symbol as used in the diagram in part (a).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A program contains six modules:",
+        "Pseudocode module header",
+        "PROCEDURE Module-A()",
+        "PROCEDURE Module-X(T1 : INTEGER, S2 : REAL)",
+        "PROCEDURE Reset(BYREF Code : INTEGER)",
+        "FUNCTION Restore(OldCode : INTEGER) RETURNS BOOLEAN",
+        "FUNCTION Module-Y(RA : INTEGER, RB : BOOLEAN) RETURNS BOOLEAN",
+        "FUNCTION Module-Z(SA : INTEGER) RETURNS INTEGER",
+        "Module-X() calls Reset()",
+        "Module-Y() calls Restore()"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module GetPort().\nAssume DestinationID contains a valid three-digit string.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Copies of the same program will run on each computer. The program contains a global\nvariable MyID of type string, which contains the unique ID of the computer in which the\nprogram is running.\nWhen messages are received, they are placed on one of two stacks. Stack 1 is used for\nmessages that have reached their destination and stack 2 is used for messages that will be\nforwarded on to another computer.\nAdditional modules are defined:\nModule Description\n• takes two parameters:\n○ a string representing a message\nStackMsg() ○ an integer representing the stack number\n(already written) • adds the message to the required stack\n• returns TRUE if the message is added to the required stack,\notherwise returns FALSE\n• takes a message as a parameter of type string\n• ignores any message with a zero-length data field\n• extract the DestinationID from the message\n• checks whether the DestinationID is this computer or\nProcessMsg()\nwhether the message is to be forwarded\n• uses StackMsg() to add the message to the appropriate\nstack\n• outputs an error if the message could not be added to the\nstack\nWrite pseudocode for module ProcessMsg().\nModule StackMsg() must be used.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The program contains a module GetFile() which receives text files sent from another\ncomputer.\nLines from the file are sent one at a time. Each message contains one line and ProcessMsg()\nfrom part (b) adds each message as it is received onto stack 1.\nModule GetFile() removes messages from stack 1 and writes the data to a text file.\nThere is a problem. Under certain circumstances, the received file does not appear as\nexpected.\nAssume that while a file is being received ProcessMsg() receives only messages containing\nlines from the file.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "Describe the circumstances and explain the problem.\nCircumstances ______\nExplanation ______",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "Suggest a more appropriate Abstract Data Type that could be used to store the messages\nthat would not have the same problem.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "suggest",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "A class of students are developing a program to send data between computers. Many computers",
+        "are connected together to form a wired network. Serial ports are used to connect one computer to",
+        "another.",
+        "Each computer:",
+        "• is assigned a unique three-digit ID",
+        "• has three ports, each identified by an integer value",
+        "• is connected to between one and three other computers.",
+        "Data is sent as individual message strings.",
+        "Each string contains the destination ID (the ID of the computer that is to receive the message)",
+        "followed by the data:",
+        "<DestinationID><Data>",
+        "Messages may pass through several computers on the way to their destination.",
+        "When a message arrives at a computer, that is not the destination, the program needs to forward",
+        "it on to another computer using one of its serial ports.",
+        "The port to use is obtained from information that is stored in an array RouteTable.",
+        "RouteTable is a global 2D array of integers. It is declared in pseudocode as follows:",
+        "DECLARE RouteTable : ARRAY[1:6,1:3] OF INTEGER",
+        "The values in the first two columns of RouteTable define a range of ID values.",
+        "Column 3 gives the corresponding port number to use when forwarding the message to a computer",
+        "with an ID within this range.",
+        "For example, the contents of RouteTable could be:",
+        "Column 1 Column 2 Column 3",
+        "Row 1 100 199 1",
+        "200 259 2",
+        "Row 2",
+        "−1 <undefined> <undefined>",
+        "Row 3",
+        "Row 4 260 399 2",
+        "Row 5 400 599 3",
+        "600 999 1",
+        "Row 6",
+        "In this example, a message that arrives with a DestinationID of \"283\" will be forwarded using",
+        "port 2.",
+        "Row 3 in the example shows an unused row. These may occur anywhere. Unused rows have the",
+        "column 1 element set to −1. The value of unused elements in the other two columns is undefined.",
+        "The programmer has defined the first program module as follows:",
+        "Module Description",
+        "• takes a DestinationID as a parameter of type string",
+        "• searches for the range corresponding to the DestinationID",
+        "GetPort()",
+        "in the array",
+        "• returns the port number, or returns −1 if no corresponding",
+        "range is found"
+      ]
+    }
+  ]
+}

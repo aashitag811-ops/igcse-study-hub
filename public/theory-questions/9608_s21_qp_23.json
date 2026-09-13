@@ -1,0 +1,425 @@
+{
+  "paperId": "9608_s21_qp_23",
+  "subjectCode": "9608",
+  "session": "s21",
+  "component": "23",
+  "totalMarks": 69,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Algorithms usually consist of three different types of activity.\nComplete the following table.\nWrite each example statement in program code and state the programming language used.\nThe third activity has already been given.\nProgramming\nActivity Example statement in program code\nlanguage\nOUTPUT",
+          "marks": 5,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "An algorithm searches a 1D array to find the first index of an element that contains a given\nvalue. If the value is found, the index of that element is returned.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "State an appropriate loop structure for this algorithm. Justify your choice.\nLoop structure ______\nJustification ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Give two possible reasons why the search for the value in part (b)(i) would end.\nYou should assume there is no error.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Each pseudocode statement in the following table may contain an error due to the incorrect\nuse of the function or operator.\nDescribe the error in each case, or write 'NO ERROR' if the statement contains no error.\nRefer to the Appendix on pages 22 and 23 for the list of built-in pseudocode functions and\noperators.\nStatement Error\nCode RIGHT(\"Cap\" * 3, 2)\nValid IS_NUM(3.14159)\nNextChar MID(ThisString, Index), 1",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "After using a program for some time, a user notices a fault in the program.\nDescribe the term program fault.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Good programming practice may help to avoid faults. The use of sensible identifier names is\none example of good practice.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Explain the reason for using sensible identifier names.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "State three other examples of good programming practice.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A programmer chooses data to test each path through her program.\nIdentify the type of testing that the programmer has decided to perform.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The process of decomposition is often applied to a programming problem.\nDescribe the process of decomposition.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Result is a 1D array of type STRING. It contains 100 elements.\nDraw a program flowchart for an algorithm that will output each element in the array.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The program flowchart for part of an algorithm from a mobile phone program is shown.\nIdentifier Active is a global variable of type BOOLEAN.\nSTART\nSet Online to FALSE\nNO\nIs Online =\nFALSE ?\nEND\nYES\nNO\nIs Active =\nTRUE ?\nYES\nCALL Reset()\nCALL Sync()\nIs Active =\nYES\nFALSE ?\nNO\nCALL Error(\"No\nSignal\")\nSet Online to TRUE\nCALL ReCheck()\nWrite pseudocode to implement the algorithm represented by the flowchart.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Complete the trace table by performing a dry run of the function when it is called as\nfollows:\nAnswer Check(\"74.0,4.6,3x2\")\nNote, there are no space characters in the string shown.\nResult Count Index NextChar",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "State the value returned by the function when it is called as shown in part (a)(i).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A number group is a string of characters that represents an integer or decimal value. A comma\nseparates number groups.\nFor example, \"74.0\" is a number group in the string \"74.0,4.6,3x2\".\nThe function Check() is intended to analyse the number groups in the parameter passed.\nThe function returns:\n• a count of the number groups in the parameter passed\nor\n• −1 if there are less than three number groups in the string or if any non-numeric\ncharacters occur in the string (other than decimal point and comma).\nThere is an error in the algorithm causing an incorrect value to be returned by the function.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Explain why this error can occur.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Describe how the algorithm could be amended to correct the error.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "A dry run of a pseudocode algorithm may help to locate logic errors.\nGive another type of program error and describe how it can occur.\nType of error ______\nDescription ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "Study the following pseudocode for a string handling function Check().",
+        "Refer to the Appendix on pages 22 and 23 for the list of built-in pseudocode functions and",
+        "operators.",
+        "FUNCTION Check(InString : STRING) RETURNS INTEGER",
+        "DECLARE Index, Result, Count : INTEGER",
+        "DECLARE NextChar : CHAR",
+        "Result 0",
+        "Count 1",
+        "FOR Index 1 TO LENGTH(InString)",
+        "NextChar MID(InString, Index, 1)",
+        "IF (NextChar >= '0' AND NextChar <= '9') OR NextChar = '.'",
+        "THEN",
+        "Result Result + 1",
+        "ELSE",
+        "IF NextChar = ','",
+        "THEN",
+        "Count Count + 1",
+        "ELSE",
+        "Result -1",
+        "ENDIF",
+        "ENDIF",
+        "ENDFOR",
+        "IF Count < 3",
+        "THEN",
+        "RETURN -1",
+        "ELSE",
+        "RETURN Result",
+        "ENDIF",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write pseudocode for a function GroupNum(), which takes a telephone number and a\ntemplate as parameter strings and returns a formatted string.\nYou may assume that the template and telephone number are valid.\nRefer to the Appendix on pages 22 and 23 for the list of built-in pseudocode functions and\noperators.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The function GroupNum() is to be extended to include parameter checking.\nState one check that could be applied to each parameter.\nGive an example of test data that could be used to demonstrate that each check identifies\ninvalid data.\nThe type of check must be different for each parameter.\nTelephone number check ______\nTest data ______\nTemplate check ______\nTest data ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A program stores a contact list of telephone numbers. Each telephone number is stored as a",
+        "string of six or more numeric characters.",
+        "Before they are displayed, number strings are formatted to make them easier to read. This involves",
+        "forming the characters into groups, separated by the space character.",
+        "The maximum length of a number group is five characters.",
+        "Different numbers may have different groupings. A template string is used to define the grouping.",
+        "For example:",
+        "Number string Template string Formatted string",
+        "\"01223553998\" \"53\" \"01223 553 998\"",
+        "\"509700101\" \"222\" \"50 97 00 101\"",
+        "\"4044496128\" \"33\" \"404 449 6128\"",
+        "For the first row, template \"53\" results in a formatted string comprising:",
+        "• the first five characters in the first group",
+        "• a space character",
+        "• the next three characters in the second group",
+        "• a space character",
+        "• the remaining characters from the number string."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module CheckBackupFile().",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Write program code for a module GroupReport(), which will summarise the stock data for\na given product group.\nThe product group will be passed to the module as a string. The total value of items is\ncalculated by multiplying the cost by the quantity.\nAn example of the output for group ABLK is as follows:\nGroup: ABLK\nNumber of items in Group: 11\nTotal value of items in Group: 387.89\nIf no items are found for group ABLK, the output is as follows:\nThere are no items in Group: ABLK\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": null,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Two additional modules are required:\nModule Description\n• called with a STRING representing a product group\n(for example, \"ABLK\")\nLookup()\n• searches the Summary array for the group\n• returns the index position or returns −1 if not found\n• stores each product group name (found in the\nStockID array) into the Summary array, if not there\nalready\nGroupSummary()\n• calls Lookup() to check whether the name is\nalready in the Summary array\n• returns the number of product groups added to the\nSummary array\nYou can assume:\n• all elements of the Summary array have been initialised to the value \"\" before\nGroupSummary() is called\n• there will be no more than 500 product groups.\nWrite program code for the module GroupSummary().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nIS_NUM(ThisString : STRING) RETURNS BOOLEAN\nreturns the value TRUE if ThisString contains only numeric characters ('0' to '9').\nExample: IS_NUM(\"123a\") returns FALSE\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A program stores data about stock items in four global 1D arrays as follows:",
+        "Example Initial data",
+        "Array Data type Description",
+        "data value value",
+        "the stock item ID",
+        "StockID STRING (eight alpha-numeric \"ABLK0001\" \"\"",
+        "characters)",
+        "a description of the item",
+        "Description STRING \"torch\" \"\"",
+        "(alphabetic characters only)",
+        "Quantity INTEGER 6 0",
+        "the number in stock",
+        "Cost REAL 4.80 0.0",
+        "the cost of the item",
+        "• Each array contains 10 000 elements.",
+        "• Elements with the same index relate to the same stock item. For example, StockID[5]",
+        "contains the ID for the product whose description is in Description[5].",
+        "• The StockID array is not sorted and unused elements may occur at any index position.",
+        "• Unused elements are assigned the initial data value shown in the table above.",
+        "• The first four characters of the StockID represent a product group. The last four characters",
+        "represent the item within the group.",
+        "The program is to be modified so that:",
+        "• data from the arrays are stored in a text file for backup purposes. Data from unused elements",
+        "are not stored in the file.",
+        "• a Summary array is added. This will be a global 1D array of 500 elements of type STRING.",
+        "Each product group will occur once in the array, for example \"ABLK\" for the item in the table",
+        "above.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "• prompts and inputs a filename",
+        "GetValidFilename()",
+        "• returns a valid filename as a STRING",
+        "• calls GetValidFilename() for a filename",
+        "• checks if the file is empty",
+        "CheckBackupFile()",
+        "• If the file is not empty ask the user to confirm that overwrite",
+        "is intended. If not intended allow the user to re-input a",
+        "different filename.",
+        "• returns the filename."
+      ]
+    }
+  ]
+}

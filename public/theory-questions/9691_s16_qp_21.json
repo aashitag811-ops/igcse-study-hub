@@ -1,0 +1,364 @@
+{
+  "paperId": "9691_s16_qp_21",
+  "subjectCode": "9691",
+  "session": "s16",
+  "component": "21",
+  "totalMarks": 75,
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Write program code for the procedure\nPrintNameLine(Symbol, Name)\nProgramming language ______\nCode ______\n\nZara uses top-down design and refines her solution:\nPROCEDURE PrintTop2Lines(Symbol : CHAR, LabelWidth : INTEGER)\nCALL PrintGapLine(Symbol, LabelWidth)\nCALL PrintSymbolLine(Symbol, LabelWidth)\nENDPROCEDURE\nPROCEDURE PrintBottom2Lines(Symbol : CHAR, LabelWidth : INTEGER)\nCALL PrintSymbolLine(Symbol, LabelWidth)\nCALL PrintGapLine(Symbol, LabelWidth)\nENDPROCEDURE",
+          "marks": 4,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write program code for the procedures below.\nProgramming language ______\nPrintSymbolLine(Symbol : CHAR, LabelWidth : INTEGER)\nPrintGapLine(Symbol : CHAR, LabelWidth : INTEGER)",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Zara now decides that the name labels should all be of the same width, regardless of the\nlength of the name.\nShe amends her top-level design:\nCONSTANT LabelWidth = 20\nINPUT Symbol\nREPEAT\nINPUT Name\nCALL PrintTop2Lines(Symbol, LabelWidth)\nCALL PrintNameLine(Symbol, Name, LabelWidth)\nCALL PrintBottom2Lines(Symbol, LabelWidth)\nUNTIL Name = \"NoName\"\nThe name is to be centred within the label.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Rewrite the procedure PrintNameLine.\nYour solution should allow for the case when the name has an odd number of characters.\nProgramming language ______\nCode ______",
+              "marks": 7,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Describe what happens when a name consists of 18 or more characters.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "Suggest a solution to the problem that you described in part (c)(ii).",
+              "marks": 2,
+              "type": "suggest",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Zara used top-down design to develop her modular solution.\nGive two benefits of a modular solution.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The pseudocode Zara wrote in part (c) has some features that make it easier to read and\nunderstand.\nState three such features.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "Zara wants to write a program to print a set of name labels for a group of students.",
+        "Each label will show the name surrounded by a border. There is one gap line above and below the",
+        "name line. This gap line only has the border symbol at the start and end. There are two spaces",
+        "between the border symbol and the name.",
+        "Here is a label example:",
+        "@@@@@@@@@@",
+        "@ @",
+        "@ FRED @",
+        "@ @",
+        "@@@@@@@@@@",
+        "The user will choose the border symbol for the set of labels.",
+        "Zara writes pseudocode for her program:",
+        "INPUT Symbol",
+        "REPEAT",
+        "INPUT Name",
+        "LabelWidth ← LENGTH(Name) + 6",
+        "CALL PrintTop2Lines(Symbol, LabelWidth)",
+        "CALL PrintNameLine(Symbol, Name)",
+        "CALL PrintBottom2Lines(Symbol, LabelWidth)",
+        "UNTIL Name = \"NoName\""
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A city has a metro line with five stations. The transport department wants to introduce a ticket",
+        "price calculator for its website. The transport department gives the following specification to a",
+        "programmer.",
+        "Tickets cost 25 cents for each kilometre (km) travelled.",
+        "The user chooses the origin and destination of their journey from a list:",
+        "Station number Station name",
+        "1 Airport",
+        "2 Industrial Centre"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "City Centre"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "University"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write program code to declare and initialise a one-dimensional array Interval to store the\nfour distances between the stations.\nProgramming Language ______\nCode ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Carefully choose four sets of test data to test the procedure TicketCalculator. Explain\nthe reason for your choice of test data. Your reason for each test should be different.\nOnly choose journeys where:\n• station numbers are valid\n• origin and destination station numbers are different\nOne set of test data has been done for you.\nStation number\nTest\nReason for choice\nnumber\nOrigin Destination\n1 1 5 Tests longest journey, starting at first station, finishing at\nlast station",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Use the flowchart opposite to write program code for the procedure TicketCalculator.\nProgramming language ______\nCode ______\n\nPROCEDURE TicketCalculator\nINPUT Origin\nINPUT Destination\nInitialise Distance\nYes\nSwap Origin and\nIs Origin > Destination?\nDestination\nNo\ni\u0003@\u0003Origin\nLoop\nDistance\u0003@\u0003Distance + Interval[i] Increment i\nNo\nIs i = Destination - 1?\nYes\nTicketPrice @ Distance * 0.25\nOUTPUT TicketPrice\nENDPROCEDURE\n3 Alessio has been asked to write a computerised table booking system for a restaurant. The\nrestaurant has 12 tables, each seating between 2 and 8 people.\nThe restaurant manager wants the following facilities:\n• take a new booking\n• cancel a booking\n• report on which table(s) are available\nAs a first attempt, Alessio designs his program to take bookings for one evening only. Each table is\nonly booked once per evening.\nHe writes the pseudocode for his main program:\nCALL Initialisation\nEndProgram ← FALSE\nREPEAT\nCALL DisplayOptions\nINPUT Option\nCASE OF Option\n1: CALL TakeBooking\n2: CALL CancelBooking\n3: CALL AvailableTablesReport\n4: EndProgram ← TRUE\nOTHERWISE OUTPUT \"Error – invalid input\"\nENDCASE\nUNTIL EndProgram = TRUE\nEach booking is for a number of customers (size of the group). Each table has a number of seats.\nThe procedure Initialisation will set up arrays TableSeats, Booked and GroupSize as\nfollows:\nTableNumber TableSeats Booked GroupSize\n2 FALSE 0\n1 1 1\n2 FALSE 0\n2 2 2\n2 FALSE 0\n3 3 3\n2 FALSE 0\n4 4 4\n4 FALSE 0\n5 5 5",
+          "marks": 10,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "Sports Stadium",
+        "Journeys can start and end at any of the following stations. Travel can be in either direction.",
+        "The distances between adjacent stations are:",
+        "Between stations Distance",
+        "(km)",
+        "1 and 2 4",
+        "2 and 3 2",
+        "3 and 4 1",
+        "4 and 5 3",
+        "To use the ticket price calculator, a user clicks on the ‘Ticket Price Calculator’ button. This calls",
+        "the procedure TicketCalculator. The user inputs the numbers of their chosen start and end",
+        "stations. The procedure calculates and displays the ticket price."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "4 6 FALSE 6 0",
+        "4 FALSE 0"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "7 7",
+        "4 FALSE 0"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "8 8",
+        "6 FALSE 0"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "9 9",
+        "6 FALSE 0"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "10 10",
+        "8 FALSE 0"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "11 11",
+        "8 FALSE 0"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "When a booking enquiry is made, the number of customers is given.\nComplete the pseudocode for the procedure TakeBooking:\nPROCEDURE TakeBooking\nDECLARE ……………………………………………………, ………………………………………………………… : INTEGER\nDECLARE …………………………………………………………………………………………………………………… : BOOLEAN\nINPUT NumberOfCustomers\n// initialise search for a suitable table\nFound ← FALSE\nTableNumber = ………………………………………………………………………………………………………………………………\nREPEAT // find a table with enough seats\nTableNumber ← TableNumber + 1\nIF TableSeats[………………………………………] …………………………………………………………………………\nAND Booked[……………………………………] ……………………………………………………………………\nTHEN\nFound ← TRUE\nENDIF\nUNTIL …………………………………………………………… OR ……………………………………………………………………………\nIF Found = FALSE\nTHEN // no tables left with enough seats\nELSE // make the booking\nBooked[……………………………………] ………………………………………………………………………………………\nGroupSize[……………………………………] ………………………………………………………………………………\nOUTPUT \"Table number booked: \", TableNumber\nENDIF\nENDPROCEDURE",
+          "marks": 11,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "To cancel a booking, the table number is quoted.\nComplete the pseudocode for the procedure CancelBooking.\nPROCEDURE CancelBooking\nINPUT TableNumber\nIF ……………………………………………………………………………………………………………………………………………………………\nTHEN\nOUTPUT \"Error – this table is not booked\"\nELSE // cancel booking\nBooked[………………………………………] ……………………………………………………………………………………\nGroupSize[…………………………………………] …………………………………………………………………………\nOUTPUT \"Booking cancelled\"\nENDIF\nENDPROCEDURE",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "The restaurant manager wants a report to show all available tables, each with its number of\nseats.\nWrite pseudocode for the procedure AvailableTablesReport.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12d",
+          "label": "(d)",
+          "text": "The manager wants to store the name and telephone number of the customer making the\nbooking. At the time the booking is made, the manager also wants to collect a deposit ($5 per\nperson). The program will record the deposit paid.\nAlessio decides that a record structure would be more suitable for his program.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "12di",
+              "label": "(i)",
+              "text": "Write program code to define a booking record with identifier BookingType and the\nfields TableSeats, Booked, GroupSize, CustomerName, CustomerTelNumber,\nAmountDepositPaid.\nProgramming language ______\nCode ______",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "12dii",
+              "label": "(ii)",
+              "text": "Each restaurant table will have its data stored in its own booking record. Alessio decides\nto use an array of records.\nWrite program code to declare the array TableBookings for the 12 table records. Use\nthe record structure you defined in part (d)(i).\nProgramming language ______\nCode ______",
+              "marks": 3,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "12e",
+          "label": "(e)",
+          "text": "At the end of the day, the computer is shut down. Before the program stops, the array data\nfrom TableBookings must be saved to a new sequential file TableBookings.DAT\nWrite program code for the procedure SaveToFile.\nProgramming language ______\nCode ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 33,
+      "text": [
+        "12 12"
+      ]
+    }
+  ]
+}

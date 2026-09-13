@@ -1,0 +1,297 @@
+{
+  "paperId": "0478_w20_qp_22",
+  "subjectCode": "0478",
+  "session": "w20",
+  "component": "22",
+  "totalMarks": 33,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Identify one array you could have used for Task 1 and state its purpose.\nArray ______\nPurpose ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Identify one variable you could have used for Task 2 and state its purpose.\nVariable ______\nPurpose ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Identify one constant you could have used for Task 3 and state its purpose.\nConstant ______\nPurpose ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain the benefits of storing Price as a real data type.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm to show how you completed Task 1, using either pseudocode,\nprogramming statements or a flowchart. It is not necessary to show initialisation or setting up\nof arrays in your answer.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completes Task 3. Any programming statements used in your\nanswer must be fully explained.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Describe how you could alter your program to allow more than one computer to be bought.\n\nSection B",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box in each row to identify if the statement about subroutines is true or false.",
+        "true false",
+        "Statement",
+        "(3) (3)",
+        "A subroutine is called from within a program.",
+        "A subroutine is not a complete program.",
+        "A subroutine is a self-contained piece of code.",
+        "A subroutine must return a value to the code from which it was called.",
+        "[2]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm is used as a validation check.",
+        "PRINT \"Input a number from 1 to 5000\"",
+        "REPEAT",
+        "INPUT Number",
+        "IF Number < 1 OR Number > 5000",
+        "THEN",
+        "PRINT \"Invalid number, please try again\"",
+        "ENDIF",
+        "UNTIL Number >= 1 AND Number <= 5000",
+        "PRINT Number, \" is within the correct range\"",
+        "Identify three different types of test data. For each type, give an example of the test data you",
+        "would use to test this algorithm and state a reason for your choice of test.",
+        "Type of test data 1 ...........................................................................................................................",
+        "Test data ...........................................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "Type of test data 2 ...........................................................................................................................",
+        "Test data ...........................................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "Type of test data 3 ...........................................................................................................................",
+        "Test data ...........................................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm allows 5000 numbers to be entered and stored in an array called",
+        "Number.",
+        "FOR Count 1 TO 5000",
+        "INPUT Number[Count]",
+        "NEXT Count",
+        "Extend and re-write the algorithm using pseudocode to also count and output how many of the",
+        "numbers stored in the array are greater than 500, using the variable Higher. Only output Higher",
+        "once with an appropriate message.",
+        "[6]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The contents of the array at the start of the algorithm are:\nNum[0] Num[1] Num[2] Num[3] Num\n45 56 30 12 15\nComplete the trace table for the algorithm using the data given in the array.\nFlag Count Num[0] Num[1] Num[2] Num[3] Num[4] Store\n45 56 30 12 15",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe the purpose of the algorithm.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "This pseudocode represents an algorithm.",
+        "REPEAT",
+        "Flag 0",
+        "FOR Count 0 to 3",
+        "IF Num[Count] < Num[Count + 1]",
+        "THEN",
+        "Store Num[Count]",
+        "Num[Count] Num[Count + 1]",
+        "Num[Count + 1] Store",
+        "Flag 1",
+        "ENDIF",
+        "NEXT Count",
+        "UNTIL Flag = 0"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw a flowchart symbol to represent each of the following:",
+        "Input/Output Decision",
+        "[2]",
+        "Question 7 starts on Page 12.",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "State the number of records in the table AUDIOPARTS",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Identify the field that is most suitable to be a primary key and give a reason for your choice.\nFieldname ______\nReason ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid to show the items where the quantity in stock is fewer\nthan 10. Show all the fields from the database table in descending order of cost.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The table AUDIOPARTS stores the part number, description, cost and quantity in stock of the",
+        "items sold by a music shop.",
+        "PartNum Description Cost Quantity",
+        "A01 Compact Amplifier Case 50.00 15",
+        "A02 Deluxe Amplifier Case 75.00 1",
+        "A03 Amplifier Standard 79.99 48",
+        "A04 Amplifier Midrange 149.99 50",
+        "A05 Amplifier Megablaster 299.99 48",
+        "S01 Tweeter 59.99 10",
+        "S02 Midrange Woofer 99.99 0",
+        "S03 Subwoofer 139.99 16",
+        "S04 Tower Speaker Basic 159.99 25",
+        "S05 Tower Speaker Skyscraper 219.99 9",
+        "S06 Centre Speaker 149.99 25",
+        "S07 Soundbar 89.99 2",
+        "S20 Soundbar 129.99 0",
+        "S21 Ceiling Surround Speaker 75.00 15",
+        "S22 Ceiling Full Range Speaker 100.00 1",
+        "S25 Surround Speaker 100.00 60",
+        "T19 Speaker Stands (Pair) 75.00 60"
+      ]
+    }
+  ]
+}

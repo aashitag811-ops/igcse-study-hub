@@ -1,0 +1,647 @@
+{
+  "paperId": "9691_s12_qp_31",
+  "subjectCode": "9691",
+  "session": "s12",
+  "component": "31",
+  "totalMarks": 90,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Explain why the table is not in First Normal Form (1NF).",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Explain your answer by referring to the above data.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The design is changed to the following:\nStudent (StudentName, TutorGroup, Tutor)\nStudentSubjectChoices (StudentName, Subject, Level, SubjectTeacher)\nUsing the data given in the original table, show how this data is now stored in the\nFor\nrevised table designs. Examiner's\nUse\nTable: Student\nStudentName TutorGroup Tutor\nTable: StudentSubjectChoices\nStudentName Subject Level SubjectTeacher",
+          "marks": 3,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain what is meant by a primary key.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "A student is not allowed to choose the same subject at A Level and AS.\nWhat is the primary key of table StudentSubjectChoices?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "There is a relationship between tables Student and StudentSubjectChoices.\nFor\nExaminer's\nUse\nExplain how the relationship is established using a primary key and foreign key.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The design of table StudentSubjectChoices is:\nStudentSubjectChoices (StudentName, Subject, Level, SubjectTeacher)\nExplain why this table is not in Second Normal Form (2NF).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The design of table Student is:\nStudent (StudentName, TutorGroup, Tutor)\nExplain why this table is not in Third Normal Form (3NF).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A database is designed to store data about students at a college and the subjects that they",
+        "For",
+        "study. Examiner's",
+        "Use",
+        "• All students are based in a tutor group",
+        "• A tutor supervises all the students in their tutor group",
+        "• Each subject has one subject teacher only",
+        "• Students study a number of subjects",
+        "The following table StudentSubjects was a first attempt at the database design.",
+        "Table: StudentSubjects",
+        "StudentName TutorGroup Tutor Subject Level SubjectTeacher",
+        "Tom 6 SAN Physics A SAN",
+        "Chemistry A MEB",
+        "Gen. Studies AS DIL",
+        "Joe 7 MEB Geography AS ROG",
+        "French AS HEN",
+        "Samir 6 SAN Computing A VAR",
+        "Chemistry A MEB",
+        "Maths A COR",
+        "Gen. Studies A DIL"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Consider the binary pattern: 0101 0011\nThe pattern represents an integer.\nWhat number is this in denary?",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Consider the binary pattern: 0001 0101 0011\nThe pattern represents a Binary Coded Decimal (BCD) number.\nWhat number is this in denary?",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Consider the binary pattern: 1001 0010\nThis represents a two’s complement integer.\nWhat number is this in denary?",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Floating point is to be used to represent real numbers with:\nFor\nExaminer's\nUse\n• 8 bits for the mantissa, followed by\n• 4 bits for the exponent\n• two’s complement used for both the mantissa and the exponent",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Consider the binary pattern:\n0 1 1 0 1 0 0 0 0 1 0 0\nWhat number is this in denary? Show your working.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "The representation shown in part (d)(i) is normalised.\nExplain why floating point numbers are normalised.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2diii",
+              "label": "(iii)",
+              "text": "Show the binary pattern for the smallest positive number which can be stored\nusing a normalised 12-bit floating point representation.\nMantissa:\nExponent:\nWork out its denary value.\nDenary:",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The developer of a new programming language decides that all real numbers will be\nFor\nstored using 20-bit normalised floating point representation. She cannot decide how Examiner's\nUse\nmany bits to use for the mantissa and how many for the exponent.\nExplain the trade-off between using either a large number of bits for the mantissa, or a\nlarge number of bits for the exponent.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A binary pattern can be used to represent different data used in a computer system.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Customer names are stored in the array Customer.\nFor\nExaminer's\nAn algorithm is to be designed to perform a serial search of the array for a requested\nUse\ncustomer name.\nThe algorithm will use the variables shown in the table.\nStudy the table and the algorithm and fill in the gaps.\nIdentifier Data Type Description\nCustomer ARRAY[2000] OF STRING\nThe customer names\nIndex INTEGER\nIndex position in the customer array\nIsFound\nSearchName STRING\nThe requested customer name\n//Serial search algorithm\nINPUT\nIsFound ← FALSE\nIndex ← 1\nREPEAT\nIF Customer [ ] = SearchName\nTHEN\nIsFound ← TRUE\nOUTPUT “FOUND – at position ” Index “ in the array”\nELSE\nIndex ←\nENDIF\nUNTIL (IsFound = TRUE) OR\nIF\nTHEN\nOUTPUT “Customer name was NOT FOUND”\nENDIF",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Comment on the efficiency of the serial search algorithm in part (a) for retrieving a data\nitem from an array with 2000 items.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "A binary search may be an alternative algorithm to a serial search.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Describe how this algorithm works. (Do not attempt to write the pseudocode.)",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "A binary search is made to locate Cherry.\nApple\nBanana\nCherry\nKiwi\nLemon\nMango\nPlum\nList, in order, the comparisons which are made.",
+              "marks": 3,
+              "type": "list",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Evaluate this reverse Polish expression:\n4 6 * 3 –",
+          "marks": 1,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Write the following infix expressions in reverse Polish.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "(a-5)/(b+c)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "2 * 3 + 6 / 2",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Describe one benefit of storing an expression in reverse Polish.",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "An expression in reverse Polish can be evaluated on a computer system using a stack.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "Describe the operation of a stack.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "A stack is to be implemented as an array with an integer variable to point to the\n‘top of stack’ index position.\nState whether this is a static data structure or a dynamic data structure and explain\nyour choice.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4diii",
+              "label": "(iii)",
+              "text": "The reverse Polish expression 3 7 * 6 + 9 / is to be evaluated using a stack.\nFor\nExaminer's\nThe first available location on the stack is 1.\nUse\nShow how the contents of the stack change as this expression is evaluated.",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Expressions can be written in either infix or reverse Polish notation.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write on the diagram to explain the instruction shown.\nShow the contents of the Accumulator after the execution of the instruction.\nLDD 105\nMain memory\n0100 0000\n0110 1000\n1111 1110\nAccumulator 102\n1111 1010\n0101 1101\n0001 0001\n1010 1000\n1100 0001\n1001 1111",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Write on the diagram to explain the instruction shown.\nShow the contents of the registers after the execution of the instruction.\nLDX 101\nMain memory\n0100 0000\n0110 1000\n1111 1110\nAccumulator 102\n1111 1010\n0101 1101\n0001 0001\n1010 1000\nIndex Register 106\n1100 0001\n0000 0011 107\n1001 1111",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Trace this assembly language program using the trace table below.\nFor\nExaminer's\nUse\n500 LDD 507\n501 INC\n502 STO 509\n503 LDD 508\n504 INC\n505 STO 510\n506 END\n507 22\n508 170\n509 0\n510 0\nMemory Address\n507 508 509 510\nAccumulator\n22 170 0 0",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "Explain the relationship between assembly language instructions and machine code\ninstructions.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The table shows the assembly language instructions for a processor which has one general",
+        "For",
+        "purpose register – the Accumulator. Examiner's",
+        "Use",
+        "Instruction",
+        "Explanation",
+        "Op Code Operand",
+        "LDD <address>",
+        "Load using direct addressing",
+        "STO <address>",
+        "Store the contents of the Accumulator at the given address",
+        "LDI <address>",
+        "Load using indirect addressing",
+        "LDX <address>",
+        "Load using indexed addressing",
+        "INC",
+        "Add 1 to the contents of the Accumulator",
+        "END",
+        "End the program and return to the operating system"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Explain the purpose of the scheduler.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A process will at any time be in one of three states.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Name and describe each possible state.",
+              "marks": 6,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "How will the operating system keep details about the state of all processes?",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Any process can be described as either ‘processor bound’ or ‘input/output bound’.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "Explain what is meant by these terms and give a typical application of each.\nProcessor bound\nApplication which is processor bound\nInput/Output bound\nApplication which is I/O bound",
+              "marks": 4,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "A particular scheduler allocates a priority to each process for the use of the\nprocessor.\nState which type of process – processor bound or I/O bound – would be given\nhigher priority for the use of the processor. Explain why.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "In a multiprogramming environment the operating system includes a scheduler.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Define what is meant by the term computer simulation.\nFor\nExaminer's\nUse",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Give two reasons why a computer system is particularly suited to carrying out a\nsimulation.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "A supermarket is about to open a new branch and is to use a computer simulation to\nestimate the number of checkouts which will be required.\nIdentify three variables which need to be controlled by the software simulation of the\ncheckout operation.\n3",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "The values input to the simulation will affect the outputs produced.\nGive one example for this checkout scenario of a change to an input which will directly\naffect the output.\nInput change\nEffect on the output\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    }
+  ]
+}

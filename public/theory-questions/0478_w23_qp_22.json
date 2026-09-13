@@ -1,0 +1,317 @@
+{
+  "paperId": "0478_w23_qp_22",
+  "subjectCode": "0478",
+  "session": "w23",
+  "component": "22",
+  "totalMarks": 38,
+  "questionCount": 14,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to complete the sentence.",
+        "Verification is used to make sure that a value entered",
+        "A has not changed during input.",
+        "B is an integer.",
+        "C is correct.",
+        "D is not a string.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "State the type of validation check used.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Give one example of normal test data and one example of abnormal test data you should\nuse to make sure the check in part (a) is working properly.\nState a reason for each of your choices of test data.\nNormal ______\nReason ______\nAbnormal ______\nReason ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Describe how a length check could be used with the date entered.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A type of validation check is a length check. Another type of validation check is used to make sure",
+        "that any date entered is in the dd/mm/yyyy style:",
+        "dd means day, mm means month and yyyy means year."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw one line to link each pseudocode statement to the most appropriate pseudocode use.\nNot all pseudocode uses will be required.\nPseudocode statement Pseudocode use\nCALL Colour(NewColour) counting\nfinding an average\nValue (A1 + A2 + A3) / 3\ntotalling\nLoop1 Loop1 + 1\nusing a conditional statement\nIF Count > 7 THEN X1 0 using a procedure",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A one‑dimensional (1D) array called Temperatures[] has 25 elements beginning at\nindex 1. It holds values that range between –20 and 100 inclusive.\nWrite a pseudocode algorithm using a single loop to find the lowest value in this array and\noutput the result only once.\nYou do not need to declare or populate this array.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Four pseudocode statements and five pseudocode uses are shown."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to allow the names of 50 cities and their countries to",
+        "be entered and stored in a two‑dimensional (2D) array. The contents of the array are then output.",
+        "01 DECLARE City ARRAY[1:50, 1:2] OF BOOLEAN",
+        "02 DECLARE Count : INTEGER",
+        "03 DECLARE Out : INTEGER",
+        "04 Count 1"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter the name of the city\""
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT City[Count, 2]"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter the name of the country\""
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT City[Count, 2]"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count Count + 1"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL Count = 50"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Out 1 TO 1"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The city \", City[Out, 1], \" is in \", City[Out, 2]"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Identify the four errors in the pseudocode and suggest corrections.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Describe the changes you should make to the corrected algorithm to allow the name of a\ncountry to be input and to display only the stored cities from that country.\nYou do not need to rewrite the algorithm.\n\n5 Explain how variables and constants should be used when creating and running a program.\n\n6 The flowchart represents an algorithm that performs a process on groups of values that are input.\nThe algorithm will fail if the first value of any group is 0.\nAn input of –1 will terminate the algorithm.\nSTART\nTotal 0\nOUTPUT\n\"Average is \",\nAverage\nCount 0\nOUTPUT\nINPUT\n\"Total is \",\nValue\nTotal\nIS\nYes\nValue = Average Total / Count\n0 ?\nNo\nIS\nYes\nValue = STOP\n–1 ?\nNo\nTotal Total + Value\nCount Count + 1",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data:\n25, 35, 3, 0, 57, 20, 25, 18, 0, –1, 307, 40, 0\nValue Average Total Count\nOUTPUT",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Describe the purpose of the algorithm.\n\n7 The string operation SUBSTRING(Quote, Start, Number) returns a string from Quote\nbeginning at position Start that is Number characters long. The first character in Quote is in\nposition 1.\nWrite pseudocode statements to:\n• store the string \"Learning Never Exhausts The Mind\" in Quote\n• extract and display the words \"The Mind\" from the string\n• output the original string in lower case.\n\n8 Explain why a programmer would use procedures and parameters when writing a program.\n\n9 Consider the logic expression:\nZ = (A NAND B) OR NOT (B XOR C)",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for this logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify this logic expression.\nB Z",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Complete the truth table from the given logic expression.\nWorking space\nA B C Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n10 A database table called Horses stores details about the horses kept at a horse sanctuary.\nCode Breed BreedOrigin Gender Age Arrived\nH002 Arabian Saudi Arabia M 5 28/09/2022\nH004 Percheron France M 5 30/10/2022\nH010 Friesian Netherlands M 6 15/11/2022\nH011 Fjord Norway F 4 17/11/2022\nH012 Clydesdale Scotland M 10 18/11/2022\nH015 Arabian Saudi Arabia F 5 15/12/2022\nH016 Arabian Saudi Arabia F 5 15/12/2022\nH017 Clydesdale Scotland F 4 16/01/2023\nH019 Percheron France M 3 16/01/2023\nH025 Percheron France M 7 16/01/2023\nH026 Clydesdale Scotland F 9 20/01/2023\nH030 Clydesdale Scotland M 12 20/01/2023\nH032 Fjord Norway M 3 24/03/2023\nH033 Arabian Saudi Arabia F 15 27/04/2023\nH034 Clydesdale Scotland F 4 14/06/2023\nH035 Fjord Norway M 7 15/06/2023\nH036 Friesian Netherlands F 15 20/07/2023\nH037 Friesian Netherlands M 12 20/07/2023",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14a",
+          "label": "(a)",
+          "text": "State the number of records in this database table.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14b",
+          "label": "(b)",
+          "text": "Give the name of the field that is most suitable to be the primary key.\nState the reason for this choice.\nField ______\nReason ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14c",
+          "label": "(c)",
+          "text": "The database only allows the data types:\n• Boolean\n• character\n• date/time\n• integer\n• real\n• text.\nComplete the table to show the most appropriate data type for each field.\nEach data type must be different.\nField Data type\nBreed\nGender\nAge\nArrived",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "14d",
+          "label": "(d)",
+          "text": "Complete the structured query language (SQL) to return the code and breed of all the horses\nwhose breed originated in Scotland.\n______ Code, Breed,\nFROM ______\nWHERE ______ = \"Scotland\";\n\n11 A wood flooring company stores the names of up to 100 customers in a one‑dimensional (1D) array\nCustomers[]. A two‑dimensional (2D) array Quotations[] stores details of each customer’s\nquotation:\n• length of room (one decimal place)\n• width of room (one decimal place)\n• area of wood required (rounded up to next whole number)\n• choice of wood index (whole number)\n• price of wood required in dollars (two decimal places).\nThe floor measurements (room length and room width) are taken in metres. All floors are rectangles\nand room measurements must be between 1.5 and 10.0 inclusive.\nThe index of any customer’s data is the same in both arrays. For example, a customer named in\nindex 4 of Customers[] corresponds to the data in index 4 of Quotations[]\nThe wood choices available are:\nIndex Wood type Price per square metre ($)\n1 Laminate 29.99\n2 Pine 39.99\n3 Oak 54.99\nThe data are stored in two 1D arrays named WoodType[] and Price[]. The index of the wood\ntype and price in their arrays share the same index number.\nWrite a program that meets the following requirements:\n• input a new customer’s name, room length and room width\n• check that each measurement is valid\n• output an error message and require the measurement to be re‑entered until it is valid\n• calculate the area of the room by multiplying together the length of the room and the width of\nthe room\n• input the choice of wood and find its price per square metre\n• calculate the price of the wood needed\n• store all data in the relevant array\n• output the customer’s quotation to include: the name of the customer, the choice of wood and\nthe calculated price of the wood required\n• continue to accept the next customer.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nYou will need to initialise WoodType[] and Price[]\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "NEXT Out"
+      ]
+    }
+  ]
+}

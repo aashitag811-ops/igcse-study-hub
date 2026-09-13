@@ -1,0 +1,441 @@
+{
+  "paperId": "9618_w24_qp_21",
+  "subjectCode": "9618",
+  "session": "w24",
+  "component": "21",
+  "totalMarks": 69,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The pseudocode contains a logical error.\nIdentify the error and suggest a correction.\nError ______\nCorrection ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "During the design of the program, tax rate values have been used wherever they are needed\nas shown in the pseudocode example above. Tax rates do not change while the program runs.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Identify a more appropriate way of representing the tax rate values in the final program.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Describe the benefits of your answer to part (b)(i) with reference to this program.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Give the appropriate data type for the variables in the following table, as used in the\npseudocode:\nVariable name Data type\nHighRate\nTaxPayable",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The final CASE condition (> 200) in the pseudocode example could be replaced with a\nkeyword.\nGive the keyword.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A program will calculate the tax payable based on the cost of an item.",
+        "Calculations will occur at many places in the program and these involve the use of one of three tax",
+        "rates.",
+        "Tax rate values represent a percentage. For example, a tax rate value of 5.23 represents 5.23%.",
+        "In this case, the tax payable on an item costing $100 would be $5.23.",
+        "Tax rate values are used at several places within the program. One example is given in pseudocode",
+        "as follows:",
+        "HighRate ← FALSE",
+        "CASE OF ItemCost",
+        "<= 50 : TaxRate ← 3.75 // tax rate of 3.75%",
+        "<= 200 : TaxRate ← 5.23 // tax rate of 5.23%",
+        "> 200 : TaxRate ← 6.25 // tax rate of 6.25%",
+        "HighRate ← TRUE",
+        "ENDCASE",
+        "TaxPayable ← ItemCost * TaxRate // tax payable"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program uses three global integer variables HH, MM and SS to represent the current time in",
+        "hours, minutes and seconds using the 24-hour clock notation.",
+        "Midnight would be represented as 00:00:00 (HH:MM:SS). If the variables HH, MM and SS contained",
+        "the values 16, 30 and 10 respectively, then the time would be 16:30:10 or just after 4.30 in the",
+        "afternoon.",
+        "A procedure Tick() will be called every second.",
+        "The procedure Tick() will:",
+        "• update the value in SS each time it is called",
+        "• update the values in HH and MM as appropriate",
+        "• call a procedure CheckAlarm() at the start of each minute",
+        "• call a procedure NewDay() whenever the time reaches midnight.",
+        "Complete the pseudocode for procedure Tick().",
+        "PROCEDURE Tick()",
+        "ENDPROCEDURE",
+        "[6]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The algorithm to output the lines is expressed in eight steps.\nComplete the steps.\n1. Open the file ______\n2. Loop until ______\n3. ______ and store in ThisLine\n4. Assign LineY to LineX\n5. Assign LineZ to LineY\n6. Assign ThisLine to LineZ\n7. After the loop, ______\n8. Output LineX, LineY, LineZ",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain the purpose of steps 4, 5 and 6 in the algorithm from part (a).",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The requirement changes, and the algorithm will now output three lines from the file, starting\nfrom a given line number.\nThe modified algorithm will be implemented as a function which will:\n• be called with an integer parameter representing the given line number\n• output three lines, starting at the given line\n• return TRUE if the 3 lines are output, or FALSE if it was not possible to output the 3 lines.\nDescribe the changes that need to be made to steps 2 to 8 of the algorithm given in part (a).",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "An algorithm will output the last three lines from a text file Result.txt",
+        "The lines need to be output in the same order as they appear in the file.",
+        "Assume:",
+        "• Three variables LineX, LineY and LineZ will store the three lines. These are of type string",
+        "and all three variables have been initialised to an empty string.",
+        "• The file exists and contains at least three lines."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Identify the type of error that could occur if these checks are not carried out and state a\ncause of this error.\nType ______\nCause ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The designer considers implementing the checks and calculation as a module (a procedure\nor a function). One reason for this is that the same checks and calculations are performed at\nseveral places in the program.\nGive another reason why this is a suitable approach and state what is avoided by this\napproach.\nReason ______\nAvoided ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The module to perform the checks and calculation will be implemented as a function. The\nfunction will need to return both a real and a Boolean value. To achieve this a record type is\ndefined in pseudocode as follows:\nTYPE Result\nDECLARE Done : BOOLEAN\nDECLARE Value : REAL\nENDTYPE\nThe function Evaluate() will:\n• take two parameters of type string representing the two numeric values\n• return a variable of type Result with the Done field set to FALSE if either of the following\napplies:\n◦ at least one of the strings does not represent a valid numeric value\n◦ the numeric value of the string representing value y is zero\n• otherwise return a variable of type Result with the Done field set to TRUE and the\nValue field assigned the result of the formula (based on the numeric value of the two\nparameters).\nWrite pseudocode for the function Evaluate().",
+          "marks": 6,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A program includes the following assignment statement:",
+        "Result ← STR_TO_NUM(x) / STR_TO_NUM(y)",
+        "When the program evaluates the expression in the statement, it performs a calculation.",
+        "Variable Result is of type real and variables x and y are of type string.",
+        "Two checks are required before the calculation is performed:",
+        "1. The two strings represent valid numeric values.",
+        "2. The numeric value of string y is not zero."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The following table lists some development activities.\nComplete the table by writing the name of the life cycle stage for each activity.\nActivity Name of life cycle stage\nThe walkthrough method is used.\nAn algorithm is implemented in a programming language.\nThe client is interviewed about problems with the current system.\nThe program is modified to run on new hardware.\nRecords and file structures are defined.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The program contains a validation function.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "The function will:\n• take an integer value as a parameter\n• return TRUE if the value is within the range 24 to 37, inclusive\n• otherwise return FALSE.\nComplete the table to define a test plan to thoroughly test the operation of the function.\nType of test data Test data value Expected result\nNormal 30 TRUE",
+              "marks": 4,
+              "type": "plan",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "The function is to be tested on its own. When it is shown to work correctly the function\nwill be combined with other modules and testing will continue.\nIdentify the type of testing that this represents.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A software developer follows a program development life cycle. The life cycle divides the",
+        "development process into various stages."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "An algorithm uses the array DaysInMonth to calculate a ‘use-by’ date. An alternative design\nwould involve the use of multiple selection statements.\nAn array-based technique is often used when there is a large number of different values to\ncheck and where no pattern exists.\nOne advantage of using an array-based technique is the speed of execution compared to the\nuse of multiple selection statements.\nGive two other advantages of using an array for this type of operation rather than a solution\nbased on multiple selection statements.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Complete the pseudocode for the function GetDate().\nDate functions from the insert should be used in your solution.\nFUNCTION GetDate(ProductionDate : DATE, ShelfLife : INTEGER) RETURNS DATE\nENDFUNCTION",
+          "marks": 7,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A factory produces food items. The items must be used within a certain number of days after their",
+        "production date. The number of days is known as the shelf life. It is different for each type of item",
+        "but is always a whole number in the range 1 to 21 (inclusive).",
+        "The latest date that an item can be used is called the ‘use-by’ date.",
+        "A program is needed to produce labels which show the ‘use-by’ date.",
+        "Part of the program is a function GetDate() which will:",
+        "• take two parameters: a production date and a value representing the shelf life",
+        "• return the corresponding ‘use-by’ date.",
+        "The program contains a global 1D array DaysInMonth of type integer which stores the number of",
+        "days in each month (index 1 is January):",
+        "Index Value",
+        "1 31",
+        "2 28 Note: Leap years are not considered"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Complete the structure chart for these modules.\nConnect\nT1",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Explain the meaning of the curved arrow symbol used in the diagram in part (a).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A program contains six modules with headers as follows:",
+        "Pseudocode module header",
+        "PROCEDURE Connect()",
+        "FUNCTION Activate(H1 : STRING, Code : INTEGER) RETURNS BOOLEAN",
+        "FUNCTION Sync(T1 : BOOLEAN, S2 : REAL) RETURNS INTEGER",
+        "PROCEDURE Initialise(BYREF ID : INTEGER, BYVAL CC : INTEGER)",
+        "FUNCTION Reset(RA : STRING) RETURNS INTEGER",
+        "FUNCTION Enable(SA : INTEGER) RETURNS BOOLEAN",
+        "Module Connect() will call either Activate() or Sync(). This is decided at run-time."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module CheckMark().",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A second module is defined:\nModule Description\n• called with a parameter of type integer representing the\nnumber of candidate marks in the Result array\n• uses CheckMark() to check each candidate mark DO NOT WRITE IN THIS MARGIN\n• for each paper that needs to be checked, write the\nCheckAll()\ncorresponding candidate ID on a separate line in a new file\nnamed GRList.txt\n• outputs a message with a count of how many papers need\nto be checked\nWrite pseudocode for module CheckAll().\nCheckMark() must be used to check each individual mark.",
+          "marks": 8,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The requirement changes. Instead of a new file, the module described in part (b) needs to\nadd the corresponding candidate ID for each paper that needs to be checked to an existing\nfile.\nExplain the change that will need to be made to CheckAll().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "An exam paper has a maximum of 75 marks. One of five pass grades (A to E) is assigned,",
+        "depending on the mark obtained. The lowest mark for a given grade is known as the grade",
+        "boundary. For example, if the grade boundary for an A grade is 65 marks, then any candidate who",
+        "achieves a mark of 65 or above will be awarded an A. A grade of U is awarded for marks below the",
+        "E grade boundary.",
+        "The five grade boundaries are stored in a global 1D array GradeBoundary of type integer.",
+        "For example:",
+        "Element Value Comment",
+        "GradeBoundary[1]",
+        "65 The minimum mark for an A grade.",
+        "GradeBoundary[2]",
+        "57 The minimum mark for a B grade.",
+        "GradeBoundary[3]",
+        "43 The minimum mark for a C grade.",
+        "GradeBoundary[4]",
+        "35 The minimum mark for a D grade.",
+        "GradeBoundary[5]",
+        "27 The minimum mark for an E grade.",
+        "A global 2D array Result of type integer contains candidate marks for the exam. Each row",
+        "relates to one candidate. Column 1 contains the candidate mark and column 2 contains the unique",
+        "candidate ID.",
+        "For example, for the fourth and fifth candidates:",
+        "Element Mark Element ID",
+        "Result[4, 1] 56 Result[4, 2] 1074832",
+        "Result[5, 1] 54 Result[5, 2] 2573839",
+        "There are more rows in the array than candidates who sit the exam. Any unused rows will be at",
+        "the end of the array.",
+        "Candidate papers that are given a mark within two marks of any grade boundary must be checked.",
+        "For example, given the values in the example grade boundaries above, any paper that was",
+        "awarded between 41 and 45 marks (inclusive) would need to be checked.",
+        "A program is being written to identify papers that need to be checked.",
+        "The programmer has defined the first program module as follows:",
+        "Module Description",
+        "• called with a parameter of type integer representing a",
+        "candidate mark",
+        "CheckMark()",
+        "• returns TRUE if the mark is within 2 of any of the five grade",
+        "boundaries, otherwise returns FALSE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "paperId": "9691_s12_qp_23",
+  "subjectCode": "9691",
+  "session": "s12",
+  "component": "23",
+  "totalMarks": 75,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Draw a suitable screen layout.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Justify the design of your screen layout in (a).",
+          "marks": 3,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Several of the students are visually impaired.\nFor\nDescribe the design issues that Anna should consider to ensure these students can Examiner's\nUse\nanswer the questions online.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The responses from each student will be stored as a record consisting of the following\nfields:\n• FirstName\n• Age\n• FavouriteSport\n• ClubMember\nComplete the following table. Only a single value should be given for the Field Size.\nField Name Data Type Field Size (bytes)\nFirstName\nAge\nFavouriteSport\nClubMember",
+          "marks": 8,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Anna is to write a program to analyse the responses.\nFor\nExaminer's\nUse\nUsing a SELECT/CASE construct write the pseudocode to count the number of\nstudents for each age group who completed the questionnaire.\nREPEAT\nREAD next record\nUNTIL no more student records",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "The records will be held in a direct access file.\nFor\nGive four statements from a high-level programming language that may be used for Examiner's\nUse\nthe file handling and explain what each does.\nProgramming language",
+          "marks": 8,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "Anna wants to find out about her fellow students' sporting activities. It will be part of her",
+        "For",
+        "Sports Studies coursework. Examiner's",
+        "Use",
+        "She will ask questions online, so starts by designing a screen layout. The first four",
+        "questions will ask for:",
+        "• student's first name",
+        "• age (16,17,18 or 19)",
+        "• favourite sport",
+        "• whether student is a member of a sports club (yes/no)"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Using a high-level programming language, write the code to perform this task. (Ensure\nthat you use meaningful variable names and lay the code out clearly.)\nProgramming language\nCode",
+          "marks": 8,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "She writes this code as the function ChangeString because it will be used several\nFor\nExaminer's\ntimes.\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "State the parameter of the function.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Write the function header in the language you used in (a).",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "State why Gina uses a function rather than a procedure.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Gina is developing her programming skills in string handling.",
+        "For",
+        "She is going to input one string. Examiner's",
+        "Use",
+        "The string contains letters and zero or more '*' characters in any positions.",
+        "Gina wants to remove all the '*'s and output the letters in their original order.",
+        "For example:",
+        "• input “com*put**er*”, the output is “computer”",
+        "• input “hardware”, the output is “hardware”"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Liliane wants to write a program to play chess. She will represent the board of 8 x 8",
+        "For",
+        "squares, using the 2-dimensional array Board[8,8]. Examiner's",
+        "Use",
+        "Each element of the array will need initialising to zero. Later, if a chess piece is on a",
+        "square, it will take a value of 1.",
+        "She starts by writing pseudocode for the initialisation of a 4 x 4 board. This is easier to",
+        "trace.",
+        "01 RowNo ← 1",
+        "02 WHILE RowNo < 4 DO",
+        "03 ColumnNo ← 1"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE ColumnNo < 4 DO"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Board[RowNo,ColumnNo] ← 0"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ColumnNo ← ColumnNo + 1"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "RowNo ← RowNo + 1"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "To test this pseudocode she traces it until the first five elements of Board have been\ninitialised.\nComplete the headings and the trace for these first five elements of the array.\nBoard\nRowNo ColumnNo RowNo<4 ColumnNo<4\n[1,1]\n1 1 True True 0",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "There is an error in the pseudocode.\nFor\nExaminer's\nUse\nState the type of error.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Rewrite two lines that will make the pseudocode work as intended.\nLine number Pseudocode",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09d",
+          "label": "(d)",
+          "text": "State the count-controlled loop that would be better for this initialisation.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09e",
+          "label": "(e)",
+          "text": "On a full 8 x 8 board, state the relative positions of the squares Board[1,8] and\nBoard[8,1] .",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09f",
+          "label": "(f)",
+          "text": "Liliane's next task is to indicate that there are pieces occupying the first two rows of the\nFor\n8 x 8 board. Examiner's\nUse\nEach square in rows 1 and 2 will be given the value 1.\nDraw a flowchart that shows how to do this, using loop structures and the variable\nnames previously used (Board, RowNo, ColumnNo).\n\n4 Raul writes software for a palm oil processing plant. He wants to check his understanding of\nFor\ndifferent arithmetic operators for a problem that he has to solve. Examiner's\nUse",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Evaluate the following expressions for Raul.",
+          "marks": null,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ai",
+              "label": "(i)",
+              "text": "7/4",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aii",
+              "label": "(ii)",
+              "text": "7 MOD 4",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aiii",
+              "label": "(iii)",
+              "text": "7 DIV 4",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Raul has Y litres of oil to put into drums. Each drum can hold X litres of oil.\nWrite expressions to calculate:",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09bi",
+              "label": "(i)",
+              "text": "the number of full drums",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09bii",
+              "label": "(ii)",
+              "text": "the number of litres of oil left over",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Explain the difference between the operators / and DIV.\n\n5 Ramon is learning about recursion. He has designed a recursive function.\nFor\nExaminer's\nUse\nFUNCTION Something(Number)\nIF Number = 7\nTHEN\nSomething ← 1\nELSE\nSomething ← Something(Number + 1) + Number\nENDIF\nENDFUNCTION",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Calculate the value returned by the function call Something(4).\nShow your working.\nSomething(4)=",
+          "marks": 6,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "State what will happen if the function is called with Something(8).\nFor\nExaminer's\nUse",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "State what would happen if the fourth line, 'Something ← 1', was not present.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09d",
+          "label": "(d)",
+          "text": "The same process could have been designed using a FOR loop.\nWrite the pseudocode to do this.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 33,
+      "text": [
+        "ENDWHILE"
+      ]
+    }
+  ]
+}

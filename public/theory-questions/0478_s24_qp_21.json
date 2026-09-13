@@ -1,0 +1,289 @@
+{
+  "paperId": "0478_s24_qp_21",
+  "subjectCode": "0478",
+  "session": "s24",
+  "component": "21",
+  "totalMarks": 48,
+  "questionCount": 13,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick ( ) one box to complete this sentence.",
+        "A validation check to make sure that an email address contains an ‘@’ sign is a",
+        "A range check.",
+        "B visual check.",
+        "C presence check.",
+        "D format check.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Draw one line to link each description to the most appropriate programming concept.\nNot all programming concepts will be used.\nDescription Programming concept\nfunction\na subroutine that may not return a value\nprocedure\na value that is declared and used within a\nspecific procedure\nparameter\na value that a procedure expects you to\nsupply when it is called\nglobal variable\na subroutine that will always return a value\nlocal variable",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Write the pseudocode to use a procedure named Average that passes the values 25 and 50\nto the procedure.",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Outline the role of procedures and functions in creating a program that is easier to maintain.",
+          "marks": 3,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Four descriptions of programming concepts and five programming concepts are shown."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "State what is meant by the data types integer and real.",
+        "Give an example of each.",
+        "Integer ..............................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "Real ..................................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm is intended to allow, at random, between 1 and 20 values to be entered",
+        "and totalled. The total and average of the entered values are output at the end of the algorithm.",
+        "01 DECLARE Loop : STRING",
+        "02 DECLARE Limit : INTEGER",
+        "03 DECLARE Value : REAL",
+        "04 DECLARE Total : REAL"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total 0"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Limit ROUND(RANDOM() * 19,0) + 1"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Loop 1 TO Limit"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter a number\""
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Loop"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total Total * Value"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Loop"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The total of the numbers entered is \", Total"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "Identify the line numbers of four errors in the pseudocode and suggest corrections.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Write the pseudocode statement that would output the average calculated in line 13 of the\nalgorithm rounded to one decimal place.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13c",
+          "label": "(c)",
+          "text": "Explain how you should alter the original corrected algorithm to make sure that all the\nnumbers entered are between 1 and 500 inclusive. If any numbers fall outside these limits, a\nreplacement value is requested and entered.\nYou do not need to re-write the algorithm.\n\n5 Write the pseudocode statements to perform this task:\n• accept the input of a whole number from 1 to 4 inclusive\n• use a CASE statement to:\n○ output the number (1 to 4 inclusive) that was entered\n○ output the word “ERROR” if a 1 to 4 inclusive number was not entered.\n\n6 The flowchart represents an algorithm.\nSTART\nResult Limit DIV 2 + 1\nINPUT\nLimit\nOUTPUT\nNumbers[Result]\nCount 1\nINPUT\nNumbers[Count]\nSTOP\nCount Count + 1\nNo\nIS Count >\nLimit?\nNo\nIS Numbers[Count] >\nYes\nNumbers[Count + 1]?\nFlag TRUE\nYes\nSwap Numbers[Count]\nIS Flag = No\nTRUE?\nNumbers[Count] Numbers[Count + 1]\nYes\nFlag False\nNumbers[Count + 1] Swap\nCount 1\nFlag True\nYes IS Count > No\nLimit – 1?\nCount Count + 1",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data:\n7, 47, 50, 52, 60, 80, 63, 70\nNumbers\nLimit Count [1] [2] [3] [4] [5] [6] [7] Flag Swap Result OUTPUT",
+          "marks": 7,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Outline the processes involved in the algorithm shown in the flowchart on page 6.\n\n7 (a) Outline why it is useful to store data in a file.",
+          "marks": 3,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "The function LENGTH(X) calculates the length of a string X\nWrite the pseudocode statements to:\n• read the contents of the text file Quotation.txt into an appropriate string variable that\nhas been declared\n• output the string in upper case and the length of the string.\n\n8 Consider the logic expression:\nZ = (R OR NOT T) XOR (NOT S AND T)",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for this logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify this logic expression.\nS Z",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Complete the truth table from the given logic expression.\nWorking space\nR S T Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n9 A database table called SoftDrinks stores details of the soft drinks sold by a small shop.\nField Example data\nName Cola\nSupplier\nCambridge Beverages\nContainer\nCan\nSizeCl 330\nNumberInStock\nReorderLevel\nReordered Yes",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13a",
+          "label": "(a)",
+          "text": "State whether any of the given fields would be suitable as a primary key and give a reason for\nyour answer.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "Complete the structured query language (SQL) statement to return the number of cans the\nshop has in stock.\nSELECT ______ (______)\nFROM ______\nWHERE ______ = ______ ;\n\n10 The one-dimensional (1D) array Clubs[] is used to store the names of 12 cricket clubs in a local\nsports league.\nThe two-dimensional (2D) array Statistics[] is used to store, for each cricket club, the number\nof:\n• matches won\n• matches drawn\n• matches lost.\nThe 1D array Points[] is used to store the total number of points each cricket club has been\nawarded.\nThe position of any cricket club’s data is the same in all three arrays. For example, the data in\nindex 2 of Statistics[] and index 2 of Points[] belongs to the cricket club in index 2 of\nClubs[]\nThe variable Matches stores the number of matches played by each team. Each team plays the\nsame number of matches.\nPoints are awarded for:\n• a win – 12 points\n• a draw – 5 points\n• a loss – 0 points.\nWrite a program that meets the following requirements:\n• allows the number of matches played to be input and stored, with a maximum of 22 matches\n• validates the number of matches played\n• allows the names of the cricket clubs to be input and stored\n• allows the number of matches won, drawn and lost to be input and stored for each team\n• validates the number of matches won, drawn or lost against the number of matches played\n• asks the user to re-enter the number of matches won, drawn or lost if the total does not match\nthe number of matches played\n• calculates and stores the total number of points for each club\n• finds the cricket club or clubs with the highest number of points\n• outputs the name or names of the winning club or clubs, the number of wins and the total\nnumber of points awarded.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 39,
+      "text": [
+        "OUTPUT \"The average of the numbers entered is \", Total / Limit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "paperId": "9691_s10_qp_31",
+  "subjectCode": "9691",
+  "session": "s10",
+  "component": "31",
+  "totalMarks": 75,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Explain the differences between using a compiler and an interpreter for:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "the translation of a high-level language program,",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "the execution of a high-level language program.",
+              "marks": 6,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "One phase of compilation is the code generation phase.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Name the two phases that are carried out before code generation.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Describe the code generation phase.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "It is necessary to find and output all the records in the transaction file which relate to a worker\nwith ID number 23714.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Describe how the file can be searched serially for all records with ID number 23714.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Explain how the serial search would differ if it was known that there was only one record\nwith that ID number.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "Describe a more efficient search algorithm if the file is in numerical order of ID numbers.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The following ID numbers are to be sorted into numerical order, with the smallest first.\n36721, 53967, 24378, 47869, 47691\nDescribe an algorithm for implementing an insertion sort on the above data.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A company uses a computerised payroll system. Details of the work done by employees each",
+        "week are stored serially in a transaction file. This transaction file is used to create the payroll at",
+        "the end of the week. It has to be sorted into the same order as the master file."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "State two types of sensor which would be needed to provide input to the robot, explaining\nwhy each is necessary.",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Discuss the use of robots in the car factory.",
+          "marks": 6,
+          "type": "discuss",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Robots are used to carry car bodies around in a car factory. They move from position to position",
+        "in a specific order so that the car parts can be added."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Explain how flat files differ from a relational database.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Describe three advantages of using a relational database rather than flat files to store\ninformation.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A new school is being built on a single site. The computers will be networked with a central",
+        "storage facility.",
+        "Discuss different topologies and the media available for transmitting data around the network. [6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Describe the difference between the use of pages and the use of segmentation in managing\nmemory.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A job is split by the operating system into a number of pages. At any one time, only some of\nthe pages are in memory.\nExplain how the operating system keeps track of the different pages and the part played by\nvirtual memory in their movement.",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Explain how the introduction of computing technology to a factory production line has\nchanged the working patterns of people who work there.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Describe the expected changes in quality of work that can be expected.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "State what is stored in each of the following special purpose registers in a computer and explain",
+        "how the contents are altered during the fetch/execute cycle."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Explain why the response times in these two systems will be different.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Describe the hardware, software and data structures of the two systems.",
+          "marks": 8,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A shop uses two computer systems.",
+        "System 1",
+        "At the checkout, goods being bought are identified by the system. Details are given to the",
+        "customer along with the total amount owed.",
+        "System 2",
+        "Each evening details of the sales during the day are collected together. They are then used to",
+        "update the stock file."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Explain why each of the following is not an integer:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ai",
+              "label": "(i)",
+              "text": ".037",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10aii",
+              "label": "(ii)",
+              "text": "037",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "A REAL is defined as an integer or a zero followed by a . (point) followed by an unlimited\nnumber of digits (including none).\nProduce BNF rules to define REAL. (The BNF rules stated above do not need to be\nreproduced.)",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "Draw a syntax diagram of REAL. You may use NZDIGIT, DIGIT, POINT and ZERO in your\ndiagram but no other values. \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "An INTEGER is defined in a certain language by the following BNF rules:",
+        "<INTEGER>::=<NZDIGIT><NUMBER>│<NZDIGIT>",
+        "<NUMBER>::=<DIGIT>│<DIGIT><NUMBER>",
+        "<NZDIGIT>::=1│2│3│4│5│6│7│8│9",
+        "<DIGIT>::=0│<NZDIGIT>"
+      ]
+    }
+  ]
+}

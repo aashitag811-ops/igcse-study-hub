@@ -1,0 +1,299 @@
+{
+  "paperId": "0478_s15_qp_22",
+  "subjectCode": "0478",
+  "session": "s15",
+  "component": "22",
+  "totalMarks": 36,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Declare the array to store the pupils’ names.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Declare the array to store the pupils’ weights.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "It has been decided to record the weights for the whole school of 600 pupils rather than\none class.\nWrite suitable new declarations for these two arrays.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements\nor a flowchart. Use weights for the whole school.You should assume that Task 1 has already\nbeen completed.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Describe suitable validation rules for Task 1.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Give two pupil weights that you could use to check the validation used in Task 1. Explain\nwhy you chose each weight.\nWeight 1 ______\nReason for choice ______\nWeight 2 ______\nReason for choice ______",
+              "marks": 4,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how you select the pupils with a fall in weight of more than 2.5 kilograms (part of\nTask 3).You may include pseudocode or programming statements as part of your explanation.\n\nSection B",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Read this section of program code that should input 30 positive numbers and then output the",
+        "largest number input.",
+        "1 Large = 9999",
+        "2 Counter = 0"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE Counter > 30"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DO"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Num"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Num < Large THEN Large = Num"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Counter = Counter - 1"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "State the purpose of the flowchart in part (a).",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Identify a problem with this flowchart and explain how to correct it.\nProblem ______\nSolution ______\n\n4 Four programming concepts and four examples of programming code are shown below.\nDraw a line to link each programming concept to the correct example of programming code.\nProgramming\nExample of programming code\nconcept\nCounting Sum = Sum + Value[n]\nIF Value = 10 THEN PRINT 'X'\nRepetition\nSelection FOR Counter = 1 TO 10\nTotalling Amount = Amount + 1\nSum = Num1 + Num2\n\n5 (a) Write an algorithm, using pseudocode and a FOR … TO … NEXT loop structure, to input\n1000 numbers into an array.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Rewrite your algorithm using another loop structure.\n\nQuestion 6 begins on page 10.\n6 A database, MARKS, was set up to record the test results for a class of students. Part of the\ndatabase is shown below.\nStudent Name Class ID Maths English Science History Geography\nPaul Smith 0017 70 55 65 62 59\nRavi Gupta 0009 29 34 38 41 44\nChin Hwee 0010 43 47 50 45 52\nJohn Jones 0013 37 67 21 28 35\nDiana Abur 0001 92 88 95 89 78\nRosanna King 0016 21 13 11 27 15",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Give the number of fields that are in each record.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "State which field you would choose for the primary key.\nGive a reason for choosing this field.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "The query-by-example grid below selects all students with more than 60 marks in History or\nmore than 60 marks in Geography.\nField: Student Name History Geography\nTable: MARKS MARKS MARKS\nSort: Ascending\nShow:\nCriteria: >60\nor: >60\nShow what would be output.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9d",
+          "label": "(d)",
+          "text": "Complete the query-by-example grid below to select and show the student names only of all\nstudents with less than 40 marks in both Maths and English.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "PRINT Large",
+        "There are four errors in this code.",
+        "Locate these errors and suggest a corrected piece of code for each error.",
+        "[4]",
+        "3 (a) The flowchart below inputs six single digit numbers. The predefined function MOD gives the",
+        "value of the remainder, for example, Y ← 10 MOD 3 gives the value Y = 1",
+        "START",
+        "INPUT",
+        "A, B, C, D, E, F",
+        "Total @ A*1 + B*2 + C*3 + D*4 + E*5",
+        "Check @ Total MOD 11",
+        "OUTPUT",
+        "Yes",
+        "Is Check =",
+        "'Accept'",
+        "F?",
+        "No",
+        "OUTPUT",
+        "'Reject'",
+        "END",
+        "Complete a trace table for each of the two sets of input data.",
+        "Set 1 5, 2, 4, 3, 1, 5",
+        "Set 2 3, 2, 1, 0, 7, 3",
+        "Trace table set 1 5, 2, 4, 3, 1, 5",
+        "A B C D E F Total Check Output",
+        "Trace table set 2 3, 2, 1, 0, 7, 3",
+        "A B C D E F Total Check Output",
+        "[4]"
+      ]
+    }
+  ]
+}

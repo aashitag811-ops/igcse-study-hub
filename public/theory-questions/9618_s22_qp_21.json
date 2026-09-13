@@ -1,0 +1,384 @@
+{
+  "paperId": "9618_s22_qp_21",
+  "subjectCode": "9618",
+  "session": "s22",
+  "component": "21",
+  "totalMarks": 69,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A programmer draws a program flowchart to show the sequence of steps required to solve a\nproblem.\nGive the technical term for a sequence of steps that describe how to solve a problem.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The table lists some of the variables used in a program.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Complete the table by writing the most appropriate data type for each variable.\nVariable Use of variable Data type\nTemp Stores the average temperature\nPetName Stores the name of my pet\nTo calculate the number of days until my next\nMyDOB\nbirthday\nLightOn\nStores state of light; light is only on or off",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "One of the names used for a variable in the table in part 1(b)(i) is not an example of\ngood practice.\nIdentify the variable and give a reason why it is not good practice to use that name.\nVariable ______\nReason ______",
+              "marks": 2,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Complete the table by evaluating each expression.\nExpression Evaluation\nINT((31 / 3) + 1)\nMID(TO_UPPER(\"Version\"), 4, 2)\nTRUE AND (NOT FALSE)\nNUM_TO_STR(27 MOD 3)",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the table with reference to the diagram.\nAnswer\nThe number of different inputs\nThe number of different outputs\nThe single input value that could result in S4",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The initial state is S1.\nComplete the table to show the inputs, outputs and next states.\nInput Output Next state\nButton-Y\nnone\nButton-Z S2\nnone",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Examine the following state-transition diagram.",
+        "Button-Y",
+        "Button-Z | Output-C",
+        "START",
+        "S1",
+        "S3",
+        "Button-Z",
+        "Button-Y",
+        "Button-Y | Output-A",
+        "Button-X",
+        "S2",
+        "S4",
+        "Button-Z | Output-B"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Decomposition will be used to break the problem down into sub-problems.\nDescribe three program modules that could be used in the design.\nModule 1 ______\nModule 2 ______\nModule 3 ______",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Two types of program modules may be used in the design of the program.\nIdentify the type of program module that should be used to return a value.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "The manager of a cinema wants a program to allow users to book seats. The cinema has several",
+        "screens. Each screen shows a different film."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the following table by writing the answers.\nAnswer\nThe value that has been on the stack for the longest time.\nThe memory location pointed to by TopOfStack if three POP\noperations are performed.",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The following diagram shows the current state of the stack:\nStack Pointer\nMemory\nValue\nlocation\n202 'W' TopOfStack\n203 'Y'\n204 'X'\n205 'Z'\n206 'N'\n207 'P'\nThe following operations are performed:\nPOP\nPOP\nPUSH 'A'\nPUSH 'B'\nPOP\nPUSH 'C'\nPUSH 'D'\nComplete the diagram to show the state of the stack after the operations have been\nperformed.\nStack Pointer\nMemory\nValue\nlocation",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A stack is created using a high-level language. Memory locations 200 to 207 are to be used to",
+        "store the stack.",
+        "The following diagram represents the current state of the stack.",
+        "TopOfStack points to the last value added to the stack.",
+        "Stack Pointer",
+        "Memory",
+        "Value",
+        "location",
+        "203 'F' TopOfStack",
+        "204 'C'",
+        "205 'D'",
+        "206 'E'",
+        "207 'H'"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Each line of a text file contains data organised into fixed-length fields as shown:",
+        "<Field 1><Field 2><Field 3>",
+        "An algorithm is required to search for the first instance of a given value of Field 2 and, if found, to",
+        "output the corresponding values for Field 1 and Field 3.",
+        "Describe the algorithm needed.",
+        "Do not include pseudocode statements in your answer.",
+        "[6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "An algorithm will:\n• output each integer value between 100 and 200 that ends with the digit 7, for example,\n• output a final count of the number of values that are output.\nWrite pseudocode for this algorithm.\nAny variables used must be declared.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Study the following pseudocode.\nCASE OF MySwitch\n1: ThisChar 'a'\n2: ThisChar 'y'\n3: ThisChar '7'\nOTHERWISE: ThisChar '*'\nENDCASE\nWrite pseudocode with the same functionality without using a CASE structure.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "A function IsPalindrome() will take a string parameter. The function will return TRUE if the\nstring is a palindrome and will return FALSE if the string is not a palindrome.\nWrite pseudocode for IsPalindrome().",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Strings may consist of several words separated by spaces.\nFor example, the string \"never odd or even\" becomes a palindrome if the spaces are removed.\nThe program flowchart represents an algorithm to produce a string OutString by removing\nall spaces from a string InString.\nSTART\nSet Index to 1\nNO\nYES\nEND\nComplete the table by writing the text that should replace each of the labels B, C, D, F and G.\nNote: the text may be written as a pseudocode statement.\nLabel Text\nA Set OutString to \"\"\nE Set Index to Index + 1",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A string is a palindrome if it reads the same forwards as backwards.",
+        "The following strings are examples of palindromes:",
+        "\"Racecar\"",
+        "\"madam\"",
+        "\"12344321\"",
+        "Upper-case and lower-case characters need to be treated the same. For example, 'A' is equivalent",
+        "to 'a'."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module RandomChar().\nYou may wish to refer to the insert for a description of the CHR() function. Other functions\nmay also be required.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A new module is defined as follows:\nModule Description\nFindPassword()\n• Takes a website domain name as a parameter of type string\n• Searches for the website domain name in the array Secret\n• If the website domain name is found, the decrypted password\nis returned\n• If the website domain name is not found, a warning message\nis output, and an empty string is returned\nWrite pseudocode for module FindPassword().\nAssume that modules Encrypt() and Decrypt() have already been written.",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The modules Encrypt() and Decrypt() are called from several places in the main\nprogram.\nIdentify a method that could have been used to test the main program before these modules\nwere completed. Describe how this would work.\nMethod ______\nDescription ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "A validation function is written to check that the passwords generated are valid.\nTo be valid, each password must:\n• be 14 characters long\n• be organised as three groups of four case-sensitive alphanumeric characters. The\ngroups are separated by hyphen characters\n• not include any duplicated characters, except for the hyphen characters.\nNote: lower-case and upper-case characters are not the same. For example, 'a' is not the\nsame as 'A'.\nGive two password strings that could be used to test different areas of the validation rules.\nPassword 1 ______\nPassword 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8e",
+          "label": "(e)",
+          "text": "The RandomChar() module is to be modified so that alphabetic characters are generated\ntwice as often as numeric characters.\nDescribe how this might be achieved.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A program allows a user to save passwords used to login to websites. A stored password is",
+        "inserted automatically when the user logs into the corresponding website.",
+        "A student is developing a program to generate a password. The password will be of a fixed format,",
+        "consisting of three groups of four alphanumeric characters. The groups are separated by the",
+        "hyphen character '-'.",
+        "An example of a password is: \"FxAf-3haV-Tq49\"",
+        "A global 2D array Secret of type STRING stores the passwords together with the website domain",
+        "name where they are used. Secret contains 1000 elements organised as 500 rows by 2 columns.",
+        "Unused elements contain the empty string (\"\"). These may occur anywhere in the array.",
+        "An example of a part of the array is:",
+        "Array element Value",
+        "Secret[27, 1] \"www.thiswebsite.com\"",
+        "Secret[27, 2]",
+        "\"\"",
+        "Secret[28, 1]",
+        "\"www.thatwebsite.com\"",
+        "Secret[28, 2] \"\"",
+        "Note:",
+        "• For security, passwords are stored in an encrypted form, shown as \"\" in the",
+        "example.",
+        "• The passwords cannot be used without being decrypted.",
+        "• Assume that the encrypted form of a password will not be an empty string.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "RandomChar()",
+        "• Generates a single random character from within one of the",
+        "following ranges:",
+        "○ 'a' to 'z'",
+        "○ 'A' to 'Z'",
+        "○ '0' to '9'",
+        "• Returns the character",
+        "Encrypt()",
+        "• Takes a password as a parameter of type string",
+        "• Returns the encrypted form of the password as a string",
+        "Decrypt()",
+        "• Takes an encrypted password as a parameter of type string",
+        "• Returns the decrypted form of the password as a string",
+        "For reference, relevant ASCII values are as follows:",
+        "Character range ASCII range",
+        "'a' to 'z' 97 to 122",
+        "'A' to 'Z' 65 to 90",
+        "'0' to '9' 48 to 57"
+      ]
+    }
+  ]
+}

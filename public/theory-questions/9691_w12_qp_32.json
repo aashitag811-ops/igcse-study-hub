@@ -1,0 +1,772 @@
+{
+  "paperId": "9691_w12_qp_32",
+  "subjectCode": "9691",
+  "session": "w12",
+  "component": "32",
+  "totalMarks": 90,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "In database design:\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Explain what is meant by a foreign key.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Explain how keys are used to implement the one-to-many relationship between the\ntwo entities X and Y shown below.\nEntity X Entity Y",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A company offers training courses to its employees.\nFor\nExaminer's\nUse\n• Each employee is given a unique EmployeeID\n• Each course has a unique CourseCode\n• Over a period of time an employee will enrol on many courses\n• Each course will be attended by many employees\n• An employee never enrols on a particular course more than once.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Add two attributes to each of the Employee and Course tables.\nEmployee(EmployeeID, , )\nCourse( , )",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "A third table, CourseEnrolment, will record which employee enrolled on which\ncourses.\nState two essential attributes for this table. Show the primary key.\nYou should not create a CourseEnrolmentID for the table.\nCourseEnrolment( , )",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Storing data in flat files has been replaced by storing data in relational database tables.\nExplain how the use of a relational database reduces data redundancy.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A binary pattern can be interpreted in a number of different ways.\nFor\nExaminer's\nUse\nConsider the binary pattern 1001 1010",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "What denary number is this if it represents a sign and magnitude integer?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "What denary number is this if it represents a two’s complement integer?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "Describe one advantage of using two’s complement representation rather than\nsign and magnitude.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A computer system stores real numbers using a 12-bit floating point representation.\nThe first 8 bits are the mantissa and the final 4 bits the exponent. Both the mantissa\nand the exponent use two’s complement representation.\nConsider the binary pattern:\n1 0 0 0 1 0 0 0 0 1 1 1",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "What is the mantissa in denary?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "What is the exponent in denary?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "What real number is being represented? Show your working.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biv",
+              "label": "(iv)",
+              "text": "Show the binary pattern for the largest and smallest positive numbers which can\nFor\nExaminer's\nbe represented with this 12-bit floating point representation.\nUse\nLargest positive number in binary:\nSmallest positive number in binary:",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The sequence of operations below show - in register transfer notation - the fetch stage\nof the fetch-execute cycle.\n1. MAR ← [PC]\n2. PC ← [PC] + 1\n3. MDR ← [[MAR]]\n4. CIR ← [MDR]\nNote:\n• [register] denotes the contents of the specified register\n• Step 1 above is read as ‘The contents of the Program Counter are copied to the\nMemory Address Register’.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Describe what is happening at step 4.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Explain how the data bus is used at step 3.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "Explain how the address bus is used at step 3.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A programmer writing low-level code has the choice of using either machine code or\nFor\nassembly language. Examiner's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Describe two advantages of using assembly language.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Describe three specific tasks done by the assembler software.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "A low-level language contains instructions for direct addressing and relative\naddressing.\nExplain these terms. You may wish to illustrate your answers with a diagram.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Direct addressing",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Relative addressing",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A source code program is compiled for the first time.\nState two outputs that could be produced by the compiler.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Describe two benefits of using a compiler (rather than an interpreter).",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Explain what is meant by code optimisation.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Explain why the following system software may be required to produce the final\nexecutable file.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "Linker",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "Loader",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "The two types of software which are used to translate high-level language programs are a",
+        "For",
+        "Examiner's",
+        "compiler and an interpreter.",
+        "Use"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the operation of a stack data structure.\nFor\nExaminer's\nUse",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A stack is to be implemented to store string data using the following variables.\nVariable Data Type Description\nMyStack ARRAY[100]: STRING Stores the string data values\nStores the index position of the\nMyStack array for the current ‘top of\nTopOfStack INTEGER\nstack’ position. TopOfStack has\nvalue -1 when the stack is empty.\nThe diagram below shows the state of the array and TopOfStack after the following:\n• three values have been pushed on to the stack (Owl, Lion and Tiger)\n• a value is popped from the stack\n• then the value Leopard is pushed on to the stack.\nMyStack\n0 Owl\n1 Lion\nTopOfStack\n2 Tiger Leopard\nPopping a single value is to be implemented with the procedure PopFromStack.\nFor\nExaminer's\nUse\nPROCEDURE PopFromStack\nIF\nTHEN\nOUTPUT “Stack is already EMPTY”\nELSE\nOUTPUT MyStack [ ] “is popped”\nTopOfStack ←\nENDIF\nENDPROCEDURE\nComplete the pseudocode by filling in the three answer spaces.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "State when a stack would be required in the operation of a computer system.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "Explain how the stack is used.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Multiprogramming is the ability to have more than one program loaded in the main\nFor\nmemory at the same time. Examiner's\nUse\nThe operating system for a computer which supports multiprogramming must contain a\nprogram module for management of the main memory.\nDescribe two strategies for memory management.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "In a multiprogramming computer system, describe two possible strategies for\nscheduling the use of the processor.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "Describe what is meant by an interrupt.\nFor\nExaminer's\nUse",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "State two different sources of an interrupt and give a reason for each interrupt.\nSource 1\nReason\nSource 2\nReason",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Name and describe two different media used for the transmission of data across a\nFor\nlocal area network. Examiner's\nUse\nMedium 1\nDescription\nMedium 2\nDescription",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A library has a central computer at its Head Office. There are libraries in three towns:\nFor\nExaminer's\nTown A, Town B and Town C. Each has a single computer connected to the Head\nUse\nOffice computer over a Wide Area Network (WAN) using a star topology.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Explain what is meant by a WAN.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Draw a labelled diagram showing this star network.",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "7biii",
+              "label": "(iii)",
+              "text": "Describe two benefits of a star network.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "A high-level programming language has the following built-in function\nFor\nExaminer's\nCharacterCount defined as follows:\nUse\nCharacterCount(ThisChar: CHAR, ThisString: STRING) RETURNS INTEGER\nreturns an integer value for the number of times the character ThisChar occurs within\nThisString.\nCHAR is a data type for a single character.\nFor Example:\nCharacterCount(‘J’, “James Joyce”) will return the integer 2\nAn error is returned if the function is not properly called.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "Explain what is meant by the term function identifier.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "State the function identifier for the function given above.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiii",
+              "label": "(iii)",
+              "text": "Explain what is meant by the term parameter.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiv",
+              "label": "(iv)",
+              "text": "State the parameter identifiers for the function given above.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "What is returned from the following function calls?\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "CharacterCount(‘A’, “Adams Apple”)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "CharacterCount(‘a’, “Amber Arif”)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biii",
+              "label": "(iii)",
+              "text": "CharacterCount(“s”, “Mississippi”)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "More facts are to be included.\nThere is a country in the continent of South America called Peru.\nWrite the extra facts to record this.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Using variable ThisState, the clause:\nstate(ThisState, usa)\nwould return the result: ThisState = texas, alaska\nWrite the result returned by the clause:\ncountry(ThisCountry, asia)\nThisCountry =",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Complete the rule below to determine if two countries are in the same continent.\nin_same_continent(Country1, Country2)\nIF \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A declarative programming language is to be used to represent the knowledge base shown",
+        "For",
+        "Examiner's",
+        "below:",
+        "Use",
+        "1. continent(asia).",
+        "2. continent(north_america).",
+        "3. continent(australasia).",
+        "4. country(india, asia).",
+        "5. country(china, asia).",
+        "6. country(usa, north_america).",
+        "7. country(australia, australasia).",
+        "8. state(queensland, australia).",
+        "9. state(tasmania, australia).",
+        "10. state(texas, usa).",
+        "11. state(alaska, usa).",
+        "These clauses have the following meaning:",
+        "Clause Explanation",
+        "1 There is a continent named asia",
+        "4 The country india is in asia",
+        "9 There is a state in australia named tasmania"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "paperId": "0478_w22_qp_22",
+  "subjectCode": "0478",
+  "session": "w22",
+  "component": "22",
+  "totalMarks": 36,
+  "questionCount": 25,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Identify one constant you could have used for Task 1 and state its value.\nConstant ______\nValue ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Identify one array you could have used in Task 1 and describe its use.\nArray ______\nUse ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Describe how your program could validate the input for the day number within the two-week\nperiod to make sure an appropriate value is entered (part of Task 1).\nYou must include programming statements as part of your answer.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm to show how your program allocates a parking space if the visitor requires\naccessible parking (part of Task 2), including all relevant input and output, using pseudocode,\nprogramming statements or a flowchart.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program in Task 2 could be altered so that bookings can be made for\nany time over a four-week period instead of the current two-week period. Any programming\nstatements used in your answer must be fully explained.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program records and outputs the number of accessible and general parking\nspaces used for the two-week period (part of Task 3). Any programming statements used in\nyour answer must be fully explained.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw a line to connect each programming concept to the most appropriate description.",
+        "Programming concept Description",
+        "carrying out an action multiple times within a loop",
+        "structure",
+        "counting",
+        "adding together the numbers in a list of numbers",
+        "repetition",
+        "tracking the number of iterations a program has",
+        "selection",
+        "performed in a loop",
+        "sequence",
+        "branching off to take a course of action depending",
+        "on the answer to a question",
+        "totalling",
+        "a set of statements to be executed in order",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe the use of verification on input of data when entering a list of items in stock into a",
+        "database. Explain why verification is necessary.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe one type of test data that must be used to test if a program accepts valid input data.",
+        "[2]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode should allow 500 marks to be entered into the algorithm. If the mark is 80 or",
+        "greater it is stored in an array for higher marks. If the mark is less than 80, but greater than or",
+        "equal to 50 it is stored in an array for middle marks. The remaining marks are stored in an array",
+        "for lower marks. The results from the algorithm are displayed at the end.",
+        "01 HighList 0",
+        "02 MidList 0",
+        "03 LowList 0",
+        "04 MarksEntry 0",
+        "05 REPEAT"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Mark"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Mark >= 80"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Higher[HighList] MarksEntry"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "HighList HighList + 1"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Mark >= 50"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Middle[MidList] Mark"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "MidList MidList"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Lower[HighList] Mark"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "LowList LowList + 1"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "MarksEntry MarksEntry + 1"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT MarksEntry = 500"
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"You entered \", HighList, \" higher marks\""
+      ]
+    },
+    {
+      "id": "24",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"You entered \", MidList, \" middle marks\""
+      ]
+    },
+    {
+      "id": "25",
+      "context": [],
+      "parts": [
+        {
+          "id": "25a",
+          "label": "(a)",
+          "text": "Identify the four errors in the pseudocode and suggest a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "25b",
+          "label": "(b)",
+          "text": "The corrected algorithm needs to be changed so that any number of marks may be entered\nand the algorithm runs until the user tells it to stop.\nWrite the new pseudocode statements that would be needed to achieve this and state where\nin the algorithm they would be placed.\n\n6 This flowchart represents an algorithm to divide three-digit numbers into hundreds, tens and units.\nThe pre-defined function DIV gives the value of the result of integer division, for example\nY = 9 DIV 4 gives the value Y = 2\nThe pre-defined function MOD gives the value of the remainder of integer division, for example\nR = 9 MOD 4 gives the value R = 1\nSTART\nCounter 0\nCounter Counter + 1\nYes IS\nCounter > 7?\nNo\nINPUT\nNumber\nIS\nYes\nNumber < 100?\nNo\nIS\nYes\nNumber > 999?\nNo\nHundreds Number DIV 100\nTemp Number MOD 100\nTens Temp DIV 10\nUnits Number MOD 10\nSTOP\nOUTPUT \"Hundreds: \",\nHundreds, \" Tens: \",\nTens, \" Units: \", Units\nComplete the trace table for the algorithm using this input data:\n97, 876, 4320, 606, 9875, 42, 124\nCounter Number Hundreds Temp Tens Units OUTPUT\n\n7 A school uses a database table, ASSESS, to keep a record of the internal assessments and the\nnumber of candidates for each of the subjects in its curriculum.\nSubjectCode SubjectName Exams Practicals Candidates\nCOMP Computer Science 2 1 200\nINFO Information Technology 1 2 200\nMATH Mathematics 3 0 350\nPHYS Physics 2 1 120\nCHEM Chemistry 2 1 120\nBIOL Biology 2 1 200\nGEOG Geography 2 0 200\nHIST History 2 0 250\nGEOL Geology 2 0 80\nPHED Physical Education 1 2 350\nFREN French 2 2 120\nENGL English 2 2 350\nThis database only allows the data types:\n• text\n• number\n• currency\n• Boolean.",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "25a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "25ai",
+              "label": "(i)",
+              "text": "State the most appropriate data type for the fields SubjectCode and Exams.\nSubjectCode ______\nExams ______",
+              "marks": 1,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "25aii",
+              "label": "(ii)",
+              "text": "State one reason why the Candidates field could not be of the Boolean data type.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "25b",
+          "label": "(b)",
+          "text": "Show the output given by the query-by-example grid.\nField: SubjectName Practicals Candidates\nTable: ASSESS ASSESS ASSESS\nSort: Ascending\nShow: 3 3\nCriteria: <1\nor:",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "25c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid to output the subjects with fewer than 150 candidates.\nDisplay only the SubjectCode, SubjectName and Candidates fields in order of the number of\ncandidates from largest to smallest.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "OUTPUT \"You entered \", LowList, \" lower marks\""
+      ]
+    }
+  ]
+}

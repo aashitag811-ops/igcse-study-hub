@@ -1,0 +1,322 @@
+{
+  "paperId": "9608_w21_qp_21",
+  "subjectCode": "9608",
+  "session": "w21",
+  "component": "21",
+  "totalMarks": 65,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Give a more meaningful identifier name for each of the following variables used by the\nprocedure.\nVariable New identifier name\nVar1\nVar2\nVar3",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A function called ProcessVars() assigns values to variables as shown.\nVariable Value\nHouseCount 12\nTurnout2018 20.23\nTidalRiskCategory 'C'\nIsConservationArea FALSE\nStationLocationName \"Ocean Boulevard\"\nSome pseudocode expressions in the function are shown in the following table.\nComplete the table by evaluating each expression and writing the answer in the Evaluates to\ncolumn.\nIf the expression is invalid, write “ERROR” in the Evaluates to column.\nRefer to the Appendix on pages 18–19 for a list of built-in pseudocode functions and operators.\nPseudocode expression Evaluates to\nLENGTH(HouseCount) > 6\nMOD(INT(Turnout2018) * 3, 4)\nASC(TidalRiskCategory) + Turnout2018\nIsConservationArea AND (HouseCount <= 50)\nMID(StationLocationName, 1, 5) & \" Eleven\"",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The function header for ProcessVars() is:\nFUNCTION ProcessVars(DataItem : REAL) RETURNS REAL\nThe following is an example of a parameter value passed to the function.\n\"L-MH-245,ManorHouse,N,F,230,12.34,0.98,12,N\"\nThere is an error in the function header.\nState the error and write the correct function header.\nError ______\nCorrect function header ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "A programmer writes program code using an Integrated Development Environment (IDE).\nDefine the following three features of an IDE.\nBreakpoints ______\nReport (watch) window ______\nSingle stepping ______",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Part of the procedure InitVars() is shown:",
+        "PROCEDURE InitVars()",
+        "DECLARE Var1 : INTEGER // daily rainfall",
+        "DECLARE Var2 : REAL // the average wind speed",
+        "DECLARE Var3 : STRING // the ID number of the weather station",
+        "ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The following pseudocode function counts the occurrences of a character in a string.\nLine numbers are shown for reference only.\n01 DECLARE Message : STRING",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": []
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [
+        {
+          "id": "03b",
+          "label": "(b)",
+          "text": "Four lines of the pseudocode given in part (a) contain an error.\nIdentify the errors and write the correct pseudocode.\nLine number for error 1 ______\nCorrect pseudocode ______\nLine number for error 2 ______\nCorrect pseudocode ______\nLine number for error 3 ______\nCorrect pseudocode ______\nLine number for error 4 ______\nCorrect pseudocode ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03c",
+          "label": "(c)",
+          "text": "A procedure, Frequency(), outputs the number of times each vowel occurs in a string.\nThe procedure will:\n• prompt and input a string\n• count the occurrence of each vowel in the string using a CASE structure\n• output each vowel with its count value.\nYou may assume that vowels are the upper-case or lower-case characters 'a', 'e', 'i',\n'o', and 'u'.\nWrite pseudocode for the procedure Frequency().\nRefer to the Appendix on pages 18–19 for a list of built-in pseudocode functions and\noperators.\n\n3 An aeroplane carries cases.\nA case is not allowed on the aeroplane if:\n• the total number of cases previously checked in for a flight is 300 or more\n• the weight of a case exceeds the maximum of 50 kilograms.\nThe following statements apply:\n• Each flight is identified by a five-character string variable FlightNo\n• Each case is identified by a three-character string variable CaseID\n• The weight of each case is represented by a two-digit numeric string variable CaseWeight\nA text file, HOLD-CARGO.txt, stores data for cases on all flights. The format of each line of the file\nis:\n<FlightNo><CaseID><CaseWeight>",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03a",
+          "label": "(a)",
+          "text": "A procedure, CheckWeight(), is required as follows:\n• take the flight number as parameter\n• output the list of case IDs for the flight that are not allowed on the aeroplane.\nWrite pseudocode for the procedure CheckWeight().",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03b",
+          "label": "(b)",
+          "text": "A decision is made to use constants in the procedure CheckWeight() to represent the\nmaximum weight and the maximum number of cases.\nState two advantages of using constants instead of variables.\nAdvantage 1 ______\nAdvantage 2 ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "03c",
+          "label": "(c)",
+          "text": "CheckWeight() is a user-defined function.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "03ci",
+              "label": "(i)",
+              "text": "State two benefits of user-defined functions.\nBenefit 1 ______\nBenefit 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "03cii",
+              "label": "(ii)",
+              "text": "State two benefits of built-in functions.\nDo not give the same answers as in part (c)(i).\nBenefit 1 ______\nBenefit 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "03d",
+          "label": "(d)",
+          "text": "One method of passing a parameter is by reference.\nName and describe another method.\nName ______\nDescription ______",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "FUNCTION CharacterCount(Letter : CHAR) RETURNS INTEGER",
+        "05 DECLARE LetterCount, Index : INTEGER",
+        "06 DECLARE ThisChar : INTEGER",
+        "08 LetterCount 1",
+        "10 FOR Index 1 TO LENGTH(Message) - 1",
+        "11 ThisChar LEFT(Message, Index, 1)",
+        "12 IF ThisChar = Letter",
+        "13 THEN",
+        "14 LetterCount LetterCount + 1",
+        "15 ENDIF",
+        "16 ENDFOR",
+        "17 RETURN LetterCount",
+        "18 ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The SafetyCheck() procedure is written in pseudocode.\nComplete the following pseudocode.\nRefer to the Appendix on pages 18–19 for a list of built-in pseudocode functions and operators.\nPROCEDURE SafetyCheck()\nDECLARE Count : INTEGER\nDECLARE Index : INTEGER\nCONSTANT TreeCount = 20\n………………………………………… 0\nFOR Index 1 TO …………………………………………\nIF TreeAngle[Index] > …………………………………………\nTHEN\nCount Count + 1\nENDIF\nENDFOR\nIF ………………………………………… <= MainTrigger\nTHEN\nOUTPUT \"Maintenance not needed\"\nE L S E\nOUTPUT \"Maintain \" & NUM_TO_STRING(Count) & \" trees\"\nENDIF\nENDPROCEDURE",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The TreeAngle array is changed to a 2D array that contains 20 rows and 2 columns of\ninteger numbers as follows:\n• The first column stores the integer reference number of the tree.\n• The second column stores the integer angle of the tree.\nStudy this example:\nTreeAngle[15, 1] 767 // tree reference\nTreeAngle[15, 2] 12 // the angle of the tree\nA procedure, CheckTree(), is called with an integer parameter representing the tree’s\nreference number.\nThe procedure will:\n• search the TreeAngle array for the reference number\n• when a match is found, prompt and input the angle of the tree, store the data in the\nsecond dimension of the TreeAngle array, and then output a message if its safety\nstatus has changed\n• when a match is not found, output the reference number and \"No match\".\nWrite program code for the procedure CheckTree().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 7,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A willow tree is a type of tree that grows at an angle. A 1D array, TreeAngle, has 20 elements of",
+        "integer type. Each element stores the angle of a willow tree measured in degrees.",
+        "A procedure called SafetyCheck() is required to:",
+        "• check each tree angle in the array and count the number of trees that exceed the safe limit of",
+        "36 degrees",
+        "• determine whether the count exceeds a maintenance limit stored in the global variable",
+        "MainTrigger, in which case a maintenance visit is required",
+        "• output a suitable message if the count is less than or equal to MainTrigger, otherwise",
+        "output a message showing the number of times the safe limit was exceeded as follows:",
+        "\"Maintain 10 trees\"."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Module iteration and module selection are features of a structure chart.\nState two other features that may be represented in a structure chart.\nFeature 1 ______\nFeature 2 ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Examine this structure chart of a booking system.\nMakeBooking()\nStoreBooking() AmendDate() MakePayment()\nExternalAuthorisation()\nComplete the following table by writing the correct parameter letter (A, B, C, D or E) for each\nparameter identifier.\nParameter identifier Parameter letter\nQuantity\nBookingID\nItemCost\nTotalCost\nBookingDate",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 2,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A programmer decides to store the geocodes in a 1D array called Location. The array\ncontains 10 000 elements and unused array elements are initialised with the string \"22+VV\".\nWrite pseudocode to declare and initialise the array Location.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The following example pseudocode uses the function FindGeoCodeIndex() to search the\narray Location for the index position of a given geocode.\nDECLARE CodePosition : INTEGER\nCodePosition FindGeoCodeIndex(GeoCode)\nIF CodePosition <> -1\nTHEN\nOUTPUT Geocode & \" found at \" & NUM_TO_STRING(CodePosition)\nENDIF\nComplete the program flowchart to represent the algorithm only for the function\nFindGeoCodeIndex(). Variable declarations are not required in program flowcharts.\nSTART\nEND",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "The function RetrieveCode() will extract a geocode from an email message.\nHere is a summary of the design requirements for this function.\nParameters Returns Example\nMessage \"This is my\n• A string containing the • A string containing the\nprevious address\nemail message geocode\n65+ER,CoventryUK.\"\n• An integer value\nRetrieveCode(Message, 29)\ncontaining the start\nreturns \"65+ER,CoventryUK\"\nposition of the geocode\nin the message string\nAssume that:\n• the integer value points to the start of a valid geocode\n• if a valid geocode is not at the end of the email message, it will be followed by a space\nor a full stop.\nWrite program code for the function RetrieveCode().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of ThisChar\nExample: ASC('A') returns 65\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nUCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the upper case equivalent of ThisChar\nThisChar is returned unchanged if it is not a lower-case alphabetic character\nExample: UCASE('a') returns 'A'\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10, 3) returns 1\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 6,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A geocode is a string that specifies a geographical location.",
+        "The string consists of two alphanumeric characters which are followed by:",
+        "• the character '+'",
+        "• two more alphanumeric characters",
+        "• a comma",
+        "• a description of the location.",
+        "Here is an example of an email message that contains two geocodes. The first is for Coventry in",
+        "the UK and the second is for Cambridge in the UK.",
+        "\"This is my previous address 65+ER,CoventryUK.",
+        "I have now moved to my new location at 64+AA,CambridgeUK.\""
+      ]
+    }
+  ]
+}

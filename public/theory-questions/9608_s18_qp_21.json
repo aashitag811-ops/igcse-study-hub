@@ -1,0 +1,309 @@
+{
+  "paperId": "9608_s18_qp_21",
+  "subjectCode": "9608",
+  "session": "s18",
+  "component": "21",
+  "totalMarks": 54,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A program stores data about hospital patients.\nGive a suitable identifier name for each of the data items.\nDescription of data item Suitable identifier name\nThe temperature of the patient\nThe temperature of the room\nThe patient identification number\nThe name of the nurse taking the measurement",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Program variables have values as follows:\nVariable Value\nMyGreeting \"Happy Birthday\"\nMyInitial 'C'\nAgeInYears 27\nWeight 60.5\nMarried TRUE\nChildren TRUE\nEvaluate each expression in the following table.\nIf an expression is invalid, write ERROR.\nFor the built-in functions list, refer to the Appendix on page 15.\nExpression Evaluates to\n\"Mon\" & MID(MyGreeting, 10, 2)\nAgeInYears + ASC(MyInitial)\nINT(MyInitial)\nMOD(Weight * 2, 10)\nMarried AND (NOT Children)",
+              "marks": 5,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Programming languages support different data types.\nGive an appropriate data type for each of these variables from part (b)(i).\nVariable Data type\nMyGreeting\nMyInitial\nAgeInYears\nWeight\nMarried",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following is a function design in pseudocode.",
+        "Line numbers are given for reference only.",
+        "01 FUNCTION StringClean(InString : STRING) RETURNS STRING"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE NextChar : CHAR"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE OutString : STRING"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Counter : INTEGER"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06ai",
+              "label": "(i)",
+              "text": "This pseudocode includes features that make it easier to read and understand.\nState four such features.\nFeature 1 ______\nFeature 2 ______\nFeature 3 ______\nFeature 4 ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06aii",
+              "label": "(ii)",
+              "text": "State one feature that could be added to make the pseudocode easier to understand.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Study the function StringClean(). Identify the features of the function in the following\ntable.\nFeature Answer\nA line number containing an example of an assignment statement\nA line number containing the start of a repetition block\nA line number containing the end of a repetition block\nA line number containing the start of a selection statement\nThe number of parameters of the MID function\nThe Boolean operator used\nThe number of local variables\nThe number of function calls from within StringClean()\nresulting from the call:\nNewString StringClean(\"Me\")\nThe number of a line containing an unnecessary statement\n\n3 In a chemical factory, a procedure, CheckSensor() is required to allow an operator to monitor\nthe temperature in different locations.\nIn the factory:\n• the temperature is measured by 10 sensors, each at a different location\n• each sensor has a unique ID (1 to 10).\nThe procedure CheckSensor() will compare the measured temperature against each of two\nconstant values, LowTemp and HighTemp. It will perform the following actions depending on the\nresult of the comparison.\nMeasured temperature Action\nbelow LowTemp Output \"Cold\"\nfrom LowTemp to HighTemp Output \"Normal\"\nabove HighTemp Call procedure Alarm()\nA library function, GetTemp(), returns the temperature value from a given sensor.\nThe structured English representing the algorithm for the procedure CheckSensor() is as\nfollows:\n1. Prompt for the input of a sensor ID.\n2. Input a sensor ID.\n3. If the sensor ID is invalid, repeat from step 1.\n4. Call the GetTemp() function with the sensor ID as the parameter, to obtain the relevant\ntemperature.\n5. Compare the temperature against the two constant values and take the appropriate action.\nDraw a program flowchart on the next page to represent the algorithm for procedure\nCheckSensor().\nVariable declarations are not required in program flowcharts.\n\n4 (a) A structure chart is used in modular program design.\nIteration and selection are two features of an algorithm that may be shown on a structure chart.\nGive three other features.\nFeature 1 ______\nFeature 2 ______\nFeature 3 ______",
+          "marks": 9,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Pseudocode for a function is shown.\nFUNCTION ItemProcess (AddItem, InString : STRING) RETURNS BOOLEAN\nDECLARE RetFlag : BOOLEAN\nFALSE\nRetFlag\nIF AddItem = \"Yes\"\nTHEN\nRetFlag AddToList(InString)\nELSE\nCALL RemoveFromList(InString)\nENDIF\nRETURN RetFlag\nENDFUNCTION\nDraw a structure chart on the next page to represent this pseudocode.\n\n5 A golf club holds information about its members. When a member completes a round of golf, their\nscore is stored along with their membership number and the date of the round.",
+          "marks": 6,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "Explain why the club stores these data in a file rather than an array.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Editing functions such as cut, copy and paste are features provided by an Integrated\nDevelopment Environment (IDE).\nGive two additional features of an IDE that are helpful when coding a program.\nFeature 1 ______\nFeature 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "The information is stored in a text file, ScoreDetails.txt. The format of each line of the\ntext file is as follows:\n<MembershipNumber><Date><Score>\n• MembershipNumber is a four-digit numeric string.\n• Date is a six-digit numeric string in the format DDMMYY\n• Score is a two-digit numeric string in the range \"50\" to \"99\".\nA procedure, AddNewScores(), is being developed. This will allow the user to enter scores\nfor several members on a particular date.\nThe procedure, AddNewScores(), will perform the following actions:\n1. Prompt for the date of the scores.\n2. Input the date of the scores.\n3. Prompt for the membership number.\n4. Input the membership number.\n5. If the membership number is an empty string then end the procedure.\n6. Prompt for the score.\n7. Input the score.\n8. Validate the score.\n9. If the validation fails then repeat from step 6.\n10. Form a text string from the data and write this to the ScoreDetails.txt file.\n11. Repeat from step 3.\nWrite program code for the AddNewScores() procedure.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\n6 (a) The following pseudocode includes references to a 1D array.\nDECLARE StudentGrade : ARRAY[1:5] OF CHAR\nDECLARE n : INTEGER\nDECLARE x : CHAR\nn 3\nx StudentGrade[n]",
+          "marks": 9,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06ci",
+              "label": "(i)",
+              "text": "Use the correct technical terms to explain the meaning of [1:5] in this pseudocode.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06cii",
+              "label": "(ii)",
+              "text": "Use the correct technical term to complete the following statement.\nInteger n is used as the ______ to StudentGrade.",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "A 2D array, Picture, contains data representing a bitmap image. Each element of the array\nrepresents one pixel of the image. The image is grey-scale encoded where the value of each\npixel ranges from 0 (representing black) to 255 (representing white) with intermediate values\nrepresenting different levels of grey.\nThe following is an example of an image and the corresponding data values for the Picture\narray.\nBitmap image Values\n240 10 10 10 10 10 10 240\n80 80 240 80 80 240 80 80\n80 80 240 80 80 240 80 80\n80 80 150 150 150 150 80 80\n80 80 240 240 240 240 80 80\n80 80 150 150 150 150 80 80\n240 240 150 150 150 150 240 240\n240 240 150 150 150 150 240 240\nIn pseudocode, the array is declared as follows:\nDECLARE Picture : ARRAY[1:8, 1:8] OF INTEGER\nA function, Lighten(), is required to lighten the image. Lightening an image may cause it to\n‘burn out’. An image is said to be ‘burnt out’ if any pixel is set to the maximum value of 255.\nThe function Lighten() will:\n1. increase the value of each pixel by 10%\n2. return TRUE if the resultant image is ‘burnt out’.\nWrite pseudocode to implement the Lighten() function.\nAssume that the array Picture is a global variable.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 40,
+      "text": [
+        "DECLARE MyString : STRING",
+        "08 OutString \"\"",
+        "10 FOR Counter 1 TO LENGTH(InString)",
+        "12 NextChar MID(InString,Counter,1)",
+        "13 NextChar LCASE(NextChar)",
+        "15 IF (NextChar >= 'a') AND (NextChar <= 'z')",
+        "17 THEN",
+        "19 OutString OutString & NextChar",
+        "21 ENDIF",
+        "23 ENDFOR",
+        "25 RETURN OutString",
+        "27 ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A function, ProcessMarks(), is required to analyse test marks for a class of students.",
+        "• There are 20 students in the class.",
+        "• A mark is between 0 and 100.",
+        "• The marks for the class are stored in an array, Mark, which has 20 elements.",
+        "• The array is passed to the function as a parameter.",
+        "• The function will output a message stating the average and highest marks. For example:",
+        "\"The average mark is 34 and the highest mark is 76\"",
+        "• The function returns the subscript of the highest mark.",
+        "Write program code to implement the ProcessMarks() function.",
+        "Visual Basic and Pascal: You should include the declaration statements for variables.",
+        "Python: You should show a comment statement for each variable used with its data type.",
+        "Programming language ....................................................................................................................",
+        "Program code",
+        "[7]",
+        "Appendix",
+        "Built-in functions (pseudocode)",
+        "Each function returns an error if the function call is not properly formed.",
+        "MID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING",
+        "returns a string of length y starting at position x from ThisString",
+        "Example: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"",
+        "LENGTH(ThisString : STRING) RETURNS INTEGER",
+        "returns the integer value representing the length of string ThisString",
+        "Example: LENGTH(\"Happy Days\") returns 10",
+        "LEFT(ThisString : STRING, x : INTEGER) RETURNS STRING",
+        "returns leftmost x characters from ThisString",
+        "Example: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"",
+        "LCASE(ThisChar : CHAR) RETURNS CHAR",
+        "returns the character value representing the lower case equivalent of ThisChar",
+        "If ThisChar is not an upper-case alphabetic character then it is returned unchanged.",
+        "Example: LCASE('W') returns 'w'",
+        "INT(x : REAL) RETURNS INTEGER",
+        "returns the integer part of x",
+        "Example: INT(27.5415) returns 27",
+        "ASC(ThisChar : CHAR) RETURNS INTEGER",
+        "returns the ASCII value of character ThisChar",
+        "Example: ASC('A') returns 65",
+        "MOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER",
+        "returns the integer value representing the remainder when ThisNum is divided by ThisDiv",
+        "Example: MOD(10,3) returns 1",
+        "Operators (pseudocode)",
+        "Operator Description",
+        "Concatenates (joins) two strings",
+        "Example: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"",
+        "Performs a logical AND on two Boolean values",
+        "AND",
+        "Example: TRUE AND FALSE produces FALSE",
+        "Performs a logical OR on two Boolean values",
+        "OR",
+        "Example: TRUE OR FALSE produces TRUE",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International",
+        "Examinations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after",
+        "the live examination series.",
+        "Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local",
+        "Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

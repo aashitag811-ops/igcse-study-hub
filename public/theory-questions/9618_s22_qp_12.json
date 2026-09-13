@@ -1,0 +1,441 @@
+{
+  "paperId": "9618_s22_qp_12",
+  "subjectCode": "9618",
+  "session": "s22",
+  "component": "12",
+  "totalMarks": 68,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Draw one line from each image representation term to its correct definition.\nTerm Definition\nThe number of pixels wide by the number of\nPixel\npixels high\nThe smallest identifiable component of an\nBit depth\nimage\nStores data about the image file, e.g. file\nImage resolution\nformat, number of bits per pixel, file size\nThe number of bits used to represent each\nFile header\ncolour",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The following section of a bitmap image is 10 pixels wide and 5 pixels high. In this example,\neach colour is represented by a letter, e.g. B is blue.\nB B B B B B B B B B\nY Y P Y Y Y P Y Y Y\nR R M R P K T T R R\nB O P Y Y Y P G P P\nR O R P P P R R R R\nThe complete image can have up to 256 colours.",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Identify the smallest number of bits that can be used to represent each colour in the\ncomplete bitmap image.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Calculate an estimate for the file size of the section of the bitmap image shown, giving\nyour answer in bytes. Use your answer from part (b)(i).\nShow your working.\nWorking ______\nAnswer ______ bytes",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Describe how changing the colour depth of an image affects its file size.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The first row of pixels in the image from part (b) is shown:\nB B B B B B B B B B\nExplain how this row of pixels can be compressed using lossless compression.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "One feature is a lane detection system. This system monitors the lines on either side of the\nlane. If the car gets too close to one line, the system automatically moves the car away from\nthe line.\nExplain why the lane detection system is an example of an embedded system.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Two other features:\n• record the number of miles travelled in the current journey, from when the engine is\nturned on to when it is turned off\n• record the total number of miles the car has travelled since it was built.\nIdentify the data that will be stored in the primary and secondary storage of the car for these\ntwo features.\nPrimary ______\nSecondary ______",
+          "marks": null,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The car has a resistive touchscreen for the user to select options.\nTick (3) one box in each row to show whether each statement about a resistive touchscreen\nis true or false.\nStatement True False\nThe screen always has five different layers\nA processor determines the horizontal and\nvertical coordinates of the point of contact\nThe touchscreen will work if any object\ntouches the screen",
+          "marks": 1,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 3,
+      "text": [
+        "A car has several features."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The ACC currently contains the following positive binary integer:\n0 1 1 0 0 1 0 1\nWrite the bit manipulation instruction that would change the binary integer in ACC to:\n1 1 1 1 1 1 1 1\nOpcode ______ Operand ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The ACC currently contains the following positive binary integer:\n0 1 1 0 0 1 0 1\nWrite the bit manipulation instruction that would change the binary integer in ACC to:\n1 0 0 1 1 0 1 0\nOpcode ______ Operand ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Convert the following positive binary integer into hexadecimal.\n0 1 1 1 1 1 1 0",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "A three-place logical shift to the left is performed on the following positive binary integer.\nShow the result of this logical shift.\n0 1 1 1 1 1 1 0",
+          "marks": 1,
+          "type": "place",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "Convert the denary numbers 127 and 12 to 8-bit binary and then perform the subtraction\n12 − 127 in binary.\nShow your working.\n127 in binary ______\n12 in binary ______\n12 − 127 in binary ______",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "The table shows part of the instruction set for a processor. The processor has one general purpose",
+        "register, the Accumulator (ACC).",
+        "Instruction",
+        "Explanation",
+        "Opcode Operand",
+        "AND #n",
+        "Bitwise AND operation of the contents of ACC with the operand",
+        "Bitwise AND operation of the contents of ACC with the contents",
+        "AND <address>",
+        "of <address>",
+        "XOR #n",
+        "Bitwise XOR operation of the contents of ACC with the operand",
+        "Bitwise XOR operation of the contents of ACC with the contents",
+        "XOR <address>",
+        "of <address>",
+        "OR #n",
+        "Bitwise OR operation of the contents of ACC with the operand",
+        "Bitwise OR operation of the contents of ACC with the contents of",
+        "OR <address>",
+        "<address>",
+        "<address> can be an absolute or a symbolic address",
+        "# denotes a denary number, e.g. #123"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Explain why the school needs to keep both its data and its computer system secure from\nunauthorised access.\nData ______\nComputer system ______",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the table by identifying two security threats to the data on a computer.\nDescribe each threat.\nGive a different prevention method for each threat.\nPrevention\nThreat Description\nmethod",
+          "marks": 6,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Data is encrypted when it is transmitted within the school network, or externally such as over\nthe internet.\nDescribe what is meant by encryption and explain why it is used.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A school stores personal data about its staff and students on its computer system."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the entity-relationship (E-R) diagram.\nACTOR FILM_FACT\nFILM_ACTOR",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A composite primary key consists of two or more attributes that together form the primary key.\nExplain why the table FILM_ACTOR has a composite primary key.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Complete the SQL script to return the IDs of all the actors in the film with the title Cinderella.\nSELECT ______\nFROM FILM_ACTOR\nINNER JOIN ______\nON FILM_FACT.FilmID = ______\nWHERE FILM_FACT.FilmTitle = ______ ;",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "Write an SQL script to count the number of films that were released in January 2022.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5e",
+          "label": "(e)",
+          "text": "A Database Management System (DBMS) is used to create and manipulate the database.\nComplete the descriptions of the features and tools found in a DBMS using the given terms.\nNot all terms will be used.\nBoolean data dictionary data redundancy field names\ninput interface logical schema normalisation\noperating system output primary keys query\nstructure\nA DBMS provides data management. This includes the development of a\n______ that stores information about the data stored, such as\n______ and ______ .\nThe ______ uses methods, such as an E-R diagram, to show the\nstructure of the database and its relationships.\nThe ______ processor allows a user to perform searches to find\nspecific data. The DBMS also provides a developer ______ that\nallows the user to create tables, forms and reports.",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A database, FILMS, stores information about films and actors.",
+        "Part of the database is shown:",
+        "ACTOR(ActorID, FirstName, LastName, DateOfBirth)",
+        "FILM_FACT(FilmID, FilmTitle, ReleaseDate, Category)",
+        "FILM_ACTOR(ActorID, FilmID)"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Describe the operation of a compiler.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Describe the operation of an interpreter.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Explain how a programmer can make use of a typical Integrated Development Environment\n(IDE) when writing and testing a program.\nWriting ______\nTesting ______",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A programmer uses language translators when writing and testing a program."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Complete the truth table for the following logic expression:",
+        "X = (A XOR B) AND NOT C",
+        "Working space",
+        "A B C X",
+        "0 0 0",
+        "0 0 1",
+        "0 1 0",
+        "0 1 1",
+        "1 0 0",
+        "1 0 1",
+        "1 1 0",
+        "1 1 1",
+        "[2]"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe one application of Artificial Intelligence (AI).",
+        "[3]"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The following incomplete table contains four network devices and their descriptions.\nComplete the table by writing the missing devices and missing descriptions.\nDevice Description\nReceives and sends data between two networks operating on the\nsame protocol\nWireless\nNetwork\nInterface Card\n(WNIC)\nRestores the digital signal so it can be transmitted over greater\ndistances\nWireless Access\nPoint (WAP)",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Describe three differences between fibre-optic cables and copper cables.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Ethernet uses Carrier Sense Multiple Access/Collision Detection (CSMA/CD).\nDescribe CSMA/CD.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    }
+  ]
+}

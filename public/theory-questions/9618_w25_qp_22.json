@@ -1,0 +1,301 @@
+{
+  "paperId": "9618_w25_qp_22",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "22",
+  "totalMarks": 50,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The table contains pseudocode examples.\nEach example may contain statements that relate to one or more of:\n• selection\n• iteration (repetition)\n• subroutines (procedures or functions).\nComplete the table by placing one or more ticks (‘3’) in each row.\nPseudocode example Selection Iteration Subroutine\nIF Status = FALSE THEN\nFOR Count 1 TO 20\nCALL Reset(Count)\nNEXT Count\nENDIF\nOTHERWISE : Status TRUE\nWHILE AllDone() = TRUE\n30 : NextChar 'X'",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Complete the table by giving the appropriate data type.\nVariable Example data value Data type\nResult 5.42\nMonthLetter \"JFMAMJJASOND\"\nBirthday 15/11/2009",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Evaluate each expression in the table by using the data values shown in (b).\nWrite ‘ERROR’ if the expression contains an error.\nExpression Evaluates to\nINT(Result) + 1 > 6\nNUM_TO_STR(LENGTH(MonthLetter))\nNUM_TO_STR(Result + \"3.2\")\nMID(MonthLetter, MONTH(Birthday) — 2, 1)\n\n* 0000800000003 * DFD",
+          "marks": 4,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Data is a global 1D array containing 20 elements of type REAL",
+        "An algorithm will:",
+        "• input a sequence of real values, one at a time",
+        "• assign each value to consecutive array elements, starting from index 1",
+        "• end when the value 99.9 is input, or all 20 elements have been assigned (the value 99.9 must",
+        "not be stored in the array).",
+        "Complete the program flowchart to represent the algorithm:",
+        "START",
+        "END",
+        "[5]",
+        "* 0000800000004 * DFD"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A text file OldFile.txt contains IDs, names and email addresses for members of a club. Three",
+        "information items are stored for each member and each item is stored on a separate line.",
+        "The example shows the information for the first two members in the first six lines of the file:",
+        "Line in file Information item Example data",
+        "1 member 1 ID \"AB1234\"",
+        "2 member 1 name \"Freddie Jones\"",
+        "\"FreddieJ909@Cambridge.org\"",
+        "3 member 1 email address",
+        "\"BC2345\""
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "member 2 ID"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "member 2 name \"Sue Smith\""
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The algorithm to create the new file is expressed in steps.\nComplete the following numbered steps:\nStep 1 : open the file ______ in ______\nStep 2 : open the file ______ in ______\nStep 3 : read a line from ______ and store in ______\nStep 4 : read a line from ______ and store in ______\nStep 5 : read a line from ______ and store in ______\nStep 6 : set NewString to ______\nStep 7 : write NewString to ______\nStep 8 : repeat from step ______ until ______\nStep 9 : close both files.\n\n* 0000800000005 * DFD",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The character '\\' has been chosen as a separator.\nExplain why this is a suitable character.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Two new information items are to be stored for each member. Both new items are encrypted;\nthey can each contain any character (including '\\') and can be of any length up to a\nmaximum of 99 characters.\nFor example:\nInformation item Example data\nmember 1 ID \"AB1234\"\nmember 1 name \"Freddie Jones\"\nDO NOT WRITE IN THIS MARGIN \"FreddieJ909@Cambridge.org\"\nmember 1 email address\n\"En/98&*(|?\\/D7iP\"\nmember 1 new information 1\nmember 1 new information 2 \"23\\CoboL\"\nExplain the additional file design changes needed so that:\n• all the information items for each member are stored on a single line of NewFile.txt\n• it is possible to extract each information item after the line is read.\nAssume the '\\' character is not used in any email address.\n\n* 0000800000006 * DFD\n4 A quiz has nine questions. There are:\n• five easy questions each worth 3 points\n• four hard questions each worth 5 points.\nAt the end of the quiz the points for each correctly answered question are added to give a total\nscore.\nA check is made to test that the total score is valid using a 1D array CheckTotal of type BOOLEAN.\nEach index value of the array represents a possible total score. The corresponding element value\nis TRUE if the index value represents a valid total score and FALSE otherwise.\nThe first nine rows of the array are:\nIndex Element\nComment\nvalue value\n0 TRUE valid total score (no correct answers)\n1 FALSE invalid total score\nFALSE\n2 invalid total score\nTRUE\n3 valid total score (one 3-point question correct)\nFALSE\n4 invalid total score\n5 TRUE valid total score (one 5-point question correct)\nTRUE\n6 valid total score (two 3-point questions correct)\nFALSE",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "member 2 email address \"Sue1024@Cambridge.org\"",
+        "The member ID string is always two letters followed by four digits.",
+        "The file design is to be changed so that information for each user is stored as a single line of the",
+        "file, with the character '\\' used as a separator between data items.",
+        "For example, the single line for member 1 will be:",
+        "\"AB1234\\Freddie Jones\\FreddieJ909@Cambridge.org\"",
+        "An algorithm will produce a new file NewFile.txt from the contents of OldFile.txt",
+        "Assume:",
+        "• LineX, LineY and LineZ are of type STRING and are used to store the three items of",
+        "information for each member",
+        "• NewString is a temporary variable of type STRING",
+        "• OldFile.txt exists and contains valid data."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "invalid total score",
+        "TRUE"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode to declare CheckTotal and to set all elements of the array to FALSE\nAll variables used must be declared.\n\n* 0000800000007 * DFD",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The pseudocode represents an algorithm to set the appropriate elements of the array to TRUE\nComplete the pseudocode:\nDECLARE EasyQ, HardQ : INTEGER\nFOR EasyQ ______ TO 15 STEP ______\nFOR HardQ 0 TO ______ STEP ______\nCheckTotal[______] TRUE\nNEXT HardQ\nNEXT EasyQ",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The array elements have been assigned the required values.\nA module ValidateScore() will take an integer value representing a total score as a\nparameter. It will return TRUE if the total score is valid, or FALSE if it is not valid.\nDescribe the algorithm for ValidateScore() using four steps.\nDo not use pseudocode in your answer.\nStep 1 ______\nStep 2 ______\nStep 3 ______\nStep 4 ______\n\n* 0000800000008 * DFD\n5 A program is developed to satisfy a specific customer requirement.\nThe project follows a program development life cycle model. This model divides the development\nprocess into several different stages.",
+          "marks": null,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "The table lists some of the development activities.\nComplete the table by writing the name of the life cycle stage for each activity:\nActivity Name of life cycle stage\na structure chart is produced\na program is modified to allow it to run on new hardware\nthe programmer identifies the customer’s requirements\nan Integrated Development Environment (IDE) provides\ncontext-sensitive help such as ‘auto-complete’",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Alpha and beta testing has been completed. The final testing stage is carried out by the\ncustomer.\nIdentify this final testing stage.\n\n* 0000800000009 * DFD\n* 0000800000010 * DFD\n6 A string function Compare() will compare two strings.\nThe function will:\n• take four parameters:\n○ two strings, String1 and String2\n○ a character, Position, to indicate whether String1 will be compared with the start\n('s'), or the end ('e') of String2\n○ a Boolean, CaseMatters, to indicate whether an upper case character and lower case\ncharacter (for example, 'A' and 'a') are regarded as different (TRUE), or as the same\n(FALSE)\n• return FALSE if String2 has fewer characters than String1\n• return TRUE if the comparison is true, otherwise return FALSE\nFor example:\nParameter\nReturn\nvalue\nString1 String2 CaseMatters Position\nTRUE\n\"Cat\" \"Catalogue\" TRUE 's'\nFALSE\n\"CAT\" \"Catalogue\" TRUE 's'\nTRUE\n\"CAT\" \"Catalogue\" FALSE 's'\nFALSE\n\"Cat\" \"Catalogue\" TRUE 'e'\nTRUE\n\"GUE\" \"Catalogue\" FALSE 'e'\n\"Catalogue\" \"Cat\" TRUE 's' FALSE\n* 0000800000011 * DFD\nWrite pseudocode for the function Compare()\n\n* 0000800000012 * DFD\n7 The structure chart shows part of a program design:\nConvert\nCount\nP2\nT1\nKey\nAnalyse Update Sort",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Explain the meaning of the curved arrow symbol in this structure chart.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The program designer has noted that:\n• Count is the number of elements in an array\n• T1 is a value representing the number of elements in an array that have been modified\n• Key is of type STRING\nWrite the pseudocode module headers for analyse, update and sort.\nAnalyse:\nUpdate:\nSort:\n\n* 0000800000013 * DFD\n* 0000800000014 * DFD\n8 A program is being developed to manage student book loans from a college library.\nThe programmer has defined a record type to define each loan.\nThe data items are:\nData item Data type Comment\nStudentID STRING the unique ID of the student who has borrowed the book\nBookID STRING the unique ID of the book being borrowed\nOnLoan BOOLEAN\nTRUE if the book has not been returned\nThe programmer has defined a global array Loan to store 7000 loan records.\nThere are more elements in the array than books in the library. Unused elements have the\nStudentID set to an empty string. These may occur anywhere in the array.\nThe programmer has defined a program module:\nModule Description\n• called with a parameter of type STRING representing a\nStudentID\n• counts the number of books currently on loan to the\nspecified student\nCountLoans()\n• counts the number of books that the student has already\nreturned\n• output both counts together with a suitable message\n* 0000800000015 * DFD",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module CountLoans()\n\n* 0000800000016 * DFD",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "As a reminder, a global array Loan stores 7000 loan records with data items for each loan\nrecord:\nData item Data type Comment\nStudentID STRING the unique ID of the student who has borrowed the book\nBookID STRING the unique ID of the book being borrowed\nOnLoan BOOLEAN\nTRUE if the book has not been returned\nA new module is defined:\nModule Description\n• called with two parameters of type STRING representing a\nStudentID and a BookID\nNewLoan()\n• searches the array for an unused loan record\n• if found, updates the loan record and returns TRUE, otherwise\nreturns FALSE\n* 0000800000017 * DFD\nWrite efficient pseudocode for NewLoan()\n\n* 0000800000018 * DFD",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "When a book is returned, the loan record will have its OnLoan data set to FALSE\nA new procedure Archive() will mark these records as unused after first saving them for\nfuture reference.\nExplain how these records can be saved for future reference.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "It is decided to extend the program so that a new module Reminder() will send an email to\nthe student three days before the book is due to be returned.\nOutline the changes that will need to be made to the data stored and how this data will be\nused to generate the reminder email.\nData ______\nUse ______\n\n* 0000800000019 * DFD\n* 0000800000020 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "outline",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 29,
+      "text": [
+        "valid total score (one 3-point question and one 5-point question correct)",
+        "For example, a total score of 6 points is valid; the value of the array element at index value 6 is TRUE"
+      ]
+    }
+  ]
+}

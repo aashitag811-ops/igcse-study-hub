@@ -1,0 +1,623 @@
+{
+  "paperId": "9608_w16_qp_22",
+  "subjectCode": "9608",
+  "session": "w16",
+  "component": "22",
+  "totalMarks": 58,
+  "questionCount": 17,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the following program flowchart by:\n• filling in the boxes, using pseudocode where appropriate\n• labelling the lines of the flowchart, where necessary.\n\nStart\nYes\nNo\nStop",
+          "marks": 9,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Test data is to be produced to test the flowchart.\nComplete the table of test data below to show five tests that should be used to test different\npaths through the flowchart.\nTest data Expected results\nUpdated Output\nPointsTotal PlayerGameGrade\nPointsTotal",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The programmer amends the design to validate the value of player game grade that the user\ninputs.\nThe amended part of the flowchart is shown below.\nLoop\nOUPUT INPUT\n\"Invalid – Re-enter\" PlayerGameGrade\nIs\nPlayerGameGrade\nNo\n= 'A' or 'B' or 'C'\nor 'D'?\nYes\nWrite the equivalent pseudocode using a pre-condition loop, for this part of the amended\nflowchart.",
+          "marks": 3,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A number of players take part in a competition. The competition consists of a number of games.",
+        "Each game is between two players. The outcome of a game is that each player is awarded a grade",
+        "(A, B, C or D). Each grade has an associated number of points as shown in the table below.",
+        "Grade Points",
+        "A 0",
+        "B 1",
+        "C 3",
+        "D 5",
+        "The points total for all players is recorded. After each game is completed, the total number of",
+        "points for each player is updated.",
+        "For example:",
+        "• before the game between Ryan and Karina, Ryan’s total is 5 points and Karina’s total is 3 points",
+        "• the result of the game between Ryan and Karina is: Ryan achieved grade B, Karina achieved",
+        "grade D",
+        "• the players’ points totals are updated to: Ryan has 6 and Karina has 8",
+        "When a player’s points total reaches 12 or higher, that player is removed from the competition.",
+        "A programmer will write a program to update the player total after a game.",
+        "The program will output:",
+        "• the player’s updated points total",
+        "• the message ‘ELIMINATED’ if the player is removed from the competition.",
+        "The programmer designs the identifier table below:",
+        "Identifier Data type Description",
+        "PlayerName STRING",
+        "Name of the player",
+        "PlayerGameGrade CHAR",
+        "Game grade for the player",
+        "PointsTotal INTEGER",
+        "Current player points",
+        "Procedure has parameters",
+        "SavePlayerTotal",
+        "procedure PlayerName and PointsTotal",
+        "and saves the updated player total",
+        "Function has a parameter",
+        "ReadPlayerTotal",
+        "function PlayerName and returns the current",
+        "total for that player"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Give the value of the variables x, y and z for the following sequence of statements.",
+          "marks": null,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "x ONECHAR(\"Barcelona\", 5) x ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "y ONECHAR(\"Cool\", 1) & ONECHAR(\"Ball\", 2) & \"t-food\"\ny ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "Temp1 \"13\"\nTemp2 ONECHAR(\"One-2-One\", 5)\nz TONUM(Temp2 & Temp1) z ______ \nA computer program is to simulate the reading and processing of a string of characters from an\ninput device.\nThe character string consists of:\n• a number of digit characters\n• one or more <*> characters, each used as a separator\n• a final <#> character.\nA typical input character sequence, stored as InputString is:\n13*156*9*86*1463*18*#\nStudy this pseudocode.\n01 DECLARE Numbers ARRAY [1:100] OF INTEGER\n02 DECLARE InputString : STRING",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 3,
+      "text": [
+        "You will need to refer to the list of pseudocode string-handling functions in the Appendix."
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE NextChar : CHAR"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE NextNumberString : STRING"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE i : INTEGER // Numbers array index"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Write the line number for:",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06bi",
+              "label": "(i)",
+              "text": "A statement which declares a global variable used to store a single character. ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06bii",
+              "label": "(ii)",
+              "text": "A statement which runs code written as a procedure. ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06biii",
+              "label": "(iii)",
+              "text": "A statement which indicates the start of a ‘pre-condition’ loop. ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06biv",
+              "label": "(iv)",
+              "text": "A statement which increments a variable. ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "Copy the condition which is used to control the inner loop.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06di",
+              "label": "(i)",
+              "text": "Complete the trace table below for the given pseudocode as far as line 27.\nThe input string is: 23*731*5*#\nNumbers\ni j NextChar NextNumberString\n1 2 3\n1 1 '2'\n\"\"\n\"2\"\n2 '3' \"23\"\n3 '*'",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06dii",
+              "label": "(ii)",
+              "text": "Explain what this algorithm does.\n\n3 Radhika mostly studied the high-level programming language XYZ at university.\nShe has been working in her first job for two years using language XYZ.\nShe applied for a new job which stated:\n“The majority of the development work is done using language ABC.”",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "Radhika was interviewed for the job. Part of the interview process was to study some program\ncode written in language ABC.\n11 settype($TimesTable, Integer);\n12 settype($upTo, Integer);\n13 settype($Posn, Integer);\n14 settype($Product, Integer);\n15 $TimesTable = 7;\n16 $UpTo = 10;\n18 $Posn = 1\n19 While ($Posn < $UpTo + 1)\n20 {\n21 $Product = $Posn * $TimesTable;\n22 Echo $Posn . ' X' . $TimesTable . ' = ' . $Product . \"<br>\";\n23 $Posn = $Posn + 1;\n24 }\nAnswer the following questions taken from the interview.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06ai",
+              "label": "(i)",
+              "text": "State what the settype keyword does in this language.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06aii",
+              "label": "(ii)",
+              "text": "Name one variable that the code uses.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06aiii",
+              "label": "(iii)",
+              "text": "Give a line number for an assignment statement.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06aiv",
+              "label": "(iv)",
+              "text": "Line 19 is the start of a pre-condition loop.\nState the syntax that language ABC uses to indicate which statements must be executed\ninside a loop.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06bi",
+              "label": "(i)",
+              "text": "Describe what is meant by a transferable skill.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06bii",
+              "label": "(ii)",
+              "text": "Give two examples which suggest that programming in a high-level language is a\ntransferrable skill.\n\n4 A social club runs a weekly prize draw. A member can buy a ticket for $2. Each week, the club\nsells up to 150 tickets, with consecutive numbers starting from 1. There is a main cash prize of\n$120 and a further three prizes of $10. The computer program will generate the winning numbers.\nThroughout this question, you will need to refer to the list of pseudocode functions in the Appendix.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "Write pseudocode to show how the RND()function can be used to generate a single integer\nin the range 1 to 150.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Write program code to generate and output four winning numbers.\nIgnore the issue that duplicate numbers may be generated.\nVisual Basic and Pascal: You should include declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "The prize draw is a success. After six months, the club decided to sell an unlimited number of\ntickets each week. In any week, the total number of prizes may vary.\nThe programmer modifies the code written in part(b).\nThe revised program will use a function to generate a single winning number. Therefore, in a\nweek when the club offers six prizes, the program will use the function six times to generate\nthe six winning numbers.\nThe function has identifier GenerateNumber and:\n• has a single parameter for the number of tickets sold that week\n• returns a single winning number.\nWrite program code for the function header.\nProgramming language ______",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "06d",
+          "label": "(d)",
+          "text": "The organisers do not want the same number to be drawn more than once in a week. To deal\nwith the issue of duplicate numbers being generated, the program in part (b) will require\nadaptive maintenance.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06di",
+              "label": "(i)",
+              "text": "Describe what is meant by adaptive maintenance.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06dii",
+              "label": "(ii)",
+              "text": "The club does not want the program to output the same number more than once in a\nweek.\nFor each winning number, outline the extra steps that the program must have. Include\nany data structure that the program needs.\nDo not write pseudocode or program code.\n\n5 A team keeps a record of the scores made by each of their eight players in a number of games.\nThe data in the two tables below shows:\n• the scores of the eight players after twenty games\n• the eight player names.\n1 2 3 8\n12 17 67 31\n35 82 44 29\n61 39 80 17\n81 103 21 11\n56 0 98 4\n45 6 81 77\n12 11 3 6\nVorma\nRavi\n3 Chada\nNigam\nBahri\nSmith\nGoyal\nLata\nThe team wants a computer program to input and record the player data.",
+              "marks": 3,
+              "type": "outline",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "A programmer designs the following pseudocode for the input of a player’s score from one\ngame.\n01 INPUT GameNumber\n02 INPUT PlayerNumber\n03 INPUT PlayerGameScore\n04 PlayerScore[GameNumber, PlayerNumber] PlayerGameScore\nDescribe the data structure the programmer has used for the storage of all player scores.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "The player names are permanently stored in a text file NAMES.TXT, with one name on each\nline. The player names will be read by the program and stored in a 1D array.\nThe design given in part (a) will be expanded so that the user is prompted for the player\nname instead of the player number. Step 02 now becomes:\n02.1 Read the player names from file NAMES.TXT into the array PlayerName\n02.2 INPUT ThisPlayerName\n02.3 Search the PlayerName array for ThisPlayerName to find the PlayerNumber",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06bi",
+              "label": "(i)",
+              "text": "State the computing term for the expansion of one or more steps in the original design.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06bii",
+              "label": "(ii)",
+              "text": "Write the program code for step 02.1\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______",
+              "marks": 4,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06biii",
+              "label": "(iii)",
+              "text": "Program code is to be designed and written for step 02.3\nThe program will use these identifiers:\nIdentifier Data type Description\nPlayerName ARRAY[1 : 8] OF STRING\nStores the player names (read from the file)\nThisPlayerName STRING\nInput by the user (step 02.2)\nFlags when ThisPlayerName is found\nFound BOOLEAN\nwhen searching the PlayerName array\ni INTEGER\nArray index\nWrite program code to carry out the linear search for step 02.3\nThere is no requirement to declare or comment on variables used.\nProgramming language ______",
+              "marks": 4,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "The team wants the program to produce a report, with the following specification.\nThe program outputs the total number of player scores that are:\n• 50 and over but less than 100\n• 100 or higher.\nYou can assume that before the section runs, the program has assigned all eight player scores to\nthe PlayerScore data structure.\nA first attempt at the pseudocode is shown below:\n01 Total50 0\n02 Total100 0\n03 FOR PlayerIndex 1 TO 8\n04 FOR GameIndex 1 TO 20\n05 IF PlayerScore[GameIndex, PlayerIndex] > 100\n06 THEN",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 43,
+      "text": [
+        "DECLARE j : INTEGER // InputString index",
+        "08 OUTPUT \"String ... \"",
+        "09 INPUT InputString",
+        "10 j 1",
+        "11 NextChar ONECHAR(InputString, j)",
+        "13 i 1",
+        "14 WHILE NextChar <> '#'",
+        "15 NextNumberString = \"\"",
+        "16 WHILE NextChar <> '*'",
+        "17 NextNumberString NextNumberString & NextChar",
+        "18 j j + 1",
+        "19 NextChar ONECHAR(InputString, j)",
+        "20 ENDWHILE",
+        "22 // store the next integer to the array",
+        "23 Numbers[i] TONUM(NextNumberString)",
+        "24 i i + 1",
+        "25 j j + 1",
+        "26 NextChar ONECHAR(InputString, j)",
+        "27 ENDWHILE",
+        "29 CALL DisplayArray()"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total100 Total100 + 1"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF PlayerScore[GameIndex, PlayerIndex] > 50"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total50 Total50 + GameIndex"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT Total50"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT Total100"
+      ]
+    }
+  ]
+}

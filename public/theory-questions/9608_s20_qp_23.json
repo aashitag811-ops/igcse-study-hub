@@ -1,0 +1,326 @@
+{
+  "paperId": "9608_s20_qp_23",
+  "subjectCode": "9608",
+  "session": "s20",
+  "component": "23",
+  "totalMarks": 55,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Algorithms are produced during program development.\nState when you would produce an algorithm during program development and state its\npurpose.\nWhen ______\nPurpose ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Selection is one of the basic constructs used in algorithms.\nExplain the term selection.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain the process of problem decomposition. State one reason it may be used.\nExplanation ______\nReason ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Name two features provided by a typical Integrated Development Environment (IDE) that\nassist in the debugging stage of the program development cycle.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A structure chart is often produced as part of a modular program design. The chart shows the\nrelationship between modules and the parameters that are passed between them.\nGive two other features the structure chart can show.\nFeature 1 ______\nFeature 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The following structure chart shows the relationship between three modules.\nModuleA()\nParW\nParX\nParZ\nModuleB() ModuleC()\nParameter data types are:\nParW : REAL\nParX : INTEGER\nParZ : STRING",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Write the pseudocode header for module ModuleB().",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Write the pseudocode header for module ModuleC().",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A student is developing an algorithm to count the number of times a given string,\nSearchString, appears in a 2D array. The array, Item, consists of 100 elements organised\nas 50 rows of 2 columns. SearchString could appear in any row or column.\nThe array is declared in pseudocode as follows:\nDECLARE Item : ARRAY [1:50, 1:2] OF STRING\nThe structured English description of the algorithm is:\n1. SET Count to 0.\n2. Examine the first row of the array.\n3. IF column 1 element value is equal to SearchString, ADD 1 to Count.\n4. IF column 2 element value is equal to SearchString, ADD 1 to Count.\n5. REPEAT from step 3 for next row, UNTIL row is last row.\n6. OUTPUT a suitable message and Count.\nWrite pseudocode for the algorithm.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Study the following pseudocode.\nError Delta(Plan, Actual)\nCASE OF Error\n> 10 : Steer Steer − 10\n0 : ZCount ZCount + 1\n< -10 : Steer Steer + 10\nOTHERWISE OUTPUT \"Unexpected Error\"\nENDCASE\nDraw a program flowchart to represent the pseudocode. Variable declarations are not\nrequired in program flowcharts.",
+          "marks": 5,
+          "type": "plan",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The following pseudocode algorithm has been developed to check whether a string contains\na valid password.\nTo be a valid password, a string must:\n• be longer than five characters\n• contain at least one numeric digit\n• contain at least one upper case letter\n• contain at least one other character (not a numeric digit or an upper case letter).\n10 FUNCTION Check(InString : STRING) RETURNS BOOLEAN\n12 DECLARE Index : INTEGER\n13 DECLARE StrLen : INTEGER\n14 DECLARE NumUpper, NumDigit : INTEGER\n15 DECLARE NextChar : CHAR\n16 DECLARE NumOther : INTEGER\n18 NumUpper 0\n19 NumDigit 0\n21 StrLen LENGTH(InString)\n22 IF StrLen < 6\n23 THEN\n24 RETURN FALSE\n25 ELSE\n26 FOR Index 1 TO StrLen - 1\n27 // loop for each character\n28 NextChar MID(InString, Index, 1)\n29 IF NextChar >= '0' AND NextChar <= '9'\n30 THEN\n31 NumDigit NumDigit + 1 // count digits\n32 ELSE\n33 IF NextChar >= 'A' AND NextChar <= 'Z'\n34 THEN\n35 NumUpper NumUpper + 1 // count upper case\n36 ENDIF\n37 ENDIF\n38 ENDFOR\n39 ENDIF\n41 NumOther StrLen – (NumDigit – NumUpper)\n42 IF NumDigit >= 1 AND NumUpper >= 1 AND NumOther >= 1\n43 THEN\n44 RETURN TRUE\n45 ELSE\n46 RETURN FALSE\n47 ENDIF\n49 ENDFUNCTION\nThe pseudocode does not work under all circumstances.\nThe function was dry run with the string \"1234AP\" and the following trace table was\nproduced. The string is an invalid password, but the pseudocode returned the value\nTRUE.\nTrace\nStrLen Index NextChar NumUpper NumDigit NumOther\ntable row\n1 6 0 0\n1 '1'\n2 '2'\n5 2\n3 '3'",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The term adaptive maintenance refers to amendments that are made in response to\nchanges to the program specification. These changes usually affect the program algorithm.\nName one other part of the design that can change as a result of adaptive maintenance.\n\n4 A global 1D array, Contact, of type STRING is used to store a list of names and email addresses.\nThere are 1000 elements in the array. Each element stores one data item. The format of each\ndata item is as follows:\n<Name>':'<EmailAddress>\nName and EmailAddress are both variable-length strings.\nFor example:\n\"Wan Zhu:zwan99@mymail.com\"\nA function, Extract(), is part of the program that processes the array. A string data item is\npassed to the function as a parameter. The function will return the Name part. Validation is not\nnecessary.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write program code for the function Extract().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The original function, Extract(), needs to be modified to separate the name from the email\naddress. The calling program can then use both of these values.\nWrite, in pseudocode, the header for the modified subroutine. Explain the changes you have\nmade.\nSubroutine header ______\nExplanation ______",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "'4'",
+        "9 4",
+        "10 5 'A'"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module GetLastService().\nRefer to the Appendix on page 19 for a list of built-in pseudocode functions and operators.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Every time a boat is hired out, details of the hire are added at the end of a text file,\nHirelog.txt. Each line of the text file corresponds to information about the hire of one\nboat.\nThe format of each line of information is as follows:\n<Date><BoatNumber><HireDuration>\n• Date is an 8-digit numeric string in the format YYYYMMDD\n• BoatNumber is a two-digit numeric string in the range \"01\" to \"20\"\n• HireDuration is a variable-length string representing a numeric value in hours.\nFor example, the string \"1.5\" would represent a hire duration of 1½ hours.\nA module GetHours() is defined as follows:\nModule Description\n• Takes two parameters:\nthe BoatNumber as a string\nthe date of the last service for that boat (\"YYYYMMDD\")\nas a string\nGetHours()\n• Searches through file Hirelog.txt and calculates the sum of\nthe hire durations for the given boat after the given date (hire\ndurations on or before the given date are ignored)\n• Returns the total of the hire durations as a real\nNote:\nStandard comparison operators may be used with dates in this format.\nFor example:\n\"20200813\" > \"20200812\" would evaluate to TRUE\nParameter validation is not required.\nWrite pseudocode for the module GetHours().\nRefer to the Appendix on page 19 for a list of built-in pseudocode functions and\noperators.",
+              "marks": null,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "An additional module, Validate(), has been written to check that a given string\ncorresponds to a valid BoatNumber. A valid BoatNumber is a two-digit numeric string in\nthe range \"01\" to \"20\".\nGive three test strings that are invalid for different reasons. Explain your choice in each\ncase.\nString 1 ______\nReason ______\nString 2 ______\nReason ______\nString 3 ______\nReason ______",
+              "marks": 6,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "A new module is described as follows:\nModule Description\n• Takes an integer as a parameter that represents the maximum\nnumber of hours before a boat must be serviced\n• Uses GetLastService() and GetHours()\n• Outputs:\na suitable heading\nthe BoatNumber of each boat hired for more than the\nmaximum number of hours since its last service\nthe total hire duration for each of these boats\nServiceList()\nAn example output list is:\nBoat Service List\n4: 123\n17: 117\nIf no boats are due to be serviced, the output is:\nBoat Service List\nNo boats are due to be serviced\nWrite program code for the module ServiceList().\nPython: You should show a comment statement for each variable used with its data type.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nProgramming language ______\nProgram code",
+          "marks": null,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5di",
+              "label": "(i)",
+              "text": "A team of programmers will work on the program. Before they begin, the team meet to\ndiscuss ways in which the risk of program faults may be reduced during the design and\ncoding stages.\nState two ways to minimise program faults during the design and coding stages.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5dii",
+              "label": "(ii)",
+              "text": "During development, the team test the program using a process known as stub testing.\nExplain this process.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5diii",
+              "label": "(iii)",
+              "text": "Explain how single stepping may be used to help find a logic error in a program.\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A company hires out rowing boats on a lake. The company has 20 boats, numbered from 1 to 20.",
+        "For safety reasons, the boats have to be serviced (checked and any damage repaired) regularly.",
+        "The company is developing a program to help manage the servicing of the boats.",
+        "Every time a boat is serviced, details are added at the end of the text file, ServiceLog.txt, as a",
+        "single line of information. Each boat is serviced before it is hired out for the first time.",
+        "The format of each line is as follows:",
+        "<BoatNumber><Date>",
+        "BoatNumber and Date are as follows:",
+        "• BoatNumber is a two-digit numeric string in the range \"01\" to \"20\"",
+        "• Date is an 8-digit numeric string in the format YYYYMMDD",
+        "The programmer has defined the first module as follows:",
+        "Module Description",
+        "• Called with a string parameter representing the BoatNumber",
+        "GetLastService() • Searches through the file ServiceLog.txt",
+        "• Returns the date of the last service in the form \"YYYYMMDD\""
+      ]
+    }
+  ]
+}

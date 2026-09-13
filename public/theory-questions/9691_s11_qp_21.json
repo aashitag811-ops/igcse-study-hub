@@ -1,0 +1,454 @@
+{
+  "paperId": "9691_s11_qp_21",
+  "subjectCode": "9691",
+  "session": "s11",
+  "component": "21",
+  "totalMarks": 75,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the following table.\nField Name Data Type Size of Field (bytes)\nJobID\nJobDescription\nPrice\nExpectedCompletionDate\nPaid",
+          "marks": 10,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The details of the last 200 jobs are stored in the file.\nEstimate the size, in kilobytes, of the file. Show your working.",
+          "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "In a high-level programming language of your choice, write the code to define the\nFor\nrecord type for the record structure in part (a). Examiner's\nUse\nLanguage\nCode",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Some data will need to be validated when entered.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "State what is meant by validation.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Describe two different validation checks that can be performed on the\nExpectedCompletionDate field.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The logic statement to validate the Price field is (Price > 10) AND (Price <= 5000)\nWrite a similar logic statement to validate each of the following.\nJobID\nPaid",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "The code for the validation will have to be tested.\nFor\nExaminer's\nUse\nState four items of data you would use to test the JobID validation.\nState the reasons for using that test data.\nJobID value Reason\nTest 1\nTest 2\nTest 3\nTest 4",
+          "marks": 8,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 33,
+      "text": [
+        "Ahmed, a designer, stores the following details of each job that he does in a file.",
+        "For",
+        "Examiner's",
+        "Use",
+        "• job ID (a whole number between 1 and 1000 inclusive)",
+        "• job description",
+        "• price (greater than $10 and not more than $5000)",
+        "• expected completion date",
+        "• paid (yes/no)"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Raul wants to write a program that will count the number of vowels in a word. He starts by",
+        "writing some pseudocode that will count the number of letter 'a's.",
+        "1 INPUT Word",
+        "2 Count ← 0"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "LOOP FOR Index ← 1 TO length(Word)"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Word(Index)='a'"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count ← Count + 1"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "Complete the trace table for this pseudocode using ‘banana’ as input.\nFor\nThe first seven rows have been filled in. Examiner's\nUse\nWord Count Index Word(Index) Word(Index)= 'a'\nbanana\nfalse",
+              "marks": 6,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "Complete this trace table for the pseudocode using ‘Ant’ as input.\nFor\nExaminer's\nUse\n1 INPUT Word\n2 Count ← 0\n3 LOOP FOR Index ← 1 TO length(Word)\n4 IF Word(Index)='a'\n5 THEN\n6 Count ← Count + 1\n7 ENDIF\n8 ENDLOOP\nWord Count Index Word(Index) Word(Index)='a'\nAnt",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Raul wants uppercase 'A' to be counted as well as each lower case 'a'.\nRe-write line 4 of the pseudocode so that every ‘A’ is included in the count.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "The pseudocode has features that make it easy to understand. State two such\nFor\nfeatures. Examiner's\nUse\nFeature 1\nFeature 2\n\nProgram code is to be produced from the pseudocode.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "State one other feature that could be introduced to make the program code easy\nto understand.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8ciii",
+              "label": "(iii)",
+              "text": "State two reasons why it is important for the program to be easily understood.\nReason 1\nReason 2",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "Each letter in the alphabet has an ASCII code.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8di",
+              "label": "(i)",
+              "text": "What form does an ASCII code take?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8dii",
+              "label": "(ii)",
+              "text": "Describe how ASCII codes can be used to arrange two lower case letters in\nalphabetical order.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8diii",
+              "label": "(iii)",
+              "text": "Describe how two words (lower case letters only) can be arranged in alphabetical\norder.\n\n3 Raul writes a program which will keep a tally of the number of times each letter appears in a\nFor\ngiven text. He uses an array of size 26 to store the totals for each letter. He then initialised Examiner's\nUse\neach element of the array.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "What value should Raul give each element?",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Define the array and initialise each element of the array using a high-level\nprogramming language of your choice.\nLanguage\nCode",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Write the statements required to update the array when a letter has been read.\n\n4 The following pseudocode is a recursive function where n is an integer.\nFor\nExaminer's\nUse\nFUNCTION prod(n)\nIF n = 1\nTHEN\nprod ← 1\nELSE\nprod ← n * prod(n-1)\nENDIF\nRETURN",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "What value is returned by prod(1)?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "What value is returned by prod(3)?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "What happens if the parameter passed is -1?",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "What changes will need to be made to the pseudocode to address the problem in",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "?",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Rewrite this function in pseudocode as an iterative function.\nFor\nExaminer's\nUse\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 42,
+      "text": [
+        "ENDLOOP"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "paperId": "9608_w20_qp_12",
+  "subjectCode": "9608",
+  "session": "w20",
+  "component": "12",
+  "totalMarks": 73,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Numeric is one type of data.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Convert the following denary number into Binary Coded Decimal (BCD).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Convert the following two’s complement binary integer into denary.\n10111111",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Convert the following hexadecimal number into denary.\nAB",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Character is another type of data.\nThe following tables show part of the ASCII code character set.\nCharacter Denary value Character Denary value\nA 65 a 97\nB 66 b 98\nC 67 c 99\nD 68 d 100\nE 69 e 101",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Describe how the computer uses ASCII codes to represent characters.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Convert the following string into ASCII codes.\nBed",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Give the denary ASCII code for the following character.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Different types of data can be represented in a computer system."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Describe, using an example, how a text file is compressed using RLE.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Explain why run-length encoding will sometimes increase the size of a text file.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "One method of compressing a file is run-length encoding (RLE)."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the following statements about CPU architecture by filling in the missing terms.\nThe Von Neumann model for a computer system uses the ______ program\nconcept.\nA program is a series of instructions that are saved in ______ .\nThe processor ______ each instruction, ______ it and then\n______ it.\nThe processor uses several ______ to store the data and instructions from\nthe program because they can be accessed faster than main memory.",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The following table shows assembly language instructions for a processor that has one\ngeneral purpose register, the Accumulator (ACC).\nInstruction\nExplanation\nOp code Operand\nDirect addressing. Load the contents of the location at the given address to\nLDD <address>\nACC.\nLDM #n\nImmediate addressing. Load the denary number n to ACC.\nIndirect addressing. The address to be used is at the given address. Load the\nLDI <address>\ncontents of this second address to ACC.\nSTO <address>\nStore contents of ACC at the given address.\nADD <address>\nAdd the contents of the given address to ACC.\nCMP <address> Compare the contents of ACC with the contents of <address>.\nOUT\nOutput to screen the character whose ASCII value is stored in ACC.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nJPE <address> Following a compare instruction, jump to <address> if the compare was True.\nFollowing a compare instruction, jump to <address> if the compare was\nJPN <address>\nFalse.\nEND Return control to the operating system.",
+          "marks": null,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "The current contents of the\nmain memory are:\nAddress Instruction\nASCII code table (Selected codes only)\nLDD 80\nASCII Code Character\n51 ADD 80\n38 &\nSTO 80\n39 ‘\n53 LDD 82\n40 (\nINC ACC\n41 )\n55 STO 82\n42 *\nCMP 81\nJPN 50\n58 LDD 80\nOUT\n60 END\nTrace the program currently in memory using the following trace table.\nThe first instruction has been completed for you.\nMemory address\nInstruction\nACC Output\naddress\n80 81 82\n10 2 0\n50 10",
+              "marks": 5,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Assembly language instructions can be put into groups.\nTick (✓) one box in each column to identify the appropriate instruction group for each of\nthe three assembly language instructions.\nAssembly language instruction\nInstruction group\nSTO 80 JPN 50 INC ACC\nInput and output of data\nData movement\nArithmetic operations\nUnconditional and conditional jump instructions\nCompare instructions",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the truth table for the logic expression:\nX = ((A NOR B) AND (C XOR A)) OR B\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Describe the difference between the operation of an AND gate and a NAND gate.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the benefits to the teacher of using a relational database instead of a file-based\napproach.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The teacher sets up the RESULTS database using a Database Management System (DBMS).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Explain the ways in which the developer interface of a DBMS will help the teacher set up\nthe database.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "The DBMS creates a data dictionary for the RESULTS database.\nIdentify three items that will be included in the data dictionary.",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The RESULTS database has the following structure:\nSTUDENT(StudentID, FirstName, LastName, Class, TargetGrade)\nTEST(TestID, Topic, MaxMarks)\nSTUDENT_TEST(StudentID, TestID, Mark)",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Complete the following table by giving one example of each database term from the\ndatabase RESULTS. Give both the field name and the corresponding table name.\nDatabase term Field name Table name\nPrimary key\nForeign key\nAttribute",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "Tick (✓) one box to identify whether the database RESULTS is in 1NF, 2NF or 3NF.\nJustify your choice.\n1NF 2NF 3NF\nJustification: ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5ciii",
+              "label": "(iii)",
+              "text": "Complete the Data Manipulation Language (DML) script to display the Student ID, mark\nand maximum marks for all tests with the topic of ‘Programming’.\nSELECT StudentID, Mark, ______\nFROM STUDENT_TEST, ______\n______ Topic = \"Programming\"\nAND ______ = ______;",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5civ",
+              "label": "(iv)",
+              "text": "The teacher wants to implement validation to make sure that all data entered into the\ndatabase RESULTS are reasonable.\nName three different methods of data validation that can be used in the RESULTS\ndatabase. Describe how each method will limit the data that can be entered in this\ndatabase.\nMethod 1 ______\nDescription ______\nMethod 2 ______\nDescription ______\nMethod 3 ______\nDescription ______",
+              "marks": 6,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "The teacher stores the database on the desktop computer in her classroom.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5di",
+              "label": "(i)",
+              "text": "Explain why it is important to keep the database secure.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5dii",
+              "label": "(ii)",
+              "text": "Explain the ways in which the teacher can use data backup and disk mirroring to limit the\namount of data lost in the event of hardware failure.\nData backup\nDisk mirroring",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 32,
+      "text": [
+        "A teacher uses a relational database, RESULTS, to store data about her students and their test",
+        "results."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Malika’s manager has asked her to work with a senior software engineer for the first week.\nExplain the ways in which Malika’s manager has acted ethically.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Malika researched the company and the programming languages used by the company\nbefore she started the job.\nExplain the ways in which Malika has acted ethically.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Malika thinks that her colleagues do not like her, so she asks her manager for help.\nDescribe the actions the manager could take to support Malika in an ethical way.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Malika has started a new job as a trainee software engineer."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Draw lines to link each characteristic to its appropriate IP address.\nCharacteristic IP address\nCan use hexadecimal notation\nEach group of digits is a number\nbetween 0 and 65535\nIPv4\nConsists of four groups of digits\nIPv6\nUses double colons (::)\nThe total length of the address is 32 bits",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "IP addresses can be static or dynamic.\nExplain the reasons for the web server using a static instead of a dynamic IP address.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 3,
+      "text": [
+        "A web server has a public IPv4 address."
+      ]
+    }
+  ]
+}

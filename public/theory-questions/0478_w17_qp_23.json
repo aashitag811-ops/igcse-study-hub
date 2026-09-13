@@ -1,0 +1,270 @@
+{
+  "paperId": "0478_w17_qp_23",
+  "subjectCode": "0478",
+  "session": "w17",
+  "component": "23",
+  "totalMarks": 39,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Declare suitable arrays for each of the planes to store time slots booked.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Name one variable and one constant you used for Task 1 and state the purpose of each\none.\nVariable ______\nPurpose ______\nConstant ______\nPurpose ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 1, using either pseudocode, programming statements\nor a flowchart.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Describe how you could validate and test the inputs for Task 1.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program checks and displays whether any of the planes are available at a\ngiven time of the day (Task 2). Any programming statements used must be fully explained.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This section of program code asks for 80 numbers between 100 and 1000 to be entered. It checks",
+        "that the numbers are in the correct range, and stores them in an array. It counts how many of the",
+        "numbers are larger than 500 and then outputs the result when the program is finished.",
+        "1 Count = 0",
+        "2 FOR Index = 1 TO 80"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT 'Enter a number between 100 and 1000', Number"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE Number = 99 AND Number = 1001"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT 'This is incorrect, please try again', Number"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Num[80] = Number"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Number > 500 THEN Count = Count + 1"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL Index = 80"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PRINT Index"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Describe, using an example, how data could be verified on data entry.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Explain what is meant by the term library routine.\n\n4 (a) Four pseudocode descriptions and five pseudocode statements are shown. Draw one line to\nlink each pseudocode description to the correct pseudocode statement. Not all pseudocode\nstatements will be used.\nPseudocode description Pseudocode statement\nA loop that will iterate at least\nonce.\nFOR…TO…NEXT\nA conditional statement to deal\nIF…THEN…ELSE…ENDIF\nwith many possible outcomes.\nWHILE…DO…ENDWHILE\nA loop that will iterate a set\nnumber of times.\nCASE…OF…OTHERWISE…ENDCASE\nREPEAT…UNTIL\nA conditional statement with\ndifferent outcomes for true\nand false.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Write an algorithm in pseudocode, using a single loop, to print 50 names that have been\nstored in an array.\n\n5 The flowchart below represents a program routine.\nSTART\nFlag 0\nCount 1\nIs Name[Count]\nYes\nTemp Name[Count]\n> Name[Count + 1]?\nNo\nName[Count] Name[Count + 1]\nName[Count + 1] Temp\nFlag 1\nCount Count + 1\nNo\nIs Count\n= 4?\nYes\nNo\nIs Flag\n= 0?\nYes\nEND",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "The array used in the flowchart contains the following data:\nName[1] Name[2] Name[3] Name\nJamal Amir Eve Tara\nComplete the trace table using the data given in the array.\nFlag Count Name[1] Name[2] Name[3] Name[4] Temp\nJamal Amir Eve Tara",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Describe what the algorithm represented by the flowchart is doing.\n\nQuestion 6 begins on Page 12.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.\n6 A wildlife park has a database table, called LIVESTOCK, to classify and record its animal species.\nPart of the database table is shown.\nSpecies Classification Diet Legs\nGiraffe Mammal Herbivore 4\nElephant Mammal Herbivore 4\nCrocodile Reptile Carnivore 4\nOstrich Bird Omnivore 2\nGorilla Mammal Herbivore 2\nBear Mammal Omnivore 4\nRhinoceros Mammal Herbivore 4\nHippopotamus Mammal Herbivore 4\nFlamingo Bird Omnivore 2\nLion Mammal Carnivore 4\nTurtle Reptile Omnivore 4\nPenguin Bird Carnivore 2",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Suggest another appropriate field that could be added to this database by stating its name\nand data type. State its purpose and give an example of the data it could contain.\nField name ______\nData Type ______\nPurpose ______\nExample of data ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Use the query-by-example grid below to provide a list of all four legged mammals that are\nherbivores, sorted alphabetically by species, with only the species displayed.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "PRINT ' numbers were larger than 500'",
+        "There are four lines of code that contain errors.",
+        "State the line number for each error and write the correct code for that line.",
+        "Error 1 Line Number .............................",
+        "Correct Code ....................................................................................................................................",
+        "Error 2 Line Number .............................",
+        "Correct Code ....................................................................................................................................",
+        "Error 3 Line Number .............................",
+        "Correct Code ....................................................................................................................................",
+        "Error 4 Line Number .............................",
+        "Correct Code ....................................................................................................................................",
+        "[4]",
+        "3 (a) Explain the difference between a validation check and a verification check.",
+        "[2]"
+      ]
+    }
+  ]
+}

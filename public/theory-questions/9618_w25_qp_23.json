@@ -1,0 +1,449 @@
+{
+  "paperId": "9618_w25_qp_23",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "23",
+  "totalMarks": 63,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The programmer decides to use a library routine to provide part of the solution. One reason\nfor this is that library routines may perform functions that the programmer is unable to program\nthemselves.\nState three other benefits of using library routines in the development of the program.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The programmer has identified a different part of the algorithm that would be appropriate to\nimplement as a subroutine (a procedure or a function); no suitable library routine exists for\nthis part.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "State two reasons why the programmer may decide to use a subroutine.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "A function header in pseudocode is defined as:\nFUNCTION Pass2(Count : INTEGER) RETURNS BOOLEAN\nComplete the table by describing the terms used in the function header.\nThe first row has been completed.\nTerm Description\nPass2\nthe name of the function\nCount\nBOOLEAN\n\n* 0000800000003 * DFD",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Variables in the program have example values:\nVariable Example value\nDoB 23/6/2011\nMultiplier 2.5\nAddressLine[1] \"35 Lincoln Avenue\"\nComplete the table by evaluating each expression using the example values:\nExpression Evaluates to\nLENGTH(NUM_TO_STR(Multiplier))\nMONTH(DoB) > 4\n15 + STR_TO_NUM(MID(AddressLine[1], 2, 1))\n\n* 0000800000004 * DFD",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A user requires a program that implements complex data encryption to a recognised international",
+        "standard. A programmer has started the design of the program."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A program contains a global 1D array of type STRING containing 65 elements.\nAn existing text file is used to store the data in the array. Only non-blank elements (those that\ndo not contain an empty string) are written to the text file.\nAn algorithm will:\n• write the first element of the array as a new line in the text file\n• continue until all elements have been written, each to a new line of the text file.\nStepwise refinement is applied to the algorithm.\nDescribe up to six steps for this algorithm that could be used to produce pseudocode.\nDo not use pseudocode statements in your answer.\nStep 1 ______\nStep 2 ______\nStep 3 ______\nStep 4 ______\nStep 5 ______\nStep 6 ______",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Iteration is one programming construct.\nIdentify one other programming construct that will be required when the algorithm from part",
+          "marks": null,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "is converted into pseudocode and explain how it is used.\nConstruct ______\nUse ______\n\n* 0000800000005 * DFD\n* 0000800000006 * DFD",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program uses a stack to hold up to 30 integer values. The stack is implemented using a global",
+        "integer variable and a global 1D array.",
+        "The array is declared in pseudocode:",
+        "DECLARE ThisStack : ARRAY[1:30] OF INTEGER",
+        "Stack design notes:",
+        "• The global variable SP acts as a stack pointer. SP contains the array index of the last value",
+        "pushed onto the stack.",
+        "• If the stack is empty, then SP is assigned the value zero.",
+        "• The first item added to the stack will be stored in ThisStack[1]",
+        "• SP is incremented each time an item is added to the stack.",
+        "A function Pop() is written to remove an item from ThisStack. The function returns an item of",
+        "type PopData which is defined in pseudocode:",
+        "TYPE PopData",
+        "DECLARE Data : INTEGER",
+        "DECLARE Exists : BOOLEAN",
+        "ENDTYPE",
+        "The value removed from the stack is assigned to Data and Exists is set to TRUE. If it is not",
+        "possible to remove a value from the stack, then Exists is set to FALSE",
+        "Complete the pseudocode for Pop()",
+        "FUNCTION Pop() RETURNS PopData",
+        "DECLARE ThisPop : ...............................................",
+        "IF ............................................... THEN",
+        "PopData.Exists ............................................... // Stack is empty",
+        "ELSE",
+        "PopData.Data ...............................................",
+        "PopData.Exists ...............................................",
+        "SP ...............................................",
+        "ENDIF",
+        "RETURN ThisPop",
+        "ENDFUNCTION",
+        "[5]",
+        "* 0000800000007 * DFD",
+        "* 0000800000008 * DFD"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program contains a global 1D array Data containing 20 elements of type INTEGER",
+        "A global string NumString represents a sequence of three-digit numbers, separated by commas.",
+        "For example:",
+        "\"101,456,219,754,328\"",
+        "The string contains at least four three-digit numbers. The total number of three-digit numbers in",
+        "the string is unknown.",
+        "A procedure Store() will:",
+        "• extract one three-digit number at a time from NumString",
+        "• convert each of the three-digit numbers extracted to an integer and assign this to the next",
+        "array element, starting from index 1",
+        "• end when all three-digit numbers have been stored, or when the array is full.",
+        "Complete the pseudocode for Store()",
+        "All local variables used must be declared.",
+        "PROCEDURE Store()",
+        "ENDPROCEDURE",
+        "[6]",
+        "* 0000800000009 * DFD",
+        "* 0000800000010 * DFD"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the trace table by dry running the procedure when it is called in the statement:\nCALL Process(1)\nIndex CaseVar Count Num[1] Num[2] Num[3] Num\n\n* 0000800000012 * DFD",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "As a reminder, the CASE structure in the pseudocode is:\nCASE OF CaseVar\n1 : Num[Index] Num[Index] + Index //clause one\nIndex Index + 1\nCount Count + 1\n2 : Num[Index] Num[Index] + Index //clause two\nIndex Index + 2\nCount Count + 2\n3 : Num[Index] Num[Index] * 2 //clause three\nIndex Index + 3\nCount Count - 1\n4 : Count Count + 4 //clause four\nOTHERWISE : Count 20\nENDCASE\nThe CASE structure could be optimised by combining two existing clauses.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Identify the CaseVar values for these two existing clauses.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Write pseudocode for a single clause to replace the two clauses identified in (b) (i).\n\n* 0000800000013 * DFD\n* 0000800000014 * DFD",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A global 1D array Num of integers contains four elements. A program assigns values to these",
+        "elements as shown:",
+        "Num[1] 1",
+        "Num[2] 2",
+        "Num[3] 5",
+        "Num[4] 3",
+        "A procedure Process() manipulates the values in the array.",
+        "The procedure is written in pseudocode:",
+        "PROCEDURE Process(Start : INTEGER)",
+        "DECLARE CaseVar, Index, Count : INTEGER",
+        "Index Start",
+        "Count 0",
+        "WHILE Count <= 20",
+        "CaseVar Num[Index]",
+        "CASE OF CaseVar",
+        "1 : Num[Index] Num[Index] + Index //clause one",
+        "Index Index + 1",
+        "Count Count + 1",
+        "2 : Num[Index] Num[Index] + Index //clause two",
+        "Index Index + 2",
+        "Count Count + 2",
+        "3 : Num[Index] Num[Index] * 2 //clause three",
+        "Index Index + 3",
+        "Count Count - 1",
+        "4 : Count Count + 4 //clause four",
+        "OTHERWISE : Count 20",
+        "ENDCASE",
+        "Index (Index MOD 4) + 1",
+        "ENDWHILE",
+        "ENDPROCEDURE",
+        "* 0000800000011 * DFD"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A function Generate() is written to take an original number as a parameter and to return the\ncheck digit.\nOutline a test plan that could be used to fully test function Generate()\nAssume that the parameter is valid.\n\n* 0000800000015 * DFD",
+          "marks": 2,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A function CheckNumber() will take an integer value and return the Boolean value TRUE if\nthe check digit is correct, otherwise return FALSE\nWrite pseudocode for the function CheckNumber()\nAssume that the parameter is valid.\n\n* 0000800000016 * DFD",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Students are learning about a simple check digit method for data validation. In this method, a",
+        "single check digit is appended to the end of an original number to give a new number.",
+        "The students are studying a method which:",
+        "• calculates the sum of all the digits in the original number",
+        "• uses integer division to calculate the remainder when the sum is divided by 10",
+        "• uses the remainder as the check digit",
+        "• appends the check digit to the original number, creating the new number.",
+        "For example:",
+        "original number 4162",
+        "sum of all digits 4 + 1 + 6 + 2 = 13",
+        "remainder when the sum is divided by 10 using integer division 3",
+        "new number 41623",
+        "The original number is always at least three digits in length.",
+        "When the new number is input, the check digit is used to validate the new number."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "One part of the program contains an algorithm which is represented by a state-transition\ndiagram.\nThe table shows the inputs, outputs and states for the algorithm:\nCurrent state Input Output Next state\nS1 A1 S2\nS2 A2 X4 S3\nS3 A1 X1 S3\nS3 A2 X1 S3\nS3 A3 X3 S4\nS3 A4 S2\nS4 A3 X4 S5\nS4 A4 X4 S5\nS4 A1 S2\nComplete the state-transition diagram to represent the information given in the table:\nSTART\nS1\n\n* 0000800000017 * DFD",
+          "marks": 5,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A structure chart is used to document a different part of the program, made up of five modules.\nProgram notes:\n• module Setup calls either module Restart, or module Confirm\n• module Confirm takes a string as a parameter and returns an integer\n• module Modify has no parameters and returns a Boolean\n• module Update takes a string as a parameter\n• module Restart repeatedly calls module Update followed by module Modify\n• module Restart takes a string as a parameter that is passed by reference.\nDraw a structure chart to represent the relationship between the five modules, including all\nparameters and return values.\n\n* 0000800000018 * DFD",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "There are several different ways to express an algorithm during the design of a program."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write efficient pseudocode for the module LoanStatus()\nAssume that each combination of StudentID and BookID can occur only once.\n\n* 0000800000020 * DFD",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A second module is defined:\nModule Description\n• called with a parameter of type STRING representing\na tutor ID (as a reminder, the first three characters of\na StudentID represent a tutor ID)\nLoansPerTutor()\n• returns an integer value representing the number of\nbooks currently on loan to students who have the\ngiven tutor\nReminder: unused elements have the StudentID set to an empty string. These may occur\nanywhere in the array.\nWrite pseudocode for the module LoansPerTutor()\n\n* 0000800000021 * DFD",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "It is decided to mark as unused all records for book loans that have been returned. The data\nfor these records will first be written to a new text file for archive purposes.",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "The archive program will automatically generate a meaningful filename each time it is\nrun.\nOutline a meaningful format to use for the filename.",
+              "marks": 2,
+              "type": "outline",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "There is a problem that will need to be overcome before the data items can be written to\na text file.\nAs a reminder, the data items are:\nData item Data type Comment\nthe unique ID of the student who has borrowed the\nbook\nStudentID STRING\nThe first three characters of a StudentID represent\na tutor ID. Each student has one tutor.\nBookID STRING the unique ID of the book being borrowed\nOnLoan BOOLEAN\nTRUE if the book has not been returned\nExplain the problem.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8ciii",
+              "label": "(iii)",
+              "text": "One way of storing the data items in a text file is to store each data item on a separate\nline.\nIdentify one benefit and one drawback of this way of storing the data.\nBenefit ______\nDrawback ______\n\n* 0000800000022 * DFD\n* 0000800000023 * DFD\n* 0000800000024 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A program is being developed to manage student book loans from a college library.",
+        "The programmer has defined a record type to define each loan.",
+        "The data items are:",
+        "Data item Data type Comment",
+        "the unique ID of the student who has borrowed",
+        "the book",
+        "StudentID STRING",
+        "The first three characters of a StudentID",
+        "represent a tutor ID. Each student has one tutor.",
+        "BookID STRING",
+        "the unique ID of the book being borrowed",
+        "OnLoan BOOLEAN",
+        "TRUE if the book has not been returned",
+        "The programmer has defined a global array Loan to store 8000 loan records.",
+        "There are more elements in the array than books in the library. Unused elements have the",
+        "StudentID set to an empty string. These may occur anywhere in the array.",
+        "The programmer has defined a program module:",
+        "Module Description",
+        "• called with two parameters of type STRING representing a",
+        "StudentID and a BookID",
+        "• outputs a message saying whether a given loan has been",
+        "LoanStatus()",
+        "returned or not",
+        "• outputs a warning message if a record of the given loan is",
+        "not found",
+        "* 0000800000019 * DFD"
+      ]
+    }
+  ]
+}

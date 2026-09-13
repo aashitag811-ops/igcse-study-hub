@@ -1,0 +1,476 @@
+{
+  "paperId": "9691_s15_qp_22",
+  "subjectCode": "9691",
+  "session": "s15",
+  "component": "22",
+  "totalMarks": 50,
+  "questionCount": 21,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State what is returned by the following function calls.",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "MID(\"FRED\",1,1)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "MID(\"FRED\",5,1)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A date is stored in the format DDMMYYYY in the string variable TodaysDate.\nUse the function MID to separate the day, month and year.\nThisDay ← ______\nThisMonth ← ______\nThisYear ← ______",
+          "marks": 3,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A high-level programming language has the built-in string handling function MID defined as follows:",
+        "MID(ThisString : STRING, x : INTEGER, n : INTEGER) RETURNS",
+        "STRING",
+        "returns a substring of n characters from the string ThisString starting at position x.",
+        "For example: MID(\"STOP\", 3, 2) returns \"OP\"",
+        "If the function call is not properly formed, an error is generated."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "The sequence of numbers 3, 5, 2, 1 is input and terminated with −1.\nComplete the trace table.\nx Result x <> -1\n0 0\nOutput ______",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Give the expected result from the sum of the numbers 3, 5, 2, 1.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "What is the error in the given pseudocode?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiv",
+              "label": "(iv)",
+              "text": "State the type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Rewrite the pseudocode so that it works correctly.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The pseudocode below is intended to calculate the sum of a sequence of integers input.",
+        "The dummy value −1 ends the input.",
+        "DECLARE x : INTEGER",
+        "DECLARE Result : INTEGER",
+        "x ← 0",
+        "Result ← 0",
+        "WHILE x <> -1",
+        "INPUT x",
+        "Result ← Result + x",
+        "ENDWHILE",
+        "OUTPUT Result"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The array Grid is to be used to represent the contents of the grid.\nRows and columns are to be numbered from 1 to 3.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "To take their turn, the player inputs a row number and a column number to place their\nmarker in an empty cell.\nWrite the values player X has input to place their marker, ‘X’, in the above diagram:\nRow ______\nColumn ______",
+              "marks": 1,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "State the value Ali could use to represent an empty cell. ______",
+              "marks": 1,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "In a high-level programming language, write statements to:\n• declare the array Grid\n• assign the value for an empty cell to all cells\nProgramming language ______\nCode ______",
+              "marks": 7,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Ali decides to validate the player input.\nThe input is valid if:\n• the row and column numbers are within the range 1 to 3 inclusive\n• the cell is empty\nAli chooses a sequence of seven pairs of integer values to simulate player input. The test\nstarts with an empty grid.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Show the contents of the grid after the input of each pair of integer values. Circle whether\nthe input is valid or invalid. If the input is invalid state the reason.\nRow Column Grid content Reason (if invalid)\nvalid / invalid\n2 2\nvalid / invalid\n0 1\nvalid / invalid\n1 1\nvalid / invalid\n1 4\nvalid / invalid",
+              "marks": null,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A board game is designed for two players, O and X.",
+        "At the beginning, all cells of a 3 x 3 grid are empty.",
+        "The players take turns in placing their marker in an empty cell of the grid; player O always starts.",
+        "The game ends when one player completes a row, column or diagonal or the grid is full.",
+        "Here is one example after three turns:",
+        "O X",
+        "Ali wants to write a program to play the game."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Ali uses the top-down design approach for his overall program solution.\nHis design is as follows:\n01 GameEnd ← FALSE\n02 CurrentPlayer ← 'O'\n03 CALL DisplayGrid()",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "1",
+        "valid / invalid",
+        "2 0",
+        "valid / invalid",
+        "2 2",
+        "[6]"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CALL PlayerTakesTurn(CurrentPlayer)"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CALL DisplayGrid()"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF HasPlayerWon() = TRUE"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "GameEnd ← TRUE"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Player\", CurrentPlayer, \"has won\""
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF GridFull() = TRUE"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "GameEnd ← TRUE"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Draw\""
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CALL SwapPlayer(CurrentPlayer)"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [
+        {
+          "id": "21d",
+          "label": "(d)",
+          "text": "Write the pseudocode required for the procedure SwapPlayer:",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21e",
+          "label": "(e)",
+          "text": "The current player is a winner if they have placed their markers in each cell of a row or a\ncolumn or a diagonal. Ali’s solution checks for a winner after every turn.\nComplete the pseudocode for the subroutine HasPlayerWon:\n______ HasPlayerWon() ______\nDECLARE WinningLine : ______\nDECLARE i : ______\nWinningLine ← ______\n// check both diagonals\nIF Grid[1,1] = Grid[2,2] AND Grid[1,1] = Grid[3,3]\nOR Grid[______] = Grid[______]\nAND Grid[______] = Grid[______]\nTHEN WinningLine ← TRUE\nELSE\ni ← 0\ni ← i + 1\n// check a row\nIF Grid[i,1] = Grid[i,2] AND Grid[i,1] = Grid[i,3]\n// check a column\nOR (Grid[______] = Grid[______]\nAND Grid[______] = Grid[______])\nTHEN WinningLine ← TRUE\nENDIF\nUNTIL WinningLine = TRUE OR ______ .\nRETURN WinningLine\nENDFUNCTION",
+          "marks": 10,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21f",
+          "label": "(f)",
+          "text": "The subroutine DisplayGrid is to output the state of play at any time.\nFor example, after three turns the display should look like:\n: : O\n: O X\n: : :\nwhere the character ‘:’ shows an empty cell.\nQuestion 3(f) continues on page 12.\nWrite program code for the subroutine algorithm represented by the flowchart:\n352&('85(\n'LVSOD\\*ULG\n(PSW\\&HOO ®¯\n)25\u00035RZ\n/LQH\n®¯\n)25\u0003&ROXPQ\n1R\nThe operator concatenates\n<HV\ntwo strings.\n1R\n<HV\n287387\n/LQH\n1R\n<HV\n(1'352&('85(\nProgramming language ______\nCode ______",
+          "marks": 5,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21g",
+          "label": "(g)",
+          "text": "Design a suitable form-based screen interface for the current player to input the row number\nand column number to place their marker when it is their turn.",
+          "marks": 4,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21h",
+          "label": "(h)",
+          "text": "When Ali has tested all individual modules he plans to do further testing.\nGive two types of testing Ali should do.\n1______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "UNTIL GameEnd = TRUE"
+      ]
+    }
+  ]
+}

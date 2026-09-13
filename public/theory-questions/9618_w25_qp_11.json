@@ -1,0 +1,604 @@
+{
+  "paperId": "9618_w25_qp_11",
+  "subjectCode": "9618",
+  "session": "w25",
+  "component": "11",
+  "totalMarks": 68,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Convert the binary number into hexadecimal.\n101100111010",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Convert the denary number into Binary Coded Decimal (BCD).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Convert the 12-bit two’s complement binary integer into denary.\nShow your working.\n111110111100\nWorking ______\nDenary value ______\n\n* 0000800000003 * DFD",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The following binary addition is performed using 8-bit registers.\nComplete the calculation using binary addition.\n1 0 1 1 0 0 1 1\n+ 0 1 1 1 1 0 0 0",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Name and describe the error that can occur when binary addition is performed.\n\n* 0000800000004 * DFD",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the entity-relationship (E-R) diagram for the database WORKEXPERIENCE.\nSTUDENT PLACEMENT\nCOMPANY",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Explain why the database WORKEXPERIENCE is in Third Normal Form (3NF).\n\n* 0000800000005 * DFD",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Some example data from the PLACEMENT table is shown:\nPlacementID StudentID CompanyID StartDate EndDate Complete\nPC001 LDEA01 MSCM 01/01/2023 12/07/2023 TRUE\nPC002 LDEA01 MSCM 01/04/2024 08/05/2024 FALSE\nPC003 ALAU02 NEAM 09/03/2020 10/03/2021 FALSE\nPC004 LOLI75 GOUZ 07/06/2018 11/09/2018 TRUE",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Write a Structured Query Language (SQL) script to delete all placements that have been\ncompleted.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Write an SQL script to return the total number of placements completed by the student\nwith ID LDEA01 at the company with ID NEAM. The total should be given an appropriate\nname.\n\n* 0000800000006 * DFD",
+              "marks": null,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The database tables are repeated here:\nSTUDENT(StudentID, FirstName, TelephoneNumber, UniversityName)\nPLACEMENT(PlacementID, StudentID, CompanyID, StartDate, EndDate,\nComplete)\nCOMPANY(CompanyID, CompanyName, MaxStudentsPerPlacement)\nExplain what is meant by referential integrity, and how it applies to this database.\n\n* 0000800000007 * DFD",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A relational database, WORKEXPERIENCE, stores data about students and the companies where",
+        "they complete work experience.",
+        "Students can complete multiple work experience placements but can only complete one placement",
+        "at a time.",
+        "Students can complete more than one placement at the same company.",
+        "Part of the database is shown:",
+        "STUDENT(StudentID, FirstName, TelephoneNumber, UniversityName)",
+        "PLACEMENT(PlacementID, StudentID, CompanyID, StartDate, EndDate,",
+        "Complete)",
+        "COMPANY(CompanyID, CompanyName, MaxStudentsPerPlacement)"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for the logic expression:\nX = NOT ((A NAND B) XOR (NOT A OR NOT C))\nB X",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Write the logic expression for the following truth table.\nR S T Q\n0 0 0 0\n0 0 1 1\n0 1 0 0\n0 1 1 0\n1 0 0 0\n1 0 1 0\n1 1 0 1\n1 1 1 0\nQ = ______ \n* 0000800000008 * DFD",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The ACC currently contains the following positive binary integer:\n0 0 0 1 1 1 1 0\nWrite a bit manipulation instruction that uses a binary shift to change the contents of the ACC to:\n0 1 1 1 1 0 0 0\nInstruction ______ \n* 0000800000009 * DFD",
+          "marks": 1,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The ACC currently contains the following positive binary integer:\n1 1 1 0 0 0 1 1\nWrite the contents of the ACC after the instruction XOR &12 is carried out.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The ACC currently contains the following positive binary integer:\n1 1 1 0 0 0 1 1\nWrite the contents of the ACC after the instruction AND #63 is carried out.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "The ACC currently contains the following positive binary integer:\n1 1 1 0 0 0 1 1\nThe current contents of memory are:\nData\nAddress\n00100100\n99 00110001\n00110011\n10100011\n10101100\nWrite the contents of the ACC after the instruction OR 100 is carried out.\n\n* 0000800000010 * DFD",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "The table shows part of the instruction set for a processor. The processor has one register, the",
+        "Accumulator (ACC).",
+        "Instruction",
+        "Explanation",
+        "Opcode Operand",
+        "AND #n / Bn / &n DO NOT WRITE IN THIS MARGIN",
+        "Bitwise AND operation of the contents of the ACC with the",
+        "operand",
+        "AND <address>",
+        "Bitwise AND operation of the contents of the ACC with the",
+        "contents of <address>",
+        "XOR #n / Bn / &n",
+        "Bitwise XOR operation of the contents of the ACC with the",
+        "operand",
+        "XOR <address>",
+        "Bitwise XOR operation of the contents of the ACC with the",
+        "contents of <address>",
+        "OR #n / Bn / &n",
+        "Bitwise OR operation of the contents of the ACC with the",
+        "operand",
+        "OR <address>",
+        "Bitwise OR operation of the contents of the ACC with the",
+        "contents of <address>",
+        "LSL #n",
+        "Bits in ACC are shifted logically n places to the left. Zeros",
+        "are introduced on the right-hand end.",
+        "LSR #n",
+        "Bits in ACC are shifted logically n places to the right. Zeros",
+        "are introduced on the left-hand end.",
+        "<address> can be an absolute or symbolic address",
+        "# denotes a denary number, e.g. #127",
+        "B denotes a binary number, e.g. B10010001",
+        "& denotes a hexadecimal number, e.g. &4A"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "State two tasks that are performed by hardware management.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "State two tasks that are performed by security management.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Describe one benefit of using library routines when developing software.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Describe one drawback of using library routines when developing software.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Identify two presentation features found in a typical Integrated Development Environment\n(IDE).\n\n* 0000800000011 * DFD",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The Operating System (OS) is responsible for hardware and security management in a computer",
+        "system."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The processor uses several registers, including the Accumulator (ACC) and the Current\nInstruction Register (CIR).\nComplete the table by describing the role of each register.\nRegister Role\nACC\nCIR",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Increasing the number of cores in a processor can affect the performance of a computer.\nDescribe the drawbacks of increasing the number of cores in a processor.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "State three differences between Dynamic RAM (DRAM) and Static RAM (SRAM).\n\n* 0000800000012 * DFD",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Complete the table by describing the following types of IP address.\nType of IP address Description\nStatic\nPublic",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Consider the following IP address:\n256.0.0.A\nCircle whether this IP address is IPv4, IPv6 or an invalid IP address.\nIPv4 IPv6 Invalid\nJustify your choice.",
+          "marks": 2,
+          "type": "circle",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "A user types a Uniform Resource Locator (URL) into the address bar of a web browser to\naccess a web page.\nExplain how the web browser uses the URL to access the web page.\n\n* 0000800000013 * DFD",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "A bitmap file is downloaded. The image has a maximum of 256 colours and measures\n512 pixels wide by 2048 pixels high.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7di",
+              "label": "(i)",
+              "text": "Calculate an estimate of the file size of the bitmap in kibibytes.\nShow your working.\nWorking ______\nFile size of bitmap ______ kibibytes",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7dii",
+              "label": "(ii)",
+              "text": "Explain why the actual file size may be larger than the one calculated in (d)(i).",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7diii",
+              "label": "(iii)",
+              "text": "Explain how a bitmap image is compressed using run-length encoding (RLE).\n\n* 0000800000014 * DFD",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "Web browsers use Internet Protocol (IP) addresses."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Viruses and pharming are examples of malware.\nExplain what is meant by a virus and pharming.\nVirus ______\nPharming ______",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Give three other ethical considerations for a student using their personal computer to connect\nto the school network.",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Describe two social impacts of students using Artificial Intelligence (AI) to complete their\nhomework.\n\n* 0000800000015 * DFD",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "One ethical consideration for a student connecting their personal computer to the school network",
+        "is the risk of spreading malware on the network."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe the differences between a monitoring system and a control system.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Explain how the model will be printed using a 3D printer.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "State why a 3D printer needs a buffer.\n\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "An architect needs a model of a building."
+      ]
+    }
+  ]
+}

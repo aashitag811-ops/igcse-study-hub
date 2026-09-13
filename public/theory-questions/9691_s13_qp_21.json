@@ -1,0 +1,505 @@
+{
+  "paperId": "9691_s13_qp_21",
+  "subjectCode": "9691",
+  "session": "s13",
+  "component": "21",
+  "totalMarks": 75,
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State two reasons why using modules is a sensible way for her to proceed.\n\nOne way of storing her data will be to use a file of records.\nEach record will contain at least the following data:\nData Identifier Description of input data\nSubject\nsubject Name of the subject, for example Physics\nTitle\ntitle Title of assignment\nDateSet\ndate set Format DDMMYYYY\nHandInDate\nhand-in date Format DDMMYYYY\nIsMarked\nmarked? Y or N\nDateReturned\ndate returned Format DDMMYYYY\nMark\nmark Range 0 to 100",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Each record needs another field to uniquely identify that record.\nState an appropriate identifier for this field and state a suitable data type for it.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "In a programming language write the declaration for the record structure, giving it\nFor\nthe identifier Assignment. Examiner's\nUse\nProgramming language\nDeclaration",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "State the number of bytes needed to store a value in the field IsMarked.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Describe what the function EOF() does when used in a program.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Meena creates a sequential file, MyAssignments, of Assignment records.\nFor\nExaminer's\nUse\nUsing pseudocode write the algorithm to search this file for the first Physics\nassignment.\nOPENFILE MyAssignments FOR OUTPUT\nCLOSEFILE MyAssignments",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "Meena wants to develop a program to keep a record of her coursework assignments.",
+        "For",
+        "She will want to enter, sort and print out data. Examiner's",
+        "Use",
+        "She decides to modularise the solution."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write a logic expression to be used as the validation rule for the acceptance of data in\nthe IsMarked field.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The data input for HandInDate also needs validating.\nIt will be entered as DDMMYYYY.\n• DD must be less than 32 and greater than 0\n• MM must be less than 13 and greater than 0\n• YYYY must be greater than 2012 and less than 2015\nDraw a flowchart that shows the logic to validate the hand-in date.",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Meena uses three items of data to test this logic. In the table below enter ‘normal’\nFor\nor ‘borderline’ in the empty cells. Examiner's\nUse\nHandInDate\nType of Data\n31122014\n30142015 invalid\n16062013",
+              "marks": 1,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "State the reason why this invalid HandInDate is not a good test of the validation\nrules.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "State three hand-in dates that provide a better test to show that invalid data does\nnot get entered.\n\nMeena also wants to check that HandInDate is later than both DateSet and the current\ndate.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Write a logic expression which tests this condition.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "DateReturned will have to be later than HandInDate, the same or earlier than the\nFor\nExaminer's\ncurrent date, and a mark has been entered.\nUse\nWrite pseudocode that will test whether DateReturned is valid or invalid using nested\nIF statements.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "The table shows the four records currently stored in the file MyAssignments for the\nFor\nExaminer's\nassignments set so far.\nUse\nSubject Title DateSet HandInDate IsMarked DateReturned Mark\nPhysics … … … … … 28\nMaths … … … … … 55\nBiology … … … … … 70\nDrama … … … … … 12\nMeena will write an additional module based on the pseudocode:\nOPENFILE MyAssignments FOR INPUT\nCount ← 0\nREPEAT\nFILEREAD next assignment record\nIF Mark < 40\nTHEN\nCount ← Count + 1\nENDIF\nUNTIL EOF()\nOUTPUT Count\nCLOSEFILE MyAssignments",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "2fi",
+              "label": "(i)",
+              "text": "Complete the trace table using the data in the table above.\nCount Mark Mark < 40 Output",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fii",
+              "label": "(ii)",
+              "text": "What useful information does this pseudocode output?\nFor\nExaminer's\nUse",
+              "marks": 1,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fiii",
+              "label": "(iii)",
+              "text": "Meena has written the above pseudocode with features that make it easy to\nunderstand.\nState two such features.\nFeature 1\nFeature 2",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fiv",
+              "label": "(iv)",
+              "text": "State one other feature that could be introduced to this pseudocode to make it\neasier to understand.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fv",
+              "label": "(v)",
+              "text": "Write pseudocode to demonstrate your answer to (iv).",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fvi",
+              "label": "(vi)",
+              "text": "The pseudocode at the start of (f) was:\nFor\nExaminer's\nUse\nOPENFILE MyAssignments FOR INPUT\nCount ← 0\nREPEAT\nFILEREAD next assignment record\nIF Mark < 40\nTHEN\nCount ← Count + 1\nENDIF\nUNTIL EOF()\nOUTPUT Count\nCLOSEFILE MyAssignments\nRewrite the pseudocode using a WHILE-ENDWHILE loop.\nOPENFILE MyAssignments FOR INPUT\nCLOSEFILE MyAssignments",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "2fvii",
+              "label": "(vii)",
+              "text": "Could this pseudocode be written using a FOR-ENDFOR structure?\nJustify your answer.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 32,
+      "text": [
+        "The data for each record is validated as it is entered.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "State where in the program a global variable is declared.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Using only global variables is poor programming practice.\nGive a possible problem that could result from this.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Good programming practice uses local variables.\nWhat is the scope of a local variable?\n\nTo make future computation more straightforward Meena retrieves her marks from the file\nand stores them in an array, Marks. This array has 30 elements, and marks range from 0\nto 100.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "State a suitable value to initialise each element of the array. Justify your choice.\nInitial value\nReason",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "Write program code that will declare and initialise the array.\nProgramming language\nCode",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3f",
+          "label": "(f)",
+          "text": "Write program code that will calculate the average of all the marks and assign it to\nFor\nAvMark. Examiner's\nUse\nProgramming language\nCode",
+          "marks": 5,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3g",
+          "label": "(g)",
+          "text": "The programming statements to calculate the average mark could be written as a\nprocedure or a function.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3gi",
+              "label": "(i)",
+              "text": "State the difference between a procedure and a function.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3gii",
+              "label": "(ii)",
+              "text": "State why the sub-routine to calculate the average mark could be written as a\nfunction.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3h",
+          "label": "(h)",
+          "text": "A built in function, INT(), exists which returns the integer part of a real number.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3hi",
+              "label": "(i)",
+              "text": "What is returned by INT(34.2)?\n\nAvMark may be a decimal number such as 79.7 or 34.2. Meena wants the answer\nrounded to the nearest whole number.\nA variable, Rounded, is assigned the result of using the INT routine with parameter\n(AvMark + 0.5).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3hii",
+              "label": "(ii)",
+              "text": "What is the value of Rounded when AvMark is 79.5?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3hiii",
+              "label": "(iii)",
+              "text": "Write program code for a function CalculateRounded which returns the rounded\naverage mark.\nProgramming language\nCode",
+              "marks": 4,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "Meena needs to be aware of her average grade and declares a variable AvMark, which",
+        "For",
+        "Examiner's",
+        "she decides will be a global variable.",
+        "Use"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Meena invites her friends to use her program. When designing the user interface, state\nFor\nthree design features she can incorporate when one of her friends has a sight Examiner's\nUse\nimpairment.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Before making the program available it must be tested.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "State when and how syntax errors are detected.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "State when and how logic errors are detected.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": []
+    }
+  ]
+}

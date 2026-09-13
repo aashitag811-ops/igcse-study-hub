@@ -1,0 +1,461 @@
+{
+  "paperId": "9691_s12_qp_22",
+  "subjectCode": "9691",
+  "session": "s12",
+  "component": "22",
+  "totalMarks": 65,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Draw a suitable screen layout.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Justify the design of your screen layout in (a).",
+          "marks": 3,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The responses from each student will be stored as a record consisting of the following\nFor\nfields: Examiner's\nUse\n• FirstName\n• DateOfBirth\n• BookType\n• ReadsNovels\nComplete the following table. Only a single value should be given for the Field Size.\nField Name Data Type Field Size (bytes)\nFirstName\nDateOfBirth\nBookType\nReadsNovels",
+          "marks": 8,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Anna is to write a program to analyse the responses.\nFor\nExaminer's\nUse\nUsing nested IF...THEN statements, complete the pseudocode to calculate the totals\nfor each BookType (printed, audio-book or e-book).\nREPEAT\nREAD next record\nUNTIL no more student records",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Anna will want a report that shows these totals.\nFor\nExaminer's\nUse\nDesign a printed report that shows for each BookType:\n• the total for that type\n• the percentage for that type",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "The records will be held in a serial file.\nGive three statements from a high-level language that may be used for the file\nhandling and explain what each does.\nLanguage",
+          "marks": 6,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "Anna wants to find out about her fellow students’ reading habits. It will be part of her",
+        "For",
+        "Literature coursework. Examiner's",
+        "Use",
+        "She will ask questions online, so starts by designing a screen layout. The first four",
+        "questions will ask for:",
+        "• student’s first name",
+        "• date of birth",
+        "• type of book they prefer (printed, audio-book or e-book)",
+        "• whether student reads novels (yes/no)"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "In the following table trace the effect of entering 24, 57, 12.\nNumber\nArraySize Element Element<ArraySize\n[1] [2] \ntrue",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "There appears to be an error in the above pseudocode. State the type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The error can be corrected by changing one line. Write the corrected line of\npseudocode.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Philipe is not convinced that a WHILE loop was the best choice for this pseudocode.\nFor\nInstead he considers using a REPEAT...UNTIL loop. Examiner's\nUse\nRewrite the corrected pseudocode using a REPEAT...UNTIL loop.",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Philipe wants to increase the size of the array to 500. This is too large to check with a\ntrace table.\nDescribe how you would check that the logic of the pseudocode is correct for 500\niterations.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Philipe is trying different ways of designing the process of entering data into an array.",
+        "For",
+        "He declares a variable called ArraySize and sets it to 3. Examiner's",
+        "Use",
+        "He declares an array Number[ArraySize].",
+        "He then writes the following pseudocode.",
+        "Element ← 1",
+        "WHILE Element < ArraySize DO",
+        "INPUT Number[Element]",
+        "Element ← Element + 1",
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Using a high-level programming language, write the code to perform this task. (Ensure\nthat you use meaningful variable names and lay the code out clearly.)\nProgramming language\nCode",
+          "marks": 8,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "She writes this code as the function JoinStrings because it is to be used several\nFor\nExaminer's\ntimes.\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "State the parameters of the function.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Write the function header in the language you used in part (a).",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "State why Gina used a function rather than a procedure.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Gina is developing her programming skills in string handling.",
+        "For",
+        "She is going to input two strings. Examiner's",
+        "Use",
+        "Each string is made up of three parts:",
+        "• letters, followed by",
+        "• a single ‘*’ character, followed by",
+        "• letters",
+        "The groups of letters after the ‘*’ characters are joined together to form a new string which",
+        "is then output.",
+        "For example, with “DFG*COM” and “B*PUTER” as inputs, the new string output will be",
+        "“COMPUTER”."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Evaluate the following expressions for Raul.",
+          "marks": null,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "10/3",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "10 MOD 3",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "10 DIV 3",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Raul has Y melons which are to be packed into boxes. Each box contains X melons.\nWrite expressions to calculate:",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "the number of full boxes",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "the number of melons left over",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Raul writes software for a melon packing plant. He wants to check his understanding of",
+        "different arithmetic operators for a melon packing problem that he has to solve."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Romana is learning about recursion. She designs a recursive function.",
+        "For",
+        "Examiner's",
+        "Use",
+        "01 FUNCTION Happening(Num)",
+        "02 IF Num = 1",
+        "03 THEN",
+        "04 Happening ← 1",
+        "05 ELSE"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Happening ← Happening(Num - 1) + Num"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [
+        {
+          "id": "08a",
+          "label": "(a)",
+          "text": "Calculate the value returned by the function call Happening(4).\nShow your working.\nHappening(4)=",
+          "marks": 6,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08bi",
+              "label": "(i)",
+              "text": "State two line numbers in the given pseudocode (other than lines 01 and 08) that\nFor\nshow the subroutine is a function. Give your reason for choosing these. Examiner's\nUse\nLine numbers\nReason",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08bii",
+              "label": "(ii)",
+              "text": "State the line number in the given pseudocode that shows the function is\nrecursive. Give your reason for choosing this.\nLine number\nReason",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "08c",
+          "label": "(c)",
+          "text": "State what will happen if the function is called with Happening(-1).",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08d",
+          "label": "(d)",
+          "text": "The same process could have been solved iteratively using a FOR loop.\nDiscuss the merits of iterative and recursive solutions to this problem, particularly when\nthe initial value of Num is very large.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "ENDFUNCTION"
+      ]
+    }
+  ]
+}

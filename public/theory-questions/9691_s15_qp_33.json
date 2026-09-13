@@ -1,0 +1,678 @@
+{
+  "paperId": "9691_s15_qp_33",
+  "subjectCode": "9691",
+  "session": "s15",
+  "component": "33",
+  "totalMarks": 85,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State why the table is not in First Normal Form (1NF).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Comment on your answer by referring to the data in the table.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The design is changed so that there are two tables:\nREVIEWER(ReviewerID, Location)\nREVIEW(Title, Genre, ReleaseDate, ReviewDate, ReviewerID)\nThe primary keys are not shown.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Using the data given in the original table, show the data now stored in table REVIEWER.\nTable: REVIEWER\nReviewerID Location",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Using the data given in the original table, show three rows now stored in table REVIEW.\nThe ReviewerID should be different for each row in the table.\nTable: REVIEW\nTitle Genre ReleaseDate ReviewDate ReviewerID",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Using the data given in the original table, how many rows would be in table REVIEW?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "State the degree of relationship between REVIEW and REVIEWER.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bv",
+              "label": "(v)",
+              "text": "Explain how the relationship in part(b)(iv) is implemented.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Each title is reviewed once only. The database designer decides to also store the reviewer’s\nname.\nA reviewer is paid a set fee for each review completed. The fee paid is determined by the\nmusic genre:\nGenre Fee($)\nJ 150\nP 100\nC 200\nThe following revised design for REVIEW is suggested:\nREVIEW(Title, ReviewerID, ReviewerName, Genre, Fee,\nReleaseDate, ReviewDate)",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "State the primary key for this table.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Explain why the REVIEW table is not in Third Normal Form (3NF).",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "Currently the design is as follows:\nREVIEWER(ReviewerID, Location)\nREVIEW(Title, ReviewerID, ReviewerName, Genre, Fee\nReleaseDate, ReviewDate)\nRe-design the solution to solve the issue in part (c)(ii). Show all primary keys.\n\nQuestion 2 begins on page 6.",
+              "marks": 5,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A monthly magazine reviews new music releases.",
+        "Each music release has a title and a genre. The genre codes are as follows:",
+        "• J – Jazz",
+        "• P – Pop",
+        "• C – Classical",
+        "The magazine employs a number of people as reviewers. Reviewers are located all over the world.",
+        "A reviewer is identified by a unique three-digit code.",
+        "A relational database is to store data for reviews which appear in the magazine.",
+        "The data stored for each review are:",
+        "• music title",
+        "• music genre",
+        "• release date",
+        "• month and year when the review appeared",
+        "The following table REVIEWER was a first attempt at the database design.",
+        "Table: REVIEWER",
+        "ReviewerID Location Title Genre ReleaseDate ReviewDate",
+        "Hits 36 P 12/01/2015 01-15",
+        "510 London Cindy pop P 26/03/2015 03-15",
+        "Way out P 11/06/2015 07-15",
+        "Popular Bach C 12/01/2015 02-15",
+        "808 New York",
+        "Ultimate Cole J 31/01/2015 02-15",
+        "The Messiah C 11/11/2014 11-14",
+        "Hot Miles J 02/02/2015 03-15",
+        "756 Dhaka",
+        "Pine points J 11/04/2015 05-15",
+        "Kylie P 11/04/2015 05-15"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Backus-Naur Form (BNF) is used to define programming language syntax.\nState one other method used to define programming language syntax.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A firm sells a variety of products. Each product type has a single character code:\n• W – White goods, such as a washing machine\n• C – Computing\n• B – Books\n• H – Household\nAll products are stocked at one of two warehouses which are coded:\n• N – New Delhi\n• M – Mumbai\nThe following BNF rules define all possible product codes.\nRule\nnumber\n<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9\n2 <producttype> ::= B | C | H | W\n<location> ::= M | N\n<digitstring> ::= <digit><digit><digit>\n<productcode> ::= <producttype><digitstring><location>",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "A BNF rule may be recursive.\nWhat is meant by a recursive rule?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "For each statement below, state whether it is TRUE or FALSE.\nStatement TRUE or FALSE\nNone of the given rules are recursive\nRule 4 is recursive\nRule 5 is recursive",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Circle whether or not each of the following sequences of characters is a valid product code.\nShow how you arrived at your answer by listing, in order, the rules used.",
+          "marks": null,
+          "type": "circle",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "D175N Valid / Invalid (circle)\nRules ______",
+              "marks": 2,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "W058M Valid / Invalid (circle)\nRules ______",
+              "marks": 2,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "C86N Valid / Invalid (circle)\nRules ______",
+              "marks": 2,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "An IT company works on two types of project; software projects and the installation of local\narea networks.\nSoftware projects are either bespoke software for a particular client or off-the-shelf software.\nProjects have recorded:\n• project ID\n• start date\n• project leader\nOff-the-shelf software projects have recorded:\n• title\n• current state of beta testing\n• N – not started\n• O – ongoing\n• C – completed\n• anticipated retail price\n• sales forecast for first year of sales (units)\nBespoke software projects have recorded:\n• customer name\n• agreed cost\n• agreed delivery date\nSoftware projects have recorded:\n• programming language used\n• current state of alpha testing\n• coded using the same three codes as for beta testing\nNetworking projects have recorded:\n• client name\n• agreed cost\nThis scenario is to be implemented using object-oriented programming.\nComplete the class diagram using the classes:\nBespoke, Network, OffTheShelf, Project, Software.\nShow properties only for the given data.\nProject\nProjectID : STRING",
+          "marks": 8,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Terminology for object-oriented programming and design includes the following terms.\nDefine the following terms:",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Class ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Inheritance ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Part of the pseudocode for the object-oriented programming is shown below.\nCLASS Project\nPRIVATE ProjectID : STRING\n<statements>\nPROCEDURE set_ProjectID()\n<statements>\nENDPROCEDURE\nPROCEDURE get_ProjectID()\n<statements>\nENDPROCEDURE\nENDCLASS\nCLASS Network INHERITS Project\n<statements>\nENDCLASS\n// Main program …\nDECLARE ThisNetworkProject : Network\n<statements>\nExplain the following terms, with reference to the given pseudocode.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Instance",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Method",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3ciii",
+              "label": "(iii)",
+              "text": "Encapsulation",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe the operation of a stack data structure.\n\nA stack data structure is used to control the adding and removal of animal names.\nThe stack is implemented using the following data structure and variables.\nIdentifier Data type Description\nAnimal ARRAY[0 : 99] OF STRING\nStores the animal names.\nIndex pointer for the Animal\nIndex INTEGER\narray\nArray index position of the item\nStackPointer INTEGER\nat the top of the stack. Value –1\nindicates the stack is empty.\nName of the new animal to be\nNewAnimal STRING\nadded to the Animal array.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the pseudocode procedure below to initialise the stack.\nAnimal\nStackPointer\n-1\n””\n””\n””\n””\nPROCEDURE InitialiseStack\nFOR Index 0 to 99\nAnimal[______] \"\"\nENDFOR\nStackPointer ______\nENDPROCEDURE",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The diagram shows the state of the stack after the following operations:\n• three values were added – BEAR, PANDA and CAMEL (in that order)\n• a value was removed from the stack\n• a new value APE was added\nAnimal\nBEAR\nPANDA\nStackPointer\n2 CAMEL APE\n””\n””\n””\n””",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "State the current value of:\nAnimal[3] ______\nStackPointer - 1 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Adding a value to the stack is done with a procedure Push.\nShown below is the incomplete pseudocode for procedure Push.\nUsing the variables given, fill in the missing pseudocode.\nPROCEDURE Push\nIF ______\nTHEN\nOUTPUT \"REFUSED – stack is full\"\nELSE\nINPUT ______\nStackPointer ______\n______ NewAnimal\nENDIF\nENDPROCEDURE",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Removal of a value is implemented with a procedure Pop.\nWrite pseudocode for the procedure Pop.\nPROCEDURE Pop\nENDPROCEDURE",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "State the denary integer represented by the following two bytes.\nGive the hexadecimal representation of each integer.",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "1 1 1 0 1 0 0 1\nDenary ______\nHexadecimal ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "0 1 1 0 1 0 1 1\nDenary ______\nHexadecimal ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "State the largest positive denary integer which can be represented.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiv",
+              "label": "(iv)",
+              "text": "Why do computer scientists often write binary numbers in hexadecimal?",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The integers 99 and 29 are to be added.\nWrite the binary values for 99 and 29 below, using two’s complement representation.\nShow the binary addition calculation and the result.\nComment on the result.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Integers can be represented in Binary Coded Decimal (BCD).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "State what denary number is represented by this 2-byte BCD number.\n0 0 0 1 0 1 0 1 0 1 1 1 1 0 0 0\nDenary ______",
+              "marks": 1,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "A second BCD 2-byte number has been copied incorrectly.\n1 0 0 1 1 1 0 1 0 1 0 1 0 0 0 0\nWithout converting the whole pattern, how can you identify that this cannot be a valid\nBCD representation?",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A computer system stores integers in a single byte using two’s complement representation."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the type of diagram shown.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Use the following list to identify the labels 1 to 7 on the diagram opposite. Two of the items on\nthe list will not be used.\n• Assembler\n• Compiler\n• Code execution\n• File allocation table (FAT)\n• Linker\n• Machine code\n• On-screen error report\n• Program library code\n• Text editor\n\nXYZ program\ncode\nSource code\nInterpreter\nAssembly\nXYZ program\nlanguage code\ncode\n1 4 1 3\nError report Error report\nIntermediate\nIntermediate\ncode\ncode\nObject\ncode\nLoader",
+          "marks": 7,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A team of programmers has developed software using a variety of languages and software tools.",
+        "Some of the code was written in the XYZ high-level language and some in an assembly language.",
+        "The programmers have also made use of program libraries.",
+        "The programmers had available both a compiler and an interpreter for the high-level code written.",
+        "Some of the early error detection was carried out using an interpreter.",
+        "The diagram opposite shows the complete development life cycle finishing with the final executable",
+        "code."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "The network is to have a bus topology.\nConsider what additional hardware will be needed. This is to include a fourth computer which\nacts as a print server.\nSketch the layout of the LAN. Clearly label all items of hardware.",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The setting up of the LAN will require the purchase of additional software.\nAn essential item of software is a network operating system.\nState three tasks performed by the network operating system.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The manager has suggested that once the LAN is operational, the company should introduce\nan intranet.\nDescribe what is meant by an intranet.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A small building company employs three staff in its office. They each work at a stand-alone",
+        "computer and each member of staff deals with a specific operation of the business:",
+        "• Computer A – Ordering of materials",
+        "• Computer B – Recording enquiries about jobs and producing quotations",
+        "• Computer C – Managing the accounts",
+        "At present, only Computer A has access to the Internet. Computer C has a laser printer attached.",
+        "The company is considering the introduction of a Local Area Network (LAN)."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A high-level programming language has the following built-in function ChangeString defined as",
+        "follows:",
+        "ChangeString(ThisString1 : STRING, ThisString2 : STRING)",
+        "RETURNS STRING",
+        "will return the string value:",
+        "ThisString2<Space>LEFT(ThisString1, 1)",
+        "For example:",
+        "ChangeString(\"Ben\", \"Pollard\") will return \"Pollard B\"",
+        "If the function call is not properly formed an error is generated."
+      ]
+    }
+  ]
+}

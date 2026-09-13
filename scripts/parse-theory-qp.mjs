@@ -50,7 +50,13 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT      = join(__dirname, '..');
-const PDFS_DIR  = join(__dirname, 'pastpapers');
+// Support --dir <path> flag to override the PDF source directory
+const dirFlagIdx = process.argv.indexOf('--dir');
+const PDFS_DIR  = dirFlagIdx !== -1
+  ? process.argv[dirFlagIdx + 1]
+  : join(__dirname, 'pastpapers');
+// Secondary dir: always check pastpapers-alevels as fallback
+const PDFS_DIR2 = join(__dirname, 'pastpapers-alevels');
 const OUT_DIR   = join(ROOT, 'public', 'theory-questions');
 
 if (!existsSync(OUT_DIR)) mkdirSync(OUT_DIR, { recursive: true });
@@ -476,10 +482,16 @@ function parseQP(rawText) {
 // ── Entry point ──────────────────────────────────────────────────────────────
 
 async function parsePaper(paperId) {
-  const pdfPath = join(PDFS_DIR, `${paperId}.pdf`);
+  let pdfPath = join(PDFS_DIR, `${paperId}.pdf`);
   if (!existsSync(pdfPath)) {
-    console.warn(`  [skip] PDF not found: ${pdfPath}`);
-    return false;
+    // Try secondary directory (pastpapers-alevels)
+    const alt = join(PDFS_DIR2, `${paperId}.pdf`);
+    if (existsSync(alt)) {
+      pdfPath = alt;
+    } else {
+      console.warn(`  [skip] PDF not found: ${paperId}.pdf`);
+      return false;
+    }
   }
 
   console.log(`  Parsing ${paperId}...`);
@@ -513,37 +525,43 @@ async function parsePaper(paperId) {
 
 // ── CLI argument handling ────────────────────────────────────────────────────
 
-const args = process.argv.slice(2);
+// Strip --dir <value> from args so it doesn't interfere with positional args
+const rawArgs = process.argv.slice(2);
+const args = rawArgs.filter((a, i) => a !== '--dir' && rawArgs[i - 1] !== '--dir');
 
-// Determine which PDFs to parse
-function isTheoryComponent(name) {
-  // Theory papers: component 3x, 4x, 5x, 6x
-  // Exclude 1x (MCQ), 2x (structured/written – MCQ-style per old syllabus)
-  return /^[3456]\d$/.test(name.replace(/.*_qp_/, '').replace('.pdf', ''));
+// Helper: list all QP PDFs (both dirs) optionally filtered by prefix/component
+function listQPs(prefix = null, comp = null) {
+  const dirs = [PDFS_DIR];
+  if (existsSync(PDFS_DIR2) && PDFS_DIR2 !== PDFS_DIR) dirs.push(PDFS_DIR2);
+  const seen = new Set();
+  const result = [];
+  for (const dir of dirs) {
+    if (!existsSync(dir)) continue;
+    for (const f of readdirSync(dir)) {
+      if (!f.endsWith('.pdf') || !f.includes('_qp_')) continue;
+      if (prefix && !f.startsWith(prefix + '_')) continue;
+      if (comp && !f.includes(`_qp_${comp}`)) continue;
+      const id = f.replace('.pdf', '');
+      if (!seen.has(id)) { seen.add(id); result.push(id); }
+    }
+  }
+  return result;
 }
 
 let targets = [];
 
 if (args.length === 0) {
-  // All theory QPs in pastpapers/
-  targets = readdirSync(PDFS_DIR)
-    .filter(f => f.endsWith('.pdf') && f.includes('_qp_') && isTheoryComponent(f))
-    .map(f => f.replace('.pdf', ''));
+  // All QPs in both pastpapers dirs
+  targets = listQPs();
 } else if (args.length === 1 && /^\d{4}_[msw]\d{2}_qp_\d\d$/.test(args[0])) {
   // Specific paper ID
   targets = [args[0]];
 } else if (args.length === 1 && /^\d{4}$/.test(args[0])) {
-  // All theory papers for a subject code
-  const code = args[0];
-  targets = readdirSync(PDFS_DIR)
-    .filter(f => f.startsWith(code + '_') && f.includes('_qp_') && f.endsWith('.pdf') && isTheoryComponent(f))
-    .map(f => f.replace('.pdf', ''));
+  // All papers for a subject code (both dirs)
+  targets = listQPs(args[0]);
 } else if (args.length === 2 && /^\d{4}$/.test(args[0]) && /^\d{2}$/.test(args[1])) {
   // Subject code + component (e.g. "0610 42")
-  const code = args[0], comp = args[1];
-  targets = readdirSync(PDFS_DIR)
-    .filter(f => f.startsWith(code + '_') && f.includes(`_qp_${comp}`) && f.endsWith('.pdf'))
-    .map(f => f.replace('.pdf', ''));
+  targets = listQPs(args[0], args[1]);
 } else {
   // Treat each arg as a paperId
   targets = args;
@@ -554,7 +572,7 @@ if (targets.length === 0) {
   process.exit(1);
 }
 
-console.log(`\nParsing ${targets.length} theory paper(s)...\n`);
+console.log(`\nParsing ${targets.length} paper(s)...\n`);
 let ok = 0, fail = 0;
 for (const t of targets) {
   try {

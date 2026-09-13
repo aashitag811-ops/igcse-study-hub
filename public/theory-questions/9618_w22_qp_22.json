@@ -1,0 +1,408 @@
+{
+  "paperId": "9618_w22_qp_22",
+  "subjectCode": "9618",
+  "session": "w22",
+  "component": "22",
+  "totalMarks": 71,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A programmer is developing an algorithm to solve a problem. Part of the algorithm would be\nappropriate to implement as a subroutine (a procedure or a function).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State two reasons why the programmer may decide to use a subroutine.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "A procedure header is shown in pseudocode:\nPROCEDURE MyProc(Count : INTEGER, Message : STRING)\nGive the correct term for the identifiers Count and Message and explain their use.\nTerm ______\nUse ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The algorithm in part (a) is part of a program that will be sold to the public.\nAll the software errors that were identified during in-house testing have been corrected.\nIdentify and describe the additional test stage that may be carried out before the program is\nsold to the public.\nTest stage ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Part of an identifier table is shown:\nVariable Type Example value\nFlagDay DATE 23/04/2004\nCharList STRING \"ABCDEF\"\nCount INTEGER 29\nComplete the table by evaluating each expression using the example values.\nExpression Evaluation\nMID(CharList, MONTH(FlagDay), 1)\nINT(Count / LENGTH(CharList))\n(Count >= 29) AND (DAY(FlagDay) > 23)",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm will process data from a test taken by a group of students. The algorithm will\nprompt and input the name and test mark for each of the 35 students.\nThe algorithm will add the names of all the students with a test mark of less than 20 to an\nexisting text file Support_List.txt, which already contains data from other group tests.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Describe the steps that the algorithm should perform.\nDo not include pseudocode statements in your answer.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Explain why it may be better to store the names of the students in a file rather than in an\narray.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "Explain why WRITE mode cannot be used in the answer to part 2(a)(i).",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Examine the following state-transition diagram.\nInput-A Output-X\nInput-B Output-W\nInput-B\nSTART\nS2\nS1\nS3\nInput-A\nInput-A\nInput-B\nInput-A Output-W\nS4\nComplete the table to show the inputs, outputs and next states.\nInput Output Next state\nS1\nInput-A\nS2\nOutput-W\nOutput-W",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A stack is an example of an Abstract Data Type (ADT).\nIdentify one other example of an ADT and describe its main features.\nExample ______\nFeatures ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Explain how the stack can be implemented using an array.",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "A second stack is used in the program. The diagram below shows the initial state of this\nstack. Value X is at the top of the stack and was the last item added.\nUpper-case letters are used to represent different data values.\nStack operations are performed in three groups as follows:\nGroup 1:\nPUSH D\nPUSH E\nGroup 2:\nPOP\nPOP\nPOP\nGroup 3:\nPUSH A\nPUSH B\nPOP\nPUSH C\nComplete the diagram to show the state of the stack after each group of operations has been\nperformed.\nInclude the current stack pointer (SP) after each group.\nMemory Initial After After After\nlocation state Group 1 Group 2 Group 3\n953 X\n←SP\n952 Y\n951 Z\n950 P",
+          "marks": 5,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "A stack is used in a program to store string data which needs to be accessed in several modules."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write the equivalent pseudocode for the algorithm represented by the flowchart.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Give the name of the iterative construct in the flowchart.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The program flowchart represents a simple algorithm.",
+        "START",
+        "INPUT UserID",
+        "Set Average to",
+        "GetAverage(UserID)",
+        "Set Total to 0",
+        "Set Index to 4",
+        "Add 1 to Index",
+        "YES",
+        "Is Index < 7 ?",
+        "NO Set Last to",
+        "SameMonth[Index]",
+        "NO",
+        "Is Average",
+        "Add Last to Total",
+        "> Last ?",
+        "YES",
+        "Add Average to Total",
+        "Update(UserID, Total)",
+        "END"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Examine the following pseudocode.",
+        "IF A = TRUE THEN",
+        "IF B = TRUE THEN",
+        "IF C = TRUE THEN",
+        "CALL Sub1()",
+        "ELSE",
+        "CALL Sub2()",
+        "ENDIF",
+        "ENDIF",
+        "ELSE",
+        "IF B = TRUE THEN",
+        "IF C = TRUE THEN",
+        "CALL Sub4()",
+        "ELSE",
+        "CALL Sub3()",
+        "ENDIF",
+        "ELSE",
+        "IF C = FALSE THEN",
+        "CALL Sub3()",
+        "ELSE",
+        "CALL Sub4()",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "A programmer wants to re-write the pseudocode as four separate IF...THEN...ENDIF",
+        "statements, each containing a single CALL statement. This involves writing a single, simplified",
+        "logic expression as the condition in each statement.",
+        "Write the amended pseudocode.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The factorial of an integer number is the product of all the integers from that number down\nto 1.\nIn general, the factorial of n is n × (n−1) × ... × 2 × 1\nFor example, the factorial of 5 is 5 × 4 × 3 × 2 × 1 = 120\nIn this question, n will be referred to as the BaseNumber.\nA function FindBaseNumber() will:\n• be called with a positive, non-zero integer value as a parameter\n• return BaseNumber if the parameter value is the factorial of the BaseNumber\n• return −1 if the parameter value is not a factorial.\nFor example:\nParameter value Value returned\n120 5\n12 −1\n6 3\n1 1\nFindBaseNumber(12) will return −1 because 12 is not a factorial.\nYou may use the rest of this page for rough working.\nWrite pseudocode for the function FindBaseNumber().",
+          "marks": 7,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A program is written to allow a user to input a sequence of values to be checked using the\nfunction FindBaseNumber().\nThe user will input one value at a time. The variable used to store the user input has to be of\ntype string because the user will input ‘End’ to end the program.\nValid input will be converted to an integer and passed to FindBaseNumber() and the return\nvalue will be output.\nComplete the table by giving four invalid strings that may be used to test distinct aspects of\nthe required validation. Give the reason for your choice in each case.\nInput Reason for choice",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Write efficient pseudocode for module OutputError().",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Write an efficient bubble sort algorithm in pseudocode for module SortArrays().",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Two 1D arrays were described at the beginning of the question. Both arrays contain 500\nelements.\n• Array ErrCode contains integer values that represent an error number in the range\n1 to 800.\n• Array ErrText contains string values that represent an error description.\nThe two arrays will be replaced by a single array. A user-defined data type (record structure)\nhas been declared as follows:\nTYPE ErrorRec\nDECLARE ErrCode : STRING\nDECLARE ErrText : STRING\nENDTYPE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ci",
+              "label": "(i)",
+              "text": "State the error in the record declaration.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7cii",
+              "label": "(ii)",
+              "text": "State two benefits of using the single array of the user-defined data type.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7ciii",
+              "label": "(iii)",
+              "text": "Write the declaration for the single array in pseudocode.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "A teacher is designing a program to perform simple syntax checks on programs written by",
+        "students.",
+        "Two global 1D arrays are used to store the syntax error data. Both arrays contain 500 elements.",
+        "• Array ErrCode contains integer values that represent an error number in the range 1 to 800.",
+        "• Array ErrText contains string values that represent an error description.",
+        "The following diagram shows an example of the arrays.",
+        "Index ErrCode ErrText",
+        "10 \"Invalid identifier name\"",
+        "20 \"Bracket mismatch\"",
+        "50 \"Undeclared variable\"",
+        "4 60 \"Type mismatch in assignment\"",
+        "500 999 <Undefined>",
+        "Note:",
+        "• There may be less than 500 error numbers so corresponding elements in both arrays may be",
+        "unused. Unused elements in ErrCode have the value 999. The value of unused elements in",
+        "ErrText is undefined.",
+        "• Values in the ErrCode array are stored in ascending order but not all values may be present,",
+        "for example, there may be no error code 31.",
+        "The teacher has defined two program modules as follows:",
+        "Module Description",
+        "• takes two parameters as integers:",
+        "○ a line number in the student’s program",
+        "○ an error number",
+        "• searches for the error number in the ErrCode array:",
+        "OutputError()",
+        "○ if found, outputs the corresponding error description and the",
+        "line number, for example:",
+        "\"Bracket mismatch on line 34\"",
+        "○ if not found, outputs the line number and a warning, for",
+        "example:",
+        "\"Unknown error on line 34\"",
+        "SortArrays()",
+        "sorts the arrays into ascending order of ErrCode"
+      ]
+    }
+  ]
+}

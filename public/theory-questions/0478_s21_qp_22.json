@@ -1,0 +1,248 @@
+{
+  "paperId": "0478_s21_qp_22",
+  "subjectCode": "0478",
+  "session": "s21",
+  "component": "22",
+  "totalMarks": 36,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Identify and give the data type and use of one array that you could have used for Task 1.\nArray ______\nData type ______\nUse ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Describe two validation checks that could be used when inputting the number of tickets to\nbuy for Task 2. For each validation check give one example of normal data and one example\nof erroneous data.\nValidation check 1 ______\nNormal data ______\nErroneous data ______\nValidation check 2 ______\nNormal data ______\nErroneous data ______",
+          "marks": 6,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for the part of Task 2 that inputs the tickets required, calculates the total\nprice for the ticket(s) purchased by a passenger including a group discount (if applicable) and\nupdates the data structures used for the totals.\nUse either pseudocode, programming statements or a flowchart.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completed Task 3. Include any programming statements that you\nhave used and fully explain the purpose of each statement.\n\nSection B starts on page 8\nSection B",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write an algorithm in pseudocode to input 500 positive whole numbers. Each number input\nmust be less than 1000. Find and output the largest number input, the smallest number input\nand the range (difference between the largest number and smallest number).",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Describe how the algorithm could be changed to make testing less time-consuming.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw the most appropriate flowchart symbol for each pseudocode statement.\nPseudocode statement Flowchart symbol\nIF Number = 20\nPRINT Number\nNumber ← Number + 1",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "State the type of each pseudocode statement. For example, X X + Y is totalling.\nIF Number = 20 ______\nPRINT Number ______\nNumber Number + 1 ______",
+          "marks": null,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 3,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using this input data:\nSecret, Secret, VerySecret, VerySecret, Pa55word, Pa55word, 999, 888\nPassword PasswordRepeat\nOUTPUT",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Explain how the algorithm could be extended to allow three attempts at inputting the matching\npassword. Any pseudocode statements used in your answer must be fully explained.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "This algorithm checks passwords.",
+        "• Each password must be 8 or more characters in length; the predefined function Length",
+        "returns the number of characters.",
+        "• Each password is entered twice, and the two entries must match.",
+        "• Either Accept or Reject is output.",
+        "• An input of 999 stops the process.",
+        "REPEAT",
+        "OUTPUT \"Please enter password\"",
+        "INPUT Password",
+        "IF Length(Password) >= 8",
+        "THEN",
+        "INPUT PasswordRepeat",
+        "IF Password <> PasswordRepeat",
+        "THEN",
+        "OUTPUT \"Reject\"",
+        "ELSE",
+        "OUTPUT \"Accept\"",
+        "ENDIF",
+        "ELSE",
+        "OUTPUT \"Reject\"",
+        "ENDIF",
+        "UNTIL Password = 999"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write a pseudocode routine that sets each element to zero. Use the most suitable loop\nstructure.",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Explain why you chose this loop structure.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "A one-dimensional array dataArray[1:20] needs each element set to zero."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A database table, PLANT, is used to keep a record of plants sold by a nursery. The table has these",
+        "fields:",
+        "• NAME – name of plant",
+        "• FLOWER – whether the plant flowers (True) or not (False)",
+        "• POSITION – shade, partial shade or sun",
+        "• SIZE – small, medium or large",
+        "• PRICE – price in $",
+        "• NUMBERSOLD – how many sold",
+        "A query-by-example grid has been completed to display only the price, name and number sold of",
+        "small plants that do not flower.",
+        "Field: NAME PRICE NUMBERSOLD SIZE FLOWER POSITION",
+        "Table: PLANT",
+        "Sort:",
+        "Show: 3 3 3",
+        "Criteria: = \"shade\"",
+        "or:",
+        "Identify the errors in the query-by-example grid.",
+        "Rewrite the corrected query-by-example grid.",
+        "Field:",
+        "Table:",
+        "Sort:",
+        "Show:",
+        "Criteria:",
+        "or:",
+        "[5]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

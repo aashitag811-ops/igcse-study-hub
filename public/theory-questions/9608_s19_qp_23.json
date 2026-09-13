@@ -1,0 +1,414 @@
+{
+  "paperId": "9608_s19_qp_23",
+  "subjectCode": "9608",
+  "session": "s19",
+  "component": "23",
+  "totalMarks": 75,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Draw a program flowchart to represent the procedure Search().\nVariable and array declarations are not required in program flowcharts.",
+          "marks": 6,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Program variables have values as follows:\nVariable Value\nMeltingPoint 180.5\nSoluble FALSE\nAttempt 3\nProductName \"Mushroom Compost\"\nVersion 'A'\nProductID \"BZ27-4\"\nEvaluate each expression in the following table.\nIf an expression is invalid, write ERROR.\nFor the built-in functions list, refer to the Appendix on page 18.\nExpression Evaluates to\nSTRING_TO_NUM(MID(ProductID, 3, 2)) + 4\nINT(MeltingPoint / 2)\nSoluble AND Attempt > 3\nLENGTH(ProductID & NUM_TO_STRING(MeltingPoint))\nRIGHT(ProductName, 4) & MID(ProductName, 5, 4)",
+              "marks": 5,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Programming languages support different data types.\nGive an appropriate data type for the following variables from part (b)(i).\nVariable Data type\nMeltingPoint\nSoluble\nAttempt\nVersion\nProductID",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "The following pseudocode searches for the longest run of identical characters in the array",
+        "Message.",
+        "DECLARE Message : ARRAY[1:100] OF CHAR",
+        "PROCEDURE Search()",
+        "DECLARE Index : INTEGER",
+        "DECLARE ThisChar : CHAR",
+        "DECLARE ThisRun : INTEGER",
+        "DECLARE LongRun : INTEGER",
+        "ThisChar Message[1]",
+        "ThisRun 1",
+        "LongRun 1",
+        "FOR Index 2 TO 100",
+        "IF Message[Index] = ThisChar",
+        "THEN",
+        "ThisRun ThisRun + 1",
+        "ELSE",
+        "ThisChar Message[Index]",
+        "IF ThisRun > LongRun",
+        "THEN",
+        "LongRun ThisRun",
+        "ENDIF",
+        "ThisRun 1",
+        "ENDIF",
+        "ENDFOR",
+        "OUTPUT \"The longest run was \" , LongRun",
+        "ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A student is learning about arrays. She wants to write a program to:\n• search through a 1D array of 100 elements\n• count the number of elements that contain the string “Empty”\n• output the number of elements containing “Empty” together with a suitable message.\nUse structured English to describe the algorithm she could use.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "She uses the process of stepwise refinement to develop her algorithm.\nExplain this process.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The student is learning about file handling.\nShe has been told that there are different file modes that can be used when opening a text\nfile. She wants to make sure that the existing contents are not deleted when the file is opened.\nIdentify two file modes she could use and describe their use.\nMode ______\nDescription ______\nMode ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The student has completed the design of her program and is ready to use an Integrated\nDevelopment Environment (IDE).\nDescribe the features of an IDE that she can use to write, translate and test her program.\n\nQuestion 3 begins on the next page.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw a structure chart to show the four modules and the parameters that these pass between\nthem.",
+          "marks": 6,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The algorithm is implemented in a high-level language. Changes are required and the\nprogram is given to Albert, who is an experienced programmer. He is not familiar with the\nlanguage that has been used.\nExplain why Albert would be able to understand the program.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The following pseudocode represents three separate modules from an algorithm design. The",
+        "module contents are not shown.",
+        "FUNCTION Search(AA : INTEGER, BB : STRING) RETURNS INTEGER",
+        "ENDFUNCTION",
+        "FUNCTION Allocate() RETURNS BOOLEAN",
+        "ENDFUNCTION",
+        "PROCEDURE Enable(CC : INTEGER, BYREF DD : INTEGER)",
+        "ENDPROCEDURE",
+        "A fourth module, Setup(), refers to the previous three modules as follows:",
+        "PROCEDURE Setup()",
+        "WHILE Authorised = TRUE",
+        "ThisValue Search(27, \"Thursday\")",
+        "Authorised Allocate()",
+        "CALL Enable(ThisValue, 4)",
+        "ENDWHILE",
+        "ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Re-write the pseudocode to perform this task in a more efficient way, to allow for the class of\n40 students.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Give one advantage of your solution.\n\nQuestion 5 begins on the next page.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "A program is being written to process student information. One task involves inputting the names",
+        "of all students in a class.",
+        "A first attempt at the pseudocode for this task is as follows:",
+        "DECLARE Name1 : STRING",
+        "DECLARE Name2 : STRING",
+        "DECLARE Name3 : STRING",
+        "DECLARE Name40 : STRING",
+        "OUTPUT \"Input the name for student 1\"",
+        "INPUT Name1",
+        "OUTPUT \"Input the name for student 2\"",
+        "INPUT Name2",
+        "OUTPUT \"Input the name for student 3\"",
+        "INPUT Name3",
+        "OUTPUT \"Input the name for student 40\"",
+        "INPUT Name40"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "State the purpose of white-box testing.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Dry running the code is often used in white-box testing. In this method, the programmer\nrecords the values of variables as they change.\nIdentify what the programmer would normally use to record the changes.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Write a test string containing two words that gives the output:\nNumber of words : 2\nUse the symbol '∇' to represent each space character in your test string.\nExplain why the algorithm gives the output shown above.\nString ______\nExplanation ______",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Nigel tested the procedure with the strings:\nString 1: \"Red∇and∇Yellow\"\nString 2: \"Green∇∇and∇∇Pink∇\"\nGive the output that is produced for each of the strings.\nDescribe the changes that would need to be made to the algorithm to give the correct\noutput in each case.\nDo not write pseudocode or program code.\nString 1 ______\nDescription ______\nString 2 ______\nDescription ______",
+              "marks": 6,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "Nigel is learning about string handling. He wants to write code to count the number of words in a",
+        "given string. A word is defined as a sequence of alphabetic characters that is separated by one or",
+        "more space characters.",
+        "His first attempt at writing an algorithm in pseudocode is as follows:",
+        "PROCEDURE CountWords(Message : STRING)",
+        "DECLARE NumWords : INTEGER",
+        "DECLARE Index : INTEGER",
+        "CONSTANT Space = ' '",
+        "NumWords 0",
+        "FOR Index 1 TO LENGTH(Message)",
+        "IF MID(Message, Index, 1) = Space",
+        "THEN",
+        "NumWords NumWords + 1",
+        "ENDIF",
+        "ENDFOR",
+        "OUTPUT \"Number of words : \" , NumWords",
+        "ENDPROCEDURE",
+        "For the built-in functions list, refer to the Appendix on page 18.",
+        "His first attempt is incorrect. He will use white-box testing to help him to identify the problem."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write program code for the module SearchFile().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Write pseudocode for the module ProcessArray().",
+          "marks": 9,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "ProcessArray() is modified to make it general purpose. It will now be called with two\nparameters as follows:\n• an array\n• a string representing the name of a class contact file\nIt will still return the number of students who have not provided a contact telephone number.\nWrite program code for the header (declaration) of the modified ProcessArray().\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nExample: NUM_TO_STRING(x) returns \"87.5\" if x has the value 87.5\nNote: This function will also work if x is of type INTEGER\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nExample: STRING_TO_NUM(x) returns 23.45 if x has the value \"23.45\"\nNote: This function will also work if x is of type CHAR\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A text file, StudentContact.txt, contains a list of names and telephone numbers of students",
+        "in a school. Not all students in the school have provided a contact telephone number. In this case,",
+        "their name will not be in the file.",
+        "Each line of the file is stored as a string that contains a name and telephone number, separated by",
+        "the asterisk character ('*') as follows:",
+        "<Name>'*'<TelNumber>, for example:",
+        "\"Bill Smith*081234567\"",
+        "A 1D array, ClassList, contains the names of students in a particular class. The array consists",
+        "of 40 elements of string data type. You can assume that student names are unique.",
+        "Unused elements contain the empty string \"\".",
+        "A program is to be written to produce a new text file, ClassContact.txt, containing student",
+        "names and numbers for all students in a particular class.",
+        "For each name contained in the ClassList array, the program will:",
+        "• search the StudentContact.txt file",
+        "• copy the matching string into ClassContact.txt if the name is found",
+        "• write the name together with “*No number” into ClassContact.txt if the name is not found.",
+        "The program will be implemented as three modules. The description of these is as follows:",
+        "Module Description",
+        "ProcessArray()",
+        "• Check each element of the array:",
+        "○ Read the student name from the array",
+        "○ Ignore unused elements",
+        "○ Call SearchFile() with the student name",
+        "○ If the student name is found, call AddToFile() to",
+        "write the student details to the class file",
+        "○ If the student name is not found, call AddToFile()",
+        "to write a new string to the class file, formed as",
+        "follows:",
+        "<Name>“*No number”",
+        "• Return the number of students who have not provided a",
+        "telephone number",
+        "SearchFile()",
+        "• Search for a given student name at the start of each line",
+        "in the file StudentContact.txt:",
+        "○ If the search string is found, return the text line from",
+        "StudentContact.txt",
+        "○ If the search string is not found, return an empty",
+        "string",
+        "AddToFile()",
+        "• Append the given string to a specified file, for example,",
+        "AddToFile(StringName, FileName)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "paperId": "0478_m17_qp_22",
+  "subjectCode": "0478",
+  "session": "m17",
+  "component": "22",
+  "totalMarks": 30,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Declare the array used to store the reaction times for the whole school.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Change this declaration so the array can only hold records for a sample of 50 students.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Explain why an array is an effective data structure for storing the reaction time records.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 1 for the whole school, using either pseudocode,\nprogramming statements or a flowchart. DO NOT include any validation routines.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Identify three different types of test data you used to test the validation checks on the age\ninput in Task 1. For each type, give an example of appropriate data.\nType of test data Example data",
+          "marks": 6,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how you calculated and outputted the average reaction time based on the user\ninputs of age and school house, as part of Task 3. Any programming statements used in your\nanswer must be fully explained.",
+          "marks": 5,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how you would change your solution to Task 3 to output the age of the student with\nthe fastest reaction time.\n\nSection B",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Read this section of code that inputs the ages of people entering an event. The input sequence is",
+        "ended by inputting a negative value for age. The code outputs the number of people at the event",
+        "over the age of 18.",
+        "01 Num18 = 0",
+        "02 INPUT Age"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE Age >= 0 DO"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Age >= 18 THEN"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Num18 = Num18 + Age"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [
+        {
+          "id": "08b",
+          "label": "(b)",
+          "text": "Explain the differences between a WHILE … DO … ENDWHILE and a REPEAT … UNTIL\nloop.\n\n6 A database table, DEVICE, has been set up to record the electronic equipment used in a small\nbusiness.\nDevice ID Device Type User Purchase Purchase Portable\nDate Price ($)\n3 Desktop Alan Swales 14/02/2017 1350.00 N\n4 Laptop Chantel Law 01/02/2016 1460.00 Y\n5 Tablet Abdula Saud 31/12/2016 1000.00 Y\n6 Desktop Abdula Saud 14/03/2017 1000.00 N\n7 Laptop Alan Swales 15/03/2016 1700.00 Y\n8 Tablet Taona Jaji 16/12/2016 470.00 Y",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08a",
+          "label": "(a)",
+          "text": "The query-by-example grid below selects certain records.\nField: User Portable Purchase Price ($)\nTable: DEVICE DEVICE DEVICE\nSort: Ascending\nShow: 3\nCriteria: Y >1000\nor:\nShow what would be the output from the query-by-example.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid below to select all Desktop devices that were either\npurchased before 31/12/2016 or cost under $1000. Only show the Device ID and Device\nType.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "PRINT Num18 - Age",
+        "There are four errors in this code.",
+        "Locate these errors and suggest code correction to remove each error.",
+        "Error 1 ...............................................................................................................................................",
+        "Correction..........................................................................................................................................",
+        "Error 2 ...............................................................................................................................................",
+        "Correction..........................................................................................................................................",
+        "Error 3 ...............................................................................................................................................",
+        "Correction..........................................................................................................................................",
+        "Error 4 ...............................................................................................................................................",
+        "Correction..........................................................................................................................................",
+        "[4]",
+        "3 There is a program that stores the following data:",
+        "• EmployeeID, an employee ID which must be two letters followed by 4 numbers, e.g. TY4587",
+        "• Manager, whether the employee is a manager or not",
+        "• AnnualHoliday, number of whole days’ annual holiday",
+        "• PayGrade, the employee’s pay grade which must be a single letter A–F",
+        "Complete the following table to identify:",
+        "• The most appropriate data type for each variable",
+        "• An appropriate validation check for each variable. You must use a different validation check",
+        "for each variable.",
+        "Variable Data type Appropriate validation check",
+        "EmployeeID",
+        "Manager",
+        "AnnualHoliday",
+        "PayGrade",
+        "[8]",
+        "4 Study the flowchart.",
+        "START",
+        "INPUT A OUTPUT B",
+        "IS",
+        "Yes",
+        "B A",
+        "B B + A C C – 1",
+        "A > 0 ?",
+        "C A",
+        "No",
+        "IS",
+        "C <= 1 ?",
+        "OUTPUT Yes",
+        "'Exit'",
+        "No",
+        "END",
+        "Complete the trace table for the input values 4, 3, −1:",
+        "A B C OUTPUT",
+        "[4]",
+        "5 (a) Rewrite the following pseudocode algorithm using a WHILE … DO … ENDWHILE loop.",
+        "INPUT Num",
+        "FOR Counter ← 1 TO 12",
+        "Num ← Num * Counter",
+        "A[Counter] ← Num",
+        "NEXT",
+        "[4]"
+      ]
+    }
+  ]
+}

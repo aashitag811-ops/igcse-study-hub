@@ -1,0 +1,516 @@
+{
+  "paperId": "9608_w18_qp_13",
+  "subjectCode": "9608",
+  "session": "w18",
+  "component": "13",
+  "totalMarks": 73,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The designer creates a 6-colour bitmap image for the poster as shown.\nEach colour is represented by a letter, for example, R = red, B = blue.\nR R P P P G\nB R R P G G\nB W B B O O\nB W W P P O\nB B R P G O\nB R R P G O",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State the minimum number of bits needed to represent each pixel in the image in part (a).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Calculate the minimum file size of the image shown in part (a). Show your working.\nWorking ______\nFile size ______",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "The designer takes a photograph to put on the poster. The photograph has a resolution of\n50 000 pixels by 50 000 pixels. The colours are represented using 4 bytes per pixel.\nEstimate the file size of the photograph in gigabytes. Show your working.\nWorking ______\nEstimated file size ______",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "The photograph needs to be sent by email but the file size is too big. It needs to be\ncompressed.\nThe table lists several methods of making an image file size smaller.\nTick (✓) one box on each row to indicate whether each method is lossy or lossless.\nCompression method Lossy Lossless\nCropping the image\nReducing the resolution of the image\nUsing run-length encoding (RLE)\nReducing the colour depth of the image",
+              "marks": 4,
+              "type": "tick",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how run-length encoding would compress the image in part (a).",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A product designer is creating a poster."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "State what is meant by relative addressing and indexed addressing.\nRelative addressing ______\nIndexed addressing ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The current contents of a general purpose register (X) are:\nX 1 1 1 1 0 0 1 0",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "The contents of X represent an unsigned binary integer.\nConvert the value in X into denary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The contents of X represent an unsigned binary integer.\nConvert the value in X into hexadecimal.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "The contents of X represent a two’s complement binary integer.\nConvert the value in X into denary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biv",
+              "label": "(iv)",
+              "text": "Show the result on the general purpose register (X) after the following instruction is run.\nINC X",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The current contents of the main memory, Index Register (IX) and selected values from the\nASCII character set are provided with a copy of the instruction set.\nAddress Instruction ASCII code table (selected codes only)\nLDD 96\n20 ASCII code Character\n21 CMP 97 450 <\nJPE 32\n22 451 >\nLDX 86 452 =\nCMP 98\n24 453 &\nJPN 27\n25 454 (\n26 OUT 455 )\nLDD 96\n27 Instruction set\nINC ACC\nInstruction\nSTO 96 Explanation\nOp\nOperand\ncode\nINC IX\nDirect addressing. Load the contents of\n31 JMP 21\nLDD <address>\nthe location at the given address to ACC.\nEND\nIndexed addressing. Form the address\nfrom <address> + the contents of the\nLDX <address>\nIndex Register. Copy the contents of this\n453 calculated address to ACC.\n94 Immediate addressing. Load the number\nLDR #n\nn to IX.\n95 452\nStore contents of ACC at the given\nSTO <address>\naddress.\n97 10\nAdd the contents of the given address to\nADD <address>\nACC.\nAdd 1 to the contents of the register (ACC\nINC <register>\nor IX).\nIX\nSubtract 1 from the contents of the\nDEC <register>\nregister (ACC or IX).\nCompare contents of ACC with contents of\nCMP <address>\n<address>.\nFollowing a compare instruction, jump to\nJPE <address>\n<address> if the compare was True.\nFollowing a compare instruction, jump to\nJPN <address>\n<address> if the compare was False.\nJMP <address>\nJump to the given address.\nOutput to the screen the character whose\nOUT\nASCII value is stored in ACC.\nEND\nReturn control to the operating system.\nComplete the trace table for the given assembly language program.\nMemory address\nInstruction\nACC IX OUTPUT\naddress\n93 94 95 96 97 98\n453 453 452 8 10 453 8",
+          "marks": 7,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "The following table shows assembly language instructions for a processor which has one general",
+        "purpose register, the Accumulator (ACC) and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "Direct addressing. Load the contents of the location at the given address",
+        "LDD <address>",
+        "to ACC.",
+        "Indexed addressing. Form the address from <address> + the contents of",
+        "LDX <address>",
+        "the Index Register. Copy the contents of this calculated address to ACC.",
+        "LDR #n",
+        "Immediate addressing. Load the number n to IX.",
+        "STO <address>",
+        "Store contents of ACC at the given address.",
+        "ADD <address>",
+        "Add the contents of the given address to ACC.",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX).",
+        "DEC <register>",
+        "Subtract 1 from the contents of the register (ACC or IX).",
+        "CMP <address>",
+        "Compare contents of ACC with contents of <address>.",
+        "Following compare instruction, jump to <address> if the compare was",
+        "JPE <address>",
+        "True.",
+        "Following compare instruction, jump to <address> if the compare was",
+        "JPN <address>",
+        "False.",
+        "JMP <address>",
+        "Jump to the given address.",
+        "OUT",
+        "Output to the screen the character whose ASCII value is stored in ACC.",
+        "END",
+        "Return control to the operating system."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Mason is using his work computer to book a holiday whilst at work.\nEthical\nUnethical\nJustification ______",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Ethan is supervising a trainee. The trainee asks Ethan for a reference for another job. Ethan\ndoes not want to lose the trainee, so refuses to give him a reference.\nEthical\nUnethical\nJustification ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Margarita finds that one of her team members has produced some inventive code. She\npresents this to her manager, praising the individual by name.\nEthical\nUnethical\nJustification ______",
+          "marks": 2,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "This question presents three scenarios. Tick (✓) one box for each scenario to indicate whether",
+        "you think the person’s behaviour is ethical or unethical. Justify your choice."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the series of steps that take place.\nWrite the letter of the appropriate statement in each space.\nDNS finds corresponding IP\nDNS looks up URL in table\nAva types the URL into a web browser\n2 Web browser sends URL to Domain Name Service (DNS)",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "Ava needs to view a website and she knows the Uniform Resource Locator (URL)."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "An IPv4 address has been entered as 12.258.3\nGive two reasons why this IP address is invalid.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "An IPv6 address has been entered as 15EF:5L63::2014:BB::60AA\nGive two reasons why this IP address is invalid.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The table shows four descriptions of IP addresses.\nTick (✓) one box in each row to identify whether each description applies to a public or private\nIP address.\nDescription Public Private\nThe address can be reached over the Internet.\nThe address is more secure.\nThe address can only be accessed through the same LAN.\nThe address can be duplicated in different networks.\n\n5 Arnold is a software developer. He has created a computer game for people to download over the\nInternet. Arnold is considering releasing the game as a piece of commercial software.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Describe what is meant by a commercial licence.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Name and describe one other type of licence that Arnold can consider using.\nLicence type ______\nDescription ______",
+              "marks": 3,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Users need to enter their name and email address to create an account. The information is\nstored in a database on Arnold’s computer.\nGive three ways that Arnold can ensure users’ details are kept secure.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "DNS returns IP address to web browser",
+        "[2]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The stages in the FE cycle are shown in register transfer notation.\nMAR [______]\nPC PC + 1\n______ [ [MAR] ]\n______ [MDR]",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "The steps shown in part (a) are incomplete.\nWrite the missing register names in the spaces in part (a).",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "The third instruction [ [MAR] ] has double brackets.\nState the purpose of the double brackets.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "One stage of the FE cycle includes checking for interrupts.\nState what is meant by an interrupt.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "There are two types of RAM: dynamic RAM (DRAM) and static RAM (SRAM).\nThe following table shows five statements about DRAM and SRAM.\nTick (✓) one box in each row to indicate whether the statement applies to DRAM or SRAM.\nStatement DRAM SRAM\nDoes not need to be refreshed as the circuit holds the data while the power\nsupply is on\nMainly used in cache memory of processors where speed is important\nHas less complex circuitry\nRequires higher power consumption under low levels of access, which is\nsignificant when used in battery-powered devices\nRequires data to be refreshed occasionally so it retains the data",
+          "marks": 5,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "The fetch-execute (FE) cycle uses special purpose registers."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Give three benefits of a wireless network compared to a wired network.",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Give one drawback of a wireless network compared to a wired network.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "The network manager of a Local Area Network (LAN) has replaced the Ethernet cables with a",
+        "wireless network."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Draw a logic circuit to represent the logic expression:\nX = (A XOR B) OR (NOT(C AND A))\nB X",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Complete the truth table for the logic expression in part (a).\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    }
+  ]
+}

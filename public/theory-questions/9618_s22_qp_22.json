@@ -1,0 +1,371 @@
+{
+  "paperId": "9618_s22_qp_22",
+  "subjectCode": "9618",
+  "session": "s22",
+  "component": "22",
+  "totalMarks": 64,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A programmer is testing a program using an Integrated Development Environment (IDE).\nThe programmer wants the program to stop when it reaches a specific instruction or program\nstatement in order to check the value assigned to a variable.\nGive the technical term for the position at which the program stops.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The following table lists some activities from the program development life cycle.\nComplete the table by writing the life cycle stage for each activity.\nActivity Life cycle stage\nAn identifier table is produced.\nSyntax errors can occur.\nThe developer discusses the program requirements with the customer.\nA trace table is produced.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "An identifier table includes the names of identifiers used.\nState two other pieces of information that the identifier table should contain.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The pseudocode statements in the following table may contain errors.\nState the error in each case or write 'NO ERROR' if the statement contains no error.\nYou can assume that none of the variables referenced are of an incorrect type.\nStatement Error\nStatus TRUE AND FALSE\nIF LENGTH(\"Password\") < \"10\" THEN\nCode LCASE(\"Electrical\")\nResult IS_NUM(-27.3)",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm is described as follows:",
+        "1. Input an integer value.",
+        "2. Jump to step 6 if the value is less than zero.",
+        "3. Call the function IsPrime() using the integer value as a parameter.",
+        "4. Keep a count of the number of times function IsPrime() returns TRUE.",
+        "5. Repeat from step 1.",
+        "6. Output the value of the count with a suitable message.",
+        "Draw a program flowchart to represent the algorithm.",
+        "START",
+        "END",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The module headers for five modules in a program are defined in pseudocode as follows:\nPseudocode module header\nFUNCTION Mod_V(S2 : INTEGER) RETURNS BOOLEAN\nPROCEDURE Mod_W(P4 : INTEGER)\nPROCEDURE Mod_X(T4 : INTEGER, BYREF P3 : REAL)\nPROCEDURE Mod_Y(W3 : REAL, Z8 : INTEGER)\nFUNCTION Mod_Z(F3 : REAL) RETURNS INTEGER\nAn additional module Head() repeatedly calls three of the modules in sequence.\nA structure chart has been partially completed.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Complete the structure chart to include the information given about the six modules.\nDo not label the parameters and do not write the module names.\nB C D\nE F",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Complete the table using the information in part 3(a) by writing each module name to\nreplace the labels A to F.\nLabel Module name",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The structure chart represents part of a complex problem. The process of decomposition is\nused to break down the complex problem into sub-problems.\nDescribe three benefits of this approach.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A procedure LastLines() will:\n• take the name of a text file as a parameter\n• output the last three lines from that file, in the same order as they appear in the file.\nNote:\n• Use local variables LineX, LineY and LineZ to store the three lines from the file.\n• You may assume the file exists and contains at least three lines.\nWrite pseudocode for the procedure LastLines().",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The algorithm in part (a) is to be amended. The calling program will pass the number of lines\nto be output as well as the name of the text file.\nThe number of lines could be any value from 1 to 30.\nIt can be assumed that the file contains at least the number of lines passed.\nOutline three changes that would be needed.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Procedure Encode() contains a loop structure.\nIdentify the type of loop and state the condition that ends the loop.\nDo not include pseudocode statements in your answer.\nType ______\nCondition ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Complete the trace table below by dry running the procedure Encode() when the following\nvalues are input:\n12, 24, 57, 43, 56, 22, 31, 32, 47, 99, 0\nThe first row is already complete.\nThisNum ThisChar CountA CountB Flag OUTPUT\n0 10 TRUE",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Procedure Encode() is part of a modular program. Integration testing is to be carried out on\nthe program.\nDescribe integration testing.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Study the following pseudocode. Line numbers are for reference only.",
+        "10 PROCEDURE Encode()",
+        "11 DECLARE CountA, CountB, ThisNum : INTEGER",
+        "12 DECLARE ThisChar : CHAR",
+        "13 DECLARE Flag : BOOLEAN",
+        "14 CountA 0",
+        "15 CountB 10",
+        "16 Flag TRUE",
+        "17 INPUT ThisNum",
+        "18 WHILE ThisNum <> 0",
+        "19 ThisChar LEFT(NUM_TO_STR(ThisNum), 1)",
+        "20 IF Flag = TRUE THEN",
+        "21 CASE OF ThisChar",
+        "22 '1' : CountA CountA + 1",
+        "23 '2' : IF CountB < 10 THEN",
+        "24 CountA CountA + 1",
+        "25 ENDIF",
+        "26 '3' : CountB CountB - 1",
+        "27 '4' : CountB CountB - 1",
+        "28 Flag FALSE",
+        "29 OTHERWISE : OUTPUT \"Ignored\"",
+        "30 ENDCASE",
+        "31 ELSE",
+        "32 IF CountA > 2 THEN",
+        "33 Flag NOT Flag",
+        "34 OUTPUT \"Flip\"",
+        "35 ELSE",
+        "36 CountA 4",
+        "37 ENDIF",
+        "38 ENDIF",
+        "39 INPUT ThisNum",
+        "40 ENDWHILE",
+        "41 OUTPUT CountA",
+        "42 ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A string represents a series of whole numbers, separated by commas.",
+        "For example:",
+        "\"12,13,451,22\"",
+        "Assume that:",
+        "• the comma character ',' is used as a separator",
+        "• the string contains only the characters '0' to '9' and the comma character ','.",
+        "A procedure Parse will:",
+        "• take the string as a parameter",
+        "• extract each number in turn",
+        "• calculate the total value and average value of all the numbers",
+        "• output the total and average values with a suitable message.",
+        "Write pseudocode for the procedure.",
+        "PROCEDURE Parse(InString : STRING)",
+        "ENDPROCEDURE [7]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Write pseudocode for an algorithm to implement your own version of the MID() function\nwhich will operate in the same way as that shown in the insert.\nDo not use the MID() function given in the insert, but you may use any of the other functions.\nAssume that the values passed to the function will be correct.",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The values passed to your MID() function in part (a) need to be validated.\nAssume that the values are of the correct data type.\nState two checks that could be applied to the values passed to the function.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A programming language has string functions equivalent to those given in the insert.",
+        "The language includes a LEFT() and a RIGHT() function, but it does not have a MID() function."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module Exists().",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A new module SearchDuplicates() will:\n• search for the first password that occurs more than once in the array and output a\nmessage each time a duplicate is found.\nFor example, if the same password was used for the three websites ThisWebsite.com,\nwebsite27.net and websiteZ99.org, then the following messages will be output:\n\"Password for ThisWebsite.com also used for website27.net\"\n\"Password for ThisWebsite.com also used for websiteZ99.org\"\n• end once all messages have been output.\nThe module will output a message if no duplicates are found.\nFor example:\n\"No duplicate passwords found\"\nWrite efficient pseudocode for the module SearchDuplicates(). Encrypt() and\nDecrypt() functions have been written.\nNote: It is necessary to decrypt each password before checking its value.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "A password has a fixed format, consisting of three groups of four alphanumeric characters,\nseparated by the hyphen character '-'.\nAn example of a password is:\n\"FxAf-3haV-Tq49\"\nEach password must:\n• be 14 characters long\n• be organised as three groups of four alphanumeric characters. The groups are separated\nby hyphen characters\n• not include any duplicated characters, except for the hyphen characters.\nAn algorithm is needed for a new function GeneratePassword(), which will generate and\nreturn a password in this format.\nAssume that the following modules have already been written:\nModule Description\n• Takes two parameters:\n○ a string\n○ a character\nExists()\n• Performs a case-sensitive search for the character in the\nstring\n• Returns TRUE if the character occurs in the string, otherwise\nreturns FALSE\n• Generates a single random character from within one of the\nfollowing ranges:\n○ 'a' to 'z'\nRandomChar()\n○ 'A' to 'Z'\n○ '0' to '9'\n• Returns the character\nNote: in a case-sensitive comparison, 'a' is not the same as 'A'.\nDescribe the algorithm for GeneratePassword().\nDo not use pseudocode statements in your answer.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "A program allows a user to save passwords used to log in to websites. A stored password is then",
+        "inserted automatically when the user logs in to the corresponding website.",
+        "A global 2D array Secret of type STRING stores the passwords together with the website domain",
+        "name where they are used. Secret contains 1000 elements organised as 500 rows by 2 columns.",
+        "Unused elements contain the empty string (\"\"). These may occur anywhere in the array.",
+        "An example of a part of the array is:",
+        "Array element Value",
+        "Secret[27, 1] \"thiswebsite.com\"",
+        "Secret[27, 2]",
+        "\"\"",
+        "Secret[28, 1] \"thatwebsite.com\"",
+        "Secret[28, 2]",
+        "\"\"",
+        "Note:",
+        "• For security, the passwords are stored in an encrypted form, shown as \"\" in the",
+        "example.",
+        "• The passwords cannot be used without being decrypted.",
+        "• You may assume that the encrypted form of a password will NOT be an empty string.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "• Takes two parameters:",
+        "○ a string",
+        "○ a character",
+        "Exists()",
+        "• Performs a case-sensitive search for the character in the string",
+        "• Returns TRUE if the character occurs in the string, otherwise",
+        "returns FALSE",
+        "• Takes a password as a parameter of type string",
+        "Encrypt()",
+        "• Returns the encrypted form of the password as a string",
+        "• Takes an encrypted password as a parameter of type string",
+        "Decrypt()",
+        "• Returns the decrypted form of the password as a string",
+        "Note: in a case-sensitive comparison, 'a' is not the same as 'A'."
+      ]
+    }
+  ]
+}

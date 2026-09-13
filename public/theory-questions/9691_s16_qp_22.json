@@ -1,0 +1,452 @@
+{
+  "paperId": "9691_s16_qp_22",
+  "subjectCode": "9691",
+  "session": "s16",
+  "component": "22",
+  "totalMarks": 69,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A high-level programming language has built-in string handling functions specified as follows:",
+        "ONECHAR(ThisString : STRING, x : INTEGER) RETURNS STRING",
+        "returns a string value consisting of one character from the string ThisString at position x.",
+        "For example: ONECHAR(\"STOP\", 4) returns \"P\"",
+        "CONCAT(String1 : STRING, String2 : STRING) RETURNS STRING",
+        "returns a string value consisting of String1 followed by String2.",
+        "For example: CONCAT(\"HE\", \"LLO\") returns \"HELLO\"",
+        "Use the pseudocode on the following page to complete the trace table for the function call",
+        "Process(\"011101\", \"001100\")",
+        "String1 String2 Position Digit1 Digit2 Sum Carry Result",
+        "\"011101\" \"001100\" \"0\" \"\"",
+        "[6]",
+        "FUNCTION Process(String1, String2 : STRING) RETURNS STRING",
+        "Carry ← \"0\"",
+        "Result ← \"\"",
+        "FOR Position ← 6 DOWN TO 1",
+        "Digit1 ← ONECHAR(String1, Position)",
+        "Digit2 ← ONECHAR(String2, Position)",
+        "IF Carry = \"0\"",
+        "THEN",
+        "CASE OF Digit1",
+        "\"0\": Sum ← Digit2",
+        "\"1\": CASE OF Digit2",
+        "\"0\": Sum ← \"1\"",
+        "\"1\": Sum ← \"0\"",
+        "Carry ← \"1\"",
+        "ENDCASE",
+        "ENDCASE",
+        "ELSE",
+        "CASE OF Digit1",
+        "\"0\": CASE OF Digit2",
+        "\"0\": Sum ← \"1\"",
+        "Carry ← \"0\"",
+        "\"1\": Sum ← \"0\"",
+        "ENDCASE",
+        "\"1\": CASE OF Digit2",
+        "\"0\": Sum ← \"0\"",
+        "\"1\": Sum ← \"1\"",
+        "ENDCASE",
+        "ENDCASE",
+        "ENDIF",
+        "Result ← CONCAT(Sum, Result)",
+        "ENDFOR",
+        "RETURN Result",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Ryan wrote the following recursive function using pseudocode.",
+        "01 FUNCTION Power(Number : INTEGER, Exponent : INTEGER) RETURNS INTEGER",
+        "02 IF Exponent = 0"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Result ← 1"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Result ← Number * Power(Number, Exponent - 1)"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "RETURN Result"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ai",
+              "label": "(i)",
+              "text": "How can you recognise that this function is recursive?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aii",
+              "label": "(ii)",
+              "text": "A recursive solution to a problem always has a base case (the stopping condition) and a\ngeneral case.\nGive the line number of the statement that is executed in the base case.\nGive the line number of the statement that is executed in the general case.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09bi",
+              "label": "(i)",
+              "text": "State the value returned by Power(3, 0).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09bii",
+              "label": "(ii)",
+              "text": "State the value returned by Power(3, 1).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ci",
+              "label": "(i)",
+              "text": "Explain what happens when the call is Power(3, -1).",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09cii",
+              "label": "(ii)",
+              "text": "Describe the changes that will need to be made to function Power to address the\nproblem that you described in part (c)(i).",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09d",
+          "label": "(d)",
+          "text": "An alternative method for the Power function is to use an iterative solution.\nUsing pseudocode, write Power as an iterative function.\nFUNCTION Power(Number : INTEGER, Exponent : INTEGER) RETURNS INTEGER",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09e",
+          "label": "(e)",
+          "text": "A problem may have both an iterative solution and a recursive solution. Each has its own\nbenefits.\nState one benefit of each solution.\nIterative ______\nRecursive ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09f",
+          "label": "(f)",
+          "text": "Ryan uses his recursive function Power in a program. He will use debugging tools to check\nthe Power function works as expected. The debugging tools include breakpoints, variable\nwatches and stepping.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09fi",
+              "label": "(i)",
+              "text": "Identify where it is appropriate to set a breakpoint. Justify your answer.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09fii",
+              "label": "(ii)",
+              "text": "Ryan wants to set up a variable watch window for his function.\n01 FUNCTION Power(Number : INTEGER, Exponent : INTEGER) RETURNS\nINTEGER\n02 IF Exponent = 0\n03 THEN\n04 Result ← 1\n05 ELSE\n06 Result ← Number * Power(Number, Exponent - 1)\n07 ENDIF\n08 RETURN Result\n09 ENDFUNCTION\nState the variable(s) that would be appropriate to list in the variable watch window. Justify\nyour choice.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09fiii",
+              "label": "(iii)",
+              "text": "Explain how Ryan uses these debugging tools to check the execution of his recursive\nfunction.\n\nQuestion 3 begins on page 8.\n3 A crossword puzzle is based on a grid made up of white and black squares. The white squares are\nto be filled with letters to form words across the grid and down the grid.\nThe crossword puzzle designer provides clues for each word. Words consist of at least 2 letters.\nThe square where a word starts, across or down, is numbered. The numbering starts at the top left\nof the grid and is consecutive, row by row.\nHere is an example of a crossword grid:\n1 2 3 4 5 6\n9 10\n12 13 14\n16 17\n18 19",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Zara is given a grid design of white and black squares. This design does not yet contain\nnumbers. Zara wants to write a program to set up a data structure for the grid data.\nThe data for each square will represent either:\n• a white square\n• a black square\n• a white square with a number",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ai",
+              "label": "(i)",
+              "text": "A white square with a number is represented by the integer value of the number.\nSuggest a suitable value to represent:\nA white square ______\nA black square ______",
+              "marks": 2,
+              "type": "suggest",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aii",
+              "label": "(ii)",
+              "text": "Write program code to declare the data structure with identifier Puzzle for a grid design\nof size 11 × 11 squares.\nProgramming language ______",
+              "marks": 3,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aiii",
+              "label": "(iii)",
+              "text": "Initially, all squares are to be white squares.\nWrite program code to initialise Puzzle.\nProgramming language ______\nCode ______",
+              "marks": 3,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aiv",
+              "label": "(iv)",
+              "text": "The seventh square in the first row of the example crossword grid is black.\nWrite program code for the assignment statement to set the corresponding element of\nPuzzle to represent black.\nProgramming language ______\n\nWhere there are other black squares in the design, Zara writes additional assignment\nstatements.",
+              "marks": 2,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "The next stage for Zara is to design a procedure that numbers the relevant white squares.\nA word begins in a square if the square is:\n• a white square, and\n• the first of a sequence of at least 2 white squares\nacross or\ndown\nZara starts to write the pseudocode for the procedure CheckForStartOfWord. This will\ncheck whether a square at ThisRow and ThisColumn is the start of a word.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09bi",
+              "label": "(i)",
+              "text": "Complete the pseudocode for the global declarations.\nCONSTANT WHITE =______// value from part(a)(i)\nCONSTANT BLACK =______// value from part(a)(i)",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09bii",
+              "label": "(ii)",
+              "text": "Complete the pseudocode:\nPROCEDURE CheckForStartOfWord(Puzzle, ThisRow, ThisColumn, Across, Down)\nAcross ← FALSE // will change to TRUE\n// if a word across starts in this square\nDown ← ______\nIF Puzzle[ThisRow, ThisColumn] = ______\nTHEN // this square is white\n// check for sequence across\nIF ThisColumn < 11 // check not in last column\nTHEN\n// check this is the first column or a black square to the\nleft\nIF (ThisColumn = 1\nOR Puzzle[ThisRow, ThisColumn - 1] = BLACK)\n// check that the square to the right is white\nAND (Puzzle[______] = WHITE)\nTHEN\nAcross ← TRUE\nENDIF\n// check for sequence down\nIF ThisRow < 11 // check not in last row\nTHEN\n// check this is the first row or a black square above\nIF (ThisRow = ______\nOR Puzzle[ ______ ] = BLACK)\n// check that the square below is white\nAND (______)\nTHEN\nDown ← ______\nENDIF\nENDIF\nENDIF\nENDPROCEDURE",
+              "marks": 8,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09biii",
+              "label": "(iii)",
+              "text": "The procedure\nCheckForStartOfWord(Puzzle, ThisRow, ThisColumn, Across, Down)\nhas five parameters. Parameters can be passed by reference or by value.\nFor each parameter, tick (✓) to show how it should be passed.\nParameter By reference By value\nPuzzle\nThisRow\nThisColumn\nAcross\nDown",
+              "marks": 3,
+              "type": "tick",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Zara wants her program to number the squares where a word starts. She also wants the\nprogram to create two lists, AcrossList and DownList.\nAcrossList will contain the numbers of the starting squares of words going across.\nDownList will contain the numbers of the starting squares of words going down.\nNote that a square can be a starting square for a word going across and a word going down.\nThe same number would therefore be contained in both lists.\nFor example, the given puzzle has these lists. Squares numbered 5, 12 and 17 are starting\nsquares for words going across and words going down.\n1 2 3 4 5 6\nAcrossList DownList\n1 2\n7 8\n5 3\n7 4\n9 10\n8 5\n9 6\n12 13 14\n11 10\n12 12\n16 17\n13 14\n16 15\n18 19\n17 17\nZ ara designs this part of the program by writing pseudocode.\nConvert this pseudocode into program code.\nNextNumber ← 1 // first number for numbering starting squares\na ← 1 // pointer to first element of AcrossList\nd ← 1 // pointer to first element of DownList\nFOR ThisRow ← 1 TO 11\nFOR ThisColumn ← 1 TO 11\nCALL CheckForStartOfWord(Puzzle, ThisRow, ThisColumn, Across, Down)\nIF Across = TRUE\nTHEN\nAcrossList[a] ← NextNumber // update AcrossList\na ← a + 1\nENDIF\nIF Down = TRUE\nTHEN\nDownList[d] ← NextNumber // update DownList\nd ← d + 1\nENDIF\nIF Across = True OR Down = TRUE\nTHEN\nPuzzle[ThisRow, ThisColumn] ← NextNumber // number the square\nNextNumber ← NextNumber + 1\nENDIF\nENDFOR\nENDFOR\nProgramming language ______\nCode ______",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09d",
+          "label": "(d)",
+          "text": "The pseudocode Zara wrote in part (b) and part (c) has some features that make it easier to\nread and understand.\nState four such features.",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09e",
+          "label": "(e)",
+          "text": "Zara wants to save the contents of the data structure Puzzle to a sequential file\nPuzzle.TXT\nWrite program code for the procedure SavePuzzleToFile(Puzzle).\nProgramming language ______\nCode ______",
+          "marks": 5,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09f",
+          "label": "(f)",
+          "text": "One of Zara’s friends suggests that the number of squares for a word should be counted.\nZara decides that she needs a function to count the number of squares for a word going\nacross. She needs another function to count the number of squares for a word going down.\nThe program will call the function CountSquaresAcross when ThisRow and ThisColumn\nrefer to a square that is the start of a word across.\nWrite pseudocode for the function CountSquaresAcross. Declare any local variables\nrequired.\nFUNCTION CountSquaresAcross(Puzzle, ThisRow, ThisColumn) RETURNS\nINTEGER\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 69,
+      "text": [
+        "ENDFUNCTION"
+      ]
+    }
+  ]
+}

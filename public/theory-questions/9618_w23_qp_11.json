@@ -1,0 +1,521 @@
+{
+  "paperId": "9618_w23_qp_11",
+  "subjectCode": "9618",
+  "session": "w23",
+  "component": "11",
+  "totalMarks": 71,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Draw one line from each vector graphic term to its most appropriate description.\nTerm Description\na component created\ndrawing list\nusing a formula\ndefines one characteristic\ndrawing object\nof a component\ndata required to create all\nproperty\ncomponents in the graphic",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "State what is meant by the bit depth of a bitmap image and explain how changing the bit\ndepth affects the image.\nDefinition ______\nExplanation ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain why a bitmap image is often compressed before it is attached to an email.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The LAN connects to the internet using a router.\nDescribe the function of a router in a network.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Complete the following table by writing the purpose of each of these other hardware devices\nused to support the LAN.\nHardware device Purpose\nswitch ______\nWireless Access Point\n(WAP)\nbridge ______",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The students can save their school files on a public cloud.\nIdentify two drawbacks of the students storing their files on the public cloud.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "A new classroom is being set up with 20 computers and a switch.\nExplain one advantage of implementing a star topology instead of a bus topology in the new\nclassroom.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A school has a Local Area Network (LAN)."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the entity-relationship (E-R) diagram for the relational database.\nSHOP_ORDER CUSTOMER\nORDER_ITEM SUPPLIER\nITEM",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Identify three advantages of a relational database compared to a file-based approach.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Write a Structured Query Language (SQL) script to define the database called SHOP.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Write the SQL script to return the total quantity of items that the customer with the ID of\nHJ231 has ordered.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A shop manager has designed a relational database to store customer orders.",
+        "The database will have the following tables:",
+        "CUSTOMER(CustomerID, FirstName, LastName, Town)",
+        "SHOP_ORDER(OrderNo, CustomerID, OrderDate)",
+        "SUPPLIER(SupplierID, EmailAddress, TelephoneNumber)",
+        "ITEM(ItemNumber, SupplierID, Description, Price)",
+        "ORDER_ITEM(ItemNumber, OrderNo, Quantity)"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the truth table for the logic expression:\nX = NOT (A NAND B) XOR (NOT B AND (B NOR C))\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Draw a logic circuit for the logic expression:\nX = (A AND NOT (B OR C)) AND (B NOR C)",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The Memory Data Register (MDR), Index Register (IX) and the Accumulator (ACC) are\nexamples of special purpose registers.\nIdentify two other special purpose registers and state their role in the CPU.\nSpecial purpose register 1 ______\nRole ______\nSpecial purpose register 2 ______\nRole ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe what is meant by the Immediate Access Store (IAS) in a computer system.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "A computer has a single 2.1 GHz CPU.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Describe how increasing the clock speed to 4 GHz can increase the performance of the\ncomputer.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "A second computer has a CPU with two 2.1 GHz cores.\nExplain why the second computer does not always run twice as fast as the computer\nwith one 2.1 GHz CPU.",
+              "marks": 5,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The Central Processing Unit (CPU) of the basic Von Neumann model for a computer system",
+        "contains several special purpose registers."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Describe the advantages of using the interpreter compared to the compiler to translate the\nprogram.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "State one reason why some high-level languages are partially compiled and partially interpreted.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "Identify two features that support the visual presentation of the code in a typical\nIntegrated Development Environment (IDE).",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "Identify two features that support the debugging of the code in a typical IDE.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A programmer uses both a compiler and an interpreter to translate a program written in a high-level",
+        "language."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Describe the principal operations of a 3D printer.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Describe the purpose of a temperature sensor within the 3D printer.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "A 3D printer contains 1 GB of Dynamic RAM (DRAM) to store print data.\nState two advantages of the printer having Dynamic RAM instead of Static RAM (SRAM).",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Identify the purpose of the first pass of a two-pass assembler.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The following table shows part of the instruction set for a processor. The processor has two\nregisters, the Accumulator (ACC) and the Index Register (IX).\nInstruction\nExplanation\nOpcode Operand\nLDR #n Immediate addressing. Load the number n to IX\nSTO <address> Store contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register>\nAdd 1 to the contents of the register (ACC or IX)\nCMP #n\nCompare the contents of ACC with number n\nJPE <address> Following a compare instruction, jump to <address> if the compare was True\nOUT\nOutput to the screen the character whose ASCII value is stored in ACC\n<address> can be an absolute or symbolic address\n# denotes a denary number, e.g. #123",
+          "marks": null,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "Give one example of an instruction that belongs to each of the following instruction\ngroups.\nOnly use the instructions given in the table. Each instruction must have a suitable\noperand.\nData movement ______\nArithmetic operation ______\nConditional instruction ______",
+              "marks": 3,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "The instruction LDR #2 uses immediate addressing.\nGive one similarity and one difference between direct addressing and indexed addressing.\nSimilarity ______\nDifference ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biii",
+              "label": "(iii)",
+              "text": "Identify one other mode of addressing.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The following table shows another part of the instruction set for the same processor.\nInstruction\nExplanation\nOpcode Operand\nAND Bn\nBitwise AND operation of the contents of ACC with the operand\nXOR Bn\nBitwise XOR operation of the contents of ACC with the operand\nLSR #n\nBits in ACC are shifted logically n places to the right. Zeros are introduced on\nthe left hand end\n# denotes a denary number, e.g. #123\nB denotes a binary number, e.g. B01001101",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "The current contents of the ACC are:\n0 1 0 0 1 1 1 1\nShow the contents of the ACC after the execution of the following instruction.\nAND B10100101",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "The current contents of the ACC are:\n0 0 0 1 0 1 1 1\nShow the contents of the ACC after the execution of the following instruction.\nLSR #3",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8ciii",
+              "label": "(iii)",
+              "text": "The current contents of the ACC are:\n1 1 1 1 0 1 1 1\nShow the contents of the ACC after the execution of the following instruction.\nXOR B00100101",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Explain the importance of feedback in a control system.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Give one example of an embedded system and explain why it is an example of an embedded\nsystem.\nExample ______\nExplanation ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    }
+  ]
+}

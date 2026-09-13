@@ -1,0 +1,240 @@
+{
+  "paperId": "0478_s22_qp_23",
+  "subjectCode": "0478",
+  "session": "s22",
+  "component": "23",
+  "totalMarks": 36,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Identify one variable and one array you could have used for Task 1 or Task 2.\nGive the use for the variable and array.\nVariable ______\nUse ______\nArray ______\nUse ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Describe how you could test if the validation of the input to choose a meeting room works\n(Task 2).",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how your program in Task 2 could be altered to allow a 30% discount on bookings for\nthe same meeting room of two to six days, inclusive.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Write an algorithm to show how your program completes the following parts of Task 2:\n• output the booking details and cost of the booking\n• take confirmation from the client\n• generate a unique booking code\n• store the booking details.\nAssume that Task 1 and the first part of Task 2 have been completed.\nAssume that the booking is for a single day and that the requested booking day is available.\nUse pseudocode, programming statements or a flowchart.",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program selects a meeting room, finds and then outputs the days when it\nis available (part of Task 3). Any programming statements used in your answer must be fully\nexplained.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one or more boxes in each row to match the type(s) of test data to each description.",
+        "Types of test data",
+        "Description",
+        "Erroneous /",
+        "Boundary Extreme Normal",
+        "Abnormal",
+        "test data that is always on the limit of",
+        "acceptability",
+        "test data that is either on the limit of",
+        "acceptability or test data that is just",
+        "outside the limit of acceptability",
+        "test data that will always be rejected",
+        "test data that is within the limits of",
+        "acceptability",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe what is meant by the terms variable and constant and give an example of each in your",
+        "answer.",
+        "Variable ............................................................................................................................................",
+        "Constant ...........................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm using this input data:\n5, 9, 5, 8, 10, 7\nStore\nIn Logic Test Number Count Limit Out OUTPUT\n[Count]",
+          "marks": 7,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "State the purpose of this algorithm.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "This algorithm only works for numbers that are 3 or greater.\nDescribe how you could change this algorithm to make sure that only numbers that are\n3 or greater are entered. Any pseudocode statements used in your answer must be fully\ndescribed.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The pseudocode represents an algorithm.",
+        "The pre-defined function DIV gives the value of the result of integer division.",
+        "For example, Y = 11 DIV 4 gives the value Y = 2",
+        "Count ← 0",
+        "INPUT Limit",
+        "← 1 TO Limit",
+        "FOR In",
+        "Logic ← TRUE",
+        "Test ← 2",
+        "INPUT Number",
+        "REPEAT",
+        "IF Number / Test = Number DIV Test",
+        "THEN",
+        "Logic ← FALSE",
+        "ELSE",
+        "Test ← Test + 1",
+        "ENDIF",
+        "UNTIL NOT Logic OR Test >= Number DIV 2",
+        "IF Logic",
+        "THEN",
+        "Store[Count] ← Number",
+        "Count ← Count + 1",
+        "ENDIF",
+        "NEXT In",
+        "FOR Out ← 0 TO Count - 1",
+        "OUTPUT Store[Out]",
+        "NEXT Out"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The flowchart shows an algorithm that should:",
+        "• allow 100 numbers to be entered into the variable Number",
+        "• total the numbers as they are entered",
+        "• output the total and average of the numbers after they have all been entered.",
+        "Complete this flowchart:",
+        "START",
+        "Total 0",
+        "Counter 0",
+        "No",
+        "Yes",
+        "END",
+        "[6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the name of the field that could contain Boolean data.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid to output the planets with a longer year length and\ngreater mass than Earth. Assume Earth’s year length is 365 days.\nDisplay only the name of the planets sorted in alphabetical order.\nField:\nTable:\nSort:\nShow:\no o o o o\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Data about planets in the solar system is stored in a database table called PLANETS. The fields",
+        "used in the table are shown.",
+        "Name of field Contents of field",
+        "PlanetName the name of the planet",
+        "PlanetMass the planet’s mass in kilograms",
+        "Larger whether or not the planet has a greater mass than Earth",
+        "MaxDistance the maximum distance the planet is from Earth in kilometres",
+        "MinDistance the minimum distance the planet is from Earth in kilometres",
+        "YearLength the length of time it takes for the planet to orbit the Sun in Earth days"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "paperId": "9691_w13_qp_22",
+  "subjectCode": "9691",
+  "session": "w13",
+  "component": "22",
+  "totalMarks": 75,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Draw a structure diagram to show the modules that will be needed.",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Each module is programmed by Jemma.\nFor\nExaminer's\nUse\nDescribe three program coding techniques she should use to help Freddie who will\nmaintain the code.\nTechnique 1\nTechnique 2\nTechnique 3",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Jemma is using the variable Percentage in one module and a different variable\nFor\nExaminer's\ncalled Percentage in another module.\nUse\nExplain the feature of a high-level programming language that avoids any possible\nconflict.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Some modules require data values that originate from another module.\nExplain the feature of a high-level programming language that enables this.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Jemma is designing a range validation check for the input of an employee’s pay. The\nFor\npay range depends on the employee’s job type, which may be P(part-time), F(full-time) Examiner's\nUse\nor C(commission only).\n• A part-time employee will earn between $100 and $10000 a year.\n• A full-time employee will earn between $5000 and $50000 a year.\n• A commission only employee will earn between $0 and $80000 a year.\nComplete the table showing five more rows of test data. Give a different reason for\neach, describing what is being tested.\nJob type Pay Reason\nF 25 000 Normal data – within pay range for full-time",
+          "marks": 5,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "Jemma is designing a program that will work out the end of year bonuses for her",
+        "For",
+        "employees. The main steps are: Examiner's",
+        "Use",
+        "• input employee's data",
+        "• calculate the bonus",
+        "• calculate deductions",
+        "o tax",
+        "o optional contribution to charity",
+        "• print out the bonus"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "In a high-level programming language, write the array declaration statement.\nProgramming language\nDeclaration",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Why is it good programming practice to initialise the array MyEbooks?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Write program code to initialise the array MyEbooks.\nProgramming language\nCode",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "At present when the program terminates all the ebook data are lost.\nHow can these data be stored and made available every time the program is run?",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "James’ friend, Jatinder, uses his idea, but decides to store more information about\nFor\neach of her ebooks. Examiner's\nUse\nComplete the following table. Use a single numerical value for Field size.\nIdentifier Description Data type Field size (Bytes)\na unique ebook ID, a whole\nEbookID\nnumber between 1 and 500\nBookTitle the title of the ebook STRING\nAuthor the author of the ebook\nDateBought date bought\nCost price paid\nFiction fiction or non-fiction",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "James plans to store the titles and authors of his favourite ebooks in an array. He has 56",
+        "For",
+        "ebooks at the moment and expects to reach 150. Examiner's",
+        "Use",
+        "A two-dimensional array MyEbooks is to be used."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw a suitable layout for the screen.\nAisha’s log-in screen\n\nAisha writes her first try at designing the code in pseudocode. She wants the password to\nbe \"Aisha\", her name.\n1 Attempt ← 0\n2 REPEAT\n3 INPUT Password",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Aisha wants to write a program that checks the password to her personal computer. The",
+        "For",
+        "program should check each attempt to enter the password correctly and should terminate Examiner's",
+        "Use",
+        "after three wrong attempts.",
+        "She wants the log-in screen to display:",
+        "• a prompt to enter the password",
+        "• space to enter the password",
+        "• how many attempts have been made",
+        "• if the log-in has been successful or not",
+        "• a means of cancelling the log-in process"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Attempt ← Attempt + 1"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL (Password = \"Aisha\") OR (Attempt > 3)"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Password = \"Aisha\""
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Password correct\""
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"No valid password entered\""
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11bi",
+              "label": "(i)",
+              "text": "Complete the trace table using \"Aisha\" as input.\nFor\nExaminer's\nUse\nPassword Attempt Password = \"Aisha\"\nAttempt Password Output\n= \"Aisha\" > 3 OR Attempt > 3\nAisha",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11bii",
+              "label": "(ii)",
+              "text": "Complete the trace table using the following sequence of inputs:\n\"aisha\", \"Asha\", \"AISHA\"\nPassword Attempt Password = \"Aisha\"\nAttempt Password Output\n= \"Aisha\" > 3 OR Attempt > 3",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "This piece of code does not do what Aisha intended. There is an error.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11ci",
+              "label": "(i)",
+              "text": "State the type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11cii",
+              "label": "(ii)",
+              "text": "There are several ways to correct this. One is to change line 5.\nRewrite line 5.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11d",
+          "label": "(d)",
+          "text": "State why someone’s name is not a good password.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11e",
+          "label": "(e)",
+          "text": "Describe how to choose a more secure password.\n\nQuestion 3 continues on page 12.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11f",
+          "label": "(f)",
+          "text": "Having entered a correct password, Aisha wants to present a menu screen.\nFor\nThe user is to enter a number between 1 and 4 to make a choice. Examiner's\nUse\n• Option 1 - email\n• Option 2 - social network\n• Option 3 - schoolwork\n• Option 4 - favourite websites\nThe number entered is to be stored in a variable, Choice. Each option calls an\nappropriate procedure.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11fi",
+              "label": "(i)",
+              "text": "Write program code which\n• inputs the user’s choice,\n• validates this choice,\n• uses nested IF statements to call the appropriate procedure.\nProgramming language\nCode",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11fii",
+              "label": "(ii)",
+              "text": "Rewrite your IF statements using a CASE/SELECT statement to implement the\nFor\nmenu options. Examiner's\nUse\n\n4 Aisha writes the following pseudocode for a recursive function that works out the greatest\nFor\ncommon divisor of two positive integers: Examiner's\nUse\n0 FUNCTION Divisor(x, y)\n1 IF y = 0\n2 THEN\n3 RETURN x\n4 ELSE\n5 x ← x MOD y\n6 RETURN Divisor(y, x)\n7 ENDIF\n8 ENDFUNCTION",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11ai",
+              "label": "(i)",
+              "text": "Trace the call Divisor(8, 2).\nx y RETURN\nLine number\n0 8 2",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11aii",
+              "label": "(ii)",
+              "text": "Trace the call Divisor(38, 7).\nx y RETURN\nLine number\n0 38 7",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11bi",
+              "label": "(i)",
+              "text": "State the purpose of line 1.\nFor\nExaminer's\nUse",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11bii",
+              "label": "(ii)",
+              "text": "State what would happen if line 1 were not present.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "What happens if x is less than y?\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 34,
+      "text": [
+        "ENDIF"
+      ]
+    }
+  ]
+}

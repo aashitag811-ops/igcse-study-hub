@@ -1,0 +1,348 @@
+{
+  "paperId": "9608_s19_qp_21",
+  "subjectCode": "9608",
+  "session": "s19",
+  "component": "21",
+  "totalMarks": 68,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Algorithms may be expressed using four basic constructs. One construct is sequence.\nComplete the following table for two other constructs.\nConstruct Pseudocode example",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Simple algorithms usually consist of input, process and output.\nComplete the table by placing ticks (‘3’) in the relevant boxes.\nPseudocode statement Input Process Output\nTemp SensorValue * Factor\nWRITEFILE \"LogFile.txt\", TextLine\nWRITEFILE \"LogFile.txt\", MyName & MyIDNumber\nREADFILE \"AddressBook.txt\", NextLine",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Program variables have values as follows:\nVariable Value\nTitle \"101 tricks with spaghetti\"\nVersion 'C'\nAuthor \"Eric Peapod\"\nPackSize 4\nWeightEach 6.2\nPaperback TRUE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Evaluate each expression in the following table.\nIf an expression is invalid, write ERROR.\nFor the built-in functions list, refer to the Appendix on page 16.\nExpression Evaluates to\nMID(Title, 5, 3) & RIGHT(Author, 3)\nINT(WeightEach * PackSize)\nPackSize >= 4 AND WeightEach < 6.2\nLEFT(Author, ASC(Version) - 65)\nRIGHT(Title, (LENGTH(Author) – 6))",
+              "marks": 5,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Programming languages support different data types.\nGive an appropriate data type for the following variables from part (b).\nVariable Data type\nTitle\nVersion\nPackSize\nWeightEach\nPaperback",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "White-box and black-box are two types of testing. In white-box testing, data are chosen to\ntest every possible path through the program.\nExplain how data are chosen in black-box testing.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "One type of loop that may be found in an algorithm is a count-controlled loop.\nState one other type and explain when it should be used.\nType ______\nExplanation ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Chris is asked to work on a program that has been coded in a language he is not familiar\nwith.\nHe has identified that the program contains the constructs: sequence, iteration and selection.\nIdentify three other features of the program that he should expect to recognise.\nFeature 1 ______\nFeature 2 ______\nFeature 3 ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The following lines of code are taken from a program in a high-level language.\nON x {\n15: Call ProcA\n20: y := 0\n25: y := 99\nNONE: Call ProcError\nIdentify the type of control structure and describe the function of the code.\nControl structure ______\nDescription ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A student is developing an algorithm to search through a 1D array of 100 elements. Each\nelement of the array, Result, contains a REAL value.\nThe algorithm will output:\n• the average value of all the elements\n• the number of elements with a value of zero.\nThe structured English description of the algorithm is:\n1. SET Total value to 0\n2. SET Zero count to 0\n3. SELECT the first element\n4. ADD value of element to Total value\n5. IF element value is 0 then INCREMENT Zero count\n6. REPEAT from step 4 for next element, until element is last element\n7. SET Average to Total / 100\n8. OUTPUT a suitable message and Average\n9. OUTPUT a suitable message and Zero count\nWrite pseudocode for this algorithm.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The student decides to change the algorithm and implement it as a procedure, ScanArray(),\nwhich will be called with three parameters.\nScanArray(AverageValue, ZeroCount, ArrayName)\nScanArray() will modify the first two parameters so that the new values are available to the\ncalling program or module.\nWrite the pseudocode procedure header for ScanArray().\n\nQuestion 4 begins on the next page.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Complete the trace table by performing a dry run of the function when it is called as\nfollows:\nResult Clean(\"X∇∇∇Y∇and∇∇Z\")\nThe symbol '∇' represents a space character. Use this symbol to represent a space\ncharacter in the trace table.\nIndex AfterSpace NextChar NewString",
+              "marks": 6,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "State the effect of the function Clean().",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "The pseudocode is changed so that the variable AfterSpace is initialised to TRUE.\nExplain what will happen if the function is called as follows:\nResult Clean(\"∇∇X∇∇∇Y∇and∇∇Z\")",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The following pseudocode declares and initialises an array.\nDECLARE Code : ARRAY[1:100] OF STRING\nDECLARE Index : INTEGER\nFOR Index 1 TO 100\nCode[Index] \"\"\nENDFOR\nThe design of the program is changed as follows:\n• the array needs to be two dimensional, with 500 rows and 4 columns\n• the elements of the array need to be initialised to the string \"Empty\"\nRe-write the pseudocode to implement the new design.",
+          "marks": 4,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "State the term used for changes that are made to a program in response to a specification\nchange.\n\nQuestion 5 begins on the next page.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "The following pseudocode is a string handling function.",
+        "For the built-in functions list, refer to the Appendix on page 16.",
+        "FUNCTION Clean(InString : STRING) RETURNS STRING",
+        "DECLARE NewString : STRING",
+        "DECLARE Index : INTEGER",
+        "DECLARE AfterSpace : BOOLEAN",
+        "DECLARE NextChar : CHAR",
+        "CONSTANT Space = ' '",
+        "AfterSpace FALSE",
+        "NewString \"\"",
+        "FOR Index 1 TO LENGTH(InString)",
+        "NextChar MID(InString, Index, 1)",
+        "IF AfterSpace = TRUE",
+        "THEN",
+        "IF NextChar <> Space",
+        "THEN",
+        "NewString NewString & NextChar",
+        "AfterSpace FALSE",
+        "ENDIF",
+        "ELSE",
+        "NewString NewString & NextChar",
+        "IF NextChar = Space",
+        "THEN",
+        "AfterSpace TRUE",
+        "ENDIF",
+        "ENDIF",
+        "ENDFOR",
+        "RETURN NewString",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Programming languages usually contain a range of built-in functions, such as a random\nnumber generator.\nState three advantages of using built-in functions.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A student is learning about random number generation.\nShe is investigating how many times the random function needs to be called before every\nnumber in a given series is generated.\nShe is using pseudocode to develop a procedure, TestRand(), which will:\n• use the random number function to generate an integer value in the range 1 to 50\ninclusive\n• count how many times the random function needs to be called before all 50 values have\nbeen generated\n• output a message giving the number of times the random function was called.\nWrite pseudocode for the procedure TestRand().\nFor the built-in functions list, refer to the Appendix on page 16.",
+          "marks": 8,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A program, CDOrganiser, will be written to manage the stored information. The program will\nconsist of three modules: AddCD, FindCD and RemoveCD.\nGive three reasons why it is good practice to construct the program using modules.",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The module, FindCD(), will check whether a given CD exists in the collection. The module\nwill be implemented as a function.\nThe function will:\n• be called with two strings as parameters, representing the artist name and CD title\n• return a string that gives the storage location, or an empty string if the given CD has not\nbeen found.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.\nWrite program code for the function FindCD().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of character ThisChar\nExample: ASC('A') returns 65\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (x not inclusive).\nExample: RAND(87) could return 35.43\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE",
+          "marks": 8,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A text file, MyCDs.txt, stores information relating to a Compact Disc (CD) collection. Information",
+        "about each CD is stored on three separate lines in the file as follows:",
+        "Line 1: <Artist Name>",
+        "Line 2: <CD Title>",
+        "Line 3: <Storage Location>",
+        "Information is stored as data strings.",
+        "A section of the file is shown:",
+        "File line Data",
+        "\"Green Floyd\"",
+        "\"Bowlful of Cereal\"",
+        "\"Shelf 4\"",
+        "103 \"Strolling Bones\"",
+        "104 \"Exile on Station Road\"",
+        "\"Box 12\""
+      ]
+    }
+  ]
+}

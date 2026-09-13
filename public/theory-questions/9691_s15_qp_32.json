@@ -1,0 +1,629 @@
+{
+  "paperId": "9691_s15_qp_32",
+  "subjectCode": "9691",
+  "session": "s15",
+  "component": "32",
+  "totalMarks": 83,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State why the table is not in First Normal Form (1NF).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Comment on your answer by referring to the data in the table.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The design is changed so that there are two tables:\nMEMBER(MemberNo, MemberType, Trainer)\nMEMBERCLASSES(MemberNo, ClassName, ClassLevel, ClassLeader)\nThe primary keys are not shown.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Using the data given in the original table, show the data now stored in table MEMBER.\nTable: MEMBER\nMemberNo MemberType Trainer",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Using the data given in the original table, show three rows stored in table\nMEMBERCLASSES.\nThe MemberNo should be different for each row.\nTable: MEMBERCLASSES\nMemberNo ClassName ClassLevel ClassLeader",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Using the data given in the original table, state how many rows would be in table\nMEMBERCLASSES.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "State the relationship between MEMBER and MEMBERCLASSES.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bv",
+              "label": "(v)",
+              "text": "Explain how the relationship is implemented.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The following new design for MEMBERCLASSES was suggested in part (b):\nMEMBERCLASSES(MemberNo, ClassName, ClassLevel, ClassLeader)",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "State the primary key for this table.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Explain why the table is not in Second Normal Form (2NF).",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "The solution is to create a new third table.\nShow the revised design including the primary keys.\nMEMBER(MemberNo, MemberType, Trainer)\nMEMBERCLASSES(______)\n______(______)",
+              "marks": 3,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Each type of membership has a fixed annual membership fee. The new table design for\nmember data is:\nMEMBER(MemberNo, MemberType, MemberTypeFee, Trainer)",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "The revised MEMBER table is not in Third Normal Form (3NF).\nExplain this statement.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "The solution is to create a new fourth table.\nShow the revised design including the primary keys.\nMEMBER(______)\n______(______)",
+              "marks": 2,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "A sports centre has a gym and a swimming pool. The sports centre has members.",
+        "A member is given a unique membership number when they join.",
+        "Different types of membership are available:",
+        "• J – Junior",
+        "• SF – Senior full",
+        "• SG – Senior gym only",
+        "• SS – Senior swim only",
+        "Members who use the gym are assigned a personal trainer.",
+        "Sports centre employees are identified with a unique three-character code.",
+        "An employee can be a personal trainer to one or more members.",
+        "The sports centre organises classes. Each class has a unique class name.",
+        "Each class is taken by an employee who acts as the class leader. An employee may be a class",
+        "leader for zero, one or more classes.",
+        "Members can take classes. Each class has a class code. Some classes are assigned a level:",
+        "• B – beginners",
+        "• I – intermediate",
+        "• A – advanced",
+        "A relational database is to be created to store data about members, employees, classes and class",
+        "attendance.",
+        "The following table design MEMBER was a first attempt at the database design.",
+        "Table: MEMBER",
+        "MemberNo MemberType Trainer ClassName ClassLevel ClassLeader",
+        "510 SF SAF Yoga B B OLO",
+        "Box fit DAV",
+        "Zumba ROG",
+        "808 SS OLO Swimathon A ROG",
+        "756 J DAV Circuits I VAR",
+        "Box fit DAV",
+        "Yoga A A OLO",
+        "Body pump CFD"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A set of Backus-Naur Form (BNF) rules is given as follows:",
+        "Rule",
+        "number",
+        "1 <char> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z",
+        "2 <string> ::= <char> | <char><string>"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<start> ::= 0"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<stop> ::= 1"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "State the meaning of the vertical line character (|) shown in rules 1 and 2.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A sequence of characters (a packet) is transmitted from a remote data logger to a computer.\nThe packet is made up of:\n• one character to denote the start of the transmission\n• a string of characters\n• one character to denote the end of the transmission\nEach packet follows the given BNF rules.\nA BNF rule may be recursive.\nIdentify the rule above which is recursive.\nRule number ______\nExplain what is meant by recursive.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Circle whether or not each of the following sequence of characters is a valid packet.\nShow how you arrived at your answer by listing, in order, the rules used.",
+          "marks": null,
+          "type": "circle",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "0A1 Valid / Invalid (circle)\nRules ______",
+              "marks": 2,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "P1 Valid / Invalid (circle)\nRules ______",
+              "marks": 2,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5ciii",
+              "label": "(iii)",
+              "text": "0TAN1 Valid / Invalid (circle)\nRules ______",
+              "marks": 2,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5civ",
+              "label": "(iv)",
+              "text": "The rules need to change as follows.\nA string with a sequence of one or more hash (#) characters is to be allowed as a valid\nstring:\n0#1 and 0####1 would both be a valid packet.\nImplement this by:\n• making no change to rule 1\n• making the appropriate changes (if any) to rules 2, 3, 4 and 5\n• adding one or more new rule(s)\nShow the complete set of rules below.\nRule\nnumber\n1 <char> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z\n2 <string> ::= ______\n3 <start> ::= ______\n4 <stop> ::= ______\n5 <packet> ::= ______\n\n3 (a) The following terms are used in object-oriented programming (OOP) and design.\nDraw a line connecting each term to the appropriate definition.\nIn the bottom box, state the term which matches the unused definition.\nTerm Definition\nEncapsulation An object created from a class.\nThe ability of a subclass to use properties\nInheritance\nand methods of a parent class.\nA data value which is assigned and stored\nClass\nfor an object.\nThe definition of an object. The ‘blueprint’\nInstance\nfrom which objects are created.\nAn action of an object. Implemented with\nMethod\nprocedures and functions.\nRestricts the programmer’s access to the\nobject’s data. Data values can only be\nread or written using methods provided by\nthe class.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A company’s website is maintained by several employees. The company has a number of\npermanent employees whose job title is either ‘programmer’ or ‘web designer’.\nAn agency supplies the company with contract employees when there is a need for specialist\nskills. Contract employees have the job title ‘graphic designer’ or ‘technical author’.\nEmployees have recorded:\n• employee reference number\n• date first worked for company\nContract employees have recorded:\n• agency they were supplied by\n• agreed hourly rate of pay\n• job role\nPermanent employees have recorded:\n• salary grade\n• courses attended\nProgrammers have recorded:\n• programming languages used\nWeb designers have recorded:\n• mark-up languages used\nThis scenario is to be implemented using object-oriented programming.\nComplete the class diagram using the classes:\nEmployee, Contract, Permanent, Programmer, WebDesigner.\nShow properties only for the given data.\nEmployee\nEmployeeRefNumber: STRING\n\n4 (a) Briefly describe the operation of a stack data structure.\n\nHigh level language programs make extensive use of subroutines.\nA stack is used to store data about each subroutine call.\nThe data are the return address, the register contents and the values of all local variables.\nA student project is to simulate the saving and retrieval of the data for subroutine calls.\nThe student simplifies this for their project and will store on the stack only the return addresses.\nMemory address\n(denary)\n// Main program\n<statements>\nCALL SUB1\n// end main program\nPROCEDURE SUB1\n<statements>\nCALL SUB2\n<statements>\n280 CALL SUB3\n<statements>\nEND PROCEDURE\nPROCEDURE SUB2\n<statements>\nEND PROCEDURE\nPROCEDURE SUB3\n<statements>\nEND PROCEDURE\nThe stack is implemented using the following data structure and variables:\nIdentifier Data type Description\nStores the return address for each\nStack ARRAY[1 : 100] OF INTEGER\nprocedure call\nStores the index position of the\nTOS INTEGER\nreturn address currently at the top\nof the stack\nStores the new return address to\nNewAddress INTEGER\nbe added to Stack",
+          "marks": 8,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The diagram shows the stack after the first procedure call at line 172.\nStack\n1 173\nTOS",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Complete the diagram to show the contents of the stack and the value of TOS after each\nchange.",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "The student uses the procedure PushAddress to simulate adding a return address to\nthe stack.\nThe incomplete pseudocode for the procedure PushAddress is shown below.\nUsing the given variables, fill in the missing pseudocode.\nPROCEDURE PushAddress\nIF TOS = 100\nTHEN\nOUTPUT \"______\"\nELSE\nINPUT ______\nTOS ← ______\n______ ← NewAddress\nENDIF\nENDPROCEDURE",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The student uses the procedure PopAddress to simulate retrieving a return address from\nthe stack.\nComplete the pseudocode for this PopAddress procedure.\nPROCEDURE PopAddress\nIF ______\nTHEN\nOUTPUT \"There are no current procedure calls\"\nELSE\nOUTPUT \"Address\" Stack[TOS]\nENDIF\nENDPROCEDURE \nQuestion 5 begins on page 16.\n5 A computer system stores integers in a single byte using two’s complement representation.",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "State the denary integer represented by the following two bytes.\nGive the hexadecimal representation of each integer.\n0 1 1 0 1 1 1 1",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Denary ______\nHexadecimal ______\n\n1 1 1 0 0 0 1 1",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Denary ______\nHexadecimal ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "State the most negative denary integer that can be represented.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Why do computer scientists often write binary numbers in hexadecimal?",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "The integers 124 and 7 are to be added.\nWrite the binary values for 124 and 7 below, using two’s complement representation.\nShow the binary addition calculation and result.\nComment on the result.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5e",
+          "label": "(e)",
+          "text": "Integers can be represented in Binary Coded Decimal (BCD).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ei",
+              "label": "(i)",
+              "text": "State what denary number is represented by this 2-byte BCD number.\n1 0 0 1 1 0 0 0 0 0 1 1 0 1 1 1\nDenary ……………………………………………",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5eii",
+              "label": "(ii)",
+              "text": "A second BCD 2-byte number has been copied incorrectly.\n1 1 0 1 0 0 1 1 0 1 0 1 0 0 0 0\nWithout converting the whole pattern, how can you identify that this cannot be a valid\nBCD representation?",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 42,
+      "text": [
+        "<packet> ::= <start><string><stop>"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the type of diagram shown. ______",
+          "marks": 1,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Use the following list to identify the labels 1 to 7 on the diagram opposite. Two of the items on\nthe list will not be used.\n• Error report\n• Linker\n• Loader\n• Machine code\n• Multiprogramming\n• Program library code\n• Source code in assembly language\n• Source code in language XYZ\n• Text editor",
+          "marks": 7,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Describe one benefit and one drawback of using an interpreter for part of the software\ndevelopment.\nBenefit ______\nDrawback ______\n\nXYZ program\ncode\nSource code\nInterpreter\n2 Assembler 2 Compiler\n4 4\nIntermediate\nIntermediate\ncode\ncode\nObject code\nCode\nexecution",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A team of programmers has developed software using a variety of languages and software tools.",
+        "Some of the code was written in the XYZ high-level language and some in an assembly language.",
+        "The programmers have also made use of program libraries.",
+        "The programmers had available both a compiler and an interpreter for the high-level code written.",
+        "Some of the early error detection was carried out using an interpreter.",
+        "The diagram opposite shows the complete development life cycle, finishing with the final executable",
+        "code."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Describe two different media used for the transmission of data across a wide area network.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A company has three retail shops, Shop A, Shop B and Shop C, located in different towns.\n• Shop A and Shop B each have a single computer. They connect to the network of Shop C.\n• Shop C has a Local Area Network (LAN) consisting of:\nthree computers (C1, C2 and C3)\na fourth computer (C4) which acts as a print server for a laser printer\na file server (ServerY) contains all the order processing data for all three shops and\nauthenticates all logons\nThe shops are connected over a Wide Area Network (WAN) using a star topology.\nComplete the diagram showing the additional hardware needed for both the LAN and the\nWAN.\nShop A\nC1 C2\nShop C\nC3\nShop B",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The management is considering setting up a company intranet.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ci",
+              "label": "(i)",
+              "text": "State the type of file server used to make the intranet pages available.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7cii",
+              "label": "(ii)",
+              "text": "State the software needed on each computer to view the intranet content.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7ciii",
+              "label": "(iii)",
+              "text": "Give two benefits to the company that an intranet would provide.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": []
+    }
+  ]
+}

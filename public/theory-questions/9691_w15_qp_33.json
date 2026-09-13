@@ -1,0 +1,579 @@
+{
+  "paperId": "9691_w15_qp_33",
+  "subjectCode": "9691",
+  "session": "w15",
+  "component": "33",
+  "totalMarks": 83,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A first attempt at the database design produced the following single table CUSTOMER.\nTable: CUSTOMER\nCustomerID CustomerName City OrderDate ProductID\n10-09-15 678\n043 Wilber London 21-09-15 883\n28-10-15 883\n09-05-15 241\n928 Said Manchester\n18-07-15 906\n493 Tasha Glasgow 11-09-15 005\n10-10-15 187\n351 Ahmed Liverpool\n11-10-15 154\nState why the table is not in First Normal Form (1NF).",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "A revised design is produced:\nCUSTOMER(CustomerID, CustomerName, City)\nPRODUCT(ProductID, ProductDescription, RetailPrice)\nORDER(CustomerID, OrderDate, ProductID, Dispatched, DispatchDate)\nUnderline the primary key for each table.",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Draw an entity-relationship (E-R) diagram showing the relationships between CUSTOMER,\nPRODUCT and ORDER.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Describe how the relationship between CUSTOMER and ORDER is implemented.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write a data manipulation language (DML) query to find the ProductID of all products with:\n• a minimum retail price of $100\n• a maximum retail price of $200\nUse the keywords SELECT, FROM and WHERE.",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Study this DML command.\nUPDATE ORDER\nSET Dispatched = TRUE\nWHERE CustomerID = 647 AND OrderDate = #12/10/15#\nTick (✓) the three correct statements:\nCreates a new record in the ORDER table\nAmends an existing record in the ORDER table\nAssigns the value TRUE to the Dispatched attribute\nCreates a new attribute Dispatched\nChanges all the existing records for customer 647\nChanges one record for customer 647",
+          "marks": 3,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "Customer 447 placed an order for product 982 on 17 October 2015.\nComplete the following DML command to create a new order record. The order has not\nyet been dispatched.\nINSERT INTO ______\n( ______ )\nVALUES (______ )",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Referential integrity requires that the data is consistent in two related tables.\nThere is a relationship between the PRODUCT and ORDER tables.\nUsing these two tables, explain how data could fail a referential integrity check.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "Customers purchase products by placing an order on a company’s website.",
+        "• Each customer has recorded:",
+        " customer ID",
+        " name",
+        " city",
+        "• Each product has recorded:",
+        " product ID",
+        " description",
+        " retail price",
+        "• Each order has recorded:",
+        " customer ID",
+        " product ID",
+        " order date",
+        " order dispatched? (TRUE/FALSE)",
+        " dispatch date",
+        "An order is always for one product only.",
+        "Each product can be purchased by a number of different customers.",
+        "The customer may order the same product many times.",
+        "Over a period of time, customers will place many orders.",
+        "A customer never places more than one order on any one day.",
+        "The data are to be stored in a relational database."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Describe what is meant by simulation.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Describe why a computer is particularly suited to carry out a simulation.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Weather forecasting uses simulation to produce results.\nSimulations require the collection of data from which results are produced.\nName two sensors which would be used to collect weather data.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Another application that uses simulation is car design.\nDescribe two key differences between the car design and weather forecasting applications.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A program is loaded into main memory starting at memory address 58 hexadecimal (hex).\nThe diagram shows the contents of some of the memory locations.\nMain memory\nAddress (hex)\n867A\nA241\nA907\n5A\nFFFF\n5B\n003C\n7C\n001A\n7D\n0038\n7E",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Convert the memory address values 58 and 7D into binary.\n58 = ______\n7D = ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "State the number of bits used for the contents of each main memory location.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The steps in the fetch stage of the fetch-execute cycle are shown in the first column using\nregister transfer notation.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Describe what happens at each stage of the fetch cycle.\nRegister transfer\nDescription\nnotation\nMAR ← [PC]\nPC ← [PC] + 1\nMDR ←[[MAR]]\nCIR ← [MDR]",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "The contents of some special-purpose registers change as the program is executed.\nComplete the trace table for the fetching of the first program instruction (867A):\n• Show how the contents of the registers change.\n• Put a tick in the address bus and/or data bus column to show when there is a signal\nchange on each bus.\nFetch Special purpose registers\nBuses\nstage (Contents shown in hex)\nAddress\nPC MAR MDR CIR Data bus\nbus\nMAR ← [PC]\nPC ← [PC] + 1\nMDR ←[[MAR]]\nCIR ← [MDR]",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The following table shows some assembly language instructions from the computer’s\ninstruction set.\nInstruction\nExplanation\nOp code Operand\nDirect addressing. Load the contents of the given address to the\nLDD <address>\nAccumulator (ACC)\nIndirect addressing. The address to be used is at the given address.\nLDI <address>\nLoad the contents of this second address to ACC\nLIX <address>\nLoad the contents of the address to the Index Register (IX)\nIndexed addressing. Form the address from <address> + the\nLDX <address>\ncontents of IX. Copy the contents of this calculated address to ACC\nThe test program shown in memory locations 300 onwards is to\nAddress\nbe executed.\n(denary) Main memory\nShown are: 300 LIX 400\n• the first four instructions only of this program\nLDD 401\n• other memory locations which contain data accessed by\nthe program\nLDI 401\nLDX 401\nComplete the trace table below for the first four program\ninstructions.\nRegister\nInstruction ACC Index Register (IX)\nLIX 400\nLDD 401\nLDI 401 63\nLDX 401\n616 96",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A program written in assembly language needs translation before it can be executed.\nA programmer creates, translates and executes an assembly language program. Five of the\nsix statements below are to be used to complete a description of this process:\n• Amend PROG.ASM using the text editor\n• Produce the PROG.EXE executable file\n• PROG.ASM is input to the assembler software\n• Run PROG.EXE\n• Translate PROG.ASM using the compiler\n• Use text editor to write assembly language program PROG.ASM\nComplete the pseudocode description below.\nREPEAT\nIF errors reported\nTHEN\nENDIF\nUNTIL No errors reported",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "A dataset of city names is to be organised as an ordered binary tree.\nThe city names below join the binary tree in the order shown:\nPLYMOUTH, MUMBAI, DHAKA, SINGAPORE, NEW YORK, ROTTERDAM and TORONTO.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Draw the binary tree.",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "On the tree drawn in part (a)(i):\n• label the root\n• draw a line around the left subtree",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "State the number of leaf nodes for the tree drawn in part (a)(i).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The binary tree is implemented in a high-level language using a number of data structures\nand one variable:\nVariable Data type Description\nRootPtr\nThe array subscript of the root of the tree\nCity\nArray of city names\nRightPtr ARRAY[1 : 2000] OF INTEGER\nArray of right pointer values\nLeftPtr ARRAY[1 : 2000] OF INTEGER\nArray of left pointer values",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Complete the entries in the table. \nA new dataset of cities is used as test data:\nLIMA, PARIS, KARACHI, MELBOURNE, WARSAW, CAPE TOWN, EDINBURGH",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Complete the diagram below showing the contents of the arrays and the root pointer\nvariable.\nRootPtr\nLeftPtr City RightPtr\n1 LIMA\n2000",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "An algorithm is designed in pseudocode to search the binary tree for a particular city.\nThe algorithm uses the additional variables below:\nVariable Data type Description\nSearchCity STRING\nCity to search for\nCurrent INTEGER\nThe array subscript for the item currently considered\nIsFound BOOLEAN\nFlags to TRUE when SearchCity is found\nComplete the algorithm below:\n// binary tree search\nINPUT ______\nIsFound ← FALSE\nCurrent ← RootPtr\nREPEAT\nIF City[Current] = ______\nTHEN\n// found\nOUTPUT \"Found\"\nELSE\nIF SearchCity > City[Current]\nTHEN\n// move right\nELSE\nCurrent ← LeftPtr[Current]\nENDIF\nENDIF\nUNTIL Current = 0 OR ______\nIF ______\nTHEN\nOUTPUT SearchCity \"Not Found\"\nENDIF",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 18,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A high-level programming language has a built-in function SumRange defined as follows:",
+        "SumRange(ThisInteger1 : INTEGER, ThisInteger2 : INTEGER [Flag : CHAR])",
+        "RETURNS INTEGER",
+        "returns the integer value calculated as the sum of all integers between ThisInteger1 and",
+        "ThisInteger2.",
+        "The square brackets denote that Flag is optional.",
+        "It takes values as follows:",
+        "• 'Y' – denotes both boundary values are to be included",
+        "• 'N' – denotes both boundary values will not be included",
+        "If Flag is omitted, both boundary values are included.",
+        "For example:",
+        "SumRange(3, 6, 'Y') returns 18",
+        "SumRange(3, 6, 'N') returns 9",
+        "An error is generated if:",
+        "• The function is not properly formed, or",
+        "• ThisInteger2 is less than ThisInteger1"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Define the term multi-programming.\n\nThe main memory is divided into two partitions. Partition 1 is dedicated to batch processing.\nThe diagram shows:\n• the operating system\n• systems software (A and B)\n• three batch programs (in Partition 1)",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Suggest two items of systems software (A and B) that are currently loaded in main memory.",
+          "marks": 2,
+          "type": "suggest",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Describe three characteristics of batch processing.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Partition 2 of the main memory is used for interactive programs. The low-level scheduler\noperates a round-robin strategy. It allocates a time slice of 100 milliseconds.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7di",
+              "label": "(i)",
+              "text": "Explain what is meant by the term ‘round-robin’.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7dii",
+              "label": "(ii)",
+              "text": "The program USER21 starts its time slice at time zero. The scheduler puts programs\nthat are ready into the RUNNING state in the same order as the rows in the following\ndiagram.\nUSER21 RUNNING READY\nUSER34 READY RUNNING\nUSER46 READY\n0 50 100 150 200 250 300 350 400 450 500 550\n• During its first time slice, USER46 becomes suspended after 50 ms.\n• USER46 is changed to the ready state 100 ms after its suspension.\nLabel the diagram to show how the state of each program changes for the first 500 ms.\nYou should use the labels RUNNING, READY and SUSPENDED. When necessary, you\nmay abbreviate any of these to its first three letters.",
+              "marks": 5,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7diii",
+              "label": "(iii)",
+              "text": "State what could have caused USER46 to become suspended.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "The diagram shows the main memory contents of a computer system. It is controlled by a multi-",
+        "programming operating system.",
+        "Operating",
+        "System",
+        "PROG2",
+        "Partition 1",
+        "PROG7",
+        "PROG16",
+        "Unused",
+        "Partition 2 USER21",
+        "USER34",
+        "USER46",
+        "Unused"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Complete the diagram showing the essential hardware which will be needed for the data\ncollection, storage and processing of the results.\nremote\nremote\nremote\ndata logger\ndata logger\ndata logger\n,QWHUQHW",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "When the network was created, the technicians had to decide on the cabling.\nName and describe one type of cable which could have been used.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A team of scientists collect data from three data loggers situated at three different locations in",
+        "the world. The data is sent over the Internet to the scientists’ local area network (LAN). Each day",
+        "millions of data values are stored. At the end of each day the data is used to produce predictions",
+        "in the form of a printed report."
+      ]
+    }
+  ]
+}

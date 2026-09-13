@@ -1,0 +1,693 @@
+{
+  "paperId": "9691_w15_qp_32",
+  "subjectCode": "9691",
+  "session": "w15",
+  "component": "32",
+  "totalMarks": 90,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the initial database design by:\n• adding two attributes to the MEMBER table\n• adding appropriate attributes to the COURSE table\nMEMBER(MemberID, ______)\nCOURSE(______)",
+          "marks": 2,
+          "type": "design",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A third table COURSE-MEMBER will record which members have enrolled for which courses.\nShow the attributes for the table. Show the primary key.\nYou should not create a course member ID.\nCOURSE-MEMBER( ______)",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The database will also store data about tutors and the instrument(s) they can teach.\nThe following single table, TUTOR, is suggested:\nTable: TUTOR\nTutorID TutorName TutorTelNo Instrument\nsaxophone\n43 Wilber 567541 piano\nviolin\nsaxophone\n92 Said 887654\ndrums\n49 Tasha 897543 guitar\nState why the table is not in First Normal Form (1NF).",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "A revised design is:\nTUTOR(TutorID, TutorName, PhoneNo)\nTUTOR-INSTRUMENT(TutorID, Instrument)\nUnderline the primary key of each table above.",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Name the type of relationship between the TUTOR-INSTRUMENT and TUTOR tables.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1diii",
+              "label": "(iii)",
+              "text": "Write a data manipulation language (DML) query to find the TutorID of all saxophone\ntutors.\nUse the keywords SELECT, FROM and WHERE.",
+              "marks": 3,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1div",
+              "label": "(iv)",
+              "text": "Study this DML command.\nUPDATE TUTOR-INSTRUMENT\nSET Instrument = 'piano'\nWHERE TutorID = 49 AND Instrument = 'guitar'\nWrite TRUE or FALSE for each of the six statements:\nTRUE / FALSE\nCreates a new record in the TUTOR-INSTRUMENT table\nAmends an existing record in the TUTOR-INSTRUMENT table\nAssigns the Instrument attribute the value 'guitar'\nAssigns the Instrument attribute the value 'Piano'\nMake a change to the existing records for all tutors\nChanges one record in the TUTOR table",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "A new record needs to be added to the TUTOR-INSTRUMENT table. The tutor with\nTutorID 57 can now teach the flute.\nComplete the following DML command.\nINSERT INTO ______\n( ______)\n______ ( ______)",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Referential integrity requires that the data is consistent in two related tables.\nThere is a relationship between the TUTOR and TUTOR-INSTRUMENT tables.\nUsing these two tables, explain how data could fail a referential integrity check.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "Members of a youth group take part in different activities. Activities include music tuition courses",
+        "for various instruments.",
+        "A music course has one session each week and lasts for a number of weeks. Each course studies",
+        "one particular instrument.",
+        "Each member has recorded:",
+        "• member ID",
+        "• other data recorded",
+        "Each course has recorded:",
+        "• course ID",
+        "• instrument",
+        "• start date",
+        "• number of weeks duration",
+        "• course tutor",
+        "Over a period of time members may enrol for many courses.",
+        "Each course is attended by a number of members.",
+        "The data are to be stored in a relational database.",
+        "A table description can be expressed as:",
+        "TABLENAME(Attribute1, Attribute2, Attribute3, ...)",
+        "The primary key is indicated by underlining one or more attributes."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A program is loaded into main memory starting at memory address 88 in denary.\nThe diagram shows the memory location contents in Hexadecimal (Hex).\nMain memory\nAddress (hex)\n7E\n4A\nA7\nFF\n8C\n1F",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Convert the memory address 90 into binary.\n90 = ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Convert the memory address 90 into hexadecimal.\n90 = ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "State the number of bits used for the contents of each main memory location.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The following table is to show the steps in the fetch stage of the fetch-execute cycle.\nComplete the table.\nRegister transfer Description\nnotation\nThe contents of the Program Counter are copied to the Memory Address\n______ Register.\nPC ← [PC] + 1\nThe Memory Address Register contains an address. Copy the contents of\n______ this address to the Memory Data Register.\nCIR ← [MDR]",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "One of the buses found in a typical microprocessor architecture is the control bus.\nDescribe its purpose.\nGive one example of a control signal used.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Name and describe two other buses used in a typical microprocessor architecture.",
+              "marks": 4,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The following table shows some assembly language instructions from the computer’s\ninstruction set.\nInstruction\nExplanation\nOp code Operand\nDirect addressing. Load the contents of the given address to the\nLDD <address>\nAccumulator (ACC)\nIndirect addressing. The address to be used is at the given address.\nLDI <address>\nLoad the contents of this second address to ACC\nLIX <address>\nLoad the contents of the address to the Index register (IX)\nIndexed addressing. Form the address from <address> + the contents\nLDX <address>\nof IX. Copy the contents of this calculated address to ACC\nThe test program shown in memory locations 700 onwards Address Main memory\nis to be executed.\nLIX 902\nShown are:\nLDD 901\n• the first four instructions only of this program\nLDI 901\n• other memory locations which contain data accessed\nLDX 901\nby the program\nComplete the trace table below for the first four program\ninstructions.\nRegister 900\nInstruction ACC Index Register (IX)\nLIX 902\nLDD 901\nLDI 901\nLDX 901",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A program written in assembly language needs translation before it can be executed.\nA programmer creates, translates and executes an assembly language program. Five of the\nsix statements below are to be used to complete a description of this process:\n• Amend PROG.ASM using the text editor\n• IF errors reported\n• Produce the PROG.EXE executable file\n• PROG.ASM is input to the assembler software\n• Translate PROG.ASM using the interpreter\n• UNTIL no errors reported\nComplete the pseudocode description below.\nUse text editor to create program PROG.ASM\nREPEAT\nTHEN\nENDIF\nExecute PROG.EXE",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A dataset of food names are to be organised as an ordered binary tree.\nThe food names below join the binary tree in the order shown:\nMILK, CAKE, CURRY\nMILK\nCAKE\nCURRY\nFour more food names join the binary tree in the order shown:\nSCONES, RICE, BREAD, COUSCOUS",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Draw these values on the binary tree above.",
+              "marks": 4,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "On the binary tree above, write on the tree as follows:\n• label the root\n• draw a line around the right subtree",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "State the number of leaf nodes for the completed tree in part (a)(i).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The binary tree is implemented in a high-level language using a number of data structures\nand one variable:\nVariable Data type Description\nRootPtr INTEGER\nThe array subscript of the root of the tree\nFoodName ARRAY[0 : 2000] OF STRING\nArray of food names\nRightPtr ARRAY[0 : 2000] OF INTEGER\nArray of right pointer values\nLeftPtr ARRAY[0 : 2000] OF INTEGER\nArray of left pointer values\nA new dataset of food names is used as test data:\nMELON, BEETROOT, TURNIP, APPLE, PARSNIP, SWEDE, QUINCE\nComplete the diagram below showing the contents of the arrays and the root pointer variable.\nRootPtr\nLeftPtr FoodName RightPtr\n0 MELON\n2000",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "An algorithm is designed in pseudocode to search the binary tree for a particular food name.\nThe algorithm uses the additional variables below:\nVariable Data type Description\nSearchFood STRING\nFood name to search for\nCurrent INTEGER\nThe array subscript for the item currently considered\nIsFound BOOLEAN\nFlags to TRUE when SearchFood is found\nComplete the algorithm below:\n//binary tree search\nINPUT SearchFood\nIsFound ← ______\nCurrent ← ______\nREPEAT\nIF Food[Current] = ______\nTHEN\n//found\nOUTPUT \"Found\"\nELSE\nIF SearchFood < Food[Current]\nTHEN\n// move left\nCurrent ← LeftPtr[Current]\nELSE\nENDIF\nENDIF\nUNTIL IsFound = TRUE OR ______\nIF IsFound = FALSE\nTHEN\nOUTPUT SearchFood \"Not Found\"\nENDIF",
+          "marks": 6,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "The dataset used in part (b) was:\nMELON, BEETROOT, TURNIP, APPLE, PARSNIP, SWEDE, QUINCE\nDraw the binary tree.\n\nA well-balanced tree has approximately the same number of nodes in the left and right\nsubtrees.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "State whether or not this is a well-balanced tree.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Explain what is meant by a simulation.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Describe why a computer is suited to carry out a simulation.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Data will need to be collected before a simulation can be carried out.\nName two datasets which will be collected.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The number of traffic lanes approaching the junction could be an input variable for the\nsimulation.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Name two other input variables which will be used.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "State an output variable which will provide data for the planning process for the traffic\ncontrol system.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A busy main road connects Town A and Town B. A large new housing development is being built",
+        "near the main road. A new road from the housing development will connect to the main road.",
+        "Traffic control signals are planned for the junction.",
+        "It is proposed to simulate the traffic flows to assist the planning of the traffic control system.",
+        "7RZQ\u0003$",
+        "+RXVLQJ",
+        "-XQFWLRQ",
+        "GHYHORSPHQW",
+        "7RZQ\u0003%"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A user-defined function CountBig is defined, using pseudocode, as follows:\nCountBig(ThisArray : ARRAY OF INTEGER, ThisValue : INTEGER,\nThisFlag : CHAR) : INTEGER\nThe function checks each element in the array ThisArray. It counts the number of elements\nwhich are greater than (or greater than or equal to) ThisValue.\nThe function returns the count value.\nThisFlag has two permitted values:\n• Y – indicates values equal to ThisValue are to be included in the count\n• N – indicates values equal to ThisValue will not be included in the count\nAn error is generated if the function is not correctly formed.\nThe function is used with the three arrays shown below:\nSubscript/Index\nIdentifier 1 2 3 4 5 6 7 8 9 10\nScoreA 16 19 23 28 28 36\nScoreB 71 67 51 82 77 12 80 16\nScoreC 19 19 19 19 19 19 19 19 19\nState the value returned by the following function calls:",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "CountBig(ScoreA, 23, 'Y')",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "CountBig(ScoreB, 71, 'N')",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aiii",
+              "label": "(iii)",
+              "text": "CountBig('Y', ScoreC, 18)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aiv",
+              "label": "(iv)",
+              "text": "CountBig(ScoreC, 19, 'N')",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6av",
+              "label": "(v)",
+              "text": "CountBig(\"ScoreC\", 19, 'N')",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The function header used in part (a) was:\nFUNCTION CountBig(ThisArray : ARRAY OF INTEGER,\nThisValue : INTEGER,\nThisFlag : CHAR) : INTEGER",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Use the following letters to label your function header above.\nA Function parameter(s)\nB Where the return data type is stated",
+              "marks": 2,
+              "type": "label",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Write a single statement which calls the function CountBig to count the number of times\nvalue 83 or larger is found in the array Rejects.\nThe function returns the value to the variable RejectCount in the calling statement.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "A programmer writes pseudocode for a new function StringFound. The function is to report\nwhether or not a string value ThisValue is found in the string array ThisArray. The function\nreturns a Boolean value.\nWrite the function header for function StringFound.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Define what is meant by a Local Area Network.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The following are extracts from conversations between the Order Processing Manager and\nthe IT Manager.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "“The computers may need to be fitted with additional hardware”\nState what hardware this is.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "“It is important that only the order processing staff have access to the LAN and access to\nthe Internet is restricted”.\nState what authentication technique will be used for this.\nName the hardware needed to restrict access to the Internet.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "“We will need to purchase a licence for a network operating system”.\nDescribe three tasks performed by the network operating system software.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Name the hardware device which will be used on the LAN for the storage of all user data and\nprograms.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A company is considering a new local area network (LAN) for the order processing operation of its",
+        "business. It intends to use the existing four computers to form a wired bus topology LAN."
+      ]
+    }
+  ]
+}

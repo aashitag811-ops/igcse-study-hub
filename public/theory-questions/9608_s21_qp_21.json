@@ -1,0 +1,459 @@
+{
+  "paperId": "9608_s21_qp_21",
+  "subjectCode": "9608",
+  "session": "s21",
+  "component": "21",
+  "totalMarks": 75,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State how characters are represented using the ASCII character set.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "String values may be represented by a sequence of ASCII characters.\nThe following table shows consecutive memory locations.\nComplete the table by adding the values to show how the string \"FADED\" may be stored\nin memory using the ASCII character set.\nRefer to the Appendix on pages 22–23 for the list of built-in pseudocode functions and\noperators, which includes a reference to the ASC() function.\nMemory location ASCII character value",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Individual elements in a 1D array are referenced using an integer value.\nIn the pseudocode expression StockID[n], the integer value is represented by the variable\nn.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Give the technical terms for the minimum and maximum values for the variable n.\nMinimum value ______\nMaximum value ______",
+              "marks": 1,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Give the correct term for the variable n in the pseudocode expression StockID[n].",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Each pseudocode statement in the following table may contain an error due to the incorrect\nuse of the function or operator.\nDescribe the error in each case, or write ‘NO ERROR’ if the statement contains no error.\nRefer to the Appendix on pages 22–23 for the list of built-in pseudocode functions and\noperators.\nStatement Error\nLEFT(\"Cat\", 4)\nCode\nStatus MID(\"Aardvark\", 0, 5)\nSize LENGTH(\"Password)\nStock[n] Stock[n+1]\nResult 3 OR 4",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The following pseudocode algorithm counts the number of each alphabetic character in the\nstring Msg. The character count values are stored in an array CharCount.\nVariable declarations are not shown.\nFOR Index 1 TO 26\nCharCount[Index] 0\nENDFOR\nFOR Index 1 TO LENGTH(Msg)\nThisChar MID(Msg, Index, 1)\nThisChar LCASE(ThisChar)\nIF ThisChar >= 'a' AND ThisChar <= 'z'\nTHEN\nThisIndex ASC(ThisChar) – 96 // value from 1 to 26\nCharCount[ThisIndex] CharCount[ThisIndex] + 1\nENDIF\nENDFOR\nDraw a program flowchart to represent the algorithm.\nVariable declarations are not required in program flowcharts.",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The character count values have been assigned to the array in part (a).\nUse structured English to describe an algorithm to:\n• search the array\n• output the alphabetic character that occurs most often (the highest character count\nvalue)\n• output a suitable message if more than one alphabetic character has the same highest\ncount value.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The following table contains information about five modules in a program. It describes the\ncalls made and the parameters passed.\nModule Description\n• repeatedly calls Module_Y then Module_Z\nModule_X • passes a parameter of type REAL to Module_Y\n• passes two parameters of type INTEGER to Module_Z\nModule_Y\ncalls either Module_YA or Module_YB\nModule_Z\ncalled with two parameters of type INTEGER\n• called with a parameter of type REAL\nModule_YA\n• parameter is passed by reference\n• called with a parameter of type INTEGER\nModule_YB\n• returns a BOOLEAN value\nComplete the structure chart to include the information given about the five modules.\nModule_X\nModule_Y Module_Z\nModule_YA Module_YB",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Two more modules are added to the chart below Module_Z as shown:\nModule_Z\nParX\nParZ\nParX\nParY\nModule_ZA Module_ZB\nParameter data types are:\nParX : REAL\nParY : INTEGER\nParZ : STRING",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "State whether Module_ZA() is a function or a procedure and justify your choice.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Write the pseudocode header for Module_ZB().",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write program code to implement this amended procedure ScanArray().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Context-sensitive prompts are a feature of a typical Integrated Development Environment\n(IDE).\nExplain the term context‑sensitive prompt.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Identify the first stage in the program development cycle.\nState the tasks that are completed during this stage.\nFirst stage ______\nTasks ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "A program will be translated using a compiler.\nIdentify the stage of the program development cycle where a syntax error may occur.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The following is part of a program written in pseudocode:",
+        "DECLARE ThisArray : ARRAY[1:1000] OF STRING",
+        "DECLARE ArrayResult : INTEGER",
+        "PROCEDURE ScanArray(SearchString : STRING)",
+        "DECLARE Index, Total : INTEGER",
+        "DECLARE Error : BOOLEAN",
+        "Index 1",
+        "Total 0",
+        "Error FALSE",
+        "WHILE Index <= 1000 AND Error <> TRUE",
+        "IF LENGTH(ThisArray[Index]) > 5",
+        "THEN",
+        "IF ThisArray[Index] = SearchString",
+        "THEN",
+        "Total Total + LENGTH(ThisArray[Index])",
+        "ENDIF",
+        "Index Index + 1",
+        "ELSE",
+        "Error TRUE",
+        "ENDIF",
+        "ENDWHILE",
+        "ArrayResult INT(Total / (Index - 1))",
+        "ENDPROCEDURE",
+        "The procedure ScanArray() is amended as follows:",
+        "• SearchString is compared with just the first four characters of each array element.",
+        "• The total ignores the first five characters of each array element.",
+        "• When calculating ArrayResult, prevent any possible division by zero.",
+        "Refer to the Appendix on pages 22–23 for the list of built-in pseudocode functions and operators."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Write pseudocode for the procedure GuessNum().\nRefer to the Appendix on pages 22–23 for the list of built-in pseudocode functions and\noperators.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Suggest two different validation checks that could be applied to the input of the procedure\nGuessNum() to ensure invalid guesses are not counted.",
+              "marks": 2,
+              "type": "suggest",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Alice is converting her pseudocode into a high-level language for use in a larger modular\nprogram.\nShe wants to start testing the program before all the subroutines (procedures and functions)\nhave been implemented.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Identify this type of testing.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Her program contains a function Status() that she has not yet written, but will be called\nfrom several places within the program.\nExplain what Alice needs to do to allow the program to be tested.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5biii",
+              "label": "(iii)",
+              "text": "Alice compiles her program.\nExplain the function of the compiler.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "Alice is developing an algorithm for a game. The game will count the number of attempts by a",
+        "player to guess the secret number generated by the built-in random number function.",
+        "She will use pseudocode to develop a procedure, GuessNum(), that will:",
+        "1. generate a secret number that is a random integer in the range 1 to 20 inclusive",
+        "2. prompt and input the player’s guess",
+        "3. output a message if the guess is not the same as the secret number and repeat from step 2",
+        "4. count the number of attempts it takes to guess the secret number",
+        "5. output a message when the secret number has been guessed correctly, giving the number of",
+        "attempts."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write program code for the module Check().\nData values relating to an individual stock item are valid if:\n• the StockID element is of length 8\n• the Description is not an empty string\n• the Quantity is zero or above.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Write pseudocode for the module Backup().",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "The module description of Unpack() is repeated here for reference.\nModule Description\n• called with two parameters:\no an array index\nUnpack()\no a string value read from one line of the backup file\n• extracts the four data values from the string and assigns each\nto the appropriate array\nWrite program code for the module Unpack(). You may assume that the backup file\ncontains only valid stock information.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt‑in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar\nIf ThisChar is not an upper case alphabetic character, it is returned unchanged.\nExample: LCASE('W') returns 'w'\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of character ThisChar\nExample: ASC('A') returns 65\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (not inclusive of x).\nExample: RAND(87) could return 35.43\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A program stores stock data in four global arrays as follows:",
+        "Example Initial data",
+        "Array Data type Description",
+        "data value value",
+        "The stock item ID",
+        "StockID STRING \"HWDM0001\" \"\"",
+        "(Eight alpha-numeric characters)",
+        "A description of the item",
+        "Description STRING \"Candle\" \"\"",
+        "(Alphabetic characters only)",
+        "Quantity INTEGER 4 0",
+        "The number in stock",
+        "Cost REAL 2.75 0",
+        "The cost of the item",
+        "• Each array contains 10 000 elements.",
+        "• Elements with the same index relate to the same stock item. For example, StockID[4]",
+        "contains the ID for the product whose description is in Description[4].",
+        "• The StockID array is not sorted and unused elements may occur at any index position.",
+        "• Unused elements are assigned the initial data value shown in the table above.",
+        "The program is to be modified so that the data from the arrays can be stored in a text file for",
+        "backup.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "GetValidFilename()",
+        "• prompts, inputs and returns a valid filename",
+        "• called with an array index as a parameter",
+        "• checks that the data values for the stock item with the given",
+        "Check()",
+        "index are valid",
+        "• returns TRUE if the values are valid, otherwise returns FALSE",
+        "• calls GetValidFilename() to get the name of the backup file",
+        "• combines the data values for each stock item to form a single",
+        "string. Inserts an asterisk character '*' as a separator between",
+        "data values",
+        "• writes the string to the backup file",
+        "Backup()",
+        "• calls Check() to validate the data values. If there is an error",
+        "then also writes the string to the file \"ERRORLOG.TXT\"",
+        "• repeats for all stock items",
+        "• returns TRUE if nothing was written to \"ERRORLOG.TXT\",",
+        "otherwise returns FALSE",
+        "• called with two parameters:",
+        "o an array index",
+        "Unpack()",
+        "o a string value read from one line of the backup file",
+        "• extracts the four data values from the string and assigns each",
+        "to the appropriate array"
+      ]
+    }
+  ]
+}

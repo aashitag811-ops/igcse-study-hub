@@ -1,0 +1,311 @@
+{
+  "paperId": "9691_w15_qp_21",
+  "subjectCode": "9691",
+  "session": "w15",
+  "component": "21",
+  "totalMarks": 61,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A college provides courses for the local community. The Computing teacher, Ravi, wants to\ndevelop a program to keep details of the courses. One way of storing this data will be to use\nrecords. Each record will contain the fields shown in the table below.\nComplete the table.\nExample of Field size\nField Identifier Data type\ninput data (in bytes)\nCourseCode\ncourse code 015110217\nProgramming\nTitle\ntitle\nfor Beginners\ntutor\nTutor PGL\n(3-letter initials)\nday of week\n(1 – Monday\nDay\n7 – Sunday)\nlab based? IsLabBased TRUE\nsession duration\nSessionHours 2.5\nin hours\nCourseFee\nfee ($) 25.50\ndate course starts StartDate 02/11/2015\nEndDate 03/12/2015\ndate course ends",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Use a high-level programming language to define a course record with identifier\nCourseRecordType and the fields listed in part (a).\nProgramming language ______\nCode ______",
+          "marks": 4,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Ravi decides to store course data in the array Course. The array will consist of 50 records.\nInitially, the array elements will not contain course data.\nUse the high-level language from part (b) to:\n• declare the array Course\n• initialise its contents with appropriate dummy values for each field\nProgramming language ______\nCode ______",
+          "marks": 6,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Ravi has entered some course data. His program saved the array records to a serial file\nCourseData.DAT. Only those array elements containing entered course details were saved\nto the file.\nA program is to be written to read the data from CourseData.DAT into consecutive locations\nof the array Course.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Explain what the function EOF() does when used in a program.\n\nRavi wants to write another module in his program. The new module will:\n• read data from CourseData.DAT\n• write these data into consecutive elements of the array Course",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Write pseudocode to read the data from the file CourseData.DAT into the array\nCourse.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Ravi wants to write a procedure to sort the records in the array Course. The records will\nbe sorted into ascending order of course fee. The array contains records for each course\nprovided. The remaining array elements contain dummy records.\nOne of his students has written a sorting algorithm:\nPROCEDURE SortData\nFOR x ← 1 TO 49\nFOR y ← 1 TO 49\nIF Course[y].CourseFee > Course[y + 1].CourseFee\nTHEN\nTempRecord ← Course[y]\nCourse[y] ← Course[y + 1]\nCourse[y + 1] ← TempRecord\nENDIF\nENDFOR\nENDFOR\nENDPROCEDURE\nAn integer variable, NumberOfCourses, will contain the number of courses for which data\nare stored in the array.\nImprove the algorithm so that no unnecessary comparisons are made.\nPROCEDURE SortData(NumberOfCourses)",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 29,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write the program code to implement the function DenaryDigit from its flowchart\ndesign. Use a high-level programming language.\nProgramming Language ______\nCode ______",
+              "marks": 5,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Alia needs to test this function before using it in her program.\nComplete the table of test data.\nType of data\nLetter\nExpected result\n(normal, borderline or invalid)\n'1'\n'X'\n'G'",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Alia writes pseudocode to convert a coded number using\n• the function DenaryDigit() from part (a)\n• the string manipulation functions MID() and LENGTH()\nStudy the pseudocode:\n01 PROCEDURE ConvertToDenary(CodedNumber : STRING)",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Alia received a number coded as a sequence of letters. She wants to write a program to change",
+        "this sequence of letters back to the original number. She knows that each digit of the original",
+        "number was replaced by exactly one letter. The letters used are shown in the flowchart below.",
+        "She has drawn the flowchart as part of the design for her solution.",
+        "The function DenaryDigit(Letter) returns an integer.",
+        "FUNCTION DenaryDigit(Letter)",
+        "CASE OF",
+        "'K'",
+        "Value 0",
+        "Letter",
+        "'D'",
+        "ELSE",
+        "Value 1",
+        "'L'",
+        "Value 2",
+        "'C'",
+        "Value 3",
+        "'F'",
+        "Value –1",
+        "Value 4",
+        "'H'",
+        "Value 5",
+        "'B'",
+        "Value 6",
+        "'G'",
+        "Value 7",
+        "'E'",
+        "Value 8",
+        "'A'",
+        "Value 9",
+        "RETURN Value",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [
+        {
+          "id": "03c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "03ci",
+              "label": "(i)",
+              "text": "The pseudocode in part (b) has some features that make it easier to read and understand.\nState three such features.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "03cii",
+              "label": "(ii)",
+              "text": "State one other feature Alia could have used to help the understanding of this code.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "03ciii",
+              "label": "(iii)",
+              "text": "Write program code to implement the pseudocode given in part (b).\nRemember to declare variables before you use them.\nThe code is repeated here so that you do not need to turn back to part (b):\nPROCEDURE ConvertToDenary(CodedNumber : STRING)\nDenary ← 0\nFOR i ← 1 TO LENGTH(CodedNumber)\nThisChar ← MID(CodedNumber, i, 1)\nThisNumber ← DenaryDigit(ThisChar)\nDenary ← Denary + (ThisNumber * 10)\nENDFOR\nOUTPUT Denary\nENDPROCEDURE\nProgramming Language ______\nCode ______",
+              "marks": 10,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "03civ",
+              "label": "(iv)",
+              "text": "The parameter of ConvertToDenary might not be a valid coded number.\nAn error message is to be output if the string provided as a parameter is not valid.\nDescribe the changes required to the code design.\n\n3 Ravi and Alia want to use debugging tools available in their program development environments.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "03a",
+          "label": "(a)",
+          "text": "Explain how each of the following are used:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "03ai",
+              "label": "(i)",
+              "text": "Breakpoint",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "03aii",
+              "label": "(ii)",
+              "text": "Stepping",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "03aiii",
+              "label": "(iii)",
+              "text": "Variable check / watch",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "03b",
+          "label": "(b)",
+          "text": "Name the type of testing that is performed with such debugging tools.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "Denary ← 0",
+        "05 FOR i ← 1 TO LENGTH(CodedNumber)",
+        "06 ThisChar ← MID(CodedNumber, i, 1)",
+        "07 ThisNumber ← DenaryDigit(ThisChar)",
+        "08 Denary ← Denary + (ThisNumber * 10)",
+        "09 ENDFOR",
+        "11 OUTPUT Denary",
+        "12 ENDPROCEDURE"
+      ]
+    }
+  ]
+}

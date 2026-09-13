@@ -1,0 +1,375 @@
+{
+  "paperId": "9691_s13_qp_23",
+  "subjectCode": "9691",
+  "session": "s13",
+  "component": "23",
+  "totalMarks": 66,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the table. Use a single value for the size.\nData Identifier Data Type Size (in bytes)\nSubject STRING\nsubject\nexamination title\nLevel\nlevel 1\nDateSat\ndate sat\nMark\nmark",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Estimate how many records could be held in the file if there are 5KB available for the\nfile.",
+          "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Each record needs another field to uniquely identify that record.\nFor\nExaminer's\nUse\nState an appropriate identifier for this field and state a suitable data type for it.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "In a programming language write the declaration for the record structure, giving it\nthe identifier Exam.\nProgramming language\nDeclaration",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Meena decides to modularise the solution.\nDescribe two ways in which a procedural programming language is appropriate when\nmodularising a solution.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Describe what the function EOF() does when used in a program.\nFor\nExaminer's\nUse",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "Meena wants to develop a program to keep a record of her examination results.",
+        "For",
+        "She will want to enter, sort and print out data which is stored as a file of records. Examiner's",
+        "Use",
+        "Each record will contain at least the following data:",
+        "• subject",
+        "• examination title",
+        "• level",
+        "• date sat",
+        "• mark",
+        "An example of an examination title is ‘General Certificate of Education’.",
+        "The DateSat field will contain only the month and year that the examination was taken.",
+        "For all subjects the mark is between 0 and 100 inclusive.",
+        "The level is 'O' or 'A'."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write the logic expression to validate Mark.",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The following table shows the four records currently stored in the file ExamResults for\nthe examinations sat so far.\nSubject Title Level DateSat Mark\nArt … … … 28\nMusic … … … 57\nBiology … … … 75\nHistory … … … 41\nMeena will write a module based on the following pseudocode.\nOPENFILE ExamResults FOR INPUT\nCount ← 1\nREPEAT\nFILEREAD next ExamResults record\nIF Mark > 70\nTHEN\nCount ← Count + 1\nENDIF\nUNTIL EOF()\nOUTPUT Count\nCLOSEFILE ExamResults",
+          "marks": null,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Complete the trace table below using the file ExamResults.\nFor\nExaminer's\nUse\nCount Mark Mark > 70 Output",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "There is an error in the pseudocode.\nWrite the correct statement.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "State the type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biv",
+              "label": "(iv)",
+              "text": "Write a suitable comment that could be added to explain the line\nCount ← Count + 1.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The pseudocode given in (b) uses a REPEAT-UNTIL loop:\nFor\nExaminer's\nUse\nOPENFILE ExamResults FOR INPUT\nCount ← 1\nREPEAT\nFILEREAD next ExamResults record\nIF Mark > 70\nTHEN\nCount ← Count + 1\nENDIF\nUNTIL EOF()\nOUTPUT Count\nCLOSEFILE ExamResults\nRewrite the pseudocode to count how many records have a mark below 40. This time\nuse a WHILE-ENDWHILE loop.\nOPENFILE ExamResults FOR INPUT\nCLOSEFILE ExamResults",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "The data in each field is validated as it is entered."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "State where in the program a global variable will be declared.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Using only global variables is poor programming practice.\nGive a possible problem that could result from this.\n\nThe program will read the marks from the file into a one-dimensional array, MyMarks. The\narray has 50 elements, and marks range from 0 to 100 inclusive.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "State a suitable value to initialise each element of the array.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "In a programming language, write code that will declare and initialise MyMarks.\nProgramming language\nCode",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "20 marks have been read into elements 1 to 20. In a programming language, write\nFor\ncode that will print out the highest and lowest marks that have been entered. Examiner's\nUse\nProgramming language\nCode",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3f",
+          "label": "(f)",
+          "text": "MyAvMark is a variable of data type REAL.\nMeena wants the value of MyAvMark converted to the nearest whole number.\nState a function that will perform the conversion.\n\nThe module to calculate the average mark could be written as a procedure or a function.\nFor\nExaminer's\nUse",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3g",
+          "label": "(g)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3gi",
+              "label": "(i)",
+              "text": "State one difference between a procedure and a function.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3gii",
+              "label": "(ii)",
+              "text": "State why the module to calculate the average mark could be written as a\nprocedure or a function.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "Meena needs to be aware of her average mark and declares a variable with identifier",
+        "For",
+        "MyAvMark which she decides will be a global variable. Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Meena hopes some of her friends will use her program. When designing the user\nFor\ninterface, state three design features she can incorporate if one of her friends has a Examiner's\nUse\nsight impairment.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Design the interface. It must allow for entry of marks and the output of the average\nmark. Remember, one of her friends has a sight impairment.",
+          "marks": 6,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Meena has compiled the program and she thinks it is working.\nFor\nExaminer's\nUse\nWhat two types of error could still occur in the program?\nFor each type give an example.\nError type 1\nExample\nError type 2\nExample",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Meena wants to refine her program using the marks in MyMarks.",
+        "For",
+        "Examiner's",
+        "She wants the program to output:",
+        "Use",
+        "• the word 'Failed' if the mark is less than 40,",
+        "• the word 'Distinction' if the mark is over 70,",
+        "• the phrase 'Well done' if there are more than three distinctions.",
+        "Using pseudocode, produce the algorithm that does this.",
+        "[9]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "University of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of",
+        "Cambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

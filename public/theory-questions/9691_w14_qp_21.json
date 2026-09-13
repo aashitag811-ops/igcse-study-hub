@@ -1,0 +1,402 @@
+{
+  "paperId": "9691_w14_qp_21",
+  "subjectCode": "9691",
+  "session": "w14",
+  "component": "21",
+  "totalMarks": 57,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Rema surveys the students in her class to find out which is the most popular sport.",
+        "She draws a tally chart:",
+        "1 Cricket \\\\\\\\\\\\\\\\"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Football \\\\"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tennis \\\\\\"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write a pseudocode statement to declare the array Tally.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Write the pseudocode for the procedures InitialiseArrayCounts and\nInputStudentChoices:\nPROCEDURE InitialiseArrayCounts\nENDPROCEDURE\nPROCEDURE InputStudentChoices\nENDPROCEDURE",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "State the variable that the array element Tally[2] has replaced.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Rema wants her output to look like this:\n1 Cricket \\\\\\\\\\\\\\\\\n2 Football \\\\\n3 Tennis \\\\\\\n4 Swimming \\\\\\\\\\\\\nShe designs two procedures OutputTallyChart and OutputTally.\nOutputTallyChart outputs the first two columns of the tally chart and then calls\nOutputTally to output the correct number of bars (\\).\nComplete the pseudocode:\nPROCEDURE OutputTallyChart\nOUTPUT \"1 Cricket \"\nOutputTally(______)\nOUTPUT \"2 Football \"\nOutputTally(______)\nOUTPUT \"3 Tennis \"\nOutputTally(______)\nOUTPUT \"4 Swimming \"\nOutputTally(______)\nENDPROCEDURE\nPROCEDURE OutputTally(SportCount : INTEGER)\nIF ______ // check there are bars\n// to output\nTHEN\nOUTPUT '\\'\nENDIF\nENDPROCEDURE",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Rema wants to test each module before she tests the whole program.\nThe first module she is going to test is the OutputTally procedure using different parameter\nvalues.\nGive three different types of test data with an example of each.\nJustify your choices.\nType of test data Example test data Justification",
+          "marks": 9,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ei",
+              "label": "(i)",
+              "text": "All programs should be maintainable. Rema has followed good practice in writing her\npseudocode. She used some features of maintainable programs.\nList three such features.",
+              "marks": 3,
+              "type": "list",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4eii",
+              "label": "(ii)",
+              "text": "Give one further feature that Rema has not used in her solution so far.\n\n2 Ali sets up user IDs and passwords for his program.\nWhen the user types in their user ID, the program looks up the stored password for this user ID.\nThe stored password is the encrypted version of the user’s password.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The program calls the function PasswordCheck with the stored password as parameter.\nIf the user enters the correct password the function returns the value TRUE.\nEach time the password is entered incorrectly, the message “Wrong password” is output.\nIf the user enters an incorrect password 3 times, the user is told that access is denied, and\nthe function returns the value FALSE.\nComplete the flowchart using the given statements. Ensure that only statement numbers are\npresent on the flowchart.\nFUNCTION\nPasswordCheck(StoredPassword)\nStatement Statement\nnumber\n1 OUTPUT “Wrong password”\n2 OUTPUT “Access denied”\n3 INPUT Password\n4 RETURN TRUE\nOUTPUT",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "Swimming \\\\\\\\\\\\",
+        "Rema plans to collect sport data from students in the whole school. She designs a program to:",
+        "• input the number of the sport a student likes best (1, 2, 3 or 4)",
+        "• repeatedly ask for input until the input is 0 (zero)",
+        "• keep a count of each choice",
+        "• on completion of data entry, print out the results as a tally chart (as shown above)",
+        "Rema’s first attempt is the following pseudocode:",
+        "Cricket ← 0",
+        "Football ← 0",
+        "Tennis ← 0",
+        "Swimming ← 0",
+        "REPEAT",
+        "INPUT Choice",
+        "CASE Choice OF",
+        "1: Cricket ← Cricket + 1",
+        "2: Football ← Football + 1",
+        "3: Tennis ← Tennis + 1",
+        "4: Swimming ← Swimming + 1",
+        "ENDCASE",
+        "UNTIL Choice = 0",
+        "OUTPUT \"Cricket \", Cricket",
+        "OUTPUT \"Football \", Football",
+        "OUTPUT \"Tennis \", Tennis",
+        "OUTPUT \"Swimming \", Swimming",
+        "Her friend Aisha suggests that the pseudocode could be improved by:",
+        "• using a one-dimensional array, Tally, instead of four variables to store the counts",
+        "• modularising the design.",
+        "The main program should just consist of three procedure calls:",
+        "InitialiseArrayCounts",
+        "InputStudentChoices",
+        "OutputTallyChart"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "is NumberOfTries > 2 ?",
+        "“Enter password”"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "is StoredPassword = Encrypted Password ?"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NumberOfTries ← 0"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NumberOfTries ← NumberOfTries + 1"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Ali uses a sequential file of records to store the user IDs and encrypted passwords.\nWhen a user types in their User ID, the program calls a function, FindPassword, with\nparameter ThisUserID.\nThe function searches each record in the file for ThisUserID and returns the encrypted\npassword.\nIf ThisUserID is not stored in the file, the function returns an error code.\nComplete the pseudocode:\nFUNCTION FindPassword(ThisUserID : STRING) RETURNS ______\nDECLARE Found : BOOLEAN\nOPENFILE FOR INPUT // for reading\nFound ← FALSE\nWHILE ______\nFILEREAD next record\nIF ______\nTHEN\nENDIF\nENDWHILE\nIF ______\nTHEN\nELSE\nENDIF\nCLOSEFILE\nENDFUNCTION\n\n3 Ahmed runs his own business. He lays floor tiles in rooms for customers. Ahmed wants a program\nthat calculates how many tiles he needs when he inputs the measurements of the length and\nwidth of the room he is working on.",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "Draw a screen design that is suitable for the following:\n• to enter the length of the room in cm\n• to enter the width of the room in cm\n• to display the number of tiles required.",
+              "marks": 4,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "Explain how Ahmed can enter the data using your screen design in part (i).",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "The width of a room will measure at least 100 cm and less than 1000 cm.\nThe program must validate the width input.\nWrite a logic expression that is TRUE when the width stored in the variable RoomWidth is\nwithin the expected range.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Ali is going to write the program for Ahmed. The size of one floor tile is 30 cm × 30 cm. Ali\nknows that the following calculations are required:\nTilesForWidth ← RoomWidth DIV 30\nTilesForLength ← RoomLength DIV 30\nTilesRequired ← TilesForWidth * TilesForLength",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ci",
+              "label": "(i)",
+              "text": "If the room width measures 100 cm, give the value stored in TilesForWidth.\n\nIf the room measurements are not exact multiples of 30 cm, the number of tiles must be\nrounded up so that Ahmed has enough tiles.\nAli knows that he can use the MOD operator to test for this.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9cii",
+              "label": "(ii)",
+              "text": "Write a logic expression that is TRUE when the room width is not an exact multiple of\n30 cm.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9ciii",
+              "label": "(iii)",
+              "text": "Ahmed wants the program to add an extra 10% to the number of tiles required in case\nany tiles get broken during the work.\nIn a high-level language, write programming statements to calculate the total number\nof tiles required, TilesRequired, after the values for RoomLength and RoomWidth\nhave been input and validated.\nLanguage ______\nCode ______\n\n4 Ahmed combines white tiles with tiles of one other colour to make a pattern. He draws a design.\nHere is one example:\nAhmed wants a program to calculate how many tiles he needs of each colour.",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Ali stores the design in a 2-dimensional array, FloorDesign. The length and width of the\nroom will be no more than 35 tiles each.",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9ai",
+              "label": "(i)",
+              "text": "Suggest a value Ali should use to represent the white and coloured tiles.\nWhite tile ______\nColoured tile ______",
+              "marks": 1,
+              "type": "suggest",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9aii",
+              "label": "(ii)",
+              "text": "Initially, every tile should be white.\nIn a high-level language, write statements to declare the array FloorDesign and\ninitialise it.\nLanguage ______\nCode ______",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Ali stores a design of size 15 tiles by 10 tiles in array FloorDesign.\nUsing pseudocode or a flowchart, show the algorithm to calculate the number of white tiles\nand the number of coloured tiles in the design.\n\n5 (a) Dry-run the pseudocode algorithm by completing the trace table.\nPROCEDURE Guess(a)\nx ← 8\nREPEAT\nIF a >= x\nTHEN\nOUTPUT '1'\na ← a - x\nELSE\nOUTPUT '0'\nENDIF\nx ← x / 2\nUNTIL a = 0\nENDPROCEDURE\na x a >= x\nOUTPUT ______",
+          "marks": 6,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "What does the procedure Guess do?\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 31,
+      "text": [
+        "Encrypt password",
+        "No",
+        "No",
+        "Yes",
+        "Yes",
+        "RETURN FALSE",
+        "ENDFUNCTION",
+        "[9]"
+      ]
+    }
+  ]
+}

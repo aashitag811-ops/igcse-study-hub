@@ -1,0 +1,347 @@
+{
+  "paperId": "9608_s18_qp_23",
+  "subjectCode": "9608",
+  "session": "s18",
+  "component": "23",
+  "totalMarks": 59,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A program controls the heating system of an energy-efficient house.\nGive a suitable identifier name for each of the data items.\nDescription of data item Suitable identifier name\nThe temperature inside the house\nThe temperature outside the house\nThe wind speed\nWhether it was raining or not",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Program variables have values as follows:\nVariable Value\nQuality 'D'\nDayNumber 20\nMyName \"Stephen\"\nQualityConfirmed TRUE\nFactor 6.5\nEvaluate each expression in the following table.\nIf an expression is invalid, write ERROR.\nFor the built-in functions list, refer to the Appendix on page 15.\nExpression Evaluates to\nMID(MyName, 4, 4) & \"ol\"\nQualityConfirmed AND (Factor >= 6.5)\n20 + ASC(Quality)\nQualityConfirmed + 3\nMOD(Factor * 2, 9)",
+              "marks": 5,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Programming languages support different data types.\nGive an appropriate data type for each of these variables from part (b)(i).\nVariable Data type\nQualityConfirmed\nDayNumber\nFactor\nQuality\nMyName",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following is a function design in pseudocode.",
+        "Line numbers are given for reference only.",
+        "01 FUNCTION GradeCalc(Mark : ARRAY[] OF INTEGER) RETURNS INTEGER"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE DGradeCount : INTEGER"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE n : INTEGER"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Grade : STRING"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "This pseudocode includes features that are examples of good practice.\nExplain why it is useful to include the two following features.\nComments ______\nIndentation ______",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Study the function GradeCalc(). Identify the features of the function in the following table.\nFeature Answer\nA line number containing an example of an integer assignment statement\nA line number containing the start of a selection structure\nA line number containing the end of a selection structure\nThe upper bound of the Mark array\nThe number of dimensions of the Mark array\nThe name for the type of loop structure used\nA line number containing an unnecessary assignment statement\nThe number of times OUTPUT is called\nThe number of local variables",
+          "marks": 9,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06ci",
+              "label": "(i)",
+              "text": "There is a mistake in the pseudocode that would produce a data type mismatch error if a\nprogrammer were to write similar program code.\nDescribe this mistake and how it may be corrected.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06cii",
+              "label": "(ii)",
+              "text": "Lines 14 to 30 of the pseudocode on page 4 could be written using a CASE structure.\nWrite the equivalent CASE structure in pseudocode.\n\n3 A modular program design consists of four modules:\nModule1 has three sub-tasks. Each sub-task is implemented by a single subroutine (either a\nfunction or a procedure).\nThe subroutine headings are defined as follows:\nFUNCTION Module2 (Weight : REAL) RETURNS BOOLEAN\nPROCEDURE Module3 (Weight : REAL, Customer : STRING, Purchased : DATE)\nFUNCTION Module4 (Purchased : DATE, Account : INTEGER) RETURNS INTEGER",
+              "marks": 4,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "State the term given to values passed between modules.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "Draw a structure chart to represent the program design.\nUse the letters in the table to label the values passed between modules.\nValue Label\nBoolean return value A\nInteger return value B\nAccount\nCustomer\nPurchased\nWeight\nStructure chart\n\n4 A program controls a chemical process in a factory.\nThe temperature is monitored as part of the control process. The temperature is measured at\nfixed time intervals and the value is stored in an array, PTemp. The array contains 100 elements,\nrepresenting 100 temperature values. The first element is PTemp[1].\nThe program will check whether the temperature is outside the acceptable range more than 20\ntimes. This task is performed by a function, IsTempOK().\nThe algorithm for the function IsTempOK() is expressed in structured English as follows:\n1 Examine each array element and count the number of times that a temperature is less than\nMinTemp or more than MaxTemp.\n2 If the count in step 1 exceeds 20, return FALSE, otherwise return TRUE.\nDraw a program flowchart, on the next page, to represent the algorithm for the function\nIsTempOK().\nAssume:\n• the array contains 100 valid temperature values\n• PTemp, MinTemp and MaxTemp are global variables.\nNote that variable declarations are not required in program flowcharts.\n\n5 A golf club holds information about its members. When a member completes a round of golf, their\nscore is stored along with their membership number and the date of the round.\nA program is to be written to store and process the score information.\nThe information to be stored is as follows:\n• MembershipNumber is a four-digit numeric string.\n• Date is a six-digit numeric string in the format DDMMYY\n• Score is a two-digit numeric string in the range “50” to “99”.\nThis information is stored in a single string in the format:\n<MembershipNumber><Date><Score>",
+          "marks": 4,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "06ai",
+              "label": "(i)",
+              "text": "The program designer considers storing the strings in an array.\nState how many dimensions the array would require.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "06aii",
+              "label": "(ii)",
+              "text": "The designer has decided to store the strings in a file.\nGive a reason for this choice.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "The program will be developed using an Integrated Development Environment (IDE). One\nfeature provided by an IDE is known as prettyprint.\nName two presentation features provided by prettyprint.\nFeature 1 ______\nFeature 2 ______",
+          "marks": 2,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06c",
+          "label": "(c)",
+          "text": "The strings are stored in a text file, ScoreDetails.txt.\nThe program needs a function, GetAverageScore().\nThe structured English representing the algorithm for this function is as follows:\n1 Receive a membership number as its argument.\n2 Search the ScoreDetails.txt file for all scores for that member.\n3 Calculate the average score.\n4 Return the average score.\nYou can assume that there will be at least one score relating to each member.\nWrite program code for the GetAverageScore() function.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram Code\n\n6 (a) Individual elements in a 1D array are referenced using an integer variable.\nFor example, using the variable n, an individual element would be referenced in pseudocode\nas:\nStudentGrade[n]\nGive the correct technical term for the variable n.",
+          "marks": 10,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "06b",
+          "label": "(b)",
+          "text": "A 2D array, Picture, contains data representing a bitmap image. Each element of the array\nrepresents one pixel of the image. The image is grey-scale encoded where the value of each\npixel ranges from 0 (representing black) to 255 (representing white) with intermediate values\nrepresenting different levels of grey.\nThe following is an example of an image and the corresponding data values for the Picture\narray.\nBitmap image Values\n240 10 10 10 10 10 10 240\n80 80 240 80 80 240 80 80\n80 80 240 80 80 240 80 80\n80 80 150 150 150 150 80 80\n80 80 240 240 240 240 80 80\n80 80 150 150 150 150 80 80\n240 240 150 150 150 150 240 240\n240 240 150 150 150 150 240 240\nIn pseudocode, the array is declared as follows:\nDECLARE Picture : ARRAY[1:8, 1:8] OF INTEGER\nA function, Clip(), is required that will:\n• take an integer parameter, MaxVal, to represent the maximum allowed value for each\npixel\n• limit each pixel value to the maximum allowed value\n• return TRUE if any of the pixel values have been changed, otherwise return FALSE\nAn example use of the function is:\nIsClipped Clip(234)\nThis will limit the maximum pixel value within the array to 234. Pixels with a value not greater\nthan 234 will remain unchanged.\nWrite pseudocode to implement the Clip() function.\nAssume that Picture is a global variable.",
+          "marks": 9,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 45,
+      "text": [
+        "DECLARE ThisMark : INTEGER",
+        "08 DGradeCount 0 // initialise variables",
+        "09 n 1",
+        "10 ThisMark 1",
+        "11 REPEAT",
+        "12 ThisMark Mark[n] // get next mark from Mark array",
+        "14 IF ThisMark > 74",
+        "15 THEN",
+        "16 Grade \"Distinction\"",
+        "17 DGradeCount DGradeCount + 1 // one more Distinction",
+        "18 ELSE",
+        "19 IF ThisMark > 59",
+        "20 THEN",
+        "21 Grade \"Merit\"",
+        "22 ELSE",
+        "23 IF ThisMark > 39",
+        "24 THEN",
+        "25 Grade \"Pass\"",
+        "26 ELSE",
+        "27 Grade \"Fail\"",
+        "28 ENDIF",
+        "29 ENDIF",
+        "30 ENDIF",
+        "32 OUTPUT \"Grade for Student \" & n & \" is \" & Grade",
+        "34 n n + 1",
+        "35 UNTIL n = 101 // no more elements in the array",
+        "37 RETURN Grade // return the number of Distinction grades",
+        "39 ENDFUNCTION",
+        "41 DECLARE Mark : ARRAY[1:100] OF INTEGER",
+        "42 DECLARE DistinctionGrades : INTEGER",
+        "44 CALL GetMarks(Mark[]) // fill the array with student marks",
+        "45 DistinctionGrades GradeCalc(Mark[])"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A function, IsFactor() takes two integer parameters and checks whether the second parameter",
+        "is a factor of the first parameter.",
+        "For example IsFactor(6,3) would return TRUE as six divided by three has a remainder of zero.",
+        "This function returns FALSE if there is a non-zero remainder, or if the value of the second",
+        "parameter is zero.",
+        "Write program code to implement the IsFactor() function.",
+        "Visual Basic and Pascal: You should include the declaration statements for variables.",
+        "Python: You should show a comment statement for each variable used with its data type.",
+        "Programming language ....................................................................................................................",
+        "Program code",
+        "[6]",
+        "Appendix",
+        "Built-in functions (pseudocode)",
+        "Each function returns an error if the function call is not properly formed.",
+        "MID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING",
+        "returns a string of length y starting at position x from ThisString",
+        "Example: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"",
+        "LENGTH(ThisString : STRING) RETURNS INTEGER",
+        "returns the integer value representing the length of string ThisString",
+        "Example: LENGTH(\"Happy Days\") returns 10",
+        "LEFT(ThisString : STRING, x : INTEGER) RETURNS STRING",
+        "returns leftmost x characters from ThisString",
+        "Example: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"",
+        "RIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING",
+        "returns rightmost x characters from ThisString",
+        "Example: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"",
+        "INT(x : REAL) RETURNS INTEGER",
+        "returns the integer part of x",
+        "Example: INT(27.5415) returns 27",
+        "ASC(ThisChar : CHAR) RETURNS INTEGER",
+        "returns the ASCII value of character ThisChar",
+        "Example: ASC(′A') returns 65",
+        "MOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER",
+        "returns the integer value representing the remainder when ThisNum is divided by ThisDiv",
+        "Example: MOD(10,3) returns 1",
+        "Operators (pseudocode)",
+        "Operator Description",
+        "Concatenates (joins) two strings.",
+        "Example: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"",
+        "Performs a logical AND of two Boolean values.",
+        "AND",
+        "Example: TRUE AND FALSE produces FALSE",
+        "Performs a logical OR of two Boolean values.",
+        "OR",
+        "Example: TRUE OR FALSE produces TRUE",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International",
+        "Examinations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after",
+        "the live examination series.",
+        "Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local",
+        "Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "paperId": "0478_w16_qp_22",
+  "subjectCode": "0478",
+  "session": "w16",
+  "component": "22",
+  "totalMarks": 23,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "For three of the variables that you have used in Task 1, state the name, type and its use.\nVariable 1 name ______\nType ______\nUse ______\nVariable 2 name ______\nType ______\nUse ______\nVariable 3 name ______\nType ______\nUse ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Name and describe the data structure(s) that you have used to store the donation totals\nfor each charity. Explain why you chose your data structure(s).\nName of data structure(s) ______\nDescription ______\nReason ______",
+              "marks": null,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements\nor a flowchart. You can assume that Task 1 has been completed.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how you show the totals so far (Task 3). You may include programming statements as\npart of your explanation.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how you would change your solution for Task 1 to allow the number of charities to be\nset to two, three or four by the manager.\n\nSection B",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Read this section of program code that inputs positive numbers, discards any negative numbers",
+        "and then outputs the average. An input of zero ends the process.",
+        "1 Total = 0",
+        "2 Counter = 100"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Num"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL Num < 0"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total = Total + 1"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Counter = Counter + Num"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL Num = 0"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Average = Total / (Counter - 1)"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Give the number of fields that are in each record.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "State the data type you would choose for each of the following fields.\nPlay ______\nNumber Seats Stalls ______\nPrice Stalls Seats $ ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "The query-by-example grid below selects all the productions with more than 100 seats left in\neither the stalls or the circle.\nField: Play Performance Date Number Seats Stalls Number Seats Circle\nTable: PLAYPRODUCTION PLAYPRODUCTION PLAYPRODUCTION PLAYPRODUCTION\nSort: Ascending\nShow:  \nCriteria: > 100\nor: > 100\nShow what would be output from the query-by-example.",
+          "marks": 3,
+          "type": "circle",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "11d",
+          "label": "(d)",
+          "text": "Complete the query-by-example grid below to select all the productions with at least six seats\nleft in the circle and show the Play, Performance Date and Price Circle Seats $ in Performance\nDate order.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Print Average",
+        "There are four errors in this code.",
+        "Locate these errors and suggest a correction to remove each error.",
+        "Error 1 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "Error 2 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "Error 3 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "Error 4 ..............................................................................................................................................",
+        "Correction .........................................................................................................................................",
+        "[8]",
+        "3 The flowchart below inputs an integer. The predefined function DIV gives the value of the division,",
+        "for example Z ← 11 DIV 3 gives the value Z = 3. The predefined function MOD gives the value",
+        "of the remainder, for example Z ← 11 MOD 3 gives the value Z = 2.",
+        "67$57",
+        ",1387\u0003;",
+        "1R",
+        ",V\u0003;\u0003!",
+        "\u001b\"",
+        "<HV",
+        "287387\u0003;",
+        "287387\u0003% (1'",
+        "; $",
+        "Complete a trace table for each of the two input values 33 and 75.",
+        "Trace table for input value 33",
+        "X A B OUTPUT",
+        "Trace table for input value 75",
+        "X A B OUTPUT",
+        "[4]",
+        "4 IF ... THEN ... ELSE ... ENDIF and CASE ... OF ... OTHERWISE ... ENDCASE",
+        "are two different conditional statements that you can use when writing pseudocode.",
+        "Explain, using examples, why you would choose to use each conditional statement.",
+        "Example 1 ........................................................................................................................................",
+        "Reason for choice ............................................................................................................................",
+        "Example 2 ........................................................................................................................................",
+        "Reason for choice ............................................................................................................................",
+        "[6]",
+        "Question 5 begins on page 10.",
+        "5 A database, PLAYPRODUCTION, was set up to show the performance dates, prices and number",
+        "of seats available at a theatre specialising in Shakespeare productions.",
+        "Number Number",
+        "Performance Price Stalls Price Circle",
+        "Play Seats Seats",
+        "Date Seats $ Seats $",
+        "Stalls Circle",
+        "As You Like It 01/07/2016 120 90 20.00 30.00",
+        "As You Like It 02/07/2016 85 45 30.00 40.00",
+        "As You Like It 09/07/2016 31 4 30.00 40.00",
+        "Macbeth 14/07/2016 101 56 25.00 35.00",
+        "Macbeth 15/07/2016 50 34 25.00 35.00",
+        "Macbeth 16/07/2016 12 5 35.00 50.00",
+        "Julius Caesar 22/07/2016 67 111 20.00 20.00",
+        "Julius Caesar 23/07/2016 21 24 15.00 15.00",
+        "A Comedy of Errors 30/07/2016 45 36 35.00 45.00"
+      ]
+    }
+  ]
+}

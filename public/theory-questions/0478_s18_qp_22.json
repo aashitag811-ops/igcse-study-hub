@@ -1,0 +1,293 @@
+{
+  "paperId": "0478_s18_qp_22",
+  "subjectCode": "0478",
+  "session": "s18",
+  "component": "22",
+  "totalMarks": 47,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State the name, the data type and the use of two variables that you have used in Task 2.\nVariable 1 name ______\nData type ______\nUse ______\nVariable 2 name ______\nData type ______\nUse ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Describe, with the aid of some sample data, the data structures that you have used to\nrecord the data for the cows in Task 1.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how your program for Task 1 ensures that each 3-digit identity code is unique.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a\nflowchart. Assume that Task 1 has been completed.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Explain how your program for Task 3 finds the cows with a daily yield of less than\n12 litres of milk for four days or more in the week. Any programming statements used in\nyour answer must be fully explained.",
+              "marks": 5,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Explain how you would extend your program for Task 3 to store the identity code\nnumber(s) of those cows with a yield of less than 12 litres of milk for four days or more in\nthe week.\n\nSection B",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Draw a flowchart for an algorithm to input numbers. Reject any numbers that are negative\nand count how many numbers are positive. When the number zero is input, the process ends\nand the count of positive numbers is output.",
+          "marks": 6,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Explain the changes you will make to your algorithm to also count the negative numbers.\n\nQuestion 3 starts on Page 8.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data:\n5, 7, +, 6, 2, –, 4, 3, , 7, 8, ?, 0, 0, /\nNumber1 Number2 Sign Answer OUTPUT",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Show how you could improve the algorithm written in pseudocode by writing an alternative\ntype of conditional statement in pseudocode.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "This pseudocode algorithm inputs two non-zero numbers and a sign, and then performs the",
+        "calculation shown by the sign. An input of zero for the first number terminates the process.",
+        "INPUT Number1, Number2, Sign",
+        "WHILE Number1 <> 0",
+        "IF Sign = '+' THEN Answer Number1 + Number2 ENDIF",
+        "IF Sign = '-' THEN Answer Number1 - Number2 ENDIF",
+        "IF Sign = '*' THEN Answer Number1 * Number2 ENDIF",
+        "IF Sign = '/' THEN Answer Number1 / Number2 ENDIF",
+        "IF Sign <> '/' AND Sign <> '*' AND Sign <> '-' AND Sign <> '+'",
+        "THEN Answer 0",
+        "ENDIF",
+        "IF Answer <> 0 THEN OUTPUT Answer ENDIF",
+        "INPUT Number1, Number2, Sign",
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The programmer has chosen to verify the name, email address and password.\nExplain why verification was chosen and describe how the programmer would verify this data.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The programmer has also decided to validate the email address and the password.\nDescribe validation checks that could be used.\nEmail address______\nPassword ______",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A programmer has written a routine to store the name, email address and password of a contributor",
+        "to a website’s discussion group."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program checks that the weight of a basket of fruit is over 1.00 kilograms and under",
+        "1.10 kilograms. Weights are recorded to an accuracy of two decimal places and any weight not in",
+        "this form has already been rejected.",
+        "Give three weights as test data and for each weight state a reason for choosing it. All your reasons",
+        "must be different.",
+        "Weight 1 ............................................................................................................................................",
+        "Reason..............................................................................................................................................",
+        "Weight 2 ............................................................................................................................................",
+        "Reason..............................................................................................................................................",
+        "Weight 3 ............................................................................................................................................",
+        "Reason..............................................................................................................................................",
+        "[3]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the number of fields in the table.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The tree numbering system uses TN followed by three digits. The numbering system will not\nwork if there are over 1000 trees.\nDescribe, with the aid of an example, how you could change the tree numbering system to\nallow for over 1000 trees. Existing tree numbers must not be changed.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Using the query-by-example grid, write a query to identify at risk trees over 100 years old.\nDisplay only the type and the position on the map.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A database table, TREES, is used to keep a record of the trees in a park. Each tree is given a",
+        "unique number and is examined to see if it is at risk of dying. There are over 900 trees; part of the",
+        "database table is shown.",
+        "Tree Number Type Map Position Age in Years At Risk",
+        "TN091 Acacia A7 250 Y",
+        "TN172 Olive C5 110 N",
+        "TN913 Cedar B9 8 N",
+        "TN824 Banyan A3 50 Y",
+        "TN021 Pine D5 560 Y",
+        "TN532 Teak C8 76 Y",
+        "TN043 Yew B1 340 N",
+        "TN354 Spruce D4 65 N",
+        "TN731 Elm B10 22 Y",
+        "TN869 Oak C9 13 N",
+        "TN954 Pine E11 3 N"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "paperId": "9691_w15_qp_22",
+  "subjectCode": "9691",
+  "session": "w15",
+  "component": "22",
+  "totalMarks": 75,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Sheena wants to develop a program to keep details of the books she has read.\nOne way of storing this data will be to use records. Each record will contain the fields shown\nin the table below.\nComplete the table.\nExample of Field size\nField Identifier Data type\ninput data (in bytes)\nTitle\nTitle How to solve it\nAuthor\nAuthor G Polya\nInternational\nISBN\nStandard Book 9780691119663\nNumber\nNumber of\nNumberOfPages\npages\nPrice ($) BookPrice 12.50\nDate started to\nDateStarted\n28032012\nread book\nDate finished\nDateFinished\n17052012\nreading book\nIsPaperback\nPaperback? TRUE\nRating\nRating\n(range 0 to 5)",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Use a high-level programming language to define a book record with identifier\nBookRecordType and the fields listed in part (a).\nProgramming language ______\nCode ______",
+          "marks": 4,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Sheena declares an array of records to store the book data:\nDECLARE Book ARRAY[1 : 100] OF BookRecordType\nAt the beginning, the array elements will not contain book data.\nExplain how the array should be initialised.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The records are to be saved to a serial file.\nCalculate the size, in kilobytes, of the file after details of 10 books have been saved.\nShow your working.",
+          "marks": 4,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Sheena has entered some more book data.\nWrite pseudocode to save the array records to the serial file BookData.DAT\nOnly those array elements containing book data should be saved to the file.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "Sheena wants to read previously saved data from the file.\nHere is part of the pseudocode she wrote:\nWHILE NOT EOF(BookData.DAT)\nENDWHILE\nExplain what the function EOF() does when used in a program.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1g",
+          "label": "(g)",
+          "text": "Sheena wants to know the title of her favourite book. She plans to write code to search the\narray Book.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1gi",
+              "label": "(i)",
+              "text": "Write pseudocode to output the title of the book with the highest rating. For now, assume\nthat only one book in the Book array has the highest rating.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1gii",
+              "label": "(ii)",
+              "text": "There may be more than one book with the highest rating. Sheena wants to output all the\ntitles that have this rating. The pseudocode will need to be changed.\nDescribe the changes you would need to make.\nDo not write more pseudocode.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 30,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write program code to convert the flowchart into the function NumeralValue, using a\nhigh-level programming language.\nProgramming Language ______\nCode ______",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Ali needs to test this function before using it in his program.\nComplete the table of test data.\nType of data\nLetter\nExpected result\n(normal, borderline or invalid)\n'D'\n'V'\n'I'\n'Y'",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Ali writes pseudocode to convert a Roman number using:\n• the function NumeralValue() from part (a)\n• the string manipulation functions MID and LENGTH\nStudy the pseudocode:\nRomanNumber ← \"MDCLI\"\nDenary ← 0\nFOR i ← 1 TO LENGTH(RomanNumber)\nThisLetter ← MID(RomanNumber, i, 1)\nThisNumber ← NumeralValue(ThisLetter)\nDenary ← Denary + ThisNumber\nENDFOR\nOUTPUT Denary\nDry-run the pseudocode by completing the trace table.\nRomanNumber Denary i ThisLetter ThisNumber OUTPUT\n\"MDCLI\" 0",
+          "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "The pseudocode has some features that make it easier to read and understand.\nIdentify two such features.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Write program code to implement the pseudocode given in part (b).\nProgramming Language ______\nCode ______",
+              "marks": 8,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The order of letters in Roman numbers is significant. Letters are placed from left to right, in\norder of value, starting with the largest.\nHowever, a sequence of four identical letters (such as IIII) is shortened as follows.\nIf a letter to the left is of lower value than the letter to its right, the left letter’s value becomes\nnegative.\nExamples are shown in the following table:\nRoman number Shortened Roman number Interpretation Denary\nIIII IV 4\n-1 + 5\nVIIII IX 9\n-1 + 10\nXXXX XL 40\n-10 + 50\nLXXXX XC 90\n-10 + 100\nCCCC CD 400\n-100 + 500\nDCCCC CM 900\n-100 + 1000\nAli has to amend his pseudocode to include the conversion of these shortened Roman\nnumbers.\nAli has chosen some test data.\nComplete the table.\nRomanNumber\nExpected result Reason for choice\n\"MDCLXVI\"\n1666 Each letter used once in descending order\n\"CCC\"\n300 Multiple letters (but not 4 identical letters)\n\"IIII\"\n\"IV\"\n\"XIV\"\n\"XY\"",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "Study the pseudocode below:\nINPUT RomanNumber\nThisLetter ← MID(RomanNumber, 1, 1)\nThisNumber ← NumeralValue(ThisLetter)\nDenary ← 0\nFOR i ← 2 TO LENGTH(RomanNumber)\nNextLetter ← MID(RomanNumber, i, 1)\nNextNumber ← NumeralValue(NextLetter)\nIF ThisNumber < NextNumber\nTHEN\nThisNumber ← - ThisNumber\nENDIF\nDenary ← Denary + ThisNumber\nThisNumber ← NextNumber\nENDFOR\nDenary ← Denary + ThisNumber",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "Dry-run the pseudocode using \"IV\" as input.\nRomanNumber ThisLetter ThisNumber i NextLetter NextNumber Denary\n\"IV\" 'I' 1 0",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "Dry-run the pseudocode using \"XY\" as input.\nRomanNumber ThisLetter ThisNumber i NextLetter NextNumber Denary\n\"XY\" 'X' 10 0",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eiii",
+              "label": "(iii)",
+              "text": "Comment on the result of the dry-run in part (e)(ii).\nDescribe what changes are required to the pseudocode.",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "Ali has written the final program code. There are syntax and logic errors in his program.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2fi",
+              "label": "(i)",
+              "text": "Describe when and how syntax errors are detected.\nWhen ______\nHow ______",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2fii",
+              "label": "(ii)",
+              "text": "Describe when and how logic errors are detected.\nWhen ______\nHow ______",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 38,
+      "text": [
+        "At the end of movies, when credits are listed, the year of production is often shown in Roman",
+        "numerals.",
+        "Roman numbers are formed by combining letters together and adding their value. The letters used",
+        "and their values are:",
+        "M: 1000",
+        "D: 500",
+        "C: 100",
+        "L: 50",
+        "X: 10",
+        "V: 5",
+        "I: 1",
+        "For example, MMXV is 1000 + 1000 + 10 + 5 = 2015.",
+        "Ali wants to write a program to convert a year written in Roman numerals to denary.",
+        "He has drawn the flowchart as part of the design for his solution.",
+        "FUNCTION NumeralValue(Letter)",
+        "CASE",
+        "Letter",
+        "'M'",
+        "OF",
+        "Value\u0003@\u00031000",
+        "ELSE",
+        "'D'",
+        "Value\u0003@\u0003500",
+        "'C'",
+        "Value\u0003@\u0003100",
+        "Value\u0003@\u0003-1",
+        "'L'",
+        "Value\u0003@\u000350",
+        "'X'",
+        "Value\u0003@\u000310",
+        "'V'",
+        "Value\u0003@\u00035",
+        "'I'",
+        "Value\u0003@\u00031",
+        "RETURN Value",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Explain how each of the following are used:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Break point",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Stepping",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "Variable check/watch",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Name the type of testing that is performed with such debugging tools.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Sheena wants to use debugging tools available in her program development environment."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "paperId": "9608_s17_qp_22",
+  "subjectCode": "9608",
+  "session": "s17",
+  "component": "22",
+  "totalMarks": 58,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Simple algorithms usually consist of input, process and output.\nThe statements in the following table are in a generic programming language.\nComplete the table by placing ticks in the relevant boxes.\nItem Statement Input Process Output\nString1 = \"Hello World\"",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DISPLAY RIGHT(String1, 5)"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Complete the following two sentences.\nA suitable operand type for an arithmetic operator is ______\nA suitable operand type for a logical operator is ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "The following table shows the values of three variables.\nVariable Value\nFlagA TRUE\nFlagB FALSE\nFlagC TRUE\nEvaluate these expressions.\nExpression Evaluates to\n(FlagA AND FlagB) OR FlagC\nFlagA AND (FlagB OR FlagC)\n(NOT FlagA) OR (NOT FlagC)",
+              "marks": 3,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The loop construct (also known as repetition or iteration) appears in many algorithms.\nUse pseudocode to write a post-condition loop to output all the odd numbers between 100\nand 200.\n\n2 A multi-user computer system maintains a text file containing the ID and preferred name for each\nuser.\nUser IDs are unique. Preferred names may be repeated.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Stepwise refinement is to be applied to the following three steps.\nAfter a user logs in, a welcome message is produced as follows:\n1. Search for the user ID in the file.\n2. Read the preferred name from the file.\n3. Output the welcome message.\nDescribe the goal of stepwise refinement.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "An initial identifier table is created as part of the stepwise refinement. A section of the table is\nshown. Complete this table.\nIdentifier Data type Description\nSearchUserID Stores the user ID entered\nFileUserID\nFilePreferredName\nIDFoundFlag",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The file may not contain an entry for every user. If the user ID is not found, then the name\n“Guest” should be used as the preferred name.\nUse structured English to write a more detailed algorithm for the welcome message process\ndescribed in part (a).\nUse the identifiers given in the previous table.\nAssume that the file, UserNames.txt, is organised as a simple text file. The user ID and\npreferred name are held together in unencrypted form, one entry per line.\n\n3 A string conversion function, ExCamel, needs to be written.\nThis function forms a return string, OutString, from a given string, InString, by:\n1 separating the original words (a word is assumed to start with a capital letter)\n2 converting all characters to lower case.\nThe following shows a pair of example values for the string values InString and OutString.\nInString : \"MyUserInput\"\nOutString : \"my user input\"\nYou may assume that InString always starts with a capital letter.\nThe following is a first attempt at writing the pseudocode for this function.\nComplete the pseudocode using appropriate built-in functions.\nFor the built-in functions list, refer to the Appendix on page 13.\nFUNCTION ExCamel (______) RETURNS ______\nDECLARE NextChar : ______\nDECLARE ______ : STRING\nDECLARE n: INTEGER\n______ // initialise the return string\n// loop through InString to produce OutString\nFOR n 1 TO ______ // from first to last\nNextChar ______ // get next character\nIF ______ // check if upper case\nTHEN\nIF n > 1 // if not first character\nTHEN\n______ // add space to OutString\nENDIF\n______ // make NextChar lower case\nENDIF\n______ // add NextChar to OutString\nENDFOR\n______ // return value\nENDFUNCTION",
+          "marks": 8,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "READFILE (MyFile, String2)",
+        "WRITEFILE (MyFile, \"Data is \" & String2)",
+        "[6]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "High-level programming languages have many features that support the modular approach.\nOne such feature is the use of parameters.\nState two other features.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Consider the following pseudocode.\nPROCEDURE MyProc(x)\nx x + 1\nENDPROCEDURE\nIntermediate lines of pseudocode not shown\nx 4\nCALL MyProc(x)\nOUTPUT(x)\nParameter x is used to pass data to procedure MyProc.\nThere are two parameter passing methods that could be used.\nComplete the following table for each of the two methods.\nName of parameter Value\nExplanation\npassing method output",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Suggest a suitable separator character. Give the reason for your choice.\nCharacter ______\nReason ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "The concatenated strings are stored in an array, LogArray, which may contain up to 20\nlog entries.\nUse pseudocode to declare LogArray.",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A procedure, LogEvents, is required to add the log entry data from LogArray to the existing\ntext file, LoginFile.txt.\nUnused array elements are assigned the value \"****\". These can occur anywhere in the\narray and should not be written to the file.\nWrite program code for the procedure LogEvents.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A multi-user computer system records user login data. Each time a user successfully logs into the",
+        "system, it records the following data.",
+        "Data item Example data",
+        "\"Jim27\"",
+        "User ID",
+        "\"3456\"",
+        "Port ID",
+        "Time and date \"08:30 Jun 01 2015\"",
+        "The data items are concatenated (joined) using a separator character to form a single string. Each",
+        "string represents one log entry."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write program code to implement the new function, ValidateRegistration.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 9,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The function is to be tested.\nGive a valid string that could be used to check that the function returns TRUE under the\ncorrect conditions.\nString1: ______\nModify your valid String1 to test each rule separately.\nExplain your choice in each case.\nString2: ______\nExplanation: ______\nString3: ______\nExplanation: ______\nString4: ______\nExplanation: ______\nString5: ______\nExplanation: ______\n\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns string of length y starting at position x from ThisString.\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar.\nIf ThisChar is not an upper case alphabetic character then it is returned unchanged.\nExample: LCASE('W') returns 'w'\nUCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the upper case equivalent of ThisChar.\nIf ThisChar is not a lower case alphabetic character then it is returned unchanged.\nExample: UCASE('h') returns 'H'\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv.\nExample: MOD(10,3) returns 1\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is\ndivided by ThisDiv.\nExample: DIV(10,3) returns 3\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND of two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR of two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A computerised vehicle licensing system stores details about vehicles and their registration marks",
+        "(number plates or license plates).",
+        "To be valid, a vehicle registration must comply with the following rules:",
+        "• It must be between six and nine characters long.",
+        "• Characters 1 to 3 are upper case alphabetic characters.",
+        "• Characters 4 to 5 are numeric characters.",
+        "• Remaining characters are upper case alphabetic.",
+        "A function, ValidateRegistration is needed to check that a given registration mark follows",
+        "these rules. This function takes a string, Registration as a parameter and returns a Boolean",
+        "value:",
+        "• TRUE if it is a valid registration",
+        "• FALSE otherwise."
+      ]
+    }
+  ]
+}

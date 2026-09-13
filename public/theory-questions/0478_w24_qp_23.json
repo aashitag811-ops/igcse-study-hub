@@ -1,0 +1,425 @@
+{
+  "paperId": "0478_w24_qp_23",
+  "subjectCode": "0478",
+  "session": "w24",
+  "component": "23",
+  "totalMarks": 25,
+  "questionCount": 30,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to show which of the following is used to validate data on input.",
+        "A checksum",
+        "B double entry check",
+        "C type check",
+        "D visual check",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to show a method used to construct a solution to a problem.",
+        "A abstraction",
+        "B structure diagram",
+        "C test data",
+        "D variable",
+        "[1]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Four logic gates and five logic gate symbols are shown.",
+        "Draw one line to link each logic gate to its correct symbol. Not all logic gate symbols will be used.",
+        "Logic gate symbol",
+        "Logic gate",
+        "AND",
+        "NAND",
+        "NOR",
+        "XOR",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Complete the paragraph about databases. Use terms from the list. You may need to use a term",
+        "more than once. Some of the terms in the list will not be used.",
+        "fields comments columns constant key",
+        "table primary key program records rows",
+        "scripts database validation variable",
+        "Database tables consist of ...................................... and ...................................... .",
+        "Rows are ...................................... .",
+        "...................................... are fields.",
+        "Structured query language (SQL) ...................................... are used to query data.",
+        "[6]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "One stage of the program development life cycle is the analysis stage.",
+        "Identify and describe two other stages of the program development life cycle.",
+        "Stage ................................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "Stage ................................................................................................................................................",
+        "Description .......................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An incomplete algorithm has been written in pseudocode to count the number of values stored in",
+        "an array and to find their average.",
+        "Values have been stored in the array starting at A[1]",
+        "All the values to be counted are non-zero.",
+        "A value of zero in the array indicates there are no more values stored.",
+        "01 DECLARE A : ARRAY[1:50] OF INTEGER",
+        "02 DECLARE C : INTEGER",
+        "03 DECLARE W : INTEGER",
+        "04 DECLARE X : INTEGER",
+        "05 W 0",
+        "06 C ................................................................................................."
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE A[C] <> 0"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "W ................................................................................................."
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "C C + 1"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Complete the given pseudocode algorithm.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Write pseudocode to display, with suitable messages:\n• the number of values stored in the array\n• the average of those values stored.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Meaningful identifiers have not been used in this algorithm.\nSuggest suitable meaningful identifiers for:\nThe array\nThe variables\n\n7 A programmer is testing a program that requires a positive value between 1 and 100 inclusive to\nbe entered. The range check in the program is to be tested.\nIdentify three different types of test data to be used.\nFor each type of test data, give an example of the value(s) to be used and the expected outcome.\nType 1 ______\nExample ______\nOutcome ______\nType 2 ______\nExample ______\nOutcome ______\nType 3 ______\nExample ______\nOutcome ______\n\n8 A logic circuit is to be built to control the automatic opening of a window. The window W opens if\nthe temperature T is too high, the heater H is off, and the air conditioning A is off.\nair conditioning off 0\nair conditioning A\nair conditioning on 1\nnot too high 0\ntemperature T\ntoo high 1\nheater off 0\nheater H\nheater on 1\nwindow closed 0\nwindow W\nwindow open 1\nComplete the truth table for this problem.\nA T H W\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n9 A flowchart checks that values stored in three variables are identical.\nIf they are different, the highest value is stored in all three variables.\nSTART\nNo\nIs A = B AND\nSTOP\nB = C ?\nYes\nYes\nIs A >= B OR\nB A\nA >= C ?\nC A\nNo\nYes\nIs B >= A AND A B\nB >= C ? C B\nNo\nA C\nB C\nIdentify four errors in the flowchart and suggest a correction for each error. You may label each\nerror on the diagram with the corresponding error number.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______\n\n10 An algorithm has been written in pseudocode to check that a password meets a set of rules.\n01 OUTPUT \"Please enter password \"\n02 INPUT Password\n03 Accept TRUE\n04 IF LENGTH(Password) < 8 OR LENGTH(Password) > 20\n05 THEN\n06 Accept FALSE\n07 ENDIF\n08 IF LCASE(Password) = Password OR UCASE(Password) = Password\n09 THEN\n10 Accept FALSE\n11 ENDIF",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "X ................................................................................................."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Index 1"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Found FALSE"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE NOT Found AND Accept AND Index < LENGTH(Password)"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF SUBSTRING(Password, Index, 1) = '!'"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Found TRUE"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Index Index + 1"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF NOT Found"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Accept FALSE"
+      ]
+    },
+    {
+      "id": "24",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "25",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Accept"
+      ]
+    },
+    {
+      "id": "26",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "27",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Accepted\""
+      ]
+    },
+    {
+      "id": "28",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "29",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Rejected\""
+      ]
+    },
+    {
+      "id": "30",
+      "context": [],
+      "parts": [
+        {
+          "id": "30a",
+          "label": "(a)",
+          "text": "Complete the three trace tables using the data shown for each one.\nData: MYWORD\nPassword Accept Index Found\nOUTPUT\nData: M!word\nPassword Accept Index Found\nOUTPUT\nData: My!Hidden\nPassword Accept Index Found\nOUTPUT",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30b",
+          "label": "(b)",
+          "text": "State the rules that the password must meet.\n\n11 Building materials are sold in bags. A new database table called BuildStock has been set up to\nstore details about the materials for sale. Part of this table is given.\nMtNo Name InStock WeightKg PricePerBag NumberBags\nMT01 Builders sand Yes 50 4.50 50\nMT02 Sharp sand Yes 25 3.50 21 DO NOT WRITE IN THIS MARGIN\nMT03 Red sand No 50 2.75 0\nMT04 Cement No 25 6.85 0\nMT05 Chippings Yes 50 35.00 50\nMT06 Cobbles No 75 67.35 0\nMT07 Pebbles small Yes 50 34.50 3\nMT08 Pebbles medium Yes 25 25.50 10\nMT12 Pebbles large Yes 75 62.75 20\nMT15 Washed gravel Yes 50 12.75 12\nMT16 Pea gravel Yes 100 15.95 24",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30a",
+          "label": "(a)",
+          "text": "Write the output from this structured query language (SQL) statement.\nSELECT MtNo, Name\nFROM BuildStock\nWHERE WeightKg = 75\nORDER BY PricePerBag;",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "30bi",
+              "label": "(i)",
+              "text": "Complete this SQL statement to display only the names of all the materials that are out\nof stock.\nSELECT ______\nFROM ______\nWHERE ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "30bii",
+              "label": "(ii)",
+              "text": "Explain how another SQL statement using a different field could be used to display the\nsame information.\n\n12 Members of a litter picking group complete a litter pick every month. Members’ names are stored\nin one-dimensional (1D) array PickerName[]\nEach member stores the weight of the litter they have picked in another one-dimensional (1D)\narray PickedWeight[]\nThe weights are in kilograms with one decimal place, for example 8.4\nThe position of each member’s data in the two arrays is the same. For example, the member\nstored at index 10 in PickerName[] and at index 10 in PickedWeight[] is the same.\nEvery month, there is a small prize awarded to the members of the group who have the two\nheaviest weights. Certificates are awarded to all members with a pick weight of over three\nkilograms.\nWrite a program that meets the following requirements:\n• allows the weight of members’ picks to be input and validated\n• sorts the arrays PickedWeight[] and PickerName[] in descending order of weight\n• outputs the member names and the pick weights of the members with the two heaviest picks\nand identifies them as “Best in Group” and “Second best in Group”\n• stores the names of all the members who will receive a certificate in the array\nPickerCertificate[]\n• outputs a message stating the number of certificates to be printed.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nAll inputs and outputs must contain suitable messages.\nYou do not need to initialise the data in the array PickerName[]\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "ENDIF"
+      ]
+    }
+  ]
+}

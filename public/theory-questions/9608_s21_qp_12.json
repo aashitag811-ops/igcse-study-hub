@@ -1,0 +1,523 @@
+{
+  "paperId": "9608_s21_qp_12",
+  "subjectCode": "9608",
+  "session": "s21",
+  "component": "12",
+  "totalMarks": 68,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the truth table for the logic circuit.\nWorking space\nA B C Q\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Identify the three logic gates used in the given logic circuit.\nGate 1 ______\nGate 2 ______\nGate 3 ______",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Consider the following logic circuit:"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following diagram shows four register notations and seven descriptions.",
+        "Draw one line from each register notation to its most appropriate description.",
+        "Register notation Description",
+        "Holds the op code and operand of an",
+        "instruction ready for it to be decoded",
+        "MDR",
+        "Holds the address of the next instruction to",
+        "be read",
+        "Holds flags that are set when the Arithmetic",
+        "CIR",
+        "and Logic Unit (ALU) executes instructions",
+        "Holds data read from, or to be written to,",
+        "memory",
+        "MAR",
+        "Holds the current value in the Index Register",
+        "Holds the address where data is to be",
+        "written to or read from",
+        "PC",
+        "Holds the result of the last instruction",
+        "executed by the ALU",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Trace the program currently in memory using the following trace table.\nMemory address\nInstruction\nACC\naddress\n100 101 102 103\n1 3 0 100",
+          "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The instruction in memory address 50 needs to be changed to use direct addressing to load\nthe contents of the memory location at address 100.\nGive the new instruction to replace LDI 103.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Each instruction in the assembly language program is encoded in 16 bits (8-bit op code\nfollowed by an 8-bit operand).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "The instruction JPE 59 has the operand 59.\nConvert the operand 59 into 8-bit binary.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Convert the denary value 59 into hexadecimal.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The assembly language program uses direct and indirect addressing.\nIdentify two other modes of addressing used in an assembly language program.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The table shows part of the instruction set for a processor. The processor has one general purpose",
+        "register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "Direct addressing. Load the contents of the location at the",
+        "LDD <address>",
+        "given address to ACC.",
+        "Indirect addressing. The address to be used is at the given",
+        "LDI <address>",
+        "address. Load the contents of this second address to ACC.",
+        "STO <address>",
+        "Store the contents of ACC at the given address.",
+        "ADD <address> Add the contents of the given address to ACC.",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX).",
+        "JMP <address>",
+        "Jump to the given address.",
+        "Compare the contents of ACC with the contents of",
+        "CMP <address>",
+        "<address>.",
+        "Following a compare instruction, jump to <address> if the",
+        "JPE <address>",
+        "compare was True.",
+        "END",
+        "Return control to the operating system.",
+        "The current contents of the main memory are:",
+        "Address Instruction",
+        "50 LDI 103",
+        "51 CMP 101",
+        "52 JPE 59",
+        "53 ADD 102",
+        "54 STO 102",
+        "55 LDD 100",
+        "56 INC ACC",
+        "57 STO 100",
+        "58 JMP 51",
+        "59 ADD 102",
+        "STO 102",
+        "61 END",
+        "100 1",
+        "101 3",
+        "102 0",
+        "103 100"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe three drawbacks of a file-based approach compared to a relational database.\nDrawback 1 ______\nDrawback 2 ______\nDrawback 3 ______",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Each course has a destination and a trip date, and is run by a guide.\nCustomers can book a place on one or more courses.\nThe following table shows part of the stored file:\nCustomer Customer Guide Destination Trip\nname date of birth date\nJay Patel 10/10/1976 Artem Elbrus 06/03/2023\nPaul\n10/04/1999 Kenton K2 01/03/2022\nSchloss\nMina Wang 03/03/2000 Kenton K2 01/03/2022\nPaul\n10/04/1999 Safia Mont Blanc 07/07/2024\nSchloss\nJay Patel 10/10/1976 Safia K2 04/04/2023\nThe company has decided to create a relational database to replace the current file-based\napproach.\nIdentify three reasons why the data in this table is not in First Normal Form (1NF).",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The table, GUIDE_TABLE, is created.\nEach guide has a unique guide ID.\nPart of the table GUIDE_TABLE is shown:\nGuideID Guide DateOfBirth Gender\n1 Artem 07/03/1992 M\n2 Kenton 08/04/1984 M\n3 Safia 10/10/1999 F\nWrite a Data Definition Language (DDL) statement to define the table GUIDE_TABLE.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "K2 Mountain Guiding is a company that runs courses teaching people how to climb mountains.",
+        "The company uses a file-based approach to store and retrieve data."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A web page includes HTML and JavaScript code.",
+        "01 <html>",
+        "02 <body>",
+        "04 Calculate area of a triangle:",
+        "05 <form name = \"Triangle\">"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<p>Base <input type = \"number\" name = \"B\" value = \"\"></p>"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<p>Height <input type = \"number\" name = \"H\" value = \"\"></p>"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<button onclick = \"area()\">Calculate</button>"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Give the three identifiers used in the JavaScript code.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "State the purpose of the code on line 08.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "The page is loaded and the values 2 and 8 are entered.\nState the output when the calculate button is clicked.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09d",
+          "label": "(d)",
+          "text": "State the meaning of the || operator in line 15 of the code.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09e",
+          "label": "(e)",
+          "text": "Data validation has been used in line 15 of the JavaScript code.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ei",
+              "label": "(i)",
+              "text": "Identify the type of data validation used in line 15.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09eii",
+              "label": "(ii)",
+              "text": "Identify two other data validation checks that could be used.\n\nQuestion 5 continues on the next page.\nCambridge International Holidays allows customers to make holiday bookings on its website.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09f",
+          "label": "(f)",
+          "text": "Bochen visits the Cambridge International Holidays website to book a holiday.\nThe sequence (1 to 8) below describes the steps that take place when he submits a booking.\nFour of the statements A, B, C, D, E and F are used to complete the sequence.\nA Any errors found at the server side are flagged, and step 1 is repeated.\nB HTML code is used on the client’s web browser to validate the form data.\nPHP code is executed to generate a confirmation (HTML) web page that is returned to\nthe client’s web browser.\nD The form data is transmitted to Cambridge International Holidays’ web server.\nJavaScript code is executed to generate a confirmation (HTML) web page that is\nreturned to the client’s web browser.\nF JavaScript code is executed on the client’s web browser to validate the form data.\nWrite one of the letters (A, B, C, D, E or F) in the appropriate row to complete the sequence.\n1 Bochen completes the online booking and clicks ‘Submit’.\n3 Any errors found are flagged, and step 1 is repeated.\n5 PHP code is executed to perform extra data validation checks on the form data.\n7 The booking details are added to the database.\n\n6 This question presents three scenarios.\nTick (3) one box for each scenario to indicate whether you think the named person’s behaviour is\nethical or unethical. Justify your choice.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Latifah has changed jobs and has started to work for a new company. The company uses an\nIntegrated Development Environment (IDE) to develop code. Latifah decides not to use the\nIDE that the company has because she is familiar with a different IDE.\nEthical\nUnethical\nJustification",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Samid is in charge of a project to write a banking application. He is employing staff to work\non the application. His daughter is a computer security expert. She is looking for a new job.\nSamid decides to employ his daughter.\nEthical\nUnethical\nJustification",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "Jason works for a social media company. He is concerned that users of the company’s social\nmedia website have not been told how their personal data is being used.\nJason tells his manager his concerns. His manager tells him not to worry because there have\nbeen no complaints from the users. Jason takes no further action.\nEthical\nUnethical\nJustification\n\n7 Sam is a photographer. She has an image library of over 10 000 images. She stores the images\non a high capacity magnetic hard disk.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Explain why Sam would use the following utility software.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "09ai",
+              "label": "(i)",
+              "text": "Backup",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aii",
+              "label": "(ii)",
+              "text": "Defragmenter",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "09aiii",
+              "label": "(iii)",
+              "text": "Disk repair",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "The images are stored as bitmap files.\nIdentify four items that will be stored in the header of a bitmap file.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09c",
+          "label": "(c)",
+          "text": "The bitmap images are compressed for use on a website.\nTick (3) one box to select the most appropriate type of compression for the images used on\nthe website and justify your answer.\nLossy\nLossless\nJustification\n\n8 (a) Complete the following table by identifying the most appropriate term for each description.\nEach term must be different.\nDescription Term\nEnsures data is accurate and up to date\nPrevents accidental or malicious data loss\nPrevents unauthorised access to data",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Describe what is meant by a digital signature.\n\n9 Networks can be either wired using cables or wireless using radio waves.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09a",
+          "label": "(a)",
+          "text": "Describe one benefit of using a wireless network compared to using a wired network.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "09b",
+          "label": "(b)",
+          "text": "Describe two drawbacks of using a wireless network compared to using a wired network.\nDrawback 1 ______\nDrawback 2 ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 39,
+      "text": [
+        "</form>",
+        "11 <script>",
+        "12 function area() {",
+        "13 var base = document.forms[\"Triangle\"][\"B\"].value;",
+        "14 var height = document.forms[\"Triangle\"][\"H\"].value;",
+        "15 if (base == \"\" || height == \"\") {",
+        "16 alert(\"Both values must be entered\");",
+        "17 return false;",
+        "18 }",
+        "19 else {",
+        "20 area = 0.5 * height * base;",
+        "21 alert(\"The area is: \" + area);",
+        "22 }",
+        "23 }",
+        "24 </script>",
+        "25 </body>",
+        "26 </html>"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,767 @@
+{
+  "paperId": "9691_w14_qp_32",
+  "subjectCode": "9691",
+  "session": "w14",
+  "component": "32",
+  "totalMarks": 88,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Convert the following infix form expressions into reverse Polish notation.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "(x – y) / 4",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "3 * (2 + x / 7)",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Convert the following reverse Polish notation expressions into infix form.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "4 a b + c + d + e + *",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "y 2 ^ z 3 ^ + 5 /\nNote: the caret (^) symbol represents “to the power of”.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Describe the operation of a stack.\n\nAn expression in reverse Polish notation can be evaluated on a computer system using a\nstack.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Give one further use of a stack data structure by a computer system.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Describe the operation of a queue.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Give one use of a queue data structure by a computer system.\n\nQuestion 1 continues on page 4.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "A stack (Stack-A) and a queue (Queue-B) are to be implemented as follows:\nStack-A has a single pointer TOS which shows the index position available for the next new\nitem to be added (‘pushed’) to the stack.\nQueue-B is controlled by two pointers Head and Tail.\nThe diagram shows Stack-A and Queue-B after two items have been added to each.\nStack-A Queue-B\nTOS\n\u0015 String-2 Tail \u0015 String-4\nString-1 Head String-3\nStack-A and Queue-B are both initially empty.\nThe sequence of six items of string data:\nGOAT CAT SHEEP CHIMP COW HORSE\nis stored on Stack-A.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "Show on the diagram below, the contents of Stack-A and its pointer at this stage (Stage 1).\n\nThe contents of Stack-A are then removed and placed on Queue-B.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Show on the diagram below, the contents of Queue-B and its pointers at this stage\n(Stage 2). \nThree items are removed from Queue-B and input to Stack-A.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eiii",
+              "label": "(iii)",
+              "text": "Show on the diagram below, the contents of Stack-A and its pointer at this stage\n(Stage 3). \nStack-A Queue-B Stack-A\n20 20 20\n7 7 7\n6 6 6\n5 5 5\n4 4 4\n3 3 3",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An invoicing program is being executed. Some of the pages are stored in main memory.\nThe user selects a print operation. This operation requires a program instruction that is not\ncontained in any of the loaded pages.\nExplain how paging deals with this situation.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "For a computer system using multi-programming, the low-level scheduler will decide what\nprocess will get next use of the processor.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "One algorithm could be “give the processor to the process which was given the highest\npriority”.\nDescribe two other strategies which could be used by the low-level scheduler.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The computer system runs processes which can be described as either:\n• ‘processor-bound’, or\n• ‘input/output bound’\nExplain each term and give an example.\nProcessor-bound ______\nExample ______\nInput/output bound ______\nExample ______",
+              "marks": 4,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A computer system uses interrupts to deal with signals received from a peripheral device\nsuch as a printer. The processor is processing Task X when an interrupt is received from\nPrinter P.\nThe following statements describe how the interrupt is handled:\nLabel Step\nA Restore the Program Counter\nB Load and run the appropriate Interrupt Service Routine (ISR)\nC Save the contents of the program counter on the stack\nD Restore all other registers\nE Identify the source and type of the interrupt signal\nF Save contents of all other registers\nG Continue execution of Task X\nComplete the sequence of steps using the letters. The final step, G, has been placed for you.",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "2 2",
+        "1 1 1",
+        "Stage 1 Stage 2 Stage 3"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Consider Design 1:\nRunner(RunnerID, RunnerName, ClubName)\nRace(RaceDate, RaceDistance, ClubName)\nRaceRunner(RaceDate, RunnerID)",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Circle the two foreign keys in this database design.",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "These three entities form two relationships.\nComplete the entity-relationship (E–R) diagram to show them.",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "More data is to be stored.\nConsider Design 2:\nRunner(RunnerID, RunnerName, ClubName)\nRace(RaceDate, RaceDistance, ClubName,\nClubTown, ClubSecretaryName)\nRaceRunner(RaceDate, RunnerID, RunnerName, FinishingPosition)",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Name the table which is not in Second Normal Form (2NF) and explain why.\nTable ______\nExplanation ______\nRe-design this table.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Name the table which is not in Third Normal Form (3NF) and explain why.\nTable ______\nExplanation ______\nRe-design this table and add a new table. Both these tables must be fully normalised.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Records have been created for all the runners entered for the race on 26/11/2014.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Write a Data Manipulation Language query to display a list of the IDs of all the runners\nentered for this race.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Following the race, the record for runner 8816 must now be updated to show she finished\nin 2nd place.\nWrite a Data Manipulation Language command to update this record.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "A country has a number of cross-country running clubs. Each club organises races which attract",
+        "runners from other clubs. A database is to be created storing data about races and runners.",
+        "The clubs have agreed to stage one race only on any date.",
+        "A number of attempts have been made at the database design."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The given table of instructions shows the binary number used for each instruction's opcode.\nAll instructions in machine code are stored as a 16-bit pattern, with the opcode as the first\n8 bits and the operand as the second 8 bits.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "What is the maximum number of memory locations which can be directly addressed?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Consider the instruction:\n0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 1\nDescribe what this instruction does.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "Programmers prefer to write machine code instructions in hexadecimal.\nExplain why.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiv",
+              "label": "(iv)",
+              "text": "What is the hexadecimal number for the machine code instruction shown in part (b)(ii)?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4av",
+              "label": "(v)",
+              "text": "Show the 16-bit machine code for the following instruction:\nJPE 204",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4avi",
+              "label": "(vi)",
+              "text": "A programmer makes the statement:\n“For this instruction set, some of the instructions do not require an operand”\nCircle if this statement is true or false. Explain your choice with reference to the table of\ninstructions given.\nTrue / False",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Use the ASCII code table to trace execution of the given program.\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90\nLocation\nACC OUTPUT\n300 LDI 450\n301 CMP 32\nJPE 308\n303 OUTCH\n304 LDD 450\n305 INC ACC\n306 STO 450\nJMP 300\nEND\n450 500\n501 74\n502 65\n504 32\n\nQuestion 5 begins on page 14.",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "The table below gives a subset of the assembly language instructions for a computer with a single",
+        "general purpose register, the Accumulator (ACC), and an index register (IX).",
+        "Instruction",
+        "Explanation",
+        "Opcode Opcode",
+        "Operand",
+        "(mnemonic) (binary)",
+        "0000 0100",
+        "Direct addressing. Load the contents of the given",
+        "LDD <address>",
+        "address to ACC",
+        "0000 0101",
+        "LDV <number>",
+        "Load the given number to ACC",
+        "0001 0000",
+        "STO <address>",
+        "Store the contents of ACC at the given address",
+        "0000 0110",
+        "Indirect addressing. At the given address is the",
+        "LDI <address>",
+        "address to be used. Load the contents of this",
+        "second address to ACC",
+        "0000 0111",
+        "Indexed addressing. Form the address as",
+        "LDX <address>",
+        "<address> + the contents of IX. Copy the contents",
+        "of this address to ACC",
+        "0000 0011",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX)",
+        "1000 0001",
+        "Output the character corresponding to the ASCII",
+        "OUTCH",
+        "character code in ACC to the monitor",
+        "1001 0000",
+        "Input a denary number from the keyboard and store",
+        "IN",
+        "in ACC",
+        "1100 1000",
+        "JMP <address>",
+        "Unconditional jump to the given address",
+        "1100 1001",
+        "Compare the contents of ACC with the given",
+        "CMP <number>",
+        "number",
+        "1110 0111",
+        "If the result of the previous compare instruction was",
+        "JPE <address>",
+        "a match, jump to the given address"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "An assembler translates assembly language programs. A compiler translates high-level\nlanguage programs. They each do this for programs written in a particular language and for a\nparticular processor.\nName two features which these translators have in common.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "In the early stages of program development, a source program usually has errors. Each\nstatement below (labelled A, B, C, D, E, F, G and H) describes one step in the development of\nthe machine code version of an assembly language program.\nNote: One of the steps given is not relevant and will not be used.\nLabel Step\nA Generate executable file\nB Make changes to the source code\nC UNTIL No errors reported\nD Run the assembler with the executable code\nE REPEAT\nF Run the assembler with the source code\nG Write the assembly language source program\nH Report all error(s)\nPut the steps in the correct sequence to describe the assembly process.\nThe first two steps, G and E, have been placed for you.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "A developer writes programs in a high-level language. Both an interpreter and compiler exist\nfor the language.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Describe two benefits that the use of an interpreter would offer.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "Describe one drawback in the use of an interpreter.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The sequence of operations below shows the fetch stage of the fetch-execute cycle in register\ntransfer notation.\n1. MAR ← [PC]\n2. PC ← [PC] + 1\n3. MDR ← [[MAR]]\n4. CIR ← [MDR]\nNote: [register] denotes the contents of the specified register.\nExplain what is happening at the fetch stage.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The address bus and data bus are used during the fetch-execute cycle.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Name another bus used in a typical microprocessor.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Name one signal carried by this bus.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Consider two assembly language instructions which were given in Question 4.\nInstruction\nExplanation\nOpcode\nOperand\n(mnemonic)\nINC <register>\nAdd 1 to the contents of the register (ACC or IX)\nDirect addressing. Load the contents of the given\nLDD <address>\naddress to ACC\nConsider the following two cases.\nCase 1:\nFollowing step 4 of the fetch stage, the instruction is decoded. The instruction is then executed\nwithout further use of the address bus.\nCase 2:\nFollowing step 4 of the fetch stage, the instruction is decoded. Once decoded, the address\nbus must be used again before the execution of the instruction can be completed.\nFor each instruction below, circle either Case 1 or Case 2 and explain your choice.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "LDD 78\nCase 1 / Case 2\nExplanation: ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "INC ACC\nCase 1 / Case 2\nExplanation: ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Replace(\"Mary Adams\", \"Adams\", \"Kelly\", 'E')",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "Replace(\"10110011\", \"011\", \"X\", 'E')",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Replace(\"Dr Ajaz Drew\", \"Dr\", \"\", 'E')",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "Replace(\"database design\", \"sign\")",
+          "marks": 1,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7e",
+          "label": "(e)",
+          "text": "Replace(\"white box strategy\", \"STRATEGY\", \"TESTING\", 'C')\n______ (1)",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7f",
+          "label": "(f)",
+          "text": "High-level programming languages have two types of function. These are built-in and\nuser-defined.\nExplain the difference between them.You may give an example from your practical experience\nfor a built-in function.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "The function Replace is documented as follows:",
+        "FUNCTION Replace(ThisString : STRING, FindString : STRING,",
+        "ReplaceString : STRING, [MatchType : CHAR]) RETURNS STRING",
+        "Square brackets used in the function header indicate the parameter is optional.",
+        "The function searches for FindString within ThisString. When a match is found, all",
+        "occurrences of FindString within ThisString are replaced with ReplaceString.",
+        "MatchType indicates the type of match looked for:",
+        "• 'E': indicates the strings must match exactly",
+        "• 'C': indicates a match is reported irrespective of the case of either string",
+        "The function returns ThisString.",
+        "Any function call which is not properly formed returns an error.",
+        "What is returned by the following function calls?"
+      ]
+    }
+  ]
+}

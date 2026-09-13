@@ -1,0 +1,446 @@
+{
+  "paperId": "9618_s23_qp_12",
+  "subjectCode": "9618",
+  "session": "s23",
+  "component": "12",
+  "totalMarks": 75,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Give two benefits of connecting computers to a LAN.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Give two characteristics of a LAN.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "One of the company’s offices has one server and four computers connected in a star topology.\nDraw a diagram to show the layout of the office’s star topology.",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Computers can be connected using Ethernet.\nDescribe what is meant by Ethernet.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "The network runs as a thick‑client model.\nDescribe what is meant by a thick‑client model.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A company has a LAN (local area network)."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The table contains names and descriptions of DBMS features and tools.\nComplete the table by writing down the missing names and descriptions.\nName Description\nData dictionary\nQuery processor\nA model of a database that is not specific to one DBMS.\nA software tool that allows the user to create items such as\ntables, forms and reports.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Explain the reasons why referential integrity is important in a database.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The database Lessons has the following tables:\nHORSE(HorseID, Name, Height, Age, HorseLevel)\nSTUDENT(StudentID, FirstName, LastName, RiderLevel, PreferredHorseID)\nLESSON(LessonID, Date, Time, StudentID, HorseID, LessonContent)\nDates in this database are stored in the format #DD/MM/YYYY#.\nThe fields RiderLevel and HorseLevel can only have the values: Beginner,\nIntermediate or Advanced.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Describe two methods of validating the field RiderLevel.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Write a Structured Query Language (SQL) script to return the names of all the horses\nthat have the horse level intermediate or beginner.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "The following SQL script should return the number of riders that have the rider level\nbeginner and have a lesson booked on 09/09/2023.\nSELECT SUM(STUDENT.RiderLevel) AS NumberOfRiders\nFROM STUDENT, LESSON\nWHERE StudentID = StudentID\nOR Date = #09/09/2023#\nAND STUDENT.RiderLevel = Beginner;\nThere are four errors in the script.\nIdentify and correct each error.",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A horse riding school uses a database, Lessons, to store data about lesson bookings.",
+        "This database is created and managed using a Database Management System (DBMS)."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The program is converted into machine code by a two‑pass assembler.\nDraw one or more lines to identify the pass or passes in which each action takes place.\nAction Pass\ngenerates object code\nfirst\nreads the source code one line at a time\nremoves white space\nsecond\nadds labels to the symbol table",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Assembly language statements can use different modes of addressing.\nComplete the following description of addressing modes.\n______ addressing is when the operand holds the memory address of\nthe data.\n______ addressing is when the operand holds a memory address that\nstores the memory address of the data.\n______ addressing is when the operand is the data.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A program is written in assembly language."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "State the number of unique binary values that can be represented in 16 bits.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Give the 8‑bit one’s complement representation of the denary number −120.\nShow your working.\nWorking ______\nAnswer ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Convert the hexadecimal number A04 into denary.\nShow your working.\nWorking ______\nAnswer ______",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Show the result of a 2‑place left logical shift on the binary number:\n01001111",
+          "marks": 1,
+          "type": "place",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Data in a computer is stored in binary form."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The laptop is designed using the Von Neumann model for a computer system.\nIdentify two types of signal that a control bus can transfer.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe two ways the hardware of a laptop can be upgraded to improve the performance\nand explain how each upgrade improves the performance.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Peripherals are connected to the laptop using ports.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "A printer is connected to a Universal Serial Bus (USB) port.\nDescribe how data is transmitted through a USB port.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "A monitor is connected to the laptop using a different type of port.\nIdentify one other type of port that can be used to connect the monitor.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "The laptop has systems software.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5di",
+              "label": "(i)",
+              "text": "Describe how the Operating System (OS) manages processes in the computer.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5dii",
+              "label": "(ii)",
+              "text": "Describe the purpose of utility software in a computer.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A student has purchased a new laptop."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Draw the logic circuit for this logic expression:\nZ = (R XOR S) AND (NOT T NOR P)",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Complete the truth table for this logic expression:\nZ = (NOT P OR Q) XOR (R NOR Q)\nWorking space\nP Q R Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "The developer is writing a new program library to be used by the other team members.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "Define the term program library.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aii",
+              "label": "(ii)",
+              "text": "Explain two benefits to the developer of choosing to create a Dynamic Link Library (DLL).",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The development team needs to use a translator whilst writing the program for the client.\nIdentify whether an interpreter or a compiler would be more appropriate at this stage of the\nprogram development.\nJustify your choice.\nTranslator ______\nJustification ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The development team uses an Integrated Development Environment (IDE).\nComplete the table by describing the typical features found in an IDE.\nFeature Description\nBreakpoints ______\nDynamic syntax checks ______\nContext‑sensitive prompts ______\nSingle stepping ______",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "One section of the program being developed will convert user’s speech into commands.\nExplain how Artificial Intelligence (AI) can be used in this program.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A software developer is working in a team writing a program for a client."
+      ]
+    }
+  ]
+}

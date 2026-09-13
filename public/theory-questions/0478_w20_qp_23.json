@@ -1,0 +1,372 @@
+{
+  "paperId": "0478_w20_qp_23",
+  "subjectCode": "0478",
+  "session": "w20",
+  "component": "23",
+  "totalMarks": 46,
+  "questionCount": 22,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Identify one constant and identify one variable that you could have used for Task 1. Give the\nvalue that would be assigned to the constant. Give the data type for the variable. State what\neach one could be used for.\nConstant ______\nValue ______\nUse ______\nVariable ______\nData type ______\nUse ______",
+          "marks": 6,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Write an algorithm to allow a customer to choose the filling and salad items for their\nbaguette (part of Task 1), using either pseudocode, programming statements or a\nflowchart. Your algorithm must only include this part of Task 1.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Explain how your algorithm in part (b)(i) ensured that only valid choices were accepted\nfor the filling.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how you would need to change your program for Task 1 if there were three sizes of\nbaguette to choose from (15 cm, 20 cm and 30 cm).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program completed Task 3. Assume that Task 2 has been completed.\nAny programming statements used in your answer must be fully explained.\n\nSection B starts on Page 8.\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to check the temperature readings taken from a",
+        "freezer are within the range –18 degrees to –25 degrees inclusive.",
+        "The algorithm counts the number of times that the temperature reading is below –25 degrees and",
+        "the number of times that the temperature reading is above –18 degrees.",
+        "An engineer is called if there are more than 10 temperature readings below –25 degrees.",
+        "An alarm sounds if there are more than 5 temperature readings above –18 degrees.",
+        "01 TooHot 0",
+        "02 TooCold 1000"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please enter temperature\""
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Temperature"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Temperature < -25"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "TooCold TooCold – 1"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Temperature > -18"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "TooHot TooHot + 1"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL TooHot > 5 OR TooCold > 10"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF TooHot < 5"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT \"Alarm!!\""
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF TooCold > 10"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Call the Engineer\""
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Give the line number(s) from the algorithm of:\nan assignment statement ______\na loop ______\na counting statement ______\na selection statement ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Give line numbers where the four errors are to be found in the pseudocode. Suggest a\ncorrection for each error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Explain how you could extend the algorithm to count the number of times the temperature\nreadings are within the range –18 degrees to –25 degrees inclusive.\n\n3 Four programming concepts and five descriptions are shown.\nDraw a line to connect each Programming concept to its correct Description. Not all Descriptions\nwill be connected to a Programming concept.\nProgramming concept Description\nA subroutine that does not have to\nValidation\nreturn a value\nAn automatic check to ensure that data\ninput is reasonable and sensible\nVerification\nA subroutine that always returns\na value\nProcedure\nAn overview of a program or subroutine\nA check to ensure that data input\nFunction\nmatches the original\n\nQuestion 4 starts on Page 12.\n4 This flowchart represents an algorithm that allows the input of two numbers and performs a\ncalculation.\nThe predefined function MOD finds the remainder from integer division for example X 8 MOD 5\ngives X a value of 3.\nSTART\nINPUT\nY,Z\nIS Yes\nEND\nY = 0 ?\nNo\nIS Yes\nA Y MOD Z\nY > Z ?\nNo\nA Z MOD Y\nYes IS\nOUTPUT\nA = 0 ?\n\"Valid\"\nNo\nOUTPUT\n\"Invalid\"",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Complete a trace table for this set of input data:\n11, 4, 6, 2, 3, 9, 3, 2, 2, 6, 0, 0, 1, 1\nY Z A\nOUTPUT",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Explain the purpose of this algorithm.\n\n5 A marine wildlife rescue centre uses a database table, MARINE, to keep records of its creatures.\nCreature Class Quantity Ready for release Offspring\nManta Ray Fish 3 Y N\nShort-tailed Albatross Bird 4 Y N\nEmperor Penguin Bird 50 Y Y\nBluefin Tuna Fish 2 N N\nManatee Mammal 4 Y N\nHawksbill Turtle Reptile 10 Y Y\nHammerhead Shark Fish 3 Y N\nYellow-eyed Penguin Bird 4 Y N\nKemp’s Ridley Sea Turtle Reptile 1 Y N",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "State how many fields and how many records are shown in this table.\nNumber of fields ______\nNumber of records ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Show the output that would be given by this query-by-example.\nField: Creature Class Ready for release\nTable: MARINE MARINE MARINE\nSort:\nShow: 3 3\nCriteria: =\"Bird\"\nor:",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid to display the creatures, in ascending order of quantity,\nthat have no offspring and are ready for release. Display only the creature field.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "ENDIF"
+      ]
+    }
+  ]
+}

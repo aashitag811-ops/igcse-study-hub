@@ -1,0 +1,389 @@
+{
+  "paperId": "0478_s25_qp_21",
+  "subjectCode": "0478",
+  "session": "s25",
+  "component": "21",
+  "totalMarks": 51,
+  "questionCount": 17,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick ( ) one box to identify the type of test to only check for the largest or smallest acceptable",
+        "üü",
+        "value.",
+        "A normal test data",
+        "B abnormal test data",
+        "C extreme test data",
+        "D boundary test data",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Draw one line from each requirement to the most appropriate validation check.\nNot all validation checks will be used.\nRequirement Validation check\nlength check\nDate of birth must be between\n01/01/1900 and 01/01/2010.\nformat check\nName has been entered.\nrange check\nPassword has exactly 12 characters.\ncheck digit\nStudent ID must contain 2 letters followed\nby a 4-digit number.\npresence check",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Identify and describe one verification check that could be applied when a new password is\ninput into a system.\nVerification check ______\nDescription ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Four requirements for validating inputs and five types of validation check are given."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following pseudocode algorithm uses a count-controlled loop to read in 10 names and store",
+        "them in the array Names[]",
+        "FOR Count 1 TO 10",
+        "OUTPUT \"Please enter a name\"",
+        "INPUT Name",
+        "Names[Count] Name",
+        "NEXT Count",
+        "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled",
+        "loop.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write an algorithm using pseudocode to:\n• input the telephone number\n• extract the 2-digit country code\n• output the matching country\n• output ‘Unknown’ if there is no matching country.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Explain how you could change the algorithm to repeatedly prompt for the telephone number\nuntil the number entered is 13 characters in length.\nAny code used must be fully explained.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A telephone number with 13 characters is input. The first character is a ‘+’, followed by a 2-digit",
+        "country code, for example:",
+        "+20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive.",
+        "The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Two library routines used in programming are MOD and DIV.",
+        "State the purpose of each of the library routines.",
+        "Give one example pseudocode statement for each of the library routines.",
+        "MOD purpose ...................................................................................................................................",
+        "Example pseudocode ......................................................................................................................",
+        "DIV purpose .....................................................................................................................................",
+        "Example pseudocode ......................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to generate a random integer between 1 and 100",
+        "inclusive and store the value in N. The user enters a guess for the number and the algorithm",
+        "indicates whether the guess is higher or lower than the random number. The algorithm outputs",
+        "the number of guesses when the user has correctly guessed the random number.",
+        "01 Counter 0",
+        "02 N ROUND(RANDOM() * 99, 1) + 1",
+        "03 REPEAT",
+        "04 OUTPUT \"Please enter a guess\"",
+        "05 INPUT G",
+        "06 IF G > N"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The number is lower than your guess\""
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF G < N"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The number is lower than your guess\""
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Counter Counter + 1"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL G = N"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "Identify the line numbers of the four errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______\n______ DO NOT WRITE IN THIS MARGIN",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "Identify one method to make the algorithm maintainable.\nGive an example.\n\n7 Consider the logic expression:\nX = (A AND B) XOR (B OR NOT C)",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for this logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify the logic expression.\nB X\nDO NOT WRITE IN THIS MARGINC",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "Complete the truth table for the given logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n8 A bus company has set up a new database table called BUS to store details of the buses leaving\nthe main bus terminal.\nRouteID Destination Stops Driver Time Return\nBC01 Town Centre 10 B Smith 9:00 Yes\nBC02 The Fountain 5 A Patel 9:10 Yes DO NOT WRITE IN THIS MARGIN\nBC03 The Palace 9 B Hayes 9:28 No\nBC04 City Park 12 W Gao 9:55 Yes\nBC05 City Mall 9 R Hussein 10:10 No\nBC06 Swan Lake 14 S Clarke 10:33 No\nBC07 Guildhall Square 7 J Page 11:34 No\nBC08 Sunset Quay 6 A Patel 12:01 Yes\nBC10 Fort Worthington 15 E Carr 12:01 Yes\nBC12 The Observatory 18 B Smith 13:27 No\nBC14 East Seaport 11 B Scott 14:07 No\nBC15 The Football Ground 12 J Page 14:46 Yes\nBC19 The Cricket Ground 11 B Hayes 15:14 No\nBC23 Temple Ruins 14 W Gao 16:16 No\nBC27 The University 9 A Patel 16:45 No",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "17ai",
+              "label": "(i)",
+              "text": "Identify one appropriate data type for the field Return",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "17aii",
+              "label": "(ii)",
+              "text": "State the reason for the data type chosen.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "Write the output from the structured query language (SQL) statement:\nSELECT RouteID, Destination, Time\nFROM BUS\nWHERE Driver = \"A Patel\";",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17c",
+          "label": "(c)",
+          "text": "Complete the SQL statement to display only the destination of the buses that have a return.\nSELECT ______\n\n9 The variables A and B are used in a program. A holds a whole number and B holds text.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to declare the variables A and B",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "The function Odds(X) returns ‘Odd’ if the value of X is an odd number and returns ‘Even’ if\nthe value of X is an even number.\nWrite pseudocode statements to:\n• define the function\n• call the function using parameter A and store the return item in variable B\nFunction definition ______\nFunction call ______\n\n10 The flowchart represents an algorithm to calculate grades.\nSTART\nINPUT\nScore\nIS Score\nYes\nGrade \"C\"\n>= 40 ?\nNo\nIS Score\nYes\nGrade \"B\"\n>= 60 ?\nNo\nIS Score\nYes\nGrade \"A\"\n>= 80 ?\nNo\nGrade \"D\"\nOUTPUT \"You\nachieved a \", Grade\nSTOP",
+          "marks": 6,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm, using the input data:\n21, 46, 63, 91, 12\nScore Grade\nOUTPUT",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "17b",
+          "label": "(b)",
+          "text": "Explain how the flowchart can be changed to produce the correct output.\n\n11 The one-dimensional (1D) array CompetitorName[] contains the names of 25 competitors in a\ntournament that includes five events.\nAnother two-dimensional (2D) array CompetitorScore[] contains the points scored by each\ncompetitor in the five events. The first dimension of this array contains the index of the competitor\nfrom CompetitorName[] and the second dimension contains their scores.\nEach competitor receives a score out of 100 for each event. These scores are manually entered\ninto CompetitorScore[]\nMedals are awarded to the competitor or the competitors who have:\n• the highest points scored in each of the five events\n• the highest total points scored for all five events.\nThe one-dimensional (1D) array Points[] stores the total number of points scored for each\ncompetitor.\nWrite a program that meets the following requirements:\n• takes as input, valid scores (between 0 and 100), for each competitor in each of the five\nevents\n• calculates the highest points scored for each event\n• outputs the names of the competitors who receive a medal for the highest points scored\n• calculates the highest total points scored for the five events\n• outputs the names of the competitors with the highest total points scored for the five events.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 36,
+      "text": [
+        "OUTPUT \"Well done, you took \", Guess, \" attempts\""
+      ]
+    }
+  ]
+}

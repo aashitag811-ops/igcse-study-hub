@@ -1,0 +1,304 @@
+{
+  "paperId": "9608_s18_qp_22",
+  "subjectCode": "9608",
+  "session": "s18",
+  "component": "22",
+  "totalMarks": 65,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A farm has a number of greenhouses used to grow vegetables. Each greenhouse has a\ndifferent identification number. A program is needed to store temperature information for each\ngreenhouse throughout the day.\nGive a suitable identifier name for each of the data items.\nDescription of data item Suitable identifier name\nThe temperature inside the greenhouse\nThe temperature outside the greenhouse\nThe greenhouse identification number\nThe time of the temperature measurements",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Program variables have values as follows:\nVariable Value\nMark 60\nSubject \"Computer Science\"\nGrade 'B'\nCourseCompleted TRUE\nAverageMark 49.5\nEvaluate each expression in the following table.\nIf an expression is invalid, write ERROR.\nFor the built-in functions list, refer to the Appendix on page 16.\nExpression Evaluates to\n\"Fas\" & MID(Subject, 6, 3)\nLEFT(Mark, 1)\n10 + ASC(Grade)\nMOD(AverageMark * 2, 3)\nCourseCompleted AND (Mark >= 60)",
+              "marks": 5,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Programming languages support different data types.\nGive an appropriate data type for each of these variables from part (b)(i).\nVariable Data type\nMark\nSubject\nGrade\nCourseCompleted\nAverageMark",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following is a function design in pseudocode.",
+        "Line numbers are given for reference only.",
+        "01 FUNCTION CountDigits(InString : STRING) RETURNS CHAR"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE nc : CHAR"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE c : INTEGER"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05ai",
+              "label": "(i)",
+              "text": "This pseudocode includes features that make it easier to read and understand.\nState two such features.\nFeature 1 ______\nFeature 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05aii",
+              "label": "(ii)",
+              "text": "State two additional features that should be used to make this pseudocode easier to\nread and understand.\nFeature 1 ______\nFeature 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "Study the function CountDigits(). Identify the features of the function in the following\ntable.\nFeature Answer\nA line number containing an example of an assignment statement\nA line number containing the start of a ‘pre-condition’ loop\nA line number containing the end of a ‘pre-condition’ loop\nA line number containing the start of a selection statement\nThe number of parameters passed to the LEFT() function\nThe Boolean operator used\nThe number of times the function LEFT() is called from within\nCountDigits() resulting from the call:\nResult CountDigits(\"AB27C4\")\nThe number of local variables",
+          "marks": 8,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05ci",
+              "label": "(i)",
+              "text": "There is a mistake in the pseudocode that would produce a data type mismatch error if a\nprogrammer were to write similar program code.\nDescribe this mistake and how it may be corrected.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05cii",
+              "label": "(ii)",
+              "text": "Lines 17 to 22 of the pseudocode could be written in a simplified form.\nRe-write the lines in a simplified form.\n\n3 A chocolate factory produces bars of chocolate. A computer program controls the process.\nThe weight of each bar is stored in an array, BarWeight. The array contains 100 elements,\nrepresenting the weights of 100 bars that make up one shipping box.\nA procedure, CheckWeight(), is required to:\n1. examine each array element and count how many times the weight has exceeded MaxWeight\n2. compare the count obtained with a limit value, Threshold. Call procedure ServiceCheck()\nif the count exceeds the Threshold\n3. output a message if the count does not exceed the Threshold. For example:\n\"ShippingBox OK – maximum weight exceeded 3 times.\"\nDraw a program flowchart on the next page to represent the algorithm for the CheckWeight()\nprocedure.\nAssume that:\n• the array contains 100 valid weight values and the first element is BarWeight\n• MaxWeight, Threshold and BarWeight are global variables.\nVariable declarations are not required in program flowcharts.\n\nQuestion 4 begins on the next page.\n4 The structure chart shows part of the design of a program for an online shopping system.\nProcess basket\nDiscard basket Change item Checkout\n(remove all items) quantity (pay and despatch)",
+              "marks": 4,
+              "type": "compare",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05ai",
+              "label": "(i)",
+              "text": "Draw on the chart to show the following facts.\n• Each of the modules at the lower level returns a Boolean parameter, X.\n• Process basket will call only one of the modules shown at the lower level.",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "05aii",
+              "label": "(ii)",
+              "text": "The parameters A to G shown on the chart will be used to pass the following information.\nPaymentDetails\nQuantity\nBasketID\nDeliveryAddress\nItemID\nComplete the following table to show the parameter and the information it represents.\nParameter Information\n\n5 A golf club holds information about its members. When a member completes a round of golf, their\nscore is stored along with their membership number and the date of the round.\nA program is to be written to store and process the score information. The information to be stored\nis formed into a string as follows:\n<MembershipNumber><Date><Score>",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "The program designer considers storing the strings in either a 1D array, RoundScore or\nas a separate variable for each round, for example, RoundScore01, RoundScore02,\nRoundScore03 and so on.\nDescribe two advantages of storing the strings in a 1D array rather than as separate variables.\nAdvantage 1 ______\nAdvantage 2 ______",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "A procedure, AddNewScores() is being developed. The procedure will be coded using\nan Integrated Development Environment (IDE).\nName two features provided by an IDE that assist in the initial detection of errors in the\nprocedure.\nFeature 1 ______\nFeature 2 ______",
+          "marks": 2,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05c",
+          "label": "(c)",
+          "text": "The program needs a function, GetNumber(), to return a valid membership number. A valid\nmembership number is a four-digit numeric string between “1111” and “9999”.\nThe structured English representing the algorithm for this function is as follows:\n1. Prompt and input a membership number.\n2. Validate the membership number.\n3. Repeat from step 1 if the membership number is invalid.\n4. Return the valid membership number as a string.\nAn example of the function call in pseudocode is:\nMembershipNumber GetNumber()\nWrite program code for the GetNumber() function.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "05d",
+          "label": "(d)",
+          "text": "The program designer decides to store the strings from part (a) in a text file,\nScoreDetails.txt\nEach string is formatted as follows:\n<MembershipNumber><Date><Score>\n• MembershipNumber is a four-digit numeric string between \"1111\" and \"9999\".\n• Date is a six-digit numeric string in the format DDMMYY, for example \"040716\".\n• Score is a two-digit numeric string in the range \"50\" to \"99\".\nA procedure OutputLowestScore() is required to output the lowest score for an individual\nmember.\nAssume that there is at least one string stored for each member.\nThe program needs a procedure, OutputLowestScore(), to process the ScoreDetails.txt\nfile and output the lowest score for an individual member.\n1. Use the GetNumber() function to obtain a valid membership number.\n2. Search the ScoreDetails.txt file for the lowest score for that member.\n3. Output a message giving the lowest score for that member and the date of the round. For\nexample: \"The lowest score was 66 on 300917\"\nWrite program code for the OutputLowestScore() procedure.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 10,
+          "type": "use",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 41,
+      "text": [
+        "DECLARE n : INTEGER",
+        "08 c 0",
+        "09 n LENGTH(InString) // get number of characters for loop",
+        "11 WHILE n > 0 // repeat until no more characters left",
+        "13 nc LEFT(InString,1)",
+        "14 n n - 1",
+        "15 InString RIGHT(InString,n) // remove first character",
+        "17 IF (nc < '0') OR (nc > '9')",
+        "18 THEN",
+        "19 // do nothing",
+        "20 ELSE",
+        "21 c c + 1",
+        "22 ENDIF",
+        "24 ENDWHILE",
+        "26 RETURN c",
+        "28 ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Individual elements in a 1D array are referenced using an integer value that is used as the\nsubscript to the array.\nGive the technical terms for the minimum and maximum values the subscript may take.\nMinimum value ______\nMaximum value ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A 2D array, Picture, contains data representing a bitmap image. Each element of the array\nrepresents one pixel of the image. The image is grey-scale encoded where the value of each\npixel ranges from 0 (representing black) to 255 (representing white) with intermediate values\nrepresenting different levels of grey.\nA graphics program needs a procedure, Flip(), to flip (reflect) the image. An example of an\nimage before and after the function is:\nBefore flip After flip\nThe values contained in the 2D array before the flip are as follows:\nData values\n80 80 255 80 80 255 80 80\n80 80 255 80 80 255 80 80\n255 80 120 120 120 120 255 80\n255 80 255 255 255 255 80 80\n255 80 120 120 120 120 80 80\nIn pseudocode, the array is declared as follows:\nDECLARE Picture : ARRAY[1:5, 1:8] OF INTEGER\nWrite pseudocode to implement the Flip() procedure.\nAssume that Picture is a global variable.\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of character ThisChar\nExample: ASC('A') returns 65\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    }
+  ]
+}

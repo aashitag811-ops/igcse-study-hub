@@ -1,0 +1,206 @@
+{
+  "paperId": "0478_w21_qp_23",
+  "subjectCode": "0478",
+  "session": "w21",
+  "component": "23",
+  "totalMarks": 45,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Identify one constant that you could have used for Task 1. Give the value that would be\nassigned to this constant. State the use of this constant.\nConstant ______\nValue ______\nUse ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Describe the arrays that you have set up in Task 1 to record today’s data about the restaurant\ntables.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Sometimes the restaurant has fewer tables available for a session.\nExplain how you would change your Task 1 program to allow input of the number of tables\navailable for a session.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Part of Task 2 is to check if a table is available. Write an algorithm to do this, using either\npseudocode, programming statements or a flowchart. Assume that Task 1 has been\ncompleted.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program for Task 3 updated Task 2.\nInclude any programming statements used and fully explain the purpose of each statement.\n\nSection B starts on Page 8.\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to generate 50 positive random integers with values",
+        "less than or equal to 100. These numbers are stored in the array NumRand[]",
+        "The function RandUp(X,Y) generates a random integer greater than X and less than or equal to Y",
+        "For example, RandUp(1,4) generates 2 or 3 or 4",
+        "1 Count 0",
+        "2 WHILE Counter > 50 DO"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NumRand[Counter] RandUp(1,100)"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Counter Counter − 2"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Find the four errors in the pseudocode and write a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The pseudocode for this algorithm could be shortened by the use of a FOR … NEXT loop.\nRewrite the algorithm using a FOR … NEXT loop.\n\n3 A program has been written to check the length and content of a password. The password must be\neight or more characters long and contain at least one special character, for example, Secret!*!",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "State suitable examples of normal and erroneous test data that could be used to test this\nprogram. For each example give the reason for your choice of test data.\nNormal test data example ______\nReason ______\nErroneous test data example ______\nReason ______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Explain why two pieces of boundary test data are required for this program.\nGive an example of each piece of boundary test data.",
+              "marks": 3,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe two methods of verification that could be used to verify this data as it is input.\nMethod 1 ______\nMethod 2 ______\n\n4 The algorithm, shown by this flowchart, allows the input of examination marks for a class of\nstudents. A mark of 999 ends the process. If a mark is 40 or over then a pass grade is awarded.\nThe number of pass grades is calculated for the whole class. If this is under 50% of the class, the\nclass is offered extra help.\nSTART\nCounter 0\nPass 0\nINPUT\nMark\nIS\nYes\nMark = 999 ? Help Pass / Counter\nNo\nIS\nYes\nOUTPUT\nCounter Counter + 1\nHelp < 0.5 ?\n\"Extra Help\"\nNo\nIS\nYes\nPass Pass + 1 Mark >= 40 ?\nEND\nNo\nComplete a trace table for the algorithm using this input data:\n88, 24, 60, 30, 44, 17, 25, 22, 54, 6, 999, −1\nCounter Pass Mark Help\nOUTPUT\n\n5 A database table, COMPUTER, is used to keep a record of computers available for sale.\nThe following data is stored for each computer:\n• CATEGORY – desktop, laptop or tablet\n• WEIGHT – weight in kilograms\n• MANUFACTURER – ICN, Linoldo, Pear or JoeSing\n• PRICE – price in $\n• CODE – a unique code allocated by the manufacturer, e.g. P771\n• STOCK – quantity in stock.\nA database management system uses these data types:\nText Number Currency Boolean\nThe CATEGORY field and MANUFACTURER field have a data type of text.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Select the most appropriate data type for each field from the four types shown. State the\nreason why you chose the data type.\nWEIGHT data type ______\nReason ______\nPRICE data type ______\nReason ______\nCODE data type ______\nReason ______\nSTOCK data type ______\nReason ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid to display only the category, manufacturer, price and\ncode of the computers with weight of less than 2.5 kilograms.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 25,
+      "text": [
+        "ENDWHILE"
+      ]
+    }
+  ]
+}

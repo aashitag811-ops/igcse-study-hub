@@ -1,0 +1,310 @@
+{
+  "paperId": "9608_s17_qp_23",
+  "subjectCode": "9608",
+  "session": "s17",
+  "component": "23",
+  "totalMarks": 54,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Simple algorithms usually consist of three different stages.\nComplete the following table.\nAdd a description of the stage and an example pseudocode statement.\nThe first stage has been given.\nStage Description and example\nDescription: ______\nInput\nPseudocode example: ______\nDescription: ______\nPseudocode example: ______\nDescription: ______\nPseudocode example: ______",
+          "marks": 7,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "AND and OR are two operators that may be used when implementing an algorithm.\nAn example of their use is given in the following pseudocode statement:\nMyFlag VarA OR VarB\nState the data type of variable MyFlag.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "State the name given to the type of operators to which AND and OR belong.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Evaluate the expressions given in the following table when the variable values are as\nfollows:\nFlagA TRUE\nFlagB FALSE\nFlagC TRUE\nExpression Evaluates to\nFlagA AND (FlagB OR FlagC)\nFlagA AND (FlagB AND FlagC)\n(NOT FlagA) OR (NOT FlagC)",
+              "marks": 3,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "A common construct found in many algorithms is a loop.\nUsing pseudocode, write a pre-condition loop to output all of the even numbers between 99\nand 201.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The steps involved in the login process are described as follows:\n• User enters their ID and password.\n• Validation checks:\nCompare user ID with data from the file.\nIndicate whether or not the user ID was found.\nIf user ID found, check whether passwords match.\nThe description above is not detailed enough to allow a program to be written. The validation\nchecks must be expressed as a more detailed algorithm.\nGive the name of the process of increasing the level of detail of the algorithm.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "An identifier table is created as the algorithm is developed. A section of the table is shown.\nComplete the table.\nIdentifier Data Type Description\nUserIDInput\n______ Stores the user ID entered\nPasswordInput ______\nUserIDFound\nPasswordValid",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The validation checks described in part (a) are to be used as the basis for program code.\nUse structured English to write a more detailed algorithm.\nYou should:\n• use the identifiers given in the previous table\n• assume that the password file, password.txt, is organised as a simple text file. The\nuser ID and password are stored together, one entry per line.",
+          "marks": 8,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "One of the security features of a multi-user computer system is a user login process. The user",
+        "must complete this successfully before they can access the resources of the system.",
+        "As part of the login process the user enters their user ID followed by a password. The system then",
+        "compares the password entered with the password held in a file."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A string conversion function, StringClean, is to be written.",
+        "This function will form a new string, OutString, from a given string, InString, by:",
+        "• removing all non-alphabetic characters",
+        "• converting all alphabetic characters to lower case.",
+        "For example:",
+        "InString = \"Good Morning, Dave\"",
+        "OutString = \"goodmorningdave\"",
+        "The first attempt at writing the pseudocode for this function is shown below.",
+        "Complete the pseudocode using relevant built-in functions.",
+        "For the built-in functions list, refer to the Appendix on page 14.",
+        "FUNCTION StringClean(...........................) RETURNS ..........",
+        "DECLARE NextChar : ......................................",
+        "DECLARE ................................................ : STRING",
+        "..................................... //initialise the return string",
+        "//loop through InString to produce OutString",
+        "FOR n 1 TO .............................. //from first to last",
+        "NextChar ............................. //get next character and",
+        "NextChar ............................. //convert to lower case",
+        "IF ........................................ //check if alphabetic",
+        "THEN",
+        "........................................ //add to OutString",
+        "ENDIF",
+        "ENDFOR",
+        "............................................//return value",
+        "ENDFUNCTION",
+        "[11]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "A structure chart is a tool used in modular program design.\nState three pieces of information that a structure chart can convey about a program design.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The following diagram shows part of a structure chart.\nCheckout\nCard\nAccount\npayment payment\nExamples of the data items that correspond to the arrows are given in this table:\nArrow Data item\n234.56\n\"Mr Robert Zimmerman\"\nTrue\nUse pseudocode to write the function header for the Card payment module.",
+          "marks": 3,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A multi-user computer system records user login information in a text file, LoginFile.txt. Each",
+        "time a user successfully logs into the system, the following information is recorded:",
+        "Item Information Example data",
+        "\"JimAA\"",
+        "1 A five character user ID",
+        "2 A four character port ID \"3456\"",
+        "\"08:30Jun012015\"",
+        "3 A fourteen character time and date",
+        "The data items are concatenated to form a single string. Each string is saved as a separate line in",
+        "the text file.",
+        "The example data in the preceding table would result in the following text line in the file:",
+        "\"JimAA345608:30Jun012015\"",
+        "The computer system can produce a list of the successful login attempts by a given user.",
+        "The file LoginFile.txt is searched for a given user ID and the corresponding data are copied",
+        "into a 2D array, LoginEvents.",
+        "LoginEvents has been declared in pseudocode as:",
+        "DECLARE LoginEvents[1 : 1000, 1 : 2] OF STRING",
+        "A procedure, SearchFile, is needed to search the file and copy selected data to the array.",
+        "The main steps of the procedure are as follows:",
+        "• Input a user ID.",
+        "• Search LoginFile.txt for entries with matching user ID.",
+        "• For matching entries, copy items 2 and 3 above into the LoginEvents array.",
+        "You can assume that:",
+        "• the system initialises all elements of LoginEvents to an empty string \" \", before it calls",
+        "SearchFile",
+        "• there will be no more than 1000 successful logins for a single user.",
+        "Write program code for the procedure SearchFile.",
+        "Visual Basic and Pascal: You should include the declaration statements for variables.",
+        "Python: You should show a comment statement for each variable used with its data type.",
+        "Programming language ....................................................................................................................",
+        "Program code",
+        "[10]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write program code to implement the new function ValidatePassword.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 10,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "The function will be tested.\nGive a valid string to check that the function returns TRUE under the correct conditions.\nString1: ______\nModify the valid string given for String1 to test each rule separately.\nExplain your choice in each case.\nString2: ______\nExplanation: ______\nString3: ______\nExplanation: ______\nString4: ______\nExplanation: ______\nString5: ______\nExplanation: ______",
+              "marks": 5,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "When testing a module, it is necessary to test all possible paths through the code.\nState the name given to this type of testing.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "A program consisting of several modules may be tested using a process known as\nstub testing.\nExplain this process.\n\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns string of length y starting at position x from ThisString.\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString.\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar.\nIf ThisChar is not an upper-case alphabetic character then it is returned unchanged.\nExample: LCASE('W') returns 'w'\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv.\nExample: MOD(10,3) returns 1\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv.\nExample: DIV(10,3) returns 3\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings.\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND of two Boolean values.\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR of two Boolean values.\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "A multi-user computer system makes use of passwords.",
+        "To be valid, a password must comply with the following rules:",
+        "• at least two lower-case alphabetic characters",
+        "• at least two upper-case alphabetic characters",
+        "• at least three numeric characters",
+        "• alpha-numeric characters only",
+        "A function, ValidatePassword, is needed to check that a given password follows these rules.",
+        "This function takes a string, Pass, as a parameter and returns a Boolean value:",
+        "• TRUE if Pass contains a valid password",
+        "• FALSE otherwise."
+      ]
+    }
+  ]
+}

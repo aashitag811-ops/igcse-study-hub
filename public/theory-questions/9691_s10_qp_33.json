@@ -1,0 +1,373 @@
+{
+  "paperId": "9691_s10_qp_33",
+  "subjectCode": "9691",
+  "session": "s10",
+  "component": "33",
+  "totalMarks": 69,
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Explain the differences between the lexical analysis stage and the syntax analysis stage in\nthe compilation of a high level language program.",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "One phase of compilation is the code generation phase.\nDescribe the code generation phase.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain the purpose of a loader.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "State why it is necessary to create the transaction files in serial form.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "State why it is necessary to turn the transaction files into a sequential file.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The final transaction file (T) is the result of merging the two sorted files from the two factories\n(A and B).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Describe an algorithm that will merge A and B to form T.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Describe a binary search algorithm that can be used to find the details of a particular\nemployee with ID number 21478 after the files have been merged.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A company uses a computerised payroll system. The company has two factories and employees",
+        "only work in one of the factories. Each factory employs a large number of workers. Details of the",
+        "work done by employees each week is stored serially in two transaction files, one for each",
+        "factory.",
+        "When these files are used to create the payroll at the end of the week they have to be merged",
+        "into a single, sequential file."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "State two types of sensor which would be needed to provide input to the robot, explaining\nwhy each is necessary.",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Discuss the use of other types of robotic device in the washing machine factory.",
+          "marks": 6,
+          "type": "discuss",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A factory makes washing machines. Part of the manufacturing process is to insert the control",
+        "system behind the control panel in the body of the machine and to screw it into place. This",
+        "process is done by a robot."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe a hierarchical database.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "PATIENTs in a hospital are arranged in WARDs. Each WARD has a number of BEDs.\nThe STAFF of the hospital are either DOCTORs or NURSEs.\nDraw a diagram to represent the details given above in the form of a hierarchical database.",
+          "marks": 6,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The management of a new hospital have decided to install a network of computers.",
+        "The computers will be placed in the wards and in the doctors’ examination rooms so that the",
+        "medical personnel can have access to the patients’ records. They will also be networked in the",
+        "administration offices so that hospital records can be kept.",
+        "Discuss different topologies and the media available for transmitting data around the network. [6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A job which is being processed is in one of three states: ready, running or blocked.\nExplain how the scheduler manages jobs in the processor.",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "State two types of scheduling algorithm.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Computer technology is to be introduced to a factory. The workers will need to be trained to use",
+        "the new systems which will be introduced. A decision is made that training courses will be",
+        "produced on DVDs which will be given to the workers rather than having face-to-face courses",
+        "with trainers.",
+        "Describe the advantages and disadvantages of training the workers in this way. [6]"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "State what is stored in each of the following special purpose registers in a computer and explain",
+        "how the contents are altered during the fetch/execute cycle."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Explain why the response times in these two systems will be different.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Describe the hardware, software and the way that data is organised and processed in the\ntwo systems.",
+          "marks": 8,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A shop uses two computer systems.",
+        "System 1",
+        "Each evening details of the sales during the day are collected together. They are then used to",
+        "update the stock file.",
+        "System 2",
+        "At the checkout, goods being bought are identified by the system. Details are given to the",
+        "customer along with the total amount owed."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Explain why each of the following is not a variable:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "10ai",
+              "label": "(i)",
+              "text": "D2%",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "10aii",
+              "label": "(ii)",
+              "text": "$C2",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "MAIN_VARIABLE is defined as a GROUP which has a NZDIGIT (a DIGIT which must not be\na zero) as the first character and cannot include an IDENTIFIER, but has a ! or a & as the\nlast character.\nFor example 1A2! and 9BC& are examples of MAIN_VARIABLE but 0A2! and 9BC%& are\nnot examples of MAIN_VARIABLE.\nProduce a set of rules to define MAIN_VARIABLE (The BNF rules stated above do not need\nto be reproduced).",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "Draw a syntax diagram of VARIABLE. You may use DIGIT, LETTER and IDENTIFIER in\nyour diagram but no other values. \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A VARIABLE is defined in a certain language by the following BNF rules:",
+        "<VARIABLE>::=<GROUP><IDENTIFIER>│<GROUP>",
+        "<GROUP>::=<LETTER>│<LETTER><DIGIT>│<LETTER><GROUP>",
+        "<LETTER>::= A│B│C",
+        "<DIGIT>::=0│1│2│3│4│5│6│7│8│9",
+        "<IDENTIFIER>::=%│$"
+      ]
+    }
+  ]
+}

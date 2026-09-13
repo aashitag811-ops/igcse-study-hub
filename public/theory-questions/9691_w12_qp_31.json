@@ -1,0 +1,713 @@
+{
+  "paperId": "9691_w12_qp_31",
+  "subjectCode": "9691",
+  "session": "w12",
+  "component": "31",
+  "totalMarks": 90,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "In database design:\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Describe what is meant by a foreign key.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Explain how keys are used to implement a one-to-many relationship between the\ntwo entities X and Y shown below:\nEntity X Entity Y",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A company has a number of products for sale and receives orders from customers.\nFor\nExaminer's\nUse\n• Customers are given a CustomerID and other customer data are recorded\n• Each product has a ProductID and other product data are recorded\n• Over a period of time a customer will place many orders, and each product can\nappear on many customer orders\n• You should assume:\no all orders are for one product only,\no on any given day a customer will place at most one order.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Describe the given data model by adding two attributes to the Customer table\nand two attributes to the Product table.\nCustomer(CustomerID, , )\nProduct(ProductID, , )",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Give the attributes for the Order table, showing the primary key.\nYou should not create an OrderID for this table.\nOrder( , , , )",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "In database design, unnecessary data duplication should be avoided.\nExplain, using an example, what is meant by data duplication.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Binary representation is used for many different data values.\nFor\nExaminer's\nUse\nConsider the binary pattern 1001 0100\nWhat is its value if it represents:",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "an 8-bit two’s complement integer?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "a binary coded decimal (BCD) number?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A computer system stores real numbers in floating point format with 12 bits. The first 8\nbits are the mantissa and the final 4 bits the exponent. Both the mantissa and the\nexponent use two’s complement format.\nConsider the binary pattern 0100 1010 0111",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "What is the exponent in denary?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "What real number is being represented? (Show your working.)",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "An attempt at representing 16 ½ gave the binary pattern:\nFor\nExaminer's\nUse\n0010 0001 0110\nwhich correctly represents 16 ½ but is not in normalised form.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "What is the normalised form for 16 ½?",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Explain why normalised form should be used for floating point representation.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Describe what is meant by Von Neumann architecture.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The sequence of operations below shows the fetch stage of the fetch-execute cycle in\nregister transfer notation.\n1. MAR ← [PC]\n2. PC ← [PC] + 1\n3. MDR ← [[MAR]]\n4. CIR ← [MDR]\nNote:\n• [register] denotes the contents of the specified register\n• Step 1 above is read as ‘The contents of the Program Counter are copied to the\nMemory Address Register’.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Explain what is happening at step 2.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Explain what is happening at step 3.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "Describe the two remaining steps needed to complete the fetch-execute cycle.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "A processor will allow the use of a variety of modes of addressing.\nFor\nExaminer's\nUse\nExplain these terms, using an example in each case. You may wish to illustrate your\nanswer with a diagram.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Direct addressing",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Indirect addressing",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3ciii",
+              "label": "(iii)",
+              "text": "Indexed addressing",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Most modern computers are designed using Von Neumann architecture.",
+        "For",
+        "Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Explain how an interpreter executes a high-level language program.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "State two advantages of using a compiler rather than an interpreter.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Describe what happens during the lexical analysis stage of translation.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Explain what is meant by code optimisation.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Two types of software which are used to translate high-level programs are a compiler and",
+        "For",
+        "an interpreter. Examiner's",
+        "Use"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the operation of a stack data structure.\nFor\nExaminer's\nUse",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A stack is to be implemented to store data using the following variables.\nIdentifier Data Type Description\nMyStack ARRAY[100]: STRING\nStores the data values\nTopOfStack INTEGER\nStores the index position of the item\ncurrently at the top of MyStack\nNewItem STRING\nStores a data value to be added to\nMyStack\nThe diagram shows the state of MyStack and TopOfStack after three values were\ninserted (Owl, Lion and Tiger), a value was deleted, then the value Leopard inserted.\nMyStack\nTopOfStack\n2 Tiger Leopard\n1 Lion\n0 Owl\nInserting and deleting a single item to/from the stack are to be implemented with two\nprocedures PushToStack and PopFromStack respectively.\nShown below is the incomplete pseudocode for the PushToStack procedure. Using\nthe variables given above, fill in the missing code.\nPROCEDURE PushToStack\nIF\nTHEN\nOUTPUT “Stack is already FULL”\nELSE\nINPUT NewItem\nTopOfStack ←\nENDIF\nENDPROCEDURE",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Describe an application in the operation of a computer system where a stack data\nFor\nstructure would be required. Examiner's\nUse",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Describe how main memory is managed when a program terminates.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "Describe how the operating system will decide where in main memory to load a\nnew program.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A processor is capable of receiving and handling interrupts. Each interrupt has a\nFor\npriority. Examiner's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Describe what is meant by an interrupt.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "State two possible sources of an interrupt. Give a reason for each.\nSource 1\nReason\nSource 2\nReason",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "Describe the sequence of steps the processor would carry out after receiving an\ninterrupt.",
+              "marks": 5,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "The operating system for a computer which supports multiprogramming will have several",
+        "programs loaded into main memory at any one time. Segmentation is used to manage main",
+        "memory."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Describe two different media used for the transmission of data across a wide area\nFor\nnetwork. Examiner's\nUse",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A company has three retail shops – Shop A, Shop B and Shop C – located in different\ntowns.\n• Shop A has a Local Area Network (LAN) consisting of five computers.\no A file server on this network (ServerX) contains all the administration and\norder processing data for all three shops.\no A second file server (ServerY) authenticates all logons.\n• Shop B and Shop C each have a single computer which connect to the network of\nShop A.\nThe shops are connected over a Wide Area Network (WAN) using a star topology.\nComplete the diagram showing the additional hardware needed for this LAN and WAN.\nShop B\nShop A\nShop C",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "The LAN in Shop A is to be expanded to 40 computers. The computers are to be\nFor\norganised as two network segments. Examiner's\nUse\nWhat additional hardware is required? Explain its purpose.\nHardware\nExplanation",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7d",
+          "label": "(d)",
+          "text": "The management is considering setting up a company intranet.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7di",
+              "label": "(i)",
+              "text": "Describe two benefits to the company that an intranet could provide.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7dii",
+              "label": "(ii)",
+              "text": "Intranet content will be viewed with browser software available on all computers.\nName the type of file server used to make the intranet pages available.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "A high-level programming language has the following built-in function ChangeString\nFor\nExaminer's\ndefined as follows:\nUse\nChangeString(ThisString1: String, ThisString2: String) RETURNS\nString\nwill return the String value ThisString2<Space>first character of ThisString1\nFor Example:\nChangeString(“Ben”, “Pollard”) will return “Pollard B”\nIf the function is not properly formed an error is generated.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "State the function identifier and parameters for the above function.\nFunction identifier\nParameters\n\nWhat value is returned from the following function calls?",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "ChangeString(“Wesley”, “Lyons”)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiii",
+              "label": "(iii)",
+              "text": "ChangeString(“923”, “SMITH”)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiv",
+              "label": "(iv)",
+              "text": "ChangeString(“Zawinal”)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Describe two similarities between a user-defined function and a procedure.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Many high-level languages use a procedural paradigm.\nFor\nExaminer's\nUse\nExplain the term procedural programming language.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Some high-level languages use a declarative paradigm.\nThe clauses 1 to 12 show some of the facts to be implemented with a declarative\nprogramming language. Clause 13 is a rule which uses variable X.\n1. car(a1).\n2. car(a2).\n3. car(a3).\n4. part(motorA).\n5. part(motorB).\n6. part(gearbox1).\n7. part(gearbox2).\n8. supplier_part(motorA, dealerD).\n9. supplier_part(gearbox1, thirdpartyE).\n10. combination(gearbox1, a1).\n11. combination(motorA, a2).\n12. combination(motorB, a2).\n13. guaranteed_part(X) IF part(X) AND supplier_part(X, dealerD).\nNote: car(a1) means a1 is a car.\nsupplier_part(motorA, dealerD) means motorA is supplied by dealerD.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "9bi",
+              "label": "(i)",
+              "text": "Write a new clause for each of the following facts:\nThere is a car ‘zx6’.\n14.\n‘gearbox2’ is a part required for the ‘a3’ car.\n15.\nThe supplier for part ‘motorB’ is ‘dealerD’.\n16.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "9bii",
+              "label": "(ii)",
+              "text": "Explain the rule given by clause 13.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 6,
+      "text": []
+    }
+  ]
+}

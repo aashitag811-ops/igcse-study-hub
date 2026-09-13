@@ -1,0 +1,219 @@
+{
+  "paperId": "0478_s19_qp_22",
+  "subjectCode": "0478",
+  "session": "s19",
+  "component": "22",
+  "totalMarks": 27,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers must have meaningful names.\nDescribe the data structures you have used in Task 1 to record the items for sale. Include\nsome sample data for each data structure you have described.",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Explain how your program for Task 1 ensures the item number is unique.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for the part of Task 2 that allows the buyer to add a new bid, using\neither pseudocode, programming statements or a flowchart. Assume that Task 1 has been\ncompleted and that the item details have already been found.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how your program for Task 2 checks that a new bid is higher than previous bids for\nan item.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program identifies the items that have reached their reserve price, then\ncalculates and displays the total auction company fee for all sold items as part of Task 3. Any\nprogramming statements used in your answer must be fully explained.\n\nSection B",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm has been written in pseudocode to input 100 numbers, select and print the\nlargest number and smallest number.\nCount 1\nINPUT Number\nHigh Number\nLow Count\nREPEAT\nINPUT Number\nIF Number > High\nTHEN\nHigh Number\nENDIF\nIF Number > Low\nTHEN\nLow Number\nENDIF\nCount Count + 1\nUNTIL Count > 99\nPRINT \"Largest Number is \", Number\nPRINT \"Smallest Number is \", Low\nFind the four errors in the pseudocode and suggest a correction for each error.\nError 1______\nCorrection ______\nError 2______\nCorrection ______\nError 3______\nCorrection ______\nError 4______\nCorrection ______",
+          "marks": 4,
+          "type": "suggest",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Show how you would change the corrected algorithm to total the numbers and print the total.\nUse a variable Total.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This flowchart inputs the marks gained in an examination. An input of –1 ends the routine.",
+        "START",
+        "Total 0",
+        "Count 0",
+        "Distinction 0",
+        "INPUT Mark",
+        "Yes",
+        "Is Mark = –1 ?",
+        "Total Total + Mark",
+        "Count Count + 1",
+        "No",
+        "OUTPUT \"Number of",
+        "No",
+        "Is",
+        "Distinctions \", Distinction",
+        "Mark >=",
+        "80 ? OUTPUT \"Average Mark \"",
+        "Total/Count",
+        "Yes",
+        "END",
+        "Distinction Distinction + 1",
+        "Complete the trace table for the mark input data: 50, 70, 65, 30, 95, 50, 55, 85, 65, 35, –1, 45",
+        "Total Count Distinction Mark",
+        "OUTPUT",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "For each of the four groups of statements in the table, place a tick in the correct column to show",
+        "whether it is an example of Selection or Repetition.",
+        "Statements Selection Repetition",
+        "FOR A 1 TO 100",
+        "B B + 1",
+        "NEXT A",
+        "CASE A OF",
+        "100: B A",
+        "200: C A",
+        "ENDCASE",
+        "IF A > 100",
+        "THEN",
+        "B A",
+        "ENDIF",
+        "REPEAT",
+        "A B * 10",
+        "UNTIL A > 100",
+        "[4]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain what is meant by validation and verification.",
+        "Give an example for each one.",
+        "Validation ..........................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "Verification ........................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State the field that could have a Boolean data type.\nField ______",
+          "marks": 1,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A query-by-example has been written to display just the flight numbers of all planes leaving\nafter 10:00 that only carry passengers.\nField: Flight number Passengers Departure time\nTable: FLIGHT FLIGHT FLIGHT\nSort:\nShow: 3\nCriteria: = Y = 10:00\nor:\nExplain why the query-by-example is incorrect, and write a correct query-by-example.\nExplanation ______\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 7,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A database table, FLIGHT, is used to keep a record of flights from a small airfield. Planes can",
+        "carry passengers, freight or both. Some flights are marked as private and only carry passengers.",
+        "Flight number Plane Notes Departure time Passengers",
+        "FN101 Caravan 1 Private passenger flight 08:00 Y",
+        "CN101 Caravan 2 Freight only 08:30 N",
+        "CN102 Piper 1 Freight only 09:00 N",
+        "FN104 Piper 2 Passengers only 09:20 Y",
+        "FN105 Piper 1 Freight and passengers 10:00 Y",
+        "FN106 Caravan 1 Passengers only 10:30 Y",
+        "CN108 Caravan 2 Freight only 08:00 N",
+        "CN110 Lear Private passenger flight 08:00 Y"
+      ]
+    }
+  ]
+}

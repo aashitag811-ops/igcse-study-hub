@@ -1,0 +1,488 @@
+{
+  "paperId": "9608_w19_qp_12",
+  "subjectCode": "9608",
+  "session": "w19",
+  "component": "12",
+  "totalMarks": 75,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The diagram shows different types of software on the left, and descriptions on the right.\nDraw a line from each type of software to its correct description.\nType of software Description\nProvides a ready-built routine that can be\nimported into a program\nOperating system\nProvides an interface between the user and\nthe hardware\nUtility program\nConverts source code into a low-level\nlanguage\nLibrary program\nCreates a new document for the user to edit\nCompiler\nAn additional program that helps to maintain\nor configure the system",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Describe the purpose of disk repair software.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Draw a logic circuit to represent the following logic expression:\nX = NOT (A AND B) AND (C XOR D)",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Complete the truth table for the logic expression:\nX = NOT (A AND B) OR (A AND (B XOR C))\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A web page includes the following JavaScript and HTML code.",
+        "01 <html>",
+        "02 <body>"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<form>"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<p><input type=\"text\" id=\"textBox1\"></p>"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<button id = \"button1\" onclick=\"multiply()\">First</button>"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "<button id = \"button2\" onclick=\"addition()\">Second</button>"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [
+        {
+          "id": "08a",
+          "label": "(a)",
+          "text": "Name two identifiers used in the JavaScript code.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08b",
+          "label": "(b)",
+          "text": "The number 9 is typed into textBox1.\nWrite the value that is output after button1 is pressed.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08c",
+          "label": "(c)",
+          "text": "State the purpose of the code in line 14.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08d",
+          "label": "(d)",
+          "text": "Line 20 is replaced with:\n20 alert(value1 + value1);\nDescribe how this will affect the program.\n\n4 Anushka needs to store information about bookings at a sports club.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08a",
+          "label": "(a)",
+          "text": "Anushka has a file-based storage system. She wants a relational database.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08ai",
+              "label": "(i)",
+              "text": "Describe the features of a relational database that address the limitations of Anushka’s\nfile-based system.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08aii",
+              "label": "(ii)",
+              "text": "The relational database design needs to be normalised. The following statements\ndescribe the three stages of database normalisation.\nComplete the statements by filling in the missing words.\nFor a database to be in First Normal Form (1NF) there must be no ______\ngroups of attributes.\nFor a database to be in Second Normal Form (2NF), it must be in 1NF, and contain no\n______ key dependencies.\nFor a database to be in Third Normal Form (3NF), it must be in 2NF, and all attributes\nmust be fully dependent on the ______ ______ .",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "08b",
+          "label": "(b)",
+          "text": "The normalised relational database, SPORTS_CLUB, has the following table design.\nMEMBER(MemberID, FirstName, LastName, MembershipType)\nSESSION(SessionID, Description, SessionDate, SessionTime, NumberMembers)\nTRAINER(TrainerID, TrainerFirstName, TrainerLastName)\nMEMBER_SESSION(MemberID, SessionID)\nSESSION_TRAINER(SessionID, TrainerID)",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08bi",
+              "label": "(i)",
+              "text": "Anushka has designed an entity-relationship (E-R) diagram for SPORTS_CLUB.\nComplete the entity-relationship (E-R) diagram.\nMEMBER SESSION\nMEMBER_SESSION SESSION_TRAINER\nTRAINER",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08bii",
+              "label": "(ii)",
+              "text": "Anushka first needs to create the database that she has designed.\nWrite a Data Definition Language (DDL) statement to create the SPORTS_CLUB\ndatabase.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08biii",
+              "label": "(iii)",
+              "text": "The table shows some sample data for the table SESSION.\nSessionID Description SessionDate SessionTime NumberMembers\n21PL Pilates junior 04/04/2020 18:00 15\n13AE Aerobics senior 04/04/2020 19:00 20\nWeightlifting\n33WG 04/04/2020 10:00 10\nadvanced\nWrite a DDL script to create the table SESSION.",
+              "marks": 5,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08biv",
+              "label": "(iv)",
+              "text": "Write a Data Manipulation Language (DML) script to return the first name and last name\nof all members who have Peak membership type.\n\n5 Mica has created some software and has copyrighted it. She wants to stop other people from\ncopying and changing it illegally.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "08a",
+          "label": "(a)",
+          "text": "Identify two ways Mica can prevent illegal copies of the software being installed.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08b",
+          "label": "(b)",
+          "text": "Identify one way Mica can distribute the software without the source code.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08c",
+          "label": "(c)",
+          "text": "Mica is releasing the software under a commercial licence.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08ci",
+              "label": "(i)",
+              "text": "Give two benefits to Mica of using a commercial licence.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08cii",
+              "label": "(ii)",
+              "text": "Name two other types of software licence.\n\n6 Dominic uses a tablet computer to complete work. He records videos of his work to send to his\ncolleagues to watch at a later date.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "08a",
+          "label": "(a)",
+          "text": "The tablet computer has input and output devices.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08ai",
+              "label": "(i)",
+              "text": "The table lists four devices built into the tablet.\nTick (✓) one or more boxes for each device to identify whether it is an input device, an\noutput device or both.\nDevice Input Output\nTouchscreen\nWebcam\nMicrophone\nFingerprint scanner",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08aii",
+              "label": "(ii)",
+              "text": "An external speaker is plugged into the tablet computer.\nThe sequence of steps 1 to 7 describes the internal operation of the speaker.\nThe statements A, B, C, D and E are used to complete the sequence.\nLetter Statement\nChanges in the audio signal cause the direction of the electrical current to change.\nThis determines the polarity of the electromagnet.\nB The vibration creates sound waves.\nC An electric current is sent to the speaker.\nD The electromagnet is repelled by, or attracted to the permanent magnet.\nE The electric current passes through the coil.\nWrite one of the letters A to E in each appropriate row to complete the sequence.\n3 The current in the coil creates an electromagnetic field.\n6 The movement of the coil causes the diaphragm to vibrate.",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "08b",
+          "label": "(b)",
+          "text": "The tablet computer’s secondary storage is solid state (flash) memory.",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08bi",
+              "label": "(i)",
+              "text": "Give one reason why the tablet computer needs secondary storage.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08bii",
+              "label": "(ii)",
+              "text": "Describe solid state memory.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "08c",
+          "label": "(c)",
+          "text": "The tablet computer has RAM and ROM memory.\nState the purpose of RAM and ROM memory in the computer.\nRAM ______\nROM ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "08d",
+          "label": "(d)",
+          "text": "Dominic’s tablet captures a video of Dominic to send to other people. The video is made of a\nsequence of images and a sound file.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08di",
+              "label": "(i)",
+              "text": "Describe how the images and sound are encoded into a digital form.\nImages ______\nSound ______",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08dii",
+              "label": "(ii)",
+              "text": "The sequence of images and the sound file create a video. This is sent over the Internet\nas a video stream. The video stream can use interlaced encoding or progressive\nencoding.\nDescribe the terms interlaced encoding and progressive encoding.\nInterlaced encoding ______\nProgressive encoding ______",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "08e",
+          "label": "(e)",
+          "text": "Dominic sends his videos to his colleagues over the Internet using bit streaming.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "08ei",
+              "label": "(i)",
+              "text": "Describe how the video is sent using bit streaming.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08eii",
+              "label": "(ii)",
+              "text": "Circle either Real-time or on-demand to identify whether the video will be sent using\nreal-time or on-demand bit streaming. Justify your choice.\nReal-time / on-demand\nJustification ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "08eiii",
+              "label": "(iii)",
+              "text": "Describe the following video terms.\nTemporal redundancy ______\nSpatial redundancy ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 60,
+      "text": [
+        "</form>",
+        "10 </body>",
+        "11 <script>",
+        "12 function multiply(){",
+        "13 value1 = document.getElementById(\"textBox1\").value;",
+        "14 value1++;",
+        "15 alert(parseInt(value1)* parseInt(value1));",
+        "16 }",
+        "18 function addition(){",
+        "19 value1 = document.getElementById(\"textBox1\").value;",
+        "20 alert(parseInt(value1) + parseInt(value1));",
+        "21 }",
+        "22 </script>",
+        "23 </html>"
+      ]
+    }
+  ]
+}

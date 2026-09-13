@@ -1,0 +1,270 @@
+{
+  "paperId": "0478_s15_qp_23",
+  "subjectCode": "0478",
+  "session": "s15",
+  "component": "23",
+  "totalMarks": 32,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "In Task 1, you had to store the midday temperatures and midnight temperatures in\narrays.\nWrite suitable declarations for these two arrays.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "It has been decided to record the temperatures for one week rather than one month.\nWrite the new array declarations that you would use.",
+              "marks": 1,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Declare two other variables that you have used and state what you used each one for.\nVariable 1 ______\nUse______\nVariable 2 ______\nUse______",
+              "marks": 4,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements\nor a flowchart. Use temperatures for one week only. You should assume that Task 1 has\nalready been completed.",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Give a set of midday temperature data, for a week, that could be used to check your validation\nrules for Task 1. Explain why you chose this data set.\nData set ______\nReason for choice______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how you select the day with the highest midday temperature (part of Task 3). You may\ninclude pseudocode or programming statements as part of your explanation.\n\nSection B",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Read this section of program code that should input 10 positive numbers and then output the",
+        "smallest number input.",
+        "1 Small = 0",
+        "2 Counter = 0"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Num"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Num < Small THEN Num = Small"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Counter = Counter + 1"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PRINT Small"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Give the number of fields that are in each record.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "State which field you would choose for the primary key.\nGive a reason for choosing this field.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "State the data type you would choose for each of the following fields.\nGarage ______\nNumber of Bedrooms ______\nPrice in $ ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "The query-by-example grid below selects all houses with more than 1 bathroom and more\nthan 2 bedrooms.\nNumber of Number of\nField: Property Type Price in $ Brochure No\nBedrooms Bathrooms\nTable: PROPERTY PROPERTY PROPERTY PROPERTY PROPERTY\nSort: Ascending\nShow:\n \nCriteria: = 'House' >2 >1\nor:\nShow what would be output.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8e",
+          "label": "(e)",
+          "text": "Complete the query-by-example grid below to select and show the brochure number, property\ntype and price of all properties with a garage below $200,000.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "UNTIL Counter < 10",
+        "There are four errors in this code.",
+        "Locate these errors and suggest a corrected piece of code for each error.",
+        "[4]",
+        "Question 3 begins on page 8.",
+        "3 The flowchart below inputs the weight of a number of parcels in kilograms. Parcels weighing more",
+        "than 25 kilograms are rejected. A value of –1 stops the input.",
+        "The following information is output: the total weight of the parcels accepted and number of parcels",
+        "rejected.",
+        "START",
+        "INPUT",
+        "Weight",
+        "Yes",
+        "OUTPUT Total,",
+        "Is Weight",
+        "Reject",
+        "= –1?",
+        "END",
+        "No",
+        "Yes",
+        "Is Weight",
+        "> 25?",
+        "No",
+        "Complete the trace table for the input data:",
+        "1.8, 26.0, 7.0, 11.3, 10.0, 2.5, 25.2, 5.0, 19.8, 29.3, –1",
+        "Total Reject Weight OUTPUT",
+        "[5]",
+        "4 Five data types and five data samples are shown below.",
+        "Draw a line to link each data type to the correct data sample.",
+        "Data type Data sample",
+        "Integer 'a'",
+        "Real 2",
+        "Char 2.0",
+        "String True",
+        "Boolean \"Twelve\"",
+        "[4]",
+        "5 Explain the difference between a variable and a constant in a program.",
+        "[2]",
+        "6 Identify three different loop structures that you can use when writing pseudocode.",
+        "[3]",
+        "7 A database, PROPERTY, was set up to show the prices of properties for sale and the features of",
+        "each property. Part of the database is shown below.",
+        "Brochure Number of Number of Price",
+        "Property Type Garden Garage",
+        "No Bedrooms Bathrooms in $",
+        "Bungalow B17 7 4 Yes Yes 750,000",
+        "Apartment A09 2 1 No No 100,000",
+        "House H10 4 2 Yes No 450,000",
+        "House H13 3 2 Yes No 399,000",
+        "Apartment A01 2 2 No Yes 95,000",
+        "Apartment A16 1 1 No No 150,000",
+        "House H23 3 1 No Yes 250,000",
+        "House H46 2 1 Yes Yes 175,000"
+      ]
+    }
+  ]
+}

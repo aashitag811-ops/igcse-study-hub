@@ -1,0 +1,437 @@
+{
+  "paperId": "9618_w23_qp_21",
+  "subjectCode": "9618",
+  "session": "w23",
+  "component": "21",
+  "totalMarks": 62,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the table by writing the answer for each row:\nAnswer\nThe value assigned to Level when ThisValue is 40\nThe value assigned to Check when ThisValue is 36\nThe value assigned to Level when ThisValue is 18\nThe number of elements in array Data that may be incremented",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The pseudocode contains four assignments to variable Level. One of these assignments\nwill never be performed.\nIdentify this assignment and explain why this is the case.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The following line is added immediately before the ENDCASE statement:\nOTHERWISE : Level ← \"Undefined\"\nState why this assignment is never performed.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Give the appropriate data types for the variables ThisValue, Check and Level.\nThisValue ______\nCheck ______\nLevel ______",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "The following pseudocode represents part of the algorithm for a program:",
+        "CASE OF ThisValue",
+        "< 30 : Level ← \"Low\" // less than 30",
+        "Check ← 1",
+        "< 20 : Level ← \"Very Low\" // less than 20",
+        "Check ← ThisValue / 2",
+        "30 TO 40 : Level ← \"Medium\" // between 30 and 40",
+        "Check ← ThisValue / 3",
+        "Data[ThisValue] ← Data[ThisValue] + 1",
+        "> 40 : Level ← \"High\"",
+        "ENDCASE"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm is expressed as follows:\n• input 100 numbers, one at a time\n• keep a total of all numbers input that have a value between 30 and 70 inclusive and\noutput this total after the last number has been input.\nOutline, using stepwise refinement, the five steps for this algorithm which could be used to\nproduce pseudocode.\nDo not use pseudocode statements in your answer.\nStep 1 ______\nStep 2 ______\nStep 3 ______\nStep 4 ______\nStep 5 ______",
+          "marks": null,
+          "type": "outline",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Sequence is one programming construct.\nIdentify two other programming constructs that will be required when the algorithm is\nconverted into pseudocode.\nConstruct 1 ______\nConstruct 2 ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 2,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The stack is implemented using two variables and a 1D array of 8 elements as shown.\nThe variables are used to reference individual elements of the array, in such a way that:\n• the array is filled from the lowest indexed element towards the highest\n• all the elements of the array are available for the stack.\nComplete the diagram to represent the state of the stack as shown above.\nArray Data\nelement\n5 Variable",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "The diagram represents an Abstract Data Type (ADT).",
+        "The operation of this stack may be summarised as follows:",
+        "• The TopOfStack pointer points to the last item added to the stack.",
+        "• The BottomOfStack pointer points to the first item on the stack.",
+        "Stack",
+        "D1",
+        "← TopOfStack",
+        "D3",
+        "D4",
+        "D5",
+        "D2",
+        "← BottomOfStack"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "A function Push() will add a value onto the stack by manipulating the array and variables in\npart (a).\nBefore adding a value onto the stack, the algorithm will check that space is available.\nIf the value is added to the stack, the function will return TRUE, otherwise it will return FALSE.\nThe algorithm is expressed in five steps.\nComplete the steps.\n1. If ______ then return FALSE\n2. Otherwise ______ TopOfStack\n3. Use TopOfStack as an ______ to the array.\n4. Set the element at this ______ to the ______ being added.\n5. Return ______ .\n\n4 A global array is declared in pseudocode as follows:\nDECLARE Data : ARRAY[1:150] OF STRING\nA function TooMany() will:\n1. take two parameters:\n• a string (the search string)\n• an integer (the maximum value)\n2. count the number of strings in the array that exactly match the search string\n3. return TRUE if the count is greater than the maximum value, otherwise will return FALSE",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write pseudocode for the function TooMany().",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The global array is changed to a 2D array, organised as 150 rows by 2 columns. It is declared\nin pseudocode as follows:\nDECLARE Data : ARRAY[1:150, 1:2] OF STRING\nThe algorithm for the function in part (a) is changed. Strings will only be counted if both of\nthe following conditions are true:\n• The current row is an even number.\n• The search string exactly matches the value in either column.\nWrite pseudocode to check these conditions.\nAssume that the row index is contained in variable Row and the search string in variable\nSearch.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "TopOfStack",
+        "BottomOfStack",
+        "[3]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The pseudocode contains three errors due to the incorrect use of operators.\nIdentify each error and state the correction required.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The operator errors are corrected and the algorithm is tested as follows:\nThe input sequence:\n18, 4, ONE, 27, 189, ERIC, 3, 65, END\nproduces the output:\nThe minimum value is 3 and the count was 6\nThe algorithm is tested with a different test data sequence. The sequence contains a mix\nof integer and non-numeric values. It is terminated correctly but the algorithm produces\nunexpected results.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Explain the problem with the algorithm.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Give a sequence of four test data values that could be input to demonstrate the problem.\nValue 1 ______\nValue 2 ______\nValue 3 ______\nValue 4 ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "An algorithm is designed to find the smallest numeric value from an input sequence and count",
+        "how many numeric values have been input.",
+        "An example of an input sequence is:",
+        "23, AB56, 17, 23ZW, 4, 10, END",
+        "Numeric input values are all integers and non-numeric input is ignored, except for the string \"END\"",
+        "which is used to terminate the sequence.",
+        "The algorithm is expressed in pseudocode as shown:",
+        "DECLARE NextInput : STRING",
+        "DECLARE Min, Count, Num : INTEGER",
+        "Min ← 999",
+        "Count ← 0",
+        "REPEAT",
+        "INPUT NextInput",
+        "IF IS_NUM(NextInput) = TRUE THEN",
+        "Num ← STR_TO_NUM(NextInput)",
+        "IF Num > Min THEN",
+        "Min ← Num",
+        "ENDIF",
+        "Count ← Count & 1",
+        "ENDIF",
+        "UNTIL NextInput ← \"END\"",
+        "OUTPUT \"The minimum value is \", Min, \" and the count was \", Count"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "A new procedure MyOutput() will take a string and a Boolean parameter.\nMyOutput() may be called repeatedly and will use concatenation to build a string using a\nglobal variable MyString, up to a maximum length of 255 characters.\nMyString will be output in either of these two cases:\n1. The Boolean parameter value is TRUE\n2. The resulting string (after concatenation) would be longer than 255 characters.\nIf MyString is not output, the string is concatenated with MyString.\nFor example, the calls to MyOutput() given below would result in the output as shown:\nMyOutput(\"Hello \", FALSE)\nMyOutput(\"ginger \", FALSE)\nMyOutput(\"cat\", TRUE)\nMyOutput(\"How are you?\", TRUE)\nResulting output:\nHello ginger cat\nHow are you?\nNotes:\n• MyString is initialised to an empty string before MyOutput() is called for the first time.\n• No string passed to MyOutput() will be longer than 255 characters.\nWrite pseudocode for MyOutput().",
+          "marks": 7,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The design of the procedure given in part (a) is modified and MyString is changed from a\nglobal to a local variable declared in MyOutput().\nWhen the modified procedure is converted into program code, it does not work as expected.\nExplain why it does not work as expected.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "The pseudocode OUTPUT command starts each output on a new line."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm is represented by a state-transition diagram.",
+        "The table shows the inputs, outputs and states for the algorithm:",
+        "Current state Input Output Next state",
+        "S1 A1 X1 S2",
+        "S2 A3 none S1",
+        "S2 A2 X4 S5",
+        "S5 A1 X1 S5",
+        "S5 A4 X2 S2",
+        "S5 A3 none S3",
+        "S1 A9 X9 S3",
+        "S3 A9 X9 S4",
+        "Complete the state-transition diagram to represent the information given in the table.",
+        "A1 | X1",
+        "START",
+        "S1",
+        "A3",
+        "[5]"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module SendFile().\nAssume:\n• module Transmit() has already been written and is used to transmit a message\n• the value of MyID may be used as SourceID\n• the file specified contains no blank lines\n• the file specified does not contain the line \"****\"",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Module SendFile() is used to copy a file from one computer to another.\nA module within the program running on the destination computer will receive the data and\nwrite it to a new file.\nExplain why module SendFile() transmits the message with data string \"****\" after the\nlast line of the file.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "One of the text files to be sent contains several blank lines (lines that do not contain any text).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "Explain why this is a problem.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "Explain how the message format could be changed to allow a blank line to be sent.\n\nQuestion 8(d) starts on page 18.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "A new module has been defined:\nModule Description\n• takes two parameters:\no a string containing a message\no an integer containing a field number\nGetField()\n• If the field number is valid (in the range 1 to 3, inclusive), it\nreturns a string containing the required field, otherwise it returns\nan empty string.\nAs a reminder, a message is defined as follows:\n<STX><DestinationID><SourceID><Data><ETX>\nField\nField name Description\nnumber\na single character marking the start of the message\nSTX\nNot applicable\n(ASCII value 02)\nDestinationID\n1 three numeric characters that identify the destination computer\nSourceID\n2 three numeric characters that identify the source computer\na variable length string containing the data being sent\nData\n(Minimum length is 1 character)\na single character marking the end of the message\nETX\nNot applicable\n(ASCII value 03)\nWrite pseudocode for module GetField().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "A class of students are developing a program to send data between computers. Many computers",
+        "are connected together to form a wired network. Serial ports are used to connect one computer to",
+        "another.",
+        "Each computer:",
+        "• is assigned a unique three-digit ID",
+        "• has three ports, each identified by an integer value",
+        "• is connected to between one and three other computers.",
+        "Messages are sent between computers as a string of characters organised into fields as shown:",
+        "<STX><DestinationID><SourceID><Data><ETX>",
+        "Field",
+        "Field name Description",
+        "number",
+        "a single character marking the start of the message",
+        "STX",
+        "n/a",
+        "(ASCII value 02)",
+        "DestinationID",
+        "1 three numeric characters that identify the destination computer",
+        "SourceID",
+        "2 three numeric characters that identify the source computer",
+        "a variable length string containing the data being sent",
+        "Data",
+        "(Minimum length is 1 character)",
+        "a single character marking the end of the message",
+        "ETX",
+        "n/a",
+        "(ASCII value 03)",
+        "For example, the following message contains the data \"Hello Kevin\" being sent from computer",
+        "\"101\" to computer \"232\":",
+        "<STX>\"232101Hello Kevin\"<ETX>",
+        "Each computer will run a copy of the same program. Each program will contain a global variable,",
+        "MyID of type string, that contains the unique ID of the computer in which the program is running.",
+        "The programmer has defined the first two program modules as follows:",
+        "Module Description",
+        "• takes two parameters:",
+        "o a string containing a message",
+        "Transmit()",
+        "(already written)",
+        "o an integer containing a port number",
+        "• transmits the message using the given port",
+        "• takes three parameters:",
+        "o a string containing a text file name",
+        "o a string containing a Destination ID",
+        "SendFile()",
+        "o an integer containing a Port number",
+        "• transmits the file one line at a time",
+        "• transmits a final message with data string \"****\""
+      ]
+    }
+  ]
+}

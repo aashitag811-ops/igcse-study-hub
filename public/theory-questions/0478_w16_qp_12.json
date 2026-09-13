@@ -1,0 +1,472 @@
+{
+  "paperId": "0478_w16_qp_12",
+  "subjectCode": "0478",
+  "session": "w16",
+  "component": "12",
+  "totalMarks": 59,
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Give two reasons why a programmer would choose to write code in a low-level language.",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "High-level languages require either an interpreter or a compiler to translate the program.\nThe table below lists a number of statements about language translators.\nTick (3) to show which statements refer to interpreters and which refer to compilers.\nStatements\nInterpreter (3) Compiler (3)\nTranslates the source code into machine code\nall at once\nProduces an executable file in machine code\nExecutes a high-level language program one\ninstruction at a time\nOnce translated, the translator does not need to\nbe present for the program to run\nAn executable file is produced",
+          "marks": 5,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "State four functions of an operating system.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Explain what is meant by:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Serial data transmission",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Parallel data transmission",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A computer in a factory is connected to a printer. The printer is located in an office 1 km away\nfrom the factory.\nIdentify which data transmission method would be most suitable for this connection.\nGive two reasons for your choice.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Circle the corrupt bit in the corrupt byte in the table above.",
+          "marks": 1,
+          "type": "circle",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Explain how the corrupted bit was found.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 3,
+      "text": [
+        "Nine bytes of data are transmitted from one computer to another. Even parity is used. An additional",
+        "parity byte is also sent.",
+        "The ten bytes arrive at the destination computer as follows:",
+        "parity bit bit 2 bit 3 bit 4 bit 5 bit 6 bit 7 bit 8",
+        "byte 1 1 1 1 0 1 1 1 0",
+        "byte 2 0 0 0 0 0 1 0 1",
+        "byte 3 0 1 1 1 1 0 0 0",
+        "byte 4 1 1 0 0 0 0 0 0",
+        "byte 5 1 0 1 1 1 1 1 0",
+        "byte 6 0 1 0 1 1 0 0 1",
+        "byte 7 0 1 1 1 0 0 1 1",
+        "byte 8 0 0 1 1 0 1 1 0",
+        "byte 9 1 1 0 0 0 0 1 1",
+        "parity byte 0 0 1 0 0 0 1 0",
+        "One of the bits was corrupted during the data transmission."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write the denary (base 10) value represented by:\n128 64 32 16 8 4 2 1\n0 1 1 1 0 0 0 0",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "All the bits in the register are shifted one place to the right as shown below.\n0 1 1 1 0 0 0 0\n0 0 1 1 1 0 0 0\nWrite the denary number that is represented after this shift.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "State the effect the shift to the right had on the original denary number from part (a).",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5d",
+          "label": "(d)",
+          "text": "The original number in part (a) is shifted three places to the right.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5di",
+              "label": "(i)",
+              "text": "Show the new binary number:",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5dii",
+              "label": "(ii)",
+              "text": "Write the equivalent denary number.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5e",
+          "label": "(e)",
+          "text": "Describe the problems that could be caused if the original binary number in part (a) is shifted\nfive places to the right.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "A computer uses an 8-bit register.",
+        "The 8-bit register contains binary integers."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Four computer terms and eight descriptions are shown below.",
+        "Draw lines to connect each computer term to the correct description(s).",
+        "Computer term Description",
+        "Data can be read but not altered",
+        "Arithmetic and logic",
+        "Carries out operations such as",
+        "unit (ALU)",
+        "addition and multiplication",
+        "Stores bootstrap loader and BIOS",
+        "Control unit",
+        "Fetches each instruction in turn",
+        "Carries out operations such as",
+        "AND, OR, NOT",
+        "Random access",
+        "memory (RAM)",
+        "Stores part of the operating system",
+        "currently in use",
+        "Read only memory",
+        "Stores data currently in use",
+        "(ROM)",
+        "Manages execution of each",
+        "instruction",
+        "[4]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Complete the truth tables and name the single logic gate that could replace each logic circuit:",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "Working space\nA B X\n0 0\n0 1\n1 0\n1 1\nSingle logic gate ______",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aii",
+              "label": "(ii)",
+              "text": "Working space\nA B X\n0 0\n0 1\n1 0\n1 1\nSingle logic gate ______",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Draw a logic circuit to represent the following logic statement:\nX = 1 if (A = 1 AND B = 1) OR ( (B = NOT 1) AND C = 1)\nB X",
+              "marks": 4,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Complete the truth table for the logic statement in part (b)(i).\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Identify whether the four statements about file compression are correct by writing TRUE or FALSE",
+        "in the following table.",
+        "Statement TRUE or FALSE",
+        "MIDI files store the actual music notes in a compressed format",
+        "JPEG files are examples of lossless file compression",
+        "MP3 files are, on average, 90% smaller than the music files",
+        "stored on a CD",
+        "MP4 files are examples of lossy file compression",
+        "[4]"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Explain what is meant by a denial of service attack.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Name and describe two other potential security threats when using the Internet.\nSecurity threat 1 ______\nDescription ______\nSecurity threat 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Describe what is meant by HTML.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "The following URL is typed in:\nhttp://www.cie.org.uk/ComputerSciencePapers\nThis URL is composed of three parts.\nState the part of this URL that is the:\nFile name ______\nProtocol ______\nWeb server name ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "The alarm code is set to hexadecimal number 2 A F\nShow how this number would be stored in a 12-bit binary register.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Identify two sensors that the security system could use to detect intruders.\nDescribe how each sensor could be used in the security system.\nSensor 1 ______\nDescription ______\nSensor 2 ______\nDescription ______",
+          "marks": 6,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A security system is installed in a house. A hexadecimal number is entered to activate or deactivate",
+        "the alarm."
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain the differences between freeware and free software.",
+        "[4]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International",
+        "Examinations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after",
+        "the live examination series.",
+        "Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local",
+        "Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

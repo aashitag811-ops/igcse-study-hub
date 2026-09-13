@@ -1,0 +1,324 @@
+{
+  "paperId": "9608_w20_qp_22",
+  "subjectCode": "9608",
+  "session": "w20",
+  "component": "22",
+  "totalMarks": 75,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Algorithms usually consist of three different stages.\nOne stage is INPUT.\nName the other stages.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "An algorithm may be documented using different methods. These include structured English,\na program flowchart, and pseudocode.\nState what a program designer represents using one or more of these methods.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Programming languages support different data types.\nComplete the table by giving four different data types together with an example data value\nfor each.\nData type Example data value",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Draw lines to connect each of the following computing terms with the appropriate description.\nTerm Description\nA structure for the\nBlack-box testing\ntemporary storage of data\nA method used when the\nFile structure of the program is\nunknown\nA method of setting the\nAssignment\nvalue of a variable\nA structure for the\nArray\npermanent storage of data",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "A pseudocode algorithm assigns values to three variables as follows:\nFlagA TRUE\nFlagB FALSE\nFlagC TRUE\nEvaluate the expressions given in the following table:\nExpression Evaluates to\nNOT FlagB AND FlagC\nNOT (FlagB OR FlagC)\n(FlagA AND FlagB) OR FlagC\nNOT (FlagA AND FlagB) OR NOT FlagC",
+          "marks": 2,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The following pseudocode is an attempt to define an algorithm that takes two numbers as\ninput and outputs the larger of the two numbers.\nDECLARE A, B : INTEGER\nINPUT A\nINPUT B\nIF A > B\nTHEN\nOUTPUT A\nELSE\nOUTPUT B\nENDIF\nThe algorithm needs to be amended to include the following changes:\n1. Input three values, ensuring that each value input is unique.\n2. Output the average.\n3. Output the largest value.\nWrite the pseudocode for the amended algorithm.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Complete the pseudocode expressions in the following table.\nUse only functions and operators described in the Appendix on pages 18–19.\nExpression Evaluates to\n\"ALARM: \" & ______ (\"Time: 1202\" , ______) \"ALARM: 1202\"\n______ (\"Stepwise.\" , ______ , ______) \"wise\"\n1.5 * ______ (\"OnePointFive\") 18\n______ (27.5) \"27.5\"\n______ (9, 4) 2",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A problem may be decomposed into sub-tasks when designing an algorithm.\nGive three benefits of using sub-tasks.",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Write program code for the function CheckSkid().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Give two sets of test data that could be used to test the function.\nTest 1 – No skid detected\nValue1 Value2 Value3 Value4\nTest 2 – Skid detected\nValue1 Value2 Value3 Value4",
+          "marks": 2,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A car has the ability to detect a skid by monitoring the rate of rotation (the rotational speed) of",
+        "each wheel. If the rate of rotation of any wheel is not within 10% of the average of all four wheels,",
+        "the car skids.",
+        "A function, CheckSkid(), is being developed.",
+        "The function will:",
+        "• simulate real-time data acquisition, by prompting for the input of four integer values in the",
+        "range 0 to 1000 inclusive, representing the rate of rotation of each wheel",
+        "• calculate the average value",
+        "• check whether any individual value is more than 10% greater than the average or more than",
+        "10% less than the average",
+        "• return TRUE if any individual value is more than 10% greater than the average or more than",
+        "10% less than the average and FALSE otherwise",
+        "• output a suitable warning message."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The following structured English describes an algorithm used to count the number of odd and\neven digits in an input sequence.\n1. Initialise variables OddCount and EvenCount to zero.\n2. Prompt and input an integer.\n3. If the integer is not in the range 0 to 9 then go to step 7.\n4. If the integer is an even number then add 1 to EvenCount.\n5. Otherwise add 1 to OddCount.\n6. Repeat from step 2.\n7. Output \"Same\" if there are the same number of odd and even integers.\n8. Output \"Odd\" if there are more odd than even integers.\n9. Output \"Even\" if there are more even than odd integers.\nDraw a flowchart on the following page to represent the algorithm.",
+          "marks": 7,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The following pseudocode is an attempt to check whether two equal-length strings consist of\nidentical characters.\nRefer to the Appendix on pages 18–19 for the list of built-in functions and operators.\nFUNCTION Compare(String1, String2 : STRING) RETURNS BOOLEAN\nDECLARE x, y, Len1, Len2 : INTEGER\nDECLARE RetFlag : BOOLEAN\nDECLARE NextChar : CHAR\nDECLARE New : STRING\nLen1 LENGTH(String1)\nRetFlag TRUE\nFOR x 1 TO Len1 // for each char in String1\nLen2 LENGTH(String2)\nNextChar MID(String1, x, 1) // get NextChar from String1\nNew \"\"\nFOR y 1 TO Len2 // for each char in String2\nIF NextChar <> MID(String2, y, 1) // no match\nTHEN\nNew New & MID(String2, y, 1) // save this char from String2\nENDIF\nENDFOR\nString2 New // replace String2 with New\nENDFOR\nIF LENGTH(String2) <> 0 // anything left in String2 ?\nTHEN\nRetFlag FALSE\nENDIF\nRETURN RetFlag\nENDFUNCTION",
+          "marks": null,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Complete the trace table below by performing a dry run of the function when it is called\nas follows:\nResult Compare(\"SUB\", \"BUS\")\nThe first row has been completed for you.\nString1 String2 Len1 RetFlag x Len2 NextChar New y\n\"SUB\" \"BUS\" 3 TRUE 1",
+              "marks": 5,
+              "type": "compare",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "State the value returned.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4biii",
+              "label": "(iii)",
+              "text": "There is an error in the algorithm, which means that under certain circumstances, the\nfunction will return an incorrect value.\nDescribe the problem. Give two test strings that would demonstrate it.\nProblem ______\nTest String1 ______\nTest String2 ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4biv",
+              "label": "(iv)",
+              "text": "Describe the modification that needs to be made to the algorithm to correct the error.\nDo not use pseudocode or program code in your answer.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bv",
+              "label": "(v)",
+              "text": "State the name given to the type of testing that makes use of a trace table.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bvi",
+              "label": "(vi)",
+              "text": "State two features found in a typical Integrated Development Environment (IDE) that\nmay be used for debugging a program.\n\nQuestion 5 begins on the next page.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 19,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module InitArrays().",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Write pseudocode for the module SaveArrays().",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Write program code for the module LoadArrays().\nThe module description is repeated here for reference.\nModule Description\n• Values from the text file Backup.txt are stored in the\nLoadArrays() two arrays\n• The number of elements stored is returned\nYou should assume:\n• each line of the file contains a string of the correct format and no validation checks are\nrequired\n• there are no more than 10 000 lines in the file.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is\ndivided by ThisDiv\nExample: DIV(10,3) returns 3\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A hashtag is used on a social media network. A hashtag is a string consisting of a hash character",
+        "‘#’ followed by one or more alphanumeric characters.",
+        "A program is being developed to monitor the use of hashtags.",
+        "The program will include two global arrays each containing 10 000 elements:",
+        "• A 1D array, TagString, of type STRING stores each hashtag in a single element. All unused",
+        "array elements contain an empty string (\"\").",
+        "• A 1D array, TagCount, of type INTEGER stores a count of the number of times each hashtag",
+        "is used. The count value at a given index relates to the element stored at the corresponding",
+        "index in the TagString array.",
+        "The contents of the two arrays will be stored in a text file Backup.txt. The format of each line of",
+        "the file is:",
+        "<Hashtag><','><Count>",
+        "For example:",
+        "\"#ComputerScienceClass,978\"",
+        "A developer has started to define the modules as follows:",
+        "Module Description",
+        "InitArrays()",
+        "• Initialise the arrays",
+        "• The contents of the two arrays are stored in the text file Backup.txt",
+        "Existing file contents will be overwritten",
+        "SaveArrays() • Each hashtag and count are stored in one line of the file, as in the example",
+        "above",
+        "• Unused TagString elements are not added to the file",
+        "• Returns the total number of unused TagString elements",
+        "• Values from the text file Backup.txt are stored in the two arrays",
+        "LoadArrays()",
+        "• The number of elements stored is returned"
+      ]
+    }
+  ]
+}

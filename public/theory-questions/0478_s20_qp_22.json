@@ -1,0 +1,322 @@
+{
+  "paperId": "0478_s20_qp_22",
+  "subjectCode": "0478",
+  "session": "s20",
+  "component": "22",
+  "totalMarks": 34,
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Identify two variables that you could have used for Task 1. Give the data type and state the\nuse of each variable.\nVariable 1 ______\nData type ______\nUse ______\nVariable 2 ______\nData type ______\nUse ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Data input by a customer for Task 1 includes the day and the hour of arrival.\nIdentify one suitable validation check for each input and justify your choice. Your validation\nchecks must be different.\nDay of arrival – validation check ______\nJustification ______\nHour of arrival – validation check ______\nJustification ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how your program for Task 1 ensured that the frequent parking number entered by\nthe customer had a valid check digit.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Write an algorithm for part of Task 2 that simulates customer payment and calculating total\npayments using either pseudocode, programming statements or a flowchart. Assume that\nTask 1 has been completed.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Explain how your program completed Task 3. Assume that Task 2 has been completed. Any\nprogramming statements used in your answer must be fully explained.\n\nSection B",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Most programming languages include basic data types. Ahmad is describing the basic data types",
+        "he has used.",
+        "State the data type that Ahmad is describing in each sentence.",
+        "Choose the data type from this list of programming terms.",
+        "Array Boolean Char Constant Function Integer",
+        "Iteration Procedure Real String Variable",
+        "A number with a fractional part that can be positive or negative and used in calculations",
+        "Data type ..........................................................................................................................................",
+        "A whole number that can be positive, negative or zero and used in calculations",
+        "Data type ..........................................................................................................................................",
+        "A single number, symbol or letter",
+        "Data type ..........................................................................................................................................",
+        "A sequence of characters",
+        "Data type ..........................................................................................................................................",
+        "A data type with two values, True or False",
+        "Data type ..........................................................................................................................................",
+        "[5]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "An algorithm has been written in pseudocode to input the names and marks of 35 students.\nThe algorithm stores the names and marks in two arrays Name[ ] and Mark[ ]. The highest\nmark awarded is found and the number of students with that mark is counted. Both of these\nvalues are output.\n01 HighestMark ← 100\n02 HighestMarkStudents ← 0\n03 FOR Count ← 1 TO 35",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": []
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please enter student name\""
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Name[Count]"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please enter student mark\""
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Mark[Counter]"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Mark[Count] = HighestMark"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "HighestMarkStudents ← HighestMarkStudents – 1"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Mark[Count] > HighestMark"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Mark[Count] ← HighestMark"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "HighestMarkStudents ← 1"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Count"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "Explain how you could extend the algorithm to also find the lowest mark awarded, count the\nnumber of students with that mark, and output both these values.\n\n4 This flowchart inputs the points won and the points lost when playing a game. The difference\nbetween the points won and lost is calculated and depending on the result the player can: move\nup to the next level, stay at the same level, or move down to the previous level. The flowchart\nfinishes when the input for points won is –1.\nSTART\nINPUT\nPointsWon, PointsLost\nIS\nYes\nEND\nPointsWon = –1 ?\nNo\nDifference\nPointsWon - PointsLost\nIS\nOUTPUT\nYes\nDifference > =\n\"Well done\n1000 ?\nmove up\"\nNo\nIS\nOUTPUT Yes\nDifference < 0 ?\n\"Sorry move\ndown\"\nNo\nOUTPUT\n\"Keep on trying\"",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18a",
+          "label": "(a)",
+          "text": "Complete a trace table for this set of input data:\n5000, 4474, 6055, 2000, 7900, 9800, 3000, 2150, –1, 6700, 7615\nPointsWon PointsLost Difference\nOUTPUT",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "The flowchart needs to be changed. When the difference is more than 5000 the output\nmessage is ‘Fantastic leap up two levels’.\nDescribe the changes that will need to be made to the flowchart.\n\n5 Arrays are data structures used in programming. Explain what is meant by the terms dimension\nand index in an array. Use examples of arrays in your explanations.\nDimension ______\nIndex ______\n\n6 A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale.\nJuice code Fruit 1 Fruit 2 Size Volume (ml) Stock level\nLMO10 Mango Orange Large 1000 18\nMOO05 Orange Orange Medium 500 8\nSAM02 Apple Mango Small 200 25\nSAA02 Apple Apple Small 200 50\nSPP02 Pineapple Pineapple Small 200 10\nMMM05 Mango Mango Medium 500 12\nLMM10 Mango Mango Large 1000 5\nMGG05 Guava Guava Medium 500 5\nSMO02 Mango Orange Small 200 7\nMOP05 Orange Pineapple Medium 500 12\nLAA10 Apple Apple Large 1000 32\nSGO02 Guava Orange Small 200 10\nLPP10 Pineapple Pineapple Large 1000 3\nLOO10 Orange Orange Large 1000 25\nSOO02 Orange Orange Small 200 40",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18a",
+          "label": "(a)",
+          "text": "Identify a suitable field to use as the primary key. State a reason for your choice.\nField ______\nReason ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "18b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid to display only the stock level and size of all cartons\ncontaining only apple juice.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \",",
+        "HighestMark",
+        "Give line numbers where the four errors are to be found in the pseudocode. Suggest a",
+        "correction for each error.",
+        "Error 1 line number ...................................................................................................................",
+        "Correction .................................................................................................................................",
+        "Error 2 line number ...................................................................................................................",
+        "Correction .................................................................................................................................",
+        "Error 3 line number ...................................................................................................................",
+        "Correction .................................................................................................................................",
+        "Error 4 line number ...................................................................................................................",
+        "Correction .................................................................................................................................",
+        "[4]"
+      ]
+    }
+  ]
+}

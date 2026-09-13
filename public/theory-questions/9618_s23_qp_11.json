@@ -1,0 +1,470 @@
+{
+  "paperId": "9618_s23_qp_11",
+  "subjectCode": "9618",
+  "session": "s23",
+  "component": "11",
+  "totalMarks": 70,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Complete the table by defining the image terms.\nTerm Definition\nDrawing list ______\nPixel ______\nColour depth ______",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The bitmap images are photographs of the holiday locations.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Colour depth and image resolution are both included in the file header of a bitmap image.\nIdentify two other items that could be included in the file header of each photograph.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "One of the photographs has a bit depth of 8 bytes and an image resolution of 1500 pixels\nwide and 3000 pixels high.\nCalculate the file size of the photograph in megabytes. Show your working.\nWorking ______\nFile size ______ MB",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The photographs are compressed before they are uploaded to a web server.\nCustomers download the photographs from this web server.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain the reasons why compressing the photographs will benefit the customers.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "An image can be compressed using run‑length encoding (RLE).\nExplain the reasons why RLE may not reduce the file size of a bitmap image.\nGive one example in your answer.",
+              "marks": 3,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Images are being created to advertise holidays.",
+        "Some of the images are bitmap images and some are vector graphics."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The database is managed using a Database Management System (DBMS).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "State what is meant by a data dictionary and give one example of an item typically found\nin a data dictionary.\nDefinition ______\nExample ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "State what is meant by data integrity and give one example of how this is implemented\nin a database.\nDefinition ______\nExample ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The database, Birds, stores information about the types of bird and the people who have\nseen them.\nData about each bird seen is stored with its location and data about the person who saw the\nbird.\nDatabase Birds has the following tables:\nBIRD_TYPE(BirdID, Name, Size)\nBIRD_SEEN(SeenID, BirdID, Date, Location, PersonID)\nPERSON(PersonID, FirstName, LastName, EmailAddress)",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Complete the table by identifying two foreign keys and the database table where each is\nfound.\nForeign key Database table",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The database Birds has been normalised.\nDraw one line from each Normal Form to the most appropriate definition.\nNormal Form Definition\nAll fields are fully dependent on the primary key.\nFirst Normal Form (1NF)\nThere are no repeating groups of attributes.\nSecond Normal Form (2NF)\nThere are no partial dependencies.\nThird Normal Form (3NF)",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "Part of the database table BIRD_TYPE is shown:\nBirdID Name Size\n0123 Blackbird Medium\n0035 Jay Large\n0004 Raven Large\n0085 Robin Small\nThe database only supports these data types:\n• character\n• varchar\n• Boolean\n• integer\n• real\n• date\n• time\nWrite a Structured Query Language (SQL) script to define the table Bird_Type.",
+              "marks": 4,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biv",
+              "label": "(iv)",
+              "text": "The database tables are repeated here for reference:\nBIRD_TYPE(BirdID, Name, Size)\nBIRD_SEEN(SeenID, BirdID, Date, Location, PersonID)\nPERSON(PersonID, FirstName, LastName, EmailAddress)\nComplete the SQL script to return the number of birds of each size seen by the person\nwith the ID of J_123.\nSELECT BIRD_TYPE.Size, ______ (BIRD_TYPE.BirdID)\nAS NumberOfBirds\nFROM BIRD_TYPE, ______\nWHERE ______ = \"J_123\"\nAND BIRD_TYPE.BirdID = ______\n______ BIRD_TYPE.Size;",
+              "marks": 5,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "An organisation uses a database to store data about the types of bird that people have seen."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Describe how the Operating System manages the peripheral hardware devices of the\ncomputer.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Hardware management is one key management task carried out by the Operating System.\nIdentify two other key management tasks carried out by the Operating System.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The Operating System has utility software including defragmentation software.\nExplain how defragmentation can improve the performance of the computer.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The computer stores data in binary form.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "State the difference between a kibibyte and a kilobyte.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "Convert the denary number 964 into Binary Coded Decimal (BCD).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3diii",
+              "label": "(iii)",
+              "text": "Convert the positive binary integer 11110010 into hexadecimal.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3div",
+              "label": "(iv)",
+              "text": "Give the smallest and largest two’s complement binary number that can be represented\nusing 8 bits.\nSmallest ______\nLargest ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dv",
+              "label": "(v)",
+              "text": "Add the following two binary integers using binary addition. Show your working.\n1 0 1 1 0 0 0 0\n+ 0 0 0 1 1 0 1 1",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "3dvi",
+              "label": "(vi)",
+              "text": "Show the result of a 3‑place right logical shift on the binary number:\n11001100",
+              "marks": 1,
+              "type": "place",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A computer has an Operating System (OS)."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "This computer has both Read Only Memory (ROM) and Random Access Memory (RAM).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Describe the contents of the ROM in the central computer.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "The central computer has Dynamic RAM (DRAM).\nIdentify two advantages of using DRAM instead of Static RAM (SRAM).",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The central computer stores the video files on secondary storage.\nDescribe two reasons why magnetic storage is more appropriate than solid state storage for\nthis computer.",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The CCTV system uses Artificial Intelligence (AI) to identify the presence of a person in the\nhouse and to track their movements.\nDescribe how AI is used in this system.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "The CCTV cameras are connected to a network and transfer their data wirelessly to the\ncentral computer.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "Each device on the network has an IP address.\nComplete the description of IP addresses.\nAn IPv4 address contains ______ groups of digits. Each group is\nrepresented in ______ bits and the groups are separated by full stops.\nAn IPv6 address contains ______ groups of digits. Each group is\nrepresented in ______ bits. Multiple groups that only contain zeros\ncan be replaced with a ______ .",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "The network makes use of subnetting.\nDescribe two benefits of subnetting a network.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "A networked closed‑circuit television (CCTV) system in a house uses sensors and cameras to",
+        "detect the presence of a person. It then tracks the person and records a video of their movements.",
+        "Data from the CCTV cameras is transmitted to a central computer."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Draw the logic circuit for this logic expression:\nT = (NOT A OR B) XOR (C NAND D)",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Describe the function of the NAND and NOR logic gates.\nNAND ______\nNOR ______",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An interrupt is generated when a key is pressed on a computer keyboard.",
+        "Explain how the computer handles this interrupt.",
+        "[5]",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
+      ]
+    }
+  ]
+}

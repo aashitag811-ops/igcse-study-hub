@@ -1,0 +1,470 @@
+{
+  "paperId": "9618_s22_qp_23",
+  "subjectCode": "9618",
+  "session": "s22",
+  "component": "23",
+  "totalMarks": 67,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The following table contains pseudocode examples.\nEach example may include all or part of:\n• selection\n• iteration (repetition)\n• assignment.\nComplete the table by placing one or more ticks (✓) in each row.\nPseudocode example Selection Iteration Assignment\nFOR Index 1 TO 3\nSafe[Index] GetResult()\nNEXT Index\nOTHERWISE : OUTPUT \"ERROR 1202\"\nREPEAT UNTIL Index = 27\nINPUT MyName\nIF Mark > 74 THEN\nGrade 'A'\nENDIF",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Program variables have values as follows:\nVariable Value\nAAA TRUE\nBBB FALSE\nCount 99\nComplete the table by evaluating each expression.\nExpression Evaluation\nAAA AND (Count > 99)\nAAA AND (NOT BBB)\n(Count <= 99) AND (AAA OR BBB)\n(BBB AND Count > 50) OR NOT AAA",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Give an example of when a variable of type Boolean would be used.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A program has been written to implement a website browser and maintenance is now required.",
+        "One type of maintenance is called perfective.",
+        "Name two other types of maintenance that the program may require and give a reason for each.",
+        "Type 1 ..............................................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "Type 2 ..............................................................................................................................................",
+        "Reason .............................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A structure chart will be produced as part of the development process.\nDescribe the purpose of a structure chart.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Module Section_1() calls one of the other three modules. The module called will be\nselected when the program runs.\nDraw the structure chart.",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Four program modules are defined as follows:",
+        "Pseudocode module header",
+        "PROCEDURE Sub1_A(XT : INTEGER, PB : STRING)",
+        "FUNCTION Sub1_B(RA : INTEGER) RETURNS BOOLEAN",
+        "PROCEDURE Sub1_C(SB : INTEGER, BYREF SA : STRING)",
+        "PROCEDURE Section_1()"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Items in a factory are weighed automatically. The weight is stored as an integer value representing",
+        "the item weight to the nearest gram (g).",
+        "A function is written to validate the weight of each item. The function will return \"PASS\" if the",
+        "weight of the item is within the acceptable range, otherwise the function will return \"FAIL\".",
+        "The acceptable weight range for an item is 150 g to 155 g inclusive.",
+        "The validation function is to be properly tested. Black-box testing will be used and a test plan",
+        "needs to be produced.",
+        "Complete the table by writing additional tests to test this function.",
+        "Type of Example Expected",
+        "Explanation",
+        "test data test value return value",
+        "Normal 153 \"PASS\" Value within the acceptable range",
+        "[4]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Write pseudocode to declare the record structure for type Employee.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "A 1D array Staff containing 500 elements will be used to store the employee records.\nWrite pseudocode to declare the Staff array.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "There may be more records in the array than there are employees in the company. In this\ncase, some records of the array will be unused.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "State why it is good practice to have a standard way to indicate unused array elements.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Give one way of indicating an unused record in the Staff array.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "A procedure Absentees() will output the EmployeeNumber and the Name of all employees\nwho have an Attendance value of 90.00 or less.\nWrite pseudocode for the procedure Absentees().\nAssume that the Staff array is global.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A program will store attendance data about each employee of a company.",
+        "The data will be held in a record structure of type Employee. The fields that will be needed are as",
+        "shown:",
+        "Field Typical value Comment",
+        "EmployeeNumber 123 A numeric value starting from 1",
+        "Name \"Smith,Eric\"",
+        "Format: <last name>','<first name>",
+        "Department \"1B\"",
+        "May contain letters and numbers",
+        "Born 13/02/2006 Must not be before 04/02/1957",
+        "Attendance 97.40",
+        "Represents a percentage"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The factorial of a number is the product of all the integers from 1 to that number.\nFor example:\nfactorial of 5 is given by 1 × 2 × 3 × 4 × 5 = 120\nfactorial of 7 is given by 1 × 2 × 3 × 4 × 5 × 6 × 7 = 5040\nfactorial of 1 = 1\nNote: factorial of 0 = 1\nA function Factorial() will:\n• be called with an integer number as a parameter\n• calculate and return the factorial of the number\n• return −1 if the number is negative.\nWrite pseudocode for the function Factorial().",
+          "marks": 6,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A procedure FirstTen() will output the factorial of the numbers from 0 to 9. The procedure\nwill use the function from part (a).\nThe required output is:\nFactorial of 0 is 1\nFactorial of 1 is 1\nFactorial of 2 is 2\nFactorial of 9 is 362880\nThe program flowchart represents an algorithm for FirstTen().\nSTART\nSet Num to 0\nEND\nComplete the table by writing the text that should replace each label A to F.\nLabel Text",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "There is an error in the algorithm. In certain cases, a text file will have at least three lines but\nthe output will be incorrect.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "State how the output may be incorrect.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aii",
+              "label": "(ii)",
+              "text": "Describe the error in the algorithm and explain how it may be corrected.\nDescription ______\nExplanation ______",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The original algorithm is implemented and sometimes the last three lines of the text file are\noutput correctly.\nState the condition that results in the correct output.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "Lines 20 to 23 inclusive could be replaced with a single pseudocode statement.\nWrite the pseudocode statement.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The following pseudocode represents an algorithm intended to output the last three lines as they",
+        "appear in a text file. Line numbers are provided for reference only.",
+        "10 PROCEDURE LastLines(ThisFile : STRING)",
+        "11 DECLARE ThisLine : STRING",
+        "12 DECLARE Buffer : ARRAY[1:3] OF STRING",
+        "13 DECLARE LineNum : INTEGER",
+        "14 LineNum 1",
+        "15 OPENFILE ThisFile FOR READ",
+        "17 WHILE NOT EOF(ThisFile)",
+        "18 READFILE Thisfile, ThisLine // read a line",
+        "19 Buffer[LineNum] ThisLine",
+        "20 LineNum LineNum + 1",
+        "21 IF LineNum = 4 THEN",
+        "22 LineNum 1",
+        "23 ENDIF",
+        "24 ENDWHILE",
+        "26 CLOSEFILE ThisFile",
+        "27 FOR LineNum 1 TO 3",
+        "28 OUTPUT Buffer[LineNum]",
+        "29 NEXT LineNum",
+        "30 ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Complete the diagram.\nAnalysis\nMaintenance",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Explain the meaning of the downward and upward arrows.\nDownward arrows ______\nUpward arrows ______",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Identify another type of model for the program development life cycle.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "The following diagram shows the incomplete waterfall model of the program development life",
+        "cycle."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module Generate().",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "A global 2D array Secret of type STRING stores the passwords together with the website\ndomain name where they are used. Secret contains 1000 elements organised as 500 rows\nby 2 columns.\nUnused elements contain the empty string (\"\"). These may occur anywhere in the array.\nAn example of part of the array is:\nArray element Value\nSecret[27, 1] \"www.thiswebsite.com\"\nSecret[27, 2] \"●●●●●●●●●●●●\"\nSecret[28, 1] \"www.thatwebsite.com\"\nSecret[28, 2] \"●●●●●●●●●●●●\"\nNote:\n• For security, the passwords are stored in an encrypted form, shown as \"●●●●●●●●●●●●\"\nin the example.\n• The passwords cannot be used without being decrypted.\n• You may assume that the encrypted form of a password will not be an empty string.\nAdditional modules are defined as follows:\nModule Description\n• Takes a password as a string\nEncrypt()\n• Returns the encrypted form of the password as a string\n• Takes an encrypted password as a string\nDecrypt()\n• Returns the decrypted form of the password as a string\n• Takes a website domain name as a string\n• Searches for the website domain name in the array Secret\n• If the website domain name is found, the decrypted password is\nFindPassword()\nreturned\n• If the website domain name is not found, an empty string is\nreturned\n• Takes two parameters as strings: a website domain name and a\npassword\n• Searches for the website domain name in the array Secret and\nAddPassword() if not found, adds the website domain name and the encrypted\npassword to the array\n• Returns TRUE if the website domain name and encrypted\npassword are added to the array, otherwise returns FALSE\nThe first three modules have been written.\nWrite pseudocode for the module AddPassword().",
+          "marks": 6,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "The content of the array Secret is to be stored in a text file for backup.\nIt must be possible to read the data back from the file and extract the website domain name\nand the encrypted password.\nBoth the website domain name and encrypted password are stored in the array as strings of\ncharacters.\nThe encrypted password may contain any character from the character set used and the\nlength of both the encrypted password and the website domain name is variable.\nExplain how a single line of the text file can be used to store the website domain name and\nthe encrypted password.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A program allows a user to save passwords used to log in to websites. A stored password is then",
+        "inserted automatically when the user logs in to the corresponding website.",
+        "A student is developing a program to generate a strong password. The password will be of a fixed",
+        "format, consisting of three groups of four alphanumeric characters, separated by the hyphen",
+        "character '-'.",
+        "An example of a password is: \"FxAf-3hzV-Aq49\"",
+        "A valid password:",
+        "• must be 14 characters long",
+        "• must be organised as three groups of four alphanumeric characters. The groups are",
+        "separated by hyphen characters",
+        "• may include duplicated characters, provided these appear in different groups.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "• Generates a single random character from within one of the following",
+        "ranges:",
+        "○ 'a' to 'z'",
+        "RandomChar()",
+        "○ 'A' to 'Z'",
+        "○ '0' to '9'",
+        "• Returns the character",
+        "• Takes two parameters:",
+        "○ a string",
+        "○ a character",
+        "Exists()",
+        "• Performs a case-sensitive search for the character in the string",
+        "• Returns TRUE if the character occurs in the string, otherwise returns",
+        "FALSE",
+        "• Generates a valid password",
+        "Generate() • Uses RandomChar() and Exists()",
+        "• Returns the password",
+        "Note: in a case-sensitive comparison, 'a' is not the same as 'A'."
+      ]
+    }
+  ]
+}

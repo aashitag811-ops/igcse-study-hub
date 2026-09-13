@@ -1,0 +1,291 @@
+{
+  "paperId": "0478_m24_qp_22",
+  "subjectCode": "0478",
+  "session": "m24",
+  "component": "22",
+  "totalMarks": 42,
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to show which task is part of the analysis stage of the program life cycle.",
+        "A coding",
+        "B decomposition",
+        "C design",
+        "D testing",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Four test data types and five descriptions are shown.\nDraw one line to link each test data type to its most appropriate description.\nTest data type Description\nabnormal a value that is accepted\na value that is the highest or lowest value to be accepted and\nthe corresponding lowest or highest value to be rejected\nboundary\na value that is the highest or lowest value to be rejected\nextreme\na value that is rejected\na value that is the highest or lowest value to\nnormal be accepted",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "An algorithm has been written to test if an integer that is input is in the range 5 to 10 inclusive.\nIdentify an example of suitable test data for each test data type.\nAbnormal ______\nBoundary ______\nExtreme ______\nNormal ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Write an algorithm in pseudocode to input a number, MyNumber, and use a linear search to\ntest if that number is stored in the array. If the number is found in the array, the position in the\narray is output. If the number is not found in the array, “Not found” is output.",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Write an algorithm in pseudocode to sort the array Values[1:50] into ascending order\nusing a bubble sort.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A linear search and a bubble sort are standard methods of solution.",
+        "Fifty numbers are already stored in the array Values[1:50]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Identify three data types used in programming.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to calculate the profit when an item is sold. Values",
+        "for cost price and selling price are input, the profit is calculated (selling price – cost price) and",
+        "output. The input of zero for either value stops the algorithm.",
+        "01 REPEAT",
+        "02 OUTPUT \"Enter cost price \"",
+        "03 INPUT Cost",
+        "04 OUTPUT \"Enter selling price \"",
+        "05 OUTPUT Sell"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Cost <> 0 OR Sell <> 0"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Profit ← Sell - Cost"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Profit is \", Profit"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Identify the line numbers of three errors in the pseudocode and suggest corrections.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "This algorithm needs to be improved with a range check.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11bi",
+              "label": "(i)",
+              "text": "Write pseudocode to reject the input of values less than zero for variables Cost and\nSell",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11bii",
+              "label": "(ii)",
+              "text": "Describe two other validation checks that should be included in this algorithm.\nCheck 1 ______\nCheck 2 ______\n\n6 Describe two types of iteration that a programmer can use whilst writing a program.\n\n7 Consider the logic expression:\nX = (A XOR B) AND (NOT B AND C)",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for this logic expression. Each logic gate must have a maximum of two\ninputs. Do not simplify this logic expression.\nB X",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Complete the truth table from the given logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n8 This flowchart represents an algorithm to find the average size of groups of visitors to an attraction.\nSTART\nNumberGroups 0\nTotal 0\nINPUT\nGroupSize\nIS\nYes\nGroupSize Average DIV(Total, NumberGroups)\n= 0?\nNo\nOUTPUT\n\"Average group\nNumberGroups NumberGroups + 1\nsize \", Average\nTotal Total + GroupSize\nSTOP\nComplete the trace table using this data:\n7, 10, 2, 8, 3, 9, 0, 6\nNumberGroups Total GroupSize Average\nOUTPUT\n\n9 A storage unit rental company wants to set up a new database table for the storage units that can\nbe rented.\nThe table is called StorageUnits and needs to store these details:\n• SizeMetres – size in square metres\n• Position – first, second or third floor\n• Hoist – whether there is a hoist available for the transfer of items\n• PriceMonth – the price in dollars for a month’s rental\n• StorageID – the code to identify each storage unit, for example S123",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "11ai",
+              "label": "(i)",
+              "text": "Give the name of the field that would be used for the primary key.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "11aii",
+              "label": "(ii)",
+              "text": "State the reason for choosing this field for the primary key.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Complete the table to identify the most appropriate data type for these fields in the table\nStorageUnits\nField Data type\nSizeMetres\nPosition\nHoist\nStorageID",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "Complete this structured query language (SQL) statement to display only the storage code,\nprice and size in square metres of all the storage units where there is a hoist available.\nSELECT ______\nFROM ______\nWHERE ______ ;\n\n10 A programmer has written a program that will be maintained by another programmer.\nExplain how the program can be written to make sure it can be easily maintained by the other\nprogrammer.\n\n11 Students in a class are recording the amount of time in minutes spent in front of a screen for each\nday of the week.\nThe one-dimensional (1D) array StudentName[] contains the names of the students in the class.\nThe two-dimensional (2D) array ScreenTime[] is used to input the number of minutes on each\nday spent in front of a screen.\nThe position of each student’s data in the two arrays is the same. For example, the student stored\nat index 10 in StudentName[] and ScreenTime[] is the same.\nThe variable ClassSize contains the number of students in the class.\nWrite a program that meets these requirements:\n• allows all the students to enter their daily minutes of screen times for the past week\n• calculates the total number of minutes of screen time for each student in the week\n• counts, for each student, the number of days with more than 300 minutes of screen time\n• calculates the average weekly minutes of screen time for the whole class\n• finds the student with the lowest weekly minutes of screen time\n• outputs for each student:\n– name\n– total week’s screen time in hours and minutes\n– number of days with more than 300 minutes of screen time\n• outputs the average weekly minutes of screen time for the whole class\n• outputs the name of the student with the lowest weekly screen time.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll inputs and outputs must contain suitable messages.\nAssume that the array StudentName[] and the variable ClassSize already contain the\nrequired data.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 26,
+      "text": [
+        "UNTIL Cost = 0 OR Sell = 0"
+      ]
+    }
+  ]
+}

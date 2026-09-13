@@ -1,0 +1,435 @@
+{
+  "paperId": "0478_m26_qp_22",
+  "subjectCode": "0478",
+  "session": "m26",
+  "component": "22",
+  "totalMarks": 52,
+  "questionCount": 22,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box to identify the reason for applying a verification check to input data.",
+        "A To make sure that all the data is in the correct range.",
+        "B To make sure that all the data is accurate.",
+        "C To make sure that no errors have been introduced during input.",
+        "D To make sure that all the data is of the correct length.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Identify the type of validation check in each description. Each check must be different.",
+          "marks": null,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "A check to make sure that data input follows a set pattern such as two letters followed\nby three numbers.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "A check to make sure that only whole numbers can be input.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Explain the reasons why validation checks are necessary when data is input.\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000003 * DFD",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Write the pseudocode for an algorithm to perform a validation check on each number as it is\ninput to meet the following criteria:\n• Input 20 numbers, one at a time.\n• If a number is negative, store it in the current element of array NegNumbers[]\n• If a number is not negative, ask for it to be input again until a negative number is input.\n• When all 20 negative numbers have been stored, output a message to state the check\nhas been completed.\nUse appropriate input prompts and output messages to make the requirements clear to\nthe user.\nDo not declare any arrays or variables for this algorithm.\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26 [Turn over\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000004 * DFD",
+          "marks": 6,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The program development life cycle is split into a number of stages.",
+        "Describe what happens during the analysis and design stages of the program development",
+        "life cycle.",
+        "analysis ............................................................................................................................................",
+        "design ...............................................................................................................................................",
+        "[6]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box to identify which of the following does not help to create a",
+        "maintainable program.",
+        "A Use meaningful identifiers for variable names.",
+        "B Remove blank lines to make the program code shorter.",
+        "C Use procedures and functions.",
+        "D Use the commenting feature provided by the programming languages.",
+        "[1]",
+        "© Cambridge University Press & Assessment 2026 0478/22/F/M/26",
+        "Trace ID: PC-823FA97156",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "0478/22 Question Paper March 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 0478/22 Question Paper March 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000005 * DFD",
+        "© Cambridge University Press & Assessment 2026 0478/22/F/M/26 [Turn over",
+        "Trace ID: PC-823FA97156",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "0478/22 Question Paper March 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 0478/22 Question Paper March 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000006 * DFD"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm is intended to sort 200 names in ascending order, using a bubble",
+        "sort. The last names and first names are stored in separate columns of a two‑dimensional",
+        "(2D) array. The last names are stored in column 1 of the array.",
+        "01 // The array Names[] has already been declared as",
+        "02 // ARRAY[1:200, 1:2] OF STRING and it is already populated",
+        "03 DECLARE Row : STRING",
+        "04 DECLARE Temp1 : STRING",
+        "05 DECLARE Temp2 : STRING"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Swap : BOOLEAN"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Swap FALSE"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE NOT Swap DO"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Swap FALSE"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Row 2 TO 199"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Names[Row, 1] > Names[Row + 1, 1]"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Temp1 Names[Row, 1]"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Temp2 Names[Row, 2]"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Names[Row, 1] Names[Row + 1, 1]"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Names[Row, 1] Names[Row + 1, 2]"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Names[Row + 1, 1] Temp1"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Names[Row + 1, 2] Temp2"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Swap FALSE"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Column"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Identify the line numbers of five errors in the pseudocode and suggest corrections.\nerror 1 line number ______\ncorrection ______\nerror 2 line number ______\ncorrection ______\nerror 3 line number ______\ncorrection ______\nerror 4 line number ______\ncorrection ______\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000007 * DFD\nerror 5 line number ______\ncorrection ______",
+          "marks": 5,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Write the pseudocode for an algorithm, using nested iteration, to output the contents\nof Names[]",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Describe a possible problem with the algorithm that could mean the names are not\nsorted accurately.\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26 [Turn over\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000008 * DFD\n6 This flowchart represents an algorithm.\nSTART\nINPUT\nSentence\nSentLength LENGTH(Sentence)\nLetterNo 1\nStart 1\nIS\nYes\nSUBSTRING(Sentence,\nLetterNo, 1) = \" \"\nWord SUBSTRING(Sentence,\nStart, LetterNo – Start)\nNo\nOUTPUT Word, \" \",\nLENGTH(Word)\nStart LetterNo + 1\nLetterNo LetterNo + 1\nYes\nWord SUBSTRING(Sentence,\nNo\nIS LetterNo =\nStart, LetterNo – Start + 1)\nSentLength ?\nOUTPUT Word, \" \",\nLENGTH(Word)\nSTOP\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000009 * DFD",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Complete the trace table for the algorithm, using the given sentence.\nNote: the start position of the sentence is index 1.\nSentence SentLength LetterNo Start Word OUTPUT\nComputing is fun 16",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Explain the purpose of the algorithm shown by the flowchart.\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26 [Turn over\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000010 * DFD",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "As currently written, the algorithm may be difficult to understand if it was used as a program.\nIdentify three improvements that could be made to the algorithm to make it more\nuser friendly.\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000011 * DFD\n7 Consider the logic expression:\nX = (A NAND NOT B) XOR (A NOR C)",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for this logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify the logic expression.\nB X",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "Complete the truth table from the given logic expression.\nworking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26 [Turn over\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000012 * DFD\n8 A database table NATIONAL_TREES stores details of the national trees of some countries from\naround the world.\nIDCode Country Continent CommonName ScientificName\nEU121 Albania Europe Olive Olea europaea\nOC235 Australia Oceania Golden wattle Acacia pycnantha DO NOT WRITE IN THIS MARGIN\nNO126 The Bahamas North America Lignum vitae Guaiacum sanctum\nAS534 Bangladesh Asia Mango tree Mangifera indica\nSO326 Brazil South America Brazilwood Caesalpinia echinata\nNO124 Canada North America Maple Acer\nEU321 Cyprus Europe Golden oak Quercus alnifolia\nNA456 Dominican Republic North America West Indian mahogany Swietenia mahagoni\nEU652 Finland Europe Silver birch Betula pendula\nAS222 India Asia Indian banyan Ficus benghalensis\nNO232 Jamaica North America Blue mahoe Talipariti elatum\nAF875 Madagascar Africa Baobab Adansonia\nOC123 New Zealand Oceania Silver fern Cyathea dealbata\nAS498 Philippines Asia Narra Pterocarpus indicus\nAF501 South Africa Africa Real yellowwood Podocarpus Iatifolius\nSO522 Venezuela South America Araguaney Tabebuia chrysantha",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22a",
+          "label": "(a)",
+          "text": "State the number of fields and records in this database table.\nfields ______\nrecords ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22b",
+          "label": "(b)",
+          "text": "The data in both IDCode and Country fields are unique in the database table.\nState one reason why IDCode would make a better primary key than Country\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000013 * DFD",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22c",
+          "label": "(c)",
+          "text": "Give the output that would be produced by the structured query language (SQL) statement:\nSELECT IDCode, Country, CommonName\nFROM NATIONAL_TREES\nWHERE Continent = \"Europe\";",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "22d",
+          "label": "(d)",
+          "text": "Complete the SQL statement to list only the country, common name and scientific name of\nthe national trees listed for North America, in alphabetical order of their common names.\nSELECT ______\nFROM ______\nWHERE ______\n______ ;\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26 [Turn over\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000014 * DFD\n9 A program is required to enable voting in class surveys, for example to find the most\npopular smartphone.\nThe one‑dimensional (1D) array Options[] is used to store between 2 and 12 options on which\nusers can vote.\nThe one‑dimensional (1D) array Votes[] is used to store the votes of between 2 and 1000 users.\nThe one‑dimensional (1D) array VoteCount[] is used to store the number of votes for each of\nthe options. The array index represents the option number.\nWrite a program for the following requirements:\n• Initialise all the arrays before they are used.\n• Input and validate the number of options and the number of voters.\n• Input each of the required options and store them in the array Options[]\n• Display the list of options for each voter and allow each voter to input their preferred option.\nValidate this input and store it in the array Votes[]\n• Once all the votes have been input, count the number of voters who chose each option and\nfind the most and least popular options.\n• Output the most and least popular options as well as the number of voters who selected\neach of these options.\nThe program does not need to identify if two or more options are the equal most or least popular.\nYou must use pseudocode or program code, and add comments to explain how your code works.\nDo not declare arrays, variables or constants for this algorithm; assume this has been done.\nInitialisation must be carried out as appropriate.\nAll inputs and outputs must contain suitable messages.\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000015 * DFD\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26 [Turn over\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000016 * DFD\n\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000017 * DFD\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000018 * DFD\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000019 * DFD\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000020 * DFD\nreasonable effort has been made by the publisher (Cambridge University Press & Assessment) to trace copyright holders, but if any items requiring clearance\nhave unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in our Copyright\nAcknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live\nexamination series.\nCambridge International Education is the name of our awarding body and a part of Cambridge University Press & Assessment, which is a department of the\nUniversity of Cambridge.\n© Cambridge University Press & Assessment 2026 0478/22/F/M/26\nTrace ID: PC-823FA97156\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper March 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper March 2026\nDownloaded from PapaCambridge - https://papacambridge.com/",
+          "marks": 5,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 41,
+      "text": [
+        "ENDWHILE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "paperId": "9618_w24_qp_23",
+  "subjectCode": "9618",
+  "session": "w24",
+  "component": "23",
+  "totalMarks": 64,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The following table contains pseudocode examples.\nEach example may contain statements that relate to one or more of the following:\n• selection\n• iteration (repetition)\n• subroutine (procedure or function).\nComplete the table by placing one or more ticks ('✓') in each row.\nPseudocode example Selection Iteration Subroutine\nFOR Index ← 1 TO 3\nIF Safe[Index] = TRUE THEN\nFlap[Index] ← 0\nENDIF\nNEXT Index\nCASE OF Compound(3)\nREPEAT UNTIL AllDone() = TRUE\nWHILE Result[3] <> FALSE",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Complete the table by giving the appropriate data type in each case.\nVariable Example data value Data type\nAvailable TRUE\nReceived \"18/04/2021\"\nIndex 100",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Evaluate each expression in the table by using the data values shown in part (b).\nWrite ‘ERROR’ if the expression contains an error.\nExpression Evaluates to\nAvailable AND NOT(Index > 100)\nIndex MOD 30\nNUM_TO_STR(Index + \"33\")",
+          "marks": 3,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write pseudocode for the algorithm.\nAssume the value zero is neither positive nor negative.\nYou must declare all variables used in the algorithm.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The algorithm requires the use of basic constructs. One of these is sequence.\nIdentify one other basic construct required by the algorithm and describe how it is used.\nConstruct ______\nUse ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "An algorithm will:",
+        "1. prompt and input a sequence of 100 integer values, one at a time",
+        "2. sum the positive integers",
+        "3. output the result of the sum."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "State why the value 0 has been selected as the null pointer.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Give the range of valid values that could be assigned to variable HeadPointer.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The array List will be initialised so that each node points to the following node.\nThe last node will contain a null pointer.\nComplete the program flowchart to represent the algorithm for this operation.\nSTART\nEND",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "An algorithm outputs the Data field from all nodes in the array List. The order the Data is\noutput should be the same order it is stored in the linked list.\nDescribe the algorithm in four steps.\nDo not use pseudocode statements in your answer.\nStep 1 ______\nStep 2 ______\nStep 3 ______\nStep 4 ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The implementation of a linked list uses an integer variable and a 1D array List of type Node.",
+        "Record type Node is declared in pseudocode as follows:",
+        "TYPE Node",
+        "DECLARE Data : STRING",
+        "DECLARE Pointer : INTEGER",
+        "ENDTYPE",
+        "The array List is declared in pseudocode as follows:",
+        "DECLARE List : ARRAY[1:200] OF Node",
+        "The linked list will operate as follows:",
+        "• Integer variable HeadPointer will store the array index for the first node in the linked list.",
+        "• The Pointer field of a node contains the index value of the next array element (the next",
+        "node) in the linked list.",
+        "• The value 0 is used as a null pointer."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An examination paper has a maximum of 75 marks. One of five pass grades (A to E) is assigned,",
+        "depending on the mark obtained. The lowest mark for a given grade is known as the grade boundary.",
+        "A program is being written to process examination marks.",
+        "The five grade boundaries are stored in a global 1D array GB of type INTEGER, for example:",
+        "Index Value Comment",
+        "1 65 The minimum mark for an A grade.",
+        "2 57 The minimum mark for a B grade.",
+        "3 43 The minimum mark for a C grade.",
+        "4 35 The minimum mark for a D grade."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The pseudocode algorithm to determine whether a paper should be checked is as shown.\nThe mark for the paper is stored in variable Mark. Global variables Mark, Index, Upper and\nLower are declared as integers.\nComplete the pseudocode.\nFOR Index ← 1 TO ______\nLower ← GB[Index] - 2\nUpper ← ______\nIF Mark ______ AND Mark ______ THEN\nOUTPUT \"Check this paper\"\nENDIF\nNEXT Index",
+          "marks": 4,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "An alternative algorithm to determine if a paper needs to be checked uses a global 1D array\nCheck, containing 76 elements of type BOOLEAN. The indices of the array are from 0 to 75\n(inclusive), corresponding to the range of possible marks.\nAn element value in Check is TRUE if the index is within 2 marks of a grade boundary. For\nexample, in the case where the C grade boundary is 43 the corresponding part of the Check\narray would be as follows:\nIndex Value\nFALSE\nTRUE\nTRUE\nTRUE\n← The grade boundary for a C grade\nTRUE\nTRUE\nFALSE",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "The mark for a given paper is stored in variable Mark.\nDescribe how an algorithm would use the Check array to determine whether this paper\nshould be checked.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "A procedure GBInitialise() will initialise the Check array using values from the GB\narray.\nNote it can be assumed that the maximum grade boundary value for A is 70 and the\nminimum value for E is 15.\nWrite pseudocode for the procedure.\n\n5 A software developer follows a program development life cycle. The life cycle divides the\ndevelopment process into various stages.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The following table lists some development activities.\nComplete the table by writing the name of the life cycle stage for each activity.\nActivity Name of life cycle stage\nA compiler is used.\nA program that has been released for general use is modified.\nThe dry run method is used.\nThe program structure is specified.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A software developer has written modules Test_A() and Test_B(). These have been\nwritten but contain errors. These modules are called from several places in the main program\nand testing of the main program (integration testing) has to stop.\nIdentify a method that can be used to continue testing the main program before the errors in\nthese modules have been corrected and describe how this would work.\nMethod ______\nDescription ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 19,
+      "text": [
+        "27 The minimum mark for an E grade.",
+        "Any paper that achieves a mark within 2 marks of a grade boundary must be checked. Using the",
+        "given table, a paper with 45 marks would need to be checked."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "In some countries, on the third Sunday in March, daylight saving time begins when clocks move",
+        "forward by one hour.",
+        "A module AdjustClock() will take an integer parameter representing a year. The module will",
+        "return an integer value representing the number of the day in March on which the clocks move",
+        "forward.",
+        "For example, the following line of pseudocode would assign DayNumber the value 20:",
+        "DayNumber AdjustClock(2022)",
+        "Write pseudocode for the function AdjustClock().",
+        "Date functions from the insert should be used in your solution.",
+        "[7]"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Identify the stage of the program development life cycle that this discussion is part of and\ngive a document that will be produced during this stage.\nStage ______\nDocument ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The shop will give each customer a loyalty card that displays a unique customer ID as a\nbar code. A customer will be able to present their card each time they make a purchase. The\nsystem will scan the bar code, calculate points, and add them to the customer’s total. When\nthe customer next makes a purchase and presents their card, they will have the option to\nexchange points for a discount.\nThe designer decides that this activity will be handled by a new module. Decomposition\nwill be used to break the problem of designing the new module down into sub-problems\n(sub-modules).\nIdentify four sub-modules that could be used in the design of the new module and describe\ntheir use.\nSub-module 1 ______\nUse ______\nSub-module 2 ______\nUse ______\nSub-module 3 ______\nUse ______\nSub-module 4 ______\nUse ______",
+          "marks": null,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 2,
+      "text": [
+        "A coffee shop owner wants to introduce a computerised loyalty card system.",
+        "A programmer discusses the details of the system with the shop owner."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Complete the pseudocode for module Count().\nPROCEDURE Count(ThisPlayer : INTEGER, ThisRole : STRING)\nENDPROCEDURE",
+          "marks": 7,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The Character array data has been saved in the text file SaveFile.txt\nEach line of the file contains one element of the array (one record).\nNew modules are defined:\nModule Description\nExtract()\n• called with two parameters:\n(already written)\n○ a string representing a complete line from the text file\n○ an integer representing a field number (see structure below)\n• returns a string representing the required field\nRestore()\n• opens the text file SaveFile.txt\n• reads lines from the file and assigns values to each record in the\nCharacter array using data from each line of the file\nAs a reminder, the record structure is repeated here:\nTYPE CharacterType\nDECLARE Player : INTEGER //Field number 1\nDECLARE Role : STRING //Field number 2\nDECLARE Name : STRING //Field number 3\nDECLARE SkillLevel : INTEGER //Field number 4\nENDTYPE\nWrite pseudocode for module Restore().\nYou must use the module Extract().",
+          "marks": 7,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The game can last for several days and users often find that they have to close and rerun the\ngame program many times in order to complete it.\nDescribe the benefit of using the file SaveFile.txt as described in part (b).\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A program is being developed to implement a game for up to six players.",
+        "During the game, each player assembles a team of characters. At the start of the game there are",
+        "45 characters available.",
+        "Each character has four attributes, as follows:",
+        "Attribute Examples Comment",
+        "Player 0, 1, 3 The player the character is assigned to.",
+        "The job that the character will perform in the",
+        "Role Builder, Teacher, Doctor",
+        "game.",
+        "The name of the character. Several characters",
+        "Name Bill, Lee, Farah, Mo may perform the same role, but they will each",
+        "have a unique name.",
+        "Skill level 14, 23, 76 An integer in the range 0 to 100, inclusive.",
+        "The programmer has defined a record type to define each character. The record type definition is",
+        "shown in pseudocode as follows:",
+        "TYPE CharacterType",
+        "DECLARE Player : INTEGER",
+        "DECLARE Role : STRING",
+        "DECLARE Name : STRING",
+        "DECLARE SkillLevel : INTEGER",
+        "ENDTYPE",
+        "The Player field indicates the player to which the character is assigned (1 to 6). This field value",
+        "is 0 if the character is not assigned to any player.",
+        "The programmer has defined a global array to store the character data, as follows:",
+        "DECLARE Character : ARRAY[1:45] OF CharacterType",
+        "At the start of the game all record fields are initialised, and all Player fields are set to 0",
+        "The programmer has defined a program module as follows:",
+        "Module Description",
+        "Count()",
+        "• called with two parameters:",
+        "○ an integer representing a player",
+        "○ a string representing a character role",
+        "• searches the Character array for characters with the given role that are",
+        "assigned to the given player",
+        "• counts the number of assigned characters and sums their total skill level",
+        "• outputs the result of the search if characters with the given role are found,",
+        "for example:",
+        "\"Player 3 has 4 characters with the role of Teacher",
+        "and the total skill level is 65\"",
+        "• if no characters with the given role are found, outputs:",
+        "\"No characters with that role are assigned to this",
+        "player\""
+      ]
+    }
+  ]
+}

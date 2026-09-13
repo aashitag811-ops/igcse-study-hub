@@ -1,0 +1,405 @@
+{
+  "paperId": "9608_w17_qp_22",
+  "subjectCode": "9608",
+  "session": "w17",
+  "component": "22",
+  "totalMarks": 58,
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Procedural high-level languages usually support different data types.\nGive an appropriate data type for each data value in the following table:\nData value Data type\nFALSE\n03/03/2013\n\"INTEGER\"\n3.5\n\"35\"",
+              "marks": 6,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The following is a declaration in a high-level language:\nDEFINE MyGrade[1 to 100]\nState the data structure of variable MyGrade.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "An experienced programmer is presented with program code in an unfamiliar high-level\nlanguage.\nState two features of the code that the programmer should be able to recognise.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "In the ASCII character set ‘A’ is represented by the value 65. The values representing the\nother characters of the alphabet follow in sequence, so ‘B’ is represented by 66, ‘C’ by 67\nand so on.\nThe following table represents consecutive memory locations. Each memory location\nstores one byte.\nComplete the table to show how the string \"CAGE\" may be stored in memory using the\nASCII set.\nAddress Data",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "In a high-level language, a LENGTH function is used to return the number of characters in\na string.\nExplain what is stored in addition to the string characters to allow this function to\ndetermine this number.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Functions and procedures are subroutines.\nExplain why parameters are used with subroutines.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The following pseudocode is an example of a CASE structure.\nCASE OF MyMark\n75 to 100: MyGrade \"Distinction\"\n35 to 74: MyGrade \"Pass\"\n0 to 34: MyGrade \"Fail\"\nOTHERWISE: OUTPUT \"Invalid value entered\"\nENDCASE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Describe what will happen if the pseudocode is tested when MyMark has the following\nvalues:\n101 ______",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Use pseudocode to write an IF statement with the same functionality.\n\nQuestion 2 begins on the next page.",
+              "marks": 5,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 23,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Describe the purpose of the algorithm.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Draw a program flowchart to represent this algorithm.\nNote that variable declarations are not required in program flowcharts.",
+          "marks": 9,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A 1D array, ClassName, of type STRING contains 100 elements.",
+        "The following pseudocode represents a simple algorithm to process the array.",
+        "DECLARE SearchValue : STRING",
+        "DECLARE FoundFlag : BOOLEAN",
+        "DECLARE Index : INTEGER",
+        "INPUT SearchValue",
+        "FoundFlag FALSE",
+        "Index 1",
+        "WHILE Index < 101 AND FoundFlag = False",
+        "IF ClassName[Index] = SearchValue",
+        "THEN",
+        "OUTPUT Index",
+        "FoundFlag TRUE",
+        "ENDIF",
+        "Index Index + 1",
+        "ENDWHILE",
+        "IF FoundFlag = FALSE",
+        "THEN",
+        "OUTPUT \"Not found\"",
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A 1D array, Product, of type STRING is used to store information about a range of products in a",
+        "shop. There are 100 elements in the array. Each element stores one data item.",
+        "The format of each data item is as follows:",
+        "<ProductID><ProductName>",
+        "• ProductID is a four-character string of numerals",
+        "• ProductName is a variable-length string",
+        "The following pseudocode is an initial attempt at defining a procedure, ArraySort, which will",
+        "perform a bubble sort on Product. The array is to be sorted in ascending order of ProductID.",
+        "Line numbers have been added for identification purposes only.",
+        "01 PROCEDURE SortArray",
+        "02 DECLARE Temp : CHAR",
+        "03 DECLARE FirstID, SecondID : INTEGER"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR I 1 TO 100"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR J 2 TO 99"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FirstID MODULUS(LEFT(Product[J], 6))"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "SecondID MODULUS(LEFT(Product[J + 1], 6))"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF FirstID > SecondID"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Temp Product[I]"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Product[I] Product[J + 1]"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Product[J + 1] Temp"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [
+        {
+          "id": "16a",
+          "label": "(a)",
+          "text": "Write program code for the procedure, TestRandom.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 16,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16b",
+          "label": "(b)",
+          "text": "Name three features of a typical IDE that would help a programmer to debug a program.\nExplain how each of these could be used in the debugging of the TestRandom procedure\nfrom part (a).\nFeature 1 ______\nExplanation ______\nFeature 2 ______\nExplanation ______\nFeature 3 ______\nExplanation ______",
+          "marks": 6,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "16c",
+          "label": "(c)",
+          "text": "The procedure is developed and run using the call TestRandom(200). No system errors\nare produced.\nTo ensure that the procedure works correctly, you need to check the output.\nDescribe two checks you should make to suggest the program works correctly.\n\n5 A sports club maintains a record of the email address of each of its members. The details are\nstored in a text file, EmailDetails.txt. The format of each line of the text file is as follows:\n<MembershipNumber><EmailAddress>\n• MembershipNumber is a four-character string of numerals\n• EmailAddress is a variable-length string\nWhen members leave the club their details need to be removed from the file.\nA procedure, RemoveDetails is required. This will perform the following actions:\n1. Input the MembershipNumber of the club member to be removed\n2. Create a new file, NewEmailDetails.txt\n3. Copy all the lines from EmailDetails.txt to NewEmailDetails.txt, except the line\nwith the matching MembershipNumber\nWrite pseudocode for the procedure, RemoveDetails.\nFor the built-in functions list, refer to the Appendix on page 15.\n\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nMODULUS(x : INTEGER, y : INTEGER) RETURNS INTEGER\nreturns the remainder when x is divided by y using integer arithmetic.\nExample: MODULUS(5, 2) will return 1\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x.\nExample: INT(27.5415) returns 27\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString.\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nTONUM(ThisString : STRING) RETURNS INTEGER\nreturns a numeric value equivalent to ThisString.\nExample: TONUM(\"1201\") returns integer value 1201\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings.\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values.\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values.\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 24,
+      "text": [
+        "ENDPROCEDURE",
+        "The pseudocode on page 8 contains a number of errors. Complete the following table to show:",
+        "• the line number of the error",
+        "• the error itself",
+        "• the correction that is required.",
+        "Note:",
+        "• If the same error occurs on more than one line, you should only refer to it ONCE.",
+        "• Lack of optimisation should not be regarded as an error.",
+        "Line",
+        "Error Correction",
+        "number",
+        "PROCEDURE ArraySort",
+        "01 Wrong procedure name – “SortArray”",
+        "[8]",
+        "4 Programming languages provide built-in functions to generate random numbers.",
+        "To be truly random, the frequency of each number generated should be the same.",
+        "You are required to write program code to test the random number generator of your chosen",
+        "language.",
+        "The test should:",
+        "• generate a given number of random numbers between 1 and 10 inclusive",
+        "• keep a count of the number of times each number is generated",
+        "• calculate the expected frequency of each number 1 to 10",
+        "• output the actual frequency of each number 1 to 10",
+        "• output the difference between the actual frequency and the expected frequency.",
+        "The program code should be written as a procedure. In pseudocode, the procedure heading will",
+        "be:",
+        "PROCEDURE TestRandom(Repetitions AS INTEGER)",
+        "The parameter, Repetitions, contains a value representing the total number of random numbers",
+        "that should be generated.",
+        "The following example shows the expected output for the procedure call, TestRandom(200).",
+        "The expected frequency is 20.",
+        "Number Frequency Difference",
+        "1 17 −3",
+        "2 21 1",
+        "3 12 −8",
+        "4 28 8",
+        "5 20 0",
+        "6 19 −1",
+        "7 21 1",
+        "8 16 −4",
+        "9 24 4",
+        "10 22 2"
+      ]
+    }
+  ]
+}

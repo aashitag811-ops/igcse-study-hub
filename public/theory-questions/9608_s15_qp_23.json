@@ -1,0 +1,401 @@
+{
+  "paperId": "9608_s15_qp_23",
+  "subjectCode": "9608",
+  "session": "s15",
+  "component": "23",
+  "totalMarks": 57,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Horses are entered for a horse race. A horse may have to carry a penalty weight in addition to the",
+        "rider. This weight is added to the saddle. The penalty weight (if any) depends on the number of",
+        "wins the horse has achieved in previous races.",
+        "The penalty weight is calculated as follows:",
+        "Number of previous wins Penalty weight (kg)",
+        "0 0",
+        "1 or 2 4",
+        "Over 2 8",
+        "A program is to be written from the following structured English design.",
+        "1 INPUT name of horse"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT number of previous wins"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CALCULATE penalty weight"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "STORE penalty weight"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Complete the identifier table showing the variables needed to code the program.\nIdentifier Data type Description",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Line 3 in the algorithm above does not give the detail about how the race penalty weight is\ncalculated; this step in the algorithm must be expressed in more detail.",
+          "marks": null,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "The algorithm above currently has five stages. One technique for program design is to\nfurther break down, where required, any stage to a level of detail from which the program\ncode can be written.\nName this technique.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Write pseudocode for the given structured English design.\n\n2 (a) Two operators available in a programming language are DIV and MOD. They perform integer\narithmetic as follows:\nExpression Explanation\nX DIV Y Computes the number of times Y divides into X\nX MOD Y Computes the remainder when X is divided by Y\nCalculate the value of the variables shown for the following code fragments.\nCode Variable",
+              "marks": 5,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "NumberLeftOver 37 MOD 10\nNumberLeftOver ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Quantity\nBoxSize\nQuantity DIV BoxSize\nNumberOfBoxes NumberOfBoxes ______\n(Quantity MOD BoxSize) + 1\nTemp Temp ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Bank customers withdraw money from their account at a cash dispenser machine using their\nbank card. The machine operates as follows:\n it can dispense the following notes:\no $50\no $20\no $10\n the maximum amount for a single withdrawal is $500\nWhen a customer withdraws money, they enter the amount to withdraw. (This must be a\nmultiple of $10).\nThe machine will always dispense the least possible number of notes.\nA program is designed for the machine to process a withdrawal.\nThe following variables are used:\nIdentifier Data type Description\nAmount INTEGER Amount to withdraw entered by the user\nFiftyDollar INTEGER Number of $50 notes to dispense\nTwentyDollar INTEGER Number of $20 notes to dispense\nTenDollar INTEGER Number of $10 notes to dispense\nTemp INTEGER Used in the calculation of the number of each note required",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "The following four tests have been designed.\nComplete the test data table showing the expected results with comments.\nInput value Output\nComment\nAmount FiftyDollar TwentyDollar TenDollar\n70 1 1 0 Least possible number of notes",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Complete the pseudocode.\nINPUT ______\nIF Amount > 500\nTHEN\nOUTPUT \"Refused – amount too large\"\nELSE\nTHEN\nOUTPUT \"Refused - not a multiple of $10\"\nELSE\nFiftyDollar Amount DIV 50\nTemp ______\nTwentyDollar ______\nTemp ______\nENDIF\nENDIF\n\n3 A flooring company provides for each customer an estimated price for a new job. Each job is\ngiven a Job ID.\nThe job cost is calculated from the length (nearest metre) and width (nearest metre) of the room.\nThe process for calculating the price is as follows:\n• the floor area is calculated with 18% added to allow for wastage\n• the job cost is calculated at $50 per square metre\nThe structure chart shows the modular design for a program to produce a new job cost.\nProduce flooring\njob cost\nLength\nB D\nJobID\nJobCost\nWidth\nCustomerName\nSend estimate\nInput job data Calculate job cost\nto customer",
+              "marks": 5,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Give the data items corresponding to the labels A to E in the structure chart.",
+              "marks": 5,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "The procedure below is one of the modules shown on the structure chart.\nParameters can be passed ‘by value’ or ‘by reference’.\nComplete the procedure header below showing for each parameter:\n• its parameter passing mechanism\n• its identifier\n• its data type\nPROCEDURE CalculateJobCost( ______\n______ )\nJobCost (Length * Width * 1.18) * 50\nENDPROCEDURE\n\n4 A programming language has the built-in function CONCAT defined as follows:\nCONCAT(String1 : STRING, String2 : STRING [, String3 : STRING] ) RETURNS STRING\nFor example: CONCAT(\"San\", \"Francisco\") returns \"SanFrancisco\"\nCONCAT(\"New\", \"York\", \"City\") returns \"NewYorkCity\"\nThe use of the square brackets indicates that the parameter is optional.",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "State the value returned by the following expressions.\nIf the expression is not properly formed, write ERROR.",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "CONCAT(\"Studio\", 54) ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "CONCAT(\"parity\", \"error\", \"check\") ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "CONCAT(CONCAT(\"Binary\", \"▼\", \"Coded\"), \"▼\", \"Decimal\")\n▼ indicates a <Space> character",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "A country has a number of banks. There are cash dispensers all over the country. Each bank\nis responsible for a number of dispensers.\n• banks have a three digit code in the range 001 – 999\n• each dispenser has a five digit code in the range 00001 – 99999\nA text file, DISPENSERS, is to be created.\nIt has one line of text for each dispenser. For example: 00342▼007.\nThis line in the file is the data for dispenser 00342 which belongs to bank 007.\nIncomplete pseudocode follows for the creation of the file DISPENSERS.\nFor the creation of the file, data is entered by the user at the keyboard.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Complete the pseudocode.\nOPENFILE ______ FOR WRITE\nOUTPUT \"Enter dispenser code (XXXXX to end)\"\nINPUT DispenserCode\nIF DispenserCode <> \"XXXXX\"\nTHEN\nOUTPUT \"Enter bank code\"\nINPUT BankCode\nLineString CONCAT(______ , \"▼\", BankCode)\n// now write the new line to the file\nENDIF\nUNTIL ______\nOUTPUT \"DISPENSERS file now created\"",
+              "marks": 6,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "No attempt has been made to validate the data entered by the user.\nDescribe two different types of validation check for the data entry.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5biii",
+              "label": "(iii)",
+              "text": "The programmer coded this algorithm above and the user successfully entered 15\ndispenser records into the text file.\nThere is data for another 546 dispensers which needs to be added.\nState the error that will occur if the user runs the program a second time for further data\nentry.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5biv",
+              "label": "(iv)",
+              "text": "Give the ‘file mode’ available in the programming language which will be used to address\nthis issue.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The complete data file is created with the structure shown.\nA new program is to be written to search the file.\n00001▼007\n00002▼001\nThe program will:\n00003▼002\n00004▼003\n• input a bank code\n00005▼101\n00006▼004\n• output a list of all the dispensers which belong to this bank\n00007▼004\n• output the total number of dispensers for this bank\n00024▼002\n00025▼003\n00026▼007\nAn example of a run of the program is shown:\n00027▼007\n00028▼102\nEnter bank code 007\n00001\n00011\n00022\n99867▼013\n00026\n00027\nThere are 5 dispensers for this bank\nWrite the program code. Do not attempt to include any validation checks.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\n\n5 A firm employs workers who assemble amplifiers. Each member of staff works an agreed number\nof hours each day.\nThe firm records the number of completed amplifiers made by each employee each day.\nManagement monitor the performance of all its workers.\nProduction data was collected for 3 workers over 4 days.\nDaily hours\nworked Production data\nWorker 1 5\nWorker 1 Worker 2 Worker 3\nWorker 2 10 Day 1 10 20 9\nWorker 3 10 Day 2 11 16 11\nDay 3 10 24 13\nDay 4 14 20 17\nA program is to be written to process the production data.",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The production data is to be stored in a 2-dimensional array ProductionData, declared as\nfollows:\nDECLARE ProductionData ARRAY[1:4, 1:3] : INTEGER",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Describe two features of an array.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Give the value of ProductionData[3, 2].",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "Describe the information produced by the expression:\nProductionData[2, 1] + ProductionData[2, 2] + ProductionData[2, 3]",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Complete the trace table for the pseudocode algorithm below.\nFOR WorkerNum 1 TO 3\nWorkerTotal[WorkerNum] 0\nENDFOR\nFOR WorkerNum 1 TO 3\nFOR DayNum 1 TO 4\nWorkerTotal[WorkerNum] WorkerTotal[WorkerNum] +\nProductionData[DayNum, WorkerNum]\nENDFOR\nENDFOR\nFOR WorkerNum 1 TO 3\nWorkerAverage WorkerTotal[WorkerNum]/\n(4 * DailyHoursWorked[WorkerNum])\nIF WorkerAverage < 2\nTHEN\nOUTPUT “Investigate“, WorkerNum\nENDIF\nENDFOR\nWorkerTotal\nWorkerNum DayNum WorkerAverage OUTPUT 1 2 3",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "An experienced programmer suggests that the pseudocode would be best implemented as a\nprocedure AnalyseProductionData.\nAssume that both arrays, DailyHoursWorked and ProductionData, are available to the\nprocedure from the main program and they are of the appropriate size.\nPROCEDURE AnalyseProductionData(NumDays : INTEGER, NumWorkers : INTEGER)\nDECLARE ______\nDECLARE ______ .\nDECLARE ______ .\nDECLARE ______ .\nFOR WorkerNum 1 TO 3\nWorkerTotal[WorkerNum] 0\nENDFOR\nFOR WorkerNum 1 TO 3\nFOR DayNum 1 TO 4\nWorkerTotal[WorkerNum] WorkerTotal[WorkerNum] +\nProductionData[DayNum, WorkerNum]\nENDFOR\nENDFOR\nFOR WorkerNum 1 TO 3\nWorkerAverage WorkerTotal[WorkerNum]/\n(4 * DailyHoursWorked [WorkerNum])\nIF WorkerAverage < 2\nTHEN\nOUTPUT \"Investigate\", WorkerNum\nENDIF\nENDFOR\nENDPROCEDURE",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ci",
+              "label": "(i)",
+              "text": "Complete the declaration statements showing the local variables.",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5cii",
+              "label": "(ii)",
+              "text": "The original pseudocode has been ‘pasted’ under the procedure header.\nCircle all the places in the original pseudocode where changes will need to be made.\nWrite the changes which need to be made next to each circle.",
+              "marks": 3,
+              "type": "circle",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "5ciii",
+              "label": "(iii)",
+              "text": "Write the statement for a procedure call which processes data for 7 days for 13 workers.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 57,
+      "text": [
+        "OUTPUT name of horse, penalty weight"
+      ]
+    }
+  ]
+}

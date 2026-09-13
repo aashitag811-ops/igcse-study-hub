@@ -1,0 +1,434 @@
+{
+  "paperId": "9608_w19_qp_21",
+  "subjectCode": "9608",
+  "session": "w19",
+  "component": "21",
+  "totalMarks": 68,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "This pseudocode lacks features that would make it easier to read and understand.\nState three such features.\nFeature 1 ______\nFeature 2 ______\nFeature 3 ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Draw a program flowchart to represent the algorithm implemented in the pseudocode.\nVariable declarations are not required in program flowcharts.",
+              "marks": 5,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Programming languages support different data types.\nComplete the table by giving a suitable data type for each example value.\nExample value Data type\n\"NOT TRUE\"\n− 4.5\nNOT FALSE",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Evaluate each expression in the following table.\nIf an expression is invalid then write ‘ERROR’.\nRefer to the Appendix on page 16–17 for the list of built-in functions and operators.\nExpression Evaluates to\nLEFT(\"Start\", 3) & RIGHT(\"Apple\", 3)\nMID(\"sample\", 3, 5)\nNUM_TO_STRING(12.3 * 2)\nINT(STRING_TO_NUM(\"53.4\")) + 7",
+              "marks": 4,
+              "type": "evaluate",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "Study the following pseudocode.",
+        "FUNCTION Search() RETURNS INTEGER",
+        "DECLARE N, C : INTEGER",
+        "DECLARE V, L : REAL",
+        "V GetLevel()",
+        "L V * 1.34",
+        "C 0",
+        "FOR N 1 TO 10",
+        "V GetLevel()",
+        "IF V > L",
+        "THEN",
+        "C C + 1",
+        "ENDIF",
+        "ENDFOR",
+        "OUTPUT \"Process complete\"",
+        "RETURN C",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "A structure chart is often used in modular program design. One feature shown is the sequence\nof module execution.\nState four other features that may be shown.\nFeature 1 ______\nFeature 2 ______\nFeature 3 ______\nFeature 4 ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Identify and describe one feature of an Integrated Development Environment (IDE) that can\nhelp with program presentation.\nFeature ______\nDescription ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "By value is one method of passing a parameter to a subroutine.\nIdentify and describe the other method.\nMethod ______\nDescription ______",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Explain the term adaptive maintenance.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following is a function design in pseudocode.",
+        "Line numbers are given for reference only.",
+        "10 FUNCTION Check(InString : STRING) RETURNS BOOLEAN",
+        "12 DECLARE NumDots : INTEGER",
+        "13 DECLARE Index : INTEGER",
+        "14 DECLARE NumOthers : INTEGER",
+        "16 NumDots 0",
+        "17 NumOthers 0",
+        "18 Index 1",
+        "20 WHILE NumDots < 3 AND Index <= LENGTH(InString)",
+        "22 IF MID(InString, Index, 1) = '.'",
+        "23 THEN",
+        "24 NumDots NumDots + 1",
+        "25 ELSE",
+        "26 NumOthers NumOthers + 1",
+        "27 ENDIF",
+        "28 Index Index + 1",
+        "30 ENDWHILE",
+        "32 IF NumDots = NumOthers",
+        "33 THEN",
+        "34 RETURN TRUE",
+        "35 ELSE",
+        "36 RETURN FALSE",
+        "37 ENDIF",
+        "39 ENDFUNCTION",
+        "Study the pseudocode. Identify the relevant features in the following table.",
+        "Refer to the Appendix on pages 16–17 for the list of built-in functions and operators.",
+        "Feature Answer",
+        "The number of the line containing a variable being incremented",
+        "The range of line numbers containing a pre-condition loop",
+        "The number of initialisation statements",
+        "The number of the line containing a logical operator",
+        "The range of line numbers containing a selection statement",
+        "The name of a built-in function",
+        "The name of a parameter",
+        "[7]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The student has written a structured English description of the algorithm:\n1. START at the beginning of the string\n2. SELECT a character from the string\n3. CONVERT the character to upper case\n4. CHECK whether the character is alphabetic and INCREMENT as required.\n5. REPEAT from step 2 until last character has been checked\n6. OUTPUT a suitable message giving the count of each alphabetic character\nStep 4 above is not described in sufficient detail.\nThe student decides to apply a process to increase the level of detail given in step 4.\nState the name of the process and use this process to write step 4 in more detail. Use\nstructured English for your answer.\nProcess ______\nStructured English ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Write pseudocode to implement the program.\nYou should note the following:\n• InString contains the string to be checked. It has been assigned a value.\n• The elements of the array Result have all been initialised to zero.\n• The ASCII value of letter ‘A’ is 65.\nYou should assume the following lines of pseudocode have been written:\nDECLARE InString : STRING\nDECLARE Result : ARRAY [1:26] OF INTEGER\nDeclare any further variables you use. Do not implement the code as a subroutine.\nRefer to the Appendix on pages 16–17 for the list of built-in functions and operators.",
+          "marks": 7,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A student is developing a program to count how many times each character of the alphabet (A to Z)",
+        "occurs in a given string. Upper case and lower case characters will be counted as the same. The",
+        "string may contain non-alphabetic characters, which should be ignored.",
+        "The program will:",
+        "• check each character in the string to count how many times each alphabetic character occurs",
+        "• store the count for each alphabetic character in a 1D array",
+        "• output each count together with the corresponding character."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Describe the validation rules that are implemented by this pseudocode. Refer only to the\ncontents of the string and not to features of the pseudocode.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Complete the trace table by dry running the function when it is called as follows:\nResult CheckPassword(\"Jim+Smith*99\")\nIndex NextChar Upper Lower Digit Other",
+              "marks": 5,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "State the value returned when the function is called using the expression shown. Justify\nyour answer.\nValue ______\nJustification ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The following pseudocode checks whether a string is a valid password.",
+        "FUNCTION CheckPassword(InString : STRING) RETURNS BOOLEAN",
+        "DECLARE Index, Upper, Lower, Digit, Other : INTEGER",
+        "DECLARE NextChar : CHAR",
+        "Upper 0",
+        "Lower 0",
+        "Digit 0",
+        "Other 0",
+        "FOR Index 1 TO LENGTH(InString)",
+        "NextChar MID(InString, Index, 1)",
+        "IF NextChar >= 'A' AND NextChar <= 'Z'",
+        "THEN",
+        "Upper Upper + 1",
+        "ELSE",
+        "IF NextChar >= 'a' AND NextChar <= 'z'",
+        "THEN",
+        "Lower Lower + 1",
+        "ELSE",
+        "IF NextChar >= '0' AND NextChar <= '9'",
+        "THEN",
+        "Digit Digit + 1",
+        "ELSE",
+        "Other Other + 1",
+        "ENDIF",
+        "ENDIF",
+        "ENDIF",
+        "ENDFOR",
+        "IF Upper > 1 AND Lower >= 5 AND (Digit - Other) > 0",
+        "THEN",
+        "RETURN TRUE",
+        "ELSE",
+        "RETURN FALSE",
+        "ENDIF",
+        "ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "State one reason for storing data in a file rather than in an array.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Write program code for the module SearchFileNtoZ().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 7,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Write pseudocode for the module FindDuplicates().\nThe module description is given in the table on page 12.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "ClearArray() is to be modified to make it general purpose. It will be used to initialise any\n1D array of data type STRING to any value.\nIt will now be called with three parameters as follows:\n1. The array\n2. The number of elements\n3. The initialisation string\nYou should assume that the lower bound is 1.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6di",
+              "label": "(i)",
+              "text": "Write pseudocode for the modified ClearArray() procedure.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6dii",
+              "label": "(ii)",
+              "text": "Write program code for a statement that calls the modified ClearArray() procedure\nto clear the array Duplicates to \"Empty\".\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of ThisChar\nExample: ASC('A') returns 65\nCHR(x : INTEGER) RETURNS CHAR\nreturns the character whose ASCII value is x\nExample: CHR(87) returns 'W'\nUCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the upper case equivalent of ThisChar\nIf ThisChar is not a lower case alphabetic character, it is returned unchanged.\nExample: UCASE('a') returns 'A'\nOperators (pseudocode)\nDescription\nOperator\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "Account information for users of a library is held in one of two text files; UserListAtoM.txt and",
+        "UserListNtoZ.txt",
+        "The format of the data held in the two files is identical. Each line of the file is stored as a string that",
+        "contains an account number, name and telephone number separated by the asterisk character",
+        "('*') as follows:",
+        "<Account Number>'*'<Name>'*'<Telephone Number>",
+        "An example of one line from the file is:",
+        "\"GB1234*Kevin Mapunga*07789123456\"",
+        "The account number string may be six or nine characters in length and is unique for each",
+        "person. It is made up of alphabetic and numeric characters only.",
+        "An error has occurred and the same account number has been given to different users in the two",
+        "files. There is no duplication of account numbers within each individual file.",
+        "A program is to be written to search the two files and to identify duplicate entries. The account",
+        "number of any duplicate found is to be written to an array, Duplicates, which is a 1D array of",
+        "100 elements of data type STRING.",
+        "The program is to be implemented as several modules. The outline description of three of these is",
+        "as follows:",
+        "Module Outline description",
+        "• Initialise the global array Duplicates. Set all elements to the",
+        "ClearArray()",
+        "empty string.",
+        "• Read each line from the file UserListAtoM.txt",
+        "• Check whether the account number appears in file",
+        "UserListNtoZ.txt using SearchFileNtoZ()",
+        "FindDuplicates()",
+        "• If the account number does appear then add the account",
+        "number to the array.",
+        "• Output an error message and exit the module if there are more",
+        "duplicates than can be written to the array.",
+        "• Search for a given account number in file UserListNtoZ.txt",
+        "SearchFileNtoZ()",
+        "• If found, return TRUE, otherwise return FALSE"
+      ]
+    }
+  ]
+}

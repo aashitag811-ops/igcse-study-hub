@@ -1,0 +1,423 @@
+{
+  "paperId": "9608_w21_qp_23",
+  "subjectCode": "9608",
+  "session": "w21",
+  "component": "23",
+  "totalMarks": 75,
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "An algorithm contains the following steps:\n1. prompt and input a product number\n2. validate the product number\n3. save the validated product number to FILE_A.txt",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Write the pseudocode statement for step 1.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "State the purpose of FILE_A.txt.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "State two benefits of creating program flowcharts when documenting a program.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Draw one line from each technical term to its appropriate description.\nTechnical term Description\nStores data of the same data type\nCorrective maintenance\nin memory\nAmends an algorithm following\nArray\nidentification of errors\nAmends an algorithm in response\nAdaptive maintenance\nto specification changes\nShows parameters passed between\nStructure chart\nprogram modules",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The following pseudocode procedure, SetupVars(), initialises the variables used to check\nthe status of a product.\nPROCEDURE SetupVars()\nDescription \"CONCRETE-SLAB\"\nDestination \"ELY\"\nMileage 200\nEndOfYear 1\nLimit 20000\nOverdue FALSE\nENDPROCEDURE\nComplete the table by evaluating each pseudocode expression.\nIf the expression is invalid, write “ERROR” in the Evaluates to column.\nRefer to the Appendix on pages 22–23 for a list of built-in pseudocode functions and\noperators.\nPseudocode expression Evaluates to\nEndOfYear * Limit / Mileage\nLENGTH(Description) / NUM_TO_STRING(Limit)\nMOD(20, LENGTH(Destination))\n(EndOfYear < 2) AND (Limit = 20000) AND NOT(Overdue)\nMID(Description, 1, 5) & LEFT(Destination, 2)\n& NUM_TO_STRING(Limit / 1000)",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Complete the table by identifying four line numbers that contain errors and give the correct\npseudocode statement.\nLine number Correct pseudocode statement",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Study the pseudocode algorithm on page 4.\nDescribe the algorithm using structured English.\nDo not use pseudocode or program code in your answer.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The function PayUsingAccount() is required to process a payment for hiring a car as\nfollows:\n1. The function takes two parameters with REAL data type:\n• Balance is the amount of money in the account\n• CostOfHire is the cost of hiring the car.\n2. If CostOfHire exceeds Balance, the rental is not authorised and FALSE is returned,\notherwise TRUE is returned.\nWrite pseudocode for the function PayUsingAccount().",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A company owns 50 cars that are available for hire. The cars are numbered from 1 to 50. The size",
+        "of a car can be small, medium, or large.",
+        "The following pseudocode procedure, SetOut(), takes as input the size of the car the customer",
+        "has requested for hire and outputs details of the cars that are available for hire for that size of car.",
+        "Line numbers are given for reference only.",
+        "Refer to the Appendix on pages 22–23 for a list of built-in pseudocode functions and operators.",
+        "01 DECLARE Available : ARRAY[1:50] OF BOOLEAN",
+        "02 DECLARE CarSize : ARRAY[1:50] OF STRING",
+        "04 PROCEDURE SetOut(Size: STRING)",
+        "05 DECLARE Index : REAL",
+        "07 FOR Index 0 TO 50",
+        "08 IF Size = CarSize[Index] AND Available[Index] = \"TRUE\"",
+        "09 THEN",
+        "10 OUTPUT NUM_TO_STRING(Index) & \": \" & Size & \" Available\"",
+        "11 ENDIF",
+        "12 ENDFOR",
+        "14 ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Draw a program flowchart to represent the algorithm for the AddressChecker() function.\nVariable declarations are not required in program flowcharts.",
+          "marks": 6,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The function AddressChecker() is changed to check a list of email addresses stored in a\ntext file.\nThe function’s header is changed as follows:\nFUNCTION AddressChecker(Filename : STRING, StartLine : INTEGER,\nLastLine : INTEGER) RETURNS BOOLEAN\nAssume that:\n• The function is called with a valid filename of the text file.\n• The text file exists and contains at least one email address.\n• Each email address is stored in a separate line in the text file.\n• The function does not contain logical errors.\nGive two reasons why the function may return an unexpected result.\nReason 1 ______\nReason 2 ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ci",
+              "label": "(i)",
+              "text": "Explain what is meant by the term syntax error.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3cii",
+              "label": "(ii)",
+              "text": "Give an example of a syntax error in program code.\nProgramming language ______\nProgram code",
+              "marks": 1,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "The following incomplete structure chart shows part of the design of the function\nAddressChecker().\nComplete the structure chart.\nAddressChecker()\nIsThreeLetter()",
+          "marks": 3,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "State and describe two features of an Integrated Development Environment (IDE) that aid\ndebugging.\nFeature 1 ______\nDescription ______\nFeature 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "The function AddressChecker() checks if an email address is in the format:",
+        "<user>@<host> <domain>",
+        "The design requirements of the function are:",
+        "• The <user> contains only lower-case characters.",
+        "• The <domain> contains exactly three alphabetic characters.",
+        "AddressChecker() will use three functions as described in the following table.",
+        "Function Description",
+        "Split()",
+        "• Takes two parameters:",
+        "• a STRING value containing the email address",
+        "• a BOOLEAN value representing the required return value",
+        "• Returns two different values:",
+        "• a STRING containing <user> if the BOOLEAN parameter",
+        "value is TRUE",
+        "• a STRING containing <domain> if the BOOLEAN",
+        "parameter value is FALSE",
+        "IsLowerCase()",
+        "• Takes an element of the email address as a STRING",
+        "parameter",
+        "• Returns a BOOLEAN value of TRUE if the string contains only",
+        "lower-case characters, otherwise returns FALSE",
+        "IsThreeLetter()",
+        "• Takes the domain as a STRING parameter",
+        "• Returns a BOOLEAN value of TRUE if the string consists of",
+        "exactly three alphabetic characters, otherwise returns FALSE",
+        "AddressChecker() will:",
+        "• prompt and input an email address",
+        "• check that the email address is valid",
+        "• return the string \"Invalid\" if the email address does not meet the design requirements,",
+        "otherwise return the email address."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the trace table when the function is called using this statement:\nPresent Extract(\"DATA.txt\", \"TG12367\", 1)\nYou may assume that the text file DATA.txt contains the following lines:\n\"XD43668#23/11/19#DSCP\"\n\"TG12367#24/01/19#MAHA\"\n\"HD44356#24/11/19#MAHA\"\n\"TG12367#24/11/19#GHFI\"\nFileLine Counter LEFT(FileData, SubMatch = Match Result\nLENGTH(Match))",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The function is changed as follows:\n• The statement on line 25 is changed to compare the last ten characters of FileData\nand the parameter Match.\nIf the comparison is successful:\n• store the first seven characters of FileData in a global 1D array called Original\n• store the last four characters of FileData in a global 1D array called Backup\n• The count of the number of items stored in the array Backup is returned.",
+          "marks": null,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Rewrite the function header in pseudocode so that it meets the new requirements.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Rewrite the WHILE structure in pseudocode so that it meets the new requirements. The\nWHILE structure is given here for reference.\n23 WHILE NOT EOF(FileName) AND FileLine <= 100\n24 READFILE FileName, FileData\n25 SubMatch LEFT(FileData, LENGTH(Match))\n26 IF SubMatch = Match\n27 THEN\n28 MatchItems[Counter] FileData\n29 Counter Counter + 1\n30 ENDIF\n31 FileLine FileLine + 1\n32 ENDWHILE\n\nQuestion 4 continues on the next page.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "A procedure, Encrypt(), is required to encrypt the data stored in each line of the text file\nDATA.txt.\nYou may assume that the text file DATA.txt contains the following lines:\n\"XD43668#23/11/19#DSCP\"\n\"TG12367#24/01/19#MAHA\"\n\"HD44356#24/11/19#MAHA\"\n\"TG12367#24/11/19#GHFI\"\nThe requirements of the procedure are:\n• the day of the month from the line of data is extracted as the encryption key\n• the encryption key is added to the ASCII value of each character of the line to form the\nencrypted data\n• the encrypted data are appended to the text file DATA-EN.txt until there are no more\nlines in the text file DATA.txt\nWrite program code for the procedure Encrypt().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 6,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "The following pseudocode contains a function that searches a text file for the string contained in",
+        "the parameter Match.",
+        "01 DECLARE MatchItems : ARRAY[1:100] OF STRING",
+        "10 FUNCTION Extract(FileName : STRING, Match : STRING,",
+        "Signal : INTEGER) RETURNS BOOLEAN",
+        "12 DECLARE FileLine : INTEGER",
+        "13 DECLARE Counter : INTEGER",
+        "14 DECLARE FileData, SubMatch : STRING",
+        "15 DECLARE Result : BOOLEAN",
+        "17 Counter 0",
+        "18 FileLine 1",
+        "19 Result FALSE",
+        "21 OPENFILE FileName FOR READ",
+        "23 WHILE NOT EOF(FileName) AND FileLine <= 100",
+        "24 READFILE FileName, FileData",
+        "25 SubMatch LEFT(FileData, LENGTH(Match))",
+        "26 IF SubMatch = Match",
+        "27 THEN",
+        "28 MatchItems[Counter] FileData",
+        "29 Counter Counter + 1",
+        "30 ENDIF",
+        "31 FileLine FileLine + 1",
+        "32 ENDWHILE",
+        "34 CLOSEFILE FileName",
+        "35 IF Counter >= Signal",
+        "36 THEN",
+        "37 Result TRUE",
+        "38 ENDIF",
+        "39 RETURN Result",
+        "41 ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The programmer writes a function CheckReview().\nThe design requirements of the function are shown in the following table:\nDescription Parameter Returns\n• searches the • a STRING value • the comment from the review\nGeoData array to containing the if the geocode exists in the\ndetermine if the user’s user ID of the GeoData array\nlatest review contains reviewer\na listed geocode • a STRING value of \"LOCATION\nNOT FOUND\" if the geocode of\nthe user’s review does not exist\nin the GeoData array\n• a STRING value of \"NO\nREVIEW\" if no review exists for\nthe user ID\nWrite pseudocode to complete the function CheckReview().\nDECLARE GeoData : ARRAY[1:20000] OF STRING\nDECLARE Review : ARRAY[1:20000] OF STRING\nFUNCTION CheckReview(UserID : STRING) RETURNS STRING\nENDFUNCTION",
+          "marks": 8,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Before a review is published on the website, it is checked to find out whether the review\ncontains a valid geocode.\nThe function AddReview() has the following requirements:\nDescription Parameters Returns\n• calls CheckReview() • a STRING value • a BOOLEAN value of FALSE\ncontaining the if the text of the review is not\n• if the text of the review user ID of the added in the array Accepted,\nis returned from reviewer otherwise returns a BOOLEAN\nCheckReview(), value of TRUE\nstore the text in\nthe global 1D array\nAccepted\nAssume that:\n• the 1D array Accepted is initialised with empty strings\n• the array contains up to 20 000 elements.\nWrite program code for the function AddReview().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "When reviewers write a review for a restaurant, they give the restaurant a score out of 10.\nThe 2D global array ReviewScores stores the review data as follows:\n• The first column element stores the seven-character alphanumeric geocode string of the\nrestaurant with its average score, separated by the hash symbol (#).\n• The second column element stores the comment from the review that has the highest\nscore.\nThe array has dimensions of 20 000 rows and 2 columns.\nFor example, the contents of the 2D array ReviewScores for review 20 are:\nReviewScores[20, 1] \"1DFG+9N#8.3\"\nReviewScores[20, 2] \"Food was good but I waited too long\"\nThe procedure BestRestaurants()is required as follows:\nDescription Parameter Output\n• searches the array • a STRING value • if the parameter matches\nReviewScores for consisting of the a geocode in the array\nrestaurants with an geocode of the ReviewScores and the\naverage score that restaurant average score exceeds\nexceeds 8.0 8.0, output the geocode\nconcatenated with the review\ncomment\nWrite pseudocode for the procedure BestRestaurants().\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of ThisChar\nExample: ASC('A') returns 65\nCHR(x : INTEGER) RETURNS CHAR\nreturns the character whose ASCII value is x\nExample: CHR(87) returns 'W'\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string\nNote: This function will also work if x is of type CHAR\nExample: STR_TO_NUM(\"23.45\") returns 23.45\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A geocode string contains four alphanumeric characters, followed by the character '+' and then",
+        "two alphanumeric characters.",
+        "For example, the geocode string for the Avocado Restaurant in Cambridge UK is:",
+        "\"1DFG+9N\"",
+        "A website allows a user to upload a review of a restaurant.",
+        "A programmer has defined the following two arrays:",
+        "Array Description",
+        "GeoData",
+        "• a global 1D array of data type STRING",
+        "• stores the geocode for each restaurant",
+        "Example:",
+        "GeoData[1] \"1DFG+9N\"",
+        "Review",
+        "• a global 1D array of data type STRING",
+        "• stores the following data items as a single element in the array:",
+        "• the four-character user ID of the reviewer",
+        "• the geocode of the restaurant",
+        "• the text of the review",
+        "• the hash symbol (#) separates the data items in each single element",
+        "Example of a review for the Avocado restaurant submitted by user ID JH76:",
+        "Review[1000] \"JH76#1DFG+9N#Good restaurant\"",
+        "Assume that:",
+        "• both arrays are initialised with an empty string",
+        "• both arrays can store up to 20 000 elements",
+        "• new reviews are added in the next unused element of the Review array."
+      ]
+    }
+  ]
+}

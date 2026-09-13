@@ -1,0 +1,310 @@
+{
+  "paperId": "0478_s23_qp_23",
+  "subjectCode": "0478",
+  "session": "s23",
+  "component": "23",
+  "totalMarks": 46,
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box to complete the sentence.",
+        "A constant",
+        "A stores a value that can change at any time during the execution of a program.",
+        "B stores a value that cannot change during the execution of a program.",
+        "C stores values of multiple data types.",
+        "D stores values that must be of the same data type.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Explain the purpose of the library routines MOD and RANDOM",
+        "MOD ...................................................................................................................................................",
+        "RANDOM ............................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe what happens when a function is called during the execution of a program.",
+        "[3]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Explain why verification checks are used when data is input.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Give two types of verification check and state how each one can be used.\nVerification check 1 ______\nUse ______\nVerification check 2 ______\nUse ______",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Four descriptions of validation checks are shown.\nDraw one line to link each description to the most appropriate check.\nNot all checks will be used.\nDescription Check\ncheck digit\nto check that the data entered is an integer\nformat check\nto check that some data has been entered\nlength check\nto check that the data entered has an appropriate\nnumber of characters\npresence check\nto check that an identification number contains\ntype check\nno errors",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Write an algorithm in pseudocode to make sure that an input for the variable Length is\nbetween 15 and 35 inclusive. The code must iterate until a valid input has been made and the\ncode must include appropriate messages.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "An algorithm has been written in pseudocode to allow 100 positive numbers to be input. The total",
+        "and the average of the numbers are output.",
+        "01 Counter 100",
+        "02 Total 0",
+        "03 WHILE Counter > 100 DO",
+        "04 INPUT Number",
+        "05 IF Number > 0",
+        "06 THEN"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Total Total + Counter"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Counter Counter + 1"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDCASE"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"The total value of your numbers is \", Total"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Identify the four errors in the pseudocode and suggest corrections.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Describe the changes you should make to the corrected algorithm so that a count-controlled\nloop is used to allow 100 positive numbers to be input.\nYou do not need to rewrite the algorithm.\n\n7 The flowchart represents an algorithm.\nAn input of –1 will terminate the algorithm.\nSTART\nTotal 0\nINPUT\nValue\nIS\nYes\nValue =\n–1 ?\nNo\nOUTPUT\nOUTPUT Total\n\"Rejected\"\nFive1 Value DIV 5\nSTOP\nFive2 Value / 5\nIS\nNo\nFive1 =\nFive2 ?\nYes\nTen1 Value DIV 10\nTen2 Value / 10\nIS\nNo\nTen1 =\nTen2 ?\nYes\nTotal Total + Value",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data:\n5, 50, 52, 555, 57, 500, –1, 5500, 55\nTotal Value Five1 Five2 Ten1 Ten2\nOUTPUT",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Describe the purpose of the algorithm.\n\n8 Consider the logic expression:\nZ is 1 if (A = 1 AND C = NOT 1) AND (B = 1 NOR C = 1)",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for this logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify this logic expression.\nB Z",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Complete the truth table from the given logic expression.\nWorking space\nA B C Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n9 The variable Saying is used to store string data in a program.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Write the pseudocode statement to declare the variable Saying",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Write the pseudocode statements to:\n• allow a string to be input to the variable Saying\n• store the content of the variable Saying in a text file named \"Quotations.txt\"\n• make sure the text file is closed at the end of the algorithm.\n\n10 A database table called Site1 stores details of some holiday homes at a holiday park. The\ndatabase shows the type of home, number of guests, whether it is privately owned and the weekly\nrate to hire it.\nName Type Private Rate$ NumberGuest\nBay Lodge Lodge NO 1000 10\nBay View Cabin NO 400 4\nBlue Skies Cabin NO 350 4\nCliff View Cabin NO 650 6\nCoppice Lodge Lodge NO 1200 12\nGreen Lodge Lodge NO 1000 8\nHenry Cabin YES 300 2\nHikers’ Rest Retreat NO 750 6\nPoppy Cabin NO 300 2\nSummer Joy Retreat YES 750 6\nValley View Cabin NO 600 6\nWest Lodge Lodge YES 1200 12",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "State the number of fields and the number of records in this database table.\nFields ______\nRecords ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Describe the purpose of a primary key.",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "The database uses the data types:\n• alphanumeric\n• character\n• Boolean\n• integer\n• real\n• date/time.\nComplete the table to show the most appropriate data type for each field.\nField Data type\nType\nPrivate\nRate$\nNumberGuest",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12d",
+          "label": "(d)",
+          "text": "Give the output that would be produced by the structured query language (SQL) statement:\nSELECT Name, NumberGuest, Rate$\nFROM Site1\nWHERE NumberGuest >= 10;\n\n11 A two-dimensional (2D) array Contacts[] is used to store names and telephone numbers. All\nthe data is stored as strings. The array must have the capacity to store 100 contacts in the form of:\n• column 1 – contact names as: last name, first name\nfor example: Smith, John\n• column 2 – telephone numbers.\nThe variable CurrentSize shows how many contacts are in the array.\nWrite a program that meets the following requirements:\n• display a menu of choices:\n○ enter new contact details\n○ display all the contact details\n○ delete all the contact details\n• validate the menu input\n• allow up to a maximum of five new contacts to be added to the array at any one time\n• do not allow more than 100 contacts in total\n• after new contacts have been added, sort the array by contact name, as long as there are at\nleast two contacts in the array\n• output the whole of the array\n• delete the contents of the array.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; you may assume that this has\nalready been done.\nAll inputs and outputs must contain suitable messages.\nYou do not need to initialise the data in the array Contacts[] and the variable CurrentSize\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 33,
+      "text": [
+        "OUTPUT \"The average value of your numbers is \", Total / 100"
+      ]
+    }
+  ]
+}

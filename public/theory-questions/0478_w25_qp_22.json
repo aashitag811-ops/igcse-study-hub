@@ -1,0 +1,481 @@
+{
+  "paperId": "0478_w25_qp_22",
+  "subjectCode": "0478",
+  "session": "w25",
+  "component": "22",
+  "totalMarks": 52,
+  "questionCount": 30,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (✓) one box to complete this sentence.",
+        "The result of the arithmetic operation 4 ^ 2 is",
+        "A 2",
+        "B 8",
+        "C 16",
+        "D 42",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm is intended to input a first name from a user and search for it in a",
+        "two‑dimensional (2D) array. If the name is found, the algorithm outputs all the remaining details for",
+        "that name. The algorithm will continue to allow other names to be entered for searching, until the",
+        "user input stops it.",
+        "01 DECLARE Contacts : ARRAY[1:500, 1:4] OF REAL",
+        "02 DECLARE Row : INTEGER"
+      ]
+    },
+    {
+      "id": "03",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Column : INTEGER"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Continue : BOOLEAN"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Stop : BOOLEAN"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE FirstName : STRING"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Continue TRUE"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Stop FALSE"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE Continue"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Row 1"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter a first name \""
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT FirstName"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Contacts[Row, 1] = FirstName"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Column 1 TO 4"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT Contacts[Row, 1]"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Column"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Stop TRUE"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Row Row + 1"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Stop OR Row > 500"
+      ]
+    },
+    {
+      "id": "24",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Search for another name? (Y or N)\""
+      ]
+    },
+    {
+      "id": "25",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Answer"
+      ]
+    },
+    {
+      "id": "26",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Answer = 'N' OR Answer = 'n'"
+      ]
+    },
+    {
+      "id": "27",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "28",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Continue TRUE DO NOT WRITE IN THIS MARGIN"
+      ]
+    },
+    {
+      "id": "29",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "30",
+      "context": [],
+      "parts": [
+        {
+          "id": "30a",
+          "label": "(a)",
+          "text": "Identify the line numbers of five errors in the pseudocode and suggest a correction for each\nerror.\nError 1 line number ______\nCorrection ______\n* 0000800000003 * DFD\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______\nError 5 line number ______\nCorrection ______",
+          "marks": 5,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30b",
+          "label": "(b)",
+          "text": "A procedure NewData allows data for new contacts to be entered and stored in the 2D array\nContacts[]. A parameter, Number, is used to pass values from the main algorithm to the\nprocedure for the number of new contacts. Next, four pieces of contact data for each new\ncontact are entered and stored at the start of the array.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "30bi",
+              "label": "(i)",
+              "text": "Complete the pseudocode for PROCEDURE NewData\nPROCEDURE NewData(______)\nFOR Row 1 TO ______\nFOR Column 1 TO 4\nINPUT ______\nENDPROCEDURE",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "30bii",
+              "label": "(ii)",
+              "text": "Write the pseudocode to input the number of new contacts and to use procedure\nNewData. A variable declaration is not required.\n\n* 0000800000004 * DFD",
+              "marks": 2,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "30c",
+          "label": "(c)",
+          "text": "A first name is used as the search key in the algorithm on page 2. If the name is found, all the\ndata for that name is output and the algorithm stops searching.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "30ci",
+              "label": "(i)",
+              "text": "Explain why the given algorithm may not always give the expected results.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "30cii",
+              "label": "(ii)",
+              "text": "Explain how you could improve the algorithm so that the search is more likely to find the\nrequired results.\n\n3 A program is written that will only accept values between –99.99 and +99.99, inclusive.\nThe program is to be tested.\nThe table, when completed, shows appropriate test data that matches the type of test data and\npurpose of the test data.\nComplete the table by inserting the missing information.\nTest data Type of test data Purpose of test data\nboundary\nto make sure that the program rejects data that is\noutside acceptable limits\n\n* 0000800000005 * DFD\n4 (a) A length check is a type of validation check.\nState the purpose of a length check.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "30b",
+          "label": "(b)",
+          "text": "An email address can be validated by checking that it contains an @ symbol.\nWrite the pseudocode for an algorithm that will allow an email address to be input and check\nwhether or not it contains an @ symbol.\nOutput a suitable message with the result.\nUse the string function SUBSTRING(EmailAddress, Start, 1) in your solution to return a\nstring of length 1 character, starting at position Start, where EmailAddress is the identifier\nrepresenting your input.\nYou do not need to declare any variables for this algorithm, but variables must be initialised\nas necessary. Assume there will not be more than one @ symbol in the email address input.\n\n* 0000800000006 * DFD\n5 This flowchart represents an algorithm.\nSTART\nINPUT Code\nOUTPUT \"Length\nmust be 4\"\nIS\nNo\nLENGTH(Code)\n= 4 ?\nYes\nStore FALSE\nNo\nOUTPUT \"Code\nCount 1\nused before\"\nYes\nIS Store =\nFALSE ?\nIS\nYes\nCodeStore[Count]\n= Code ?\nNo\nIS\nNo Yes\nCodeStore[Count]\n= \"\" ?\nStore TRUE\nCodeStore[Count] Code\nCount Count + 1\nNo Yes\nIS Count > 6\nOUTPUT\n\"CodeStore\nfull\"\nSTOP\n* 0000800000007 * DFD",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30a",
+          "label": "(a)",
+          "text": "The first data row of the trace table shows the values currently stored in CodeStore[]\nComplete the trace table for the algorithm, using the input data:\n7686, Face, Speed, 432U, Yp79\nCodeStore[]\nCode Store Count [1] [2] [3] [4] [5] [6] OUTPUT\naBcd 1532 Face 63q8\n\n* 0000800000008 * DFD",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30b",
+          "label": "(b)",
+          "text": "Describe the processes in the algorithm on page 6.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30c",
+          "label": "(c)",
+          "text": "The algorithm on page 6 requires the array CodeStore[] to be declared as a\none‑dimensional (1D) string array with six elements that are initially set to the null string \"\".\nWrite the pseudocode required to declare and initialise the array CodeStore[]\nYou do need to declare any variables used.\n\n* 0000800000009 * DFD\n6 Consider the logic expression:\nX = (J XOR NOT K) NAND NOT L",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30a",
+          "label": "(a)",
+          "text": "Draw a logic circuit for the logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify the logic expression.\nK X",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "30b",
+          "label": "(b)",
+          "text": "Complete the truth table for the given logic expression.\nWorking space\nJ K L X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n* 0000800000010 * DFD\n7 A database table WATERFOWL stores some details of a range of birds found in the UK that live on\nor near water. The length and wingspan dimensions are in centimetres and the typical lifespan is\nin years.\nSpecies Family Length Wingspan CoastalHabitat Lifespan\nBarnacle goose Goose 63.5 130.0 FALSE 14\nBewick’s swan Swan 120.2 190.5 TRUE 8\nBrent goose Goose 58.0 94.3 TRUE 11\nCanada goose Goose 78.5 160.0 FALSE 6\nEider Duck 58.0 94.5 TRUE 8\nGoldeneye Duck 44.5 72.1 TRUE 6\nGoosander Duck 63.3 90.0 TRUE 7\nLong‑tailed duck Duck 44.0 76.6 TRUE 5\nMallard Duck 59.7 90.8 FALSE 3\nMute swan Swan 150.0 220.2 FALSE 10\nPink‑footed goose Goose 69.6 150.0 TRUE 8\nPintail Duck 60.0 88.6 TRUE 3\nSmew Duck 41.5 62.1 FALSE 7\nWhite‑fronted goose Goose 71.5 140.0 FALSE 6\nWhooper swan Swan 150.0 230.0 TRUE 9",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30a",
+          "label": "(a)",
+          "text": "State the purpose of a primary key in a database table.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30b",
+          "label": "(b)",
+          "text": "Complete the table for each of the given data types, to identify one field from the table\nWATERFOWL that is most likely to use it.\nEach field must be different.\nData type Field\nBoolean\nInteger\nReal\nText\n\n* 0000800000011 * DFD",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30c",
+          "label": "(c)",
+          "text": "Give the output that would be produced by the structured query language (SQL) statement:\nSELECT Species, Length, Wingspan\nFROM WATERFOWL\nWHERE Family = \"Swan\"\nORDER BY Lifespan;",
+          "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "30d",
+          "label": "(d)",
+          "text": "Complete the SQL statement to list only the species, family and lifespan of all waterfowl\nwhose typical lifespan is at least 10 years, sorted in order of species.\nSELECT ______\n\n* 0000800000012 * DFD\n8 A program is required to test the fairness of the random number generator.\nThe one‑dimensional (1D) array RandomNumber[] is used to store 100 000 random integers.\nThe two‑dimensional (2D) array CountedNumber[] is used to store the integers 1 to 10, inclusive,\nand the frequency of each integer (the number of times each integer was generated).\nWrite a program that meets the following requirements:\n• Generate 100 000 random integers between 1 and 10, inclusive.\n• Store each integer in the appropriate array.\n• Calculate the frequency of each of the integers 1 to 10 and store these values in the\nappropriate array.\n• Sort the contents of the counted number array in descending order of frequency.\n• Calculate the chance of generating each of the integers 1 to 10, rounded to four decimal\nplaces.\nUse the formula: chance = frequency / 100000\n• Output each of the integers 1 to 10 in the order they are stored in the counted number array,\nalong with the chance of generating them.\nThe following is an example of an algorithm that sorts a 2D array in an ascending order:\nF TRUE\nWHILE F DO\nF FALSE\nFOR I 1 TO 9\nIF A[I, 2] > A[I + 1, 2]\nTHEN\nT1 A[I, 1]\nT2 A[I, 2]\nA[I, 1] A[I + 1, 1]\nA[I, 2] A[I + 1, 2]\nA[I + 1, 1] T1\nA[I + 1, 2] T2\nF TRUE\nENDIF\nNEXT I\nENDWHILE\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll arrays, variables or constants used must be declared for this algorithm.\nAll inputs and outputs must contain suitable messages.\n* 0000800000013 * DFD\n* 0000800000014 * DFD\n\n* 0000800000015 * DFD\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 52,
+      "text": [
+        "ENDWHILE"
+      ]
+    }
+  ]
+}

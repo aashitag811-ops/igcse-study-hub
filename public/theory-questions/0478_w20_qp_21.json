@@ -1,0 +1,282 @@
+{
+  "paperId": "0478_w20_qp_21",
+  "subjectCode": "0478",
+  "session": "w20",
+  "component": "21",
+  "totalMarks": 42,
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Identify one array that you could have used for Task 1. Give the data type and state the use\nof the array.\nArray ______\nData type ______\nUse ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Data entered by a customer includes the age of the driver in Task 1.\nIdentify two different validation checks you could use for the age of the driver.\nJustify your choice for each one.\nValidation check 1 ______\nJustification ______\nValidation check 2 ______\nJustification ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Write an algorithm for Task 2, using either pseudocode, programming statements or a\nflowchart. Assume that Task 1 has been completed.",
+          "marks": 6,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Explain how your program completed Task 3. Assume that Task 2 has been completed.\nAny programming statements used in your answer must be fully explained.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "The car insurance system needs updating to record the percentage of customers who\nbought car insurance after obtaining a price to insure a car. Describe the changes\nrequired to your program.\n\nSection B",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 20,
+      "text": [
+        "All variables, constants and other identifiers must have meaningful names."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe the purpose of variables and constants. Use an example of each in your answer.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm calculates the weight and number of bags in a load of firewood. The",
+        "weight in kilograms of each bag is input. The algorithm finishes when either 50 bags have been",
+        "weighed, or as soon as the total weight exceeds 1000 kilograms. Only then are the total weight",
+        "and the number of bags in the load output.",
+        "01 TotalWeight ← 1000",
+        "02 BagCount ← 0",
+        "03 MaxBag ← 50"
+      ]
+    },
+    {
+      "id": "04",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "MaxWeight ← 1000"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please Enter weight of bag\""
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Weight"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "TotalWeight ← TotalWeight + Weight"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "BagCount ← BagCount + 1"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Number of bags in the load is \", BagCount"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL TotalWeight > MaxWeight AND BagCount >= MaxBag"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Give the line number(s) from the algorithm of:\nan assignment statement ______\na loop ______\na counting statement ______\na totalling statement ______",
+          "marks": null,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Give the line numbers of the four errors in this pseudocode. Suggest a correction for each\nerror.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______",
+          "marks": 4,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "Explain how you could extend the algorithm to calculate and display the average weight of a\nbag of firewood in the load.\n\n4 This flowchart inputs five numbers and performs a calculation.\nThe predefined function MOD finds the remainder from integer division for example\nR ← 25 MOD 11 gives R a value of 3\nSTART\nINPUT\nV,W,X,Y,Z\nYes\nIS\nEND\nV = 0 ?\nNo\nA ← V*2 + W*3 + X*4 + Y*5\nB ← A MOD 11\nYes\nIS\nOUTPUT\nB = Z ?\n\"Valid\"\nNo\nOUTPUT\n\"Invalid\"",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "Complete the trace table for this set of input data:\n5, 4, 6, 2, 1, 9, 3, 2, 1, 6, 7, 6, 1, 5, 1, 0, 0, 0, 0, 0\nV W X Y Z A B\nOUTPUT",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Describe the purpose of this flowchart.\n\n5 A database table, AIRLINE, stores data used to compare airlines.\nNumber of Number of Head office Share price\nCode Airline name\nemployees countries\nFJ FastJet 60000 30 Europe 514.50\nMA MurphyAir 35000 8 Europe 152.67\nJS JetSeven 45000 22 Asia 257.44\nK3 Koala3 22000 11 Australia 501.21\nNS NorthState 30000 4 America 108.22\nSS SouthState 30000 4 America 126.35\nBJ BlueJet 15000 7 Africa 215.45\nSK SkyKing 32000 27 Europe 506.12\nPF PandaFly 50000 35 Asia 317.88",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12a",
+          "label": "(a)",
+          "text": "State how many fields and how many records are shown in the AIRLINE table.\nNumber of Fields ______\nNumber of Records ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12b",
+          "label": "(b)",
+          "text": "Show the output that would be given by this query-by-example.\nField: Airline name Number of employees Head office Share price\nTable: AIRLINE AIRLINE AIRLINE AIRLINE\nSort:\nShow: 3 3\nCriteria: < 35000 > 500.00\nor:",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "12c",
+          "label": "(c)",
+          "text": "Complete the query-by-example grid to find every airline with a head office in Asia or Africa,\nand number of countries greater than 4. Only show the airline name and number of countries.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "OUTPUT \"Total weight of the load is \", MaxWeight"
+      ]
+    }
+  ]
+}

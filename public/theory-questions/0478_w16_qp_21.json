@@ -1,0 +1,195 @@
+{
+  "paperId": "0478_w16_qp_21",
+  "subjectCode": "0478",
+  "session": "w16",
+  "component": "21",
+  "totalMarks": 36,
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, constants and other identifiers should have meaningful names.\nFor four of the variables, constants or arrays that you used in Task 1, state the name, data\nstructure, data type and its use.\nName 1 ______\nData structure ______\nData type ______\nUse ______\nName 2 ______\nData structure ______\nData type ______\nUse ______\nName 3 ______\nData structure ______\nData type ______\nUse ______\nName 4 ______\nData structure ______\nData type ______\nUse ______",
+          "marks": 8,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write an algorithm to complete Task 2, using either pseudocode, programming statements\nor a flowchart. You can assume that Task 1 has been completed and that there are three\ncandidates for class captain.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Explain how you show the result (Task 3). You may include programming statements as part\nof your explanation.",
+          "marks": 6,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain how you could extend your solution to deal with the case of ‘NO OVERALL WINNER’.\n\nSection B",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Read this section of program code that:",
+        "• inputs 10 numbers",
+        "• checks whether each number is within a specified range",
+        "• totals the numbers within the range and outside the range",
+        "1 InRange = 0",
+        "2 OutRange = 1000"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Count = 1 TO 10"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Num"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Num > 10 AND Num < 20 THEN InRange = InRange + 1"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE OutRange = OutRange - 1"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count = Count + 1"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT X"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "There are four errors in this code.\nLocate these errors and suggest a correction to remove each error.\nError 1______\nCorrection ______\nError 2______\nCorrection ______\nError 3______\nCorrection ______\nError 4______\nCorrection ______",
+          "marks": 4,
+          "type": "suggest",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Decide, with reasons, whether the numbers 10 and 20 are within or outside the range.\nWithin Outside\nNumber Reason\nrange (✓) range (✓)\n……………………………………………………………………..\n……………………………………………………………………..\n……………………………………………………………………..\n……………………………………………………………………..\n\n3 The flowchart below inputs the price of an item under $10. The change from a $10 note is output.\nAny amount less than 5 cents is rounded up to 5 cents.\nThe predefined function INT rounds a number down to the nearest whole number; for example\nZ ← INT(5.7) gives the value Z = 5\nSTART\nINPUT Price\nChange 10 – Price\nIs\nYes\nChange\nDollars INT(Change)\n>= 1?\nNo\nChange Change – INT(Change)\nOUTPUT Dollars,\n\" dollars\"\nIs\nYes\nChange\nChange Change – 0.5\n>= 0.5?\nNo\nOUTPUT \"One 50\ncent coin\"\nTenCents INT(Change * 10 + 0.5)\nOUTPUT TenCents,\n\" ten cent coins\"\nIs Change*10 – OUTPUT \"One 5\nYes\nTenCents\ncent coin\"\n> 0?\nNo\nEND\nComplete the trace table for the input data: 6.29\nPrice Change Dollars TenCents OUTPUT\n\n4 Four validation checks and four descriptions are shown below.\nDraw a line to link each validation check to the correct description.\nValidation check Description\nNumbers between two\nPresence check\ngiven values are accepted\nData is of a particular\nRange check\nspecified type\nData contains an exact\nType check\nnumber of characters\nEnsures that some data\nLength check\nhave been entered\n\n5 REPEAT ... UNTIL and WHILE ... DO ... ENDWHILE are two different loop\nstructures you can use when writing pseudocode.\nExplain, using examples, why you would choose to use each type of loop.\nExample 1 ______\nReason for choice ______\nExample 2 ______\nReason for choice ______\n\n6 A database, THEATRETOURS, was set up to show the tour dates, towns, number of seats and\nprices in local currency for a Shakespeare play.\nTown Tour Date Number of Seats Price Local Currency\nWigan 18/08/2016 120 15.00\nDumfries 20/08/2016 160 12.50\nTurin 25/08/2016 200 17.00\nMacon 27/08/2016 75 18.00\nBordeaux 29/08/2016 170 20.00\nAlgiers 01/09/2016 125 1350.00\nWindhoek 05/09/2016 65 90.00\nWindhoek 06/09/2016 65 90.00\nPort Elizabeth 10/09/2016 200 110.00",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Explain why none of the fields in the database can be used as a primary key.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "State a field that could be added as a primary key.\nGive a reason for choosing this field.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9c",
+          "label": "(c)",
+          "text": "Use the query-by-example grid below to provide a list of tour dates and seat prices in\nalphabetical order of town.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "PRINT InRange, OutRange"
+      ]
+    }
+  ]
+}

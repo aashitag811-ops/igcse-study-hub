@@ -1,0 +1,556 @@
+{
+  "paperId": "9608_w20_qp_11",
+  "subjectCode": "9608",
+  "session": "w20",
+  "component": "11",
+  "totalMarks": 68,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Draw one or more lines to link each language translator to the most appropriate statement(s).",
+        "Language translator Statements",
+        "Converts a low-level language",
+        "instruction into binary",
+        "Stops as soon as it finds a syntax error",
+        "Compiler",
+        "Needs the source code to be present",
+        "when the user’s program is run",
+        "Reports all errors found at the end of",
+        "the process",
+        "Corrects syntax errors as they are",
+        "detected",
+        "Interpreter",
+        "Converts a high-level language into a",
+        "different form",
+        "Creates an executable file",
+        "[3]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Explain the reasons why the surgery should upgrade their database.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The design for the surgery database, SURGERY, is:\nPET(PetID, OwnerFirstName, OwnerLastName, PetName, PetBreed,\nPetDateOfBirth, TelephoneNumber)\nAPPOINTMENT(AppointmentID, Date, Time, StaffID, PetID)",
+          "marks": null,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Give one reason why the database design for SURGERY is not in Third Normal Form\n(3NF).",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The database needs to be normalised to 3NF. A pet may have more than one owner and\nan owner may have more than one pet.\nThe appointment table does not need to change and has been repeated below.\nGive the name and attributes of three additional tables in 3NF. Identify the primary\nkey(s) in each table.\nAPPOINTMENT(AppointmentID, Date, Time, StaffID, PetID)\nTable 1 ______\nTable 2 ______\nTable 3 ______",
+              "marks": 4,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Part of the table APPOINTMENT is shown. The veterinary surgery uses Data Manipulation\nLanguage (DML) statements to search for appointments.\nAppointmentID Date Time StaffID PetID\n222010 02/02/2021 12:40 JK1 20CF\n222011 02/02/2021 12:40 PP2 10DT\n222012 02/02/2021 12:50 JK1 9RR\n222013 02/02/2021 13:00 JK1 7MR",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Identify the industry standard language that provides both DML and Data Definition\nLanguage (DDL) statements.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Write a DDL statement to update the table APPOINTMENT and define AppointmentID\nas the primary key.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "Complete the DML script to display the times and Pet IDs of all appointments on\n02/02/2021 with staff ID of ‘JK1’, in descending order of time.\nSELECT ______ , ______\nFROM APPOINTMENT\nWHERE ______ AND ______\nORDER BY Time ______ ;",
+              "marks": 3,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "New pet owners complete a paper-based form to register their pets at the surgery.",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Describe two verification checks that can be carried out when the data from the paper-\nbased form is entered into the database.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Appointments can be booked between 09:00 and 16:50 on Monday to Friday.\nDescribe the ways in which the appointment date and time can be validated to make\nsure they are reasonable.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The surgery has five computers that can all access the database. A copy of the database is\nstored centrally.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "Complete the description of this type of network model by filling in the missing terms.\nThe ______ model has one ______ that stores all\nthe data for the surgery. The other computers are ______ . When a\nuser requests data, a request is sent to the ______ .",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "The surgery wants to keep all data secure. The surgery network is not connected to the\nInternet.\nIdentify two authentication techniques the surgery could use to restrict access to the\ndata.",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 27,
+      "text": [
+        "A veterinary surgery cares for sick animals. The surgery has a file-based database that stores",
+        "data about the pets, their owners, and appointments made with the surgery.",
+        "The surgery wants to upgrade to a relational database."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Explain the ways in which Ria and her team can ensure that they follow the Code of Ethics in\nrelation to the product and their colleagues.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Product",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Colleagues",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Ria’s client wants to sell the game for a profit. The client cannot decide which type of software\nlicence to use to distribute the game.\nIdentify two types of licence that Ria could recommend to her client and justify the use of\neach licence.\nLicence 1 ______\nJustification ______\nLicence 2 ______\nJustification ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Ria manages a team of software developers. The team is creating a mobile application game for a",
+        "client.",
+        "Ria wants to ensure that her team works to the ACM/IEEE Software Engineering Code of Ethics."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The current contents of the main memory are:\nAddress Instruction\n100 LDD 200\n101 ADD 201\n102 ADD 202\n103 SUB 203\n104 STO 204\n105 END\n200 10\n201 20\n202 5\n203 6\nTick (✓) one box to indicate which one of the following statements is true after program\nexecution.\nStatements Tick (✓)\nMemory location 204 contains 400\nMemory location 204 contains 41\nMemory location 204 contains 231\nMemory location 204 contains 29",
+          "marks": 1,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The current contents of the main memory are:\nAddress Instruction\n100 LDM #120\n101 ADD 121\nSUB 122\nSTO 120\nEND\n120 10\n121 2\nTick (✓) one box to indicate which one of the following statements is true after program\nexecution.\nStatement Tick (✓)\nMemory location 120 contains 135\nMemory location 120 contains 118\nMemory location 120 contains 0\nMemory location 120 contains 16",
+          "marks": 1,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The current contents of the main memory are:\nAddress Instruction\n150 LDI 200\n151 ADD 200\n152 ADD 201\n153 STO 205\n154 END\n200 202\n201 203\n202 201\n203 200\nTick (✓) one box to indicate which one of the following statements is true after program\nexecution.\nStatement Tick (✓)\nMemory location 205 contains 607\nMemory location 205 contains 601\nMemory location 205 contains 603\nMemory location 205 contains 606",
+          "marks": 1,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Identify two modes of addressing that are not used in parts (a), (b) or (c).",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4e",
+          "label": "(e)",
+          "text": "Assembly language instructions can be put into groups.\nTick (✓) one box on each row to indicate the appropriate instruction group for each assembly\nlanguage instruction.\nAssembly language Data Jump Input and\nArithmetic\ninstruction movement instruction output of data\nSTO 120\nJPE 200\nADD 3\nLDD 20\nINC ACC\nOUT",
+          "marks": 3,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The following table shows assembly language instructions for a processor that has one general",
+        "purpose register, the Accumulator (ACC).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "Direct addressing. Load the contents of the location at the given address to",
+        "LDD <address>",
+        "ACC.",
+        "LDM #n Immediate addressing. Load the denary number n to ACC.",
+        "Indirect addressing. The address to be used is at the given address. Load",
+        "LDI <address>",
+        "the contents of this second address to ACC.",
+        "CMP <address> Compare the contents of ACC with <address>.",
+        "Store contents of ACC at the given address.",
+        "STO <address>",
+        "ADD <address> Add the contents of the given address to ACC.",
+        "SUB <address> Subtract the contents of the given address from the contents of ACC.",
+        "Output to screen the character whose ASCII value is stored in ACC.",
+        "OUT",
+        "INC <register> Add 1 to the contents of the register (ACC or IX).",
+        "JPE <address> Following a compare instruction, jump to <address> if the compare was True.",
+        "Return control to the operating system.",
+        "END"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The concert is streamed to his computer at the same time as it is taking place.",
+          "marks": null,
+          "type": "place",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Identify whether Oscar is using real-time or on-demand bit streaming. Justify your choice.\nStreaming method ______\nJustification ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "The video of the concert repeatedly stops and restarts while Oscar is watching it on his\nlaptop computer. His friend is watching the same video of the concert at the same time,\nin a different location, but he does not experience the same problem as Oscar.\nGive three possible reasons why Oscar’s video constantly stops and starts again.",
+              "marks": 3,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The video of the concert is made up of a sound track and multiple images.\nTwo successive frames of one section of the video are shown. The pixel colours are\nrepresented by letters.\nBL BL BL RD RD RD BL BL BL RD RD RD\nBL BL BL RD RD RD\nK K K K K K\nLG LG LG DG DG DG\nLG LG LG DG DG DG\nY Y K Y Y K BK BK BK BK BK BK\nW K W W W DG\nW K W W W DG\nP P P P P P\nP P P P P P\nFrame 1 Frame 2",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Explain the way in which progressive encoding can be used to transmit Frames 1 and 2.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Explain, using Frames 1 and 2 as an example, the way in which temporal redundancy\ncan be used to compress a video.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5biii",
+              "label": "(iii)",
+              "text": "Give another type of redundancy technique that can be used to compress a video.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5biv",
+              "label": "(iv)",
+              "text": "MP4, WMV and AVI are all examples of a type of format that combines sound and image\ncomponents into a video.\nIdentify the type of format that combines the sound and image components into a video.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "Oscar is watching a concert on his laptop computer."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Convert the following denary number into a 12-bit two’s complement binary form.\n-245",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Convert the following hexadecimal number into denary.\nF0",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Convert the following unsigned binary integer into denary.\n10101111",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "Convert the following Binary Coded Decimal (BCD) into denary.\n100001010011",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Anne is downloading a sound file from a web server. She had the choice of a sampling rate of",
+        "44.1 kHz or 98 kHz before she downloaded the sound file.",
+        "Explain the differences between the two sound files stored on the server.",
+        "[4]"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "The laptop has a private IP address. The router has both public and private IP addresses.\nExplain the reasons why Joshua’s laptop has a private IP address only, but the router has\nboth a private and a public IP address.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Joshua visits a website by entering its Uniform Resource Locator (URL).\nDescribe how the URL is converted into a matching IP address.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Give one example of a valid IPv4 address.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Joshua’s laptop is connected to the router on his home network."
+      ]
+    }
+  ]
+}

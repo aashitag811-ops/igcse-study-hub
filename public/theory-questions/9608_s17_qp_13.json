@@ -1,0 +1,774 @@
+{
+  "paperId": "9608_s17_qp_13",
+  "subjectCode": "9608",
+  "session": "s17",
+  "component": "13",
+  "totalMarks": 64,
+  "questionCount": 20,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Describe the relationship shown above.",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "A relational database is created to store the ward and nurse data. The two table designs for\nArea A are:\nA-WARD(WardName, NumberOfBeds)\nA-NURSE(NurseID, FirstName, FamilyName, ______)",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Complete the design for the A-NURSE table.",
+              "marks": 1,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Explain how the relationship in part (a) is implemented.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "In Area B of the hospital, there are a number of wards and a number of nurses.\nEach Area B ward has a specialism.\nEach Area B nurse has a specialism.\nA nurse can be asked to work in any of the Area B wards where their specialism matches with\nthe ward specialism.\nThe relationship for Area B of the hospital is:\nB-NURSE B-WARD",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Explain what the degree of relationship is between the entities B-NURSE and B-WARD.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "The design for the Area B data is as follows:\nB-NURSE(NurseID, FirstName, FamilyName, Specialism)\nB-WARD(WardName, NumberOfBeds, Specialism)\nB-WARD-NURSE( ______ )\nComplete the attributes for the third table. Underline its primary key.",
+              "marks": 2,
+              "type": "design",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "Draw the relationships on the entity-relationship (E-R) diagram.\nB-NURSE B-WARD\nB-WARD-NURSE",
+              "marks": 2,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Use the table designs in part (c)(ii).",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Write an SQL query to display the Nurse ID and family name for all Area B nurses with a\nspecialism of ‘THEATRE’.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Fatima Woo is an Area B nurse with the nurse ID of 076. She has recently married, and\nher new family name is Chi.\nWrite an SQL command to update her record.\nUPDATE ______\nSET ______\nWHERE ______",
+              "marks": 3,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A hospital is divided into two areas, Area A and Area B. Each area has several wards. All the ward",
+        "names are different.",
+        "A number of nurses are based in Area A. These nurses always work on the same ward. Each",
+        "nurse has a unique Nurse ID of STRING data type.",
+        "A-NURSE",
+        "A-WARD"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "The following sequence of steps (1 to 7) describe how a single page is printed on a laser\nprinter.\nThe statements A, B, C and D are used to complete the sequence.\nThe paper passes through a fuser, which heats up the paper. The toner melts and\nforms a permanent image on the paper.\nB The electrical charge is removed from the drum and the excess toner is collected.\nC The image is converted on the drum into an electrostatic charge.\nThe oppositely-charged paper picks up the toner particles from the drum. After\npicking up the toner, the paper is discharged to stop it clinging to the drum.\nComplete the sequence by writing one of the letters A, B, C or D on the appropriate row.\n1. A laser beam and a rotating mirror are used to draw an image of the page on the\nphotosensitive drum.\n2. ______\n3. Electrostatic charge attracts toner.\n4. The charged paper is rolled against the drum.\n5. ______\n6. ______\n7. ______",
+              "marks": 3,
+              "type": "describe",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "A computer user has a laser printer to print letters and documents. The user also prints\ndigital photographs taken using a digital camera.\nState the most suitable type of printer for printing the photographs.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The user is considering the purchase of a new laptop computer. She has read many product\nreviews and knows that there are different types of internal secondary storage available.\nList two options for internal secondary storage.\nOption 1 ______\nOption 2 ______\nDescribe one advantage of one of the options.\nAdvantage of choosing option 1 / 2 (circle)\n\nQuestion 3 begins on page 6.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A computer has a microphone and captures a voice recording using sound recording software.\nBefore making a recording, the user can select the sampling rate.\nDefine the term sampling rate. Explain how the sampling rate will influence the accuracy of\nthe digitised sound.\nSampling rate ______\nExplanation ______",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The computer also has bitmap software.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Define the terms pixel and screen resolution.\nPixel ______\nScreen resolution ______",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "A picture has been drawn and is saved as a monochrome bitmap image.\nState how many pixels are stored in one byte.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "A second picture has width 2048 pixels and height 512 pixels. It is saved as a 256-colour\nimage.\nCalculate the file size in kilobytes.\nShow your working.",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biv",
+              "label": "(iv)",
+              "text": "The actual bitmap file size will be larger than your calculated value.\nState another data item that the bitmap file stores in addition to the pixel data.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Show the contents of the Accumulator (ACC) after each instruction is executed.\nIX 0 0 0 0 0 0 1 1\nMain",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "LDM #500\nMemory\nAddress contents\nACC ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "LDD 500\nACC ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiii",
+              "label": "(iii)",
+              "text": "LDX 500\nACC ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aiv",
+              "label": "(iv)",
+              "text": "LDI 500\nACC ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Each machine code instruction is encoded as 16-bits (8-bit op code followed by an 8-bit\noperand).\nWrite the machine code for the following instructions:\nLDM #17\nLDX #97",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Using an 8-bit operand, state the maximum number of memory locations, in denary, that can\nbe directly addressed.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "Computer scientists often write binary representations in hexadecimal.",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "Write the hexadecimal representation for this instruction:\n0 0 0 0 0 1 1 1 1 1 0 0 0 0 1 0",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "A second instruction has been written in hexadecimal as:",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The following table shows part of the instruction set for a processor. The processor has one",
+        "general purpose register, the Accumulator (ACC) and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Op code",
+        "Operand",
+        "(mnemonic) (binary)",
+        "Immediate addressing. Load the denary number n to",
+        "LDM #n 0000 0001",
+        "ACC.",
+        "Direct addressing. Load the contents of the location",
+        "LDD <address> 0000 0010",
+        "at the given address to ACC.",
+        "Indirect addressing. At the given address is the",
+        "LDI <address>",
+        "0000 0101 address to be used. Load the contents of this second",
+        "address to ACC.",
+        "Indexed addressing. Form the address from",
+        "<address> + the contents of the Index Register",
+        "LDX <address> 0000 0110"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [
+        {
+          "id": "05a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05ai",
+              "label": "(i)",
+              "text": "Describe how the data logger calculates the parity bit for each of the bytes in the data\nblock.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05aii",
+              "label": "(ii)",
+              "text": "State the two missing parity bits labelled A and B.\nA = ______\nB = ______",
+              "marks": 1,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05aiii",
+              "label": "(iii)",
+              "text": "Describe how the computer uses the parity byte to perform a further check on the\nreceived data bytes.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "05b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "05bi",
+              "label": "(i)",
+              "text": "A second data block is received as shown in the following table. There are errors in this\ndata block.\nIdentify and then circle two bits in the table which must be changed to remove the errors.\nBit position\n7 6 5 4 3 2 1 0\n1 0 0 0 1 1 0 0\n0 0 1 0 0 0 0 0\n0 0 1 1 0 1 0 1\n1 1 1 1 0 0 0 1\n1 1 0 0 0 0 1 0\n0 0 1 0 0 1 0 0\n0 0 0 0 0 0 0 1\n0 1 0 1 1 0 0 0",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "05bii",
+              "label": "(ii)",
+              "text": "Explain how you arrived at your answers for part (b)(i).",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "3F",
+        "Write the equivalent assembly language instruction, with the operand in denary.",
+        "[2]",
+        "5 A computer receives data from a remote data logger. Each data block is a group of 8 bytes.",
+        "A block is made up of seven data bytes and a parity byte.",
+        "Each data byte has a parity bit using odd parity. The parity byte also uses odd parity.",
+        "The following table shows a data block before transmission. Bit position 0 is the parity bit.",
+        "Bit position",
+        "7 6 5 4 3 2 1 0",
+        "1 1 0 0 1 1 0 1",
+        "0 0 1 0 0 0 0 0",
+        "1 0 0 1 1 1 0 A",
+        "1 1 0 0 0 0 1 0",
+        "Data bytes",
+        "1 1 0 0 0 0 1 0",
+        "1 1 0 0 0 1 1 B",
+        "0 0 0 0 0 0 0 0",
+        "0 1 1 0 1 1 0 0 Parity byte"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The operating system (OS) contains code for performing various management tasks.\nThe appropriate code is run when the user performs various actions.\nDraw a line to link each OS management task to the appropriate user action.\nOS management task Action\nMain memory The user moves the mouse on\nmanagement the desktop\nInput/Output The user closes the\nmanagement spreadsheet program\nThe user selects the Save\nSecondary storage\ncommand to save their\nmanagement\nspreadsheet file\nHuman computer The user selects the Print\ninterface command to output their\nmanagement spreadsheet document",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A user has the following issues with the use of his PC.\nState the utility software which should provide a solution.",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "The hard disk stores a large number of video files. The computer frequently runs out of\nstorage space.\nUtility software solution ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "The user is unable to find an important document. He thinks it was deleted in error some\nweeks ago. This must not happen again.\nUtility software solution ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "The operating system reports ‘Bad sector’ errors.\nUtility software solution ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biv",
+              "label": "(iv)",
+              "text": "There have been some unexplained images and advertisements appearing on the\nscreen. The user suspects it is malware.\nUtility software solution ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Describe what is meant by client-side scripting.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A user requests a web page by keying the Uniform Resource Locator (URL) into the address\nbar of their web browser.\nThe requested page contains a client-side script.\nDescribe the sequence of steps leading to the display of the web page on the computer\nscreen.",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "A web page used for data capture consists of:\n• two text boxes for the entry of:\n• a product code\n• the number of items to be purchased.\n• a button which is clicked when the user wants to submit this order.\nStudy the following web page.\n1 <html>\n2 <head>\n3 <title>Untitled Document</title>\n4 <script language=\"JavaScript\">\n6 function myButton_onmousedown()\n7 {",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "The design of a web-based application can require the use of client-side scripting."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "var Message1 = \"ERROR – Order refused\";"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "var Message2 = \"Product code OK\";"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "var x = document.forms[\"form1\"][\"txtProductCode\"].value;"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "if (x == \"\")"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "{"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "alert(Message1)"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "}"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "else"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "{"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "alert(Message2)"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "}"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "}"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "</script>",
+        "22 </head>",
+        "23 <body>",
+        "24 <form name = form1>",
+        "25 <label>Product code: </label>",
+        "26 <input type=\"text\" name=\"txtProductCode\" >",
+        "27 <label>Number: </label>",
+        "28 <input type=\"text\" name=\"txtNumber\" size = \"5\" >",
+        "29 <p>",
+        "30 <label>Submit order: </label>",
+        "31 <input type=\"button\" name=\"btnSubmit\" Value = \"Submit\"",
+        "33 onMouseDown = \"myButton_onmousedown()\" >",
+        "34 </p>",
+        "35 </form>",
+        "37 </body>",
+        "38 </html>"
+      ]
+    }
+  ]
+}

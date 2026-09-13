@@ -1,0 +1,394 @@
+{
+  "paperId": "9691_w14_qp_22",
+  "subjectCode": "9691",
+  "session": "w14",
+  "component": "22",
+  "totalMarks": 59,
+  "questionCount": 13,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "To enter an event, each competitor needs to supply the following information:\n• Competitor name\n• Age in years\n• Whether or not they are a sports club member\n• The letter code for the single event they want to enter:\nA 50 m race\nB 100 m race\nC Long jump\nD High jump\nE 5 km cycle race\nF 25 m swimming\nThe competitor confirms that their details are correct. Their computer calculates and displays\nthe entry fee. Entries are free for sports club members.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Draw a suitable screen layout.\nAnnual Sports Day Entry Form",
+              "marks": 6,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Justify the design of your screen layout in part (i).",
+              "marks": 2,
+              "type": "design",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "The entries will be stored as records consisting of the following fields.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Complete the following table. Give a single value for each Field size.\nField name Data type Field size (bytes)\nCompetitorName\nCompetitorAge\nClubMember\nEventEntered\nEntryFee",
+              "marks": 10,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Calculate the size of the file if 100 event entries are stored.\nFile size in bytes ______",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A sports club in a town organises an annual sports day for competitors aged 8 to 18. The organiser",
+        "wants these competitors to enter the sports day events online."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Dry-run the pseudocode with s = 64, x = 1 and y = 15.\nComplete the trace table.\nStart a new row in the trace table every time round the loop.\nList\nz ← FALSE\n1 27\nREPEAT\n2 28\nm ← (x + y) DIV 2",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "Nathan copied the following pseudocode from a computing textbook. He wants to find out what it",
+        "does."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "33",
+        "IF List[m] = s"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "36",
+        "THEN"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "39",
+        "z ← TRUE"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "41",
+        "ELSE"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "45",
+        "IF List[m] > s",
+        "THEN 8 52",
+        "y ← m – 1",
+        "9 64",
+        "ELSE",
+        "10 67",
+        "x ← m + 1",
+        "11 78",
+        "ENDIF",
+        "12 79",
+        "ENDIF",
+        "13 81",
+        "UNTIL z = TRUE",
+        "14 85",
+        "OUTPUT m",
+        "15 92",
+        "Trace table:",
+        "s z x y m List[m] List[m] = s List[m] > s",
+        "64 - 1 15 - - - -",
+        "FALSE - - - -"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "What does this pseudocode do?\n\n3 A game is played by two players. Player A uses white tokens ( ). Player B uses black tokens ( ).\nThe players take turns dropping tokens into a vertical grid. The tokens fall straight down and\noccupy the next available space in the chosen column. The aim of the game is to connect four of\none’s own colour tokens. This must be done in a vertical, horizontal or diagonal line.\nHere is one example after Player A has had 2 turns and Player B has had 1 turn:\nRow 6\nColumn 1 2 3 4 5 6 7\nNathan wants to write a program to allow two users to play the game on the computer.\nThe program will display a simplified version of the above grid which is redrawn after every turn.",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Before any tokens have been dropped into the grid, all grid cells are empty.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "Suggest values Nathan should use to represent:\nEmpty cell ______\nWhite token ______\nBlack token ______",
+              "marks": 2,
+              "type": "suggest",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "The array Grid is to be used to represent the contents of the game grid.\nIn a high-level programming language, write statements to:\n• declare the array Grid\n• assign the value for an empty cell to all cells.\nLanguage ______\nCode ______",
+              "marks": 7,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aiii",
+              "label": "(iii)",
+              "text": "Write the statement to assign the value for a black token to the cell shown in the diagram.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "After a player takes their turn, the new state of the grid is to be displayed on the screen. The\ndisplay will show only the cell contents.\nIn a high-level language, write programming statements to implement\nStart\nthe algorithm represented by the flowchart.\nEnsure that your code demonstrates good programming practice.\nLanguage ______\nLoop from row\n6 down to 1\nCode ______\nLoop from\ncolumn\n1 to 7\nOutput\ncontents of grid\ncell for this row\nand column\nNo\nEnd of inner\nloop?\nYes ______\nNo\nEnd of outer\nloop? ______\nYes\n\nEnd",
+          "marks": 4,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "To drop a token into the grid, the player enters the chosen column number.\nThe function ColumnNumberValid has a parameter (x) which is the chosen column\nnumber. The function returns:\n• TRUE if x is between 1 and 7 inclusive and there is still space in the column\n• FALSE otherwise",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "Complete the pseudocode:\nFUNCTION ColumnNumberValid(x : …………………………………) RETURNS ………………………………\nDECLARE Valid : …………………………………………………………………………………………………………………………\nIF ……………………………………………………………………………………………………… // x outside range?\nTHEN\nValid ← ………………………………………… // column number not within range\nELSE\nIF Grid[6, x] = …………………………………………… // cell in top row empty?\nTHEN\nValid ← ………………………………………………………………………………… // cell empty\nELSE\nValid ← ……………………………………………………………………… // cell not empty\nENDIF\nENDIF\nRETURN Valid\nENDFUNCTION",
+              "marks": 8,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "Nathan wants to test the validation of the parameter, x, by this function.\nGive three different types of test data with an example of each.\nJustify your choices.\nType of test data Example test data Justification",
+              "marks": 9,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "The program stores in the variable NextPlayer the character 'A' or 'B' to show whose turn it\nis next.\nThe chosen column number is validated using the function from part (c)(i).\nThe program then sets the relevant empty grid cell to the player’s token value.\nComplete the pseudocode:\n01 REPEAT\n02 INPUT ChosenColumnNumber\n03 UNTIL ColumnNumberValid(…………………………………………………………………………………………………………)\n04 Row ← 1 // start with bottom row and find first empty row\n05 WHILE Grid[Row, ChosenColumnNumber] <> ……………………………………………………………………\n06 ………………………………………………………………………………………………………………………………………………………………………\n07 ENDWHILE\n08 IF ……………………………………………………………………………………………………………………………………………………………………",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 34,
+      "text": [
+        "52",
+        "OUTPUT ...............................................................................................................................[8]"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Grid[Row, ChosenColumnNumber] ← …………………………………………………………………………"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Grid[Row, ChosenColumnNumber] ← …………………………………………………………………………"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [
+        {
+          "id": "13e",
+          "label": "(e)",
+          "text": "Nathan wants a single player to play against the computer. He uses the built-in function\nRANDOM(n) to simulate the computer’s choice of column. This function returns a whole\nnumber in the range 1 to n inclusive.\nHe writes the procedure GetColumn to input the next move either from the computer or\nPlayer ‘B’. This procedure has two parameters which are passed either by reference or by\nvalue.\nPROCEDURE GetColumn(Player : CHAR, Number : INTEGER)\nIF Player = 'A' // Player 'A' is the computer.\nTHEN\nNumber ← RANDOM(7)\nELSE\nINPUT Number\nENDIF\nENDPROCEDURE",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "13ei",
+              "label": "(i)",
+              "text": "State which method of parameter passing (by reference or by value) is used for each of\nPlayer and Number.\nPlayer ______\nNumber ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "13eii",
+              "label": "(ii)",
+              "text": "Write the procedure call which will replace line 02 of the pseudocode in part (d).",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "13f",
+          "label": "(f)",
+          "text": "All programs should be maintainable.\nList three features of maintainable programs used in the pseudocode in part (d).\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": null,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "ENDIF [5]"
+      ]
+    }
+  ]
+}

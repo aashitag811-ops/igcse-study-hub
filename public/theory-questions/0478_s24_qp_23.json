@@ -1,0 +1,435 @@
+{
+  "paperId": "0478_s24_qp_23",
+  "subjectCode": "0478",
+  "session": "s24",
+  "component": "23",
+  "totalMarks": 51,
+  "questionCount": 27,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Tick (3) one box to complete this sentence.",
+        "This flowchart symbol",
+        "A represents a subroutine.",
+        "B represents a decision.",
+        "C represents an input/output.",
+        "D represents a terminator.",
+        "[1]"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Four logic gate symbols and five logic functions are shown.\nDraw one line to link each logic gate symbol to the appropriate logic function.\nNot all logic functions will be used.\nLogic gate symbol Logic function\nAND\nXOR\nNOT\nNAND\nOR",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Complete the truth table for this logic circuit.\nWorking space\nA B C Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Describe the characteristics of the string and char data types and give an example of each.",
+        "String ................................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "Char .................................................................................................................................................",
+        "Example ...........................................................................................................................................",
+        "[4]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "This pseudocode algorithm is intended to allow data for up to 50 people to be entered and stored",
+        "in a two-dimensional (2D) array. The data is their last name, first name and the city in which they",
+        "live.",
+        "01 DECLARE People : ARRAY[1:50, 1:3] OF REAL",
+        "02 DECLARE Count : INTEGER",
+        "03 DECLARE Response : CHAR",
+        "04 DECLARE Continue : BOOLEAN"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR I 1 TO 50"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR J 1 TO 3"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "People[I, J] \"\""
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT J"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT I"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count 100"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Continue TRUE"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CASE OF"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter the last name\""
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT People[Count, 1]"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter the first name\""
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT People[Count, 2]"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Enter the city\""
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT People[Count, 3]"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Do you want to enter another name (Y or N)?\""
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT Response"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Response = 'N'"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Continue FALSE"
+      ]
+    },
+    {
+      "id": "24",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE"
+      ]
+    },
+    {
+      "id": "25",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count Count + 1"
+      ]
+    },
+    {
+      "id": "26",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "27",
+      "context": [],
+      "parts": [
+        {
+          "id": "27a",
+          "label": "(a)",
+          "text": "Identify the line numbers of the four errors in the pseudocode and suggest corrections.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27b",
+          "label": "(b)",
+          "text": "Write the pseudocode that you could add to the end of this algorithm to output the contents of\nthe array. Make sure that the output ends when the data in the array ends.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27c",
+          "label": "(c)",
+          "text": "Explain how you could alter the original corrected algorithm to make sure that the\nnumber of elements being added to the array does not exceed the maximum size of the\narray (50 elements).\n\n5 The flowchart represents an algorithm.\nSTART\nL 0\nS 10000\nT 0\nA 0\nINPUT\nLimit\nCount 1\nINPUT\nValue\nIS IS\nNo No\nValue < S Value > L\n? ?\nYes Yes\nS Value L Value\nT T + Value\nIS\nNo\nCount >\nCount Count + 1\nLimit ?\nYes\nA T / Limit\nOUTPUT \"L = \", L, \" S = \",\nS, \" T = \", T, \" A = \", A\nSTOP",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27a",
+          "label": "(a)",
+          "text": "Complete the trace table for the input data:\n10, 30, 18, 8, 25, 12, 17, 2, 50, 15, 5\nL S T A Limit Count Value\nOUTPUT",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27b",
+          "label": "(b)",
+          "text": "Outline the purpose of the algorithm.",
+          "marks": 2,
+          "type": "outline",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27c",
+          "label": "(c)",
+          "text": "Explain why the identifiers L, S, T and A may not be appropriate to use as identifiers and how\nthey could be improved.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27d",
+          "label": "(d)",
+          "text": "State a more appropriate identifier for each of the variables L, S, T and A\nOriginal identifier Improved identifier\n\n6 A program is to be written that will accept integers that are between the values of 1 and 80\ninclusive.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27a",
+          "label": "(a)",
+          "text": "Give examples of normal, abnormal and extreme test data that could be used to make sure\nthe program only accepts valid data.\nNormal test data ______\nAbnormal test data ______\nExtreme test data ______",
+          "marks": 3,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27b",
+          "label": "(b)",
+          "text": "Describe what is meant by extreme test data.\n\n7 (a) The string operation SUBSTRING(FullText, X, Y) returns a string from FullText\nbeginning at position X that is Y characters long. The first character in FullText is in\nposition 1.\nWrite the pseudocode statements to:\n• store the string “IGCSE Computer Science at Cambridge” in FullText\n• extract and display the words “Computer Science” from the string and store it in a suitable\nvariable\n• output the original string in upper case.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27b",
+          "label": "(b)",
+          "text": "Write the pseudocode statements to:\n• store the content of the variable you created in part (a) to a text file named\n\"Subjects.txt\"\n• close the text file at the end of the algorithm.\n\n8 A database table called Hangar1 stores details of a collection of historic aircraft at a museum.\nID Make Model Year Engines Airworthy\nJM1 Hawker Siddeley Nimrod 1966 4 Y\nJM2 Douglas DC-10 1970 3 Y\nJM3 Aérospatiale-BAC Concorde 1973 4 N\nPB1 De Havilland DH-9 1918 1 Y\nPB2 Hawker Fury 1935 1 Y\nPB3 Hawker Nimrod 1934 1 Y\nPM1 Fieseler Storch 1942 1 N\nPM2 Hawker Hurricane 1942 1 Y\nPM3 Supermarine Spitfire 1942 1 N\nPM4 Douglas C-47 Dakota 1942 2 N\nPS1 Boeing 314 Clipper 1936 4 N",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27a",
+          "label": "(a)",
+          "text": "State the number of fields and records in the database table.\nFields ______\nRecords ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27b",
+          "label": "(b)",
+          "text": "Give the output that would be produced by the structured query language (SQL) statement:\nSELECT Model, Year, Engines\nFROM Hangar1\nWHERE Engines > 1\nORDER BY Year;",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "27c",
+          "label": "(c)",
+          "text": "Complete the SQL statement to display only the ID and model of all the aircraft that are\nairworthy.\nSELECT ID, ______\n______ ;\n\n9 A one-dimensional (1D) array Teams[] contains the names of 10 football teams in a local league.\nA two-dimensional (2D) array Results[] stores, for each team, the total number of:\n• games won\n• games drawn\n• games lost\n• points.\nThe position of any team’s data is the same in both arrays. For example the data in index 3 of\nResults[] belongs to the team in index 3 of Teams[]\nThe array data will be used to find the current leader of the league.\nThe variable Played stores the number of games played by each team. Each team plays the\nsame number of games.\nWrite a program that meets the following requirements:\n• allows the number of games played to be input and stored, with a maximum of 18 games\n• allows the names of the teams to be input and stored\n• allows the number of games won, drawn and lost to be input and stored for each team\n• validates the number of games played and the number of games won, drawn or lost against\nthe number of games played\n• calculates and stores the number of points for each team using three points for a win and one\npoint for a draw; there are no points for a loss\n• sorts the array Results[] into descending order of number of points, ensuring the\ncorresponding parallel array Teams[] is kept in the same order\n• determines how many teams have the highest number of points\n• outputs the name(s) of the winning team(s) along with the number of points achieved.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; you may assume that this has\nalready been done.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 43,
+      "text": [
+        "UNTIL NOT Count"
+      ]
+    }
+  ]
+}

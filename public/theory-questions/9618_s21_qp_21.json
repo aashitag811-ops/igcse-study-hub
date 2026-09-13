@@ -1,0 +1,369 @@
+{
+  "paperId": "9618_s21_qp_21",
+  "subjectCode": "9618",
+  "session": "s21",
+  "component": "21",
+  "totalMarks": 67,
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "A program is being developed to help manage the membership of a football club.\nComplete the following identifier table.\nExample\nExplanation Variable name Data type\nvalue\nThe preferred name of the member\n\"Wong\"\njoining the football club\nA value to indicate whether an\nFALSE existing member of the club lives at\nthe same address\nWhen the member joined the football\n19/02/1983\nclub\nThe number of points a member has\n1345\nearned. Members of the club earn\npoints for different activities.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Each pseudocode statement in the following table may contain an error due to the incorrect\nuse of the function or operator.\nDescribe the error in each case, or write ‘NO ERROR’ if the statement contains no error.\nYou can assume that none of the variables referenced are of an incorrect type.\nStatement Error\nResult 2 & 4\nSubString MID(\"pseudocode\", 4, 1)\nIF x = 3 OR 4 THEN\nResult Status AND INT(x/2)\nMessage \"Done\" + LENGTH(MyString)",
+          "marks": 5,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The following data items need to be stored for each student in a group:\n• student name (a string)\n• test score (an integer).\nState a suitable data structure and justify your answer.\nStructure ______\nJustification ______",
+          "marks": 3,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Four program modules form part of a program for a library.\nA description of the relationship between the modules is summarised as follows:\nModule name Description\nUpdateLoan() • Calls either LoanExtend() or LoanReturn()\n• Called with parameters LoanID and BookID\n• Calls CheckReserve() to see whether the book has been\nLoanExtend()\nreserved for another library user\n• Returns TRUE if the loan has been extended, otherwise returns\nFALSE\n• Called with BookID\nCheckReserve()\n• Returns TRUE if the book has been reserved, otherwise returns\nFALSE\n• Called with parameters LoanID and BookID\nLoanReturn() • Returns a REAL (which is the value of the fine to be paid in the\ncase of an overdue loan)\nDraw a structure chart to show the relationship between the four modules and the parameters\npassed between them.",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The definition for module LoanReturn() is amended as follows:\nModule name Description\nCalled with parameters LoanID, BookID and Fine\nLoanReturn() The module code checks whether the book has been returned on time\nand then assigns a new value to Fine\n• LoanID and BookID are of type STRING\n• Fine is of type REAL\nWrite the pseudocode header for the amended module LoanReturn().",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "A program will:\n• input 50 unique integer values\n• output the largest value\n• output the average of the values excluding the largest value.\nDraw a program flowchart to represent the algorithm.\nVariable declarations are not required.\nIt is not necessary to check that each input value is unique.",
+          "marks": 6,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A concert venue uses a program to calculate admission prices and store information about\nticket sales.\nA number of arrays are used to store data. The computer is switched off overnight and data\nhas to be input again at the start of each day before any tickets can be sold. This process is\nvery time consuming.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Explain how the program could use text files to speed up the process.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "State the characteristic of text files that allow them to be used as explained in part (a)(i).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "Information about ticket sales will be stored as a booking. The booking requires the\nfollowing data:\n• name of person booking\n• number of people in the group (for example a family ticket or a school party)\n• event type.\nSuggest how data relating to each booking may be stored in a text file.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A procedure Preview() will:\n• take the name of a text file as a parameter\n• output a warning message if the file is empty\n• otherwise output the first five lines from the file (or as many lines as there are in the file if\nthis number is less than five).\nWrite pseudocode for the procedure Preview().",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Complete the trace table below by dry running the function when it is called as follows:\nResult Convert(\"∇in∇a∇∇Cup\")\nNote: The symbol '∇' has been used to represent a space character.\nUse this symbol for any space characters in the trace table.\nThe first row has been completed for you.\nName Flag Index NewName ThisChar\n\"∇in∇a∇∇Cup\"",
+          "marks": 5,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "The pseudocode for Convert() contains a conditional loop.\nState a more appropriate loop structure.\nJustify your answer.\nLoop structure ______\nJustification ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Two changes need to be made to the algorithm.\nChange 1: Convert to lower case any character that is not the first character after a space.\nChange 2: Replace multiple spaces with a single space.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Change 1 may be implemented by modifying one line of the pseudocode.\nWrite the modified line.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Change 2 may be implemented by moving one line of the pseudocode.\nWrite the number of the line to be moved and state its new position.\nLine number ______\nNew position ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Study the following pseudocode. Line numbers are for reference only.",
+        "10 FUNCTION Convert(Name : STRING) RETURNS STRING",
+        "12 DECLARE Flag: BOOLEAN",
+        "13 DECLARE Index : INTEGER",
+        "14 DECLARE ThisChar : CHAR",
+        "15 DECLARE NewName : STRING",
+        "17 CONSTANT SPACECHAR = ' '",
+        "19 Flag TRUE",
+        "20 Index 1",
+        "21 NewName \"\" // formatted name string",
+        "23 WHILE Index <= LENGTH(Name)",
+        "24 ThisChar MID(Name, Index, 1)",
+        "25 IF Flag = TRUE THEN",
+        "26 NewName NewName & UCASE(ThisChar)",
+        "27 IF ThisChar <> SPACECHAR THEN",
+        "28 Flag FALSE",
+        "29 ENDIF",
+        "30 ELSE",
+        "31 NewName NewName & ThisChar",
+        "32 ENDIF",
+        "33 IF ThisChar = SPACECHAR THEN",
+        "34 Flag TRUE",
+        "35 ENDIF",
+        "36 Index Index + 1",
+        "37 ENDWHILE",
+        "39 RETURN NewName",
+        "41 ENDFUNCTION"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A global 2D array Result of type INTEGER is used to store a list of exam candidate numbers",
+        "together with their marks. The array contains 2000 elements, organised as 1000 rows and",
+        "2 columns.",
+        "Column 1 contains the candidate number and column 2 contains the mark for the corresponding",
+        "candidate. All elements contain valid exam result data.",
+        "A procedure Sort() is needed to sort Result into ascending order of mark using an efficient",
+        "bubble sort algorithm.",
+        "Write pseudocode for the procedure Sort().",
+        "[8]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Explain how a node containing data value B is added to the list in alphabetic sequence.",
+          "marks": 4,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Describe how the linked list in part (a) may be implemented using variables and arrays.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "The following diagram represents an Abstract Data Type (ADT) for a linked list.",
+        "A C D E Ø",
+        "The free list is as follows:"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module GetStart().",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The programmer has decided to use a global ten-element 1D array IgnoreList of type\nSTRING to store the ignored words. Unused elements contain the empty string (\"\") and may\noccur anywhere in the array.\nA new module AddWord() is needed as follows:\nModule Description\n• Called with a parameter representing a word\n• Stores the word in an unused element of the IgnoreList array\nAddWord() and returns TRUE\n• Returns FALSE if the array was already full or if the word was\nalready in the array\nWrite a detailed description of the algorithm for AddWord(). Do not include pseudocode\nstatements in your answer.",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "As a reminder, the module description of GetWord() is repeated:\nModule Description\n• Called with a parameter representing the position of the first\ncharacter of a word in FNString\nGetWord() • Returns the word from FNString\n• For example: if FNString contains the string \"hot and cold\",\nGetWord(9) returns \"cold\"\nWrite pseudocode for the module GetWord().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A program is needed to take a string containing a full name and produce a new string of initials.",
+        "Some words in the full name will be ignored. For example, \"the\", \"and\", \"of\", \"for\" and \"to\" may all",
+        "be ignored.",
+        "Each letter of the abbreviated string must be upper case.",
+        "For example:",
+        "Full name Initials",
+        "Integrated Development Environment IDE",
+        "The American Standard Code for Information Interchange ASCII",
+        "The programmer has decided to use a global variable FNString of type STRING to store the full",
+        "name.",
+        "It is assumed that:",
+        "• words in the full name string are separated by a single space character",
+        "• space characters will not occur at the beginning or the end of the full name string",
+        "• the full name string contains at least one word.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "• Called with an INTEGER as a parameter, representing the number of a",
+        "word in FNString.",
+        "• Returns the character start position of that word in FNString or",
+        "GetStart()",
+        "returns –1 if that word does not exist",
+        "• For example: if FNString contains the string \"hot and cold\",",
+        "GetStart(3) returns 9",
+        "• Called with a parameter representing the position of the first character",
+        "of a word in FNString",
+        "GetWord() • Returns the word from FNString",
+        "• For example: if FNString contains the string \"hot and cold\",",
+        "GetWord(9) returns \"cold\""
+      ]
+    }
+  ]
+}

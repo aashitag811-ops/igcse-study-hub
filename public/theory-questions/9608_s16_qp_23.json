@@ -1,0 +1,282 @@
+{
+  "paperId": "9608_s16_qp_23",
+  "subjectCode": "9608",
+  "session": "s16",
+  "component": "23",
+  "totalMarks": 49,
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Show what type of programming construct each statement represents.\nComplete the table by putting a tick (✓) in the appropriate column for each item.\nItem Statement Selection Iteration Assignment\n1 WHILE DegF > 37.5",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": null,
+      "text": [
+        "The items in the table below are statements from a program in a generic programming language.",
+        "For the built-in functions list, refer to the Appendix on the last page."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "MyName = \"Gordon\""
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DegF = INT(DegF)"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CASE OF MyFavourite"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Complete the identifier table below by stating the data types.\nIdentifier Data type Description\nAccelerator pedal position\nValues: 0 to 100 in steps of 1\nAccelerator ______ Meaning:\n0: none (not pressed)\n100: maximum (fully pressed)\nEngine temperature in °C\nEngineTemp ______\n(-50 to +150 stored to 1 decimal place)\nNormal engine temperature in °C\nNormalTemp ______\nWhole number; typical value 90\nRoad speed of car (in km/hr)\nSpeed ______ Values: 0 to 200 in steps of 1\nValue used to signal engine must be stopped\nPossible values:\nEngineStop ______\nTRUE: stop engine\nFALSE: run engine\n\nThe condition for stopping the engine is that all three of the following are true:\n• Accelerator is not pressed\n• Engine temperature is normal or above\n• Car speed is zero\nThe initial design stage will produce a prototype of EnergySaver, with a user interface.\nThe structured English for this is:\n1. INPUT value for accelerator pedal position\n2. INPUT value for engine temperature\n3. INPUT value for normal engine temperature\n4. INPUT value for car speed\n5. EVALUATE engine stopping condition\n6. IF stopping condition satisfied SET engine stop value to TRUE\n7. IF stopping condition not satisfied SET engine stop value to FALSE\n8. OUTPUT message indicating engine stop value",
+          "marks": 5,
+          "type": "evaluate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Write the pseudocode equivalent of the structured English. Use the identifiers from the table\nin part (a).\nFor the built-in functions list, refer to the Appendix on the last page.\n\n3 String encryption was implemented using a simple character-substitution method. A function,\nDecrypt, is needed to reverse the encryption process and return the original character.\nThe encryption uses the 7-bit ASCII value for each character. This value is used as an index for a\n1D array, Lookup, which contains the substitute characters.\nLookup contains an entry for each of the ASCII characters.\nThis function, Decrypt, will accept two parameters, a single character, CipherChar, and the 1D\narray, Lookup.\nThe steps involved in Decrypt are follows:\n• Search for the character in the array\n• Note the index value where the character is found (the index value is the ASCII value of the\noriginal character)\n• Use the index value to obtain the original character",
+          "marks": 6,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "The first attempt at writing the pseudocode for this function is shown below.\nComplete the pseudocode.\nFor the built-in functions list, refer to the Appendix on the last page.\nFUNCTION Decrypt(______ , ______) RETURNS CHAR\nDECLARE Found : ______\nDECLARE ______ : INTEGER\nDECLARE OriginalChar : CHAR\nIndex 1 // ______\nFound FALSE\n//search for CipherChar in Lookup:\nWHILE ______\n//compare CipherChar with this array element:\nIF ______\nTHEN\n______//Set the flag\nELSE\nIndex ______//Move to next array element\nENDIF\nENDWHILE\n//dropped out of loop so must have found CipherChar:\n______//convert Index to original character\nRETURN ______\nENDFUNCTION\n\nQuestion 3 continues on page 8.",
+          "marks": 11,
+          "type": "compare",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "A program is to be written to output part of the Lookup array.\nThe design of the algorithm is shown below.\nIt may be assumed that the characters output from Lookup are all printable.\nSTART\nInput StartIndex and\nNumberToOutput\nIndex StartIndex\nLoop\nProduce OriginalChar from\nIndex (using built-in function)\nAssign current array element to\nIncrement Index\nCipherChar\nOutput message line\n(see examples on the next page)\nNO\nEnd of\nloop?\nYES\nSTOP\nFor example, for the input of 65 and 3, the output will be:\nIndex 65: Character A has substitute character Y\nIndex 66: Character B has substitute character Q\nIndex 67: Character C has substitute character F\nWrite program code to implement the flowchart design.\nIn addition to the Lookup array, assume that the following variables have been declared:\nStartIndex, NumberToOutput, Index\nProgramming language ______\n\n4 (a) Name two features of your chosen high-level programming language that support the\nimplementation of a modular design.",
+          "marks": 6,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "The structure chart shows part of the design of a program for an online shopping system.\nThe user has already added a number of products to their virtual basket.\nDraw on the chart, the symbol to show that the process of modifying the basket contents\nmay be iterated (repeated).\nModify Basket Contents\nA F\nInput product Change product\nRemove\ndata\nproduct quantity",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Each arrow in the structure chart above represents a parameter.\nThe table below shows the three data items that the six parameters pass between\nmodules.\nTick (✓) to match each parameter to the correct data item.\nParameter\nData item\nA B C D E F\nProduct ID\nQuantity\nFlag Value – indicating\noperation success or fail\n\n5 Claudia stores her large collection of music CDs in different places. Claudia wants to record where\nshe stores each CD. She decides to write a program to do this.\nData items for a typical CD are:\nTitle: Kind of Green\nArtist: Miles Coltrane\nLocation: Rack3-23\nThe data is to be stored in a text file, MyMusic. Each line of the text file will be a string, formed by\nconcatenating the three data items.\nBefore concatenation, the title and artist will each be made into a fixed-length string of 40\ncharacters. Space characters may need to be added to each data item.\nThe location is always 8 characters long.",
+              "marks": 4,
+              "type": "tick",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Explain the benefit of making the stored data into fixed-length strings.\nState a drawback of this file design.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "When Claudia buys a new CD, the CD data must be added to the existing file, MyMusic.\nShe has written a procedure in pseudocode. This has the following file-handling\nstatements:\nOPENFILE \"MyMusic\" FOR WRITE\nWRITEFILE \"MyMusic\", OutputString\nCLOSEFILE \"MyMusic\"\nThere is a problem with the logic of this pseudocode.\nState the problem.\nIdentify the effect it will have if the final code is implemented in this way.\nGive a possible solution.",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Claudia needs to output a list of all the CDs in a particular location.\nShe designs a procedure, OutputLocationList, to do this. She also chooses the following\nidentifiers:\nIdentifier Data type\nCDTitle STRING\nCDArtist STRING\nCDLocation STRING\nThe procedure will:\n• prompt for the name of the location\n• input the location (such as “Rack3-23”)\n• search the file for all CDs at this location\n• output the title and artist of each CD found\n• output the total number of CDs found at that location (such as “17 CDs found”)\nWrite program code for the procedure OutputLocationList.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\n\n6 A string-handling function has been developed.\nFor the built-in functions list, refer to the Appendix on the last page.\nThe pseudocode for this function is shown below.\nFUNCTION SF(ThisString : STRING) RETURNS STRING\nDECLARE x : CHAR\nDECLARE NewString : STRING\nDECLARE Flag : BOOLEAN\nDECLARE m, n : INTEGER\nFlag TRUE\nNewString \"\"\nm LENGTH(ThisString)\nFOR n 1 TO m\nIF Flag = TRUE\nTHEN\nx UCASE(MID(ThisString, n, 1))\nFlag FALSE\nELSE\nx LCASE(MID(ThisString, n, 1))\nENDIF\nNewString NewString & x\nIF x = \" \"\nTHEN\nFlag TRUE\nENDIF\nENDFOR\nRETURN NewString\nENDFUNCTION",
+          "marks": null,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Complete the trace table below by performing a dry run of the function when it is called\nas follows:\nSF(\"big BEN\")\nn x Flag m NewString",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "Describe the purpose of function SF.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Test data must be designed for the function SF.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "State what happens when the function is called with an empty string.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "The function should be thoroughly tested.\nGive three examples of non-empty strings that may be used.\nIn each case explain why the test string has been chosen.\nString ______\nExplanation ______\nString ______\nExplanation ______\nString ______\nExplanation ______\n\nAppendix\nBuilt-in functions (Pseudocode)\nIn each function below, if the function call is not properly formed, the function returns an error.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns the string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) will return string \"BCD\"\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns the leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) will return string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns the rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) will return string \"FGH\"\nCHR(x : INTEGER) RETURNS CHAR\nreturns the character whose ASCII value is x\nExample: CHR(87) will return 'W'\nASC(x : CHAR) RETURNS INTEGER\nreturns the ASCII value of character x\nExample: ASC('W') will return 87\nLCASE(x : CHAR) RETURNS CHAR\nreturns the lower case equivalent character of x\nExample: LCASE('W') will return 'w'\nUCASE(x : CHAR) RETURNS CHAR\nreturns the upper case equivalent character of x\nExample: UCASE('h') will return 'H'\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) will return 27\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 49,
+      "text": [
+        "UNTIL x = 5",
+        "[6]"
+      ]
+    }
+  ]
+}

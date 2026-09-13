@@ -1,0 +1,424 @@
+{
+  "paperId": "9618_s24_qp_22",
+  "subjectCode": "9618",
+  "session": "s24",
+  "component": "22",
+  "totalMarks": 70,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The following table contains pseudocode examples.\nEach example may contain statements that relate to one or more of the following:\n• selection\n• iteration (repetition)\n• input/output.\nComplete the table by placing one or more ticks (3) in each row.\nPseudocode example Selection Iteration Input/Output\nFOR Index 1 TO 10\nData[Index] 0\nNEXT Index\nWRITEFILE ThisFile, \"****\"\nUNTIL Level > 25\nIF Mark > 74 THEN\nREADFILE OldFile, Data\nENDIF",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Program variables have data types as follows:\nVariable Data type\nMyChar CHAR\nMyString STRING\nMyInt INTEGER\nComplete the table by filling in each gap with a function (from the insert) so that each expression\nis valid.\nExpression\nMyInt ______ (3.1415926)\nMyChar ______ (\"Elwood\", 3, 1)\nMyString ______ ( ______ (27.509))\nMyInt ______ ( ______ (\"ABC123\", 3))",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The variables given in part (b) are chosen during the design stage of the program development\nlife cycle.\nThe choices are to be documented to simplify program maintenance.\nState a suitable way of documenting the variables and give one piece of information that\nshould be recorded, in addition to the data type.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm for part of the program will:\n• input three numeric values and assign them to identifiers Num1, Num2 and Num3\n• assign the largest value to variable Ans\n• output a message giving the largest value and the average of the three numeric values.\nAssume the values are all different and are input in no particular order.\nComplete the program flowchart on page 5 to represent the algorithm.\nSTART\nINPUT Numl, Num2, Num3\nNo\nYes\nEND",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A different part of the program contains an algorithm represented by the following program\nflowchart:\nSTART\nSet Flag to GetStat()\nYes\nIs Flag =\nTRUE ?\nEND\nNo\nSet Port to 1\nNo\nIs Port = 4 ?\nCALL Reset(Port)\nYes\nSet Port to Port + 1\nWrite pseudocode for the algorithm.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A program is being developed."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Write pseudocode to declare the record structure for type Component.",
+              "marks": 4,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "A 1D array Item of 2000 elements will store the data for all items.\nWrite pseudocode to declare the Item array.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "State three benefits of using an array of records to store the data for all items.",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A factory needs a program to help manage its production of items.",
+        "Data will be stored about each item.",
+        "The data for each item will be held in a record structure of type Component.",
+        "The programmer has started to define the fields that will be needed as shown in the table.",
+        "Field Example value Comment",
+        "Item_Num 123478 a numeric value used as an array index",
+        "Reject FALSE",
+        "TRUE if this item has been rejected",
+        "Stage 'B'",
+        "a letter to indicate the stage of production",
+        "Limit_1 13.5",
+        "any value in the range 0 to 100 inclusive",
+        "Limit_2 26.4 any value in the range 0 to 100 inclusive"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A triangle has sides of length A, B and C.",
+        "In this example, A is the length of the longest side.",
+        "This triangle is said to be right‑angled if the following equation is true:",
+        "A × A = (B × B) + (C × C)",
+        "A procedure will be written to check whether three lengths represent a right‑angled triangle.",
+        "The lengths will be input in any sequence.",
+        "The procedure IsRA() will:",
+        "• prompt and input three integer values representing the three lengths",
+        "• test whether the three lengths correspond to the sides of a right‑angled triangle",
+        "• output a suitable message.",
+        "The length of the longest side may not be the first value input.",
+        "Write pseudocode for the procedure IsRA().",
+        "[5]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "The pseudocode contains two syntax errors and one other error.\nIdentify the errors.\nSyntax error 1 ______\nSyntax error 2 ______\nOther error ______",
+              "marks": 3,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "The procedure contains a statement that is not needed.\nIdentify the pseudocode statement and explain why it is not needed.\nStatement ______\nExplanation ______",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "After correcting all syntax errors, the pseudocode is translated into program code which\ncompiles without generating any errors.\nWhen the program is executed it unexpectedly stops responding.\nIdentify the type of error that has occurred.",
+          "marks": 1,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A program is being designed in pseudocode.",
+        "The program contains a global 1D array Data of type string containing 200 elements.",
+        "The first element has the index value 1.",
+        "A procedure Process() is written to initialise the values in the array:",
+        "PROCEDURE Process(Label : STRING)",
+        "DECLARE Index : INTEGER",
+        "Index 0",
+        "INPUT Data[Index]",
+        "WHILE Index < 200",
+        "Index Index + 1",
+        "CASE OF (Index MOD 2)",
+        "0 : Data[Index] TO_UPPER(Label)",
+        "1 : Data[Index] TO_LOWER(Label)",
+        "OTHERWISE : OUTPUT \"Alarm 1201\"",
+        "ENDCASE",
+        "NEXT Index",
+        "OUTPUT \"Completed \" & Index & \" times\"",
+        "ENDPROCEDURE"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Up to 16 characters can be displayed. Track titles longer than 16 characters will need to be\ntrimmed as follows:\n• Words must be removed from the end of the track title until the resulting title is less than\n14 characters.\n• When a word is removed, the space in front of that word is also removed.\n• Three dots are added to the end of the last word displayed when one or more words\nhave been removed.\nThe table below shows some examples:\nOriginal title Display string\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\nBat out of Hull B a t o u t o f H u l l\nBohemian Symphony B o h e m i a n . . .\nPaperbook Writer P a p e r b o o k W r i t e r\nChris Sings the Blues C h r i s S i n g s . . .\nGreen Home Alabama G r e e n H o m e . . .\nA function Trim() will:\n• take a string representing the original title\n• return the string to be displayed.\nAssume:\n• Words in the original title are separated by a single space character.\n• There are no spaces before the first word or after the last word of the original title.\n• The first word of the original title is less than 14 characters.\nWrite pseudocode for the function Trim().",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Music is stored as a sequence of digital samples.\nEach digital sample is a denary value in the range 0 to 99999999 (8 digits).\nThe samples are to be stored in a text file. Each sample is converted to a numeric string and\n32 samples are concatenated (joined) to form a single line of the text file.\nEach numeric string is 8 characters in length; leading ‘0’ characters are added as required.\nExample:\nSample Denary value String\n1 456 \"00000456\"\n2 48 \"00000048\"\n3 37652 \"00037652\"\n32 673 \"00000673\"\nThe example samples will be stored in the text file as a single line:\n\"000004560000004800037652...00000673\"",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Identify one drawback of adding leading ‘0’ characters to each numeric string.",
+              "marks": 1,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Suggest an alternative method of storing the samples which does not involve adding\nleading ‘0’ characters but which would still allow each individual sample to be extracted.",
+              "marks": 1,
+              "type": "suggest",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "State one drawback of the alternative method given in part (b)(ii).",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A music player stores music in a digital form and has a display which shows the track being",
+        "played."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Decomposition will be used to break the new module into sub‑modules (sub‑problems).\nIdentify three sub‑modules that could be used in the design and describe their use.\nSub‑module 1 ______\nUse ______\nSub‑module 2 ______\nUse ______\nSub‑module 3 ______\nUse ______",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A different part of the program is represented by the following state‑transition diagram.\nInput-B | Output-W\nInput-B\nInput-B\nSTART\nS1 S3 S2 S5\nInput-A\nInput-A\nInput-A | Output-W\nInput-B | Output-Y\nInput-A | Output-X\nS4",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Complete the table to show the inputs, outputs and next states.\nAssume that the current state for each row is given by the ‘Next state’ on the previous\nrow. For example, the first Input‑A is made when in state S1.\nIf there is no output for a given transition, then the output cell should contain ‘none’.\nThe first two rows have been completed.\nInput Output Next state\nS1\nInput‑A none S3\nOutput‑W\nnone\nInput‑B\nInput‑A\nS4",
+              "marks": 5,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Identify the input sequence that will cause the minimum number of state changes in the\ntransition from S1 to S4.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A fitness club has a computerised membership system.",
+        "The system stores information for each club member: name, home address, email address, mobile",
+        "phone number, date of birth and exercise preferences.",
+        "Many classes are full, and the club creates a waiting list for each class. The club adds details of",
+        "members who want to join a class that is full to the waiting list for that class.",
+        "When the system identifies that a space is available in one of the classes, a new module will send",
+        "a text message to each member who is on the waiting list."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Suggest a reason why the teacher’s program has been split into a number of stages and give\nthe benefit of producing a different file from each stage.\nReason ______\nBenefit ______",
+          "marks": 2,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The teacher has defined the first program module as follows:\nModule Description\nDeleteSpaces()\n• called with a parameter of type string representing a line of\npseudocode from a student’s project file\n• returns the line after removing any leading space characters\nThe following example shows a string before and after the leading\nspaces have been removed:\nBefore: \" IF X2 > 13 THEN\"\nAfter: \"IF X2 > 13 THEN\"\nComplete the pseudocode for module DeleteSpaces().\nFUNCTION DeleteSpaces(Line : STRING) RETURNS STRING\nENDFUNCTION",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Two modules are defined:\nModule Description\nDeleteComment()\n• called with a parameter of type string representing a line of\n(already written)\npseudocode from a student’s project file\n• returns the line after removing any comment\nStage_2()\n• called with two parameters:\n○ a string representing an input file name\n○ a string representing an output file name\n• copies each line from the input file to the existing output file having\nfirst removed all leading spaces and comments from that line\n• does not write blank lines to the output file\n• outputs a final message giving the number of blank lines removed\nWrite pseudocode for module Stage_2().\nModules DeleteComment() and DeleteSpaces() must be used in your solution.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 8,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "A teacher is designing a program to process pseudocode projects written by her students.",
+        "Each student project is stored in a text file.",
+        "The process is split into a number of stages. Each stage performs a different task and creates a",
+        "new file.",
+        "For example:",
+        "File name Comment",
+        "MichaelAday_src.txt Student project file produced by student Michael Aday",
+        "MichaelAday_S1.txt",
+        "File produced by stage 1",
+        "MichaelAday_S2.txt",
+        "File produced by stage 2"
+      ]
+    }
+  ]
+}

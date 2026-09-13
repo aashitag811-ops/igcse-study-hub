@@ -1,0 +1,802 @@
+{
+  "paperId": "9691_s13_qp_32",
+  "subjectCode": "9691",
+  "session": "s13",
+  "component": "32",
+  "totalMarks": 90,
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "What is the relationship between DOCTOR and PATIENT?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Show this relationship with an entity-relationship (E-R) diagram.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aiii",
+              "label": "(iii)",
+              "text": "Draw an E-R diagram showing a database design which can be produced so that\nthe doctor and patient data are fully normalised.\nExplain how the relationships are implemented.",
+              "marks": 4,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "What is the relationship between WARD and PATIENT?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Show this relationship with an E-R diagram.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Two of the incomplete table designs are:\nFor\nExaminer's\nUse\nPATIENT(PatientID, PatientName, Address, NextOfKin)\nWARD(WardName, NurseInCharge, NumberOfBeds,\nNumberOfOccupiedBeds, Specialism)\nExplain how the relationship between PATIENT and WARD is implemented.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "The following Data Manipulation Language query is run.\nSELECT WardName\nFROM WARD\nWHERE NumberOfOccupiedBeds < NumberOfBeds\nWhat useful information is produced for the Hospital Administrator?",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A hospital has a number of doctors and a number of wards. A ward has a number of",
+        "For",
+        "patients. A patient may be treated by more than one doctor and a doctor treats many Examiner's",
+        "Use",
+        "patients.",
+        "Data is to be recorded in a relational database and the tables include DOCTOR and",
+        "PATIENT."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Explain the use of Backus-Naur Form (BNF) in computer science.\nFor\nExaminer's\nUse",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "A set of BNF rules are defined as follows:\n1. <BinaryDigit> ::= 0 | 1\n2. <Parentheses> ::= “\n3. <Binary> ::= <BinaryDigit> | <BinaryDigit> <Binary>\n4. <BinaryString> ::= <Parentheses> <Binary> <Parentheses>",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "A BNF rule can be recursive.\nExplain what is meant by recursive.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "State the rule above which is recursive.\nRule number is recursive.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "For each expression state whether it represents a valid or invalid binary string. List\nthe rule number(s) in the order you have applied them to arrive at your decision.\nExpression Valid/Invalid Rules used\n“1”\n“001”",
+              "marks": 7,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The rules used in (b) are to be extended to allow a binary string to start with a $\nFor\ncharacter. Examiner's\nUse\nFor example “$010” is a valid binary string.\nRewrite the set of rules to allow this additional format.",
+          "marks": 2,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The instruction at address 100 is fetched. Shown are the contents of the registers after\nexecution.\nLD■ 202\nINC ACC\nINC ACC\nACC 102\nLD■ 203\n88 103\nINC ACC\nLDI 203\nINC ACC\nIX 106\nEND\n2 107\nWhich mode of addressing was used by this load instruction at address 100?",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The instruction at address 103 is fetched. Shown are the contents of the registers after\nexecution.\nACC\nIX\nWhich mode of addressing was used by this load instruction at address 103?",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "The instruction at address 105 is fetched and executed.\nFor\nExaminer's\nUse\nDraw on the diagram to explain how this instruction is executed and show the contents\nof ACC after execution.\nLD■ 202\nINC ACC\nINC ACC\nACC 102\nLD■ 203\nINC ACC\nLDI 203\nINC ACC\nIX 106\nEND",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "Trace this assembly language program using the trace table below.\nFor\nThe user inputs 19 followed by 37. Examiner's\nUse\nIN\nINC ACC\nSTO 109\nIN\nINC ACC\nADD 109\nSTO 110\nOUT\nEND\nMemory location\n109 110\nACC Output",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "In (d) the program was shown in assembly language. In practice this must be machine\ncode in order to execute the program.\nExplain how the assembler software translates a program from assembly language into\nmachine code.",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The table shows the assembly language instructions for a processor which has one general",
+        "For",
+        "purpose register – the Accumulator (ACC), and an index register (IX). Examiner's",
+        "Use",
+        "Instruction",
+        "Explanation",
+        "Op Code Operand",
+        "Direct addressing. Load the contents of the given address",
+        "LDD <address>",
+        "to ACC",
+        "STO <address>",
+        "Store the contents of ACC at the given address",
+        "Indirect addressing. At the given address is the address to",
+        "LDI <address>",
+        "be used. Load the contents of this second address to ACC",
+        "Indexed addressing. Form the address as <address> +",
+        "LDX <address>",
+        "the contents of IX. Copy the contents of this address to ACC",
+        "INC <register>",
+        "Add 1 to the contents of the register (ACC or IX)",
+        "Add the contents of the given address to the contents of",
+        "ADD <address>",
+        "ACC",
+        "Output the contents of ACC (as a denary number) to the",
+        "OUT",
+        "monitor",
+        "IN",
+        "Input a denary number from the keyboard and store in ACC",
+        "END",
+        "End the program and return to the operating system",
+        "The diagram shows a program loaded in main memory starting at location 100.",
+        "For",
+        "Examiner's",
+        "Use",
+        "Two of the op-codes have been partially blanked out.",
+        "Locations 200 onwards contain data which is used by the program."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "An array is a static data structure.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "Explain the difference between a static and a dynamic data structure.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "What benefit would be gained from using a dynamic data structure to implement a\nbinary tree?\n\nThe initially empty tree has the following items added in this order:\nFor\nExaminer's\nUse\nMELON, PEAR, BANANA, ORANGE",
+              "marks": 1,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Draw the binary tree after these four items have been added.",
+          "marks": 3,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The following algorithm traverses the tree shown and outputs the nodes in order i.e. an\nFor\n‘in-order traversal’. Examiner's\nUse\nPROCEDURE InOrder(Root) Root\nIF LeftP[Root] <> 0\nTHEN\n// move left\nPEPPER\nInOrder(LeftP[Root])\nENDIF\nOUTPUT Data[Root]\nBEAN PUMPKIN\nIF RightP[Root] <> 0\nTHEN\n// move right\nInOrder(RightP[Root])\nPEA\nENDIF\nENDPROCEDURE",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Copy a line from procedure InOrder that makes the procedure recursive.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "The diagram shows a trace of the execution of this algorithm for the given tree\nFor\ndata. Examiner's\nUse\nFill in the missing lines of code.\nInOrder(PEPPER)\nLeftP[PEPPER] <> 0 is TRUE\nInOrder(BEAN)\nLeftP[BEAN] <> 0 is FALSE\nOUTPUT BEAN\nRightP[BEAN] <> 0 is TRUE\nInOrder(PEA)\nLeftP[PEA] <> 0 is FALSE\nOUTPUT PEA\nENDPROCEDURE\nENDPROCEDURE\nRightP[PEPPER] <> 0 is TRUE\nInOrder(PUMPKIN)\nLeftP[PUMPKIN] <> 0 is FALSE\nRightP[PUMPKIN] <> 0 is FALSE\nENDPROCEDURE",
+              "marks": 4,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4ciii",
+              "label": "(iii)",
+              "text": "What do the arrows in the diagram represent?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A binary tree is implemented with three 1-dimensional arrays.",
+        "For",
+        "Examiner's",
+        "Use",
+        "Identifier Data Type Description",
+        "Data ARRAY[100] OF STRING",
+        "Stores the data values",
+        "LeftP ARRAY[100] OF INTEGER",
+        "Stores the left index pointer",
+        "RightP ARRAY[100] OF INTEGER",
+        "Stores the right index pointer",
+        "Root INTEGER",
+        "Stores the index position of the root value"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "During the lexical analysis stage the compiler will use a keyword table and a symbol\ntable.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Describe what information is contained in these tables.\nKeyword table\nSymbol table",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "Explain how the table contents are used to translate the source code.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "Describe one other task done at the lexical analysis stage which does not involve\nthe use of the keyword table or symbol table.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "The final stage of compilation is code optimisation.\nFor\nExaminer's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Explain what is meant by code optimisation.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Give one practical example of code which would benefit from optimising.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The following are the first few lines of a source code program written in high-level language",
+        "For",
+        "XYZ which is about to be translated by the language compiler. Examiner's",
+        "Use",
+        "// program written 12 June 2013",
+        "Declare IsFound : Boolean;",
+        "Declare NoOfChildren : Integer;",
+        "Declare Count : Integer;",
+        "Constant TaxRate = 15;",
+        "// start of main program",
+        "For Count = 1 To 50"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Explain what is meant by:",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6ai",
+              "label": "(i)",
+              "text": "Batch processing",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6aii",
+              "label": "(ii)",
+              "text": "Interactive processing",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "The diagram shows the current contents of main memory with a list of programs\nFor\nwaiting to be scheduled. Examiner's\nUse\nOTHER\n10 Gb\nPROG6\n20 Gb\nPartition 1\n30 Gb\nPROG7\n40 Gb\n50 Gb\nPROG8\n60 Gb\nPartition 2\nPROG9\n70 Gb\n80 Gb\nCurrently waiting to be loaded are:\n• PROG16 (batch processing requiring 25 Gb)\n• PROG17 (interactive processing requiring 8 Gb)\n• PROG44 (interactive processing requiring 9 Gb)\n• PROG45 (interactive processing requiring 8 Gb)\n• PROG23 (batch processing requiring 15 Gb)",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "If PROG6 completes execution, which programs (if any) can be loaded next?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "If PROG8 completes execution, which programs (if any) can be loaded next?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "Describe two variations on this use of partitions which may make more efficient\nuse of memory.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "10 Gb of the main memory is labelled OTHER and will not be used for the execution of\nFor\napplication programs. Examiner's\nUse\nName two possible items of software this memory will be used for.\n2",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6d",
+          "label": "(d)",
+          "text": "Any program loaded is always in one of three possible states. One is the ‘running’ state\nmeaning the job currently has use of the processor.\nName and describe the two other states.",
+          "marks": 4,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A multiprogramming, multi-user operating system organises the available memory into two",
+        "fixed sized partitions.",
+        "• Partition 1 – size 30 Gb – is used only for batch processing",
+        "• Partition 2 – size 40 Gb – is used only for interactive processing at a terminal",
+        "A program, once loaded, occupies the same memory locations until its execution is",
+        "complete."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "A user-defined function CountCharacter is defined, using pseudocode, as follows:\nFor\nExaminer's\nUse\nFUNCTION CountCharacter(ThisArray : CHAR, UBound : INTEGER,\nThisCharacter : CHAR) RETURNS INTEGER\nThe function checks each element in the array ThisArray with upper bound UBound.\nThe function returns the number of times ThisCharacter appears in ThisArray.\nIf the function is incorrectly formed it will give a ‘COMPILE ERROR’.\nThe function is used with the three arrays shown below:\nSubscript/Index\nIdentifier 1 2 3 4 5 6 7 8 9 10\nCity1\nL O N D O N\nCity2\nN E W <Space> Y O R K\nCity3\nS T O C K H O L M\nWhat is returned by the following function calls?",
+          "marks": null,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "CountCharacter(City1, 6, ‘O’)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aii",
+              "label": "(ii)",
+              "text": "CountCharacter(City2, ‘R’, 8)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aiii",
+              "label": "(iii)",
+              "text": "CountCharacter(City3, 9, ‘t’)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aiv",
+              "label": "(iv)",
+              "text": "CountCharacter(City2, ’W’)",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "A programmer writes pseudocode to report whether or not a string value ThisValue is\nFor\nExaminer's\nfound in the string array ThisArray. This is designed as a function StringFound\nUse\nwhich returns a Boolean value.",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "7bi",
+              "label": "(i)",
+              "text": "Show the function header for function StringFound.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Use the following numbers to label your function header above.\n1. Function parameter(s)\n2. Where the return data type is stated",
+              "marks": 2,
+              "type": "label",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "7biii",
+              "label": "(iii)",
+              "text": "Write a single statement which calls the function StringFound to search for the\nvalue “LISBON” in the array CapitalCities (upper bound 300). The function\nreturns the value to variable CityWasFound in the calling statement.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "A robot is a moveable, mechanical device that can sense its surroundings and is\nFor\ncontrolled by a computer program. Examiner's\nUse",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ai",
+              "label": "(i)",
+              "text": "Give an example of a use of a robot.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8aii",
+              "label": "(ii)",
+              "text": "Explain how your example fits with the given description of a robot.",
+              "marks": 2,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Name two hardware components that would be found in the example given in (a)(i).\nExplain how each hardware component is used in the operation of the robot.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "What type of operating system would be used for any robot?\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 1,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    }
+  ]
+}

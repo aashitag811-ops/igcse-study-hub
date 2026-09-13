@@ -1,0 +1,490 @@
+{
+  "paperId": "9691_w11_qp_22",
+  "subjectCode": "9691",
+  "session": "w11",
+  "component": "22",
+  "totalMarks": 65,
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "1",
+      "context": [],
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State why modularisation is a good idea.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "As the first step in his design he splits the solution into the following main areas:\nInitialisation, PhoneSales, StockOrdering, Accounts.\nComplete the following structure diagram.\nStockControl\nStockOrdering",
+          "marks": 1,
+          "type": "design",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "StockOrdering is made up of two modules, PlaceOrder and ReceiveGoods.\nAdd them to the structure diagram in (b).",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Nathan will write the PlaceOrder module and Andre will write the ReceiveGoods\nFor\nmodule. Nathan will use the identifier OrderValue for the value of an order placed. Examiner's\nUse\nAndre will use the identifier OrderValue for the total value of the received goods.\nExplain how they can both use the same identifier and not cause a problem when the\nprogram is run.",
+          "marks": null,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ei",
+              "label": "(i)",
+              "text": "Explain why there are some words that cannot be used as variable identifiers.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eii",
+              "label": "(ii)",
+              "text": "Give an example of an invalid identifier.\nLanguage\nInvalid identifier",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1eiii",
+              "label": "(iii)",
+              "text": "Both programmers need to choose other identifiers that they use.\nState three other rules of a high-level programming language that restrict the\nchoice of identifiers.\nLanguage\nRule 1\nRule 2\nRule 3",
+              "marks": 3,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "One line in the program reads\nFor\nExaminer's\nUse\nSalesTax = a – b * 0.1",
+          "marks": null,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1fi",
+              "label": "(i)",
+              "text": "Work out the value of this expression when a is 600 and b is 200.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1fii",
+              "label": "(ii)",
+              "text": "The programmer has made an error in the code. When a is 600 and b is 200 the\nexpected answer is 40.\nRewrite the line of code with added parentheses to give the expected result.",
+              "marks": 1,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1fiii",
+              "label": "(iii)",
+              "text": "Name the type of testing strategy which identified this error.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1g",
+          "label": "(g)",
+          "text": "One type of test data is invalid data.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1gi",
+              "label": "(i)",
+              "text": "Name the other two types.",
+              "marks": null,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Nathan is designing a software solution for stock control in a mobile phone shop. He has a",
+        "For",
+        "colleague called Andre who will help him write the program. Nathan decides to modularise Examiner's",
+        "Use",
+        "the solution."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2h",
+          "label": "(h)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2hi",
+              "label": "(i)",
+              "text": "Write a Boolean expression to validate ContractLength.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2hii",
+              "label": "(ii)",
+              "text": "Write a Boolean expression to validate FreeTexts.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2hiii",
+              "label": "(iii)",
+              "text": "Describe a possible problem that could occur if ContractLength is not validated.\n\n2 Ahmed is writing a program to record the data of members of the school football squad.\nFor\nThe input data will be validated. One input is the number of years a member has played for Examiner's\nUse\nthe team. This will be 0, 1 or 2.\nThe flowchart for the validation of number of years is shown below.\nINPUT\nNumberOfYears\nCASE:\nNumberOfYears\nOUTPUT ‘Invalid OUTPUT ‘Valid\ndata. Try again’ data entered’",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "What is the output when the input is 2?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "What is the output when the input is 3?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "In a high-level language, write the code that will produce the validation process shown\nFor\nin the flowchart. Examiner's\nUse\nLanguage\nCode",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The three basic programming constructs used to control the flow of information are:\nsequence, selection and iteration.\nState the two constructs that are used in your code.\n2",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Describe what is meant by iteration.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "Ahmed thinks it will be a good idea to allow only five attempts at getting the input data\nFor\ncorrect. If it is not a valid entry after five attempts, then a message 'Please check Examiner's\nUse\nwhich values are allowed' should be output.\nModify the flowchart to include this additional check.\nINPUT\nNumberOfYears\nCASE:\nNumberOfYears\nOUTPUT ‘Invalid OUTPUT ‘Valid\ndata. Try again’ data entered’",
+          "marks": 5,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "Ahmed needs to store more information about the players. He creates a record\nstructure that contains PlayerID (a whole number between 1 and 50), Sex (m or f),\nPlayerName, NumberOfYears and DateOfBirth. Complete the table.\nField Name Data Type Field Size (bytes)\nPlayerID\nSex\nPlayerName\nNumberOfYears\nDateOfBirth",
+          "marks": 10,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2g",
+          "label": "(g)",
+          "text": "The squad has 30 members. Ahmed stores the records in an array called Squad. To\nFor\ncalculate how many females there are he designs this pseudocode. Examiner's\nUse\nNoOfFemales ← 0\nIndex ← 1\nWHILE Index < 30\nIF Squad[Index].Sex = 'f'\nTHEN\nNoOfFemales ← NoOfFemales + 1\nENDIF\nIndex ← Index + 1\nENDWHILE\nThis pseudocode will only consider the first 29 records in the array.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2gi",
+              "label": "(i)",
+              "text": "State the name of this type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2gii",
+              "label": "(ii)",
+              "text": "State the line that needs changing.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2giii",
+              "label": "(iii)",
+              "text": "Rewrite the line to ensure that the pseudocode will consider all 30 records.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2h",
+          "label": "(h)",
+          "text": "Write this updated pseudocode using a FOR loop ensuring that it will check all records\nin the array.",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 37,
+      "text": [
+        "[2]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the trace of this function for the function call Surprise('cab').\nLENGTH\nMyWord i TempNo TempWord[1] TempWord[2] TempWord[3] Surprise\n(MyWord)\ncab",
+          "marks": 3,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "State what this function does.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Describe what Surprise ← TempWord does.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "High-level languages also use procedures.\nFor\nExaminer's\nUse\nDescribe the features of a procedure.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3e",
+          "label": "(e)",
+          "text": "Aisha has written her pseudocode so that it should be easily understood.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ei",
+              "label": "(i)",
+              "text": "State two techniques that she has used in her pseudocode to do this.",
+              "marks": 2,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3eii",
+              "label": "(ii)",
+              "text": "One other technique to help understanding is to annotate using comments.\nWrite a suitable comment to annotate the lines:\nTempNo ← ASCII(MyWord[i]) + 1\nTempWord[i] ← CHAR(TempNo)",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "3f",
+          "label": "(f)",
+          "text": "Aisha finds out that there is a string manipulation function called CONCATENATION.\nFor\nExaminer's\nUse\nState what is meant by concatenation.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "Aisha is learning about manipulating strings in a high-level programming language.",
+        "For",
+        "She has an idea that she wants to try. She produces the following design in pseudocode: Examiner's",
+        "Use",
+        "FUNCTION Surprise(MyWord : STRING) : STRING",
+        "LOOP FOR i ← 1 TO LENGTH(MyWord)",
+        "TempNo ← ASCII(MyWord[i]) + 1",
+        "TempWord[i] ← CHAR(TempNo)",
+        "ENDLOOP",
+        "Surprise ← TempWord",
+        "ENDFUNCTION"
+      ]
+    }
+  ]
+}
