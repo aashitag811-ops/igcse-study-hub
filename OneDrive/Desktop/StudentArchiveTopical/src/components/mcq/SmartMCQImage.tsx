@@ -31,8 +31,8 @@ export function SmartMCQImage({
   src,
   alt,
   className = '',
-  whiteThreshold = 245,
-  bottomPad = 20,
+  whiteThreshold = 230,
+  bottomPad = 48,
   topClip = 8,
 }: SmartMCQImageProps) {
   // Stores the computed visible slice in natural image pixels
@@ -60,11 +60,10 @@ export function SmartMCQImage({
         ctx.drawImage(img, 0, 0);
         const data = ctx.getImageData(0, 0, w, h).data; // flat RGBA
 
-        // Check if a row is visually white (sample ~8 columns)
+        // Check if a row is visually white (sample every 4px across full width)
         const isWhiteRow = (y: number): boolean => {
-          const numSamples = 8;
-          const step = Math.max(1, Math.floor(w / numSamples));
-          for (let x = step; x < w - step; x += step) {
+          const step = Math.max(1, Math.floor(w / 32));
+          for (let x = 0; x < w; x += step) {
             const i = (y * w + x) * 4;
             const a = data[i + 3];
             if (a < 20) continue; // transparent = treat as white
@@ -75,10 +74,10 @@ export function SmartMCQImage({
           return true;
         };
 
-        // Walk up from the bottom to find the last row with content
+        // Walk up from the bottom — require 3 consecutive white rows to confirm end of content
         let lastContentRow = h - 1;
-        for (let y = h - 1; y >= 0; y--) {
-          if (!isWhiteRow(y)) {
+        for (let y = h - 1; y >= 3; y--) {
+          if (!isWhiteRow(y) || !isWhiteRow(y - 1) || !isWhiteRow(y - 2)) {
             lastContentRow = y;
             break;
           }

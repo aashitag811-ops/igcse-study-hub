@@ -515,7 +515,7 @@ export default function MCQExamPage() {
                   style={{ boxShadow: '0 0 0 1.5px #C9A84C, 0 0 14px 4px rgba(201,168,76,0.65), 0 0 28px 8px rgba(201,168,76,0.25)' }}
                 />
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logo.png" alt="Student Archive" className="h-[77px] w-auto object-contain transition-transform duration-300 group-hover:scale-110" />
+                <img src="/logo.png" alt="Student Archive" className="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-110" />
               </a>
               {/* Results Summary or Timer */}
               {isSubmitted ? (

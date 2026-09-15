@@ -154,7 +154,7 @@ export default function Header() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-          <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-110">
+          <div className="relative w-16 h-16 transition-transform duration-300 group-hover:scale-110">
             <div
               className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{ boxShadow: '0 0 0 1.5px #C9A84C, 0 0 14px 4px rgba(201,168,76,0.65), 0 0 28px 8px rgba(201,168,76,0.25)' }}
@@ -162,8 +162,8 @@ export default function Header() {
             <Image
               src="/logo.png"
               alt="Student Archive"
-              width={56}
-              height={56}
+              width={64}
+              height={64}
               className="rounded-md object-contain"
               priority
             />
@@ -173,7 +173,7 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* Centre pill — soft brass library tab */}
+        {/* Centre pill — always visible nav */}
         <nav
           className="absolute left-1/2"
           style={{
@@ -183,12 +183,10 @@ export default function Header() {
             gap: '2px',
             padding: '5px 10px',
             borderRadius: '14px',
-            // soft brass background fades in on scroll
             background: scrolled
-              ? 'linear-gradient(180deg, rgba(12,16,24,0.72) 0%, rgba(8,10,16,0.80) 100%)'
-              : 'linear-gradient(180deg, rgba(12,16,24,0.38) 0%, rgba(8,10,16,0.44) 100%)',
-            // no border, no shadow — just softness
-            border: 'none',
+              ? 'linear-gradient(180deg, rgba(12,16,24,0.82) 0%, rgba(8,10,16,0.90) 100%)'
+              : 'linear-gradient(180deg, rgba(8,10,16,0.65) 0%, rgba(4,6,12,0.72) 100%)',
+            border: '1px solid rgba(200,168,76,0.08)',
             boxShadow: 'none',
             transition: 'background 0.5s ease',
           }}
