@@ -17,7 +17,6 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createWriteStream } from 'fs';
-import { pipeline } from 'stream/promises';
 import https from 'https';
 import os from 'os';
 
@@ -28,6 +27,11 @@ const ARCHIVE_BASE  = 'https://archive.org/download/student-archive-alevels-past
 const ER_CACHE_DIR  = join(ROOT, 'public', 'er-cache');
 const COORDS_DIR    = join(ROOT, 'public', 'question-coords');
 const TEMP_DIR      = join(os.tmpdir(), 'alevels-qp-pdfs');
+// Local PDF dirs — check these first before downloading
+const LOCAL_DIRS    = [
+  join(__dirname, 'pastpapers-alevels'),
+  join(__dirname, 'pastpapers'),
+];
 
 const pdfjsLib = await import('pdfjs-dist/build/pdf.mjs');
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
@@ -235,14 +239,15 @@ function getErKeysForPaper(paperId) {
 
 // ── Main ───────────────────────────────────────────────────────────────────────
 
-const args = process.argv.slice(2);
-const filterArg = args[0] ?? '';
+const args       = process.argv.slice(2);
+const filterArg  = args.filter(a => !a.startsWith('--'))[0] ?? '';
+const forceRegen = args.includes('--force'); // re-generate synthetic coord files
 
 mkdirSync(COORDS_DIR, { recursive: true });
 mkdirSync(TEMP_DIR,   { recursive: true });
 
 // Collect all paper IDs that have er-cache entries
-const erFiles = readdirSync(ER_CACHE_DIR).filter(f => /^9\d{3}_/.test(f) && f.endsWith('.json'));
+const erFiles = readdirSync(ER_CACHE_DIR).filter(f => /^[89]\d{3}_/.test(f) && f.endsWith('.json'));
 
 // Build set of paper IDs to process: 9700_s22_er_32.json → 9700_s22_qp_32
 const paperIds = new Set();
@@ -251,6 +256,15 @@ for (const f of erFiles) {
   if (!m) continue;
   const [, code, sess, comp] = m;
   paperIds.add(`${code}_${sess}_qp_${comp}`);
+}
+
+/** Find the PDF locally across all local dirs, return path or null */
+function findLocalPdf(pdfName) {
+  for (const dir of LOCAL_DIRS) {
+    const p = join(dir, pdfName);
+    if (existsSync(p)) return p;
+  }
+  return null;
 }
 
 let done = 0, skipped = 0, failed = 0;
@@ -266,37 +280,56 @@ for (const paperId of [...paperIds].sort()) {
   }
 
   const outPath = join(COORDS_DIR, `${paperId}_coords.json`);
-  if (existsSync(outPath)) { skipped++; continue; }
+
+  // Skip if already done — unless --force or it was synthetic (inaccurate)
+  if (existsSync(outPath)) {
+    if (!forceRegen) { skipped++; continue; }
+    // With --force, re-generate only synthetic files
+    try {
+      const existing = JSON.parse(readFileSync(outPath, 'utf-8'));
+      if (!existing.synthetic) { skipped++; continue; } // real coords — keep
+    } catch { /* regenerate on parse error */ }
+  }
 
   const erKeys = getErKeysForPaper(paperId);
   if (!erKeys.length) { skipped++; continue; }
 
-  const pdfName  = `${paperId}.pdf`;
-  const url      = `${ARCHIVE_BASE}/${pdfName}`;
-  const tmpPath  = join(TEMP_DIR, pdfName);
-
+  const pdfName = `${paperId}.pdf`;
   process.stdout.write(`${paperId} ... `);
-  const ok = await download(url, tmpPath);
-  if (!ok) { console.log('not found'); failed++; await sleep(300); continue; }
+
+  // 1. Try local dirs first
+  let pdfPath = findLocalPdf(pdfName);
+  let source  = 'local';
+
+  // 2. Fall back to downloading from Internet Archive
+  if (!pdfPath) {
+    const url     = `${ARCHIVE_BASE}/${pdfName}`;
+    const tmpPath = join(TEMP_DIR, pdfName);
+    const ok      = await download(url, tmpPath);
+    if (ok) { pdfPath = tmpPath; source = 'archive'; }
+  }
+
+  if (!pdfPath) { console.log('PDF not found'); failed++; await sleep(200); continue; }
 
   try {
-    const coords = await buildCoords(tmpPath, erKeys);
-    if (!coords.length) { console.log('no coords'); failed++; continue; }
+    const coords = await buildCoords(pdfPath, erKeys);
+    if (!coords.length) { console.log('no coords found in PDF'); failed++; continue; }
 
     writeFileSync(outPath, JSON.stringify({
-      pdfPath: `archive:${pdfName}`,
+      pdfPath: `${source}:${pdfName}`,
       totalCoords: coords.length,
       coordinates: coords,
     }, null, 2));
 
-    console.log(`✓ ${coords.length} coords`);
+    console.log(`✓ ${coords.length} coords [${source}]`);
     done++;
   } catch (e) {
     console.log(`error: ${e.message}`);
     failed++;
   }
 
-  await sleep(400); // polite delay
+  // Small delay only when downloading — no need for local files
+  if (source === 'archive') await sleep(400);
 }
 
 console.log(`\nDone: ${done} generated, ${skipped} skipped, ${failed} failed`);
