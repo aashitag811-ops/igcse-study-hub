@@ -22,7 +22,7 @@ const ALEVEL_CODES = new Set([
   '9608','9618','9691','9713',            // Computer Science (all syllabi)
   '9609','9708','9706','9707',            // Business / Economics / Accounting
   '9093','8021',                          // English
-  '9489','9084','9699','9698','9990',     // Humanities / Social Sciences
+  '9489','9488','9084','9699','9698','9990', // Humanities / Social Sciences
   '9607',                                 // Media Studies
 ]);
 

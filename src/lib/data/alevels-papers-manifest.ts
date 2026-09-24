@@ -5647,6 +5647,330 @@ const aLevelPapers: ALevelPaperEntry[] = [
     "testModeAvailable": false
   },
   {
+    "id": "9488_s25_qp_12",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s25_qp_22",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s25_qp_32",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s25_qp_42",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w25_qp_12",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "w",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w25_qp_22",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "w",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w25_qp_32",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "w",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w25_qp_42",
+    "subjectCode": "9488",
+    "year": 2025,
+    "session": "w",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s24_qp_12",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s24_qp_22",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s24_qp_32",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s24_qp_42",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w24_qp_12",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "w",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w24_qp_22",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "w",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w24_qp_32",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "w",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w24_qp_42",
+    "subjectCode": "9488",
+    "year": 2024,
+    "session": "w",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s23_qp_12",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s23_qp_22",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s23_qp_32",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s23_qp_42",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w23_qp_12",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "w",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w23_qp_22",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "w",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w23_qp_32",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "w",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w23_qp_42",
+    "subjectCode": "9488",
+    "year": 2023,
+    "session": "w",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s22_qp_12",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "s",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s22_qp_22",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "s",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s22_qp_32",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "s",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_s22_qp_42",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "s",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w22_qp_12",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "w",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w22_qp_22",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "w",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w22_qp_32",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "w",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w22_qp_42",
+    "subjectCode": "9488",
+    "year": 2022,
+    "session": "w",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w21_qp_12",
+    "subjectCode": "9488",
+    "year": 2021,
+    "session": "w",
+    "component": 1,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w21_qp_22",
+    "subjectCode": "9488",
+    "year": 2021,
+    "session": "w",
+    "component": 2,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w21_qp_32",
+    "subjectCode": "9488",
+    "year": 2021,
+    "session": "w",
+    "component": 3,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
+    "id": "9488_w21_qp_42",
+    "subjectCode": "9488",
+    "year": 2021,
+    "session": "w",
+    "component": 4,
+    "variant": 2,
+    "testModeAvailable": false
+  },
+  {
     "id": "9489_m25_qp_12",
     "subjectCode": "9489",
     "year": 2025,
