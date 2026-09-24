@@ -67,10 +67,12 @@ for (const file of files) {
 
   const d = JSON.parse(fs.readFileSync(path.join(PAPERS_DIR, file), 'utf8'));
   const qs = d.questions || [];
-  if (qs.length === 0) continue;
 
   // View-only stubs are always included — PDFs are fetched via /api/pdfs proxy
   const isViewOnly = d.viewOnly || (qs[0] && qs[0].viewOnly);
+
+  // Skip only if no questions AND not a view-only stub
+  if (qs.length === 0 && !isViewOnly) continue;
 
   const year      = 2000 + parseInt(m[3]);
   const component = parseInt(m[4]);

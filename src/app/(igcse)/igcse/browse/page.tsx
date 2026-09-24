@@ -244,8 +244,9 @@ function BrowsePageInner() {
           top: '72px',
           height: 'calc(100vh - 72px)',
           overflowY: 'auto',
+          scrollbarWidth: 'none',
           background: 'rgba(3,6,10,0.6)',
-        }}>
+        } as React.CSSProperties}>
 
           {/* Resource type nav */}
           <div style={{ padding: '0 16px', marginBottom: '32px' }}>
