@@ -120,7 +120,7 @@ async function buildCoords(pdfPath, erKeys) {
       for (let pi = 0; pi < pages.length; pi++) {
         const { items, pageWidth } = pages[pi];
         const hit = items.find(it =>
-          it.text === String(qNum) && it.x < pageWidth * 0.20
+          it.text === String(qNum) && it.x < pageWidth * 0.20 && it.topPx >= 60
         );
         if (hit) {
           coords.push({ key: k, label: `Q ${qNum}`, topPx: hit.topPx, page: pi + 1 });
@@ -148,6 +148,8 @@ async function buildCoords(pdfPath, erKeys) {
       const n = parseInt(it.text);
       if (!qNums.includes(n)) continue;
       if (it.x > pageWidth * 0.20) continue;
+      // Skip page-header zone (topPx < 60) to avoid matching printed page numbers
+      if (it.topPx < 60) continue;
       if (!seen.has(n)) {
         seen.add(n);
         qList.push({ qNum: n, page: pi + 1, topPx: it.topPx });

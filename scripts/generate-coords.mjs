@@ -121,10 +121,12 @@ async function buildTheoryCoords(pdfPath, erKeys) {
     const page = pi + 1;
 
     // Candidates: standalone integers at left margin
+    // Skip the page-header zone (topPx < 60) to avoid matching printed page numbers
     const numCandidates = items.filter(it =>
       /^\d+$/.test(it.text) &&
       qNums.includes(parseInt(it.text)) &&
-      it.x < pageWidth * 0.20
+      it.x < pageWidth * 0.20 &&
+      it.topPx >= 60
     );
 
     // Remove axis-label clusters (≥4 numbers within 200px vertical span)
@@ -277,6 +279,8 @@ async function buildMCQCoords(pdfPath, erKeys) {
       if (!qNums.includes(parseInt(str))) continue;
       if (item.transform[4] > pageWidth * 0.20) continue;
       const topPx = Math.round(viewport.height - item.transform[5]);
+      // Skip page-header zone to avoid matching printed page numbers
+      if (topPx < 60) continue;
       candidates.push({ qNum: parseInt(str), topPx, page: p });
     }
 
@@ -312,10 +316,16 @@ async function buildMCQCoords(pdfPath, erKeys) {
 // ── Process one paper ─────────────────────────────────────────────────────────
 
 async function processPaper(paperId) {
-  const pdfPath   = join(ROOT, 'public', 'pdfs', `${paperId}.pdf`);
+  // Search for PDF in multiple locations
+  const pdfCandidates = [
+    join(ROOT, 'public', 'pdfs', `${paperId}.pdf`),
+    join(__dirname, 'pastpapers', `${paperId}.pdf`),
+    join(__dirname, 'pastpapers-alevels', `${paperId}.pdf`),
+  ];
+  const pdfPath = pdfCandidates.find(p => existsSync(p));
   const coordsPath = join(ROOT, 'public', 'question-coords', `${paperId}_coords.json`);
 
-  if (!existsSync(pdfPath)) {
+  if (!pdfPath) {
     console.log(`  SKIP (no PDF): ${paperId}`);
     return false;
   }
@@ -329,9 +339,15 @@ async function processPaper(paperId) {
   const erSpecific = join(ROOT, 'public', 'er-cache', `${subjectCode}_${sessionYear}_er_${componentCode}.json`);
   const erGeneral  = join(ROOT, 'public', 'er-cache', `${subjectCode}_${sessionYear}_er_notes.json`);
 
+  const parseJSON = (path) => {
+    let text = readFileSync(path, 'utf8');
+    if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1); // strip BOM
+    return JSON.parse(text);
+  };
+
   let erData = null;
-  if (existsSync(erSpecific))     erData = JSON.parse(readFileSync(erSpecific, 'utf8'));
-  else if (existsSync(erGeneral)) erData = JSON.parse(readFileSync(erGeneral, 'utf8'));
+  if (existsSync(erSpecific))     erData = parseJSON(erSpecific);
+  else if (existsSync(erGeneral)) erData = parseJSON(erGeneral);
 
   if (!erData) { console.log(`  SKIP (no ER): ${paperId}`); return false; }
 
@@ -403,13 +419,17 @@ function findPapersWithER(filterPrefix) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-const arg = process.argv[2];
+const args = process.argv.slice(2);
 
 let papers;
-if (arg && arg.includes('_qp_')) {
-  papers = [arg];
+if (args.length > 0 && args.every(a => a.includes('_qp_'))) {
+  // All args are explicit paper IDs — process all of them
+  papers = args;
+} else if (args.length > 0) {
+  // Single subject/prefix filter
+  papers = findPapersWithER(args[0]);
 } else {
-  papers = findPapersWithER(arg);
+  papers = findPapersWithER();
 }
 
 console.log(`\nGenerating coords for ${papers.length} paper(s)...\n`);

@@ -81,6 +81,8 @@ function buildButtonPositionsFromText(
         if (!topLevelKeys.has(qNum)) continue;
         if (placed.has(qNum)) continue;
 
+        // Skip page-header zone (y < 60) to avoid matching printed page numbers at top
+        if (item.y < 60) continue;
         // Skip if the Y position is in the bottom 10% (footer area)
         if (item.y > pageHeight * 0.92) continue;
 
