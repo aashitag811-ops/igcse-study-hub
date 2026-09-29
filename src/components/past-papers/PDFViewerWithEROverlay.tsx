@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 interface QuestionCoordinate {
   key: string;
@@ -33,14 +33,21 @@ function buildButtonPositionsFromText(
   erNotes: Record<string, string>,
   scale: number,
 ): Promise<QuestionCoordinate[]> {
-  // Keys we need to place (only numeric question keys — not key_messages etc.)
-  const numericKeys = Object.keys(erNotes).filter(k => /^\d+$/.test(k));
-  // Also sub-part keys like "1a" — we group by top-level question number
+  // Build the set of top-level question numbers from all ER keys
+  // e.g. from "1a","1b","2c","3" → { "1", "2", "3" }
   const topLevelKeys = new Set<string>();
   Object.keys(erNotes).forEach(k => {
     const m = k.match(/^(\d+)/);
     if (m) topLevelKeys.add(m[1]);
   });
+
+  // Determine whether this is an MCQ paper (pure numeric keys like "1","2","40")
+  // vs a theory paper (sub-part keys like "1a","1b").
+  // MCQ keys are purely numeric integers; theory papers always have letter suffixes.
+  const hasPureNumericKeys = [...topLevelKeys].some(n =>
+    Object.keys(erNotes).includes(n)
+  );
+  const hasSubpartKeys = Object.keys(erNotes).some(k => /^\d+[a-z]/i.test(k));
 
   return (async () => {
     const results: QuestionCoordinate[] = [];
@@ -50,6 +57,7 @@ function buildButtonPositionsFromText(
       const page = await pdfDoc.getPage(pageNum);
       const viewport = page.getViewport({ scale: 1 });
       const pageHeight = viewport.height;
+      const pageWidth  = viewport.width;
 
       let textContent: any;
       try {
@@ -59,21 +67,18 @@ function buildButtonPositionsFromText(
       }
 
       // Each item has: str, transform [a,b,c,d,e,f] where (e,f) = (x, y from bottom)
-      const items: Array<{ str: string; y: number; x: number; fontSize: number }> =
+      const items: Array<{ str: string; y: number; x: number }> =
         textContent.items.map((item: any) => ({
           str: item.str.trim(),
           // PDF coords: y=0 at bottom. Convert to topPx (y=0 at top)
           y: pageHeight - item.transform[5],
           x: item.transform[4],
-          fontSize: Math.abs(item.transform[3]),
         }));
 
-      // Look for question number items: standalone integers that match a key
-      // We look for items whose text is EXACTLY a question number (or "Question N")
       for (const item of items) {
         if (!item.str) continue;
 
-        // Match "Question 3" or standalone "3" or "3."
+        // Match "Question 3", standalone "3" or "3."
         const mFull = item.str.match(/^(?:Question\s+)?(\d{1,2})\.?\s*$/);
         if (!mFull) continue;
         const qNum = mFull[1];
@@ -81,10 +86,18 @@ function buildButtonPositionsFromText(
         if (!topLevelKeys.has(qNum)) continue;
         if (placed.has(qNum)) continue;
 
-        // Skip page-header zone (y < 60) to avoid matching printed page numbers at top
+        // Skip page-header zone (y < 60) to avoid printed page numbers
         if (item.y < 60) continue;
-        // Skip if the Y position is in the bottom 10% (footer area)
+        // Skip footer area
         if (item.y > pageHeight * 0.92) continue;
+
+        // For standalone digit items (not "Question N" style), enforce a left-margin
+        // x-position check to avoid matching equation digits, table values, etc.
+        // Theory Q numbers sit at x ≈ 50px (8-10% of 595pt page).
+        // MCQ numbers also sit at the left margin.
+        // "Question N" style labels have no x constraint.
+        const isQuestNStyle = /^Question\s+/i.test(item.str);
+        if (!isQuestNStyle && item.x > pageWidth * 0.13) continue;
 
         results.push({
           key: qNum,
@@ -126,10 +139,12 @@ export function PDFViewerWithEROverlay({
   // true = coords fetch is done; null = still loading
   const [coordsFetched, setCoordsFetched] = useState(false);
   const erNotesRef = useRef<Record<string, string>>({});
+  const erLabelsRef = useRef<Record<string, string>>({});
   const onERClickRef = useRef(onERClick);
 
   useEffect(() => { onERClickRef.current = onERClick; }, [onERClick]);
   useEffect(() => { erNotesRef.current = erNotes; }, [erNotes]);
+  useEffect(() => { erLabelsRef.current = erLabels; }, [erLabels]);
 
   // Load PDF.js
   useEffect(() => {
@@ -262,7 +277,7 @@ export function PDFViewerWithEROverlay({
     return textCoordsRef.current;
   };
 
-  const injectButtons = (coords: QuestionCoordinate[]) => {
+  const injectButtons = useCallback((coords: QuestionCoordinate[]) => {
     if (!canvasWrapperRef.current) return;
     canvasWrapperRef.current.querySelectorAll('.er-btn').forEach(b => b.remove());
 
@@ -274,7 +289,8 @@ export function PDFViewerWithEROverlay({
       );
       if (!hasNote && !hasSubparts) return;
 
-      const label = erLabels[key] ?? coord.label ?? `Q ${key}`;
+      // Use the ref so we always have the latest labels even if erLabels prop changed
+      const label = erLabelsRef.current[key] ?? coord.label ?? `Q ${key}`;
 
       const wrapper = canvasWrapperRef.current!.querySelector<HTMLDivElement>(
         `div[data-page="${coord.page}"]`
@@ -286,10 +302,22 @@ export function PDFViewerWithEROverlay({
       const canvas = wrapper.querySelector('canvas');
       if (!canvas) return;
 
-      const cssWidth  = wrapper.clientWidth > 0 ? wrapper.clientWidth : (naturalWidth ?? canvas.width / 1.5);
-      const cssHeight = canvas.offsetHeight > 0 ? canvas.offsetHeight : (cssWidth * (naturalHeight ?? canvas.height) / (naturalWidth ?? canvas.width));
-      const scaleX = cssWidth  / (naturalWidth  ?? (canvas.width  / 1.5));
-      const scaleY = cssHeight / (naturalHeight ?? (canvas.height / 1.5));
+      // Use canvas.offsetWidth/offsetHeight — these reflect actual CSS layout size.
+      // Fall back to naturalWidth * (canvas CSS width / canvas pixel width) when offsetWidth=0.
+      const canvasCssW = canvas.offsetWidth  > 0 ? canvas.offsetWidth  : canvas.getBoundingClientRect().width;
+      const canvasCssH = canvas.offsetHeight > 0 ? canvas.offsetHeight : canvas.getBoundingClientRect().height;
+
+      // canvas was rendered at scale=1.5, so canvas.width = naturalWidth * 1.5
+      const renderScale = 1.5;
+      const naturalW = naturalWidth  ?? (canvas.width  / renderScale);
+      const naturalH = naturalHeight ?? (canvas.height / renderScale);
+
+      // If layout hasn't happened yet (canvasCssW still 0), skip — ResizeObserver will re-inject.
+      if (canvasCssW <= 0) return;
+
+      const scaleY = canvasCssH > 0
+        ? canvasCssH / naturalH
+        : (canvasCssW / naturalW);  // assume aspect ratio when height unavailable
 
       // topPx is in natural (scale=1) PDF coordinates (y=0 at top of page)
       const topCss = coord.topPx * scaleY;
@@ -320,15 +348,20 @@ export function PDFViewerWithEROverlay({
       btn.addEventListener('click', () => onERClickRef.current(key));
       wrapper.appendChild(btn);
     });
-  };
+  }, []); // no deps — reads everything through refs
 
-  // Inject buttons when PDF is ready
+  // Inject buttons when PDF is ready.
+  // Double-rAF ensures the browser has finished layout so canvas.offsetWidth is non-zero.
   useEffect(() => {
     if (!pdfReady || !canvasWrapperRef.current) return;
-    requestAnimationFrame(() => {
-      injectButtons(getMergedCoords());
+    let rafId: number;
+    rafId = requestAnimationFrame(() => {
+      rafId = requestAnimationFrame(() => {
+        injectButtons(getMergedCoords());
+      });
     });
-  }, [pdfReady, fallbackCoords, erNotes]);
+    return () => cancelAnimationFrame(rafId);
+  }, [pdfReady, fallbackCoords, erNotes, injectButtons]);
 
   // Re-inject on resize — observe the outer scroll container so the split-pane
   // drag (which resizes the container, not the canvas wrapper) also triggers re-injection.
@@ -344,7 +377,7 @@ export function PDFViewerWithEROverlay({
     });
     ro.observe(containerRef.current);
     return () => { ro.disconnect(); cancelAnimationFrame(rafId); };
-  }, []);
+  }, [injectButtons]);
 
   return (
     <div

@@ -52,7 +52,7 @@ export function ExaminerReportModal({
 
         const scale = 1.8;
         // qnum extracted from label e.g. "Q 5. (a)" → "5", "Q 12" → "12"
-        const qnumMatch = targetPage > 0 ? label.match(/Q\s*(\d+)/) : null;
+        const qnumMatch = label.match(/Q\s*(\d+)/);
         const targetQNum = qnumMatch ? qnumMatch[1] : null;
 
         for (let i = 1; i <= pdf.numPages; i++) {
@@ -74,22 +74,36 @@ export function ExaminerReportModal({
           const ctx = canvas.getContext('2d');
           if (ctx) await page.render({ canvasContext: ctx, viewport: vp }).promise;
 
-          // On the target page, find exact Y of "Question N" heading
+          // On the target page, try to find the exact Y of the question heading so we
+          // can scroll to it precisely instead of just the page top.
+          // We search for several common ER heading patterns:
+          //   "Question 5"    — ICT / most theory
+          //   "5"             — standalone number at left margin (some subjects)
+          //   "Question 5 (a)", "Q5", "Q 5"
           if (i === targetPage && targetQNum) {
             try {
               const tc = await page.getTextContent();
               const naturalVp = page.getViewport({ scale: 1 });
-              for (const item of tc.items as any[]) {
-                if (/^Question\s+/i.test(item.str?.trim()) &&
-                    item.str.trim().includes(targetQNum)) {
+              let foundY: number | null = null;
+              for (const item of (tc.items as any[])) {
+                const str = item.str?.trim() ?? '';
+                if (!str) continue;
+                const isHeading =
+                  // "Question 5", "Question 5 (a)", "Question 5a" etc.
+                  /^Question\s+/i.test(str) && str.includes(targetQNum)
+                  // bare question number at the very left of the page
+                  || (str === targetQNum && item.transform[4] < 90);
+                if (isHeading) {
                   // item.transform[5] = y from bottom in natural coords
-                  const yFromTop = naturalVp.height - item.transform[5];
-                  // store as data attr so scroll effect can read it
-                  wrapper.setAttribute('data-q-y', String(yFromTop * scale));
+                  foundY = naturalVp.height - item.transform[5];
                   break;
                 }
               }
-            } catch { /* ignore */ }
+              if (foundY !== null) {
+                // Convert to render-scale px and store for the scroll effect
+                wrapper.setAttribute('data-q-y', String(foundY * scale));
+              }
+            } catch { /* ignore — page top will be used as fallback */ }
           }
         }
 
