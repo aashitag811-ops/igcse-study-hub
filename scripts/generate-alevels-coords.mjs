@@ -42,7 +42,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 // ── Roman numeral helpers ──────────────────────────────────────────────────────
 
 const ROMAN_RE = /^(i{1,3}|iv|vi{0,3}|ix|x)$/i;
-const LETTER_PAT = /^\([a-z]\)$/i;
+const LETTER_PAT = /^\([a-hj-np-uwz]\)$/i;  // excludes i/v/x/c to avoid roman confusion
 const ROMAN_PAT  = /^\((i{1,3}|iv|vi{0,3}|ix|x)\)$/i;
 
 // ── HTTP download helper ───────────────────────────────────────────────────────
@@ -81,6 +81,12 @@ async function extractItems(pdfPath) {
       if (!str) continue;
       const topPx = Math.round(viewport.height - item.transform[5]);
       items.push({ text: str, topPx, x: item.transform[4] });
+
+      // Fix 3: split combined tokens like "(a)(i)" → also emit "(a)" as a synthetic item
+      const combined = str.match(/^(\([a-hj-np-uwz]\))(\([ivx]+\))$/i);
+      if (combined) {
+        items.push({ text: combined[1], topPx, x: item.transform[4], synthetic: true });
+      }
     }
     pages.push({ items, pageWidth: viewport.width, pageHeight: viewport.height });
   }
@@ -120,7 +126,7 @@ async function buildCoords(pdfPath, erKeys) {
       for (let pi = 0; pi < pages.length; pi++) {
         const { items, pageWidth } = pages[pi];
         const hit = items.find(it =>
-          it.text === String(qNum) && it.x < pageWidth * 0.20 && it.topPx >= 60
+          it.text === String(qNum) && it.x < pageWidth * 0.10 && it.topPx >= 60
         );
         if (hit) {
           coords.push({ key: k, label: `Q ${qNum}`, topPx: hit.topPx, page: pi + 1 });
@@ -137,35 +143,59 @@ async function buildCoords(pdfPath, erKeys) {
     return m ? parseInt(m[1]) : null;
   }).filter(Boolean))].sort((a, b) => a - b);
 
-  // Find question number positions
-  const qList = [];
-  const seen  = new Set();
+  // Fix 1: collect ALL candidates per Q number, prefer "Question N" label over bare digit
+  const qCandidates = new Map(); // qNum → { label?, digit? }
 
   for (let pi = 0; pi < pages.length; pi++) {
     const { items, pageWidth } = pages[pi];
+    const page = pi + 1;
     for (const it of items) {
-      if (!/^\d+$/.test(it.text)) continue;
-      const n = parseInt(it.text);
-      if (!qNums.includes(n)) continue;
-      if (it.x > pageWidth * 0.20) continue;
-      // Skip page-header zone (topPx < 60) to avoid matching printed page numbers
       if (it.topPx < 60) continue;
-      if (!seen.has(n)) {
-        seen.add(n);
-        qList.push({ qNum: n, page: pi + 1, topPx: it.topPx });
+      // "Question N" label — no x constraint
+      const qm = it.text.match(/^Question\s+(\d+)$/i);
+      if (qm) {
+        const n = parseInt(qm[1]);
+        if (qNums.includes(n)) {
+          const e = qCandidates.get(n) ?? {};
+          if (!e.label) e.label = { qNum: n, page, topPx: it.topPx };
+          qCandidates.set(n, e);
+        }
+        continue;
+      }
+      // Bare digit at left margin (10% threshold)
+      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.10) {
+        const n = parseInt(it.text);
+        if (qNums.includes(n)) {
+          const e = qCandidates.get(n) ?? {};
+          if (!e.digit) e.digit = { qNum: n, page, topPx: it.topPx };
+          qCandidates.set(n, e);
+        }
       }
     }
   }
 
-  qList.sort((a, b) => a.page - b.page || a.topPx - b.topPx);
+  const qList = [...qCandidates.values()]
+    .map(e => e.label ?? e.digit)
+    .filter(Boolean)
+    .sort((a, b) => a.page - b.page || a.topPx - b.topPx);
 
   for (let qi = 0; qi < qList.length; qi++) {
     const q    = qList[qi];
     const next = qList[qi + 1] ?? { page: pages.length, topPx: 99999 };
     const qn   = q.qNum;
 
-    // Find letter sub-parts
-    const letters = findInRange(pages, q.page, q.topPx, next.page, next.topPx, LETTER_PAT, 0.30);
+    // Only scan for letters if ER has letter-keyed entries for this Q.
+    // Prevents inline "(a)"/"(b)" in math text being mistaken for sub-parts.
+    const hasErLetterKeys = erKeys.some(k => {
+      const m = k.match(/^(\d+)([a-hj-np-uwz])/);
+      return m && parseInt(m[1]) === qn;
+    });
+    // Use 20% x threshold for letter sub-parts (≈119px on 595pt page).
+    // Real (a)/(b) labels sit at x≈50–95px (8–16%). 14% was too tight for
+    // subjects like 0606 Add Maths where labels appear at x≈95 (16%).
+    const letters = hasErLetterKeys
+      ? findInRange(pages, q.page, q.topPx, next.page, next.topPx, LETTER_PAT, 0.20)
+      : [];
 
     const seenL = new Set();
     const lList = [];
@@ -174,14 +204,56 @@ async function buildCoords(pdfPath, erKeys) {
       if (!seenL.has(ch)) { seenL.add(ch); lList.push({ ...l, letter: ch }); }
     }
 
-    let emittedSub = false;
+    if (lList.length === 0) {
+      // ── Bug B: roman-direct structure — Q uses (i)(ii)(iii) with no (a)(b) ──
+      const directRomanKeys = erKeys.filter(k => {
+        const m = k.match(/^(\d+)(i{1,3}|iv|vi{0,3}|ix|x)$/);
+        return m && parseInt(m[1]) === qn;
+      });
+
+      if (directRomanKeys.length > 0) {
+        const qRomans = findInRange(pages, q.page, q.topPx, next.page, next.topPx, ROMAN_PAT, 0.35);
+        const seenQR = new Set();
+        for (const r of qRomans) {
+          const rv = r.text.replace(/[()]/g, '').toLowerCase();
+          if (seenQR.has(rv)) continue;
+          seenQR.add(rv);
+          const key = `${qn}${rv}`;
+          if (erKeys.includes(key)) {
+            coords.push({ key, label: `Q ${qn}. (${rv})`, topPx: r.topPx, page: r.page });
+          }
+        }
+        if (erKeys.includes(String(qn))) {
+          coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
+        }
+      } else {
+        // Bare Q-level coord
+        const qKey = String(qn);
+        if (erKeys.includes(qKey) || erKeys.some(k => k.startsWith(qKey))) {
+          coords.push({ key: qKey, label: `Q ${qn}`, topPx: q.topPx, page: q.page });
+        }
+      }
+      continue;
+    }
+
+    // ── Has letter sub-parts ─────────────────────────────────────────────────
+
+    // If ER also has a bare Q-level key (e.g. '1' alongside '1a','1b'), emit it too
+    if (erKeys.includes(String(qn))) {
+      coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
+    }
 
     for (let li = 0; li < lList.length; li++) {
       const lv   = lList[li];
       const lEnd = lList[li + 1] ?? next;
-      const key  = `${qn}${lv.letter}`;
+      const letterKey = `${qn}${lv.letter}`;
 
-      // Find roman sub-sub-parts
+      // Always emit letter coord if ER has it (covers merged sub-i notes)
+      if (erKeys.includes(letterKey)) {
+        coords.push({ key: letterKey, label: `Q ${qn}. (${lv.letter})`, topPx: lv.topPx, page: lv.page });
+      }
+
+      // Roman sub-sub-parts
       const romans = findInRange(pages, lv.page, lv.topPx, lEnd.page ?? lv.page, lEnd.topPx ?? 99999, ROMAN_PAT, 0.35);
       const seenR  = new Set();
       const rList  = [];
@@ -190,27 +262,16 @@ async function buildCoords(pdfPath, erKeys) {
         if (!seenR.has(sym)) { seenR.add(sym); rList.push({ ...r, roman: sym }); }
       }
 
-      let emittedRoman = false;
       for (const rv of rList) {
-        const subKey = `${key}${rv.roman}`;
-        if (erKeys.includes(subKey)) {
-          coords.push({ key: subKey, label: `Q ${qn}. (${lv.letter}) (${rv.roman})`, topPx: rv.topPx, page: rv.page });
-          emittedRoman = true;
-          emittedSub   = true;
+        // Bug A fix: try '1aiii' first, then fall back to '1iii' (roman-only key)
+        const fullKey  = `${qn}${lv.letter}${rv.roman}`;
+        const shortKey = `${qn}${rv.roman}`;
+        const matchKey = erKeys.includes(fullKey) ? fullKey
+                       : erKeys.includes(shortKey) ? shortKey
+                       : null;
+        if (matchKey) {
+          coords.push({ key: matchKey, label: `Q ${qn}. (${lv.letter}) (${rv.roman})`, topPx: rv.topPx, page: rv.page });
         }
-      }
-
-      if (!emittedRoman && erKeys.includes(key)) {
-        coords.push({ key, label: `Q ${qn}. (${lv.letter})`, topPx: lv.topPx, page: lv.page });
-        emittedSub = true;
-      }
-    }
-
-    // No sub-parts → emit question-level coord
-    if (!emittedSub) {
-      const qKey = String(qn);
-      if (erKeys.includes(qKey) || erKeys.some(k => k.startsWith(qKey))) {
-        coords.push({ key: qKey, label: `Q ${qn}`, topPx: q.topPx, page: q.page });
       }
     }
   }
@@ -243,7 +304,8 @@ function getErKeysForPaper(paperId) {
 
 const args       = process.argv.slice(2);
 const filterArg  = args.filter(a => !a.startsWith('--'))[0] ?? '';
-const forceRegen = args.includes('--force'); // re-generate synthetic coord files
+const forceRegen = args.includes('--force');     // re-generate synthetic coord files
+const fixZeros   = args.includes('--fix-zeros'); // re-generate any zero-coverage file
 
 mkdirSync(COORDS_DIR, { recursive: true });
 mkdirSync(TEMP_DIR,   { recursive: true });
@@ -283,13 +345,19 @@ for (const paperId of [...paperIds].sort()) {
 
   const outPath = join(COORDS_DIR, `${paperId}_coords.json`);
 
-  // Skip if already done — unless --force or it was synthetic (inaccurate)
+  // Skip if already done — unless --force, --fix-zeros, or it was synthetic (inaccurate)
   if (existsSync(outPath)) {
-    if (!forceRegen) { skipped++; continue; }
-    // With --force, re-generate only synthetic files
+    if (!forceRegen && !fixZeros) { skipped++; continue; }
     try {
       const existing = JSON.parse(readFileSync(outPath, 'utf-8'));
-      if (!existing.synthetic) { skipped++; continue; } // real coords — keep
+      if (fixZeros) {
+        // Only regenerate files with zero coords that have real ER keys
+        const hasCords = (existing.totalCoords ?? existing.coordinates?.length ?? 0) > 0;
+        if (hasCords) { skipped++; continue; }
+      } else {
+        // --force: only regenerate synthetic files
+        if (!existing.synthetic) { skipped++; continue; }
+      }
     } catch { /* regenerate on parse error */ }
   }
 
@@ -318,9 +386,10 @@ for (const paperId of [...paperIds].sort()) {
     if (!coords.length) { console.log('no coords found in PDF'); failed++; continue; }
 
     writeFileSync(outPath, JSON.stringify({
-      pdfPath: `${source}:${pdfName}`,
-      totalCoords: coords.length,
-      coordinates: coords,
+      pdfPath:            `${source}:${pdfName}`,
+      coordsFound:        coords.length,
+      erEntriesExpected:  erKeys.length,
+      coordinates:        coords,
     }, null, 2));
 
     console.log(`✓ ${coords.length} coords [${source}]`);

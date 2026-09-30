@@ -98,6 +98,13 @@ async function buildTheoryCoords(pdfPath, erKeys) {
       if (!str) continue;
       const topPx = Math.round(viewport.height - item.transform[5]);
       items.push({ text: str, topPx, x: item.transform[4] });
+
+      // Fix 3: split combined tokens like "(a)(i)" → also emit "(a)" as a synthetic item
+      // Cambridge Biology Practical papers emit these as single text runs.
+      const combined = str.match(/^(\([a-hj-np-uwz]\))(\([ivx]+\))$/i);
+      if (combined) {
+        items.push({ text: combined[1], topPx, x: item.transform[4], synthetic: true });
+      }
     }
 
     pageItems.push({ items, pageWidth: viewport.width, pageHeight: viewport.height });
@@ -114,41 +121,60 @@ async function buildTheoryCoords(pdfPath, erKeys) {
     return m ? parseInt(m[1]) : null;
   }).filter(Boolean))].sort((a, b) => a - b);
 
-  const qCoords = [];  // { qNum, page, topPx }
+  // Collect ALL candidates per question number, labelled by type
+  // type 'label' = "Question N" style, type 'digit' = bare number
+  const qCandidates = new Map(); // qNum → { label: best, digit: best }
 
   for (let pi = 0; pi < pageItems.length; pi++) {
     const { items, pageWidth } = pageItems[pi];
     const page = pi + 1;
 
-    // Candidates: standalone integers at left margin
-    // Skip the page-header zone (topPx < 60) to avoid matching printed page numbers
-    const numCandidates = items.filter(it =>
-      /^\d+$/.test(it.text) &&
-      qNums.includes(parseInt(it.text)) &&
-      it.x < pageWidth * 0.20 &&
-      it.topPx >= 60
-    );
+    for (const it of items) {
+      // "Question N" style label — no x constraint
+      const qm = it.text.match(/^Question\s+(\d+)$/i);
+      if (qm && it.topPx >= 60) {
+        const n = parseInt(qm[1]);
+        if (qNums.includes(n)) {
+          const entry = qCandidates.get(n) ?? {};
+          if (!entry.label) entry.label = { qNum: n, page, topPx: it.topPx };
+          qCandidates.set(n, entry);
+        }
+        continue;
+      }
 
-    // Remove axis-label clusters (≥4 numbers within 200px vertical span)
-    const clusterY = new Set();
-    const sorted   = [...numCandidates].sort((a, b) => a.topPx - b.topPx);
-    for (const it of sorted) {
-      const nearby = sorted.filter(c => Math.abs(c.topPx - it.topPx) < 200);
-      if (nearby.length >= 4) nearby.forEach(c => clusterY.add(c.topPx));
-    }
-
-    for (const it of numCandidates) {
-      if (clusterY.has(it.topPx)) continue;
-      qCoords.push({ qNum: parseInt(it.text), page, topPx: it.topPx });
+      // Bare digit at left margin
+      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.10 && it.topPx >= 60) {
+        const n = parseInt(it.text);
+        if (qNums.includes(n)) {
+          const entry = qCandidates.get(n) ?? {};
+          if (!entry.digit) entry.digit = { qNum: n, page, topPx: it.topPx };
+          qCandidates.set(n, entry);
+        }
+      }
     }
   }
 
-  // Deduplicate: keep first occurrence of each question number
-  const seenQ  = new Set();
-  const qList  = [];
-  for (const q of qCoords.sort((a, b) => a.page - b.page || a.topPx - b.topPx)) {
-    if (!seenQ.has(q.qNum)) { seenQ.add(q.qNum); qList.push(q); }
+  // Build qCoords: prefer "Question N" label over bare digit (Fix 1)
+  const qCoords = [];
+  for (const [n, entry] of qCandidates) {
+    qCoords.push(entry.label ?? entry.digit);
   }
+
+  // Remove axis-label clusters: ≥8 digit candidates within 200px on the SAME page
+  // Only apply to digit-only detections (label-style are never axis labels)
+  const digitCandidates = [...qCandidates.values()]
+    .filter(e => !e.label && e.digit)
+    .map(e => e.digit);
+  const clusterY = new Set();
+  const sorted   = [...digitCandidates].sort((a, b) => a.topPx - b.topPx);
+  for (const it of sorted) {
+    const nearby = sorted.filter(c => c.page === it.page && Math.abs(c.topPx - it.topPx) < 200);
+    if (nearby.length >= 8) nearby.forEach(c => clusterY.add(`${c.page}:${c.topPx}`));
+  }
+
+  const qList = qCoords
+    .filter(q => q && !clusterY.has(`${q.page}:${q.topPx}`))
+    .sort((a, b) => a.page - b.page || a.topPx - b.topPx);
 
   // ── Step 2: find sub-part coords ────────────────────────────────────────────
 
@@ -185,18 +211,31 @@ async function buildTheoryCoords(pdfPath, erKeys) {
     return null;
   };
 
+  const ROMAN_PAT = /^\((i{1,3}|iv|vi{0,3}|ix|x)\)$/i;
+
   for (let qi = 0; qi < qList.length; qi++) {
     const q     = qList[qi];
     const qEnd  = nextQ(qi);
     const qn    = q.qNum;
 
-    // Find letter sub-parts within this question's range
-    // "(a)" "(b)" "(c)" etc. — letter NOT in i/v/x to avoid roman confusion
-    // We include i,v,x ONLY if there's no roman sub-sub-part ambiguity
-    const LETTER_PAT = /^\([a-z]\)$/i;
-    const letters = findInRange(q.page, q.topPx, qEnd.page, qEnd.topPx, LETTER_PAT, 0.30);
+    // ── Letter sub-parts: "(a)" "(b)" "(c)" etc. ────────────────────────────
+    // Only scan for letters if the ER actually has letter-keyed entries for this Q.
+    // Without this check, inline "(a)"/"(b)" in math expressions get mistaken for
+    // sub-part labels in papers that use roman-direct structure (0606, 9709, etc.)
+    const hasErLetterKeys = [...erKeys].some(k => {
+      const m = k.match(/^(\d+)([a-hj-np-uwz])/);
+      return m && parseInt(m[1]) === qn;
+    });
 
-    // Deduplicate letters: keep first occurrence of each letter
+    const LETTER_PAT = /^\([a-hj-np-uwz]\)$/i;
+    // Use 20% x threshold for letter sub-parts (≈119px on 595pt page).
+    // Most real (a)/(b) labels sit at x≈50–95px (8–16%). Some subjects like
+    // 0606 Add Maths have them at x≈95px (16%). Table/answer-box labels rarely
+    // appear below y=200 in the question zone, so false positives are uncommon.
+    const letters = hasErLetterKeys
+      ? findInRange(q.page, q.topPx, qEnd.page, qEnd.topPx, LETTER_PAT, 0.20)
+      : [];
+
     const seenL  = new Set();
     const lList  = [];
     for (const l of letters) {
@@ -205,23 +244,63 @@ async function buildTheoryCoords(pdfPath, erKeys) {
     }
 
     if (lList.length === 0) {
-      // No letter sub-parts found — emit question-level coord if any key matches qn
-      const anyKey = [...erKeys].some(k => k.match(/^(\d+)/) && parseInt(k.match(/^(\d+)/)[1]) === qn);
-      if (anyKey) {
-        coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
+      // ── Bug B: roman-direct structure — Q uses (i)(ii)(iii) with no (a)(b) ──
+      // Check whether ER has roman keys directly for this question (e.g. '1i','1iii')
+      const directRomanKeys = [...erKeys].filter(k => {
+        const m = k.match(/^(\d+)(i{1,3}|iv|vi{0,3}|ix|x)$/);
+        return m && parseInt(m[1]) === qn;
+      });
+
+      if (directRomanKeys.length > 0) {
+        // Find roman sub-parts at question level
+        const qRomans = findInRange(q.page, q.topPx, qEnd.page, qEnd.topPx, ROMAN_PAT, 0.35);
+        const seenQR = new Set();
+        for (const r of qRomans) {
+          const rv = r.text.replace(/[()]/g, '').toLowerCase();
+          if (seenQR.has(rv)) continue;
+          seenQR.add(rv);
+          const key = `${qn}${rv}`;
+          if (erKeys.has(key)) {
+            coords.push({ key, label: `Q ${qn}. (${rv})`, topPx: r.topPx, page: r.page });
+          }
+        }
+        // Also emit bare Q coord if ER has key for this Q number directly
+        if (erKeys.has(String(qn))) {
+          coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
+        }
+      } else {
+        // No letter or roman keys — emit bare Q coord if any key matches qn
+        const anyKey = [...erKeys].some(k => {
+          const m = k.match(/^(\d+)/);
+          return m && parseInt(m[1]) === qn;
+        });
+        if (anyKey) {
+          coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
+        }
       }
       continue;
+    }
+
+    // ── Has letter sub-parts ─────────────────────────────────────────────────
+
+    // If ER also has a bare Q-level key (e.g. '1' alongside '1a','1b'), emit it too
+    if (erKeys.has(String(qn))) {
+      coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
     }
 
     for (let li = 0; li < lList.length; li++) {
       const l     = lList[li];
       const lEnd  = nextItem(lList, li) ?? qEnd;
 
+      // Always emit letter coord if ER has a key for it (e.g. '1a' covering sub-i)
+      const letterKey = `${qn}${l.letter}`;
+      if (erKeys.has(letterKey)) {
+        coords.push({ key: letterKey, label: `Q ${qn}. (${l.letter})`, topPx: l.topPx, page: l.page });
+      }
+
       // Roman sub-parts within this letter's range
-      const ROMAN_PAT = /^\((i{1,3}|iv|vi{0,3}|ix|x)\)$/i;
       const romans = findInRange(l.page, l.topPx, lEnd.page, lEnd.topPx, ROMAN_PAT, 0.35);
 
-      // Deduplicate romans
       const seenR = new Set();
       const rList = [];
       for (const r of romans) {
@@ -229,26 +308,17 @@ async function buildTheoryCoords(pdfPath, erKeys) {
         if (!seenR.has(rv)) { seenR.add(rv); rList.push({ ...r, roman: rv }); }
       }
 
-      if (rList.length > 0) {
-        // Emit per-roman coord
-        for (const r of rList) {
-          const key = `${qn}${l.letter}${r.roman}`;
-          if (erKeys.has(key)) {
-            const label = `Q ${qn}. (${l.letter}) (${r.roman})`;
-            coords.push({ key, label, topPx: r.topPx, page: r.page });
-          }
-        }
-        // Also emit the letter itself if it has its own ER key (rare but possible)
-        const letterKey = `${qn}${l.letter}`;
-        if (erKeys.has(letterKey) && !rList.length) {
-          coords.push({ key: letterKey, label: `Q ${qn}. (${l.letter})`, topPx: l.topPx, page: l.page });
-        }
-      } else {
-        // No roman sub-parts — emit letter-level coord
-        const key = `${qn}${l.letter}`;
-        if (erKeys.has(key)) {
-          const label = `Q ${qn}. (${l.letter})`;
-          coords.push({ key, label, topPx: l.topPx, page: l.page });
+      for (const r of rList) {
+        const rv = r.roman;
+        // Bug A fix: try full key '1aiii' first, then roman-only key '1iii'
+        const fullKey   = `${qn}${l.letter}${rv}`;
+        const shortKey  = `${qn}${rv}`;
+        const matchKey  = erKeys.has(fullKey) ? fullKey
+                        : erKeys.has(shortKey) ? shortKey
+                        : null;
+        if (matchKey) {
+          const label = `Q ${qn}. (${l.letter}) (${rv})`;
+          coords.push({ key: matchKey, label, topPx: r.topPx, page: r.page });
         }
       }
     }
@@ -277,23 +347,16 @@ async function buildMCQCoords(pdfPath, erKeys) {
       const str = item.str?.trim();
       if (!str || !/^\d+$/.test(str)) continue;
       if (!qNums.includes(parseInt(str))) continue;
-      if (item.transform[4] > pageWidth * 0.20) continue;
+      if (item.transform[4] > pageWidth * 0.10) continue;
       const topPx = Math.round(viewport.height - item.transform[5]);
       // Skip page-header zone to avoid matching printed page numbers
       if (topPx < 60) continue;
       candidates.push({ qNum: parseInt(str), topPx, page: p });
     }
 
-    // Remove axis clusters
-    const sorted   = [...candidates].sort((a, b) => a.topPx - b.topPx);
-    const clusterY = new Set();
-    for (const it of sorted) {
-      const nearby = sorted.filter(c => Math.abs(c.topPx - it.topPx) < 200);
-      if (nearby.length >= 4) nearby.forEach(c => clusterY.add(c.topPx));
-    }
-    for (const c of candidates) {
-      if (!clusterY.has(c.topPx)) qCoords.push(c);
-    }
+    // No cluster filter for MCQ — question numbers are always densely packed
+    // and a cluster filter would incorrectly remove all of them.
+    for (const c of candidates) qCoords.push(c);
   }
 
   await pdf.destroy();
@@ -358,13 +421,16 @@ async function processPaper(paperId) {
     return false;
   }
 
-  const erKeys   = new Set(Object.keys(erNotes));
+  // Filter out meta keys — only real Q keys are used for coord generation and reporting
+  const META_KEYS = new Set(['key_messages', 'general_comments']);
+  const erKeys   = new Set(Object.keys(erNotes).filter(k => !META_KEYS.has(k)));
   // Use theory-style (sub-part) coord detection if:
   //  - component is 3x/4x/5x/6x (traditional theory papers), OR
   //  - ER keys contain sub-part letters like "1a", "2b" (BST, Add Maths short-answer components 1x/2x)
   const hasSubpartKeys = [...erKeys].some(k => /^\d+[a-z]/.test(k));
   const isTheory = parseInt(component) >= 3 || hasSubpartKeys;
 
+  if (erKeys.size === 0) { console.log(`  SKIP (no real Q keys): ${paperId}`); return false; }
   console.log(`  ${paperId} [${isTheory ? 'theory' : 'MCQ'}] — ${erKeys.size} ER keys`);
 
   try {
@@ -379,11 +445,11 @@ async function processPaper(paperId) {
     await pdf.destroy();
 
     const output = {
-      pdfPath:        `public/pdfs/${paperId}.pdf`,
+      pdfPath:           `public/pdfs/${paperId}.pdf`,
       totalPages,
-      coordsFound:    coords.length,
+      coordsFound:       coords.length,
       erEntriesExpected: erKeys.size,
-      coordinates:    coords,
+      coordinates:       coords,
     };
 
     writeFileSync(coordsPath, JSON.stringify(output, null, 2));
