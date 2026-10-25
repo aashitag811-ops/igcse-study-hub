@@ -3,8 +3,8 @@
   "subjectCode": "0580",
   "session": "s17",
   "component": "41",
-  "totalMarks": 109,
-  "questionCount": 2,
+  "totalMarks": 128,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -273,7 +273,7 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "Find the matrix that represents the transformation in part (a)(ii).\n\nf p",
+          "text": "Find the matrix that represents the transformation in part (a)(ii).\nf p",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
@@ -316,18 +316,31 @@
             {
               "id": "2diii",
               "label": "(iii)",
-              "text": "Find the matrix Q such that GQ(P) = P.\n\nf p\n4 The diagram shows the graph of y = f( )x for -2 5. G x G 2.\n–2 –1 1 2\n–1\n–2\n–3\n–4\n–5\n–6\n–7\n–8\n–9\n–10",
+              "text": "Find the matrix Q such that GQ(P) = P.\nf p",
               "marks": 3,
               "type": "other",
               "answerType": "short_answer",
-              "hasDiagramRef": true,
+              "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 36,
+      "text": [
+        "The time taken for each of 90 cars to complete one lap of a race track is shown in the table.",
+        "Time (t seconds)",
+        "70 1 t G 71 71 1 t G 72 72 1 t G 73 73 1 t G 74 74 1 t G 75",
+        "Frequency 17 24 21 18 10"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
-          "id": "2a",
+          "id": "4a",
           "label": "(a)",
           "text": "Find f(1).",
           "marks": 1,
@@ -338,7 +351,7 @@
           "parts": []
         },
         {
-          "id": "2b",
+          "id": "4b",
           "label": "(b)",
           "text": "Solve f( )x = 3.\nx = ______",
           "marks": 1,
@@ -349,7 +362,7 @@
           "parts": []
         },
         {
-          "id": "2c",
+          "id": "4c",
           "label": "(c)",
           "text": "The equation f( )x = k has only one solution for -2 5. G x G 2.\nWrite down the range of values of k for which this is possible.",
           "marks": 2,
@@ -360,7 +373,7 @@
           "parts": []
         },
         {
-          "id": "2d",
+          "id": "4d",
           "label": "(d)",
           "text": "By drawing a suitable straight line, solve the equation f(x) = x – 5.\nx = ______ or x = ______ or x = ______",
           "marks": 3,
@@ -371,17 +384,49 @@
           "parts": []
         },
         {
-          "id": "2e",
+          "id": "4e",
           "label": "(e)",
-          "text": "Draw a tangent to the graph of y = f( )x at the point where x = 1.\nUse your tangent to estimate the gradient of y = f( )x when x = 1.\n\n5 (a) The diagram shows a cylindrical container used to serve coffee in a hotel.\nNOT TO\n18cm\nSCALE\n50cm\nThe container has a height of 50 cm and a radius of 18 cm.",
+          "text": "Draw a tangent to the graph of y = f( )x at the point where x = 1.\nUse your tangent to estimate the gradient of y = f( )x when x = 1.",
           "marks": 3,
           "type": "draw",
           "answerType": "diagram_only",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": true,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The diagram shows the graph of y = f( )x for -2 5. G x G 2.",
+        "–2 –1 1 2",
+        "–1",
+        "–2",
+        "–3",
+        "–4",
+        "–5",
+        "–6",
+        "–7",
+        "–8",
+        "–9",
+        "–10"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The diagram shows a cylindrical container used to serve coffee in a hotel.\n18cm\n50cm\nThe container has a height of 50 cm and a radius of 18 cm.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
           "parts": [
             {
-              "id": "2ei",
+              "id": "5ai",
               "label": "(i)",
               "text": "Calculate the volume of the cylinder and show that it rounds to 50 900 cm , correct to 3 significant\nfigures.",
               "marks": 2,
@@ -392,9 +437,9 @@
               "parts": []
             },
             {
-              "id": "2eii",
+              "id": "5aii",
               "label": "(ii)",
-              "text": "30 litres of coffee are poured into the container.\nWork out the height, h, of the empty space in the container.\nNOT TO\nSCALE\nh = ______ cm",
+              "text": "30 litres of coffee are poured into the container.\nWork out the height, h, of the empty space in the container.\nh = ______ cm",
               "marks": 3,
               "type": "complete",
               "answerType": "fill_blank",
@@ -403,9 +448,9 @@
               "parts": []
             },
             {
-              "id": "2eiii",
+              "id": "5aiii",
               "label": "(iii)",
-              "text": "Cups in the shape of a hemisphere are filled with coffee from the container.\nThe radius of a cup is 3.5 cm.\nNOT TO\nSCALE\n3.5cm\nWork out the maximum number of these cups that can be completely filled from the 30 litres of\ncoffee in the container.\n[The volume, V, of a sphere with radius r is V = rr .]",
+              "text": "Cups in the shape of a hemisphere are filled with coffee from the container.\nThe radius of a cup is 3.5 cm.\n3.5cm\nWork out the maximum number of these cups that can be completely filled from the 30 litres of\ncoffee in the container.\n[The volume, V, of a sphere with radius r is V = π .]",
               "marks": 4,
               "type": "other",
               "answerType": "short_answer",
@@ -416,9 +461,9 @@
           ]
         },
         {
-          "id": "2b",
+          "id": "5b",
           "label": "(b)",
-          "text": "The hotel also uses glasses in the shape of a cone.\nNOT TO\nSCALE\n8.4cm\nThe capacity of each glass is 95 cm .",
+          "text": "The hotel also uses glasses in the shape of a cone.\n8.4cm\nThe capacity of each glass is 95 cm .",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
@@ -426,9 +471,9 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2bi",
+              "id": "5bi",
               "label": "(i)",
-              "text": "Calculate the radius, r, and show that it rounds to 3.3 cm, correct to 1 decimal place.\n1 2\n[The volume, V, of a cone with radius r and height h is V = rr h.]",
+              "text": "Calculate the radius, r, and show that it rounds to 3.3 cm, correct to 1 decimal place.\n1 2\n[The volume, V, of a cone with radius r and height h is V = π h.]",
               "marks": 3,
               "type": "calculate",
               "answerType": "calculate",
@@ -437,18 +482,38 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "5bii",
               "label": "(ii)",
-              "text": "Calculate the curved surface area of the cone.\n[The curved surface area, A, of a cone with radius r and slant height l is A = rrl.]\n______ cm \n6 (a) Expand the brackets and simplify.",
+              "text": "Calculate the curved surface area of the cone.\n[The curved surface area, A, of a cone with radius r and slant height l is A = rrl.]\n______ cm",
               "marks": 4,
               "type": "calculate",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
-            },
+            }
+          ]
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Expand the brackets and simplify.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
             {
-              "id": "2bi",
+              "id": "6ai",
               "label": "(i)",
               "text": "4 2( x+5) -5 3( x-7)",
               "marks": 2,
@@ -459,7 +524,7 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "6aii",
               "label": "(ii)",
               "text": "(x - 7)",
               "marks": 2,
@@ -472,7 +537,7 @@
           ]
         },
         {
-          "id": "2b",
+          "id": "6b",
           "label": "(b)",
           "text": "Solve.\n2x",
           "marks": null,
@@ -482,7 +547,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2bi",
+              "id": "6bi",
               "label": "(i)",
               "text": "+5 =-7\nx = ______",
               "marks": 3,
@@ -493,7 +558,7 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "6bii",
               "label": "(ii)",
               "text": "4x+9 = 3 2( x-7)\nx = ______",
               "marks": 3,
@@ -504,9 +569,9 @@
               "parts": []
             },
             {
-              "id": "2biii",
+              "id": "6biii",
               "label": "(iii)",
-              "text": "3x -1 = 74\nx = ______ or x = ______ \n7 A line joins the points A(-3 8, ) and B( ,2 -2).",
+              "text": "3x -1 = 74\nx = ______ or x = ______",
               "marks": 3,
               "type": "complete",
               "answerType": "fill_blank",
@@ -515,9 +580,17 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "2a",
+          "id": "7a",
           "label": "(a)",
           "text": "Find the co-ordinates of the midpoint of AB.\n(______ , ______)",
           "marks": 2,
@@ -528,7 +601,7 @@
           "parts": []
         },
         {
-          "id": "2b",
+          "id": "7b",
           "label": "(b)",
           "text": "Find the equation of the line through A and B.\nGive your answer in the form y = mx+c.\ny = ______",
           "marks": 3,
@@ -539,7 +612,7 @@
           "parts": []
         },
         {
-          "id": "2c",
+          "id": "7c",
           "label": "(c)",
           "text": "Another line is parallel to AB and passes through the point (0, 7).\nWrite down the equation of this line.",
           "marks": 2,
@@ -550,17 +623,38 @@
           "parts": []
         },
         {
-          "id": "2d",
+          "id": "7d",
           "label": "(d)",
-          "text": "Find the equation of the line perpendicular to AB which passes through the point (1, 5).\nGive your answer in the form ax+by+c = 0 where a, b and c are integers.\n\n8 (a)\nNorth\n110°\nNOT TO\nNorth\n38km\n50km SCALE\n280°\nA, B and C are three towns.\nThe bearing of B from A is 110°.\nThe bearing of C from B is 280°.\nAC = 38km and AB = 50km.",
+          "text": "Find the equation of the line perpendicular to AB which passes through the point (1, 5).\nGive your answer in the form ax+by+c = 0 where a, b and c are integers.",
           "marks": 4,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "A line joins the points A(-3 8, ) and B( ,2 -2)."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "North\n110°\nNorth\n38km\n50km SCALE\n280°\nA, B and C are three towns.\nThe bearing of B from A is 110°.\nThe bearing of C from B is 280°.\nAC = 38km and AB = 50km.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": [
             {
-              "id": "2di",
+              "id": "8ai",
               "label": "(i)",
               "text": "Find the bearing of A from B.",
               "marks": 2,
@@ -571,7 +665,7 @@
               "parts": []
             },
             {
-              "id": "2dii",
+              "id": "8aii",
               "label": "(ii)",
               "text": "Calculate angle BAC.\nAngle BAC = ______",
               "marks": 5,
@@ -582,7 +676,7 @@
               "parts": []
             },
             {
-              "id": "2diii",
+              "id": "8aiii",
               "label": "(iii)",
               "text": "A road is built from A to join the straight road BC.\nCalculate the shortest possible length of this new road.\n______ km",
               "marks": 3,
@@ -595,7 +689,7 @@
           ]
         },
         {
-          "id": "2b",
+          "id": "8b",
           "label": "(b)",
           "text": "Town A has a rectangular park.\nThe length of the park is xm.\nThe width of the park is 25 m shorter than the length.\nThe area of the park is 2200 m .",
           "marks": null,
@@ -605,7 +699,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2bi",
+              "id": "8bi",
               "label": "(i)",
               "text": "Show that x -25x-2200 = 0.",
               "marks": 1,
@@ -616,18 +710,38 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "8bii",
               "label": "(ii)",
-              "text": "Solve x -25x-2200 = 0.\nShow all your working and give your answers correct to 2 decimal places.\nx = ______ or x = ______ \nQuestion 9 is printed on the next page.\n9 (a) The nth term of a sequence is 8n-3.",
+              "text": "Solve x -25x-2200 = 0.\nShow all your working and give your answers correct to 2 decimal places.\nx = ______ or x = ______ \nQuestion 9 is printed on the next page.",
               "marks": 4,
               "type": "give",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
-            },
+            }
+          ]
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "The nth term of a sequence is 8n-3.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
             {
-              "id": "2bi",
+              "id": "9ai",
               "label": "(i)",
               "text": "Write down the first two terms of this sequence.\n______ , ______",
               "marks": 1,
@@ -638,7 +752,7 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "9aii",
               "label": "(ii)",
               "text": "Show that the number 203 is not in this sequence.",
               "marks": 2,
@@ -651,7 +765,7 @@
           ]
         },
         {
-          "id": "2b",
+          "id": "9b",
           "label": "(b)",
           "text": "Find the nth term of these sequences.",
           "marks": null,
@@ -661,7 +775,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2bi",
+              "id": "9bi",
               "label": "(i)",
               "text": "13, 19, 25, 31, …",
               "marks": 2,
@@ -672,7 +786,7 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "9bii",
               "label": "(ii)",
               "text": "4, 8, 14, 22, …",
               "marks": 2,
@@ -685,7 +799,7 @@
           ]
         },
         {
-          "id": "2c",
+          "id": "9c",
           "label": "(c)",
           "text": "… , 20, 50, …\nThe second term of this sequence is 20 and the third term is 50.\nThe rule for finding the next term in this sequence is subtract y then multiply by 5.\nFind the value of y and work out the first term of this sequence.\ny = ______\nFirst term = ______ \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
@@ -696,13 +810,8 @@
           "parts": []
         }
       ],
-      "marks": 93,
-      "text": [
-        "The time taken for each of 90 cars to complete one lap of a race track is shown in the table.",
-        "Time (t seconds)",
-        "70 1 t G 71 71 1 t G 72 72 1 t G 73 73 1 t G 74 74 1 t G 75",
-        "Frequency 17 24 21 18 10"
-      ]
+      "marks": 11,
+      "text": []
     }
   ]
 }

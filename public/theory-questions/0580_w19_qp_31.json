@@ -3,7 +3,7 @@
   "subjectCode": "0580",
   "session": "w19",
   "component": "31",
-  "totalMarks": 96,
+  "totalMarks": 85,
   "questionCount": 9,
   "questions": [
     {
@@ -46,7 +46,7 @@
               "id": "1aiii",
               "label": "(iii)",
               "text": "Find the total number of goals scored.",
-              "marks": null,
+              "marks": 1,
               "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -134,7 +134,7 @@
           ]
         }
       ],
-      "marks": 10,
+      "marks": 11,
       "text": []
     },
     {
@@ -146,10 +146,10 @@
           "label": "(a)",
           "text": "In the diagram, A, B and C are points on the circle, centre O.",
           "marks": null,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": true,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": [
             {
               "id": "2ai",
@@ -265,7 +265,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "ABC is a straight line.\nNOT TO\nSCALE\n85°\n56°\ny°\nA B C\nFind the value of y.\ny = ______",
+          "text": "ABC is a straight line.\n85°\n56°\ny°\nA B C\nFind the value of y.\ny = ______",
           "marks": 1,
           "type": "complete",
           "answerType": "fill_blank",
@@ -276,7 +276,7 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "QRS is an isosceles triangle and PQR is a straight line.\n18°\nNOT TO\nSCALE\nz°\nP Q R\nFind the value of z.\nz = ______",
+          "text": "QRS is an isosceles triangle and PQR is a straight line.\n18°\nz°\nP Q R\nFind the value of z.\nz = ______",
           "marks": 2,
           "type": "complete",
           "answerType": "fill_blank",
@@ -425,29 +425,16 @@
         {
           "id": "5h",
           "label": "(h)",
-          "text": "Ella invests $4000 for 3 years at a rate of 1.2% per year compound interest.\nCalculate the value of her investment at the end of the 3 years.\n$______ \n5 Triangles A, B and C are shown on the grid.\n– – – – – –",
+          "text": "Ella invests $4000 for 3 years at a rate of 1.2% per year compound interest.\nCalculate the value of her investment at the end of the 3 years.\n$______ \n5 Triangles A, B and C are shown on the grid.\n– – – – – –\n6 5 4 3 2 1 1 2 3 4 5 6 7 8\n– 3\n– 6",
           "marks": 3,
           "type": "calculate",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 7,
-      "text": [
-        "3",
-        "What fraction of the $600 does she have left?",
-        "Give your answer in its simplest form.",
-        "[3]"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "6a",
+          "id": "5a",
           "label": "(a)",
           "text": "Describe fully the single transformation that maps",
           "marks": null,
@@ -457,7 +444,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "6ai",
+              "id": "5ai",
               "label": "(i)",
               "text": "triangle A onto triangle B,",
               "marks": 3,
@@ -468,7 +455,7 @@
               "parts": []
             },
             {
-              "id": "6aii",
+              "id": "5aii",
               "label": "(ii)",
               "text": "triangle A onto triangle C.",
               "marks": 3,
@@ -481,7 +468,7 @@
           ]
         },
         {
-          "id": "6b",
+          "id": "5b",
           "label": "(b)",
           "text": "On the grid,\ne o",
           "marks": null,
@@ -491,7 +478,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "6bi",
+              "id": "5bi",
               "label": "(i)",
               "text": "translate triangle A by the vector , \n-2",
               "marks": 2,
@@ -502,9 +489,9 @@
               "parts": []
             },
             {
-              "id": "6bii",
+              "id": "5bii",
               "label": "(ii)",
-              "text": "reflect triangle A in the line y = 1. \n6 The line L is shown on the grid.\n– – – –\n4 3 2 1 1 2 3 4 5",
+              "text": "reflect triangle A in the line y = 1.",
               "marks": 2,
               "type": "other",
               "answerType": "short_answer",
@@ -513,7 +500,19 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 3,
+      "text": [
+        "3",
+        "What fraction of the $600 does she have left?",
+        "Give your answer in its simplest form."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
           "id": "6a",
           "label": "(a)",
@@ -571,11 +570,11 @@
           "parts": []
         }
       ],
-      "marks": 18,
+      "marks": 8,
       "text": [
-        "5 4 3 2 1 1 2 3 4 5 6 7 8",
-        "– 3",
-        "– 6"
+        "The line L is shown on the grid.",
+        "– – – –",
+        "4 3 2 1 1 2 3 4 5"
       ]
     },
     {
@@ -675,7 +674,7 @@
         {
           "id": "7d",
           "label": "(d)",
-          "text": "Soraya decides to make a mathematically similar flag.\n1.8m 2.4m\n1.2m\nNOT TO\nSCALE\nCalculate the height, h, of the new flag.\nh = ______ m",
+          "text": "Soraya decides to make a mathematically similar flag.\n1.8m 2.4m\n1.2m\nCalculate the height, h, of the new flag.\nh = ______ m",
           "marks": 2,
           "type": "calculate",
           "answerType": "fill_blank",
@@ -686,7 +685,7 @@
         {
           "id": "7e",
           "label": "(e)",
-          "text": "NOT TO\n25m SCALE\n8m\nThe diagram shows a flagpole in Soraya’s garden.\nThe flagpole has height 25 m.\nA rope from the top of the flagpole is tied to the ground 8 m from its base.\nCalculate the length of this rope.\n______ m",
+          "text": "25m SCALE\n8m\nThe diagram shows a flagpole in Soraya’s garden.\nThe flagpole has height 25 m.\nA rope from the top of the flagpole is tied to the ground 8 m from its base.\nCalculate the length of this rope.\n______ m",
           "marks": 2,
           "type": "calculate",
           "answerType": "fill_blank",
@@ -805,8 +804,8 @@
         {
           "id": "8f",
           "label": "(f)",
-          "text": "Marco watched 25 boats enter the port, of which 9 had a mast.\nThere are a total of 200 boats in the port.\nCalculate an estimate of the number of boats in the port that have a mast.\n\nQuestion 9 is printed on the next page.",
-          "marks": null,
+          "text": "Marco watched 25 boats enter the port, of which 9 had a mast.\nThere are a total of 200 boats in the port.\nCalculate an estimate of the number of boats in the port that have a mast.\nQuestion 9 is printed on the next page.",
+          "marks": 2,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
@@ -814,7 +813,7 @@
           "parts": []
         }
       ],
-      "marks": 14,
+      "marks": 16,
       "text": []
     },
     {
@@ -892,7 +891,7 @@
         {
           "id": "9c",
           "label": "(c)",
-          "text": "These are the first four terms of a different sequence.\n27 33 39 45\nFind the nth term of this sequence.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "These are the first four terms of a different sequence.\n27 33 39 45\nFind the nth term of this sequence.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",

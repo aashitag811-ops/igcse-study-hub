@@ -156,6 +156,17 @@ const NOISE_RE = [
   /^First name|^Last name|^Signature/i,
   // "DC (WW/SG) 341318/4" print code
   /^DC\s*\(\s*[A-Z]+/,
+  // Maths paper: "Answer(a)" / "Answer(b)(i)" box labels
+  /^Answer\s*\([a-z]\)/i,
+  /^Answer\s*\([a-z]\)\s*\([ivx]+\)/i,
+  // "[Total: 10]" standalone lines — these are stripped (marks already captured per-part)
+  /^\[Total:\s*\d+\]\s*$/i,
+  // Maths diagram annotations: "NOT TO", "SCALE", "NOT TO SCALE"
+  /^NOT TO$/i,
+  /^SCALE$/i,
+  /^NOT TO SCALE$/i,
+  // "© U C LES 2022 0580/42/M/J/22" spaced copyright
+  /^©\s*U\s*C\s*L\s*E\s*S/i,
 ];
 
 function isNoise(line) {
@@ -169,6 +180,27 @@ function isNoise(line) {
   return NOISE_RE.some(r => r.test(t));
 }
 
+// ── Symbol normalisation (maths PDFs) ───────────────────────────────────────
+
+// Cambridge maths PDFs encode special chars as "A°" (degree), "≤?≤" (inequality),
+// "−" (minus), "π" (pi) etc. Normalise to clean Unicode.
+function normaliseSymbols(line) {
+  let t = line;
+  // Degree: "A°" or "Aº" → "°"
+  t = t.replace(/A[°º]/g, '°');
+  // Inequality encoding artefacts: "≤?≤" "≥?≥" → "≤" "≥"
+  t = t.replace(/[≤<]\s*\?[\s≤<]*/g, ' ≤ ').replace(/[≥>]\s*\?[\s≥>]*/g, ' ≥ ');
+  // "–" / em-dash used as minus: keep as-is (valid Unicode)
+  // Garbled pi: "π" or "π" → "π" (already correct in utf-8, but strip "r" prefix artefact "rr" → "π")
+  t = t.replace(/\brr\b/g, 'π');
+  // Superscript digits rendered as plain: "cm " + isolated digit → "cm²" etc. (best-effort)
+  t = t.replace(/\bcm\s+2\b/g, 'cm²').replace(/\bcm\s+3\b/g, 'cm³');
+  t = t.replace(/\bm\s+2\b/g, 'm²').replace(/\bm\s+3\b/g, 'm³');
+  // Remove residual control characters
+  t = t.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F]/g, '');
+  return t;
+}
+
 // Normalise an answer line: strip dots/dashes but preserve any trailing [N] mark bracket.
 // Returns null if the line should be dropped entirely, or a replacement string.
 function normaliseAnswerLine(line) {
@@ -177,6 +209,11 @@ function normaliseAnswerLine(line) {
   if (/^[.\-_\s]+$/.test(t)) return null;
   // Dots/dashes followed by [N] mark bracket — preserve only the bracket
   if (/^[.\-_\s]+\[(\d+)\]\s*$/.test(t)) {
+    const m = /\[(\d+)\]/.exec(t);
+    return m ? `[${m[1]}]` : null;
+  }
+  // Maths answer line: ".................. [2]" — extract only the mark
+  if (/^[.\-_\s]+\[\d+\]\s*$/.test(t)) {
     const m = /\[(\d+)\]/.exec(t);
     return m ? `[${m[1]}]` : null;
   }
@@ -219,7 +256,9 @@ const COMMAND_WORD_MAP = [
   [/\bdraw\b/i,             'draw'],
   [/\bsketch\b/i,           'draw'],
   [/\blabel\b/i,            'label'],
-  [/\bcircle\b/i,           'circle'],
+  // "circle" only counts as draw command if it's the imperative ("Circle the answer")
+  // NOT when "circle" appears as a noun in a sentence ("the circle has radius...")
+  [/^circle\b/i,            'circle'],
   [/\bplot\b/i,             'draw'],
   [/\bmark\b/i,             'draw'],
   [/\btick\b/i,             'tick'],
@@ -302,8 +341,16 @@ const ROMAN_PART_RE    = /^\s*\((i{1,3}|iv|vi{0,3}|ix|x)\)\s*(.*)/i;
 const LETTER_ROMAN_RE  = /^\s*\(([a-hj-np-uwz])\)\s*\((i{1,3}|iv|vi{0,3}|ix|x)\)\s*(.*)/i;
 
 // Top-level question: "1 " at start of line followed by question content OR sub-part
-// Must be a digit ≥ 1, not indented, followed by whitespace
+// Must be a digit ≥ 1, not indented, followed by whitespace.
+// The rest must NOT look like a run of single digits (axis labels: "6 5 4 3 2 1 ...").
 const TOP_LEVEL_Q_RE   = /^(\d+)\s{1,5}(.*)/;
+
+// Returns true if the "rest" of a candidate top-level Q line looks like an axis/grid label
+// run (e.g. "5 4 3 2 1 1 2 3") — these must NOT be treated as new questions.
+function isAxisLabelRest(rest) {
+  // A run of ≥3 space-separated single digits/minus signs — axis or grid label
+  return /^(-?\d\s+){2,}-?\d/.test(rest.trim());
+}
 
 // ── Core parser ──────────────────────────────────────────────────────────────
 
@@ -312,6 +359,7 @@ function parseQP(rawText) {
   const lines = rawText
     .split('\n')
     .map(l => l.trimEnd())
+    .map(l => normaliseSymbols(l))
     .filter(l => !isNoise(l))
     .map(l => normaliseAnswerLine(l))
     .filter(l => l !== null);
@@ -390,12 +438,16 @@ function parseQP(rawText) {
       const nextExpected = questions.length + (currentQ ? 1 : 0) + 1;
       const parsedNum = parseInt(qNum, 10);
 
-      // Accept only when the number matches the expected next question number.
-      // This prevents numbered list items ("1  ......", "2  ......") inside a
-      // question from being mis-identified as a new question.
-      const looksLikeQ = parsedNum === nextExpected;
+      // Primary: exact match with expected next question number.
+      // Secondary: accept a number AHEAD of expected (≤ expected+4) if the line is a
+      // clean question opener — i.e. starts with (a)/(b) or a capitalised word.
+      // This handles maths papers where some question numbers are in diagrams and
+      // therefore absent from the text layer (e.g. Q4 missing → Q5 detected as skip).
+      const isCleanOpener = /^\([a-z]\)/.test(rest.trim()) || /^[A-Z]/.test(rest.trim()) || rest.trim() === '';
+      const looksLikeQ = parsedNum === nextExpected ||
+        (parsedNum > nextExpected && parsedNum <= nextExpected + 4 && isCleanOpener);
 
-      if (looksLikeQ && parsedNum >= 1 && parsedNum <= 30) {
+      if (looksLikeQ && parsedNum >= 1 && parsedNum <= 30 && !isAxisLabelRest(rest)) {
         commitQ();
         currentQ = { id: qNum, context: [], parts: [], marks: null, text: [] };
 
@@ -452,6 +504,16 @@ function parseQP(rawText) {
       const rest  = rM[2];
       const parentId = currentPart ? currentPart.id : currentQ.id;
       currentSub = { id: `${parentId}${roman}`, label: `(${roman})`, text: rest ? [rest] : [], marks: null, parts: [] };
+      i++;
+      continue;
+    }
+
+    // ── Standalone mark bracket "[N]" — assign to current node ──────────────
+    const markOnlyM = /^\[(\d+)\]\s*$/.exec(line.trim());
+    if (markOnlyM) {
+      const m = parseInt(markOnlyM[1]);
+      const target = currentSub ?? currentPart ?? currentQ;
+      if (target && target.marks == null) target.marks = m;
       i++;
       continue;
     }

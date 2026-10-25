@@ -3,8 +3,8 @@
   "subjectCode": "0580",
   "session": "s24",
   "component": "41",
-  "totalMarks": 105,
-  "questionCount": 5,
+  "totalMarks": 95,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -227,28 +227,50 @@
         {
           "id": "4d",
           "label": "(d)",
-          "text": "Simplify.\nf p\n16x\n\n4 (a) Jianyu records the time, in seconds, that some cars take to travel 195 m.\nThe box and whisker plot shows this information.",
+          "text": "Simplify.\nf p\n16x\n4 (a) Jianyu records the time, in seconds, that some cars take to travel 195 m.\nThe box and whisker plot shows this information.\n5 6 7 8 9 10 11 12 13 14\nTime (s)",
           "marks": 3,
           "type": "draw",
           "answerType": "diagram_only",
           "hasDiagramRef": false,
           "diagramOnly": true,
-          "parts": []
-        }
-      ],
-      "marks": 6,
-      "text": [
-        "3",
-        "x - 1 2x + 5",
-        "[3]"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "Find the median time.\n______ s",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "Find the interquartile range.\n______ s",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4diii",
+              "label": "(iii)",
+              "text": "Find the difference between the average speed of the fastest car and the average speed of the\nslowest car.\nGive your answer in kilometres per hour.\n______ km/h",
+              "marks": 5,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "Matilda records the distances that 80 different cars can travel with a full tank of fuel.\nThe table shows this information.\nDistance (d km) 250 1 d G 300 300 1 d G 400 400 1 d G 420 420 1 d G 450 450 1 d G 500\nFrequency 7 13 19 21 20",
           "marks": null,
@@ -258,7 +280,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "4bi",
               "label": "(i)",
               "text": "Write down the class interval that contains the median.\n______1 d G ______",
               "marks": 1,
@@ -269,7 +291,7 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "4bii",
               "label": "(ii)",
               "text": "Calculate an estimate of the mean.\n______ km",
               "marks": 4,
@@ -280,7 +302,7 @@
               "parts": []
             },
             {
-              "id": "5biii",
+              "id": "4biii",
               "label": "(iii)",
               "text": "A histogram is drawn to show the information in the table.\nThe height of the bar for the interval 250 1 d G 300 is 2.8 cm.\nCalculate the height of the bar for each of the following intervals.\n300 1 d G 400 ______ cm\n400 1 d G 420 ______ cm\n420 1 d G 450 ______ cm",
               "marks": 3,
@@ -291,18 +313,41 @@
               "parts": []
             },
             {
-              "id": "5biv",
+              "id": "4biv",
               "label": "(iv)",
-              "text": "Two of the 80 cars are chosen at random.\nFind the probability that, with a full tank of fuel, one of the cars can travel more than 450 km\nand the other car can travel not more than 300 km.\n\n5 (a) P is the point (1, 7).\nQ is the point (5, –5).\nNOT TO\nSCALE",
+              "text": "Two of the 80 cars are chosen at random.\nFind the probability that, with a full tank of fuel, one of the cars can travel more than 450 km\nand the other car can travel not more than 300 km.",
               "marks": 3,
               "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
-            },
+            }
+          ]
+        }
+      ],
+      "marks": 3,
+      "text": [
+        "3",
+        "x - 1 2x + 5"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "P is the point (1, 7).\nQ is the point (5, –5).",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
             {
-              "id": "5bi",
+              "id": "5ai",
               "label": "(i)",
               "text": "Find PQ .\nPQ = f p",
               "marks": 2,
@@ -313,7 +358,7 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "5aii",
               "label": "(ii)",
               "text": "Show that OP = OQ .",
               "marks": 3,
@@ -324,7 +369,7 @@
               "parts": []
             },
             {
-              "id": "5biii",
+              "id": "5aiii",
               "label": "(iii)",
               "text": "PQ is a chord of a circle with centre O.\nCalculate the circumference of this circle.",
               "marks": 2,
@@ -335,18 +380,18 @@
               "parts": []
             },
             {
-              "id": "5biv",
+              "id": "5aiv",
               "label": "(iv)",
               "text": "PQ is the diameter of a different circle with centre R.\nFind the coordinates of R.\n( ______ , ______ )",
               "marks": 2,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "complete",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             },
             {
-              "id": "5bv",
+              "id": "5av",
               "label": "(v)",
               "text": "Find the equation of the perpendicular bisector of PQ.\nGive your answer in the form y = mx + c.\ny = ______",
               "marks": 4,
@@ -361,7 +406,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "The position vector of A is a.\nThe position vector of B is b.\nM is a point on AB such that AM : MB = 2 : 3.\nFind, in terms of a and b, the position vector of M.\nGive your answer in its simplest form.\n\nNorth\nB C\n11km\n25°\nNOT TO\nSCALE\n32km\n14km\n55°\nThe diagram shows the positions of two lighthouses A and B, a boat C and a harbour H .\nC is due east of B.",
+          "text": "The position vector of A is a.\nThe position vector of B is b.\nM is a point on AB such that AM : MB = 2 : 3.\nFind, in terms of a and b, the position vector of M.\nGive your answer in its simplest form.\nNorth\nB C\n11km\n25°\n32km\n14km\n55°\nThe diagram shows the positions of two lighthouses A and B, a boat C and a harbour H .\nC is due east of B.",
           "marks": 4,
           "type": "give",
           "answerType": "short_answer",
@@ -449,16 +494,36 @@
             {
               "id": "5dii",
               "label": "(ii)",
-              "text": "Calculate the distance of boat C to the harbour when boat C is at the shortest distance from\nlighthouse B.\n______ km \n7 (a)\nNOT TO\nSCALE\n40cm\n30cm\n70cm\nThe diagram shows a box in the shape of a cuboid.\nThe box is open at the top.",
+              "text": "Calculate the distance of boat C to the harbour when boat C is at the shortest distance from\nlighthouse B.\n______ km",
               "marks": 3,
               "type": "calculate",
               "answerType": "fill_blank",
-              "hasDiagramRef": true,
+              "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
-            },
+            }
+          ]
+        }
+      ],
+      "marks": 34,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "40cm\n30cm\n70cm\nThe diagram shows a box in the shape of a cuboid.\nThe box is open at the top.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
             {
-              "id": "5di",
+              "id": "7ai",
               "label": "(i)",
               "text": "Work out the surface area of the inside of the open box.\n______ cm",
               "marks": 3,
@@ -469,7 +534,7 @@
               "parts": []
             },
             {
-              "id": "5dii",
+              "id": "7aii",
               "label": "(ii)",
               "text": "Cylinders with height 20 cm and diameter 15 cm are placed in the box.\nWork out the maximum number of these cylinders that can completely fit inside the box.",
               "marks": 3,
@@ -482,7 +547,7 @@
           ]
         },
         {
-          "id": "5b",
+          "id": "7b",
           "label": "(b)",
           "text": "A solid bronze cone has a mass 750 g.\nThe density of the bronze is 8.9 g/cm .\nThe ratio radius of cone : height of cone = 1 : 3.",
           "marks": null,
@@ -492,9 +557,9 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "7bi",
               "label": "(i)",
-              "text": "Show that the radius of the cone is 2.99 cm, correct to 3 significant figures.\n[Density = mass ÷ volume]\n[The volume, V , of a cone with radius r and height h is V = rr h.]",
+              "text": "Show that the radius of the cone is 2.99 cm, correct to 3 significant figures.\n[Density = mass ÷ volume]\n[The volume, V , of a cone with radius r and height h is V = π h.]",
               "marks": 4,
               "type": "calculate",
               "answerType": "calculate",
@@ -503,9 +568,9 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "7bii",
               "label": "(ii)",
-              "text": "Calculate the total surface area of the cone.\n[The curved surface area, A, of a cone with radius r and slant height l is A = rrl.]\n______ cm \n8 (a) On the axes, sketch the graph of y = x + 7x - 18.\nOn your sketch, write the values where the graph meets the x-axis and the y-axis.",
+              "text": "Calculate the total surface area of the cone.\n[The curved surface area, A, of a cone with radius r and slant height l is A = rrl.]\n______ cm",
               "marks": null,
               "type": "calculate",
               "answerType": "fill_blank",
@@ -514,9 +579,28 @@
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "On the axes, sketch the graph of y = x + 7x - 18.\nOn your sketch, write the values where the graph meets the x-axis and the y-axis.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
         },
         {
-          "id": "5b",
+          "id": "8b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -526,7 +610,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "8bi",
               "label": "(i)",
               "text": "Find the derivative of y = x - 3x - 28.",
               "marks": 2,
@@ -537,7 +621,7 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "8bii",
               "label": "(ii)",
               "text": "Find the coordinates of the turning point of y = x - 3x - 28.\n( ______ , ______ )",
               "marks": 3,
@@ -550,7 +634,7 @@
           ]
         },
         {
-          "id": "5c",
+          "id": "8c",
           "label": "(c)",
           "text": "The line y = 5 - 2x intersects the graph of y = x - 3x - 28 at point P and point Q.\nFind the coordinates of P and Q.\nYou must show all your working and give your answers correct to 2 decimal places.\n( ______ , ______ )\n( ______ , ______ ) \nx-2\n9 f( )x = 4x + 1 g( )x = 6 - 2x h( )x = 3",
           "marks": 6,
@@ -561,7 +645,7 @@
           "parts": []
         },
         {
-          "id": "5a",
+          "id": "8a",
           "label": "(a)",
           "text": "Find",
           "marks": null,
@@ -571,7 +655,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5ai",
+              "id": "8ai",
               "label": "(i)",
               "text": "f( )3",
               "marks": 1,
@@ -582,9 +666,9 @@
               "parts": []
             },
             {
-              "id": "5aii",
+              "id": "8aii",
               "label": "(ii)",
-              "text": "gf( )3 .\n\n-1",
+              "text": "gf( )3 .\n-1",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -595,7 +679,7 @@
           ]
         },
         {
-          "id": "5b",
+          "id": "8b",
           "label": "(b)",
           "text": "Find g ( )x .\n-1\ng ( )x = ______",
           "marks": 2,
@@ -606,7 +690,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "8c",
           "label": "(c)",
           "text": "Find x when f( )x = g(2x - 7).\nx = ______",
           "marks": 4,
@@ -617,9 +701,9 @@
           "parts": []
         },
         {
-          "id": "5d",
+          "id": "8d",
           "label": "(d)",
-          "text": "Find the value of hh(2).\n\n-1",
+          "text": "Find the value of hh(2).\n-1",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
@@ -628,7 +712,7 @@
           "parts": []
         },
         {
-          "id": "5e",
+          "id": "8e",
           "label": "(e)",
           "text": "Find x when h ( )x = 10.\nx = ______ \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
@@ -639,11 +723,8 @@
           "parts": []
         }
       ],
-      "marks": 78,
-      "text": [
-        "6 7 8 9 10 11 12 13 14",
-        "Time (s)"
-      ]
+      "marks": 27,
+      "text": []
     }
   ]
 }
