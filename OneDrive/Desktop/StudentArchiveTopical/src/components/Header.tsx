@@ -8,6 +8,7 @@ import { createClient } from '@/lib/supabase/client';
 const NAV_ITEMS = [
   { label: 'Dashboard', href: '/' },
   { label: 'Start Practising', href: '/igcse/practice' },
+  { label: 'Topical MCQ', href: '/igcse/topical' },
   { label: 'Browse Resources', href: '/igcse/browse' },
   { label: 'Profile', href: '/igcse/profile' },
 ];
@@ -150,7 +151,7 @@ export default function Header() {
         transition: 'background 0.5s ease, border-color 0.5s ease, backdrop-filter 0.5s ease',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-3 grid items-center" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
@@ -175,9 +176,9 @@ export default function Header() {
 
         {/* Centre pill — always visible nav */}
         <nav
-          className="absolute left-1/2"
+          className="flex justify-center"
           style={{
-            transform: 'translateX(-50%)',
+
             display: 'flex',
             alignItems: 'center',
             gap: '2px',
@@ -197,7 +198,7 @@ export default function Header() {
         </nav>
 
         {/* Sign in / Sign out — far right */}
-        <div className="flex-shrink-0">
+        <div className="flex justify-end">
           <AuthLink isSignedIn={isSignedIn} />
         </div>
 

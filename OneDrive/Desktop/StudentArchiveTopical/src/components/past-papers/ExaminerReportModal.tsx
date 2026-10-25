@@ -77,7 +77,7 @@ export function ExaminerReportModal({
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/50 z-50 backdrop-blur-sm"
+        className="fixed inset-0 bg-black/75 z-50 backdrop-blur-md"
         onClick={onClose}
       />
 

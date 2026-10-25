@@ -228,7 +228,7 @@ function BrowsePageInner() {
       <div style={{ display: 'flex', paddingTop: '72px', position: 'relative', zIndex: 2 }}>
 
         {/* ── Sidebar ── */}
-        <aside style={{
+        <aside className="no-scrollbar" style={{
           width: '210px',
           flexShrink: 0,
           borderRight: '1px solid rgba(200,168,76,0.08)',

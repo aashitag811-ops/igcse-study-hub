@@ -654,6 +654,8 @@ export default function MCQExamPage() {
                     Retry
                   </button>
                 )}
+                {/* Divider between secondary and primary controls */}
+                <div style={{ width: '1px', height: '24px', background: 'rgba(255,255,255,0.1)', margin: '0 4px', flexShrink: 0 }} />
                 <a
                   href={pdfUrl(paperId)}
                   target="_blank"

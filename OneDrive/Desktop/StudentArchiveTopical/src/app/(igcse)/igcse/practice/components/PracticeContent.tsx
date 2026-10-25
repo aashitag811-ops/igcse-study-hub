@@ -6,7 +6,7 @@ import { getPaperDescription, getSubjectName } from '@/lib/constants/subjectPape
 import { getComponentLabel, isComponentDisabled } from '@/lib/constants/syllabusChanges';
 import { getTestModeUnavailableMessage } from '@/lib/constants/testModeSupport';
 import StudyModeSelector from './StudyModeSelector';
-import BackButton from '@/components/BackButton';
+import Header from '@/components/Header';
 
 interface PaperMetadata {
   id: string; subject: string; subjectCode: string; year: number;
@@ -144,11 +144,13 @@ export default function PracticeContent() {
   }
 
   return (
-    <div
-      ref={containerRef}
-      className="relative min-h-screen flex flex-col items-center py-16 px-4 overflow-hidden"
-      style={{ background: '#03060a' }}
-    >
+    <>
+      <Header />
+      <div
+        ref={containerRef}
+        className="relative min-h-screen flex flex-col items-center pt-32 pb-16 px-4 overflow-hidden"
+        style={{ background: '#03060a' }}
+      >
 
       {/* Gold vignette edges */}
       <div className="pointer-events-none absolute inset-0" style={{ background: 'radial-gradient(ellipse at 50% 50%, transparent 35%, rgba(160,120,20,0.10) 70%, rgba(140,100,10,0.22) 100%)', zIndex: 0 }} />
@@ -180,7 +182,7 @@ export default function PracticeContent() {
       </div>
 
       <div className="relative w-full max-w-2xl" style={{ zIndex: 3 }}>
-        <BackButton />
+
 
         {/* Heading */}
         <div className="text-center mt-6 mb-10">
@@ -295,6 +297,7 @@ export default function PracticeContent() {
         @keyframes dust2 { 0%{transform:translate(0,0);opacity:0} 20%{opacity:.75} 50%{transform:translate(10px,-64px);opacity:.95} 80%{opacity:.5} 100%{transform:translate(0,0);opacity:0} }
       `}</style>
     </div>
+    </>
   );
 }
 

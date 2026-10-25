@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { MCQQuestion as MCQQuestionType } from '@/lib/types/mcq.types';
@@ -14,6 +14,7 @@ interface MCQQuestionCardProps {
   zoomLevel?: number;
   isFlagged?: boolean;
   onToggleFlag?: () => void;
+  displayNumber?: number;
 }
 
 export function MCQQuestionCard({
@@ -25,12 +26,13 @@ export function MCQQuestionCard({
   zoomLevel = 100,
   isFlagged = false,
   onToggleFlag,
+  displayNumber,
 }: MCQQuestionCardProps) {
   const getCircleButtonClassName = (optionLetter: 'A' | 'B' | 'C' | 'D') => {
     const baseClasses = 'rounded-full flex items-center justify-center font-bold cursor-pointer transition-all duration-200';
     
     if (isSubmitted) {
-      // Discounted question — all answers neutral/green
+      // Discounted question â€” all answers neutral/green
       if (correctAnswer === 'DISCOUNTED') {
         return `${baseClasses} bg-gray-100 dark:bg-[#2A1F0E] border-2 border-gray-300 dark:border-[#C9A84C]/20 text-gray-400 dark:text-[#7A6A4A]`;
       }
@@ -75,34 +77,19 @@ export function MCQQuestionCard({
       }}
     >
       {/* Question Number Badge + Flag */}
-      <div className="flex items-center justify-center gap-3 mb-6">
+      <div className="flex items-center justify-center mb-6">
         <div
           className="px-6 py-2 rounded-full font-bold text-lg text-white"
           style={{ border: '2px solid transparent', background: cardBg }}
         >
-          Question {question.questionNumber}
+          Question {displayNumber ?? question.questionNumber}
         </div>
-        {!isSubmitted && onToggleFlag && (
-          <button
-            onClick={onToggleFlag}
-            title={isFlagged ? 'Remove flag' : 'Flag for review'}
-            className="transition-transform duration-150 hover:scale-110 active:scale-95 flex-shrink-0"
-            style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
-          >
-            <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* pole */}
-              <line x1="2" y1="2" x2="2" y2="21" stroke={isFlagged ? '#b91c1c' : '#475569'} strokeWidth="2" strokeLinecap="round"/>
-              {/* flag triangle */}
-              <path d="M2 2 L17 7 L2 14 Z" fill={isFlagged ? '#dc2626' : '#334155'} stroke={isFlagged ? '#b91c1c' : '#475569'} strokeWidth="1.2" strokeLinejoin="round"/>
-            </svg>
-          </button>
-        )}
       </div>
 
       {/* Full Question as Image - Width controlled by zoom, height follows naturally */}
       {question.imageUrl && (
         <div className="w-full h-auto flex items-center justify-center">
-          <div style={{ width: `${zoomLevel}%`, transition: 'width 0.2s ease' }}>
+          <div style={{ width: `${zoomLevel}%`, transition: 'width 0.2s ease', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 2px 16px rgba(0,0,0,0.18), 0 1px 4px rgba(0,0,0,0.10)' }}>
             <SmartMCQImage
               src={`${imageUrl(question.imageUrl!)}?v=25`}
               alt={`Question ${question.questionNumber}`}
@@ -112,7 +99,7 @@ export function MCQQuestionCard({
         </div>
       )}
 
-      {/* Text-based question (e.g. Accounting) — Cambridge printed layout */}
+      {/* Text-based question (e.g. Accounting) â€” Cambridge printed layout */}
       {!question.imageUrl && question.options && question.options.length > 0 && (
         <div className="w-full mb-2 px-2">
           {/* Question number + stem */}
@@ -124,7 +111,7 @@ export function MCQQuestionCard({
               {question.questionText}
             </p>
           </div>
-          {/* A B C D — Cambridge indented list */}
+          {/* A B C D â€” Cambridge indented list */}
           <div className="flex flex-col gap-3 pl-8">
             {question.options.map((opt) => {
               const isDiscounted = correctAnswer === 'DISCOUNTED';
@@ -148,8 +135,8 @@ export function MCQQuestionCard({
                                  'text-slate-700 dark:text-[#C9A84C]/80'
                   }`}>
                     {opt.text}
-                    {isCorrect && <span className="ml-2 text-green-500">✓</span>}
-                    {isWrong   && <span className="ml-2 text-red-500">✗</span>}
+                    {isCorrect && <span className="ml-2 text-green-500">âœ“</span>}
+                    {isWrong   && <span className="ml-2 text-red-500">âœ—</span>}
                   </span>
                 </div>
               );
@@ -158,7 +145,7 @@ export function MCQQuestionCard({
         </div>
       )}
 
-      {/* A B C D bubble dock — shown for ALL question types */}
+      {/* A B C D bubble dock â€” shown for ALL question types */}
       {(question.imageUrl || (question.options && question.options.length > 0)) && (
       <div
         className="mt-6 w-full max-w-sm flex flex-col items-center rounded-xl p-4"
@@ -182,12 +169,9 @@ export function MCQQuestionCard({
               btnClass += 'scale-110';
             } else if (isWrong) {
               btnStyle = { background: 'transparent', border: '2px solid #b91c1c', color: '#fca5a5', boxShadow: '0 0 8px rgba(239,68,68,0.2)' };
-            } else if (isSelected) {
-              btnStyle = { background: 'transparent', border: '2px solid transparent', backgroundClip: 'padding-box', outline: '2px solid #4a7aff', color: 'white', boxShadow: '0 0 8px rgba(74,122,255,0.3)' };
-              btnClass += 'scale-110';
             } else {
               btnStyle = { background: 'transparent', border: '2px solid transparent', backgroundImage: 'linear-gradient(#1A1510, #1A1510), linear-gradient(135deg, #1a3a6a, #4a2a7a)', backgroundOrigin: 'border-box', backgroundClip: 'padding-box, border-box', color: '#94a3b8' };
-              btnClass += 'hover:scale-105 cursor-pointer active:scale-95';
+              if (!isSubmitted) btnClass += 'hover:scale-105 cursor-pointer active:scale-95';
             }
 
             return (
@@ -207,7 +191,7 @@ export function MCQQuestionCard({
       </div>
       )}
 
-      {/* Status badge — top-right, shown after submission */}
+      {/* Status badge â€” top-right, shown after submission */}
       {isSubmitted && correctAnswer !== 'DISCOUNTED' && (
         <div
           className="absolute top-3 right-4 text-sm font-medium tracking-wide"
@@ -227,3 +211,4 @@ export function MCQQuestionCard({
 }
 
 // Made with Bob
+
