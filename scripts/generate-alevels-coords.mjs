@@ -143,41 +143,89 @@ async function buildCoords(pdfPath, erKeys) {
     return m ? parseInt(m[1]) : null;
   }).filter(Boolean))].sort((a, b) => a - b);
 
-  // Fix 1: collect ALL candidates per Q number, prefer "Question N" label over bare digit
-  const qCandidates = new Map(); // qNum → { label?, digit? }
+  // Collect ALL candidates per question number.
+  // Store ALL digit occurrences so we can pick the best non-cluster one later.
+  // type 'label' = "Question N" style (never an axis label)
+  // type 'digits' = all bare-digit occurrences ordered by appearance
+  const qCandidates = new Map(); // qNum → { label?, digits: [{qNum,page,topPx}] }
 
   for (let pi = 0; pi < pages.length; pi++) {
-    const { items, pageWidth } = pages[pi];
+    const { items, pageWidth, pageHeight } = pages[pi];
     const page = pi + 1;
+    const FOOTER_THRESHOLD = pageHeight - 80;
     for (const it of items) {
-      if (it.topPx < 60) continue;
-      // "Question N" label — no x constraint
+      if (it.topPx < 60 || it.topPx > FOOTER_THRESHOLD) continue;
+      // "Question N" label — no x constraint.
+      // Ignore if in bottom 20% of page (continuation marker footer).
       const qm = it.text.match(/^Question\s+(\d+)$/i);
       if (qm) {
         const n = parseInt(qm[1]);
-        if (qNums.includes(n)) {
-          const e = qCandidates.get(n) ?? {};
+        if (qNums.includes(n) && it.topPx < pageHeight * 0.80) {
+          const e = qCandidates.get(n) ?? { digits: [] };
           if (!e.label) e.label = { qNum: n, page, topPx: it.topPx };
           qCandidates.set(n, e);
         }
         continue;
       }
-      // Bare digit at left margin (10% threshold)
-      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.10) {
+      // Bare digit at left margin — collect ALL occurrences.
+      // 11% threshold: wide enough for Q numbers at x≈65 (10.9%) but excludes
+      // table row labels at x≈71 (11.9%) in Accounting/ledger papers.
+      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.11) {
         const n = parseInt(it.text);
         if (qNums.includes(n)) {
-          const e = qCandidates.get(n) ?? {};
-          if (!e.digit) e.digit = { qNum: n, page, topPx: it.topPx };
+          const e = qCandidates.get(n) ?? { digits: [] };
+          e.digits.push({ qNum: n, page, topPx: it.topPx });
           qCandidates.set(n, e);
         }
       }
     }
   }
 
-  const qList = [...qCandidates.values()]
-    .map(e => e.label ?? e.digit)
-    .filter(Boolean)
-    .sort((a, b) => a.page - b.page || a.topPx - b.topPx);
+  // Build axis-cluster set: dense runs of left-margin digits that contain a "0" value.
+  // Graph y-axes always include a zero mark; question numbering starts at 1 — never 0.
+  const allDigitItems = [];
+  for (let pi = 0; pi < pages.length; pi++) {
+    const { items, pageWidth, pageHeight } = pages[pi];
+    const page = pi + 1;
+    const FOOTER_THRESHOLD = pageHeight - 80;
+    for (const it of items) {
+      if (it.topPx < 60 || it.topPx > FOOTER_THRESHOLD) continue;
+      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.12) {
+        allDigitItems.push({ page, topPx: it.topPx, val: parseInt(it.text) });
+      }
+    }
+  }
+  const clusterY = new Set();
+  const byPage = new Map();
+  for (const it of allDigitItems) {
+    if (!byPage.has(it.page)) byPage.set(it.page, []);
+    byPage.get(it.page).push(it);
+  }
+  for (const [pg, ditems] of byPage) {
+    ditems.sort((a, b) => a.topPx - b.topPx);
+    let runStart = 0;
+    for (let i = 1; i <= ditems.length; i++) {
+      const gap = i < ditems.length ? ditems[i].topPx - ditems[i - 1].topPx : Infinity;
+      if (gap > 80) {
+        const run = ditems.slice(runStart, i);
+        const hasZero = run.some(it => it.val === 0);
+        if (run.length >= 4 && hasZero) run.forEach(it => clusterY.add(`${pg}:${it.topPx}`));
+        runStart = i;
+      }
+    }
+  }
+
+  // Resolve: label wins; else first non-cluster digit; else topmost as fallback.
+  const qList = [];
+  for (const [n, entry] of qCandidates) {
+    if (entry.label) { qList.push(entry.label); continue; }
+    const best = entry.digits.find(d => !clusterY.has(`${d.page}:${d.topPx}`));
+    if (best) { qList.push(best); continue; }
+    const topmost = entry.digits.reduce((a, b) =>
+      (a.page !== b.page ? (a.page < b.page ? a : b) : (a.topPx <= b.topPx ? a : b)));
+    if (topmost) qList.push(topmost);
+  }
+  qList.sort((a, b) => a.page - b.page || a.topPx - b.topPx);
 
   for (let qi = 0; qi < qList.length; qi++) {
     const q    = qList[qi];
@@ -188,6 +236,12 @@ async function buildCoords(pdfPath, erKeys) {
     // Prevents inline "(a)"/"(b)" in math text being mistaken for sub-parts.
     const hasErLetterKeys = erKeys.some(k => {
       const m = k.match(/^(\d+)([a-hj-np-uwz])/);
+      return m && parseInt(m[1]) === qn;
+    });
+
+    // Check whether ER also has roman keys directly at question level (e.g. '1i','2iii').
+    const hasErDirectRomanKeys = erKeys.some(k => {
+      const m = k.match(/^(\d+)(i{1,3}|iv|vi{0,3}|ix|x)$/);
       return m && parseInt(m[1]) === qn;
     });
     // Use 20% x threshold for letter sub-parts (≈119px on 595pt page).
@@ -205,13 +259,8 @@ async function buildCoords(pdfPath, erKeys) {
     }
 
     if (lList.length === 0) {
-      // ── Bug B: roman-direct structure — Q uses (i)(ii)(iii) with no (a)(b) ──
-      const directRomanKeys = erKeys.filter(k => {
-        const m = k.match(/^(\d+)(i{1,3}|iv|vi{0,3}|ix|x)$/);
-        return m && parseInt(m[1]) === qn;
-      });
-
-      if (directRomanKeys.length > 0) {
+      // ── Roman-direct structure — Q uses (i)(ii)(iii) with no (a)(b) ──
+      if (hasErDirectRomanKeys) {
         const qRomans = findInRange(pages, q.page, q.topPx, next.page, next.topPx, ROMAN_PAT, 0.35);
         const seenQR = new Set();
         for (const r of qRomans) {
@@ -243,6 +292,26 @@ async function buildCoords(pdfPath, erKeys) {
       coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
     }
 
+    // If ER also has direct roman keys for this Q (e.g. '1i' alongside '1b'), scan
+    // for them at the question level before processing letter sub-parts.
+    if (hasErDirectRomanKeys) {
+      const qRomans = findInRange(pages, q.page, q.topPx, next.page, next.topPx, ROMAN_PAT, 0.20);
+      const seenQR = new Set();
+      for (const r of qRomans) {
+        const rv = r.text.replace(/[()]/g, '').toLowerCase();
+        if (seenQR.has(rv)) continue;
+        seenQR.add(rv);
+        const key = `${qn}${rv}`;
+        if (erKeys.includes(key)) {
+          coords.push({ key, label: `Q ${qn}. (${rv})`, topPx: r.topPx, page: r.page });
+        }
+      }
+    }
+
+    // Track which shortKeys have already been emitted to avoid key collisions
+    // (e.g. '5i' emitted from 5c(i), 5d(i), 5e(i) all → first match wins).
+    const emittedShortKeys = new Set();
+
     for (let li = 0; li < lList.length; li++) {
       const lv   = lList[li];
       const lEnd = lList[li + 1] ?? next;
@@ -263,14 +332,15 @@ async function buildCoords(pdfPath, erKeys) {
       }
 
       for (const rv of rList) {
-        // Bug A fix: try '1aiii' first, then fall back to '1iii' (roman-only key)
+        // Try '1aiii' first, then fall back to '1iii' (roman-only key)
         const fullKey  = `${qn}${lv.letter}${rv.roman}`;
         const shortKey = `${qn}${rv.roman}`;
         const matchKey = erKeys.includes(fullKey) ? fullKey
-                       : erKeys.includes(shortKey) ? shortKey
+                       : (erKeys.includes(shortKey) && !emittedShortKeys.has(shortKey)) ? shortKey
                        : null;
         if (matchKey) {
           coords.push({ key: matchKey, label: `Q ${qn}. (${lv.letter}) (${rv.roman})`, topPx: rv.topPx, page: rv.page });
+          if (matchKey === shortKey) emittedShortKeys.add(shortKey);
         }
       }
     }
@@ -294,7 +364,17 @@ function getErKeysForPaper(paperId) {
   try {
     const raw  = JSON.parse(readFileSync(erFile, 'utf-8'));
     const data = raw.notes ?? raw;
-    return Object.keys(data).filter(k => k !== 'key_messages' && k !== 'general_comments');
+    const rawKeys = Object.keys(data).filter(k => k !== 'key_messages' && k !== 'general_comments');
+
+    // Normalise compound roman keys: e.g. "1vvi" (covers sub-parts (v)+(vi) together)
+    // → map to just the first roman part "1v" so the coord can be located in the PDF.
+    const ROMAN_NORM = /^(\d+(?:[a-hj-np-uwz])?)((i{1,3}|iv|vi{0,3}|ix|x)(i{1,3}|iv|vi{0,3}|ix|x)+)$/;
+    return rawKeys.map(k => {
+      const nm = k.match(ROMAN_NORM);
+      if (!nm) return k;
+      const firstRoman = nm[2].match(/^(i{1,3}|iv|vi{0,3}|ix|x)/i)?.[1] ?? nm[2];
+      return nm[1] + firstRoman;
+    });
   } catch {
     return [];
   }
@@ -304,8 +384,9 @@ function getErKeysForPaper(paperId) {
 
 const args       = process.argv.slice(2);
 const filterArg  = args.filter(a => !a.startsWith('--'))[0] ?? '';
-const forceRegen = args.includes('--force');     // re-generate synthetic coord files
-const fixZeros   = args.includes('--fix-zeros'); // re-generate any zero-coverage file
+const forceRegen = args.includes('--force');      // re-generate synthetic coord files
+const fixZeros   = args.includes('--fix-zeros');  // re-generate any zero-coverage file
+const regenAll   = args.includes('--regen-all');  // re-generate ALL coord files
 
 mkdirSync(COORDS_DIR, { recursive: true });
 mkdirSync(TEMP_DIR,   { recursive: true });
@@ -345,17 +426,15 @@ for (const paperId of [...paperIds].sort()) {
 
   const outPath = join(COORDS_DIR, `${paperId}_coords.json`);
 
-  // Skip if already done — unless --force, --fix-zeros, or it was synthetic (inaccurate)
-  if (existsSync(outPath)) {
+  // Skip if already done — unless --regen-all, --force, --fix-zeros, or synthetic
+  if (existsSync(outPath) && !regenAll) {
     if (!forceRegen && !fixZeros) { skipped++; continue; }
     try {
       const existing = JSON.parse(readFileSync(outPath, 'utf-8'));
       if (fixZeros) {
-        // Only regenerate files with zero coords that have real ER keys
         const hasCords = (existing.totalCoords ?? existing.coordinates?.length ?? 0) > 0;
         if (hasCords) { skipped++; continue; }
       } else {
-        // --force: only regenerate synthetic files
         if (!existing.synthetic) { skipped++; continue; }
       }
     } catch { /* regenerate on parse error */ }

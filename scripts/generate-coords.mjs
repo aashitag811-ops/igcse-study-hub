@@ -121,60 +121,109 @@ async function buildTheoryCoords(pdfPath, erKeys) {
     return m ? parseInt(m[1]) : null;
   }).filter(Boolean))].sort((a, b) => a - b);
 
-  // Collect ALL candidates per question number, labelled by type
-  // type 'label' = "Question N" style, type 'digit' = bare number
-  const qCandidates = new Map(); // qNum → { label: best, digit: best }
+  // Collect ALL candidates per question number, labelled by type.
+  // We store ALL occurrences of each digit so that if the first match is inside an axis
+  // cluster (e.g. "2" appearing as a graph y-axis label before the real Q2 digit), we can
+  // fall back to a later occurrence that is outside the cluster.
+  //
+  // type 'label' = "Question N" style (never an axis label)
+  // type 'digits' = all bare-digit occurrences ordered by page/topPx
+  const qCandidates = new Map(); // qNum → { label?, digits: [{qNum,page,topPx}] }
 
   for (let pi = 0; pi < pageItems.length; pi++) {
-    const { items, pageWidth } = pageItems[pi];
+    const { items, pageWidth, pageHeight } = pageItems[pi];
     const page = pi + 1;
+    // Items near the very bottom of a page (≤80px from bottom) are footers/continuation
+    // markers (e.g. "Question 2" printed at the foot of the previous page). Ignore them.
+    const FOOTER_THRESHOLD = pageHeight - 80;
 
     for (const it of items) {
-      // "Question N" style label — no x constraint
+      if (it.topPx > FOOTER_THRESHOLD) continue; // skip footer zone
+
+      // "Question N" style label — no x constraint.
+      // Ignore if it appears in the bottom 20% of the page: Cambridge papers sometimes
+      // print a "Question N" continuation marker at the foot of the preceding page.
       const qm = it.text.match(/^Question\s+(\d+)$/i);
       if (qm && it.topPx >= 60) {
         const n = parseInt(qm[1]);
-        if (qNums.includes(n)) {
-          const entry = qCandidates.get(n) ?? {};
+        if (qNums.includes(n) && it.topPx < pageHeight * 0.80) {
+          const entry = qCandidates.get(n) ?? { digits: [] };
           if (!entry.label) entry.label = { qNum: n, page, topPx: it.topPx };
           qCandidates.set(n, entry);
         }
         continue;
       }
 
-      // Bare digit at left margin
-      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.10 && it.topPx >= 60) {
+      // Bare digit at left margin — collect ALL occurrences.
+      // Use 11% threshold: catches Q numbers at x≈65 (10.9%, e.g. 9706 Q3) while
+      // excluding table row labels at x≈71 (11.9%) in Accounting papers.
+      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.11 && it.topPx >= 60) {
         const n = parseInt(it.text);
         if (qNums.includes(n)) {
-          const entry = qCandidates.get(n) ?? {};
-          if (!entry.digit) entry.digit = { qNum: n, page, topPx: it.topPx };
+          const entry = qCandidates.get(n) ?? { digits: [] };
+          entry.digits.push({ qNum: n, page, topPx: it.topPx });
           qCandidates.set(n, entry);
         }
       }
     }
   }
 
-  // Build qCoords: prefer "Question N" label over bare digit (Fix 1)
-  const qCoords = [];
-  for (const [n, entry] of qCandidates) {
-    qCoords.push(entry.label ?? entry.digit);
+  // ── Build axis-cluster set ──────────────────────────────────────────────────
+  // Detect graph y-axis label clusters: dense runs of left-margin digits where
+  // consecutive gaps are ≤80px AND the run contains the value "0".
+  //
+  // The "contains 0" guard is critical: graph axes always include a zero-point,
+  // while question numbering starts at 1.  This prevents dense-but-valid question
+  // sequences (e.g. Q1–Q7 on one page in 9609 Business) from being mis-clustered.
+  const allDigitItems = [];
+  for (let pi = 0; pi < pageItems.length; pi++) {
+    const { items, pageWidth, pageHeight } = pageItems[pi];
+    const page = pi + 1;
+    const FOOTER_THRESHOLD = pageHeight - 80;
+    for (const it of items) {
+      if (it.topPx < 60 || it.topPx > FOOTER_THRESHOLD) continue;
+      if (/^\d+$/.test(it.text) && it.x < pageWidth * 0.12) {
+        allDigitItems.push({ page, topPx: it.topPx, val: parseInt(it.text) });
+      }
+    }
   }
-
-  // Remove axis-label clusters: ≥8 digit candidates within 200px on the SAME page
-  // Only apply to digit-only detections (label-style are never axis labels)
-  const digitCandidates = [...qCandidates.values()]
-    .filter(e => !e.label && e.digit)
-    .map(e => e.digit);
   const clusterY = new Set();
-  const sorted   = [...digitCandidates].sort((a, b) => a.topPx - b.topPx);
-  for (const it of sorted) {
-    const nearby = sorted.filter(c => c.page === it.page && Math.abs(c.topPx - it.topPx) < 200);
-    if (nearby.length >= 8) nearby.forEach(c => clusterY.add(`${c.page}:${c.topPx}`));
+  const byPage = new Map();
+  for (const it of allDigitItems) {
+    if (!byPage.has(it.page)) byPage.set(it.page, []);
+    byPage.get(it.page).push(it);
+  }
+  for (const [pg, items] of byPage) {
+    items.sort((a, b) => a.topPx - b.topPx);
+    let runStart = 0;
+    for (let i = 1; i <= items.length; i++) {
+      const gap = i < items.length ? items[i].topPx - items[i - 1].topPx : Infinity;
+      if (gap > 80) {
+        const run = items.slice(runStart, i);
+        // Only treat as axis cluster if: ≥4 items AND contains a "0" value.
+        // Graph axes always have a zero mark; question numbering never starts at 0.
+        const hasZero = run.some(it => it.val === 0);
+        if (run.length >= 4 && hasZero) run.forEach(it => clusterY.add(`${pg}:${it.topPx}`));
+        runStart = i;
+      }
+    }
   }
 
-  const qList = qCoords
-    .filter(q => q && !clusterY.has(`${q.page}:${q.topPx}`))
-    .sort((a, b) => a.page - b.page || a.topPx - b.topPx);
+  // ── Resolve best candidate per question ────────────────────────────────────
+  // Prefer "Question N" label (never a false positive). Among digit occurrences:
+  //  1. First non-cluster occurrence (axis labels filtered out)
+  //  2. Topmost occurrence as last resort (all clustered)
+  const qList = [];
+  for (const [n, entry] of qCandidates) {
+    if (entry.label) { qList.push(entry.label); continue; }
+    const best = entry.digits.find(d => !clusterY.has(`${d.page}:${d.topPx}`));
+    if (best) { qList.push(best); continue; }
+    // All clustered — pick topmost as fallback
+    const topmost = entry.digits.reduce((a, b) =>
+      (a.page !== b.page ? (a.page < b.page ? a : b) : (a.topPx <= b.topPx ? a : b)));
+    if (topmost) qList.push(topmost);
+  }
+  qList.sort((a, b) => a.page - b.page || a.topPx - b.topPx);
 
   // ── Step 2: find sub-part coords ────────────────────────────────────────────
 
@@ -227,6 +276,15 @@ async function buildTheoryCoords(pdfPath, erKeys) {
       return m && parseInt(m[1]) === qn;
     });
 
+    // Check whether ER also has roman keys directly at question level (e.g. '1i','2iii').
+    // Some papers (0606, 0452) have questions whose first-level sub-parts include BOTH
+    // roman numerals (at x≈73) AND letters (at x≈95 inside a specific roman part).
+    // When this is the case, we must scan for direct romains in addition to letters.
+    const hasErDirectRomanKeys = [...erKeys].some(k => {
+      const m = k.match(/^(\d+)(i{1,3}|iv|vi{0,3}|ix|x)$/);
+      return m && parseInt(m[1]) === qn;
+    });
+
     const LETTER_PAT = /^\([a-hj-np-uwz]\)$/i;
     // Use 20% x threshold for letter sub-parts (≈119px on 595pt page).
     // Most real (a)/(b) labels sit at x≈50–95px (8–16%). Some subjects like
@@ -244,14 +302,8 @@ async function buildTheoryCoords(pdfPath, erKeys) {
     }
 
     if (lList.length === 0) {
-      // ── Bug B: roman-direct structure — Q uses (i)(ii)(iii) with no (a)(b) ──
-      // Check whether ER has roman keys directly for this question (e.g. '1i','1iii')
-      const directRomanKeys = [...erKeys].filter(k => {
-        const m = k.match(/^(\d+)(i{1,3}|iv|vi{0,3}|ix|x)$/);
-        return m && parseInt(m[1]) === qn;
-      });
-
-      if (directRomanKeys.length > 0) {
+      // ── Roman-direct structure — Q uses (i)(ii)(iii) with no (a)(b) ──
+      if (hasErDirectRomanKeys) {
         // Find roman sub-parts at question level
         const qRomans = findInRange(q.page, q.topPx, qEnd.page, qEnd.topPx, ROMAN_PAT, 0.35);
         const seenQR = new Set();
@@ -288,6 +340,27 @@ async function buildTheoryCoords(pdfPath, erKeys) {
       coords.push({ key: String(qn), label: `Q ${qn}`, topPx: q.topPx, page: q.page });
     }
 
+    // If ER also has direct roman keys for this Q (e.g. '1i' alongside '1b'), scan
+    // for them at the question level BEFORE processing letter sub-parts.
+    // These romains sit at a lower x-indent than letters (e.g. x≈73 vs x≈95 in 0606).
+    if (hasErDirectRomanKeys) {
+      const qRomans = findInRange(q.page, q.topPx, qEnd.page, qEnd.topPx, ROMAN_PAT, 0.20);
+      const seenQR = new Set();
+      for (const r of qRomans) {
+        const rv = r.text.replace(/[()]/g, '').toLowerCase();
+        if (seenQR.has(rv)) continue;
+        seenQR.add(rv);
+        const key = `${qn}${rv}`;
+        if (erKeys.has(key)) {
+          coords.push({ key, label: `Q ${qn}. (${rv})`, topPx: r.topPx, page: r.page });
+        }
+      }
+    }
+
+    // Track which shortKeys have already been emitted so we don't duplicate
+    // the same ER key from multiple letter sub-parts (e.g. '5i' from 5c, 5d, 5e all).
+    const emittedShortKeys = new Set();
+
     for (let li = 0; li < lList.length; li++) {
       const l     = lList[li];
       const lEnd  = nextItem(lList, li) ?? qEnd;
@@ -310,15 +383,16 @@ async function buildTheoryCoords(pdfPath, erKeys) {
 
       for (const r of rList) {
         const rv = r.roman;
-        // Bug A fix: try full key '1aiii' first, then roman-only key '1iii'
-        const fullKey   = `${qn}${l.letter}${rv}`;
-        const shortKey  = `${qn}${rv}`;
-        const matchKey  = erKeys.has(fullKey) ? fullKey
-                        : erKeys.has(shortKey) ? shortKey
-                        : null;
+        // Try full key '1aiii' first, then roman-only key '1iii'
+        const fullKey  = `${qn}${l.letter}${rv}`;
+        const shortKey = `${qn}${rv}`;
+        const matchKey = erKeys.has(fullKey) ? fullKey
+                       : (erKeys.has(shortKey) && !emittedShortKeys.has(shortKey)) ? shortKey
+                       : null;
         if (matchKey) {
           const label = `Q ${qn}. (${l.letter}) (${rv})`;
           coords.push({ key: matchKey, label, topPx: r.topPx, page: r.page });
+          if (matchKey === shortKey) emittedShortKeys.add(shortKey);
         }
       }
     }
@@ -423,7 +497,21 @@ async function processPaper(paperId) {
 
   // Filter out meta keys — only real Q keys are used for coord generation and reporting
   const META_KEYS = new Set(['key_messages', 'general_comments']);
-  const erKeys   = new Set(Object.keys(erNotes).filter(k => !META_KEYS.has(k)));
+  const rawErKeys = Object.keys(erNotes).filter(k => !META_KEYS.has(k));
+
+  // Normalise compound roman keys: "1vvi" means the ER note covers sub-parts (v) AND (vi)
+  // together. The PDF will have them as separate "(v)" and "(vi)" items; we map the compound
+  // key to just the first roman part so the coord can be found in the PDF text layer.
+  // Pattern: Nxy where both x and y are valid roman numerals → strip trailing roman suffix.
+  const ROMAN_NORM = /^(\d+(?:[a-hj-np-uwz])?)((i{1,3}|iv|vi{0,3}|ix|x)(i{1,3}|iv|vi{0,3}|ix|x)+)$/;
+  const erKeys = new Set(rawErKeys.map(k => {
+    const m = k.match(ROMAN_NORM);
+    if (!m) return k;
+    // Extract just the first roman numeral from the compound: e.g. "vvi" → "v", "iiiv" → "iii"
+    const compound = m[2];
+    const firstRoman = compound.match(/^(i{1,3}|iv|vi{0,3}|ix|x)/i)?.[1] ?? compound;
+    return m[1] + firstRoman;
+  }));
   // Use theory-style (sub-part) coord detection if:
   //  - component is 3x/4x/5x/6x (traditional theory papers), OR
   //  - ER keys contain sub-part letters like "1a", "2b" (BST, Add Maths short-answer components 1x/2x)
