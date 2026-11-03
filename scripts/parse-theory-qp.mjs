@@ -118,7 +118,7 @@ const NOISE_RE = [
   /^\d{4}\/\d{2}\/[A-Z]\/[A-Z]\/\d{2}\s*©.*$/i,
   // "DO NOT WRITE IN THIS MARGIN"
   /^DO NOT WRITE IN THIS MARGIN$/i,
-  // Standalone page numbers
+  // Standalone page numbers — BUT see isMathsNoise() below for maths-aware version
   /^\d{1,3}$/,
   // Turn over / Blank page
   /^\[?Turn over\]?$/i,
@@ -159,6 +159,9 @@ const NOISE_RE = [
   // Maths paper: "Answer(a)" / "Answer(b)(i)" box labels
   /^Answer\s*\([a-z]\)/i,
   /^Answer\s*\([a-z]\)\s*\([ivx]+\)/i,
+  // Old-format answer box lines: "Answer Day Time [2]", "Answer km [2]", "Answer p = [2]"
+  // These appear in pre-2017 papers as inline answer slots. Strip them.
+  /^Answer\s+\S/i,
   // "[Total: 10]" standalone lines — these are stripped (marks already captured per-part)
   /^\[Total:\s*\d+\]\s*$/i,
   // Maths diagram annotations: "NOT TO", "SCALE", "NOT TO SCALE"
@@ -167,9 +170,19 @@ const NOISE_RE = [
   /^NOT TO SCALE$/i,
   // "© U C LES 2022 0580/42/M/J/22" spaced copyright
   /^©\s*U\s*C\s*L\s*E\s*S/i,
+  // "For Examiner's Use" margin column — appears as three separate lines in old-format papers
+  /^For$/,
+  /^Examiner's$/i,
+  /^Use$/,
+  // "For Examiner's Use" as a combined line
+  /^For\s+Examiner'?s?\s+Use$/i,
 ];
 
-function isNoise(line) {
+// NOISE_RE_NO_DIGITS: same as NOISE_RE but without the standalone-digits rule.
+// Used for maths short-answer papers where Q7, Q9, Q10 etc. appear as bare numbers.
+const NOISE_RE_NO_DIGITS = NOISE_RE.filter(r => r.toString() !== '/^\\d{1,3}$/');
+
+function isNoise(line, keepBareQNumbers = false) {
   const t = line.trim();
   if (!t || t.length < 2) return true;
   // Strip any line containing only control characters (+ commas/spaces)
@@ -177,6 +190,8 @@ function isNoise(line) {
   // Strip lines that are primarily control chars mixed with printable chars (barcode artefacts)
   const controlCount = (t.match(/[\u0000-\u001F\u007F-\u009F]/g) ?? []).length;
   if (controlCount > 2) return true;
+  // For maths short-answer papers: keep bare numbers 1-30 (they are question numbers in diagrams)
+  if (keepBareQNumbers && /^\d{1,2}$/.test(t) && parseInt(t) >= 1 && parseInt(t) <= 30) return false;
   return NOISE_RE.some(r => r.test(t));
 }
 
@@ -352,15 +367,37 @@ function isAxisLabelRest(rest) {
   return /^(-?\d\s+){2,}-?\d/.test(rest.trim());
 }
 
+// Returns true if the rest of a candidate question line looks like a math expression
+// rather than a real question opener. These must NOT start a new question.
+function isMathExpressionRest(rest) {
+  const t = rest.trim();
+  if (!t) return false;
+  // Starts with an arithmetic operator or equals sign
+  if (/^[+\-*/=<>]/.test(t)) return true;
+  // Entirely composed of digits, spaces, operators, and common math symbols — no real words
+  // e.g. "1 + + =", "3 4 12", "x – 43 < 5x + 2"
+  // But NOT "A car company..." or "For this question..."
+  if (/^[\d\s+\-*/=<>().,:;x–]+$/.test(t)) return true;
+  // Line is ONLY numbers/spaces (lone fraction numerator like "1 1 1 p" or "3 4 12")
+  if (/^[\d\s/]+$/.test(t) && t.length < 12) return true;
+  // "For" alone (margin header) is not a question
+  if (/^For\s*$/.test(t)) return true;
+  return false;
+}
+
 // ── Core parser ──────────────────────────────────────────────────────────────
 
-function parseQP(rawText) {
+function parseQP(rawText, opts = {}) {
+  // isMathsShortAnswer: maths (0580/0606) component 1x/2x papers where question numbers
+  // frequently appear inside diagrams and are absent from the text layer. We allow a much
+  // larger skip gap so the sequential guard doesn't drop valid questions.
+  const maxSkip = opts.isMathsShortAnswer ? 20 : 4;
   // Split into clean lines; strip noise; normalise answer lines (strip dots, keep [N] bracket)
   const lines = rawText
     .split('\n')
     .map(l => l.trimEnd())
     .map(l => normaliseSymbols(l))
-    .filter(l => !isNoise(l))
+    .filter(l => !isNoise(l, opts.isMathsShortAnswer))
     .map(l => normaliseAnswerLine(l))
     .filter(l => l !== null);
 
@@ -439,28 +476,42 @@ function parseQP(rawText) {
       const parsedNum = parseInt(qNum, 10);
 
       // Primary: exact match with expected next question number.
-      // Secondary: accept a number AHEAD of expected (≤ expected+4) if the line is a
-      // clean question opener — i.e. starts with (a)/(b) or a capitalised word.
-      // This handles maths papers where some question numbers are in diagrams and
-      // therefore absent from the text layer (e.g. Q4 missing → Q5 detected as skip).
-      const isCleanOpener = /^\([a-z]\)/.test(rest.trim()) || /^[A-Z]/.test(rest.trim()) || rest.trim() === '';
+      // Secondary: accept a number AHEAD of expected if the line is a clean question opener.
+      // maxSkip is larger for maths short-answer papers where question numbers are often in
+      // diagrams and therefore absent from the text layer.
+      // For maths papers, question text often starts with lowercase letters (variables: "x is...",
+      // "n is an integer..."), so we accept any non-math-expression as a clean opener.
+      const isCleanOpener = opts.isMathsShortAnswer
+        ? (rest.trim() === '' || !isMathExpressionRest(rest))
+        : (/^\([a-z]\)/.test(rest.trim()) || /^[A-Z]/.test(rest.trim()) || rest.trim() === '');
       const looksLikeQ = parsedNum === nextExpected ||
-        (parsedNum > nextExpected && parsedNum <= nextExpected + 4 && isCleanOpener);
+        (parsedNum > nextExpected && parsedNum <= nextExpected + maxSkip && isCleanOpener);
 
-      if (looksLikeQ && parsedNum >= 1 && parsedNum <= 30 && !isAxisLabelRest(rest)) {
+      // For maths papers: even if rest is a math expression, accept exact-match question numbers.
+      // (The rest is equation content on the same line as the question number — still valid Q.)
+      const mathsExactMatch = opts.isMathsShortAnswer && parsedNum === nextExpected && !isAxisLabelRest(rest);
+      const isValidQ = looksLikeQ && parsedNum >= 1 && parsedNum <= 30 && !isAxisLabelRest(rest)
+        && (!isMathExpressionRest(rest) || mathsExactMatch);
+
+      if (isValidQ) {
         commitQ();
         currentQ = { id: qNum, context: [], parts: [], marks: null, text: [] };
 
-        // The rest of the line might be context, (a) opener, or numbered sub-part
+        // The rest of the line might be context, (a) opener, or numbered sub-part.
+        // For maths exact-match with math expression rest: skip the inline equation text
+        // (it will be re-encountered on subsequent lines as part of question content).
         if (rest.trim()) {
-          // Check if rest is itself a letter sub-part opener
-          const lm = LETTER_ROMAN_RE.exec(rest) || LETTER_PART_RE.exec(rest);
-          if (lm) {
-            // Push a pseudo-line to re-process as a sub-part
-            lines.splice(i + 1, 0, '  ' + rest.trim());
-          } else {
-            // Context / question stem on same line as number
+          if (isMathExpressionRest(rest)) {
+            // Inline math expression on same line as question number — include as content
             currentQ.text.push(rest.trim());
+          } else {
+            // Check if rest is itself a letter sub-part opener
+            const lm = LETTER_ROMAN_RE.exec(rest) || LETTER_PART_RE.exec(rest);
+            if (lm) {
+              lines.splice(i + 1, 0, '  ' + rest.trim());
+            } else {
+              currentQ.text.push(rest.trim());
+            }
           }
         }
         i++;
@@ -558,7 +609,12 @@ async function parsePaper(paperId) {
 
   console.log(`  Parsing ${paperId}...`);
   const raw = await extractText(pdfPath);
-  const questions = parseQP(raw);
+
+  // Maths short-answer papers (0580/0606 components 1x and 2x) have question numbers
+  // frequently embedded in diagrams (absent from PDF text layer), so allow large skip gaps.
+  const idM2 = paperId.match(/^(\d{4})_[msw]\d{2}_qp_(\d)\d$/);
+  const isMathsShortAnswer = idM2 && ['0580','0606'].includes(idM2[1]) && parseInt(idM2[2]) <= 2;
+  const questions = parseQP(raw, { isMathsShortAnswer });
 
   // Compute total marks
   const totalMarks = questions.reduce((acc, q) => acc + (q.marks ?? 0), 0);
