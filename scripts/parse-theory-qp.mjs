@@ -184,14 +184,16 @@ const NOISE_RE_NO_DIGITS = NOISE_RE.filter(r => r.toString() !== '/^\\d{1,3}$/')
 
 function isNoise(line, keepBareQNumbers = false) {
   const t = line.trim();
-  if (!t || t.length < 2) return true;
+  if (!t) return true;
+  // For maths short-answer papers: keep bare numbers 1-30 (they are question numbers in diagrams).
+  // This check must come BEFORE the length<2 guard since single-digit Q numbers (1-9) are 1 char.
+  if (keepBareQNumbers && /^\d{1,2}$/.test(t) && parseInt(t) >= 1 && parseInt(t) <= 30) return false;
+  if (t.length < 2) return true;
   // Strip any line containing only control characters (+ commas/spaces)
   if (/^[,\s\u0000-\u001F\u007F-\u009F]+$/.test(t)) return true;
   // Strip lines that are primarily control chars mixed with printable chars (barcode artefacts)
   const controlCount = (t.match(/[\u0000-\u001F\u007F-\u009F]/g) ?? []).length;
   if (controlCount > 2) return true;
-  // For maths short-answer papers: keep bare numbers 1-30 (they are question numbers in diagrams)
-  if (keepBareQNumbers && /^\d{1,2}$/.test(t) && parseInt(t) >= 1 && parseInt(t) <= 30) return false;
   return NOISE_RE.some(r => r.test(t));
 }
 
@@ -355,10 +357,11 @@ const ROMAN_PART_RE    = /^\s*\((i{1,3}|iv|vi{0,3}|ix|x)\)\s*(.*)/i;
 // Combined: (a)(i) or (a) (i) on same line
 const LETTER_ROMAN_RE  = /^\s*\(([a-hj-np-uwz])\)\s*\((i{1,3}|iv|vi{0,3}|ix|x)\)\s*(.*)/i;
 
-// Top-level question: "1 " at start of line followed by question content OR sub-part
-// Must be a digit ≥ 1, not indented, followed by whitespace.
+// Top-level question: "1 " at start of line followed by question content OR sub-part.
+// Also matches a bare number alone on a line (e.g. "21" = Q21 number printed at top of page
+// when the question appears on a new page in maths papers — the number has no trailing text).
 // The rest must NOT look like a run of single digits (axis labels: "6 5 4 3 2 1 ...").
-const TOP_LEVEL_Q_RE   = /^(\d+)\s{1,5}(.*)/;
+const TOP_LEVEL_Q_RE   = /^(\d+)(?:\s{1,5}(.+)|$)/;
 
 // Returns true if the "rest" of a candidate top-level Q line looks like an axis/grid label
 // run (e.g. "5 4 3 2 1 1 2 3") — these must NOT be treated as new questions.
@@ -380,6 +383,9 @@ function isMathExpressionRest(rest) {
   if (/^[\d\s+\-*/=<>().,:;x–]+$/.test(t)) return true;
   // Line is ONLY numbers/spaces (lone fraction numerator like "1 1 1 p" or "3 4 12")
   if (/^[\d\s/]+$/.test(t) && t.length < 12) return true;
+  // Very short (≤5 chars) lowercase/mixed math variable remnants from formula pages
+  // e.g. "bh", "Al", "rr", "Ah" — suffix of a formula that split across Y rows
+  if (t.length <= 5 && /^[a-zA-Z\d\s]+$/.test(t) && !/^[A-Z][a-z]/.test(t)) return true;
   // "For" alone (margin header) is not a question
   if (/^For\s*$/.test(t)) return true;
   return false;
@@ -468,50 +474,102 @@ function parseQP(rawText, opts = {}) {
     const topM = TOP_LEVEL_Q_RE.exec(line);
     if (topM) {
       const qNum = topM[1];
-      const rest = topM[2];
+      const rest = topM[2] ?? '';   // undefined when number appears alone on a line (bare Q number)
 
       // Only treat as new question if it's strictly the next expected number.
       // questions.length = committed questions so far; currentQ = question being built.
       const nextExpected = questions.length + (currentQ ? 1 : 0) + 1;
       const parsedNum = parseInt(qNum, 10);
 
-      // Primary: exact match with expected next question number.
-      // Secondary: accept a number AHEAD of expected if the line is a clean question opener.
-      // maxSkip is larger for maths short-answer papers where question numbers are often in
-      // diagrams and therefore absent from the text layer.
-      // For maths papers, question text often starts with lowercase letters (variables: "x is...",
-      // "n is an integer..."), so we accept any non-math-expression as a clean opener.
-      const isCleanOpener = opts.isMathsShortAnswer
-        ? (rest.trim() === '' || !isMathExpressionRest(rest))
-        : (/^\([a-z]\)/.test(rest.trim()) || /^[A-Z]/.test(rest.trim()) || rest.trim() === '');
-      const looksLikeQ = parsedNum === nextExpected ||
-        (parsedNum > nextExpected && parsedNum <= nextExpected + maxSkip && isCleanOpener);
+      // ── Question-opener validity rules ──────────────────────────────────────
+      // For maths short-answer papers (0580/0606 1x/2x), question numbers are frequently
+      // embedded in diagrams and absent from the PDF text layer. Strategy:
+      //
+      //   1. Bare number (rest is empty): valid only as an EXACT match AND only after at least
+      //      one question has been committed (prevents formula-page fractions like "1", "2"
+      //      which appear before Q1 from triggering false questions).
+      //
+      //   2. Number + real content (rest has words/sub-part): valid for exact match OR up to
+      //      maxSkip ahead (skipping over diagram-embedded question numbers we couldn't see).
+      //
+      //   3. Number + math expression / measurement (e.g. "3 cm", "5 kg", "4 2x+3"): REJECT.
+      //      These are diagram annotations or equation fragments. The real question number
+      //      will appear as a bare number on a fresh page.
+      //
+      // For non-maths papers: require rest to start with "(a)" or a capital letter (or be empty).
 
-      // For maths papers: even if rest is a math expression, accept exact-match question numbers.
-      // (The rest is equation content on the same line as the question number — still valid Q.)
-      const mathsExactMatch = opts.isMathsShortAnswer && parsedNum === nextExpected && !isAxisLabelRest(rest);
-      const isValidQ = looksLikeQ && parsedNum >= 1 && parsedNum <= 30 && !isAxisLabelRest(rest)
-        && (!isMathExpressionRest(rest) || mathsExactMatch);
+      const isBare = rest.trim() === '';
+      const isRestMath = isMathExpressionRest(rest);
+
+      // Is this a plausible question opener?
+      const isCleanOpener = opts.isMathsShortAnswer
+        ? (isBare || !isRestMath)                          // maths: bare OR has real words
+        : (isBare || /^\([a-z]\)/.test(rest.trim()) || /^[A-Z]/.test(rest.trim())); // others: strict
+
+      // Bare-number guard:
+      //  1. Don't trigger before any question is established (formula-page fractions like "1", "2").
+      //  2. Don't allow a bare number that duplicates the last committed question ID.
+      //  3. Don't allow a bare number when the CURRENT question being built has the same ID —
+      //     this is a page-header "3" appearing mid-way through Q3's content on the next page.
+      //  4. Don't allow a bare number when the NEXT non-trivial line already has the same question
+      //     number with real content — prefer the richer opener over the bare-number shadow.
+      const lastCommittedId = questions.length > 0 ? parseInt(questions[questions.length - 1].id) : 0;
+      const currentBuildId  = currentQ ? parseInt(currentQ.id) : -1;
+      let bareOk = !isBare || (questions.length > 0 && parsedNum > lastCommittedId && parsedNum !== currentBuildId);
+      if (bareOk && isBare) {
+        // Look ahead: if next non-trivial line starts "N <content>" with same N, skip this bare one
+        for (let j = i + 1; j < Math.min(i + 4, lines.length); j++) {
+          const nxt = lines[j].trim();
+          if (!nxt) continue;
+          const nxtM = TOP_LEVEL_Q_RE.exec(nxt);
+          if (nxtM && parseInt(nxtM[1]) === parsedNum && (nxtM[2] ?? '').trim() !== '') {
+            bareOk = false; // the richer version is coming right after; skip bare shadow
+          }
+          break; // only check the very next non-empty line
+        }
+
+        // Additional guard for graph/histogram axis ticks: if the next 3 non-trivial lines are
+        // ALL bare numbers (like "10", "20", "30" stacked on a y-axis), this bare number is likely
+        // an axis tick, not a question number. Reject it.
+        if (bareOk) {
+          let bareCount = 0;
+          for (let j = i + 1; j < Math.min(i + 8, lines.length); j++) {
+            const nxt = lines[j].trim();
+            if (!nxt) continue;
+            if (/^\d{1,2}$/.test(nxt) && parseInt(nxt) >= 1 && parseInt(nxt) <= 100) {
+              bareCount++;
+            } else {
+              break;
+            }
+          }
+          if (bareCount >= 2) bareOk = false; // looks like axis ticks, not a question
+        }
+      }
+
+      // Skip window: bare numbers accepted as exact match or 1 step ahead (the very next Q);
+      // larger skips only for non-bare lines that have real question content.
+      // This allows page-4 bare "4" to fire when nextExpected=3 (Q3 just started on this page),
+      // but prevents axis label "30" from firing when nextExpected=15.
+      const effectiveMaxSkip = isBare ? 1 : maxSkip;
+      const looksLikeQ = parsedNum === nextExpected ||
+        (parsedNum > nextExpected && parsedNum <= nextExpected + effectiveMaxSkip && isCleanOpener);
+
+      const isValidQ = looksLikeQ && bareOk && isCleanOpener
+        && parsedNum >= 1 && parsedNum <= 30 && !isAxisLabelRest(rest);
 
       if (isValidQ) {
         commitQ();
         currentQ = { id: qNum, context: [], parts: [], marks: null, text: [] };
 
-        // The rest of the line might be context, (a) opener, or numbered sub-part.
-        // For maths exact-match with math expression rest: skip the inline equation text
-        // (it will be re-encountered on subsequent lines as part of question content).
+        // The rest of the line might be a sub-part opener or question context text.
+        // (Math-expression rests are rejected before reaching here — see isValidQ above.)
         if (rest.trim()) {
-          if (isMathExpressionRest(rest)) {
-            // Inline math expression on same line as question number — include as content
-            currentQ.text.push(rest.trim());
+          // Check if rest is itself a letter sub-part opener, e.g. "(a) Find..."
+          const lm = LETTER_ROMAN_RE.exec(rest) || LETTER_PART_RE.exec(rest);
+          if (lm) {
+            lines.splice(i + 1, 0, '  ' + rest.trim());
           } else {
-            // Check if rest is itself a letter sub-part opener
-            const lm = LETTER_ROMAN_RE.exec(rest) || LETTER_PART_RE.exec(rest);
-            if (lm) {
-              lines.splice(i + 1, 0, '  ' + rest.trim());
-            } else {
-              currentQ.text.push(rest.trim());
-            }
+            currentQ.text.push(rest.trim());
           }
         }
         i++;
