@@ -229,7 +229,7 @@ function BrowsePageInner() {
           width: '210px',
           flexShrink: 0,
           borderRight: '1px solid rgba(200,168,76,0.08)',
-          padding: '32px 0',
+          padding: '0',
           position: 'sticky',
           top: '72px',
           height: 'calc(100vh - 72px)',
@@ -238,39 +238,8 @@ function BrowsePageInner() {
           background: 'rgba(3,6,10,0.6)',
         } as React.CSSProperties}>
 
-          {/* Resource type nav */}
-          <div style={{ padding: '0 16px', marginBottom: '32px' }}>
-            <p style={{
-              fontFamily: SANS, fontSize: '10px', fontWeight: 600,
-              letterSpacing: '0.18em', color: 'rgba(200,168,76,0.4)',
-              textTransform: 'uppercase', marginBottom: '10px',
-            }}>Browse Resources</p>
-            {NAV_TYPES.map(item => {
-              const active = selectedType === item.value;
-              return (
-                <button key={item.value} onClick={() => setSelectedType(item.value)} style={{
-                  display: 'flex', alignItems: 'center', gap: '9px',
-                  width: '100%', textAlign: 'left',
-                  padding: '7px 10px', borderRadius: '4px', marginBottom: '2px',
-                  background: active ? 'rgba(200,168,76,0.10)' : 'transparent',
-                  borderLeft: active ? '2px solid rgba(200,168,76,0.6)' : '2px solid transparent',
-                  color: active ? '#D4B96A' : 'rgba(210,190,145,0.72)',
-                  fontFamily: SERIF, fontSize: '14px', fontWeight: active ? 600 : 500,
-                  letterSpacing: '0.02em', cursor: 'pointer',
-                  transition: 'all 0.15s ease',
-                }}>
-                  <span style={{ opacity: active ? 1 : 0.55, display: 'flex', flexShrink: 0 }}><SidebarIcon type={item.value} /></span>
-                  {item.label}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Divider */}
-          <div style={{ height: '1px', background: 'rgba(200,168,76,0.07)', margin: '0 16px 24px' }} />
-
           {/* Sort */}
-          <div style={{ padding: '0 16px', marginBottom: '32px' }}>
+          <div style={{ padding: '24px 16px 32px' }}>
             <p style={{
               fontFamily: SANS, fontSize: '10px', fontWeight: 600,
               letterSpacing: '0.18em', color: 'rgba(200,168,76,0.4)',
@@ -303,7 +272,7 @@ function BrowsePageInner() {
           <div style={{ height: '1px', background: 'rgba(200,168,76,0.07)', margin: '0 16px 24px' }} />
 
           {/* Subject */}
-          <div style={{ padding: '0 16px' }}>
+          <div style={{ padding: '0 16px 32px' }}>
             <p style={{
               fontFamily: SANS, fontSize: '10px', fontWeight: 600,
               letterSpacing: '0.18em', color: 'rgba(200,168,76,0.4)',
