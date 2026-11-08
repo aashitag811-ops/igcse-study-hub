@@ -4,7 +4,7 @@
   "session": "s17",
   "component": "53",
   "totalMarks": 0,
-  "questionCount": 7,
+  "questionCount": 4,
   "questions": [
     {
       "id": "1",
@@ -113,7 +113,7 @@
             {
               "id": "1ei",
               "label": "(i)",
-              "text": "The regular pentagon making a regular star is shown in bold.\nThe sum of the interior angles of a pentagon is 540°.\nUse this information to calculate the value of p.\nNOT TO\np°\nSCALE",
+              "text": "The regular pentagon making a regular star is shown in bold.\nThe sum of the interior angles of a pentagon is 540°.\nUse this information to calculate the value of p.\np°",
               "marks": null,
               "type": "calculate",
               "answerType": "calculate",
@@ -124,7 +124,7 @@
             {
               "id": "1eii",
               "label": "(ii)",
-              "text": "This diagram shows part of a different regular star.\nIt also shows, in bold, part of the regular polygon that makes it.\nNOT TO\na°\nSCALE\nb°\nFind an equation connecting a and b.",
+              "text": "This diagram shows part of a different regular star.\nIt also shows, in bold, part of the regular polygon that makes it.\na°\nb°\nFind an equation connecting a and b.",
               "marks": null,
               "type": "other",
               "answerType": "short_answer",
@@ -146,7 +146,6 @@
         "Do not use staples, paper clips, glue or correction fluid.",
         "You may use an HB pencil for any diagrams or graphs.",
         "DO NOT WRITE IN ANY BARCODES.",
-        "Answer all the questions.",
         "You must show all relevant working to gain full marks for correct methods, including sketches.",
         "In this paper you will also be assessed on your ability to provide full reasons and communicate your",
         "mathematics clearly and precisely.",
@@ -154,7 +153,6 @@
         "At the end of the examination, fasten all your work securely together.",
         "The total number of marks for this paper is 24.",
         "This document consists of 12 printed pages.",
-        "Answer all the questions.",
         "INVESTIGATION REGULAR STARS",
         "This investigation is about the construction of regular stars and their properties.",
         "Here are some regular stars.",
@@ -218,10 +216,10 @@
           "label": "(b)",
           "text": "There are 370 equally spaced dots round a circle.\nEvery second dot is joined.\nFind the number of points of the star.",
           "marks": null,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         }
       ],
@@ -250,72 +248,63 @@
             {
               "id": "4ai",
               "label": "(i)",
-              "text": "Draw this star on the diagram below.",
+              "text": "Draw this star on the diagram below.\n5 2\n4 3",
               "marks": null,
               "type": "draw",
               "answerType": "diagram_only",
               "hasDiagramRef": true,
               "diagramOnly": true,
               "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "Write down a different code for the star you have drawn.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
             }
           ]
-        }
-      ],
-      "marks": null,
-      "text": [
-        "In question 3 you made stars by joining every second dot round a circle.",
-        "You can also make stars by joining every third dot.",
-        "Starting from 1, dots are numbered clockwise.",
-        "7 3 This gives a way to code the star.",
-        "1 4 7 2 5 8 3 6 1"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
-          "text": "Here are some more stars and their codes.\n1 1 1 1\n1 1\n8 8 8 8\n2 2 2 2\n8 8\n2 2\n7 7 3 3 7 7 3 3\n7 3 7 3\n4 4 4 4",
+          "text": "Here are some more stars and their codes.\n1 1 1 1\n1 1\n8 8 8 8\n2 2 2 2\n8 8\n2 2\n7 7 3 3 7 7 3 3\n7 3 7 3\n4 4 4 4\n6 6 6 6\n4 4\n6 6\n5 5 5 5\n5 5\n1 2 3 4 5 6 7 8 1 1 3 5 7 1\n1 1\n8 8 2 2\n8 2\n3 3\n7 7\n4 4\n6 6\n5 5\n1 4 7 2 5 8 3 6 1",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": null,
-      "text": [
-        "2",
-        "4 3"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "6 6 6",
-        "4 4",
-        "6 6",
-        "5 5 5 5",
-        "5 5",
-        "1 2 3 4 5 6 7 8 1 1 3 5 7 1",
-        "1 1",
-        "8 8 2 2",
-        "8 2",
-        "3 3"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "4bi",
+              "label": "(i)",
+              "text": "Write down the connection between the code and the number of points of the star.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Write down the connection between the code and the number of dots round the circle.\nQuestions 4(c) and 4(d) are printed on the next page.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "7c",
+          "id": "4c",
           "label": "(c)",
           "text": "Make a sketch showing the numbered dots and the regular star with this code.\n1 4 7 1",
           "marks": null,
@@ -326,7 +315,7 @@
           "parts": []
         },
         {
-          "id": "7d",
+          "id": "4d",
           "label": "(d)",
           "text": "Find three codes, each starting with 1, which make a star with 10 points.\nYou may use these circles to help you.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": null,
@@ -339,10 +328,10 @@
       ],
       "marks": null,
       "text": [
-        "7",
-        "4 4",
-        "6 6",
-        "5 5",
+        "In question 3 you made stars by joining every second dot round a circle.",
+        "You can also make stars by joining every third dot.",
+        "Starting from 1, dots are numbered clockwise.",
+        "7 3 This gives a way to code the star.",
         "1 4 7 2 5 8 3 6 1"
       ]
     }

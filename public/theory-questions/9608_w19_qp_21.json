@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w19",
   "component": "21",
-  "totalMarks": 68,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -156,7 +156,7 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "The following is a function design in pseudocode.",
         "Line numbers are given for reference only.",
@@ -192,8 +192,7 @@
         "The number of the line containing a logical operator",
         "The range of line numbers containing a selection statement",
         "The name of a built-in function",
-        "The name of a parameter",
-        "[7]"
+        "The name of a parameter"
       ]
     },
     {
@@ -383,7 +382,7 @@
             {
               "id": "6dii",
               "label": "(ii)",
-              "text": "Write program code for a statement that calls the modified ClearArray() procedure\nto clear the array Duplicates to \"Empty\".\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of ThisChar\nExample: ASC('A') returns 65\nCHR(x : INTEGER) RETURNS CHAR\nreturns the character whose ASCII value is x\nExample: CHR(87) returns 'W'\nUCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the upper case equivalent of ThisChar\nIf ThisChar is not a lower case alphabetic character, it is returned unchanged.\nExample: UCASE('a') returns 'A'\nOperators (pseudocode)\nDescription\nOperator\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "Write program code for a statement that calls the modified ClearArray() procedure\nto clear the array Duplicates to \"Empty\".\nProgramming language ______\nProgram code\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of ThisChar\nExample: ASC('A') returns 65\nCHR(x : INTEGER) RETURNS CHAR\nreturns the character whose ASCII value is x\nExample: CHR(87) returns 'W'\nUCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the upper case equivalent of ThisChar\nIf ThisChar is not a lower case alphabetic character, it is returned unchanged.\nExample: UCASE('a') returns 'A'\nOperators (pseudocode)\nDescription\nOperator\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 2,
               "type": "write",
               "answerType": "fill_blank",

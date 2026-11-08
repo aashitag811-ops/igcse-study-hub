@@ -3,8 +3,8 @@
   "subjectCode": "9231",
   "session": "s24",
   "component": "23",
-  "totalMarks": 58,
-  "questionCount": 3,
+  "totalMarks": 70,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -101,8 +101,32 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "Deduce lower and upper bounds for . \nr=1\n5 (a) Find the general solution of the differential equation\nd x dx\n+ 10 + 25x = 338 sin t. \ndt\ndt",
+          "text": "Deduce lower and upper bounds for . \nr=1",
           "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "The curve C has equation",
+        "3 3",
+        "x + 2xy + 8y = - 12.",
+        "dy"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Find the general solution of the differential equation\nd x dx\n+ 10 + 25x = 338 sin t. \ndt\ndt",
+          "marks": 7,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -110,9 +134,58 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "5b",
           "label": "(b)",
-          "text": "Show that, for large positive values of t and for any initial conditions,\nx . R sin(t - z),\nwhere the constants R and z are to be determined. \n4n+2 2\nz - z\n4r 2 -2\n6 (a) Show that z = , for z ! z . \n2 -2\nz - z\nr=1",
+          "text": "Show that, for large positive values of t and for any initial conditions,\nx . R sin(t - z),\nwhere the constants R and z are to be determined. \n4n+2 2\nz - z\n4r 2 -2",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Show that z = , for z ! z . \n2 -2\nz - z\nr=1",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "By letting z = cos i + isin i, show that, if sin 2i ! 0,\ncos 2i - cos(4n + 2)i\nsin(4ri) = . \n2 sin 2i\nr=1\nDO NOT WRITE IN THIS MARGIN______",
+          "marks": 5,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Show that\nd x 2 9 -1 x 2\ne o\nx - 9 - cosh = x - 9. \ndx 2 2 3",
           "marks": 3,
           "type": "calculate",
           "answerType": "calculate",
@@ -121,29 +194,26 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "7b",
           "label": "(b)",
-          "text": "By letting z = cos i + isin i, show that, if sin 2i ! 0,\ncos 2i - cos(4n + 2)i\nsin(4ri) = . \n2 sin 2i\nr=1\nDO NOT WRITE IN THIS MARGIN______\n7 (a) Show that\nd x 2 9 -1 x 2\ne o\nx - 9 - cosh = x - 9. \ndx 2 2 3",
-          "marks": 5,
-          "type": "calculate",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3b",
-          "label": "(b)",
-          "text": "Find the solution of the differential equation\ndy\n2 2\nx - y = x x - 9,\ndx\ngiven that y = 1 when x = 3. Give your answer in the form y = f( )x . \nDO NOT WRITE IN THIS MARGIN______\n8 The planes P and P do not intersect and are both perpendicular to i + 2j + 3k. The line l intersects\n1 2\nP at the point ( , , )1 6 0 and intersects P at the point ( ,3 - 6 0, ).\n1 2",
+          "text": "Find the solution of the differential equation\ndy\n2 2\nx - y = x x - 9,\ndx\ngiven that y = 1 when x = 3. Give your answer in the form y = f( )x . \nDO NOT WRITE IN THIS MARGIN______",
           "marks": 9,
           "type": "give",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
         {
-          "id": "3a",
+          "id": "8a",
           "label": "(a)",
           "text": "Find Cartesian equations of P and P . \n1 2",
           "marks": 3,
@@ -154,7 +224,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "8b",
           "label": "(b)",
           "text": "Express the vector equation of l in the form y = a + mb, where a and b are vectors to be\nf p\n1 1\ndetermined, and hence show that for points on l, x + y = 1 and z = 0. \n2 12\nThe matrix A is given by\n1 2 3\nA = 1 2 3 .\nf p\n1 1\n2 12\n3 2 7",
           "marks": 2,
@@ -165,7 +235,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "8c",
           "label": "(c)",
           "text": "Show that the characteristic equation of A is -m + 3m + m = 0 and hence find the eigenvalues\nof A. \nn -1",
           "marks": 3,
@@ -176,7 +246,7 @@
           "parts": []
         },
         {
-          "id": "3d",
+          "id": "8d",
           "label": "(d)",
           "text": "Find a matrix P and a diagonal matrix D such that A = PDP , where n is a positive integer. \n______ DO NOT WRITE IN THIS MARGIN\nAdditional page\nIf you use the following page to complete the answer to any question, the question number must be clearly\nshown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 6,
@@ -187,12 +257,12 @@
           "parts": []
         }
       ],
-      "marks": 49,
+      "marks": 14,
       "text": [
-        "The curve C has equation",
-        "3 3",
-        "x + 2xy + 8y = - 12.",
-        "dy"
+        "The planes P and P do not intersect and are both perpendicular to i + 2j + 3k. The line l intersects",
+        "1 2",
+        "P at the point ( , , )1 6 0 and intersects P at the point ( ,3 - 6 0, ).",
+        "1 2"
       ]
     }
   ]

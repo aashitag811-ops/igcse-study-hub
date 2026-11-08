@@ -3,8 +3,8 @@
   "subjectCode": "0607",
   "session": "s22",
   "component": "31",
-  "totalMarks": 91,
-  "questionCount": 4,
+  "totalMarks": 96,
+  "questionCount": 5,
   "questions": [
     {
       "id": "1",
@@ -165,12 +165,12 @@
         {
           "id": "2d",
           "label": "(d)",
-          "text": "Wim picks one of these days at random.\nFind the probability that, on that day, the amount of rain was 3 mm or more.\n\nNOT TO\nSCALE\n4.2cm\nThe diagram shows a circle, centre O, radius 4.2 cm.\nA, B and C are points on the circle.\nThe line DE touches the circle at C.",
+          "text": "Wim picks one of these days at random.\nFind the probability that, on that day, the amount of rain was 3 mm or more.\n4.2cm\nThe diagram shows a circle, centre O, radius 4.2 cm.\nA, B and C are points on the circle.\nThe line DE touches the circle at C.",
           "marks": 1,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": true,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         },
         {
@@ -199,10 +199,10 @@
               "label": "(i)",
               "text": "the circumference of the circle,\n______ cm",
               "marks": 2,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "complete",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             },
             {
@@ -210,10 +210,10 @@
               "label": "(ii)",
               "text": "the area of the circle.\n______ cm",
               "marks": 2,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "complete",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             }
           ]
@@ -221,31 +221,16 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "Angle AOB = 110°.\nCalculate the area of sector AOB.\n______ cm \n– – –",
+          "text": "Angle AOB = 110°.\nCalculate the area of sector AOB.\n______ cm \n– – –\n3 2 1 1 2 3 4 5 6 7\nThe diagram shows point A and point C plotted on a 1 cm grid.",
           "marks": 2,
           "type": "calculate",
           "answerType": "fill_blank",
-          "hasDiagramRef": false,
+          "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 14,
-      "text": [
-        "Wim measures the amount of rain, in mm, each day for 31 days.",
-        "The bar chart shows his results.",
-        "Number",
-        "of days",
-        "0 1 2 3 4 5",
-        "Amount of rain (mm)"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "Plot point B ( ,5 7) and point D (-1 7, ) and draw the quadrilateral ABCD.",
           "marks": 2,
@@ -256,7 +241,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -266,7 +251,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3bi",
+              "id": "2bi",
               "label": "(i)",
               "text": "Find the length of AC.\nAC = ______ cm",
               "marks": 1,
@@ -277,7 +262,7 @@
               "parts": []
             },
             {
-              "id": "3bii",
+              "id": "2bii",
               "label": "(ii)",
               "text": "Use Pythagoras’ Theorem to find the length of AB.\nAB = ______ cm",
               "marks": 2,
@@ -290,7 +275,7 @@
           ]
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
           "text": "Write down the mathematical name for quadrilateral ABCD.",
           "marks": 1,
@@ -301,17 +286,43 @@
           "parts": []
         },
         {
-          "id": "3d",
+          "id": "2d",
           "label": "(d)",
-          "text": "Reflect quadrilateral ABCD in the line y = 4. \n5 (a) Solve.",
+          "text": "Reflect quadrilateral ABCD in the line y = 4.",
           "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 22,
+      "text": [
+        "Wim measures the amount of rain, in mm, each day for 31 days.",
+        "The bar chart shows his results.",
+        "Number",
+        "of days",
+        "0 1 2 3 4 5",
+        "Amount of rain (mm)"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Solve.",
+          "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3di",
+              "id": "5ai",
               "label": "(i)",
               "text": "6x = 96\nx = ______",
               "marks": 1,
@@ -322,7 +333,7 @@
               "parts": []
             },
             {
-              "id": "3dii",
+              "id": "5aii",
               "label": "(ii)",
               "text": "7x - 6 =-13\nx = ______",
               "marks": 2,
@@ -335,7 +346,7 @@
           ]
         },
         {
-          "id": "3b",
+          "id": "5b",
           "label": "(b)",
           "text": "Simplify.",
           "marks": null,
@@ -345,7 +356,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3bi",
+              "id": "5bi",
               "label": "(i)",
               "text": "5r - 2r - r",
               "marks": 1,
@@ -356,7 +367,7 @@
               "parts": []
             },
             {
-              "id": "3bii",
+              "id": "5bii",
               "label": "(ii)",
               "text": "4a - 3b - 7a + 2b",
               "marks": 2,
@@ -369,7 +380,7 @@
           ]
         },
         {
-          "id": "3c",
+          "id": "5c",
           "label": "(c)",
           "text": "T = 4m + 2n\nFind",
           "marks": null,
@@ -379,7 +390,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "5ci",
               "label": "(i)",
               "text": "the value of T when m = 1 8. and n =-0 3. ,\nT = ______",
               "marks": 2,
@@ -390,7 +401,7 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "5cii",
               "label": "(ii)",
               "text": "the value of n when T = 26 and m = 3 4. .\nn = ______ \n6 30 members of a sports club were asked what their favourite game was.\nThey could choose from tennis (T), squash (S) or badminton (B).\nThese are the results.\nB T S S T S B B T S\nS S S T T T S S B T\nB T S S T T B S S T",
               "marks": 2,
@@ -403,7 +414,7 @@
           ]
         },
         {
-          "id": "3a",
+          "id": "5a",
           "label": "(a)",
           "text": "Complete the frequency table.\nGame Frequency\nTennis (T)\nSquash (S)\nBadminton (B)",
           "marks": 2,
@@ -414,7 +425,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "5b",
           "label": "(b)",
           "text": "Find how many more members chose tennis than badminton.",
           "marks": 1,
@@ -425,7 +436,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "5c",
           "label": "(c)",
           "text": "One of the 30 members is chosen at random.\nWrite down the probability that this member chose squash.",
           "marks": 1,
@@ -436,7 +447,7 @@
           "parts": []
         },
         {
-          "id": "3d",
+          "id": "5d",
           "label": "(d)",
           "text": "Shadana begins to draw a pie chart to show the results.",
           "marks": null,
@@ -446,7 +457,7 @@
           "diagramOnly": true,
           "parts": [
             {
-              "id": "3di",
+              "id": "5di",
               "label": "(i)",
               "text": "Show that the sector angle for tennis is 132°.",
               "marks": 2,
@@ -457,9 +468,9 @@
               "parts": []
             },
             {
-              "id": "3dii",
+              "id": "5dii",
               "label": "(ii)",
-              "text": "Complete the pie chart for Shadana.\n\n7 Gheza wants to know if the number of weeks that a song is Number One in the charts is related to the\nlength of the song, in minutes.\nThe table shows the results for one year.\nNumber of weeks at Number One 3 2 1 5 4 11 7 4 3 3 9\nLength of song (minutes) 3.5 3.9 4.2 3.1 3.2 2.5 2.9 3.0 3.4 3.7 2.9",
+              "text": "Complete the pie chart for Shadana.",
               "marks": 3,
               "type": "complete",
               "answerType": "long_answer",
@@ -468,9 +479,17 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 19,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "3a",
+          "id": "7a",
           "label": "(a)",
           "text": "Complete the scatter diagram.\nThe first 6 points have been plotted for you.\nLength\nof song\n(minutes)\n0 1 2 3 4 5 6 7 8 9 10 11\nNumber of weeks at Number One",
           "marks": 2,
@@ -481,7 +500,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "7b",
           "label": "(b)",
           "text": "What type of correlation is shown in the diagram?",
           "marks": 1,
@@ -492,7 +511,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "7c",
           "label": "(c)",
           "text": "Find",
           "marks": null,
@@ -502,7 +521,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "7ci",
               "label": "(i)",
               "text": "the mean number of weeks at Number One,",
               "marks": 1,
@@ -513,7 +532,7 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "7cii",
               "label": "(ii)",
               "text": "the mean length of a song.\n______ min",
               "marks": 1,
@@ -526,18 +545,43 @@
           ]
         },
         {
-          "id": "3d",
+          "id": "7d",
           "label": "(d)",
-          "text": "On the scatter diagram, draw a line of best fit. \n8 (a) The nth term of a sequence is 2n + 3.\nWrite down the first three terms of this sequence.\n______ , ______ , ______",
+          "text": "On the scatter diagram, draw a line of best fit.",
           "marks": 2,
           "type": "draw",
           "answerType": "diagram_only",
           "hasDiagramRef": true,
           "diagramOnly": true,
           "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Gheza wants to know if the number of weeks that a song is Number One in the charts is related to the",
+        "length of the song, in minutes.",
+        "The table shows the results for one year.",
+        "Number of weeks at Number One 3 2 1 5 4 11 7 4 3 3 9",
+        "Length of song (minutes) 3.5 3.9 4.2 3.1 3.2 2.5 2.9 3.0 3.4 3.7 2.9"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "The nth term of a sequence is 2n + 3.\nWrite down the first three terms of this sequence.\n______ , ______ , ______",
+          "marks": 2,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
-          "id": "3b",
+          "id": "8b",
           "label": "(b)",
           "text": "These are the first four terms of a different sequence.\n5 -3 -11 -19",
           "marks": null,
@@ -547,7 +591,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3bi",
+              "id": "8bi",
               "label": "(i)",
               "text": "Find the next two terms of the sequence.\n______ , ______",
               "marks": 2,
@@ -558,7 +602,7 @@
               "parts": []
             },
             {
-              "id": "3bii",
+              "id": "8bii",
               "label": "(ii)",
               "text": "Find the nth term of the sequence.",
               "marks": 2,
@@ -569,9 +613,9 @@
               "parts": []
             },
             {
-              "id": "3biii",
+              "id": "8biii",
               "label": "(iii)",
-              "text": "Sanjay says that -101 is a term of the sequence.\nShow that he is not correct.\n\n– – – –",
+              "text": "Sanjay says that -101 is a term of the sequence.\nShow that he is not correct.\n– – – –\n4 3 2 1 1 2 3 4 5 6 7\n– 1",
               "marks": 2,
               "type": "calculate",
               "answerType": "calculate",
@@ -580,20 +624,9 @@
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 37,
-      "text": [
-        "2 1 1 2 3 4 5 6 7",
-        "The diagram shows point A and point C plotted on a 1 cm grid."
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "4a",
+          "id": "8a",
           "label": "(a)",
           "text": "Describe fully the single transformation that maps shape A onto shape B.",
           "marks": 3,
@@ -604,7 +637,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "8b",
           "label": "(b)",
           "text": "Describe fully the single transformation that maps shape A onto shape C.",
           "marks": 2,
@@ -615,9 +648,9 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "8c",
           "label": "(c)",
-          "text": "Rotate shape A 90° clockwise about (0, 0).\n\nNOT TO\nSCALE\n4 3\n– 12\nThe diagram shows a sketch of the graph of\n3 2\ny = 0 5. x + 0 65. x - 2x + 2 for -4 G x G 3.",
+          "text": "Rotate shape A 90° clockwise about (0, 0).\n4 3\n– 12\nThe diagram shows a sketch of the graph of\n3 2\ny = 0 5. x + 0 65. x - 2x + 2 for -4 G x G 3.",
           "marks": 2,
           "type": "draw",
           "answerType": "diagram_only",
@@ -626,7 +659,7 @@
           "parts": []
         },
         {
-          "id": "4a",
+          "id": "8a",
           "label": "(a)",
           "text": "Find the coordinates of the point where the graph crosses the y-axis.\n( ______ , ______ )",
           "marks": 1,
@@ -637,7 +670,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "8b",
           "label": "(b)",
           "text": "Find the coordinates of the point where the graph crosses the x-axis.\n( ______ , ______ )",
           "marks": 1,
@@ -648,7 +681,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "8c",
           "label": "(c)",
           "text": "Find the coordinates of the local maximum.\n( ______ , ______ )",
           "marks": 2,
@@ -659,7 +692,7 @@
           "parts": []
         },
         {
-          "id": "4d",
+          "id": "8d",
           "label": "(d)",
           "text": "Find the coordinates of the local minimum.\n( ______ , ______ )",
           "marks": 2,
@@ -670,7 +703,7 @@
           "parts": []
         },
         {
-          "id": "4e",
+          "id": "8e",
           "label": "(e)",
           "text": "On the diagram, sketch the graph of y = 8.",
           "marks": 1,
@@ -681,9 +714,9 @@
           "parts": []
         },
         {
-          "id": "4f",
+          "id": "8f",
           "label": "(f)",
-          "text": "Solve this equation.\n3 2\n0 5. x + 0 65. x - 2x + 2 = 8.\nx = ______ \ny°\n14cm\nNOT TO\nSCALE\nx°\nThe diagram shows a regular hexagon with centre O and OA = OB = 14 cm.",
+          "text": "Solve this equation.\n3 2\n0 5. x + 0 65. x - 2x + 2 = 8.\nx = ______ \ny°\n14cm\nx°\nThe diagram shows a regular hexagon with centre O and OA = OB = 14 cm.",
           "marks": 1,
           "type": "complete",
           "answerType": "fill_blank",
@@ -692,7 +725,7 @@
           "parts": []
         },
         {
-          "id": "4a",
+          "id": "8a",
           "label": "(a)",
           "text": "Work out the size of angle x and the size of angle y.\nx = ______\ny = ______",
           "marks": 2,
@@ -703,7 +736,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "8b",
           "label": "(b)",
           "text": "Write down the length of AB.\nAB = ______ cm",
           "marks": 1,
@@ -714,7 +747,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "8c",
           "label": "(c)",
           "text": "Work out the area of triangle AOB.\n______ cm \nThe regular hexagon is the cross-section of a prism.\nThe length of the prism is 5 cm.",
           "marks": 3,
@@ -725,7 +758,7 @@
           "parts": []
         },
         {
-          "id": "4d",
+          "id": "8d",
           "label": "(d)",
           "text": "Work out the volume of the prism.\n______ cm \nQuestion 12 is printed on the next page.\n12 Ruben’s house is 1.3 km from the supermarket.",
           "marks": 2,
@@ -736,7 +769,7 @@
           "parts": []
         },
         {
-          "id": "4a",
+          "id": "8a",
           "label": "(a)",
           "text": "He walks to the supermarket at a speed of 5 km / h.\nWork out how long it takes him.\nGive your answer in minutes and seconds.\n______ min ______ s",
           "marks": 3,
@@ -747,7 +780,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "8b",
           "label": "(b)",
           "text": "On another day, Ruben cycles to the supermarket in a time of 5 minutes 12 seconds.",
           "marks": null,
@@ -757,7 +790,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4bi",
+              "id": "8bi",
               "label": "(i)",
               "text": "Show that 12 seconds = 0.2 minutes.",
               "marks": 1,
@@ -768,7 +801,7 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "8bii",
               "label": "(ii)",
               "text": "Work out Ruben’s average speed when cycling to the supermarket.\nGive your answer in km / h.\n______ km / h \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 2,
@@ -781,11 +814,8 @@
           ]
         }
       ],
-      "marks": 29,
-      "text": [
-        "3 2 1 1 2 3 4 5 6 7",
-        "– 1"
-      ]
+      "marks": 37,
+      "text": []
     }
   ]
 }

@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w16",
   "component": "42",
-  "totalMarks": 67,
+  "totalMarks": 62,
   "questionCount": 16,
   "questions": [
     {
@@ -215,7 +215,7 @@
             {
               "id": "3aii",
               "label": "(ii)",
-              "text": "A program needs a mask to ensure that a letter is in lower case.\nWrite the binary pattern of the mask in the space provided in the table below.\nBit number\n7 6 5 4 3 2 1 0\nASCII code ASCII code in binary\n70 0 1 0 0 0 1 1 0\n0 1 1 0 0 1 1 0\nMask\nGive the bit-wise operation that needs to be performed using the mask and the\nASCII code.\n\nThe following table shows part of the instruction set for a processor which has one general\npurpose register, the Accumulator (ACC), and an index register (IX).\nInstruction\nExplanation\nOp Operand\ncode\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the given address to\nLDD <address>\nACC.\nIndexed addressing. Form the address from <address> +\nLDX <address>\nthe contents of the index register. Copy the contents of this\ncalculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n into IX.\nSTO <address>\nStore the contents of ACC at the given address.\nINC <register> Add 1 to the contents of the register (ACC or IX).\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the\nJPE <address>\ncompare was True.\nFollowing a compare instruction, jump to <address> if the\nJPN <address>\ncompare was False.\nBitwise AND operation of the contents of ACC with the\nAND #n\noperand.\nBitwise AND operation of the contents of ACC with the\nAND <address>\ncontents of <address>.\nBitwise XOR operation of the contents of ACC with the\nXOR #n\noperand.\nBitwise XOR operation of the contents of ACC with the\nXOR <address>\ncontents of <address>.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nBitwise OR operation of the contents of ACC with the contents\nOR <address>\nof <address>.\nOutput to the screen the character whose ASCII value is\nOUT\nstored in ACC.\nEND Return control to the operating system.\nA programmer is writing a program that will output the first character of a string in upper case and\nthe remaining characters of the string in lower case.\nThe program will use locations from address WORD onwards to store the characters in the string.\nThe location with address LENGTH stores the number of characters that make up the string.\nThe programmer has started to write the program in the following table. The comment column\ncontains descriptions for the missing program instructions.",
+              "text": "A program needs a mask to ensure that a letter is in lower case.\nWrite the binary pattern of the mask in the space provided in the table below.\nBit number\n7 6 5 4 3 2 1 0\nASCII code ASCII code in binary\n70 0 1 0 0 0 1 1 0\n0 1 1 0 0 1 1 0\nMask\nGive the bit-wise operation that needs to be performed using the mask and the\nASCII code.\nThe following table shows part of the instruction set for a processor which has one general\npurpose register, the Accumulator (ACC), and an index register (IX).\nInstruction\nExplanation\nOp Operand\ncode\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the given address to\nLDD <address>\nACC.\nIndexed addressing. Form the address from <address> +\nLDX <address>\nthe contents of the index register. Copy the contents of this\ncalculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n into IX.\nSTO <address>\nStore the contents of ACC at the given address.\nINC <register> Add 1 to the contents of the register (ACC or IX).\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the\nJPE <address>\ncompare was True.\nFollowing a compare instruction, jump to <address> if the\nJPN <address>\ncompare was False.\nBitwise AND operation of the contents of ACC with the\nAND #n\noperand.\nBitwise AND operation of the contents of ACC with the\nAND <address>\ncontents of <address>.\nBitwise XOR operation of the contents of ACC with the\nXOR #n\noperand.\nBitwise XOR operation of the contents of ACC with the\nXOR <address>\ncontents of <address>.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nBitwise OR operation of the contents of ACC with the contents\nOR <address>\nof <address>.\nOutput to the screen the character whose ASCII value is\nOUT\nstored in ACC.\nEND Return control to the operating system.\nA programmer is writing a program that will output the first character of a string in upper case and\nthe remaining characters of the string in lower case.\nThe program will use locations from address WORD onwards to store the characters in the string.\nThe location with address LENGTH stores the number of characters that make up the string.\nThe programmer has started to write the program in the following table. The comment column\ncontains descriptions for the missing program instructions.",
               "marks": 2,
               "type": "give",
               "answerType": "short_answer",
@@ -228,7 +228,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "Complete the program using op codes from the given instruction set.\nOp\nLabel Operand Comment\ncode\nSTART: // initialise index register to zero\n// get first character of WORD\n// ensure it is in upper case using MASK1\n// output character to screen\n// increment index register\n// load 1 into ACC\n// store in COUNT\nLOOP: // load next character from indexed address WORD\n// make lower case using MASK2\n// output character to screen\n// increment COUNT starts here\n// is COUNT = LENGTH ?\n// if FALSE, jump to LOOP\n// end of program\nCOUNT:\nMASK1: // bit pattern for upper case\nMASK2: // bit pattern for lower case\nLENGTH: 4\nWORD: B01100110 // ASCII code in binary for 'f'\nB01110010 // ASCII code in binary for 'r'\nB01000101 // ASCII code in binary for 'E'\nB01000100 // ASCII code in binary for 'D'\n\nQuestion 4 begins on page 15.",
+          "text": "Complete the program using op codes from the given instruction set.\nOp\nLabel Operand Comment\ncode\nSTART: // initialise index register to zero\n// get first character of WORD\n// ensure it is in upper case using MASK1\n// output character to screen\n// increment index register\n// load 1 into ACC\n// store in COUNT\nLOOP: // load next character from indexed address WORD\n// make lower case using MASK2\n// output character to screen\n// increment COUNT starts here\n// is COUNT = LENGTH ?\n// if FALSE, jump to LOOP\n// end of program\nCOUNT:\nMASK1: // bit pattern for upper case\nMASK2: // bit pattern for lower case\nLENGTH: 4\nWORD: B01100110 // ASCII code in binary for 'f'\nB01110010 // ASCII code in binary for 'r'\nB01000101 // ASCII code in binary for 'E'\nB01000100 // ASCII code in binary for 'D'\nQuestion 4 begins on page 15.",
           "marks": 12,
           "type": "complete",
           "answerType": "long_answer",
@@ -445,7 +445,7 @@
             {
               "id": "16biii",
               "label": "(iii)",
-              "text": "State the programming environment you have used when debugging program code.\nName two debugging features and describe how they are used.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "State the programming environment you have used when debugging program code.\nName two debugging features and describe how they are used.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 4,
               "type": "state",
               "answerType": "short_answer",
@@ -456,7 +456,7 @@
           ]
         }
       ],
-      "marks": 7,
+      "marks": 2,
       "text": [
         "END;",
         "C) Visual Basic",
@@ -476,8 +476,7 @@
         "14 End Sub",
         "The programming environment reported a syntax error in the BubbleSort code.",
         "State the line number ........................................................................................................................",
-        "Write the correct code for this line.",
-        "[2]"
+        "Write the correct code for this line."
       ]
     }
   ]

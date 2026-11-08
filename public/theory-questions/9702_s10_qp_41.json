@@ -3,29 +3,40 @@
   "subjectCode": "9702",
   "session": "s10",
   "component": "41",
-  "totalMarks": 80,
-  "questionCount": 12,
+  "totalMarks": 90,
+  "questionCount": 13,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [
         {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Define the radian.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
           "id": "1b",
           "label": "(b)",
           "text": "A stone of weight 3.0 N is fixed, using glue, to one end P of a rigid rod CP, as shown\nin Fig. 1.1.\nglue\n85 cm\nstone,\nweight 3.0 N\nFig. 1.1\nThe rod is rotated about end C so that the stone moves in a vertical circle of\nradius 85 cm.\nThe angular speed ω of the rod and stone is gradually increased from zero until the glue\nsnaps. The glue fixing the stone snaps when the tension in it is 18 N.\nFor the position of the stone at which the glue snaps,",
           "marks": null,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": true,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": [
             {
               "id": "1bi",
               "label": "(i)",
               "text": "on the dotted circle of Fig. 1.1, mark with the letter S the position of the stone,",
               "marks": 1,
-              "type": "circle",
+              "type": "draw",
               "answerType": "diagram_only",
               "hasDiagramRef": true,
               "diagramOnly": true,
@@ -45,28 +56,8 @@
           ]
         }
       ],
-      "marks": 5,
-      "text": [
-        "2",
-        "capacitors in parallel, C = C + C + . . .",
-        "1 2",
-        "energy of charged capacitor, W = QV",
-        "resistors in series, R = R + R + . . .",
-        "1 2",
-        "resistors in parallel, 1/R = 1/R + 1/R + . . .",
-        "1 2",
-        "alternating current/voltage, x = x sin ωt",
-        "radioactive decay, x = x exp(– λt)",
-        "0.693",
-        "decay constant, λ =",
-        "Section A",
-        "For",
-        "Examiner’s",
-        "Use",
-        "Answer all the questions in the spaces provided.",
-        "1 (a) Define the radian.",
-        "[2]"
-      ]
+      "marks": 7,
+      "text": []
     },
     {
       "id": "2",
@@ -75,7 +66,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Some gas, initially at a temperature of 27.2 °C, is heated so that its temperature rises\nFor\nto 38.8 °C.\nExaminer’s\nUse\nCalculate, in kelvin, to an appropriate number of decimal places,",
+          "text": "Some gas, initially at a temperature of 27.2 °C, is heated so that its temperature rises\nto 38.8 °C.\nExaminer’s\nCalculate, in kelvin, to an appropriate number of decimal places,",
           "marks": null,
           "type": "calculate",
           "answerType": "calculate",
@@ -109,7 +100,7 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "The pressure p of an ideal gas is given by the expression\np = ρ\u0003c \u0004\nwhere ρ is the density of the gas.",
+          "text": "The pressure p of an ideal gas is given by the expression\np = ρc\nwhere ρ is the density of the gas.",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
@@ -119,7 +110,7 @@
             {
               "id": "2bi",
               "label": "(i)",
-              "text": "State the meaning of the symbol \u0003c \u0004.",
+              "text": "State the meaning of the symbol c .",
               "marks": 1,
               "type": "state",
               "answerType": "short_answer",
@@ -143,22 +134,101 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "Helium-4 may be assumed to behave as an ideal gas.\nFor",
+          "text": "Helium-4 may be assumed to behave as an ideal gas.\n3 3\nA cylinder has a constant volume of 7.8 × 10 cm and contains helium-4 gas at a\nExaminer’s\npressure of 2.1 × 10 Pa and at a temperature of 290 K.\nCalculate, for the helium gas,",
           "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
+          "type": "calculate",
+          "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "the amount of gas,\namount = ______ mol",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "the mean kinetic energy of the atoms,\nmean kinetic energy = ______ J",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "the total internal energy.\ninternal energy = ______ J",
+              "marks": null,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 8,
+      "marks": 12,
       "text": []
     },
     {
       "id": "3",
       "context": [],
       "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "State what is meant by\nExaminer’s",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "oscillations,",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "free oscillations,",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "simple harmonic motion.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
           "id": "3b",
           "label": "(b)",
@@ -171,15 +241,8 @@
           "parts": []
         }
       ],
-      "marks": 2,
-      "text": [
-        "3",
-        "A cylinder has a constant volume of 7.8 × 10 cm and contains helium-4 gas at a",
-        "Examiner’s",
-        "Use",
-        "pressure of 2.1 × 10 Pa and at a temperature of 290 K.",
-        "Calculate, for the helium gas,"
-      ]
+      "marks": 6,
+      "text": []
     },
     {
       "id": "4",
@@ -188,7 +251,7 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "Explain what is meant by the potential energy of a body.\nFor\nExaminer’s\nUse",
+          "text": "Explain what is meant by the potential energy of a body.\nExaminer’s",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -220,7 +283,7 @@
             {
               "id": "4bii",
               "label": "(ii)",
-              "text": "Use your answers in (i) to show that the initial kinetic energy E of each nucleus\nK For\nis 0.19 MeV.\nExaminer’s\nUse",
+              "text": "Use your answers in (i) to show that the initial kinetic energy E of each nucleus\nK For\nis 0.19 MeV.\nExaminer’s",
               "marks": 2,
               "type": "calculate",
               "answerType": "calculate",
@@ -252,9 +315,9 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "A constant current is maintained in a long straight vertical wire. A Hall probe is positioned\nFor\na distance r from the centre of the wire, as shown in Fig. 5.1.\nExaminer’s\nUse\ncurrent-carrying\nwire\nHall probe\nX Y\nterminals to\nHall probe circuitry\nand voltmeter\nFig. 5.1",
+          "text": "A constant current is maintained in a long straight vertical wire. A Hall probe is positioned\na distance r from the centre of the wire, as shown in Fig. 5.1.\nExaminer’s\ncurrent-carrying\nwire\nHall probe\nX Y\nterminals to\nHall probe circuitry\nand voltmeter\nFig. 5.1",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
@@ -273,7 +336,7 @@
             {
               "id": "5aii",
               "label": "(ii)",
-              "text": "The maximum Hall voltage V is measured at different distances r.\nData for V and the corresponding values of r are shown in Fig. 5.2.\nV / V r / cm\n0.290 1.0\n0.190 1.5\n0.140 2.0\n0.097 3.0\n0.073 4.0\n0.060 5.0\nFig. 5.2\nIt is thought that V and r are related by an expression of the form\nV =\nwhere k is a constant.\n1. Without drawing a graph, use data from Fig. 5.2 to suggest whether the\nFor\nexpression is valid.\nExaminer’s\nUse\n\n2. A graph showing the variation with of V is plotted.\nState the features of the graph that suggest that the expression is valid.",
+              "text": "The maximum Hall voltage V is measured at different distances r.\nData for V and the corresponding values of r are shown in Fig. 5.2.\nV / V r / cm\n0.290 1.0\n0.190 1.5\n0.140 2.0\n0.097 3.0\n0.073 4.0\n0.060 5.0\nFig. 5.2\nIt is thought that V and r are related by an expression of the form\nV =\nwhere k is a constant.\n1. Without drawing a graph, use data from Fig. 5.2 to suggest whether the\nexpression is valid.\nExaminer’s\n2. A graph showing the variation with of V is plotted.\nState the features of the graph that suggest that the expression is valid.",
               "marks": 2,
               "type": "state",
               "answerType": "short_answer",
@@ -351,10 +414,8 @@
       "marks": 5,
       "text": [
         "A student is asked to design a circuit by which a direct voltage of peak value 9.0V is obtained",
-        "For",
         "from a 240V alternating supply.",
         "Examiner’s",
-        "Use",
         "The student uses a transformer that may be considered to be ideal and a bridge rectifier",
         "incorporating four ideal diodes.",
         "The partially completed circuit diagram is shown in Fig. 6.1.",
@@ -416,10 +477,8 @@
       "marks": 7,
       "text": [
         "Negatively-charged particles are moving through a vacuum in a parallel beam. The particles",
-        "For",
         "have speed v.",
         "Examiner’s",
-        "Use",
         "The particles enter a region of uniform magnetic field of flux density 930μT. Initially, the",
         "particles are travelling at right-angles to the magnetic field. The path of a single particle is",
         "shown in Fig. 7.1.",
@@ -486,9 +545,9 @@
             {
               "id": "8biii",
               "label": "(iii)",
-              "text": "the momentum.\nFor\nExaminer’s\nUse\nmomentum = ______ N s \nSection B\nFor\nExaminer’s\nUse\nAnswer all the questions in the spaces provided.",
+              "text": "the momentum.\nExaminer’s\nmomentum = ______ N s \nSection B\nExaminer’s",
               "marks": 2,
-              "type": "use",
+              "type": "complete",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -500,11 +559,9 @@
       "marks": 8,
       "text": [
         "A π meson is a sub-atomic particle.",
-        "For",
         "0 –28",
         "A stationary π meson, which has mass 2.4 × 10 kg, decays to form two γ-ray photons.",
         "Examiner’s",
-        "Use",
         "The nuclear equation for this decay is",
         "π γ + γ."
       ]
@@ -571,7 +628,7 @@
             {
               "id": "9bii",
               "label": "(ii)",
-              "text": "The sunlight incident on the LDR becomes less bright.\nFor\nState and explain the effect on the voltmeter reading of this decrease in\nExaminer’s\nUse\nbrightness.",
+              "text": "The sunlight incident on the LDR becomes less bright.\nState and explain the effect on the voltmeter reading of this decrease in\nExaminer’s\nbrightness.",
               "marks": 3,
               "type": "state",
               "answerType": "short_answer",
@@ -601,7 +658,7 @@
         {
           "id": "10a",
           "label": "(a)",
-          "text": "Briefly explain the principles of CT scanning.\nFor\nExaminer’s\nUse",
+          "text": "Briefly explain the principles of CT scanning.\nExaminer’s",
           "marks": 6,
           "type": "explain",
           "answerType": "long_answer",
@@ -612,7 +669,7 @@
         {
           "id": "10b",
           "label": "(b)",
-          "text": "A simple section through a body consists of four voxels, as illustrated in Fig. 10.1.\nFor\nExaminer’s\nUse\nsection\ndirections\nof viewing\nFig. 10.1\nAn X-ray image of the section is obtained by viewing along each of the directions shown\nin Fig. 10.1.\nThe detector readings for each direction of viewing are summed to give the pattern of\nreadings shown in Fig. 10.2.\n25 22\n34 31\nFig. 10.2\nFor any one direction, the total of the detector readings is 16.",
+          "text": "A simple section through a body consists of four voxels, as illustrated in Fig. 10.1.\nExaminer’s\nsection\ndirections\nof viewing\nFig. 10.1\nAn X-ray image of the section is obtained by viewing along each of the directions shown\nin Fig. 10.1.\nThe detector readings for each direction of viewing are summed to give the pattern of\nreadings shown in Fig. 10.2.\n25 22\n34 31\nFig. 10.2\nFor any one direction, the total of the detector readings is 16.",
           "marks": null,
           "type": "give",
           "answerType": "short_answer",
@@ -677,18 +734,31 @@
       "marks": 6,
       "text": [
         "Many radio stations now broadcast on FM rather than on AM. In general, FM is broadcast at",
-        "For",
         "much higher frequencies than AM.",
-        "Examiner’s",
-        "Use"
+        "Examiner’s"
       ]
     },
     {
       "id": "12",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A ground station on Earth transmits a signal of frequency 14 GHz and power 18 kW towards",
+        "a communications satellite orbiting the Earth, as illustrated in Fig. 12.1.",
+        "Examiner’s",
+        "ground station,",
+        "signal power",
+        "18 kW",
+        "signal frequency"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
       "parts": [
         {
-          "id": "12a",
+          "id": "14a",
           "label": "(a)",
           "text": "Calculate the power of the signal received by the satellite.\npower = ______ W",
           "marks": 3,
@@ -699,7 +769,7 @@
           "parts": []
         },
         {
-          "id": "12b",
+          "id": "14b",
           "label": "(b)",
           "text": "The signal received by the satellite is amplified and transmitted back to Earth.",
           "marks": null,
@@ -709,7 +779,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "12bi",
+              "id": "14bi",
               "label": "(i)",
               "text": "Suggest a frequency for the signal that is sent back to Earth.\nfrequency = ______ GHz",
               "marks": 1,
@@ -720,9 +790,9 @@
               "parts": []
             },
             {
-              "id": "12bii",
+              "id": "14bii",
               "label": "(ii)",
-              "text": "Give a reason for your answer in (i).\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "Give a reason for your answer in (i).\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 1,
               "type": "name",
               "answerType": "short_answer",
@@ -735,16 +805,7 @@
       ],
       "marks": 5,
       "text": [
-        "A ground station on Earth transmits a signal of frequency 14 GHz and power 18 kW towards",
-        "For",
-        "a communications satellite orbiting the Earth, as illustrated in Fig. 12.1.",
-        "Examiner’s",
-        "Use",
-        "ground station,",
-        "signal power",
-        "18 kW",
-        "signal frequency",
-        "14 GHz",
+        "GHz",
         "satellite",
         "Earth",
         "Fig. 12.1",

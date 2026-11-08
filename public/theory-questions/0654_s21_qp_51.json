@@ -3,7 +3,7 @@
   "subjectCode": "0654",
   "session": "s21",
   "component": "51",
-  "totalMarks": 31,
+  "totalMarks": 60,
   "questionCount": 7,
   "questions": [
     {
@@ -58,16 +58,61 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "A student measures and records the movement of coloured water into a celery stem over five\nhours.\nTheir results are shown in Table 1.1.\nTable 1.1\ntime taken / hours distance moved / mm\n0 0\n1 21",
+          "text": "A student measures and records the movement of coloured water into a celery stem over five\nhours.\nTheir results are shown in Table 1.1.\nTable 1.1\ntime taken / hours distance moved / mm\n0 0\n1 21\n2 39\n3 60\n4 82\n5 97",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "On the grid provided, plot a graph of distance moved (vertical axis) against time taken.",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Draw the best-fit straight line.",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Use your graph to determine the distance moved by the coloured water after 1.5 hours.\nIndicate on your graph how you arrived at your answer.\ndistance moved = ______ mm",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "Describe the relationship between the distance moved by the coloured water and the\ntime taken.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 5,
+      "marks": 12,
       "text": [
         "You are going to investigate the movement of coloured water in a celery stem."
       ]
@@ -75,36 +120,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "39"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "60"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "82"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "2a",
           "label": "(a)",
           "text": "Procedure\n• Pour about 1 cm depth of celery puree into each of three test-tubes.\n• To one test-tube add an equal amount of Benedict’s solution, shake well and place in the\nhot water-bath provided for about three minutes.\nContinue with the procedure while you are waiting.\n• To the second test-tube add an equal amount of biuret solution.\n• To the third test-tube add a few drops of iodine solution.",
           "marks": null,
@@ -114,7 +132,7 @@
           "diagramOnly": true,
           "parts": [
             {
-              "id": "5ai",
+              "id": "2ai",
               "label": "(i)",
               "text": "Observe and record in Table 2.1 the final colour in each test-tube.\nTable 2.1\nfood test final colour observed conclusion\nBenedict’s solution\nbiuret solution\niodine solution",
               "marks": 3,
@@ -125,7 +143,7 @@
               "parts": []
             },
             {
-              "id": "5aii",
+              "id": "2aii",
               "label": "(ii)",
               "text": "Complete Table 2.1 by writing a conclusion for each of the three tests.",
               "marks": 3,
@@ -138,7 +156,7 @@
           ]
         },
         {
-          "id": "5b",
+          "id": "2b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -148,7 +166,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "2bi",
               "label": "(i)",
               "text": "A student tests the celery for the presence of fat.\nState the two substances needed for the fat test.\n______ and ______",
               "marks": 1,
@@ -159,9 +177,9 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "2bii",
               "label": "(ii)",
-              "text": "Explain why there should be no flames in the laboratory when doing this test.\n\n3 In this investigation you are going to design a test to distinguish between sodium hydrogencarbonate\nand sodium carbonate.",
+              "text": "Explain why there should be no flames in the laboratory when doing this test.",
               "marks": 1,
               "type": "explain",
               "answerType": "long_answer",
@@ -170,9 +188,19 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "You are going to test some celery for its nutrient content."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
-          "id": "5a",
+          "id": "3a",
           "label": "(a)",
           "text": "Procedure\n• Place 1 cm depth of aqueous sodium hydrogencarbonate into each of four test-tubes.\n• Place a wooden splint into the first test-tube and leave it soaking until needed.\n• Add a few drops of methyl orange indicator to the second test-tube and record your\nobservation in Table 3.1.\n• Add 1 cm depth of dilute hydrochloric acid to the third test-tube and test the gas given off.\nRecord in Table 3.1 your observation, the gas test used and the identity of the gas.\n• Add 1 cm depth of aqueous magnesium chloride to the fourth test-tube. Record your\nobservation in Table 3.1.\n• Place the splint from the first test-tube into the top of a blue Bunsen burner flame. Record\nin Table 3.1 the first colour seen.\nRepeat the procedure using aqueous sodium carbonate instead of aqueous sodium\nhydrogencarbonate.\nTable 3.1\naqueous aqueous\nsodium hydrogencarbonate sodium carbonate\ncolour with\nmethyl orange\nobservation when\ndilute hydrochloric\nacid added\ntest for the gas\ngiven off\nidentity of gas\nobservation when\naqueous\nmagnesium\nchloride added\nflame test colour",
           "marks": 6,
@@ -183,18 +211,29 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "3b",
           "label": "(b)",
-          "text": "A colourless solution is either sodium hydrogencarbonate or sodium carbonate.\nUse the results in Table 3.1 to describe a test to identify the solution as either sodium\nhydrogencarbonate or sodium carbonate.\n\n4 You are going to investigate the effect of surface area on the rate of a reaction.\nMarble chips react with dilute hydrochloric acid to make carbon dioxide gas.\nYou will use three forms of marble chips. Each form has a different surface area.\nlarge marble chips small surface area\nsmall marble chips\npowdered marble chips large surface area",
+          "text": "A colourless solution is either sodium hydrogencarbonate or sodium carbonate.\nUse the results in Table 3.1 to describe a test to identify the solution as either sodium\nhydrogencarbonate or sodium carbonate.",
           "marks": 1,
           "type": "identify",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "In this investigation you are going to design a test to distinguish between sodium hydrogencarbonate",
+        "and sodium carbonate."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
-          "id": "5a",
+          "id": "4a",
           "label": "(a)",
           "text": "Procedure\n• Place about 6 cm depth of dilute hydrochloric acid into a boiling tube (large test-tube).\n• Set up the apparatus shown in Fig. 4.1.\n• Add three large marble chips to the acid and quickly replace the bung.\n• Start the timer immediately.\n• Stop the timer when the test-tube is filled with gas.\n• If it takes longer than three minutes then record the time as >180 s.\n• Record the time in Table 4.1.\n• Pour the contents of the boiling tube into the waste container.\ntest-tube\nboiling\ntube\nwater\ndilute\nhydrochloric\nwater\nacid\nFig. 4.1\nRepeat the procedure using seven small marble chips.\nRepeat the procedure using two spatulas of powdered marble chips. You will need to be very\nquick replacing the bung.\nTable 4.1\ntime to fill one test-tube with gas / s\nlarge marble chips\nsmall marble chips\npowdered marble chips",
           "marks": 3,
@@ -205,7 +244,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "State the relationship between surface area and rate of reaction.",
           "marks": 1,
@@ -216,20 +255,48 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "4c",
           "label": "(c)",
-          "text": "Suggest a different method of collecting and measuring the gas produced.\nName the apparatus and explain how the rate of reaction is measured.\n\n5 Pure water has a fixed boiling temperature of 100 °C.\nWhen an impurity such as salt is added to water the boiling temperature increases.\nPlan an experiment to find out if the amount of salt added to water is proportional to the increase\nin boiling temperature of the water.\nYou may use any common laboratory apparatus and samples of water and salt.\nYou will not be doing this experiment.\nInclude in your plan:\n• the apparatus needed\n• a brief description of the method, explaining any safety precautions\n• the measurements you will make, including how to make them as accurate as possible\n• the variables you will control\n• how you will process your results and use them to draw a conclusion.\nYou may include a labelled diagram if you wish.\nYou may also include a table that can be used to record results if you wish. You are not required\nto include any results.",
+          "text": "Suggest a different method of collecting and measuring the gas produced.\nName the apparatus and explain how the rate of reaction is measured.",
           "marks": 2,
           "type": "name",
           "answerType": "short_answer",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
       "marks": 6,
       "text": [
-        "97"
+        "You are going to investigate the effect of surface area on the rate of a reaction.",
+        "Marble chips react with dilute hydrochloric acid to make carbon dioxide gas.",
+        "You will use three forms of marble chips. Each form has a different surface area.",
+        "large marble chips small surface area",
+        "small marble chips",
+        "powdered marble chips large surface area"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": 7,
+      "text": [
+        "Pure water has a fixed boiling temperature of 100 °C.",
+        "When an impurity such as salt is added to water the boiling temperature increases.",
+        "Plan an experiment to find out if the amount of salt added to water is proportional to the increase",
+        "in boiling temperature of the water.",
+        "You may use any common laboratory apparatus and samples of water and salt.",
+        "You will not be doing this experiment.",
+        "Include in your plan:",
+        "• the apparatus needed",
+        "• a brief description of the method, explaining any safety precautions",
+        "• the measurements you will make, including how to make them as accurate as possible",
+        "• the variables you will control",
+        "• how you will process your results and use them to draw a conclusion.",
+        "You may include a labelled diagram if you wish.",
+        "You may also include a table that can be used to record results if you wish. You are not required",
+        "to include any results."
       ]
     },
     {
@@ -494,7 +561,7 @@
             {
               "id": "7fii",
               "label": "(ii)",
-              "text": "To obtain a more accurate length, suggest one other precaution or improvement to the\nprocedure that can be made.\n\nNOTES FOR USE IN QUALITATIVE ANALYSIS\nTests for anions\nanion test test result\n2–\ncarbonate (CO ) add dilute acid effervescence, carbon dioxide\nproduced\nchloride (Cl ) acidify with dilute nitric acid, then white ppt.\n[in solution] add aqueous silver nitrate\nbromide (Br ) acidify with dilute nitric acid, then cream ppt.\n[in solution] add aqueous silver nitrate\nnitrate (NO ) add aqueous sodium hydroxide then ammonia produced\n[in solution] aluminium foil; warm carefully\n2–\nsulfate (SO ) acidify, then add aqueous barium white ppt.\n[in solution] nitrate\nTests for aqueous cations\ncation effect of aqueous sodium hydroxide effect of aqueous ammonia\nammonium (NH ) ammonia produced on warming –\n2+\ncalcium (Ca ) white ppt., insoluble in excess no ppt., or very slight white ppt.\n2+\ncopper (Cu ) light blue ppt., insoluble in excess light blue ppt., soluble in excess,\ngiving a dark blue solution\n2+\niron(II) (Fe ) green ppt., insoluble in excess green ppt., insoluble in excess\n3+\niron(III) (Fe ) red-brown ppt., insoluble in excess red-brown ppt., insoluble in excess\n2+\nzinc (Zn ) white ppt., soluble in excess giving a white ppt., soluble in excess, giving a\ncolourless solution colourless solution\nTests for gases Flame tests for metal ions\ngas test and test result metal ion flame colour\nammonia (NH ) turns damp, red litmus paper blue lithium (Li ) red\nturns limewater milky\ncarbon dioxide (CO ) sodium (Na ) yellow\nchlorine (Cl ) bleaches damp litmus paper potassium (K ) lilac\n2+\nhydrogen (H ) ‘pops’ with a lighted splint copper(II) (Cu ) blue-green\noxygen (O ) relights a glowing splint\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "To obtain a more accurate length, suggest one other precaution or improvement to the\nprocedure that can be made.\nNOTES FOR USE IN QUALITATIVE ANALYSIS\nTests for anions\nanion test test result\n2–\ncarbonate (CO ) add dilute acid effervescence, carbon dioxide\nproduced\nchloride (Cl ) acidify with dilute nitric acid, then white ppt.\n[in solution] add aqueous silver nitrate\nbromide (Br ) acidify with dilute nitric acid, then cream ppt.\n[in solution] add aqueous silver nitrate\nnitrate (NO ) add aqueous sodium hydroxide then ammonia produced\n[in solution] aluminium foil; warm carefully\n2–\nsulfate (SO ) acidify, then add aqueous barium white ppt.\n[in solution] nitrate\nTests for aqueous cations\ncation effect of aqueous sodium hydroxide effect of aqueous ammonia\nammonium (NH ) ammonia produced on warming –\n2+\ncalcium (Ca ) white ppt., insoluble in excess no ppt., or very slight white ppt.\n2+\ncopper (Cu ) light blue ppt., insoluble in excess light blue ppt., soluble in excess,\ngiving a dark blue solution\n2+\niron(II) (Fe ) green ppt., insoluble in excess green ppt., insoluble in excess\n3+\niron(III) (Fe ) red-brown ppt., insoluble in excess red-brown ppt., insoluble in excess\n2+\nzinc (Zn ) white ppt., soluble in excess giving a white ppt., soluble in excess, giving a\ncolourless solution colourless solution\nTests for gases Flame tests for metal ions\ngas test and test result metal ion flame colour\nammonia (NH ) turns damp, red litmus paper blue lithium (Li ) red\nturns limewater milky\ncarbon dioxide (CO ) sodium (Na ) yellow\nchlorine (Cl ) bleaches damp litmus paper potassium (K ) lilac\n2+\nhydrogen (H ) ‘pops’ with a lighted splint copper(II) (Cu ) blue-green\noxygen (O ) relights a glowing splint\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 1,
               "type": "suggest",
               "answerType": "long_answer",

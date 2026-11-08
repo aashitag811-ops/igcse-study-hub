@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w14",
   "component": "12",
-  "totalMarks": 70,
+  "totalMarks": 75,
   "questionCount": 9,
   "questions": [
     {
@@ -106,7 +106,7 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "Five descriptions and eight computer terms are shown below.",
         "Draw lines to connect each description to its correct term.",
@@ -131,8 +131,7 @@
         "Form of data transmission in which bits of",
         "Stack",
         "each character are sent simultaneously",
-        "using a communications path for each bit",
-        "[5]"
+        "using a communications path for each bit"
       ]
     },
     {
@@ -322,7 +321,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Complete the truth table for this logic circuit.\ninputs outputs\nsensor 1 sensor 2 sensor 3 sensor 4 A B C\n0 0 0 0\n0 0 0 1\n0 0 1 0\n0 0 1 1\n0 1 0 0\n0 1 0 1\n0 1 1 0\n0 1 1 1\n1 0 0 0\n1 0 0 1\n1 0 1 0\n1 0 1 1\n1 1 0 0\n1 1 0 1\n1 1 1 0\n1 1 1 1\n\nThe output values from the logic circuit, are sampled and stored in the three right-most bits of\nan 8-bit buffer.\nA B C\nDepending on the bit pattern in the buffer, a different colour light is switched on.\nThe bit patterns represent:\n0 0 0 = green light\n0 0 1 = red light\n1 0 0 = blue light\n1 0 1 = yellow light\n1 1 1 = white light\nThe value in the 5 left-most bits of the buffer is randomly generated. This value represents the\ntime (in tenths of a second) that will elapse before the logic circuit is sampled again.\nFor example,\n16 8 4 2 1 4 2 1\n0 0 1 0 1 0 0 1\nindicates that the current red light (value 0 0 1) stays on for five tenths (value 0 0 1 0 1) of a\nsecond.",
+          "text": "Complete the truth table for this logic circuit.\ninputs outputs\nsensor 1 sensor 2 sensor 3 sensor 4 A B C\n0 0 0 0\n0 0 0 1\n0 0 1 0\n0 0 1 1\n0 1 0 0\n0 1 0 1\n0 1 1 0\n0 1 1 1\n1 0 0 0\n1 0 0 1\n1 0 1 0\n1 0 1 1\n1 1 0 0\n1 1 0 1\n1 1 1 0\n1 1 1 1\nThe output values from the logic circuit, are sampled and stored in the three right-most bits of\nan 8-bit buffer.\nA B C\nDepending on the bit pattern in the buffer, a different colour light is switched on.\nThe bit patterns represent:\n0 0 0 = green light\n0 0 1 = red light\n1 0 0 = blue light\n1 0 1 = yellow light\n1 1 1 = white light\nThe value in the 5 left-most bits of the buffer is randomly generated. This value represents the\ntime (in tenths of a second) that will elapse before the logic circuit is sampled again.\nFor example,\n16 8 4 2 1 4 2 1\n0 0 1 0 1 0 0 1\nindicates that the current red light (value 0 0 1) stays on for five tenths (value 0 0 1 0 1) of a\nsecond.",
           "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
@@ -494,7 +493,7 @@
         {
           "id": "9c",
           "label": "(c)",
-          "text": "An expert system can be built from either an expert system shell (off-the-shelf software) or it\ncan be custom-written.\nDescribe two differences between off-the-shelf software and custom-written software.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "An expert system can be built from either an expert system shell (off-the-shelf software) or it\ncan be custom-written.\nDescribe two differences between off-the-shelf software and custom-written software.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
           "type": "name",
           "answerType": "short_answer",

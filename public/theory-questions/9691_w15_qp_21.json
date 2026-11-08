@@ -4,7 +4,7 @@
   "session": "w15",
   "component": "21",
   "totalMarks": 61,
-  "questionCount": 3,
+  "questionCount": 10,
   "questions": [
     {
       "id": "1",
@@ -56,7 +56,7 @@
             {
               "id": "1di",
               "label": "(i)",
-              "text": "Explain what the function EOF() does when used in a program.\n\nRavi wants to write another module in his program. The new module will:\n• read data from CourseData.DAT\n• write these data into consecutive elements of the array Course",
+              "text": "Explain what the function EOF() does when used in a program.\nRavi wants to write another module in his program. The new module will:\n• read data from CourseData.DAT\n• write these data into consecutive elements of the array Course",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -181,9 +181,72 @@
     {
       "id": "03",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Denary ← 0"
+      ]
+    },
+    {
+      "id": "05",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR i ← 1 TO LENGTH(CodedNumber)"
+      ]
+    },
+    {
+      "id": "06",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ThisChar ← MID(CodedNumber, i, 1)"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ThisNumber ← DenaryDigit(ThisChar)"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Denary ← Denary + (ThisNumber * 10)"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT Denary"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
       "parts": [
         {
-          "id": "03c",
+          "id": "12c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -193,7 +256,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "03ci",
+              "id": "12ci",
               "label": "(i)",
               "text": "The pseudocode in part (b) has some features that make it easier to read and understand.\nState three such features.",
               "marks": 3,
@@ -204,7 +267,7 @@
               "parts": []
             },
             {
-              "id": "03cii",
+              "id": "12cii",
               "label": "(ii)",
               "text": "State one other feature Alia could have used to help the understanding of this code.",
               "marks": 1,
@@ -215,7 +278,7 @@
               "parts": []
             },
             {
-              "id": "03ciii",
+              "id": "12ciii",
               "label": "(iii)",
               "text": "Write program code to implement the pseudocode given in part (b).\nRemember to declare variables before you use them.\nThe code is repeated here so that you do not need to turn back to part (b):\nPROCEDURE ConvertToDenary(CodedNumber : STRING)\nDenary ← 0\nFOR i ← 1 TO LENGTH(CodedNumber)\nThisChar ← MID(CodedNumber, i, 1)\nThisNumber ← DenaryDigit(ThisChar)\nDenary ← Denary + (ThisNumber * 10)\nENDFOR\nOUTPUT Denary\nENDPROCEDURE\nProgramming Language ______\nCode ______",
               "marks": 10,
@@ -226,9 +289,9 @@
               "parts": []
             },
             {
-              "id": "03civ",
+              "id": "12civ",
               "label": "(iv)",
-              "text": "The parameter of ConvertToDenary might not be a valid coded number.\nAn error message is to be output if the string provided as a parameter is not valid.\nDescribe the changes required to the code design.\n\n3 Ravi and Alia want to use debugging tools available in their program development environments.",
+              "text": "The parameter of ConvertToDenary might not be a valid coded number.\nAn error message is to be output if the string provided as a parameter is not valid.\nDescribe the changes required to the code design.\n3 Ravi and Alia want to use debugging tools available in their program development environments.",
               "marks": 3,
               "type": "describe",
               "answerType": "long_answer",
@@ -239,7 +302,7 @@
           ]
         },
         {
-          "id": "03a",
+          "id": "12a",
           "label": "(a)",
           "text": "Explain how each of the following are used:",
           "marks": null,
@@ -249,7 +312,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "03ai",
+              "id": "12ai",
               "label": "(i)",
               "text": "Breakpoint",
               "marks": 2,
@@ -260,7 +323,7 @@
               "parts": []
             },
             {
-              "id": "03aii",
+              "id": "12aii",
               "label": "(ii)",
               "text": "Stepping",
               "marks": 2,
@@ -271,7 +334,7 @@
               "parts": []
             },
             {
-              "id": "03aiii",
+              "id": "12aiii",
               "label": "(iii)",
               "text": "Variable check / watch",
               "marks": 2,
@@ -284,9 +347,9 @@
           ]
         },
         {
-          "id": "03b",
+          "id": "12b",
           "label": "(b)",
-          "text": "Name the type of testing that is performed with such debugging tools.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Name the type of testing that is performed with such debugging tools.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 1,
           "type": "name",
           "answerType": "short_answer",
@@ -297,14 +360,7 @@
       ],
       "marks": 24,
       "text": [
-        "Denary ← 0",
-        "05 FOR i ← 1 TO LENGTH(CodedNumber)",
-        "06 ThisChar ← MID(CodedNumber, i, 1)",
-        "07 ThisNumber ← DenaryDigit(ThisChar)",
-        "08 Denary ← Denary + (ThisNumber * 10)",
-        "09 ENDFOR",
-        "11 OUTPUT Denary",
-        "12 ENDPROCEDURE"
+        "ENDPROCEDURE"
       ]
     }
   ]

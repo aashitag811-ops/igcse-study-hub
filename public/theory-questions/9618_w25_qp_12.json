@@ -3,14 +3,14 @@
   "subjectCode": "9618",
   "session": "w25",
   "component": "12",
-  "totalMarks": 70,
+  "totalMarks": 75,
   "questionCount": 11,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 2,
       "text": [
         "Draw one line from each verification method to indicate whether it is used during data transfer or",
         "data entry.",
@@ -20,8 +20,7 @@
         "Data transfer",
         "Visual check",
         "Data entry",
-        "Parity block check",
-        "[2]"
+        "Parity block check"
       ]
     },
     {
@@ -31,7 +30,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Complete the table by describing each term.\nTerm Description\nCopyright ______\nOpen Source\n(Initiative)\nShareware ______\nSoftware Licence ______\n\n* 0000800000003 * DFD",
+          "text": "Complete the table by describing each term.\nTerm Description\nCopyright ______\nOpen Source\n(Initiative)\nShareware ______\nSoftware Licence ______\n* 0000800000003 * DFD",
           "marks": 4,
           "type": "complete",
           "answerType": "fill_blank",
@@ -82,7 +81,7 @@
             {
               "id": "3aii",
               "label": "(ii)",
-              "text": "Registers such as the Accumulator (ACC) and the Index Register (IX) are used in the\nCPU.\nIdentify two special purpose registers used in the CPU. Do not include the ACC or IX in\nyour answers.\n\n* 0000800000004 * DFD",
+              "text": "Registers such as the Accumulator (ACC) and the Index Register (IX) are used in the\nCPU.\nIdentify two special purpose registers used in the CPU. Do not include the ACC or IX in\nyour answers.\n* 0000800000004 * DFD",
               "marks": 2,
               "type": "identify",
               "answerType": "short_answer",
@@ -95,7 +94,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "The following table shows part of the instruction set for a processor. The processor has two\nregisters: the ACC and an IX.\nInstruction\nExplanation\nOpcode Operand\nLDM #n\nImmediate addressing. Load the number n to ACC\nLDD <address>\nDirect addressing. Load the contents of the location at the given\naddress to ACC\nLDI <address>\nIndirect addressing. The address to be used is at the given address.\nLoad the contents of this second address to ACC\nLDX <address>\nIndexed addressing. Form the address from <address> + the contents\nof the index register. Copy the contents of this calculated address to\nACC\nLDR #n\nImmediate addressing. Load the number n to IX\n<address> can be an absolute or symbolic address\n# denotes a denary number, e.g. #127\nThe current contents of the main memory and the index register are shown.\nAddress Instruction\nIX\nWrite the contents of the ACC after each instruction is executed.\nInstruction Value in ACC\nLDM #98\nLDI 101\nLDX 100\n\n* 0000800000005 * DFD",
+          "text": "The following table shows part of the instruction set for a processor. The processor has two\nregisters: the ACC and an IX.\nInstruction\nExplanation\nOpcode Operand\nLDM #n\nImmediate addressing. Load the number n to ACC\nLDD <address>\nDirect addressing. Load the contents of the location at the given\naddress to ACC\nLDI <address>\nIndirect addressing. The address to be used is at the given address.\nLoad the contents of this second address to ACC\nLDX <address>\nIndexed addressing. Form the address from <address> + the contents\nof the index register. Copy the contents of this calculated address to\nACC\nLDR #n\nImmediate addressing. Load the number n to IX\n<address> can be an absolute or symbolic address\n# denotes a denary number, e.g. #127\nThe current contents of the main memory and the index register are shown.\nAddress Instruction\nIX\nWrite the contents of the ACC after each instruction is executed.\nInstruction Value in ACC\nLDM #98\nLDI 101\nLDX 100\n* 0000800000005 * DFD",
           "marks": 3,
           "type": "write",
           "answerType": "short_answer",
@@ -106,7 +105,7 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "A student buys a new computer. The table shows the specifications of the old computer and\nthe new computer.\nOld computer New computer\n1.8 GHz dual core processor 2.3 GHz dual core processor\n16 MB cache 32 MB cache\nExplain why increasing the clock speed and increasing the cache memory will improve the\nperformance of the computer.\nClock speed ______\nCache memory ______\n\n* 0000800000006 * DFD",
+          "text": "A student buys a new computer. The table shows the specifications of the old computer and\nthe new computer.\nOld computer New computer\n1.8 GHz dual core processor 2.3 GHz dual core processor\n16 MB cache 32 MB cache\nExplain why increasing the clock speed and increasing the cache memory will improve the\nperformance of the computer.\nClock speed ______\nCache memory ______\n* 0000800000006 * DFD",
           "marks": 4,
           "type": "explain",
           "answerType": "fill_blank",
@@ -147,7 +146,7 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "Write an SQL script to return the number of containers stored in the database for the ship with\nthe name Caledonia.\n\n* 0000800000007 * DFD",
+          "text": "Write an SQL script to return the number of containers stored in the database for the ship with\nthe name Caledonia.\n* 0000800000007 * DFD",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -158,7 +157,7 @@
         {
           "id": "4d",
           "label": "(d)",
-          "text": "Describe the purpose of a developer interface in a Database Management System (DBMS).\n\n* 0000800000008 * DFD",
+          "text": "Describe the purpose of a developer interface in a Database Management System (DBMS).\n* 0000800000008 * DFD",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -205,7 +204,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Describe how packets are transmitted between two hosts using a star topology.\n\n* 0000800000009 * DFD",
+          "text": "Describe how packets are transmitted between two hosts using a star topology.\n* 0000800000009 * DFD",
           "marks": 3,
           "type": "describe",
           "answerType": "long_answer",
@@ -227,7 +226,7 @@
         {
           "id": "5e",
           "label": "(e)",
-          "text": "Complete the table by identifying one threat to computer and data security posed by networks\nand the internet.\nDescribe the threat and give a method of prevention.\nThreat Description Prevention\n\n* 0000800000010 * DFD",
+          "text": "Complete the table by identifying one threat to computer and data security posed by networks\nand the internet.\nDescribe the threat and give a method of prevention.\nThreat Description Prevention\n* 0000800000010 * DFD",
           "marks": 3,
           "type": "give",
           "answerType": "short_answer",
@@ -259,7 +258,7 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "The following table shows some words and corresponding denary values.\nWord Denary value\nComputing 55\nScience 56\nComputers 57\nare 58\nBrilliant! 59\nis 60\nFun! 61\nAmazing! 62\nThe following table shows three bytes of data that have been received.\nUse the table to find the corresponding words from the binary values received.\nBinary value 00111000 00111100 00111110\nWord\nWorking ______\n\n* 0000800000011 * DFD",
+          "text": "The following table shows some words and corresponding denary values.\nWord Denary value\nComputing 55\nScience 56\nComputers 57\nare 58\nBrilliant! 59\nis 60\nFun! 61\nAmazing! 62\nThe following table shows three bytes of data that have been received.\nUse the table to find the corresponding words from the binary values received.\nBinary value 00111000 00111100 00111110\nWord\nWorking ______\n* 0000800000011 * DFD",
           "marks": 1,
           "type": "use",
           "answerType": "fill_blank",
@@ -293,10 +292,10 @@
               "label": "(ii)",
               "text": "The computer also uses parity block check. The parity block check uses even parity.\nComputer A transmits four bytes of data to computer B, followed by a parity byte.\nComputer B receives the following sequence of bytes.\nparity\nbit\n1 0 1 1 0 1 1 1\n0 1 1 1 0 0 0 0\n0 0 0 1 1 0 1 1\n0 1 1 1 0 1 0 0\nparity byte 1 0 1 0 0 0 0 0\nFollowing transmission, one of the four bytes of data has an error in one of the bits.\nCircle the bit that has been altered during the data transfer.",
               "marks": 1,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             }
           ]
@@ -304,7 +303,7 @@
         {
           "id": "6d",
           "label": "(d)",
-          "text": "A bitmap image has a resolution of 1000 pixels wide by 2000 pixels high. The colour depth is\n16 bits.\nCalculate an estimate of the file size in megabytes.\nShow your working.\nFile size ______ megabytes\n\n* 0000800000012 * DFD",
+          "text": "A bitmap image has a resolution of 1000 pixels wide by 2000 pixels high. The colour depth is\n16 bits.\nCalculate an estimate of the file size in megabytes.\nShow your working.\nFile size ______ megabytes\n* 0000800000012 * DFD",
           "marks": 2,
           "type": "calculate",
           "answerType": "fill_blank",
@@ -366,7 +365,7 @@
             {
               "id": "7cii",
               "label": "(ii)",
-              "text": "Write the hexadecimal value for the ASCII character ‘h’.\n\n* 0000800000013 * DFD",
+              "text": "Write the hexadecimal value for the ASCII character ‘h’.\n* 0000800000013 * DFD",
               "marks": 1,
               "type": "write",
               "answerType": "short_answer",
@@ -442,7 +441,7 @@
             {
               "id": "8bii",
               "label": "(ii)",
-              "text": "The image files that are displayed on the touchscreen have been corrupted.\nIdentify two examples of utility software that could be used to recover the images.\n\n* 0000800000014 * DFD",
+              "text": "The image files that are displayed on the touchscreen have been corrupted.\nIdentify two examples of utility software that could be used to recover the images.\n* 0000800000014 * DFD",
               "marks": 2,
               "type": "identify",
               "answerType": "short_answer",
@@ -476,7 +475,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "Consider the following logic expression:\nX = NOT ((A NAND B) XOR (NOT A OR NOT C))\nA truth table for the logic expression is given:\nRow number A B C X\n1 0 0 0 1\n2 0 0 1 0\n3 0 1 0 1\n4 0 1 1 0\n5 1 0 0 1\n6 1 0 1 0\n7 1 1 0 1\n8 1 1 1 1\nThere are three errors in the truth table.\nIdentify the three errors in the truth table by writing the row numbers with an incorrect output.\nError 1 Row number ______\nError 2 Row number ______\nError 3 Row number ______\n\n* 0000800000015 * DFD",
+          "text": "Consider the following logic expression:\nX = NOT ((A NAND B) XOR (NOT A OR NOT C))\nA truth table for the logic expression is given:\nRow number A B C X\n1 0 0 0 1\n2 0 0 1 0\n3 0 1 0 1\n4 0 1 1 0\n5 1 0 0 1\n6 1 0 1 0\n7 1 1 0 1\n8 1 1 1 1\nThere are three errors in the truth table.\nIdentify the three errors in the truth table by writing the row numbers with an incorrect output.\nError 1 Row number ______\nError 2 Row number ______\nError 3 Row number ______\n* 0000800000015 * DFD",
           "marks": 2,
           "type": "identify",
           "answerType": "fill_blank",
@@ -517,7 +516,7 @@
         {
           "id": "10c",
           "label": "(c)",
-          "text": "A user downloads the computer program from the internet.\nState what should be included as part of the download to make sure the program is authentic.\n\n* 0000800000016 * DFD",
+          "text": "A user downloads the computer program from the internet.\nState what should be included as part of the download to make sure the program is authentic.\n* 0000800000016 * DFD",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",
@@ -535,7 +534,7 @@
       "id": "11",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "An automated system opens doors when a person is detected within 2 metres. The system closes",
         "the doors when there is no longer a person within 2 metres.",
@@ -543,7 +542,6 @@
         "Justify your choice.",
         "Monitoring or Control .....................................................",
         "Justification .......................................................................................................................................",
-        "[3]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

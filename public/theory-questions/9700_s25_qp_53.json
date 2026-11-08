@@ -3,8 +3,8 @@
   "subjectCode": "9700",
   "session": "s25",
   "component": "53",
-  "totalMarks": 32,
-  "questionCount": 7,
+  "totalMarks": 30,
+  "questionCount": 2,
   "questions": [
     {
       "id": "1",
@@ -58,16 +58,16 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "After crossing double heterozygotes (genotype AaDd), the student recorded the numbers of\noffspring in each of the four phenotypic groups.\nThe student used a chi-squared (χ ) test to analyse these data.\nThe null hypothesis for this χ test was:\nThere is no difference between the expected and observed numbers of offspring in\neach phenotypic group.\nThe calculated value of χ was 4.798.\nThe student compared 4.798 to the values in Table 1.2.\nTable 1.2\nprobability level (p)\ndegrees of\nfreedom\n0.10 0.05 0.01\n1 2.706 3.841 6.635",
-          "marks": null,
-          "type": "other",
+          "text": "After crossing double heterozygotes (genotype AaDd), the student recorded the numbers of\noffspring in each of the four phenotypic groups.\nThe student used a chi-squared (χ ) test to analyse these data.\nThe null hypothesis for this χ test was:\nThere is no difference between the expected and observed numbers of offspring in\neach phenotypic group.\nThe calculated value of χ was 4.798.\nThe student compared 4.798 to the values in Table 1.2.\nTable 1.2\nprobability level (p)\ndegrees of\nfreedom\n0.10 0.05 0.01\n1 2.706 3.841 6.635\n2 4.605 5.991 9.210\n3 6.251 7.815 11.345\n4 7.779 9.488 13.277\n5 9.236 11.070 15.086\nUsing Table 1.2 and the calculated value of χ of 4.798, state and explain what the student\ncan conclude about the results.",
+          "marks": 3,
+          "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 10,
+      "marks": 13,
       "text": [
         "Drosophila melanogaster is a species of fruit fly.",
         "Fig. 1.1 shows a female fruit fly and a male fruit fly. A typical fruit fly is 3 mm in length.",
@@ -111,36 +111,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "4.605 5.991 9.210"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "6.251 7.815 11.345"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "7.779 9.488 13.277"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "2a",
           "label": "(a)",
           "text": "Identify the independent variable in this investigation.",
           "marks": 1,
@@ -151,7 +124,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "2b",
           "label": "(b)",
           "text": "The scientists standardised the temperature and the initial number of E. coli cells.\nState two other variables that the scientists should standardise in this investigation.",
           "marks": 2,
@@ -162,7 +135,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "2c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -172,7 +145,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5ci",
+              "id": "2ci",
               "label": "(i)",
               "text": "Explain why the scientists included the negative control experiment in their investigation.",
               "marks": 1,
@@ -183,7 +156,7 @@
               "parts": []
             },
             {
-              "id": "5cii",
+              "id": "2cii",
               "label": "(ii)",
               "text": "Explain why the scientists included the positive control experiment in their investigation.",
               "marks": 1,
@@ -196,25 +169,88 @@
           ]
         },
         {
-          "id": "5d",
+          "id": "2d",
           "label": "(d)",
-          "text": "Some of the results are shown in Table 2.1.\nTable 2.1\nmean fluorescence / arbitrary units (au)\ntime / hours\nEchAMP negative control positive control\n0 10 10 10\n1 11 11 11\n3 15 15 15",
+          "text": "Some of the results are shown in Table 2.1.\nTable 2.1\nmean fluorescence / arbitrary units (au)\ntime / hours\nEchAMP negative control positive control\n0 10 10 10\n1 11 11 11\n3 15 15 15\n6 20 35 20\n7 100 140 70",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Use Table 2.1 to complete the graph in Fig. 2.2 by:\n• plotting the three results at 7 hours\n• adding axis labels\n• completing the key.\nKey\n140 =\nDO NOT WRITE IN THIS MARGIN80\n0 1 2 3 4 5 6 7 8\nFig. 2.2",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Use Table 2.1 and Fig. 2.2 to compare the effect of EchAMP and bacitracin on the\npopulation growth of E. coli.",
+              "marks": 2,
+              "type": "compare",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "The scientists used t-tests to analyse the results.\nThe scientists compared the fluorescence emitted by E. coli after seven hours when\nexposed to:\n• the negative control\n• EchAMP.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "State a null hypothesis for this t-test.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "For E. coli exposed to the negative control, after seven hours:\n• the mean of nine fluorescence measurements was 140 au\n• the sample standard deviation was 8 au.\nFor E. coli exposed to EchAMP, after seven hours:\n• the mean of nine fluorescence measurements was 100 au\n• the sample standard deviation was 10 au.\nThe formula for calculating a t-test is:\nxr - xr\n1 2\nt =\n2 2\ns s\n1 2\nf p\nn n\n1 2\nkey to symbols\nx = mean\ns = sample standard deviation\nn = sample size (number of observations)\nCalculate a value of t for these data.\nShow your working and state your answer to four significant figures.\nt = ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eiii",
+              "label": "(iii)",
+              "text": "The t value calculated by the scientists was significant.\nAfter reading the scientific paper published by the scientists, a student wrote\nthe conclusion:\nEchAMP would make a good treatment for bacterial infections in the human\ndigestive system.\nSuggest four reasons why this conclusion might not be valid.\nThe boundaries and names shown, the designations used and the presentation of material on any maps contained in this question paper/insert do not imply\nofficial endorsement or acceptance by Cambridge Assessment International Education concerning the legal status of any country, territory, or area or any of its\nauthorities, or of the delimitation of its frontiers or boundaries.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "marks": 4,
+              "type": "suggest",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 5,
+      "marks": 17,
       "text": [
-        "9.236 11.070 15.086",
-        "Using Table 1.2 and the calculated value of χ of 4.798, state and explain what the student",
-        "can conclude about the results.",
-        "[3]",
-        "[Total:13]",
-        "2 Echidnas are mammals that live in Australia and New Guinea.",
+        "Echidnas are mammals that live in Australia and New Guinea.",
         "Fig. 2.1 shows an echidna.",
         "Fig. 2.1",
         "Scientists analysed the milk produced by female echidnas and identified a protein that they named",
@@ -232,70 +268,6 @@
         "did not contain EchAMP.",
         "• A positive control experiment repeated the procedure (steps 1–6), but the treatment solution",
         "contained an antibiotic called bacitracin instead of EchAMP."
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "20 35 20"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [
-        {
-          "id": "7e",
-          "label": "(e)",
-          "text": "The scientists used t-tests to analyse the results.\nThe scientists compared the fluorescence emitted by E. coli after seven hours when\nexposed to:\n• the negative control\n• EchAMP.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "7ei",
-              "label": "(i)",
-              "text": "State a null hypothesis for this t-test.",
-              "marks": 1,
-              "type": "state",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "7eii",
-              "label": "(ii)",
-              "text": "For E. coli exposed to the negative control, after seven hours:\n• the mean of nine fluorescence measurements was 140 au\n• the sample standard deviation was 8 au.\nFor E. coli exposed to EchAMP, after seven hours:\n• the mean of nine fluorescence measurements was 100 au\n• the sample standard deviation was 10 au.\nThe formula for calculating a t-test is:\nxr - xr\n1 2\nt =\n2 2\ns s\n1 2\nf p\nn n\n1 2\nkey to symbols\nx = mean\ns = sample standard deviation\nn = sample size (number of observations)\nCalculate a value of t for these data.\nShow your working and state your answer to four significant figures.\nt = ______",
-              "marks": 3,
-              "type": "state",
-              "answerType": "fill_blank",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "7eiii",
-              "label": "(iii)",
-              "text": "The t value calculated by the scientists was significant.\nAfter reading the scientific paper published by the scientists, a student wrote\nthe conclusion:\nEchAMP would make a good treatment for bacterial infections in the human\ndigestive system.\nSuggest four reasons why this conclusion might not be valid.\n\nThe boundaries and names shown, the designations used and the presentation of material on any maps contained in this question paper/insert do not imply\nofficial endorsement or acceptance by Cambridge Assessment International Education concerning the legal status of any country, territory, or area or any of its\nauthorities, or of the delimitation of its frontiers or boundaries.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
-              "marks": 4,
-              "type": "suggest",
-              "answerType": "long_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        }
-      ],
-      "marks": 17,
-      "text": [
-        "100 140 70"
       ]
     }
   ]

@@ -3,8 +3,8 @@
   "subjectCode": "9709",
   "session": "s23",
   "component": "63",
-  "totalMarks": 39,
-  "questionCount": 6,
+  "totalMarks": 47,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -14,10 +14,10 @@
       "text": [
         "A random variable X has probability density function f, where",
         "3 2",
-        "\u00001 − x \u0001 0 ≤ x ≤ 1,",
-        "f\u0000x\u0001 =",
+        "1 − x  0 ≤ x ≤ 1,",
+        "fx =",
         "0 otherwise.",
-        "Find E\u0000X\u0001. [3]"
+        "Find EX. [3]"
       ]
     },
     {
@@ -93,13 +93,12 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "The mass, in tonnes, of steel produced per day at a factory is normally distributed with mean 65.2 and",
         "standard deviation 3.6. It can be assumed that the mass of steel produced each day is independent of",
         "other days. The factory makes $50 profit on each tonne of steel produced.",
-        "Find the probability that the total profit made in a randomly chosen 7-day week is less than $22 000.",
-        "[6]"
+        "Find the probability that the total profit made in a randomly chosen 7-day week is less than $22 000."
       ]
     },
     {
@@ -155,11 +154,22 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Use an appropriate approximating distribution to find P\u0000X ≤ 3\u0001. \ndistribution used in (a) is likely to be appropriate. \nf\u0000x\u0001\n1 2\nπ π\nA random variable X has probability density function f, where the graph of y = f\u0000x\u0001 is a semicircle",
+          "text": "Use an appropriate approximating distribution to find PX ≤ 3.",
           "marks": 3,
           "type": "use",
           "answerType": "short_answer",
           "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
+          "label": "(b)",
+          "text": "Find the values of EX and VarX, and explain how your answers suggest that the approximating\ndistribution used in (a) is likely to be appropriate. \nfx\n1 2\nπ π\nA random variable X has probability density function f, where the graph of y = fx is a semicircle\nwith centre 0, 0 and radius , entirely above the x-axis. Elsewhere fx = 0 (see diagram).",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
         },
@@ -177,16 +187,27 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "Show that angle AOB is π radians and hence find P X > . \n8 A new light was installed on a certain footpath. A town councillor decided to use a hypothesis test to\ninvestigate whether the number of people using the path in the evening had increased.\nBefore the light was installed, the mean number of people using the path during any 20-minute period\nduring the evening was 1.01.\nAfter the light was installed, the total number, n, of people using the path during 3 randomly chosen\n20-minute periods during the evening was noted.",
+          "text": "Show that angle AOB is π radians and hence find P X > .",
           "marks": 6,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "It is known that 1 in 5000 people in Atalia have a certain condition. A random sample of 12 500",
+        "people from Atalia is chosen for a medical trial. The number having the condition is denoted by X."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
         {
-          "id": "6a",
+          "id": "8a",
           "label": "(a)",
           "text": "Given that the value of n was 6, use a Poisson distribution to carry out the test at the 5%\nsignificance level.",
           "marks": 6,
@@ -197,7 +218,7 @@
           "parts": []
         },
         {
-          "id": "6b",
+          "id": "8b",
           "label": "(b)",
           "text": "Later a similar test, at the 5% significance level, was carried out using another 3 randomly chosen\n20-minute periods during the evening.\nFind the probability of a Type I error.",
           "marks": 2,
@@ -208,7 +229,7 @@
           "parts": []
         },
         {
-          "id": "6c",
+          "id": "8c",
           "label": "(c)",
           "text": "State what is meant by a Type I error in this context.",
           "marks": 1,
@@ -219,7 +240,7 @@
           "parts": []
         },
         {
-          "id": "6d",
+          "id": "8d",
           "label": "(d)",
           "text": "State, in context, what further information would be needed in order to find the probability of a\nType II error. Do not carry out any further calculation. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
@@ -230,10 +251,14 @@
           "parts": []
         }
       ],
-      "marks": 22,
+      "marks": 11,
       "text": [
-        "It is known that 1 in 5000 people in Atalia have a certain condition. A random sample of 12 500",
-        "people from Atalia is chosen for a medical trial. The number having the condition is denoted by X."
+        "A new light was installed on a certain footpath. A town councillor decided to use a hypothesis test to",
+        "investigate whether the number of people using the path in the evening had increased.",
+        "Before the light was installed, the mean number of people using the path during any 20-minute period",
+        "during the evening was 1.01.",
+        "After the light was installed, the total number, n, of people using the path during 3 randomly chosen",
+        "20-minute periods during the evening was noted."
       ]
     }
   ]

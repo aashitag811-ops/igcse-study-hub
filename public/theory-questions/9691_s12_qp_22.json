@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s12",
   "component": "22",
-  "totalMarks": 65,
+  "totalMarks": 73,
   "questionCount": 8,
   "questions": [
     {
@@ -35,7 +35,7 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "The responses from each student will be stored as a record consisting of the following\nFor\nfields: Examiner's\nUse\n• FirstName\n• DateOfBirth\n• BookType\n• ReadsNovels\nComplete the following table. Only a single value should be given for the Field Size.\nField Name Data Type Field Size (bytes)\nFirstName\nDateOfBirth\nBookType\nReadsNovels",
+          "text": "The responses from each student will be stored as a record consisting of the following\nfields: Examiner's\n• FirstName\n• DateOfBirth\n• BookType\n• ReadsNovels\nComplete the following table. Only a single value should be given for the Field Size.\nField Name Data Type Field Size (bytes)\nFirstName\nDateOfBirth\nBookType\nReadsNovels",
           "marks": 8,
           "type": "name",
           "answerType": "short_answer",
@@ -46,8 +46,8 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "Anna is to write a program to analyse the responses.\nFor\nExaminer's\nUse\nUsing nested IF...THEN statements, complete the pseudocode to calculate the totals\nfor each BookType (printed, audio-book or e-book).\nREPEAT\nREAD next record\nUNTIL no more student records",
-          "marks": null,
+          "text": "Anna is to write a program to analyse the responses.\nUsing nested IF...THEN statements, complete the pseudocode to calculate the totals\nfor each BookType (printed, audio-book or e-book).\nREPEAT\nREAD next record\nUNTIL no more student records",
+          "marks": 5,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
@@ -57,8 +57,8 @@
         {
           "id": "1e",
           "label": "(e)",
-          "text": "Anna will want a report that shows these totals.\nFor\nExaminer's\nUse\nDesign a printed report that shows for each BookType:\n• the total for that type\n• the percentage for that type",
-          "marks": null,
+          "text": "Anna will want a report that shows these totals.\nDesign a printed report that shows for each BookType:\n• the total for that type\n• the percentage for that type",
+          "marks": 3,
           "type": "design",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -77,12 +77,10 @@
           "parts": []
         }
       ],
-      "marks": 21,
+      "marks": 29,
       "text": [
         "Anna wants to find out about her fellow students’ reading habits. It will be part of her",
-        "For",
         "Literature coursework. Examiner's",
-        "Use",
         "She will ask questions online, so starts by designing a screen layout. The first four",
         "questions will ask for:",
         "• student’s first name",
@@ -143,9 +141,9 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "Philipe is not convinced that a WHILE loop was the best choice for this pseudocode.\nFor\nInstead he considers using a REPEAT...UNTIL loop. Examiner's\nUse\nRewrite the corrected pseudocode using a REPEAT...UNTIL loop.",
+          "text": "Philipe is not convinced that a WHILE loop was the best choice for this pseudocode.\nInstead he considers using a REPEAT...UNTIL loop. Examiner's\nRewrite the corrected pseudocode using a REPEAT...UNTIL loop.",
           "marks": 2,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -166,9 +164,7 @@
       "marks": 10,
       "text": [
         "Philipe is trying different ways of designing the process of entering data into an array.",
-        "For",
         "He declares a variable called ArraySize and sets it to 3. Examiner's",
-        "Use",
         "He declares an array Number[ArraySize].",
         "He then writes the following pseudocode.",
         "Element ← 1",
@@ -196,9 +192,9 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "She writes this code as the function JoinStrings because it is to be used several\nFor\nExaminer's\ntimes.\nUse",
+          "text": "She writes this code as the function JoinStrings because it is to be used several\ntimes.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -242,9 +238,7 @@
       "marks": 13,
       "text": [
         "Gina is developing her programming skills in string handling.",
-        "For",
         "She is going to input two strings. Examiner's",
-        "Use",
         "Each string is made up of three parts:",
         "• letters, followed by",
         "• a single ‘*’ character, followed by",
@@ -352,9 +346,6 @@
       "marks": null,
       "text": [
         "Romana is learning about recursion. She designs a recursive function.",
-        "For",
-        "Examiner's",
-        "Use",
         "01 FUNCTION Happening(Num)",
         "02 IF Num = 1",
         "03 THEN",
@@ -408,7 +399,7 @@
             {
               "id": "08bi",
               "label": "(i)",
-              "text": "State two line numbers in the given pseudocode (other than lines 01 and 08) that\nFor\nshow the subroutine is a function. Give your reason for choosing these. Examiner's\nUse\nLine numbers\nReason",
+              "text": "State two line numbers in the given pseudocode (other than lines 01 and 08) that\nshow the subroutine is a function. Give your reason for choosing these. Examiner's\nLine numbers\nReason",
               "marks": 3,
               "type": "state",
               "answerType": "short_answer",
@@ -443,7 +434,7 @@
         {
           "id": "08d",
           "label": "(d)",
-          "text": "The same process could have been solved iteratively using a FOR loop.\nDiscuss the merits of iterative and recursive solutions to this problem, particularly when\nthe initial value of Num is very large.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "The same process could have been solved iteratively using a FOR loop.\nDiscuss the merits of iterative and recursive solutions to this problem, particularly when\nthe initial value of Num is very large.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",

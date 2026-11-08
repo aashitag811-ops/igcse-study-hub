@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w23",
   "component": "21",
-  "totalMarks": 62,
+  "totalMarks": 61,
   "questionCount": 8,
   "questions": [
     {
@@ -78,7 +78,7 @@
           "id": "2a",
           "label": "(a)",
           "text": "An algorithm is expressed as follows:\n• input 100 numbers, one at a time\n• keep a total of all numbers input that have a value between 30 and 70 inclusive and\noutput this total after the last number has been input.\nOutline, using stepwise refinement, the five steps for this algorithm which could be used to\nproduce pseudocode.\nDo not use pseudocode statements in your answer.\nStep 1 ______\nStep 2 ______\nStep 3 ______\nStep 4 ______\nStep 5 ______",
-          "marks": null,
+          "marks": 5,
           "type": "outline",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -97,7 +97,7 @@
           "parts": []
         }
       ],
-      "marks": 2,
+      "marks": 7,
       "text": []
     },
     {
@@ -107,7 +107,7 @@
         {
           "id": "3a",
           "label": "(a)",
-          "text": "The stack is implemented using two variables and a 1D array of 8 elements as shown.\nThe variables are used to reference individual elements of the array, in such a way that:\n• the array is filled from the lowest indexed element towards the highest\n• all the elements of the array are available for the stack.\nComplete the diagram to represent the state of the stack as shown above.\nArray Data\nelement\n5 Variable",
+          "text": "The stack is implemented using two variables and a 1D array of 8 elements as shown.\nThe variables are used to reference individual elements of the array, in such a way that:\n• the array is filled from the lowest indexed element towards the highest\n• all the elements of the array are available for the stack.\nComplete the diagram to represent the state of the stack as shown above.\nArray Data\nelement",
           "marks": null,
           "type": "state",
           "answerType": "short_answer",
@@ -133,13 +133,13 @@
       ]
     },
     {
-      "id": "4",
+      "id": "5",
       "context": [],
       "parts": [
         {
-          "id": "4b",
+          "id": "5b",
           "label": "(b)",
-          "text": "A function Push() will add a value onto the stack by manipulating the array and variables in\npart (a).\nBefore adding a value onto the stack, the algorithm will check that space is available.\nIf the value is added to the stack, the function will return TRUE, otherwise it will return FALSE.\nThe algorithm is expressed in five steps.\nComplete the steps.\n1. If ______ then return FALSE\n2. Otherwise ______ TopOfStack\n3. Use TopOfStack as an ______ to the array.\n4. Set the element at this ______ to the ______ being added.\n5. Return ______ .\n\n4 A global array is declared in pseudocode as follows:\nDECLARE Data : ARRAY[1:150] OF STRING\nA function TooMany() will:\n1. take two parameters:\n• a string (the search string)\n• an integer (the maximum value)\n2. count the number of strings in the array that exactly match the search string\n3. return TRUE if the count is greater than the maximum value, otherwise will return FALSE",
+          "text": "A function Push() will add a value onto the stack by manipulating the array and variables in\npart (a).\nBefore adding a value onto the stack, the algorithm will check that space is available.\nIf the value is added to the stack, the function will return TRUE, otherwise it will return FALSE.\nThe algorithm is expressed in five steps.\nComplete the steps.\n1. If ______ then return FALSE\n2. Otherwise ______ TopOfStack\n3. Use TopOfStack as an ______ to the array.\n4. Set the element at this ______ to the ______ being added.\n5. Return ______ .\n4 A global array is declared in pseudocode as follows:\nDECLARE Data : ARRAY[1:150] OF STRING\nA function TooMany() will:\n1. take two parameters:\n• a string (the search string)\n• an integer (the maximum value)\n2. count the number of strings in the array that exactly match the search string\n3. return TRUE if the count is greater than the maximum value, otherwise will return FALSE",
           "marks": 5,
           "type": "complete",
           "answerType": "fill_blank",
@@ -148,7 +148,7 @@
           "parts": []
         },
         {
-          "id": "4a",
+          "id": "5a",
           "label": "(a)",
           "text": "Write pseudocode for the function TooMany().",
           "marks": 6,
@@ -159,7 +159,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "5b",
           "label": "(b)",
           "text": "The global array is changed to a 2D array, organised as 150 rows by 2 columns. It is declared\nin pseudocode as follows:\nDECLARE Data : ARRAY[1:150, 1:2] OF STRING\nThe algorithm for the function in part (a) is changed. Strings will only be counted if both of\nthe following conditions are true:\n• The current row is an even number.\n• The search string exactly matches the value in either column.\nWrite pseudocode to check these conditions.\nAssume that the row index is contained in variable Row and the search string in variable\nSearch.",
           "marks": 3,
@@ -170,11 +170,11 @@
           "parts": []
         }
       ],
-      "marks": 14,
+      "marks": 3,
       "text": [
-        "TopOfStack",
-        "BottomOfStack",
-        "[3]"
+        "Variable",
+        "4 TopOfStack",
+        "BottomOfStack"
       ]
     },
     {
@@ -289,7 +289,7 @@
       "id": "7",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "An algorithm is represented by a state-transition diagram.",
         "The table shows the inputs, outputs and states for the algorithm:",
@@ -306,8 +306,7 @@
         "A1 | X1",
         "START",
         "S1",
-        "A3",
-        "[5]"
+        "A3"
       ]
     },
     {
@@ -360,7 +359,7 @@
             {
               "id": "8cii",
               "label": "(ii)",
-              "text": "Explain how the message format could be changed to allow a blank line to be sent.\n\nQuestion 8(d) starts on page 18.",
+              "text": "Explain how the message format could be changed to allow a blank line to be sent.\nQuestion 8(d) starts on page 18.",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -373,7 +372,7 @@
         {
           "id": "8d",
           "label": "(d)",
-          "text": "A new module has been defined:\nModule Description\n• takes two parameters:\no a string containing a message\no an integer containing a field number\nGetField()\n• If the field number is valid (in the range 1 to 3, inclusive), it\nreturns a string containing the required field, otherwise it returns\nan empty string.\nAs a reminder, a message is defined as follows:\n<STX><DestinationID><SourceID><Data><ETX>\nField\nField name Description\nnumber\na single character marking the start of the message\nSTX\nNot applicable\n(ASCII value 02)\nDestinationID\n1 three numeric characters that identify the destination computer\nSourceID\n2 three numeric characters that identify the source computer\na variable length string containing the data being sent\nData\n(Minimum length is 1 character)\na single character marking the end of the message\nETX\nNot applicable\n(ASCII value 03)\nWrite pseudocode for module GetField().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "A new module has been defined:\nModule Description\n• takes two parameters:\no a string containing a message\no an integer containing a field number\nGetField()\n• If the field number is valid (in the range 1 to 3, inclusive), it\nreturns a string containing the required field, otherwise it returns\nan empty string.\nAs a reminder, a message is defined as follows:\n<STX><DestinationID><SourceID><Data><ETX>\nField\nField name Description\nnumber\na single character marking the start of the message\nSTX\nNot applicable\n(ASCII value 02)\nDestinationID\n1 three numeric characters that identify the destination computer\nSourceID\n2 three numeric characters that identify the source computer\na variable length string containing the data being sent\nData\n(Minimum length is 1 character)\na single character marking the end of the message\nETX\nNot applicable\n(ASCII value 03)\nWrite pseudocode for module GetField().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 6,
           "type": "name",
           "answerType": "short_answer",

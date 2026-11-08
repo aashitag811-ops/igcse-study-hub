@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w14",
   "component": "21",
-  "totalMarks": 57,
+  "totalMarks": 35,
   "questionCount": 9,
   "questions": [
     {
@@ -130,7 +130,7 @@
             {
               "id": "4eii",
               "label": "(ii)",
-              "text": "Give one further feature that Rema has not used in her solution so far.\n\n2 Ali sets up user IDs and passwords for his program.\nWhen the user types in their user ID, the program looks up the stored password for this user ID.\nThe stored password is the encrypted version of the user’s password.",
+              "text": "Give one further feature that Rema has not used in her solution so far.\n2 Ali sets up user IDs and passwords for his program.\nWhen the user types in their user ID, the program looks up the stored password for this user ID.\nThe stored password is the encrypted version of the user’s password.",
               "marks": 1,
               "type": "give",
               "answerType": "short_answer",
@@ -231,7 +231,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "Ali uses a sequential file of records to store the user IDs and encrypted passwords.\nWhen a user types in their User ID, the program calls a function, FindPassword, with\nparameter ThisUserID.\nThe function searches each record in the file for ThisUserID and returns the encrypted\npassword.\nIf ThisUserID is not stored in the file, the function returns an error code.\nComplete the pseudocode:\nFUNCTION FindPassword(ThisUserID : STRING) RETURNS ______\nDECLARE Found : BOOLEAN\nOPENFILE FOR INPUT // for reading\nFound ← FALSE\nWHILE ______\nFILEREAD next record\nIF ______\nTHEN\nENDIF\nENDWHILE\nIF ______\nTHEN\nELSE\nENDIF\nCLOSEFILE\nENDFUNCTION\n\n3 Ahmed runs his own business. He lays floor tiles in rooms for customers. Ahmed wants a program\nthat calculates how many tiles he needs when he inputs the measurements of the length and\nwidth of the room he is working on.",
+          "text": "Ali uses a sequential file of records to store the user IDs and encrypted passwords.\nWhen a user types in their User ID, the program calls a function, FindPassword, with\nparameter ThisUserID.\nThe function searches each record in the file for ThisUserID and returns the encrypted\npassword.\nIf ThisUserID is not stored in the file, the function returns an error code.\nComplete the pseudocode:\nFUNCTION FindPassword(ThisUserID : STRING) RETURNS ______\nDECLARE Found : BOOLEAN\nOPENFILE FOR INPUT // for reading\nFound ← FALSE\nWHILE ______\nFILEREAD next record\nIF ______\nTHEN\nENDIF\nENDWHILE\nIF ______\nTHEN\nELSE\nENDIF\nCLOSEFILE\nENDFUNCTION\n3 Ahmed runs his own business. He lays floor tiles in rooms for customers. Ahmed wants a program\nthat calculates how many tiles he needs when he inputs the measurements of the length and\nwidth of the room he is working on.",
           "marks": 8,
           "type": "complete",
           "answerType": "fill_blank",
@@ -297,7 +297,7 @@
             {
               "id": "9ci",
               "label": "(i)",
-              "text": "If the room width measures 100 cm, give the value stored in TilesForWidth.\n\nIf the room measurements are not exact multiples of 30 cm, the number of tiles must be\nrounded up so that Ahmed has enough tiles.\nAli knows that he can use the MOD operator to test for this.",
+              "text": "If the room width measures 100 cm, give the value stored in TilesForWidth.\nIf the room measurements are not exact multiples of 30 cm, the number of tiles must be\nrounded up so that Ahmed has enough tiles.\nAli knows that he can use the MOD operator to test for this.",
               "marks": 1,
               "type": "give",
               "answerType": "short_answer",
@@ -319,8 +319,8 @@
             {
               "id": "9ciii",
               "label": "(iii)",
-              "text": "Ahmed wants the program to add an extra 10% to the number of tiles required in case\nany tiles get broken during the work.\nIn a high-level language, write programming statements to calculate the total number\nof tiles required, TilesRequired, after the values for RoomLength and RoomWidth\nhave been input and validated.\nLanguage ______\nCode ______\n\n4 Ahmed combines white tiles with tiles of one other colour to make a pattern. He draws a design.\nHere is one example:\nAhmed wants a program to calculate how many tiles he needs of each colour.",
-              "marks": null,
+              "text": "Ahmed wants the program to add an extra 10% to the number of tiles required in case\nany tiles get broken during the work.\nIn a high-level language, write programming statements to calculate the total number\nof tiles required, TilesRequired, after the values for RoomLength and RoomWidth\nhave been input and validated.\nLanguage ______\nCode ______\n4 Ahmed combines white tiles with tiles of one other colour to make a pattern. He draws a design.\nHere is one example:\nAhmed wants a program to calculate how many tiles he needs of each colour.",
+              "marks": 5,
               "type": "calculate",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
@@ -366,8 +366,8 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "Ali stores a design of size 15 tiles by 10 tiles in array FloorDesign.\nUsing pseudocode or a flowchart, show the algorithm to calculate the number of white tiles\nand the number of coloured tiles in the design.\n\n5 (a) Dry-run the pseudocode algorithm by completing the trace table.\nPROCEDURE Guess(a)\nx ← 8\nREPEAT\nIF a >= x\nTHEN\nOUTPUT '1'\na ← a - x\nELSE\nOUTPUT '0'\nENDIF\nx ← x / 2\nUNTIL a = 0\nENDPROCEDURE\na x a >= x\nOUTPUT ______",
-          "marks": 6,
+          "text": "Ali stores a design of size 15 tiles by 10 tiles in array FloorDesign.\nUsing pseudocode or a flowchart, show the algorithm to calculate the number of white tiles\nand the number of coloured tiles in the design.\n5 (a) Dry-run the pseudocode algorithm by completing the trace table.\nPROCEDURE Guess(a)\nx ← 8\nREPEAT\nIF a >= x\nTHEN\nOUTPUT '1'\na ← a - x\nELSE\nOUTPUT '0'\nENDIF\nx ← x / 2\nUNTIL a = 0\nENDPROCEDURE\na x a >= x\nOUTPUT ______",
+          "marks": 4,
           "type": "calculate",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -377,7 +377,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "What does the procedure Guess do?\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "What does the procedure Guess do?\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 1,
           "type": "name",
           "answerType": "short_answer",
@@ -386,7 +386,7 @@
           "parts": []
         }
       ],
-      "marks": 31,
+      "marks": 9,
       "text": [
         "Encrypt password",
         "No",
@@ -394,8 +394,7 @@
         "Yes",
         "Yes",
         "RETURN FALSE",
-        "ENDFUNCTION",
-        "[9]"
+        "ENDFUNCTION"
       ]
     }
   ]

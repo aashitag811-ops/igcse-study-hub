@@ -4,7 +4,7 @@
   "session": "w15",
   "component": "22",
   "totalMarks": 57,
-  "questionCount": 22,
+  "questionCount": 27,
   "questions": [
     {
       "id": "1",
@@ -24,12 +24,9 @@
         "DECLARE IsValid : BOOLEAN",
         "N1 ← 3",
         "N2 ← 9",
-        "Answer ← (N1 + N2) / 6",
-        "Answer ← 3 * (N1 – 2) + N2 / 2",
         "IsValid ← (N1 > N2) AND (N2 = 9)",
         "Found ← FALSE",
-        "IsValid ← (N1 > N2 / 2) OR (Found = FALSE)",
-        "Answer ← \"1034\" & \" + \" & \"65\""
+        "IsValid ← (N1 > N2 / 2) OR (Found = FALSE)"
       ]
     },
     {
@@ -125,7 +122,7 @@
         {
           "id": "09b",
           "label": "(b)",
-          "text": "The selection statement (lines 03 – 08) could have been written with more simplified logic.\nRewrite this section of the algorithm in pseudocode.\n\n3 Regular customers at a supermarket use a rewards card at the point-of-sale.\nPoints are calculated from every transaction and added to the points total stored on the card.\nOne reward point is given for every $1 spent.\nWhen the points total exceeds 500, the customer can either:\n• pay the full amount due and increase their points total\n• get $1 deducted from the amount due in exchange for 500 reward points\nThe new points total and amount to be paid is printed on the receipt.\nA program is to be written with the following specification:\n• read the points total from the card\n• process the amount spent\n• output the amount to be paid and the new points total\nA user-defined function CalculatePoints has already been coded to calculate the new points\nearned from the amount spent.\nStudy the following pseudocode:\nINPUT AmountDue\nNewPoints ← CalculatePoints(AmountDue)\nPointsTotal ← PointsTotal + NewPoints\nIF PointsTotal > 500\nTHEN\nOUTPUT \"Exchange points?\"\nINPUT Response\nIF Response = \"YES\"\nTHEN\nPointsTotal ← PointsTotal – 500\nAmountDue ← AmountDue – 1\nENDIF\nENDIF\nOUTPUT AmountDue, PointsTotal\nThe algorithm is also to be documented with a program flowchart.\nComplete the flowchart by:\n• filling in the flowchart boxes\n• labelling, where appropriate, lines of the flowchart\nCALL\nCalculatePoints(AmountDue)\n\n4 The standard pack of playing cards has four suits – called Clubs, Diamonds, Hearts and Spades.\nEach card has a value shown by its number or a name: 1 (Ace), 2, 3, … 10, 11 (Jack), 12 (Queen),\n13 (King). The pack of cards has one combination for each suit and value.\nA program is to be written which simulates a magician dealing all 52 cards from the card pack.\nThe program generates pairs of random numbers:\n• the first, in the range 1 to 4, to represent the suit\n• the second, in the range 1 to 13, to represent the card value",
+          "text": "The selection statement (lines 03 – 08) could have been written with more simplified logic.\nRewrite this section of the algorithm in pseudocode.\n3 Regular customers at a supermarket use a rewards card at the point-of-sale.\nPoints are calculated from every transaction and added to the points total stored on the card.\nOne reward point is given for every $1 spent.\nWhen the points total exceeds 500, the customer can either:\n• pay the full amount due and increase their points total\n• get $1 deducted from the amount due in exchange for 500 reward points\nThe new points total and amount to be paid is printed on the receipt.\nA program is to be written with the following specification:\n• read the points total from the card\n• process the amount spent\n• output the amount to be paid and the new points total\nA user-defined function CalculatePoints has already been coded to calculate the new points\nearned from the amount spent.\nStudy the following pseudocode:\nINPUT AmountDue\nNewPoints ← CalculatePoints(AmountDue)\nPointsTotal ← PointsTotal + NewPoints\nIF PointsTotal > 500\nTHEN\nOUTPUT \"Exchange points?\"\nINPUT Response\nIF Response = \"YES\"\nTHEN\nPointsTotal ← PointsTotal – 500\nAmountDue ← AmountDue – 1\nENDIF\nENDIF\nOUTPUT AmountDue, PointsTotal\nThe algorithm is also to be documented with a program flowchart.\nComplete the flowchart by:\n• filling in the flowchart boxes\n• labelling, where appropriate, lines of the flowchart\nCALL\nCalculatePoints(AmountDue)\n4 The standard pack of playing cards has four suits – called Clubs, Diamonds, Hearts and Spades.\nEach card has a value shown by its number or a name: 1 (Ace), 2, 3, … 10, 11 (Jack), 12 (Queen),\n13 (King). The pack of cards has one combination for each suit and value.\nA program is to be written which simulates a magician dealing all 52 cards from the card pack.\nThe program generates pairs of random numbers:\n• the first, in the range 1 to 4, to represent the suit\n• the second, in the range 1 to 13, to represent the card value",
           "marks": 3,
           "type": "name",
           "answerType": "short_answer",
@@ -272,9 +269,55 @@
     {
       "id": "22",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE",
+        "24 // end of main program"
+      ]
+    },
+    {
+      "id": "26",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PROCEDURE InitialiseCardPack"
+      ]
+    },
+    {
+      "id": "27",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE i : INTEGER"
+      ]
+    },
+    {
+      "id": "28",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE j : INTEGER"
+      ]
+    },
+    {
+      "id": "29",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR i ← 1 TO 4"
+      ]
+    },
+    {
+      "id": "30",
+      "context": [],
       "parts": [
         {
-          "id": "22c",
+          "id": "30c",
           "label": "(c)",
           "text": "Give the number of procedures used by the pseudocode.",
           "marks": 1,
@@ -285,7 +328,7 @@
           "parts": []
         },
         {
-          "id": "22d",
+          "id": "30d",
           "label": "(d)",
           "text": "Copy the condition which is used to control a ‘pre-condition’ loop.",
           "marks": 1,
@@ -296,7 +339,7 @@
           "parts": []
         },
         {
-          "id": "22e",
+          "id": "30e",
           "label": "(e)",
           "text": "Explain the purpose of lines 14 – 19 in the design.",
           "marks": 2,
@@ -307,7 +350,7 @@
           "parts": []
         },
         {
-          "id": "22f",
+          "id": "30f",
           "label": "(f)",
           "text": "Complete the declaration of the global variable at line 05.\n05 DECLARE CardPack ______",
           "marks": 1,
@@ -318,9 +361,9 @@
           "parts": []
         },
         {
-          "id": "22g",
+          "id": "30g",
           "label": "(g)",
-          "text": "Line 18 in the design shows which new card is dealt each time.\nWhen an Ace, Jack, Queen or King is dealt, the output displays the number for that card, not\nthe name of the card.\nCard value Card\nname\n1 Ace\n11 Jack\n12 Queen\n13 King\nA new requirement is to display the name of the card, where appropriate.\nWrite a CASE structure using variable CardValue.\nAssign to a new variable CardName either:\n• the card value (2, 3, 4, 5, 6, 7, 8, 9 or 10)\n• or where appropriate, the card name Ace, Jack, Queen or King\n\n5 A program is to process a set of integers.\nThe integers are stored in an array, Num. The first N elements are to be processed.\nThe pseudocode for this program is shown below:\nFOR i ← 1 TO (N - 1)\nj ← 1\nREPEAT\nIF Num[j] > Num[j + 1]\nTHEN\nTemp ← Num[j]\nNum[j] ← Num[j + 1]\nNum[j + 1] ← Temp\nENDIF\nj ← j + 1\nUNTIL j = (N – i + 1)\nENDFOR",
+          "text": "Line 18 in the design shows which new card is dealt each time.\nWhen an Ace, Jack, Queen or King is dealt, the output displays the number for that card, not\nthe name of the card.\nCard value Card\nname\n1 Ace\n11 Jack\n12 Queen\n13 King\nA new requirement is to display the name of the card, where appropriate.\nWrite a CASE structure using variable CardValue.\nAssign to a new variable CardName either:\n• the card value (2, 3, 4, 5, 6, 7, 8, 9 or 10)\n• or where appropriate, the card name Ace, Jack, Queen or King\n5 A program is to process a set of integers.\nThe integers are stored in an array, Num. The first N elements are to be processed.\nThe pseudocode for this program is shown below:\nFOR i ← 1 TO (N - 1)\nj ← 1\nREPEAT\nIF Num[j] > Num[j + 1]\nTHEN\nTemp ← Num[j]\nNum[j] ← Num[j + 1]\nNum[j + 1] ← Temp\nENDIF\nj ← j + 1\nUNTIL j = (N – i + 1)\nENDFOR",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -329,7 +372,7 @@
           "parts": []
         },
         {
-          "id": "22a",
+          "id": "30a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -339,7 +382,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22ai",
+              "id": "30ai",
               "label": "(i)",
               "text": "Trace the execution of the pseudocode for the value N = 5 and the given array of integers.\nNum\nN i j Temp 1 2 3 4 5\n5 11 16 13 7 8",
               "marks": 8,
@@ -350,7 +393,7 @@
               "parts": []
             },
             {
-              "id": "22aii",
+              "id": "30aii",
               "label": "(ii)",
               "text": "State the purpose of the algorithm.",
               "marks": 1,
@@ -361,7 +404,7 @@
               "parts": []
             },
             {
-              "id": "22aiii",
+              "id": "30aiii",
               "label": "(iii)",
               "text": "Describe what evidence from the trace table suggests that the given pseudocode is\ninefficient.",
               "marks": 1,
@@ -374,9 +417,9 @@
           ]
         },
         {
-          "id": "22b",
+          "id": "30b",
           "label": "(b)",
-          "text": "Complete the identifier table documenting the use of each of the variables.\nIdentifier Data type Description\nNum ARRAY[1:100] OF INTEGER\nThe array of numbers.\nTemp\n\n6 Some pseudocode statements follow which use the following built-in functions:\nONECHAR(ThisString : STRING, Position : INTEGER) RETURNS CHAR\nreturns the single character at position Position (counting from the start of the string with value 1)\nfrom the string ThisString.\nFor example: ONECHAR(\"Barcelona\", 3) returns 'r'.\nCHARACTERCOUNT(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in the string ThisString.\nFor example: CHARACTERCOUNT(\"South Africa\") returns 12.",
+          "text": "Complete the identifier table documenting the use of each of the variables.\nIdentifier Data type Description\nNum ARRAY[1:100] OF INTEGER\nThe array of numbers.\nTemp\n6 Some pseudocode statements follow which use the following built-in functions:\nONECHAR(ThisString : STRING, Position : INTEGER) RETURNS CHAR\nreturns the single character at position Position (counting from the start of the string with value 1)\nfrom the string ThisString.\nFor example: ONECHAR(\"Barcelona\", 3) returns 'r'.\nCHARACTERCOUNT(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in the string ThisString.\nFor example: CHARACTERCOUNT(\"South Africa\") returns 12.",
           "marks": 5,
           "type": "complete",
           "answerType": "long_answer",
@@ -385,7 +428,7 @@
           "parts": []
         },
         {
-          "id": "22a",
+          "id": "30a",
           "label": "(a)",
           "text": "Study the following pseudocode statements.\nGive the values assigned to variables x and y.",
           "marks": null,
@@ -395,7 +438,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22ai",
+              "id": "30ai",
               "label": "(i)",
               "text": "x ← CHARACTERCOUNT(\"New Delhi\") + 3 x ______",
               "marks": 1,
@@ -406,7 +449,7 @@
               "parts": []
             },
             {
-              "id": "22aii",
+              "id": "30aii",
               "label": "(ii)",
               "text": "y ← ONECHAR(\"Sri Lanka\", 5) y ______",
               "marks": 1,
@@ -419,7 +462,7 @@
           ]
         },
         {
-          "id": "22b",
+          "id": "30b",
           "label": "(b)",
           "text": "A program is to be written as follows:\n• the user enters a string\n• the program will form a new string with all <Space> characters removed\n• the new string is output\nNewString ← \" \"\nINPUT InputString\nj ← CHARACTERCOUNT(InputString)\nFOR i ← 1 TO j\nNextChar ← ONECHAR(InputString, i)\nIF NextChar <> \" \"\nTHEN\n// the & character joins together two strings\nNewString ← NewString & NextChar\nENDIF\nENDFOR\nOUTPUT NewString",
           "marks": null,
@@ -429,7 +472,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22bi",
+              "id": "30bi",
               "label": "(i)",
               "text": "Complete the identifier table below.\nIdentifier Data type Description\nInputString STRING The string value input by the user",
               "marks": 4,
@@ -440,9 +483,9 @@
               "parts": []
             },
             {
-              "id": "22bii",
+              "id": "30bii",
               "label": "(ii)",
-              "text": "An experienced programmer suggests this pseudocode would be best designed as a\nfunction.\nComplete the re-design of the pseudocode as follows:\nThe main program:\n• the user enters MyString\n• the function is called and the changed string is assigned to variable ChangedString\nThe function:\n• has identifier RemoveSpaces\n• has a single parameter\n• will include the declaration for any local variables used by the function\n// main program\nINPUT MyString\nChangedString←RemoveSpaces(______)\nOUTPUT ChangedString\n// function definition\nFUNCTION RemoveSpaces(______) RETURNS ______\nj ← CHARACTERCOUNT(InputString)\nFOR i ← 1 TO j\nNextChar ← ONECHAR(InputString, i)\nIF NextChar <> \" \"\nTHEN\n// the & character joins together two strings\nNewString ← NewString & NextChar\nENDIF\nENDFOR\nENDFUNCTION\n\n7 ASCII character codes are used to represent a single character.\nPart of the code table is shown below.\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90\nSome pseudocode statements follow which use these built-in functions:\nCHARACTERCOUNT(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in the string ThisString.\nFor example: CHARACTERCOUNT(\"South Africa\") returns 12.\nCHR(ThisInteger : INTEGER) RETURNS CHAR\nreturns the character with ASCII value ThisInteger.\nFor example: CHR(66) returns 'B'.\nASC(ThisCharacter : CHAR) RETURNS INTEGER\nreturns the ASCII value for character ThisCharacter.\nFor example: ASC('B') returns 66.",
+              "text": "An experienced programmer suggests this pseudocode would be best designed as a\nfunction.\nComplete the re-design of the pseudocode as follows:\nThe main program:\n• the user enters MyString\n• the function is called and the changed string is assigned to variable ChangedString\nThe function:\n• has identifier RemoveSpaces\n• has a single parameter\n• will include the declaration for any local variables used by the function\n// main program\nINPUT MyString\nChangedString←RemoveSpaces(______)\nOUTPUT ChangedString\n// function definition\nFUNCTION RemoveSpaces(______) RETURNS ______\nj ← CHARACTERCOUNT(InputString)\nFOR i ← 1 TO j\nNextChar ← ONECHAR(InputString, i)\nIF NextChar <> \" \"\nTHEN\n// the & character joins together two strings\nNewString ← NewString & NextChar\nENDIF\nENDFOR\nENDFUNCTION\n7 ASCII character codes are used to represent a single character.\nPart of the code table is shown below.\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90\nSome pseudocode statements follow which use these built-in functions:\nCHARACTERCOUNT(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in the string ThisString.\nFor example: CHARACTERCOUNT(\"South Africa\") returns 12.\nCHR(ThisInteger : INTEGER) RETURNS CHAR\nreturns the character with ASCII value ThisInteger.\nFor example: CHR(66) returns 'B'.\nASC(ThisCharacter : CHAR) RETURNS INTEGER\nreturns the ASCII value for character ThisCharacter.\nFor example: ASC('B') returns 66.",
               "marks": 7,
               "type": "design",
               "answerType": "fill_blank",
@@ -453,7 +496,7 @@
           ]
         },
         {
-          "id": "22a",
+          "id": "30a",
           "label": "(a)",
           "text": "Give the values assigned to the variables A, B, C and D.\nThe & operator is used to concatenate two strings.\nThe expression could generate an error; if so, write ERROR.\nNum1 ← 5\nA ← ASC('F') + Num1 + ASC('Z') (i) A ______ \nB ← CHR(89) & CHR(69) & CHR(83)",
           "marks": 1,
@@ -463,7 +506,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22aii",
+              "id": "30aii",
               "label": "(ii)",
               "text": "B ______ \nC ← CHARACTERCOUNT(B & \"PLEASE\")",
               "marks": 1,
@@ -474,7 +517,7 @@
               "parts": []
             },
             {
-              "id": "22aiii",
+              "id": "30aiii",
               "label": "(iii)",
               "text": "C ______ \nD ← ASC(ONECHAR(\"CURRY SAUCE\", 7))",
               "marks": 1,
@@ -485,7 +528,7 @@
               "parts": []
             },
             {
-              "id": "22aiv",
+              "id": "30aiv",
               "label": "(iv)",
               "text": "D ______",
               "marks": 1,
@@ -498,7 +541,7 @@
           ]
         },
         {
-          "id": "22b",
+          "id": "30b",
           "label": "(b)",
           "text": "A program is to be written to input a message string and then encrypt the message.\nStudy the following pseudocode:\nOUTPUT \"Enter message\"\nINPUT MyMessage\nEncryptString ← \" \"\nFOR i ← 1 TO CHARACTERCOUNT(MyMessage)\nNextNum ← ASC(ONECHAR(MyMessage, i) + 3)\nEncryptString ← EncryptString & CHR(NextNum)\nENDFOR\nOUTPUT EncryptString",
           "marks": null,
@@ -508,7 +551,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22bi",
+              "id": "30bi",
               "label": "(i)",
               "text": "Write the above pseudocode algorithm as program code.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______",
               "marks": 8,
@@ -519,7 +562,7 @@
               "parts": []
             },
             {
-              "id": "22bii",
+              "id": "30bii",
               "label": "(ii)",
               "text": "Describe the encryption algorithm used to encrypt the message string entered by the\nuser.",
               "marks": 2,
@@ -534,13 +577,7 @@
       ],
       "marks": 48,
       "text": [
-        "ENDWHILE",
-        "24 // end of main program",
-        "26 PROCEDURE InitialiseCardPack",
-        "27 DECLARE i : INTEGER",
-        "28 DECLARE j : INTEGER",
-        "29 FOR i ← 1 TO 4",
-        "30 FOR j ← 1 TO 13",
+        "FOR j ← 1 TO 13",
         "31 CardPack[i, j] ← FALSE",
         "32 ENDFOR",
         "33 ENDFOR",

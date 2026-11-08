@@ -4,43 +4,123 @@
   "session": "s13",
   "component": "22",
   "totalMarks": 0,
-  "questionCount": 2,
+  "questionCount": 8,
   "questions": [
-    {
-      "id": "1",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "− e x ≥ 0,",
-        "F\u0000x\u0001 =",
-        "0 otherwise.",
-        "Identify the distribution of X and state its mean. [2]",
-        "Find"
-      ]
-    },
     {
       "id": "2",
       "context": [],
       "parts": [],
       "marks": null,
       "text": [
-        "≤ x < 6,",
-        "f\u0000x\u0001 = x",
+        "Three uniform small smooth spheres, A, B and C, have equal radii. Their masses are 4m, 2m and",
+        "m respectively. They lie in a straight line on a smooth horizontal surface with B between A and C.",
+        "Initially A is moving towards B with speed u, B is at rest and C is moving in the same direction as A",
+        "with speed u. The coefficient of restitution between any two of the spheres is e. The first collision",
+        "is between A and B. In this collision sphere A loses three-quarters of its kinetic energy. Show that",
+        "e = . [6]",
+        "Find the speed of B after its collision with C and deduce that there are no further collisions between",
+        "the spheres. [5]"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A particle P of mass m is attached to one end of a light inextensible string of length a. The other",
+        "end of the string is attached to a fixed point O. When P is hanging vertically below O, it is given a",
+        "horizontal speed u. In the subsequent motion, P moves in a complete circle. When OP makes an",
+        "angle 1 with the downward vertical, the tension in the string is T. Show that",
+        "mu",
+        "T = + mg3 cos 1 − 2. 5",
+        "Given that the ratio of the maximum value of T to the minimum value of T is 3 : 1, find u in terms of",
+        "a and g. [4]",
+        "Assuming this value of u, find the value of cos 1 when the tension is half of its maximum value. [3]",
+        "3a 3a a",
+        "A B",
+        "The end A of a uniform rod AB, of mass 4m and length 3a, is rigidly attached to a point on a uniform",
+        "spherical shell, of mass ,m and radius 3a. The end B of the rod is rigidly attached to a point on a",
+        "uniform ring. The ring has centre O, mass 4m and radius a. The ring and the rod are in the same",
+        "vertical plane. The line OBA, extended, passes through the centre of the spherical shell. BC is a",
+        "diameter of the ring (see diagram). Show that the moment of inertia of this system, about a fixed",
+        "horizontal axis through C perpendicular to the plane of the ring, is 30 + 55,ma . [6]",
+        "O@ A",
+        "5a",
+        "Given that the system performs small oscillations of period 20 about this axis, find the value",
+        "of ,. [6]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "For a random sample of 12 observations of pairs of values x, y, the product moment correlation",
+        "coefficient is −0.456. Test, at the 5% significance level, whether there is evidence of negative",
+        "correlation between the variables. [4]"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The random variable X has distribution function F given by",
+        "−0.6x",
+        "1 − e x ≥ 0,",
+        "Fx =",
+        "0 otherwise.",
+        "Identify the distribution of X and state its mean. [2]",
+        "Find"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A random sample of 80 observations of the continuous random variable X was taken and the values",
+        "are summarised in the following table.",
+        "Interval 2 ≤ x < 3 3 ≤ x < 4 4 ≤ x < 5 5 ≤ x < 6",
+        "Observed frequency 36 29 9 6",
+        "It is required to test the goodness of fit of the distribution having probability density function f given",
+        "by",
+        "2 ≤ x < 6,",
+        "fx = x",
         "0 otherwise.",
         "Show that the expected frequency for the interval 2 ≤ x < 3 is 40 and calculate the remaining expected",
         "frequencies. [4]",
-        "Carry out a goodness of fit test, at the 10% significance level. [5]",
-        "8 The continuous random variable X has probability density function f given by",
+        "Carry out a goodness of fit test, at the 10% significance level. [5]"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The continuous random variable X has probability density function f given by",
         "x 2 ≤ x ≤ 4,",
-        "f\u0000x\u0001 =",
+        "fx =",
         "0 otherwise.",
         "The random variable Y is defined by Y = X . Show that Y has probability density function g given by",
         "y 8 ≤ y ≤ 64,",
-        "g\u0000y\u0001 =",
+        "gy =",
         "0 otherwise. [6]",
-        "Find E\u0000Y\u0001. [3]",
-        "9 A gardener P claims that a new type of fruit tree produces a higher annual mass of fruit than the",
+        "Find EY. [3]"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A gardener P claims that a new type of fruit tree produces a higher annual mass of fruit than the",
         "type that he has previously grown. The old type of tree produced 5.2 kg of fruit per tree, on average.",
         "A random sample of 10 trees of the new type is chosen. The masses, x kg, of fruit produced are",
         "summarised as follows.",
@@ -52,19 +132,28 @@
         "Σ y = 70.0 Σ y = 500.6",
         "Test, at the 5% significance level, whether the mean mass of fruit produced by gardener Q’s trees",
         "is greater than the mean mass of fruit produced by gardener P’s trees. You may assume that both",
-        "distributions are normal and you should state any additional assumption. [8]",
-        "10 Answer only one of the following two alternatives.",
+        "distributions are normal and you should state any additional assumption. [8]"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Answer only one of the following two alternatives.",
         "EITHER",
         "A light elastic string has modulus of elasticity mg and natural length a. A particle of mass m is",
         "attached to one end of the string. The other end of the string is attached to a fixed point A. The",
         "particle is released from rest at A. Show that when the particle has fallen a distance ka from A, where",
         "k > 1, its kinetic energy is",
+        "mga10k − 3 − 3k . 3",
         "Show that the particle first comes to instantaneous rest at the point B which is at a distance 3a vertically",
         "below A. [3]",
         "Show that the time taken by the particle to travel from A to B is",
         "O@ A O@ A",
         "2a 20 2a",
-        "+ . \u00028\u0003",
+        "+ . 8",
         "g 3 3g",
         "OR",
         "The regression line of y on x, obtained from a random sample of five pairs of values of x and y, has",

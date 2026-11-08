@@ -3,8 +3,8 @@
   "subjectCode": "9709",
   "session": "s20",
   "component": "21",
-  "totalMarks": 25,
-  "questionCount": 3,
+  "totalMarks": 37,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -13,7 +13,7 @@
       "marks": null,
       "text": [
         "Solve the equation",
-        "ln\u0000x + 1\u0001 − ln x = 2 ln 2. [3]"
+        "lnx + 1 − ln x = 2 ln 2. [3]"
       ]
     },
     {
@@ -22,18 +22,56 @@
       "parts": [],
       "marks": null,
       "text": [
-        "The polynomial p\u0000x\u0001 is defined by"
+        "The polynomial px is defined by",
+        "3 2",
+        "px = 6x + ax + 9x + b,",
+        "where a and b are constants. It is given that x − 2 and 2x + 1 are factors of px.",
+        "Find the values of a and b. [5]"
       ]
     },
     {
       "id": "3",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A curve has parametric equations",
+        "t −t 2t",
+        "x = e − 2e , y = 3e + 1.",
+        "Find the equation of the tangent to the curve at the point for which t = 0. [5]"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
       "parts": [
         {
-          "id": "3b",
-          "label": "(b)",
-          "text": "Find the coordinates of the point of intersection of the two graphs. \nThe diagram shows part of the curve with equation y = x cos 2x. The curve has a maximum at the\npoint M.",
+          "id": "4a",
+          "label": "(a)",
+          "text": "Sketch, on the same diagram, the graphs of y = 3x + 2a and y = 3x − 4a, where a is a positive\nconstant.\nGive the coordinates of the points where each graph meets the axes.",
           "marks": 3,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Find the coordinates of the point of intersection of the two graphs.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Deduce the solution of the inequality 3x + 2a < 3x − 4a. \nThe diagram shows part of the curve with equation y = x cos 2x. The curve has a maximum at the\npoint M.",
+          "marks": 1,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
@@ -41,7 +79,7 @@
           "parts": []
         },
         {
-          "id": "3a",
+          "id": "4a",
           "label": "(a)",
           "text": "Show that the x-coordinate of M satisfies the equation x = 1.5x cot 2x.",
           "marks": 3,
@@ -52,7 +90,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "4b",
           "label": "(b)",
           "text": "Use the equation in part (a) to show by calculation that the x-coordinate of M lies between 0.59\nand 0.60.",
           "marks": 2,
@@ -63,20 +101,39 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "4c",
           "label": "(c)",
-          "text": "Use an iterative formula, based on the equation in part (a), to find the x-coordinate of M correct\nto 3 significant figures. Give the result of each iteration to 5 significant figures. \n6 (a) Prove that",
+          "text": "Use an iterative formula, based on the equation in part (a), to find the x-coordinate of M correct\nto 3 significant figures. Give the result of each iteration to 5 significant figures.",
           "marks": 3,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Prove that\nsin 21cosec 1 − sec 1  8 cos 1 + π .",
+          "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
-          "id": "3b",
+          "id": "6b",
           "label": "(b)",
-          "text": "Solve the equation\nsin 21\u0000cosec 1 − sec 1\u0001 = 1\nfor 0 < 1 < π. Give the answer correct to 3 significant figures. \n1 1",
+          "text": "Solve the equation\nsin 21cosec 1 − sec 1 = 1\nfor 0 < 1 < π. Give the answer correct to 3 significant figures. \n1 1",
           "marks": 2,
           "type": "give",
           "answerType": "short_answer",
@@ -85,9 +142,28 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "6c",
           "label": "(c)",
-          "text": "Find Ó sin x cosec x − sec x dx. \n2 2\n3 2\n7 (a) Find the quotient when 9x − 6x − 20x + 1 is divided by \u00003x + 2\u0001, and show that the remainder\nis 9. \n3 2\n9x − 6x − 20x + 1",
+          "text": "Find Ó sin x cosec x − sec x dx. \n2 2\n3 2",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Find the quotient when 9x − 6x − 20x + 1 is divided by 3x + 2, and show that the remainder\nis 9. \n3 2\n9x − 6x − 20x + 1",
           "marks": 3,
           "type": "calculate",
           "answerType": "calculate",
@@ -96,7 +172,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "7b",
           "label": "(b)",
           "text": "Hence find dx, giving the answer in the form a + ln b where a and b are\n3x + 2\nintegers. \n9y 6y 3y",
           "marks": 5,
@@ -107,7 +183,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "7c",
           "label": "(c)",
           "text": "Find the exact root of the equation 9e − 6e − 20e − 8 = 0. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 4,
@@ -118,18 +194,8 @@
           "parts": []
         }
       ],
-      "marks": 25,
-      "text": [
-        "2",
-        "p\u0000x\u0001 = 6x + ax + 9x + b,",
-        "Find the values of a and b. [5]",
-        "3 A curve has parametric equations",
-        "t −t 2t",
-        "x = e − 2e , y = 3e + 1.",
-        "Find the equation of the tangent to the curve at the point for which t = 0. [5]",
-        "constant.",
-        "Give the coordinates of the points where each graph meets the axes. [3]"
-      ]
+      "marks": 12,
+      "text": []
     }
   ]
 }

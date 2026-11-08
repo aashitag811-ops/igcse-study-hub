@@ -3,44 +3,42 @@
   "subjectCode": "0478",
   "session": "m25",
   "component": "22",
-  "totalMarks": 48,
+  "totalMarks": 60,
   "questionCount": 17,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (✓) one box to complete this sentence.",
         "A standard method of solution used to find a piece of data in an array is a",
         "A bubble sort.",
         "B counting routine.",
         "C linear search.",
-        "D selection search.",
-        "[1]"
+        "D selection search."
       ]
     },
     {
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (✓) one box to complete this sentence.",
         "The pseudocode to store a hotel name held in the variable Name to a text file is",
         "A READFILE Hotels.txt, Name",
         "B WRITEFILE Hotels.txt, Name",
         "C WRITEFILE Name, Hotels.txt",
-        "D STOREFILE Hotels.txt, Name",
-        "[1]"
+        "D STOREFILE Hotels.txt, Name"
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Four development life cycle stages and five descriptions are shown.",
         "Draw one line from each stage to the most appropriate description.",
@@ -56,8 +54,7 @@
         "using structure diagrams, flowcharts and pseudocode to",
         "plan the solution",
         "design",
-        "using a programming language to create the solution",
-        "[4]"
+        "using a programming language to create the solution"
       ]
     },
     {
@@ -117,7 +114,7 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "A program is written to only accept data that contains more than 9 characters. The program needs",
         "to be tested. The table, when completed, shows appropriate test data that matches the type of test",
@@ -127,8 +124,7 @@
         "ABC",
         "Boundary",
         "to make sure that the program accepts data",
-        "that is an appropriate length",
-        "[6]"
+        "that is an appropriate length"
       ]
     },
     {
@@ -268,7 +264,7 @@
         {
           "id": "17c",
           "label": "(c)",
-          "text": "Explain how you could change the corrected algorithm so that it also finds the smallest\nnumber that was input and outputs its value at the end.\nAny code used must be fully explained.\n\n7 This flowchart represents an algorithm.\nSTART\nOUTPUT\n\"Continue?\"\nINPUT Answer\nNo Yes\nIS Answer =\n'Y' ?\nINPUT\nValue1\nSTOP\nINPUT\nOperator\nINPUT\nYes\nIS Operator =\nValue2\n'A' ?\nOUTPUT\nValue1 +\nNo\nValue2\nYes\nIS Operator =\n'S' ?\nOUTPUT\nValue1 –\nNo\nValue2\nYes No DO NOT WRITE IN THIS MARGIN\nIS Operator =\n'M' ?\nOUTPUT OUTPUT\nValue1 * Value1 /\nValue2 Value2",
+          "text": "Explain how you could change the corrected algorithm so that it also finds the smallest\nnumber that was input and outputs its value at the end.\nAny code used must be fully explained.\n7 This flowchart represents an algorithm.\nSTART\nOUTPUT\n\"Continue?\"\nINPUT Answer\nNo Yes\nIS Answer =\n'Y' ?\nINPUT\nValue1\nSTOP\nINPUT\nOperator\nINPUT\nYes\nIS Operator =\nValue2\n'A' ?\nOUTPUT\nValue1 +\nNo\nValue2\nYes\nIS Operator =\n'S' ?\nOUTPUT\nValue1 –\nNo\nValue2\nYes No DO NOT WRITE IN THIS MARGIN\nIS Operator =\n'M' ?\nOUTPUT OUTPUT\nValue1 * Value1 /\nValue2 Value2",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -279,7 +275,7 @@
         {
           "id": "17a",
           "label": "(a)",
-          "text": "Complete the trace table for the input data:\nY, 7, S, 9, Y, 5, M, 12, Y, 25, D, 5, N, 10, A, 6\nAnswer Value1 Operator Value2\nOUTPUT",
+          "text": "Complete the trace table for the input data:\nY, 7, S, 9, Y, 5, M, 12, Y, 25, D, 5, N, 10, A, 6\nOUTPUT",
           "marks": 5,
           "type": "complete",
           "answerType": "long_answer",
@@ -322,7 +318,7 @@
             {
               "id": "17cii",
               "label": "(ii)",
-              "text": "Identify one more error related to inputs when the algorithm is run.\n\n8 A database table, MajorCity, stores some details about a number of cities from around the\nworld.\nCode City Capital Country Continent Population\nASY6 Abu Dhabi TRUE United Arab Emirates Asia 1,566,999\nEUY3 Amsterdam TRUE Netherlands Europe 1,174,025 DO NOT WRITE IN THIS MARGIN\nASY1 Beijing TRUE China Asia 21,766,214\nSAY1 Buenos Aires TRUE Argentina South America 15,490,415\nAFY1 Cairo TRUE Egypt Africa 22,183,200\nEUN1 Frankfurt FALSE Germany Europe 796,437\nASY3 Jakarta TRUE Indonesia Asia 11,248,839\nASN3 Karachi FALSE Pakistan Asia 17,236,230\nASY4 Kuala Lumpur TRUE Malaysia Asia 8,621,724\nAFN2 Lagos FALSE Nigeria Africa 15,945,912\nSAY2 Lima TRUE Peru South America 11,206,000\nEUY1 London TRUE UK Europe 9,648,110\nEUY4 Madrid TRUE Spain Europe 6,751,374\nASN2 Mumbai FALSE India Asia 21,296,516\nNAN1 New York City FALSE USA North America 7,888,121\nEUY2 Paris TRUE France Europe 11,206,000\nASN1 Shanghai FALSE China Asia 29,210,808\nASY5 Singapore TRUE Singapore Asia 6,080,859\nAUN1 Sydney FALSE Australia Australia 5,120,894\nASY2 Tokyo TRUE Japan Asia 37,194,104\nNAN2 Toronto FALSE Canada North America 6,371,958\nEUN2 Valencia FALSE Spain Europe 838,301\nSAN1 Valencia FALSE Venezuela South America 1,983,445",
+              "text": "Identify one more error related to inputs when the algorithm is run.\n8 A database table, MajorCity, stores some details about a number of cities from around the\nworld.\nCode City Capital Country Continent Population\nASY6 Abu Dhabi TRUE United Arab Emirates Asia 1,566,999\nEUY3 Amsterdam TRUE Netherlands Europe 1,174,025 DO NOT WRITE IN THIS MARGIN\nASY1 Beijing TRUE China Asia 21,766,214\nSAY1 Buenos Aires TRUE Argentina South America 15,490,415\nAFY1 Cairo TRUE Egypt Africa 22,183,200\nEUN1 Frankfurt FALSE Germany Europe 796,437\nASY3 Jakarta TRUE Indonesia Asia 11,248,839\nASN3 Karachi FALSE Pakistan Asia 17,236,230\nASY4 Kuala Lumpur TRUE Malaysia Asia 8,621,724\nAFN2 Lagos FALSE Nigeria Africa 15,945,912\nSAY2 Lima TRUE Peru South America 11,206,000\nEUY1 London TRUE UK Europe 9,648,110\nEUY4 Madrid TRUE Spain Europe 6,751,374\nASN2 Mumbai FALSE India Asia 21,296,516\nNAN1 New York City FALSE USA North America 7,888,121\nEUY2 Paris TRUE France Europe 11,206,000\nASN1 Shanghai FALSE China Asia 29,210,808\nASY5 Singapore TRUE Singapore Asia 6,080,859\nAUN1 Sydney FALSE Australia Australia 5,120,894\nASY2 Tokyo TRUE Japan Asia 37,194,104\nNAN2 Toronto FALSE Canada North America 6,371,958\nEUN2 Valencia FALSE Spain Europe 838,301\nSAN1 Valencia FALSE Venezuela South America 1,983,445",
               "marks": 1,
               "type": "identify",
               "answerType": "short_answer",
@@ -368,7 +364,7 @@
         {
           "id": "17d",
           "label": "(d)",
-          "text": "Complete the SQL statement to list only the code, city, country and continent of all the cities\nin the database table that are capital cities.\nSELECT ______\n\n9 Consider this logic expression:\nZ = (A NAND B) XOR (NOT (NOT B NAND C))",
+          "text": "Complete the SQL statement to list only the code, city, country and continent of all the cities\nin the database table that are capital cities.\nSELECT ______\n9 Consider this logic expression:\nZ = (A NAND B) XOR (NOT (NOT B NAND C))",
           "marks": 4,
           "type": "complete",
           "answerType": "fill_blank",
@@ -390,7 +386,7 @@
         {
           "id": "17b",
           "label": "(b)",
-          "text": "Complete the truth table from the given logic expression.\nWorking space\nA B C Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n10 A sports club uses a six-character alphanumeric membership code to identify each member of the\nclub.\nThe one-dimensional (1D) array MemberID[] is used to store the unique membership codes for\nclub members.\nThe two-dimensional (2D) array Name[] is used to store the names of the club members. The first\nand last name of each member will be stored in separate array elements.\nThe system can store details for a maximum of 1000 members.\nThe position of any member’s data is the same in both arrays. For example, the data in index 2 of\nMemberID[] belongs to the member in index 2 of Name[]\nThe variable NewID is used to input a new membership code.\nWrite a program that meets the following requirements:\n• Provide a menu that offers the choices: inputting a new member, outputting a list of\nmembership codes and first and last names, or stopping.\n• Input and validate a response to the menu.\n• When inputting a new member, input a new membership code and check that it contains six\ncharacters:\n○ If the new code is six characters, check it against all the previously stored membership\ncodes to make sure it is unique.\n○ If the code is not unique, a new code must be entered and checked.\n○ If the code is unique, it is stored in the first available space in the appropriate array\nand the new member is required to enter their first name and last name, which are also\nstored in the corresponding location of the appropriate array.\n• When outputting a list of membership codes and names, output for each member: their\nmembership code, first name and last name.\n• The program will continue until the stop option on the menu is selected.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; assume this has already been\ndone.\nYou do not need to initialise the data in the arrays.\nYou do need to initialise any variables or constants used if appropriate.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete the truth table from the given logic expression.\nWorking space\nA B C Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n10 A sports club uses a six-character alphanumeric membership code to identify each member of the\nclub.\nThe one-dimensional (1D) array MemberID[] is used to store the unique membership codes for\nclub members.\nThe two-dimensional (2D) array Name[] is used to store the names of the club members. The first\nand last name of each member will be stored in separate array elements.\nThe system can store details for a maximum of 1000 members.\nThe position of any member’s data is the same in both arrays. For example, the data in index 2 of\nMemberID[] belongs to the member in index 2 of Name[]\nThe variable NewID is used to input a new membership code.\nWrite a program that meets the following requirements:\n• Provide a menu that offers the choices: inputting a new member, outputting a list of\nmembership codes and first and last names, or stopping.\n• Input and validate a response to the menu.\n• When inputting a new member, input a new membership code and check that it contains six\ncharacters:\n○ If the new code is six characters, check it against all the previously stored membership\ncodes to make sure it is unique.\n○ If the code is not unique, a new code must be entered and checked.\n○ If the code is unique, it is stored in the first available space in the appropriate array\nand the new member is required to enter their first name and last name, which are also\nstored in the corresponding location of the appropriate array.\n• When outputting a list of membership codes and names, output for each member: their\nmembership code, first name and last name.\n• The program will continue until the stop option on the menu is selected.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; assume this has already been\ndone.\nYou do not need to initialise the data in the arrays.\nYou do need to initialise any variables or constants used if appropriate.\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",

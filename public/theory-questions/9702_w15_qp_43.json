@@ -3,25 +3,15 @@
   "subjectCode": "9702",
   "session": "w15",
   "component": "43",
-  "totalMarks": 75,
+  "totalMarks": 83,
   "questionCount": 13,
   "questions": [
     {
       "id": "1",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "2",
-        "uniformly accelerated motion, s = ut + at"
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
       "parts": [
         {
-          "id": "2b",
+          "id": "1b",
           "label": "(b)",
           "text": "Some of the planets in the Solar System have several moons (satellites) that have circular\norbits about the planet.\nThe planet and each of its moons may be considered to be point masses.\nShow that the radius x of a moon’s orbit is related to the period T of the orbit by the expression\n2 3\n4π x\nGM =\nwhere G is the gravitational constant and M is the mass of the planet. Explain your working.",
           "marks": 3,
@@ -32,26 +22,20 @@
           "parts": []
         },
         {
-          "id": "2c",
+          "id": "1c",
           "label": "(c)",
-          "text": "The planet Neptune has eight moons, each in a circular orbit of radius x and period T. The\n2 3\nvariation with T of x for some of the moons is shown in Fig. 1.1.\n5.0\n4.0",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
+          "text": "The planet Neptune has eight moons, each in a circular orbit of radius x and period T. The\n2 3\nvariation with T of x for some of the moons is shown in Fig. 1.1.\n5.0\n4.0\n3 14 3\nx / 10 km\n3.0\n2.0\n1.0\n0 0.1 0.2 0.3 0.4\n2 2\nT / day\nFig. 1.1\nUse Fig. 1.1 and the expression in (b) to determine the mass of Neptune.\nmass = ______ kg",
+          "marks": 4,
+          "type": "calculate",
+          "answerType": "fill_blank",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 2,
       "text": [
-        "2",
-        "v = u + 2as",
-        "work done on/by a gas, W = p\u0002V",
-        "Gm",
-        "gravitational potential, φ = –",
-        "hydrostatic pressure, p = ρgh",
-        "1 Nm",
+        "Nm",
         "pressure of an ideal gas, p = <c >",
         "simple harmonic motion, a = – ω x",
         "velocity of particle in s.h.m., v = v cos ωt",
@@ -74,19 +58,28 @@
         "0.693",
         "decay constant, λ =",
         "Section A",
-        "Answer all the questions in the spaces provided.",
-        "1 (a) State Newton’s law of gravitation.",
-        "[2]"
+        "1 (a) State Newton’s law of gravitation."
       ]
     },
     {
-      "id": "3",
+      "id": "2",
       "context": [],
       "parts": [
         {
-          "id": "3b",
+          "id": "2a",
+          "label": "(a)",
+          "text": "An ideal gas is said to consist of molecules that are hard elastic identical spheres.\nState two further assumptions of the kinetic theory of gases.\n1. ______\n2. ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2b",
           "label": "(b)",
-          "text": "The number of molecules per unit volume in an ideal gas is n.\nIf it is assumed that all the molecules are moving with speed v, the pressure p exerted by the\ngas on the walls of the vessel is given by\np = nmv\nwhere m is the mass of one molecule.\nExplain the reasoning by which this expression is modified to give the formula\np = nm<c >.\n\n−3 5",
+          "text": "The number of molecules per unit volume in an ideal gas is n.\nIf it is assumed that all the molecules are moving with speed v, the pressure p exerted by the\ngas on the walls of the vessel is given by\np = nmv\nwhere m is the mass of one molecule.\nExplain the reasoning by which this expression is modified to give the formula\np = nm<c >.\n−3 5",
           "marks": 1,
           "type": "give",
           "answerType": "short_answer",
@@ -95,7 +88,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
           "text": "The density of an ideal gas is 1.2 kg m at a pressure of 1.0 × 10 Pa and a temperature\nof 27 °C.",
           "marks": null,
@@ -105,7 +98,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "2ci",
               "label": "(i)",
               "text": "Calculate the root-mean-square (r.m.s.) speed of the molecules of the gas at 27 °C.\n−1\nr.m.s. speed = ______ m s",
               "marks": 3,
@@ -116,17 +109,36 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "2cii",
               "label": "(ii)",
-              "text": "Calculate the mean-square speed of the molecules at 207 °C.\n2 −2\nmean-square speed = ______ m s \n3 (a) Two bodies are in thermal equilibrium.\nState what is meant by thermal equilibrium.",
+              "text": "Calculate the mean-square speed of the molecules at 207 °C.\n2 −2\nmean-square speed = ______ m s",
               "marks": 2,
-              "type": "state",
+              "type": "calculate",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Two bodies are in thermal equilibrium.\nState what is meant by thermal equilibrium.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
           "id": "3b",
@@ -174,25 +186,8 @@
           "parts": []
         }
       ],
-      "marks": 8,
-      "text": [
-        "14 3",
-        "x / 10 km",
-        "3.0",
-        "2.0",
-        "1.0",
-        "0 0.1 0.2 0.3 0.4",
-        "2 2",
-        "T / day",
-        "Fig. 1.1",
-        "Use Fig. 1.1 and the expression in (b) to determine the mass of Neptune.",
-        "mass = ................................................... kg [4]",
-        "2 (a) An ideal gas is said to consist of molecules that are hard elastic identical spheres.",
-        "State two further assumptions of the kinetic theory of gases.",
-        "1. ..............................................................................................................................................",
-        "2. ..............................................................................................................................................",
-        "[2]"
-      ]
+      "marks": 4,
+      "text": []
     },
     {
       "id": "4",
@@ -201,7 +196,7 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "Define simple harmonic motion.\n\n−4 2",
+          "text": "Define simple harmonic motion.\n−4 2",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
@@ -213,7 +208,7 @@
           "id": "4b",
           "label": "(b)",
           "text": "A tube, sealed at one end, has a circular cross-sectional area A of 4.9 × 10 m . Some sand\nis put in the tube so that the total mass M of the tube and its contents is 70 g. The tube floats\nupright in a liquid, as shown in Fig. 4.1.\ntube\ncross-sectional area A\n–4 2\n4.9 × 10 m\nliquid\nsand\nFig. 4.1\n−3\nThe liquid has a density ρ of 0.79 g cm .\nBy reference to the liquid pressure exerted on the base of the tube, show that the distance h\nof the base of the tube below the liquid surface is 18 cm. Explain your working.",
-          "marks": null,
+          "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": true,
@@ -255,7 +250,7 @@
           ]
         }
       ],
-      "marks": 5,
+      "marks": 7,
       "text": []
     },
     {
@@ -265,7 +260,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Suggest why, for values of x less than 4.0 cm, the electric field strength is zero.\n\n−9",
+          "text": "Suggest why, for values of x less than 4.0 cm, the electric field strength is zero.\n−9",
           "marks": 2,
           "type": "suggest",
           "answerType": "long_answer",
@@ -305,7 +300,7 @@
           "id": "6a",
           "label": "(a)",
           "text": "Two wires are laid side-by-side and carry equal currents I in opposite directions, as shown in\nFig. 6.1.\nFig. 6.1\nThe total magnetic flux density due to the current in the wires is negligible.",
-          "marks": null,
+          "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
@@ -324,7 +319,7 @@
           "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 7,
       "text": [
         "Suggest an explanation for each of the following observations."
       ]
@@ -518,7 +513,7 @@
             {
               "id": "9cii",
               "label": "(ii)",
-              "text": "A sample of uranium-235 has an activity of 5.0 × 10 Bq.\nCalculate the mass of the sample.\nmass = ______ g \nSection B\nAnswer all the questions in the spaces provided.",
+              "text": "A sample of uranium-235 has an activity of 5.0 × 10 Bq.\nCalculate the mass of the sample.\nmass = ______ g \nSection B",
               "marks": 3,
               "type": "calculate",
               "answerType": "fill_blank",
@@ -706,7 +701,7 @@
         {
           "id": "12c",
           "label": "(c)",
-          "text": "The ADC samples the signal in Fig. 12.2 at a frequency of 4.0 kHz. The first sample is taken at\ntime zero.\nUsing data from Fig. 12.2, draw, on the axes of Fig. 12.3, the variation with time of the output\nat point Q for time zero to time 1.5 ms.\noutput\nlevel\n0 0.25 0.50 0.75 1.00 1.25 1.50 1.75\ntime / ms\nFig. 12.3\n\nPlease turn over for Question 13.",
+          "text": "The ADC samples the signal in Fig. 12.2 at a frequency of 4.0 kHz. The first sample is taken at\ntime zero.\nUsing data from Fig. 12.2, draw, on the axes of Fig. 12.3, the variation with time of the output\nat point Q for time zero to time 1.5 ms.\noutput\nlevel\n0 0.25 0.50 0.75 1.00 1.25 1.50 1.75\ntime / ms\nFig. 12.3\nPlease turn over for Question 13.",
           "marks": 4,
           "type": "draw",
           "answerType": "diagram_only",
@@ -765,7 +760,7 @@
             {
               "id": "13bii",
               "label": "(ii)",
-              "text": "why two different frequencies are necessary.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "why two different frequencies are necessary.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 2,
               "type": "name",
               "answerType": "short_answer",

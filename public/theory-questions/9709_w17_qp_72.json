@@ -3,7 +3,7 @@
   "subjectCode": "9709",
   "session": "w17",
   "component": "72",
-  "totalMarks": 4,
+  "totalMarks": 6,
   "questionCount": 6,
   "questions": [
     {
@@ -23,7 +23,7 @@
             {
               "id": "1ai",
               "label": "(i)",
-              "text": "A random variable X has the distribution B\u00002540, 0.001\u0001. Use the Poisson approximation\nto the binomial distribution to find P\u0000X > 1\u0001.",
+              "text": "A random variable X has the distribution B2540, 0.001. Use the Poisson approximation\nto the binomial distribution to find PX > 1.",
               "marks": 3,
               "type": "use",
               "answerType": "short_answer",
@@ -34,7 +34,7 @@
             {
               "id": "1aii",
               "label": "(ii)",
-              "text": "Explain why the Poisson approximation is appropriate in this case. \nFind the mean and standard deviation of S + T.",
+              "text": "Explain why the Poisson approximation is appropriate in this case.",
               "marks": 1,
               "type": "explain",
               "answerType": "long_answer",
@@ -43,9 +43,20 @@
               "parts": []
             }
           ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Two independent random variables, S and T, have distributions Po2.1 and Po3.5 respectively.\nFind the mean and standard deviation of S + T.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 6,
       "text": []
     },
     {
@@ -77,10 +88,10 @@
       "marks": null,
       "text": [
         "The random variable X has probability density function given by",
-        "\u000f 0 < x ≤ a,",
-        "f\u0000x\u0001 =",
+        "0 < x ≤ a,",
+        "fx =",
         "0 otherwise,",
-        "where k and a are constants. It is given that E\u0000X\u0001 = 3."
+        "where k and a are constants. It is given that EX = 3."
       ]
     },
     {
@@ -90,7 +101,8 @@
       "marks": null,
       "text": [
         "The marks in paper 1 and paper 2 of an examination are denoted by X and Y respectively, where X",
-        "2 2"
+        "2 2",
+        "and Y have the independent continuous distributions N56, 6  and N43, 5  respectively."
       ]
     },
     {
@@ -99,7 +111,7 @@
       "parts": [],
       "marks": null,
       "text": [
-        "In a certain factory the number of items per day found to be defective has had the distribution Po\u00001.03\u0001.",
+        "In a certain factory the number of items per day found to be defective has had the distribution Po1.03.",
         "After the introduction of new quality controls, the management wished to test at the 10% significance",
         "level whether the mean number of defective items had decreased. They noted the total number",
         "of defective items produced in 5 randomly chosen days. It is assumed that defective items occur",

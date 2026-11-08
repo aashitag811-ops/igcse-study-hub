@@ -3,36 +3,15 @@
   "subjectCode": "9702",
   "session": "m22",
   "component": "42",
-  "totalMarks": 82,
+  "totalMarks": 88,
   "questionCount": 12,
   "questions": [
     {
       "id": "1",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "2",
-        "1 1 1",
-        "resistors in parallel = + + ...",
-        "R R R",
-        "1 2",
-        "GM",
-        "gravitational potential ϕ = –",
-        "GMm",
-        "gravitational potential energy E = –",
-        "1 Nm",
-        "pressure of an ideal gas p = 〈c 〉",
-        "simple harmonic motion a = – ω x",
-        "velocity of particle in s.h.m. v = v cos ωt"
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
       "parts": [
         {
-          "id": "2b",
+          "id": "1b",
           "label": "(b)",
           "text": "A moon is in circular orbit around a planet.\nExplain why the path of the moon is circular.",
           "marks": 2,
@@ -43,20 +22,58 @@
           "parts": []
         },
         {
-          "id": "2c",
+          "id": "1c",
           "label": "(c)",
-          "text": "Many moons are in circular orbit about a planet.\nThe angular velocity of a moon is ω when the orbit of the moon has a radius r about the\nplanet.",
+          "text": "Many moons are in circular orbit about a planet.\nThe angular velocity of a moon is ω when the orbit of the moon has a radius r about the\nplanet.\n3 2\nFig. 1.2 shows the variation of r with 1 /ω for these moons.\n3 23 3\nr / 10 m\n0 1 2 3 4 5 6\n7 –2 2\n/ 10 rad s\nFig. 1.2",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
-          "hasDiagramRef": false,
+          "hasDiagramRef": true,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Show that the mass M of the planet is given by the expression\ngradient\nM =\nwhere G is the gravitational constant.",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Use Fig. 1.2 and the expression in (c)(i) to show that the mass M of the planet is\n1.0 × 10 kg.",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "Determine the speed of a moon in orbit around the planet with an orbital radius of\n1.2 × 10 m.\n–1\nspeed = ______ m s",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
       "marks": 2,
       "text": [
-        "2",
+        "Nm",
+        "pressure of an ideal gas p = 〈c 〉",
+        "simple harmonic motion a = – ω x",
+        "velocity of particle in s.h.m. v = v cos ωt",
+        "2 2",
         "v = ! ω (x - x )",
         "electric potential V =",
         "4rf r",
@@ -90,16 +107,15 @@
         "λ f",
         "1 (a) The point P in Fig. 1.1 represents a point mass.",
         "On Fig. 1.1, draw lines to represent the gravitational field around P.",
-        "Fig. 1.1",
-        "[2]"
+        "Fig. 1.1"
       ]
     },
     {
-      "id": "3",
+      "id": "2",
       "context": [],
       "parts": [
         {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "State the change in internal energy ΔU for one complete cycle, XYZX.\nΔU = ______ J",
           "marks": 1,
@@ -110,7 +126,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
           "text": "Calculate the amount n of gas.\nn = ______ mol",
           "marks": 2,
@@ -121,7 +137,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
           "text": "Complete Table 2.1.\nUse the space below for any working.",
           "marks": 2,
@@ -132,7 +148,7 @@
           "parts": []
         },
         {
-          "id": "3d",
+          "id": "2d",
           "label": "(d)",
           "text": "",
           "marks": null,
@@ -142,7 +158,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3di",
+              "id": "2di",
               "label": "(i)",
               "text": "The first law of thermodynamics for a system may be represented by the equation\nΔU = q + W.\nState, with reference to the system, what is meant by:\nΔU: ______\nq: ______\nW: ______",
               "marks": 3,
@@ -153,18 +169,38 @@
               "parts": []
             },
             {
-              "id": "3dii",
+              "id": "2dii",
               "label": "(ii)",
-              "text": "Explain how the first law of thermodynamics applies to the change Z to X.\n\n3 A small wooden block (cuboid) of mass m floats in water, as shown in Fig. 3.1.\nwooden block mass m\nwater\ndensity ρ\nFig. 3.1\nThe top face of the block is horizontal and has area A. The density of the water is ρ.",
+              "text": "Explain how the first law of thermodynamics applies to the change Z to X.",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
-              "hasDiagramRef": true,
+              "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A fixed mass of an ideal gas has a volume V and a pressure p.",
+        "The gas undergoes a cycle of changes, X to Y to Z to X, as shown in Fig. 2.1.",
+        "Y X",
+        "Fig. 2.1",
+        "Table 2.1 shows data for p, V and temperature T for the gas at points X, Y and Z.",
+        "Table 2.1",
+        "5 –3 3",
+        "p/ 10 Pa V/ 10 m T/ K",
+        "X 1.5 4.2 540",
+        "Y 230",
+        "Z 5.1 782"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
           "id": "3a",
           "label": "(a)",
@@ -258,14 +294,12 @@
       ],
       "marks": 10,
       "text": [
-        "2",
-        "Fig. 1.2 shows the variation of r with 1 /ω for these moons.",
-        "3 23 3",
-        "r / 10 m",
-        "0 1 2 3 4 5 6",
-        "7 –2 2",
-        "/ 10 rad s",
-        "Fig. 1.2"
+        "A small wooden block (cuboid) of mass m floats in water, as shown in Fig. 3.1.",
+        "wooden block mass m",
+        "water",
+        "density ρ",
+        "Fig. 3.1",
+        "The top face of the block is horizontal and has area A. The density of the water is ρ."
       ]
     },
     {
@@ -384,7 +418,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "A second identical capacitor is connected in parallel with the first capacitor.\nState and explain the change, if any, to the time constant of the discharge circuit.\n\n–3 2",
+          "text": "A second identical capacitor is connected in parallel with the first capacitor.\nState and explain the change, if any, to the time constant of the discharge circuit.\n–3 2",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -740,7 +774,7 @@
               "id": "9cii",
               "label": "(ii)",
               "text": "Suggest why the total amount of energy released by the decay process between time\nt = 0.30 s and time t = 0.90 s is greater than your answer in (c)(i).",
-              "marks": null,
+              "marks": 1,
               "type": "suggest",
               "answerType": "long_answer",
               "hasDiagramRef": false,
@@ -750,7 +784,7 @@
           ]
         }
       ],
-      "marks": 11,
+      "marks": 8,
       "text": [
         "Polonium-211 ( Po) decays by alpha emission to form a stable isotope of lead (Pb)."
       ]
@@ -896,7 +930,7 @@
           "parts": []
         }
       ],
-      "marks": 9,
+      "marks": 8,
       "text": [
         "Positron emission tomography (PET scanning) obtains diagnostic information from a person. The",
         "information is used to form an image."

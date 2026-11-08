@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w14",
   "component": "33",
-  "totalMarks": 83,
+  "totalMarks": 90,
   "questionCount": 7,
   "questions": [
     {
@@ -102,24 +102,35 @@
             {
               "id": "1cii",
               "label": "(ii)",
-              "text": "The expression in reverse Polish notation",
-              "marks": null,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
+              "text": "The expression in reverse Polish notation\n2 3 * 8 + 7 /\nis to be evaluated using a stack. The first available location on the stack is 1.\nThe diagram will show the changing contents of the stack as this expression is evaluated.\nComplete the diagram.\n2 3\n1 2 2",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
               "diagramOnly": false,
               "parts": []
             }
           ]
         }
       ],
-      "marks": 7,
+      "marks": 11,
       "text": []
     },
     {
       "id": "2",
       "context": [],
       "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Modern operating systems use a memory management technique called paging.\nExplain how paging works by using the terms:\n• Page\n• Page frame\n• Page table",
+          "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
         {
           "id": "2b",
           "label": "(b)",
@@ -143,22 +154,8 @@
           "parts": []
         }
       ],
-      "marks": 6,
-      "text": [
-        "3 * 8 + 7 /",
-        "is to be evaluated using a stack. The first available location on the stack is 1.",
-        "The diagram will show the changing contents of the stack as this expression is evaluated.",
-        "Complete the diagram.",
-        "2 3",
-        "1 2 2",
-        "[4]",
-        "2 (a) Modern operating systems use a memory management technique called paging.",
-        "Explain how paging works by using the terms:",
-        "• Page",
-        "• Page frame",
-        "• Page table",
-        "[3]"
-      ]
+      "marks": 9,
+      "text": []
     },
     {
       "id": "3",
@@ -345,7 +342,7 @@
             {
               "id": "4biv",
               "label": "(iv)",
-              "text": "What is the hexadecimal number for the instruction shown in part (b)(ii)?\n\nShow the machine code for the following instructions:",
+              "text": "What is the hexadecimal number for the instruction shown in part (b)(ii)?\nShow the machine code for the following instructions:",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -721,7 +718,7 @@
         {
           "id": "7f",
           "label": "(f)",
-          "text": "High-level programming languages have two types of function. These are built-in and user-\ndefined.\nExplain the difference between them.You may give an example from your practical experience\nfor a built-in function.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "High-level programming languages have two types of function. These are built-in and user-\ndefined.\nExplain the difference between them.You may give an example from your practical experience\nfor a built-in function.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
           "type": "name",
           "answerType": "short_answer",
@@ -743,7 +740,7 @@
         "An error is generated for each of the following:",
         "• An unrecognised or missing flag parameter",
         "• A date parameter in the wrong format",
-        "• Date1 \u0002 \u0003 Date2",
+        "• Date1   Date2",
         "Dates are recognised by the function using the ‘hash (#) delimiter’.",
         "What is returned from the following function calls?"
       ]

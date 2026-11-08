@@ -4,7 +4,7 @@
   "session": "w18",
   "component": "53",
   "totalMarks": 0,
-  "questionCount": 6,
+  "questionCount": 5,
   "questions": [
     {
       "id": "1",
@@ -24,7 +24,7 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Use your spiral to complete this table.\nCorner\nLengths added Length from 0\nnumber\n1 1 1",
+          "text": "Use your spiral to complete this table.\nCorner\nLengths added Length from 0\nnumber\n1 1 1\n2 1 + 1 2\n3 1 + 1 + 2 4\n4 6\n6 1 + 1 + 2 + 2 + 3 + 3 12\n7 1 + 1 + 2 + 2 + 3 + 3 + 4 16\n8 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4\n10 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5",
           "marks": null,
           "type": "complete",
           "answerType": "long_answer",
@@ -44,7 +44,6 @@
         "Do not use staples, paper clips, glue or correction fluid.",
         "You may use an HB pencil for any diagrams or graphs.",
         "DO NOT WRITE IN ANY BARCODES.",
-        "Answer all the questions.",
         "You must show all relevant working to gain full marks for correct methods, including sketches.",
         "In this paper you will also be assessed on your ability to provide full reasons and to communicate",
         "your mathematics clearly and precisely.",
@@ -52,7 +51,6 @@
         "At the end of the examination, fasten all your work securely together.",
         "The total number of marks for this paper is 24.",
         "This document consists of 7 printed pages and 1 blank page.",
-        "Answer all the questions.",
         "INVESTIGATION RIGHT SPIRALS",
         "This investigation is about the lengths of spirals drawn on a square grid.",
         "A robot starts from 0 and moves 1 unit to Corner 1.",
@@ -70,27 +68,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 + 1 2"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 + 1 + 2 4"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "2a",
           "label": "(a)",
           "text": "For this sequence, fill in the next two terms.",
           "marks": null,
@@ -101,7 +81,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "2b",
           "label": "(b)",
           "text": "Write down the mathematical name for this sequence of numbers.\nn n( +1)",
           "marks": null,
@@ -112,18 +92,32 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "2c",
           "label": "(c)",
-          "text": "The nth term for this sequence is .\nShow that this is correct when n = 5.\n3 This table shows the length, L, of the spiral from 0 to an even numbered corner, k.",
+          "text": "The nth term for this sequence is .\nShow that this is correct when n = 5.",
           "marks": null,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": null,
+      "text": [
+        "This table shows the first five terms of a sequence.",
+        "n 1 2 3 4 5 6 7",
+        "Term of the",
+        "1 3 6 10 15",
+        "sequence"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Use your table from question 1(c) to help you complete this table.\nLength\n(L)\n2 2\n4 6\n6 12\n14 56",
           "marks": null,
@@ -134,46 +128,118 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
-          "text": "Complete this table using your answers to question 2(a) and question 3(a).\nTerm of the Length\nn k\nsequence (L)\n1 1 2 2\n2 3 4 6\n3 6 6 12\n4 10 8",
+          "text": "Complete this table using your answers to question 2(a) and question 3(a).\nTerm of the Length\nn k\nsequence (L)\n1 1 2 2\n2 3 4 6\n3 6 6 12\n4 10 8\n5 15 10\n6 12",
           "marks": null,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "Complete this formula for n in terms of k.\nn = �����������������������������������������������������",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Write down the connection between the length, L, and the term of the sequence.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biii",
+              "label": "(iii)",
+              "text": "Use part (i), part(ii) and question 2(c) to show that the formula for the length, L, of the spiral\nfrom 0 to an even numbered corner, k, is\nk k\nL = e +1o.\n2 2",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3biv",
+              "label": "(iv)",
+              "text": "Show that the formula from part(iii) is correct for Corner 6.",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bv",
+              "label": "(v)",
+              "text": "Show that the formula from part (iii) is not correct when k is an odd number.",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
       "marks": null,
       "text": [
-        "6",
-        "6 1 + 1 + 2 + 2 + 3 + 3 12",
-        "7 1 + 1 + 2 + 2 + 3 + 3 + 4 16",
-        "8 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4",
-        "10 1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5",
-        "2 This table shows the first five terms of a sequence.",
-        "n 1 2 3 4 5 6 7",
-        "Term of the",
-        "1 3 6 10 15",
-        "sequence"
+        "This table shows the length, L, of the spiral from 0 to an even numbered corner, k."
       ]
     },
     {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "15 10"
-      ]
-    },
-    {
-      "id": "6",
+      "id": "4",
       "context": [],
       "parts": [
         {
-          "id": "6b",
+          "id": "4a",
+          "label": "(a)",
+          "text": "Write down the length of the spiral",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ai",
+              "label": "(i)",
+              "text": "from Corner 5 to Corner 6 ,",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4aii",
+              "label": "(ii)",
+              "text": "from Corner 6 to Corner 7.",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "4b",
           "label": "(b)",
           "text": "When k is an even number, find an expression, in terms of k, for the length of the spiral",
           "marks": null,
@@ -183,7 +249,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "6bi",
+              "id": "4bi",
               "label": "(i)",
               "text": "from Corner (k – 1) to Corner k,",
               "marks": null,
@@ -194,20 +260,39 @@
               "parts": []
             },
             {
-              "id": "6bii",
+              "id": "4bii",
               "label": "(ii)",
-              "text": "from Corner k to Corner (k + 1).\n5 (a) Using question 3(b)(iii) and question 4 (b)(i), show that the length of the spiral from 0\nto Corner 7 is 16 units.",
+              "text": "from Corner k to Corner (k + 1).",
               "marks": null,
-              "type": "calculate",
-              "answerType": "calculate",
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": null,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Using question 3(b)(iii) and question 4 (b)(i), show that the length of the spiral from 0\nto Corner 7 is 16 units.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
-          "id": "6b",
+          "id": "5b",
           "label": "(b)",
           "text": "Find the length of the spiral from 0 to Corner 91.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": null,
@@ -219,9 +304,7 @@
         }
       ],
       "marks": null,
-      "text": [
-        "12"
-      ]
+      "text": []
     }
   ]
 }

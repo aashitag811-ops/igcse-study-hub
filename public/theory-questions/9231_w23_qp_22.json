@@ -3,8 +3,8 @@
   "subjectCode": "9231",
   "session": "w23",
   "component": "22",
-  "totalMarks": 58,
-  "questionCount": 4,
+  "totalMarks": 61,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -98,16 +98,31 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "By considering a suitable set of rectangles, use the diagram to show that\nr sech r 1 n tanh n + ln sech n - tanh 1 - ln sech 1. \nr=2\n6 The matrix P is given by\n1 -1 1\nP = 0 2 1 .\nf p\n0 0 -1",
+          "text": "By considering a suitable set of rectangles, use the diagram to show that\nr sech r 1 n tanh n + ln sech n - tanh 1 - ln sech 1. \nr=2",
           "marks": 6,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Find the solution of the differential equation",
+        "dy",
+        "+ 3y = sin x",
+        "dx",
+        "for which y = 1 when x = 0. Give your answer in the form y = f( )x . [9]",
+        "The diagram shows part of the curve y = x sech x and its maximum point M."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "6a",
           "label": "(a)",
           "text": "State the eigenvalues of P. \n-1",
           "marks": 1,
@@ -118,7 +133,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "6b",
           "label": "(b)",
           "text": "Use the characteristic equation of P to find P . \nThe 3 # 3 matrix A has distinct non-zero eigenvalues a, , 2 with corresponding eigenvectors\n1 -1 1\n0 , 2 , 1 ,\nf p f p f p\n0 0 - 1\nrespectively.\n-1",
           "marks": 4,
@@ -129,10 +144,35 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "6c",
           "label": "(c)",
-          "text": "Find A in terms of a. \n7 (a) Starting from the definitions of cosh and sinh in terms of exponentials, prove that\n2 sinh A = cosh 2A - 1.",
+          "text": "Find A in terms of a.",
           "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The matrix P is given by",
+        "1 -1 1",
+        "P = 0 2 1 .",
+        "f p",
+        "0 0 -1"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "Starting from the definitions of cosh and sinh in terms of exponentials, prove that\n2 sinh A = cosh 2A - 1.",
+          "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -140,18 +180,26 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "7b",
           "label": "(b)",
-          "text": "A curve has equation y = x , for 0 G x G . The area of the surface generated when the curve is\nrotated through 2r radians about the x-axis is denoted by S.\n1 1 820\nUse the substitution x = sinh u to show that S = rb - ln 3l. \n2 32 81\n8 It is given that v = y and\nd y dy dy\n3 2 3 4 -2x\ne o\ny + 3y + y + y = e .\ndx dx\ndx",
+          "text": "A curve has equation y = x , for 0 G x G . The area of the surface generated when the curve is\nrotated through 2r radians about the x-axis is denoted by S.\n1 1 820\nUse the substitution x = sinh u to show that S = rb - ln 3l. \n2 32 81",
           "marks": 9,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "8a",
           "label": "(a)",
           "text": "Show that\nd v dv\n-2x\n+ + 4v = 4e . \ndx\ndx\ndy",
           "marks": 4,
@@ -162,7 +210,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "8b",
           "label": "(b)",
           "text": "Find y in terms of x, given that, when x = 0, y = 1 and = - . \ndx 8\nAdditional page\nIf you use the following page to complete the answer to any question, the question number must be clearly\nshown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 10,
@@ -173,14 +221,15 @@
           "parts": []
         }
       ],
-      "marks": 43,
+      "marks": 14,
       "text": [
-        "Find the solution of the differential equation",
-        "dy",
-        "+ 3y = sin x",
-        "dx",
-        "for which y = 1 when x = 0. Give your answer in the form y = f( )x . [9]",
-        "The diagram shows part of the curve y = x sech x and its maximum point M."
+        "It is given that v = y and",
+        "d y dy dy",
+        "3 2 3 4 -2x",
+        "e o",
+        "y + 3y + y + y = e .",
+        "dx dx",
+        "dx"
       ]
     }
   ]

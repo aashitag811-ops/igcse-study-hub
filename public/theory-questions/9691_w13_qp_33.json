@@ -13,9 +13,9 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Convert the following infix expressions into reverse Polish notation:\nFor\nExaminer's\nUse",
+          "text": "Convert the following infix expressions into reverse Polish notation:",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -58,9 +58,9 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "A binary tree can be used to represent an expression or a statement.\nFor\nExaminer's\nUse\nA *\n3.14 ^\nr 2\nThe diagram shows the binary tree for the infix statement:\nA = 3.14 * r ^ 2",
+          "text": "A binary tree can be used to represent an expression or a statement.\nA *\n3.14 ^\nr 2\nThe diagram shows the binary tree for the infix statement:\nA = 3.14 * r ^ 2",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
@@ -177,7 +177,7 @@
             {
               "id": "2cii",
               "label": "(ii)",
-              "text": "Explain how the relationships are implemented.\nFor\nExaminer's\nUse",
+              "text": "Explain how the relationships are implemented.",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -246,7 +246,7 @@
         {
           "id": "2e",
           "label": "(e)",
-          "text": "Explain why all tables in the final design should be fully normalised.\nFor\nExaminer's\nUse",
+          "text": "Explain why all tables in the final design should be fully normalised.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -269,9 +269,6 @@
       "marks": 19,
       "text": [
         "A car hire company in a large town hires out cars to customers.",
-        "For",
-        "Examiner's",
-        "Use",
         "• There are five depots.",
         "• A number of cars are based at each depot.",
         "• Each car registration number is unique.",
@@ -344,9 +341,9 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "The diagram shows a program loaded into main memory starting at memory address\nFor\n40 Hex. Examiner's\nUse\nMain memory\n(Contents shown in\nAddress Hex.)\n7324\nA351\nA552\nFFFF\n003C\n103C\n010B\n6A",
+          "text": "The diagram shows a program loaded into main memory starting at memory address\n40 Hex. Examiner's\nMain memory\n(Contents shown in\nAddress Hex.)\n7324\nA351\nA552\nFFFF\n003C\n103C\n010B\n6A",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
@@ -378,7 +375,7 @@
         {
           "id": "3d",
           "label": "(d)",
-          "text": "The following table shows some of a processor’s instruction set in assembly language.\nFor\nExaminer's\nUse\nInstruction\nExplanation\nOp Code Operand\nDirect addressing. Load the contents of the given address\nLDD <address>\nto ACC\nIndirect addressing. At the given address is the address to\nLDI <address>\nbe used. Load the contents of this second address to ACC\nSTO <address>\nStore the contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register>\nAdd 1 to the contents of the register (ACC or IX)\nJMP <address>\nJump to the given address\nThe following program is to be executed.\nShown are:\n• the first seven instructions in this program\n• the memory locations which will be accessed by this program.\nAddress Main memory\nLDI 160\nADD 153\nSTO 153\nLDD 160\nINC ACC\nSTO 160\nJMP 130\nComplete the trace table below for two iterations of the loop.\nFor\nShow each change in the contents of the register and memory locations. Examiner's\nUse\nRegister Memory location\nACC 153 160\n0 150",
+          "text": "The following table shows some of a processor’s instruction set in assembly language.\nInstruction\nExplanation\nOp Code Operand\nDirect addressing. Load the contents of the given address\nLDD <address>\nto ACC\nIndirect addressing. At the given address is the address to\nLDI <address>\nbe used. Load the contents of this second address to ACC\nSTO <address>\nStore the contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register>\nAdd 1 to the contents of the register (ACC or IX)\nJMP <address>\nJump to the given address\nThe following program is to be executed.\nShown are:\n• the first seven instructions in this program\n• the memory locations which will be accessed by this program.\nAddress Main memory\nLDI 160\nADD 153\nSTO 153\nLDD 160\nINC ACC\nSTO 160\nJMP 130\nComplete the trace table below for two iterations of the loop.\nShow each change in the contents of the register and memory locations. Examiner's\nRegister Memory location\nACC 153 160\n0 150",
           "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
@@ -393,115 +390,10 @@
     {
       "id": "4",
       "context": [],
-      "parts": [
-        {
-          "id": "4a",
-          "label": "(a)",
-          "text": "List the clause numbers for the rules in this knowledge base.\nFor\nExaminer's\nUse",
-          "marks": 1,
-          "type": "use",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "4b",
-          "label": "(b)",
-          "text": "Show the output produced from theses clauses:",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "4bi",
-              "label": "(i)",
-              "text": "passed_driving_test(Who, car).",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "4bii",
-              "label": "(ii)",
-              "text": "able_to_drive(ho, motorbike).",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "4biii",
-              "label": "(iii)",
-              "text": "NOT(has_licence(shen)).",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "4c",
-          "label": "(c)",
-          "text": "Write a clause to output:",
-          "marks": null,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "4ci",
-              "label": "(i)",
-              "text": "all qualified motorbike drivers.",
-              "marks": 2,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "4cii",
-              "label": "(ii)",
-              "text": "all drivers who have passed the theory test but not a driving test.",
-              "marks": 3,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "4d",
-          "label": "(d)",
-          "text": "To produce the output from a clause, the inference engine uses a process called\nFor\nbacktracking. Examiner's\nUse\nConsider the clause:\nable_to_drive(ho, motorbike).\nList the order in which clauses are used to produce the output.\nFor each clause, describe the result that it returns.",
-          "marks": 3,
-          "type": "describe",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 12,
+      "parts": [],
+      "marks": null,
       "text": [
         "In a particular country, to become a qualified driver you must:",
-        "For",
-        "Examiner's",
-        "Use",
         "• have a licence; there is a minimum age at which a person can be issued with a licence",
         "and it is different for cars and motorbikes",
         "• pass a theory test; it is the same test for cars and motorbikes",
@@ -537,20 +429,116 @@
         "passed_theory_test(X) AND passed_driving_test(X, V).",
         "These clauses have the following meaning:",
         "Clause Explanation",
-        "1 The minimum age for a car licence is 18",
-        "8 Shen is aged 21",
-        "13 Tain has a licence",
-        "Person X is able to drive vehicle V if person X has a",
-        "licence, and the age A of person X is greater than",
-        "or equal to the minimum age L to drive vehicle V"
+        "1 The minimum age for a car licence is 18"
       ]
     },
     {
-      "id": "5",
+      "id": "8",
       "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "8a",
+          "label": "(a)",
+          "text": "List the clause numbers for the rules in this knowledge base.",
+          "marks": 1,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Show the output produced from theses clauses:",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8bi",
+              "label": "(i)",
+              "text": "passed_driving_test(Who, car).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8bii",
+              "label": "(ii)",
+              "text": "able_to_drive(ho, motorbike).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8biii",
+              "label": "(iii)",
+              "text": "NOT(has_licence(shen)).",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "Write a clause to output:",
+          "marks": null,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "8ci",
+              "label": "(i)",
+              "text": "all qualified motorbike drivers.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "8cii",
+              "label": "(ii)",
+              "text": "all drivers who have passed the theory test but not a driving test.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "8d",
+          "label": "(d)",
+          "text": "To produce the output from a clause, the inference engine uses a process called\nbacktracking. Examiner's\nConsider the clause:\nable_to_drive(ho, motorbike).\nList the order in which clauses are used to produce the output.\nFor each clause, describe the result that it returns.\n5 Book titles are stored in the file Book.txt.\nAn algorithm is to be designed to perform a serial search of the file for a requested book.\nThe algorithm will use the variables shown in the table.",
+          "marks": 3,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8a",
           "label": "(a)",
           "text": "Study the table and the algorithm and fill in the gaps.\nIdentifier Data Type Description\nBook.txt FILE\nSerial file of book titles\nNextBook STRING\nBook title read from the file\nIsFound\nSearchBook\nThe requested book\n//Serial search algorithm\nOPENFILE Book.txt FOR OUTPUT\nINPUT\nIsFound ← FALSE\nREPEAT\nFILEREAD next book data value and assign to NextBook\nIF = SearchBook\nTHEN\nIsFound ← TRUE\nOUTPUT \"FOUND\"\nENDIF\nUNTIL (IsFound = TRUE) OR\nIF\nTHEN\nOUTPUT \"Book title was NOT FOUND\"\nENDIF",
           "marks": 8,
@@ -561,18 +549,18 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "8b",
           "label": "(b)",
-          "text": "There are 250 book titles in the file.\nFor\nExaminer's\nUse\nHow many book titles on average will be read to find a requested book title?",
+          "text": "There are 250 book titles in the file.\nHow many book titles on average will be read to find a requested book title?",
           "marks": 1,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "8c",
           "label": "(c)",
           "text": "The book titles in Book.txt are read to the array BookTitle.\nA binary search may be an alternative algorithm to a serial search.",
           "marks": null,
@@ -582,9 +570,9 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5ci",
+              "id": "8ci",
               "label": "(i)",
-              "text": "What condition is put on the BookTitle array contents for a binary search to be\nused?\n\nThe following is a recursive function for the binary search algorithm.\nFUNCTION BinarySearch(ThisArray, FindValue, Low, High) : INTEGER\nIF High < Low\nTHEN\nRETURN -1 // not found\nELSE\nMiddle ← INT((High + Low) / 2)\nIF ThisArray[Middle] > FindValue\nTHEN\nBinarySearch(ThisArray, FindValue, Low,\nMiddle – 1)\nELSE\nIF ThisArray[Middle] < FindValue\nTHEN\nBinarySearch(ThisArray, FindValue,\nMiddle + 1, High)\nELSE\nRETURN Middle // found\nENDIF\nENDIF\nENDIF\nENDFUNCTION",
+              "text": "What condition is put on the BookTitle array contents for a binary search to be\nused?\nThe following is a recursive function for the binary search algorithm.\nFUNCTION BinarySearch(ThisArray, FindValue, Low, High) : INTEGER\nIF High < Low\nTHEN\nRETURN -1 // not found\nELSE\nMiddle ← INT((High + Low) / 2)\nIF ThisArray[Middle] > FindValue\nTHEN\nBinarySearch(ThisArray, FindValue, Low,\nMiddle – 1)\nELSE\nIF ThisArray[Middle] < FindValue\nTHEN\nBinarySearch(ThisArray, FindValue,\nMiddle + 1, High)\nELSE\nRETURN Middle // found\nENDIF\nENDIF\nENDIF\nENDFUNCTION",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -593,7 +581,7 @@
               "parts": []
             },
             {
-              "id": "5cii",
+              "id": "8cii",
               "label": "(ii)",
               "text": "How can you recognise that the function is recursive?",
               "marks": 1,
@@ -604,11 +592,11 @@
               "parts": []
             },
             {
-              "id": "5ciii",
+              "id": "8ciii",
               "label": "(iii)",
-              "text": "A binary search is carried out on the following test data in the BookTitle array.\nFor\nExaminer's\nUse\nBookTitle\n100 Great Artists\nC++ Made Easy\nComputing Glossary\nDatabase Theory\nGreat Cricket Matches\nHistory Of Television\nNetworking\nParticle Physics\nString Theory\nTortoise Care\nVisiting China\nThe trace diagram shown below is for the function call:\nBinarySearch(BookTitle, \"Tortoise Care\", 1, 11)\nBinarySearch(BookTitle, \"Tortoise Care\", 1, 11)\nHigh < Low is FALSE\nMiddle = 6\nBookTitle[6] > \"Tortoise Care\" is FALSE\nBookTitle[6] < \"Tortoise Care\" is TRUE\nBinarySearch(BookTitle, ______)\nHigh < Low is FALSE\nBookTitle[9] > \"Tortoise Care\" is FALSE\nBookTitle[9] < \"Tortoise Care\" is TRUE\nHigh < Low is FALSE\nMiddle = 10\nBookTitle[10] < \"Tortoise Care\" is FALSE\nRETURN 10\nENDFUNCTION\nENDFUNCTION\nFill in the gaps in the trace diagram.",
+              "text": "A binary search is carried out on the following test data in the BookTitle array.\nBookTitle\n100 Great Artists\nC++ Made Easy\nComputing Glossary\nDatabase Theory\nGreat Cricket Matches\nHistory Of Television\nNetworking\nParticle Physics\nString Theory\nTortoise Care\nVisiting China\nThe trace diagram shown below is for the function call:\nBinarySearch(BookTitle, \"Tortoise Care\", 1, 11)\nBinarySearch(BookTitle, \"Tortoise Care\", 1, 11)\nHigh < Low is FALSE\nMiddle = 6\nBookTitle[6] > \"Tortoise Care\" is FALSE\nBookTitle[6] < \"Tortoise Care\" is TRUE\nBinarySearch(BookTitle, ______)\nHigh < Low is FALSE\nBookTitle[9] > \"Tortoise Care\" is FALSE\nBookTitle[9] < \"Tortoise Care\" is TRUE\nHigh < Low is FALSE\nMiddle = 10\nBookTitle[10] < \"Tortoise Care\" is FALSE\nRETURN 10\nENDFUNCTION\nENDFUNCTION\nFill in the gaps in the trace diagram.",
               "marks": 5,
-              "type": "use",
+              "type": "complete",
               "answerType": "fill_blank",
               "hasDiagramRef": true,
               "diagramOnly": false,
@@ -617,14 +605,13 @@
           ]
         }
       ],
-      "marks": 16,
+      "marks": 28,
       "text": [
-        "Book titles are stored in the file Book.txt.",
-        "For",
-        "Examiner's",
-        "An algorithm is to be designed to perform a serial search of the file for a requested book.",
-        "Use",
-        "The algorithm will use the variables shown in the table."
+        "Shen is aged 21",
+        "13 Tain has a licence",
+        "Person X is able to drive vehicle V if person X has a",
+        "licence, and the age A of person X is greater than",
+        "or equal to the minimum age L to drive vehicle V"
       ]
     },
     {
@@ -634,7 +621,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "State where the computer’s boot file would be stored.\nFor\nExplain how the boot file is used to make the computer system ready for use. Examiner's\nUse",
+          "text": "State where the computer’s boot file would be stored.\nExplain how the boot file is used to make the computer system ready for use. Examiner's",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",
@@ -698,9 +685,9 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Below are some terms and definitions for devices used for networking.\nFor\nExaminer's\nUse",
+          "text": "Below are some terms and definitions for devices used for networking.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -742,7 +729,7 @@
             {
               "id": "7bi",
               "label": "(i)",
-              "text": "Networks use a variety of different media for communication.\nFor\nExaminer's\nUse\nName and describe two of these media.\nMedium 1\nMedium 2",
+              "text": "Networks use a variety of different media for communication.\nName and describe two of these media.\nMedium 1\nMedium 2",
               "marks": 4,
               "type": "name",
               "answerType": "short_answer",
@@ -753,7 +740,7 @@
             {
               "id": "7bii",
               "label": "(ii)",
-              "text": "A new communication link is to be constructed in a network.\nName one factor that will be considered when deciding on the medium to be used.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "A new communication link is to be constructed in a network.\nName one factor that will be considered when deciding on the medium to be used.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 1,
               "type": "name",
               "answerType": "short_answer",

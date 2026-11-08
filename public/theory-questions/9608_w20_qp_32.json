@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w20",
   "component": "32",
-  "totalMarks": 70,
+  "totalMarks": 75,
   "questionCount": 8,
   "questions": [
     {
@@ -265,14 +265,13 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "Complete these statements about flip-flops.",
         "A flip-flop is a .................................................... .",
         "It has .................................................... stable states.",
         "A flip-flop is used for .................................................... .",
-        "There are different types of flip-flop, for example .................................................... and",
-        "[5]"
+        "There are different types of flip-flop, for example .................................................... and"
       ]
     },
     {
@@ -433,7 +432,7 @@
             {
               "id": "8cii",
               "label": "(ii)",
-              "text": "A program continuously checks the flags. If a flag is set, the program moves to the\nerror-handling routine at the specified label. For example, if the engine temperature\nis high, the program jumps to the label for the error-handling routine HIGHTEMP. The\nerror-handling routine instructions have not been provided.\nA programmer has written most of the instructions for the program in the following table.\nThere are four missing operands.\nComplete the assembly language program by writing the four missing operands.\nLabel Op code Operand\nCHECKFLAGS: LDD 603\nAND &0F\nSTO TEMP\nAND &01\nCMP &01\nJPE HIGHTEMP\nLDD TEMP\nAND &02\nCMP\nJPE LOWOIL\nLDD TEMP\nAND\nCMP &04\nJPE LOWBATT\nLDD\nAND &08\nCMP &08\nJPE LOWFUEL\nJMP\nTEMP:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "A program continuously checks the flags. If a flag is set, the program moves to the\nerror-handling routine at the specified label. For example, if the engine temperature\nis high, the program jumps to the label for the error-handling routine HIGHTEMP. The\nerror-handling routine instructions have not been provided.\nA programmer has written most of the instructions for the program in the following table.\nThere are four missing operands.\nComplete the assembly language program by writing the four missing operands.\nLabel Op code Operand\nCHECKFLAGS: LDD 603\nAND &0F\nSTO TEMP\nAND &01\nCMP &01\nJPE HIGHTEMP\nLDD TEMP\nAND &02\nCMP\nJPE LOWOIL\nLDD TEMP\nAND\nCMP &04\nJPE LOWBATT\nLDD\nAND &08\nCMP &08\nJPE LOWFUEL\nJMP\nTEMP:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 4,
               "type": "complete",
               "answerType": "long_answer",

@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "In database design:\nFor\nExaminer's\nUse",
+          "text": "In database design:",
           "marks": null,
           "type": "design",
           "answerType": "long_answer",
@@ -47,12 +47,12 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "A company has a number of products for sale and receives orders from customers.\nFor\nExaminer's\nUse\n• Customers are given a CustomerID and other customer data are recorded\n• Each product has a ProductID and other product data are recorded\n• Over a period of time a customer will place many orders, and each product can\nappear on many customer orders\n• You should assume:\no all orders are for one product only,\no on any given day a customer will place at most one order.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
+          "text": "A company has a number of products for sale and receives orders from customers.\n• Customers are given a CustomerID and other customer data are recorded\n• Each product has a ProductID and other product data are recorded\n• Over a period of time a customer will place many orders, and each product can\nappear on many customer orders\n• You should assume:\no all orders are for one product only,\no on any given day a customer will place at most one order.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
           "marks": null,
-          "type": "use",
-          "answerType": "short_answer",
+          "type": "place",
+          "answerType": "diagram_only",
           "hasDiagramRef": false,
-          "diagramOnly": false,
+          "diagramOnly": true,
           "parts": [
             {
               "id": "1bi",
@@ -100,9 +100,9 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Binary representation is used for many different data values.\nFor\nExaminer's\nUse\nConsider the binary pattern 1001 0100\nWhat is its value if it represents:",
+          "text": "Binary representation is used for many different data values.\nConsider the binary pattern 1001 0100\nWhat is its value if it represents:",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -168,9 +168,9 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "An attempt at representing 16 ½ gave the binary pattern:\nFor\nExaminer's\nUse\n0010 0001 0110\nwhich correctly represents 16 ½ but is not in normalised form.",
+          "text": "An attempt at representing 16 ½ gave the binary pattern:\n0010 0001 0110\nwhich correctly represents 16 ½ but is not in normalised form.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -266,11 +266,11 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "A processor will allow the use of a variety of modes of addressing.\nFor\nExaminer's\nUse\nExplain these terms, using an example in each case. You may wish to illustrate your\nanswer with a diagram.",
+          "text": "A processor will allow the use of a variety of modes of addressing.\nExplain these terms, using an example in each case. You may wish to illustrate your",
           "marks": null,
           "type": "explain",
           "answerType": "long_answer",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": [
             {
@@ -311,10 +311,7 @@
       ],
       "marks": 12,
       "text": [
-        "Most modern computers are designed using Von Neumann architecture.",
-        "For",
-        "Examiner's",
-        "Use"
+        "Most modern computers are designed using Von Neumann architecture."
       ]
     },
     {
@@ -369,9 +366,7 @@
       "marks": 10,
       "text": [
         "Two types of software which are used to translate high-level programs are a compiler and",
-        "For",
-        "an interpreter. Examiner's",
-        "Use"
+        "an interpreter. Examiner's"
       ]
     },
     {
@@ -381,7 +376,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Describe the operation of a stack data structure.\nFor\nExaminer's\nUse",
+          "text": "Describe the operation of a stack data structure.",
           "marks": 1,
           "type": "describe",
           "answerType": "long_answer",
@@ -403,7 +398,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Describe an application in the operation of a computer system where a stack data\nFor\nstructure would be required. Examiner's\nUse",
+          "text": "Describe an application in the operation of a computer system where a stack data\nstructure would be required. Examiner's",
           "marks": 3,
           "type": "describe",
           "answerType": "long_answer",
@@ -456,9 +451,9 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "A processor is capable of receiving and handling interrupts. Each interrupt has a\nFor\npriority. Examiner's\nUse",
+          "text": "A processor is capable of receiving and handling interrupts. Each interrupt has a\npriority. Examiner's",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -513,7 +508,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Describe two different media used for the transmission of data across a wide area\nFor\nnetwork. Examiner's\nUse",
+          "text": "Describe two different media used for the transmission of data across a wide area\nnetwork. Examiner's",
           "marks": 4,
           "type": "describe",
           "answerType": "long_answer",
@@ -535,7 +530,7 @@
         {
           "id": "7c",
           "label": "(c)",
-          "text": "The LAN in Shop A is to be expanded to 40 computers. The computers are to be\nFor\norganised as two network segments. Examiner's\nUse\nWhat additional hardware is required? Explain its purpose.\nHardware\nExplanation",
+          "text": "The LAN in Shop A is to be expanded to 40 computers. The computers are to be\norganised as two network segments. Examiner's\nWhat additional hardware is required? Explain its purpose.\nHardware\nExplanation",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -588,9 +583,9 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "A high-level programming language has the following built-in function ChangeString\nFor\nExaminer's\ndefined as follows:\nUse\nChangeString(ThisString1: String, ThisString2: String) RETURNS\nString\nwill return the String value ThisString2<Space>first character of ThisString1\nFor Example:\nChangeString(“Ben”, “Pollard”) will return “Pollard B”\nIf the function is not properly formed an error is generated.",
+          "text": "A high-level programming language has the following built-in function ChangeString\ndefined as follows:\nChangeString(ThisString1: String, ThisString2: String) RETURNS\nString\nwill return the String value ThisString2<Space>first character of ThisString1\nFor Example:\nChangeString(“Ben”, “Pollard”) will return “Pollard B”\nIf the function is not properly formed an error is generated.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -598,7 +593,7 @@
             {
               "id": "8ai",
               "label": "(i)",
-              "text": "State the function identifier and parameters for the above function.\nFunction identifier\nParameters\n\nWhat value is returned from the following function calls?",
+              "text": "State the function identifier and parameters for the above function.\nFunction identifier\nParameters\nWhat value is returned from the following function calls?",
               "marks": 2,
               "type": "state",
               "answerType": "short_answer",
@@ -663,7 +658,7 @@
         {
           "id": "9a",
           "label": "(a)",
-          "text": "Many high-level languages use a procedural paradigm.\nFor\nExaminer's\nUse\nExplain the term procedural programming language.",
+          "text": "Many high-level languages use a procedural paradigm.\nExplain the term procedural programming language.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -695,7 +690,7 @@
             {
               "id": "9bii",
               "label": "(ii)",
-              "text": "Explain the rule given by clause 13.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "Explain the rule given by clause 13.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 1,
               "type": "name",
               "answerType": "short_answer",

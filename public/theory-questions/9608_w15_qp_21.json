@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w15",
   "component": "21",
-  "totalMarks": 47,
-  "questionCount": 22,
+  "totalMarks": 55,
+  "questionCount": 27,
   "questions": [
     {
       "id": "1",
@@ -121,7 +121,7 @@
         {
           "id": "09b",
           "label": "(b)",
-          "text": "The selection statement (lines 03 – 08) could have been written with more simplified logic.\nRewrite this section of the algorithm in pseudocode.\n\n4 A program is to be written to calculate the discount given on purchases.\nA purchase may qualify for a discount depending on the amount spent. The purchase price\n(Purchase), the discount rate (DiscountRate) and amount paid (Paid) is calculated as shown\nin the following pseudocode algorithm.\nINPUT Purchase\nIF Purchase > 1000\nTHEN\nDiscountRate ← 0.10\nELSE\nIF Purchase > 500\nTHEN\nDiscountRate ← 0.05\nELSE\nDiscountRate ← 0\nENDIF\nENDIF\nPaid ← Purchase * (1 - DiscountRate)\nOUTPUT Paid\nThe algorithm is also to be documented with a program flowchart.\nComplete the flowchart by:\n• filling in the flowchart boxes\n• labelling, where appropriate, lines of the flowchart\n\n5 A driver buys a new car.\nThe value of the car reduces each year by a percentage of its current value.\nThe percentage reduction is:\n• in the first year, 40%\n• in each following year, 20%\nThe driver writes a program to predict the value of the car in future years.\nThe program requirements are:\n• enter the cost of the new car (to nearest $)\n• calculate and output the value of the car at the end of each year\n• the program will end when either the car is nine years old, or when the value is less than\n$1000",
+          "text": "The selection statement (lines 03 – 08) could have been written with more simplified logic.\nRewrite this section of the algorithm in pseudocode.\n4 A program is to be written to calculate the discount given on purchases.\nA purchase may qualify for a discount depending on the amount spent. The purchase price\n(Purchase), the discount rate (DiscountRate) and amount paid (Paid) is calculated as shown\nin the following pseudocode algorithm.\nINPUT Purchase\nIF Purchase > 1000\nTHEN\nDiscountRate ← 0.10\nELSE\nIF Purchase > 500\nTHEN\nDiscountRate ← 0.05\nELSE\nDiscountRate ← 0\nENDIF\nENDIF\nPaid ← Purchase * (1 - DiscountRate)\nOUTPUT Paid\nThe algorithm is also to be documented with a program flowchart.\nComplete the flowchart by:\n• filling in the flowchart boxes\n• labelling, where appropriate, lines of the flowchart\n5 A driver buys a new car.\nThe value of the car reduces each year by a percentage of its current value.\nThe percentage reduction is:\n• in the first year, 40%\n• in each following year, 20%\nThe driver writes a program to predict the value of the car in future years.\nThe program requirements are:\n• enter the cost of the new car (to nearest $)\n• calculate and output the value of the car at the end of each year\n• the program will end when either the car is nine years old, or when the value is less than\n$1000",
           "marks": 3,
           "type": "calculate",
           "answerType": "calculate",
@@ -143,7 +143,7 @@
         {
           "id": "09b",
           "label": "(b)",
-          "text": "Complete the pseudocode for this design.\nOUTPUT \"Enter purchase price\"\nINPUT PurchasePrice\nCurrentValue ← ______\nYearCount ← 1\nWHILE ______ AND ______\nIF ______\nTHEN\nCurrentValue ← CurrentValue * (1 – 40 / 100)\nELSE\nCurrentValue ← ______\nENDIF\nOUTPUT YearCount, CurrentValue\nENDWHILE\n\n6 A firm employs five staff who take part in a training programme. Each member of staff must\ncomplete a set of twelve tasks which can be taken in any order. When a member of staff\nsuccessfully completes a task, this is recorded.\nA program is to be produced to record the completion of tasks for the five members of staff.\nTo test the code, the programmer makes the program generate test data.\nThe program generates pairs of random numbers:\n• the first, in the range, 1 to 5 to represent the member of staff\n• the second, in the range, 1 to 12 to represent the task\nEach pair of numbers simulates the completion of one task by one member of staff.",
+          "text": "Complete the pseudocode for this design.\nOUTPUT \"Enter purchase price\"\nINPUT PurchasePrice\nCurrentValue ← ______\nYearCount ← 1\nWHILE ______ AND ______\nIF ______\nTHEN\nCurrentValue ← CurrentValue * (1 – 40 / 100)\nELSE\nCurrentValue ← ______\nENDIF\nOUTPUT YearCount, CurrentValue\nENDWHILE\n6 A firm employs five staff who take part in a training programme. Each member of staff must\ncomplete a set of twelve tasks which can be taken in any order. When a member of staff\nsuccessfully completes a task, this is recorded.\nA program is to be produced to record the completion of tasks for the five members of staff.\nTo test the code, the programmer makes the program generate test data.\nThe program generates pairs of random numbers:\n• the first, in the range, 1 to 5 to represent the member of staff\n• the second, in the range, 1 to 12 to represent the task\nEach pair of numbers simulates the completion of one task by one member of staff.",
           "marks": 6,
           "type": "design",
           "answerType": "fill_blank",
@@ -290,9 +290,55 @@
     {
       "id": "22",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Staff Task Count\", Completed",
+        "24 // end of main program"
+      ]
+    },
+    {
+      "id": "26",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PROCEDURE InitialiseTaskGrid()"
+      ]
+    },
+    {
+      "id": "27",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE i : INTEGER"
+      ]
+    },
+    {
+      "id": "28",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE j : INTEGER"
+      ]
+    },
+    {
+      "id": "29",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR i ← 1 TO 5"
+      ]
+    },
+    {
+      "id": "30",
+      "context": [],
       "parts": [
         {
-          "id": "22c",
+          "id": "30c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -302,7 +348,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22ci",
+              "id": "30ci",
               "label": "(i)",
               "text": "State the number of parameters of the InitialiseTaskGrid procedure.",
               "marks": 1,
@@ -313,7 +359,7 @@
               "parts": []
             },
             {
-              "id": "22cii",
+              "id": "30cii",
               "label": "(ii)",
               "text": "Copy the condition which is used to control a ‘pre-condition’ loop.",
               "marks": 1,
@@ -324,7 +370,7 @@
               "parts": []
             },
             {
-              "id": "22ciii",
+              "id": "30ciii",
               "label": "(iii)",
               "text": "Explain the purpose of lines 13 – 18.",
               "marks": 3,
@@ -335,7 +381,7 @@
               "parts": []
             },
             {
-              "id": "22civ",
+              "id": "30civ",
               "label": "(iv)",
               "text": "Give the global variable that needs to be declared at line 03.",
               "marks": 2,
@@ -348,9 +394,9 @@
           ]
         },
         {
-          "id": "22d",
+          "id": "30d",
           "label": "(d)",
-          "text": "Line 17 in the pseudocode outputs the staff number and the task number.\nStaff number Staff name\nA new requirement is to display the name of the\n1 Sadiq\nmember of staff given in the table.\n2 Smith\nWrite a CASE structure using variable StaffNum.\n3 Ho\n4 Azmah\nAssign to a new variable StaffName the appropriate\nstaff name. 5 Papadopoulos\n\nQuestion 7 begins on page 14.\n7 ASCII character codes are used to represent a single character.\nPart of the code table is shown below.\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90\nSome pseudocode statements follow which use the built-in functions below:\nONECHAR(ThisString : STRING, Position : INTEGER) RETURNS CHAR\nreturns the single character at position Position (counting from the start of the string with value 1)\nfrom the string ThisString.\nFor example: ONECHAR(\"Barcelona\", 3) returns 'r'.\nCHARACTERCOUNT(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in the string ThisString.\nFor example: CHARACTERCOUNT(\"BRAZIL\") returns 6.\nCHR(ThisInteger : INTEGER) RETURNS CHAR\nreturns the character with ASCII code ThisInteger.\nFor example: CHR(65) returns character 'A'.\nASC(ThisCharacter : CHAR) RETURNS INTEGER\nreturns the ASCII value for character ThisCharacter.\nFor example: ASC('A') returns 65.",
+          "text": "Line 17 in the pseudocode outputs the staff number and the task number.\nStaff number Staff name\nA new requirement is to display the name of the\n1 Sadiq\nmember of staff given in the table.\n2 Smith\nWrite a CASE structure using variable StaffNum.\n3 Ho\n4 Azmah\nAssign to a new variable StaffName the appropriate\nstaff name. 5 Papadopoulos\nQuestion 7 begins on page 14.\n7 ASCII character codes are used to represent a single character.\nPart of the code table is shown below.\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90\nSome pseudocode statements follow which use the built-in functions below:\nONECHAR(ThisString : STRING, Position : INTEGER) RETURNS CHAR\nreturns the single character at position Position (counting from the start of the string with value 1)\nfrom the string ThisString.\nFor example: ONECHAR(\"Barcelona\", 3) returns 'r'.\nCHARACTERCOUNT(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in the string ThisString.\nFor example: CHARACTERCOUNT(\"BRAZIL\") returns 6.\nCHR(ThisInteger : INTEGER) RETURNS CHAR\nreturns the character with ASCII code ThisInteger.\nFor example: CHR(65) returns character 'A'.\nASC(ThisCharacter : CHAR) RETURNS INTEGER\nreturns the ASCII value for character ThisCharacter.\nFor example: ASC('A') returns 65.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -359,7 +405,7 @@
           "parts": []
         },
         {
-          "id": "22a",
+          "id": "30a",
           "label": "(a)",
           "text": "Show the values stored by variables A, B, C and D.\nThe & operator is used to concatenate two strings.\nNum1 ← 15\nA ← CHR(67) & CHR(65) & CHR(84)",
           "marks": null,
@@ -369,7 +415,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22ai",
+              "id": "30ai",
               "label": "(i)",
               "text": "A ______ \nB ← ASC('P') - ASC('F') + 3",
               "marks": 1,
@@ -380,7 +426,7 @@
               "parts": []
             },
             {
-              "id": "22aii",
+              "id": "30aii",
               "label": "(ii)",
               "text": "B ______ \nC ← ASC(ONECHAR(\"BISCUITS\", 3))",
               "marks": 1,
@@ -391,7 +437,7 @@
               "parts": []
             },
             {
-              "id": "22aiii",
+              "id": "30aiii",
               "label": "(iii)",
               "text": "C ______ \nD ← CHARACTERCOUNT(\"New York City\") + 2 (iv) D ______",
               "marks": 1,
@@ -404,10 +450,10 @@
           ]
         },
         {
-          "id": "22b",
+          "id": "30b",
           "label": "(b)",
           "text": "A program is to be written which accepts a string and then calculates a numeric value from\nthis string. The input string and the calculated value are then to be sent to a remote computer\nover a communications link.\nStudy the following pseudocode:\nOUTPUT \"Enter string\"\nINPUT MyString\nStringTotal ← 0\nFOR i ← 1 TO CHARACTERCOUNT(MyString)\nNextNum ← ASC(ONECHAR(MyString, i))\nStringTotal ← StringTotal + NextNum\nENDFOR\nOUTPUT MyString, StringTotal\nWrite the above pseudocode algorithm as program code.\nThere is no need to show the declaration of variables or comment statements.",
-          "marks": null,
+          "marks": 6,
           "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -415,10 +461,10 @@
           "parts": []
         },
         {
-          "id": "22c",
+          "id": "30c",
           "label": "(c)",
-          "text": "Explain the purpose of sending the value of StringTotal to the remote computer, in\naddition to MyString.\n\n8 In this question you will need to use the given pseudocode built-in function:\nONECHAR(ThisString : STRING, Position : INTEGER) RETURNS CHAR\nreturns the single character at position Position (counting from the start of the string with value 1)\nfrom the string ThisString.\nFor example: ONECHAR(\"Barcelona\", 3) returns 'r'.",
-          "marks": null,
+          "text": "Explain the purpose of sending the value of StringTotal to the remote computer, in\naddition to MyString.\n8 In this question you will need to use the given pseudocode built-in function:\nONECHAR(ThisString : STRING, Position : INTEGER) RETURNS CHAR\nreturns the single character at position Position (counting from the start of the string with value 1)\nfrom the string ThisString.\nFor example: ONECHAR(\"Barcelona\", 3) returns 'r'.",
+          "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -426,7 +472,7 @@
           "parts": []
         },
         {
-          "id": "22a",
+          "id": "30a",
           "label": "(a)",
           "text": "Give the value assigned to variable y by the following statement:\ny ← ONECHAR(\"San Francisco\", 6) y ______ \nA program reads a string entered by the user. The string represents the addition or subtraction\nof two fractions. Each part of the fraction within the string is always a single digit only and the\ntop digit is always less than the bottom digit.\nExample strings are: \"3/8+3/5\" and \"5/8-1/4\"\nThe program steps are:\n• the user enters the string\n• the program isolates each digit and the operator\n• the program computes the answer as either:\na fraction\na whole number followed by a fraction\na whole number\n• the program displays the answer to the user\nOp\nN4Char\nN3Char\nN2Char\nN1Char\nThe identifier table shows the variables to be used to store the characters in the string as\nshown in the diagram.\nIdentifier\nData type Description\nString input by user.\nFractionString STRING\nFor example: \"5/8-1/4\"\nN1Char\nCHAR\nSee diagram\nN2Char\nCHAR See diagram\nN3Char CHAR\nSee diagram\nN4Char CHAR\nSee diagram\nOp\nCHAR\nSee diagram",
           "marks": 1,
@@ -437,7 +483,7 @@
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "30b",
           "label": "(b)",
           "text": "Study the sequence of pseudocode statements.\nShow the values assigned to each variable.\nFractionString ← \"3/7+2/9\"\nN3Char ← ONECHAR(FractionString, 5)",
           "marks": null,
@@ -447,7 +493,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22bi",
+              "id": "30bi",
               "label": "(i)",
               "text": "N3Char ______ \nOp ← ONECHAR(FractionString, 4)",
               "marks": 1,
@@ -458,7 +504,7 @@
               "parts": []
             },
             {
-              "id": "22bii",
+              "id": "30bii",
               "label": "(ii)",
               "text": "Op ______",
               "marks": 1,
@@ -469,7 +515,7 @@
               "parts": []
             },
             {
-              "id": "22biii",
+              "id": "30biii",
               "label": "(iii)",
               "text": "Complete the function call to isolate the character '9' from FractionString.\nFractionString ← \"3/7+2/9\"\nONECHAR(FractionString, ______ ) \nThe following additional variables are to be used by the program:\nIdentifier Data type Description\nN1 INTEGER\nThe number value of N1Char\nN2 INTEGER\nThe number value of N2Char\nN3 INTEGER\nThe number value of N3Char\nN4 INTEGER The number value of N4Char\nTopAnswer INTEGER\nThe numerator of the fraction answer\nBottomAnswer INTEGER\nThe denominator of the fraction answer",
               "marks": 1,
@@ -482,7 +528,7 @@
           ]
         },
         {
-          "id": "22c",
+          "id": "30c",
           "label": "(c)",
           "text": "The following pseudocode uses these additional built-in functions:\nTONUM(ThisDigit : CHAR) RETURNS INTEGER\nreturns the integer value of character ThisDigit\nFor example: TONUM('8') returns digit 8.\nTOSTR(ThisNumber : INTEGER) RETURNS STRING\nreturns the string value of integer ThisNumber\nFor example: TOSTR(27) returns \"27\".\nStudy the pseudocode.\nComplete the three dry runs for the three given values of FractionString.\nOUTPUT \"Enter the expression\"\nINPUT FractionString\n// isolate each number digit and assign its number value\nN1Char ← ONECHAR(FractionString, 1)\nN1 ← TONUM(N1Char)\nN2Char ← ONECHAR(FractionString, 3)\nN2 ← TONUM(N2Char)\nN3Char ← ONECHAR(FractionString, 5)\nN3 ← TONUM(N3Char)\nN4Char ← ONECHAR(FractionString, 7)\nN4 ← TONUM(N4Char)\nBottomAnswer ← N2 * N4\nOp ← ONECHAR(FractionString, 4)\nIF Op = '+'\nTHEN\n// add fractions\nTopAnswer ← (BottomAnswer / N2) * N1 + (BottomAnswer / N4) * N3\nELSE\n// subtract fractions\nTopAnswer ← (BottomAnswer / N2) * N1 - (BottomAnswer / N4) * N3\nENDIF\nIF TopAnswer = BottomAnswer\nTHEN\nOUTPUT '1'\nELSE\nIF TopAnswer > BottomAnswer\nTHEN\nTopAnswer ← TopAnswer MOD BottomAnswer\n// the & operator joins strings or character values\nOUTPUT \"1 \" & TOSTR(TopAnswer) & \"/\" & TOSTR(BottomAnswer)\nELSE\nOUTPUT TOSTR(TopAnswer) & \"/\" & TOSTR(BottomAnswer)\nENDIF\nENDIF",
           "marks": null,
@@ -492,7 +538,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22ci",
+              "id": "30ci",
               "label": "(i)",
               "text": "FractionString ← \"2/5-3/8\"\nN1 N2 N3 N4 BottomAnswer Op TopAnswer\nOUTPUT",
               "marks": 2,
@@ -503,7 +549,7 @@
               "parts": []
             },
             {
-              "id": "22cii",
+              "id": "30cii",
               "label": "(ii)",
               "text": "FractionString ← \"3/4+1/4\"\nN1 N2 N3 N4 BottomAnswer Op TopAnswer\nOUTPUT",
               "marks": 2,
@@ -514,7 +560,7 @@
               "parts": []
             },
             {
-              "id": "22ciii",
+              "id": "30ciii",
               "label": "(iii)",
               "text": "FractionString ← \"7/9+2/3\"\nN1 N2 N3 N4 BottomAnswer Op TopAnswer\nOUTPUT",
               "marks": 3,
@@ -527,7 +573,7 @@
           ]
         },
         {
-          "id": "22d",
+          "id": "30d",
           "label": "(d)",
           "text": "The programmer writes code from the given pseudocode design. The program works, but the\ndesign is limited.\nThe programmer is to make amendments to the design following suggested specification\nchanges.",
           "marks": null,
@@ -537,7 +583,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22di",
+              "id": "30di",
               "label": "(i)",
               "text": "State the name for this type of maintenance.",
               "marks": 1,
@@ -548,9 +594,9 @@
               "parts": []
             },
             {
-              "id": "22dii",
+              "id": "30dii",
               "label": "(ii)",
-              "text": "Describe three specification changes which will make the program more useful.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "Describe three specification changes which will make the program more useful.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 3,
               "type": "name",
               "answerType": "short_answer",
@@ -561,15 +607,9 @@
           ]
         }
       ],
-      "marks": 29,
+      "marks": 37,
       "text": [
-        "OUTPUT \"Staff Task Count\", Completed",
-        "24 // end of main program",
-        "26 PROCEDURE InitialiseTaskGrid()",
-        "27 DECLARE i : INTEGER",
-        "28 DECLARE j : INTEGER",
-        "29 FOR i ← 1 TO 5",
-        "30 FOR j ← 1 TO 12",
+        "FOR j ← 1 TO 12",
         "31 TaskGrid[i, j] ← FALSE",
         "32 ENDFOR",
         "33 ENDFOR",

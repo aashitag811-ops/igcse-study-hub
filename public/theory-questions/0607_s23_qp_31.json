@@ -3,8 +3,8 @@
   "subjectCode": "0607",
   "session": "s23",
   "component": "31",
-  "totalMarks": 80,
-  "questionCount": 6,
+  "totalMarks": 93,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -129,24 +129,72 @@
         {
           "id": "3a",
           "label": "(a)",
-          "text": "Some students take a test.\nTheir scores are shown in the stem-and-leaf diagram.\n0 8\n1 2 5 7\n2 1 1 1 2 3 6 9\n3 2 2 5",
+          "text": "Some students take a test.\nTheir scores are shown in the stem-and-leaf diagram.\n0 8\n1 2 5 7\n2 1 1 1 2 3 6 9\n3 2 2 5\n4 0\nKey : 4 | 0 means 40",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": null,
-      "text": []
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "3ai",
+              "label": "(i)",
+              "text": "Find how many students take the test.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aii",
+              "label": "(ii)",
+              "text": "Find the range.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiii",
+              "label": "(iii)",
+              "text": "Find the mode.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3aiv",
+              "label": "(iv)",
+              "text": "Find the median.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3av",
+              "label": "(v)",
+              "text": "One of the students is chosen at random.\nFind the probability that this student scored more than 20.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "Ten students take a different test.\nThese are their scores.\n18 29 32 36 40 30 27 9 39 40",
           "marks": null,
@@ -156,7 +204,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4bi",
+              "id": "3bi",
               "label": "(i)",
               "text": "Find the mean of these ten scores.",
               "marks": 1,
@@ -167,7 +215,7 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "3bii",
               "label": "(ii)",
               "text": "Complete a stem-and-leaf diagram for these ten scores.\nKey : 4 | 0 means 40",
               "marks": 2,
@@ -178,7 +226,7 @@
               "parts": []
             },
             {
-              "id": "4biii",
+              "id": "3biii",
               "label": "(iii)",
               "text": "One of these students scored 32 out of 40.\nWrite as a fraction in its simplest form.",
               "marks": 1,
@@ -189,17 +237,36 @@
               "parts": []
             },
             {
-              "id": "4biv",
+              "id": "3biv",
               "label": "(iv)",
-              "text": "One of these students scored 36 out of 40.\nWrite as a percentage.\n______ % \n4 (a)\nNOT TO\nSCALE\nq°\n52°\nr°\n48°\np°\nX A\nIn the diagram, XYZ is a straight line.\nYB is parallel to XA.\nFind the value of p, the value of q and the value of r.\nGive a geometrical reason for each of your answers.\np = ______ because ______\nq = ______ because ______\nr = ______ because ______",
+              "text": "One of these students scored 36 out of 40.\nWrite as a percentage.\n______ %",
               "marks": 1,
-              "type": "give",
+              "type": "write",
               "answerType": "fill_blank",
-              "hasDiagramRef": true,
+              "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "q°\n52°\nr°\n48°\np°\nX A\nIn the diagram, XYZ is a straight line.\nYB is parallel to XA.\nFind the value of p, the value of q and the value of r.\nGive a geometrical reason for each of your answers.\np = ______ because ______\nq = ______ because ______\nr = ______ because ______",
+          "marks": 6,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
         },
         {
           "id": "4b",
@@ -213,11 +280,8 @@
           "parts": []
         }
       ],
-      "marks": 7,
-      "text": [
-        "0",
-        "Key : 4 | 0 means 40"
-      ]
+      "marks": 8,
+      "text": []
     },
     {
       "id": "5",
@@ -226,7 +290,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Write these decimals in order of size, starting with the smallest.\n0.6 0.63 0.069 0.608\n\nsmallest",
+          "text": "Write these decimals in order of size, starting with the smallest.\n0.6 0.63 0.069 0.608\nsmallest",
           "marks": 2,
           "type": "write",
           "answerType": "short_answer",
@@ -258,7 +322,7 @@
             {
               "id": "5ci",
               "label": "(i)",
-              "text": "Write 0.000 035 in standard form.\n\n4 # 10",
+              "text": "Write 0.000 035 in standard form.\n4 # 10",
               "marks": 1,
               "type": "write",
               "answerType": "short_answer",
@@ -413,16 +477,35 @@
         {
           "id": "6d",
           "label": "(d)",
-          "text": "Rotate shape A by 90° clockwise about (0, 0).\nLabel the image R. \n8 (a) Simplify.\n5x + 4x + 3x",
+          "text": "Rotate shape A by 90° clockwise about (0, 0).\nLabel the image R.",
           "marks": 2,
           "type": "label",
           "answerType": "diagram_only",
           "hasDiagramRef": false,
           "diagramOnly": true,
           "parts": []
+        }
+      ],
+      "marks": 15,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Simplify.\n5x + 4x + 3x",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
-          "id": "6b",
+          "id": "8b",
           "label": "(b)",
           "text": "Expand.\nx(5x - 9)",
           "marks": 2,
@@ -433,7 +516,7 @@
           "parts": []
         },
         {
-          "id": "6c",
+          "id": "8c",
           "label": "(c)",
           "text": "Factorise completely.\n20x + 6xy",
           "marks": 2,
@@ -444,7 +527,7 @@
           "parts": []
         },
         {
-          "id": "6d",
+          "id": "8d",
           "label": "(d)",
           "text": "Solve.",
           "marks": null,
@@ -454,7 +537,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "6di",
+              "id": "8di",
               "label": "(i)",
               "text": "4 2( x - 3) = 28\nx = ______",
               "marks": 3,
@@ -465,9 +548,9 @@
               "parts": []
             },
             {
-              "id": "6dii",
+              "id": "8dii",
               "label": "(ii)",
-              "text": "3x - 11 = x + 4\nx = ______ \nNOT TO\nSCALE\nx°\n12m\n35m",
+              "text": "3x - 11 = x + 4\nx = ______ \nx°\n12m\n35m",
               "marks": 2,
               "type": "complete",
               "answerType": "fill_blank",
@@ -478,7 +561,7 @@
           ]
         },
         {
-          "id": "6a",
+          "id": "8a",
           "label": "(a)",
           "text": "Work out the area of the triangle.\nGive the units of your answer.",
           "marks": 2,
@@ -489,7 +572,7 @@
           "parts": []
         },
         {
-          "id": "6b",
+          "id": "8b",
           "label": "(b)",
           "text": "Work out the perimeter of the triangle.\n______ m",
           "marks": 3,
@@ -500,7 +583,7 @@
           "parts": []
         },
         {
-          "id": "6c",
+          "id": "8c",
           "label": "(c)",
           "text": "Find the value of x.\nx = ______ \n10 120 students take part in a sponsored swim.\nThe cumulative frequency table shows the amounts, in $, they raised.\nAmount raised ($A)\nA G 100 A G 200 A G 300 A G 400 A G 500 A G 600\nCumulative frequency 4 10 18 40 96 120",
           "marks": 2,
@@ -511,7 +594,7 @@
           "parts": []
         },
         {
-          "id": "6a",
+          "id": "8a",
           "label": "(a)",
           "text": "On the grid, draw a cumulative frequency curve to show the information in the table.\nCumulative\nfrequency\n0 50 100 150 200 250 300 350 400 450 500 550 600\nAmount raised($)",
           "marks": 3,
@@ -522,7 +605,7 @@
           "parts": []
         },
         {
-          "id": "6b",
+          "id": "8b",
           "label": "(b)",
           "text": "Use your cumulative frequency curve to find",
           "marks": null,
@@ -532,7 +615,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "6bi",
+              "id": "8bi",
               "label": "(i)",
               "text": "the median amount raised\n$ ______",
               "marks": 1,
@@ -543,7 +626,7 @@
               "parts": []
             },
             {
-              "id": "6bii",
+              "id": "8bii",
               "label": "(ii)",
               "text": "the interquartile range\n$ ______",
               "marks": 2,
@@ -554,9 +637,9 @@
               "parts": []
             },
             {
-              "id": "6biii",
+              "id": "8biii",
               "label": "(iii)",
-              "text": "the number of students who raised more than $525.\n\nQuestion 11 is printed on the next page.\n–1 3\n–5",
+              "text": "the number of students who raised more than $525.\nQuestion 11 is printed on the next page.\n–1 3\n–5",
               "marks": 2,
               "type": "other",
               "answerType": "short_answer",
@@ -567,7 +650,7 @@
           ]
         },
         {
-          "id": "6a",
+          "id": "8a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -577,7 +660,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "6ai",
+              "id": "8ai",
               "label": "(i)",
               "text": "On the diagram, sketch the graph of y = 3 # 2 for -1 G x G 3.",
               "marks": 2,
@@ -588,7 +671,7 @@
               "parts": []
             },
             {
-              "id": "6aii",
+              "id": "8aii",
               "label": "(ii)",
               "text": "Find the coordinates of the point where the graph crosses the y-axis.\n( ______ , ______ )",
               "marks": 1,
@@ -601,7 +684,7 @@
           ]
         },
         {
-          "id": "6b",
+          "id": "8b",
           "label": "(b)",
           "text": "On the diagram, sketch the graph of y = 4x + 3 for -1 G x G 3.",
           "marks": 2,
@@ -612,7 +695,7 @@
           "parts": []
         },
         {
-          "id": "6c",
+          "id": "8c",
           "label": "(c)",
           "text": "Find the x-coordinate of each point of intersection of y = 4x + 3 and y = 3 # 2 .\nx = ______ and x = ______ \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
@@ -623,7 +706,7 @@
           "parts": []
         }
       ],
-      "marks": 46,
+      "marks": 32,
       "text": []
     }
   ]

@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s19",
   "component": "22",
-  "totalMarks": 69,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -121,7 +121,7 @@
             {
               "id": "2aiii",
               "label": "(iii)",
-              "text": "The following pseudocode uses the subroutine DoSomething().\nAnswer 23 + DoSomething(\"Yellow\")\nState whether the subroutine is a function or a procedure. Justify your answer.\nType of subroutine ______\nJustification ______",
+              "text": "The following pseudocode uses the subroutine DoSomething().\nState whether the subroutine is a function or a procedure. Justify your answer.\nType of subroutine ______\nJustification ______",
               "marks": 2,
               "type": "state",
               "answerType": "fill_blank",
@@ -198,7 +198,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "Module hierarchy and parameters are two features that may be represented on a structure\nchart.\nState two other features than can be represented.\nFeature 1 ______\nFeature 2 ______\n\nQuestion 4 begins on the next page.",
+          "text": "Module hierarchy and parameters are two features that may be represented on a structure\nchart.\nState two other features than can be represented.\nFeature 1 ______\nFeature 2 ______\nQuestion 4 begins on the next page.",
           "marks": 2,
           "type": "state",
           "answerType": "fill_blank",
@@ -340,7 +340,7 @@
           "id": "5b",
           "label": "(b)",
           "text": "A procedure, CountLines(), is being written to count the number of lines in a text file. The\nprocedure will:\n• take a filename as a string parameter\n• count the number of lines in the file\n• output a single suitable message that includes the total number of lines.\nWrite pseudocode for the procedure CountLines().",
-          "marks": null,
+          "marks": 6,
           "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -348,7 +348,7 @@
           "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 9,
       "text": [
         "A student is learning about text files. She wants to write a program to count the number of lines in",
         "a file."
@@ -383,7 +383,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Write pseudocode for the module declaration of WriteInfo().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nNote: This function will also work if x is of type INTEGER\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nNote: This function will also work if x is of type CHAR\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE",
+          "text": "Write pseudocode for the module declaration of WriteInfo().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nNote: This function will also work if x is of type INTEGER\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nNote: This function will also work if x is of type CHAR\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE",
           "marks": 3,
           "type": "write",
           "answerType": "short_answer",

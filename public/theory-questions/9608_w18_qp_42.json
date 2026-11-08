@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w18",
   "component": "42",
-  "totalMarks": 63,
-  "questionCount": 12,
+  "totalMarks": 27,
+  "questionCount": 10,
   "questions": [
     {
       "id": "1",
@@ -118,7 +118,7 @@
         {
           "id": "03e",
           "label": "(e)",
-          "text": "State the value returned by the goal\nNOT(is_a(labrador, retriever))\n\n3 A bubble sort algorithm is used to sort an integer array, List. This algorithm can process arrays\nof different lengths.",
+          "text": "State the value returned by the goal\nNOT(is_a(labrador, retriever))\n3 A bubble sort algorithm is used to sort an integer array, List. This algorithm can process arrays\nof different lengths.",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",
@@ -255,7 +255,7 @@
         {
           "id": "10c",
           "label": "(c)",
-          "text": "Use pseudocode to write an alternative version of this bubble sort algorithm that will exit the\nalgorithm when the list is fully sorted.\n\n4 A circus is made up of performers. There are three types of performer: clown, acrobat and aerial.\nThe following data are stored for each performer.\n• First name\n• Last name\n• Secondary role (that can be edited)\n• Stage name (that can be edited)\n• Type of performer (PerfType)\nThe following statements apply to performers.\n• An acrobat may or may not use fire in his or her act.\n• An aerial performer can be one of two types: either catcher or flyer.\n• Each clown has an item, such as a water-spraying flower or a unicycle.\n• Each clown also has a musical instrument, such as a guitar or an oboe.\nEach of the three types of performer has a method that will display all of the information about that\nperformer in a specific format. For example:\nSally Superstar (real name Sally Smith) is an acrobat. Fire is part of Sally Superstar’s act.\nWhen not performing, Sally Superstar is a set changer.",
+          "text": "Use pseudocode to write an alternative version of this bubble sort algorithm that will exit the\nalgorithm when the list is fully sorted.\n4 A circus is made up of performers. There are three types of performer: clown, acrobat and aerial.\nThe following data are stored for each performer.\n• First name\n• Last name\n• Secondary role (that can be edited)\n• Stage name (that can be edited)\n• Type of performer (PerfType)\nThe following statements apply to performers.\n• An acrobat may or may not use fire in his or her act.\n• An aerial performer can be one of two types: either catcher or flyer.\n• Each clown has an item, such as a water-spraying flower or a unicycle.\n• Each clown also has a musical instrument, such as a guitar or an oboe.\nEach of the three types of performer has a method that will display all of the information about that\nperformer in a specific format. For example:\nSally Superstar (real name Sally Smith) is an acrobat. Fire is part of Sally Superstar’s act.\nWhen not performing, Sally Superstar is a set changer.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -320,7 +320,7 @@
             {
               "id": "10dii",
               "label": "(ii)",
-              "text": "Explain inheritance with reference to the circus example.\n\n5 A Program Evaluation Review Technique (PERT) chart has been constructed for a project that is\nat the planning stage.\nC F\n2 2 5 2 5 3\n1 2 3 5 7 9 10\nA B D G I K\n6 3\nE J\n6 8",
+              "text": "Explain inheritance with reference to the circus example.\n5 A Program Evaluation Review Technique (PERT) chart has been constructed for a project that is\nat the planning stage.\nC F\n2 2 5 2 5 3\n1 2 3 5 7 9 10\nA B D G I K\n6 3\nE J\n6 8",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -376,7 +376,7 @@
             {
               "id": "10cii",
               "label": "(ii)",
-              "text": "Explain the importance of the critical path for project delivery.\n\n6 A linked list abstract data type (ADT) is created. This is implemented as an array of records. The\nrecords are of type ListElement.\nAn example of a record of ListElement is shown in the following table.\nData Item Value\nCountry \"Scotland\"\nPointer 1",
+              "text": "Explain the importance of the critical path for project delivery.\n6 A linked list abstract data type (ADT) is created. This is implemented as an array of records. The\nrecords are of type ListElement.\nAn example of a record of ListElement is shown in the following table.\nData Item Value\nCountry \"Scotland\"\nPointer 1",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -423,8 +423,8 @@
         {
           "id": "10b",
           "label": "(b)",
-          "text": "The program stores the position of the last node in the linked list in LastNode. The last node\nalways has a Pointer value of -1. The position of the node at the head of the list is stored in\nListHead.\nAfter some processing, the array and variables are in the following state.\nCountryList\nListHead Country Pointer\n1 1 \"Wales\" 2\nLastNode 2 \"Scotland\" 4\n3 3 -1\n\"England\" 5\n5 \"Brazil\" 6\n6 \"Canada\" 7\n7 \"Mexico\" 8\n8 \"Peru\" 9\n9 \"China\" 10\n10 11",
-          "marks": null,
+          "text": "The program stores the position of the last node in the linked list in LastNode. The last node\nalways has a Pointer value of -1. The position of the node at the head of the list is stored in\nListHead.\nAfter some processing, the array and variables are in the following state.\nCountryList\nListHead Country Pointer\n1 1 \"Wales\" 2\nLastNode 2 \"Scotland\" 4\n3 3 -1\n\"England\" 5\n5 \"Brazil\" 6\n6 \"Canada\" 7\n7 \"Mexico\" 8\n8 \"Peru\" 9\n9 \"China\" 10\n10 11\n11 12\n12 13\n14 15\n15 3\nA recursive algorithm searches the list for a value, deletes that value, and updates the\nrequired pointers. When a node value is deleted, it is set to empty \"\" and the node is added\nto the end of the list.\nA node value is deleted using the pseudocode statement\nCALL DeleteNode(\"England\", 1, 0)\nComplete the following pseudocode to implement the DeleteNode procedure.\nPROCEDURE DeleteNode(NodeValue: STRING, ThisPointer : INTEGER,\nPreviousPointer : INTEGER)\nIF CountryList[ThisPointer].Value = NodeValue\nTHEN\nCountryList[ThisPointer].Value \"\"\nIF ListHead = …………………………………………………………………………………………\nTHEN\nListHead ……………………………………………………………………………………………………………………………………………………………\nELSE\nCountryList[PreviousPointer].Pointer CountryList[ThisPointer].Pointer\nENDIF\nCountryList[LastNode].Pointer ……………………………………………………………………………………………………………\nLastNode ThisPointer\nELSE\nIF CountryList[ThisPointer].Pointer <> -1\nTHEN\nCALL DeleteNode(NodeValue, ………………………………………………………………………………………………………………,\nThisPointer)\nELSE\nOUTPUT \"DOES NOT EXIST\"\nENDIF\nENDIF\nENDPROCEDURE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 5,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -432,67 +432,9 @@
           "parts": []
         }
       ],
-      "marks": 43,
+      "marks": 7,
       "text": [
-        "ENDFOR",
-        "[7]"
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "12"
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "13",
-        "14 15",
-        "15 3",
-        "A recursive algorithm searches the list for a value, deletes that value, and updates the",
-        "required pointers. When a node value is deleted, it is set to empty \"\" and the node is added",
-        "to the end of the list.",
-        "A node value is deleted using the pseudocode statement",
-        "CALL DeleteNode(\"England\", 1, 0)",
-        "Complete the following pseudocode to implement the DeleteNode procedure.",
-        "PROCEDURE DeleteNode(NodeValue: STRING, ThisPointer : INTEGER,",
-        "PreviousPointer : INTEGER)",
-        "IF CountryList[ThisPointer].Value = NodeValue",
-        "THEN",
-        "CountryList[ThisPointer].Value \"\"",
-        "IF ListHead = …………………………………………………………………………………………",
-        "THEN",
-        "ListHead ……………………………………………………………………………………………………………………………………………………………",
-        "ELSE",
-        "CountryList[PreviousPointer].Pointer CountryList[ThisPointer].Pointer",
-        "ENDIF",
-        "CountryList[LastNode].Pointer ……………………………………………………………………………………………………………",
-        "LastNode ThisPointer",
-        "ELSE",
-        "IF CountryList[ThisPointer].Pointer <> -1",
-        "THEN",
-        "CALL DeleteNode(NodeValue, ………………………………………………………………………………………………………………,",
-        "ThisPointer)",
-        "ELSE",
-        "OUTPUT \"DOES NOT EXIST\"",
-        "ENDIF",
-        "ENDIF",
-        "ENDPROCEDURE",
-        "[5]",
-        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
-        "publisher will be pleased to make amends at the earliest possible opportunity.",
-        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International",
-        "Examinations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after",
-        "the live examination series.",
-        "Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local",
-        "Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge."
+        "ENDFOR"
       ]
     }
   ]

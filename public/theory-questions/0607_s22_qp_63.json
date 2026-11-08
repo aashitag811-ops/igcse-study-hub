@@ -3,7 +3,7 @@
   "subjectCode": "0607",
   "session": "s22",
   "component": "63",
-  "totalMarks": 52,
+  "totalMarks": 60,
   "questionCount": 11,
   "questions": [
     {
@@ -13,16 +13,27 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Complete the table.\nNumber of\nNumber of regions\nradii\n1 1",
-          "marks": null,
+          "text": "Complete the table.\nNumber of\nNumber of regions\nradii\n1 1\n2 2",
+          "marks": 1,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write a formula, in terms of n, for the number of regions, R, when there are n radii.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": null,
+      "marks": 2,
       "text": [
         "Radii",
         "The diagrams show the number of regions inside a circle when 1 radius and 2 radii are drawn.",
@@ -35,17 +46,6 @@
       "id": "2",
       "context": [],
       "parts": [
-        {
-          "id": "2b",
-          "label": "(b)",
-          "text": "Write a formula, in terms of n, for the number of regions, R, when there are n radii.\n\n2 Diameters\nThe diagrams show the number of regions inside a circle when 1 diameter and 2 diameters are drawn.\n2 3\n1 diameter 2 diameters",
-          "marks": 1,
-          "type": "circle",
-          "answerType": "diagram_only",
-          "hasDiagramRef": false,
-          "diagramOnly": true,
-          "parts": []
-        },
         {
           "id": "2a",
           "label": "(a)",
@@ -69,43 +69,31 @@
           "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 3,
       "text": [
-        "2",
-        "[1]"
+        "Diameters",
+        "The diagrams show the number of regions inside a circle when 1 diameter and 2 diameters are drawn.",
+        "2 3",
+        "1 diameter 2 diameters"
       ]
     },
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Chords",
-        "In this investigation:",
-        "• each chord must cut every other chord",
-        "• only two chords may intersect at any point.",
-        "The diagrams show the number of regions inside a circle when 1 chord, 2 chords and 3 chords are drawn.",
-        "1 1"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Count the number of regions in the circle when 4 chords are drawn.",
           "marks": 1,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "Complete this table.\nYou may use the empty circle to help you.\nNumber of Number of\nchords regions\n1 2\n2 4\n3 7\n6 22",
           "marks": 1,
@@ -116,16 +104,33 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
-          "text": "Find a formula, in terms of n, for the number of regions, R, when there are n intersecting chords.\n\n4 Tangents\nA region can be inside or outside the circle when the lines are tangents.\nThese two diagrams both show a circle with 2 tangents and the regions numbered.\nThe maximum number of regions for a circle with 2 tangents is 6.\n3 2",
+          "text": "Find a formula, in terms of n, for the number of regions, R, when there are n intersecting chords.",
           "marks": 4,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Chords",
+        "In this investigation:",
+        "• each chord must cut every other chord",
+        "• only two chords may intersect at any point.",
+        "The diagrams show the number of regions inside a circle when 1 chord, 2 chords and 3 chords are drawn.",
+        "1 1",
+        "4 7",
+        "1 chord 2 chords 3 chords"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -151,36 +156,39 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "Draw a fourth tangent on the diagram below to find the maximum number of regions.\nComplete the table.\nNumber of Maximum\ntangents number of regions\n1 3\n2 6",
-          "marks": null,
+          "text": "Draw a fourth tangent on the diagram below to find the maximum number of regions.\nComplete the table.\nNumber of Maximum\ntangents number of regions\n1 3\n2 6\n5 21",
+          "marks": 2,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
+        },
+        {
+          "id": "4d",
+          "label": "(d)",
+          "text": "This is a formula for the maximum number of regions, R, when there are n tangents.\nR = n + bn + 1\nFind the value of b.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 8,
+      "marks": 6,
       "text": [
-        "7",
-        "1 chord 2 chords 3 chords"
+        "Tangents",
+        "A region can be inside or outside the circle when the lines are tangents.",
+        "These two diagrams both show a circle with 2 tangents and the regions numbered.",
+        "The maximum number of regions for a circle with 2 tangents is 6.",
+        "3 2"
       ]
     },
     {
       "id": "5",
       "context": [],
       "parts": [
-        {
-          "id": "5d",
-          "label": "(d)",
-          "text": "This is a formula for the maximum number of regions, R, when there are n tangents.\nR = n + bn + 1\nFind the value of b.\n\n5 Secants\nA secant is a straight line that intersects a circle at two points and extends outside the circle.\nIn this investigation:\n• each secant must cut every other secant\nsecant\n• only 2 secants may intersect at any point\n• secants must not intersect on the circumference of the circle.\nThe diagram shows the number of regions with 2 secants drawn on a circle.",
-          "marks": 2,
-          "type": "circle",
-          "answerType": "diagram_only",
-          "hasDiagramRef": true,
-          "diagramOnly": true,
-          "parts": []
-        },
         {
           "id": "5a",
           "label": "(a)",
@@ -204,22 +212,27 @@
           "parts": []
         }
       ],
-      "marks": 8,
+      "marks": 6,
       "text": [
-        "21",
-        "[2]"
+        "Secants",
+        "A secant is a straight line that intersects a circle at two points and extends outside the circle.",
+        "In this investigation:",
+        "• each secant must cut every other secant",
+        "secant",
+        "• only 2 secants may intersect at any point",
+        "• secants must not intersect on the circumference of the circle.",
+        "The diagram shows the number of regions with 2 secants drawn on a circle."
       ]
     },
     {
       "id": "6",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "Tangents are drawn on a circle to give the maximum number of regions.",
         "There are 1225 regions.",
-        "Find the number of tangents.",
-        "[3]"
+        "Find the number of tangents."
       ]
     },
     {
@@ -240,7 +253,7 @@
         {
           "id": "7b",
           "label": "(b)",
-          "text": "Find the larger number of regions.\n\nB MODELLING (QUESTIONS 8 TO 11)\nAIRPORT RUNWAY (30 marks)\nYou are advised to spend no more than 50 minutes on this part.\nThis task looks at the factors that affect the decision to build a second runway at an airport.\nThe factors are:\n• the number of seconds a plane waits over the airport before it can start to land\n• the number of seconds it then takes to land.\nA plane cannot begin to land until the runway is free but must wait over the airport.\nAs soon as the runway is free the plane begins to land.\nThe number of seconds between one plane and the next plane arriving over the airport is called\nthe inter-arrival time.\nThe number of seconds from when a plane begins to land and when it stops is called the landing time.",
+          "text": "Find the larger number of regions.\nB MODELLING (QUESTIONS 8 TO 11)\nAIRPORT RUNWAY (30 marks)\nYou are advised to spend no more than 50 minutes on this part.\nThis task looks at the factors that affect the decision to build a second runway at an airport.\nThe factors are:\n• the number of seconds a plane waits over the airport before it can start to land\n• the number of seconds it then takes to land.\nA plane cannot begin to land until the runway is free but must wait over the airport.\nAs soon as the runway is free the plane begins to land.\nThe number of seconds between one plane and the next plane arriving over the airport is called\nthe inter-arrival time.\nThe number of seconds from when a plane begins to land and when it stops is called the landing time.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
@@ -278,7 +291,7 @@
           "id": "8b",
           "label": "(b)",
           "text": "A plane uses the runway for the whole of its landing time.\nCalculate the total time that the runway was not used during these 1080 seconds.",
-          "marks": null,
+          "marks": 2,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
@@ -286,7 +299,7 @@
           "parts": []
         }
       ],
-      "marks": 5,
+      "marks": 7,
       "text": [
         "This table shows the data for the first 5 planes arriving at the airport for the 1080 seconds after 8 am on",
         "day 1.",
@@ -360,7 +373,7 @@
         {
           "id": "10a",
           "label": "(a)",
-          "text": "Use the points (60, 23) and (360, 86) to write down two equations in terms of a and k.\n\n360 - a",
+          "text": "Use the points (60, 23) and (360, 86) to write down two equations in terms of a and k.\n360 - a",
           "marks": 1,
           "type": "use",
           "answerType": "short_answer",
@@ -426,7 +439,7 @@
         {
           "id": "10g",
           "label": "(g)",
-          "text": "Comment on the validity of this model.\n\nQuestion 11 is printed on the next page.",
+          "text": "Comment on the validity of this model.\nQuestion 11 is printed on the next page.",
           "marks": 1,
           "type": "other",
           "answerType": "short_answer",
@@ -470,7 +483,7 @@
         {
           "id": "11c",
           "label": "(c)",
-          "text": "Based on your answers to part (a) and part (b), should a second runway be built at the airport?\nGive a reason for your answer.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Based on your answers to part (a) and part (b), should a second runway be built at the airport?\nGive a reason for your answer.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 1,
           "type": "give",
           "answerType": "short_answer",

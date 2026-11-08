@@ -3,8 +3,8 @@
   "subjectCode": "0607",
   "session": "w21",
   "component": "51",
-  "totalMarks": 24,
-  "questionCount": 6,
+  "totalMarks": 26,
+  "questionCount": 5,
   "questions": [
     {
       "id": "1",
@@ -12,7 +12,9 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Complete the list of the first six square numbers."
+        "Complete the list of the first six square numbers.",
+        "2 2 2 2 2 2",
+        "1 = 1 2 = ....... 3 = 9 4 = ....... 5 = ....... 6 = 36 [1]"
       ]
     },
     {
@@ -20,9 +22,43 @@
       "context": [],
       "parts": [
         {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Work out",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "9 ,",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "40 .\n2 2 2",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
           "id": "2b",
           "label": "(b)",
-          "text": "Show that 9 + 40 = 41 .\n\n2 2 2\nWhen a + b = c then (a, b, c) is a 3-square set.\na, b and c are positive integers.\nExample\nIn Question 2(b), a = 9, b = 40 and c = 41.\n2 2 2\n9 + 40 = 41 , so (9, 40, 41) is a 3-square set.\n2 2 2 2 2\nWhen a + b = c then c = a + b .\nUse this formula and any patterns you notice to complete the table on the next page for 3-square sets.\na b c",
+          "text": "Show that 9 + 40 = 41 .\n2 2 2\nWhen a + b = c then (a, b, c) is a 3-square set.\na, b and c are positive integers.\nExample\nIn Question 2(b), a = 9, b = 40 and c = 41.\n2 2 2\n9 + 40 = 41 , so (9, 40, 41) is a 3-square set.\n2 2 2 2 2\nWhen a + b = c then c = a + b .\nUse this formula and any patterns you notice to complete the table on the next page for 3-square sets.\na b c\n3 4 5\n5 12 13\n7 24 25\n9 40 41\n11 60\n13 84 85\n112 113\n21 221\n25 312\n2 2 2 2",
           "marks": 2,
           "type": "calculate",
           "answerType": "calculate",
@@ -31,31 +67,8 @@
           "parts": []
         }
       ],
-      "marks": 2,
-      "text": [
-        "2 2 2 2 2",
-        "1 = 1 2 = ....... 3 = 9 4 = ....... 5 = ....... 6 = 36 [1]",
-        "2 (a) Work out"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "4 5",
-        "5 12 13",
-        "7 24 25",
-        "9 40 41",
-        "11 60",
-        "13 84 85",
-        "112 113",
-        "21 221",
-        "25 312",
-        "[6]",
-        "2 2 2 2"
-      ]
+      "marks": 4,
+      "text": []
     },
     {
       "id": "4",
@@ -202,7 +215,7 @@
             {
               "id": "6bii",
               "label": "(ii)",
-              "text": "Write down an equation connecting c and d.\n\n2 2 2 2\na + b - 1 a + b + 1",
+              "text": "Write down an equation connecting c and d.\n2 2 2 2\na + b - 1 a + b + 1",
               "marks": 1,
               "type": "write",
               "answerType": "short_answer",

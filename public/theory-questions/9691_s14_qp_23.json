@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s14",
   "component": "23",
-  "totalMarks": 41,
+  "totalMarks": 65,
   "questionCount": 5,
   "questions": [
     {
@@ -13,24 +13,39 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Sheena has inherited a recipe book from her grandmother. All the recipes give ingredient\nmeasurements in ounces. Sheena wants to write a program to produce a conversion table\nthat helps her use the correct weight in grams.\nTo convert ounces into grams: 1 ounce is 28.35 grams.\nThe conversion table will show the number of grams to the nearest whole number:\nConversion Table\nOunces Grams\n1 28",
+          "text": "Sheena has inherited a recipe book from her grandmother. All the recipes give ingredient\nmeasurements in ounces. Sheena wants to write a program to produce a conversion table\nthat helps her use the correct weight in grams.\nTo convert ounces into grams: 1 ounce is 28.35 grams.\nThe conversion table will show the number of grams to the nearest whole number:\nConversion Table\nOunces Grams\n1 28\n2 57\n: :\n: :\n16 454",
           "marks": null,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": null,
-      "text": []
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Sheena writes pseudocode that uses the variables in the table below. Complete the\nidentifier table.\nIdentifier Data type Description\nVariable used as control\nOunces\nvariable in FOR loop\nVariable used for storing result\nGrams\nof conversion calculation",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The built-in function ROUND(x) returns x rounded to the nearest whole number.\nComplete the pseudocode to print the conversion table for 1 to 16 ounces:\nOUTPUT \" Conversion Table\"\nOUTPUT \"Ounces Grams\"\nFOR Ounces\nGrams\nROUND(Grams)\nOUTPUT Ounces,\" \", Grams",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "2b",
+          "id": "1b",
           "label": "(b)",
           "text": "Sheena wants to write a function to return the number of boxes of eggs that she needs to\nbuy. The function takes, as a parameter, the number of eggs required for a recipe. There are\n6 eggs in a box. Sheena needs to buy enough eggs, but does not want any full boxes of\neggs left over.\nShe knows that she can use the operators DIV and MOD to calculate the required number of\nboxes.",
           "marks": null,
@@ -40,7 +55,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2bi",
+              "id": "1bi",
               "label": "(i)",
               "text": "Show the results for the following expressions:\n20 DIV 6 =\n20 MOD 6 =",
               "marks": 2,
@@ -51,9 +66,9 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "1bii",
               "label": "(ii)",
-              "text": "Complete the pseudocode:\nFUNCTION CalculateNumberOfBoxes(NumberOfEggs : )\nRETURNS\nDECLARE : INTEGER\nNumberOfBoxes \u0001 // how many full boxes?\nIF NumberOfEggs MOD // need part of a box?\nTHEN // increment number of boxes\nENDIF\nRETURN NumberOfBoxes\nENDFUNCTION",
+              "text": "Complete the pseudocode:\nFUNCTION CalculateNumberOfBoxes(NumberOfEggs : )\nRETURNS\nDECLARE : INTEGER\nNumberOfBoxes  // how many full boxes?\nIF NumberOfEggs MOD // need part of a box?\nTHEN // increment number of boxes\nENDIF\nRETURN NumberOfBoxes\nENDFUNCTION",
               "marks": 5,
               "type": "complete",
               "answerType": "long_answer",
@@ -64,7 +79,7 @@
           ]
         },
         {
-          "id": "2c",
+          "id": "1c",
           "label": "(c)",
           "text": "Sheena could have written the algorithm in part (a)(ii) as a procedure.\nWhat is the difference between a function and a procedure?",
           "marks": 1,
@@ -75,16 +90,24 @@
           "parts": []
         },
         {
-          "id": "2d",
+          "id": "1d",
           "label": "(d)",
-          "text": "All programs should be maintainable. Sheena has followed good practice in writing her\npseudocode. She has used features of maintainable programs.\nList four such features.\n\n2 Sheena wants to set up a business selling home-made cakes. She wants customers to order\nonline. She needs to know:\n• customer’s name\n• customer’s contact telephone number\n• the date the cake is to be ready\n• the type of cake\no fruit cake\no victoria sponge\no gateau\no cheesecake\n• whether the cake is to be delivered or not.",
+          "text": "All programs should be maintainable. Sheena has followed good practice in writing her\npseudocode. She has used features of maintainable programs.\nList four such features.",
           "marks": 4,
-          "type": "name",
+          "type": "list",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 18,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
           "id": "2a",
           "label": "(a)",
@@ -143,7 +166,7 @@
             {
               "id": "2bii",
               "label": "(ii)",
-              "text": "Using a high-level programming language, declare a record structure for the fields\ndefined in part (b)(i).\nLanguage\nCode\n\nQuestion 3 begins on page 8.",
+              "text": "Using a high-level programming language, declare a record structure for the fields\ndefined in part (b)(i).\nLanguage\nCode\nQuestion 3 begins on page 8.",
               "marks": 4,
               "type": "other",
               "answerType": "short_answer",
@@ -154,19 +177,26 @@
           ]
         }
       ],
-      "marks": 29,
+      "marks": 17,
       "text": [
-        "57",
-        ": :",
-        ": :",
-        "16 454"
+        "Sheena wants to set up a business selling home-made cakes. She wants customers to order",
+        "online. She needs to know:",
+        "• customer’s name",
+        "• customer’s contact telephone number",
+        "• the date the cake is to be ready",
+        "• the type of cake",
+        "o fruit cake",
+        "o victoria sponge",
+        "o gateau",
+        "o cheesecake",
+        "• whether the cake is to be delivered or not."
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 18,
       "text": [
         "Raza wants to write a number-guessing game. He has drawn a flowchart of an algorithm:",
         "START",
@@ -211,35 +241,15 @@
         "END",
         "In a high-level language write programming statements to implement the algorithm.",
         "Language",
-        "Code",
-        "[18]"
+        "Code"
       ]
     },
     {
       "id": "4",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A puzzle starts with a partially completed grid of digits. A player must fill a 9×9 grid with single",
-        "digits so that each column, each row, and each of the nine 3×3 sub-grids contain all of the digits",
-        "from 1 to 9.",
-        "Each puzzle has a unique solution.",
-        "Below is an example of a puzzle and its solution:",
-        "PUZZLE SOLUTION",
-        "8 5 7 8 6 5 1 9 2 4 3 7",
-        "9 5 4 9 3 2 5 7 4 6 1 8",
-        "4 1 6 4 1 7 8 6 3 9 5 2",
-        "7 1 6 3 2 4 7 8 9 1 6 5",
-        "1 4 6 3 1 7 9 4 5 6 8 2 3"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "4a",
           "label": "(a)",
           "text": "Describe the type of interface needed so that the user can enter digits on screen.",
           "marks": 2,
@@ -250,7 +260,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "The program needs to store the puzzle.",
           "marks": null,
@@ -260,7 +270,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "4bi",
               "label": "(i)",
               "text": "Describe the data structure required.",
               "marks": 2,
@@ -271,7 +281,7 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "4bii",
               "label": "(ii)",
               "text": "Using the data structure you described in part (b)(i), give the pseudocode assignment\nstatement that stores the 5 in the top row of the example shown.",
               "marks": 2,
@@ -284,7 +294,7 @@
           ]
         },
         {
-          "id": "5c",
+          "id": "4c",
           "label": "(c)",
           "text": "When the user enters a character, the program needs to check it is a digit.\nThe character is stored in the character variable Entry.\nWrite the Boolean expression required to check that it is a digit.",
           "marks": 2,
@@ -295,48 +305,46 @@
           "parts": []
         },
         {
-          "id": "5d",
+          "id": "4d",
           "label": "(d)",
-          "text": "Raul wants the user to be able to use an “undo” option to clear the previous entry if they think\nthey have made an error.\nThe “undo” option can be used repeatedly to return to a previous state of the puzzle.\nDescribe a method of storing the entries to allow for this.\n\n5 Raul copied the following pseudocode from a computing textbook. He wants to find out what it\ndoes.",
+          "text": "Raul wants the user to be able to use an “undo” option to clear the previous entry if they think\nthey have made an error.\nThe “undo” option can be used repeatedly to return to a previous state of the puzzle.\nDescribe a method of storing the entries to allow for this.",
           "marks": 4,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": [
-            {
-              "id": "5di",
-              "label": "(i)",
-              "text": "Dry run the pseudocode using the trace table.\nFOR x \u0001 2 TO 4\nThisValue \u0001 List[x]\ny \u0001 x – 1\nWHILE (List[y] > ThisValue) AND (y > 0)\nList[y + 1] \u0001 List[y]\ny \u0001 y - 1\nENDWHILE\nList[y + 1] \u0001 ThisValue\nENDFOR\nList\n(List[y] > ThisValue)\nx ThisValue y List[y]\nAND (y > 0)\n[1] [2] [3] \n− − − − −\n56 23 67 12\n2 23 1 56 TRUE",
-              "marks": 4,
-              "type": "list",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "5dii",
-              "label": "(ii)",
-              "text": "What does this pseudocode do?\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
-              "marks": 1,
-              "type": "name",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
+          "parts": []
         }
       ],
       "marks": 12,
       "text": [
-        "8 1 6 5 8 3 2 1 7 9 4",
+        "A puzzle starts with a partially completed grid of digits. A player must fill a 9×9 grid with single",
+        "digits so that each column, each row, and each of the nine 3×3 sub-grids contain all of the digits",
+        "from 1 to 9.",
+        "Each puzzle has a unique solution.",
+        "Below is an example of a puzzle and its solution:",
+        "PUZZLE SOLUTION",
+        "8 5 7 8 6 5 1 9 2 4 3 7",
+        "9 5 4 9 3 2 5 7 4 6 1 8",
+        "4 1 6 4 1 7 8 6 3 9 5 2",
+        "7 1 6 3 2 4 7 8 9 1 6 5",
+        "1 4 6 3 1 7 9 4 5 6 8 2 3",
+        "5 8 1 6 5 8 3 2 1 7 9 4",
         "1 4 9 7 8 3 6 1 5 2 4 9",
         "2 7 1 5 9 6 2 4 7 3 8 1",
         "2 5 6 2 4 1 9 3 8 5 7 6",
         "Raul wants to write a program that displays the puzzle and allows the user to enter digits to",
         "attempt a solution."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Raul copied the following pseudocode from a computing textbook. He wants to find out what it",
+        "does."
       ]
     }
   ]

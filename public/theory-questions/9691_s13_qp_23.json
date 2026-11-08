@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s13",
   "component": "23",
-  "totalMarks": 66,
+  "totalMarks": 75,
   "questionCount": 5,
   "questions": [
     {
@@ -45,7 +45,7 @@
             {
               "id": "1ci",
               "label": "(i)",
-              "text": "Each record needs another field to uniquely identify that record.\nFor\nExaminer's\nUse\nState an appropriate identifier for this field and state a suitable data type for it.",
+              "text": "Each record needs another field to uniquely identify that record.\nState an appropriate identifier for this field and state a suitable data type for it.",
               "marks": 2,
               "type": "state",
               "answerType": "short_answer",
@@ -80,7 +80,7 @@
         {
           "id": "1e",
           "label": "(e)",
-          "text": "Describe what the function EOF() does when used in a program.\nFor\nExaminer's\nUse",
+          "text": "Describe what the function EOF() does when used in a program.",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -92,9 +92,7 @@
       "marks": 22,
       "text": [
         "Meena wants to develop a program to keep a record of her examination results.",
-        "For",
         "She will want to enter, sort and print out data which is stored as a file of records. Examiner's",
-        "Use",
         "Each record will contain at least the following data:",
         "• subject",
         "• examination title",
@@ -135,7 +133,7 @@
             {
               "id": "2bi",
               "label": "(i)",
-              "text": "Complete the trace table below using the file ExamResults.\nFor\nExaminer's\nUse\nCount Mark Mark > 70 Output",
+              "text": "Complete the trace table below using the file ExamResults.\nCount Mark Mark > 70 Output",
               "marks": 4,
               "type": "complete",
               "answerType": "long_answer",
@@ -181,7 +179,7 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "The pseudocode given in (b) uses a REPEAT-UNTIL loop:\nFor\nExaminer's\nUse\nOPENFILE ExamResults FOR INPUT\nCount ← 1\nREPEAT\nFILEREAD next ExamResults record\nIF Mark > 70\nTHEN\nCount ← Count + 1\nENDIF\nUNTIL EOF()\nOUTPUT Count\nCLOSEFILE ExamResults\nRewrite the pseudocode to count how many records have a mark below 40. This time\nuse a WHILE-ENDWHILE loop.\nOPENFILE ExamResults FOR INPUT\nCLOSEFILE ExamResults",
+          "text": "The pseudocode given in (b) uses a REPEAT-UNTIL loop:\nOPENFILE ExamResults FOR INPUT\nCount ← 1\nREPEAT\nFILEREAD next ExamResults record\nIF Mark > 70\nTHEN\nCount ← Count + 1\nENDIF\nUNTIL EOF()\nOUTPUT Count\nCLOSEFILE ExamResults\nRewrite the pseudocode to count how many records have a mark below 40. This time\nuse a WHILE-ENDWHILE loop.\nOPENFILE ExamResults FOR INPUT\nCLOSEFILE ExamResults",
           "marks": 4,
           "type": "draw",
           "answerType": "diagram_only",
@@ -213,7 +211,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "Using only global variables is poor programming practice.\nGive a possible problem that could result from this.\n\nThe program will read the marks from the file into a one-dimensional array, MyMarks. The\narray has 50 elements, and marks range from 0 to 100 inclusive.",
+          "text": "Using only global variables is poor programming practice.\nGive a possible problem that could result from this.\nThe program will read the marks from the file into a one-dimensional array, MyMarks. The\narray has 50 elements, and marks range from 0 to 100 inclusive.",
           "marks": 1,
           "type": "give",
           "answerType": "short_answer",
@@ -246,9 +244,9 @@
         {
           "id": "3e",
           "label": "(e)",
-          "text": "20 marks have been read into elements 1 to 20. In a programming language, write\nFor\ncode that will print out the highest and lowest marks that have been entered. Examiner's\nUse\nProgramming language\nCode",
+          "text": "20 marks have been read into elements 1 to 20. In a programming language, write\ncode that will print out the highest and lowest marks that have been entered. Examiner's\nProgramming language\nCode",
           "marks": 6,
-          "type": "use",
+          "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -257,7 +255,7 @@
         {
           "id": "3f",
           "label": "(f)",
-          "text": "MyAvMark is a variable of data type REAL.\nMeena wants the value of MyAvMark converted to the nearest whole number.\nState a function that will perform the conversion.\n\nThe module to calculate the average mark could be written as a procedure or a function.\nFor\nExaminer's\nUse",
+          "text": "MyAvMark is a variable of data type REAL.\nMeena wants the value of MyAvMark converted to the nearest whole number.\nState a function that will perform the conversion.\nThe module to calculate the average mark could be written as a procedure or a function.",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",
@@ -303,9 +301,7 @@
       "marks": 17,
       "text": [
         "Meena needs to be aware of her average mark and declares a variable with identifier",
-        "For",
-        "MyAvMark which she decides will be a global variable. Examiner's",
-        "Use"
+        "MyAvMark which she decides will be a global variable. Examiner's"
       ]
     },
     {
@@ -315,7 +311,7 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "Meena hopes some of her friends will use her program. When designing the user\nFor\ninterface, state three design features she can incorporate if one of her friends has a Examiner's\nUse\nsight impairment.",
+          "text": "Meena hopes some of her friends will use her program. When designing the user\ninterface, state three design features she can incorporate if one of her friends has a Examiner's\nsight impairment.",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",
@@ -337,7 +333,7 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "Meena has compiled the program and she thinks it is working.\nFor\nExaminer's\nUse\nWhat two types of error could still occur in the program?\nFor each type give an example.\nError type 1\nExample\nError type 2\nExample",
+          "text": "Meena has compiled the program and she thinks it is working.\nWhat two types of error could still occur in the program?\nFor each type give an example.\nError type 1\nExample\nError type 2\nExample",
           "marks": 4,
           "type": "give",
           "answerType": "short_answer",
@@ -353,18 +349,14 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 9,
       "text": [
         "Meena wants to refine her program using the marks in MyMarks.",
-        "For",
-        "Examiner's",
         "She wants the program to output:",
-        "Use",
         "• the word 'Failed' if the mark is less than 40,",
         "• the word 'Distinction' if the mark is over 70,",
         "• the phrase 'Well done' if there are more than three distinctions.",
         "Using pseudocode, produce the algorithm that does this.",
-        "[9]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "University of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of",

@@ -3,21 +3,20 @@
   "subjectCode": "0478",
   "session": "m24",
   "component": "22",
-  "totalMarks": 42,
+  "totalMarks": 46,
   "questionCount": 11,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (✓) one box to show which task is part of the analysis stage of the program life cycle.",
         "A coding",
         "B decomposition",
         "C design",
-        "D testing",
-        "[1]"
+        "D testing"
       ]
     },
     {
@@ -87,10 +86,9 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
-        "Identify three data types used in programming.",
-        "[3]"
+        "Identify three data types used in programming."
       ]
     },
     {
@@ -193,7 +191,7 @@
             {
               "id": "11bii",
               "label": "(ii)",
-              "text": "Describe two other validation checks that should be included in this algorithm.\nCheck 1 ______\nCheck 2 ______\n\n6 Describe two types of iteration that a programmer can use whilst writing a program.\n\n7 Consider the logic expression:\nX = (A XOR B) AND (NOT B AND C)",
+              "text": "Describe two other validation checks that should be included in this algorithm.\nCheck 1 ______\nCheck 2 ______\n6 Describe two types of iteration that a programmer can use whilst writing a program.\n7 Consider the logic expression:\nX = (A XOR B) AND (NOT B AND C)",
               "marks": 4,
               "type": "describe",
               "answerType": "fill_blank",
@@ -217,7 +215,7 @@
         {
           "id": "11b",
           "label": "(b)",
-          "text": "Complete the truth table from the given logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n8 This flowchart represents an algorithm to find the average size of groups of visitors to an attraction.\nSTART\nNumberGroups 0\nTotal 0\nINPUT\nGroupSize\nIS\nYes\nGroupSize Average DIV(Total, NumberGroups)\n= 0?\nNo\nOUTPUT\n\"Average group\nNumberGroups NumberGroups + 1\nsize \", Average\nTotal Total + GroupSize\nSTOP\nComplete the trace table using this data:\n7, 10, 2, 8, 3, 9, 0, 6\nNumberGroups Total GroupSize Average\nOUTPUT\n\n9 A storage unit rental company wants to set up a new database table for the storage units that can\nbe rented.\nThe table is called StorageUnits and needs to store these details:\n• SizeMetres – size in square metres\n• Position – first, second or third floor\n• Hoist – whether there is a hoist available for the transfer of items\n• PriceMonth – the price in dollars for a month’s rental\n• StorageID – the code to identify each storage unit, for example S123",
+          "text": "Complete the truth table from the given logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n8 This flowchart represents an algorithm to find the average size of groups of visitors to an attraction.\nSTART\nNumberGroups 0\nTotal 0\nINPUT\nGroupSize\nIS\nYes\nGroupSize Average DIV(Total, NumberGroups)\n= 0?\nNo\nOUTPUT\n\"Average group\nNumberGroups NumberGroups + 1\nsize \", Average\nTotal Total + GroupSize\nSTOP\nComplete the trace table using this data:\n7, 10, 2, 8, 3, 9, 0, 6\nNumberGroups Total GroupSize Average\nOUTPUT\n9 A storage unit rental company wants to set up a new database table for the storage units that can\nbe rented.\nThe table is called StorageUnits and needs to store these details:\n• SizeMetres – size in square metres\n• Position – first, second or third floor\n• Hoist – whether there is a hoist available for the transfer of items\n• PriceMonth – the price in dollars for a month’s rental\n• StorageID – the code to identify each storage unit, for example S123",
           "marks": 4,
           "type": "identify",
           "answerType": "short_answer",
@@ -273,7 +271,7 @@
         {
           "id": "11c",
           "label": "(c)",
-          "text": "Complete this structured query language (SQL) statement to display only the storage code,\nprice and size in square metres of all the storage units where there is a hoist available.\nSELECT ______\nFROM ______\nWHERE ______ ;\n\n10 A programmer has written a program that will be maintained by another programmer.\nExplain how the program can be written to make sure it can be easily maintained by the other\nprogrammer.\n\n11 Students in a class are recording the amount of time in minutes spent in front of a screen for each\nday of the week.\nThe one-dimensional (1D) array StudentName[] contains the names of the students in the class.\nThe two-dimensional (2D) array ScreenTime[] is used to input the number of minutes on each\nday spent in front of a screen.\nThe position of each student’s data in the two arrays is the same. For example, the student stored\nat index 10 in StudentName[] and ScreenTime[] is the same.\nThe variable ClassSize contains the number of students in the class.\nWrite a program that meets these requirements:\n• allows all the students to enter their daily minutes of screen times for the past week\n• calculates the total number of minutes of screen time for each student in the week\n• counts, for each student, the number of days with more than 300 minutes of screen time\n• calculates the average weekly minutes of screen time for the whole class\n• finds the student with the lowest weekly minutes of screen time\n• outputs for each student:\n– name\n– total week’s screen time in hours and minutes\n– number of days with more than 300 minutes of screen time\n• outputs the average weekly minutes of screen time for the whole class\n• outputs the name of the student with the lowest weekly screen time.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll inputs and outputs must contain suitable messages.\nAssume that the array StudentName[] and the variable ClassSize already contain the\nrequired data.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete this structured query language (SQL) statement to display only the storage code,\nprice and size in square metres of all the storage units where there is a hoist available.\nSELECT ______\nFROM ______\nWHERE ______ ;\n10 A programmer has written a program that will be maintained by another programmer.\nExplain how the program can be written to make sure it can be easily maintained by the other\nprogrammer.\n11 Students in a class are recording the amount of time in minutes spent in front of a screen for each\nday of the week.\nThe one-dimensional (1D) array StudentName[] contains the names of the students in the class.\nThe two-dimensional (2D) array ScreenTime[] is used to input the number of minutes on each\nday spent in front of a screen.\nThe position of each student’s data in the two arrays is the same. For example, the student stored\nat index 10 in StudentName[] and ScreenTime[] is the same.\nThe variable ClassSize contains the number of students in the class.\nWrite a program that meets these requirements:\n• allows all the students to enter their daily minutes of screen times for the past week\n• calculates the total number of minutes of screen time for each student in the week\n• counts, for each student, the number of days with more than 300 minutes of screen time\n• calculates the average weekly minutes of screen time for the whole class\n• finds the student with the lowest weekly minutes of screen time\n• outputs for each student:\n– name\n– total week’s screen time in hours and minutes\n– number of days with more than 300 minutes of screen time\n• outputs the average weekly minutes of screen time for the whole class\n• outputs the name of the student with the lowest weekly screen time.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll inputs and outputs must contain suitable messages.\nAssume that the array StudentName[] and the variable ClassSize already contain the\nrequired data.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "fill_blank",

@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "w21",
   "component": "22",
-  "totalMarks": 36,
+  "totalMarks": 45,
   "questionCount": 22,
   "questions": [
     {
@@ -69,7 +69,7 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "Explain how your program could be changed to count and store the number of bookings\nmade by each passenger. Then, after ten bookings have been made by a passenger, apply\nan additional 10% discount to every future booking. Any programming statements used in\nyour answer must be fully explained.\n\nSection B",
+          "text": "Explain how your program could be changed to count and store the number of bookings\nmade by each passenger. Then, after ten bookings have been made by a passenger, apply\nan additional 10% discount to every future booking. Any programming statements used in\nyour answer must be fully explained.\nSection B",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -87,7 +87,7 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "Tick (3) one box in each row to identify if the statement is about validation, verification or neither.",
         "Validation Verification Neither",
@@ -98,15 +98,14 @@
         "an automatic check to make sure the data entered",
         "has the correct number of characters",
         "a check to make sure the data entered is sensible",
-        "a check to make sure the data entered is correct",
-        "[3]"
+        "a check to make sure the data entered is correct"
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "A program checks that the data entered is between 1 and 100 inclusive.",
         "Identify one piece of normal, extreme and erroneous test data for this program, and give a reason",
@@ -116,8 +115,7 @@
         "Extreme test data .............................................................................................................................",
         "Reason .............................................................................................................................................",
         "Erroneous test data ..........................................................................................................................",
-        "Reason .............................................................................................................................................",
-        "[6]"
+        "Reason ............................................................................................................................................."
       ]
     },
     {
@@ -304,7 +302,7 @@
         {
           "id": "22b",
           "label": "(b)",
-          "text": "The algorithm needs changing to allow only the numbers 1, 2, 3, or 4 to be entered for the\ninput variable Operator.\nWrite the pseudocode to perform this task and state where in the algorithm it would be\nlocated.\nPseudocode ______\nLocation in algorithm ______\n\n5 The flowchart represents an algorithm.\nThe algorithm will terminate if –1 is entered at the List input.\nSTART\nList1 ← 0\nList2 ← 0\nINPUT\nList\nIS\nYes\nList = –1 ?\nNo\nINPUT\nValue\nYes\nIS\nList1 ← List1 + Value\nList = 1 ?\nNo\nIS Yes\nList2 ← List2 + Value\nList = 2 ?\nOUTPUT\n\"List 1 = \", List1\nNo\nOUTPUT\nOUTPUT\n\"Input Error\"\n\"List 2 = \", List2\nIS\nYes\nList1 > List2 ?\nNo\nOUTPUT\n\"List 1 is greatest\"\nOUTPUT\n\"List 2 is greatest\"\nEND\nComplete the trace table for the algorithm using this input data:\n2, 77, 2, 16, 1, 35, 2, –7, 5, 18, 1, 11, 1, 12, 2, 20, –1, 18\nList Value List1 List2\nOUTPUT\n\n6 A pet supplier uses the database table, STOCK, to keep records of its products for pets.\nThe fields are:\nField name Description\nProductID code to identify the product\nProductName name of product\nProductDescription information about the product\nAnimal type of animal the product is for, e.g. cat, bird, horse\nProductType type of product, e.g. food, toy, medicine\nInStock whether the product is in stock or not",
+          "text": "The algorithm needs changing to allow only the numbers 1, 2, 3, or 4 to be entered for the\ninput variable Operator.\nWrite the pseudocode to perform this task and state where in the algorithm it would be\nlocated.\nPseudocode ______\nLocation in algorithm ______\n5 The flowchart represents an algorithm.\nThe algorithm will terminate if –1 is entered at the List input.\nSTART\nList1 ← 0\nList2 ← 0\nINPUT\nList\nIS\nYes\nList = –1 ?\nNo\nINPUT\nValue\nYes\nIS\nList1 ← List1 + Value\nList = 1 ?\nNo\nIS Yes\nList2 ← List2 + Value\nList = 2 ?\nOUTPUT\n\"List 1 = \", List1\nNo\nOUTPUT\nOUTPUT\n\"Input Error\"\n\"List 2 = \", List2\nIS\nYes\nList1 > List2 ?\nNo\nOUTPUT\n\"List 1 is greatest\"\nOUTPUT\n\"List 2 is greatest\"\nEND\nComplete the trace table for the algorithm using this input data:\n2, 77, 2, 16, 1, 35, 2, –7, 5, 18, 1, 11, 1, 12, 2, 20, –1, 18\nList Value List1 List2\nOUTPUT\n6 A pet supplier uses the database table, STOCK, to keep records of its products for pets.\nThe fields are:\nField name Description\nProductID code to identify the product\nProductName name of product\nProductDescription information about the product\nAnimal type of animal the product is for, e.g. cat, bird, horse\nProductType type of product, e.g. food, toy, medicine\nInStock whether the product is in stock or not",
           "marks": 5,
           "type": "state",
           "answerType": "fill_blank",
@@ -349,7 +347,7 @@
         {
           "id": "22b",
           "label": "(b)",
-          "text": "Complete the query-by-example grid to output the products intended for a cat that are in\nstock. Display only the primary key and the name of the products. The output should be\nsorted by the primary key.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Complete the query-by-example grid to output the products intended for a cat that are in\nstock. Display only the primary key and the name of the products. The output should be\nsorted by the primary key.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",

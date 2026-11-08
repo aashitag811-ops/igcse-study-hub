@@ -3,7 +3,7 @@
   "subjectCode": "0607",
   "session": "w24",
   "component": "61",
-  "totalMarks": 34,
+  "totalMarks": 60,
   "questionCount": 7,
   "questions": [
     {
@@ -24,8 +24,30 @@
         {
           "id": "1n",
           "label": "(n)",
-          "text": "horizontal cards diagonal cards of cards\n1 0 2 2",
-          "marks": null,
+          "text": "horizontal cards diagonal cards of cards\n1 0 2 2\n2 1 4 5",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Find an expression, in terms of n, for the total number of cards in Row n.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "The total number of cards in Row p is 368.\nWork out how many diagonal cards are in Row p.",
+          "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -33,7 +55,7 @@
           "parts": []
         }
       ],
-      "marks": null,
+      "marks": 9,
       "text": [
         "This is Row 1 in a house of cards.",
         "There are 0 horizontal cards.",
@@ -50,28 +72,6 @@
       "id": "2",
       "context": [],
       "parts": [
-        {
-          "id": "2b",
-          "label": "(b)",
-          "text": "Find an expression, in terms of n, for the total number of cards in Row n.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "2c",
-          "label": "(c)",
-          "text": "The total number of cards in Row p is 368.\nWork out how many diagonal cards are in Row p.\n\n2 The house number is the number of rows in the house.\nThis is House 1.\nThere are 0 horizontal cards.\nThere are 2 diagonal cards.\nThere are 2 cards in total.\nThis is House 2.\nThere is 1 horizontal card.\nThere are 6 diagonal cards.\nThere are 7 cards in total.\nThis is House 3.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "2a",
           "label": "(a)",
@@ -109,7 +109,7 @@
           "id": "2c",
           "label": "(c)",
           "text": "This is an expression for the number of horizontal cards in House h.\n0 5. h h( - 1)\nUse this expression and your answer from part (b) to find an expression for the total number of\ncards in House h.\nGive your answer in its simplest form.",
-          "marks": null,
+          "marks": 2,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -120,7 +120,7 @@
           "id": "2d",
           "label": "(d)",
           "text": "The total number of cards in House k is 737.\nFind the number of rows in House k.",
-          "marks": null,
+          "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -128,10 +128,18 @@
           "parts": []
         }
       ],
-      "marks": 6,
+      "marks": 11,
       "text": [
-        "1 4 5",
-        "[3]"
+        "The house number is the number of rows in the house.",
+        "This is House 1.",
+        "There are 0 horizontal cards.",
+        "There are 2 diagonal cards.",
+        "There are 2 cards in total.",
+        "This is House 2.",
+        "There is 1 horizontal card.",
+        "There are 6 diagonal cards.",
+        "There are 7 cards in total.",
+        "This is House 3."
       ]
     },
     {
@@ -142,7 +150,7 @@
           "id": "3a",
           "label": "(a)",
           "text": "Complete the table.\nYou may use the table in Question 2(a) to help you.\nTotal number of Number of Number of Total number\nhouses (t) horizontal cards (H) diagonal cards of cards\n1 0 2 2\n2 1 8 9\n3 4 20 24",
-          "marks": null,
+          "marks": 2,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -163,8 +171,8 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "The nth diagram, with n houses, in the sequence of houses has 2925 horizontal cards.\nUse part (b) and Question 2(c) to find the total number of cards in the last house in the diagram.\n\nB MODELLING (QUESTIONS 4 TO 7)\nAGE AND FASTEST TIMES (30 marks)\nYou are advised to spend no more than 50 minutes on this part.\nThis task looks at how age affects the fastest recorded times for athletes to run 100 metres.",
-          "marks": null,
+          "text": "The nth diagram, with n houses, in the sequence of houses has 2925 horizontal cards.\nUse part (b) and Question 2(c) to find the total number of cards in the last house in the diagram.\nB MODELLING (QUESTIONS 4 TO 7)\nAGE AND FASTEST TIMES (30 marks)\nYou are advised to spend no more than 50 minutes on this part.\nThis task looks at how age affects the fastest recorded times for athletes to run 100 metres.",
+          "marks": 5,
           "type": "use",
           "answerType": "short_answer",
           "hasDiagramRef": true,
@@ -172,7 +180,7 @@
           "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 10,
       "text": [
         "The investigation now looks at the total number of cards in a sequence of houses of cards.",
         "This is the first diagram in the sequence of houses.",
@@ -372,11 +380,10 @@
       "id": "7",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "For any age, the fastest recorded time to run 100 m is 9.58 seconds.",
         "Use each model to find the possible ages of the athlete who ran this fastest time.",
-        "[5]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

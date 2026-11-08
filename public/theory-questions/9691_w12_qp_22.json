@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w12",
   "component": "22",
-  "totalMarks": 69,
+  "totalMarks": 75,
   "questionCount": 4,
   "questions": [
     {
@@ -46,7 +46,7 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "The colour of each car is also recorded. The following pseudocode should validate the\nFor\ncar colour. Examiner's\nUse\nINPUT Colour\nIF (Colour = “blue”) OR (Colour = “black”) OR (Colour = “grey”)\nTHEN\nOUTPUT Colour “ is valid”\nELSE\nOUTPUT “Invalid”\nENDIF\nState the output when the colour input is:",
+          "text": "The colour of each car is also recorded. The following pseudocode should validate the\ncar colour. Examiner's\nINPUT Colour\nIF (Colour = “blue”) OR (Colour = “black”) OR (Colour = “grey”)\nTHEN\nOUTPUT Colour “ is valid”\nELSE\nOUTPUT “Invalid”\nENDIF\nState the output when the colour input is:",
           "marks": null,
           "type": "state",
           "answerType": "short_answer",
@@ -101,9 +101,9 @@
             {
               "id": "1ei",
               "label": "(i)",
-              "text": "All car registrations are 6 characters long and have the format XXHIRE, where X is\nFor\na digit. Examiner's\nUse\nFor example, 53HIRE is a valid registration.\nIn a high-level programming language write code that will validate the format of a\ncar registration input into the variable CarReg. (Add extra line numbers if\nrequired.)\nProgramming language used\nCode",
+              "text": "All car registrations are 6 characters long and have the format XXHIRE, where X is\na digit. Examiner's\nFor example, 53HIRE is a valid registration.\nIn a high-level programming language write code that will validate the format of a\ncar registration input into the variable CarReg. (Add extra line numbers if\nrequired.)\nProgramming language used\nCode",
               "marks": 10,
-              "type": "use",
+              "type": "write",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -112,7 +112,7 @@
             {
               "id": "1eii",
               "label": "(ii)",
-              "text": "Explain why 487HIRE is an invalid car registration.\nFor\nExaminer's\nUse\nState the line number of your code in part (e)(i) which detects that it is invalid.\nLine Number",
+              "text": "Explain why 487HIRE is an invalid car registration.\nState the line number of your code in part (e)(i) which detects that it is invalid.\nLine Number",
               "marks": 2,
               "type": "state",
               "answerType": "short_answer",
@@ -174,7 +174,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Complete the trace table for the flowchart with the first five car registrations. The values\nFor\nto be entered are 52HIRE, 10HIRE, 67HIRE, 24HIRE, and 63HIRE. Examiner's\nUse\nThe row with the headings will also have to be completed.\nParkingSpace\nRow Position Row<=25\n[1,1]\n1 1 TRUE 52HIRE",
+          "text": "Complete the trace table for the flowchart with the first five car registrations. The values\nto be entered are 52HIRE, 10HIRE, 67HIRE, 24HIRE, and 63HIRE. Examiner's\nThe row with the headings will also have to be completed.\nParkingSpace\nRow Position Row<=25\n[1,1]\n1 1 TRUE 52HIRE",
           "marks": 6,
           "type": "complete",
           "answerType": "long_answer",
@@ -185,9 +185,9 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "From the flowchart write the module code, using nested WHILE loops.\nFor\nExaminer's\nEnsure that your code demonstrates good programming practice.\nUse\nRow ← 1\nNo\nRow <= 25?\nTo rest of program\nYes\nPosition ← 1\nNo\nPosition <= 4?\nYes\nInput CarReg\nNo\nCarReg <> “00HIRE”?\nTo rest of program\nYes\nParkingSpace[Row, Position] ← CarReg\nPosition ← Position + 1\nRow ← Row + 1\nProgramming language\nFor\nExaminer's\nUse\nCode",
+          "text": "From the flowchart write the module code, using nested WHILE loops.\nEnsure that your code demonstrates good programming practice.\nRow ← 1\nNo\nRow <= 25?\nTo rest of program\nYes\nPosition ← 1\nNo\nPosition <= 4?\nYes\nInput CarReg\nNo\nCarReg <> “00HIRE”?\nTo rest of program\nYes\nParkingSpace[Row, Position] ← CarReg\nPosition ← Position + 1\nRow ← Row + 1\nProgramming language\nCode",
           "marks": 7,
-          "type": "use",
+          "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -206,7 +206,7 @@
             {
               "id": "2ci",
               "label": "(i)",
-              "text": "One of the modules uses the expression:\nFor\nExaminer's\nUse\nArea /(CarWidth * CarLength – EmptySpaces)\nState the value of the part of the expression inside the brackets when\nCarWidth ← 3\nCarLength ← 4\nEmptySpaces ← 12",
+              "text": "One of the modules uses the expression:\nArea /(CarWidth * CarLength – EmptySpaces)\nState the value of the part of the expression inside the brackets when\nCarWidth ← 3\nCarLength ← 4\nEmptySpaces ← 12",
               "marks": 1,
               "type": "state",
               "answerType": "short_answer",
@@ -253,9 +253,7 @@
       "marks": 21,
       "text": [
         "Super Cars owns a rectangular car park with 25 rows; each row has 4 parking spaces.",
-        "For",
         "Each car is always parked in the same space. Examiner's",
-        "Use",
         "The array ParkingSpace[25,4] stores the car registrations.",
         "Soni uses a flowchart to help him design a module to populate the array with the car",
         "registrations.",
@@ -318,9 +316,9 @@
             {
               "id": "3ci",
               "label": "(i)",
-              "text": "Using a high-level programming language, define a car record with identifier\nFor\nHireCar and the fields listed in part (a). Examiner's\nUse\nProgramming language\nCode",
+              "text": "Using a high-level programming language, define a car record with identifier\nHireCar and the fields listed in part (a). Examiner's\nProgramming language\nCode",
               "marks": 5,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -342,7 +340,7 @@
         {
           "id": "3d",
           "label": "(d)",
-          "text": "A parameter can be passed by value or by reference.\nFor\nExaminer's\nUse\nDescribe each method.\nBy value\nBy reference",
+          "text": "A parameter can be passed by value or by reference.\nDescribe each method.\nBy value\nBy reference",
           "marks": 4,
           "type": "describe",
           "answerType": "long_answer",
@@ -353,22 +351,18 @@
       ],
       "marks": 22,
       "text": [
-        "Super Cars will store the data in files.",
-        "For",
-        "Examiner's",
-        "Use"
+        "Super Cars will store the data in files."
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "Super Cars will need a printed report that shows how many times the top 10 cars have",
         "been hired in a given month, and the income that each generated.",
         "Design the layout of the report.",
-        "[6]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "University of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of",

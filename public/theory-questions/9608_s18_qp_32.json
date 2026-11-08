@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "s18",
   "component": "32",
-  "totalMarks": 70,
-  "questionCount": 7,
+  "totalMarks": 75,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -217,7 +217,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "Find the denary value for the following binary floating-point number.\nMantissa Exponent\n1 0 1 1 0 0 0 0 1 1 1 0\nShow your working.\nWorking ______\nAnswer ______",
+          "text": "Find the denary value for the following binary floating-point number.\nMantissa Exponent\n1 0 1 1 0 0 0 0 1 1 1 0\nShow your working.\nWorking ______",
           "marks": 3,
           "type": "complete",
           "answerType": "fill_blank",
@@ -397,26 +397,41 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "A temperature reading is taken from each tank once per minute. The temperature reading is\nstored as two successive bytes. The format is shown:\nFish tank Temperature reading",
+          "text": "A temperature reading is taken from each tank once per minute. The temperature reading is\nstored as two successive bytes. The format is shown:\nFish tank Temperature reading\n7 6 5 4 3 2 1 0\nByte 1 Byte 2\nThe fish tank number is indicated by setting one of the bits in Byte 1 to 1. For example, fish\ntank number 5 is indicated by setting bit 5 to 1.\nBit 7 of Byte 1 is a flag:\n• the flag’s initial value is zero\n• when the reading has been processed, the flag’s value is set to 1\nBit 0 of Byte 1 is unused.\nByte 2 contains the temperature reading as a two’s complement integer.",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 8,
-      "text": []
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "6ci",
+              "label": "(i)",
+              "text": "After a temperature reading has been taken, the bytes contain the following data.\n7 6 5 4 3 2 1 0\n0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 1\nByte 1 Byte 2\nAnalyse the data contained in the two bytes.",
+              "marks": 3,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6cii",
+              "label": "(ii)",
+              "text": "The system receives a temperature reading of − 2 from fish tank number 4.\nComplete the bytes to show the values for this reading after it has been processed.\n7 6 5 4 3 2 1 0\nByte 1 Byte 2",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "7d",
+          "id": "6d",
           "label": "(d)",
-          "text": "A hardware device to affect the temperature of each tank is on or off depending on the value\nof a bit in memory location 6753.\nIf bit 4 is 1, then the hardware device in fish tank 4 is on.\nWrite assembly language instructions to set bit 4 of memory location 6753 to 1 without\nchanging any other bits. Use the instruction set provided.\n\nInstruction set\nInstruction Explanation\nOp code Operand\nLDD <address>\nDirect addressing. Load the contents of the location at the given\naddress to ACC.\nSTO <address>\nStore the contents of ACC at the given address.\nAND #n\nBitwise AND operation of the contents of ACC with the operand.\nAND <address>\nBitwise AND operation of the contents of ACC with the contents\nof <address>.\nXOR #n\nBitwise XOR operation of the contents of ACC with the operand.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nOR <address>\nBitwise OR operation of the contents of ACC with the contents\nof <address>.\n<address> can be an absolute address or a symbolic address.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "A hardware device to affect the temperature of each tank is on or off depending on the value\nof a bit in memory location 6753.\nIf bit 4 is 1, then the hardware device in fish tank 4 is on.\nWrite assembly language instructions to set bit 4 of memory location 6753 to 1 without\nchanging any other bits. Use the instruction set provided.\nInstruction set\nInstruction Explanation\nOp code Operand\nLDD <address>\nDirect addressing. Load the contents of the location at the given\naddress to ACC.\nSTO <address>\nStore the contents of ACC at the given address.\nAND #n\nBitwise AND operation of the contents of ACC with the operand.\nAND <address>\nBitwise AND operation of the contents of ACC with the contents\nof <address>.\nXOR #n\nBitwise XOR operation of the contents of ACC with the operand.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nOR <address>\nBitwise OR operation of the contents of ACC with the contents\nof <address>.\n<address> can be an absolute address or a symbolic address.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 3,
           "type": "name",
           "answerType": "short_answer",
@@ -425,18 +440,8 @@
           "parts": []
         }
       ],
-      "marks": 3,
-      "text": [
-        "6 5 4 3 2 1 0",
-        "Byte 1 Byte 2",
-        "The fish tank number is indicated by setting one of the bits in Byte 1 to 1. For example, fish",
-        "tank number 5 is indicated by setting bit 5 to 1.",
-        "Bit 7 of Byte 1 is a flag:",
-        "• the flag’s initial value is zero",
-        "• when the reading has been processed, the flag’s value is set to 1",
-        "Bit 0 of Byte 1 is unused.",
-        "Byte 2 contains the temperature reading as a two’s complement integer."
-      ]
+      "marks": 16,
+      "text": []
     }
   ]
 }

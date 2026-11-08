@@ -3,24 +3,23 @@
   "subjectCode": "0478",
   "session": "w25",
   "component": "23",
-  "totalMarks": 48,
+  "totalMarks": 60,
   "questionCount": 14,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
-        "Give three ways of creating a maintainable program.",
-        "[3]"
+        "Give three ways of creating a maintainable program."
       ]
     },
     {
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Four descriptions of programming techniques and five programming techniques are given.",
         "Draw one line from each description to the relevant technique. Not all techniques will be used.",
@@ -36,22 +35,20 @@
         "iteration",
         "executing the same set of",
         "counting",
-        "instructions multiple times",
-        "[4]"
+        "instructions multiple times"
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (3) one box to identify the most appropriate data type to store 'M'",
         "A integer",
         "B char",
         "C real",
         "D Boolean",
-        "[1]",
         "* 0000800000003 * DFD"
       ]
     },
@@ -63,7 +60,7 @@
           "id": "4a",
           "label": "(a)",
           "text": "Tickets for a theme park are booked online. An adult ticket costs $12.99 and a child ticket\ncosts $7.99. A booking fee of $1.99 is added to the total cost of each booking.\nWrite an algorithm in pseudocode to:\n• input the number of adult tickets for a booking\n• input the number of child tickets for a booking\n• calculate and output the total cost of the booking using an appropriate message.",
-          "marks": null,
+          "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
@@ -73,7 +70,7 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "Each booking must have at least one adult ticket.\nExplain how the algorithm could be changed to repeatedly ask for the number of adult tickets\nif the number input is less than 1.\nAny code used must be fully explained.\n\n* 0000800000004 * DFD",
+          "text": "Each booking must have at least one adult ticket.\nExplain how the algorithm could be changed to repeatedly ask for the number of adult tickets\nif the number input is less than 1.\nAny code used must be fully explained.\n* 0000800000004 * DFD",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -105,7 +102,7 @@
             {
               "id": "4cii",
               "label": "(ii)",
-              "text": "Complete the truth table for this problem.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n* 0000800000005 * DFD",
+              "text": "Complete the truth table for this problem.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n* 0000800000005 * DFD",
               "marks": 4,
               "type": "complete",
               "answerType": "long_answer",
@@ -116,7 +113,7 @@
           ]
         }
       ],
-      "marks": 10,
+      "marks": 14,
       "text": []
     },
     {
@@ -224,7 +221,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "The algorithm does not work correctly.\nState the reason why the algorithm does not work as expected and explain how the algorithm\ncould be corrected.\nAny code used must be fully explained.\nReason ______\nCorrection ______\n\n* 0000800000006 * DFD\n6 The flowchart represents an algorithm.\nSTART\nPosition –1\nCount 1\nINPUT Name\nIS Name = Yes\nPosition Count\nClassList[Count]\nNo\nCount Count + 1\nNo\nIS Count\n> 5 ?\nYes\nOUTPUT\nPosition\nSTOP\n* 0000800000007 * DFD",
+          "text": "The algorithm does not work correctly.\nState the reason why the algorithm does not work as expected and explain how the algorithm\ncould be corrected.\nAny code used must be fully explained.\nReason ______\nCorrection ______\n* 0000800000006 * DFD\n6 The flowchart represents an algorithm.\nSTART\nPosition –1\nCount 1\nINPUT Name\nIS Name = Yes\nPosition Count\nClassList[Count]\nNo\nCount Count + 1\nNo\nIS Count\n> 5 ?\nYes\nOUTPUT\nPosition\nSTOP\n* 0000800000007 * DFD",
           "marks": 2,
           "type": "state",
           "answerType": "fill_blank",
@@ -257,7 +254,7 @@
         {
           "id": "14c",
           "label": "(c)",
-          "text": "Write the algorithm in pseudocode.\n\n* 0000800000008 * DFD\n7 An algorithm has been written in pseudocode to:\n• input a whole number between 1 and 255 inclusive\n• convert the input to an 8-bit binary number\n• store each bit of the binary number in an array.\nFor example, if the denary number 127 was input, the binary number 01111111 would be stored in\nthe array.\n01 DECLARE BinaryArray : ARRAY[1:8] OF INTEGER\n02 DECLARE DenaryNumber : CHAR\n03 OUTPUT \"Please enter a whole number between 1 and 255 inclusive \"\n04 INPUT DenaryNumber\n05 FOR Count 7 TO 1 STEP -1\n06 BinaryArray[Count] MOD(DenaryNumber,3)\n07 DenaryNumber DIV(DenaryNumber,2)\n08 NEXT Count",
+          "text": "Write the algorithm in pseudocode.\n* 0000800000008 * DFD\n7 An algorithm has been written in pseudocode to:\n• input a whole number between 1 and 255 inclusive\n• convert the input to an 8-bit binary number\n• store each bit of the binary number in an array.\nFor example, if the denary number 127 was input, the binary number 01111111 would be stored in\nthe array.\n01 DECLARE BinaryArray : ARRAY[1:8] OF INTEGER\n02 DECLARE DenaryNumber : CHAR\n03 OUTPUT \"Please enter a whole number between 1 and 255 inclusive \"\n04 INPUT DenaryNumber\n05 FOR Count 7 TO 1 STEP -1\n06 BinaryArray[Count] MOD(DenaryNumber,3)\n07 DenaryNumber DIV(DenaryNumber,2)\n08 NEXT Count",
           "marks": 6,
           "type": "write",
           "answerType": "short_answer",
@@ -268,7 +265,7 @@
         {
           "id": "14a",
           "label": "(a)",
-          "text": "Identify the line numbers of the three errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\n\n* 0000800000009 * DFD",
+          "text": "Identify the line numbers of the three errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\n* 0000800000009 * DFD",
           "marks": 3,
           "type": "identify",
           "answerType": "fill_blank",
@@ -311,7 +308,7 @@
             {
               "id": "14cii",
               "label": "(ii)",
-              "text": "Write the pseudocode to implement the validation check you identified in (c)(i).\nYou do not need to rewrite the whole algorithm.\n\n* 0000800000010 * DFD\n8 A school has set up a database table EquipmentLoan to record details of school equipment\nloaned to students.\nEquipmentID Description Name DateLoaned Returned\nCam01 Digital camera James 23/04/2025 No\nCam04 Digital camera Amir 12/03/2025 Yes DO NOT WRITE IN THIS MARGIN\nGra02 Graphics tablet Nikita 27/04/2025 No\nTab01 Tablet Holly 18/03/2025 Yes\nExt01 External Hard drive Hussein 27/04/2025 Yes\nCam02 Digital camera Emily 10/04/2025 Yes\nTri01 Tripod Emily 10/04/2025 Yes",
+              "text": "Write the pseudocode to implement the validation check you identified in (c)(i).\nYou do not need to rewrite the whole algorithm.\n* 0000800000010 * DFD\n8 A school has set up a database table EquipmentLoan to record details of school equipment\nloaned to students.\nEquipmentID Description Name DateLoaned Returned\nCam01 Digital camera James 23/04/2025 No\nCam04 Digital camera Amir 12/03/2025 Yes DO NOT WRITE IN THIS MARGIN\nGra02 Graphics tablet Nikita 27/04/2025 No\nTab01 Tablet Holly 18/03/2025 Yes\nExt01 External Hard drive Hussein 27/04/2025 Yes\nCam02 Digital camera Emily 10/04/2025 Yes\nTri01 Tripod Emily 10/04/2025 Yes",
               "marks": 3,
               "type": "name",
               "answerType": "short_answer",
@@ -358,7 +355,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "Complete the structured query language (SQL) statement to list equipment not returned.\nThe list must contain only the descriptions and student names.\nSELECT ______\nFROM ______ DO NOT WRITE IN THIS MARGIN\nWHERE ______ ;\n\n* 0000800000011 * DFD\n9 The variables Name, Age and Found are used in a computer program.\nName holds the name of a person. Age holds the age of a person as a whole number.\nFound holds a flag that can be set to TRUE or FALSE",
+          "text": "Complete the structured query language (SQL) statement to list equipment not returned.\nThe list must contain only the descriptions and student names.\nSELECT ______\nFROM ______ DO NOT WRITE IN THIS MARGIN\nWHERE ______ ;\n* 0000800000011 * DFD\n9 The variables Name, Age and Found are used in a computer program.\nName holds the name of a person. Age holds the age of a person as a whole number.\nFound holds a flag that can be set to TRUE or FALSE",
           "marks": 3,
           "type": "name",
           "answerType": "fill_blank",
@@ -401,7 +398,7 @@
             {
               "id": "14bii",
               "label": "(ii)",
-              "text": "Write the pseudocode that uses the procedure StoreData() to store the name ‘Suella’\nin the file People.txt\n\n* 0000800000012 * DFD\n10 A number game has two players. Random whole numbers are generated for each player. The\nnumbers are compared and players are given points based on the result of the comparison.\nThe two-dimensional (2D) array NumberGenerated[] stores each number generated for each\nplayer. The first dimension stores the player number and the second dimension stores the random\nwhole numbers generated.\nThe game is played as follows:\n• 100 random whole numbers between 1 and 6 inclusive are generated for player 1 and stored\nin the array.\n• 100 random whole numbers between 1 and 6 inclusive are generated for player 2 and stored\nin the array.\n• The first number generated for each player is compared and the player with the higher number\nis awarded 2 points. If the two numbers are the same, both players are awarded 1 point each.\n• The comparisons repeat for all 100 numbers generated.\n• The player with the higher total number of points is output as the winner.\n• If the players have the same total number of points, a new random whole number is generated\nfor each player and compared. This is repeated until one player has a higher number than the\nother player. 2 points are added to that player’s total number of points, making this player the\nwinner.\nWrite a program that meets the following requirements:\n• input and validate the names of the two players\n• generate 100 random whole numbers between 1 and 6 inclusive for each player and store\nthem in the array NumberGenerated[]\n• calculate and store the total number of points for each player\n• output the name and total number of points for each player in descending order of total\nnumber of points.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; assume that this has already been done.\nAll outputs must contain suitable messages.\n* 0000800000013 * DFD\n* 0000800000014 * DFD\n* 0000800000015 * DFD\n\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Write the pseudocode that uses the procedure StoreData() to store the name ‘Suella’\nin the file People.txt\n* 0000800000012 * DFD\n10 A number game has two players. Random whole numbers are generated for each player. The\nnumbers are compared and players are given points based on the result of the comparison.\nThe two-dimensional (2D) array NumberGenerated[] stores each number generated for each\nplayer. The first dimension stores the player number and the second dimension stores the random\nwhole numbers generated.\nThe game is played as follows:\n• 100 random whole numbers between 1 and 6 inclusive are generated for player 1 and stored\nin the array.\n• 100 random whole numbers between 1 and 6 inclusive are generated for player 2 and stored\nin the array.\n• The first number generated for each player is compared and the player with the higher number\nis awarded 2 points. If the two numbers are the same, both players are awarded 1 point each.\n• The comparisons repeat for all 100 numbers generated.\n• The player with the higher total number of points is output as the winner.\n• If the players have the same total number of points, a new random whole number is generated\nfor each player and compared. This is repeated until one player has a higher number than the\nother player. 2 points are added to that player’s total number of points, making this player the\nwinner.\nWrite a program that meets the following requirements:\n• input and validate the names of the two players\n• generate 100 random whole numbers between 1 and 6 inclusive for each player and store\nthem in the array NumberGenerated[]\n• calculate and store the total number of points for each player\n• output the name and total number of points for each player in descending order of total\nnumber of points.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; assume that this has already been done.\nAll outputs must contain suitable messages.\n* 0000800000013 * DFD\n* 0000800000014 * DFD\n* 0000800000015 * DFD\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 2,
               "type": "name",
               "answerType": "short_answer",

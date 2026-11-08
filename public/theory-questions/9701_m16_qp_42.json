@@ -3,7 +3,7 @@
   "subjectCode": "9701",
   "session": "m16",
   "component": "42",
-  "totalMarks": 88,
+  "totalMarks": 100,
   "questionCount": 9,
   "questions": [
     {
@@ -58,22 +58,101 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Methylbenzene can undergo different reactions to form the products shown below.\nCH Cl CH CH",
+          "text": "Methylbenzene can undergo different reactions to form the products shown below.\nCH Cl CH CH\n2 3 3\nCl\nreaction 1 reaction 2\nmethylbenzene",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Give the reagents and conditions for these two reactions.\nreaction 1 ______\nreaction 2 ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Name the mechanism of reaction 1.",
+              "marks": 1,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1ciii",
+              "label": "(iii)",
+              "text": "Draw the structure of the product obtained if reaction 1 is carried out using an excess of\nchlorine.",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 4,
+      "marks": 8,
       "text": []
     },
     {
       "id": "2",
       "context": [],
       "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Calcium metal reacts with chlorine gas to form calcium chloride, CaCl .",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write an equation, including state symbols, to represent the lattice energy of\ncalcium chloride, CaCl .",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Complete a fully labelled Born-Haber cycle that could be used to calculate the lattice\nenergy, ,for calcium chloride.\nCa(s) + Cl (g)\nCaCl (s)",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "Use your answer to (ii) and the following data, together with relevant data from the\nData Booklet, to calculate a value for for calcium chloride.\n–1\nstandard enthalpy change of formation of CaCl (s), –796kJmol\n–1\nstandard enthalpy change of atomisation of Ca(s), +178kJmol\n–1\nelectron affinity of chlorine atoms –349kJmol\n–1\n= ______ kJmol",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
           "id": "2b",
           "label": "(b)",
@@ -98,31 +177,29 @@
             {
               "id": "2ci",
               "label": "(i)",
-              "text": "For each reaction, predict the sign of the entropy change, ∆S . If you predict no entropy\nchange, write ‘no change’ in the table below. The first one has been done for you.\nreaction sign of ∆S\nCO(g) + O (g) → CO (g) negative\n2 2\nMg(s) + O (g) → MgO(s)\n2 2\nCuSO (s) + 5H O(l) → CuSO .5H O(s)\n4 2 4 5\n+ +\nNaHCO (s) + H (aq) → Na (aq) + CO (g) + H O(l)",
-              "marks": null,
+              "text": "For each reaction, predict the sign of the entropy change, ∆S . If you predict no entropy\nchange, write ‘no change’ in the table below. The first one has been done for you.\nreaction sign of ∆S\nCO(g) + O (g) → CO (g) negative\n2 2\nMg(s) + O (g) → MgO(s)\n2 2\nCuSO (s) + 5H O(l) → CuSO .5H O(s)\n4 2 4 5\n+ +\nNaHCO (s) + H (aq) → Na (aq) + CO (g) + H O(l)\n3 2 2",
+              "marks": 2,
               "type": "predict",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Explain why the entropy change for the first process is negative.",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
             }
           ]
-        }
-      ],
-      "marks": 8,
-      "text": [
-        "3 3",
-        "Cl",
-        "reaction 1 reaction 2",
-        "methylbenzene"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "3d",
+          "id": "2d",
           "label": "(d)",
           "text": "Calculate the standard entropy change, ∆S , for this reaction.\nN (g) + 3H (g) → 2NH (g)\n2 2 3\no –1 –1\nStandard entropies, S , in JK mol are given.\nN (g) H (g) NH (g)\n2 2 3\n+192 +131 +193\no –1 –1\n∆S ______ JK mol",
           "marks": 2,
@@ -133,7 +210,7 @@
           "parts": []
         },
         {
-          "id": "3e",
+          "id": "2e",
           "label": "(e)",
           "text": "Whether or not a chemical reaction is spontaneous (feasible) can be deduced by calculating\nthe change in free energy, ∆G , at a given temperature.\no –1\nMgCO (s) → MgO(s) + CO (g) ∆H = +117kJmol\n3 2\no –1 –1\n∆S = +175JK mol",
           "marks": null,
@@ -143,7 +220,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ei",
+              "id": "2ei",
               "label": "(i)",
               "text": "Calculate the value of ∆G at 298K for the above reaction.",
               "marks": 2,
@@ -154,17 +231,36 @@
               "parts": []
             },
             {
-              "id": "3eii",
+              "id": "2eii",
               "label": "(ii)",
-              "text": "Use your answer to (i) to explain whether or not this reaction is spontaneous at 298K.\n\n3 (a) Complete the electronic structures of the following species.\nCo [Ar] ______\n2+\nCo [Ar] ______",
+              "text": "Use your answer to (i) to explain whether or not this reaction is spontaneous at 298K.",
               "marks": 1,
               "type": "explain",
-              "answerType": "fill_blank",
+              "answerType": "long_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Complete the electronic structures of the following species.\nCo [Ar] ______\n2+\nCo [Ar] ______",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
           "id": "3b",
@@ -292,10 +388,7 @@
         }
       ],
       "marks": 15,
-      "text": [
-        "2 2",
-        "[2]"
-      ]
+      "text": []
     },
     {
       "id": "4",
@@ -480,7 +573,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Explain using oxidation numbers whether or not reaction 3 is a redox reaction.\n\n2–",
+          "text": "Explain using oxidation numbers whether or not reaction 3 is a redox reaction.\n2–",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -524,7 +617,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Complete the table below.\nidentity or value\n\n2– 2+",
+          "text": "Complete the table below.\nidentity or value\n2– 2+",
           "marks": 3,
           "type": "complete",
           "answerType": "long_answer",
@@ -535,7 +628,7 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "By referring to enthalpy changes, explain why WO forms a white precipitate with Ba (aq) but\n2+\nshows no visible reaction with Mg .\n\nQuestion 7 starts on the next page.",
+          "text": "By referring to enthalpy changes, explain why WO forms a white precipitate with Ba (aq) but\n2+\nshows no visible reaction with Mg .\nQuestion 7 starts on the next page.",
           "marks": 3,
           "type": "explain",
           "answerType": "long_answer",
@@ -676,10 +769,10 @@
               "label": "(ii)",
               "text": "Another isomer of H is the tertiary amine K. It has three peaks in its proton NMR spectrum.\nOne of the peaks is a doublet.\nCH\nH C N CH CH\n3 3\nCH\nCircle the protons responsible for the doublet.",
               "marks": 1,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             }
           ]
@@ -923,7 +1016,7 @@
             {
               "id": "9ciii",
               "label": "(iii)",
-              "text": "Polypeptides contain a high proportion of carbon and hydrogen in their structures, yet\nmany are soluble in water.\nBy referring to the structure of a polypeptide, explain why.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "Polypeptides contain a high proportion of carbon and hydrogen in their structures, yet\nmany are soluble in water.\nBy referring to the structure of a polypeptide, explain why.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 2,
               "type": "name",
               "answerType": "short_answer",

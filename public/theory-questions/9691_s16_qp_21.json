@@ -4,7 +4,7 @@
   "session": "s16",
   "component": "21",
   "totalMarks": 75,
-  "questionCount": 12,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Write program code for the procedure\nPrintNameLine(Symbol, Name)\nProgramming language ______\nCode ______\n\nZara uses top-down design and refines her solution:\nPROCEDURE PrintTop2Lines(Symbol : CHAR, LabelWidth : INTEGER)\nCALL PrintGapLine(Symbol, LabelWidth)\nCALL PrintSymbolLine(Symbol, LabelWidth)\nENDPROCEDURE\nPROCEDURE PrintBottom2Lines(Symbol : CHAR, LabelWidth : INTEGER)\nCALL PrintSymbolLine(Symbol, LabelWidth)\nCALL PrintGapLine(Symbol, LabelWidth)\nENDPROCEDURE",
+          "text": "Write program code for the procedure\nPrintNameLine(Symbol, Name)\nProgramming language ______\nCode ______\nZara uses top-down design and refines her solution:\nPROCEDURE PrintTop2Lines(Symbol : CHAR, LabelWidth : INTEGER)\nCALL PrintGapLine(Symbol, LabelWidth)\nCALL PrintSymbolLine(Symbol, LabelWidth)\nENDPROCEDURE\nPROCEDURE PrintBottom2Lines(Symbol : CHAR, LabelWidth : INTEGER)\nCALL PrintSymbolLine(Symbol, LabelWidth)\nCALL PrintGapLine(Symbol, LabelWidth)\nENDPROCEDURE",
           "marks": 4,
           "type": "name",
           "answerType": "fill_blank",
@@ -187,7 +187,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Use the flowchart opposite to write program code for the procedure TicketCalculator.\nProgramming language ______\nCode ______\n\nPROCEDURE TicketCalculator\nINPUT Origin\nINPUT Destination\nInitialise Distance\nYes\nSwap Origin and\nIs Origin > Destination?\nDestination\nNo\ni\u0003@\u0003Origin\nLoop\nDistance\u0003@\u0003Distance + Interval[i] Increment i\nNo\nIs i = Destination - 1?\nYes\nTicketPrice @ Distance * 0.25\nOUTPUT TicketPrice\nENDPROCEDURE\n3 Alessio has been asked to write a computerised table booking system for a restaurant. The\nrestaurant has 12 tables, each seating between 2 and 8 people.\nThe restaurant manager wants the following facilities:\n• take a new booking\n• cancel a booking\n• report on which table(s) are available\nAs a first attempt, Alessio designs his program to take bookings for one evening only. Each table is\nonly booked once per evening.\nHe writes the pseudocode for his main program:\nCALL Initialisation\nEndProgram ← FALSE\nREPEAT\nCALL DisplayOptions\nINPUT Option\nCASE OF Option\n1: CALL TakeBooking\n2: CALL CancelBooking\n3: CALL AvailableTablesReport\n4: EndProgram ← TRUE\nOTHERWISE OUTPUT \"Error – invalid input\"\nENDCASE\nUNTIL EndProgram = TRUE\nEach booking is for a number of customers (size of the group). Each table has a number of seats.\nThe procedure Initialisation will set up arrays TableSeats, Booked and GroupSize as\nfollows:\nTableNumber TableSeats Booked GroupSize\n2 FALSE 0\n1 1 1\n2 FALSE 0\n2 2 2\n2 FALSE 0\n3 3 3\n2 FALSE 0\n4 4 4\n4 FALSE 0\n5 5 5",
+          "text": "Use the flowchart opposite to write program code for the procedure TicketCalculator.\nProgramming language ______\nCode ______\nPROCEDURE TicketCalculator\nINPUT Origin\nINPUT Destination\nInitialise Distance\nYes\nSwap Origin and\nIs Origin > Destination?\nDestination\nNo\ni@Origin\nLoop\nDistance@Distance + Interval[i] Increment i\nNo\nIs i = Destination - 1?\nYes\nTicketPrice @ Distance * 0.25\nOUTPUT TicketPrice\nENDPROCEDURE\n3 Alessio has been asked to write a computerised table booking system for a restaurant. The\nrestaurant has 12 tables, each seating between 2 and 8 people.\nThe restaurant manager wants the following facilities:\n• take a new booking\n• cancel a booking\n• report on which table(s) are available\nAs a first attempt, Alessio designs his program to take bookings for one evening only. Each table is\nonly booked once per evening.\nHe writes the pseudocode for his main program:\nCALL Initialisation\nEndProgram ← FALSE\nREPEAT\nCALL DisplayOptions\nINPUT Option\nCASE OF Option\n1: CALL TakeBooking\n2: CALL CancelBooking\n3: CALL AvailableTablesReport\n4: EndProgram ← TRUE\nOTHERWISE OUTPUT \"Error – invalid input\"\nENDCASE\nUNTIL EndProgram = TRUE\nEach booking is for a number of customers (size of the group). Each table has a number of seats.\nThe procedure Initialisation will set up arrays TableSeats, Booked and GroupSize as\nfollows:\nTableNumber TableSeats Booked GroupSize\n2 FALSE 0\n1 1 1\n2 FALSE 0\n2 2 2\n2 FALSE 0\n3 3 3\n2 FALSE 0\n4 4 4\n4 FALSE 0\n5 5 5",
           "marks": 10,
           "type": "use",
           "answerType": "fill_blank",
@@ -219,17 +219,14 @@
       "marks": null,
       "text": [
         "4 6 FALSE 6 0",
-        "4 FALSE 0"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "7 7",
-        "4 FALSE 0"
+        "4 FALSE 0",
+        "7 7 7",
+        "4 FALSE 0",
+        "8 8 8",
+        "6 FALSE 0",
+        "9 9 9",
+        "6 FALSE 0",
+        "10 10 10"
       ]
     },
     {
@@ -238,46 +235,16 @@
       "parts": [],
       "marks": null,
       "text": [
-        "8 8",
-        "6 FALSE 0"
+        "FALSE 0",
+        "11 11 11"
       ]
     },
     {
-      "id": "9",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "9 9",
-        "6 FALSE 0"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "10 10",
-        "8 FALSE 0"
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "11 11",
-        "8 FALSE 0"
-      ]
-    },
-    {
-      "id": "12",
+      "id": "8",
       "context": [],
       "parts": [
         {
-          "id": "12a",
+          "id": "8a",
           "label": "(a)",
           "text": "When a booking enquiry is made, the number of customers is given.\nComplete the pseudocode for the procedure TakeBooking:\nPROCEDURE TakeBooking\nDECLARE ……………………………………………………, ………………………………………………………… : INTEGER\nDECLARE …………………………………………………………………………………………………………………… : BOOLEAN\nINPUT NumberOfCustomers\n// initialise search for a suitable table\nFound ← FALSE\nTableNumber = ………………………………………………………………………………………………………………………………\nREPEAT // find a table with enough seats\nTableNumber ← TableNumber + 1\nIF TableSeats[………………………………………] …………………………………………………………………………\nAND Booked[……………………………………] ……………………………………………………………………\nTHEN\nFound ← TRUE\nENDIF\nUNTIL …………………………………………………………… OR ……………………………………………………………………………\nIF Found = FALSE\nTHEN // no tables left with enough seats\nELSE // make the booking\nBooked[……………………………………] ………………………………………………………………………………………\nGroupSize[……………………………………] ………………………………………………………………………………\nOUTPUT \"Table number booked: \", TableNumber\nENDIF\nENDPROCEDURE",
           "marks": 11,
@@ -288,7 +255,7 @@
           "parts": []
         },
         {
-          "id": "12b",
+          "id": "8b",
           "label": "(b)",
           "text": "To cancel a booking, the table number is quoted.\nComplete the pseudocode for the procedure CancelBooking.\nPROCEDURE CancelBooking\nINPUT TableNumber\nIF ……………………………………………………………………………………………………………………………………………………………\nTHEN\nOUTPUT \"Error – this table is not booked\"\nELSE // cancel booking\nBooked[………………………………………] ……………………………………………………………………………………\nGroupSize[…………………………………………] …………………………………………………………………………\nOUTPUT \"Booking cancelled\"\nENDIF\nENDPROCEDURE",
           "marks": 4,
@@ -299,7 +266,7 @@
           "parts": []
         },
         {
-          "id": "12c",
+          "id": "8c",
           "label": "(c)",
           "text": "The restaurant manager wants a report to show all available tables, each with its number of\nseats.\nWrite pseudocode for the procedure AvailableTablesReport.",
           "marks": 4,
@@ -310,7 +277,7 @@
           "parts": []
         },
         {
-          "id": "12d",
+          "id": "8d",
           "label": "(d)",
           "text": "The manager wants to store the name and telephone number of the customer making the\nbooking. At the time the booking is made, the manager also wants to collect a deposit ($5 per\nperson). The program will record the deposit paid.\nAlessio decides that a record structure would be more suitable for his program.",
           "marks": null,
@@ -320,7 +287,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "12di",
+              "id": "8di",
               "label": "(i)",
               "text": "Write program code to define a booking record with identifier BookingType and the\nfields TableSeats, Booked, GroupSize, CustomerName, CustomerTelNumber,\nAmountDepositPaid.\nProgramming language ______\nCode ______",
               "marks": 5,
@@ -331,7 +298,7 @@
               "parts": []
             },
             {
-              "id": "12dii",
+              "id": "8dii",
               "label": "(ii)",
               "text": "Each restaurant table will have its data stored in its own booking record. Alessio decides\nto use an array of records.\nWrite program code to declare the array TableBookings for the 12 table records. Use\nthe record structure you defined in part (d)(i).\nProgramming language ______\nCode ______",
               "marks": 3,
@@ -344,9 +311,9 @@
           ]
         },
         {
-          "id": "12e",
+          "id": "8e",
           "label": "(e)",
-          "text": "At the end of the day, the computer is shut down. Before the program stops, the array data\nfrom TableBookings must be saved to a new sequential file TableBookings.DAT\nWrite program code for the procedure SaveToFile.\nProgramming language ______\nCode ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "At the end of the day, the computer is shut down. Before the program stops, the array data\nfrom TableBookings must be saved to a new sequential file TableBookings.DAT\nWrite program code for the procedure SaveToFile.\nProgramming language ______\nCode ______\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 6,
           "type": "name",
           "answerType": "fill_blank",
@@ -357,7 +324,8 @@
       ],
       "marks": 33,
       "text": [
-        "12 12"
+        "FALSE 0",
+        "12 12 12"
       ]
     }
   ]

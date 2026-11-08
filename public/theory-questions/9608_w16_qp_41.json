@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w16",
   "component": "41",
-  "totalMarks": 58,
+  "totalMarks": 47,
   "questionCount": 15,
   "questions": [
     {
@@ -204,7 +204,7 @@
             {
               "id": "2aii",
               "label": "(ii)",
-              "text": "Explain when and how your programming environment reports a syntax error.\nWhen ______\nHow ______\n\nQuestion 2 continues on page 12.",
+              "text": "Explain when and how your programming environment reports a syntax error.\nWhen ______\nHow ______\nQuestion 2 continues on page 12.",
               "marks": 2,
               "type": "explain",
               "answerType": "fill_blank",
@@ -392,7 +392,7 @@
             {
               "id": "15biii",
               "label": "(iii)",
-              "text": "State the programming environment you have used when debugging program code.\nName two debugging features and describe how they are used.\n\n3 The following table shows part of the instruction set for a processor which has one general purpose\nregister, the Accumulator (ACC), and an index register (IX).\nInstruction\nExplanation\nOp\nOperand\ncode\nLDM #n\nImmediate addressing. Load the number n to ACC.\nLDD <address> Direct addressing. Load the contents of the given address to ACC.\nIndexed addressing. Form the address from <address> + the contents\nLDX <address> of the index register. Copy the contents of this calculated address to\nACC.\nLDR #n Immediate addressing. Load the number n into IX.\nSTO <address>\nStore the contents of ACC at the given address.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare\nJPE <address>\nwas True.\nFollowing a compare instruction, jump to <address> if the compare\nJPN <address>\nwas False.\nOutput to the screen the character whose ASCII value is stored in\nOUT\nACC.\nEND Return control to the operating system.\nA programmer is writing a program that outputs a string, first in its original order and then in\nreverse order.\nThe program will use locations starting at address NAME to store the characters in the string. The\nlocation with address MAX stores the number of characters that make up the string.\nThe programmer has started to write the program in the table opposite. The Comment column\ncontains descriptions for the missing program instructions.\nComplete the program using op codes from the given instruction set.\nOp\nLabel Operand Comment\ncode\nSTART: // initialise index register to zero\n// initialise COUNT to zero\nLOOP1: // load character from indexed address NAME\n// output character to screen\n// increment index register\n// increment COUNT starts here\n// is COUNT = MAX ?\n// if FALSE, jump to LOOP1\nREVERSE: // decrement index register\n// set ACC to zero\n// store in COUNT\nLOOP2: // load character from indexed address NAME\n// output character to screen\n// decrement index register\n// increment COUNT starts here\n// is COUNT = MAX ?\n// if FALSE, jump to LOOP2\n// end of program\nCOUNT:\nMAX: 4\nNAME: B01000110 // ASCII code in binary for 'F'\nB01010010 // ASCII code in binary for 'R'\nB01000101 // ASCII code in binary for 'E'\nB01000100 // ASCII code in binary for 'D'\n\n4 Commercial software usually undergoes acceptance testing and integration testing.\nDistinguish between the two types of testing by stating:\n• who does the testing\n• when the testing occurs\n• the specific purpose of each type of testing",
+              "text": "State the programming environment you have used when debugging program code.\nName two debugging features and describe how they are used.\n3 The following table shows part of the instruction set for a processor which has one general purpose\nregister, the Accumulator (ACC), and an index register (IX).\nInstruction\nExplanation\nOp\nOperand\ncode\nLDM #n\nImmediate addressing. Load the number n to ACC.\nLDD <address> Direct addressing. Load the contents of the given address to ACC.\nIndexed addressing. Form the address from <address> + the contents\nLDX <address> of the index register. Copy the contents of this calculated address to\nACC.\nLDR #n Immediate addressing. Load the number n into IX.\nSTO <address>\nStore the contents of ACC at the given address.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare\nJPE <address>\nwas True.\nFollowing a compare instruction, jump to <address> if the compare\nJPN <address>\nwas False.\nOutput to the screen the character whose ASCII value is stored in\nOUT\nACC.\nEND Return control to the operating system.\nA programmer is writing a program that outputs a string, first in its original order and then in\nreverse order.\nThe program will use locations starting at address NAME to store the characters in the string. The\nlocation with address MAX stores the number of characters that make up the string.\nThe programmer has started to write the program in the table opposite. The Comment column\ncontains descriptions for the missing program instructions.\nComplete the program using op codes from the given instruction set.\nOp\nLabel Operand Comment\ncode\nSTART: // initialise index register to zero\n// initialise COUNT to zero\nLOOP1: // load character from indexed address NAME\n// output character to screen\n// increment index register\n// increment COUNT starts here\n// is COUNT = MAX ?\n// if FALSE, jump to LOOP1\nREVERSE: // decrement index register\n// set ACC to zero\n// store in COUNT\nLOOP2: // load character from indexed address NAME\n// output character to screen\n// decrement index register\n// increment COUNT starts here\n// is COUNT = MAX ?\n// if FALSE, jump to LOOP2\n// end of program\nCOUNT:\nMAX: 4\nNAME: B01000110 // ASCII code in binary for 'F'\nB01010010 // ASCII code in binary for 'R'\nB01000101 // ASCII code in binary for 'E'\nB01000100 // ASCII code in binary for 'D'\n4 Commercial software usually undergoes acceptance testing and integration testing.\nDistinguish between the two types of testing by stating:\n• who does the testing\n• when the testing occurs\n• the specific purpose of each type of testing",
               "marks": 4,
               "type": "state",
               "answerType": "short_answer",
@@ -414,7 +414,7 @@
             {
               "id": "15bii",
               "label": "(ii)",
-              "text": "Integration testing\nWho ______\nWhen ______\nPurpose ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "Integration testing\nWho ______\nWhen ______\nPurpose ______\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 3,
               "type": "name",
               "answerType": "fill_blank",
@@ -425,7 +425,7 @@
           ]
         }
       ],
-      "marks": 13,
+      "marks": 2,
       "text": [
         "END;",
         "C) Visual Basic",
@@ -447,8 +447,7 @@
         "15 End Function",
         "The programming environment reported a syntax error in the BinarySearch code.",
         "State the line number: .......................................................................................................",
-        "Write the correct code for this line.",
-        "[2]"
+        "Write the correct code for this line."
       ]
     }
   ]

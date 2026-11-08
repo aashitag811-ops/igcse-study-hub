@@ -3,7 +3,7 @@
   "subjectCode": "9709",
   "session": "m22",
   "component": "62",
-  "totalMarks": 32,
+  "totalMarks": 41,
   "questionCount": 7,
   "questions": [
     {
@@ -47,9 +47,9 @@
       "text": [
         "Harry has a five-sided spinner with sectors coloured blue, green, red, yellow and black. Harry thinks",
         "the spinner may be biased. He plans to carry out a hypothesis test with the following hypotheses.",
-        "H : P\u0000the spinner lands on blue\u0001 =",
+        "H : Pthe spinner lands on blue =",
         "0 5",
-        "H : P\u0000the spinner lands on blue\u0001 ≠",
+        "H : Pthe spinner lands on blue ≠",
         "Harry spins the spinner 300 times. It lands on blue on 45 spins.",
         "Use a suitable approximation to carry out Harry’s test at the 5% significance level. [5]"
       ]
@@ -58,13 +58,12 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "A random sample of 500 households in a certain town was chosen. Using this sample, a confidence",
         "interval for the proportion, p, of all households in that town that owned two or more cars was found",
         "to be 0.355 < p < 0.445.",
-        "Find the confidence level of this confidence interval. Give your answer correct to the nearest integer.",
-        "[5]"
+        "Find the confidence level of this confidence interval. Give your answer correct to the nearest integer."
       ]
     },
     {
@@ -142,7 +141,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Without calculation, explain why E\u0000X\u0001 = 2.",
+          "text": "Without calculation, explain why EX = 2.",
           "marks": 1,
           "type": "explain",
           "answerType": "long_answer",
@@ -164,7 +163,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Find Var\u0000X\u0001. \nOne turn consists of rolling the ball 3 times and noting the largest value of X obtained. If this largest\nvalue is greater than 2.5, the player scores a point.",
+          "text": "Find VarX. \nOne turn consists of rolling the ball 3 times and noting the largest value of X obtained. If this largest\nvalue is greater than 2.5, the player scores a point.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
@@ -188,7 +187,8 @@
       "text": [
         "In a game a ball is rolled down a slope and along a track until it stops. The distance, in metres,",
         "travelled by the ball is modelled by the random variable X with probability density function",
-        "f\u0000x\u0001 =",
+        "−kx − 1x − 3 1 ≤ x ≤ 3,",
+        "fx =",
         "0 otherwise,",
         "where k is a constant."
       ]
@@ -221,18 +221,29 @@
             {
               "id": "7aii",
               "label": "(ii)",
-              "text": "The samples contain at least 4 carp altogether. \nthat\nFind the value of k. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "The samples contain at least 4 carp altogether.",
               "marks": 3,
-              "type": "complete",
-              "answerType": "long_answer",
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
+        },
+        {
+          "id": "7b",
+          "label": "(b)",
+          "text": "The random variables X and Y have the distributions Po, and Po- respectively. It is given\nthat\n³ PX = 0 = PY = 0 ,\n³ PX = 2 = kPY = 1 , where k is a non-zero constant.\nFind the value of k. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 6,
+      "marks": 10,
       "text": []
     }
   ]

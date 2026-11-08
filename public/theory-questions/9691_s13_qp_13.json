@@ -3,8 +3,8 @@
   "subjectCode": "9691",
   "session": "s13",
   "component": "13",
-  "totalMarks": 69,
-  "questionCount": 9,
+  "totalMarks": 75,
+  "questionCount": 10,
   "questions": [
     {
       "id": "1",
@@ -13,9 +13,9 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "What is an operating system?\nFor\nExaminer's\nUse",
+          "text": "What is an operating system?",
           "marks": 1,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -54,7 +54,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "At the end of a word processing session the document is saved to the hard disk.\nFor\nExaminer's\nUse\nDescribe how a buffer and interrupts are used during this data transfer.",
+          "text": "At the end of a word processing session the document is saved to the hard disk.\nDescribe how a buffer and interrupts are used during this data transfer.",
           "marks": 4,
           "type": "describe",
           "answerType": "long_answer",
@@ -116,7 +116,7 @@
             {
               "id": "3bii",
               "label": "(ii)",
-              "text": "Describe the input devices you would expect to see in the control room. Justify\nFor\nyour choice of devices. Examiner's\nUse\nInput devices\nJustification",
+              "text": "Describe the input devices you would expect to see in the control room. Justify\nyour choice of devices. Examiner's\nInput devices\nJustification",
               "marks": 3,
               "type": "describe",
               "answerType": "long_answer",
@@ -130,16 +130,14 @@
       "marks": 10,
       "text": [
         "A computer system is being developed to monitor seismic (earthquake) activity in the",
-        "For",
-        "Antarctic. Sensors are being used to detect ground tremors. Examiner's",
-        "Use"
+        "Antarctic. Sensors are being used to detect ground tremors. Examiner's"
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "Computer Aided Design (CAD) uses many specialist input and output devices.",
         "Name three specialist input or output devices and describe what they are used for in the",
@@ -149,8 +147,7 @@
         "Device 2",
         "Description",
         "Device 3",
-        "Description",
-        "[6]"
+        "Description"
       ]
     },
     {
@@ -194,9 +191,6 @@
       "marks": 7,
       "text": [
         "A table contains the values below:",
-        "For",
-        "Examiner's",
-        "Use",
         "3 4 1 4 5 3",
         "2 1 6 -4 0 0",
         "0 0 2 2 1 8"
@@ -209,7 +203,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Draw the logic circuit corresponding to the following logic statement:\nFor\nExaminer's\nUse\nX = 1 IF ( (A is NOT 1 AND B is 1) OR (B is 1 AND C is 1) ) OR (C is 1)\nB X",
+          "text": "Draw the logic circuit corresponding to the following logic statement:\nX = 1 IF ( (A is NOT 1 AND B is 1) OR (B is 1 AND C is 1) ) OR (C is 1)\nB X",
           "marks": 5,
           "type": "draw",
           "answerType": "diagram_only",
@@ -250,7 +244,7 @@
         {
           "id": "7b",
           "label": "(b)",
-          "text": "The new system needs to be tested.\nFor\nExaminer's\nUse\nDescribe how test results are recorded and explain how they affect further\ndevelopment.",
+          "text": "The new system needs to be tested.\nDescribe how test results are recorded and explain how they affect further\ndevelopment.",
           "marks": 3,
           "type": "describe",
           "answerType": "long_answer",
@@ -262,9 +256,7 @@
       "marks": 11,
       "text": [
         "A company has a number of shops that sell DVDs, CDs and books. Its existing computer",
-        "For",
         "system is no longer adequate. It has hired a systems analyst to develop improvements to Examiner's",
-        "Use",
         "in-shop customer sales, stock control and marketing."
       ]
     },
@@ -275,9 +267,6 @@
       "marks": null,
       "text": [
         "The term L O G I C G A T E S is to be transmitted as 12 bytes of data.",
-        "For",
-        "Examiner's",
-        "Use",
         "Each character in the term has an ASCII value. The system is using odd parity and the",
         "left-most bit is used as the parity bit. An additional parity byte is also sent after the term.",
         "The following bytes arrived at their destination:",
@@ -296,9 +285,19 @@
     {
       "id": "9",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "T 0 1 0 1 1 0 0 0",
+        "E 0 1 0 0 0 1 0 1"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
       "parts": [
         {
-          "id": "9a",
+          "id": "11a",
           "label": "(a)",
           "text": "One of the bytes has an error after transmission.",
           "marks": null,
@@ -308,7 +307,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "9ai",
+              "id": "11ai",
               "label": "(i)",
               "text": "Locate which character contains the error.",
               "marks": 1,
@@ -319,7 +318,7 @@
               "parts": []
             },
             {
-              "id": "9aii",
+              "id": "11aii",
               "label": "(ii)",
               "text": "Indicate which bit has been transmitted incorrectly.\ncolumn number\nrow number",
               "marks": 1,
@@ -330,7 +329,7 @@
               "parts": []
             },
             {
-              "id": "9aiii",
+              "id": "11aiii",
               "label": "(iii)",
               "text": "Explain how you arrived at your conclusion.",
               "marks": 3,
@@ -343,9 +342,9 @@
           ]
         },
         {
-          "id": "9b",
+          "id": "11b",
           "label": "(b)",
-          "text": "The following bytes were sent during a data transmission:\nFor\nExaminer's\nUse\n0 0 1 1 0 0 0 1\n1 0 0 1 1 0 1 1\n1 1 1 0 0 0 0 0\nExplain how a checksum is used to check whether the bytes have been corrupted\nduring data transmission.\n\n9 A supermarket uses barcodes as part of its item price retrieval and automatic stock control\nFor\nsystem. Examiner's\nUse\nA customer takes items to the point-of-sale (POS) checkout. The barcodes are scanned.",
+          "text": "The following bytes were sent during a data transmission:\n0 0 1 1 0 0 0 1\n1 0 0 1 1 0 1 1\n1 1 1 0 0 0 0 0\nExplain how a checksum is used to check whether the bytes have been corrupted\nduring data transmission.\n9 A supermarket uses barcodes as part of its item price retrieval and automatic stock control\nsystem. Examiner's\nA customer takes items to the point-of-sale (POS) checkout. The barcodes are scanned.",
           "marks": 3,
           "type": "explain",
           "answerType": "long_answer",
@@ -354,7 +353,7 @@
           "parts": []
         },
         {
-          "id": "9a",
+          "id": "11a",
           "label": "(a)",
           "text": "Describe what happens next regarding data retrieval and stock control.",
           "marks": 5,
@@ -365,9 +364,9 @@
           "parts": []
         },
         {
-          "id": "9b",
+          "id": "11b",
           "label": "(b)",
-          "text": "Name two devices needed at the POS checkout.\nGive a reason for your choice of device.\nDevice 1\nReason\nDevice 2\nReason\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Name two devices needed at the POS checkout.\nGive a reason for your choice of device.\nDevice 1\nReason\nDevice 2\nReason\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -378,9 +377,7 @@
       ],
       "marks": 17,
       "text": [
-        "T 0 1 0 1 1 0 0 0",
-        "E 0 1 0 0 0 1 0 1",
-        "11 S 0 1 0 1 0 1 1 1",
+        "S 0 1 0 1 0 1 1 1",
         "parity byte 0 1 0 0 1 1 1 1"
       ]
     }

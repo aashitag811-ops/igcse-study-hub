@@ -3,14 +3,14 @@
   "subjectCode": "0478",
   "session": "s25",
   "component": "21",
-  "totalMarks": 51,
+  "totalMarks": 60,
   "questionCount": 17,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick ( ) one box to identify the type of test to only check for the largest or smallest acceptable",
         "üü",
@@ -18,8 +18,7 @@
         "A normal test data",
         "B abnormal test data",
         "C extreme test data",
-        "D boundary test data",
-        "[1]"
+        "D boundary test data"
       ]
     },
     {
@@ -58,7 +57,7 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "The following pseudocode algorithm uses a count-controlled loop to read in 10 names and store",
         "them in the array Names[]",
@@ -68,8 +67,7 @@
         "Names[Count] Name",
         "NEXT Count",
         "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled",
-        "loop.",
-        "[4]"
+        "loop."
       ]
     },
     {
@@ -111,7 +109,7 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Two library routines used in programming are MOD and DIV.",
         "State the purpose of each of the library routines.",
@@ -119,8 +117,7 @@
         "MOD purpose ...................................................................................................................................",
         "Example pseudocode ......................................................................................................................",
         "DIV purpose .....................................................................................................................................",
-        "Example pseudocode ......................................................................................................................",
-        "[4]"
+        "Example pseudocode ......................................................................................................................"
       ]
     },
     {
@@ -249,7 +246,7 @@
         {
           "id": "17b",
           "label": "(b)",
-          "text": "Identify one method to make the algorithm maintainable.\nGive an example.\n\n7 Consider the logic expression:\nX = (A AND B) XOR (B OR NOT C)",
+          "text": "Identify one method to make the algorithm maintainable.\nGive an example.\n7 Consider the logic expression:\nX = (A AND B) XOR (B OR NOT C)",
           "marks": 2,
           "type": "identify",
           "answerType": "short_answer",
@@ -271,7 +268,7 @@
         {
           "id": "17b",
           "label": "(b)",
-          "text": "Complete the truth table for the given logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n8 A bus company has set up a new database table called BUS to store details of the buses leaving\nthe main bus terminal.\nRouteID Destination Stops Driver Time Return\nBC01 Town Centre 10 B Smith 9:00 Yes\nBC02 The Fountain 5 A Patel 9:10 Yes DO NOT WRITE IN THIS MARGIN\nBC03 The Palace 9 B Hayes 9:28 No\nBC04 City Park 12 W Gao 9:55 Yes\nBC05 City Mall 9 R Hussein 10:10 No\nBC06 Swan Lake 14 S Clarke 10:33 No\nBC07 Guildhall Square 7 J Page 11:34 No\nBC08 Sunset Quay 6 A Patel 12:01 Yes\nBC10 Fort Worthington 15 E Carr 12:01 Yes\nBC12 The Observatory 18 B Smith 13:27 No\nBC14 East Seaport 11 B Scott 14:07 No\nBC15 The Football Ground 12 J Page 14:46 Yes\nBC19 The Cricket Ground 11 B Hayes 15:14 No\nBC23 Temple Ruins 14 W Gao 16:16 No\nBC27 The University 9 A Patel 16:45 No",
+          "text": "Complete the truth table for the given logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n8 A bus company has set up a new database table called BUS to store details of the buses leaving\nthe main bus terminal.\nRouteID Destination Stops Driver Time Return\nBC01 Town Centre 10 B Smith 9:00 Yes\nBC02 The Fountain 5 A Patel 9:10 Yes DO NOT WRITE IN THIS MARGIN\nBC03 The Palace 9 B Hayes 9:28 No\nBC04 City Park 12 W Gao 9:55 Yes\nBC05 City Mall 9 R Hussein 10:10 No\nBC06 Swan Lake 14 S Clarke 10:33 No\nBC07 Guildhall Square 7 J Page 11:34 No\nBC08 Sunset Quay 6 A Patel 12:01 Yes\nBC10 Fort Worthington 15 E Carr 12:01 Yes\nBC12 The Observatory 18 B Smith 13:27 No\nBC14 East Seaport 11 B Scott 14:07 No\nBC15 The Football Ground 12 J Page 14:46 Yes\nBC19 The Cricket Ground 11 B Hayes 15:14 No\nBC23 Temple Ruins 14 W Gao 16:16 No\nBC27 The University 9 A Patel 16:45 No",
           "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
@@ -327,7 +324,7 @@
         {
           "id": "17c",
           "label": "(c)",
-          "text": "Complete the SQL statement to display only the destination of the buses that have a return.\nSELECT ______\n\n9 The variables A and B are used in a program. A holds a whole number and B holds text.",
+          "text": "Complete the SQL statement to display only the destination of the buses that have a return.\nSELECT ______\n9 The variables A and B are used in a program. A holds a whole number and B holds text.",
           "marks": 3,
           "type": "complete",
           "answerType": "fill_blank",
@@ -349,7 +346,7 @@
         {
           "id": "17b",
           "label": "(b)",
-          "text": "The function Odds(X) returns ‘Odd’ if the value of X is an odd number and returns ‘Even’ if\nthe value of X is an even number.\nWrite pseudocode statements to:\n• define the function\n• call the function using parameter A and store the return item in variable B\nFunction definition ______\nFunction call ______\n\n10 The flowchart represents an algorithm to calculate grades.\nSTART\nINPUT\nScore\nIS Score\nYes\nGrade \"C\"\n>= 40 ?\nNo\nIS Score\nYes\nGrade \"B\"\n>= 60 ?\nNo\nIS Score\nYes\nGrade \"A\"\n>= 80 ?\nNo\nGrade \"D\"\nOUTPUT \"You\nachieved a \", Grade\nSTOP",
+          "text": "The function Odds(X) returns ‘Odd’ if the value of X is an odd number and returns ‘Even’ if\nthe value of X is an even number.\nWrite pseudocode statements to:\n• define the function\n• call the function using parameter A and store the return item in variable B\nFunction definition ______\nFunction call ______\n10 The flowchart represents an algorithm to calculate grades.\nSTART\nINPUT\nScore\nIS Score\nYes\nGrade \"C\"\n>= 40 ?\nNo\nIS Score\nYes\nGrade \"B\"\n>= 60 ?\nNo\nIS Score\nYes\nGrade \"A\"\n>= 80 ?\nNo\nGrade \"D\"\nOUTPUT \"You\nachieved a \", Grade\nSTOP",
           "marks": 6,
           "type": "calculate",
           "answerType": "fill_blank",
@@ -371,7 +368,7 @@
         {
           "id": "17b",
           "label": "(b)",
-          "text": "Explain how the flowchart can be changed to produce the correct output.\n\n11 The one-dimensional (1D) array CompetitorName[] contains the names of 25 competitors in a\ntournament that includes five events.\nAnother two-dimensional (2D) array CompetitorScore[] contains the points scored by each\ncompetitor in the five events. The first dimension of this array contains the index of the competitor\nfrom CompetitorName[] and the second dimension contains their scores.\nEach competitor receives a score out of 100 for each event. These scores are manually entered\ninto CompetitorScore[]\nMedals are awarded to the competitor or the competitors who have:\n• the highest points scored in each of the five events\n• the highest total points scored for all five events.\nThe one-dimensional (1D) array Points[] stores the total number of points scored for each\ncompetitor.\nWrite a program that meets the following requirements:\n• takes as input, valid scores (between 0 and 100), for each competitor in each of the five\nevents\n• calculates the highest points scored for each event\n• outputs the names of the competitors who receive a medal for the highest points scored\n• calculates the highest total points scored for the five events\n• outputs the names of the competitors with the highest total points scored for the five events.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Explain how the flowchart can be changed to produce the correct output.\n11 The one-dimensional (1D) array CompetitorName[] contains the names of 25 competitors in a\ntournament that includes five events.\nAnother two-dimensional (2D) array CompetitorScore[] contains the points scored by each\ncompetitor in the five events. The first dimension of this array contains the index of the competitor\nfrom CompetitorName[] and the second dimension contains their scores.\nEach competitor receives a score out of 100 for each event. These scores are manually entered\ninto CompetitorScore[]\nMedals are awarded to the competitor or the competitors who have:\n• the highest points scored in each of the five events\n• the highest total points scored for all five events.\nThe one-dimensional (1D) array Points[] stores the total number of points scored for each\ncompetitor.\nWrite a program that meets the following requirements:\n• takes as input, valid scores (between 0 and 100), for each competitor in each of the five\nevents\n• calculates the highest points scored for each event\n• outputs the names of the competitors who receive a medal for the highest points scored\n• calculates the highest total points scored for the five events\n• outputs the names of the competitors with the highest total points scored for the five events.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables.\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",

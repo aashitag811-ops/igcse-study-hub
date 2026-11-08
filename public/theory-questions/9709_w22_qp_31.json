@@ -3,8 +3,8 @@
   "subjectCode": "9709",
   "session": "w22",
   "component": "31",
-  "totalMarks": 62,
-  "questionCount": 8,
+  "totalMarks": 66,
+  "questionCount": 9,
   "questions": [
     {
       "id": "1",
@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Sketch the graph of y = \u000e2x + 1\u000e.",
+          "text": "Sketch the graph of y = 2x + 1.",
           "marks": 1,
           "type": "draw",
           "answerType": "diagram_only",
@@ -24,7 +24,7 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "Solve the inequality 3x + 5 < \u000e2x + 1\u000e.",
+          "text": "Solve the inequality 3x + 5 < 2x + 1.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
@@ -43,7 +43,7 @@
       "marks": null,
       "text": [
         "On a sketch of an Argand diagram shade the region whose points represent complex numbers z",
-        "satisfying the inequalities \u000ez\u000e ≤ 3, Re z ≥ −2 and π ≤ arg z ≤ π. [4]",
+        "satisfying the inequalities z ≤ 3, Re z ≥ −2 and π ≤ arg z ≤ π. [4]",
         "ln a",
         "3x−1 −x"
       ]
@@ -52,11 +52,10 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
-        "Solve the equation 2 = 5\u00003 \u0001. Give your answer in the form , where a and b are integers.",
-        "ln b",
-        "[4]"
+        "Solve the equation 2 = 53 . Give your answer in the form , where a and b are integers.",
+        "ln b"
       ]
     },
     {
@@ -65,7 +64,7 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Solve the equation tan\u0000x + 45Å\u0001 = 2 cot x for 0Å < x < 180Å. [5]",
+        "Solve the equation tanx + 45Å = 2 cot x for 0Å < x < 180Å. [5]",
         "1 1",
         "πi πi",
         "4 3"
@@ -111,7 +110,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Prove the identity cos 41 + 4 cos 21 + 3  8 cos 1.",
+          "text": "Prove the identity cos 41 + 4 cos 21 + 3  8 cos 1.",
           "marks": 4,
           "type": "other",
           "answerType": "short_answer",
@@ -200,7 +199,7 @@
         {
           "id": "8b",
           "label": "(b)",
-          "text": "Given that x = 40 when t = 10, find the value of k and find the value approached by x as t becomes\nlarge. \n− x\nThe diagram shows part of the curve y = \u00003 − x\u0001e for x ≥ 0, and its minimum point M.",
+          "text": "Given that x = 40 when t = 10, find the value of k and find the value approached by x as t becomes\nlarge. \n− x\nThe diagram shows part of the curve y = 3 − xe for x ≥ 0, and its minimum point M.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
@@ -222,18 +221,34 @@
         {
           "id": "8b",
           "label": "(b)",
-          "text": "Find the area of the shaded region bounded by the curve and the axes, giving your answer in\nterms of e. \n2x + 7x + 8\n10 Let f\u0000x\u0001 = .",
+          "text": "Find the area of the shaded region bounded by the curve and the axes, giving your answer in\nterms of e. \n2x + 7x + 8",
           "marks": 5,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "In a certain chemical reaction the amount, x grams, of a substance is increasing. The differential",
+        "equation satisfied by x and t, the time in seconds since the reaction began, is",
+        "dx",
+        "−0.1t",
+        "= kxe ,",
+        "dt",
+        "where k is a positive constant. It is given that x = 20 at the start of the reaction."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
         {
-          "id": "8a",
+          "id": "10a",
           "label": "(a)",
-          "text": "Express f\u0000x\u0001 in partial fractions.",
+          "text": "Express fx in partial fractions.",
           "marks": 5,
           "type": "other",
           "answerType": "short_answer",
@@ -242,9 +257,9 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "10b",
           "label": "(b)",
-          "text": "Hence obtain the expansion of f\u0000x\u0001 in ascending powers of x, up to and including the term in x .\n\nIn the diagram, OABCD is a solid figure in which OA = OB = 4 units and OD = 3 units. The edge OD\nis vertical, DC is parallel to OB and DC = 1 unit. The base, OAB, is horizontal and angle AOB = 90Å.\nUnit vectors i, j and k are parallel to OA, OB and OD respectively. The midpoint of AB is M and the\npoint N on BC is such that CN = 2NB.\n−−−¿ −−¿",
+          "text": "Hence obtain the expansion of fx in ascending powers of x, up to and including the term in x .\nIn the diagram, OABCD is a solid figure in which OA = OB = 4 units and OD = 3 units. The edge OD\nis vertical, DC is parallel to OB and DC = 1 unit. The base, OAB, is horizontal and angle AOB = 90Å.\nUnit vectors i, j and k are parallel to OA, OB and OD respectively. The midpoint of AB is M and the\npoint N on BC is such that CN = 2NB.\n−−−¿ −−¿",
           "marks": 5,
           "type": "other",
           "answerType": "short_answer",
@@ -253,7 +268,7 @@
           "parts": []
         },
         {
-          "id": "8a",
+          "id": "10a",
           "label": "(a)",
           "text": "Express vectors MD and ON in terms of i, j and k. \n−−−¿ −−¿",
           "marks": 4,
@@ -264,7 +279,7 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "10b",
           "label": "(b)",
           "text": "Calculate the angle in degrees between the directions of MD and ON.",
           "marks": 3,
@@ -275,7 +290,7 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "10c",
           "label": "(c)",
           "text": "Show that the length of the perpendicular from M to ON is . \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
@@ -286,15 +301,10 @@
           "parts": []
         }
       ],
-      "marks": 39,
+      "marks": 21,
       "text": [
-        "In a certain chemical reaction the amount, x grams, of a substance is increasing. The differential",
-        "equation satisfied by x and t, the time in seconds since the reaction began, is",
-        "dx",
-        "−0.1t",
-        "= kxe ,",
-        "dt",
-        "where k is a positive constant. It is given that x = 20 at the start of the reaction."
+        "Let fx = .",
+        "1 + x2 + x"
       ]
     }
   ]

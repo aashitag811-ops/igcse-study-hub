@@ -3,8 +3,8 @@
   "subjectCode": "9231",
   "session": "w20",
   "component": "23",
-  "totalMarks": 68,
-  "questionCount": 4,
+  "totalMarks": 75,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "By differentiating e , find the Maclaurin’s series for e up to and including the term in x .\n\n-x",
+          "text": "By differentiating e , find the Maclaurin’s series for e up to and including the term in x .\n-x",
           "marks": 5,
           "type": "other",
           "answerType": "short_answer",
@@ -134,16 +134,24 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "Use a similar method to find, in terms of n, a lower bound for y (1 - x )dx. \n5 It is given that\n-1 -1\nx = sinh t, y = cos t,\nwhere -1 1 t 1 1.\ndy",
+          "text": "Use a similar method to find, in terms of n, a lower bound for y (1 - x )dx.",
           "marks": 4,
           "type": "use",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 17,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
-          "id": "3a",
+          "id": "5a",
           "label": "(a)",
           "text": "By differentiating cos y with respect to t, show that =- . \ndt\n1 - t\nd y",
           "marks": 4,
@@ -154,9 +162,9 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "5b",
           "label": "(b)",
-          "text": "Find in terms of t, simplifying your answer. \ndx",
+          "text": "Find in terms of t, simplifying your answer. \ndx\n4 1",
           "marks": 5,
           "type": "other",
           "answerType": "short_answer",
@@ -165,26 +173,51 @@
           "parts": []
         }
       ],
-      "marks": 26,
-      "text": []
+      "marks": 9,
+      "text": [
+        "It is given that",
+        "-1 -1",
+        "x = sinh t, y = cos t,",
+        "where -1 1 t 1 1.",
+        "dy"
+      ]
     },
     {
-      "id": "4",
+      "id": "6",
       "context": [],
       "parts": [
         {
-          "id": "4b",
+          "id": "6a",
+          "label": "(a)",
+          "text": "Use de Moivre’s theorem to show that sin i = (cos 4i - 4 cos 2i + 3).",
+          "marks": 5,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "6b",
           "label": "(b)",
-          "text": "Find the solution of the differential equation\ndy\n+ y cot i = sin i\ndi\nfor which y = 0 when i = r. \n7 The matrix P is given by\n1 4 2\nP = 0 -1 1 .\nf p\n0 0 2",
+          "text": "Find the solution of the differential equation\ndy\n+ y cot i = sin i\ndi\nfor which y = 0 when i = r.",
           "marks": 6,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "7a",
           "label": "(a)",
           "text": "State the eigenvalues of P. \n-1",
           "marks": 1,
@@ -195,7 +228,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "7b",
           "label": "(b)",
           "text": "Use the characteristic equation of P to find P . \nThe 3 # 3 matrix A has distinct eigenvalues b, -1, 1 with corresponding eigenvectors\n1 4 2\n0 , -1 , 1 ,\nf p f p f p\n0 0 2\nrespectively.",
           "marks": 4,
@@ -206,10 +239,35 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "7c",
           "label": "(c)",
-          "text": "Find A in terms of b. \n8 (a) Sketch the graph of y = coth x for x 2 0 and state the equations of the asymptotes.",
+          "text": "Find A in terms of b.",
           "marks": 4,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "The matrix P is given by",
+        "1 4 2",
+        "P = 0 -1 1 .",
+        "f p",
+        "0 0 2"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Sketch the graph of y = coth x for x 2 0 and state the equations of the asymptotes.",
+          "marks": 2,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -217,7 +275,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "8b",
           "label": "(b)",
           "text": "Starting from the definitions of coth and cosech in terms of exponentials, prove that\n2 2\ncoth x - cosech x = 1. \nThe curve C has equation y = ln cotha xk for x 2 0.\ndy",
           "marks": 3,
@@ -228,7 +286,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "8c",
           "label": "(c)",
           "text": "Show that =-cosech x. \ndx",
           "marks": 3,
@@ -239,7 +297,7 @@
           "parts": []
         },
         {
-          "id": "4d",
+          "id": "8d",
           "label": "(d)",
           "text": "It is given that the arc length of C from x = a to x = 2a is ln 4, where a is a positive constant.\nShow that cosh a = 2 and find, in logarithmic form, the exact value of a. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 7,
@@ -250,11 +308,8 @@
           "parts": []
         }
       ],
-      "marks": 28,
-      "text": [
-        "1",
-        "6 (a) Use de Moivre’s theorem to show that sin i = (cos 4i - 4 cos 2i + 3). [5]"
-      ]
+      "marks": 15,
+      "text": []
     }
   ]
 }

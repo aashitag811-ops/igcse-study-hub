@@ -4,7 +4,7 @@
   "session": "s24",
   "component": "61",
   "totalMarks": 42,
-  "questionCount": 5,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -162,10 +162,10 @@
           "label": "(c)",
           "text": "Use a suitable approximating distribution to find the probability that the number of sales during a\nrandomly chosen 1-month period (140 hours) will be less than 150. \nf(x)\nThe diagram shows the graph of the probability density function, f , of a random variable X . The graph\nis a quarter circle entirely in the first quadrant with centre (0, 0) and radius a, where a is a positive\nconstant. Elsewhere f( )x = 0.",
           "marks": 4,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "use",
+          "answerType": "short_answer",
           "hasDiagramRef": true,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         },
         {
@@ -193,16 +193,26 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Show that E(X ) = . \n3 r\n7 Every July, as part of a research project, Rita collects data about sightings of a particular kind of bird.\nEach day in July she notes whether she sees this kind of bird or not, and she records the number X of\ndays on which she sees it. She models the distribution of X by B(31, p), where p is the probability of\nseeing this kind of bird on a randomly chosen day in July.\nData from previous years suggests that p = 0.3, but in 2022 Rita suspected that the value of p had been\nreduced. She decided to carry out a hypothesis test.\nIn July 2022, she saw this kind of bird on 4 days.",
+          "text": "Show that E(X ) = . \n3 r",
           "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 16,
+      "text": [
+        "Sales of cell phones at a certain shop occur singly, randomly and independently."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "5a",
+          "id": "7a",
           "label": "(a)",
           "text": "Use the binomial distribution to test at the 5% significance level whether Rita’s suspicion is\njustified. \nIn July 2023, she noted the value of X and carried out another test at the 5% significance level using\nthe same hypotheses.",
           "marks": 5,
@@ -213,7 +223,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "7b",
           "label": "(b)",
           "text": "Calculate the probability of a Type I error. \nRita models the number of sightings, Y , per year of a different, very rare, kind of bird by the distribution\nB(365, 0.01).",
           "marks": 2,
@@ -224,7 +234,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "7c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -234,7 +244,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5ci",
+              "id": "7ci",
               "label": "(i)",
               "text": "Use a suitable approximating distribution to find P(Y = 4).",
               "marks": 3,
@@ -245,7 +255,7 @@
               "parts": []
             },
             {
-              "id": "5cii",
+              "id": "7cii",
               "label": "(ii)",
               "text": "Justify your approximating distribution in this context. \nAdditional page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
@@ -258,9 +268,15 @@
           ]
         }
       ],
-      "marks": 27,
+      "marks": 11,
       "text": [
-        "Sales of cell phones at a certain shop occur singly, randomly and independently."
+        "Every July, as part of a research project, Rita collects data about sightings of a particular kind of bird.",
+        "Each day in July she notes whether she sees this kind of bird or not, and she records the number X of",
+        "days on which she sees it. She models the distribution of X by B(31, p), where p is the probability of",
+        "seeing this kind of bird on a randomly chosen day in July.",
+        "Data from previous years suggests that p = 0.3, but in 2022 Rita suspected that the value of p had been",
+        "reduced. She decided to carry out a hypothesis test.",
+        "In July 2022, she saw this kind of bird on 4 days."
       ]
     }
   ]

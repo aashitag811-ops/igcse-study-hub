@@ -99,6 +99,9 @@ async function extractText(pdfPath) {
       line = line.replace(/  +/g, ' ').trim();
       if (line) text += line + '\n';
     }
+    // Page boundary marker — used by parseQP to reject bare page-header numbers.
+    // Must survive trimEnd() — \f is whitespace so use a plain ASCII sentinel instead.
+    text += '<<<PAGE_BREAK>>>\n';
   }
   await pdf.destroy();
   return text;
@@ -148,9 +151,9 @@ const NOISE_RE = [
   /^You should show all your working/i,
   // Bullet-prefixed cover page lines (● Answer all questions.)
   /^●/,
-  // "N hour(s) N minutes" time allowance
-  /^\d+\s+hours?\s+(\d+\s+minutes?)?/i,
-  /^\d+\s+minutes?/i,
+  // "N hour(s) N minutes" time allowance — matches "1 hour", "2 hours", "1 hour 30 minutes"
+  /^\d+\s+hours?(\s+\d+\s+minutes?)?\s*$/i,
+  /^\d+\s+minutes?\s*$/i,
   // Candidate/centre number box labels
   /^Centre number|^Candidate number/i,
   /^First name|^Last name|^Signature/i,
@@ -239,6 +242,9 @@ function normaliseAnswerLine(line) {
   // Lettered/named answer slot followed by dots: drop entirely
   if (/^[A-Z]\s+[.\-_]{5,}/.test(t)) return null;
   if (/^\w[\w ]{1,15}\s{2,}[.\-_]{5,}/.test(t)) return null;
+  // Answer blank with trailing value: "....................... 0.2861" or "....................... 11%"
+  // These are comparison answer blanks — the dots fill a box and the number is a comparison value.
+  if (/^[.\-_]{5,}/.test(t)) return null;
   return t; // keep as-is
 }
 
@@ -377,15 +383,24 @@ function isMathExpressionRest(rest) {
   if (!t) return false;
   // Starts with an arithmetic operator or equals sign
   if (/^[+\-*/=<>]/.test(t)) return true;
-  // Entirely composed of digits, spaces, operators, and common math symbols — no real words
-  // e.g. "1 + + =", "3 4 12", "x – 43 < 5x + 2"
-  // But NOT "A car company..." or "For this question..."
-  if (/^[\d\s+\-*/=<>().,:;x–]+$/.test(t)) return true;
-  // Line is ONLY numbers/spaces (lone fraction numerator like "1 1 1 p" or "3 4 12")
+  // Entirely composed of digits, spaces, operators, and lowercase math variables — no real words
+  // e.g. "1 + + =", "3 4 12", "x – 43 < 5x + 2", "7 − 1 -9" (sequence terms),
+  // "5 ( w + 3 ) - 2 ( w - 1 )" (algebra), "2x + 3y = 7"
+  // Note: uppercase-only identifiers like "A C D" (diagram labels) are NOT matched (require lowercase)
+  // Note: sub-part labels "(a)" or "(b)" at the start are NOT math expressions — skip this check
+  if (!LETTER_PART_RE.test(t) &&
+      /^[\d\s+\-*/=<>().,:;a-z–−#^]+$/.test(t) &&
+      !/\b[a-z]{3,}\b/.test(t)) return true;
+  // Line is ONLY numbers/spaces (lone fraction numerator like "3 4 12")
   if (/^[\d\s/]+$/.test(t) && t.length < 12) return true;
   // Very short (≤5 chars) lowercase/mixed math variable remnants from formula pages
   // e.g. "bh", "Al", "rr", "Ah" — suffix of a formula that split across Y rows
   if (t.length <= 5 && /^[a-zA-Z\d\s]+$/.test(t) && !/^[A-Z][a-z]/.test(t)) return true;
+  // Sequence of numbers with optional signs/dashes
+  // e.g. "7 − 1 -9", "4 11 18 25 32" — arithmetic sequence content
+  if (/^-?\d[\d\s\-−–.]*$/.test(t)) return true;
+  // "NOT TO" or "NOT TO SCALE" — diagram annotation that bleeds into Q number line
+  if (/^NOT\s+TO/i.test(t)) return true;
   // "For" alone (margin header) is not a question
   if (/^For\s*$/.test(t)) return true;
   return false;
@@ -395,17 +410,41 @@ function isMathExpressionRest(rest) {
 
 function parseQP(rawText, opts = {}) {
   // isMathsShortAnswer: maths (0580/0606) component 1x/2x papers where question numbers
-  // frequently appear inside diagrams and are absent from the text layer. We allow a much
-  // larger skip gap so the sequential guard doesn't drop valid questions.
-  const maxSkip = opts.isMathsShortAnswer ? 20 : 4;
+  // frequently appear inside diagrams and are absent from the text layer. We allow a skip
+  // gap so the sequential guard doesn't drop valid questions when 1–3 Q numbers are absent.
+  // Kept at 5 to avoid jumping to graph labels like "10 NOT TO SCALE" when nextExpected=6.
+  const maxSkip = opts.isMathsShortAnswer ? 5 : 4;
   // Split into clean lines; strip noise; normalise answer lines (strip dots, keep [N] bracket)
-  const lines = rawText
-    .split('\n')
-    .map(l => l.trimEnd())
-    .map(l => normaliseSymbols(l))
-    .filter(l => !isNoise(l, opts.isMathsShortAnswer))
-    .map(l => normaliseAnswerLine(l))
-    .filter(l => l !== null);
+  // Also track which surviving lines are the first non-noise line after a page break (\f).
+  // A bare digit at that position is a page-header number, not a question number.
+  const afterPageBreak = new Set(); // indices into `lines` that are first after a page break
+  const lines = [];
+  // pageHeaderIndices: set of indices in `lines` that are bare page-header numbers.
+  // These should be rejected as question openers but must stay in `lines` to keep index accounting
+  // consistent — they are filtered out by the isPageHeader check in bareOk.
+  // However, the preceding-bare guard below must NOT look back at page-header positions, so we
+  // track them separately.
+  const pageHeaderIndices = new Set();
+  {
+    let firstAfterBreak = true; // treat start-of-document as after a break
+    for (const raw of rawText.split('\n')) {
+      const t = raw.trimEnd();
+      if (t === '<<<PAGE_BREAK>>>') { firstAfterBreak = true; continue; }
+      const norm = normaliseSymbols(t);
+      if (isNoise(norm, opts.isMathsShortAnswer)) continue;
+      const normed = normaliseAnswerLine(norm);
+      if (normed === null) continue;
+      if (firstAfterBreak) {
+        afterPageBreak.add(lines.length);
+        // If this is a bare digit 1-30, it's a page-header number — mark it
+        if (/^\d{1,2}$/.test(normed) && parseInt(normed) >= 1 && parseInt(normed) <= 30) {
+          pageHeaderIndices.add(lines.length);
+        }
+        firstAfterBreak = false;
+      }
+      lines.push(normed);
+    }
+  }
 
   const questions = [];
   let currentQ = null;   // { id, context, parts: [], marks }
@@ -502,9 +541,36 @@ function parseQP(rawText, opts = {}) {
       const isRestMath = isMathExpressionRest(rest);
 
       // Is this a plausible question opener?
+      // For non-maths papers: strict — must start with "(a)" or a capital letter (or be empty).
+      // For maths papers:
+      //   - Exact match with real content (words, expression with letters): accept.
+      //   - Exact match with trivially-math rest (single digit like "3" from a superscript, or
+      //     all-digit string like "2 2" from formula numerators): REJECT — these are formula/exponent
+      //     fragments that happen to appear at the expected Q position.
+      //   - Skip-ahead (parsedNum > nextExpected): only accept if rest does NOT look like a
+      //     math/diagram annotation.
+      const rtrim = rest.trim();
+      const isExactMatch = parsedNum === (questions.length + (currentQ ? 1 : 0) + 1);
+      // isTrivialMathRest: rest is ONLY digit(s) and spaces (e.g. "3" = exponent, "2 2" = fraction num).
+      // These should never be a question opener even at exact match position.
+      const isTrivialMathRest = rtrim.length > 0 && /^[\d\s]+$/.test(rtrim);
       const isCleanOpener = opts.isMathsShortAnswer
-        ? (isBare || !isRestMath)                          // maths: bare OR has real words
-        : (isBare || /^\([a-z]\)/.test(rest.trim()) || /^[A-Z]/.test(rest.trim())); // others: strict
+        // Maths short-answer rules:
+        //   - Bare: always ok (handled by bareOk guards)
+        //   - Exact match: accept unless rest is ONLY digits/spaces (trivial math = exponent/fraction).
+        //       "10 of the counters" → exact match → accept (sentence content)
+        //       "10 b = dm + 2mk"  → exact match → accept (formula question)
+        //       "12 3" → trivial (only "3") → reject (exponent fragment)
+        //   - Skip-ahead: only reject if rest is trivial math OR starts with lowercase without any
+        //       real word content. Allow algebra/science notation that starts lowercase.
+        //       "10 NOT TO" → isRestMath → reject
+        //       "10 b = dm + 2mk" → skip → not trivial, has letters → accept
+        ? (isBare ||
+           (isExactMatch && !isTrivialMathRest) ||                  // exact match, non-trivial rest
+           (!isExactMatch && !isTrivialMathRest && !isRestMath))    // skip-ahead, not a trivial/pure math expr
+        // Non-maths structured papers: must start with "(a)" or a capital letter + at least one space
+        // (blocks single-word probability labels like "Finishes")
+        : (isBare || /^\([a-z]\)/.test(rtrim) || (/^[A-Z]/.test(rtrim) && /\s/.test(rtrim)));
 
       // Bare-number guard:
       //  1. Don't trigger before any question is established (formula-page fractions like "1", "2").
@@ -515,23 +581,40 @@ function parseQP(rawText, opts = {}) {
       //     number with real content — prefer the richer opener over the bare-number shadow.
       const lastCommittedId = questions.length > 0 ? parseInt(questions[questions.length - 1].id) : 0;
       const currentBuildId  = currentQ ? parseInt(currentQ.id) : -1;
-      let bareOk = !isBare || (questions.length > 0 && parsedNum > lastCommittedId && parsedNum !== currentBuildId);
+      // Page-header guard: if this bare number is the very first non-noise line after a page break,
+      // it MIGHT be a page number printed at the top of the page, NOT a Q number.
+      // However: if parsedNum === nextExpected, the page N header IS question N (question numbers
+      // often match page numbers in short-answer papers). In that case, allow it through.
+      const isPageHeader = isBare && afterPageBreak.has(i) && parsedNum !== nextExpected;
+      // bareOk rules:
+      //  - Non-bare: always ok (handled by looksLikeQ skip window)
+      //  - Bare, page header (and not exact match): never ok
+      //  - Bare Q1 exact match (parsedNum=1, nextExpected=1, no committed Qs yet): ok — diagram-embedded Q1
+      //  - Bare, all others: require at least one committed question and strictly > lastCommittedId
+      const isBareQ1 = isBare && parsedNum === 1 && questions.length === 0 && (currentQ === null);
+      let bareOk = !isBare || (!isPageHeader && (isBareQ1 || (questions.length > 0 && parsedNum > lastCommittedId && parsedNum !== currentBuildId)));
       if (bareOk && isBare) {
-        // Look ahead: if next non-trivial line starts "N <content>" with same N, skip this bare one
-        for (let j = i + 1; j < Math.min(i + 4, lines.length); j++) {
+        // Look ahead: if a richer "N <content>" opener with the same N appears within the next
+        // few lines (skipping mark brackets like "[1]", page headers, and empty lines), prefer
+        // the richer version and skip this bare shadow.
+        for (let j = i + 1; j < Math.min(i + 8, lines.length); j++) {
           const nxt = lines[j].trim();
           if (!nxt) continue;
+          // Skip answer mark brackets "[1]", "[2]" and page-header numbers — they sit between
+          // the bare Q# and the real Q opener on the next page.
+          if (/^\[\d+\]$/.test(nxt)) continue;
+          if (pageHeaderIndices.has(j)) continue; // skip page-header, keep looking
           const nxtM = TOP_LEVEL_Q_RE.exec(nxt);
           if (nxtM && parseInt(nxtM[1]) === parsedNum && (nxtM[2] ?? '').trim() !== '') {
-            bareOk = false; // the richer version is coming right after; skip bare shadow
+            bareOk = false; // the richer version is coming; skip bare shadow
           }
-          break; // only check the very next non-empty line
+          break; // stop at the first real non-bracket non-pageheader line
         }
 
-        // Additional guard for graph/histogram axis ticks: if the next 3 non-trivial lines are
-        // ALL bare numbers (like "10", "20", "30" stacked on a y-axis), this bare number is likely
-        // an axis tick, not a question number. Reject it.
+        // Guard: graph/histogram axis ticks — next 2+ non-trivial lines are ALL bare numbers,
+        // OR the immediately preceding non-trivial line is also a bare number (part of the same axis).
         if (bareOk) {
+          // Check following lines
           let bareCount = 0;
           for (let j = i + 1; j < Math.min(i + 8, lines.length); j++) {
             const nxt = lines[j].trim();
@@ -542,7 +625,36 @@ function parseQP(rawText, opts = {}) {
               break;
             }
           }
-          if (bareCount >= 2) bareOk = false; // looks like axis ticks, not a question
+          if (bareCount >= 2) bareOk = false;
+          // Also check the immediately preceding non-trivial line for a bare digit (axis/fraction).
+          // Skip page-header positions.
+          if (bareOk && i > 0) {
+            for (let j = i - 1; j >= Math.max(0, i - 4); j--) {
+              if (pageHeaderIndices.has(j)) continue;
+              const prev = lines[j].trim();
+              if (!prev) continue;
+              if (/^\d{1,2}$/.test(prev) && parseInt(prev) >= 1 && parseInt(prev) <= 100) {
+                bareOk = false;
+              }
+              break;
+            }
+          }
+        }
+
+        // Guard: fraction numerator — the bare number is immediately followed by a pure arithmetic
+        // line (e.g. "4" then "3" = fraction 4/3; "7" then "99" = fraction 7/99).
+        // Skip over mark brackets [N] to find the real next content line.
+        if (bareOk) {
+          for (let j = i + 1; j < Math.min(i + 5, lines.length); j++) {
+            const nxt = lines[j].trim();
+            if (!nxt) continue;
+            if (/^\[\d+\]$/.test(nxt)) continue; // skip mark brackets
+            if (pageHeaderIndices.has(j)) break;   // don't cross page boundaries
+            if (/^[\d\s.+\-*/()–−]+$/.test(nxt) && nxt.length > 1) {
+              bareOk = false; // pure arithmetic next line — this bare number is a fraction numerator
+            }
+            break;
+          }
         }
       }
 

@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w16",
   "component": "21",
-  "totalMarks": 64,
-  "questionCount": 16,
+  "totalMarks": 62,
+  "questionCount": 18,
   "questions": [
     {
       "id": "1",
@@ -145,7 +145,7 @@
         {
           "id": "12c",
           "label": "(c)",
-          "text": "The program design is to be amended. The value input by the user for the ticket type is to be\nvalidated. Part of the amended flowchart is shown below.\nStart\nLoop\nINPUT TicketType\nIs\nTicketType\nE or S ?\nNo\nYes\nWrite pseudocode to use a pre-condition loop for this validation.\n\n2 A sensing device sends bit values to a computer along data channels.\n• Channel 1 transmits a sequence of binary values from a sensor\n• Channel 2 transmits at regular intervals to indicate whether the sensor is switched on or off:\n• 0 indicates switched off\n• 1 indicates switched on\nA program tests the bits received from the sensing device.\nA program reads the signal from Channel 2 after every six values from Channel 1.\nA built-in function READ(<ChannelNumber>) reads a value from the specified channel.\nPseudocode for the program is as follows:\n01 BitCount 0\n02 Status2 READ(2)\n03 WHILE Status2 = 1\n05 FOR ReadingCount 1 TO 6\n06 ThisBit READ(1)\n07 IF ThisBit = 1\n08 THEN\n09 BitCount BitCount + 1\n10 ENDIF\n11 IF BitCount = 5\n12 THEN",
+          "text": "The program design is to be amended. The value input by the user for the ticket type is to be\nvalidated. Part of the amended flowchart is shown below.\nStart\nLoop\nINPUT TicketType\nIs\nTicketType\nE or S ?\nNo\nYes\nWrite pseudocode to use a pre-condition loop for this validation.\n2 A sensing device sends bit values to a computer along data channels.\n• Channel 1 transmits a sequence of binary values from a sensor\n• Channel 2 transmits at regular intervals to indicate whether the sensor is switched on or off:\n• 0 indicates switched off\n• 1 indicates switched on\nA program tests the bits received from the sensing device.\nA program reads the signal from Channel 2 after every six values from Channel 1.\nA built-in function READ(<ChannelNumber>) reads a value from the specified channel.\nPseudocode for the program is as follows:\n01 BitCount 0\n02 Status2 READ(2)\n03 WHILE Status2 = 1\n05 FOR ReadingCount 1 TO 6\n06 ThisBit READ(1)\n07 IF ThisBit = 1\n08 THEN\n09 BitCount BitCount + 1\n10 ENDIF\n11 IF BitCount = 5\n12 THEN",
           "marks": 3,
           "type": "design",
           "answerType": "long_answer",
@@ -154,14 +154,13 @@
           "parts": []
         }
       ],
-      "marks": 8,
+      "marks": 6,
       "text": [
         "Is TicketType = 'E' ?",
         "Complete the flowchart by putting the appropriate statement number in each flowchart",
         "symbol. Statement 5 has been done for you.",
         "Start",
-        "Stop",
-        "[6]"
+        "Stop"
       ]
     },
     {
@@ -194,9 +193,27 @@
     {
       "id": "16",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Status2 READ(2)"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
       "parts": [
         {
-          "id": "16a",
+          "id": "19a",
           "label": "(a)",
           "text": "Trace the execution of the program for the following sequence of bits.\n1 0 1 1 1 0 1 1 0 0 1 1\nChannel 1\n1 1 0\nChannel 2\nStatus2 ReadingCount ThisBit BitCount\nOUTPUT\n1 1 1 1",
           "marks": 7,
@@ -207,9 +224,9 @@
           "parts": []
         },
         {
-          "id": "16b",
+          "id": "19b",
           "label": "(b)",
-          "text": "Identify the following constructs in the given program, using line numbers.\nFor multi-line constructs give the first line number only.\nConstruct Line number\nAssignment\nSelection\nIteration\n\n3 You will need to refer to the list of pseudocode string-handling functions in the Appendix.\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90",
+          "text": "Identify the following constructs in the given program, using line numbers.\nFor multi-line constructs give the first line number only.\nConstruct Line number\nAssignment\nSelection\nIteration\n3 You will need to refer to the list of pseudocode string-handling functions in the Appendix.\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90",
           "marks": 3,
           "type": "identify",
           "answerType": "short_answer",
@@ -218,7 +235,7 @@
           "parts": []
         },
         {
-          "id": "16a",
+          "id": "19a",
           "label": "(a)",
           "text": "For each statement, write the value assigned to the variable.",
           "marks": null,
@@ -228,7 +245,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16ai",
+              "id": "19ai",
               "label": "(i)",
               "text": "Term CHARACTERCOUNT(\"TSUNAMI\")\nTerm ______",
               "marks": 1,
@@ -239,7 +256,7 @@
               "parts": []
             },
             {
-              "id": "16aii",
+              "id": "19aii",
               "label": "(ii)",
               "text": "Answer1 ASC('G') + ASC(<Space>)\nAnswer1 ______",
               "marks": 1,
@@ -250,7 +267,7 @@
               "parts": []
             },
             {
-              "id": "16aiii",
+              "id": "19aiii",
               "label": "(iii)",
               "text": "Answer2 CHR(CHARACTERCOUNT(\"HELLO\") + 70)\nAnswer2 ______",
               "marks": 1,
@@ -261,7 +278,7 @@
               "parts": []
             },
             {
-              "id": "16aiv",
+              "id": "19aiv",
               "label": "(iv)",
               "text": "Word SUBSTR(\"Welcome home\", 4, 7) )\nWord ______\nQuestion 3(b) continues on page 10.",
               "marks": 1,
@@ -274,7 +291,7 @@
           ]
         },
         {
-          "id": "16b",
+          "id": "19b",
           "label": "(b)",
           "text": "A programmer wants to design a procedure to calculate a customer ID number from the\ncustomer’s surname.\nThe procedure will:\n• input the surname\n• isolate each character in the surname and find the corresponding ASCII code\n• calculate the total of all these ASCII codes\n• this total is the customer ID",
           "marks": null,
@@ -284,7 +301,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16bi",
+              "id": "19bi",
               "label": "(i)",
               "text": "Complete the pseudocode for this procedure.\nYou will need to refer to the list of pseudocode string-handling functions in the Appendix.\nPROCEDURE CalculateCustomerID\nOUTPUT \"Key in surname\"\nINPUT Surname\nLength ______\nCustomerID 0\nFOR i 1 TO Length\n// NextChar is a single character from Surname\nNextChar ______\nNextCodeNumber ASC(NextChar)\nCustomerID CustomerID + ______\nENDFOR\nOUTPUT \"Customer ID is \", CustomerID",
               "marks": 3,
@@ -295,7 +312,7 @@
               "parts": []
             },
             {
-              "id": "16bii",
+              "id": "19bii",
               "label": "(ii)",
               "text": "Write program code for procedure CalculateCustomerID.\nVisual Basic and Pascal: You should include declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______",
               "marks": 6,
@@ -308,7 +325,7 @@
           ]
         },
         {
-          "id": "16c",
+          "id": "19c",
           "label": "(c)",
           "text": "The programmer decides that it would be better to write the procedure as a function.\nThe user will now input the surname in the main program.\nWrite program code for the following:\nState your programming language ______",
           "marks": null,
@@ -318,7 +335,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16ci",
+              "id": "19ci",
               "label": "(i)",
               "text": "The function header for this new function CalculateCustomerID",
               "marks": 3,
@@ -329,7 +346,7 @@
               "parts": []
             },
             {
-              "id": "16cii",
+              "id": "19cii",
               "label": "(ii)",
               "text": "The additional statement required within the function body to complete the change from\na procedure to a function.",
               "marks": 1,
@@ -340,7 +357,7 @@
               "parts": []
             },
             {
-              "id": "16ciii",
+              "id": "19ciii",
               "label": "(iii)",
               "text": "The statement in the main program which:\n• calls the function for surname Wilkes\n• assigns the result to variable ThisID",
               "marks": 3,
@@ -353,7 +370,7 @@
           ]
         },
         {
-          "id": "16d",
+          "id": "19d",
           "label": "(d)",
           "text": "",
           "marks": null,
@@ -363,7 +380,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16di",
+              "id": "19di",
               "label": "(i)",
               "text": "The new function CalculateUserID is an example of a ‘user-defined function’.\nState two differences between a built-in function and a user-defined function.",
               "marks": 2,
@@ -374,9 +391,9 @@
               "parts": []
             },
             {
-              "id": "16dii",
+              "id": "19dii",
               "label": "(ii)",
-              "text": "State two things that built-in and user-defined functions have in common.\n\n4 A company employs Ahmed as a programmer.",
+              "text": "State two things that built-in and user-defined functions have in common.\n4 A company employs Ahmed as a programmer.",
               "marks": 2,
               "type": "state",
               "answerType": "short_answer",
@@ -387,7 +404,7 @@
           ]
         },
         {
-          "id": "16a",
+          "id": "19a",
           "label": "(a)",
           "text": "At College, before joining the company, Ahmed used two items of software for programming:\n• a text editor\n• a compiler\nDescribe how he could have developed programs using these software tools.\nInclude in the description the terms ‘object code’ and ‘source code’.",
           "marks": 3,
@@ -398,7 +415,7 @@
           "parts": []
         },
         {
-          "id": "16b",
+          "id": "19b",
           "label": "(b)",
           "text": "Ahmed now uses an Integrated Development Environment (IDE) for programming.",
           "marks": null,
@@ -408,7 +425,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16bi",
+              "id": "19bi",
               "label": "(i)",
               "text": "State one feature an IDE provides to help with the identification of syntax errors.",
               "marks": 1,
@@ -419,7 +436,7 @@
               "parts": []
             },
             {
-              "id": "16bii",
+              "id": "19bii",
               "label": "(ii)",
               "text": "State one feature an IDE provides to carry out white box testing.",
               "marks": 1,
@@ -432,7 +449,7 @@
           ]
         },
         {
-          "id": "16c",
+          "id": "19c",
           "label": "(c)",
           "text": "The company maintains a file of product data. Ahmed is to write a program to add a new\nproduct and search for a product based on the structure diagram shown:\nProduct\nprocessing\nAdd Search for\nproduct product\nBy By By\nproduct code description price\nThe program records the following data for each product:\n• product code\n• product description\n• product retail price\nThe text file PRODUCTS stores each data item on a separate line, as shown below:\nFile PRODUCTS\n0198\nPlums(10kg)\n11.50\n0202\nOnions(20kg)\n10.00\n0376\nMango chutney(1kg)\n02.99\n0014\nMango(10kg)\n12.75\nThe program uses the variables shown in the identifier table.\nIdentifier Data type Description\nStoring the code, description and\nPRODUCTS TEXT FILE\nretail price for all current products\nPCode ARRAY[1:1000] OF STRING\nArray storing the product codes\nPDescription ARRAY[1:1000] OF STRING\nArray storing the product descriptions\nPRetailPrice ARRAY[1:1000] OF REAL\nArray storing the product retail prices\ni INTEGER\nArray index used by all three arrays",
           "marks": null,
@@ -442,9 +459,9 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16ci",
+              "id": "19ci",
               "label": "(i)",
-              "text": "The first operation of the program is to read all the product data held in file PRODUCTS\nand write them into the three 1D arrays.\nComplete the pseudocode below.\nOPEN ______\ni 1\nWHILE ______\nREADFILE (\"PRODUCTS\", ______)\nREADFILE (\"PRODUCTS\", ______)\nREADFILE (\"PRODUCTS\", ______)\nENDWHILE\nCLOSE \"PRODUCTS\"\nOUTPUT \"Product file contents written to arrays\"\n\nWhen Ahmed designed the PRODUCTS file, File PRODUCTS\nhe considered the alternative file structure\n0198 Plums(10kg) 11.50\nshown opposite.\n0202 Onions(20kg) 10.00\nIt stores one product per line in the text file.\n0376 Mango chutney(1kg) 02.99\n0014 Mango(10kg) 12.75",
+              "text": "The first operation of the program is to read all the product data held in file PRODUCTS\nand write them into the three 1D arrays.\nComplete the pseudocode below.\nOPEN ______\ni 1\nWHILE ______\nREADFILE (\"PRODUCTS\", ______)\nREADFILE (\"PRODUCTS\", ______)\nREADFILE (\"PRODUCTS\", ______)\nENDWHILE\nCLOSE \"PRODUCTS\"\nOUTPUT \"Product file contents written to arrays\"\nWhen Ahmed designed the PRODUCTS file, File PRODUCTS\nhe considered the alternative file structure\n0198 Plums(10kg) 11.50\nshown opposite.\n0202 Onions(20kg) 10.00\nIt stores one product per line in the text file.\n0376 Mango chutney(1kg) 02.99\n0014 Mango(10kg) 12.75",
               "marks": 5,
               "type": "complete",
               "answerType": "fill_blank",
@@ -453,7 +470,7 @@
               "parts": []
             },
             {
-              "id": "16cii",
+              "id": "19cii",
               "label": "(ii)",
               "text": "State one benefit and one drawback of this file design.\nBenefit ______\nDrawback ______",
               "marks": 2,
@@ -466,7 +483,7 @@
           ]
         },
         {
-          "id": "16d",
+          "id": "19d",
           "label": "(d)",
           "text": "To code the ‘Search by product code’ procedure, Ahmed draws a structure chart showing the\ndifferent stages.\nThe procedure uses the variables shown in the identifier table.\nIdentifier Data type Description\nSearchCode STRING\nProduct code input by the user\nArray index position for the\nThisIndex INTEGER\ncorresponding product\nThisDescription STRING Product description found\nThisRetailPrice REAL\nProduct retail price found\nYou can assume that before the procedure is run, all the product data is read from file\nPRODUCTS and then stored in three 1D arrays as described in part (c)(i).\nLabel the structure chart to show the input(s) and output(s).\nLookup by\nproduct code\nINPUT Search for\nOUTPUT details\nsearch criteria product code",
           "marks": 4,
@@ -477,9 +494,9 @@
           "parts": []
         },
         {
-          "id": "16e",
+          "id": "19e",
           "label": "(e)",
-          "text": "A first attempt was made at writing the ‘Search for product code’ module.\nAhmed designs this as a function ProductCodeSearch.\nThe function returns an integer value as follows:\n• if the product code is found, it returns the index position of the 1D array PCode being\nsearched\n• if the product code is not found, the function returns -1\nWrite program code for function ProductCodeSearch.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\n\n5 Study the following pseudocode statements.\nCONST Pi = 3.1 : REAL\nDECLARE Triangle, Base, Height, Radius, Cone : REAL\nDECLARE a, b, c, Answer2 : INTEGER\nDECLARE Answer1 : BOOLEAN\nBase 2.6\nHeight 10\nTriangle (Base * Height) / 2\nRadius 1\nHeight 2\nCone 2 * Pi * Radius * (Radius + Height)\na 13\nb 7\nc 3\nAnswer1 NOT((a + b + c) > 28)\nTotal 34\nTotal Total - 2\nAnswer2 a + c * c\nGive the final value assigned to each variable.",
+          "text": "A first attempt was made at writing the ‘Search for product code’ module.\nAhmed designs this as a function ProductCodeSearch.\nThe function returns an integer value as follows:\n• if the product code is found, it returns the index position of the 1D array PCode being\nsearched\n• if the product code is not found, the function returns -1\nWrite program code for function ProductCodeSearch.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\n5 Study the following pseudocode statements.\nCONST Pi = 3.1 : REAL\nDECLARE Triangle, Base, Height, Radius, Cone : REAL\nDECLARE a, b, c, Answer2 : INTEGER\nDECLARE Answer1 : BOOLEAN\nBase 2.6\nHeight 10\nTriangle (Base * Height) / 2\nRadius 1\nHeight 2\nCone 2 * Pi * Radius * (Radius + Height)\na 13\nb 7\nc 3\nAnswer1 NOT((a + b + c) > 28)\nTotal 34\nTotal Total - 2\nAnswer2 a + c * c\nGive the final value assigned to each variable.",
           "marks": 6,
           "type": "give",
           "answerType": "fill_blank",
@@ -487,7 +504,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16ei",
+              "id": "19ei",
               "label": "(i)",
               "text": "Triangle ______",
               "marks": 1,
@@ -498,7 +515,7 @@
               "parts": []
             },
             {
-              "id": "16eii",
+              "id": "19eii",
               "label": "(ii)",
               "text": "Cone ______",
               "marks": 1,
@@ -509,7 +526,7 @@
               "parts": []
             },
             {
-              "id": "16eiii",
+              "id": "19eiii",
               "label": "(iii)",
               "text": "Answer1 ______",
               "marks": 1,
@@ -520,7 +537,7 @@
               "parts": []
             },
             {
-              "id": "16eiv",
+              "id": "19eiv",
               "label": "(iv)",
               "text": "Total ______",
               "marks": null,
@@ -531,7 +548,7 @@
               "parts": []
             },
             {
-              "id": "16ev",
+              "id": "19ev",
               "label": "(v)",
               "text": "Answer2 ______ \nAppendix\nBuilt-in functions (pseudocode)\nONECHAR(ThisString : STRING, Position : INTEGER) RETURNS CHAR\nreturns the single character at position Position (counting from the start of the string with\nvalue 1) from the string ThisString.\nFor example: ONECHAR(\"New York\", 5) returns 'Y'\nCHARACTERCOUNT(ThisString : STRING) RETURNS INTEGER\nreturns the number of characters in ThisString.\nFor example: CHARACTERCOUNT(\"New York\") returns 8\nSUBSTR(ThisString : STRING, Value1 : INTEGER, Value2 : INTEGER) RETURNS\nSTRING\nreturns a sub-string from within ThisString.\nValue1 is the start index position (counting from the left, starting with 1).\nValue2 is the final index position.\nFor example: SUBSTR(\"art nouveau\", 5, 11) returns \"nouveau\"\nTONUM(ThisString : STRING) RETURNS INTEGER or REAL\nreturns the integer or real equivalent of the string ThisString.\nFor example: TONUM(\"502\") returns the integer 502\nTONUM(\"56.36\") returns the real number 56.36\nASC(ThisCharacter : CHAR) RETURNS INTEGER\nreturns an integer which is the ASCII character code for the character ThisCharacter.\nFor example: ASC('A') returns integer 65\nCHR(Value : INTEGER) RETURNS CHAR\nreturns the character that ASCII code number Value represents.\nFor example: CHR(65) returns 'A'\nRND() RETURNS REAL\nreturns a random number in the range 0 to 0.99999\nFor example: RND() returns 0.67351\nINT(ThisNumber : REAL) RETURNS INTEGER\nreturns the integer part of ThisNumber.\nFor example: INT(12.79) returns 12\nErrors\nFor any function, if the program calls the function incorrectly, the function returns an error.\nConcatenation operator\n& – Concatenates two expressions of STRING or CHAR data type.\nFor example: \"South\" & \" \" & \"Pole\" produces \"South Pole\"\n'B' & \"000654\" produces \"B000654\"\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 1,
@@ -546,9 +563,7 @@
       ],
       "marks": 56,
       "text": [
-        "ENDFOR",
-        "18 Status2 READ(2)",
-        "19 ENDWHILE"
+        "ENDWHILE"
       ]
     }
   ]

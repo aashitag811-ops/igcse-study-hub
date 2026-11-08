@@ -3,7 +3,7 @@
   "subjectCode": "0625",
   "session": "w22",
   "component": "51",
-  "totalMarks": 24,
+  "totalMarks": 40,
   "questionCount": 4,
   "questions": [
     {
@@ -47,16 +47,38 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "Adjust the length of the pendulum until the distance l = 50.0 cm.\nDisplace the bob slightly and release it so that it swings. Fig. 1.2 shows one complete\noscillation of the pendulum.\nMeasure, and record in Table 1.1, the time t for 20 complete oscillations.\nCalculate, and record in Table 1.1, the period T of the pendulum. The period is the time for\none complete oscillation.\nCalculate, and record in Table 1.1, the value of T .\nRepeat the procedure using l values of 60.0 cm, 70.0 cm, 80.0 cm and 90.0 cm.\nTable 1.1",
-          "marks": null,
+          "text": "Adjust the length of the pendulum until the distance l = 50.0 cm.\nDisplace the bob slightly and release it so that it swings. Fig. 1.2 shows one complete\noscillation of the pendulum.\nMeasure, and record in Table 1.1, the time t for 20 complete oscillations.\nCalculate, and record in Table 1.1, the period T of the pendulum. The period is the time for\none complete oscillation.\nCalculate, and record in Table 1.1, the value of T .\nRepeat the procedure using l values of 60.0 cm, 70.0 cm, 80.0 cm and 90.0 cm.\nTable 1.1\n2 2\nl/ cm t/s T/s T /s\n50.0\n60.0\n70.0\n80.0\n90.0\n2 2 2",
+          "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "Plot a graph of T / s (y-axis) against l/ cm (x-axis). Start the T axis at a convenient value\nclose to the minimum value of T .",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Explain briefly why timing 20 oscillations gives a more accurate result for the period T than\ntiming 1 oscillation.",
+          "marks": 1,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 2,
+      "marks": 11,
       "text": [
         "In this experiment, you will investigate the period of a pendulum. Carry out the following",
         "instructions, referring to Fig. 1.1 and Fig. 1.2.",
@@ -72,28 +94,6 @@
       "id": "2",
       "context": [],
       "parts": [
-        {
-          "id": "2c",
-          "label": "(c)",
-          "text": "Plot a graph of T / s (y-axis) against l/ cm (x-axis). Start the T axis at a convenient value\nclose to the minimum value of T .",
-          "marks": 4,
-          "type": "draw",
-          "answerType": "diagram_only",
-          "hasDiagramRef": false,
-          "diagramOnly": true,
-          "parts": []
-        },
-        {
-          "id": "2d",
-          "label": "(d)",
-          "text": "Explain briefly why timing 20 oscillations gives a more accurate result for the period T than\ntiming 1 oscillation.\n\n2 In this experiment, you will investigate the resistance of a lamp.\nCarry out the following instructions, referring to Fig. 2.1.\nC D E\nresistance wire\nFig. 2.1",
-          "marks": 1,
-          "type": "explain",
-          "answerType": "long_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "2a",
           "label": "(a)",
@@ -153,34 +153,16 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "Place the sliding contact S on the resistance wire as close as possible to point E.\nClose the switch.\n• Measure the current I in the circuit.\nI = ______ A\n• Measure the potential difference V across lamp L.\nV = ______ V\n• Open the switch.\n• Calculate the resistance R of lamp L. Use the equation R = . Include the unit.",
-          "marks": null,
-          "type": "calculate",
+          "text": "Place the sliding contact S on the resistance wire as close as possible to point E.\nClose the switch.\n• Measure the current I in the circuit.\nI = ______ A\n• Measure the potential difference V across lamp L.\nV = ______ V\n• Open the switch.\n• Calculate the resistance R of lamp L. Use the equation R = . Include the unit.\n3 3\nGive your answer to a suitable number of significant figures for this experiment.\nR = ______",
+          "marks": 2,
+          "type": "give",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 11,
-      "text": [
-        "2",
-        "l/ cm t/s T/s T /s",
-        "50.0",
-        "60.0",
-        "70.0",
-        "80.0",
-        "90.0",
-        "[4]",
-        "2 2 2"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "3d",
+          "id": "2d",
           "label": "(d)",
           "text": "Complete the following statements, referring to your observations and results.\n1. As the length of resistance wire included in the circuit is increased, the brightness of the\nlamp ______ .\n2. As the length of resistance wire included in the circuit is increased, the resistance of the\nlamp ______ .",
           "marks": 2,
@@ -191,16 +173,30 @@
           "parts": []
         },
         {
-          "id": "3e",
+          "id": "2e",
           "label": "(e)",
-          "text": "A variable resistor can be used in this type of experiment in place of the resistance wire.\nDraw a circuit diagram to show a variable resistor in place of the resistance wire. Include the\nammeter and the voltmeter in your diagram.\n\n3 In this experiment, you will investigate the effect of the starting temperature on the cooling rate of\nwater.\nCarry out the following instructions, referring to Fig. 3.1.\nthermometer\nbeaker\nbench\nFig. 3.1",
+          "text": "A variable resistor can be used in this type of experiment in place of the resistance wire.\nDraw a circuit diagram to show a variable resistor in place of the resistance wire. Include the\nammeter and the voltmeter in your diagram.",
           "marks": 2,
           "type": "draw",
           "answerType": "diagram_only",
           "hasDiagramRef": true,
           "diagramOnly": true,
           "parts": []
-        },
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "In this experiment, you will investigate the resistance of a lamp.",
+        "Carry out the following instructions, referring to Fig. 2.1.",
+        "C D E",
+        "resistance wire",
+        "Fig. 2.1"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
           "id": "3a",
           "label": "(a)",
@@ -293,16 +289,20 @@
       ],
       "marks": 11,
       "text": [
-        "3",
-        "Give your answer to a suitable number of significant figures for this experiment.",
-        "R = ......................................................... [2]"
+        "In this experiment, you will investigate the effect of the starting temperature on the cooling rate of",
+        "water.",
+        "Carry out the following instructions, referring to Fig. 3.1.",
+        "thermometer",
+        "beaker",
+        "bench",
+        "Fig. 3.1"
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "A student investigates the horizontal distance travelled by a metal ball after it rolls off the end of a",
         "plastic track. Fig. 4.1 shows the set-up.",
@@ -330,7 +330,6 @@
         "• draw a suitable table, with column headings, to show how you would display your readings",
         "(you are not required to enter any readings in the table)",
         "• explain how you would use the results to reach a conclusion.",
-        "[7]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

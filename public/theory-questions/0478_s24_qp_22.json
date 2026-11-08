@@ -3,29 +3,28 @@
   "subjectCode": "0478",
   "session": "s24",
   "component": "22",
-  "totalMarks": 42,
-  "questionCount": 15,
+  "totalMarks": 60,
+  "questionCount": 14,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (✓) one box to identify a method used to design and construct a solution to a computing",
         "problem.",
         "A analysis",
         "B coding",
         "C flowchart",
-        "D testing",
-        "[1]"
+        "D testing"
       ]
     },
     {
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Four logic functions and five standard symbols for logic gates are shown.",
         "Draw one line to link each logic function to its standard symbol. Not all standard symbols will be",
@@ -34,18 +33,16 @@
         "AND",
         "XOR",
         "NAND",
-        "OR",
-        "[4]"
+        "OR"
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
-        "Identify three different tasks in the analysis stage of the program development life cycle.",
-        "[3]"
+        "Identify three different tasks in the analysis stage of the program development life cycle."
       ]
     },
     {
@@ -110,7 +107,7 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "A high-level programming language makes use of arithmetic, Boolean and logical operators.",
         "State how each type of operator is used.",
@@ -120,8 +117,7 @@
         "Boolean ............................................................................................................................................",
         "Example ............................................................................................................................................",
         "Logical ..............................................................................................................................................",
-        "Example ...........................................................................................................................................",
-        "[6]"
+        "Example ..........................................................................................................................................."
       ]
     },
     {
@@ -132,7 +128,7 @@
           "id": "6a",
           "label": "(a)",
           "text": "Write an algorithm in pseudocode to total the numbers input and to output the total.\nYou do not need to validate the input.\nDO NOT WRITE IN THIS MARGIN______",
-          "marks": null,
+          "marks": 4,
           "type": "write",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -151,7 +147,7 @@
           "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 8,
       "text": [
         "Totalling and counting are standard methods of solution.",
         "Numbers are input. The number 9999.9 is the last number to be input and is ignored."
@@ -246,7 +242,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "Identify the line numbers of the three errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\n\n8 A logic circuit is to be built to control the opening of a safe used to store money. There are two\nkeys, A and B, and a time switch C. The safe can only open if both keys are used and the time\nswitch is off.\nnot used 0\nkey A\nused 1\nnot used 0\nkey B\nused 1\nswitch off 0\ntime switch C\nswitch on 1\nsafe cannot open 0\nsafe X\nsafe can open 1",
+          "text": "Identify the line numbers of the three errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\n8 A logic circuit is to be built to control the opening of a safe used to store money. There are two\nkeys, A and B, and a time switch C. The safe can only open if both keys are used and the time\nswitch is off.\nnot used 0\nkey A\nused 1\nnot used 0\nkey B\nused 1\nswitch off 0\ntime switch C\nswitch on 1\nsafe cannot open 0\nsafe X\nsafe can open 1",
           "marks": 3,
           "type": "identify",
           "answerType": "fill_blank",
@@ -268,7 +264,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "Complete the truth table for this problem.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n9 This flowchart represents an algorithm.\nSTART\nA FALSE DO NOT WRITE IN THIS MARGIN\nB 1\nNo\nIS List[B] >\nT List[B]\nList[B + 1]?\nYes\nList[B] List[B + 1]\nList[B + 1] T\nA TRUE\nB B + 1\nNo\nIS B =\n5?\nYes\nYes\nIS A =\nTRUE?\nNo\nSTOP",
+          "text": "Complete the truth table for this problem.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n9 This flowchart represents an algorithm.\nSTART\nA FALSE DO NOT WRITE IN THIS MARGIN\nB 1\nNo\nIS List[B] >\nT List[B]\nList[B + 1]?\nYes\nList[B] List[B + 1]\nList[B + 1] T\nA TRUE\nB B + 1\nNo\nIS B =\n5?\nYes\nYes\nIS A =\nTRUE?\nNo\nSTOP",
           "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
@@ -279,28 +275,18 @@
         {
           "id": "14a",
           "label": "(a)",
-          "text": "The array List[1:5] used in the flowchart contains this data:\nList[1] List[2] List[3] List[4] List",
+          "text": "The array List[1:5] used in the flowchart contains this data:\nList[1] List[2] List[3] List[4] List\n15 17 20 5 9\nComplete the trace table using the data given in the array.\nA B List[1] List[2] List[3] List[4] List[5] T\n15 17 20 5 9",
           "marks": 5,
-          "type": "list",
-          "answerType": "short_answer",
+          "type": "complete",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 18,
-      "text": [
-        "OUTPUT \"Minimum value is \", Min"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "15b",
+          "id": "14b",
           "label": "(b)",
-          "text": "Describe what the algorithm represented by the flowchart is doing.\n\n10 A television subscription service has a new database table named Contract to store details of\ntheir subscribers’ contracts. The table contains these fields:\n• ContractNumber – the contract number, for example CT567\n• Months – the length of the contract in months, for example 6\n• EndDate – the date the contract finishes, for example 30 November 2024\n• News – the news service, yes or no\n• Movie – the movie service, yes or no\n• Sport – the sports service, yes or no\n• Junior – the children’s service, yes or no.",
+          "text": "Describe what the algorithm represented by the flowchart is doing.\n10 A television subscription service has a new database table named Contract to store details of\ntheir subscribers’ contracts. The table contains these fields:\n• ContractNumber – the contract number, for example CT567\n• Months – the length of the contract in months, for example 6\n• EndDate – the date the contract finishes, for example 30 November 2024\n• News – the news service, yes or no\n• Movie – the movie service, yes or no\n• Sport – the sports service, yes or no\n• Junior – the children’s service, yes or no.",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -309,7 +295,7 @@
           "parts": []
         },
         {
-          "id": "15a",
+          "id": "14a",
           "label": "(a)",
           "text": "Identify the field that will be the most appropriate primary key for this table.",
           "marks": 1,
@@ -320,7 +306,7 @@
           "parts": []
         },
         {
-          "id": "15b",
+          "id": "14b",
           "label": "(b)",
           "text": "Complete the table to identify the most appropriate data type for these fields in Contract\nField Data type\nContractNumber\nMonths\nEndDate\nSport",
           "marks": 2,
@@ -331,7 +317,7 @@
           "parts": []
         },
         {
-          "id": "15c",
+          "id": "14c",
           "label": "(c)",
           "text": "Explain the purpose of these structured query language (SQL) statements.\nStatement 1: SELECT SUM (Months) FROM Contract;\nStatement 2: SELECT COUNT (News) FROM Contract WHERE News;\nStatement 1 ______\nStatement 2 ______",
           "marks": 3,
@@ -342,9 +328,9 @@
           "parts": []
         },
         {
-          "id": "15d",
+          "id": "14d",
           "label": "(d)",
-          "text": "Complete this SQL statement to find the contract numbers of the subscribers that take both\nthe news and sports services.\nSELECT ______\nFROM Contract\nWHERE ______ AND ______ ;\n\n11 A one-player game uses the two-dimensional (2D) array Grid[] to store the location of a secret\ncell to be found by the player in 10 moves. Each row and column has 5 cells.\nStart\nGrid[1,1]\nAt the start of the game:\n• The program places an ‘X’ in a random cell (not in Grid[1,1]) and empties all the other\ncells in the grid.\n• The player starts at the top left of the grid.\n• The player has 10 moves.\nDuring the game:\n• The player can move left, right, up or down by one cell and the move must be within the grid.\n• “You Win” is displayed if the player moves to the cell with ‘X’ and has played 10 moves or\nless.\n• “You Lose” is displayed if the player has made 10 moves without finding the ‘X’.\nWrite a program that meets these requirements.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nAll inputs and outputs must contain suitable messages.\nDO NOT WRITE IN THIS MARGIN______\n______ DO NOT WRITE IN THIS MARGIN\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete this SQL statement to find the contract numbers of the subscribers that take both\nthe news and sports services.\nSELECT ______\nFROM Contract\nWHERE ______ AND ______ ;\n11 A one-player game uses the two-dimensional (2D) array Grid[] to store the location of a secret\ncell to be found by the player in 10 moves. Each row and column has 5 cells.\nStart\nGrid[1,1]\nAt the start of the game:\n• The program places an ‘X’ in a random cell (not in Grid[1,1]) and empties all the other\ncells in the grid.\n• The player starts at the top left of the grid.\n• The player has 10 moves.\nDuring the game:\n• The player can move left, right, up or down by one cell and the move must be within the grid.\n• “You Win” is displayed if the player moves to the cell with ‘X’ and has played 10 moves or\nless.\n• “You Lose” is displayed if the player has made 10 moves without finding the ‘X’.\nWrite a program that meets these requirements.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nAll inputs and outputs must contain suitable messages.\nDO NOT WRITE IN THIS MARGIN______\n______ DO NOT WRITE IN THIS MARGIN\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
           "type": "explain",
           "answerType": "fill_blank",
@@ -353,13 +339,9 @@
           "parts": []
         }
       ],
-      "marks": 10,
+      "marks": 28,
       "text": [
-        "17 20 5 9",
-        "Complete the trace table using the data given in the array.",
-        "A B List[1] List[2] List[3] List[4] List[5] T",
-        "15 17 20 5 9",
-        "[5]"
+        "OUTPUT \"Minimum value is \", Min"
       ]
     }
   ]

@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "In database design:\nFor\nExaminer's\nUse",
+          "text": "In database design:",
           "marks": null,
           "type": "design",
           "answerType": "long_answer",
@@ -47,9 +47,9 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "A company offers training courses to its employees.\nFor\nExaminer's\nUse\n• Each employee is given a unique EmployeeID\n• Each course has a unique CourseCode\n• Over a period of time an employee will enrol on many courses\n• Each course will be attended by many employees\n• An employee never enrols on a particular course more than once.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
+          "text": "A company offers training courses to its employees.\n• Each employee is given a unique EmployeeID\n• Each course has a unique CourseCode\n• Over a period of time an employee will enrol on many courses\n• Each course will be attended by many employees\n• An employee never enrols on a particular course more than once.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -100,9 +100,9 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "A binary pattern can be interpreted in a number of different ways.\nFor\nExaminer's\nUse\nConsider the binary pattern 1001 1010",
+          "text": "A binary pattern can be interpreted in a number of different ways.\nConsider the binary pattern 1001 1010",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -188,9 +188,9 @@
             {
               "id": "2biv",
               "label": "(iv)",
-              "text": "Show the binary pattern for the largest and smallest positive numbers which can\nFor\nExaminer's\nbe represented with this 12-bit floating point representation.\nUse\nLargest positive number in binary:\nSmallest positive number in binary:",
+              "text": "Show the binary pattern for the largest and smallest positive numbers which can\nbe represented with this 12-bit floating point representation.\nLargest positive number in binary:\nSmallest positive number in binary:",
               "marks": 4,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -254,9 +254,9 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "A programmer writing low-level code has the choice of using either machine code or\nFor\nassembly language. Examiner's\nUse",
+          "text": "A programmer writing low-level code has the choice of using either machine code or\nassembly language. Examiner's",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -398,10 +398,7 @@
       "marks": 9,
       "text": [
         "The two types of software which are used to translate high-level language programs are a",
-        "For",
-        "Examiner's",
-        "compiler and an interpreter.",
-        "Use"
+        "compiler and an interpreter."
       ]
     },
     {
@@ -411,7 +408,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Describe the operation of a stack data structure.\nFor\nExaminer's\nUse",
+          "text": "Describe the operation of a stack data structure.",
           "marks": 1,
           "type": "describe",
           "answerType": "long_answer",
@@ -422,7 +419,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "A stack is to be implemented to store string data using the following variables.\nVariable Data Type Description\nMyStack ARRAY[100]: STRING Stores the string data values\nStores the index position of the\nMyStack array for the current ‘top of\nTopOfStack INTEGER\nstack’ position. TopOfStack has\nvalue -1 when the stack is empty.\nThe diagram below shows the state of the array and TopOfStack after the following:\n• three values have been pushed on to the stack (Owl, Lion and Tiger)\n• a value is popped from the stack\n• then the value Leopard is pushed on to the stack.\nMyStack\n0 Owl\n1 Lion\nTopOfStack\n2 Tiger Leopard\nPopping a single value is to be implemented with the procedure PopFromStack.\nFor\nExaminer's\nUse\nPROCEDURE PopFromStack\nIF\nTHEN\nOUTPUT “Stack is already EMPTY”\nELSE\nOUTPUT MyStack [ ] “is popped”\nTopOfStack ←\nENDIF\nENDPROCEDURE\nComplete the pseudocode by filling in the three answer spaces.",
+          "text": "A stack is to be implemented to store string data using the following variables.\nVariable Data Type Description\nMyStack ARRAY[100]: STRING Stores the string data values\nStores the index position of the\nMyStack array for the current ‘top of\nTopOfStack INTEGER\nstack’ position. TopOfStack has\nvalue -1 when the stack is empty.\nThe diagram below shows the state of the array and TopOfStack after the following:\n• three values have been pushed on to the stack (Owl, Lion and Tiger)\n• a value is popped from the stack\n• then the value Leopard is pushed on to the stack.\nMyStack\n0 Owl\n1 Lion\nTopOfStack\n2 Tiger Leopard\nPopping a single value is to be implemented with the procedure PopFromStack.\nPROCEDURE PopFromStack\nIF\nTHEN\nOUTPUT “Stack is already EMPTY”\nELSE\nOUTPUT MyStack [ ] “is popped”\nTopOfStack ←\nENDIF\nENDPROCEDURE\nComplete the pseudocode by filling in the three answer spaces.",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",
@@ -475,7 +472,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Multiprogramming is the ability to have more than one program loaded in the main\nFor\nmemory at the same time. Examiner's\nUse\nThe operating system for a computer which supports multiprogramming must contain a\nprogram module for management of the main memory.\nDescribe two strategies for memory management.",
+          "text": "Multiprogramming is the ability to have more than one program loaded in the main\nmemory at the same time. Examiner's\nThe operating system for a computer which supports multiprogramming must contain a\nprogram module for management of the main memory.\nDescribe two strategies for memory management.",
           "marks": 4,
           "type": "describe",
           "answerType": "long_answer",
@@ -507,7 +504,7 @@
             {
               "id": "6ci",
               "label": "(i)",
-              "text": "Describe what is meant by an interrupt.\nFor\nExaminer's\nUse",
+              "text": "Describe what is meant by an interrupt.",
               "marks": 2,
               "type": "describe",
               "answerType": "long_answer",
@@ -539,7 +536,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Name and describe two different media used for the transmission of data across a\nFor\nlocal area network. Examiner's\nUse\nMedium 1\nDescription\nMedium 2\nDescription",
+          "text": "Name and describe two different media used for the transmission of data across a\nlocal area network. Examiner's\nMedium 1\nDescription\nMedium 2\nDescription",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -550,9 +547,9 @@
         {
           "id": "7b",
           "label": "(b)",
-          "text": "A library has a central computer at its Head Office. There are libraries in three towns:\nFor\nExaminer's\nTown A, Town B and Town C. Each has a single computer connected to the Head\nUse\nOffice computer over a Wide Area Network (WAN) using a star topology.",
+          "text": "A library has a central computer at its Head Office. There are libraries in three towns:\nTown A, Town B and Town C. Each has a single computer connected to the Head\nOffice computer over a Wide Area Network (WAN) using a star topology.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -603,9 +600,9 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "A high-level programming language has the following built-in function\nFor\nExaminer's\nCharacterCount defined as follows:\nUse\nCharacterCount(ThisChar: CHAR, ThisString: STRING) RETURNS INTEGER\nreturns an integer value for the number of times the character ThisChar occurs within\nThisString.\nCHAR is a data type for a single character.\nFor Example:\nCharacterCount(‘J’, “James Joyce”) will return the integer 2\nAn error is returned if the function is not properly called.",
+          "text": "A high-level programming language has the following built-in function\nCharacterCount defined as follows:\nCharacterCount(ThisChar: CHAR, ThisString: STRING) RETURNS INTEGER\nreturns an integer value for the number of times the character ThisChar occurs within\nThisString.\nCHAR is a data type for a single character.\nFor Example:\nCharacterCount(‘J’, “James Joyce”) will return the integer 2\nAn error is returned if the function is not properly called.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -659,9 +656,9 @@
         {
           "id": "8b",
           "label": "(b)",
-          "text": "What is returned from the following function calls?\nFor\nExaminer's\nUse",
+          "text": "What is returned from the following function calls?",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -746,10 +743,7 @@
       "marks": 6,
       "text": [
         "A declarative programming language is to be used to represent the knowledge base shown",
-        "For",
-        "Examiner's",
         "below:",
-        "Use",
         "1. continent(asia).",
         "2. continent(north_america).",
         "3. continent(australasia).",

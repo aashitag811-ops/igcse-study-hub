@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w23",
   "component": "41",
-  "totalMarks": 69,
+  "totalMarks": 75,
   "questionCount": 3,
   "questions": [
     {
@@ -227,7 +227,7 @@
               "id": "2ciii",
               "label": "(iii)",
               "text": "The pseudocode algorithm for the procedure TotalData():\n• uses Dequeue() to remove an ID from the queue\n• checks whether a RecordData with the returned ID exists in Records\n• increments the total for that ID in the record if the ID already exists\n• creates a new record and stores it in Records if the ID does not exist.\nPROCEDURE TotalData()\nDECLARE DataAccessed : STRING\nDECLARE Flag : BOOLEAN\nDataAccessed ← Dequeue()\nFlag ← FALSE\nIF NumberRecords = 0 THEN\nRecords[NumberRecords].ID ← DataAccessed\nRecords[NumberRecords].Total ← 1\nFlag ← TRUE\nNumberRecords ← NumberRecords + 1\nELSE\nFOR X ← 0 TO NumberRecords - 1\nIF Records[X].ID = DataAccessed THEN\nRecords[X].Total ← Records[X].Total + 1\nFlag ← TRUE\nENDIF\nNEXT X\nENDIF\nIF Flag = FALSE THEN\nRecords[NumberRecords].ID ← DataAccessed\nRecords[NumberRecords].Total ← 1\nNumberRecords ← NumberRecords + 1\nENDIF\nENDPROCEDURE\nWrite program code for the procedure TotalData().\nSave your program.\nCopy and paste the program code into part 2(c)(iii) in the evidence document.",
-              "marks": null,
+              "marks": 5,
               "type": "write",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -240,7 +240,7 @@
           "id": "2d",
           "label": "(d)",
           "text": "The procedure OutputRecords() outputs the ID and total of each record in Records in the\nformat:\nID 1234 Total 4\nWrite program code for OutputRecords().\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
-          "marks": null,
+          "marks": 1,
           "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -282,7 +282,7 @@
           ]
         }
       ],
-      "marks": 23,
+      "marks": 29,
       "text": [
         "A linear queue is implemented using the 1D array, Queue. The index of the first element in the",
         "array is 0."
@@ -428,7 +428,7 @@
             {
               "id": "3eii",
               "label": "(ii)",
-              "text": "Test your program twice with the following inputs.\nTest 1: jack right\nTest 2: karla down\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Test your program twice with the following inputs.\nTest 1: jack right\nTest 2: karla down\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 2,
               "type": "other",
               "answerType": "short_answer",

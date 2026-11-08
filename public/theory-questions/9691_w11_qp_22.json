@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w11",
   "component": "22",
-  "totalMarks": 65,
+  "totalMarks": 67,
   "questionCount": 3,
   "questions": [
     {
@@ -46,8 +46,8 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "Nathan will write the PlaceOrder module and Andre will write the ReceiveGoods\nFor\nmodule. Nathan will use the identifier OrderValue for the value of an order placed. Examiner's\nUse\nAndre will use the identifier OrderValue for the total value of the received goods.\nExplain how they can both use the same identifier and not cause a problem when the\nprogram is run.",
-          "marks": null,
+          "text": "Nathan will write the PlaceOrder module and Andre will write the ReceiveGoods\nmodule. Nathan will use the identifier OrderValue for the value of an order placed. Examiner's\nAndre will use the identifier OrderValue for the total value of the received goods.\nExplain how they can both use the same identifier and not cause a problem when the\nprogram is run.",
+          "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -102,9 +102,9 @@
         {
           "id": "1f",
           "label": "(f)",
-          "text": "One line in the program reads\nFor\nExaminer's\nUse\nSalesTax = a – b * 0.1",
+          "text": "One line in the program reads\nSalesTax = a – b * 0.1",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -168,12 +168,10 @@
           ]
         }
       ],
-      "marks": 12,
+      "marks": 14,
       "text": [
         "Nathan is designing a software solution for stock control in a mobile phone shop. He has a",
-        "For",
         "colleague called Andre who will help him write the program. Nathan decides to modularise Examiner's",
-        "Use",
         "the solution."
       ]
     },
@@ -216,7 +214,7 @@
             {
               "id": "2hiii",
               "label": "(iii)",
-              "text": "Describe a possible problem that could occur if ContractLength is not validated.\n\n2 Ahmed is writing a program to record the data of members of the school football squad.\nFor\nThe input data will be validated. One input is the number of years a member has played for Examiner's\nUse\nthe team. This will be 0, 1 or 2.\nThe flowchart for the validation of number of years is shown below.\nINPUT\nNumberOfYears\nCASE:\nNumberOfYears\nOUTPUT ‘Invalid OUTPUT ‘Valid\ndata. Try again’ data entered’",
+              "text": "Describe a possible problem that could occur if ContractLength is not validated.\n2 Ahmed is writing a program to record the data of members of the school football squad.\nThe input data will be validated. One input is the number of years a member has played for Examiner's\nthe team. This will be 0, 1 or 2.\nThe flowchart for the validation of number of years is shown below.\nINPUT\nNumberOfYears\nCASE:\nNumberOfYears\nOUTPUT ‘Invalid OUTPUT ‘Valid\ndata. Try again’ data entered’",
               "marks": 2,
               "type": "describe",
               "answerType": "long_answer",
@@ -263,9 +261,9 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "In a high-level language, write the code that will produce the validation process shown\nFor\nin the flowchart. Examiner's\nUse\nLanguage\nCode",
+          "text": "In a high-level language, write the code that will produce the validation process shown\nin the flowchart. Examiner's\nLanguage\nCode",
           "marks": 5,
-          "type": "use",
+          "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -296,9 +294,9 @@
         {
           "id": "2e",
           "label": "(e)",
-          "text": "Ahmed thinks it will be a good idea to allow only five attempts at getting the input data\nFor\ncorrect. If it is not a valid entry after five attempts, then a message 'Please check Examiner's\nUse\nwhich values are allowed' should be output.\nModify the flowchart to include this additional check.\nINPUT\nNumberOfYears\nCASE:\nNumberOfYears\nOUTPUT ‘Invalid OUTPUT ‘Valid\ndata. Try again’ data entered’",
+          "text": "Ahmed thinks it will be a good idea to allow only five attempts at getting the input data\ncorrect. If it is not a valid entry after five attempts, then a message 'Please check Examiner's\nwhich values are allowed' should be output.\nModify the flowchart to include this additional check.\nINPUT\nNumberOfYears\nCASE:\nNumberOfYears\nOUTPUT ‘Invalid OUTPUT ‘Valid\ndata. Try again’ data entered’",
           "marks": 5,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -318,7 +316,7 @@
         {
           "id": "2g",
           "label": "(g)",
-          "text": "The squad has 30 members. Ahmed stores the records in an array called Squad. To\nFor\ncalculate how many females there are he designs this pseudocode. Examiner's\nUse\nNoOfFemales ← 0\nIndex ← 1\nWHILE Index < 30\nIF Squad[Index].Sex = 'f'\nTHEN\nNoOfFemales ← NoOfFemales + 1\nENDIF\nIndex ← Index + 1\nENDWHILE\nThis pseudocode will only consider the first 29 records in the array.",
+          "text": "The squad has 30 members. Ahmed stores the records in an array called Squad. To\ncalculate how many females there are he designs this pseudocode. Examiner's\nNoOfFemales ← 0\nIndex ← 1\nWHILE Index < 30\nIF Squad[Index].Sex = 'f'\nTHEN\nNoOfFemales ← NoOfFemales + 1\nENDIF\nIndex ← Index + 1\nENDWHILE\nThis pseudocode will only consider the first 29 records in the array.",
           "marks": null,
           "type": "calculate",
           "answerType": "calculate",
@@ -417,7 +415,7 @@
         {
           "id": "3d",
           "label": "(d)",
-          "text": "High-level languages also use procedures.\nFor\nExaminer's\nUse\nDescribe the features of a procedure.",
+          "text": "High-level languages also use procedures.\nDescribe the features of a procedure.",
           "marks": 3,
           "type": "describe",
           "answerType": "long_answer",
@@ -462,7 +460,7 @@
         {
           "id": "3f",
           "label": "(f)",
-          "text": "Aisha finds out that there is a string manipulation function called CONCATENATION.\nFor\nExaminer's\nUse\nState what is meant by concatenation.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Aisha finds out that there is a string manipulation function called CONCATENATION.\nState what is meant by concatenation.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -474,9 +472,7 @@
       "marks": 16,
       "text": [
         "Aisha is learning about manipulating strings in a high-level programming language.",
-        "For",
         "She has an idea that she wants to try. She produces the following design in pseudocode: Examiner's",
-        "Use",
         "FUNCTION Surprise(MyWord : STRING) : STRING",
         "LOOP FOR i ← 1 TO LENGTH(MyWord)",
         "TempNo ← ASCII(MyWord[i]) + 1",

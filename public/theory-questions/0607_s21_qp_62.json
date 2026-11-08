@@ -3,52 +3,36 @@
   "subjectCode": "0607",
   "session": "s21",
   "component": "62",
-  "totalMarks": 53,
+  "totalMarks": 60,
   "questionCount": 9,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 2,
       "text": [
         "The points which are next closest to (0, 0) are its 2nd nearest neighbours.",
         "One of these points has coordinates (1, 1).",
-        "Find the coordinates of the other 2nd nearest neighbours.",
-        "[2]"
+        "Find the coordinates of the other 2nd nearest neighbours."
       ]
     },
     {
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 2,
       "text": [
         "The distance from (0, 0) to its 1st nearest neighbour is 1.",
-        "Show that the distance from (0, 0) to (1, 1), a 2nd nearest neighbour, is 2.",
-        "[2]"
+        "Show that the distance from (0, 0) to (1, 1), a 2nd nearest neighbour, is 2."
       ]
     },
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "The table shows information about the nth nearest neighbours to (0, 0) for values of n from 1 to 11.",
-        "d is the distance from (0, 0) to a nearest neighbour.",
-        "n 1 2 3 4 5 6 7 8 9 10 11",
-        "d 1 2 4 5 8 9 10 13 16 17 18",
-        "1 2 8 3 10 13 4 17 18",
-        "Number of nth"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Complete the table.",
           "marks": 2,
@@ -59,7 +43,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "Is d directly proportional to n?\nShow how you decide.",
           "marks": 2,
@@ -70,12 +54,12 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
-          "text": "The 12th nearest neighbours to (0, 0) are at a distance h, where h = 20.\nFind the coordinates of all these nearest neighbours.\n\n4 Here is a rectangular pattern of points on a square grid.\n– – – – – – – –\n8 7 6 5 4 3 2 1 1 2 3 4 5 6 7 8\n– 2\nNearest neighbour distances can be found for these points.\nThe two 1st nearest neighbours to (0, 0) have circles around them.\nThe four 2nd nearest neighbours to (0, 0) have squares around them.\nThe four 3rd nearest neighbours to (0, 0) have triangles around them.\nComplete this table.\nNearest neighbour 1st 2nd 3rd 4th 5th 6th 7th\nd 1 4 5 9 13 16\nNumber of nearest neighbours 2 4 4 2 4 4",
+          "text": "The 12th nearest neighbours to (0, 0) are at a distance h, where h = 20.\nFind the coordinates of all these nearest neighbours.",
           "marks": 3,
-          "type": "complete",
-          "answerType": "long_answer",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -83,8 +67,34 @@
       ],
       "marks": 7,
       "text": [
-        "4 4 8 8 4 8 4",
+        "The table shows information about the nth nearest neighbours to (0, 0) for values of n from 1 to 11.",
+        "d is the distance from (0, 0) to a nearest neighbour.",
+        "n 1 2 3 4 5 6 7 8 9 10 11",
+        "d 1 2 4 5 8 9 10 13 16 17 18",
+        "1 2 8 3 10 13 4 17 18",
+        "Number of nth",
+        "4 4 4 8 8 4 8 4",
         "nearest neighbours"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": 3,
+      "text": [
+        "Here is a rectangular pattern of points on a square grid.",
+        "– – – – – – – –",
+        "8 7 6 5 4 3 2 1 1 2 3 4 5 6 7 8",
+        "– 2",
+        "Nearest neighbour distances can be found for these points.",
+        "The two 1st nearest neighbours to (0, 0) have circles around them.",
+        "The four 2nd nearest neighbours to (0, 0) have squares around them.",
+        "The four 3rd nearest neighbours to (0, 0) have triangles around them.",
+        "Complete this table.",
+        "Nearest neighbour 1st 2nd 3rd 4th 5th 6th 7th",
+        "d 1 4 5 9 13 16",
+        "Number of nearest neighbours 2 4 4 2 4 4"
       ]
     },
     {
@@ -173,7 +183,7 @@
         {
           "id": "5d",
           "label": "(d)",
-          "text": "Use the formula in part (c) to calculate the distance of a 6th nearest neighbour from (0, 0).\nGive your answer as a square root.\n\n2 2",
+          "text": "Use the formula in part (c) to calculate the distance of a 6th nearest neighbour from (0, 0).\nGive your answer as a square root.\n2 2",
           "marks": 3,
           "type": "give",
           "answerType": "short_answer",
@@ -184,7 +194,7 @@
         {
           "id": "5e",
           "label": "(e)",
-          "text": "Use the formula d = a + b + ab to show that it is not possible for a nearest neighbour to\nbe a distance of 14 from (0, 0) on a triangular grid.\n\nThe modelling task starts on the next page.\nB MODELLING (QUESTIONS 6 TO 9)\nHIGH RIVER FLOW (30 marks)\nYou are advised to spend no more than 50 minutes on this part.\nThis task looks at estimating the probability of high river flows.\nPlanners need to estimate the probability of extreme events such as high river flow.\nTo do this they use the return period, R years.\nThis is an estimate of the number of years before they expect another high river flow.\nA model for R is\nn + 1\nR =\nwhere\nn is the number of years for which there are river flow results,\nh is the number of times that high river flow occurs during the n years.\nThe probability of high river flow occurring in any year is .\nExample\nOn 3 occasions during a period of 65 years, a river flow was greater than\n4000 cubic metres per second (m /s).\nSo, the return period for a water flow greater than 4000 m /s is\n65 + 1 66\nR = =\n3 3\n= 22 years.\nThis is not very likely in a year, but very likely in the lifetime of a bridge designed to last for 100 years.\nThe probability of a river flow greater than 4000 m /s in any year is .",
+          "text": "Use the formula d = a + b + ab to show that it is not possible for a nearest neighbour to\nbe a distance of 14 from (0, 0) on a triangular grid.\nThe modelling task starts on the next page.\nB MODELLING (QUESTIONS 6 TO 9)\nHIGH RIVER FLOW (30 marks)\nYou are advised to spend no more than 50 minutes on this part.\nThis task looks at estimating the probability of high river flows.\nPlanners need to estimate the probability of extreme events such as high river flow.\nTo do this they use the return period, R years.\nThis is an estimate of the number of years before they expect another high river flow.\nA model for R is\nn + 1\nR =\nwhere\nn is the number of years for which there are river flow results,\nh is the number of times that high river flow occurs during the n years.\nThe probability of high river flow occurring in any year is .\nExample\nOn 3 occasions during a period of 65 years, a river flow was greater than\n4000 cubic metres per second (m /s).\nSo, the return period for a water flow greater than 4000 m /s is\n65 + 1 66\nR = =\n3 3\n= 22 years.\nThis is not very likely in a year, but very likely in the lifetime of a bridge designed to last for 100 years.\nThe probability of a river flow greater than 4000 m /s in any year is .",
           "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
@@ -427,7 +437,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "Give a reason why 8 is the best integer estimate for b when p = .\nUse part (a) and values from the table for the Missouri River on page 12 in your answer.\n\nfe\n- o p",
+          "text": "Give a reason why 8 is the best integer estimate for b when p = .\nUse part (a) and values from the table for the Missouri River on page 12 in your answer.\nfe\n- o p",
           "marks": 1,
           "type": "give",
           "answerType": "short_answer",
@@ -481,7 +491,7 @@
             {
               "id": "9civ",
               "label": "(iv)",
-              "text": "Which value of a gives the best model for the Missouri River data on page 12?\nGive a reason for your answer.\na = ______ because ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "Which value of a gives the best model for the Missouri River data on page 12?\nGive a reason for your answer.\na = ______ because ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 2,
               "type": "give",
               "answerType": "fill_blank",

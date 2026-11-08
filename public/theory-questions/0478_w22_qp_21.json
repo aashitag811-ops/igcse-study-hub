@@ -3,8 +3,8 @@
   "subjectCode": "0478",
   "session": "w22",
   "component": "21",
-  "totalMarks": 29,
-  "questionCount": 13,
+  "totalMarks": 26,
+  "questionCount": 19,
   "questions": [
     {
       "id": "1",
@@ -69,8 +69,8 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "Explain how your program completes these parts of Task 2:\n• Count the number of members of each membership type who did not pay the annual\nfee.\n• Display these counts as a percentage of the total number of members for each\nmembership type.\nAny programming statements that you include in your answer must be fully explained.\n\nSection B starts on page 8.\nSection B",
-          "marks": null,
+          "text": "Explain how your program completes these parts of Task 2:\n• Count the number of members of each membership type who did not pay the annual\nfee.\n• Display these counts as a percentage of the total number of members for each\nmembership type.\nAny programming statements that you include in your answer must be fully explained.\nSection B starts on page 8.\nSection B",
+          "marks": 5,
           "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -78,7 +78,7 @@
           "parts": []
         }
       ],
-      "marks": 15,
+      "marks": 20,
       "text": [
         "All variables, constants and other identifiers must have meaningful names."
       ]
@@ -202,11 +202,66 @@
     {
       "id": "13",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Please enter next reading \""
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count 100"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "REPEAT"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"There are \", .............................................................................,",
+        "\" readings of \", Count"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Count ..................................................................................................................."
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
       "parts": [
         {
-          "id": "13b",
+          "id": "20b",
           "label": "(b)",
-          "text": "Describe how the algorithm could be changed so that it does not output any counts of zero.\n\n3 (a) A PIN (personal identification number) is input into a banking app by the user. Before the PIN\nis accepted, the following validation checks are performed:\n• check 1 – each character must be a digit\n• check 2 – there must be exactly four digits\n• check 3 – the value of the PIN must be between 1000 and 9999 inclusive.\nDescribe each validation check.\nCheck 1 ______\nCheck 2 ______\nCheck 3 ______",
+          "text": "Describe how the algorithm could be changed so that it does not output any counts of zero.\n3 (a) A PIN (personal identification number) is input into a banking app by the user. Before the PIN\nis accepted, the following validation checks are performed:\n• check 1 – each character must be a digit\n• check 2 – there must be exactly four digits\n• check 3 – the value of the PIN must be between 1000 and 9999 inclusive.\nDescribe each validation check.\nCheck 1 ______\nCheck 2 ______\nCheck 3 ______",
           "marks": 3,
           "type": "describe",
           "answerType": "fill_blank",
@@ -215,9 +270,9 @@
           "parts": []
         },
         {
-          "id": "13b",
+          "id": "20b",
           "label": "(b)",
-          "text": "The PIN can be changed by the user.\nDescribe how the new PIN could be verified before use.\n\nQuestion 4 starts on page 12.\n4 This algorithm makes sure that there are enough fresh bread rolls available for customers to buy.\nSTART\nStock 50\nTotal 0\nINPUT Sold\nYes\nIS Sold =\nOUTPUT Total\n–1?\nNo\nSTOP\nStock Stock – Sold\nYes\nOUTPUT\nIS Stock\n\"Add new stock\"\n< 20?\nNo\nTotal Total + Sold Stock Stock + 50",
+          "text": "The PIN can be changed by the user.\nDescribe how the new PIN could be verified before use.\nQuestion 4 starts on page 12.\n4 This algorithm makes sure that there are enough fresh bread rolls available for customers to buy.\nSTART\nStock 50\nTotal 0\nINPUT Sold\nYes\nIS Sold =\nOUTPUT Total\n–1?\nNo\nSTOP\nStock Stock – Sold\nYes\nOUTPUT\nIS Stock\n\"Add new stock\"\n< 20?\nNo\nTotal Total + Sold Stock Stock + 50",
           "marks": 3,
           "type": "describe",
           "answerType": "long_answer",
@@ -226,10 +281,10 @@
           "parts": []
         },
         {
-          "id": "13a",
+          "id": "20a",
           "label": "(a)",
           "text": "Complete the trace table for the algorithm using this input data:\n24, 12, 6, 30, 12, 18, –1, 24\nSold Stock Total\nOUTPUT",
-          "marks": null,
+          "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -237,9 +292,9 @@
           "parts": []
         },
         {
-          "id": "13b",
+          "id": "20b",
           "label": "(b)",
-          "text": "Identify the problem that will occur if the input data starts with a value of 70.\nExplain how you would correct this problem.\n\n5 A database table, WAREHOUSE, is used to keep a record of items for sale. The table has these\nfields:\n• ItemCode – code to identify each type of item\n• Description – brief description of each item\n• Manufacturer – name of manufacturer\n• Level – number in stock\n• Price – price in dollars ($).",
+          "text": "Identify the problem that will occur if the input data starts with a value of 70.\nExplain how you would correct this problem.\n5 A database table, WAREHOUSE, is used to keep a record of items for sale. The table has these\nfields:\n• ItemCode – code to identify each type of item\n• Description – brief description of each item\n• Manufacturer – name of manufacturer\n• Level – number in stock\n• Price – price in dollars ($).",
           "marks": 3,
           "type": "name",
           "answerType": "short_answer",
@@ -248,7 +303,7 @@
           "parts": []
         },
         {
-          "id": "13a",
+          "id": "20a",
           "label": "(a)",
           "text": "State which field you would choose for the primary key. Give a reason for your choice.\nField ______\nReason ______",
           "marks": 2,
@@ -259,9 +314,9 @@
           "parts": []
         },
         {
-          "id": "13b",
+          "id": "20b",
           "label": "(b)",
-          "text": "Complete the query-by-example grid to display only the item code and the manufacturer\nwhere the number in stock is below 10.\nField:\nTable:\nSort:\nShow:\no o o o\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete the query-by-example grid to display only the item code and the manufacturer\nwhere the number in stock is below 10.\nField:\nTable:\nSort:\nShow:\no o o o\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
           "type": "complete",
           "answerType": "long_answer",
@@ -270,17 +325,9 @@
           "parts": []
         }
       ],
-      "marks": 14,
+      "marks": 6,
       "text": [
-        "OUTPUT \"Please enter next reading \"",
-        "15 ENDWHILE",
-        "16 Count 100",
-        "17 REPEAT",
-        "18 OUTPUT \"There are \", .............................................................................,",
-        "\" readings of \", Count",
-        "19 Count ...................................................................................................................",
-        "20 UNTIL Count = 0",
-        "[6]"
+        "UNTIL Count = 0"
       ]
     }
   ]

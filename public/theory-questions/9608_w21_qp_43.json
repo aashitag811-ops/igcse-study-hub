@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w21",
   "component": "43",
-  "totalMarks": 73,
+  "totalMarks": 83,
   "questionCount": 14,
   "questions": [
     {
@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Show the state of DataStack and its pointer after the following functions are executed on\nthe current contents.\nPop()\nPop()\nPush(19)\nPop()\nPush(50)\nTopPointer 3 Index Data\n\n\n\n\n[3] 8\n[2] 6\n\n[0] 10",
+          "text": "Show the state of DataStack and its pointer after the following functions are executed on\nthe current contents.\nPop()\nPop()\nPush(19)\nPop()\nPush(50)\nTopPointer 3 Index Data\n[3] 8\n[2] 6\n[0] 10",
           "marks": 7,
           "type": "state",
           "answerType": "short_answer",
@@ -58,21 +58,20 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "A grade generator program takes the mark a student obtained in a test as input.",
         "The program calculates and outputs the grade that matches the mark. The grade is either A, B, C,",
         "D or U.",
         "Complete the following JSP structure diagram for the grade generator program.",
-        "GradeGenerator",
-        "[4]"
+        "GradeGenerator"
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "The following pseudocode algorithm performs a binary search on the sorted array ThisArray.",
         "The algorithm returns either the location of SearchItem in the array, or –1 if SearchItem is not",
@@ -103,8 +102,7 @@
         "ENDIF",
         "ENDIF",
         "ENDWHILE",
-        "ENDFUNCTION",
-        "[6]"
+        "ENDFUNCTION"
       ]
     },
     {
@@ -246,7 +244,7 @@
         {
           "id": "14d",
           "label": "(d)",
-          "text": "Write a rule to find whether a teacher X is free in a specific time slot Y on day Z.\nIsTeacherFree(X, Z, Y)\nIF\n\n5 The recursive algorithm for the Recursion() function is defined in pseudocode as follows:\nFUNCTION Recursion(A, B : INTEGER) RETURNS INTEGER\nIF A <= 100\nTHEN\nRETURN 1\nELSE\nIF A > B\nTHEN\nRETURN 5 + Recursion(A - 1, B)\nELSE\nRETURN 10 + Recursion(A – 10, B)\nENDIF\nENDIF\nENDFUNCTION",
+          "text": "Write a rule to find whether a teacher X is free in a specific time slot Y on day Z.\nIsTeacherFree(X, Z, Y)\nIF\n5 The recursive algorithm for the Recursion() function is defined in pseudocode as follows:\nFUNCTION Recursion(A, B : INTEGER) RETURNS INTEGER\nIF A <= 100\nTHEN\nRETURN 1\nELSE\nIF A > B\nTHEN\nRETURN 5 + Recursion(A - 1, B)\nELSE\nRETURN 10 + Recursion(A – 10, B)\nENDIF\nENDIF\nENDFUNCTION",
           "marks": 4,
           "type": "write",
           "answerType": "short_answer",
@@ -268,7 +266,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "Rewrite the function Recursion() in pseudocode, using an iterative algorithm.\n\n6 Kobi is writing an application that uses a record structure to store data.",
+          "text": "Rewrite the function Recursion() in pseudocode, using an iterative algorithm.\n6 Kobi is writing an application that uses a record structure to store data.",
           "marks": 4,
           "type": "other",
           "answerType": "short_answer",
@@ -335,7 +333,7 @@
         {
           "id": "14d",
           "label": "(d)",
-          "text": "Give one benefit and one drawback of Kobi using a program generator whilst developing his\napplication.\nBenefit ______\nDrawback ______\n\n7 Sonya is writing a computer program that requires a user input. The user should input an integer\nbetween 1 and 100. Sonya wants to use exception handling.",
+          "text": "Give one benefit and one drawback of Kobi using a program generator whilst developing his\napplication.\nBenefit ______\nDrawback ______\n7 Sonya is writing a computer program that requires a user input. The user should input an integer\nbetween 1 and 100. Sonya wants to use exception handling.",
           "marks": 2,
           "type": "give",
           "answerType": "fill_blank",
@@ -368,7 +366,7 @@
         {
           "id": "14c",
           "label": "(c)",
-          "text": "Give two other examples of where exception handling can be used in a program.\n\n8 Data entered into a computer is stored in an ordered binary tree.\nThe binary tree is stored in a 2D array, BinaryTree.\nThe first element of the array is index 0.",
+          "text": "Give two other examples of where exception handling can be used in a program.\n8 Data entered into a computer is stored in an ordered binary tree.\nThe binary tree is stored in a 2D array, BinaryTree.\nThe first element of the array is index 0.",
           "marks": 2,
           "type": "give",
           "answerType": "short_answer",
@@ -390,7 +388,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "A post-order tree traversal outputs the left node, then the right node, then the root node.\nIn the tree given in part (a), the post-order tree traversal would output:\n2 43 35 52 77 67 50\nComplete the following recursive pseudocode algorithm PostOrder().\nPROCEDURE PostOrder(………………………………………………… : INTEGER)\nIF BinaryTree[RootNode, 0] <> -1\nTHEN\n………………………………………………… (BinaryTree[RootNode, …………………………………………………])\nENDIF\nIF BinaryTree[RootNode, 2] <> -1\nTHEN\n………………………………………………… (BinaryTree[RootNode, 2])\nENDIF\nOUTPUT BinaryTree[RootNode, …………………………………………………]\nENDPROCEDURE\n\n9 A program uses a hashing algorithm to store data in the global array, StoredData.\nThe first element of the array is index 0. The array has 10 000 integer elements.",
+          "text": "A post-order tree traversal outputs the left node, then the right node, then the root node.\nIn the tree given in part (a), the post-order tree traversal would output:\n2 43 35 52 77 67 50\nComplete the following recursive pseudocode algorithm PostOrder().\nPROCEDURE PostOrder(………………………………………………… : INTEGER)\nIF BinaryTree[RootNode, 0] <> -1\nTHEN\n………………………………………………… (BinaryTree[RootNode, …………………………………………………])\nENDIF\nIF BinaryTree[RootNode, 2] <> -1\nTHEN\n………………………………………………… (BinaryTree[RootNode, 2])\nENDIF\nOUTPUT BinaryTree[RootNode, …………………………………………………]\nENDPROCEDURE\n9 A program uses a hashing algorithm to store data in the global array, StoredData.\nThe first element of the array is index 0. The array has 10 000 integer elements.",
           "marks": 5,
           "type": "complete",
           "answerType": "long_answer",
@@ -412,7 +410,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "The hashing algorithm calculates the remainder after dividing the data by 1000, and then\nadds 6 to it.\nThe function AddItem()takes the data as a parameter. It calculates the index to store the\ndata using the hashing algorithm.\nIf there is a collision, the function:\n• checks the next index until it finds an index that does not have data in it\n• continues to search from the start of the array, if it reaches the end of the array.\nThe function returns TRUE if the item was successfully added, and FALSE if the array is full.\nWrite program code for the function AddItem().\nProgramming language ______\nProgram code\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "The hashing algorithm calculates the remainder after dividing the data by 1000, and then\nadds 6 to it.\nThe function AddItem()takes the data as a parameter. It calculates the index to store the\ndata using the hashing algorithm.\nIf there is a collision, the function:\n• checks the next index until it finds an index that does not have data in it\n• continues to search from the start of the array, if it reaches the end of the array.\nThe function returns TRUE if the item was successfully added, and FALSE if the array is full.\nWrite program code for the function AddItem().\nProgramming language ______\nProgram code\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 7,
           "type": "write",
           "answerType": "fill_blank",

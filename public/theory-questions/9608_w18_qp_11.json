@@ -4,7 +4,7 @@
   "session": "w18",
   "component": "11",
   "totalMarks": 75,
-  "questionCount": 10,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -390,46 +390,20 @@
       "marks": null,
       "text": [
         "A web page includes the following PHP and HTML code.",
-        "01 <?php",
+        "01  ≤ php",
         "02 if(isset($_GET['age'])) {",
         "03 echo \"Result: \", allowed($_GET['age']);",
         "04 } else {",
-        "05 ?>"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "<form action=\"#\" method=\"get\">"
+        "05 ?>",
+        "07 <form action=\"#\" method=\"get\">"
       ]
     },
     {
       "id": "08",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Enter Age: <input type=\"text\" name=\"age\" /><br/>"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "<input type=\"submit\" value=\"Calculate\" />"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
       "parts": [
         {
-          "id": "10a",
+          "id": "08a",
           "label": "(a)",
           "text": "Name two identifiers used in the PHP code.",
           "marks": 2,
@@ -440,7 +414,7 @@
           "parts": []
         },
         {
-          "id": "10b",
+          "id": "08b",
           "label": "(b)",
           "text": "Write the value assigned to $message if the user types 30 in the text box.",
           "marks": 1,
@@ -451,7 +425,7 @@
           "parts": []
         },
         {
-          "id": "10c",
+          "id": "08c",
           "label": "(c)",
           "text": "Explain the purpose of the code in line 18.",
           "marks": 2,
@@ -462,9 +436,9 @@
           "parts": []
         },
         {
-          "id": "10d",
+          "id": "08d",
           "label": "(d)",
-          "text": "The PHP code in a web page uses server-side scripting.\nList the sequence of events that take place when a user requests a web page containing PHP\ncode.\n\nQuestion 7 begins on the next page.\n7 A movie theatre has a relational database that stores the movie schedule, and information about\nthe movies. The theatre has several screens that play movies at the same time.\nThe database has three tables to store information about the movies, the screens and the movie\nschedule.\nMOVIE(MovieID, Title, Length, Rating)\nSCREEN(ScreenNumber, NumberSeats)\nMOVIESCHEDULE(ScheduleID, MovieID, ScreenNumber, Time)",
+          "text": "The PHP code in a web page uses server-side scripting.\nList the sequence of events that take place when a user requests a web page containing PHP\ncode.\nQuestion 7 begins on the next page.\n7 A movie theatre has a relational database that stores the movie schedule, and information about\nthe movies. The theatre has several screens that play movies at the same time.\nThe database has three tables to store information about the movies, the screens and the movie\nschedule.\nMOVIE(MovieID, Title, Length, Rating)\nSCREEN(ScreenNumber, NumberSeats)\nMOVIESCHEDULE(ScheduleID, MovieID, ScreenNumber, Time)",
           "marks": 4,
           "type": "list",
           "answerType": "short_answer",
@@ -473,7 +447,7 @@
           "parts": []
         },
         {
-          "id": "10a",
+          "id": "08a",
           "label": "(a)",
           "text": "Complete the entity-relationship (E-R) diagram to show the relationships between these\ntables.\nMOVIE SCREEN\nMOVIESCHEDULE",
           "marks": 2,
@@ -484,7 +458,7 @@
           "parts": []
         },
         {
-          "id": "10b",
+          "id": "08b",
           "label": "(b)",
           "text": "Explain how primary and foreign keys are used to link the tables in the movie theatre\ndatabase.",
           "marks": 4,
@@ -495,7 +469,7 @@
           "parts": []
         },
         {
-          "id": "10c",
+          "id": "08c",
           "label": "(c)",
           "text": "The database needs to store the name of the company that produced each movie, for\nexample, Rocking Movies.\nWrite an SQL script to add the attribute ProductionCompany to the MOVIE table.",
           "marks": 2,
@@ -506,9 +480,9 @@
           "parts": []
         },
         {
-          "id": "10d",
+          "id": "08d",
           "label": "(d)",
-          "text": "Write an SQL script to display the title and rating of all movies scheduled to play on screen\nnumber 3.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Write an SQL script to display the title and rating of all movies scheduled to play on screen\nnumber 3.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -519,8 +493,10 @@
       ],
       "marks": 21,
       "text": [
-        "</form>",
-        "12 <?php",
+        "Enter Age: <input type=\"text\" name=\"age\" /><br/>",
+        "09 <input type=\"submit\" value=\"Calculate\" />",
+        "10 </form>",
+        "12  ≤ php",
         "13 }",
         "14 function allowed($age) {",
         "15 if($age <= 16) $message = \"You need permission\";",

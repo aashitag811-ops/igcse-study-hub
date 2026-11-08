@@ -3,14 +3,60 @@
   "subjectCode": "0607",
   "session": "s22",
   "component": "51",
-  "totalMarks": 3,
+  "totalMarks": 29,
   "questionCount": 5,
   "questions": [
     {
       "id": "1",
       "context": [],
-      "parts": [],
-      "marks": null,
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "These are the masses, in kg, of ten items.\n38 6 21 50 32 7 15 9 27 25\nThe maximum total mass that each bin can hold is 60 kg.\nAmara uses Method 1 to put these ten items into bins.\nThe table shows how she puts the first 6 items into bins.\nBin Mass of items in bin Unused mass in bin\n1 38, 6, 7 22 16 9\n2 21, 32 39 7\n3 50 10",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "Complete Amara’s table to show that she needs 5 bins.",
+              "marks": 4,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Work out the total unused mass in the 5 bins.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "These are the masses, in kg, of six items.\n8 16 13 10 5 3\nThe maximum total mass that each bin can hold is 20 kg.\nBin Mass of items in bin Unused mass in bin\n1 8 12\nUse Method 1 to complete the table for all six items.\nThe first item has been put in for you.\nYou may not need all the bins.",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
       "text": [
         "Amara uses this method.",
         "Method 1 Put each item in the first bin that can hold its mass.",
@@ -27,28 +73,8 @@
         "Bin Mass of items in bin Unused mass in bin",
         "because it is more than 4 kg.",
         "Amara puts the second item in bin 2.",
-        "1 6 4"
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
-        {
-          "id": "2a",
-          "label": "(a)",
-          "text": "These are the masses, in kg, of ten items.\n38 6 21 50 32 7 15 9 27 25\nThe maximum total mass that each bin can hold is 60 kg.\nAmara uses Method 1 to put these ten items into bins.\nThe table shows how she puts the first 6 items into bins.\nBin Mass of items in bin Unused mass in bin\n1 38, 6, 7 22 16 9\n2 21, 32 39 7",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": null,
-      "text": [
-        "7 3",
+        "1 6 4",
+        "2 7 3",
         "The third item is 4 kg.",
         "Bin Mass of items in bin Unused mass in bin",
         "Amara puts this in bin 1.",
@@ -62,22 +88,11 @@
       ]
     },
     {
-      "id": "3",
+      "id": "2",
       "context": [],
       "parts": [
         {
-          "id": "3b",
-          "label": "(b)",
-          "text": "These are the masses, in kg, of six items.\n8 16 13 10 5 3\nThe maximum total mass that each bin can hold is 20 kg.\nBin Mass of items in bin Unused mass in bin\n1 8 12\nUse Method 1 to complete the table for all six items.\nThe first item has been put in for you.\nYou may not need all the bins. \n2 Amara wants to see if she can use fewer bins.\nShe puts her items in order of mass before she puts them in bins.\nShe uses this method.\nMethod 2 Put the masses in order, largest first.\nThen use Method 1.\nThese are the masses, in kg, of the ten items from Question 1(a).\n38 6 21 50 32 7 15 9 27 25",
-          "marks": null,
-          "type": "complete",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "Write these ten masses in order, largest first.\n______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______",
           "marks": 1,
@@ -88,10 +103,10 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
           "text": "The maximum total mass that each bin can hold is 60 kg.\nComplete the table using Method 2.\nBin Mass of items in bin Unused mass in bin",
-          "marks": null,
+          "marks": 3,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -99,16 +114,32 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
-          "text": "Work out the difference in the total unused mass when using Method 1 and Method 2.\nUse your answers from Question 1(a)(ii) and Question 2(b).\n\n3 A best solution uses the smallest possible number of bins.",
-          "marks": null,
+          "text": "Work out the difference in the total unused mass when using Method 1 and Method 2.\nUse your answers from Question 1(a)(ii) and Question 2(b).",
+          "marks": 2,
           "type": "use",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Amara wants to see if she can use fewer bins.",
+        "She puts her items in order of mass before she puts them in bins.",
+        "She uses this method.",
+        "Method 2 Put the masses in order, largest first.",
+        "Then use Method 1.",
+        "These are the masses, in kg, of the ten items from Question 1(a).",
+        "38 6 21 50 32 7 15 9 27 25"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
           "id": "3a",
           "label": "(a)",
@@ -123,7 +154,7 @@
               "id": "3ai",
               "label": "(i)",
               "text": "A set of items with a total mass of 270 kg is put into 4 bins.\nThe maximum total mass that each bin can hold is 80 kg.\nShow that this is a best solution.",
-              "marks": null,
+              "marks": 2,
               "type": "calculate",
               "answerType": "calculate",
               "hasDiagramRef": false,
@@ -147,7 +178,7 @@
           "id": "3b",
           "label": "(b)",
           "text": "Amara knows that for a particular set of items a best solution is 6 bins.\nThe maximum total mass that each bin can hold is 5 kg.\nThe total mass of the items is 27.5 kg.\nWork out the amount of unused storage for a best solution for these items.",
-          "marks": null,
+          "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -155,9 +186,9 @@
           "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 6,
       "text": [
-        "50 10"
+        "A best solution uses the smallest possible number of bins."
       ]
     },
     {
@@ -168,7 +199,7 @@
           "id": "4a",
           "label": "(a)",
           "text": "These are the masses, in kg, of eight items.\n21 10 30 19 13 7 28 4\nThe maximum total mass that each bin can hold is 40 kg.\nDoes Method 3 give a best solution for these items?\nShow how you decide.\nBin Mass of items in bin Unused mass in bin",
-          "marks": null,
+          "marks": 6,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -178,16 +209,16 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "Amara puts nine items into bins using Method 3.\nThe maximum total mass that each bin can hold is 40 kg.\nBin Mass of items in bin Unused mass in bin\n1 18, 22 0\n2 32, 5, 3 0\n3 32 8\n4 19, 15 21 6",
+          "text": "Amara puts nine items into bins using Method 3.\nThe maximum total mass that each bin can hold is 40 kg.\nBin Mass of items in bin Unused mass in bin\n1 18, 22 0\n2 32, 5, 3 0\n3 32 8\n4 19, 15 21 6\n5 12 28\nAmara only wants to use 4 bins.\nShe removes the last item she packed and divides it into two smaller items with the same total\nmass.\nShe puts each of these two items into a bin that can hold its mass.\nWork out how much the percentage of unused storage changes when Amara uses 4 bins instead of",
           "marks": null,
-          "type": "other",
+          "type": "use",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": null,
+      "marks": 6,
       "text": [
         "Amara tries another way to improve Method 1.",
         "Method 3 Look for items that combine to make as many full bins as possible and place these first.",
@@ -198,16 +229,9 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
-        "12 28",
-        "Amara only wants to use 4 bins.",
-        "She removes the last item she packed and divides it into two smaller items with the same total",
-        "mass.",
-        "She puts each of these two items into a bin that can hold its mass.",
-        "Work out how much the percentage of unused storage changes when Amara uses 4 bins instead of",
-        "5 bins.",
-        "[5]",
+        "bins.",
         "Question 5 is printed on the next page.",
         "5 These are the masses, in kg, of eight items.",
         "31 10 39 20 29 47 50 12",

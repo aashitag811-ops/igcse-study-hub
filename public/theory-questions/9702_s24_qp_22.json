@@ -3,13 +3,24 @@
   "subjectCode": "9702",
   "session": "s24",
   "component": "22",
-  "totalMarks": 49,
+  "totalMarks": 56,
   "questionCount": 7,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "The list below shows some SI quantities.\nUnderline the quantity that is not an SI base quantity.\ncharge current length time",
+          "marks": 1,
+          "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
         {
           "id": "1b",
           "label": "(b)",
@@ -68,16 +79,7 @@
         }
       ],
       "marks": 10,
-      "text": [
-        "2",
-        "1 1 1",
-        "resistors in parallel = + + ...",
-        "R R R",
-        "1 2",
-        "1 (a) The list below shows some SI quantities.",
-        "Underline the quantity that is not an SI base quantity.",
-        "charge current length time [1]"
-      ]
+      "text": []
     },
     {
       "id": "2",
@@ -121,7 +123,7 @@
           "id": "2b",
           "label": "(b)",
           "text": "The mass of the skydiver and her equipment is 68 kg. The upthrust on the skydiver is\nnegligible.\nAfter reaching terminal velocity, the skydiver opens her parachute at time t . A total drag force\nof 1800 N acts on the skydiver.\nDetermine the magnitude and direction of the acceleration of the skydiver at time t .\n–2\nacceleration = ______m s\nDO NOT WRITE IN THIS MARGIN direction = ______",
-          "marks": null,
+          "marks": 3,
           "type": "calculate",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -177,19 +179,9 @@
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Lightning occurs when charge builds up in the atmosphere, creating a potential difference between",
-        "the ground and the atmosphere."
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Calculate the charge transferred during the lightning strike.\ncharge = ______ C",
           "marks": 2,
@@ -200,7 +192,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "The potential difference between the ground and the atmosphere is 3.0 × 10 V.\nCalculate the average power, in GW, transferred during the lightning strike.\npower = ______ GW",
           "marks": 2,
@@ -211,7 +203,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
           "text": "A lightning rod is attached to a tall building to conduct charge safely to the ground. The\nlightning rod is modelled as a uniform cylindrical copper cable of total length 95 m that runs\nfrom the ground to the top of the building, as shown in Fig. 3.1.\nlightning rod\nbuilding\nground\nFig. 3.1",
           "marks": null,
@@ -221,7 +213,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4ci",
+              "id": "3ci",
               "label": "(i)",
               "text": "The resistance of the lightning rod is 9.6Ω.\n–8\nThe resistivity of copper is 1.7 × 10 Ωm.\nDetermine the radius of the lightning rod.\nradius = ______ m",
               "marks": 3,
@@ -232,10 +224,10 @@
               "parts": []
             },
             {
-              "id": "4cii",
+              "id": "3cii",
               "label": "(ii)",
-              "text": "The radius of the copper lightning rod is doubled with no change to its length.\nState the effect of this change on the resistance of the lightning rod.\n\nDO NOT WRITE IN THIS MARGIN(d) A section of the lightning rod of length 0.12 m is removed for testing. A tensile stress of\n1.9 × 10 Pa is applied, as shown in Fig. 3.2.\nlightning rod\nfixed support\ntensile stress 1.9 × 10 Pa\n0.12 m\nFig. 3.2 (not to scale)\nThe section of the rod obeys Hooke’s law. The Young modulus of copper is 1.3 × 10 Pa.\nCalculate the extension of the section.\nextension = ______ m \n–2\n4 A pinball machine uses a spring to launch a small metal ball of mass 4.5 × 10 kg up a ramp. The\n–2\nspring is compressed by 8.0 × 10 m and held in equilibrium, as shown in Fig. 4.1.\noriginal length\n–2\n8.0 × 10 m\nramp\nspring\nfixed end\n–2\nball, mass 4.5 × 10 kg\n15°\nhorizontal\nFig. 4.1 (not to scale)\nThe ramp is at an angle of 15° to the horizontal.\n–1",
-              "marks": 1,
+              "text": "The radius of the copper lightning rod is doubled with no change to its length.\nState the effect of this change on the resistance of the lightning rod.\nDO NOT WRITE IN THIS MARGIN(d) A section of the lightning rod of length 0.12 m is removed for testing. A tensile stress of\n1.9 × 10 Pa is applied, as shown in Fig. 3.2.\nlightning rod\nfixed support\ntensile stress 1.9 × 10 Pa\n0.12 m\nFig. 3.2 (not to scale)\nThe section of the rod obeys Hooke’s law. The Young modulus of copper is 1.3 × 10 Pa.\nCalculate the extension of the section.\nextension = ______ m \n–2",
+              "marks": 3,
               "type": "state",
               "answerType": "fill_blank",
               "hasDiagramRef": true,
@@ -243,7 +235,20 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "Lightning occurs when charge builds up in the atmosphere, creating a potential difference between",
+        "the ground and the atmosphere.",
+        "4 –5",
+        "During a lightning strike there is an average current of 3.3 × 10 A for a time of 2.6 × 10 s."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -326,8 +331,22 @@
       ],
       "marks": 11,
       "text": [
-        "–5",
-        "During a lightning strike there is an average current of 3.3 × 10 A for a time of 2.6 × 10 s."
+        "A pinball machine uses a spring to launch a small metal ball of mass 4.5 × 10 kg up a ramp. The",
+        "–2",
+        "spring is compressed by 8.0 × 10 m and held in equilibrium, as shown in Fig. 4.1.",
+        "original length",
+        "–2",
+        "8.0 × 10 m",
+        "ramp",
+        "spring",
+        "fixed end",
+        "–2",
+        "ball, mass 4.5 × 10 kg",
+        "15°",
+        "horizontal",
+        "Fig. 4.1 (not to scale)",
+        "The ramp is at an angle of 15° to the horizontal.",
+        "–1"
       ]
     },
     {
@@ -444,7 +463,7 @@
           ]
         }
       ],
-      "marks": 6,
+      "marks": 3,
       "text": [
         "Light of a single frequency is incident normally on a diffraction grating. An interference pattern of",
         "bright and dark fringes forms on the semicircular screen shown in Fig. 6.1.",
@@ -475,7 +494,7 @@
         {
           "id": "7b",
           "label": "(b)",
-          "text": "Q has a charge of –1e, where e is the elementary charge. R has a charge of 0.\nComplete Table 7.1 to show a possible second quark in each of Q and R.\nTable 7.1\ncharge first quark second quark\nQ –1e strange\nR 0 anti-up\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Q has a charge of –1e, where e is the elementary charge. R has a charge of 0.\nComplete Table 7.1 to show a possible second quark in each of Q and R.\nTable 7.1\ncharge first quark second quark\nQ –1e strange\nR 0 anti-up\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
           "type": "complete",
           "answerType": "long_answer",

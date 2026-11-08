@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s20",
   "component": "22",
-  "totalMarks": 60,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -115,7 +115,7 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "A navigation program includes a function, CheckCourse(). This function is called with a real",
         "value, Course, and returns an integer value.",
@@ -149,8 +149,7 @@
         "END",
         "Write pseudocode to implement the function CheckCourse(). The pseudocode must follow the",
         "algorithm represented by the flowchart. Declare any local variables used.",
-        "Refer to the Appendix on page 19 for a list of built-in pseudocode functions and operators.",
-        "[7]"
+        "Refer to the Appendix on page 19 for a list of built-in pseudocode functions and operators."
       ]
     },
     {
@@ -222,7 +221,7 @@
             {
               "id": "5bii",
               "label": "(ii)",
-              "text": "A procedure, BubbleSort(), is needed to sort the 1D array Contact into ascending\norder of Name using an efficient bubble sort algorithm.\nWrite program code for the procedure BubbleSort().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code ______\n\nQuestion 6 begins on the next page.",
+              "text": "A procedure, BubbleSort(), is needed to sort the 1D array Contact into ascending\norder of Name using an efficient bubble sort algorithm.\nWrite program code for the procedure BubbleSort().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code ______\nQuestion 6 begins on the next page.",
               "marks": 8,
               "type": "name",
               "answerType": "fill_blank",
@@ -310,8 +309,8 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Each time a boat is hired out, details of the hire are added to a text file, Hirelog.txt. Each\nline of the text file corresponds to information about one hire session.\nThe format of each line is as follows:\n<BoatNumber><Date><AmountPaid>\n• BoatNumber is a two-digit numeric string\n• Date is a six-digit numeric string in the format DDMMYY\n• AmountPaid is a variable-length string representing a numeric value, for example\n\"12.75\"\nThe total hire amount from each boat is to be stored in a global array, Total. This array is\ndeclared in pseudocode as follows:\nDECLARE Total : ARRAY [1:17] OF REAL\nThe programmer has defined module GetTotals() as follows:\nModule Description\n• Search through the file Hirelog.txt\nGetTotals() • Extract the AmountPaid each time a boat is hired\n• Store the total of AmountPaid for each boat in the array\nWrite program code for the module GetTotals().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (not inclusive of x)\nExample: RAND(87) could return 35.43\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv\nExample: DIV(10,3) returns 3\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nExample: If x has the value 87.5 then NUM_TO_STRING(x) returns \"87.5\"\nNote: This function will also work if x is of type INTEGER\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nExample: If x has the value \"23.45\" then STRING_TO_NUM(x) returns 23.45\nNote: This function will also work if x is of type CHAR\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
-          "marks": null,
+          "text": "Each time a boat is hired out, details of the hire are added to a text file, Hirelog.txt. Each\nline of the text file corresponds to information about one hire session.\nThe format of each line is as follows:\n<BoatNumber><Date><AmountPaid>\n• BoatNumber is a two-digit numeric string\n• Date is a six-digit numeric string in the format DDMMYY\n• AmountPaid is a variable-length string representing a numeric value, for example\n\"12.75\"\nThe total hire amount from each boat is to be stored in a global array, Total. This array is\ndeclared in pseudocode as follows:\nDECLARE Total : ARRAY [1:17] OF REAL\nThe programmer has defined module GetTotals() as follows:\nModule Description\n• Search through the file Hirelog.txt\nGetTotals() • Extract the AmountPaid each time a boat is hired\n• Store the total of AmountPaid for each boat in the array\nWrite program code for the module GetTotals().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (not inclusive of x)\nExample: RAND(87) could return 35.43\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv\nExample: DIV(10,3) returns 3\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nExample: If x has the value 87.5 then NUM_TO_STRING(x) returns \"87.5\"\nNote: This function will also work if x is of type INTEGER\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nExample: If x has the value \"23.45\" then STRING_TO_NUM(x) returns 23.45\nNote: This function will also work if x is of type CHAR\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 8,
           "type": "write",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -319,7 +318,7 @@
           "parts": []
         }
       ],
-      "marks": 13,
+      "marks": 21,
       "text": [
         "A company hires out rowing boats on a lake. The company has 17 boats numbered from 1 to 17.",
         "Boats may be hired between 9:00 and 18:00, with a maximum hire duration of 90 minutes.",

@@ -3,13 +3,47 @@
   "subjectCode": "0478",
   "session": "w18",
   "component": "22",
-  "totalMarks": 35,
+  "totalMarks": 50,
   "questionCount": 6,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "All variables, arrays, constants and other identifiers should have meaningful names.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1ai",
+              "label": "(i)",
+              "text": "State the name of one variable you have used for Task 3.\nGive the data type for the variable. State what it is used for.\nVariable name ______\nData type ______\nUse ______",
+              "marks": 3,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "Describe the arrays that you have used to store the data for the children in Task 1.\nInclude the name, data type and its use for each array.",
+              "marks": 5,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
           "id": "1b",
           "label": "(b)",
@@ -35,7 +69,7 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "Explain how your program identifies and outputs the names and times of the fastest runner\nfor each age range in Task 3. Any programming statements used in your answer must be\nfully explained. Do not include the wristband check or PB time update.\n\nSection B",
+          "text": "Explain how your program identifies and outputs the names and times of the fastest runner\nfor each age range in Task 3. Any programming statements used in your answer must be\nfully explained. Do not include the wristband check or PB time update.\nSection B",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -44,72 +78,8 @@
           "parts": []
         }
       ],
-      "marks": 12,
-      "text": [
-        "4",
-        "Candidates answer on the Question Paper.",
-        "No Additional Materials are required.",
-        "1 *",
-        "No calculators allowed.",
-        "READ THESE INSTRUCTIONS FIRST",
-        "Write your Centre number, candidate number and name in the spaces at the top of this page.",
-        "Write in dark blue or black pen.",
-        "You may use an HB pencil for any diagrams, graphs or rough working.",
-        "Do not use staples, paper clips, glue or correction fluid.",
-        "DO NOT WRITE IN ANY BARCODES.",
-        "DO NOT ATTEMPT TASKS 1, 2 AND 3 in the pre-release material; these are for information only.",
-        "bestexamhelp.com",
-        "You are advised to spend no more than 40 minutes on Section A (Question 1).",
-        "No marks will be awarded for using brand names of software packages or hardware.",
-        "Any businesses described in this paper are entirely fictitious.",
-        "At the end of the examination, fasten all your work securely together.",
-        "The number of marks is given in brackets [ ] at the end of each question or part question.",
-        "The maximum number of marks is 50.",
-        "This syllabus is approved for use in England, Wales and Northern Ireland as a Cambridge International Level 1/Level 2 Certificate.",
-        "This document consists of 11 printed pages and 1 blank page.",
-        "Section A",
-        "You are advised to spend no longer than 40 minutes answering this section.",
-        "Here is a copy of the pre-release material.",
-        "DO NOT attempt Tasks 1, 2 and 3 now.",
-        "Use the pre-release material and your experience from attempting the tasks before the examination to",
-        "answer Question 1.",
-        "Pre-release material",
-        "A junior park run event is held every week on a Saturday morning in a local park over a distance of",
-        "two kilometres. Children between the ages of 4 and 14 inclusive can register to take part. Children",
-        "register with their name and age. When they register, they are allocated a unique identification",
-        "number of four digits; the last digit is a check digit. Once registered a child can take part in junior",
-        "park run events for a year.",
-        "For each event, the organisers record the time each child takes to run two kilometres. Their time is",
-        "stored for every event they complete and the number of runs they have completed is updated by",
-        "one. If their time is faster than their personal best (PB) time, their PB time is updated. When a child",
-        "has completed 11 runs, they are awarded a half-marathon wristband. When a child has completed",
-        "22 runs, they are awarded a full-marathon wristband.",
-        "A program is required to update the children’s data, update PB times if necessary, and decide if a",
-        "wristband is to be awarded. The program also needs to identify the fastest child at this event for",
-        "each of the age ranges: 4 to 6, 7 to 10 and 11 to 14.",
-        "Write and test a program or programs for the park run organiser.",
-        "Your program or programs must include appropriate prompts for the entry of data.",
-        "Error messages and other output need to be set out clearly and be understandable.",
-        "• All variables, arrays, constants and other identifiers must have meaningful names.",
-        "You will need to complete these three tasks. Each task must be fully tested.",
-        "TASK 1 – Registering to take part.",
-        "Write a program to set up arrays to store the data for 20 children. On registration, each child must",
-        "be allocated a unique identification number of four digits; the last digit is a check digit. The unique",
-        "identification number, age in years and name for each child is recorded and stored on registration.",
-        "The PB time and the number of runs are initialised to zero and these values stored on registration.",
-        "Their PB time is stored as minutes correct to two decimal places.",
-        "TASK 2 – Recording the times.",
-        "Extend your program to record the unique identification number and to input the start time and finish",
-        "time for every child completing the junior park run event. Calculate and store the time each child",
-        "took to complete the run. A registered child does not have to compete in each event. Only one time",
-        "per child is recorded during an event.",
-        "TASK 3 – Updating the children’s data and identifying the fastest child for each age range.",
-        "Extend your program to update the number of runs and the PB time if necessary for every child",
-        "completing the junior park run event. Check if any half- or full-marathon wristbands need to be",
-        "awarded. Output the names and the type of wristbands. Output the names and the times of the",
-        "fastest child at this event for each of the age ranges 4 to 6, 7 to 10 and 11 to 14.",
-        "1 (a) All variables, arrays, constants and other identifiers should have meaningful names."
-      ]
+      "marks": 20,
+      "text": []
     },
     {
       "id": "2",
@@ -145,7 +115,7 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "Four programming concepts and four descriptions are shown.",
         "Draw a line to connect each programming concept to the most appropriate description.",
@@ -160,15 +130,14 @@
         "returns a value.",
         "An overview of a program or",
         "Function",
-        "subroutine.",
-        "[3]"
+        "subroutine."
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "A programmer wants to test that the readings from 2000 electricity meters are greater than 400",
         "units and less than 900 units. The programmer uses selection and repetition statements as part of",
@@ -177,7 +146,6 @@
         "program.",
         "Selection ..........................................................................................................................................",
         "Repetition .........................................................................................................................................",
-        "[4]",
         "Question 5 starts on page 10."
       ]
     },
@@ -271,7 +239,7 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "The results from the query-by-example grid should show the reference number, price, type\nand size of all portraits under $50. Identify the three errors in the query-by-example grid.\nField: Reference No Price in $ Type Size\nTable: PORTRAIT PORTRAIT PORTRAIT PORTRAIT\nSort:\nShow:   \nCriteria: >50.00\nor:\nError 1 ______\nError 2 ______\nError 3 ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "The results from the query-by-example grid should show the reference number, price, type\nand size of all portraits under $50. Identify the three errors in the query-by-example grid.\nField: Reference No Price in $ Type Size\nTable: PORTRAIT PORTRAIT PORTRAIT PORTRAIT\nSort:\nShow:   \nCriteria: >50.00\nor:\nError 1 ______\nError 2 ______\nError 3 ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 3,
           "type": "name",
           "answerType": "fill_blank",

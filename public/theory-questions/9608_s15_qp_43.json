@@ -3,14 +3,14 @@
   "subjectCode": "9608",
   "session": "s15",
   "component": "43",
-  "totalMarks": 63,
+  "totalMarks": 72,
   "questionCount": 9,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 9,
       "text": [
         "A petrol filling station has a single self-service petrol pump.",
         "A customer can use the petrol pump when it is ready to dispense petrol.",
@@ -27,8 +27,7 @@
         "Pump in use Replace nozzle Pump out of use",
         "Pump out of use Reset pump display Pump ready",
         "Complete the state transition diagram for the petrol pump:",
-        "start",
-        "[9]"
+        "start"
       ]
     },
     {
@@ -125,7 +124,7 @@
         {
           "id": "09c",
           "label": "(c)",
-          "text": "Complete the rule to list the dishes made with meat.\ncontains_meat(Dish)\nIF ______\n\n3 An insurance company calculates the cost of car insurance from a basic price.\nThe driver may:\n• get a discount on the basic price of the insurance\n• have to pay an extra charge\nThe decision is arrived at as follows:\n• for a driver aged 25 or over:\n•• 5% discount if no previous accident\n•• no discount if a previous accident\n• for a driver under the age of 25:\n•• 5% discount if no previous accident and licence held for 3 or more years\n•• no discount if a previous accident but licence held for 3 or more years\n•• no discount if no previous accident but licence held for less than 3 years\n•• 10% extra charge if a previous accident and licence held for less than 3 years",
+          "text": "Complete the rule to list the dishes made with meat.\ncontains_meat(Dish)\nIF ______\n3 An insurance company calculates the cost of car insurance from a basic price.\nThe driver may:\n• get a discount on the basic price of the insurance\n• have to pay an extra charge\nThe decision is arrived at as follows:\n• for a driver aged 25 or over:\n•• 5% discount if no previous accident\n•• no discount if a previous accident\n• for a driver under the age of 25:\n•• 5% discount if no previous accident and licence held for 3 or more years\n•• no discount if a previous accident but licence held for 3 or more years\n•• no discount if no previous accident but licence held for less than 3 years\n•• 10% extra charge if a previous accident and licence held for less than 3 years",
           "marks": 4,
           "type": "complete",
           "answerType": "fill_blank",
@@ -158,7 +157,7 @@
         {
           "id": "09c",
           "label": "(c)",
-          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function\nCostPercentageChange. This function returns the percentage change from the basic price\nas an integer. A discount should be shown as a negative integer. An extra charge should be\nshown as a positive integer.\nIdentifier Data type Comment\nDriverAge INTEGER\nAge of driver in years\nHadAccident BOOLEAN\nWhether driver has had a previous accident\nYearsLicenceHeld INTEGER\nNumber of years the driver has held licence\nWrite program code for this function.\nProgramming language ______\n\n4 A sports club stores data about its members. A program is to be written using an object-oriented\nprogramming language.\nA Member class is designed. Two subclasses have been identified:\n• FullMember\n• JuniorMember",
+          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function\nCostPercentageChange. This function returns the percentage change from the basic price\nas an integer. A discount should be shown as a negative integer. An extra charge should be\nshown as a positive integer.\nIdentifier Data type Comment\nDriverAge INTEGER\nAge of driver in years\nHadAccident BOOLEAN\nWhether driver has had a previous accident\nYearsLicenceHeld INTEGER\nNumber of years the driver has held licence\nWrite program code for this function.\nProgramming language ______\n4 A sports club stores data about its members. A program is to be written using an object-oriented\nprogramming language.\nA Member class is designed. Two subclasses have been identified:\n• FullMember\n• JuniorMember",
           "marks": 6,
           "type": "design",
           "answerType": "fill_blank",
@@ -212,7 +211,7 @@
             {
               "id": "09cii",
               "label": "(ii)",
-              "text": "Write program code to create a new instance of JuniorMember. Use identifier\nNewMember with the following data:\nname Ahmed with member ID 12347, born on 12/11/2001, who has paid his subscription.\n\n5 A stack Abstract Data Type (ADT) has these associated operations:\n• create stack\n• add item to stack (push)\n• remove item from stack (pop)\nThe stack ADT is to be implemented as a linked list of nodes.\nEach node consists of data and a pointer to the next node.",
+              "text": "Write program code to create a new instance of JuniorMember. Use identifier\nNewMember with the following data:\nname Ahmed with member ID 12347, born on 12/11/2001, who has paid his subscription.\n5 A stack Abstract Data Type (ADT) has these associated operations:\n• create stack\n• add item to stack (push)\n• remove item from stack (pop)\nThe stack ADT is to be implemented as a linked list of nodes.\nEach node consists of data and a pointer to the next node.",
               "marks": 3,
               "type": "name",
               "answerType": "short_answer",
@@ -246,7 +245,7 @@
             {
               "id": "09bi",
               "label": "(i)",
-              "text": "The CreateStack operation links all nodes and initialises the TopOfStackPointer\nand FreePointer.\nComplete the diagram to show the value of all pointers after CreateStack has been\nexecuted.\nStack\nTopOfStackPointer Name Pointer\n\n\n\nFreePointer",
+              "text": "The CreateStack operation links all nodes and initialises the TopOfStackPointer\nand FreePointer.\nComplete the diagram to show the value of all pointers after CreateStack has been\nexecuted.\nStack\nTopOfStackPointer Name Pointer\nFreePointer",
               "marks": 1,
               "type": "name",
               "answerType": "short_answer",
@@ -257,7 +256,7 @@
             {
               "id": "09bii",
               "label": "(ii)",
-              "text": "The algorithm for adding a name to the stack is written, using pseudocode, as a\nprocedure with the header\nPROCEDURE Push (NewName)\nWhere NewName is the new name to be added to the stack. The procedure uses the\nvariables as shown in the identifier table.\nIdentifier Data type Description\nStack Array[1:10] OF Node\nNewName STRING\nName to be added\nFreePointer INTEGER\nPointer to next free node in array\nTopOfStackPointer INTEGER Pointer to first node in stack\nTempPointer INTEGER\nTemporary store for copy of FreePointer\nPROCEDURE Push(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nStack[FreePointer].Name ← NewName\n// take a temporary copy and\n// then adjust free pointer\nTempPointer ← FreePointer\nFreePointer ← Stack[FreePointer].Pointer\n// link current node to previous top of stack\nStack[TempPointer].Pointer ← TopOfStackPointer\n// adjust TopOfStackPointer to current node\nTopOfStackPointer ← TempPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure Pop. Use the variables listed in the identifier table.\nPROCEDURE Pop()\n// Report error if Stack is empty\nOUTPUT Stack [______].Name\n// take a copy of the current top of stack pointer\n// update the top of stack pointer\n// link released node to free list\nENDPROCEDURE\n\n6 A recursively defined procedure X is defined below:\nPROCEDURE X(BYVALUE n : INTEGER)\nIF (n = 0) OR (n = 1)\nTHEN\nOUTPUT n\nELSE\nCALL X(n DIV 2)\nOUTPUT (n MOD 2)\nENDIF\nENDPROCEDURE",
+              "text": "The algorithm for adding a name to the stack is written, using pseudocode, as a\nprocedure with the header\nPROCEDURE Push (NewName)\nWhere NewName is the new name to be added to the stack. The procedure uses the\nvariables as shown in the identifier table.\nIdentifier Data type Description\nStack Array[1:10] OF Node\nNewName STRING\nName to be added\nFreePointer INTEGER\nPointer to next free node in array\nTopOfStackPointer INTEGER Pointer to first node in stack\nTempPointer INTEGER\nTemporary store for copy of FreePointer\nPROCEDURE Push(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nStack[FreePointer].Name ← NewName\n// take a temporary copy and\n// then adjust free pointer\nTempPointer ← FreePointer\nFreePointer ← Stack[FreePointer].Pointer\n// link current node to previous top of stack\nStack[TempPointer].Pointer ← TopOfStackPointer\n// adjust TopOfStackPointer to current node\nTopOfStackPointer ← TempPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure Pop. Use the variables listed in the identifier table.\nPROCEDURE Pop()\n// Report error if Stack is empty\nOUTPUT Stack [______].Name\n// take a copy of the current top of stack pointer\n// update the top of stack pointer\n// link released node to free list\nENDPROCEDURE\n6 A recursively defined procedure X is defined below:\nPROCEDURE X(BYVALUE n : INTEGER)\nIF (n = 0) OR (n = 1)\nTHEN\nOUTPUT n\nELSE\nCALL X(n DIV 2)\nOUTPUT (n MOD 2)\nENDIF\nENDPROCEDURE",
               "marks": 5,
               "type": "name",
               "answerType": "fill_blank",
@@ -314,7 +313,7 @@
         {
           "id": "09e",
           "label": "(e)",
-          "text": "Write program code for procedure X.\nProgramming language ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Write program code for procedure X.\nProgramming language ______\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 5,
           "type": "name",
           "answerType": "fill_blank",

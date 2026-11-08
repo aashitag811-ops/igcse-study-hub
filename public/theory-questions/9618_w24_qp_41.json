@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "w24",
   "component": "41",
-  "totalMarks": 67,
-  "questionCount": 5,
+  "totalMarks": 75,
+  "questionCount": 3,
   "questions": [
     {
       "id": "1",
@@ -237,16 +237,61 @@
         {
           "id": "2d",
           "label": "(d)",
-          "text": "The chance of a horse jumping a fence without knocking it down is calculated as follows.\nIf the height of the fence is more than the maximum height a horse can jump, the success\npercentage is 20% of the horse’s PercentageSuccess. The risk does not affect this value.\nIf the height of the fence is less than or equal to the maximum height a horse can jump, the\nrisk gives a modifier value to multiply with the horse’s PercentageSuccess.\nThe risk values and their modifiers are given in this table:\nRisk Modifier\n5 0.6\n4 0.7",
+          "text": "The chance of a horse jumping a fence without knocking it down is calculated as follows.\nIf the height of the fence is more than the maximum height a horse can jump, the success\npercentage is 20% of the horse’s PercentageSuccess. The risk does not affect this value.\nIf the height of the fence is less than or equal to the maximum height a horse can jump, the\nrisk gives a modifier value to multiply with the horse’s PercentageSuccess.\nThe risk values and their modifiers are given in this table:\nRisk Modifier\n5 0.6\n4 0.7\n3 0.8\n2 0.9\n1 1.0\nFor example:\n• The horse Jet has PercentageSuccess of 65 and MaxFenceHeight of 160.\n• A fence has a height of 140 and a risk of 3.\n• The height of the fence is less than the horse’s MaxFenceHeight, therefore the risk is\nused.\n• The risk of 3 gives the modifier 0.8.\n• The modifier 0.8 is multiplied by the horse’s PercentageSuccess of 65, which gives 52.\n• The chance of the horse successfully jumping this fence is 52%.\nThe method Success() in the Horse class:\n• takes the height and risk of a fence as parameters\n• calculates the percentage chance of success for that horse jumping the fence without\nknocking it down\n• returns the calculated percentage chance of success as a real number.\nWrite program code for Success().\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "Write program code to amend the main program to:\n• calculate and output the chance of the first horse jumping each of the four fences without\nknocking each fence down\n• calculate and output the chance of the second horse jumping each of the four fences\nwithout knocking each fence down.\nAll outputs must have appropriate messages including the name of the horse and the\nfence number.\nAn example output for one horse jumping two fences is:\n\"The horse Fox at fence 1 has a 68% chance of success\nThe horse Fox at fence 2 has a 72% chance of success\"\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
+              "marks": 3,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "Write program code to amend the main program to:\n• calculate and output the average chance of success for each horse jumping over all\nfour fences without knocking each fence down (the average is the total of values\ndivided by the quantity of values). An example output for one horse jumping all of\nthe fences is:\n\"The horse Fox has an average 70% chance of jumping over all four\nfences\"\n• output the name of the horse that has the highest average chance of success.\nYou can assume that each average will be different.\nAll outputs must have appropriate messages.\nSave your program.\nCopy and paste the program code into part 2(e)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eiii",
+              "label": "(iii)",
+              "text": "Test your program with the following input data for four fences:\nHeight Risk\n152 5\n121 1\n130 3\n145 4\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(e)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 22,
+      "marks": 34,
       "text": [
         "A computer program is designed to simulate horses doing show jumping. In show jumping, horses",
         "jump over obstacles called fences. A horse successfully jumps a fence if it does not knock the",
@@ -276,81 +321,7 @@
       "context": [],
       "parts": [
         {
-          "id": "3e",
-          "label": "(e)",
-          "text": "",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "3ei",
-              "label": "(i)",
-              "text": "Write program code to amend the main program to:\n• calculate and output the chance of the first horse jumping each of the four fences without\nknocking each fence down\n• calculate and output the chance of the second horse jumping each of the four fences\nwithout knocking each fence down.\nAll outputs must have appropriate messages including the name of the horse and the\nfence number.\nAn example output for one horse jumping two fences is:\n\"The horse Fox at fence 1 has a 68% chance of success\nThe horse Fox at fence 2 has a 72% chance of success\"\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
-              "marks": 3,
-              "type": "name",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3eii",
-              "label": "(ii)",
-              "text": "Write program code to amend the main program to:\n• calculate and output the average chance of success for each horse jumping over all\nfour fences without knocking each fence down (the average is the total of values\ndivided by the quantity of values). An example output for one horse jumping all of\nthe fences is:\n\"The horse Fox has an average 70% chance of jumping over all four\nfences\"\n• output the name of the horse that has the highest average chance of success.\nYou can assume that each average will be different.\nAll outputs must have appropriate messages.\nSave your program.\nCopy and paste the program code into part 2(e)(ii) in the evidence document.",
-              "marks": null,
-              "type": "name",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3eiii",
-              "label": "(iii)",
-              "text": "Test your program with the following input data for four fences:\nHeight Risk\n152 5\n121 1\n130 3\n145 4\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(e)(iii) in the evidence document.\n\n3 A linked list stores positive integer data in a 2D array. The first dimension of the array stores the\ninteger data. The second dimension of the array stores the pointer to the next node in the linked\nlist.\nA linked list node with no data is initialised with the integer –1. These nodes are linked together as\nan empty list. A pointer of –1 identifies that node as the last node.\nThe linked list can store 20 nodes.\nThe global 2D array LinkedList stores the linked list.\nLinkedList is initialised as an empty list. The data in each node is initialised to –1. Each node’s\npointer stores the index of the next node. The last node stores the pointer value –1, which indicates\nit is the last node.\nThe global variable FirstEmpty stores the index of the first element in the empty list. This is the\nfirst node in the empty linked list when it is initialised, which is index 0.\nThe global variable FirstNode stores the index of the first element in the linked list. There is no\ndata in the linked list when it is initialised, so FirstNode is initialised to –1.\nThis diagram shows the content of the initialised array.\nFirstEmpty = 0\nFirstNode = –1\nIndex Data Pointer\n0 -1 1\n1 -1 2\n2 -1 3\n3 -1 4",
-              "marks": 2,
-              "type": "list",
-              "answerType": "short_answer",
-              "hasDiagramRef": true,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        }
-      ],
-      "marks": 5,
-      "text": [
-        "0.8",
-        "2 0.9",
-        "1 1.0",
-        "For example:",
-        "• The horse Jet has PercentageSuccess of 65 and MaxFenceHeight of 160.",
-        "• A fence has a height of 140 and a risk of 3.",
-        "• The height of the fence is less than the horse’s MaxFenceHeight, therefore the risk is",
-        "used.",
-        "• The risk of 3 gives the modifier 0.8.",
-        "• The modifier 0.8 is multiplied by the horse’s PercentageSuccess of 65, which gives 52.",
-        "• The chance of the horse successfully jumping this fence is 52%.",
-        "The method Success() in the Horse class:",
-        "• takes the height and risk of a fence as parameters",
-        "• calculates the percentage chance of success for that horse jumping the fence without",
-        "knocking it down",
-        "• returns the calculated percentage chance of success as a real number.",
-        "Write program code for Success().",
-        "Save your program.",
-        "Copy and paste the program code into part 2(d) in the evidence document.",
-        "[5]"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
-        {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Write program code for the main program to declare and initialise LinkedList, FirstNode\nand FirstEmpty.\nSave your program as Question3_N24.\nCopy and paste the program code into part 3(a) in the evidence document.",
           "marks": 2,
@@ -361,7 +332,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "The procedure InsertData() takes five positive integers as input from the user and inserts\nthese into the linked list.\nEach data item is inserted at the front of the linked list.\nThe table shows the steps to follow depending on the state of the linked list:\nLinked list state Steps\ninsert the data in the index pointed to by FirstEmpty\nnot full change the pointer to the index pointed to by FirstNode\nchange the values of FirstNode and FirstEmpty\nfull end the procedure\nAny node that is at the end of the linked list has a pointer of –1.\nWrite program code for InsertData().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
           "marks": 6,
@@ -372,7 +343,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
           "text": "The procedure OutputLinkedList() outputs the data in the linked list in order by following\nthe pointers from FirstNode.",
           "marks": null,
@@ -382,7 +353,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4ci",
+              "id": "3ci",
               "label": "(i)",
               "text": "Write program code for OutputLinkedList().\nSave your program.\nCopy and paste the program code into part 3(c)(i) in the evidence document.",
               "marks": 2,
@@ -393,7 +364,7 @@
               "parts": []
             },
             {
-              "id": "4cii",
+              "id": "3cii",
               "label": "(ii)",
               "text": "Amend the main program to call InsertData() and then OutputLinkedList().\nSave your program.\nCopy and paste the program code into part 3(c)(ii) in the evidence document.",
               "marks": 1,
@@ -404,10 +375,10 @@
               "parts": []
             },
             {
-              "id": "4ciii",
+              "id": "3ciii",
               "label": "(iii)",
-              "text": "Test your program with the test data:",
-              "marks": null,
+              "text": "Test your program with the test data:\n5 1 2 3 8\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(c)(iii) in the evidence document.",
+              "marks": 1,
               "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -415,20 +386,9 @@
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 11,
-      "text": [
-        "-1 5",
-        "19 -1 -1"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "5d",
+          "id": "3d",
           "label": "(d)",
           "text": "The procedure RemoveData() removes a node from the linked list.\nThe procedure takes the data item to be removed from the linked list as a parameter.\nThe procedure checks each node in the linked list, starting with the node FirstNode, until it\nfinds the node to be removed. This node is added to the empty list, and pointers are changed\nas appropriate. The procedure only removes the first occurrence of the parameter.\nAssume that the data item being removed is in the linked list.",
           "marks": null,
@@ -438,7 +398,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5di",
+              "id": "3di",
               "label": "(i)",
               "text": "Write program code for RemoveData().\nSave your program.\nCopy and paste the program code into part 3(d)(i) in the evidence document.",
               "marks": 5,
@@ -449,7 +409,7 @@
               "parts": []
             },
             {
-              "id": "5dii",
+              "id": "3dii",
               "label": "(ii)",
               "text": "Amend the main program to:\n• call RemoveData() with the parameter 5\n• output the word \"After\"\n• call OutputLinkedList().\nSave your program.\nCopy and paste the program code into part 3(d)(ii) in the evidence document.",
               "marks": 1,
@@ -460,9 +420,9 @@
               "parts": []
             },
             {
-              "id": "5diii",
+              "id": "3diii",
               "label": "(iii)",
-              "text": "Test your program with both sets of given test data:\nTest data set 1: 5 6 8 9 5\nTest data set 2: 10 7 8 5 6\nTake a screenshot of each output.\nSave your program.\nCopy and paste the screenshot(s) into part 3(d)(iii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Test your program with both sets of given test data:\nTest data set 1: 5 6 8 9 5\nTest data set 2: 10 7 8 5 6\nTake a screenshot of each output.\nSave your program.\nCopy and paste the screenshot(s) into part 3(d)(iii) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -473,13 +433,32 @@
           ]
         }
       ],
-      "marks": 7,
+      "marks": 19,
       "text": [
-        "1 2 3 8",
-        "Take a screenshot of the output.",
-        "Save your program.",
-        "Copy and paste the screenshot into part 3(c)(iii) in the evidence document.",
-        "[1]"
+        "A linked list stores positive integer data in a 2D array. The first dimension of the array stores the",
+        "integer data. The second dimension of the array stores the pointer to the next node in the linked",
+        "list.",
+        "A linked list node with no data is initialised with the integer –1. These nodes are linked together as",
+        "an empty list. A pointer of –1 identifies that node as the last node.",
+        "The linked list can store 20 nodes.",
+        "The global 2D array LinkedList stores the linked list.",
+        "LinkedList is initialised as an empty list. The data in each node is initialised to –1. Each node’s",
+        "pointer stores the index of the next node. The last node stores the pointer value –1, which indicates",
+        "it is the last node.",
+        "The global variable FirstEmpty stores the index of the first element in the empty list. This is the",
+        "first node in the empty linked list when it is initialised, which is index 0.",
+        "The global variable FirstNode stores the index of the first element in the linked list. There is no",
+        "data in the linked list when it is initialised, so FirstNode is initialised to –1.",
+        "This diagram shows the content of the initialised array.",
+        "FirstEmpty = 0",
+        "FirstNode = –1",
+        "Index Data Pointer",
+        "0 -1 1",
+        "1 -1 2",
+        "2 -1 3",
+        "3 -1 4",
+        "4 -1 5",
+        "19 -1 -1"
       ]
     }
   ]

@@ -3,8 +3,8 @@
   "subjectCode": "0478",
   "session": "s18",
   "component": "23",
-  "totalMarks": 46,
-  "questionCount": 7,
+  "totalMarks": 28,
+  "questionCount": 9,
   "questions": [
     {
       "id": "1",
@@ -69,7 +69,7 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "One of the inputs required ‘On Exit’ in Task 1 is ticket number. State two items of suitable test\ndata you could use to test your input validation and state why you chose them.\nTest data 1 ______\nReason ______\nTest data 2 ______\nReason ______\n\nSection B",
+          "text": "One of the inputs required ‘On Exit’ in Task 1 is ticket number. State two items of suitable test\ndata you could use to test your input validation and state why you chose them.\nTest data 1 ______\nReason ______\nTest data 2 ______\nReason ______\nSection B",
           "marks": 2,
           "type": "state",
           "answerType": "fill_blank",
@@ -156,9 +156,27 @@
     {
       "id": "7",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Counter = Counter + 1"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PRINT ′The sum of the numbers you entered is ′, Total"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
       "parts": [
         {
-          "id": "7a",
+          "id": "10a",
           "label": "(a)",
           "text": "Describe the purpose of the algorithm.",
           "marks": 2,
@@ -169,7 +187,7 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "10b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -179,7 +197,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7bi",
+              "id": "10bi",
               "label": "(i)",
               "text": "The algorithm only allows one attempt at inputting an acceptable value.\nState how you would change the algorithm so that it continues until a suitable input is\nsupplied.",
               "marks": 1,
@@ -190,9 +208,9 @@
               "parts": []
             },
             {
-              "id": "7bii",
+              "id": "10bii",
               "label": "(ii)",
-              "text": "Re-write the algorithm in full, using pseudocode, to implement your answer to part (b)(i).\n\n5 The flowchart allows a set of 10 numbers to be entered; it finds and outputs the largest of these\nnumbers.\nSTART\nMax –1000.00\nCounter 0\nINPUT Num\nYes Is Num >\nMax ?\nNo\nMax Num\nCounter Counter + 1\nYes\nIs Counter\n< 10 ?\nNo\nOUTPUT Max\nEND",
+              "text": "Re-write the algorithm in full, using pseudocode, to implement your answer to part (b)(i).\n5 The flowchart allows a set of 10 numbers to be entered; it finds and outputs the largest of these\nnumbers.\nSTART\nMax –1000.00\nCounter 0\nINPUT Num\nYes Is Num >\nMax ?\nNo\nMax Num\nCounter Counter + 1\nYes\nIs Counter\n< 10 ?\nNo\nOUTPUT Max\nEND",
               "marks": 3,
               "type": "write",
               "answerType": "short_answer",
@@ -203,7 +221,7 @@
           ]
         },
         {
-          "id": "7a",
+          "id": "10a",
           "label": "(a)",
           "text": "Complete the trace table for the input data:\n6.30, 18.62, 50.01, 3.13, 2.05, 50.10, 40.35, 30.69, 0.85, 17.30\nMax Counter Num OUTPUT",
           "marks": 3,
@@ -214,9 +232,9 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "10b",
           "label": "(b)",
-          "text": "Describe two different changes you should make to the flowchart to find the smallest number\ninstead of the largest number.\nChange 1 ______\nChange 2 ______\n\n6 A shop that sells copies of movies to the public has set up a new database table called 2018MOV\nto store some new releases. Part of this table is given, showing the catalogue number, title, genres\nand available formats (Blu-ray, DVD or streaming) of each movie.\nCatNo Title Genre 1 Genre 2 Blu-ray DVD Stream\n18m01 Battery Rangers Adventure Fantasy Yes No Yes\n18m02 Golfwatch Comedy Drama Yes No Yes\n18m03 Chair 27 Comedy Drama Yes Yes No\n18m04 Wander Woman Action Fantasy Yes No Yes\n18m05 Justine League Action Fantasy Yes Yes Yes\n18m06 That Horror Thriller Yes Yes No\n18m07 Insect Dude Action Fantasy No Yes No\n18m08 Dover Beach Action History No Yes No\n18m12 Slow 25 Action Thriller No Yes No\n18m15 Kongkers Adventure Fantasy No Yes No\n18m16 Transducers: The Last Night Action Sci-Fi Yes Yes Yes\n18m17 The Pale Tower Fantasy Sci-Fi Yes Yes No\n18m19 Bea and the Bute Fantasy Romance Yes Yes Yes\n18m21 The Daddy Action Fantasy No No Yes\n18m22 Planet Wars: Episode X Sci-Fi Action Yes No Yes\n18m23 Guardians of the Milky Way Action Sci-Fi Yes Yes Yes\n18m26 Odin Horror Sci-Fi No Yes Yes\n18m27 That Fantasy Sci-Fi No No Yes\n18m30 Underneath Action Horror Yes No No\n18m31 Debatable Me Animation Action Yes Yes No",
+          "text": "Describe two different changes you should make to the flowchart to find the smallest number\ninstead of the largest number.\nChange 1 ______\nChange 2 ______\n6 A shop that sells copies of movies to the public has set up a new database table called 2018MOV\nto store some new releases. Part of this table is given, showing the catalogue number, title, genres\nand available formats (Blu-ray, DVD or streaming) of each movie.\nCatNo Title Genre 1 Genre 2 Blu-ray DVD Stream\n18m01 Battery Rangers Adventure Fantasy Yes No Yes\n18m02 Golfwatch Comedy Drama Yes No Yes\n18m03 Chair 27 Comedy Drama Yes Yes No\n18m04 Wander Woman Action Fantasy Yes No Yes\n18m05 Justine League Action Fantasy Yes Yes Yes\n18m06 That Horror Thriller Yes Yes No\n18m07 Insect Dude Action Fantasy No Yes No\n18m08 Dover Beach Action History No Yes No\n18m12 Slow 25 Action Thriller No Yes No\n18m15 Kongkers Adventure Fantasy No Yes No\n18m16 Transducers: The Last Night Action Sci-Fi Yes Yes Yes\n18m17 The Pale Tower Fantasy Sci-Fi Yes Yes No\n18m19 Bea and the Bute Fantasy Romance Yes Yes Yes\n18m21 The Daddy Action Fantasy No No Yes\n18m22 Planet Wars: Episode X Sci-Fi Action Yes No Yes\n18m23 Guardians of the Milky Way Action Sci-Fi Yes Yes Yes\n18m26 Odin Horror Sci-Fi No Yes Yes\n18m27 That Fantasy Sci-Fi No No Yes\n18m30 Underneath Action Horror Yes No No\n18m31 Debatable Me Animation Action Yes Yes No",
           "marks": 2,
           "type": "describe",
           "answerType": "fill_blank",
@@ -225,7 +243,7 @@
           "parts": []
         },
         {
-          "id": "7a",
+          "id": "10a",
           "label": "(a)",
           "text": "State the number of records in this part of the table.",
           "marks": 1,
@@ -236,7 +254,7 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "10b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -246,7 +264,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7bi",
+              "id": "10bi",
               "label": "(i)",
               "text": "Give the name of the field that should be used for the primary key.",
               "marks": 1,
@@ -257,7 +275,7 @@
               "parts": []
             },
             {
-              "id": "7bii",
+              "id": "10bii",
               "label": "(ii)",
               "text": "State the reason for choosing this field for the primary key.",
               "marks": 1,
@@ -270,7 +288,7 @@
           ]
         },
         {
-          "id": "7c",
+          "id": "10c",
           "label": "(c)",
           "text": "Complete the table to show the most appropriate data type for each field based on the data\nshown in the table at the start of question 6.\nField Data type\nCatNo\nTitle\nGenre 1\nStream",
           "marks": 2,
@@ -281,7 +299,7 @@
           "parts": []
         },
         {
-          "id": "7d",
+          "id": "10d",
           "label": "(d)",
           "text": "List the output that would be given by this query-by-example.\nField: CatNo Title Genre 1 Blu-ray DVD Stream\nTable: 2018MOV 2018MOV 2018MOV 2018MOV 2018MOV 2018MOV\nSort:\nShow: 3 3 3 3 3\nCriteria: =“Comedy”\nor:",
           "marks": 2,
@@ -292,9 +310,9 @@
           "parts": []
         },
         {
-          "id": "7e",
+          "id": "10e",
           "label": "(e)",
-          "text": "Using the query-by-example grid, write a query to identify all the movies that are categorised\nas Sci-Fi and available to stream. Only display the catalogue number and title of the film, with\nthe titles listed in alphabetical order.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Using the query-by-example grid, write a query to identify all the movies that are categorised\nas Sci-Fi and available to stream. Only display the catalogue number and title of the film, with\nthe titles listed in alphabetical order.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -303,12 +321,9 @@
           "parts": []
         }
       ],
-      "marks": 22,
+      "marks": 4,
       "text": [
-        "Counter = Counter + 1",
-        "9 PRINT ′The sum of the numbers you entered is ′, Total",
-        "10 PRINT ′The average of the numbers you entered is ′, Total / Counter",
-        "[4]",
+        "PRINT ′The average of the numbers you entered is ′, Total / Counter",
         "4 An algorithm is written in pseudocode:",
         "INPUT Numb er",
         "IF Numb er > 100",

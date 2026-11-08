@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w17",
   "component": "21",
-  "totalMarks": 67,
+  "totalMarks": 75,
   "questionCount": 5,
   "questions": [
     {
@@ -170,7 +170,7 @@
           "id": "3b",
           "label": "(b)",
           "text": "The value of UserID should be unique for each user but a problem has occurred and\nrepeated UserID values may have been issued.\nThe array is sorted by UserID, so any repeated UserID values will appear in consecutive\narray elements.\nA procedure, FindRepeats is required.\nThis will:\n• compare each element with the previous element and output the UserID and UserName\nif the UserID is repeated\n• output the total number of UserIDs that are repeated.\nFor example, the UserNameArray contains the following entries.\nArray element Comment\n122222Jim Moriarty\n123456Fred Smith\n123456Eric Sykes\nRepeated User ID\n123456Kevin Turvey\nRepeated User ID\n222244Alice Chan\n222244Myra Singh\nRepeated User ID\n333333Yasmin Halim\nFor this example, the output is:\n123456Eric Sykes\n123456Kevin Turvey\n222244Myra Singh\nThere are 3 repeated UserIDs\nIf no repeated UserIDs are found, the output is:\nThe array contains no repeated UserIDs\nWrite program code for the procedure, FindRepeats.\nYou should assume that UserNameArray has been declared as a global variable.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
-          "marks": null,
+          "marks": 8,
           "type": "compare",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -234,7 +234,7 @@
           ]
         }
       ],
-      "marks": 15,
+      "marks": 23,
       "text": []
     },
     {
@@ -294,7 +294,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "A function, IsEmailValid, is to be written to test for a valid email address format.\nAn email address has a valid format if it obeys the following three rules:\n1. It contains a single ‘@’ symbol.\n2. The ‘@’ symbol must be preceded by at least one character.\n3. The ‘@’ symbol must be followed by at least three characters.\nChoose three different invalid strings to test distinct aspects of the rules.\nExplain your choice in each case.\nExplanation ______\nExplanation ______\nExplanation ______\n\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nMODULUS(x : INTEGER, y : INTEGER) RETURNS INTEGER\nreturns the remainder when x is divided by y using integer arithmetic.\nExample: MODULUS(5, 2) returns 1\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x.\nExample: INT(27.5415) returns 27\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString.\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "A function, IsEmailValid, is to be written to test for a valid email address format.\nAn email address has a valid format if it obeys the following three rules:\n1. It contains a single ‘@’ symbol.\n2. The ‘@’ symbol must be preceded by at least one character.\n3. The ‘@’ symbol must be followed by at least three characters.\nChoose three different invalid strings to test distinct aspects of the rules.\nExplain your choice in each case.\nExplanation ______\nExplanation ______\nExplanation ______\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nMODULUS(x : INTEGER, y : INTEGER) RETURNS INTEGER\nreturns the remainder when x is divided by y using integer arithmetic.\nExample: MODULUS(5, 2) returns 1\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x.\nExample: INT(27.5415) returns 27\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString.\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 6,
           "type": "name",
           "answerType": "fill_blank",

@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "w20",
   "component": "21",
-  "totalMarks": 42,
+  "totalMarks": 50,
   "questionCount": 12,
   "questions": [
     {
@@ -67,7 +67,7 @@
             {
               "id": "1dii",
               "label": "(ii)",
-              "text": "The car insurance system needs updating to record the percentage of customers who\nbought car insurance after obtaining a price to insure a car. Describe the changes\nrequired to your program.\n\nSection B",
+              "text": "The car insurance system needs updating to record the percentage of customers who\nbought car insurance after obtaining a price to insure a car. Describe the changes\nrequired to your program.\nSection B",
               "marks": 3,
               "type": "describe",
               "answerType": "long_answer",
@@ -87,10 +87,9 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
-        "Describe the purpose of variables and constants. Use an example of each in your answer.",
-        "[4]"
+        "Describe the purpose of variables and constants. Use an example of each in your answer."
       ]
     },
     {
@@ -188,7 +187,7 @@
           "id": "12a",
           "label": "(a)",
           "text": "Give the line number(s) from the algorithm of:\nan assignment statement ______\na loop ______\na counting statement ______\na totalling statement ______",
-          "marks": null,
+          "marks": 4,
           "type": "give",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -209,7 +208,7 @@
         {
           "id": "12c",
           "label": "(c)",
-          "text": "Explain how you could extend the algorithm to calculate and display the average weight of a\nbag of firewood in the load.\n\n4 This flowchart inputs five numbers and performs a calculation.\nThe predefined function MOD finds the remainder from integer division for example\nR ← 25 MOD 11 gives R a value of 3\nSTART\nINPUT\nV,W,X,Y,Z\nYes\nIS\nEND\nV = 0 ?\nNo\nA ← V*2 + W*3 + X*4 + Y*5\nB ← A MOD 11\nYes\nIS\nOUTPUT\nB = Z ?\n\"Valid\"\nNo\nOUTPUT\n\"Invalid\"",
+          "text": "Explain how you could extend the algorithm to calculate and display the average weight of a\nbag of firewood in the load.\n4 This flowchart inputs five numbers and performs a calculation.\nThe predefined function MOD finds the remainder from integer division for example\nR ← 25 MOD 11 gives R a value of 3\nSTART\nINPUT\nV,W,X,Y,Z\nYes\nIS\nEND\nV = 0 ?\nNo\nA ← V*2 + W*3 + X*4 + Y*5\nB ← A MOD 11\nYes\nIS\nOUTPUT\nB = Z ?\n\"Valid\"\nNo\nOUTPUT\n\"Invalid\"",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -231,7 +230,7 @@
         {
           "id": "12b",
           "label": "(b)",
-          "text": "Describe the purpose of this flowchart.\n\n5 A database table, AIRLINE, stores data used to compare airlines.\nNumber of Number of Head office Share price\nCode Airline name\nemployees countries\nFJ FastJet 60000 30 Europe 514.50\nMA MurphyAir 35000 8 Europe 152.67\nJS JetSeven 45000 22 Asia 257.44\nK3 Koala3 22000 11 Australia 501.21\nNS NorthState 30000 4 America 108.22\nSS SouthState 30000 4 America 126.35\nBJ BlueJet 15000 7 Africa 215.45\nSK SkyKing 32000 27 Europe 506.12\nPF PandaFly 50000 35 Asia 317.88",
+          "text": "Describe the purpose of this flowchart.\n5 A database table, AIRLINE, stores data used to compare airlines.\nNumber of Number of Head office Share price\nCode Airline name\nemployees countries\nFJ FastJet 60000 30 Europe 514.50\nMA MurphyAir 35000 8 Europe 152.67\nJS JetSeven 45000 22 Asia 257.44\nK3 Koala3 22000 11 Australia 501.21\nNS NorthState 30000 4 America 108.22\nSS SouthState 30000 4 America 126.35\nBJ BlueJet 15000 7 Africa 215.45\nSK SkyKing 32000 27 Europe 506.12\nPF PandaFly 50000 35 Asia 317.88",
           "marks": 2,
           "type": "name",
           "answerType": "short_answer",
@@ -264,7 +263,7 @@
         {
           "id": "12c",
           "label": "(c)",
-          "text": "Complete the query-by-example grid to find every airline with a head office in Asia or Africa,\nand number of countries greater than 4. Only show the airline name and number of countries.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Complete the query-by-example grid to find every airline with a head office in Asia or Africa,\nand number of countries greater than 4. Only show the airline name and number of countries.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -273,7 +272,7 @@
           "parts": []
         }
       ],
-      "marks": 22,
+      "marks": 26,
       "text": [
         "OUTPUT \"Total weight of the load is \", MaxWeight"
       ]

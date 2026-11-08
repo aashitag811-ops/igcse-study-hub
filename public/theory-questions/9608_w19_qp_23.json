@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w19",
   "component": "23",
-  "totalMarks": 62,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -183,7 +183,7 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "Three program modules process updating of passwords in a file. A description of the relationship",
         "between the modules is summarised as follows:",
@@ -199,8 +199,7 @@
         "ChangePassword()",
         "calls UpdateFile() to write the new password to the file",
         "Draw a structure chart to show the relationship between the three modules and the parameters",
-        "passed between them.",
-        "[5]"
+        "passed between them."
       ]
     },
     {
@@ -297,7 +296,7 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 8,
       "text": [
         "Abbreviations are often used in place of a full name. Concatenating the first letter of each word in",
         "the name makes an abbreviation.",
@@ -314,8 +313,7 @@
         "• each word in the name always starts with an uppercase character",
         "• only a single space separates words in the name.",
         "Write pseudocode to implement the function Abbreviate().",
-        "Refer to the Appendix on page 16 for the list of built-in functions and operators.",
-        "[8]"
+        "Refer to the Appendix on page 16 for the list of built-in functions and operators."
       ]
     },
     {
@@ -359,7 +357,7 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "The function FindBooksBy() has already been called and has stored values in the array\nResult.\nThe procedure, DisplayResults(), will output the information from the array.\nThe procedure receives the following two parameters:\n• a string containing the author name\n• an integer value representing the number of books found\nThe output should be formatted as in the following example:\nBooks written by: Brian Smith\nTitle Location\nLearning Python BD345\nArrays are not lists CZ562\nLearning Java CZ589\nNumber of titles found: 3\nIf no books by the author are found, the following should be output:\nSearch found no books by: Brian Smith\nWrite pseudocode for the procedure DisplayResults().\nRefer to the Appendix on page 16 for the list of built-in functions and operators.\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of ThisChar\nExample: ASC('A') returns 65\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE",
+          "text": "The function FindBooksBy() has already been called and has stored values in the array\nResult.\nThe procedure, DisplayResults(), will output the information from the array.\nThe procedure receives the following two parameters:\n• a string containing the author name\n• an integer value representing the number of books found\nThe output should be formatted as in the following example:\nBooks written by: Brian Smith\nTitle Location\nLearning Python BD345\nArrays are not lists CZ562\nLearning Java CZ589\nNumber of titles found: 3\nIf no books by the author are found, the following should be output:\nSearch found no books by: Brian Smith\nWrite pseudocode for the procedure DisplayResults().\nRefer to the Appendix on page 16 for the list of built-in functions and operators.\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of ThisChar\nExample: ASC('A') returns 65\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE",
           "marks": 7,
           "type": "name",
           "answerType": "short_answer",

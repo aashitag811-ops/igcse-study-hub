@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s15",
   "component": "32",
-  "totalMarks": 83,
+  "totalMarks": 90,
   "questionCount": 7,
   "questions": [
     {
@@ -228,40 +228,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A set of Backus-Naur Form (BNF) rules is given as follows:",
-        "Rule",
-        "number",
-        "1 <char> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z",
-        "2 <string> ::= <char> | <char><string>"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "<start> ::= 0"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "<stop> ::= 1"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "2a",
           "label": "(a)",
           "text": "State the meaning of the vertical line character (|) shown in rules 1 and 2.",
           "marks": 1,
@@ -272,7 +241,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "2b",
           "label": "(b)",
           "text": "A sequence of characters (a packet) is transmitted from a remote data logger to a computer.\nThe packet is made up of:\n• one character to denote the start of the transmission\n• a string of characters\n• one character to denote the end of the transmission\nEach packet follows the given BNF rules.\nA BNF rule may be recursive.\nIdentify the rule above which is recursive.\nRule number ______\nExplain what is meant by recursive.",
           "marks": 2,
@@ -283,7 +252,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "2c",
           "label": "(c)",
           "text": "Circle whether or not each of the following sequence of characters is a valid packet.\nShow how you arrived at your answer by listing, in order, the rules used.",
           "marks": null,
@@ -293,64 +262,111 @@
           "diagramOnly": true,
           "parts": [
             {
-              "id": "5ci",
+              "id": "2ci",
               "label": "(i)",
               "text": "0A1 Valid / Invalid (circle)\nRules ______",
               "marks": 2,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "complete",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             },
             {
-              "id": "5cii",
+              "id": "2cii",
               "label": "(ii)",
               "text": "P1 Valid / Invalid (circle)\nRules ______",
               "marks": 2,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "complete",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             },
             {
-              "id": "5ciii",
+              "id": "2ciii",
               "label": "(iii)",
               "text": "0TAN1 Valid / Invalid (circle)\nRules ______",
               "marks": 2,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "complete",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             },
             {
-              "id": "5civ",
+              "id": "2civ",
               "label": "(iv)",
-              "text": "The rules need to change as follows.\nA string with a sequence of one or more hash (#) characters is to be allowed as a valid\nstring:\n0#1 and 0####1 would both be a valid packet.\nImplement this by:\n• making no change to rule 1\n• making the appropriate changes (if any) to rules 2, 3, 4 and 5\n• adding one or more new rule(s)\nShow the complete set of rules below.\nRule\nnumber\n1 <char> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z\n2 <string> ::= ______\n3 <start> ::= ______\n4 <stop> ::= ______\n5 <packet> ::= ______\n\n3 (a) The following terms are used in object-oriented programming (OOP) and design.\nDraw a line connecting each term to the appropriate definition.\nIn the bottom box, state the term which matches the unused definition.\nTerm Definition\nEncapsulation An object created from a class.\nThe ability of a subclass to use properties\nInheritance\nand methods of a parent class.\nA data value which is assigned and stored\nClass\nfor an object.\nThe definition of an object. The ‘blueprint’\nInstance\nfrom which objects are created.\nAn action of an object. Implemented with\nMethod\nprocedures and functions.\nRestricts the programmer’s access to the\nobject’s data. Data values can only be\nread or written using methods provided by\nthe class.",
+              "text": "The rules need to change as follows.\nA string with a sequence of one or more hash (#) characters is to be allowed as a valid\nstring:\n0#1 and 0####1 would both be a valid packet.\nImplement this by:\n• making no change to rule 1\n• making the appropriate changes (if any) to rules 2, 3, 4 and 5\n• adding one or more new rule(s)\nShow the complete set of rules below.\nRule\nnumber\n1 <char> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z\n2 <string> ::= ______\n3 <start> ::= ______\n4 <stop> ::= ______\n5 <packet> ::= ______",
               "marks": 3,
-              "type": "state",
+              "type": "complete",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A set of Backus-Naur Form (BNF) rules is given as follows:",
+        "Rule",
+        "number",
+        "1 <char> ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z",
+        "2 <string> ::= <char> | <char><string>",
+        "3 <start> ::= 0",
+        "4 <stop> ::= 1",
+        "5 <packet> ::= <start><string><stop>"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
-          "id": "5b",
-          "label": "(b)",
-          "text": "A company’s website is maintained by several employees. The company has a number of\npermanent employees whose job title is either ‘programmer’ or ‘web designer’.\nAn agency supplies the company with contract employees when there is a need for specialist\nskills. Contract employees have the job title ‘graphic designer’ or ‘technical author’.\nEmployees have recorded:\n• employee reference number\n• date first worked for company\nContract employees have recorded:\n• agency they were supplied by\n• agreed hourly rate of pay\n• job role\nPermanent employees have recorded:\n• salary grade\n• courses attended\nProgrammers have recorded:\n• programming languages used\nWeb designers have recorded:\n• mark-up languages used\nThis scenario is to be implemented using object-oriented programming.\nComplete the class diagram using the classes:\nEmployee, Contract, Permanent, Programmer, WebDesigner.\nShow properties only for the given data.\nEmployee\nEmployeeRefNumber: STRING\n\n4 (a) Briefly describe the operation of a stack data structure.\n\nHigh level language programs make extensive use of subroutines.\nA stack is used to store data about each subroutine call.\nThe data are the return address, the register contents and the values of all local variables.\nA student project is to simulate the saving and retrieval of the data for subroutine calls.\nThe student simplifies this for their project and will store on the stack only the return addresses.\nMemory address\n(denary)\n// Main program\n<statements>\nCALL SUB1\n// end main program\nPROCEDURE SUB1\n<statements>\nCALL SUB2\n<statements>\n280 CALL SUB3\n<statements>\nEND PROCEDURE\nPROCEDURE SUB2\n<statements>\nEND PROCEDURE\nPROCEDURE SUB3\n<statements>\nEND PROCEDURE\nThe stack is implemented using the following data structure and variables:\nIdentifier Data type Description\nStores the return address for each\nStack ARRAY[1 : 100] OF INTEGER\nprocedure call\nStores the index position of the\nTOS INTEGER\nreturn address currently at the top\nof the stack\nStores the new return address to\nNewAddress INTEGER\nbe added to Stack",
-          "marks": 8,
-          "type": "describe",
-          "answerType": "long_answer",
-          "hasDiagramRef": true,
+          "id": "3a",
+          "label": "(a)",
+          "text": "The following terms are used in object-oriented programming (OOP) and design.\nDraw a line connecting each term to the appropriate definition.\nIn the bottom box, state the term which matches the unused definition.\nTerm Definition\nEncapsulation An object created from a class.\nThe ability of a subclass to use properties\nInheritance\nand methods of a parent class.\nA data value which is assigned and stored\nClass\nfor an object.\nThe definition of an object. The ‘blueprint’\nInstance\nfrom which objects are created.\nAn action of an object. Implemented with\nMethod\nprocedures and functions.\nRestricts the programmer’s access to the\nobject’s data. Data values can only be\nread or written using methods provided by\nthe class.",
+          "marks": 6,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "3b",
+          "label": "(b)",
+          "text": "A company’s website is maintained by several employees. The company has a number of\npermanent employees whose job title is either ‘programmer’ or ‘web designer’.\nAn agency supplies the company with contract employees when there is a need for specialist\nskills. Contract employees have the job title ‘graphic designer’ or ‘technical author’.\nEmployees have recorded:\n• employee reference number\n• date first worked for company\nContract employees have recorded:\n• agency they were supplied by\n• agreed hourly rate of pay\n• job role\nPermanent employees have recorded:\n• salary grade\n• courses attended\nProgrammers have recorded:\n• programming languages used\nWeb designers have recorded:\n• mark-up languages used\nThis scenario is to be implemented using object-oriented programming.\nComplete the class diagram using the classes:\nEmployee, Contract, Permanent, Programmer, WebDesigner.\nShow properties only for the given data.\nEmployee\nEmployeeRefNumber: STRING",
+          "marks": 8,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Briefly describe the operation of a stack data structure.\nHigh level language programs make extensive use of subroutines.\nA stack is used to store data about each subroutine call.\nThe data are the return address, the register contents and the values of all local variables.\nA student project is to simulate the saving and retrieval of the data for subroutine calls.\nThe student simplifies this for their project and will store on the stack only the return addresses.\nMemory address\n(denary)\n// Main program\n<statements>\nCALL SUB1\n// end main program\nPROCEDURE SUB1\n<statements>\nCALL SUB2\n<statements>\n280 CALL SUB3\n<statements>\nEND PROCEDURE\nPROCEDURE SUB2\n<statements>\nEND PROCEDURE\nPROCEDURE SUB3\n<statements>\nEND PROCEDURE\nThe stack is implemented using the following data structure and variables:\nIdentifier Data type Description\nStores the return address for each\nStack ARRAY[1 : 100] OF INTEGER\nprocedure call\nStores the index position of the\nTOS INTEGER\nreturn address currently at the top\nof the stack\nStores the new return address to\nNewAddress INTEGER\nbe added to Stack",
+          "marks": 1,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
           "label": "(b)",
           "text": "The diagram shows the stack after the first procedure call at line 172.\nStack\n1 173\nTOS",
           "marks": null,
@@ -360,7 +376,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "4bi",
               "label": "(i)",
               "text": "Complete the diagram to show the contents of the stack and the value of TOS after each\nchange.",
               "marks": 5,
@@ -371,7 +387,7 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "4bii",
               "label": "(ii)",
               "text": "The student uses the procedure PushAddress to simulate adding a return address to\nthe stack.\nThe incomplete pseudocode for the procedure PushAddress is shown below.\nUsing the given variables, fill in the missing pseudocode.\nPROCEDURE PushAddress\nIF TOS = 100\nTHEN\nOUTPUT \"______\"\nELSE\nINPUT ______\nTOS ← ______\n______ ← NewAddress\nENDIF\nENDPROCEDURE",
               "marks": 4,
@@ -384,16 +400,24 @@
           ]
         },
         {
-          "id": "5c",
+          "id": "4c",
           "label": "(c)",
-          "text": "The student uses the procedure PopAddress to simulate retrieving a return address from\nthe stack.\nComplete the pseudocode for this PopAddress procedure.\nPROCEDURE PopAddress\nIF ______\nTHEN\nOUTPUT \"There are no current procedure calls\"\nELSE\nOUTPUT \"Address\" Stack[TOS]\nENDIF\nENDPROCEDURE \nQuestion 5 begins on page 16.\n5 A computer system stores integers in a single byte using two’s complement representation.",
+          "text": "The student uses the procedure PopAddress to simulate retrieving a return address from\nthe stack.\nComplete the pseudocode for this PopAddress procedure.\nPROCEDURE PopAddress\nIF ______\nTHEN\nOUTPUT \"There are no current procedure calls\"\nELSE\nOUTPUT \"Address\" Stack[TOS]\nENDIF\nENDPROCEDURE \nQuestion 5 begins on page 16.",
           "marks": 2,
           "type": "complete",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
           "id": "5a",
           "label": "(a)",
@@ -407,7 +431,7 @@
             {
               "id": "5ai",
               "label": "(i)",
-              "text": "Denary ______\nHexadecimal ______\n\n1 1 1 0 0 0 1 1",
+              "text": "Denary ______\nHexadecimal ______\n1 1 1 0 0 0 1 1",
               "marks": 2,
               "type": "complete",
               "answerType": "fill_blank",
@@ -496,9 +520,9 @@
           ]
         }
       ],
-      "marks": 42,
+      "marks": 11,
       "text": [
-        "<packet> ::= <start><string><stop>"
+        "A computer system stores integers in a single byte using two’s complement representation."
       ]
     },
     {
@@ -530,7 +554,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Describe one benefit and one drawback of using an interpreter for part of the software\ndevelopment.\nBenefit ______\nDrawback ______\n\nXYZ program\ncode\nSource code\nInterpreter\n2 Assembler 2 Compiler\n4 4\nIntermediate\nIntermediate\ncode\ncode\nObject code\nCode\nexecution",
+          "text": "Describe one benefit and one drawback of using an interpreter for part of the software\ndevelopment.\nBenefit ______\nDrawback ______\nXYZ program\ncode\nSource code\nInterpreter\n2 Assembler 2 Compiler\n4 4\nIntermediate\nIntermediate\ncode\ncode\nObject code\nCode\nexecution",
           "marks": 2,
           "type": "describe",
           "answerType": "fill_blank",
@@ -611,7 +635,7 @@
             {
               "id": "7ciii",
               "label": "(iii)",
-              "text": "Give two benefits to the company that an intranet would provide.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "Give two benefits to the company that an intranet would provide.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 2,
               "type": "name",
               "answerType": "short_answer",

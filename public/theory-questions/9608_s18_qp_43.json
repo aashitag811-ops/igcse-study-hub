@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s18",
   "component": "43",
-  "totalMarks": 68,
+  "totalMarks": 17,
   "questionCount": 13,
   "questions": [
     {
@@ -94,7 +94,7 @@
         {
           "id": "05e",
           "label": "(e)",
-          "text": "State what the following goal returns.\ncan_fly(glasgow, rome).\n\n2 The array ItemList[1:20] stores data. A bubble sort sorts these data.",
+          "text": "State what the following goal returns.\ncan_fly(glasgow, rome).\n2 The array ItemList[1:20] stores data. A bubble sort sorts these data.",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",
@@ -235,7 +235,7 @@
         {
           "id": "13c",
           "label": "(c)",
-          "text": "An insertion sort is another sorting algorithm.\nState two situations when an insertion sort is more efficient than a bubble sort. Give a reason\nfor each.\nSituation 1 ______\nReason ______\nSituation 2 ______\nReason ______\n\n3 An internet based music streaming service provides access to an unlimited number of songs for\nmembers to play.\nThe following pseudocode represents the operation of the service.\nCALL OpenAccount()\nCALL OperateAccount()\nCALL CloseAccount()\nPROCEDURE OperateAccount()\nWHILE RequestCloseAccount() = FALSE\nIF SubscriptionDue() = TRUE\nTHEN\nCALL MakePayment()\nELSE\nCALL PlaySong()\nENDIF\nENDWHILE\nENDPROCEDURE",
+          "text": "An insertion sort is another sorting algorithm.\nState two situations when an insertion sort is more efficient than a bubble sort. Give a reason\nfor each.\nSituation 1 ______\nReason ______\nSituation 2 ______\nReason ______\n3 An internet based music streaming service provides access to an unlimited number of songs for\nmembers to play.\nThe following pseudocode represents the operation of the service.\nCALL OpenAccount()\nCALL OperateAccount()\nCALL CloseAccount()\nPROCEDURE OperateAccount()\nWHILE RequestCloseAccount() = FALSE\nIF SubscriptionDue() = TRUE\nTHEN\nCALL MakePayment()\nELSE\nCALL PlaySong()\nENDIF\nENDWHILE\nENDPROCEDURE",
           "marks": 4,
           "type": "state",
           "answerType": "fill_blank",
@@ -257,7 +257,7 @@
         {
           "id": "13b",
           "label": "(b)",
-          "text": "The service needs extending so that members can download songs to play offline.\n• When a member selects a song, the service checks if the song has already been\ndownloaded.\n• If the member has already downloaded the song, the member has the option to delete or\nplay it.\n• If the member has not already downloaded the song they have the option to download or\nstream it.\nComplete the following JSP structure diagram to represent these new requirements.\nSelect Song\n\n4 A software company is developing a new application. The project manager has created a work\nbreakdown structure, as shown in the following table.\nActivity Days to complete Predecessor\nA Gather user requirements 6\nB Design work 8\nC Develop server code 4\nD Develop application code 5\nE User interface development 6\nF Test server code 2\nD,E\nG Test application 2\nF,G\nH Test application/server integration 5\nI Roll out mobile application 3",
+          "text": "The service needs extending so that members can download songs to play offline.\n• When a member selects a song, the service checks if the song has already been\ndownloaded.\n• If the member has already downloaded the song, the member has the option to delete or\nplay it.\n• If the member has not already downloaded the song they have the option to download or\nstream it.\nComplete the following JSP structure diagram to represent these new requirements.\nSelect Song\n4 A software company is developing a new application. The project manager has created a work\nbreakdown structure, as shown in the following table.\nActivity Days to complete Predecessor\nA Gather user requirements 6\nB Design work 8\nC Develop server code 4\nD Develop application code 5\nE User interface development 6\nF Test server code 2\nD,E\nG Test application 2\nF,G\nH Test application/server integration 5\nI Roll out mobile application 3",
           "marks": 4,
           "type": "design",
           "answerType": "long_answer",
@@ -290,7 +290,7 @@
         {
           "id": "13c",
           "label": "(c)",
-          "text": "For activity F, state the:\nearliest start time ______\nlatest finish time ______\n\nQuestion 5 begins on the next page.\n5 A computer game is being developed using object-oriented programming. The following image is\na screenshot from the game.\nThere are scenery elements and animated elements. The player’s character is one of the animated\nelements.\nEach game element has the attributes:\nAttribute Description Example value\nThe x coordinate of the game\nPositionX 92\nelement.\nThe y coordinate of the game\nPositionY 106\nelement.\nWidth The width of the game element. 150\nHeight 200\nThe height of the game element.\nThe filename of the image file for\nImageFilename GameElementFrame1.png\nthe game element.\nEach game element has a method, GetDetails() that returns a string containing all the\nelement’s attributes.\nThe player’s character is one of a number of animated elements. All animated elements have the\nattributes:\nAttribute Description Example value\nAnimationFrames\nAn array of GameElement\n\"Left\"\nA string giving the direction the\nDirection\nobject is travelling in.\n2000\nA value for the strength that\nStrength\nindicates the power of the object.\nA value for the health that\nHealth\nindicates the health of the object.\nThe player’s character can either move left or right, or jump.",
+          "text": "For activity F, state the:\nearliest start time ______\nlatest finish time ______\nQuestion 5 begins on the next page.\n5 A computer game is being developed using object-oriented programming. The following image is\na screenshot from the game.\nThere are scenery elements and animated elements. The player’s character is one of the animated\nelements.\nEach game element has the attributes:\nAttribute Description Example value\nThe x coordinate of the game\nPositionX 92\nelement.\nThe y coordinate of the game\nPositionY 106\nelement.\nWidth The width of the game element. 150\nHeight 200\nThe height of the game element.\nThe filename of the image file for\nImageFilename GameElementFrame1.png\nthe game element.\nEach game element has a method, GetDetails() that returns a string containing all the\nelement’s attributes.\nThe player’s character is one of a number of animated elements. All animated elements have the\nattributes:\nAttribute Description Example value\nAnimationFrames\nAn array of GameElement\n\"Left\"\nA string giving the direction the\nDirection\nobject is travelling in.\n2000\nA value for the strength that\nStrength\nindicates the power of the object.\nA value for the health that\nHealth\nindicates the health of the object.\nThe player’s character can either move left or right, or jump.",
           "marks": 2,
           "type": "state",
           "answerType": "fill_blank",
@@ -355,7 +355,7 @@
             {
               "id": "13dii",
               "label": "(ii)",
-              "text": "An additional method, GetScenery(), returns all the attributes of the Scenery class.\nWrite program code for the GetScenery() method.\nYou should use the GetDetails() method that the Scenery class inherits from the\nGameElement class.\nProgramming language ______\nProgram code\n\n6 An Abstract Data Type (ADT) is used to create a linked list. The linked list is created as an array of\nrecords. The records are of type ListNode.\nAn example of a record of ListNode is shown in the following table.\nData Field Value\nPlayer \"Alvaro\"\nPointer 1",
+              "text": "An additional method, GetScenery(), returns all the attributes of the Scenery class.\nWrite program code for the GetScenery() method.\nYou should use the GetDetails() method that the Scenery class inherits from the\nGameElement class.\nProgramming language ______\nProgram code\n6 An Abstract Data Type (ADT) is used to create a linked list. The linked list is created as an array of\nrecords. The records are of type ListNode.\nAn example of a record of ListNode is shown in the following table.\nData Field Value\nPlayer \"Alvaro\"\nPointer 1",
               "marks": 3,
               "type": "use",
               "answerType": "fill_blank",
@@ -402,7 +402,7 @@
         {
           "id": "13b",
           "label": "(b)",
-          "text": "The linked list stores ListNode records in alphabetical order of player. The last node in the\nlinked list always has a Pointer value of –1. The position of the first node in the linked list is\nheld in the variable ListHead.\nAfter some processing, the array and variables are in the state as follows:\nScorers\nListHead Player Pointer\n0 0 \"Alvaro\" 1\n\"Antoine\" 3\n2 \"Dimitri\" 7\n3 \"Cristiano\" 2\n\"Gareth\" 5\n5 \"Graziano\" 6\n6 \"Olivier\" 8\n\"Erik\" 4\n8 \"Yaya\" 9\n9 \"Zoto\" -1\nA recursive function traverses the linked list to search for a player.\nAn example of calling the function, using pseudocode, is:\nPosition SearchList(\"Gareth\", ListHead)\nComplete the following pseudocode to implement the function SearchList().\nThe function will return a value of 99 when a player is not found.\nFUNCTION SearchList(Find : STRING, Position : INTEGER) RETURNS INTEGER\nIF Scorer[Position].Player = ______\nTHEN\nRETURN ______\nELSE\nIF Scorer[Position].Pointer <> –1\nTHEN\nPosition SearchList(Find, ______)\nRETURN ______\nELSE\nRETURN ______\nENDIF\nENDIF\nENDFUNCTION\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "The linked list stores ListNode records in alphabetical order of player. The last node in the\nlinked list always has a Pointer value of –1. The position of the first node in the linked list is\nheld in the variable ListHead.\nAfter some processing, the array and variables are in the state as follows:\nScorers\nListHead Player Pointer\n0 0 \"Alvaro\" 1\n\"Antoine\" 3\n2 \"Dimitri\" 7\n3 \"Cristiano\" 2\n\"Gareth\" 5\n5 \"Graziano\" 6\n6 \"Olivier\" 8\n\"Erik\" 4\n8 \"Yaya\" 9\n9 \"Zoto\" -1\nA recursive function traverses the linked list to search for a player.\nAn example of calling the function, using pseudocode, is:\nPosition SearchList(\"Gareth\", ListHead)\nComplete the following pseudocode to implement the function SearchList().\nThe function will return a value of 99 when a player is not found.\nFUNCTION SearchList(Find : STRING, Position : INTEGER) RETURNS INTEGER\nIF Scorer[Position].Player = ______\nTHEN\nRETURN ______\nELSE\nIF Scorer[Position].Pointer <> –1\nTHEN\nPosition SearchList(Find, ______)\nRETURN ______\nELSE\nRETURN ______\nENDIF\nENDIF\nENDFUNCTION\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 5,
           "type": "state",
           "answerType": "fill_blank",
@@ -411,10 +411,9 @@
           "parts": []
         }
       ],
-      "marks": 58,
+      "marks": 7,
       "text": [
-        "ENDFOR",
-        "[7]"
+        "ENDFOR"
       ]
     }
   ]

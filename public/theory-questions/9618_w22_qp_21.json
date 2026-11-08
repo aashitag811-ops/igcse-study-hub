@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w22",
   "component": "21",
-  "totalMarks": 65,
+  "totalMarks": 75,
   "questionCount": 8,
   "questions": [
     {
@@ -108,13 +108,12 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "A 1D array Data of type integer contains 200 elements. Each element has a unique value.",
         "An algorithm is required to search for the largest value and output it.",
         "Describe the steps that the algorithm should perform.",
-        "Do not include pseudocode statements in your answer.",
-        "[5]"
+        "Do not include pseudocode statements in your answer."
       ]
     },
     {
@@ -185,7 +184,7 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "A program uses two 1D arrays of type integer. Array1 contains 600 elements and Array2",
         "contains 200 elements.",
@@ -199,8 +198,7 @@
         "10 15 average of first three values",
         "20 41",
         "average of next three values",
-        "Write pseudocode for the procedure Summarise().",
-        "[5]"
+        "Write pseudocode for the procedure Summarise()."
       ]
     },
     {
@@ -355,7 +353,7 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "Write pseudocode for module CheckFile().\n\nFurther modules are defined as follows:\nModule Description\n• takes a line from a project file as a parameter of type string\nCheckLine()\n• returns zero if the line is blank or contains no syntax error,\notherwise returns an error number as an integer\n• takes two parameters:\n○ the name of a project file as a string\n○ the maximum number of errors as an integer\n• uses CheckFile() to test the project file. Outputs an error\nmessage and ends if the project file is not valid\nCountErrors()\n• calls CheckLine() for each line in the project file\n• counts the number of errors\n• outputs the number of errors or a warning message if the\nmaximum number of errors is exceeded",
+          "text": "Write pseudocode for module CheckFile().\nFurther modules are defined as follows:\nModule Description\n• takes a line from a project file as a parameter of type string\nCheckLine()\n• returns zero if the line is blank or contains no syntax error,\notherwise returns an error number as an integer\n• takes two parameters:\n○ the name of a project file as a string\n○ the maximum number of errors as an integer\n• uses CheckFile() to test the project file. Outputs an error\nmessage and ends if the project file is not valid\nCountErrors()\n• calls CheckLine() for each line in the project file\n• counts the number of errors\n• outputs the number of errors or a warning message if the\nmaximum number of errors is exceeded",
           "marks": 7,
           "type": "name",
           "answerType": "short_answer",
@@ -388,7 +386,7 @@
         {
           "id": "8d",
           "label": "(d)",
-          "text": "Module CheckLine() includes a check for syntax errors.\nTwo examples of syntax error that cannot be detected from examining a single line are\nthose involving selection and iteration.\nGive two other examples.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Module CheckLine() includes a check for syntax errors.\nTwo examples of syntax error that cannot be detected from examining a single line are\nthose involving selection and iteration.\nGive two other examples.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
           "type": "give",
           "answerType": "short_answer",

@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s23",
   "component": "31",
-  "totalMarks": 67,
+  "totalMarks": 75,
   "questionCount": 12,
   "questions": [
     {
@@ -277,10 +277,9 @@
       "id": "8",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
-        "Outline the characteristics of massively parallel computers.",
-        "[3]"
+        "Outline the characteristics of massively parallel computers."
       ]
     },
     {
@@ -317,7 +316,7 @@
       "id": "10",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "The pseudocode algorithm shown copies an active accounts text file ActiveFile.txt to an",
         "archive accounts text file ArchiveFile.txt, one line at a time. Any blank lines found in the",
@@ -334,8 +333,7 @@
         "WRITEFILE \"ArchiveFile.txt\", ...............................................................................",
         "ENDIF",
         "ENDWHILE",
-        "CLOSEFILE \"ArchiveFile.txt\"",
-        "[5]"
+        "CLOSEFILE \"ArchiveFile.txt\""
       ]
     },
     {
@@ -408,7 +406,7 @@
         {
           "id": "12b",
           "label": "(b)",
-          "text": "A Fibonacci sequence is a series of numbers formed by adding together the two preceding\nnumbers, for example:\n0, 1, 1, 2, …\nThis function calculates and returns values in the Fibonacci sequence and uses recursion.\nFUNCTION Fib(Number : INTEGER) RETURNS INTEGER\nIF Number <= 1 THEN\nResult ← Number\nELSE\nResult ← Fib(Number – 1) + Fib(Number – 2)\nENDIF\nRETURN Result\nENDFUNCTION\nComplete the trace table for the function when it is called as Fib(5).\nCall number Function call Number Result Return value\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "A Fibonacci sequence is a series of numbers formed by adding together the two preceding\nnumbers, for example:\n0, 1, 1, 2, …\nThis function calculates and returns values in the Fibonacci sequence and uses recursion.\nFUNCTION Fib(Number : INTEGER) RETURNS INTEGER\nIF Number <= 1 THEN\nResult ← Number\nELSE\nResult ← Fib(Number – 1) + Fib(Number – 2)\nENDIF\nRETURN Result\nENDFUNCTION\nComplete the trace table for the function when it is called as Fib(5).\nCall number Function call Number Result Return value\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 5,
           "type": "complete",
           "answerType": "long_answer",

@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w20",
   "component": "33",
-  "totalMarks": 71,
+  "totalMarks": 75,
   "questionCount": 7,
   "questions": [
     {
@@ -296,14 +296,13 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Complete these statements about a virtual machine.",
         "A virtual machine is ................................................ that emulates a",
         "................................................ computer system.",
         "A virtual machine allows multiple ................................................ operating systems to run",
-        "on one computer using a ................................................ operating system.",
-        "[4]"
+        "on one computer using a ................................................ operating system."
       ]
     },
     {
@@ -402,7 +401,7 @@
             {
               "id": "7cii",
               "label": "(ii)",
-              "text": "A program written in assembly language, continuously checks the flags. If a flag is set,\nthe program jumps to the error-handling routine at the specified label. For example, if\nthe load is too heavy, the program jumps to the error-handling routine with the label\nTOOHEAVY. The error-handling routine instructions have not been provided.\nA programmer has written most of the instructions for the program in the following table.\nThere are four missing operands.\nComplete the assembly language program by writing the four missing operands.\nLabel Op code Operand\nCHECKLOAD: LDD 803\nAND &F0\nSTO TEMP\nAND &80\nCMP &80\nJPE TOOHEAVY\nLDD TEMP\nAND &40\nCMP\nJPE TOOHIGH\nLDD TEMP\nAND\nCMP &20\nJPE UNSTABLE\nLDD\nAND &10\nCMP &10\nJPE NOTSECURED\nJMP\nTEMP:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "A program written in assembly language, continuously checks the flags. If a flag is set,\nthe program jumps to the error-handling routine at the specified label. For example, if\nthe load is too heavy, the program jumps to the error-handling routine with the label\nTOOHEAVY. The error-handling routine instructions have not been provided.\nA programmer has written most of the instructions for the program in the following table.\nThere are four missing operands.\nComplete the assembly language program by writing the four missing operands.\nLabel Op code Operand\nCHECKLOAD: LDD 803\nAND &F0\nSTO TEMP\nAND &80\nCMP &80\nJPE TOOHEAVY\nLDD TEMP\nAND &40\nCMP\nJPE TOOHIGH\nLDD TEMP\nAND\nCMP &20\nJPE UNSTABLE\nLDD\nAND &10\nCMP &10\nJPE NOTSECURED\nJMP\nTEMP:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 4,
               "type": "complete",
               "answerType": "long_answer",

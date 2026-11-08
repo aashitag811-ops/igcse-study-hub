@@ -3,7 +3,7 @@
   "subjectCode": "0607",
   "session": "s22",
   "component": "53",
-  "totalMarks": 35,
+  "totalMarks": 36,
   "questionCount": 6,
   "questions": [
     {
@@ -34,8 +34,8 @@
             {
               "id": "1aii",
               "label": "(ii)",
-              "text": "Complete the table.\nNumber of\nNumber of regions\nradii\n1 1",
-              "marks": null,
+              "text": "Complete the table.\nNumber of\nNumber of regions\nradii\n1 1\n2 2",
+              "marks": 1,
               "type": "complete",
               "answerType": "long_answer",
               "hasDiagramRef": false,
@@ -43,9 +43,20 @@
               "parts": []
             }
           ]
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Write a formula, in terms of n, for the number of regions, R, when there are n radii.",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 5,
       "text": [
         "Radii",
         "The diagrams show the number of regions inside a circle when 1 radius and 2 radii are drawn.",
@@ -58,17 +69,6 @@
       "id": "2",
       "context": [],
       "parts": [
-        {
-          "id": "2b",
-          "label": "(b)",
-          "text": "Write a formula, in terms of n, for the number of regions, R, when there are n radii.\n\n2 Diameters\nThe diagrams show the number of regions inside a circle when 1 diameter and 2 diameters are drawn.\n2 3\n1 diameter 2 diameters",
-          "marks": 1,
-          "type": "circle",
-          "answerType": "diagram_only",
-          "hasDiagramRef": false,
-          "diagramOnly": true,
-          "parts": []
-        },
         {
           "id": "2a",
           "label": "(a)",
@@ -92,44 +92,31 @@
           "parts": []
         }
       ],
-      "marks": 6,
+      "marks": 5,
       "text": [
-        "2",
-        "[1]"
+        "Diameters",
+        "The diagrams show the number of regions inside a circle when 1 diameter and 2 diameters are drawn.",
+        "2 3",
+        "1 diameter 2 diameters"
       ]
     },
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Chords",
-        "In this investigation:",
-        "• each chord must cut every other chord",
-        "• only two chords may intersect at any point.",
-        "The diagrams show the number of regions inside a circle when 1 chord, 2 chords and 3 chords are",
-        "drawn.",
-        "1 1"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Count the number of regions in the circle when 4 chords are drawn.",
           "marks": 1,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "Complete this table.\nYou may use the empty circle to help you.\nNumber of Number of\nchords regions\n1 2\n2 4\n3 7\n6 22",
           "marks": 2,
@@ -140,16 +127,34 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
-          "text": "This is a formula for the number of regions, R, when there are n intersecting chords.\nR = n + bn + 1\nFind the value of b.\n\n4 Tangents\nA region can be inside or outside the circle when the lines are tangents.\nThese two diagrams both show a circle with 2 tangents and the regions numbered.\nThe maximum number of regions for a circle with 2 tangents is 6.\n2 2",
+          "text": "This is a formula for the number of regions, R, when there are n intersecting chords.\nR = n + bn + 1\nFind the value of b.",
           "marks": 3,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Chords",
+        "In this investigation:",
+        "• each chord must cut every other chord",
+        "• only two chords may intersect at any point.",
+        "The diagrams show the number of regions inside a circle when 1 chord, 2 chords and 3 chords are",
+        "drawn.",
+        "1 1",
+        "4 7",
+        "1 chord 2 chords 3 chords"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -218,10 +223,13 @@
           "parts": []
         }
       ],
-      "marks": 15,
+      "marks": 9,
       "text": [
-        "7",
-        "1 chord 2 chords 3 chords"
+        "Tangents",
+        "A region can be inside or outside the circle when the lines are tangents.",
+        "These two diagrams both show a circle with 2 tangents and the regions numbered.",
+        "The maximum number of regions for a circle with 2 tangents is 6.",
+        "2 2"
       ]
     },
     {
@@ -282,7 +290,7 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "Find the larger number of regions.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Find the larger number of regions.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",

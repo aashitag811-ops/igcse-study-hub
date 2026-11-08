@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s20",
   "component": "23",
-  "totalMarks": 55,
+  "totalMarks": 71,
   "questionCount": 5,
   "questions": [
     {
@@ -159,7 +159,7 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "The term adaptive maintenance refers to amendments that are made in response to\nchanges to the program specification. These changes usually affect the program algorithm.\nName one other part of the design that can change as a result of adaptive maintenance.\n\n4 A global 1D array, Contact, of type STRING is used to store a list of names and email addresses.\nThere are 1000 elements in the array. Each element stores one data item. The format of each\ndata item is as follows:\n<Name>':'<EmailAddress>\nName and EmailAddress are both variable-length strings.\nFor example:\n\"Wan Zhu:zwan99@mymail.com\"\nA function, Extract(), is part of the program that processes the array. A string data item is\npassed to the function as a parameter. The function will return the Name part. Validation is not\nnecessary.",
+          "text": "The term adaptive maintenance refers to amendments that are made in response to\nchanges to the program specification. These changes usually affect the program algorithm.\nName one other part of the design that can change as a result of adaptive maintenance.\n4 A global 1D array, Contact, of type STRING is used to store a list of names and email addresses.\nThere are 1000 elements in the array. Each element stores one data item. The format of each\ndata item is as follows:\n<Name>':'<EmailAddress>\nName and EmailAddress are both variable-length strings.\nFor example:\n\"Wan Zhu:zwan99@mymail.com\"\nA function, Extract(), is part of the program that processes the array. A string data item is\npassed to the function as a parameter. The function will return the Name part. Validation is not\nnecessary.",
           "marks": 1,
           "type": "name",
           "answerType": "short_answer",
@@ -226,7 +226,7 @@
               "id": "5bi",
               "label": "(i)",
               "text": "Every time a boat is hired out, details of the hire are added at the end of a text file,\nHirelog.txt. Each line of the text file corresponds to information about the hire of one\nboat.\nThe format of each line of information is as follows:\n<Date><BoatNumber><HireDuration>\n• Date is an 8-digit numeric string in the format YYYYMMDD\n• BoatNumber is a two-digit numeric string in the range \"01\" to \"20\"\n• HireDuration is a variable-length string representing a numeric value in hours.\nFor example, the string \"1.5\" would represent a hire duration of 1½ hours.\nA module GetHours() is defined as follows:\nModule Description\n• Takes two parameters:\nthe BoatNumber as a string\nthe date of the last service for that boat (\"YYYYMMDD\")\nas a string\nGetHours()\n• Searches through file Hirelog.txt and calculates the sum of\nthe hire durations for the given boat after the given date (hire\ndurations on or before the given date are ignored)\n• Returns the total of the hire durations as a real\nNote:\nStandard comparison operators may be used with dates in this format.\nFor example:\n\"20200813\" > \"20200812\" would evaluate to TRUE\nParameter validation is not required.\nWrite pseudocode for the module GetHours().\nRefer to the Appendix on page 19 for a list of built-in pseudocode functions and\noperators.",
-              "marks": null,
+              "marks": 8,
               "type": "evaluate",
               "answerType": "long_answer",
               "hasDiagramRef": false,
@@ -250,7 +250,7 @@
           "id": "5c",
           "label": "(c)",
           "text": "A new module is described as follows:\nModule Description\n• Takes an integer as a parameter that represents the maximum\nnumber of hours before a boat must be serviced\n• Uses GetLastService() and GetHours()\n• Outputs:\na suitable heading\nthe BoatNumber of each boat hired for more than the\nmaximum number of hours since its last service\nthe total hire duration for each of these boats\nServiceList()\nAn example output list is:\nBoat Service List\n4: 123\n17: 117\nIf no boats are due to be serviced, the output is:\nBoat Service List\nNo boats are due to be serviced\nWrite program code for the module ServiceList().\nPython: You should show a comment statement for each variable used with its data type.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nProgramming language ______\nProgram code",
-          "marks": null,
+          "marks": 8,
           "type": "write",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -292,7 +292,7 @@
             {
               "id": "5diii",
               "label": "(iii)",
-              "text": "Explain how single stepping may be used to help find a logic error in a program.\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "Explain how single stepping may be used to help find a logic error in a program.\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nSTRING_TO_NUM(x : STRING) RETURNS REAL\nreturns a numeric representation of a string.\nNote: This function will also work if x is of type CHAR\nExample: STRING_TO_NUM(\"23.45\") returns 23.45\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -303,7 +303,7 @@
           ]
         }
       ],
-      "marks": 20,
+      "marks": 36,
       "text": [
         "A company hires out rowing boats on a lake. The company has 20 boats, numbered from 1 to 20.",
         "For safety reasons, the boats have to be serviced (checked and any damage repaired) regularly.",

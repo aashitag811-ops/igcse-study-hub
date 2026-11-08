@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "w23",
   "component": "12",
-  "totalMarks": 71,
-  "questionCount": 10,
+  "totalMarks": 72,
+  "questionCount": 14,
   "questions": [
     {
       "id": "1",
@@ -143,10 +143,10 @@
             {
               "id": "3bi",
               "label": "(i)",
-              "text": "Convert the denary value into a 12-bit two’s complement binary integer.\n−196\nAnswer ______",
-              "marks": 1,
-              "type": "complete",
-              "answerType": "fill_blank",
+              "text": "Convert the denary value into a 12-bit two’s complement binary integer.\n−196",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -154,10 +154,10 @@
             {
               "id": "3bii",
               "label": "(ii)",
-              "text": "Convert the Binary Coded Decimal (BCD) into denary.\n100001100101\nAnswer ______",
-              "marks": 1,
-              "type": "complete",
-              "answerType": "fill_blank",
+              "text": "Convert the Binary Coded Decimal (BCD) into denary.\n100001100101",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -165,10 +165,10 @@
             {
               "id": "3biii",
               "label": "(iii)",
-              "text": "Convert the unsigned binary integer into denary.\n000111010110\nAnswer ______",
-              "marks": 1,
-              "type": "complete",
-              "answerType": "fill_blank",
+              "text": "Convert the unsigned binary integer into denary.\n000111010110",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -187,7 +187,7 @@
           "parts": []
         }
       ],
-      "marks": 6,
+      "marks": 3,
       "text": []
     },
     {
@@ -535,13 +535,45 @@
       "text": [
         "LDR #0 100 101 110 111",
         "IN 0 0 51 65",
-        "STO 101",
-        "13 LDX 110",
-        "14 CMP 100",
+        "STO 101"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "LDX 110"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CMP 100",
         "JPE 21",
-        "LDD 101",
-        "17 ADD #16",
-        "18 INC IX",
+        "LDD 101"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ADD #16"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": 4,
+      "text": [
+        "INC IX",
         "STO 100",
         "JMP 13",
         "OUT",
@@ -554,7 +586,6 @@
         "49 1",
         "50 2",
         "51 3",
-        "[4]",
         "52 4",
         "65 A",
         "66 B",

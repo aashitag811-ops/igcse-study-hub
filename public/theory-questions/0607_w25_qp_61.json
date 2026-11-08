@@ -3,7 +3,7 @@
   "subjectCode": "0607",
   "session": "w25",
   "component": "61",
-  "totalMarks": 31,
+  "totalMarks": 50,
   "questionCount": 7,
   "questions": [
     {
@@ -35,45 +35,16 @@
         {
           "id": "1n",
           "label": "(n)",
-          "text": "L - S",
-          "marks": null,
+          "text": "L - S\n2 222 74 148\n4 246 82 164\n5 86",
+          "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 2,
-      "text": [
-        "2 3 4 5 6 7 8 9 10",
-        "11 12 13 14 15 16 17 18 19 20",
-        "21 22 23 24 25 26 27 28 29 30",
-        "31 32 33 34 35 36 37 38 39 40",
-        "41 42 43 44 45 46 47 48 49 50",
-        "51 52 53 54 55 56 57 58 59 60",
-        "61 62 63 64 65 66 67 68 69 70",
-        "71 72 73 74 75 76 77 78 79 80",
-        "The ring value is worked out in this way.",
-        "Step 1 Add the numbers along the inside edges of the large square to get L.",
-        "Step 2 Add the numbers along the inside edges of the small square to get S.",
-        "Step 3 Calculate L - S. This is the ring value.",
-        "Example",
-        "Step 1 L = 3 + 4 + 5 + 6 + 16 + 26 + 36 + 35 + 34 + 33 + 23 + 13",
-        "Step 2 S = 14 + 15 + 25 + 24",
-        "Step 3 Ring value = L - S",
-        "* 0000800000003 * DFD",
-        "1 4 by 4 square rings",
-        "The example shows square ring 3.",
-        "This is because 3 is the top left number in the ring."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "2c",
+          "id": "1c",
           "label": "(c)",
           "text": "Find an expression, in terms of n, for the ring value.",
           "marks": 3,
@@ -84,16 +55,28 @@
           "parts": []
         },
         {
-          "id": "2d",
+          "id": "1d",
           "label": "(d)",
-          "text": "Find the ring value for square ring 731.\n\n* 0000800000004 * DFD\n2 6 by 6 square rings\nOn the grid, a 6 by 6 square surrounds a 4 by 4 square.\nThe square ring has width 6.\n1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\n21 22 23 24 25 26 27 28 29 30\n31 32 33 34 35 36 37 38 39 40\n41 42 43 44 45 46 47 48 49 50\n51 52 53 54 55 56 57 58 59 60\n61 62 63 64 65 66 67 68 69 70\n71 72 73 74 75 76 77 78 79 80\n81 82 83 84 85 86 87 88 89 90",
+          "text": "Find the ring value for square ring 731.\n* 0000800000004 * DFD",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "4 by 4 square rings",
+        "The example shows square ring 3.",
+        "This is because 3 is the top left number in the ring."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
           "id": "2a",
           "label": "(a)",
@@ -119,47 +102,16 @@
         {
           "id": "2n",
           "label": "(n)",
-          "text": "L - S\n1 570\n2 590 236",
-          "marks": null,
+          "text": "L - S\n1 570\n2 590 236\n3 610 366\n4 630 378\n5 650 390 260\n* 0000800000005 * DFD",
+          "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 6,
-      "text": [
-        "222 74 148",
-        "4 246 82 164",
-        "5 86",
-        "[2]"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "610 366"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "630 378"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "5c",
+          "id": "2c",
           "label": "(c)",
           "text": "Find an expression, in terms of n, for the ring value.",
           "marks": 2,
@@ -170,16 +122,79 @@
           "parts": []
         },
         {
-          "id": "5d",
+          "id": "2d",
           "label": "(d)",
-          "text": "A square ring has a ring value of 1028.\nFind the number in the bottom right square of this square ring.\n\n* 0000800000006 * DFD\n3 w by w square rings\nThe width of a square ring is w.\nFor the square ring in Question 1, w = 4.\nFor the square ring in Question 2, w = 6.\nFor a w by w square ring, an expression for the ring value is 8n + kw - k.\nFor an 8 by 8 square ring, an expression for the ring value is 8n + 308.\nFind the value of k.\nWrite down an expression, in terms of n and w, for the ring value of a w by w square ring.\nk = ______\nexpression for the ring value ______\n\n* 0000800000007 * DFD\n4 The diagram shows two square rings, shaded and .\nThe larger square ring has width w.\nThe number in the top left square is n.\nUse algebra to find what is always true about the difference between the two ring values.\n\n* 0000800000008 * DFD\nSection B\nMODELLING LIFT\nYou are advised to spend no more than 45 minutes on this section.\nIn this task, you will model the upward force, lift, that an aircraft wing makes when it flies through the air.\nDifferent wing shapes make different amounts of lift.\nThis task is about one wing shape and the lift that it makes.\nlift\nwing\nDirection of flight\nairflow\n5 We need to know the air density (the mass of 1 cubic metre of air) to calculate the lift.\nThis table shows the air density at different heights above sea level.\nHeight above\n0 1 5 10 20 32 40 47 50\nsea level (h km)\nAir density\n1.2250 1.1160 0.7361 0.4127 0.0880 0.0132 0.0039 0.0014 0.0010\n(d kg/m )\nThe values in the shaded cells are plotted on the grid.\n1.2\n1.0\n0.8\nAir density\n0.6\n(kg/m )\n0.4\n0.2\n0 10 20 30 40 50\nHeight above sea level (km)\n* 0000800000009 * DFD",
+          "text": "A square ring has a ring value of 1028.\nFind the number in the bottom right square of this square ring.\n* 0000800000006 * DFD",
           "marks": 3,
-          "type": "calculate",
-          "answerType": "fill_blank",
-          "hasDiagramRef": true,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "6 by 6 square rings",
+        "On the grid, a 6 by 6 square surrounds a 4 by 4 square.",
+        "The square ring has width 6.",
+        "1 2 3 4 5 6 7 8 9 10",
+        "11 12 13 14 15 16 17 18 19 20",
+        "21 22 23 24 25 26 27 28 29 30",
+        "31 32 33 34 35 36 37 38 39 40",
+        "41 42 43 44 45 46 47 48 49 50",
+        "51 52 53 54 55 56 57 58 59 60",
+        "61 62 63 64 65 66 67 68 69 70",
+        "71 72 73 74 75 76 77 78 79 80",
+        "81 82 83 84 85 86 87 88 89 90"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": 3,
+      "text": [
+        "w by w square rings",
+        "The width of a square ring is w.",
+        "For the square ring in Question 1, w = 4.",
+        "For the square ring in Question 2, w = 6.",
+        "For a w by w square ring, an expression for the ring value is 8n + kw - k.",
+        "For an 8 by 8 square ring, an expression for the ring value is 8n + 308.",
+        "Find the value of k.",
+        "Write down an expression, in terms of n and w, for the ring value of a w by w square ring.",
+        "k = ................................................",
+        "expression for the ring value ................................................",
+        "* 0000800000007 * DFD"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": 5,
+      "text": [
+        "The diagram shows two square rings, shaded and .",
+        "The larger square ring has width w.",
+        "The number in the top left square is n.",
+        "Use algebra to find what is always true about the difference between the two ring values.",
+        "* 0000800000008 * DFD",
+        "Section B",
+        "MODELLING LIFT",
+        "You are advised to spend no more than 45 minutes on this section.",
+        "In this task, you will model the upward force, lift, that an aircraft wing makes when it flies through the air.",
+        "Different wing shapes make different amounts of lift.",
+        "This task is about one wing shape and the lift that it makes.",
+        "lift",
+        "wing",
+        "Direction of flight",
+        "airflow"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
           "id": "5a",
           "label": "(a)",
@@ -284,7 +299,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "Comment on the model when h = 50.\n\n* 0000800000010 * DFD",
+          "text": "Comment on the model when h = 50.\n* 0000800000010 * DFD",
           "marks": 1,
           "type": "other",
           "answerType": "short_answer",
@@ -293,11 +308,28 @@
           "parts": []
         }
       ],
-      "marks": 14,
+      "marks": 9,
       "text": [
-        "650 390 260",
-        "[2]",
-        "* 0000800000005 * DFD"
+        "We need to know the air density (the mass of 1 cubic metre of air) to calculate the lift.",
+        "This table shows the air density at different heights above sea level.",
+        "Height above",
+        "0 1 5 10 20 32 40 47 50",
+        "sea level (h km)",
+        "Air density",
+        "1.2250 1.1160 0.7361 0.4127 0.0880 0.0132 0.0039 0.0014 0.0010",
+        "(d kg/m )",
+        "The values in the shaded cells are plotted on the grid.",
+        "1.2",
+        "1.0",
+        "0.8",
+        "Air density",
+        "0.6",
+        "(kg/m )",
+        "0.4",
+        "0.2",
+        "0 10 20 30 40 50",
+        "Height above sea level (km)",
+        "* 0000800000009 * DFD"
       ]
     },
     {
@@ -307,7 +339,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Use a = 0 and a = 20 to find two equations each in terms of m and n.\nGive each equation in its simplest form.\n\n* 0000800000011 * DFD",
+          "text": "Use a = 0 and a = 20 to find two equations each in terms of m and n.\nGive each equation in its simplest form.\n* 0000800000011 * DFD",
           "marks": 3,
           "type": "give",
           "answerType": "short_answer",
@@ -329,7 +361,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Use your model to find the maximum lift coefficient for this wing.\n\nQuestion 7 is printed on the next page.\n* 0000800000012 * DFD\ndv AC",
+          "text": "Use your model to find the maximum lift coefficient for this wing.\nQuestion 7 is printed on the next page.\n* 0000800000012 * DFD\ndv AC",
           "marks": 2,
           "type": "use",
           "answerType": "short_answer",
@@ -359,7 +391,7 @@
       "id": "7",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "A model for the lift, L newtons, that an aircraft makes is L = .",
         "d = air density (kg/m )",
@@ -373,7 +405,6 @@
         "• with angle of attack 3°.",
         "Use Question 6(b) and Model A in Question 5(b) to calculate the lift for this aircraft.",
         "Give your answer correct to 2 significant figures.",
-        "[7]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

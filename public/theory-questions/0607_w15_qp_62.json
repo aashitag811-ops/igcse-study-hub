@@ -43,7 +43,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "The diagrams show how the ant draws a 7-pointed star.\nA°\nA°\nA°\n1st turn 2nd turn 3rd turn\nDuring the 4th turn the ant\ncompletes its first revolution.\nA°\nA°\nA°\nA°\n5th turn 6th turn 7th turn\nHere is the completed 7-pointed star.\nTo draw a 7-pointed star, the ant must repeat the two steps 7 times, as shown in the diagrams.\nIn doing so, the ant makes 2 complete revolutions (720°).\nCalculate A.",
+          "text": "The diagrams show how the ant draws a 7-pointed star.\n1st turn 2nd turn 3rd turn\nDuring the 4th turn the ant\ncompletes its first revolution.\n5th turn 6th turn 7th turn\nHere is the completed 7-pointed star.\nTo draw a 7-pointed star, the ant must repeat the two steps 7 times, as shown in the diagrams.\nIn doing so, the ant makes 2 complete revolutions (720°).\nCalculate A.",
           "marks": null,
           "type": "calculate",
           "answerType": "calculate",
@@ -94,10 +94,32 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "Complete the table for stars that are drawn using the largest possible value of A which is less than 180°.\nThe first row gives a polygon and is shown here to help you see the pattern.\nNumber of points Number of revolutions,\nCalculation of A A\non the star n, that the ant makes\n3 1 120\n# 360",
+          "text": "Complete the table for stars that are drawn using the largest possible value of A which is less than 180°.\nThe first row gives a polygon and is shown here to help you see the pattern.\nNumber of points Number of revolutions,\nCalculation of A A\non the star n, that the ant makes\n3 1 120\n# 360\n5 2 144\n7 154.3\n# 360\n11 163.6",
           "marks": null,
           "type": "complete",
           "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Find a formula for A in terms of n.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "Find the number of points on the star when A = 172.8 .",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -110,28 +132,6 @@
       "id": "5",
       "context": [],
       "parts": [
-        {
-          "id": "5b",
-          "label": "(b)",
-          "text": "Find a formula for A in terms of n.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "5c",
-          "label": "(c)",
-          "text": "Find the number of points on the star when A = 172.8 .\n5 Question 2 shows the only two possible 7-pointed stars.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "5a",
           "label": "(a)",
@@ -311,10 +311,7 @@
       ],
       "marks": null,
       "text": [
-        "2 144",
-        "7 154.3",
-        "# 360",
-        "11 163.6"
+        "Question 2 shows the only two possible 7-pointed stars."
       ]
     }
   ]

@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "s19",
   "component": "41",
-  "totalMarks": 69,
-  "questionCount": 7,
+  "totalMarks": 75,
+  "questionCount": 3,
   "questions": [
     {
       "id": "1",
@@ -87,8 +87,8 @@
             {
               "id": "2aii",
               "label": "(ii)",
-              "text": "The following diagram shows a 2D array that stores the nodes of the binary tree’s linked\nlist.\nAdd the correct pointer values to complete the diagram, using your answer from\npart (a)(i).\nRootPointer\nIndex LeftPointer Data RightPointer\n0 99\n1 125\n2 121",
-              "marks": null,
+              "text": "The following diagram shows a 2D array that stores the nodes of the binary tree’s linked\nlist.\nAdd the correct pointer values to complete the diagram, using your answer from\npart (a)(i).\nRootPointer\nIndex LeftPointer Data RightPointer\n0 99\n1 125\n2 121\n3 97\nFreePointer\n4 109\n5 95\n6 135\n7 149",
+              "marks": 6,
               "type": "complete",
               "answerType": "long_answer",
               "hasDiagramRef": true,
@@ -96,59 +96,9 @@
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 5,
-      "text": [
-        "A computer games club wants to run a competition. The club needs a system to store the scores",
-        "achieved in the competition.",
-        "A selection of score data is as follows:",
-        "99, 125, 121, 97, 109, 95, 135, 149"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "97",
-        "FreePointer"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "109"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "95"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "135"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "7b",
+          "id": "2b",
           "label": "(b)",
           "text": "The club also considers storing the data in the order in which it receives the scores as a\nlinked list in a 1D array of records.\nThe following pseudocode algorithm searches for an element in the linked list.\nComplete the six missing sections in the algorithm.\nFUNCTION FindElement(Item : INTEGER) RETURNS …………………………………………\n…………………………………………… ← RootPointer\nWHILE CurrentPointer …………………………………………… NullPointer\nIF List[CurrentPointer].Data <> ……………………………………………\nTHEN\nCurrentPointer ← List[……………………………………………].Pointer\nELSE\nRETURN CurrentPointer\nENDIF\nENDWHILE\nCurrentPointer ← NullPointer\n………………………………………… CurrentPointer\nENDFUNCTION",
           "marks": 6,
@@ -159,7 +109,7 @@
           "parts": []
         },
         {
-          "id": "7c",
+          "id": "2c",
           "label": "(c)",
           "text": "The games club is looking at two programming paradigms: imperative and object-oriented\nprogramming paradigms.\nDescribe what is meant by the imperative programming paradigm and the object-oriented\nprogramming paradigm.",
           "marks": null,
@@ -169,7 +119,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7ci",
+              "id": "2ci",
               "label": "(i)",
               "text": "Imperative ______",
               "marks": 3,
@@ -180,7 +130,7 @@
               "parts": []
             },
             {
-              "id": "7cii",
+              "id": "2cii",
               "label": "(ii)",
               "text": "Object-oriented ______",
               "marks": 3,
@@ -193,7 +143,7 @@
           ]
         },
         {
-          "id": "7d",
+          "id": "2d",
           "label": "(d)",
           "text": "Players complete one game to place them into a category for the competition. The games club\nwants to implement a program to place players into the correct category. The programmer\nhas decided to use object-oriented programming (OOP).\nThe highest score that can be achieved in the game is 150. Any score less than 50 will not\nqualify for the competition. Players will be placed in a category based on their score.\nThe following diagram shows the design for the class Player. This includes the properties\nand methods.\nPlayer\nScore : INTEGER // initialised to 0\nCategory : STRING // \"Beginner\", \"Intermediate\",\n// \"Advanced\" or \"Not Qualified\", initialised\n// to \"Not Qualified\"\nPlayerID : STRING // initialised with the parameter InputPlayerID\nCreate() // method to create and initialise an object using\n// language-appropriate constructor\nSetScore() // checks that the Score parameter has a valid value\n// if so, assigns it to Score\nSetCategory() // sets Category based on player’s Score\nSetPlayerID() // allows a player to change their PlayerID\n// validates the new PlayerID\nGetScore() // returns Score\nGetCategory() // returns Category\nGetPlayerID() // returns PlayerID",
           "marks": null,
@@ -203,7 +153,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7di",
+              "id": "2di",
               "label": "(i)",
               "text": "The constructor receives the parameter InputPlayerID to create the PlayerID.\nOther properties are initialised as instructed in the class diagram.\nWrite program code for the Create() constructor method.\nProgramming language ______\nProgram code",
               "marks": 5,
@@ -214,7 +164,7 @@
               "parts": []
             },
             {
-              "id": "7dii",
+              "id": "2dii",
               "label": "(ii)",
               "text": "Write program code for the following three get methods.\nProgramming language ______\nGetScore()\nProgram code\nGetCategory()\nProgram code\nGetPlayerID()\nProgram code",
               "marks": 4,
@@ -225,7 +175,7 @@
               "parts": []
             },
             {
-              "id": "7diii",
+              "id": "2diii",
               "label": "(iii)",
               "text": "The method SetPlayerID()asks the user to input the new player ID and reads in this\nvalue.\nIt checks that the length of the PlayerID is less than or equal to 15 characters and\ngreater than or equal to 4 characters. If the input is valid, it sets this as the PlayerID,\notherwise it loops until the player inputs a valid PlayerID.\nUse suitable input and output messages.\nWrite program code for SetPlayerID().\nProgramming language ______\nProgram code",
               "marks": 4,
@@ -236,7 +186,7 @@
               "parts": []
             },
             {
-              "id": "7div",
+              "id": "2div",
               "label": "(iv)",
               "text": "The method SetScore()checks that its INTEGER parameter ScoreInput is valid. If\nit is valid, it is then set as Score. A valid ScoreInput is greater than or equal to 0 and\nless than or equal to 150.\nIf the ScoreInput is valid, the method sets Score and returns TRUE.\nIf the ScoreInput is not valid, the method does not set Score, displays an error\nmessage, and it returns FALSE.\nWrite program code for SetScore(ScoreInput : INTEGER).\nProgramming language ______\nProgram code",
               "marks": 5,
@@ -247,7 +197,7 @@
               "parts": []
             },
             {
-              "id": "7dv",
+              "id": "2dv",
               "label": "(v)",
               "text": "Write program code for the method SetCategory(). Use the properties and methods\nin the original class definition.\nPlayers will be placed in one of the following categories.\nCategory Criteria\nAdvanced Score is greater than 120\nIntermediate Score is greater than 80 and less than or equal to 120\nBeginner Score is greater than or equal to 50 and less than or equal to 80\nNot Qualified Score is less than 50\nProgramming language ______\nProgram code",
               "marks": 4,
@@ -258,7 +208,7 @@
               "parts": []
             },
             {
-              "id": "7dvi",
+              "id": "2dvi",
               "label": "(vi)",
               "text": "Joanne has played the first game to place her in a category for the competition.\nThe procedure CreatePlayer()performs the following tasks.\n• allows the player ID and score to be input with suitable prompts\n• creates an instance of Player with the identifier JoannePlayer\n• sets the score for the object\n• sets the category for the object\n• outputs the category for the object\nWrite program code for the CreatePlayer()procedure.\nProgramming language ______\nProgram code",
               "marks": 8,
@@ -271,7 +221,7 @@
           ]
         },
         {
-          "id": "7e",
+          "id": "2e",
           "label": "(e)",
           "text": "The programmer wants to test that the correct category is set for a player’s score.\nAs stated in part (d)(v), players will be placed in one of the following categories.\nCategory Criteria\nAdvanced Score is greater than 120\nIntermediate Score is greater than 80 and less than or equal to 120\nBeginner Score is greater than or equal to 50 and less than or equal to 80\nNot Qualified Score is less than 50\nComplete the table to provide test data for each category.\nCategory Type of test data Example test data\nNormal\nBeginner Abnormal\nBoundary\nNormal\nIntermediate Abnormal\nBoundary\nNormal\nAdvanced Abnormal\nBoundary",
           "marks": 3,
@@ -282,7 +232,7 @@
           "parts": []
         },
         {
-          "id": "7f",
+          "id": "2f",
           "label": "(f)",
           "text": "In part (b), the club stored scores in a 1D array. This allows the club to sort the scores.\nThe following is a sorting algorithm in pseudocode.\nNumberOfScores ← 5\nFOR Item ← 1 TO NumberOfScores – 1\nInsertScore ← ArrayData[Item]\nIndex ← Item – 1\nWHILE (ArrayData[Index] > InsertScore) AND (Index >= 0)\nArrayData[Index + 1] ← ArrayData[Index]\nIndex ← Index – 1\nENDWHILE\nArrayData[Index + 1] ← InsertScore\nENDFOR",
           "marks": null,
@@ -292,7 +242,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7fi",
+              "id": "2fi",
               "label": "(i)",
               "text": "Give the name of this algorithm.",
               "marks": 1,
@@ -303,7 +253,7 @@
               "parts": []
             },
             {
-              "id": "7fii",
+              "id": "2fii",
               "label": "(ii)",
               "text": "State the name of one other sorting algorithm.",
               "marks": 1,
@@ -314,9 +264,9 @@
               "parts": []
             },
             {
-              "id": "7fiii",
+              "id": "2fiii",
               "label": "(iii)",
-              "text": "Complete a dry run of the algorithm using the following trace table.\nArrayData\nItem NumberOfScores InsertScore Index\n0 1 2 3 4\n99 125 121 109 115\n\n3 Some algorithms can be written using recursion.",
+              "text": "Complete a dry run of the algorithm using the following trace table.\nArrayData\nItem NumberOfScores InsertScore Index\n0 1 2 3 4\n99 125 121 109 115",
               "marks": 7,
               "type": "complete",
               "answerType": "long_answer",
@@ -325,9 +275,22 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 65,
+      "text": [
+        "A computer games club wants to run a competition. The club needs a system to store the scores",
+        "achieved in the competition.",
+        "A selection of score data is as follows:",
+        "99, 125, 121, 97, 109, 95, 135, 149"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
-          "id": "7a",
+          "id": "3a",
           "label": "(a)",
           "text": "State two features of recursion.\nFeature 1 ______\nFeature 2 ______",
           "marks": 2,
@@ -338,9 +301,9 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "3b",
           "label": "(b)",
-          "text": "Explain what a compiler has to do to implement recursion.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Explain what a compiler has to do to implement recursion.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 3,
           "type": "explain",
           "answerType": "long_answer",
@@ -349,10 +312,9 @@
           "parts": []
         }
       ],
-      "marks": 59,
+      "marks": 5,
       "text": [
-        "149",
-        "[6]"
+        "Some algorithms can be written using recursion."
       ]
     }
   ]

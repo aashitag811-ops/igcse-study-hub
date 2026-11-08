@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w21",
   "component": "21",
-  "totalMarks": 73,
+  "totalMarks": 36,
   "questionCount": 7,
   "questions": [
     {
@@ -258,7 +258,7 @@
         {
           "id": "7c",
           "label": "(c)",
-          "text": "The queue is implemented using a 1D array.\nDescribe the algorithm that should be used to modify the end of queue pointer when adding\nan item to the queue.\nYour algorithm should detect any potential error conditions.\n\n4 A program controls the heating system in a sports hall.\nPart of the program involves reading a value from a sensor. The sensor produces a numeric value\nthat represents the temperature. The value is an integer, which should be in the range 0 to 40\ninclusive.\nA program function has been written to validate the values from the sensor.",
+          "text": "The queue is implemented using a 1D array.\nDescribe the algorithm that should be used to modify the end of queue pointer when adding\nan item to the queue.\nYour algorithm should detect any potential error conditions.\n4 A program controls the heating system in a sports hall.\nPart of the program involves reading a value from a sensor. The sensor produces a numeric value\nthat represents the temperature. The value is an integer, which should be in the range 0 to 40\ninclusive.\nA program function has been written to validate the values from the sensor.",
           "marks": 3,
           "type": "describe",
           "answerType": "long_answer",
@@ -280,7 +280,7 @@
         {
           "id": "7b",
           "label": "(b)",
-          "text": "A program module controls the heaters. This module operates as follows:\n• If the temperature is below 10, switch the heaters on.\n• If the temperature is above 20, switch the heaters off.\nComplete the following state-transition diagram for the heating system:\nStart\nHeaters\nHeaters\nOn\nOff\n\n5 The following data items will be recorded each time a student successfully logs on to the school\nnetwork:\nData item Example data\nStudent ID \"CJL404\"\n\"Lib01\"\nHost ID\n\"08:30, June 01, 2021\"\nTime and date\nThe Student ID is six characters long. The other two data items are of variable length.\nA single string will be formed by concatenating the three data items. A separator character will\nneed to be inserted between items two and three.\nFor example:\n\"CJL404Lib01<separator>08:30, June 01, 2021\"\nEach string represents one log entry.\nA programmer decides to store the concatenated strings in a 1D array LogArray that contains\n2000 elements. Unused array elements will contain an empty string.",
+          "text": "A program module controls the heaters. This module operates as follows:\n• If the temperature is below 10, switch the heaters on.\n• If the temperature is above 20, switch the heaters off.\nComplete the following state-transition diagram for the heating system:\nStart\nHeaters\nHeaters\nOn\nOff\n5 The following data items will be recorded each time a student successfully logs on to the school\nnetwork:\nData item Example data\nStudent ID \"CJL404\"\n\"Lib01\"\nHost ID\n\"08:30, June 01, 2021\"\nTime and date\nThe Student ID is six characters long. The other two data items are of variable length.\nA single string will be formed by concatenating the three data items. A separator character will\nneed to be inserted between items two and three.\nFor example:\n\"CJL404Lib01<separator>08:30, June 01, 2021\"\nEach string represents one log entry.\nA programmer decides to store the concatenated strings in a 1D array LogArray that contains\n2000 elements. Unused array elements will contain an empty string.",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",
@@ -313,7 +313,7 @@
         {
           "id": "7c",
           "label": "(c)",
-          "text": "A function LogEvents() will:\n• take a Student ID as a parameter\n• for each element in the array that matches the Student ID parameter:\nadd the value of the array element to the existing text file LogFile\nassign an empty string to the array element\n• count the number of lines added to the file\n• return this count.\nWrite pseudocode for the function LogEvents().\n\n6 A mobile phone has a touchscreen. The screen is represented by a grid, divided into 800 rows\nand 1280 columns.\nThe grid is represented by a 2D array Screen of type INTEGER. An array element will be set to 0\nunless the user touches that part of the screen.\nMany array elements are set to 1 by a single touch of a finger or a stylus.\nThe following diagram shows a simplified touchscreen. The dark line represents a touch to the\nscreen. All grid elements that are wholly or partly inside the outline will be set to 1. These elements\nare shaded.\nThe element shaded in black represents the centre point.\nA program is needed to find the coordinates (the row and column) of the centre point. The centre\npoint on the diagram above is row 6, column 11.\nAssume:\n• the user may only touch one area at a time\n• screen rotation does not affect the touchscreen.\nThe programmer has started to define program modules as follows:\nModule Description\n• Called with three parameters of type INTEGER:\na row number\nSetRow()\nthe number of pixels to be skipped starting from column 1\n(generates test\nthe number of pixels that should be set to 1\ndata)\n• Sets the required number of pixels to 1\nFor example, SetRow(3, 8, 5) will give row 3 as in the diagram shown.\n• Takes two parameters of type INTEGER:\na row number\na start column (1 or 1280)\nSearchInRow()\n• Searches the given row from the start column (either left to right or right to left)\nfor the first column that contains an element set to 1\n• Returns the column number of the first element in the given row that is set to 1\n• Returns −1 if no element is set to 1\n• Takes two parameters of type INTEGER:\na column number\na start row (1 or 800)\nSearchInCol()\n• Searches the given column from the start row (either up or down) for the first\nrow that contains an element set to 1\n• Returns the row number of the first element in the given column that is set to 1\n• Returns −1 if no element is set to 1",
+          "text": "A function LogEvents() will:\n• take a Student ID as a parameter\n• for each element in the array that matches the Student ID parameter:\nadd the value of the array element to the existing text file LogFile\nassign an empty string to the array element\n• count the number of lines added to the file\n• return this count.\nWrite pseudocode for the function LogEvents().\n6 A mobile phone has a touchscreen. The screen is represented by a grid, divided into 800 rows\nand 1280 columns.\nThe grid is represented by a 2D array Screen of type INTEGER. An array element will be set to 0\nunless the user touches that part of the screen.\nMany array elements are set to 1 by a single touch of a finger or a stylus.\nThe following diagram shows a simplified touchscreen. The dark line represents a touch to the\nscreen. All grid elements that are wholly or partly inside the outline will be set to 1. These elements\nare shaded.\nThe element shaded in black represents the centre point.\nA program is needed to find the coordinates (the row and column) of the centre point. The centre\npoint on the diagram above is row 6, column 11.\nAssume:\n• the user may only touch one area at a time\n• screen rotation does not affect the touchscreen.\nThe programmer has started to define program modules as follows:\nModule Description\n• Called with three parameters of type INTEGER:\na row number\nSetRow()\nthe number of pixels to be skipped starting from column 1\n(generates test\nthe number of pixels that should be set to 1\ndata)\n• Sets the required number of pixels to 1\nFor example, SetRow(3, 8, 5) will give row 3 as in the diagram shown.\n• Takes two parameters of type INTEGER:\na row number\na start column (1 or 1280)\nSearchInRow()\n• Searches the given row from the start column (either left to right or right to left)\nfor the first column that contains an element set to 1\n• Returns the column number of the first element in the given row that is set to 1\n• Returns −1 if no element is set to 1\n• Takes two parameters of type INTEGER:\na column number\na start row (1 or 800)\nSearchInCol()\n• Searches the given column from the start row (either up or down) for the first\nrow that contains an element set to 1\n• Returns the row number of the first element in the given column that is set to 1\n• Returns −1 if no element is set to 1",
           "marks": 7,
           "type": "give",
           "answerType": "short_answer",
@@ -346,7 +346,7 @@
         {
           "id": "7c",
           "label": "(c)",
-          "text": "The following new module is introduced:\nModule Description\n• Called with a row number as an INTEGER\n• Uses SearchInRow() to find the first and last columns in the given row which\nGetCentreCol()\nhave an array element set to 1\n• Returns the index of the column midway between the first and last columns\n• Returns −1 if no element is set to 1\nWrite pseudocode to implement the module GetCentreCol().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "The following new module is introduced:\nModule Description\n• Called with a row number as an INTEGER\n• Uses SearchInRow() to find the first and last columns in the given row which\nGetCentreCol()\nhave an array element set to 1\n• Returns the index of the column midway between the first and last columns\n• Returns −1 if no element is set to 1\nWrite pseudocode to implement the module GetCentreCol().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 6,
           "type": "write",
           "answerType": "short_answer",
@@ -355,13 +355,12 @@
           "parts": []
         }
       ],
-      "marks": 39,
+      "marks": 2,
       "text": [
         "Ant",
         "Complete the following diagram to show the state of the queue after the following",
         "operations:",
-        "Remove one item, and then add “Dolphin” and “Shark”.",
-        "[2]"
+        "Remove one item, and then add “Dolphin” and “Shark”."
       ]
     }
   ]

@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "s22",
   "component": "23",
-  "totalMarks": 67,
-  "questionCount": 9,
+  "totalMarks": 75,
+  "questionCount": 26,
   "questions": [
     {
       "id": "1",
@@ -63,7 +63,7 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "A program has been written to implement a website browser and maintenance is now required.",
         "One type of maintenance is called perfective.",
@@ -71,8 +71,7 @@
         "Type 1 ..............................................................................................................................................",
         "Reason .............................................................................................................................................",
         "Type 2 ..............................................................................................................................................",
-        "Reason .............................................................................................................................................",
-        "[4]"
+        "Reason ............................................................................................................................................."
       ]
     },
     {
@@ -116,7 +115,7 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Items in a factory are weighed automatically. The weight is stored as an integer value representing",
         "the item weight to the nearest gram (g).",
@@ -129,8 +128,7 @@
         "Type of Example Expected",
         "Explanation",
         "test data test value return value",
-        "Normal 153 \"PASS\" Value within the acceptable range",
-        "[4]"
+        "Normal 153 \"PASS\" Value within the acceptable range"
       ]
     },
     {
@@ -266,9 +264,181 @@
     {
       "id": "7",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The following pseudocode represents an algorithm intended to output the last three lines as they",
+        "appear in a text file. Line numbers are provided for reference only."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PROCEDURE LastLines(ThisFile : STRING)"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE ThisLine : STRING"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Buffer : ARRAY[1:3] OF STRING"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE LineNum : INTEGER"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "LineNum 1"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OPENFILE ThisFile FOR READ"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE NOT EOF(ThisFile)"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "READFILE Thisfile, ThisLine // read a line"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Buffer[LineNum] ThisLine"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "LineNum LineNum + 1"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF LineNum = 4 THEN"
+      ]
+    },
+    {
+      "id": "22",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "LineNum 1"
+      ]
+    },
+    {
+      "id": "23",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "24",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDWHILE"
+      ]
+    },
+    {
+      "id": "26",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CLOSEFILE ThisFile"
+      ]
+    },
+    {
+      "id": "27",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR LineNum 1 TO 3"
+      ]
+    },
+    {
+      "id": "28",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT Buffer[LineNum]"
+      ]
+    },
+    {
+      "id": "29",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT LineNum"
+      ]
+    },
+    {
+      "id": "30",
+      "context": [],
       "parts": [
         {
-          "id": "7a",
+          "id": "30a",
           "label": "(a)",
           "text": "There is an error in the algorithm. In certain cases, a text file will have at least three lines but\nthe output will be incorrect.",
           "marks": null,
@@ -278,7 +448,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7ai",
+              "id": "30ai",
               "label": "(i)",
               "text": "State how the output may be incorrect.",
               "marks": 1,
@@ -289,7 +459,7 @@
               "parts": []
             },
             {
-              "id": "7aii",
+              "id": "30aii",
               "label": "(ii)",
               "text": "Describe the error in the algorithm and explain how it may be corrected.\nDescription ______\nExplanation ______",
               "marks": 4,
@@ -302,7 +472,7 @@
           ]
         },
         {
-          "id": "7b",
+          "id": "30b",
           "label": "(b)",
           "text": "The original algorithm is implemented and sometimes the last three lines of the text file are\noutput correctly.\nState the condition that results in the correct output.",
           "marks": 1,
@@ -313,48 +483,18 @@
           "parts": []
         },
         {
-          "id": "7c",
+          "id": "30c",
           "label": "(c)",
-          "text": "Lines 20 to 23 inclusive could be replaced with a single pseudocode statement.\nWrite the pseudocode statement.",
+          "text": "Lines 20 to 23 inclusive could be replaced with a single pseudocode statement.\nWrite the pseudocode statement.\n8 The following diagram shows the incomplete waterfall model of the program development life\ncycle.",
           "marks": 2,
           "type": "write",
           "answerType": "short_answer",
-          "hasDiagramRef": false,
+          "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 8,
-      "text": [
-        "The following pseudocode represents an algorithm intended to output the last three lines as they",
-        "appear in a text file. Line numbers are provided for reference only.",
-        "10 PROCEDURE LastLines(ThisFile : STRING)",
-        "11 DECLARE ThisLine : STRING",
-        "12 DECLARE Buffer : ARRAY[1:3] OF STRING",
-        "13 DECLARE LineNum : INTEGER",
-        "14 LineNum 1",
-        "15 OPENFILE ThisFile FOR READ",
-        "17 WHILE NOT EOF(ThisFile)",
-        "18 READFILE Thisfile, ThisLine // read a line",
-        "19 Buffer[LineNum] ThisLine",
-        "20 LineNum LineNum + 1",
-        "21 IF LineNum = 4 THEN",
-        "22 LineNum 1",
-        "23 ENDIF",
-        "24 ENDWHILE",
-        "26 CLOSEFILE ThisFile",
-        "27 FOR LineNum 1 TO 3",
-        "28 OUTPUT Buffer[LineNum]",
-        "29 NEXT LineNum",
-        "30 ENDPROCEDURE"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "8a",
+          "id": "30a",
           "label": "(a)",
           "text": "Complete the diagram.\nAnalysis\nMaintenance",
           "marks": 3,
@@ -365,7 +505,7 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "30b",
           "label": "(b)",
           "text": "Explain the meaning of the downward and upward arrows.\nDownward arrows ______\nUpward arrows ______",
           "marks": 2,
@@ -376,29 +516,18 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "30c",
           "label": "(c)",
-          "text": "Identify another type of model for the program development life cycle.",
+          "text": "Identify another type of model for the program development life cycle.\n9 A program allows a user to save passwords used to log in to websites. A stored password is then\ninserted automatically when the user logs in to the corresponding website.\nA student is developing a program to generate a strong password. The password will be of a fixed\nformat, consisting of three groups of four alphanumeric characters, separated by the hyphen\ncharacter '-'.\nAn example of a password is: \"FxAf-3hzV-Aq49\"\nA valid password:\n• must be 14 characters long\n• must be organised as three groups of four alphanumeric characters. The groups are\nseparated by hyphen characters\n• may include duplicated characters, provided these appear in different groups.\nThe programmer has started to define program modules as follows:\nModule Description\n• Generates a single random character from within one of the following\nranges:\n○ 'a' to 'z'\nRandomChar()\n○ 'A' to 'Z'\n○ '0' to '9'\n• Returns the character\n• Takes two parameters:\n○ a string\n○ a character\nExists()\n• Performs a case-sensitive search for the character in the string\n• Returns TRUE if the character occurs in the string, otherwise returns\nFALSE\n• Generates a valid password\nGenerate() • Uses RandomChar() and Exists()\n• Returns the password\nNote: in a case-sensitive comparison, 'a' is not the same as 'A'.",
           "marks": 1,
           "type": "identify",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 6,
-      "text": [
-        "The following diagram shows the incomplete waterfall model of the program development life",
-        "cycle."
-      ]
-    },
-    {
-      "id": "9",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "9a",
+          "id": "30a",
           "label": "(a)",
           "text": "Write pseudocode for the module Generate().",
           "marks": 7,
@@ -409,7 +538,7 @@
           "parts": []
         },
         {
-          "id": "9b",
+          "id": "30b",
           "label": "(b)",
           "text": "A global 2D array Secret of type STRING stores the passwords together with the website\ndomain name where they are used. Secret contains 1000 elements organised as 500 rows\nby 2 columns.\nUnused elements contain the empty string (\"\"). These may occur anywhere in the array.\nAn example of part of the array is:\nArray element Value\nSecret[27, 1] \"www.thiswebsite.com\"\nSecret[27, 2] \"●●●●●●●●●●●●\"\nSecret[28, 1] \"www.thatwebsite.com\"\nSecret[28, 2] \"●●●●●●●●●●●●\"\nNote:\n• For security, the passwords are stored in an encrypted form, shown as \"●●●●●●●●●●●●\"\nin the example.\n• The passwords cannot be used without being decrypted.\n• You may assume that the encrypted form of a password will not be an empty string.\nAdditional modules are defined as follows:\nModule Description\n• Takes a password as a string\nEncrypt()\n• Returns the encrypted form of the password as a string\n• Takes an encrypted password as a string\nDecrypt()\n• Returns the decrypted form of the password as a string\n• Takes a website domain name as a string\n• Searches for the website domain name in the array Secret\n• If the website domain name is found, the decrypted password is\nFindPassword()\nreturned\n• If the website domain name is not found, an empty string is\nreturned\n• Takes two parameters as strings: a website domain name and a\npassword\n• Searches for the website domain name in the array Secret and\nAddPassword() if not found, adds the website domain name and the encrypted\npassword to the array\n• Returns TRUE if the website domain name and encrypted\npassword are added to the array, otherwise returns FALSE\nThe first three modules have been written.\nWrite pseudocode for the module AddPassword().",
           "marks": 6,
@@ -420,9 +549,9 @@
           "parts": []
         },
         {
-          "id": "9c",
+          "id": "30c",
           "label": "(c)",
-          "text": "The content of the array Secret is to be stored in a text file for backup.\nIt must be possible to read the data back from the file and extract the website domain name\nand the encrypted password.\nBoth the website domain name and encrypted password are stored in the array as strings of\ncharacters.\nThe encrypted password may contain any character from the character set used and the\nlength of both the encrypted password and the website domain name is variable.\nExplain how a single line of the text file can be used to store the website domain name and\nthe encrypted password.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "The content of the array Secret is to be stored in a text file for backup.\nIt must be possible to read the data back from the file and extract the website domain name\nand the encrypted password.\nBoth the website domain name and encrypted password are stored in the array as strings of\ncharacters.\nThe encrypted password may contain any character from the character set used and the\nlength of both the encrypted password and the website domain name is variable.\nExplain how a single line of the text file can be used to store the website domain name and\nthe encrypted password.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
           "type": "name",
           "answerType": "short_answer",
@@ -431,39 +560,9 @@
           "parts": []
         }
       ],
-      "marks": 16,
+      "marks": 30,
       "text": [
-        "A program allows a user to save passwords used to log in to websites. A stored password is then",
-        "inserted automatically when the user logs in to the corresponding website.",
-        "A student is developing a program to generate a strong password. The password will be of a fixed",
-        "format, consisting of three groups of four alphanumeric characters, separated by the hyphen",
-        "character '-'.",
-        "An example of a password is: \"FxAf-3hzV-Aq49\"",
-        "A valid password:",
-        "• must be 14 characters long",
-        "• must be organised as three groups of four alphanumeric characters. The groups are",
-        "separated by hyphen characters",
-        "• may include duplicated characters, provided these appear in different groups.",
-        "The programmer has started to define program modules as follows:",
-        "Module Description",
-        "• Generates a single random character from within one of the following",
-        "ranges:",
-        "○ 'a' to 'z'",
-        "RandomChar()",
-        "○ 'A' to 'Z'",
-        "○ '0' to '9'",
-        "• Returns the character",
-        "• Takes two parameters:",
-        "○ a string",
-        "○ a character",
-        "Exists()",
-        "• Performs a case-sensitive search for the character in the string",
-        "• Returns TRUE if the character occurs in the string, otherwise returns",
-        "FALSE",
-        "• Generates a valid password",
-        "Generate() • Uses RandomChar() and Exists()",
-        "• Returns the password",
-        "Note: in a case-sensitive comparison, 'a' is not the same as 'A'."
+        "ENDPROCEDURE"
       ]
     }
   ]

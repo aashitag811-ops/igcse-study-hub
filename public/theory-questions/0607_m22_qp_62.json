@@ -3,7 +3,7 @@
   "subjectCode": "0607",
   "session": "m22",
   "component": "62",
-  "totalMarks": 42,
+  "totalMarks": 49,
   "questionCount": 8,
   "questions": [
     {
@@ -79,10 +79,54 @@
             {
               "id": "1bii",
               "label": "(ii)",
-              "text": "Complete the table.\nTotal number of\nPattern number, n Number of dots Number of crosses\ndots and crosses\n1 1 0 1",
-              "marks": null,
+              "text": "Complete the table.\nTotal number of\nPattern number, n Number of dots Number of crosses\ndots and crosses\n1 1 0 1\n2 1 4 5\n3 9 4 13\n4 16",
+              "marks": 2,
               "type": "complete",
               "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Complete the table.\nTotal number\nPattern number, n Number of dots Number of crosses\nof dots and crosses\n2 2 2 2\n1 = 1 0 = 0 1 + 0 = 1\n2 2 2 2\n1 = 1 4 = 2 2 + 1 = 5\n2 2 2 2\n9 = 3 4 = 2 3 + 2 = 13\n4 16 =",
+              "marks": 2,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biv",
+              "label": "(iv)",
+              "text": "Complete the formula for the total number of dots and crosses, T, in Pattern n.\nT = ______",
+              "marks": null,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bv",
+              "label": "(v)",
+              "text": "Show that the formula for T is\n2n - 2n + 1.",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bvi",
+              "label": "(vi)",
+              "text": "Work out the total number of dots and crosses in Pattern 15.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -90,33 +134,15 @@
           ]
         }
       ],
-      "marks": 6,
+      "marks": 13,
       "text": []
     },
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 4 5"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "9 4 13"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "2a",
           "label": "(a)",
           "text": "Complete the table.\nPattern number, n 1 2 3 4 5\nNumber of dots, T 1 4 10",
           "marks": 3,
@@ -127,7 +153,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "2b",
           "label": "(b)",
           "text": "The formula for the number of dots, T, in Pattern n is\nT = an + bn + c .",
           "marks": null,
@@ -137,7 +163,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4bi",
+              "id": "2bi",
               "label": "(i)",
               "text": "Give a reason why a is .",
               "marks": 1,
@@ -148,7 +174,7 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "2bii",
               "label": "(ii)",
               "text": "Find the value of b and the value of c.\nb = ______\nc = ______",
               "marks": 4,
@@ -161,16 +187,47 @@
           ]
         },
         {
-          "id": "4c",
+          "id": "2c",
           "label": "(c)",
-          "text": "There are 571 dots in Pattern k.\nFind the value of k.\nk = ______ \n3 The formula for the number of dots, T, in the sequence of centred hexagons is\nT = 3n - 3n + 1.\nThe number of dots in the nth centred hexagon is 6 more than the number of dots in the nth centred\nsquare.\nFind the value of n and the number of dots in the centred hexagon.\nn = ______\nnumber of dots in the centred hexagon : ______ \nB MODELLING (QUESTIONS 4 TO 8)\nDAYLIGHT HOURS (30 marks)\nYou are advised to spend no more than 50 minutes on this part.\nThis task looks at modelling the number of daylight hours throughout the year.\nThe number of daylight hours is the length of time between sunrise and sunset.\n4 Sophia looks at the number of daylight hours in London, England.\nShe knows the shortest number of daylight hours, shortest day, is on 21 December.\nShe knows the longest number of daylight hours, longest day, is on 21 June.\nShe collects data for the sunrise and sunset times on the 21st day of every month.\nShe works out the length of daylight in hours and minutes and converts it to a time in hours correct to\n1 decimal place.\nHer results are in this table.\nDaylight hours in London\nDaylight in hours Daylight in\nMonth Day Sunrise Sunset and minutes hours\nDecember 21 08 03 15 53 7 h 50 min 7.8\nJanuary 21 07 52 16 30 8 h 38 min 8.6\nFebruary 21 07 02 17 26 10 h 24 min 10.4\nMarch 21 06 00 18 15 12 h 15 min 12.3\nApril 21 05 51 20 07 14 h 16 min 14.3\nMay 21 05 00 20 54 15 h 54 min 15.9\nJune 21 04 43 21 21 16 h 38 min 16.6\nJuly 21 05 08 21 04 15 h 56 min 15.9\nAugust 21 05 55 20 10 14 h 15 min 14.3\nSeptember 21 06 45 19 00 12 h 15 min 12.3\nOctober 21 07 35 17 54\nNovember 21 07 28 16 03 8 h 35 min 8.6\nDecember 21 08 03 15 53 7 h 50 min 7.8",
+          "text": "There are 571 dots in Pattern k.\nFind the value of k.\nk = ______",
           "marks": 4,
-          "type": "place",
-          "answerType": "diagram_only",
+          "type": "complete",
+          "answerType": "fill_blank",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "This is the sequence of centred triangles.",
+        "Pattern 1 Pattern 2 Pattern 3"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The formula for the number of dots, T, in the sequence of centred hexagons is",
+        "T = 3n - 3n + 1.",
+        "The number of dots in the nth centred hexagon is 6 more than the number of dots in the nth centred",
+        "square.",
+        "Find the value of n and the number of dots in the centred hexagon.",
+        "n = ................................................",
+        "number of dots in the centred hexagon : ................................................ [3]",
+        "B MODELLING (QUESTIONS 4 TO 8)",
+        "DAYLIGHT HOURS (30 marks)",
+        "You are advised to spend no more than 50 minutes on this part.",
+        "This task looks at modelling the number of daylight hours throughout the year.",
+        "The number of daylight hours is the length of time between sunrise and sunset."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -228,10 +285,31 @@
           ]
         }
       ],
-      "marks": 17,
+      "marks": 5,
       "text": [
-        "16",
-        "[2]"
+        "Sophia looks at the number of daylight hours in London, England.",
+        "She knows the shortest number of daylight hours, shortest day, is on 21 December.",
+        "She knows the longest number of daylight hours, longest day, is on 21 June.",
+        "She collects data for the sunrise and sunset times on the 21st day of every month.",
+        "She works out the length of daylight in hours and minutes and converts it to a time in hours correct to",
+        "1 decimal place.",
+        "Her results are in this table.",
+        "Daylight hours in London",
+        "Daylight in hours Daylight in",
+        "Month Day Sunrise Sunset and minutes hours",
+        "December 21 08 03 15 53 7 h 50 min 7.8",
+        "January 21 07 52 16 30 8 h 38 min 8.6",
+        "February 21 07 02 17 26 10 h 24 min 10.4",
+        "March 21 06 00 18 15 12 h 15 min 12.3",
+        "April 21 05 51 20 07 14 h 16 min 14.3",
+        "May 21 05 00 20 54 15 h 54 min 15.9",
+        "June 21 04 43 21 21 16 h 38 min 16.6",
+        "July 21 05 08 21 04 15 h 56 min 15.9",
+        "August 21 05 55 20 10 14 h 15 min 14.3",
+        "September 21 06 45 19 00 12 h 15 min 12.3",
+        "October 21 07 35 17 54",
+        "November 21 07 28 16 03 8 h 35 min 8.6",
+        "December 21 08 03 15 53 7 h 50 min 7.8"
       ]
     },
     {
@@ -455,7 +533,7 @@
         {
           "id": "8c",
           "label": "(c)",
-          "text": "Find the dates when the number of daylight hours in Cairo is the same as it is in Melbourne.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Find the dates when the number of daylight hours in Cairo is the same as it is in Melbourne.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",

@@ -4,7 +4,7 @@
   "session": "w14",
   "component": "43",
   "totalMarks": 33,
-  "questionCount": 9,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -279,18 +279,40 @@
             {
               "id": "4bi",
               "label": "(i)",
-              "text": "Complete the tree diagram.\nFirst race Second race Third race\nFinishes",
-              "marks": null,
+              "text": "Complete the tree diagram.\nFirst race Second race Third race\nFinishes\n6 Finishes\nDoes not\nfinish\nFinishes\nFinishes\nDoes not\nfinish\nDoes not\nfinish\nFinishes\n6 Finishes\nfinish\nDoes not\nfinish\nFinishes\nDoes not\nfinish\nDoes not\nfinish",
+              "marks": 3,
               "type": "complete",
               "answerType": "long_answer",
               "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Calculate the probability that Yeung finishes all three of his races.",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4biii",
+              "label": "(iii)",
+              "text": "Calculate the probability that Yeung finishes at least one of his races.\n0 -1 1 -2 -3\ne o",
+              "marks": null,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
         }
       ],
-      "marks": 1,
+      "marks": 4,
       "text": [
         "Yeung and Ariven compete in a triathlon race.",
         "The probability that Yeung finishes this race is .",
@@ -298,29 +320,11 @@
       ]
     },
     {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Finishes",
-        "Does not",
-        "finish",
-        "Finishes",
-        "Finishes",
-        "Does not",
-        "finish",
-        "Does not",
-        "finish",
-        "Finishes"
-      ]
-    },
-    {
-      "id": "6",
+      "id": "5",
       "context": [],
       "parts": [
         {
-          "id": "6a",
+          "id": "5a",
           "label": "(a)",
           "text": "Work out",
           "marks": null,
@@ -330,7 +334,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "6ai",
+              "id": "5ai",
               "label": "(i)",
               "text": "4P,",
               "marks": null,
@@ -341,7 +345,7 @@
               "parts": []
             },
             {
-              "id": "6aii",
+              "id": "5aii",
               "label": "(ii)",
               "text": "P – Q,",
               "marks": null,
@@ -352,7 +356,7 @@
               "parts": []
             },
             {
-              "id": "6aiii",
+              "id": "5aiii",
               "label": "(iii)",
               "text": "P ,",
               "marks": null,
@@ -363,7 +367,7 @@
               "parts": []
             },
             {
-              "id": "6aiv",
+              "id": "5aiv",
               "label": "(iv)",
               "text": "QR.\n1 0",
               "marks": null,
@@ -376,7 +380,7 @@
           ]
         },
         {
-          "id": "6b",
+          "id": "5b",
           "label": "(b)",
           "text": "Find the matrix S, so that QS = f p.\n0 1",
           "marks": null,
@@ -387,18 +391,10 @@
           "parts": []
         }
       ],
-      "marks": 3,
+      "marks": null,
       "text": [
-        "Finishes",
-        "........ Does not",
-        "finish",
-        "Does not",
-        "finish",
-        "Finishes",
-        "Does not",
-        "finish",
-        "Does not",
-        "finish"
+        "P = f p Q = f p R =",
+        "1 0 0 1 5"
       ]
     },
     {

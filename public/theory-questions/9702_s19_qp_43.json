@@ -3,13 +3,24 @@
   "subjectCode": "9702",
   "session": "s19",
   "component": "43",
-  "totalMarks": 90,
+  "totalMarks": 97,
   "questionCount": 12,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "Two point masses are isolated in space and are separated by a distance x.\nState an expression relating the gravitational force F between the two masses to the\nmagnitudes M and m of the masses. State the name of any other symbol used.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
         {
           "id": "1b",
           "label": "(b)",
@@ -47,8 +58,8 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "By considering changes in gravitational potential energy and in kinetic energy of the\nspacecraft, determine whether the total energy of the spacecraft increases or decreases in\nmoving from point B to point A. A numerical answer is not required.\n\n3 5",
-          "marks": null,
+          "text": "By considering changes in gravitational potential energy and in kinetic energy of the\nspacecraft, determine whether the total energy of the spacecraft increases or decreases in\nmoving from point B to point A. A numerical answer is not required.\n3 5",
+          "marks": 2,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
@@ -57,46 +68,14 @@
         }
       ],
       "marks": 8,
-      "text": [
-        "2",
-        "capacitors in parallel C = C + C + . . .",
-        "1 2",
-        "energy of charged capacitor W = QV",
-        "electric current I = Anvq",
-        "resistors in series R = R + R + . . .",
-        "1 2",
-        "resistors in parallel 1/R = 1/R + 1/R + . . .",
-        "1 2",
-        "BI",
-        "Hall voltage V =",
-        "ntq",
-        "alternating current/voltage x = x sin ωt",
-        "radioactive decay x = x exp(−λt)",
-        "0.693",
-        "decay constant λ =",
-        "Answer all the questions in the spaces provided.",
-        "1 (a) Two point masses are isolated in space and are separated by a distance x.",
-        "State an expression relating the gravitational force F between the two masses to the",
-        "magnitudes M and m of the masses. State the name of any other symbol used.",
-        "[1]"
-      ]
+      "text": []
     },
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A fixed mass of an ideal gas has volume 210 cm at pressure 3.0 × 10 Pa and temperature 270 K.",
-        "The volume of the gas is reduced at constant pressure to 140 cm , as shown in Fig. 2.1."
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
       "parts": [
         {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "Determine:",
           "marks": null,
@@ -106,7 +85,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ai",
+              "id": "2ai",
               "label": "(i)",
               "text": "the amount of gas\namount = ______ mol",
               "marks": 3,
@@ -117,7 +96,7 @@
               "parts": []
             },
             {
-              "id": "3aii",
+              "id": "2aii",
               "label": "(ii)",
               "text": "the final temperature T of the gas\nT = ______K",
               "marks": 2,
@@ -128,7 +107,7 @@
               "parts": []
             },
             {
-              "id": "3aiii",
+              "id": "2aiii",
               "label": "(iii)",
               "text": "the external work done on the gas.\nwork done = ______ J",
               "marks": 2,
@@ -141,16 +120,34 @@
           ]
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
-          "text": "For this change in volume and temperature of the gas, the thermal energy transferred is 53 J.\nDetermine ΔU, the change in internal energy of the gas.\nΔU = ______ J \n3 A hollow tube, sealed at one end, has a cross-sectional area A of 24 cm .\nThe tube contains sand so that the total mass M of the tube and sand is 0.23 kg.\nThe tube floats upright in a liquid of density t, as illustrated in Fig. 3.1.\ntube, area\nof cross-section A\nliquid, density t\nsand\nFig. 3.1\nThe depth of the bottom of the tube below the liquid surface is h.\nThe tube is displaced vertically and then released. The variation with time t of the depth h is shown\nin Fig. 3.2.\nh / cm\n0 0.2 0.4 0.6 0.8 1.0 1.2 1.4\nt / s\nFig. 3.2",
+          "text": "For this change in volume and temperature of the gas, the thermal energy transferred is 53 J.\nDetermine ΔU, the change in internal energy of the gas.\nΔU = ______ J",
           "marks": 3,
           "type": "calculate",
           "answerType": "fill_blank",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A fixed mass of an ideal gas has volume 210 cm at pressure 3.0 × 10 Pa and temperature 270 K.",
+        "The volume of the gas is reduced at constant pressure to 140 cm , as shown in Fig. 2.1.",
+        "3 3",
+        "210 cm 140 cm",
+        "5 5",
+        "3.0 × 10 Pa 3.0 × 10 Pa",
+        "270 K T",
+        "Fig. 2.1",
+        "The final temperature of the gas is T."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
           "id": "3a",
           "label": "(a)",
@@ -221,13 +218,21 @@
       ],
       "marks": 10,
       "text": [
-        "3",
-        "210 cm 140 cm",
-        "5 5",
-        "3.0 × 10 Pa 3.0 × 10 Pa",
-        "270 K T",
-        "Fig. 2.1",
-        "The final temperature of the gas is T."
+        "A hollow tube, sealed at one end, has a cross-sectional area A of 24 cm .",
+        "The tube contains sand so that the total mass M of the tube and sand is 0.23 kg.",
+        "The tube floats upright in a liquid of density t, as illustrated in Fig. 3.1.",
+        "tube, area",
+        "of cross-section A",
+        "liquid, density t",
+        "sand",
+        "Fig. 3.1",
+        "The depth of the bottom of the tube below the liquid surface is h.",
+        "The tube is displaced vertically and then released. The variation with time t of the depth h is shown",
+        "in Fig. 3.2.",
+        "h / cm",
+        "0 0.2 0.4 0.6 0.8 1.0 1.2 1.4",
+        "t / s",
+        "Fig. 3.2"
       ]
     },
     {
@@ -581,7 +586,7 @@
             {
               "id": "8bii",
               "label": "(ii)",
-              "text": "Use Lenz’s law to state and explain the direction of the magnetic field due to the induced\ncurrent in the small coil. On Fig. 8.1, mark this direction with an arrow inside the small\ncoil.\n\n–4 2",
+              "text": "Use Lenz’s law to state and explain the direction of the magnetic field due to the induced\ncurrent in the small coil. On Fig. 8.1, mark this direction with an arrow inside the small\ncoil.\n–4 2",
               "marks": 3,
               "type": "state",
               "answerType": "short_answer",
@@ -798,7 +803,7 @@
             {
               "id": "12aiii",
               "label": "(iii)",
-              "text": "the decay constant λ of the isotope.\n\n208 204",
+              "text": "the decay constant λ of the isotope.\n208 204",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -832,7 +837,7 @@
             {
               "id": "12bii",
               "label": "(ii)",
-              "text": "The polonium-208 nucleus is initially stationary. The initial kinetic energy of the\nHe nucleus (α-particle) is found to be less than the energy calculated in (i) part 2.\nSuggest two possible reasons for this difference.\n1. ______\n2. ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "The polonium-208 nucleus is initially stationary. The initial kinetic energy of the\nHe nucleus (α-particle) is found to be less than the energy calculated in (i) part 2.\nSuggest two possible reasons for this difference.\n1. ______\n2. ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 2,
               "type": "suggest",
               "answerType": "fill_blank",
@@ -843,7 +848,7 @@
           ]
         }
       ],
-      "marks": 9,
+      "marks": 6,
       "text": []
     }
   ]

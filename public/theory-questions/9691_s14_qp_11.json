@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s14",
   "component": "11",
-  "totalMarks": 56,
+  "totalMarks": 63,
   "questionCount": 9,
   "questions": [
     {
@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Four types of memory, media or devices are shown in the first column.\nConsider each medium or device and put a tick (\u0001) in the appropriate column A, B, C or D to\nindicate the type of storage to which it belongs.\nYou should only put one tick (\u0001) in each column.\nA B C D\nprimary magnetic optical solid state\nmemory secondary secondary secondary\nstorage storage storage storage\nDVD–RAM\nROM\nhard disk\nflash memory",
+          "text": "Four types of memory, media or devices are shown in the first column.\nConsider each medium or device and put a tick () in the appropriate column A, B, C or D to\nindicate the type of storage to which it belongs.\nYou should only put one tick () in each column.\nA B C D\nprimary magnetic optical solid state\nmemory secondary secondary secondary\nstorage storage storage storage\nDVD–RAM\nROM\nhard disk\nflash memory",
           "marks": 4,
           "type": "state",
           "answerType": "short_answer",
@@ -143,7 +143,7 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "The following input mask is used on each of the data items in the table below:\nT t 9 0 0 T T\nWhich of the following data items would pass or fail the format validation check?\nPut a tick (\u0001) in the appropriate column:\ndata item pass fail\nK X 2 3 7 N\nN A 8 3 K K\nW 4 4 6 P Q\nC 2 4 3 3 Q\nR 4 9 N L",
+          "text": "The following input mask is used on each of the data items in the table below:\nT t 9 0 0 T T\nWhich of the following data items would pass or fail the format validation check?\nPut a tick () in the appropriate column:\ndata item pass fail\nK X 2 3 7 N\nN A 8 3 K K\nW 4 4 6 P Q\nC 2 4 3 3 Q\nR 4 9 N L",
           "marks": 5,
           "type": "tick",
           "answerType": "diagram_only",
@@ -214,7 +214,7 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "The following answers were seen on a Computing exam paper.",
         "Explain why each of the answers is incorrect:",
@@ -225,29 +225,15 @@
         "“ROM is used to store data that is currently in use when running some applications software”.",
         "“Sensors in a robot vacuum cleaner send signals directly to motors which turn the wheels thereby",
         "avoiding obstacles”.",
-        "[4]",
         "Question 6 begins on page 10."
       ]
     },
     {
       "id": "6",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A puzzle is made up of a 9 x 9 grid of cells. The solution to the puzzle requires each row and",
-        "column to contain all the numerals 1 to 9. Each of the smaller 3 x 3 boxes must also contain all",
-        "the numerals from 1 to 9.",
-        "The following is an example of a partially completed puzzle.",
-        "Some of the numerals are shown. Logic then needs to be applied to find the missing numerals."
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
       "parts": [
         {
-          "id": "7a",
+          "id": "6a",
           "label": "(a)",
           "text": "Describe a data structure that could be used to store such a puzzle.",
           "marks": 2,
@@ -258,7 +244,7 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "6b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -268,7 +254,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7bi",
+              "id": "6bi",
               "label": "(i)",
               "text": "A computer application presents the user with an example of this type of puzzle to\nsolve. The user selects a cell and then chooses a numeral between 1 and 9 to\nplace in the cell; this is then repeated for all blank cells.\nDescribe a suitable user interface to allow the user to select and place a numeral into an\nempty cell.",
               "marks": 2,
@@ -279,12 +265,12 @@
               "parts": []
             },
             {
-              "id": "7bii",
+              "id": "6bii",
               "label": "(ii)",
-              "text": "Explain how the user’s answer to the puzzle can be checked by the computer.\n\n7 A company designs and sells furniture. Three different offices make up the company:\nDrawing Office - Staff use Computer Aided Design (CAD) software to design\nnew furniture\nFinance Office - Staff use spreadsheet software to calculate salaries and\nmonitor furniture sales and profits\nPublicity Office - Staff use presentation software to produce advertising\nmaterial\nFor each type of software, describe one feature which makes it suitable for the above\napplications.\nName one input device and one output device that could be used with each type of software.\nJustify your choice in each case.\nComputer Aided Design (CAD) software\nfeature\ninput device\njustification\noutput device\njustification\n\nSpreadsheet software\nfeature\ninput device\njustification\noutput device\njustification\n\nPresentation software\nfeature\ninput device\njustification\noutput device\njustification",
+              "text": "Explain how the user’s answer to the puzzle can be checked by the computer.",
               "marks": 2,
-              "type": "name",
-              "answerType": "short_answer",
+              "type": "explain",
+              "answerType": "long_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -294,7 +280,12 @@
       ],
       "marks": 6,
       "text": [
-        "1 5 8",
+        "A puzzle is made up of a 9 x 9 grid of cells. The solution to the puzzle requires each row and",
+        "column to contain all the numerals 1 to 9. Each of the smaller 3 x 3 boxes must also contain all",
+        "the numerals from 1 to 9.",
+        "The following is an example of a partially completed puzzle.",
+        "Some of the numerals are shown. Logic then needs to be applied to find the missing numerals.",
+        "7 1 5 8",
         "6 3",
         "4 6 9",
         "7 5 8",
@@ -303,6 +294,43 @@
         "9 2 6 1",
         "5 7 3 4",
         "4 1 8 6 5"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": 3,
+      "text": [
+        "A company designs and sells furniture. Three different offices make up the company:",
+        "Drawing Office - Staff use Computer Aided Design (CAD) software to design",
+        "new furniture",
+        "Finance Office - Staff use spreadsheet software to calculate salaries and",
+        "monitor furniture sales and profits",
+        "Publicity Office - Staff use presentation software to produce advertising",
+        "material",
+        "For each type of software, describe one feature which makes it suitable for the above",
+        "applications.",
+        "Name one input device and one output device that could be used with each type of software.",
+        "Justify your choice in each case.",
+        "Computer Aided Design (CAD) software",
+        "feature",
+        "input device",
+        "justification",
+        "output device",
+        "justification",
+        "Spreadsheet software",
+        "feature",
+        "input device",
+        "justification",
+        "output device",
+        "justification",
+        "Presentation software",
+        "feature",
+        "input device",
+        "justification",
+        "output device",
+        "justification"
       ]
     },
     {
@@ -344,7 +372,7 @@
             {
               "id": "8aiii",
               "label": "(iii)",
-              "text": "Draw a logic circuit for the fault condition:\nEither A = 1 or B = 1 or C = 1 indicate a fault. A red warning light shows up on the\ndashboard – output Z = 1.\nB Z\n\nQuestion 8(b) continues on page 17.",
+              "text": "Draw a logic circuit for the fault condition:\nEither A = 1 or B = 1 or C = 1 indicate a fault. A red warning light shows up on the\ndashboard – output Z = 1.\nB Z\nQuestion 8(b) continues on page 17.",
               "marks": 2,
               "type": "draw",
               "answerType": "diagram_only",
@@ -407,7 +435,7 @@
         {
           "id": "9c",
           "label": "(c)",
-          "text": "State what would happen if the customer keys in a code which results in the following 7-bit\nregister content:\n1 0 1 1 0 1 1\n\nth",
+          "text": "State what would happen if the customer keys in a code which results in the following 7-bit\nregister content:\n1 0 1 1 0 1 1\nth",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",
@@ -450,7 +478,7 @@
             {
               "id": "9eii",
               "label": "(ii)",
-              "text": "The vending machine transmits eight codes (bytes), followed by a parity byte. The\nfollowing bytes have been received by the computer:\n1 0 0 0 1 0 1 1\n1 0 0 0 1 1 0 1\n0 0 1 1 0 1 0 1\n0 0 0 1 0 1 1 1\n0 1 0 0 1 0 0 0\n1 0 1 0 1 0 1 0\n0 0 1 1 1 0 1 1\n1 0 1 0 0 0 0 0\nparity byte\n0 1 0 1 0 1 0 1\nOne of the eight bytes of data contains an error that occurred during data transmission.\nUsing an arrow, identify the byte where the error has occurred.\nCircle the bit that has been altered.\nExplain your reason for choosing the byte and bit identified above.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "The vending machine transmits eight codes (bytes), followed by a parity byte. The\nfollowing bytes have been received by the computer:\n1 0 0 0 1 0 1 1\n1 0 0 0 1 1 0 1\n0 0 1 1 0 1 0 1\n0 0 0 1 0 1 1 1\n0 1 0 0 1 0 0 0\n1 0 1 0 1 0 1 0\n0 0 1 1 1 0 1 1\n1 0 1 0 0 0 0 0\nparity byte\n0 1 0 1 0 1 0 1\nOne of the eight bytes of data contains an error that occurred during data transmission.\nUsing an arrow, identify the byte where the error has occurred.\nCircle the bit that has been altered.\nExplain your reason for choosing the byte and bit identified above.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 3,
               "type": "name",
               "answerType": "short_answer",

@@ -3,8 +3,8 @@
   "subjectCode": "9709",
   "session": "s20",
   "component": "22",
-  "totalMarks": 25,
-  "questionCount": 4,
+  "totalMarks": 32,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -28,20 +28,60 @@
     {
       "id": "3",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The equation of a curve is cos 3x + 5 sin y = 3.",
+        "1 1",
+        "Find the gradient of the curve at the point π, π . [5]",
+        "9 6",
+        "ln y",
+        "−0.68, 3.02",
+        "ln x",
+        "1.07, −1.53",
+        "−2p",
+        "The variables x and y satisfy the equation y = Ax , where A and p are constants. The graph of ln y",
+        "against ln x is a straight line passing through the points −0.68, 3.02 and 1.07, −1.53, as shown in",
+        "the diagram.",
+        "Find the values of A and p. [5]"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
       "parts": [
         {
-          "id": "3b",
+          "id": "5a",
+          "label": "(a)",
+          "text": "Sketch, on the same diagram, the graphs of y = 2x − 3 and y = 3x + 5.",
+          "marks": 2,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": true,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "5b",
           "label": "(b)",
-          "text": "Solve the inequality 3x + 5 < \u000e2x − 3\u000e. \n6 The polynomial p\u0000x\u0001 is defined by\n3 2\np\u0000x\u0001 = 6x + ax − 4x − 3,",
+          "text": "Solve the inequality 3x + 5 < 2x − 3.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "3a",
+          "id": "6a",
           "label": "(a)",
           "text": "Find the value of a.",
           "marks": 2,
@@ -52,9 +92,9 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "6b",
           "label": "(b)",
-          "text": "Using this value of a, factorise p\u0000x\u0001 completely.",
+          "text": "Using this value of a, factorise px completely.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
@@ -63,20 +103,33 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "6c",
           "label": "(c)",
-          "text": "Hence solve the equation p\u0000cosec 1\u0001 = 0 for 0Å < 1 < 360Å. \n@ A\n7 It is given that + 8x dx = 10, where a is a positive constant.\n2x + 1",
+          "text": "Hence solve the equation pcosec 1 = 0 for 0Å < 1 < 360Å. \n@ A",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The polynomial px is defined by",
+        "3 2",
+        "px = 6x + ax − 4x − 3,",
+        "where a is a constant. It is given that x + 3 is a factor of px."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "3a",
+          "id": "7a",
           "label": "(a)",
-          "text": "Show that a = 2.5 − 0.5 ln\u00002a + 1\u0001.",
+          "text": "Show that a = 2.5 − 0.5 ln2a + 1.",
           "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
@@ -85,7 +138,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "7b",
           "label": "(b)",
           "text": "Using the equation in part (a), show by calculation that 1 < a < 2.",
           "marks": 2,
@@ -96,40 +149,40 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "7c",
           "label": "(c)",
-          "text": "Use an iterative formula, based on the equation in part (a), to find the value of a correct to",
-          "marks": null,
-          "type": "use",
+          "text": "Use an iterative formula, based on the equation in part (a), to find the value of a correct to\n4 significant figures. Give the result of each iteration to 6 significant figures.",
+          "marks": 3,
+          "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 17,
+      "marks": 9,
       "text": [
-        "The equation of a curve is cos 3x + 5 sin y = 3.",
-        "1 1",
-        "Find the gradient of the curve at the point π, π . [5]",
-        "9 6",
-        "ln y",
-        "\u0000−0.68, 3.02\u0001",
-        "ln x",
-        "\u00001.07, −1.53\u0001",
-        "−2p",
-        "The variables x and y satisfy the equation y = Ax , where A and p are constants. The graph of ln y",
-        "the diagram.",
-        "Find the values of A and p. [5]",
-        "5 (a) Sketch, on the same diagram, the graphs of y = \u000e2x − 3\u000e and y = 3x + 5. [2]"
+        "It is given that + 8x dx = 10, where a is a positive constant.",
+        "2x + 1"
       ]
     },
     {
-      "id": "4",
+      "id": "8",
       "context": [],
       "parts": [
         {
-          "id": "4b",
+          "id": "8a",
+          "label": "(a)",
+          "text": "Show that 3 sin 21 cot 1  6 cos 1.",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
           "label": "(b)",
           "text": "Solve the equation 3 sin 21 cot 1 = 5 for 0 < 1 < π.",
           "marks": 3,
@@ -140,7 +193,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "8c",
           "label": "(c)",
           "text": "Find the exact value of Ó 3 sin x cot x dx. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 5,
@@ -151,11 +204,8 @@
           "parts": []
         }
       ],
-      "marks": 8,
-      "text": [
-        "significant figures. Give the result of each iteration to 6 significant figures. [3]",
-        "8 (a) Show that 3 sin 21 cot 1  6 cos 1. [2]"
-      ]
+      "marks": 10,
+      "text": []
     }
   ]
 }

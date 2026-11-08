@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "s21",
   "component": "12",
-  "totalMarks": 65,
+  "totalMarks": 75,
   "questionCount": 8,
   "questions": [
     {
@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Complete the table to show the hexadecimal and 8-bit binary values of the given denary\nvalues.\nDenary Hexadecimal 8-bit binary\n\nWorking space",
+          "text": "Complete the table to show the hexadecimal and 8-bit binary values of the given denary\nvalues.\nDenary Hexadecimal 8-bit binary\nWorking space",
           "marks": 6,
           "type": "complete",
           "answerType": "long_answer",
@@ -144,16 +144,16 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "Consider the completed truth table for the given logic statement.\nRow Working space\nA B C X\nnumber\n1 0 0 0 1\n2 0 0 1 1\n3 0 1 0 1",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
+          "text": "Consider the completed truth table for the given logic statement.\nRow Working space\nA B C X\nnumber\n1 0 0 0 1\n2 0 0 1 1\n3 0 1 0 1\n4 0 1 1 0\n5 1 0 0 1\n6 1 0 1 0\n7 1 1 0 1\n8 1 1 1 1\nThere are four errors in the truth table in the output (X) column.\nIdentify the four incorrect outputs.\nWrite the row number to identify each incorrect output.\nRow ______\nRow ______\nRow ______\nRow ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 6,
+      "marks": 10,
       "text": [
         "Consider the logic statement:",
         "X = ((((NOT A AND B) OR C) AND B) NOR (B OR C))"
@@ -162,45 +162,9 @@
     {
       "id": "4",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "0 1 1 0"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 0 0 1"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 0 1 0"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 1 0 1"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
       "parts": [
         {
-          "id": "8a",
+          "id": "4a",
           "label": "(a)",
           "text": "Six statements are given about Internet security risks.\nTick (3) to show whether the statement applies to virus, spyware or denial of service. Some\nstatements may apply to more than one Internet security risk.\nDenial of\nStatement Virus Spyware service\n(3) (3) (3)\ncaptures all data entered using a keyboard\ncan be installed onto a web server\nprevents access to a website\nis malicious code on a computer\nis self-replicating\ndamages the files on a user’s hard drive",
           "marks": 6,
@@ -211,7 +175,7 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "4b",
           "label": "(b)",
           "text": "Identify three other types of Internet security risks.",
           "marks": 3,
@@ -222,18 +186,28 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "4c",
           "label": "(c)",
-          "text": "Some Internet security risks can maliciously damage data. Data can also be damaged\naccidentally.\nState three ways that data could be accidentally damaged.\n\n5 A security light system is used by a factory. The light only comes on when it is dark and when\nmovement is detected. The light will stay on for 1 minute before switching off.\nSensors and a microprocessor are used to control the security light system.",
+          "text": "Some Internet security risks can maliciously damage data. Data can also be damaged\naccidentally.\nState three ways that data could be accidentally damaged.",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Three types of Internet security risk are virus, spyware and denial of service (DoS) attack."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
-          "id": "8a",
+          "id": "5a",
           "label": "(a)",
           "text": "Identify two sensors that would be used in the security light system.\nSensor 1 ______\nSensor 2 ______",
           "marks": 2,
@@ -244,18 +218,30 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "5b",
           "label": "(b)",
-          "text": "Describe how the sensors and the microprocessor control the security light system.\n\n6 Cookies can be used to store a user’s personal data and online browsing habits.",
+          "text": "Describe how the sensors and the microprocessor control the security light system.",
           "marks": 8,
           "type": "describe",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A security light system is used by a factory. The light only comes on when it is dark and when",
+        "movement is detected. The light will stay on for 1 minute before switching off.",
+        "Sensors and a microprocessor are used to control the security light system."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "8a",
+          "id": "6a",
           "label": "(a)",
           "text": "A cookie could be used to automatically enter a user’s payment details when the user makes\na purchase online.\nDescribe how cookies can be used to store and automatically enter a user’s payment details.",
           "marks": 3,
@@ -266,18 +252,28 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "6b",
           "label": "(b)",
-          "text": "Explain why a user may be concerned about their personal data and online browsing habits\nbeing stored in cookies.\n\n7 Jolene uses HTML to create a website. She separates the HTML into structure and presentation.",
+          "text": "Explain why a user may be concerned about their personal data and online browsing habits\nbeing stored in cookies.",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "Cookies can be used to store a user’s personal data and online browsing habits."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "8a",
+          "id": "7a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -287,7 +283,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8ai",
+              "id": "7ai",
               "label": "(i)",
               "text": "Give one example of HTML structure.",
               "marks": 1,
@@ -298,7 +294,7 @@
               "parts": []
             },
             {
-              "id": "8aii",
+              "id": "7aii",
               "label": "(ii)",
               "text": "Give two examples of HTML presentation.",
               "marks": 2,
@@ -311,29 +307,55 @@
           ]
         },
         {
-          "id": "8b",
+          "id": "7b",
           "label": "(b)",
-          "text": "Explain why Jolene separates the HTML into structure and presentation.\n\n8 A keyboard is a type of input device that can be used to enter data into a computer.\nComplete the paragraph that describes one method of operation for a keyboard, using the most\nappropriate terms from the given list. Not all terms in the list need to be used.\n• Binary\n• Breaks\n• Calculated\n• Character\n• Circuit\n• Current\n• Information\n• Network\n• Press\n• Processor\n• Signal\n• Switch\nA keyboard has a key matrix underneath the keys. When a key is pressed, it presses a\n______ that completes a ______ . This allows\n______ to flow. The location of the key pressed is\n______ . The location of the key pressed is compared to a\n______ map to find the ______ value for the key that\nhas been pressed.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Explain why Jolene separates the HTML into structure and presentation.",
           "marks": 2,
           "type": "explain",
-          "answerType": "fill_blank",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 34,
+      "marks": 5,
       "text": [
-        "1 1 1 1",
-        "There are four errors in the truth table in the output (X) column.",
-        "Identify the four incorrect outputs.",
-        "Write the row number to identify each incorrect output.",
-        "Row .......................",
-        "Row .......................",
-        "Row .......................",
-        "Row .......................",
-        "[4]",
-        "4 Three types of Internet security risk are virus, spyware and denial of service (DoS) attack."
+        "Jolene uses HTML to create a website. She separates the HTML into structure and presentation."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": 6,
+      "text": [
+        "A keyboard is a type of input device that can be used to enter data into a computer.",
+        "Complete the paragraph that describes one method of operation for a keyboard, using the most",
+        "appropriate terms from the given list. Not all terms in the list need to be used.",
+        "• Binary",
+        "• Breaks",
+        "• Calculated",
+        "• Character",
+        "• Circuit",
+        "• Current",
+        "• Information",
+        "• Network",
+        "• Press",
+        "• Processor",
+        "• Signal",
+        "• Switch",
+        "A keyboard has a key matrix underneath the keys. When a key is pressed, it presses a",
+        "............................................. that completes a ............................................. . This allows",
+        "............................................. to flow. The location of the key pressed is",
+        "............................................. . The location of the key pressed is compared to a",
+        "............................................. map to find the ............................................. value for the key that",
+        "has been pressed.",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge."
       ]
     }
   ]

@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s13",
   "component": "32",
-  "totalMarks": 90,
+  "totalMarks": 82,
   "questionCount": 8,
   "questions": [
     {
@@ -92,7 +92,7 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Two of the incomplete table designs are:\nFor\nExaminer's\nUse\nPATIENT(PatientID, PatientName, Address, NextOfKin)\nWARD(WardName, NurseInCharge, NumberOfBeds,\nNumberOfOccupiedBeds, Specialism)\nExplain how the relationship between PATIENT and WARD is implemented.",
+          "text": "Two of the incomplete table designs are:\nPATIENT(PatientID, PatientName, Address, NextOfKin)\nWARD(WardName, NurseInCharge, NumberOfBeds,\nNumberOfOccupiedBeds, Specialism)\nExplain how the relationship between PATIENT and WARD is implemented.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -115,9 +115,7 @@
       "marks": 12,
       "text": [
         "A hospital has a number of doctors and a number of wards. A ward has a number of",
-        "For",
         "patients. A patient may be treated by more than one doctor and a doctor treats many Examiner's",
-        "Use",
         "patients.",
         "Data is to be recorded in a relational database and the tables include DOCTOR and",
         "PATIENT."
@@ -130,7 +128,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Explain the use of Backus-Naur Form (BNF) in computer science.\nFor\nExaminer's\nUse",
+          "text": "Explain the use of Backus-Naur Form (BNF) in computer science.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -186,9 +184,9 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "The rules used in (b) are to be extended to allow a binary string to start with a $\nFor\ncharacter. Examiner's\nUse\nFor example “$010” is a valid binary string.\nRewrite the set of rules to allow this additional format.",
+          "text": "The rules used in (b) are to be extended to allow a binary string to start with a $\ncharacter. Examiner's\nFor example “$010” is a valid binary string.\nRewrite the set of rules to allow this additional format.",
           "marks": 2,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -227,7 +225,7 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "The instruction at address 105 is fetched and executed.\nFor\nExaminer's\nUse\nDraw on the diagram to explain how this instruction is executed and show the contents\nof ACC after execution.\nLD■ 202\nINC ACC\nINC ACC\nACC 102\nLD■ 203\nINC ACC\nLDI 203\nINC ACC\nIX 106\nEND",
+          "text": "The instruction at address 105 is fetched and executed.\nDraw on the diagram to explain how this instruction is executed and show the contents\nof ACC after execution.\nLD■ 202\nINC ACC\nINC ACC\nACC 102\nLD■ 203\nINC ACC\nLDI 203\nINC ACC\nIX 106\nEND",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -238,12 +236,12 @@
         {
           "id": "3d",
           "label": "(d)",
-          "text": "Trace this assembly language program using the trace table below.\nFor\nThe user inputs 19 followed by 37. Examiner's\nUse\nIN\nINC ACC\nSTO 109\nIN\nINC ACC\nADD 109\nSTO 110\nOUT\nEND\nMemory location\n109 110\nACC Output",
+          "text": "Trace this assembly language program using the trace table below.\nThe user inputs 19 followed by 37. Examiner's\nIN\nINC ACC\nSTO 109\nIN\nINC ACC\nADD 109\nSTO 110\nOUT\nEND\nMemory location\n109 110\nACC Output",
           "marks": 5,
-          "type": "use",
-          "answerType": "short_answer",
+          "type": "draw",
+          "answerType": "diagram_only",
           "hasDiagramRef": false,
-          "diagramOnly": false,
+          "diagramOnly": true,
           "parts": []
         },
         {
@@ -261,9 +259,7 @@
       "marks": 12,
       "text": [
         "The table shows the assembly language instructions for a processor which has one general",
-        "For",
         "purpose register – the Accumulator (ACC), and an index register (IX). Examiner's",
-        "Use",
         "Instruction",
         "Explanation",
         "Op Code Operand",
@@ -291,9 +287,6 @@
         "END",
         "End the program and return to the operating system",
         "The diagram shows a program loaded in main memory starting at location 100.",
-        "For",
-        "Examiner's",
-        "Use",
         "Two of the op-codes have been partially blanked out.",
         "Locations 200 onwards contain data which is used by the program."
       ]
@@ -326,9 +319,9 @@
             {
               "id": "4aii",
               "label": "(ii)",
-              "text": "What benefit would be gained from using a dynamic data structure to implement a\nbinary tree?\n\nThe initially empty tree has the following items added in this order:\nFor\nExaminer's\nUse\nMELON, PEAR, BANANA, ORANGE",
+              "text": "What benefit would be gained from using a dynamic data structure to implement a\nbinary tree?\nThe initially empty tree has the following items added in this order:\nMELON, PEAR, BANANA, ORANGE",
               "marks": 1,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -350,9 +343,9 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "The following algorithm traverses the tree shown and outputs the nodes in order i.e. an\nFor\n‘in-order traversal’. Examiner's\nUse\nPROCEDURE InOrder(Root) Root\nIF LeftP[Root] <> 0\nTHEN\n// move left\nPEPPER\nInOrder(LeftP[Root])\nENDIF\nOUTPUT Data[Root]\nBEAN PUMPKIN\nIF RightP[Root] <> 0\nTHEN\n// move right\nInOrder(RightP[Root])\nPEA\nENDIF\nENDPROCEDURE",
+          "text": "The following algorithm traverses the tree shown and outputs the nodes in order i.e. an\n‘in-order traversal’. Examiner's\nPROCEDURE InOrder(Root) Root\nIF LeftP[Root] <> 0\nTHEN\n// move left\nPEPPER\nInOrder(LeftP[Root])\nENDIF\nOUTPUT Data[Root]\nBEAN PUMPKIN\nIF RightP[Root] <> 0\nTHEN\n// move right\nInOrder(RightP[Root])\nPEA\nENDIF\nENDPROCEDURE",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -371,9 +364,9 @@
             {
               "id": "4cii",
               "label": "(ii)",
-              "text": "The diagram shows a trace of the execution of this algorithm for the given tree\nFor\ndata. Examiner's\nUse\nFill in the missing lines of code.\nInOrder(PEPPER)\nLeftP[PEPPER] <> 0 is TRUE\nInOrder(BEAN)\nLeftP[BEAN] <> 0 is FALSE\nOUTPUT BEAN\nRightP[BEAN] <> 0 is TRUE\nInOrder(PEA)\nLeftP[PEA] <> 0 is FALSE\nOUTPUT PEA\nENDPROCEDURE\nENDPROCEDURE\nRightP[PEPPER] <> 0 is TRUE\nInOrder(PUMPKIN)\nLeftP[PUMPKIN] <> 0 is FALSE\nRightP[PUMPKIN] <> 0 is FALSE\nENDPROCEDURE",
+              "text": "The diagram shows a trace of the execution of this algorithm for the given tree\ndata. Examiner's\nFill in the missing lines of code.\nInOrder(PEPPER)\nLeftP[PEPPER] <> 0 is TRUE\nInOrder(BEAN)\nLeftP[BEAN] <> 0 is FALSE\nOUTPUT BEAN\nRightP[BEAN] <> 0 is TRUE\nInOrder(PEA)\nLeftP[PEA] <> 0 is FALSE\nOUTPUT PEA\nENDPROCEDURE\nENDPROCEDURE\nRightP[PEPPER] <> 0 is TRUE\nInOrder(PUMPKIN)\nLeftP[PUMPKIN] <> 0 is FALSE\nRightP[PUMPKIN] <> 0 is FALSE\nENDPROCEDURE",
               "marks": 4,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": true,
               "diagramOnly": false,
@@ -396,9 +389,6 @@
       "marks": 12,
       "text": [
         "A binary tree is implemented with three 1-dimensional arrays.",
-        "For",
-        "Examiner's",
-        "Use",
         "Identifier Data Type Description",
         "Data ARRAY[100] OF STRING",
         "Stores the data values",
@@ -462,9 +452,9 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "The final stage of compilation is code optimisation.\nFor\nExaminer's\nUse",
+          "text": "The final stage of compilation is code optimisation.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -497,9 +487,7 @@
       "marks": 8,
       "text": [
         "The following are the first few lines of a source code program written in high-level language",
-        "For",
         "XYZ which is about to be translated by the language compiler. Examiner's",
-        "Use",
         "// program written 12 June 2013",
         "Declare IsFound : Boolean;",
         "Declare NoOfChildren : Integer;",
@@ -550,72 +538,16 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "The diagram shows the current contents of main memory with a list of programs\nFor\nwaiting to be scheduled. Examiner's\nUse\nOTHER\n10 Gb\nPROG6\n20 Gb\nPartition 1\n30 Gb\nPROG7\n40 Gb\n50 Gb\nPROG8\n60 Gb\nPartition 2\nPROG9\n70 Gb\n80 Gb\nCurrently waiting to be loaded are:\n• PROG16 (batch processing requiring 25 Gb)\n• PROG17 (interactive processing requiring 8 Gb)\n• PROG44 (interactive processing requiring 9 Gb)\n• PROG45 (interactive processing requiring 8 Gb)\n• PROG23 (batch processing requiring 15 Gb)",
+          "text": "The diagram shows the current contents of main memory with a list of programs\nwaiting to be scheduled. Examiner's\nOTHER",
           "marks": null,
-          "type": "use",
+          "type": "list",
           "answerType": "short_answer",
           "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "6bi",
-              "label": "(i)",
-              "text": "If PROG6 completes execution, which programs (if any) can be loaded next?",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "6bii",
-              "label": "(ii)",
-              "text": "If PROG8 completes execution, which programs (if any) can be loaded next?",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "6biii",
-              "label": "(iii)",
-              "text": "Describe two variations on this use of partitions which may make more efficient\nuse of memory.",
-              "marks": 2,
-              "type": "describe",
-              "answerType": "long_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "6c",
-          "label": "(c)",
-          "text": "10 Gb of the main memory is labelled OTHER and will not be used for the execution of\nFor\napplication programs. Examiner's\nUse\nName two possible items of software this memory will be used for.\n2",
-          "marks": 2,
-          "type": "name",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "6d",
-          "label": "(d)",
-          "text": "Any program loaded is always in one of three possible states. One is the ‘running’ state\nmeaning the job currently has use of the processor.\nName and describe the two other states.",
-          "marks": 4,
-          "type": "state",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 14,
+      "marks": 4,
       "text": [
         "A multiprogramming, multi-user operating system organises the available memory into two",
         "fixed sized partitions.",
@@ -626,21 +558,32 @@
       ]
     },
     {
-      "id": "7",
+      "id": "10",
       "context": [],
       "parts": [
         {
-          "id": "7a",
-          "label": "(a)",
-          "text": "A user-defined function CountCharacter is defined, using pseudocode, as follows:\nFor\nExaminer's\nUse\nFUNCTION CountCharacter(ThisArray : CHAR, UBound : INTEGER,\nThisCharacter : CHAR) RETURNS INTEGER\nThe function checks each element in the array ThisArray with upper bound UBound.\nThe function returns the number of times ThisCharacter appears in ThisArray.\nIf the function is incorrectly formed it will give a ‘COMPILE ERROR’.\nThe function is used with the three arrays shown below:\nSubscript/Index\nIdentifier 1 2 3 4 5 6 7 8 9 10\nCity1\nL O N D O N\nCity2\nN E W <Space> Y O R K\nCity3\nS T O C K H O L M\nWhat is returned by the following function calls?",
-          "marks": null,
-          "type": "give",
+          "id": "10c",
+          "label": "(c)",
+          "text": "10 Gb of the main memory is labelled OTHER and will not be used for the execution of\napplication programs. Examiner's\nName two possible items of software this memory will be used for.\n2",
+          "marks": 2,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10d",
+          "label": "(d)",
+          "text": "Any program loaded is always in one of three possible states. One is the ‘running’ state\nmeaning the job currently has use of the processor.\nName and describe the two other states.\n7 (a) A user-defined function CountCharacter is defined, using pseudocode, as follows:\nFUNCTION CountCharacter(ThisArray : CHAR, UBound : INTEGER,\nThisCharacter : CHAR) RETURNS INTEGER\nThe function checks each element in the array ThisArray with upper bound UBound.\nThe function returns the number of times ThisCharacter appears in ThisArray.\nIf the function is incorrectly formed it will give a ‘COMPILE ERROR’.\nThe function is used with the three arrays shown below:\nSubscript/Index\nIdentifier 1 2 3 4 5 6 7 8 9 10\nCity1\nL O N D O N\nCity2\nN E W <Space> Y O R K\nCity3\nS T O C K H O L M\nWhat is returned by the following function calls?",
+          "marks": 4,
+          "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7ai",
+              "id": "10di",
               "label": "(i)",
               "text": "CountCharacter(City1, 6, ‘O’)",
               "marks": 1,
@@ -651,7 +594,7 @@
               "parts": []
             },
             {
-              "id": "7aii",
+              "id": "10dii",
               "label": "(ii)",
               "text": "CountCharacter(City2, ‘R’, 8)",
               "marks": 1,
@@ -662,7 +605,7 @@
               "parts": []
             },
             {
-              "id": "7aiii",
+              "id": "10diii",
               "label": "(iii)",
               "text": "CountCharacter(City3, 9, ‘t’)",
               "marks": 1,
@@ -673,7 +616,7 @@
               "parts": []
             },
             {
-              "id": "7aiv",
+              "id": "10div",
               "label": "(iv)",
               "text": "CountCharacter(City2, ’W’)",
               "marks": 1,
@@ -686,17 +629,17 @@
           ]
         },
         {
-          "id": "7b",
+          "id": "10b",
           "label": "(b)",
-          "text": "A programmer writes pseudocode to report whether or not a string value ThisValue is\nFor\nExaminer's\nfound in the string array ThisArray. This is designed as a function StringFound\nUse\nwhich returns a Boolean value.",
+          "text": "A programmer writes pseudocode to report whether or not a string value ThisValue is\nfound in the string array ThisArray. This is designed as a function StringFound\nwhich returns a Boolean value.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": [
             {
-              "id": "7bi",
+              "id": "10bi",
               "label": "(i)",
               "text": "Show the function header for function StringFound.",
               "marks": 3,
@@ -707,7 +650,7 @@
               "parts": []
             },
             {
-              "id": "7bii",
+              "id": "10bii",
               "label": "(ii)",
               "text": "Use the following numbers to label your function header above.\n1. Function parameter(s)\n2. Where the return data type is stated",
               "marks": 2,
@@ -718,7 +661,7 @@
               "parts": []
             },
             {
-              "id": "7biii",
+              "id": "10biii",
               "label": "(iii)",
               "text": "Write a single statement which calls the function StringFound to search for the\nvalue “LISBON” in the array CapitalCities (upper bound 300). The function\nreturns the value to variable CityWasFound in the calling statement.",
               "marks": 2,
@@ -731,8 +674,29 @@
           ]
         }
       ],
-      "marks": 11,
-      "text": []
+      "marks": 13,
+      "text": [
+        "Gb",
+        "PROG6",
+        "20 Gb",
+        "Partition 1",
+        "30 Gb",
+        "PROG7",
+        "40 Gb",
+        "50 Gb",
+        "PROG8",
+        "60 Gb",
+        "Partition 2",
+        "PROG9",
+        "70 Gb",
+        "80 Gb",
+        "Currently waiting to be loaded are:",
+        "• PROG16 (batch processing requiring 25 Gb)",
+        "• PROG17 (interactive processing requiring 8 Gb)",
+        "• PROG44 (interactive processing requiring 9 Gb)",
+        "• PROG45 (interactive processing requiring 8 Gb)",
+        "• PROG23 (batch processing requiring 15 Gb)"
+      ]
     },
     {
       "id": "8",
@@ -741,9 +705,9 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "A robot is a moveable, mechanical device that can sense its surroundings and is\nFor\ncontrolled by a computer program. Examiner's\nUse",
+          "text": "A robot is a moveable, mechanical device that can sense its surroundings and is\ncontrolled by a computer program. Examiner's",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -786,7 +750,7 @@
         {
           "id": "8c",
           "label": "(c)",
-          "text": "What type of operating system would be used for any robot?\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "What type of operating system would be used for any robot?\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 1,
           "type": "name",
           "answerType": "short_answer",

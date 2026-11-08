@@ -3,14 +3,14 @@
   "subjectCode": "9608",
   "session": "s15",
   "component": "42",
-  "totalMarks": 52,
+  "totalMarks": 72,
   "questionCount": 16,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "A turnstile is a gate which is in a locked state. To open it and pass through, a customer inserts",
         "a coin into a slot on the turnstile. The turnstile then unlocks and allows the customer to push the",
@@ -25,8 +25,7 @@
         "Unlocked Attempt to insert coin Unlocked",
         "Unlocked Pass through Locked",
         "Complete the state transition diagram for the turnstile:",
-        "start",
-        "[5]"
+        "start"
       ]
     },
     {
@@ -186,7 +185,7 @@
         {
           "id": "16c",
           "label": "(c)",
-          "text": "Complete the rule below to list the countries the travel writer has visited.\ncountries_visited(ThisCountry)\nIF ______\n\n3 A shop gives some customers a discount on goods totalling more than $20.\nThe discounts are:\n• 5% for goods totalling more than $100\n• 5% with a discount card\n• 10% with a discount card and goods totalling more than $100",
+          "text": "Complete the rule below to list the countries the travel writer has visited.\ncountries_visited(ThisCountry)\nIF ______\n3 A shop gives some customers a discount on goods totalling more than $20.\nThe discounts are:\n• 5% for goods totalling more than $100\n• 5% with a discount card\n• 10% with a discount card and goods totalling more than $100",
           "marks": 4,
           "type": "complete",
           "answerType": "fill_blank",
@@ -198,7 +197,7 @@
           "id": "16a",
           "label": "(a)",
           "text": "Complete the decision table.\ngoods totalling\nY Y Y Y N N N N\nmore than $20\ngoods totalling\nY Y N N Y Y N N\nmore than $100\nConditions\nhave discount card Y N Y N Y N Y N\nNo discount\n5% discount\nActions\n10% discount",
-          "marks": null,
+          "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -209,7 +208,7 @@
           "id": "16b",
           "label": "(b)",
           "text": "Simplify your solution by removing redundancies.\ngoods totalling\nmore than $20\ngoods totalling\nmore than $100\nConditions\nhave discount card\nNo discount\n5% discount\nActions\n10% discount",
-          "marks": null,
+          "marks": 5,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -219,8 +218,8 @@
         {
           "id": "16c",
           "label": "(c)",
-          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function Discount.\nThis function returns the discount amount as an integer.\nIdentifier Data type\nGoodsTotal INTEGER\nHasDiscountCard BOOLEAN\nWrite program code for this function.\nProgramming language ______\n\n4 A payroll program is to be written using an object-oriented programming language. An Employee\nclass is designed. Two subclasses have been identified:\n• HourlyPaidEmployee who is paid a monthly wage calculated from their hourly rate of pay\nand the number of hours worked during the month\n• SalariedEmployee who is paid a monthly wage which is one 12th of their annual salary",
-          "marks": null,
+          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function Discount.\nThis function returns the discount amount as an integer.\nIdentifier Data type\nGoodsTotal INTEGER\nHasDiscountCard BOOLEAN\nWrite program code for this function.\nProgramming language ______\n4 A payroll program is to be written using an object-oriented programming language. An Employee\nclass is designed. Two subclasses have been identified:\n• HourlyPaidEmployee who is paid a monthly wage calculated from their hourly rate of pay\nand the number of hours worked during the month\n• SalariedEmployee who is paid a monthly wage which is one 12th of their annual salary",
+          "marks": 6,
           "type": "design",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -286,7 +285,7 @@
         {
           "id": "16d",
           "label": "(d)",
-          "text": "Name the feature of object-oriented program design that allows the method CalculatePay\nto be declared in the superclass Employee.\n\n5 Data is stored in the array NameList[1:10]. This data is to be sorted.",
+          "text": "Name the feature of object-oriented program design that allows the method CalculatePay\nto be declared in the superclass Employee.\n5 Data is stored in the array NameList[1:10]. This data is to be sorted.",
           "marks": 1,
           "type": "name",
           "answerType": "short_answer",
@@ -352,7 +351,7 @@
             {
               "id": "16bii",
               "label": "(ii)",
-              "text": "Rewrite the algorithm in part (b), using pseudocode, to reduce the number of\nunnecessary comparisons. Use the same variable names where appropriate.\n\n6 A queue Abstract Data Type (ADT) has these associated operations:\n• create queue\n• add item to queue\n• remove item from queue\nThe queue ADT is to be implemented as a linked list of nodes.\nEach node consists of data and a pointer to the next node.",
+              "text": "Rewrite the algorithm in part (b), using pseudocode, to reduce the number of\nunnecessary comparisons. Use the same variable names where appropriate.\n6 A queue Abstract Data Type (ADT) has these associated operations:\n• create queue\n• add item to queue\n• remove item from queue\nThe queue ADT is to be implemented as a linked list of nodes.\nEach node consists of data and a pointer to the next node.",
               "marks": 5,
               "type": "use",
               "answerType": "short_answer",
@@ -386,7 +385,7 @@
             {
               "id": "16bi",
               "label": "(i)",
-              "text": "The CreateQueue operation links all nodes and initialises the three pointers that need\nto be used: HeadPointer, TailPointer and FreePointer.\nComplete the diagram to show the value of all pointers after CreateQueue has been\nexecuted.\nQueue\nHeadPointer Name Pointer\n\n\n\nTailPointer\n\n\n\nFreePointer",
+              "text": "The CreateQueue operation links all nodes and initialises the three pointers that need\nto be used: HeadPointer, TailPointer and FreePointer.\nComplete the diagram to show the value of all pointers after CreateQueue has been\nexecuted.\nQueue\nHeadPointer Name Pointer\nTailPointer\nFreePointer",
               "marks": 1,
               "type": "name",
               "answerType": "short_answer",
@@ -397,7 +396,7 @@
             {
               "id": "16bii",
               "label": "(ii)",
-              "text": "The algorithm for adding a name to the queue is written, using pseudocode, as a\nprocedure with the header:\nPROCEDURE AddName(NewName)\nwhere NewName is the new name to be added to the queue.\nThe procedure uses the variables as shown in the identifier table.\nIdentifier Data type Description\nQueue Array[1:10] OF Node\nArray to store node data\nNewName STRING Name to be added\nFreePointer INTEGER Pointer to next free node in array\nHeadPointer INTEGER Pointer to first node in queue\nTailPointer INTEGER Pointer to last node in queue\nCurrentPointer INTEGER Pointer to current node\nPROCEDURE AddName(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nCurrentPointer ← FreePointer\nQueue[CurrentPointer].Name ← NewName\n// adjust free pointer\nFreePointer ← Queue[CurrentPointer].Pointer\n// if first name in queue then adjust head pointer\nIF HeadPointer = 0\nTHEN\nHeadPointer ← CurrentPointer\nENDIF\n// current node is new end of queue\nQueue[CurrentPointer].Pointer ← 0\nTailPointer ← CurrentPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure RemoveName. Use the variables listed in\nthe identifier table.\nPROCEDURE RemoveName()\n// Report error if Queue is empty\nOUTPUT Queue[…………………………………………………………].Name\n// current node is head of queue\n// update head pointer\n// if only one element in queue then update tail pointer\n// link released node to free list\nENDPROCEDURE\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "The algorithm for adding a name to the queue is written, using pseudocode, as a\nprocedure with the header:\nPROCEDURE AddName(NewName)\nwhere NewName is the new name to be added to the queue.\nThe procedure uses the variables as shown in the identifier table.\nIdentifier Data type Description\nQueue Array[1:10] OF Node\nArray to store node data\nNewName STRING Name to be added\nFreePointer INTEGER Pointer to next free node in array\nHeadPointer INTEGER Pointer to first node in queue\nTailPointer INTEGER Pointer to last node in queue\nCurrentPointer INTEGER Pointer to current node\nPROCEDURE AddName(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nCurrentPointer ← FreePointer\nQueue[CurrentPointer].Name ← NewName\n// adjust free pointer\nFreePointer ← Queue[CurrentPointer].Pointer\n// if first name in queue then adjust head pointer\nIF HeadPointer = 0\nTHEN\nHeadPointer ← CurrentPointer\nENDIF\n// current node is new end of queue\nQueue[CurrentPointer].Pointer ← 0\nTailPointer ← CurrentPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure RemoveName. Use the variables listed in\nthe identifier table.\nPROCEDURE RemoveName()\n// Report error if Queue is empty\nOUTPUT Queue[…………………………………………………………].Name\n// current node is head of queue\n// update head pointer\n// if only one element in queue then update tail pointer\n// link released node to free list\nENDPROCEDURE\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 6,
               "type": "name",
               "answerType": "short_answer",
@@ -408,7 +407,7 @@
           ]
         }
       ],
-      "marks": 52,
+      "marks": 67,
       "text": [
         "city_visited(cairo).",
         "These clauses have the following meaning:",

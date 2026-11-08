@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "s20",
   "component": "23",
-  "totalMarks": 33,
+  "totalMarks": 30,
   "questionCount": 9,
   "questions": [
     {
@@ -91,7 +91,7 @@
         {
           "id": "1e",
           "label": "(e)",
-          "text": "Describe how you could alter your program to restrict the maximum number of items\npurchased by a customer to six.\n\nSection B",
+          "text": "Describe how you could alter your program to restrict the maximum number of items\npurchased by a customer to six.\nSection B",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -109,7 +109,7 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Draw a line to connect each Description to the most appropriate Pseudocode example.",
         "Description Pseudocode example",
@@ -124,8 +124,7 @@
         "A conditional statement",
         "Sum Sum + NewValue",
         "Totalling",
-        "Counting REPEAT … UNTIL",
-        "[4]"
+        "Counting REPEAT … UNTIL"
       ]
     },
     {
@@ -204,7 +203,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "Give one example of invalid test data for each of the validation checks you have named in\npart (a) and in each case, give a reason why it fails the check. Each example of test data\nmust be different.\nCheck 1 Invalid Test Data ______\nReason ______\nCheck 2 Invalid Test Data ______\nReason ______\n\n5 This algorithm finds prime numbers.\nThe pre-defined function DIV gives the value of the result of integer division,\nfor example, y 9 DIV 4 gives y a value of 2\nFlag False\nINPUT Number\nWHILE Number <> 0\nDivisor 2\nWHILE Divisor <= Number / 2\nValue Number DIV Divisor\nIF Number / Divisor = Value\nTHEN\nFlag True\nENDIF\nDivisor Divisor + 1\nENDWHILE\nIF Flag = False\nTHEN\nOUTPUT Number, \" is prime\"\nENDIF\nINPUT Number\nFlag False\nENDWHILE\nComplete the trace table for the algorithm using the input data:\n5, 6, 8, 0, 11, 13\nFlag Number Divisor Value\nOUTPUT\n\n6 Draw the flowchart symbol for Decision and the flowchart symbol for Process.\nDecision Process\n\n7 A convenience store which sells general groceries wants to set up a database table called\nSTOCK. The table will contain fields including a description of the item, the price of the item\nand the number in stock for each item. The STOCK table also has a fourth field to be used as a\nprimary key.",
+          "text": "Give one example of invalid test data for each of the validation checks you have named in\npart (a) and in each case, give a reason why it fails the check. Each example of test data\nmust be different.\nCheck 1 Invalid Test Data ______\nReason ______\nCheck 2 Invalid Test Data ______\nReason ______\n5 This algorithm finds prime numbers.\nThe pre-defined function DIV gives the value of the result of integer division,\nfor example, y 9 DIV 4 gives y a value of 2\nFlag False\nINPUT Number\nWHILE Number <> 0\nDivisor 2\nWHILE Divisor <= Number / 2\nValue Number DIV Divisor\nIF Number / Divisor = Value\nTHEN\nFlag True\nENDIF\nDivisor Divisor + 1\nENDWHILE\nIF Flag = False\nTHEN\nOUTPUT Number, \" is prime\"\nENDIF\nINPUT Number\nFlag False\nENDWHILE\nComplete the trace table for the algorithm using the input data:\n5, 6, 8, 0, 11, 13\nFlag Number Divisor Value\nOUTPUT\n6 Draw the flowchart symbol for Decision and the flowchart symbol for Process.\nDecision Process\n7 A convenience store which sells general groceries wants to set up a database table called\nSTOCK. The table will contain fields including a description of the item, the price of the item\nand the number in stock for each item. The STOCK table also has a fourth field to be used as a\nprimary key.",
           "marks": 4,
           "type": "give",
           "answerType": "fill_blank",
@@ -226,7 +225,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "Complete the query-by-example grid to output stock items where the quantity in stock has\nfallen below 20. Only show the primary key and description of the items.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Complete the query-by-example grid to output stock items where the quantity in stock has\nfallen below 20. Only show the primary key and description of the items.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 3,
           "type": "complete",
           "answerType": "long_answer",
@@ -235,7 +234,7 @@
           "parts": []
         }
       ],
-      "marks": 13,
+      "marks": 6,
       "text": [
         "PRINT Number, \" is within the correct range\"",
         "There are three lines in this pseudocode that contain errors. In each case, state the line number",
@@ -246,7 +245,6 @@
         "Correction .........................................................................................................................................",
         "Error 3 line number ..........................................................................................................................",
         "Correction .........................................................................................................................................",
-        "[6]",
         "4 A code must take the form LL9 9LL where L is a letter and 9 is a digit."
       ]
     }

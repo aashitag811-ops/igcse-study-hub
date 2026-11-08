@@ -4,7 +4,7 @@
   "session": "w21",
   "component": "31",
   "totalMarks": 59,
-  "questionCount": 8,
+  "questionCount": 10,
   "questions": [
     {
       "id": "1",
@@ -12,7 +12,7 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Solve the equation 4\u000e5 − 1\u000e = 5 , giving your answers correct to 3 decimal places. [4]"
+        "Solve the equation 45 − 1 = 5 , giving your answers correct to 3 decimal places. [4]"
       ]
     },
     {
@@ -22,7 +22,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Express 5 sin x − 3 cos x in the form R sin\u0000x − !\u0001, where R > 0 and 0 < ! < π. Give the exact\nvalue of R and give ! correct to 2 decimal places.",
+          "text": "Express 5 sin x − 3 cos x in the form R sinx − !, where R > 0 and 0 < ! < π. Give the exact\nvalue of R and give ! correct to 2 decimal places.",
           "marks": 3,
           "type": "give",
           "answerType": "short_answer",
@@ -33,7 +33,7 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "Hence state the greatest and least possible values of \u00005 sin x − 3 cos x\u0001 . \n1−2x",
+          "text": "Hence state the greatest and least possible values of 5 sin x − 3 cos x . \n1−2x",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -85,7 +85,7 @@
       "text": [
         "Using the substitution u = x, find the exact value of",
         "dx. [6]",
-        "\u0000x + 1\u0001 x"
+        "x + 1 x"
       ]
     },
     {
@@ -124,7 +124,7 @@
       "parts": [],
       "marks": null,
       "text": [
-        "When \u0000a + bx\u0001 1 + 4x, where a and b are constants, is expanded in ascending powers of x, the",
+        "When a + bx 1 + 4x, where a and b are constants, is expanded in ascending powers of x, the",
         "coefficients of x and x are 3 and −6 respectively.",
         "Find the values of a and b. [6]"
       ]
@@ -136,7 +136,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Given that y = ln\u0000ln x\u0001, show that\ndy 1\n= . \ndx x ln x\nThe variables x and t satisfy the differential equation\ndx\nx ln x + t = 0.\ndt\nIt is given that x = e when t = 2.",
+          "text": "Given that y = lnln x, show that\ndy 1\n= . \ndx x ln x\nThe variables x and t satisfy the differential equation\ndx\nx ln x + t = 0.\ndt\nIt is given that x = e when t = 2.",
           "marks": 1,
           "type": "calculate",
           "answerType": "calculate",
@@ -158,7 +158,7 @@
         {
           "id": "7c",
           "label": "(c)",
-          "text": "Hence state what happens to the value of x as t tends to infinity. \nln x\nÔ \u000f",
+          "text": "Hence state what happens to the value of x as t tends to infinity. \nln x",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",
@@ -177,7 +177,7 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "Show that a = exp \u000f + 2 . \n[exp\u0000x\u0001 is an alternative notation for e .]",
+          "text": "Show that a = exp  + 2 . \n[expx is an alternative notation for e .]",
           "marks": 5,
           "type": "calculate",
           "answerType": "calculate",
@@ -199,16 +199,27 @@
         {
           "id": "8c",
           "label": "(c)",
-          "text": "Use an iterative formula based on the equation in part (a) to determine a correct to 2 decimal\nplaces. Give the result of each iteration to 4 decimal places. \nrespectively.",
+          "text": "Use an iterative formula based on the equation in part (a) to determine a correct to 2 decimal\nplaces. Give the result of each iteration to 4 decimal places.",
           "marks": 3,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The constant a is such that dx = 6.",
+        "@ A"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
         {
-          "id": "8a",
+          "id": "9a",
           "label": "(a)",
           "text": "Show that l and m are perpendicular.",
           "marks": 2,
@@ -219,7 +230,7 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "9b",
           "label": "(b)",
           "text": "Show that l and m intersect and state the position vector of the point of intersection.",
           "marks": 5,
@@ -230,18 +241,29 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "9c",
           "label": "(c)",
-          "text": "Show that the length of the perpendicular from the origin to the line m is 5. \n3 2\n10 The complex number 1 + 2i is denoted by u. The polynomial 2x + ax + 4x + b, where a and b are",
+          "text": "Show that the length of the perpendicular from the origin to the line m is 5. \n3 2",
           "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 11,
+      "text": [
+        "Two lines l and m have equations r = 3i + 2j + 5k + s4i − j + 3k and r = i − j − 2k + t−i + 2j + 2k",
+        "respectively."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
         {
-          "id": "8a",
+          "id": "10a",
           "label": "(a)",
           "text": "Find the values of a and b.",
           "marks": 4,
@@ -252,7 +274,7 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "10b",
           "label": "(b)",
           "text": "State a second complex root of this equation.",
           "marks": 1,
@@ -263,9 +285,9 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "10c",
           "label": "(c)",
-          "text": "Find the real factors of p\u0000x\u0001.",
+          "text": "Find the real factors of px.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
@@ -274,7 +296,7 @@
           "parts": []
         },
         {
-          "id": "8d",
+          "id": "10d",
           "label": "(d)",
           "text": "",
           "marks": null,
@@ -284,9 +306,9 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8di",
+              "id": "10di",
               "label": "(i)",
-              "text": "On a sketch of an Argand diagram, shade the region whose points represent complex\nnumbers z satisfying the inequalities \u000ez − u\u000e ≤ 5 and arg z ≤ π.",
+              "text": "On a sketch of an Argand diagram, shade the region whose points represent complex\nnumbers z satisfying the inequalities z − u ≤ 5 and arg z ≤ π.",
               "marks": 4,
               "type": "draw",
               "answerType": "diagram_only",
@@ -295,7 +317,7 @@
               "parts": []
             },
             {
-              "id": "8dii",
+              "id": "10dii",
               "label": "(ii)",
               "text": "Find the least value of Im z for points in the shaded region. Give your answer in an exact\nform. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 1,
@@ -308,10 +330,10 @@
           ]
         }
       ],
-      "marks": 33,
+      "marks": 12,
       "text": [
-        "The constant a is such that dx = 6.",
-        "@ A"
+        "The complex number 1 + 2i is denoted by u. The polynomial 2x + ax + 4x + b, where a and b are",
+        "real constants, is denoted by px. It is given that u is a root of the equation px = 0."
       ]
     }
   ]

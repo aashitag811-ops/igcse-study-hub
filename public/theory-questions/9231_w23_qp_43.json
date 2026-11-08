@@ -4,7 +4,7 @@
   "session": "w23",
   "component": "43",
   "totalMarks": 27,
-  "questionCount": 3,
+  "questionCount": 5,
   "questions": [
     {
       "id": "1",
@@ -79,49 +79,16 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "Find the exact numerical value of the interquartile range of X. \n5 The random variable X has the geometric distribution Geo(p).\npt",
+          "text": "Find the exact numerical value of the interquartile range of X.",
           "marks": 5,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
-        {
-          "id": "3a",
-          "label": "(a)",
-          "text": "Show that the probability generating function of X is , where q = 1 - p. \n1 - qt",
-          "marks": 3,
-          "type": "calculate",
-          "answerType": "calculate",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3b",
-          "label": "(b)",
-          "text": "Use the probability generating function of X to show that Var(X) = . \nKenny throws an ordinary fair 6-sided dice repeatedly. The random variable X is the number of throws\nthat Kenny takes in order to obtain a 6. The random variable Z denotes the sum of two independent\nvalues of X.",
-          "marks": 5,
-          "type": "calculate",
-          "answerType": "calculate",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3c",
-          "label": "(c)",
-          "text": "Find the probability generating function of Z. \n6 A school is conducting an experiment to see whether the distance that children can throw a ball increases\nin hot weather. On a cold day, all the children at the school were asked to throw a ball as far as possible.\nThe distances thrown were measured and recorded. The median distance thrown by a random sample\nof 25 of the children was 22.0 m. The children were asked to throw the ball again on a hot day. The\ndistances thrown by the same 25 children were measured and recorded and these distances, in m, are\nshown below.\n21.2 23.5 22.9 18.6 19.4\n22.1 26.5 20.2 25.7 20.6\n22.3 17.4 22.2 27.0 23.9\n28.2 22.6 27.2 23.0 23.7\n19.8 22.7 23.3 21.5 24.3\nThe teacher claims that on average the distances thrown will be further when it is hot.\nCarry out a Wilcoxon signed-rank test, at the 5% significance level, to test whether the data supports\nthe teacher’s claim. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
-          "marks": 2,
-          "type": "complete",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
         }
       ],
-      "marks": 27,
+      "marks": 17,
       "text": [
         "Scientists are studying the effects of exercise on LDL blood cholesterol levels. Over a three-month",
         "period, a large group of people exercised for 20 minutes each day. For a randomly chosen sample of 10",
@@ -132,6 +99,81 @@
         "Cholesterol",
         "level",
         "End 64 76 105 92 105 115 67 75 75 84"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Show that the probability generating function of X is , where q = 1 - p. \n1 - qt",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "Use the probability generating function of X to show that Var(X) = . \nKenny throws an ordinary fair 6-sided dice repeatedly. The random variable X is the number of throws\nthat Kenny takes in order to obtain a 6. The random variable Z denotes the sum of two independent\nvalues of X.",
+          "marks": 5,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Find the probability generating function of Z.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The random variable X has the geometric distribution Geo(p).",
+        "pt"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "A school is conducting an experiment to see whether the distance that children can throw a ball increases",
+        "in hot weather. On a cold day, all the children at the school were asked to throw a ball as far as possible.",
+        "The distances thrown were measured and recorded. The median distance thrown by a random sample",
+        "of 25 of the children was 22.0 m. The children were asked to throw the ball again on a hot day. The",
+        "distances thrown by the same 25 children were measured and recorded and these distances, in m, are",
+        "shown below.",
+        "21.2 23.5 22.9 18.6 19.4",
+        "22.1 26.5 20.2 25.7 20.6",
+        "22.3 17.4 22.2 27.0 23.9",
+        "28.2 22.6 27.2 23.0 23.7",
+        "19.8 22.7 23.3 21.5 24.3",
+        "The teacher claims that on average the distances thrown will be further when it is hot.",
+        "Carry out a Wilcoxon signed-rank test, at the 5% significance level, to test whether the data supports",
+        "the teacher’s claim. [10]",
+        "Additional Page",
+        "If you use the following lined page to complete the answer(s) to any question(s), the question number(s)",
+        "must be clearly shown.",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
       ]
     }
   ]

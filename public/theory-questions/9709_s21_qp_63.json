@@ -3,7 +3,7 @@
   "subjectCode": "9709",
   "session": "s21",
   "component": "63",
-  "totalMarks": 43,
+  "totalMarks": 45,
   "questionCount": 6,
   "questions": [
     {
@@ -182,7 +182,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "State, with a justification, an approximating distribution for X, giving the values of any parameters.\n\nUse your approximating distribution to answer parts (b) and (c).",
+          "text": "State, with a justification, an approximating distribution for X, giving the values of any parameters.\nUse your approximating distribution to answer parts (b) and (c).",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -193,7 +193,18 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "Find P\u0000X ≤ 3\u0001. \nThe number of lucky plants in a random sample of n plants, where n is large, is denoted by Y.",
+          "text": "Find PX ≤ 3.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Given that PX = k = 2PX = k + 1, find k. \nThe number of lucky plants in a random sample of n plants, where n is large, is denoted by Y.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
@@ -204,7 +215,7 @@
         {
           "id": "5d",
           "label": "(d)",
-          "text": "Given that P\u0000Y ≥ 1\u0001 = 0.963, correct to 3 significant figures, use a suitable approximating\ndistribution to find the value of n.",
+          "text": "Given that PY ≥ 1 = 0.963, correct to 3 significant figures, use a suitable approximating\ndistribution to find the value of n.",
           "marks": 3,
           "type": "use",
           "answerType": "short_answer",
@@ -213,7 +224,7 @@
           "parts": []
         }
       ],
-      "marks": 7,
+      "marks": 9,
       "text": [
         "Most plants of a certain type have three leaves. However, it is known that, on average, 1 in 10 000",
         "of these plants have four leaves, and plants with four leaves are called ‘lucky’. The number of lucky",
@@ -238,7 +249,7 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "Find E\u0000X\u0001.",
+          "text": "Find EX.",
           "marks": 4,
           "type": "other",
           "answerType": "short_answer",
@@ -249,7 +260,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "The median of X is denoted by m.\nShow that m satisfies the equation \u0000m − 20\u0001 = −4000, and hence find m correct to 3 significant\nfigures.",
+          "text": "The median of X is denoted by m.\nShow that m satisfies the equation m − 20 = −4000, and hence find m correct to 3 significant\nfigures.",
           "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
@@ -274,9 +285,9 @@
         "Alethia models the length of time, in minutes, by which her train is late on any day by the random",
         "variable X with probability density function given by",
         "3 2",
-        "\u0000x − 20\u0001 0 ≤ x ≤ 20,",
+        "x − 20 0 ≤ x ≤ 20,",
         "8000",
-        "f\u0000x\u0001 =",
+        "fx =",
         "0 otherwise."
       ]
     }

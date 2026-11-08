@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w22",
   "component": "42",
-  "totalMarks": 69,
+  "totalMarks": 75,
   "questionCount": 3,
   "questions": [
     {
@@ -300,7 +300,7 @@
           "id": "3d",
           "label": "(d)",
           "text": "The following iterative pseudocode function calculates the total of all the values stored in the\nqueue.\nFUNCTION IterativeOutput(Start: INTEGER) RETURNS INTEGER\nDECLARE Total : INTEGER\nTotal ← 0\nFOR Count ← Start - 1 TO HeadPointer STEP -1\nTotal ← Total + Queue[Count]\nNEXT Count\nRETURN Total\nENDFUNCTION\nRewrite the function as a recursive function using program code.\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
-          "marks": null,
+          "marks": 6,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -331,7 +331,7 @@
             {
               "id": "3eii",
               "label": "(ii)",
-              "text": "Test your program.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Test your program.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -342,7 +342,7 @@
           ]
         }
       ],
-      "marks": 15,
+      "marks": 21,
       "text": [
         "A program uses a linear queue to store up to 100 integers."
       ]

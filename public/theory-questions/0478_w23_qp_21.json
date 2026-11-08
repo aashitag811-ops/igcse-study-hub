@@ -3,42 +3,40 @@
   "subjectCode": "0478",
   "session": "w23",
   "component": "21",
-  "totalMarks": 51,
+  "totalMarks": 60,
   "questionCount": 21,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (3) one box to show which operator means less than or equal to.",
         "A OR",
         "B <",
         "C <=",
-        "D >=",
-        "[1]"
+        "D >="
       ]
     },
     {
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (3) one box to show how a value can be passed to a procedure.",
         "A function",
         "B parameter",
         "C return",
-        "D subroutine",
-        "[1]"
+        "D subroutine"
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Four descriptions of data and five data types are shown.",
         "Draw one line to link each description to the most appropriate data type.",
@@ -52,20 +50,18 @@
         "a word or phrase",
         "REAL",
         "a number with two decimal places",
-        "STRING",
-        "[4]"
+        "STRING"
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "Circle the three words representing places where data may be stored.",
         "array constant dimension input",
-        "output procedure variable",
-        "[3]"
+        "output procedure variable"
       ]
     },
     {
@@ -293,7 +289,7 @@
         {
           "id": "21d",
           "label": "(d)",
-          "text": "State two other ways the algorithm can be made easier to understand and maintain.\n\n7 Consider this logic circuit.",
+          "text": "State two other ways the algorithm can be made easier to understand and maintain.\n7 Consider this logic circuit.",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -315,7 +311,7 @@
         {
           "id": "21b",
           "label": "(b)",
-          "text": "Complete the truth table from the given logic circuit.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n\n8 A programmer is designing an algorithm to calculate the cost of a length of rope.\nThe program requirements are:\n• input two values: the length of rope in metres Length and the cost of one metre Cost\n• perform a validation check on the length to ensure that the value is between 0.5 and 6.0\ninclusive\n• calculate the price Price\n• output the price rounded to two decimal places.\nUse the variable names given.",
+          "text": "Complete the truth table from the given logic circuit.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n8 A programmer is designing an algorithm to calculate the cost of a length of rope.\nThe program requirements are:\n• input two values: the length of rope in metres Length and the cost of one metre Cost\n• perform a validation check on the length to ensure that the value is between 0.5 and 6.0\ninclusive\n• calculate the price Price\n• output the price rounded to two decimal places.\nUse the variable names given.",
           "marks": 4,
           "type": "calculate",
           "answerType": "calculate",
@@ -370,7 +366,7 @@
         {
           "id": "21e",
           "label": "(e)",
-          "text": "Describe an improvement that should be made to the requirements for this algorithm.\n\n9 A model shop wants to set up a database to help with stock control of the model figures available\nfor sale. The shop wants to store this information about the model figures:\nField 1 – catalogue number, for example MD1234\nField 2 – description, for example ‘small white dog’\nField 3 – number in stock, for example 5\nField 4 – the price of each model, for example 7.40\nField 5 – if the model has already been painted, yes or no.",
+          "text": "Describe an improvement that should be made to the requirements for this algorithm.\n9 A model shop wants to set up a database to help with stock control of the model figures available\nfor sale. The shop wants to store this information about the model figures:\nField 1 – catalogue number, for example MD1234\nField 2 – description, for example ‘small white dog’\nField 3 – number in stock, for example 5\nField 4 – the price of each model, for example 7.40\nField 5 – if the model has already been painted, yes or no.",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -426,7 +422,7 @@
         {
           "id": "21c",
           "label": "(c)",
-          "text": "Structured query language (SQL) is used to query data stored in this database.\nState what these SQL commands are used for.\nSELECT ______\nFROM ______\nWHERE ______\n\n10 Drama students put on a performance of a play for one evening. Seats in a small theatre can be\nbooked for this performance.\nThe theatre has 10 rows of 20 seats. The status of the seat bookings for the evening is held in the\ntwo-dimensional (2D) Boolean array Evening[]\nEach element contains FALSE if the seat is available and TRUE if the seat is booked.\nUp to and including four seats can be booked at one time. Seats are allocated in order from those\navailable. A row or seat number cannot be requested.\nThe array Evening[] has already been set up and some data stored.\nWrite a program that meets the following requirements:\n• counts and outputs the number of seats already booked for the evening\n• allows the user to input the number of seats required\n• validates the input\n• checks if enough seats are available:\n– if they are available\n○ changes the status of the seats\n○ outputs the row number and seat number for each seat booked\n– if they are not available:\n○ outputs a message giving the number of seats left or ‘House full’ if the theatre is fully\nbooked.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nYou do not need to initialise the data in the array Evening[]\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Structured query language (SQL) is used to query data stored in this database.\nState what these SQL commands are used for.\nSELECT ______\nFROM ______\nWHERE ______\n10 Drama students put on a performance of a play for one evening. Seats in a small theatre can be\nbooked for this performance.\nThe theatre has 10 rows of 20 seats. The status of the seat bookings for the evening is held in the\ntwo-dimensional (2D) Boolean array Evening[]\nEach element contains FALSE if the seat is available and TRUE if the seat is booked.\nUp to and including four seats can be booked at one time. Seats are allocated in order from those\navailable. A row or seat number cannot be requested.\nThe array Evening[] has already been set up and some data stored.\nWrite a program that meets the following requirements:\n• counts and outputs the number of seats already booked for the evening\n• allows the user to input the number of seats required\n• validates the input\n• checks if enough seats are available:\n– if they are available\n○ changes the status of the seats\n○ outputs the row number and seat number for each seat booked\n– if they are not available:\n○ outputs a message giving the number of seats left or ‘House full’ if the theatre is fully\nbooked.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nYou do not need to initialise the data in the array Evening[]\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
           "type": "state",
           "answerType": "fill_blank",

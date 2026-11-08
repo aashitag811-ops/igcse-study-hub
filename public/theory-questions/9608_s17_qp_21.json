@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s17",
   "component": "21",
-  "totalMarks": 54,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -131,7 +131,7 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 11,
       "text": [
         "A string conversion function, StringClean, is to be written.",
         "This function will form a new string, OutString, from a given string, InString, by:",
@@ -157,8 +157,7 @@
         "ENDIF",
         "ENDFOR",
         "............................................//return value",
-        "ENDFUNCTION",
-        "[11]"
+        "ENDFUNCTION"
       ]
     },
     {
@@ -195,7 +194,7 @@
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 10,
       "text": [
         "A multi-user computer system records user login information in a text file, LoginFile.txt. Each",
         "time a user successfully logs into the system, the following information is recorded:",
@@ -227,8 +226,7 @@
         "Visual Basic and Pascal: You should include the declaration statements for variables.",
         "Python: You should show a comment statement for each variable used with its data type.",
         "Programming language ....................................................................................................................",
-        "Program code",
-        "[10]"
+        "Program code"
       ]
     },
     {
@@ -281,7 +279,7 @@
             {
               "id": "6biii",
               "label": "(iii)",
-              "text": "A program consisting of several modules may be tested using a process known as\nstub testing.\nExplain this process.\n\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns string of length y starting at position x from ThisString.\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString.\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar.\nIf ThisChar is not an upper-case alphabetic character then it is returned unchanged.\nExample: LCASE('W') returns 'w'\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv.\nExample: MOD(10,3) returns 1\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv.\nExample: DIV(10,3) returns 3\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings.\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND of two Boolean values.\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR of two Boolean values.\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "A program consisting of several modules may be tested using a process known as\nstub testing.\nExplain this process.\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns string of length y starting at position x from ThisString.\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString.\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar.\nIf ThisChar is not an upper-case alphabetic character then it is returned unchanged.\nExample: LCASE('W') returns 'w'\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv.\nExample: MOD(10,3) returns 1\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv.\nExample: DIV(10,3) returns 3\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings.\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND of two Boolean values.\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR of two Boolean values.\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 2,
               "type": "name",
               "answerType": "short_answer",

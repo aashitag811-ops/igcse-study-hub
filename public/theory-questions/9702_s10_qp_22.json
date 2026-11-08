@@ -3,14 +3,60 @@
   "subjectCode": "9702",
   "session": "s10",
   "component": "22",
-  "totalMarks": 52,
+  "totalMarks": 55,
   "questionCount": 7,
   "questions": [
     {
       "id": "1",
       "context": [],
-      "parts": [],
-      "marks": null,
+      "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State what instrument should be used to measure the diameter of the wire.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "State how the instrument in (a) is",
+          "marks": null,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "checked so as to avoid a systematic error in the measurements,",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "used so as to reduce random errors.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 4,
       "text": [
         "hour",
         "Candidates answer on the Question Paper.",
@@ -34,7 +80,7 @@
         "–7 –1",
         "permeability of free space, μ = 4π × 10 H m",
         "–12 –1",
-        "permittivity of free space, \u0002 = 8.85 × 10 F m",
+        "permittivity of free space,  = 8.85 × 10 F m",
         "–19",
         "elementary charge, e = 1.60 × 10 C",
         "–34",
@@ -57,7 +103,37 @@
         "acceleration of free fall, g = 9.81 m s",
         "Formulae",
         "1 2",
-        "uniformly accelerated motion, s = ut + at"
+        "uniformly accelerated motion, s = ut + at",
+        "2 2",
+        "v = u + 2as",
+        "work done on/by a gas, W = pV",
+        "Gm",
+        "gravitational potential, φ = –",
+        "hydrostatic pressure, p = gh",
+        "1 Nm",
+        "pressure of an ideal gas, p = <c >",
+        "simple harmonic motion, a = –  x",
+        "velocity of particle in s.h.m., v = v cos t",
+        "2 2",
+        "(x – x )",
+        "v = ± ω",
+        "electric potential, V =",
+        "4π r",
+        "capacitors in series, 1/C = 1/C + 1/C + . . .",
+        "1 2",
+        "capacitors in parallel, C = C + C + . . .",
+        "1 2",
+        "energy of charged capacitor, W = QV",
+        "resistors in series, R = R + R + . . .",
+        "1 2",
+        "resistors in parallel, 1/R = 1/R + 1/R + . . .",
+        "1 2",
+        "alternating current/voltage, x = x sin ωt",
+        "radioactive decay, x = x exp(– λt)",
+        "0.693",
+        "decay constant, λ =",
+        "Examiner’s",
+        "1 A metal wire has a cross-section of diameter approximately 0.8 mm."
       ]
     },
     {
@@ -67,10 +143,10 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "State what instrument should be used to measure the diameter of the wire.",
-          "marks": 1,
+          "text": "The distance s moved by an object in time t may be given by the expression\nExaminer’s\n1 2\ns = at\nwhere a is the acceleration of the object.\nState two conditions for this expression to apply to the motion of the object.\n1. ______\n2. ______",
+          "marks": 2,
           "type": "state",
-          "answerType": "short_answer",
+          "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -78,41 +154,7 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "State how the instrument in (a) is",
-          "marks": null,
-          "type": "state",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "2bi",
-              "label": "(i)",
-              "text": "checked so as to avoid a systematic error in the measurements,",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "2bii",
-              "label": "(ii)",
-              "text": "used so as to reduce random errors.\n\n2 (a) The distance s moved by an object in time t may be given by the expression\nFor\nExaminer’s\n1 2\nUse\ns = at\nwhere a is the acceleration of the object.\nState two conditions for this expression to apply to the motion of the object.\n1. ______\n2. ______",
-              "marks": 2,
-              "type": "state",
-              "answerType": "fill_blank",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "2b",
-          "label": "(b)",
-          "text": "A student takes a photograph of a steel ball of radius 5.0 cm as it falls from rest. The\nimage of the ball is blurred, as illustrated in Fig. 2.1.\nThe image is blurred because the ball is moving while the photograph is being taken.\ninitial position\nof ball in photograph\ncm\nfinal position\ncm\nof ball in photograph\ncm\nFig. 2.1\nThe scale shows the distance fallen from rest by the ball. At time t = 0, the top of the ball\nis level with the zero mark on the scale. Air resistance is negligible.\nCalculate, to an appropriate number of significant figures,\nFor\nExaminer’s\nUse",
+          "text": "A student takes a photograph of a steel ball of radius 5.0 cm as it falls from rest. The\nimage of the ball is blurred, as illustrated in Fig. 2.1.\nThe image is blurred because the ball is moving while the photograph is being taken.\ninitial position\nof ball in photograph\ncm\nfinal position\ncm\nof ball in photograph\ncm\nFig. 2.1\nThe scale shows the distance fallen from rest by the ball. At time t = 0, the top of the ball\nis level with the zero mark on the scale. Air resistance is negligible.\nCalculate, to an appropriate number of significant figures,\nExaminer’s",
           "marks": null,
           "type": "calculate",
           "answerType": "calculate",
@@ -155,42 +197,8 @@
           "parts": []
         }
       ],
-      "marks": 12,
-      "text": [
-        "2",
-        "v = u + 2as",
-        "work done on/by a gas, W = p\u0002V",
-        "Gm",
-        "gravitational potential, φ = –",
-        "hydrostatic pressure, p = \u0003gh",
-        "1 Nm",
-        "pressure of an ideal gas, p = <c >",
-        "simple harmonic motion, a = – \u0004 x",
-        "velocity of particle in s.h.m., v = v cos \u0004t",
-        "2 2",
-        "(x – x )",
-        "v = ± ω",
-        "electric potential, V =",
-        "4π\u0002 r",
-        "capacitors in series, 1/C = 1/C + 1/C + . . .",
-        "1 2",
-        "capacitors in parallel, C = C + C + . . .",
-        "1 2",
-        "energy of charged capacitor, W = QV",
-        "resistors in series, R = R + R + . . .",
-        "1 2",
-        "resistors in parallel, 1/R = 1/R + 1/R + . . .",
-        "1 2",
-        "alternating current/voltage, x = x sin ωt",
-        "radioactive decay, x = x exp(– λt)",
-        "0.693",
-        "decay constant, λ =",
-        "Answer all the questions in the spaces provided.",
-        "For",
-        "Examiner’s",
-        "Use",
-        "1 A metal wire has a cross-section of diameter approximately 0.8 mm."
-      ]
+      "marks": 10,
+      "text": []
     },
     {
       "id": "3",
@@ -209,9 +217,9 @@
             {
               "id": "3ai",
               "label": "(i)",
-              "text": "Define force.\nFor\nExaminer’s\nUse",
+              "text": "Define force.\nExaminer’s",
               "marks": 1,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -243,7 +251,7 @@
             {
               "id": "3bi",
               "label": "(i)",
-              "text": "State the relationship between\n1. F and F ,\nA B\n\n2. t and t .\nA B",
+              "text": "State the relationship between\n1. F and F ,\nA B\n2. t and t .\nA B",
               "marks": 1,
               "type": "state",
               "answerType": "short_answer",
@@ -267,7 +275,7 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "For the spheres in (b), the variation with time of the momentum of sphere A before,\nFor\nduring and after the collision with sphere B is shown in Fig. 3.2.\nExaminer’s\nUse\n151515\nmomentum\nto right / N s\n101010\nsphere Asphere Asphere A\ntimetimetime\nsphere Bsphere Bsphere B\n– 5-5-5\n–10-10-10\n–15-15-15\nFig. 3.2\nThe momentum of sphere B before the collision is also shown on Fig. 3.2.\nComplete Fig. 3.2 to show the variation with time of the momentum of sphere B during\nand after the collision with sphere A.",
+          "text": "For the spheres in (b), the variation with time of the momentum of sphere A before,\nduring and after the collision with sphere B is shown in Fig. 3.2.\nExaminer’s\n151515\nmomentum\nto right / N s\n101010\nsphere Asphere Asphere A\ntimetimetime\nsphere Bsphere Bsphere B\n– 5-5-5\n–10-10-10\n–15-15-15\nFig. 3.2\nThe momentum of sphere B before the collision is also shown on Fig. 3.2.\nComplete Fig. 3.2 to show the variation with time of the momentum of sphere B during\nand after the collision with sphere A.",
           "marks": 3,
           "type": "complete",
           "answerType": "long_answer",
@@ -286,7 +294,7 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "State two features of a stationary wave that distinguish it from a progressive wave.\nFor\nExaminer’s\nUse\n1. ______\n2. ______",
+          "text": "State two features of a stationary wave that distinguish it from a progressive wave.\nExaminer’s\n1. ______\n2. ______",
           "marks": 2,
           "type": "state",
           "answerType": "fill_blank",
@@ -331,7 +339,7 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "The frequency of the sound produced by the loudspeaker in (b) is gradually reduced.\nFor\nExaminer’s\nUse\nDetermine the lowest frequency at which a loud sound will be produced in the tube of\nlength L = 45 cm.\nfrequency = ______ Hz",
+          "text": "The frequency of the sound produced by the loudspeaker in (b) is gradually reduced.\nExaminer’s\nDetermine the lowest frequency at which a loud sound will be produced in the tube of\nlength L = 45 cm.\nfrequency = ______ Hz",
           "marks": 3,
           "type": "calculate",
           "answerType": "fill_blank",
@@ -350,9 +358,9 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Tensile forces are applied to opposite ends of a copper rod so that the rod is stretched.\nFor\nThe variation with stress of the strain of the rod is shown in Fig. 5.1.\nExaminer’s\nUse\n2.5\nstress / 10 Pa\n2.0\n1.5\n1.0\n0.5\n0 1.0 2.0 3.0 4.0 5.0\n–3\nstrain / 10\nFig. 5.1",
+          "text": "Tensile forces are applied to opposite ends of a copper rod so that the rod is stretched.\nThe variation with stress of the strain of the rod is shown in Fig. 5.1.\nExaminer’s\n2.5\nstress / 10 Pa\n2.0\n1.5\n1.0\n0.5\n0 1.0 2.0 3.0 4.0 5.0\n–3\nstrain / 10\nFig. 5.1",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
@@ -384,7 +392,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "The walls of the tyres on a car are made of a rubber compound.\nFor\nThe variation with stress of the strain of a specimen of this rubber compound is shown\nExaminer’s\nUse\nin Fig. 5.2.\nstress\n0 strain\nFig. 5.2\nAs the car moves, the walls of the tyres bend and straighten continuously.\nUse Fig. 5.2 to explain why the walls of the tyres become warm.",
+          "text": "The walls of the tyres on a car are made of a rubber compound.\nThe variation with stress of the strain of a specimen of this rubber compound is shown\nExaminer’s\nin Fig. 5.2.\nstress\n0 strain\nFig. 5.2\nAs the car moves, the walls of the tyres bend and straighten continuously.\nUse Fig. 5.2 to explain why the walls of the tyres become warm.",
           "marks": 3,
           "type": "explain",
           "answerType": "long_answer",
@@ -403,7 +411,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "A metal wire of constant resistance is used in an electric heater.\nFor\nIn order not to overload the circuit for the heater, the supply voltage to the heater is\nExaminer’s\nUse\nreduced from 230V to 220V.\nDetermine the percentage reduction in the power output of the heater.\nreduction = ______ %",
+          "text": "A metal wire of constant resistance is used in an electric heater.\nIn order not to overload the circuit for the heater, the supply voltage to the heater is\nExaminer’s\nreduced from 230V to 220V.\nDetermine the percentage reduction in the power output of the heater.\nreduction = ______ %",
           "marks": 2,
           "type": "calculate",
           "answerType": "fill_blank",
@@ -435,9 +443,9 @@
             {
               "id": "6bii",
               "label": "(ii)",
-              "text": "at B.\nFor\nExaminer’s\nUse\nreading = ______ A",
+              "text": "at B.\nExaminer’s\nreading = ______ A",
               "marks": 1,
-              "type": "use",
+              "type": "complete",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -480,7 +488,7 @@
             {
               "id": "6ciii",
               "label": "(iii)",
-              "text": "Use your answer in (ii) to calculate the potential difference between A and the\nFor\ncontact C for the contact placed at the midpoint of AB.\nExaminer’s\nUse\npotential difference = ______ V",
+              "text": "Use your answer in (ii) to calculate the potential difference between A and the\ncontact C for the contact placed at the midpoint of AB.\nExaminer’s\npotential difference = ______ V",
               "marks": 2,
               "type": "calculate",
               "answerType": "fill_blank",
@@ -512,7 +520,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "The radioactive decay of some nuclei gives rise to the emission of α-particles.\nFor\nState\nExaminer’s\nUse",
+          "text": "The radioactive decay of some nuclei gives rise to the emission of α-particles.\nState\nExaminer’s",
           "marks": null,
           "type": "state",
           "answerType": "short_answer",
@@ -567,8 +575,8 @@
             {
               "id": "7bii",
               "label": "(ii)",
-              "text": "The total mass-energy of the nitrogen-14 nucleus and the α-particle is less than\nthat of the particles resulting from the reaction. This mass-energy difference\nis 1.1 MeV.\n1. Suggest how it is possible for mass-energy to be conserved in this reaction.\n\n2. Calculate the speed of an α-particle having kinetic energy of 1.1 MeV.\n–1\nspeed = ______ m s \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
-              "marks": null,
+              "text": "The total mass-energy of the nitrogen-14 nucleus and the α-particle is less than\nthat of the particles resulting from the reaction. This mass-energy difference\nis 1.1 MeV.\n1. Suggest how it is possible for mass-energy to be conserved in this reaction.\n2. Calculate the speed of an α-particle having kinetic energy of 1.1 MeV.\n–1\nspeed = ______ m s \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 1,
               "type": "name",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
@@ -578,7 +586,7 @@
           ]
         }
       ],
-      "marks": 5,
+      "marks": 6,
       "text": []
     }
   ]

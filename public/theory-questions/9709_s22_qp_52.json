@@ -3,7 +3,7 @@
   "subjectCode": "9709",
   "session": "s22",
   "component": "52",
-  "totalMarks": 44,
+  "totalMarks": 47,
   "questionCount": 7,
   "questions": [
     {
@@ -13,7 +13,7 @@
       "marks": null,
       "text": [
         "For n values of the variable x, it is given that",
-        "Σ\u0000x − 200\u0001 = 446 and Σx = 6846.",
+        "Σx − 200 = 446 and Σx = 6846.",
         "Find the value of n. [3]"
       ]
     },
@@ -31,9 +31,20 @@
           "hasDiagramRef": false,
           "diagramOnly": true,
           "parts": []
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Find EX and VarX.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 6,
       "text": [
         "A fair 6-sided die has the numbers 1, 2, 2, 3, 3, 3 on its faces. The die is rolled twice. The random",
         "variable X denotes the sum of the two numbers obtained."
@@ -42,20 +53,9 @@
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "The back-to-back stem-and-leaf diagram shows the diameters, in cm, of 19 cylindrical pipes produced",
-        "by each of two companies, A and B.",
-        "Company A Company B"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Find the median and interquartile range of the pipes produced by company A. \nIt is given that for the pipes produced by company B the lower quartile, median and upper quartile are\n0.346 cm, 0.352 cm and 0.370 cm respectively.",
           "marks": 3,
@@ -66,7 +66,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "Draw box-and-whisker plots for companies A and B on the grid below.",
           "marks": 3,
@@ -77,16 +77,35 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
-          "text": "Make one comparison between the diameters of the pipes produced by companies A and B. \n4 The weights, in kg, of bags of rice produced by Anders have the distribution N\u00002.02, 0.03 \u0001.",
+          "text": "Make one comparison between the diameters of the pipes produced by companies A and B.",
           "marks": 1,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The back-to-back stem-and-leaf diagram shows the diameters, in cm, of 19 cylindrical pipes produced",
+        "by each of two companies, A and B.",
+        "Company A Company B",
+        "4 33 1 2 8",
+        "9 8 3 2 0 34 1 6 8 9 9",
+        "8 7 5 4 1 1 35 1 2 2 3",
+        "9 6 5 2 36 5 6",
+        "4 3 1 37 0 3 4",
+        "38 2 8",
+        "Key: 1 35 3 means the pipe diameter from company A is 0.351 cm and from company B is 0.353 cm."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -110,15 +129,9 @@
           "parts": []
         }
       ],
-      "marks": 14,
+      "marks": 7,
       "text": [
-        "33 1 2 8",
-        "9 8 3 2 0 34 1 6 8 9 9",
-        "8 7 5 4 1 1 35 1 2 2 3",
-        "9 6 5 2 36 5 6",
-        "4 3 1 37 0 3 4",
-        "38 2 8",
-        "Key: 1 35 3 means the pipe diameter from company A is 0.351 cm and from company B is 0.353 cm."
+        "The weights, in kg, of bags of rice produced by Anders have the distribution N2.02, 0.03 ."
       ]
     },
     {

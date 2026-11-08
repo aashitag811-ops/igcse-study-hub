@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "In database design:\nFor\nExaminer's\nUse",
+          "text": "In database design:",
           "marks": null,
           "type": "design",
           "answerType": "long_answer",
@@ -47,9 +47,9 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "A College library has a stock of books which are loaned to students.\nFor\nExaminer's\nUse\n• Each book has a BookID and other data about each book are recorded\n• Each student has a StudentID starting with the year of entry e.g. 2010jamesd\n• Other data about each student are also recorded\nWhen a loan is made data are recorded. Any book may be loaned by a particular\nstudent more than once.\nHowever, you can assume that the same book is never loaned out to the same student\non the same day.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
+          "text": "A College library has a stock of books which are loaned to students.\n• Each book has a BookID and other data about each book are recorded\n• Each student has a StudentID starting with the year of entry e.g. 2010jamesd\n• Other data about each student are also recorded\nWhen a loan is made data are recorded. Any book may be loaned by a particular\nstudent more than once.\nHowever, you can assume that the same book is never loaned out to the same student\non the same day.\nA table description can be expressed as:\nTableName(Attribute1, Attribute2, Attribute3, ...)\nThe primary key is indicated by underlining one or more attributes.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -100,9 +100,9 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Binary representation is used for many different data values.\nFor\nExaminer's\nUse\nConsider the binary pattern 1010 0110\nWhat is its value if it represents:",
+          "text": "Binary representation is used for many different data values.\nConsider the binary pattern 1010 0110\nWhat is its value if it represents:",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -179,7 +179,7 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "A computer system stores real numbers in floating point format using 12 bits. The first\nFor\n8 bits are the mantissa and the final 4 bits the exponent. Both the mantissa and the Examiner's\nUse\nexponent use two’s complement format.\nConsider the binary pattern 0101 1000 0101",
+          "text": "A computer system stores real numbers in floating point format using 12 bits. The first\n8 bits are the mantissa and the final 4 bits the exponent. Both the mantissa and the Examiner's\nexponent use two’s complement format.\nConsider the binary pattern 0101 1000 0101",
           "marks": null,
           "type": "use",
           "answerType": "short_answer",
@@ -255,9 +255,9 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "A programmer writing low-level code has the choice between machine code and\nFor\nassembly language. Examiner's\nUse",
+          "text": "A programmer writing low-level code has the choice between machine code and\nassembly language. Examiner's",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -289,11 +289,11 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "A processor will allow the use of a variety of modes of addressing.\nExplain these terms, using an example in each case. You may wish to illustrate your\nanswer with a diagram.",
+          "text": "A processor will allow the use of a variety of modes of addressing.\nExplain these terms, using an example in each case. You may wish to illustrate your",
           "marks": null,
           "type": "explain",
           "answerType": "long_answer",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": [
             {
@@ -376,9 +376,7 @@
       "marks": 9,
       "text": [
         "Two types of software which are used to translate high-level programs are a compiler and",
-        "For",
-        "an interpreter. Examiner's",
-        "Use"
+        "an interpreter. Examiner's"
       ]
     },
     {
@@ -388,7 +386,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Describe the operation of a linear queue data structure.\nFor\nExaminer's\nUse",
+          "text": "Describe the operation of a linear queue data structure.",
           "marks": 1,
           "type": "describe",
           "answerType": "long_answer",
@@ -409,9 +407,9 @@
             {
               "id": "5bi",
               "label": "(i)",
-              "text": "Shown below is the incomplete pseudocode for the AddToQueue procedure.\nFor\nExaminer's\nUsing the variables given, fill in the missing code.\nUse\nPROCEDURE AddToQueue\nIF\nTHEN\nOUTPUT “Refused - Queue is already FULL”\nELSE\nINPUT NewItem\nTailOfQueue ←\nENDIF\nENDPROCEDURE",
+              "text": "Shown below is the incomplete pseudocode for the AddToQueue procedure.\nUsing the variables given, fill in the missing code.\nPROCEDURE AddToQueue\nIF\nTHEN\nOUTPUT “Refused - Queue is already FULL”\nELSE\nINPUT NewItem\nTailOfQueue ←\nENDIF\nENDPROCEDURE",
               "marks": 4,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -484,7 +482,7 @@
             {
               "id": "6bii",
               "label": "(ii)",
-              "text": "Describe the sequence of steps the processor would carry out after receiving an\nFor\ninterrupt. Examiner's\nUse",
+              "text": "Describe the sequence of steps the processor would carry out after receiving an\ninterrupt. Examiner's",
               "marks": 5,
               "type": "describe",
               "answerType": "long_answer",
@@ -498,9 +496,7 @@
       "marks": 13,
       "text": [
         "The operating system for a computer which supports multiprogramming must manage the",
-        "For",
-        "allocation of processor time. This is done by the scheduler. Examiner's",
-        "Use"
+        "allocation of processor time. This is done by the scheduler. Examiner's"
       ]
     },
     {
@@ -510,7 +506,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Describe two different media used for the transmission of data across a Local Area\nFor\nNetwork (LAN). Examiner's\nUse",
+          "text": "Describe two different media used for the transmission of data across a Local Area\nNetwork (LAN). Examiner's",
           "marks": 4,
           "type": "describe",
           "answerType": "long_answer",
@@ -553,7 +549,7 @@
             {
               "id": "7biii",
               "label": "(iii)",
-              "text": "The shop is concerned about the confidentiality of data stored and transmitted\nFor\nacross the LAN and the WAN. Examiner's\nUse\nName and describe three measures taken to protect the confidentiality of the data.",
+              "text": "The shop is concerned about the confidentiality of data stored and transmitted\nacross the LAN and the WAN. Examiner's\nName and describe three measures taken to protect the confidentiality of the data.",
               "marks": 6,
               "type": "name",
               "answerType": "short_answer",
@@ -574,9 +570,9 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "A high-level programming language has the following built-in function SumRange\nFor\nExaminer's\ndefined as follows:\nUse\nSumRange(ThisInteger1: Integer, ThisInteger2: Integer) RETURNS\nInteger\nwill return the integer value calculated as the sum of all integers between and including\nMyInteger1 and MyInteger2.\nFor Example:\nSumRange(11, 14) will return 50\nAn error is generated if:\n• The function is not properly formed, or\n• MyInteger2 is less than MyInteger1",
+          "text": "A high-level programming language has the following built-in function SumRange\ndefined as follows:\nSumRange(ThisInteger1: Integer, ThisInteger2: Integer) RETURNS\nInteger\nwill return the integer value calculated as the sum of all integers between and including\nMyInteger1 and MyInteger2.\nFor Example:\nSumRange(11, 14) will return 50\nAn error is generated if:\n• The function is not properly formed, or\n• MyInteger2 is less than MyInteger1",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -584,7 +580,7 @@
             {
               "id": "8ai",
               "label": "(i)",
-              "text": "State the function identifier and parameters for the above function.\nFunction identifier\nParameters\n\nWhat value is returned from the following function calls?",
+              "text": "State the function identifier and parameters for the above function.\nFunction identifier\nParameters\nWhat value is returned from the following function calls?",
               "marks": 2,
               "type": "state",
               "answerType": "short_answer",
@@ -682,7 +678,7 @@
         {
           "id": "9c",
           "label": "(c)",
-          "text": "The ACCOMMODATION class is to include a RoomNo property.\nExplain encapsulation in terms of how this property value would be stored and\nretrieved.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "The ACCOMMODATION class is to include a RoomNo property.\nExplain encapsulation in terms of how this property value would be stored and\nretrieved.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
           "type": "name",
           "answerType": "short_answer",
@@ -694,10 +690,7 @@
       "marks": 7,
       "text": [
         "A hotel has a variety of accommodation (ACCOMMODATION). The accommodation is",
-        "For",
-        "Examiner's",
         "designated as either:",
-        "Use",
         "• standard room (STANDARD)",
         "• luxury room (LUXURY)",
         "Data is to be recorded for the hotel accommodation and modelled with an object-oriented",

@@ -3,7 +3,7 @@
   "subjectCode": "0625",
   "session": "s21",
   "component": "61",
-  "totalMarks": 22,
+  "totalMarks": 40,
   "questionCount": 4,
   "questions": [
     {
@@ -102,8 +102,7 @@
       ],
       "marks": 11,
       "text": [
-        "hour",
-        "1 A student investigates the period of a pendulum. Fig. 1.1 and Fig. 1.2 show the arrangement.",
+        "A student investigates the period of a pendulum. Fig. 1.1 and Fig. 1.2 show the arrangement.",
         "clamp clamp",
         "bob",
         "floor",
@@ -129,18 +128,84 @@
             {
               "id": "2ai",
               "label": "(i)",
-              "text": "Write down the readings. Include the units for potential difference, current or resistance\nwhere appropriate in all parts of the question.\n4 6 0.4 0.6",
-              "marks": null,
+              "text": "Write down the readings. Include the units for potential difference, current or resistance\nwhere appropriate in all parts of the question.\n4 6 0.4 0.6\n3 7\n2 8 0.2 0.8\n0 10 0 1.0\nV A\nFig. 2.2 Fig. 2.3\nV = ______\nI = ______",
+              "marks": 3,
               "type": "write",
-              "answerType": "short_answer",
+              "answerType": "fill_blank",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Calculate the resistance R of the resistor using the equation R = .\n1 1\nR = ______",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "She connects a second resistor in series with the first resistor. She connects the voltmeter\nacross both resistors and records the potential difference V across both resistors and the\ncurrent I in the circuit.\n2.6\nV = ______\n0.28\nI = ______\nCalculate the resistance R of the resistors in series using the equation R = .\nS S\nR = ______",
+          "marks": 1,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "She connects the second resistor in parallel with the first resistor. She connects the voltmeter\nacross both resistors. She records the potential difference V across the resistors and the\ncurrent I in the circuit.\n2.4\nV = ______\n0.99\nI = ______\nCalculate the resistance R of the resistors in parallel using the equation R = . Give your\nP P\nR = ______",
+          "marks": 1,
+          "type": "give",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Complete the circuit diagram to show the circuit she uses in part (c).",
+          "marks": 2,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "Describe how to extend part (c) of this experiment to investigate the relationship between the\ncombined resistance of identical resistors connected in parallel and the number of resistors.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "In this type of electrical experiment, a variable resistor can be used to vary the current.\nDraw the circuit symbol for a variable resistor.",
+          "marks": 1,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
         }
       ],
-      "marks": null,
+      "marks": 11,
       "text": [
         "A student investigates resistance.",
         "Fig. 2.1 shows the circuit she uses.",
@@ -152,61 +217,6 @@
       "id": "3",
       "context": [],
       "parts": [
-        {
-          "id": "3b",
-          "label": "(b)",
-          "text": "She connects a second resistor in series with the first resistor. She connects the voltmeter\nacross both resistors and records the potential difference V across both resistors and the\ncurrent I in the circuit.\n2.6\nV = ______\n0.28\nI = ______\nCalculate the resistance R of the resistors in series using the equation R = .\nS S\nR = ______",
-          "marks": 1,
-          "type": "calculate",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3c",
-          "label": "(c)",
-          "text": "She connects the second resistor in parallel with the first resistor. She connects the voltmeter\nacross both resistors. She records the potential difference V across the resistors and the\ncurrent I in the circuit.\n2.4\nV = ______\n0.99\nI = ______\nCalculate the resistance R of the resistors in parallel using the equation R = . Give your\nP P\nanswer to a suitable number of significant figures for this experiment.\nR = ______",
-          "marks": 1,
-          "type": "give",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3d",
-          "label": "(d)",
-          "text": "Complete the circuit diagram to show the circuit she uses in part (c).",
-          "marks": 2,
-          "type": "complete",
-          "answerType": "long_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3e",
-          "label": "(e)",
-          "text": "Describe how to extend part (c) of this experiment to investigate the relationship between the\ncombined resistance of identical resistors connected in parallel and the number of resistors.",
-          "marks": 2,
-          "type": "describe",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3f",
-          "label": "(f)",
-          "text": "In this type of electrical experiment, a variable resistor can be used to vary the current.\nDraw the circuit symbol for a variable resistor.\n\n3 A student investigates the refraction of light through a transparent block.\nFig. 3.1 shows the transparent block ABCD on the student’s ray-trace sheet.\nA B\nD C\neye\nFig. 3.1",
-          "marks": 1,
-          "type": "draw",
-          "answerType": "diagram_only",
-          "hasDiagramRef": true,
-          "diagramOnly": true,
-          "parts": []
-        },
         {
           "id": "3a",
           "label": "(a)",
@@ -333,21 +343,19 @@
       ],
       "marks": 11,
       "text": [
-        "7",
-        "2 8 0.2 0.8",
-        "0 10 0 1.0",
-        "V A",
-        "Fig. 2.2 Fig. 2.3",
-        "V = ...............................................................",
-        "I = ...............................................................",
-        "[3]"
+        "A student investigates the refraction of light through a transparent block.",
+        "Fig. 3.1 shows the transparent block ABCD on the student’s ray-trace sheet.",
+        "A B",
+        "D C",
+        "eye",
+        "Fig. 3.1"
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "A student investigates the rate of cooling, in air, of heated blocks made of different metals. The",
         "temperature of each block is increased by placing it in hot water.",
@@ -368,7 +376,6 @@
         "hole for",
         "thermometer",
         "Fig. 4.1",
-        "[7]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

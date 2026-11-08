@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w21",
   "component": "32",
-  "totalMarks": 62,
-  "questionCount": 17,
+  "totalMarks": 65,
+  "questionCount": 18,
   "questions": [
     {
       "id": "1",
@@ -332,15 +332,14 @@
       "id": "7",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "A virtual machine is the software emulation of a computer system using another computer system.",
         "Describe two benefits and two limitations of using a virtual machine.",
         "Benefit 1 ...........................................................................................................................................",
         "Benefit 2 ...........................................................................................................................................",
         "Limitation 1 .......................................................................................................................................",
-        "Limitation 2 .......................................................................................................................................",
-        "[4]"
+        "Limitation 2 ......................................................................................................................................."
       ]
     },
     {
@@ -502,9 +501,20 @@
     {
       "id": "17",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR",
+        "19 // delay loop",
+        "20 // delay loop"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
       "parts": [
         {
-          "id": "17c",
+          "id": "21c",
           "label": "(c)",
           "text": "When a car is parked in a parking space, a bit is set in the appropriate memory location.\n• 32 memory locations are used for each floor with address X01 to X32, where X is the\nnumber of the floor.\n• Each location is one byte in length to hold the data for 8 parking spaces.\nFor example, memory location 101 is used for parking spaces 1 to 8 and memory location\n102 is used for parking spaces 9 to 16.\nThe table shows part of floor 1 with cars parked in parking spaces 4, 11, 16 ... and 255.\nMemory\nBits Parking space number\nlocation\n101 0 0 0 0 1 0 0 0 8 – 1\n102 1 0 0 0 0 1 0 0\n16 – 9\n… … … … … … … … … …\n132 0 1 0 0 0 0 0 0\n256 – 249",
           "marks": null,
@@ -514,7 +524,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "17ci",
+              "id": "21ci",
               "label": "(i)",
               "text": "The data in memory location 604 is shown.\n604 1 0 0 0 0 0 0 1\nState what this data represents.",
               "marks": 2,
@@ -525,9 +535,9 @@
               "parts": []
             },
             {
-              "id": "17cii",
+              "id": "21cii",
               "label": "(ii)",
-              "text": "Explain the way in which the parking space 254 on floor 5 can be checked to see if it is\nempty.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "Explain the way in which the parking space 254 on floor 5 can be checked to see if it is\nempty.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 5,
               "type": "explain",
               "answerType": "long_answer",
@@ -538,13 +548,9 @@
           ]
         }
       ],
-      "marks": 7,
+      "marks": 6,
       "text": [
-        "ENDFOR",
-        "19 // delay loop",
-        "20 // delay loop",
-        "21 UNTIL …………………………………………………………………………",
-        "[6]"
+        "UNTIL …………………………………………………………………………"
       ]
     }
   ]

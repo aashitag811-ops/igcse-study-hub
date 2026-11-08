@@ -3,7 +3,7 @@
   "subjectCode": "9702",
   "session": "m21",
   "component": "42",
-  "totalMarks": 82,
+  "totalMarks": 100,
   "questionCount": 12,
   "questions": [
     {
@@ -11,67 +11,29 @@
       "context": [],
       "parts": [
         {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State Newton’s law of gravitation.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
           "id": "1b",
           "label": "(b)",
-          "text": "Planets have been observed orbiting a star in another solar system. Measurements are made\nof the orbital radius r and the time period T of each of these planets.\n3 2\nThe variation with R of T is shown in Fig. 1.1.\n2.6\n2.4\n2.2",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
+          "text": "Planets have been observed orbiting a star in another solar system. Measurements are made\nof the orbital radius r and the time period T of each of these planets.\n3 2\nThe variation with R of T is shown in Fig. 1.1.\n2.6\n2.4\n2.2\n2 2\nT / year\n2.0\n1.8\n1.6\n1.4\n1.2\n1.0\n0.8\n0.6\n0.4\n0.2\n0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0 1.1 1.2\n3 34 3\nR / 10 m\nFig. 1.1\nThe relationship between T and R is given by\n2 3\n4π R\nT =\nGM\nwhere G is the gravitational constant and M is the mass of the star.\nDetermine the mass M.\nM = ______ kg",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "fill_blank",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": null,
-      "text": [
-        "2",
-        "capacitors in parallel C = C + C + . . .",
-        "1 2",
-        "energy of charged capacitor W = QV",
-        "electric current I = Anvq",
-        "resistors in series R = R + R + . . .",
-        "1 2",
-        "resistors in parallel 1/R = 1/R + 1/R + . . .",
-        "1 2",
-        "BI",
-        "Hall voltage V =",
-        "ntq",
-        "alternating current/voltage x = x sin ω t",
-        "radioactive decay x = x exp(−λt)",
-        "0.693",
-        "decay constant λ =",
-        "Answer all questions in the spaces provided.",
-        "1 (a) State Newton’s law of gravitation.",
-        "[2]"
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "2",
-        "T / year",
-        "2.0",
-        "1.8",
-        "1.6",
-        "1.4",
-        "1.2",
-        "1.0",
-        "0.8",
-        "0.6",
-        "0.4",
-        "0.2",
-        "0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0 1.1 1.2"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "3c",
+          "id": "1c",
           "label": "(c)",
           "text": "A rock of mass m is also in orbit around the star in (b). The radius of the orbit is r.",
           "marks": null,
@@ -81,7 +43,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "1ci",
               "label": "(i)",
               "text": "Explain why the gravitational potential energy of the rock is negative.",
               "marks": 3,
@@ -92,7 +54,7 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "1cii",
               "label": "(ii)",
               "text": "Show that the kinetic energy E of the rock is given by\nGMm\nE = .\n2r",
               "marks": 2,
@@ -103,10 +65,10 @@
               "parts": []
             },
             {
-              "id": "3ciii",
+              "id": "1ciii",
               "label": "(iii)",
-              "text": "Use the expression in (c)(ii) to derive an expression for the total energy of the rock.\n\n2 A fixed mass of an ideal gas is at a temperature of 21 °C. The pressure of the gas is 2.3 × 10 Pa\n–3 3\nand its volume is 3.5 × 10 m .",
-              "marks": null,
+              "text": "Use the expression in (c)(ii) to derive an expression for the total energy of the rock.",
+              "marks": 2,
               "type": "use",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -114,9 +76,17 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 12,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -126,7 +96,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ai",
+              "id": "2ai",
               "label": "(i)",
               "text": "Calculate the number N of molecules in the gas.\nN = ______",
               "marks": 2,
@@ -137,7 +107,7 @@
               "parts": []
             },
             {
-              "id": "3aii",
+              "id": "2aii",
               "label": "(ii)",
               "text": "The mass of one molecule of the gas is 40 u.\nDetermine the root-mean-square (r.m.s.) speed of the gas molecules.\n–1\nr.m.s. speed = ______ m s",
               "marks": 2,
@@ -150,12 +120,35 @@
           ]
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
-          "text": "The temperature of the gas is increased by 84 °C.\nCalculate the value of the ratio\nnew r.m.s. speed of molecules\noriginal r.m.s. speed of molecules\nratio = ______ \n3 (a) Using a simple kinetic model of matter, describe the structure of a solid.",
+          "text": "The temperature of the gas is increased by 84 °C.\nCalculate the value of the ratio\nnew r.m.s. speed of molecules\noriginal r.m.s. speed of molecules\nratio = ______",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A fixed mass of an ideal gas is at a temperature of 21 °C. The pressure of the gas is 2.3 × 10 Pa",
+        "–3 3",
+        "and its volume is 3.5 × 10 m ."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Using a simple kinetic model of matter, describe the structure of a solid.",
           "marks": 2,
           "type": "describe",
-          "answerType": "fill_blank",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -218,19 +211,7 @@
         }
       ],
       "marks": 8,
-      "text": [
-        "34 3",
-        "R / 10 m",
-        "Fig. 1.1",
-        "The relationship between T and R is given by",
-        "2 3",
-        "4π R",
-        "T =",
-        "GM",
-        "where G is the gravitational constant and M is the mass of the star.",
-        "Determine the mass M.",
-        "M = .................................................... kg [3]"
-      ]
+      "text": []
     },
     {
       "id": "4",
@@ -901,7 +882,7 @@
             {
               "id": "12bii",
               "label": "(ii)",
-              "text": "The activity of the sample after a time of 1.0 half lives is found to be greater than the\nexpected 2.6 MBq.\nSuggest a possible reason for this.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "The activity of the sample after a time of 1.0 half lives is found to be greater than the\nexpected 2.6 MBq.\nSuggest a possible reason for this.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 1,
               "type": "suggest",
               "answerType": "long_answer",

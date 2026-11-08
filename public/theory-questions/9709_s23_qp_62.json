@@ -3,8 +3,8 @@
   "subjectCode": "9709",
   "session": "s23",
   "component": "62",
-  "totalMarks": 33,
-  "questionCount": 4,
+  "totalMarks": 44,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -25,9 +25,9 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "The random variable W has a Poisson distribution.",
-          "marks": null,
-          "type": "other",
+          "text": "The random variable W has a Poisson distribution.\nState the relationship between EW and VarW.",
+          "marks": 1,
+          "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -36,10 +36,10 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "The random variable X has the distribution B\u0000n, p\u0001. Jyothi wishes to use a Poisson distribution\nas an approximate distribution for X.\nthis to be a reasonable approximation.",
+          "text": "The random variable X has the distribution Bn, p. Jyothi wishes to use a Poisson distribution\nas an approximate distribution for X.\nUse the formulae for EX and VarX to explain why it is necessary for p to be close to 0 for\nthis to be a reasonable approximation.",
           "marks": 1,
-          "type": "use",
-          "answerType": "short_answer",
+          "type": "explain",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -47,7 +47,7 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "Given that Y has the distribution B\u000020 000, 0.000 07\u0001, use a Poisson distribution to calculate an\nestimate of P\u0000Y > 2\u0001.",
+          "text": "Given that Y has the distribution B20 000, 0.000 07, use a Poisson distribution to calculate an\nestimate of PY > 2.",
           "marks": 3,
           "type": "calculate",
           "answerType": "calculate",
@@ -56,7 +56,7 @@
           "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 5,
       "text": []
     },
     {
@@ -134,8 +134,29 @@
         {
           "id": "4d",
           "label": "(d)",
-          "text": "Find the probability that the total number of books and DVDs that are received at the shop in\n1 day is more than 3. \nrespectively. A random value of each variable is taken.\nFind the probability that the two values differ by more than 2.",
+          "text": "Find the probability that the total number of books and DVDs that are received at the shop in\n1 day is more than 3.",
           "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The number, X, of books received at a charity shop has a constant mean of 5.1 per day."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Two random variables X and Y have the independent distributions N7, 3 and N6, 2\nrespectively. A random value of each variable is taken.\nFind the probability that the two values differ by more than 2.",
+          "marks": 5,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -143,9 +164,9 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "5b",
           "label": "(b)",
-          "text": "Each candidate’s overall score in a science test is calculated as follows. The mark for theory\nis denoted by T, the mark for practical is denoted by P, and the overall score is given by\nT + 1.5P. The variables T and P are assumed to be independent with distributions N\u000062, 158\u0001\nand N\u000042, 108\u0001 respectively. You should assume that no continuity corrections are needed when\nusing these distributions.",
+          "text": "Each candidate’s overall score in a science test is calculated as follows. The mark for theory\nis denoted by T, the mark for practical is denoted by P, and the overall score is given by\nT + 1.5P. The variables T and P are assumed to be independent with distributions N62, 158\nand N42, 108 respectively. You should assume that no continuity corrections are needed when\nusing these distributions.",
           "marks": null,
           "type": "draw",
           "answerType": "diagram_only",
@@ -153,7 +174,7 @@
           "diagramOnly": true,
           "parts": [
             {
-              "id": "4bi",
+              "id": "5bi",
               "label": "(i)",
               "text": "A pass is awarded to candidates whose overall score is at least 90.\nFind the proportion of candidates who pass.",
               "marks": 5,
@@ -164,9 +185,9 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "5bii",
               "label": "(ii)",
-              "text": "Comment on the assumption that the variables T and P are independent. \n6 When a child completes an online exercise called a Mathlit, they might be awarded a medal. The\npublishers claim that the probability that a randomly chosen child who completes a Mathlit will be\nawarded a medal is . Asha wishes to test this claim. She decides that if she is awarded no medals\nwhile completing 10 Mathlits, she will conclude that the true probability is less than .",
+              "text": "Comment on the assumption that the variables T and P are independent.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -175,9 +196,17 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "6a",
           "label": "(a)",
           "text": "Use a binomial distribution to find the probability of a Type I error. \nThe true probability of being awarded a medal is denoted by p.",
           "marks": 2,
@@ -188,19 +217,43 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "6b",
           "label": "(b)",
-          "text": "Given that the probability of a Type II error is 0.8926, find the value of p. \n7 (a)\nf\u0000x\u0001\n0 4\nThe diagram shows the graph of the probability density function, f, of a random variable X which\ntakes values between 0 and 4 only. Between these two values the graph is a straight line.",
+          "text": "Given that the probability of a Type II error is 0.8926, find the value of p.",
           "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "When a child completes an online exercise called a Mathlit, they might be awarded a medal. The",
+        "publishers claim that the probability that a randomly chosen child who completes a Mathlit will be",
+        "awarded a medal is . Asha wishes to test this claim. She decides that if she is awarded no medals",
+        "while completing 10 Mathlits, she will conclude that the true probability is less than ."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "fx\n0 4\nThe diagram shows the graph of the probability density function, f, of a random variable X which\ntakes values between 0 and 4 only. Between these two values the graph is a straight line.",
+          "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4bi",
+              "id": "7ai",
               "label": "(i)",
-              "text": "Show that f\u0000x\u0001 = kx for 0 ≤ x ≤ 4, where k is a constant to be determined.",
+              "text": "Show that fx = kx for 0 ≤ x ≤ 4, where k is a constant to be determined.",
               "marks": 2,
               "type": "calculate",
               "answerType": "calculate",
@@ -209,9 +262,9 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "7aii",
               "label": "(ii)",
-              "text": "Hence, or otherwise, find E\u0000X\u0001.",
+              "text": "Hence, or otherwise, find EX.",
               "marks": 3,
               "type": "other",
               "answerType": "short_answer",
@@ -222,9 +275,9 @@
           ]
         },
         {
-          "id": "4b",
+          "id": "7b",
           "label": "(b)",
-          "text": "g\u0000w\u0001\n0 a\nThe diagram shows the graph of the probability density function, g, of a random variable W\nwhich takes values between 0 and a only, where a > 0. Between these two values the graph is a\nstraight line.\nGiven that the median of W is 1, find the value of a. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "gw\n0 a\nThe diagram shows the graph of the probability density function, g, of a random variable W\nwhich takes values between 0 and a only, where a > 0. Between these two values the graph is a\nstraight line.\nGiven that the median of W is 1, find the value of a. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
           "type": "complete",
           "answerType": "long_answer",
@@ -233,10 +286,8 @@
           "parts": []
         }
       ],
-      "marks": 21,
-      "text": [
-        "The number, X, of books received at a charity shop has a constant mean of 5.1 per day."
-      ]
+      "marks": 8,
+      "text": []
     }
   ]
 }

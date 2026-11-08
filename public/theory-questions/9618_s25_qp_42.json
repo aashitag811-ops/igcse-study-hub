@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s25",
   "component": "42",
-  "totalMarks": 66,
+  "totalMarks": 75,
   "questionCount": 3,
   "questions": [
     {
@@ -58,7 +58,7 @@
           "id": "1e",
           "label": "(e)",
           "text": "The values stored in the stack are used to perform mathematical operations.\nA total is initialised to the first value in the stack. The first value in the stack will always be a\nnumber.\nThe next value will be a mathematical operator and the next value will be the number to apply\nto the calculation. This is repeated until there are no values left in the stack. There will always\nbe a number following a mathematical operator.\nFor example, the contents of a stack are:\n10 TopOfStack\nThe total is initialised to the first value in the stack: 10\ntotal = 10\nThe next two values are: + 3\ntotal = 10 + 3 = 13\nThe next two values are: – 2\ntotal = 13 – 2 = 11\nThe final total is 11 and this is returned.\nWrite program code for the function Calculate() to:\n• take each value from the stack\n• calculate and return the final total.\nSave your program.\nCopy and paste the program code into part 1(e) in the evidence document.",
-          "marks": null,
+          "marks": 7,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
@@ -79,7 +79,7 @@
               "id": "1fi",
               "label": "(i)",
               "text": "Write program code to extend the main program to:\n• take a filename as input from the user\n• call ReadData() with the input filename\n• call Calculate()\n• output the final total.\nSave your program.\nCopy and paste the program code into part 1(f)(i) in the evidence document.",
-              "marks": null,
+              "marks": 2,
               "type": "calculate",
               "answerType": "calculate",
               "hasDiagramRef": false,
@@ -100,7 +100,7 @@
           ]
         }
       ],
-      "marks": 18,
+      "marks": 27,
       "text": [
         "A program reads data from a text file and stores it in a stack. The stack Stack is stored as a 1D",
         "array of up to 20 elements. The pointer TopOfStack stores the index of the last element stored in",
@@ -386,7 +386,7 @@
             {
               "id": "3diii",
               "label": "(iii)",
-              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(d)(iii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(d)(iii) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 2,
               "type": "other",
               "answerType": "short_answer",

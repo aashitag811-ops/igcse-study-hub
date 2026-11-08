@@ -75,9 +75,31 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Complete this table of values of R[a 'b].\n1 2 3 4 5 6\n1 0 1 1 1 1 1\n2 0\n3 0\n4 0\n5 0",
+          "text": "Complete this table of values of R[a 'b].\n1 2 3 4 5 6\n1 0 1 1 1 1 1\n2 0\n3 0\n4 0\n5 0\n6 0",
           "marks": null,
           "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "R[10 '9] +R[9'10] = 10\nR[11 '7] +R[7'11] = 11\nThese examples suggest that\nR[x 'y] +R[y'x] = x.\nUse values from the table to show one example that this is not always true.",
+          "marks": null,
+          "type": "suggest",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "The remainder when a positive integer, n, is divided by 100 is R[n '100].\nExplain why dividing R[n '100] by 100 gives the same remainder.",
+          "marks": null,
+          "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -91,28 +113,6 @@
       "id": "6",
       "context": [],
       "parts": [
-        {
-          "id": "6b",
-          "label": "(b)",
-          "text": "R[10 '9] +R[9'10] = 10\nR[11 '7] +R[7'11] = 11\nThese examples suggest that\nR[x 'y] +R[y'x] = x.\nUse values from the table to show one example that this is not always true.",
-          "marks": null,
-          "type": "suggest",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "6c",
-          "label": "(c)",
-          "text": "The remainder when a positive integer, n, is divided by 100 is R[n '100].\nExplain why dividing R[n '100] by 100 gives the same remainder.\n6 In this question x, y and z are positive integers.",
-          "marks": null,
-          "type": "explain",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "6a",
           "label": "(a)",
@@ -182,37 +182,48 @@
             {
               "id": "6bii",
               "label": "(ii)",
-              "text": "7919 is over 20 digits long.\nThe following example shows how to calculate R[7919 '13].",
+              "text": "7919 is over 20 digits long.\nThe following example shows how to calculate R[7919 '13].\n7 4 2 1\n7919 = 7919 # 7919 # 7919\nR[7919 '13] = R[(3# 4# 2) '13]\n= R[24 '13]\n= 11\nFind R[7919 '13].",
               "marks": null,
               "type": "calculate",
               "answerType": "calculate",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "Is 13 a factor of 7919 ?\nShow how you decide.",
+              "marks": null,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
             }
           ]
+        },
+        {
+          "id": "6c",
+          "label": "(c)",
+          "text": "Work out whether 7 is a factor of 7919 +5.\nB MODELLING (QUESTIONS 7 to 9)\nORBITING SATELLITES (20 marks)\nYou are advised to spend no more than 45 minutes on this part.\nThis investigation is about satellites orbiting the Earth at a height, h kilometres, above the ground.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
       "marks": null,
       "text": [
-        "0"
+        "In this question x, y and z are positive integers."
       ]
     },
     {
       "id": "7",
       "context": [],
       "parts": [
-        {
-          "id": "7c",
-          "label": "(c)",
-          "text": "Work out whether 7 is a factor of 7919 +5.\nB MODELLING (QUESTIONS 7 to 9)\nORBITING SATELLITES (20 marks)\nYou are advised to spend no more than 45 minutes on this part.\nThis investigation is about satellites orbiting the Earth at a height, h kilometres, above the ground.\n7 The scatter diagram shows the heights and the orbit times, t minutes, for 9 satellites making circular orbits\naround the Earth.\nTime 105\n(minutes)\n200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400\nHeight(km)",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "7a",
           "label": "(a)",
@@ -283,12 +294,12 @@
       ],
       "marks": null,
       "text": [
-        "4 2 1",
-        "7919 = 7919 # 7919 # 7919",
-        "R[7919 '13] = R[(3# 4# 2) '13]",
-        "= R[24 '13]",
-        "= 11",
-        "Find R[7919 '13]."
+        "The scatter diagram shows the heights and the orbit times, t minutes, for 9 satellites making circular orbits",
+        "around the Earth.",
+        "Time 105",
+        "(minutes)",
+        "200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400",
+        "Height(km)"
       ]
     },
     {
@@ -298,8 +309,6 @@
       "marks": null,
       "text": [
         "Some satellites do not have circular orbits.",
-        "NOT TO",
-        "SCALE",
         "7079km",
         "114027km",
         "The height of satellite NORAD 25989 is between 7079 km and 114 027 km.",

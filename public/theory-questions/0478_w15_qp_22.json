@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "w15",
   "component": "22",
-  "totalMarks": 35,
+  "totalMarks": 24,
   "questionCount": 8,
   "questions": [
     {
@@ -79,7 +79,7 @@
             {
               "id": "1cii",
               "label": "(ii)",
-              "text": "Comment on the efficiency of your design for Task 3.\n\nSection B",
+              "text": "Comment on the efficiency of your design for Task 3.\nSection B",
               "marks": 2,
               "type": "design",
               "answerType": "long_answer",
@@ -156,8 +156,8 @@
         {
           "id": "8b",
           "label": "(b)",
-          "text": "State the purpose of the flowchart in part (a).\n\n4 A routine checks the weight of melons to be sold in a supermarket. Melons weighing under\n0.5 kilograms are rejected and melons weighing over 2 kilograms are also rejected.\nGive an example of each type of test data for this routine.\nNormal ______\nExtreme ______\nAbnormal ______\n5 Identify two different conditional statements that you can use when writing pseudocode.\n6 A picture gallery owner has decided to set up a database to keep information about the pictures\nhe has for sale. The database table, PICTURE, will contain the following fields:\nTitle; Artist; Description; Catalogue Number; Size (area in square centimetres); Price; Arrived (date\npicture arrived at gallery); Sold (whether picture is already sold)",
-          "marks": 1,
+          "text": "State the purpose of the flowchart in part (a).\n4 A routine checks the weight of melons to be sold in a supermarket. Melons weighing under\n0.5 kilograms are rejected and melons weighing over 2 kilograms are also rejected.\nGive an example of each type of test data for this routine.\nNormal ______\nExtreme ______\nAbnormal ______\n5 Identify two different conditional statements that you can use when writing pseudocode.\n6 A picture gallery owner has decided to set up a database to keep information about the pictures\nhe has for sale. The database table, PICTURE, will contain the following fields:\nTitle; Artist; Description; Catalogue Number; Size (area in square centimetres); Price; Arrived (date\npicture arrived at gallery); Sold (whether picture is already sold)",
+          "marks": 3,
           "type": "state",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -212,7 +212,7 @@
         {
           "id": "8c",
           "label": "(c)",
-          "text": "Complete the query-by-example grid below to select and show the Catalogue Number, Title\nand Price of all unsold pictures by the artist ‘Twister’.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Complete the query-by-example grid below to select and show the Catalogue Number, Title\nand Price of all unsold pictures by the artist ‘Twister’.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 5,
           "type": "name",
           "answerType": "short_answer",
@@ -221,12 +221,11 @@
           "parts": []
         }
       ],
-      "marks": 15,
+      "marks": 4,
       "text": [
         "PRINT Average",
         "There are four errors in this code.",
         "Locate these errors and suggest code corrections to remove each error.",
-        "[4]",
         "Question 3 begins on page 8.",
         "3 (a) The flowchart inputs an integer. The predefined function DIV gives the integer result of the",
         "division, e.g. Y 10 DIV 3 gives the value Y = 3. The predefined function MOD gives the",
@@ -237,20 +236,21 @@
         "INPUT X",
         "T1 @ X DIV 2",
         "T2 @ X MOD 2",
-        "Posn @\u0003Posn * 10",
-        "X @\u0003T1",
+        "New @New+T2 * Posn",
+        "Posn @Posn * 10",
+        "X @T1",
         "is T1",
         "Yes",
         ">= 2?",
         "No",
+        "New @New+T1 * Posn",
         "OUTPUT New",
         "END",
         "Complete a trace table for each of the two input values 5 and 12.",
         "Trace table for input value 5",
         "X Posn New T1 T2 OUTPUT",
         "Trace table for input value 12",
-        "X Posn New T1 T2 OUTPUT",
-        "[6]"
+        "X Posn New T1 T2 OUTPUT"
       ]
     }
   ]

@@ -13,10 +13,32 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Complete this table.\nTotal number of plants that are\nDay (n)\ninfected or dead (t)\n1 1",
+          "text": "Complete this table.\nTotal number of plants that are\nDay (n)\ninfected or dead (t)\n1 1\n2 3\n3 5",
           "marks": null,
           "type": "complete",
           "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1b",
+          "label": "(b)",
+          "text": "Find a formula for t in terms of n.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1c",
+          "label": "(c)",
+          "text": "On which day are there a total of 97 plants that are infected or dead?",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -38,40 +60,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "3"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
       "parts": [
         {
-          "id": "3b",
-          "label": "(b)",
-          "text": "Find a formula for t in terms of n.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3c",
-          "label": "(c)",
-          "text": "On which day are there a total of 97 plants that are infected or dead?\n2 In another field there are a large number of plants in equally spaced rows and columns.\nThe diagram shows the plants near the middle of the field.\nOn Day 1, one of the plants is infected with a virus (V).\nThe virus infects all the plants next to it.\nOn Day 2 that plant is dead (D) and the plants next to it are infected.\nV D V\nOn Day 3 there are 5 dead plants and 8 infected plants.\nV D V\nV D D D V\nV D V",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "Draw the pattern for Day 4.",
           "marks": null,
@@ -82,7 +73,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
           "text": "Complete this table to show the number of infected plants each day.\nDay (n) Number of infected plants (p)\n1 1\n2 4\n3 8\nYou may use this grid to help you.",
           "marks": null,
@@ -93,7 +84,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
           "text": "Work out a formula for the number of infected plants (p) in terms of the day (n) for n H 2.",
           "marks": null,
@@ -104,7 +95,7 @@
           "parts": []
         },
         {
-          "id": "3d",
+          "id": "2d",
           "label": "(d)",
           "text": "Complete this table to show the total number of infected or dead plants each day.\nTotal number of infected\nDay (n)\nor dead plants (t)\n1 1\n2 5\n3 13",
           "marks": null,
@@ -115,7 +106,7 @@
           "parts": []
         },
         {
-          "id": "3e",
+          "id": "2e",
           "label": "(e)",
           "text": "Find a formula for t in terms of n.",
           "marks": null,
@@ -126,7 +117,7 @@
           "parts": []
         },
         {
-          "id": "3f",
+          "id": "2f",
           "label": "(f)",
           "text": "Show that your formula works when n = 6.",
           "marks": null,
@@ -137,16 +128,35 @@
           "parts": []
         },
         {
-          "id": "3g",
+          "id": "2g",
           "label": "(g)",
-          "text": "On which day are exactly 221 plants infected or dead?\n3 In another field on Day 1 eight plants, in the arrangement below, are infected.\nV V\nV V V\nV V V\nOn Day 2 these plants are dead and the plants next to them are infected.",
+          "text": "On which day are exactly 221 plants infected or dead?",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": null,
+      "text": [
+        "In another field there are a large number of plants in equally spaced rows and columns.",
+        "The diagram shows the plants near the middle of the field.",
+        "On Day 1, one of the plants is infected with a virus (V).",
+        "The virus infects all the plants next to it.",
+        "On Day 2 that plant is dead (D) and the plants next to it are infected.",
+        "V D V",
+        "On Day 3 there are 5 dead plants and 8 infected plants.",
+        "V D V",
+        "V D D D V",
+        "V D V"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
           "id": "3a",
           "label": "(a)",
@@ -227,7 +237,11 @@
       ],
       "marks": null,
       "text": [
-        "5"
+        "In another field on Day 1 eight plants, in the arrangement below, are infected.",
+        "V V",
+        "V V V",
+        "V V V",
+        "On Day 2 these plants are dead and the plants next to them are infected."
       ]
     },
     {

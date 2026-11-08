@@ -3,8 +3,8 @@
   "subjectCode": "0607",
   "session": "w23",
   "component": "53",
-  "totalMarks": 26,
-  "questionCount": 4,
+  "totalMarks": 36,
+  "questionCount": 3,
   "questions": [
     {
       "id": "1",
@@ -124,8 +124,8 @@
             {
               "id": "1dx",
               "label": "(x)",
-              "text": "Clockwise angle Anticlockwise angle\n1 30 330\npart (b) 4\npart (c) 6\n12 12 12\n11 1 11 1 11 1\n10 10 10",
-              "marks": null,
+              "text": "Clockwise angle Anticlockwise angle\n1 30 330\npart (b) 4\npart (c) 6\n12 12 12\n11 1 11 1 11 1\n10 10 10\n2 2 2\n9 9 9\n3 3 3\n8 8 8\n4 4 4\n7 5 7 5 7 5\n6 6 6",
+              "marks": 4,
               "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -133,37 +133,9 @@
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 9,
-      "text": []
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "2 2",
-        "9 9 9"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "3 3",
-        "8 8 8"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "4e",
+          "id": "1e",
           "label": "(e)",
           "text": "Find an expression for the clockwise angle at hour x.",
           "marks": 1,
@@ -174,7 +146,7 @@
           "parts": []
         },
         {
-          "id": "4f",
+          "id": "1f",
           "label": "(f)",
           "text": "Write down the rule for continuing the sequence in the anticlockwise angle column.",
           "marks": 1,
@@ -185,9 +157,28 @@
           "parts": []
         },
         {
-          "id": "4g",
+          "id": "1g",
           "label": "(g)",
-          "text": "Find an expression for the anticlockwise angle at hour x.\n\n2 (a) In one hour, hand H rotates clockwise from one number to the next number.\nFor example, from 1.00 am to 2.00 am hand H rotates from 1 to 2.\nShow that hand H rotates 0.5° in one minute.",
+          "text": "Find an expression for the anticlockwise angle at hour x.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "In one hour, hand H rotates clockwise from one number to the next number.\nFor example, from 1.00 am to 2.00 am hand H rotates from 1 to 2.\nShow that hand H rotates 0.5° in one minute.",
           "marks": 1,
           "type": "calculate",
           "answerType": "calculate",
@@ -196,17 +187,36 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "2b",
           "label": "(b)",
-          "text": "In one hour, hand M rotates through a full circle.\nShow that hand M rotates 6° in one minute.\n\n3 (a) This clock shows the time 1.10 am.",
+          "text": "In one hour, hand M rotates through a full circle.\nShow that hand M rotates 6° in one minute.",
           "marks": 1,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 2,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "This clock shows the time 1.10 am.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": [
             {
-              "id": "4bi",
+              "id": "3ai",
               "label": "(i)",
               "text": "Use Question 2(a) to find the angle that hand H has\n11 1\nrotated in the 10 minutes since 1.00 am.\n9 3\n8 4\n7 5",
               "marks": 2,
@@ -217,7 +227,7 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "3aii",
               "label": "(ii)",
               "text": "Use Question 2(b) to find the angle that hand M has rotated in the 10 minutes since 1.00 am.",
               "marks": 2,
@@ -228,7 +238,7 @@
               "parts": []
             },
             {
-              "id": "4biii",
+              "id": "3aiii",
               "label": "(iii)",
               "text": "Show that the clockwise angle from hand H to hand M at 1.10 am is 25°.",
               "marks": 1,
@@ -241,7 +251,7 @@
           ]
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "Complete the table using your results from part (a)(i) and part (a)(ii).\nYou may use the clock diagrams and patterns to help you.\nNumber of minutes Angle rotated since 1.00 am in degrees Clockwise angle\nsince 1.00 am between the hands\nHand H angle",
           "marks": null,
@@ -252,7 +262,7 @@
           "parts": []
         },
         {
-          "id": "4m",
+          "id": "3m",
           "label": "(m)",
           "text": "in degrees\nHand M angle\n7 3.5 42 8.5\npart (a)(i)\n10 25\npart (a)(ii)\n12 12 12\n11 1 11 1 11 1\n10 10 10\n2 2 2\n9 9 9\n3 3 3\n8 8 8\n4 4 4\n7 5 7 5 7 5\n6 6 6",
           "marks": 6,
@@ -263,7 +273,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
           "text": "Find an expression, in terms of m, for the clockwise angle between the hands.",
           "marks": 2,
@@ -274,7 +284,7 @@
           "parts": []
         },
         {
-          "id": "4d",
+          "id": "3d",
           "label": "(d)",
           "text": "Find how many minutes and seconds after 1.00 am the clockwise angle is 270°.\nGive your answer correct to the nearest second.\n______ minutes ______ seconds \nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 5,
@@ -285,13 +295,8 @@
           "parts": []
         }
       ],
-      "marks": 17,
-      "text": [
-        "4 4",
-        "7 5 7 5 7 5",
-        "6 6 6",
-        "[4]"
-      ]
+      "marks": 18,
+      "text": []
     }
   ]
 }

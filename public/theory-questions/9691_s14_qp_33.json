@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s14",
   "component": "33",
-  "totalMarks": 90,
+  "totalMarks": 74,
   "questionCount": 6,
   "questions": [
     {
@@ -57,7 +57,7 @@
             {
               "id": "1bi",
               "label": "(i)",
-              "text": "\n3da",
+              "text": "3da",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -68,7 +68,7 @@
             {
               "id": "1bii",
               "label": "(ii)",
-              "text": "\nBc",
+              "text": "Bc",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -79,7 +79,7 @@
             {
               "id": "1biii",
               "label": "(iii)",
-              "text": "\na3ba",
+              "text": "a3ba",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -172,7 +172,7 @@
             {
               "id": "2bi",
               "label": "(i)",
-              "text": "What is the primary key of table ExhibitionPainting?\n\nConsider the relationship between Painting and ExhibitionPainting.",
+              "text": "What is the primary key of table ExhibitionPainting?\nConsider the relationship between Painting and ExhibitionPainting.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -390,16 +390,16 @@
         {
           "id": "4d",
           "label": "(d)",
-          "text": "An algorithm is designed in pseudocode to search the binary tree for a particular sport.\nThe algorithm uses the variables below:\nVariable Data type Description\nSearchSport STRING\nSport to search for\nCurrent INTEGER\nArray subscript for the item currently considered\nIsFound BOOLEAN\nFlag set to TRUE when SearchSport is found\n//binary tree search\nINPUT SearchSport\nIsFound ← FALSE\nCurrent ← RootPtr\nREPEAT\nIF SearchSport = Data[Current]\nTHEN\nOUTPUT 'found'\nIsFound ← TRUE\nELSE\nIF SearchSport > Data[Current]\nTHEN\nOUTPUT 'Moving right'\nCurrent ← RightPtr[Current]\nELSE\nOUTPUT 'Moving left'\nCurrent ← LeftPtr[Current]\nENDIF\nENDIF\nUNTIL IsFound = TRUE OR Current = 0\nIF Current = 0\nTHEN\nOUTPUT SearchSport ' not found'\nENDIF\nThe algorithm is tested using this new dataset.\nRootPtr\nLeftPtr Data RightPtr\n2 KARATE 3\n0 ARCHERY 4\n6 ROWING 5\n0 HANDBALL 0\n0 RUGBY 7\n0 LACROSSE 0\n0 SHOOTING 0\n2000\nComplete the trace table below to search for LACROSSE.\nSearchSport IsFound Current\nOUTPUT\nLACROSSE FALSE 1",
-          "marks": 5,
-          "type": "complete",
-          "answerType": "long_answer",
+          "text": "An algorithm is designed in pseudocode to search the binary tree for a particular sport.\nThe algorithm uses the variables below:\nVariable Data type Description\nSearchSport STRING\nSport to search for\nCurrent INTEGER\nArray subscript for the item currently considered\nIsFound BOOLEAN\nFlag set to TRUE when SearchSport is found\n//binary tree search\nINPUT SearchSport\nIsFound ← FALSE\nCurrent ← RootPtr\nREPEAT\nIF SearchSport = Data[Current]\nTHEN\nOUTPUT 'found'\nIsFound ← TRUE\nELSE\nIF SearchSport > Data[Current]\nTHEN\nOUTPUT 'Moving right'\nCurrent ← RightPtr[Current]\nELSE\nOUTPUT 'Moving left'\nCurrent ← LeftPtr[Current]\nENDIF\nENDIF\nUNTIL IsFound = TRUE OR Current = 0\nIF Current = 0\nTHEN\nOUTPUT SearchSport ' not found'\nENDIF\nThe algorithm is tested using this new dataset.\nRootPtr\nLeftPtr Data RightPtr\n2 KARATE 3\n0 ARCHERY 4",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 13,
+      "marks": 8,
       "text": [
         "A binary tree is used to store a list of sports.",
         "The tree currently has seven sports as shown below:",
@@ -420,22 +420,11 @@
       ]
     },
     {
-      "id": "5",
+      "id": "6",
       "context": [],
       "parts": [
         {
-          "id": "5a",
-          "label": "(a)",
-          "text": "A computer system stores integers as an 8-bit two’s complement integer.\nGive the denary number represented by Byte 1 and Byte 2.\nByte 1 Byte 2\n1 0 1 0 0 0 0 1 0 1 1 0 1 1 1 1\nByte 1\nByte 2",
-          "marks": 2,
-          "type": "give",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "5b",
+          "id": "6b",
           "label": "(b)",
           "text": "Two bytes together are used to represent a Binary Coded Decimal (BCD) number.\nState the denary number represented by Byte 3 and Byte 4.\nByte 3 Byte 4\n0 1 0 0 0 0 0 0 0 1 0 1 0 1 1 1\nDenary",
           "marks": 2,
@@ -446,7 +435,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "6c",
           "label": "(c)",
           "text": "Byte 5 and Byte 6 together represent a 16-bit colour code used in a drawing program.\nByte 5 Byte 6\n0 1 1 0 1 1 1 0 1 1 1 1 1 0 0 1\nThe drawing program displays a colour code as a hexadecimal number.\nState the hexadecimal number for this colour code.",
           "marks": 2,
@@ -457,7 +446,7 @@
           "parts": []
         },
         {
-          "id": "5d",
+          "id": "6d",
           "label": "(d)",
           "text": "Many computer systems need to store and process real numbers.\nA computer uses two bytes to store a real number. The first (Byte 7) stores the mantissa and\nthe second (Byte 8) the exponent. Both mantissa and exponent use two’s complement.",
           "marks": null,
@@ -467,7 +456,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5di",
+              "id": "6di",
               "label": "(i)",
               "text": "What denary number is represented by Byte 7 and Byte 8?\nByte 7 Byte 8\n1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1\nShow your working.",
               "marks": 3,
@@ -478,7 +467,7 @@
               "parts": []
             },
             {
-              "id": "5dii",
+              "id": "6dii",
               "label": "(ii)",
               "text": "How can you recognise that this 16-bit pattern (Byte 7 and Byte 8) is normalised?",
               "marks": 1,
@@ -489,7 +478,7 @@
               "parts": []
             },
             {
-              "id": "5diii",
+              "id": "6diii",
               "label": "(iii)",
               "text": "The positive number 2.0 is to be represented as a normalised real number.\nShow the mantissa and exponent for this value.\nMantissa Exponent",
               "marks": 2,
@@ -500,7 +489,7 @@
               "parts": []
             },
             {
-              "id": "5div",
+              "id": "6div",
               "label": "(iv)",
               "text": "What is the largest positive number that can be represented? Use the same 8-bit\nmantissa and 8-bit exponent.\nShow the mantissa and exponent.\nMantissa Exponent\nDo not attempt to evaluate this.",
               "marks": 2,
@@ -513,7 +502,7 @@
           ]
         },
         {
-          "id": "5e",
+          "id": "6e",
           "label": "(e)",
           "text": "An alternative representation is suggested using a 6-bit mantissa with a 10-bit exponent.\nDescribe the effect on the numbers which can be represented, compared to the 8-bit\nmantissa and 8-bit exponent used earlier.",
           "marks": 2,
@@ -524,8 +513,25 @@
           "parts": []
         }
       ],
-      "marks": 16,
-      "text": []
+      "marks": 5,
+      "text": [
+        "ROWING 5",
+        "0 HANDBALL 0",
+        "0 RUGBY 7",
+        "0 LACROSSE 0",
+        "0 SHOOTING 0",
+        "2000",
+        "Complete the trace table below to search for LACROSSE.",
+        "SearchSport IsFound Current",
+        "OUTPUT",
+        "LACROSSE FALSE 1",
+        "5 (a) A computer system stores integers as an 8-bit two’s complement integer.",
+        "Give the denary number represented by Byte 1 and Byte 2.",
+        "Byte 1 Byte 2",
+        "1 0 1 0 0 0 0 1 0 1 1 0 1 1 1 1",
+        "Byte 1",
+        "Byte 2 [2]"
+      ]
     },
     {
       "id": "6",

@@ -3,7 +3,7 @@
   "subjectCode": "9709",
   "session": "w23",
   "component": "62",
-  "totalMarks": 36,
+  "totalMarks": 47,
   "questionCount": 7,
   "questions": [
     {
@@ -13,7 +13,7 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "A random variable X has the distribution Po\u000025\u0001.\nUse the normal approximation to the Poisson distribution to find P\u0000X > 30\u0001.",
+          "text": "A random variable X has the distribution Po25.\nUse the normal approximation to the Poisson distribution to find PX > 30.",
           "marks": 4,
           "type": "use",
           "answerType": "short_answer",
@@ -24,7 +24,7 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "A random variable Y has the distribution B\u0000100, p\u0001 where p < 0.05.\nUse the Poisson approximation to the binomial distribution to write down an expression, in terms\nof p, for P\u0000Y < 3\u0001.",
+          "text": "A random variable Y has the distribution B100, p where p < 0.05.\nUse the Poisson approximation to the binomial distribution to write down an expression, in terms\nof p, for PY < 3.",
           "marks": 2,
           "type": "use",
           "answerType": "short_answer",
@@ -86,7 +86,7 @@
             {
               "id": "3ai",
               "label": "(i)",
-              "text": "Assuming that the researcher’s belief that either colour cube is equally likely to be chosen is\nvalid, a student correctly calculates that P\u0000X = 8\u0001 = 0.0439, correct to 3 significant figures.\nHe says that, because this value is less than 0.05, the null hypothesis should be rejected.\nExplain why this statement is incorrect.",
+              "text": "Assuming that the researcher’s belief that either colour cube is equally likely to be chosen is\nvalid, a student correctly calculates that PX = 8 = 0.0439, correct to 3 significant figures.\nHe says that, because this value is less than 0.05, the null hypothesis should be rejected.\nExplain why this statement is incorrect.",
               "marks": 1,
               "type": "explain",
               "answerType": "long_answer",
@@ -194,7 +194,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "It is given that E\u0000X\u0001 = ln 2.\nShow that b = 2a.",
+          "text": "It is given that EX = ln 2.\nShow that b = 2a.",
           "marks": 3,
           "type": "calculate",
           "answerType": "calculate",
@@ -229,7 +229,7 @@
       "text": [
         "The random variable X has probability density function, f, given by",
         "a < x < b,",
-        "f\u0000x\u0001 = x",
+        "fx = x",
         "0 otherwise,",
         "where a and b are positive constants."
       ]
@@ -238,15 +238,14 @@
       "id": "6",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "A factory makes loaves of bread in batches. One batch of loaves contains X kilograms of dried",
-        "yeast and Y kilograms of flour, where X and Y have the independent distributions N\u00000.7, 0.02 \u0001 and",
-        "N\u0000100.0, 3.0 \u0001 respectively.",
+        "yeast and Y kilograms of flour, where X and Y have the independent distributions N0.7, 0.02  and",
+        "N100.0, 3.0  respectively.",
         "Dried yeast costs $13.50 per kilogram and flour costs $0.90 per kilogram. For making one batch of",
         "bread the total of all other costs is $55. The factory sells each batch of bread for $200.",
-        "Find the probability that the profit made on one randomly chosen batch of bread is greater than $40.",
-        "[7]"
+        "Find the probability that the profit made on one randomly chosen batch of bread is greater than $40."
       ]
     },
     {
@@ -256,7 +255,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Find P\u00002 ≤ X < 4\u0001.",
+          "text": "Find P2 ≤ X < 4.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
@@ -273,9 +272,20 @@
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "7c",
+          "label": "(c)",
+          "text": "It is given that PX = r < PX = r + 1.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": [
             {
-              "id": "7bi",
+              "id": "7ci",
               "label": "(i)",
               "text": "Find the set of possible values of r.",
               "marks": 3,
@@ -286,9 +296,9 @@
               "parts": []
             },
             {
-              "id": "7bii",
+              "id": "7cii",
               "label": "(ii)",
-              "text": "Hence find the value of r for which P\u0000X = r\u0001 is greatest. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Hence find the value of r for which PX = r is greatest. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
               "type": "complete",
               "answerType": "long_answer",
@@ -299,9 +309,9 @@
           ]
         }
       ],
-      "marks": 5,
+      "marks": 9,
       "text": [
-        "A random variable X has the distribution Po\u00002.4\u0001."
+        "A random variable X has the distribution Po2.4."
       ]
     }
   ]

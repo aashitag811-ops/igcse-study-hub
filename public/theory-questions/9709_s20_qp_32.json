@@ -3,8 +3,8 @@
   "subjectCode": "9709",
   "session": "s20",
   "component": "32",
-  "totalMarks": 39,
-  "questionCount": 5,
+  "totalMarks": 47,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -14,8 +14,8 @@
       "text": [
         "Find the quotient and remainder when 6x + x − x + 5x − 6 is divided by 2x − x + 1. [3]",
         "ln y",
-        "\u00005.24, 2.7\u0001",
-        "\u00001.5, 1.2\u0001"
+        "5.24, 2.7",
+        "1.5, 1.2"
       ]
     },
     {
@@ -26,6 +26,7 @@
       "text": [
         "kx",
         "The variables x and y satisfy the equation y = Ae , where A and k are constants. The graph of",
+        "ln y against x is a straight line passing through the points 1.5, 1.2 and 5.24, 2.7 as shown in the",
         "diagram.",
         "Find the values of A and k correct to 2 decimal places. [5]"
       ]
@@ -58,7 +59,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Express 2 cos x − 5 sin x in the form R cos\u0000x + !\u0001, where R > 0 and 0Å < ! < 90Å. Give the\nexact value of R and the value of ! correct to 3 decimal places.",
+          "text": "Express 2 cos x − 5 sin x in the form R cosx + !, where R > 0 and 0Å < ! < 90Å. Give the\nexact value of R and the value of ! correct to 3 decimal places.",
           "marks": 3,
           "type": "give",
           "answerType": "short_answer",
@@ -91,8 +92,41 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "Using the substitution u = 3x , find by integration the exact area of the shaded region bounded\nby the curve, the x-axis and the line x = 1. \n7 The variables x and y satisfy the differential equation\ndy y − 1\n= .\nIt is given that y = 2 when x = 0.\nSolve the differential equation, obtaining an expression for y in terms of x. \n8 (a) Solve the equation \u00001 + 2i\u0001w + iw = 3 + 5i. Give your answer in the form x + iy, where x and y\nare real.",
+          "text": "Using the substitution u = 3x , find by integration the exact area of the shaded region bounded\nby the curve, the x-axis and the line x = 1.",
           "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The variables x and y satisfy the differential equation",
+        "dy y − 1",
+        "= .",
+        "dx x + 1x + 3",
+        "It is given that y = 2 when x = 0.",
+        "Solve the differential equation, obtaining an expression for y in terms of x. [9]"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Solve the equation 1 + 2iw + iw = 3 + 5i. Give your answer in the form x + iy, where x and y\nare real.",
+          "marks": 4,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -100,7 +134,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "8b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -110,10 +144,10 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "8bi",
               "label": "(i)",
-              "text": "On a sketch of an Argand diagram, shade the region whose points represent complex",
-              "marks": null,
+              "text": "On a sketch of an Argand diagram, shade the region whose points represent complex\nnumbers z satisfying the inequalities z − 2 − 2i ≤ 1 and argz − 4i ≥ − π.",
+              "marks": 4,
               "type": "draw",
               "answerType": "diagram_only",
               "hasDiagramRef": true,
@@ -121,9 +155,9 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "8bii",
               "label": "(ii)",
-              "text": "Find the least value of Im z for points in this region, giving your answer in an exact form.\n\np π\nThe diagram shows the curves y = cos x and y = , where k is a constant, for 0 ≤ x ≤ π. The\n1 + x\ncurves touch at the point where x = p.",
+              "text": "Find the least value of Im z for points in this region, giving your answer in an exact form.\np π\nThe diagram shows the curves y = cos x and y = , where k is a constant, for 0 ≤ x ≤ π. The\n1 + x\ncurves touch at the point where x = p.",
               "marks": 2,
               "type": "other",
               "answerType": "short_answer",
@@ -134,7 +168,7 @@
           ]
         },
         {
-          "id": "5a",
+          "id": "8a",
           "label": "(a)",
           "text": "Show that p satisfies the equation tan p = . \n1 + p\n@ A\n−1",
           "marks": 5,
@@ -145,7 +179,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "8b",
           "label": "(b)",
           "text": "Use the iterative formula p = tan to determine the value of p correct to 3 decimal\nn+1\n1 + p\nplaces. Give the result of each iteration to 5 decimal places.",
           "marks": 3,
@@ -156,18 +190,26 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "8c",
           "label": "(c)",
-          "text": "Hence find the value of k correct to 2 decimal places. \n10 With respect to the origin O, the points A and B have position vectors given by OA = 6i + 2j and\nOB = 2i + 2j + 3k. The midpoint of OA is M. The point N lying on AB, between A and B, is such\nthat AN = 2NB.",
+          "text": "Hence find the value of k correct to 2 decimal places.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 20,
+      "text": []
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
         {
-          "id": "5a",
+          "id": "10a",
           "label": "(a)",
           "text": "Find a vector equation for the line through M and N. \nThe line through M and N intersects the line through O and B at the point P.",
           "marks": 5,
@@ -178,7 +220,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "10b",
           "label": "(b)",
           "text": "Find the position vector of P.",
           "marks": 3,
@@ -189,7 +231,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "10c",
           "label": "(c)",
           "text": "Calculate angle OPM, giving your answer in degrees. \nAdditional Page\nIf you use the following lined page to complete the answer(s) to any question(s), the question number(s)\nmust be clearly shown.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 3,
@@ -200,8 +242,12 @@
           "parts": []
         }
       ],
-      "marks": 39,
-      "text": []
+      "marks": 11,
+      "text": [
+        "With respect to the origin O, the points A and B have position vectors given by OA = 6i + 2j and",
+        "OB = 2i + 2j + 3k. The midpoint of OA is M. The point N lying on AB, between A and B, is such",
+        "that AN = 2NB."
+      ]
     }
   ]
 }

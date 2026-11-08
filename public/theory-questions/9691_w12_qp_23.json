@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w12",
   "component": "23",
-  "totalMarks": 68,
+  "totalMarks": 75,
   "questionCount": 4,
   "questions": [
     {
@@ -35,7 +35,7 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "The type of each bike is also recorded. The intention of this pseudocode is to allow\nFor\nonly trial, scooter and road as valid bike types. Examiner's\nUse\nINPUT BikeType\nIF ((BikeType = “trial”) AND (BikeType = “scooter”))\nOR (BikeType = “road”)\nTHEN\nOUTPUT BikeType “ is valid”\nELSE\nOUTPUT “Invalid”\nENDIF\nState the output when the BikeType input is:",
+          "text": "The type of each bike is also recorded. The intention of this pseudocode is to allow\nonly trial, scooter and road as valid bike types. Examiner's\nINPUT BikeType\nIF ((BikeType = “trial”) AND (BikeType = “scooter”))\nOR (BikeType = “road”)\nTHEN\nOUTPUT BikeType “ is valid”\nELSE\nOUTPUT “Invalid”\nENDIF\nState the output when the BikeType input is:",
           "marks": null,
           "type": "state",
           "answerType": "short_answer",
@@ -101,9 +101,9 @@
             {
               "id": "1ei",
               "label": "(i)",
-              "text": "All bike registrations are five characters long, and have the format BKXXX, where\nFor\nX is a digit. Examiner's\nUse\nFor example, BK572 is a valid registration.\nIn a high-level programming language write code that will validate the format of a\nregistration input into the variable BikeReg. (Add extra line numbers if required.)\nProgramming language used\nCode",
+              "text": "All bike registrations are five characters long, and have the format BKXXX, where\nX is a digit. Examiner's\nFor example, BK572 is a valid registration.\nIn a high-level programming language write code that will validate the format of a\nregistration input into the variable BikeReg. (Add extra line numbers if required.)\nProgramming language used\nCode",
               "marks": 10,
-              "type": "use",
+              "type": "write",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -112,7 +112,7 @@
             {
               "id": "1eii",
               "label": "(ii)",
-              "text": "Explain why 487BK is an invalid bike registration.\nFor\nExaminer's\nUse\nState the line number of your code in part (e)(i) which detects that it is invalid.\nLine Number",
+              "text": "Explain why 487BK is an invalid bike registration.\nState the line number of your code in part (e)(i) which detects that it is invalid.\nLine Number",
               "marks": 2,
               "type": "state",
               "answerType": "short_answer",
@@ -174,7 +174,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Complete the trace table for the flowchart with the first five bike registrations. The\nFor\nvalues to be entered are BK707, BK380, BK162, BK747 and BK913. Examiner's\nUse\nThe row with the headings will also have to be completed.\nBikeSpace\nRow Position Row<=30\n[1,1]\n1 1 TRUE BK707",
+          "text": "Complete the trace table for the flowchart with the first five bike registrations. The\nvalues to be entered are BK707, BK380, BK162, BK747 and BK913. Examiner's\nThe row with the headings will also have to be completed.\nBikeSpace\nRow Position Row<=30\n[1,1]\n1 1 TRUE BK707",
           "marks": 6,
           "type": "complete",
           "answerType": "long_answer",
@@ -185,9 +185,9 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "From the flowchart write the module code, using nested REPEAT…UNTIL loops.\nFor\nExaminer's\nEnsure that your code demonstrates good programming practice.\nUse\nRow ← 1\nNo\nRow <= 30?\nTo rest of program\nYes\nPosition ← 1\nNo\nPosition <= 4?\nYes\nInput BikeReg\nNo\nBikeReg <> “BK000”?\nTo rest of program\nYes\nBikeSpace[Row, Position] ← BikeReg\nPosition ← Position + 1\nRow ← Row + 1\nProgramming language used\nFor\nExaminer's\nUse\nCode",
+          "text": "From the flowchart write the module code, using nested REPEAT…UNTIL loops.\nEnsure that your code demonstrates good programming practice.\nRow ← 1\nNo\nRow <= 30?\nTo rest of program\nYes\nPosition ← 1\nNo\nPosition <= 4?\nYes\nInput BikeReg\nNo\nBikeReg <> “BK000”?\nTo rest of program\nYes\nBikeSpace[Row, Position] ← BikeReg\nPosition ← Position + 1\nRow ← Row + 1\nProgramming language used\nCode",
           "marks": 7,
-          "type": "use",
+          "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -206,7 +206,7 @@
             {
               "id": "2ci",
               "label": "(i)",
-              "text": "One of the modules uses the expression:\nFor\nExaminer's\nUse\nArea /(SpaceWidth * SpaceLength – EmptySpaces)\nState the value of the part of the expression inside the brackets when\nSpaceWidth ← 7\nSpaceLength ← 4\nEmptySpaces ← 28",
+              "text": "One of the modules uses the expression:\nArea /(SpaceWidth * SpaceLength – EmptySpaces)\nState the value of the part of the expression inside the brackets when\nSpaceWidth ← 7\nSpaceLength ← 4\nEmptySpaces ← 28",
               "marks": 1,
               "type": "state",
               "answerType": "short_answer",
@@ -253,9 +253,7 @@
       "marks": 21,
       "text": [
         "Super Bikes owns a rectangular parking area with 30 rows; each row has 4 bike spaces.",
-        "For",
         "Each bike is always parked in the same space. Examiner's",
-        "Use",
         "The array BikeSpace[30,4] stores the bike registrations.",
         "Soni uses a flowchart to help him design a module to populate the array with the bike",
         "registrations.",
@@ -283,15 +281,12 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "Super Bikes will need a printed report that shows all the hires made in a given month,",
-        "For",
         "grouped by insurance rating (A, B or C) and the income each hire generated. The report Examiner's",
-        "Use",
         "should include the total income figure for each insurance group.",
-        "Design the layout of the report.",
-        "[7]"
+        "Design the layout of the report."
       ]
     },
     {
@@ -312,9 +307,9 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "Estimate the size, in kilobytes, of the file if it stores the details of 1000 bikes. Show your\nFor\nworking. Examiner's\nUse",
+          "text": "Estimate the size, in kilobytes, of the file if it stores the details of 1000 bikes. Show your\nworking. Examiner's",
           "marks": 4,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -344,7 +339,7 @@
             {
               "id": "4cii",
               "label": "(ii)",
-              "text": "Bike records are stored in a file SuperBikes.\nFor\nExaminer's\nUse\nWrite the code to read every bike record, count the number of bikes where service\nis due and output the result. You should assume that the file is not already in use.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "Bike records are stored in a file SuperBikes.\nWrite the code to read every bike record, count the number of bikes where service\nis due and output the result. You should assume that the file is not already in use.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 9,
               "type": "name",
               "answerType": "short_answer",

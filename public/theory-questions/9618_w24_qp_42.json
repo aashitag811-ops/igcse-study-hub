@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w24",
   "component": "42",
-  "totalMarks": 60,
+  "totalMarks": 71,
   "questionCount": 7,
   "questions": [
     {
@@ -92,46 +92,16 @@
         {
           "id": "1d",
           "label": "(d)",
-          "text": "The method CalculateScore() in the Character class calculates and returns the\npercentage chance of a character completing an event.\nWhen a character’s skill level is greater than or equal to the difficulty of that event, the\npercentage chance of completing the event is 100%.\nWhen a character’s skill level is less than the difficulty of that event, the character’s skill level\nis subtracted from the difficulty of that event. This difference is used to identify the percentage\nchance of success using this table:\nPercentage chance\nDifference\nof success\n1 80",
-          "marks": null,
+          "text": "The method CalculateScore() in the Character class calculates and returns the\npercentage chance of a character completing an event.\nWhen a character’s skill level is greater than or equal to the difficulty of that event, the\npercentage chance of completing the event is 100%.\nWhen a character’s skill level is less than the difficulty of that event, the character’s skill level\nis subtracted from the difficulty of that event. This difference is used to identify the percentage\nchance of success using this table:\nPercentage chance\nDifference\nof success\n1 80\n2 60\n3 40\n4 20\nFor example:\n• A character has a skill level of 3 for events of type run.\n• An event of type run has a difficulty level of 5\n• The character’s skill level is less than the difficulty, therefore the difference is calculated.\n• The difference is the character’s skill level subtracted from the event difficulty, 5 – 3 = 2\n• The difference is 2, therefore the percentage chance of succeeding is 60%\nWrite program code for the method CalculateScore() to:\n• take the type of event and difficulty as parameters\n• calculate the percentage chance of the character completing the event\n• return the percentage chance of completing the event as an integer number, for example\nSave your program.\nCopy and paste the program code into part 1(d) in the evidence document.",
+          "marks": 4,
           "type": "identify",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 15,
-      "text": [
-        "A computer game is designed for users to select characters. Each character can take part in a",
-        "group of events. Each group has five events. There are four types of event: jump, swim, run, drive.",
-        "The program is written using object-oriented programming."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "60"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "40"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "4e",
+          "id": "1e",
           "label": "(e)",
           "text": "Two characters are attempting each event in the group you created in part 1(b).\nOne character has the name Tarz and the skill levels:\nJump 5\nSwim 3\nRun 5\nDrive 1\nThe second character has the name Geni and the skill levels:\nJump 2\nSwim 2\nRun 3\nDrive 4\nEach Character object is stored in a variable.",
           "marks": null,
@@ -141,7 +111,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4ei",
+              "id": "1ei",
               "label": "(i)",
               "text": "Amend the main program to declare and create an instance of a Character object for\nTarz and for Geni.\nSave your program.\nCopy and paste the program code into part 1(e)(i) in the evidence document.",
               "marks": 2,
@@ -152,10 +122,10 @@
               "parts": []
             },
             {
-              "id": "4eii",
+              "id": "1eii",
               "label": "(ii)",
               "text": "Both characters Tarz and Geni take part in each event in the group you created in part\n1(b).\nThese steps are repeated for all five events:\n• The percentage chance of each character completing the event is calculated and\ncompared.\n• The character with the highest percentage chance of completing the event gets 1\npoint. Their character name is output together with a message telling them they\nhave won that event.\n• If both characters have the same percentage chance of completing the event, the\nscores do not change, and a message is output stating that the event is a draw.\nWhen the total score for each character has been calculated, the name of the character\nwith the highest score is output stating they have won and the number of points they\nhave. If both characters have the same number of points, a message is output telling\nthem the group is a draw.\nAmend the main program to:\n• calculate the score for each character in each event\n• output the name of the character that wins each event or that the event is a draw\n• output the name of the character that has the most points for the group or that the\ngroup is a draw.\nSave your program.\nCopy and paste the program code into part 1(e)(ii) in the evidence document.",
-              "marks": null,
+              "marks": 7,
               "type": "name",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -163,9 +133,9 @@
               "parts": []
             },
             {
-              "id": "4eiii",
+              "id": "1eiii",
               "label": "(iii)",
-              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(e)(iii) in the evidence document.\n\n2 A linear queue data structure is designed using a record structure.\nThe record structure Queue has the following fields:\n• QueueArray, a 1D array of up to 100 integer values\n• Headpointer, a variable that stores the index of the first data item in QueueArray\n• Tailpointer, a variable that stores the index of the next free location in QueueArray.",
+              "text": "Test your program.\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 1(e)(iii) in the evidence document.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -174,9 +144,21 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 29,
+      "text": [
+        "A computer game is designed for users to select characters. Each character can take part in a",
+        "group of events. Each group has five events. There are four types of event: jump, swim, run, drive.",
+        "The program is written using object-oriented programming."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "2a",
           "label": "(a)",
           "text": "Write program code to declare the record structure Queue and its fields.\nIf your programming language does not support record structures, a class can be declared\ninstead.\nIf you are writing in Python, use comments to declare the appropriate data types.\nSave your program as Question2_N24.\nCopy and paste the program code into part 2(a) in the evidence document.",
           "marks": 3,
@@ -187,7 +169,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "2b",
           "label": "(b)",
           "text": "The main program creates a new Queue record with the identifier TheQueue. The head\npointer is initialised to –1. The tail pointer is initialised to 0. Each element in the array is\ninitialised with –1.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(b) in the evidence document.",
           "marks": 3,
@@ -198,7 +180,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "2c",
           "label": "(c)",
           "text": "The pseudocode function Enqueue() inserts an integer value into the queue.\nThe function is incomplete. There are three incomplete statements.\nFUNCTION Enqueue(BYREF AQueue : Queue, BYVAL TheData : INTEGER)\nRETURNS INTEGER\nIF AQueue.Headpointer = -1 THEN\nAQueue.QueueArray[AQueue.Tailpointer] ← ______\nAQueue.Headpointer ← 0\nAQueue.Tailpointer ← AQueue.Tailpointer + 1\nRETURN 1\nELSE\nIF AQueue.Tailpointer > ______ THEN\nRETURN -1\nELSE\nAQueue.QueueArray[AQueue.Tailpointer] ← TheData\nAQueue.Tailpointer ← AQueue.Tailpointer ______\nRETURN 1\nENDIF\nENDIF\nENDFUNCTION\nWrite program code for Enqueue().\nSave your program.\nCopy and paste the program code into part 2(c) in the evidence document.",
           "marks": 5,
@@ -209,7 +191,7 @@
           "parts": []
         },
         {
-          "id": "4d",
+          "id": "2d",
           "label": "(d)",
           "text": "The function ReturnAllData() accesses TheQueue. It concatenates all the integer\nvalues that have been inserted into the queue’s array, starting from the value stored at\nHeadPointer, with a space between each integer value. The string of concatenated values\nis returned.\nNone of the integer values are removed from the queue.\nWrite program code for ReturnAllData().\nSave your program.\nCopy and paste the program code into part 2(d) in the evidence document.",
           "marks": 3,
@@ -220,7 +202,7 @@
           "parts": []
         },
         {
-          "id": "4e",
+          "id": "2e",
           "label": "(e)",
           "text": "",
           "marks": null,
@@ -230,7 +212,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4ei",
+              "id": "2ei",
               "label": "(i)",
               "text": "The main program asks the user to enter 10 integers with values of 0 or greater. It reads\neach input repeatedly until a valid number is entered.\nAll 10 valid inputs are added to the queue, using Enqueue().\nIf the value returned from Enqueue() is –1, a message is output to state that the queue\nis full, otherwise a message is output to state that the item has been added to the queue.\nThe function ReturnAllData() is called once all 10 integers have been entered and\nthe return value from the function call is output.\nAmend the main program to perform these actions.\nSave your program.\nCopy and paste the program code into part 2(e)(i) in the evidence document.",
               "marks": 5,
@@ -241,7 +223,7 @@
               "parts": []
             },
             {
-              "id": "4eii",
+              "id": "2eii",
               "label": "(ii)",
               "text": "Test your program with the following inputs in the order given:\n10 9 –1 8 7 6 5 4 3 2 1\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(e)(ii) in the evidence document.",
               "marks": 2,
@@ -254,7 +236,7 @@
           ]
         },
         {
-          "id": "4f",
+          "id": "2f",
           "label": "(f)",
           "text": "The function Dequeue() accesses TheQueue. The function returns –1 if the queue is empty.\nIf the queue is not empty, the function returns the next item in the queue and updates the\nrelevant pointer(s).\nThe data is not replaced or deleted from the queue.\nWrite program code for Dequeue().\nSave your program.\nCopy and paste the program code into part 2(f) in the evidence document.",
           "marks": 4,
@@ -265,7 +247,7 @@
           "parts": []
         },
         {
-          "id": "4g",
+          "id": "2g",
           "label": "(g)",
           "text": "",
           "marks": null,
@@ -275,7 +257,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4gi",
+              "id": "2gi",
               "label": "(i)",
               "text": "The main program calls Dequeue() twice, and each time it either outputs ‘Queue empty’\nif there is no data in the queue or outputs the return value.\nThe main program then calls ReturnAllData() a second time.\nAmend the main program.\nSave your program.\nCopy and paste the program code into part 2(g)(i) in the evidence document.",
               "marks": 3,
@@ -286,9 +268,9 @@
               "parts": []
             },
             {
-              "id": "4gii",
+              "id": "2gii",
               "label": "(ii)",
-              "text": "Test your program with the following inputs in the order given:\n10 9 8 7 6 5 4 3 2 1\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(g)(ii) in the evidence document.\n\n3 The text file HighScoreTable.txt stores the top seven player scores for a game.\nThe data in the file is stored in the order:\nPlayer ID\nGame level\nScore\nEach item of data is stored on a new line. For example, the first set of data in the file is:\nPlayer ID: GHEH\nGame level: 3\nScore: 10",
+              "text": "Test your program with the following inputs in the order given:\n10 9 8 7 6 5 4 3 2 1\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 2(g)(ii) in the evidence document.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -297,9 +279,23 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 29,
+      "text": [
+        "A linear queue data structure is designed using a record structure.",
+        "The record structure Queue has the following fields:",
+        "• QueueArray, a 1D array of up to 100 integer values",
+        "• Headpointer, a variable that stores the index of the first data item in QueueArray",
+        "• Tailpointer, a variable that stores the index of the next free location in QueueArray."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "The data about the players and their scores is stored in a 2D array of strings with the identifier\nHighScores.\nThe first dimension of the array has seven elements: one for each player. The second\ndimension of the array has three elements: one for the player ID, one for the game level and\none for the score. All data is stored in the array as strings.\nHighScores is declared local to the main program, and all elements are initialised to an\nempty string, for example \"\".\nWrite program code to declare and initialise HighScores.\nSave your program as Question3_N24.\nCopy and paste the program code into part 3(a) in the evidence document.",
           "marks": 2,
@@ -310,7 +306,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "The function ReadData() reads the data from HighScoreTable.txt and stores the data\nin a 2D array. The function returns the 2D array.\nThe function uses exception handling when opening and reading data from the file.\nWrite program code for ReadData().\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
           "marks": 5,
@@ -321,7 +317,7 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
           "text": "The procedure OutputHighScores() takes a 2D array as a parameter. It outputs each\nplayer’s ID, level and score in the order they are in the array. The outputs are in the format:\nGHEH reached level 3 with a score of 10\nWrite program code for OutputHighScores().\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
           "marks": 2,
@@ -332,9 +328,9 @@
           "parts": []
         },
         {
-          "id": "4d",
+          "id": "3d",
           "label": "(d)",
-          "text": "The scores in HighScoreTable.txt are not in order.\nThe player scores are first sorted by the game level they reached. For example, all players\nthat reached level 5 are higher in the high score table than players that reached level 4.\nThe players that reached the same level are then sorted in descending order of score.\nAn example sorted high score table is:\nPosition Player ID Game level Score\n1 GFED 5 25\n2 HJKM 4 21\n3 RERR 4 19\n4 TTYU 4 15",
+          "text": "The scores in HighScoreTable.txt are not in order.\nThe player scores are first sorted by the game level they reached. For example, all players\nthat reached level 5 are higher in the high score table than players that reached level 4.\nThe players that reached the same level are then sorted in descending order of score.\nAn example sorted high score table is:\nPosition Player ID Game level Score\n1 GFED 5 25\n2 HJKM 4 21\n3 RERR 4 19",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
@@ -343,22 +339,26 @@
           "parts": []
         }
       ],
-      "marks": 41,
+      "marks": 9,
       "text": [
-        "20",
-        "For example:",
-        "• A character has a skill level of 3 for events of type run.",
-        "• An event of type run has a difficulty level of 5",
-        "• The character’s skill level is less than the difficulty, therefore the difference is calculated.",
-        "• The difference is the character’s skill level subtracted from the event difficulty, 5 – 3 = 2",
-        "• The difference is 2, therefore the percentage chance of succeeding is 60%",
-        "Write program code for the method CalculateScore() to:",
-        "• take the type of event and difficulty as parameters",
-        "• calculate the percentage chance of the character completing the event",
-        "• return the percentage chance of completing the event as an integer number, for example",
-        "Save your program.",
-        "Copy and paste the program code into part 1(d) in the evidence document.",
-        "[4]"
+        "The text file HighScoreTable.txt stores the top seven player scores for a game.",
+        "The data in the file is stored in the order:",
+        "Player ID",
+        "Game level",
+        "Score",
+        "Each item of data is stored on a new line. For example, the first set of data in the file is:",
+        "Player ID: GHEH",
+        "Game level: 3",
+        "Score: 10"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "TTYU 4 15"
       ]
     },
     {
@@ -407,7 +407,7 @@
             {
               "id": "7eii",
               "label": "(ii)",
-              "text": "Test your program\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Test your program\nTake a screenshot of the output.\nSave your program.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 2,
               "type": "other",
               "answerType": "short_answer",
@@ -425,8 +425,7 @@
         "sorted array.",
         "Write program code for SortScores().",
         "Save your program.",
-        "Copy and paste the program code into part 3(d) in the evidence document.",
-        "[4]"
+        "Copy and paste the program code into part 3(d) in the evidence document."
       ]
     }
   ]

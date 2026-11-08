@@ -3,7 +3,7 @@
   "subjectCode": "0607",
   "session": "s21",
   "component": "51",
-  "totalMarks": 27,
+  "totalMarks": 36,
   "questionCount": 7,
   "questions": [
     {
@@ -58,10 +58,10 @@
               "label": "(i)",
               "text": "The square rolls from Position 1 to Position n.\nThe centre has moved a distance equal to the circumference of 1 circle.\nThe radius, r, of the circle is half the diagonal of the square.",
               "marks": null,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             }
           ]
@@ -90,40 +90,18 @@
             {
               "id": "1bii",
               "label": "(ii)",
-              "text": "Circumference, C, of circle, radius r. C = 2rr\nHypotenuse, r, of a right-angled triangle",
+              "text": "Circumference, C, of circle, radius r. C = 2rr\nHypotenuse, r, of a right-angled triangle\n2 2 2\nwith sides r, x and y. r = x + y",
               "marks": null,
-              "type": "circle",
-              "answerType": "diagram_only",
+              "type": "other",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
-              "diagramOnly": true,
+              "diagramOnly": false,
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 8,
-      "text": [
-        "1",
-        "0.5 0.5",
-        "Position 1 Position 1 Position 2",
-        "0 x 0 x",
-        "0.5 1 1.5 2 2.5 3 0.5 1 1.5 2 2.5 3",
-        "Centre of Centre of",
-        "rotation rotation",
-        "Diagram 1 shows the square in Position 1.",
-        "One side of the square is bold to help show the rotation.",
-        "The centre of the square is (0.5, 0.5).",
-        "Diagram 2 shows the square rolled 90° clockwise about (1, 0) to Position 2.",
-        "1 To get to Position 3 the square rolls 90° clockwise about (2, 0).",
-        "To get to Position 4 the square then rolls 90° clockwise about (3, 0)."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "2a",
+          "id": "1a",
           "label": "(a)",
           "text": "Show that the radius of the circle is 0.707 cm, correct to 3 decimal places.",
           "marks": 2,
@@ -134,16 +112,27 @@
           "parts": []
         },
         {
-          "id": "2b",
+          "id": "1b",
           "label": "(b)",
-          "text": "Find the length of the arc that the centre of the square moves along from Position 1 to\nPosition 2.\n\n2 The side of the square is now 2 cm.\n0 x\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15\nThe square rolls along the x-axis in the same way as in Question 1.",
+          "text": "Find the length of the arc that the centre of the square moves along from Position 1 to\nPosition 2.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "To get to Position 3 the square rolls 90° clockwise about (2, 0).",
+        "To get to Position 4 the square then rolls 90° clockwise about (3, 0)."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
           "id": "2a",
           "label": "(a)",
@@ -167,10 +156,12 @@
           "parts": []
         }
       ],
-      "marks": 10,
+      "marks": 6,
       "text": [
-        "2 2",
-        "with sides r, x and y. r = x + y"
+        "The side of the square is now 2 cm.",
+        "0 x",
+        "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15",
+        "The square rolls along the x-axis in the same way as in Question 1."
       ]
     },
     {
@@ -207,25 +198,23 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Write your expressions from Questions 1(b), 2(a) and 3 in the table below.",
         "Complete the table using any patterns you notice.",
         "Side of square x-coordinate in",
-        "(wcm) Position n",
-        "[4]"
+        "(wcm) Position n"
       ]
     },
     {
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "A square of side wcm rolls from Position 1 to Position 120.",
         "At Position 120, the x-coordinate of the centre of the square is 2151.",
-        "Find the value of w.",
-        "[3]"
+        "Find the value of w."
       ]
     },
     {
@@ -257,7 +246,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Write down the y-coordinate of the centre of the square in Position 400.\n\nQuestion 7 is printed on the next page.",
+          "text": "Write down the y-coordinate of the centre of the square in Position 400.\nQuestion 7 is printed on the next page.",
           "marks": 1,
           "type": "write",
           "answerType": "short_answer",
@@ -276,13 +265,12 @@
       "id": "7",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 2,
       "text": [
         "A square rolls along the x-axis.",
         "For the top left corner give a reason why",
         "total distance moved in 2 rolls = total distance moved in 3 rolls.",
         "You may use this grid.",
-        "[2]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

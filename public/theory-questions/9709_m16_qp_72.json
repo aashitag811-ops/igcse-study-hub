@@ -3,7 +3,7 @@
   "subjectCode": "9709",
   "session": "m16",
   "component": "72",
-  "totalMarks": 6,
+  "totalMarks": 12,
   "questionCount": 7,
   "questions": [
     {
@@ -49,6 +49,7 @@
       "text": [
         "The masses, in grams, of large bags of sugar and small bags of sugar are denoted by X and Y",
         "2 2",
+        "respectively, where X ∼ N5.1, 0.2  and Y ∼ N2.5, 0.1 . Find the probability that the mass of a",
         "randomly chosen large bag is less than twice the mass of a randomly chosen small bag. [5]"
       ]
     },
@@ -81,7 +82,7 @@
               "id": "6biii",
               "label": "(iii)",
               "text": "Independently of her phone battery, Sue’s computer battery also runs out at random moments.\nOn average, it runs out twice in a 15-day period. Find the probability that the total number of\ntimes that her phone battery and her computer battery run out in a 10-day period is at least 4.",
-              "marks": null,
+              "marks": 3,
               "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -104,7 +105,7 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "f\u0000x\u0001\n0 1 2 3 4\nThe diagram shows the graph of the probability density function, f, of a random variable X, where\n2 2\n\u00003x − x \u0001 0 ≤ x ≤ 3,\nf\u0000x\u0001 =\n0 otherwise.",
+          "text": "fx\n0 1 2 3 4\nThe diagram shows the graph of the probability density function, f, of a random variable X, where\n2 2\n3x − x  0 ≤ x ≤ 3,\nfx =\n0 otherwise.",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
@@ -112,11 +113,33 @@
           "diagramOnly": false,
           "parts": [
             {
+              "id": "7ai",
+              "label": "(i)",
+              "text": "State the value of EX and find VarX.",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
               "id": "7aii",
               "label": "(ii)",
-              "text": "State the value of P\u00001.5 ≤ X ≤ 4\u0001.",
+              "text": "State the value of P1.5 ≤ X ≤ 4.",
               "marks": 1,
               "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7aiii",
+              "label": "(iii)",
+              "text": "Given that P1 ≤ X ≤ 2 = , find PX > 2.",
+              "marks": 2,
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -127,7 +150,7 @@
         {
           "id": "7b",
           "label": "(b)",
-          "text": "A random variable, W, has probability density function given by\naw 0 ≤ w ≤ b,\ng\u0000w\u0001 =\n0 otherwise,\nwhere a and b are constants. Given that the median of W is 2, find a and b. \neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "A random variable, W, has probability density function given by\naw 0 ≤ w ≤ b,\ngw =\n0 otherwise,\nwhere a and b are constants. Given that the median of W is 2, find a and b. \neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",
@@ -136,7 +159,7 @@
           "parts": []
         }
       ],
-      "marks": 5,
+      "marks": 11,
       "text": []
     }
   ]

@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w21",
   "component": "22",
-  "totalMarks": 66,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -35,16 +35,27 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Complete the pseudocode expressions so that they evaluate to the values shown.\nAny functions and operators used must be defined in the insert.\nExpression Evaluates to\n______ ('C')",
-          "marks": null,
+          "text": "Complete the pseudocode expressions so that they evaluate to the values shown.\nAny functions and operators used must be defined in the insert.\nExpression Evaluates to\n______ ('C')\n2 * ______ (\"27\")\n______ (27 / ______)\n\"Sub\" & ______ (\"Abstraction\" , ______ , ______) \"Subtract\"",
+          "marks": 4,
           "type": "evaluate",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Evaluate the expressions given in the following table. The variables have been assigned\nvalues as follows:\nPumpOn ← TRUE\nPressureOK ← TRUE\nHiFlow ← FALSE\nExpression Evaluates to\nPressureOK AND HiFlow\nPumpOn OR PressureOK\nNOT PumpOn OR (PressureOK AND NOT HiFlow)\nNOT (PumpOn OR PressureOK) AND NOT HiFlow",
+          "marks": 2,
+          "type": "evaluate",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 5,
+      "marks": 11,
       "text": []
     },
     {
@@ -52,14 +63,14 @@
       "context": [],
       "parts": [
         {
-          "id": "2d",
-          "label": "(d)",
-          "text": "Evaluate the expressions given in the following table. The variables have been assigned\nvalues as follows:\nPumpOn ← TRUE\nPressureOK ← TRUE\nHiFlow ← FALSE\nExpression Evaluates to\nPressureOK AND HiFlow\nPumpOn OR PressureOK\nNOT PumpOn OR (PressureOK AND NOT HiFlow)\nNOT (PumpOn OR PressureOK) AND NOT HiFlow\n\n2 (a) An algorithm will:\n1. input an integer value\n2. jump to step 6 if the value is zero\n3. sum and count the positive values\n4. sum and count the negative values\n5. repeat from step 1\n6. output the two sum values and the two count values.\nDraw a program flowchart on the following page to represent the algorithm.\nNote that variable declarations are not required in program flowcharts.",
-          "marks": 2,
-          "type": "evaluate",
-          "answerType": "long_answer",
+          "id": "2a",
+          "label": "(a)",
+          "text": "An algorithm will:\n1. input an integer value\n2. jump to step 6 if the value is zero\n3. sum and count the positive values\n4. sum and count the negative values\n5. repeat from step 1\n6. output the two sum values and the two count values.\nDraw a program flowchart on the following page to represent the algorithm.\nNote that variable declarations are not required in program flowcharts.",
+          "marks": 5,
+          "type": "draw",
+          "answerType": "diagram_only",
           "hasDiagramRef": false,
-          "diagramOnly": false,
+          "diagramOnly": true,
           "parts": []
         },
         {
@@ -97,13 +108,8 @@
           ]
         }
       ],
-      "marks": 7,
-      "text": [
-        "* ......................................... (\"27\")",
-        "................................ (27 / .................................)",
-        "\"Sub\" & .................... (\"Abstraction\" , .................... , ....................) \"Subtract\"",
-        "[4]"
-      ]
+      "marks": 10,
+      "text": []
     },
     {
       "id": "3",
@@ -333,7 +339,7 @@
             {
               "id": "6bii",
               "label": "(ii)",
-              "text": "State one advantage and one disadvantage of the alternative format.\nAdvantage ______\nDisadvantage ______\n\n6 A mobile phone has a touchscreen. The screen is represented by a grid, divided into 800 rows\nand 1280 columns.\nThe grid is represented by a 2D array Screen of type INTEGER. An array element will be set to 0\nunless the user touches that part of the screen.\nMany array elements will set to 1 by a single touch of a finger or a stylus.\nThe following diagram shows a simplified touchscreen. The dark line represents a touch on the\nscreen. All grid elements that are wholly or partly inside the outline will be set to 1. These elements\nare shaded.\nThe element shaded in black represents the centre point of the touch.\nA program is needed to find the coordinates (the row and column) of the centre point. The centre\npoint on the diagram shown is row 6, column 11.\nAssume:\n• the user may only touch one area at a time\n• screen rotation does not affect the touchscreen.\nThe programmer has decided to use global values CentreRow and CentreCol as coordinate\nvalues for the centre point.\nThe programmer has started to define program modules as follows:\nModule Description\n• Searches for the first row that has an array element set to 1\nFirstRowSet()\n• Returns the index of that row (1 is the first row)\n• Returns −1 if there are no elements set to 1\n• Searches for the last row that has an array element set to 1\nLastRowSet() • Returns the index of that row\n• Returns −1 if there are no elements set to 1\n• Searches for the first column that has an array element set to 1\nFirstColSet()\n• Returns the index of that column (1 is the first column)\n• Returns −1 if there are no elements set to 1\n• Searches for the last column that has an array element set to 1\nLastColSet()\n• Returns the index of that column\n• Returns −1 if there are no elements set to 1",
+              "text": "State one advantage and one disadvantage of the alternative format.\nAdvantage ______\nDisadvantage ______\n6 A mobile phone has a touchscreen. The screen is represented by a grid, divided into 800 rows\nand 1280 columns.\nThe grid is represented by a 2D array Screen of type INTEGER. An array element will be set to 0\nunless the user touches that part of the screen.\nMany array elements will set to 1 by a single touch of a finger or a stylus.\nThe following diagram shows a simplified touchscreen. The dark line represents a touch on the\nscreen. All grid elements that are wholly or partly inside the outline will be set to 1. These elements\nare shaded.\nThe element shaded in black represents the centre point of the touch.\nA program is needed to find the coordinates (the row and column) of the centre point. The centre\npoint on the diagram shown is row 6, column 11.\nAssume:\n• the user may only touch one area at a time\n• screen rotation does not affect the touchscreen.\nThe programmer has decided to use global values CentreRow and CentreCol as coordinate\nvalues for the centre point.\nThe programmer has started to define program modules as follows:\nModule Description\n• Searches for the first row that has an array element set to 1\nFirstRowSet()\n• Returns the index of that row (1 is the first row)\n• Returns −1 if there are no elements set to 1\n• Searches for the last row that has an array element set to 1\nLastRowSet() • Returns the index of that row\n• Returns −1 if there are no elements set to 1\n• Searches for the first column that has an array element set to 1\nFirstColSet()\n• Returns the index of that column (1 is the first column)\n• Returns −1 if there are no elements set to 1\n• Searches for the last column that has an array element set to 1\nLastColSet()\n• Returns the index of that column\n• Returns −1 if there are no elements set to 1",
               "marks": 2,
               "type": "state",
               "answerType": "fill_blank",
@@ -402,7 +408,7 @@
         {
           "id": "6d",
           "label": "(d)",
-          "text": "An additional module GetCentre() is defined as follows:\nModule Description\n• Calculates the coordinates of the centre point\n• Uses the four modules: FirstRowSet(), LastRowSet(),\nGetCentre() FirstColSet(), LastColSet()\n• Assigns values to CentreRow and CentreCol\n• Sets CentreRow to −1 if no screen touch is detected\nWrite pseudocode for the module GetCentre().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "An additional module GetCentre() is defined as follows:\nModule Description\n• Calculates the coordinates of the centre point\n• Uses the four modules: FirstRowSet(), LastRowSet(),\nGetCentre() FirstColSet(), LastColSet()\n• Assigns values to CentreRow and CentreCol\n• Sets CentreRow to −1 if no screen touch is detected\nWrite pseudocode for the module GetCentre().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 6,
           "type": "write",
           "answerType": "short_answer",

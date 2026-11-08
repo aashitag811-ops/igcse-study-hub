@@ -3,14 +3,14 @@
   "subjectCode": "0478",
   "session": "w25",
   "component": "21",
-  "totalMarks": 35,
+  "totalMarks": 56,
   "questionCount": 16,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Four descriptions of structured query language (SQL) keywords and five SQL keywords are",
         "given.",
@@ -25,25 +25,23 @@
         "sorts the results",
         "SUM",
         "returns the number of records",
-        "FROM",
-        "[4]"
+        "FROM"
       ]
     },
     {
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
-        "Identify three different types of test data that can be used to test a program.",
-        "[3]"
+        "Identify three different types of test data that can be used to test a program."
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (✓) one box to identify the operator that returns the quotient of a calculation with the fractional",
         "part discarded.",
@@ -51,7 +49,6 @@
         "B DIV",
         "C ^",
         "D MOD",
-        "[1]",
         "* 0000800000003 * DFD"
       ]
     },
@@ -63,7 +60,7 @@
           "id": "4a",
           "label": "(a)",
           "text": "A restaurant offers a fixed priced menu. A meal for an adult costs $9.99 and a meal for a child\ncosts $6.99.\nIf there are 6 or more people at a table, a 15% discount is applied to the total cost of the\norder.\nWrite an algorithm in pseudocode to:\n• input the number of adults and the number of children at a table\n• calculate the total cost of the order with the discount, if this applies\n• output the final cost of the order.",
-          "marks": null,
+          "marks": 5,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
@@ -73,7 +70,7 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "The final cost of the order after the discount may have more than 2 decimal places.\nWrite a pseudocode statement to set the final cost of the order to 2 decimal places.\nYou do not need to rewrite the whole algorithm.\n\n* 0000800000004 * DFD",
+          "text": "The final cost of the order after the discount may have more than 2 decimal places.\nWrite a pseudocode statement to set the final cost of the order to 2 decimal places.\nYou do not need to rewrite the whole algorithm.\n* 0000800000004 * DFD",
           "marks": 2,
           "type": "write",
           "answerType": "short_answer",
@@ -118,7 +115,7 @@
         {
           "id": "4d",
           "label": "(d)",
-          "text": "Draw the NAND logic gate symbol and complete the truth table for it.\nNAND logic gate symbol: Truth table:\nA B X\n0 0\n0 1\n1 0\n1 1\n\n* 0000800000005 * DFD",
+          "text": "Draw the NAND logic gate symbol and complete the truth table for it.\nNAND logic gate symbol: Truth table:\nA B X\n0 0\n0 1\n1 0\n1 1\n* 0000800000005 * DFD",
           "marks": 2,
           "type": "complete",
           "answerType": "long_answer",
@@ -127,14 +124,14 @@
           "parts": []
         }
       ],
-      "marks": 9,
+      "marks": 14,
       "text": []
     },
     {
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "A hotel booking system is an example of a computer system that is made up of sub-systems.",
         "The booking system:",
@@ -142,7 +139,6 @@
         "• displays the types of rooms available to the user as pictures or as a list.",
         "Complete the structure diagram for the given parts of the hotel booking system.",
         "Hotel booking system",
-        "[4]",
         "* 0000800000006 * DFD"
       ]
     },
@@ -284,7 +280,7 @@
         {
           "id": "16c",
           "label": "(c)",
-          "text": "The 5-digit number needs to be entered as a single input.\nDescribe one verification method that could be applied to the input of the 5-digit number.\n\n* 0000800000008 * DFD\n7 The flowchart represents an algorithm.\nSTART\nCount 0\nINPUT Number\nValue Count * Number\nIS Value <=\nCount Count + 1\n100 ? Yes\nNo\nCount Count - 1\nOUTPUT Count\nSTOP\n* 0000800000009 * DFD",
+          "text": "The 5-digit number needs to be entered as a single input.\nDescribe one verification method that could be applied to the input of the 5-digit number.\n* 0000800000008 * DFD\n7 The flowchart represents an algorithm.\nSTART\nCount 0\nINPUT Number\nValue Count * Number\nIS Value <=\nCount Count + 1\n100 ? Yes\nNo\nCount Count - 1\nOUTPUT Count\nSTOP\n* 0000800000009 * DFD",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -295,7 +291,7 @@
         {
           "id": "16a",
           "label": "(a)",
-          "text": "Complete the tables, using the flowchart, for the given data:\nInput data: 20\nCount Number Value\nOutput\nInput data: 110\nCount Number Value Output\n\n* 0000800000010 * DFD",
+          "text": "Complete the tables, using the flowchart, for the given data:\nInput data: 20\nCount Number Value\nOutput\nInput data: 110\nCount Number Value Output\n* 0000800000010 * DFD",
           "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
@@ -328,7 +324,7 @@
         {
           "id": "16d",
           "label": "(d)",
-          "text": "Write the algorithm in pseudocode. A copy of the algorithm is provided for you on page 11.\n\n* 0000800000011 * DFD\nSTART\nCount 0\nINPUT Number\nValue Count * Number\nIS Value <=\nCount Count + 1\n100 ? Yes\nNo\nCount Count - 1\nOUTPUT Count\nSTOP\n* 0000800000012 * DFD\n8 A school has set up a database table SchoolTrip to record details of students that will go on a\nschool trip.\nStudentID StudentName ParentName Permission DateReceived\nSTU147 Amir Mr Akar True 03/03/2025\nSTU348 Filip Mrs Johnson True 04/03/2025 DO NOT WRITE IN THIS MARGIN\nSTU274 Matthew Mr Smith False\nSTU873 Jafar Mr Al-Saigh True 21/03/2025\nSTU221 Hussein Mr Alkasab True 28/02/2025\nSTU553 Julie Mrs Jones True 25/02/2025\nSTU213 Julie Mr Smith False",
+          "text": "Write the algorithm in pseudocode. A copy of the algorithm is provided for you on page 11.\n* 0000800000011 * DFD\nSTART\nCount 0\nINPUT Number\nValue Count * Number\nIS Value <=\nCount Count + 1\n100 ? Yes\nNo\nCount Count - 1\nOUTPUT Count\nSTOP\n* 0000800000012 * DFD\n8 A school has set up a database table SchoolTrip to record details of students that will go on a\nschool trip.\nStudentID StudentName ParentName Permission DateReceived\nSTU147 Amir Mr Akar True 03/03/2025\nSTU348 Filip Mrs Johnson True 04/03/2025 DO NOT WRITE IN THIS MARGIN\nSTU274 Matthew Mr Smith False\nSTU873 Jafar Mr Al-Saigh True 21/03/2025\nSTU221 Hussein Mr Alkasab True 28/02/2025\nSTU553 Julie Mrs Jones True 25/02/2025\nSTU213 Julie Mr Smith False",
           "marks": 4,
           "type": "write",
           "answerType": "short_answer",
@@ -372,7 +368,7 @@
         {
           "id": "16d",
           "label": "(d)",
-          "text": "Complete the structured query language (SQL) statement to display only the names of the\nstudents who do not have permission to go on the trip.\nSELECT ______\nFROM ______\nWHERE ______\n\n* 0000800000013 * DFD\n9 A school stores all the students’ attendance data in a file called Attendance.txt\nWrite an algorithm in pseudocode to read a line of text from the file and store this line in the\nvariable StudentAttendance\n\n10 The variables Seconds and Minutes are used in a program. Seconds holds the number of\nseconds as a whole number and Minutes holds the number of minutes as a whole number.",
+          "text": "Complete the structured query language (SQL) statement to display only the names of the\nstudents who do not have permission to go on the trip.\nSELECT ______\nFROM ______\nWHERE ______\n* 0000800000013 * DFD\n9 A school stores all the students’ attendance data in a file called Attendance.txt\nWrite an algorithm in pseudocode to read a line of text from the file and store this line in the\nvariable StudentAttendance\n10 The variables Seconds and Minutes are used in a program. Seconds holds the number of\nseconds as a whole number and Minutes holds the number of minutes as a whole number.",
           "marks": 2,
           "type": "complete",
           "answerType": "fill_blank",
@@ -394,8 +390,8 @@
         {
           "id": "16b",
           "label": "(b)",
-          "text": "The procedure Time(TotalSeconds) takes the number of seconds as a parameter. The\nprocedure converts the value held in the parameter into minutes and seconds and outputs\nthe result.\nWrite this procedure in pseudocode.\n\n* 0000800000014 * DFD\n11 The scores for each competitor in an archery competition are recorded.\nThe one-dimensional (1D) array CompetitorName[] is used to store the names of the\ncompetitors.\nThe maximum number of competitors is 30.\nThere are 10 rounds in the competition with a maximum score of 30 per round.\nThe two-dimensional (2D) array CompetitorScore[] stores the score in each of the 10 rounds\nfor each competitor.\nThe first index of the array CompetitorScore[] is the same as the index of the competitor in\nCompetitorName[]\nAfter the 10 rounds have been completed, the highest score and the lowest score for each\ncompetitor are discarded.\nThe overall score for each competitor is the total of the remaining 8 scores (after discarding the\nhighest and lowest scores) .\nA competitor with an overall score of 210 or more moves onto the next competition. A competitor\nwith an overall score between 180 and 209 inclusive becomes a reserve competitor. A competitor\nwith an overall score below 180 does not qualify.\nWrite a program that meets the following requirements:\n• inputs the total score (out of 30) for each competitor in each round\n• validates each input is between 0 and 30 inclusive\n• calculates the overall score for each competitor discarding the highest and lowest scores\n• outputs the name of each competitor and if they move onto the next competition, are a\nreserve or do not qualify\n• calculates and outputs the number of competitors who:\n◦ have qualified for the next competition\n◦ are reserve competitors\n◦ do not qualify.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; assume that this has already been done.\nAll inputs and outputs must contain suitable messages.\n* 0000800000015 * DFD\n* 0000800000016 * DFD\n* 0000800000017 * DFD\n\n* 0000800000018 * DFD\n* 0000800000019 * DFD\n* 0000800000020 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
-          "marks": null,
+          "text": "The procedure Time(TotalSeconds) takes the number of seconds as a parameter. The\nprocedure converts the value held in the parameter into minutes and seconds and outputs\nthe result.\nWrite this procedure in pseudocode.\n* 0000800000014 * DFD\n11 The scores for each competitor in an archery competition are recorded.\nThe one-dimensional (1D) array CompetitorName[] is used to store the names of the\ncompetitors.\nThe maximum number of competitors is 30.\nThere are 10 rounds in the competition with a maximum score of 30 per round.\nThe two-dimensional (2D) array CompetitorScore[] stores the score in each of the 10 rounds\nfor each competitor.\nThe first index of the array CompetitorScore[] is the same as the index of the competitor in\nCompetitorName[]\nAfter the 10 rounds have been completed, the highest score and the lowest score for each\ncompetitor are discarded.\nThe overall score for each competitor is the total of the remaining 8 scores (after discarding the\nhighest and lowest scores) .\nA competitor with an overall score of 210 or more moves onto the next competition. A competitor\nwith an overall score between 180 and 209 inclusive becomes a reserve competitor. A competitor\nwith an overall score below 180 does not qualify.\nWrite a program that meets the following requirements:\n• inputs the total score (out of 30) for each competitor in each round\n• validates each input is between 0 and 30 inclusive\n• calculates the overall score for each competitor discarding the highest and lowest scores\n• outputs the name of each competitor and if they move onto the next competition, are a\nreserve or do not qualify\n• calculates and outputs the number of competitors who:\n◦ have qualified for the next competition\n◦ are reserve competitors\n◦ do not qualify.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; assume that this has already been done.\nAll inputs and outputs must contain suitable messages.\n* 0000800000015 * DFD\n* 0000800000016 * DFD\n* 0000800000017 * DFD\n* 0000800000018 * DFD\n* 0000800000019 * DFD\n* 0000800000020 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 4,
           "type": "name",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -403,7 +399,7 @@
           "parts": []
         }
       ],
-      "marks": 26,
+      "marks": 30,
       "text": [
         "ENDIF",
         "* 0000800000007 * DFD"

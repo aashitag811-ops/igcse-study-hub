@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w21",
   "component": "31",
-  "totalMarks": 69,
-  "questionCount": 10,
+  "totalMarks": 66,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -466,9 +466,20 @@
     {
       "id": "10",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDFOR",
+        "12 // delay loop",
+        "13 // delay loop"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
       "parts": [
         {
-          "id": "10c",
+          "id": "14c",
           "label": "(c)",
           "text": "If a sensor reading is out of range, a bit is set in a memory location allocated to that floor. The\naddresses for the memory locations are 401 to 420.\nFor example, memory location 401 is used to store the status of the sensors 1 to 4 on floor 1,\nmemory location 402 is used to store the status of the sensors 1 to 4 on floor 2.\nThe table shows data for some of the floors, with sensor 1 on floor 1 set, sensor 2 on floor 2\nset and sensors 3 and 4 on floor 20 set.\nBits\nMemory Sensor number\nlocation\n1 2 3 4 Floor\n0 0 0 0 1 0 0 0 1\n402 0 0 0 0 0 1 0 0\n… … … … … … … … … …\n0 0 0 0 0 0 1 1",
           "marks": null,
@@ -478,7 +489,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "10ci",
+              "id": "14ci",
               "label": "(i)",
               "text": "The data in memory location 410 is shown.\n410 0 0 0 0 0 1 0 1\nState what this data represents.",
               "marks": 2,
@@ -489,9 +500,9 @@
               "parts": []
             },
             {
-              "id": "10cii",
+              "id": "14cii",
               "label": "(ii)",
-              "text": "Explain the way in which the data from sensor 3 on floor 7 can be checked.\n\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.",
+              "text": "Explain the way in which the data from sensor 3 on floor 7 can be checked.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.",
               "marks": 5,
               "type": "explain",
               "answerType": "long_answer",
@@ -502,13 +513,9 @@
           ]
         }
       ],
-      "marks": 7,
+      "marks": 4,
       "text": [
-        "ENDFOR",
-        "12 // delay loop",
-        "13 // delay loop",
-        "14 UNTIL …………………………………………………………………………",
-        "[4]"
+        "UNTIL …………………………………………………………………………"
       ]
     }
   ]

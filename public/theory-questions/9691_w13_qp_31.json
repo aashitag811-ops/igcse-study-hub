@@ -13,9 +13,9 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Convert the following infix expressions into reverse Polish notation:\nFor\nExaminer's\nUse",
+          "text": "Convert the following infix expressions into reverse Polish notation:",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -58,9 +58,9 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "A binary tree can be used to represent an expression or a statement.\nFor\nExaminer's\nUse\nE *\nM ^\nc 2\nThe diagram shows the binary tree for the infix statement:\nE = M * c ^ 2",
+          "text": "A binary tree can be used to represent an expression or a statement.\nE *\nM ^\nc 2\nThe diagram shows the binary tree for the infix statement:\nE = M * c ^ 2",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
@@ -177,7 +177,7 @@
             {
               "id": "2cii",
               "label": "(ii)",
-              "text": "Explain how the relationships are implemented.\nFor\nExaminer's\nUse",
+              "text": "Explain how the relationships are implemented.",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -246,7 +246,7 @@
         {
           "id": "2e",
           "label": "(e)",
-          "text": "Explain why all tables in the final design should be fully normalised.\nFor\nExaminer's\nUse",
+          "text": "Explain why all tables in the final design should be fully normalised.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -269,9 +269,6 @@
       "marks": 19,
       "text": [
         "Cross country runners take part in races.",
-        "For",
-        "Examiner's",
-        "Use",
         "• A runner must be registered with one club only and club names are unique.",
         "• A club has runners; each runner has a unique national MemberID.",
         "• Each race is organised by a club and the Club Secretary records which runners are",
@@ -332,9 +329,9 @@
             {
               "id": "3biii",
               "label": "(iii)",
-              "text": "Why do computer scientists often write binary numbers in hexadecimal?\nFor\nExaminer's\nUse",
+              "text": "Why do computer scientists often write binary numbers in hexadecimal?",
               "marks": 1,
-              "type": "use",
+              "type": "write",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -355,7 +352,7 @@
             {
               "id": "3ci",
               "label": "(i)",
-              "text": "How many bits are used for each main memory location?\n\nThe trace table below is used to show how the contents of the special-purpose\nregisters change as the program is executed.\nThe steps in the fetch stage of the fetch-execute cycle are shown in the first column\nusing register transfer notation. (For example, MAR ← [PC] means the content of the\nProgram Counter is copied to the Memory Address Register.)",
+              "text": "How many bits are used for each main memory location?\nThe trace table below is used to show how the contents of the special-purpose\nregisters change as the program is executed.\nThe steps in the fetch stage of the fetch-execute cycle are shown in the first column\nusing register transfer notation. (For example, MAR ← [PC] means the content of the\nProgram Counter is copied to the Memory Address Register.)",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -379,7 +376,7 @@
         {
           "id": "3d",
           "label": "(d)",
-          "text": "The following table shows some of a processor’s instruction set in assembly language.\nFor\nExaminer's\nUse\nInstruction\nExplanation\nOp Code Operand\nDirect addressing. Load the contents of the given address\nLDD <address>\nto ACC\nIndirect addressing. At the given address is the address to\nLDI <address>\nbe used. Load the contents of this second address to ACC\nLIX <address>\nLoad the contents of the address to the Index register (IX)\nIndexed addressing. Form the address as <address> +\nLDX <address>\nthe contents of IX. Copy the contents of this address to ACC\nThe following program is to be executed. Shown are:\n• the first four instructions only of this program\n• the memory locations which are accessed by this program.\nAddress Main memory\nLIX 200\nLDD 201\nLDI 201\nLDX 201\nComplete the trace table below for the first four program instructions.\nShow each change in the contents of the registers.\nRegister\nAccumulator (ACC) Index Register (IX)\nInstruction\nLIX 200\nLDD 201\nLDI 201\nLDX 201",
+          "text": "The following table shows some of a processor’s instruction set in assembly language.\nInstruction\nExplanation\nOp Code Operand\nDirect addressing. Load the contents of the given address\nLDD <address>\nto ACC\nIndirect addressing. At the given address is the address to\nLDI <address>\nbe used. Load the contents of this second address to ACC\nLIX <address>\nLoad the contents of the address to the Index register (IX)\nIndexed addressing. Form the address as <address> +\nLDX <address>\nthe contents of IX. Copy the contents of this address to ACC\nThe following program is to be executed. Shown are:\n• the first four instructions only of this program\n• the memory locations which are accessed by this program.\nAddress Main memory\nLIX 200\nLDD 201\nLDI 201\nLDX 201\nComplete the trace table below for the first four program instructions.\nShow each change in the contents of the registers.\nRegister\nAccumulator (ACC) Index Register (IX)\nInstruction\nLIX 200\nLDD 201\nLDI 201\nLDX 201",
           "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
@@ -409,7 +406,7 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "The following scenario is to be implemented with object-oriented programming.\nFor\nExaminer's\nUse\nA library has resources (RESOURCE) available for lending out to borrowers. Resources\ninclude books (BOOK), and recordings (RECORDING). Recordings are available for\neither films (FILM) or music (MUSIC) CDs.\nData stored will include:\n• library ID for every item\n• author for books\n• release date for music CDs and films\n• title for every available item\n• number of tracks for CDs\n• running time for films\n• whether or not on loan\nComplete the class diagram showing the classes and properties only for the data given\nabove.\nRESOURCE\nLibraryID: INTEGER",
+          "text": "The following scenario is to be implemented with object-oriented programming.\nA library has resources (RESOURCE) available for lending out to borrowers. Resources\ninclude books (BOOK), and recordings (RECORDING). Recordings are available for\neither films (FILM) or music (MUSIC) CDs.\nData stored will include:\n• library ID for every item\n• author for books\n• release date for music CDs and films\n• title for every available item\n• number of tracks for CDs\n• running time for films\n• whether or not on loan\nComplete the class diagram showing the classes and properties only for the data given\nabove.\nRESOURCE\nLibraryID: INTEGER",
           "marks": 8,
           "type": "complete",
           "answerType": "long_answer",
@@ -420,7 +417,7 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "Explain what is meant by encapsulation.\nFor\nExaminer's\nUse",
+          "text": "Explain what is meant by encapsulation.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -431,10 +428,7 @@
       ],
       "marks": 13,
       "text": [
-        "Object-oriented programming is one programming paradigm.",
-        "For",
-        "Examiner's",
-        "Use"
+        "Object-oriented programming is one programming paradigm."
       ]
     },
     {
@@ -444,7 +438,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Describe the operation of a stack data structure.\nFor\nExaminer's\nUse\n\nA stack is to be implemented to manage the spooled print jobs sent to a network printer. A\njob reference and the user ID of the network account are recorded for each print job.\nThe stack is implemented using the following user-defined data type and variables.\nTYPE Stack\nJobReference : STRING\nUserID : STRING\nENDTYPE\nIdentifier Data Type Description\nStores the job reference and user ID\nSpoolJob ARRAY[1000] OF Stack\nfor each print job\nStores the index position of the print\nTopOfStack INTEGER\njob currently at the top of the stack\nStores the job reference of the new\nNewReferenceNo STRING\nprint job added to SpoolJob\nStores the user ID of the new print\nNewUserID STRING\njob added to SpoolJob",
+          "text": "Describe the operation of a stack data structure.\nA stack is to be implemented to manage the spooled print jobs sent to a network printer. A\njob reference and the user ID of the network account are recorded for each print job.\nThe stack is implemented using the following user-defined data type and variables.\nTYPE Stack\nJobReference : STRING\nUserID : STRING\nENDTYPE\nIdentifier Data Type Description\nStores the job reference and user ID\nSpoolJob ARRAY[1000] OF Stack\nfor each print job\nStores the index position of the print\nTopOfStack INTEGER\njob currently at the top of the stack\nStores the job reference of the new\nNewReferenceNo STRING\nprint job added to SpoolJob\nStores the user ID of the new print\nNewUserID STRING\njob added to SpoolJob",
           "marks": 1,
           "type": "describe",
           "answerType": "long_answer",
@@ -476,9 +470,9 @@
             {
               "id": "5bii",
               "label": "(ii)",
-              "text": "Spooling a new print job is to be implemented with a procedure PushJob.\nFor\nExaminer's\nUse\nShown below is the incomplete pseudocode for the PushJob procedure.\nUsing the variables and user-defined type given, fill in the missing pseudocode.\nPROCEDURE PushJob\nIF\nTHEN\nOUTPUT \"Stack is already FULL\"\nELSE\nINPUT NewUserID\nTopOfStack ←\nSpoolJob[TopOfStack].JobReference ← NewReferenceNo\nENDIF\nENDPROCEDURE",
+              "text": "Spooling a new print job is to be implemented with a procedure PushJob.\nShown below is the incomplete pseudocode for the PushJob procedure.\nUsing the variables and user-defined type given, fill in the missing pseudocode.\nPROCEDURE PushJob\nIF\nTHEN\nOUTPUT \"Stack is already FULL\"\nELSE\nINPUT NewUserID\nTopOfStack ←\nSpoolJob[TopOfStack].JobReference ← NewReferenceNo\nENDIF\nENDPROCEDURE",
               "marks": 4,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -500,7 +494,7 @@
         {
           "id": "5d",
           "label": "(d)",
-          "text": "Explain why the choice of a stack data structure for this application is a poor choice.\nFor\nSuggest an alternative data structure. Examiner's\nUse",
+          "text": "Explain why the choice of a stack data structure for this application is a poor choice.\nSuggest an alternative data structure. Examiner's",
           "marks": 3,
           "type": "explain",
           "answerType": "long_answer",
@@ -563,7 +557,7 @@
             {
               "id": "6bi",
               "label": "(i)",
-              "text": "The processor receives an interrupt. This triggers the following sequence of steps.\nFor\nExaminer's\nUse\n1. Save the contents of the Program Counter on the\n2. Also save\n3. Load and run the appropriate\n4. Restore what was saved at step 2\n5. Restore the\n6. Continue execution of the interrupted process\nComplete the statements above.",
+              "text": "The processor receives an interrupt. This triggers the following sequence of steps.\n1. Save the contents of the Program Counter on the\n2. Also save\n3. Load and run the appropriate\n4. Restore what was saved at step 2\n5. Restore the\n6. Continue execution of the interrupted process\nComplete the statements above.",
               "marks": 4,
               "type": "complete",
               "answerType": "long_answer",
@@ -606,7 +600,7 @@
         {
           "id": "7b",
           "label": "(b)",
-          "text": "Explain the terms encryption algorithm and encryption key.\nFor\nExaminer's\nUse\nEncryption algorithm\nEncryption key",
+          "text": "Explain the terms encryption algorithm and encryption key.\nEncryption algorithm\nEncryption key",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -628,7 +622,7 @@
         {
           "id": "7d",
           "label": "(d)",
-          "text": "Authorisation and authentication are processes designed to protect the computer\nsystem and data.\nGive one technique used for each.\nAuthorisation\nAuthentication\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Authorisation and authentication are processes designed to protect the computer\nsystem and data.\nGive one technique used for each.\nAuthorisation\nAuthentication\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
           "type": "name",
           "answerType": "short_answer",

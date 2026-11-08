@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "s21",
   "component": "11",
-  "totalMarks": 57,
+  "totalMarks": 75,
   "questionCount": 8,
   "questions": [
     {
@@ -167,20 +167,19 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "Two internet risks are phishing and pharming.",
         "Describe what is meant by phishing and pharming.",
         "Phishing ...........................................................................................................................................",
-        "Pharming ..........................................................................................................................................",
-        "[6]"
+        "Pharming .........................................................................................................................................."
       ]
     },
     {
       "id": "5",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 8,
       "text": [
         "Jamelia has a greenhouse that she uses to grow fruit and vegetables. She needs to make sure",
         "the temperature in the greenhouse stays between 25 °C and 30 °C (inclusive).",
@@ -189,8 +188,7 @@
         "• open a window and turn a heater off if it gets too hot",
         "• close a window and turn a heater on if it gets too cold.",
         "Describe how the system uses the temperature sensor and the microprocessor to maintain the",
-        "temperature in the greenhouse.",
-        "[8]"
+        "temperature in the greenhouse."
       ]
     },
     {
@@ -211,16 +209,16 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "Consider the completed truth table for the given logic statement.\nRow Working space\nA B C X\nnumber\n1 0 0 0 0\n2 0 0 1 1\n3 0 1 0 0\n4 0 1 1 1\n5 1 0 0 0\n6 1 0 1 1",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
+          "text": "Consider the completed truth table for the given logic statement.\nRow Working space\nA B C X\nnumber\n1 0 0 0 0\n2 0 0 1 1\n3 0 1 0 0\n4 0 1 1 1\n5 1 0 0 0\n6 1 0 1 1\n7 1 1 0 0\n8 1 1 1 1\nThere are four errors in the truth table in the output (X) column.\nIdentify the four incorrect outputs.\nWrite the row number to identify each incorrect output.\nRow ______\nRow ______\nRow ______\nRow ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 6,
+      "marks": 10,
       "text": [
         "Consider the logic statement:",
         "X = (((A AND B) OR (C AND NOT B)) XOR NOT C)"
@@ -229,18 +227,9 @@
     {
       "id": "7",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 1 0 0"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
       "parts": [
         {
-          "id": "8a",
+          "id": "7a",
           "label": "(a)",
           "text": "The sound files are compressed using lossless compression.",
           "marks": null,
@@ -250,7 +239,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8ai",
+              "id": "7ai",
               "label": "(i)",
               "text": "Describe how the sound files are compressed using lossless compression.",
               "marks": 4,
@@ -261,7 +250,7 @@
               "parts": []
             },
             {
-              "id": "8aii",
+              "id": "7aii",
               "label": "(ii)",
               "text": "State one reason why the music company would compress the sound files using\nlossless, rather than lossy, compression.",
               "marks": 1,
@@ -272,7 +261,7 @@
               "parts": []
             },
             {
-              "id": "8aiii",
+              "id": "7aiii",
               "label": "(iii)",
               "text": "Give one benefit, to the user, of the music company compressing the sound files.",
               "marks": 1,
@@ -283,7 +272,7 @@
               "parts": []
             },
             {
-              "id": "8aiv",
+              "id": "7aiv",
               "label": "(iv)",
               "text": "Give one drawback of the music company using lossless, rather than lossy, compression\nfor the sound files.",
               "marks": 2,
@@ -296,7 +285,7 @@
           ]
         },
         {
-          "id": "8b",
+          "id": "7b",
           "label": "(b)",
           "text": "Describe how the web pages for the website are requested and displayed on a user’s\ncomputer.",
           "marks": 4,
@@ -307,16 +296,27 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "7c",
           "label": "(c)",
-          "text": "The web server that hosts the website suffers a denial of service (DoS) attack.\nExplain why this will prevent users from accessing the website.\n\n8 Four 7-bit binary values are transmitted from one computer to another. A parity bit is added to\neach binary value creating 8-bit binary values. All the binary values are transmitted and received\ncorrectly.",
+          "text": "The web server that hosts the website suffers a denial of service (DoS) attack.\nExplain why this will prevent users from accessing the website.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A music company has a website that allows users to stream music. The music is stored in sound",
+        "files."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
         {
           "id": "8a",
           "label": "(a)",
@@ -363,7 +363,7 @@
             {
               "id": "8cii",
               "label": "(ii)",
-              "text": "State two drawbacks of using parallel data transmission.\nDrawback 1 ______\nDrawback 2 ______\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "State two drawbacks of using parallel data transmission.\nDrawback 1 ______\nDrawback 2 ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 2,
               "type": "state",
               "answerType": "fill_blank",
@@ -374,19 +374,11 @@
           ]
         }
       ],
-      "marks": 25,
+      "marks": 11,
       "text": [
-        "1 1 1 1",
-        "There are four errors in the truth table in the output (X) column.",
-        "Identify the four incorrect outputs.",
-        "Write the row number to identify each incorrect output.",
-        "Row ........................",
-        "Row ........................",
-        "Row ........................",
-        "Row ........................",
-        "[4]",
-        "7 A music company has a website that allows users to stream music. The music is stored in sound",
-        "files."
+        "Four 7-bit binary values are transmitted from one computer to another. A parity bit is added to",
+        "each binary value creating 8-bit binary values. All the binary values are transmitted and received",
+        "correctly."
       ]
     }
   ]

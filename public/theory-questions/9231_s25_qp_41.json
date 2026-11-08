@@ -3,27 +3,15 @@
   "subjectCode": "9231",
   "session": "s25",
   "component": "41",
-  "totalMarks": 39,
-  "questionCount": 6,
+  "totalMarks": 40,
+  "questionCount": 5,
   "questions": [
     {
       "id": "1",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "The manager of a hardware store is interested in whether there is a difference in the amount spent",
-        "per customer on weekdays ($x) compared to weekends ($y). Random samples of 120 customers on",
-        "weekdays and 80 customers on weekends are taken and the amount spent by each customer is recorded.",
-        "The results are summarised as follows."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
       "parts": [
         {
-          "id": "2a",
+          "id": "1a",
           "label": "(a)",
           "text": "Show that a = and find the values of b and c.",
           "marks": 3,
@@ -34,7 +22,7 @@
           "parts": []
         },
         {
-          "id": "2b",
+          "id": "1b",
           "label": "(b)",
           "text": "Find the mean of X.",
           "marks": 3,
@@ -45,7 +33,7 @@
           "parts": []
         },
         {
-          "id": "2c",
+          "id": "1c",
           "label": "(c)",
           "text": "Find the median of X. \nThe random variable Y is defined by Y = X .",
           "marks": 2,
@@ -56,7 +44,7 @@
           "parts": []
         },
         {
-          "id": "2d",
+          "id": "1d",
           "label": "(d)",
           "text": "Find the cumulative distribution function for Y.",
           "marks": 4,
@@ -69,7 +57,11 @@
       ],
       "marks": 12,
       "text": [
-        "2",
+        "The manager of a hardware store is interested in whether there is a difference in the amount spent",
+        "per customer on weekdays ($x) compared to weekends ($y). Random samples of 120 customers on",
+        "weekdays and 80 customers on weekends are taken and the amount spent by each customer is recorded.",
+        "The results are summarised as follows.",
+        "2 2",
         "/ / / /",
         "x = 10 470 (x - x) = 12 283 y = 6560 (y - y) = 13 520",
         "Test at the 1% significance level whether there is a difference in the mean amount spent per customer on",
@@ -92,8 +84,41 @@
         {
           "id": "3a",
           "label": "(a)",
-          "text": "Use the data to estimate the probability that an egg is broken. Give your answer correct to",
-          "marks": null,
+          "text": "Use the data to estimate the probability that an egg is broken. Give your answer correct to\n4 significant figures. \nIt is decided to carry out a goodness of fit test at the 0.5% significance level to determine whether a\nbinomial distribution fits the data.\nThe observed frequencies and the expected frequencies are given in the following table.\nNumber of broken eggs 0 1 2 3 4 5 6\nObserved frequency 1844 143 11 0 1 0 1\nExpected frequency 1831.3 a 6.016 0.119 0.001 0.000 0.000",
+          "marks": 1,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Show that a = 162 6. correct to 1 decimal place.",
+          "marks": 1,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3c",
+          "label": "(c)",
+          "text": "Carry out a goodness of fit test at the 0.5% level of significance to test whether a binomial\ndistribution is a satisfactory model for the data.",
+          "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3d",
+          "label": "(d)",
+          "text": "Give a reason why a binomial distribution may not be a suitable model in this situation.",
+          "marks": 1,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -101,7 +126,7 @@
           "parts": []
         }
       ],
-      "marks": null,
+      "marks": 8,
       "text": [
         "Eggs in a supermarket are sold in boxes of six. A supermarket manager wishes to model the number of",
         "broken eggs in the boxes sold in the store. A random sample of 2000 boxes is taken and the number of",
@@ -114,39 +139,6 @@
       "id": "4",
       "context": [],
       "parts": [
-        {
-          "id": "4b",
-          "label": "(b)",
-          "text": "Show that a = 162 6. correct to 1 decimal place.",
-          "marks": 1,
-          "type": "calculate",
-          "answerType": "calculate",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "4c",
-          "label": "(c)",
-          "text": "Carry out a goodness of fit test at the 0.5% level of significance to test whether a binomial\ndistribution is a satisfactory model for the data.",
-          "marks": 5,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "4d",
-          "label": "(d)",
-          "text": "Give a reason why a binomial distribution may not be a suitable model in this situation. \n4 A researcher is interested in whether there is a difference between two schools in students’ aptitude for\nEnglish. She randomly chooses 10 students from school X and 8 students of a similar age from school\nY to take a written English test. The scores for the students from school X (x) and school Y (y) are\nsummarised as follows.\n2 2\n/ / / /\nx = 612 x = 40104 y = 444 y = 27 460\nYou should assume that the two distributions are normal and have the same population variance.",
-          "marks": 1,
-          "type": "give",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "4a",
           "label": "(a)",
@@ -170,15 +162,16 @@
           "parts": []
         }
       ],
-      "marks": 14,
+      "marks": 7,
       "text": [
-        "significant figures. [1]",
-        "It is decided to carry out a goodness of fit test at the 0.5% significance level to determine whether a",
-        "binomial distribution fits the data.",
-        "The observed frequencies and the expected frequencies are given in the following table.",
-        "Number of broken eggs 0 1 2 3 4 5 6",
-        "Observed frequency 1844 143 11 0 1 0 1",
-        "Expected frequency 1831.3 a 6.016 0.119 0.001 0.000 0.000"
+        "A researcher is interested in whether there is a difference between two schools in students’ aptitude for",
+        "English. She randomly chooses 10 students from school X and 8 students of a similar age from school",
+        "Y to take a written English test. The scores for the students from school X (x) and school Y (y) are",
+        "summarised as follows.",
+        "2 2",
+        "/ / / /",
+        "x = 612 x = 40104 y = 444 y = 27 460",
+        "You should assume that the two distributions are normal and have the same population variance."
       ]
     },
     {

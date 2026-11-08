@@ -90,8 +90,65 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "The following conditions are invalid.\nGive the reason in each case.",
+          "marks": null,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "35 > 24\nReason ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "abc := cba\nReason ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aiii",
+              "label": "(iii)",
+              "text": "bc < 49\nReason ______",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagram.\n<operator> ::= ______\n<number> ::= ______\n<variable> ::= ______\n<condition> ::= ______",
+          "marks": 6,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
       "text": [
         "The following syntax diagrams for a programming language show the syntax of:",
         "• a condition",
@@ -110,69 +167,14 @@
         "letter",
         "digit operator",
         "1 ==",
-        "2 >"
+        "2 >",
+        "3 <"
       ]
     },
     {
       "id": "3",
       "context": [],
       "parts": [
-        {
-          "id": "3a",
-          "label": "(a)",
-          "text": "The following conditions are invalid.\nGive the reason in each case.",
-          "marks": null,
-          "type": "give",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "3ai",
-              "label": "(i)",
-              "text": "35 > 24\nReason ______",
-              "marks": 1,
-              "type": "complete",
-              "answerType": "fill_blank",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3aii",
-              "label": "(ii)",
-              "text": "abc := cba\nReason ______",
-              "marks": 1,
-              "type": "complete",
-              "answerType": "fill_blank",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3aiii",
-              "label": "(iii)",
-              "text": "bc < 49\nReason ______",
-              "marks": 1,
-              "type": "complete",
-              "answerType": "fill_blank",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "3b",
-          "label": "(b)",
-          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagram.\n<operator> ::= ______\n<number> ::= ______\n<variable> ::= ______\n<condition> ::= ______\n\n3 Protocols are essential for communication between computers.",
-          "marks": 6,
-          "type": "complete",
-          "answerType": "fill_blank",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "3a",
           "label": "(a)",
@@ -196,9 +198,9 @@
           "parts": []
         }
       ],
-      "marks": 15,
+      "marks": 6,
       "text": [
-        "<"
+        "Protocols are essential for communication between computers."
       ]
     },
     {
@@ -219,7 +221,7 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "Complete the Karnaugh Map (K-map) for the truth table above.\nAB\n00 01 11 10\n\nThe K-map can be used to simplify the expression in part (a).",
+          "text": "Complete the Karnaugh Map (K-map) for the truth table above.\nAB\n00 01 11 10\nThe K-map can be used to simplify the expression in part (a).",
           "marks": 1,
           "type": "complete",
           "answerType": "long_answer",
@@ -507,7 +509,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "State three characteristics of massively parallel computers.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "State three characteristics of massively parallel computers.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",

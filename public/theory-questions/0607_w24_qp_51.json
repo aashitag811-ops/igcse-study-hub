@@ -3,7 +3,7 @@
   "subjectCode": "0607",
   "session": "w24",
   "component": "51",
-  "totalMarks": 18,
+  "totalMarks": 29,
   "questionCount": 2,
   "questions": [
     {
@@ -69,8 +69,75 @@
         {
           "id": "1n",
           "label": "(n)",
-          "text": "horizontal cards diagonal cards of cards\n1 0 2 2",
+          "text": "horizontal cards diagonal cards of cards\n1 0 2 2\n2 1 4 5\npart (a) 3\npart (b)(ii) 4",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Find an expression, in terms of n, for",
           "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "the number of horizontal cards in Row n",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "the number of diagonal cards in Row n",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1diii",
+              "label": "(iii)",
+              "text": "the total number of cards in Row n.\nGive your answer in its simplest form.",
+              "marks": 2,
+              "type": "give",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Work out the number of horizontal cards, the number of diagonal cards and the total number of\ncards in Row 40.\nNumber of horizontal cards ______\nNumber of diagonal cards ______\nTotal number of cards ______",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "The total number of cards in Row p is 368.\nWork out how many diagonal cards are in Row p.",
+          "marks": 4,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -78,7 +145,7 @@
           "parts": []
         }
       ],
-      "marks": 1,
+      "marks": 11,
       "text": [
         "This is Row 1 in a house of cards.",
         "There are 0 horizontal cards.",
@@ -94,73 +161,6 @@
       "id": "2",
       "context": [],
       "parts": [
-        {
-          "id": "2d",
-          "label": "(d)",
-          "text": "Find an expression, in terms of n, for",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "2di",
-              "label": "(i)",
-              "text": "the number of horizontal cards in Row n",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "2dii",
-              "label": "(ii)",
-              "text": "the number of diagonal cards in Row n",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "2diii",
-              "label": "(iii)",
-              "text": "the total number of cards in Row n.\nGive your answer in its simplest form.",
-              "marks": null,
-              "type": "give",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "2e",
-          "label": "(e)",
-          "text": "Work out the number of horizontal cards, the number of diagonal cards and the total number of\ncards in Row 40.\nNumber of horizontal cards ______\nNumber of diagonal cards ______\nTotal number of cards ______",
-          "marks": null,
-          "type": "complete",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "2f",
-          "label": "(f)",
-          "text": "The total number of cards in Row p is 368.\nWork out how many diagonal cards are in Row p.\n\n2 The house number is the number of rows in the house.\nThis is House 1.\nThere are 0 horizontal cards.\nThere are 2 diagonal cards.\nThere are 2 cards in total.\nThis is House 2.\nThere is 1 horizontal card.\nThere are 6 diagonal cards.\nThere are 7 cards in total.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "2a",
           "label": "(a)",
@@ -230,7 +230,7 @@
         {
           "id": "2f",
           "label": "(f)",
-          "text": "Find an expression, in terms of h, for the number of diagonal cards in House h.\n\nQuestions 2(g) and 2(h) are printed on the next page.",
+          "text": "Find an expression, in terms of h, for the number of diagonal cards in House h.\nQuestions 2(g) and 2(h) are printed on the next page.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
@@ -242,7 +242,7 @@
           "id": "2g",
           "label": "(g)",
           "text": "Use the expression from part (e) and your answer from part (f) to find an expression for the total\nnumber of cards in House h.\nGive your answer in its simplest form.",
-          "marks": null,
+          "marks": 3,
           "type": "give",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -252,7 +252,7 @@
         {
           "id": "2h",
           "label": "(h)",
-          "text": "Lee makes a house with 100 cards.\nFind the number of cards in the bottom row.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Lee makes a house with 100 cards.\nFind the number of cards in the bottom row.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
@@ -261,12 +261,17 @@
           "parts": []
         }
       ],
-      "marks": 17,
+      "marks": 18,
       "text": [
-        "1 4 5",
-        "part (a) 3",
-        "part (b)(ii) 4",
-        "[2]"
+        "The house number is the number of rows in the house.",
+        "This is House 1.",
+        "There are 0 horizontal cards.",
+        "There are 2 diagonal cards.",
+        "There are 2 cards in total.",
+        "This is House 2.",
+        "There is 1 horizontal card.",
+        "There are 6 diagonal cards.",
+        "There are 7 cards in total."
       ]
     }
   ]

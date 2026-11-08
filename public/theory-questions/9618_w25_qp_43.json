@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w25",
   "component": "43",
-  "totalMarks": 71,
+  "totalMarks": 75,
   "questionCount": 3,
   "questions": [
     {
@@ -124,8 +124,53 @@
             {
               "id": "1ci",
               "label": "(i)",
-              "text": "The table gives the row and column position on the board to store each of the five objects\ncreated in part 1(a)(iii).\nObject column\nrow position\nidentifier position\nObject1 0 0\nObject2 9 9\nObject3\n4 5\nObject4",
-              "marks": null,
+              "text": "The table gives the row and column position on the board to store each of the five objects\ncreated in part 1(a)(iii).\nObject column\nrow position\nidentifier position\nObject1 0 0\nObject2 9 9\nObject3\n4 5\nObject4\n2 2\nObject5\n8 7\nWrite program code to amend the main program to:\n• declare a new instance of Board()\n• store each BoardObject in the position given in the table\n• call DisplayBoard() for the new board object.\nSave your program.\nCopy and paste the program code into part 1(c)(i) in the evidence document.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 1(c)(ii) in the evidence document.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1di",
+              "label": "(i)",
+              "text": "Amend the main program to:\n• repeatedly take a row position as input until it is between 0 and 9 inclusive\n• repeatedly take a column position as input until it is between 0 and 9 inclusive\n• use the appropriate method(s) to identify if there is an object in the array position\ninput\n• output \"Miss\" if there is an empty BoardObject in that position\n• output the Code and Value if there is a non-empty BoardObject in that position.\nAll outputs must include appropriate messages.\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1dii",
+              "label": "(ii)",
+              "text": "Test your program by entering this test data in the order given:\nRow position first input: 10\nRow position second input: 4\nColumn position first input: –1\nColumn position second input: 5\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 1(d)(ii) in the evidence document.",
+              "marks": 1,
               "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -135,7 +180,7 @@
           ]
         }
       ],
-      "marks": 22,
+      "marks": 31,
       "text": [
         "A program stores data for a board game using Object-Oriented Programming (OOP). The game",
         "has objects that are placed on the board. Each object has a string code (for example \"A\") and an",
@@ -153,40 +198,6 @@
       "id": "2",
       "context": [],
       "parts": [
-        {
-          "id": "2d",
-          "label": "(d)",
-          "text": "",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "2di",
-              "label": "(i)",
-              "text": "Amend the main program to:\n• repeatedly take a row position as input until it is between 0 and 9 inclusive\n• repeatedly take a column position as input until it is between 0 and 9 inclusive\n• use the appropriate method(s) to identify if there is an object in the array position\ninput\n• output \"Miss\" if there is an empty BoardObject in that position\n• output the Code and Value if there is a non-empty BoardObject in that position.\nAll outputs must include appropriate messages.\nSave your program.\nCopy and paste the program code into part 1(d)(i) in the evidence document.",
-              "marks": 4,
-              "type": "identify",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "2dii",
-              "label": "(ii)",
-              "text": "Test your program by entering this test data in the order given:\nRow position first input: 10\nRow position second input: 4\nColumn position first input: –1\nColumn position second input: 5\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 1(d)(ii) in the evidence document.\n\n2 A program reads string data from a text file into a linear queue and then compresses the data.\nThe queue is created using the global 1D array Queue. The queue can store up to 100 elements.\nEach element is initialised to the empty string \"\"\nThe queue has two pointers that are global to the program:\n• QueueHead that points to the index of the first element in the queue, initialised to –1\n• QueueTail that points to the index of the last element in the queue, initialised to –1\nThe global variable NumberItems stores the number of elements stored in the queue, initialised\nto 0",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
         {
           "id": "2a",
           "label": "(a)",
@@ -277,18 +288,16 @@
           ]
         }
       ],
-      "marks": 29,
+      "marks": 24,
       "text": [
-        "2",
-        "Object5",
-        "8 7",
-        "Write program code to amend the main program to:",
-        "• declare a new instance of Board()",
-        "• store each BoardObject in the position given in the table",
-        "• call DisplayBoard() for the new board object.",
-        "Save your program.",
-        "Copy and paste the program code into part 1(c)(i) in the evidence document.",
-        "[3]"
+        "A program reads string data from a text file into a linear queue and then compresses the data.",
+        "The queue is created using the global 1D array Queue. The queue can store up to 100 elements.",
+        "Each element is initialised to the empty string \"\"",
+        "The queue has two pointers that are global to the program:",
+        "• QueueHead that points to the index of the first element in the queue, initialised to –1",
+        "• QueueTail that points to the index of the last element in the queue, initialised to –1",
+        "The global variable NumberItems stores the number of elements stored in the queue, initialised",
+        "to 0"
       ]
     },
     {
@@ -386,7 +395,7 @@
             {
               "id": "3biv",
               "label": "(iv)",
-              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 3(b)(iv) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot(s) into part 3(b)(iv) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",

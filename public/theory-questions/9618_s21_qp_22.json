@@ -4,7 +4,7 @@
   "session": "s21",
   "component": "22",
   "totalMarks": 61,
-  "questionCount": 8,
+  "questionCount": 15,
   "questions": [
     {
       "id": "1",
@@ -206,13 +206,12 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 6,
       "text": [
         "A teacher uses a paper-based system to store marks for a class test. The teacher requires a",
         "program to assign grades based on these results.",
         "The program will output the grades together with the average mark.",
-        "Write a detailed description of the algorithm that will be needed.",
-        "[6]"
+        "Write a detailed description of the algorithm that will be needed."
       ]
     },
     {
@@ -256,65 +255,105 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "The following is a pseudocode function.\nLine numbers are given for reference only.\n01 FUNCTION StringClean(InString : STRING) RETURNS STRING\n03 DECLARE NextChar : CHAR\n04 DECLARE OutString : STRING\n05 DECLARE Counter : INTEGER\n07 OutString \"\"\n09 FOR Counter 1 TO LENGTH(InString)\n10 NextChar MID(InString, Counter, 1)\n11 NextChar LCASE(NextChar)\n12 IF NOT((NextChar < 'a') OR (NextChar > 'z')) THEN\n13 OutString OutString & NextChar\n14 ENDIF\n15 NEXT Counter\n17 RETURN OutString\n19 ENDFUNCTION",
+          "text": "The following is a pseudocode function.\nLine numbers are given for reference only.\n01 FUNCTION StringClean(InString : STRING) RETURNS STRING\n03 DECLARE NextChar : CHAR\n04 DECLARE OutString : STRING\n05 DECLARE Counter : INTEGER",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": [
-            {
-              "id": "5bi",
-              "label": "(i)",
-              "text": "Examine the pseudocode and complete the following table.\nAnswer\nGive a line number containing an example of an initialisation statement.\nGive a line number containing the start of a repeating block of code.\nGive a line number containing a logic operation.\nGive the number of parameters to the function MID().",
-              "marks": 4,
-              "type": "give",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "5bii",
-              "label": "(ii)",
-              "text": "Write a simplified version of the statement in line 12.",
-              "marks": 2,
-              "type": "write",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
+          "parts": []
         }
       ],
-      "marks": 15,
+      "marks": 9,
       "text": []
     },
     {
-      "id": "6",
+      "id": "07",
       "context": [],
       "parts": [],
       "marks": null,
       "text": [
-        "A procedure CountVowels() will:",
-        "• be called with a string containing alphanumeric characters as its parameter",
-        "• count and output the number of occurrences of each vowel (a, e, i, o, u) in the string",
-        "• count and output the number of occurrences of the other alphabetic characters (as a single",
-        "total).",
-        "The string may contain both upper and lower case characters.",
-        "Each count value will be stored in a unique element of a global 1D array CharCount of type",
-        "INTEGER. The array will contain six elements.",
-        "Write pseudocode for the procedure CountVowels().",
-        "[8]"
+        "OutString \"\""
       ]
     },
     {
-      "id": "7",
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Counter 1 TO LENGTH(InString)"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NextChar MID(InString, Counter, 1)"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NextChar LCASE(NextChar)"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF NOT((NextChar < 'a') OR (NextChar > 'z')) THEN"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OutString OutString & NextChar"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NEXT Counter"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "RETURN OutString"
+      ]
+    },
+    {
+      "id": "19",
       "context": [],
       "parts": [
         {
-          "id": "7a",
+          "id": "19a",
           "label": "(a)",
           "text": "Give a test string that could be used to show that all four formatting requirements have been\napplied correctly.\nUse the symbol ‘∇’ to represent a space character.",
           "marks": 3,
@@ -325,37 +364,18 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "19b",
           "label": "(b)",
-          "text": "The FormatName() procedure should assign a value to the global variable FString.\nThere is a fault in the program, which means that the assignment does not always take place.\nExplain two ways of exposing the fault.",
+          "text": "The FormatName() procedure should assign a value to the global variable FString.\nThere is a fault in the program, which means that the assignment does not always take place.\nExplain two ways of exposing the fault.\n8 A program is needed to take a string containing a full name and to produce a new string of initials.\nSome words in the full name will be ignored. For example, “the”, “and”, “of”, “for” and “to” may all\nbe ignored.\nEach letter of the new string must be upper case.\nFor example:\nFull name Initials\nIntegrated Development Environment IDE\nThe American Standard Code for Information Interchange ASCII\nThe programmer has decided to use the following global variables:\n• a ten element 1D array IgnoreList of type STRING to store the ignored words\n• a string FNString to store the full name string.\nAssume that:\n• each alphabetic character in the full name string may be either upper or lower case\n• the full name string contains at least one word.\nThe programmer has started to define program modules as follows:\nModule Description\n• Called with an INTEGER as its parameter, representing the number of\na word in FNString\nGetStart()\n• Returns the character start position of that word in FNString or\nreturns -1 if that word does not exist\n• For example: GetStart(3) applied to \"hot and cold\" returns 9\n• Called with the position of the first character of a word in FNString\nas its parameter\nGetWord() • Returns the word from FNString\n• For example: if FNString contains the string \"hot and cold\",\nGetWord(9) returns \"cold\"\n• Called with a STRING parameter representing a word\nIgnoreWord()\n• Searches for the word in the IgnoreList array\n• Returns TRUE if the word is found, otherwise returns FALSE\n• Processes the sequence of words in the full name one word at a time\n• Calls GetStart(), GetWord() and IgnoreWord() to process\nGetInitials()\neach word to form the new string\n• Outputs the new string",
           "marks": 2,
-          "type": "explain",
-          "answerType": "long_answer",
+          "type": "name",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 5,
-      "text": [
-        "A procedure, FormatName():",
-        "• is called with a string containing words and spaces as its parameter. In this context, a word is",
-        "any sequence of characters that does not contain a space character.",
-        "• creates a new formatted string from this string with the following requirements:",
-        "1. Any leading spaces removed (spaces before the first word).",
-        "2. Any trailing spaces removed (spaces after the last word).",
-        "3. Any multiple spaces between words converted to a single space.",
-        "4. All characters converted to lower case.",
-        "The FormatName() procedure has been written in a programming language and is to be tested",
-        "using the black-box method."
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "8a",
+          "id": "19a",
           "label": "(a)",
           "text": "Write pseudocode for the module IgnoreWord().",
           "marks": 5,
@@ -366,9 +386,9 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "19b",
           "label": "(b)",
-          "text": "Write pseudocode for the module GetInitials().\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Write pseudocode for the module GetInitials().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 8,
           "type": "write",
           "answerType": "short_answer",
@@ -377,44 +397,9 @@
           "parts": []
         }
       ],
-      "marks": 13,
+      "marks": 18,
       "text": [
-        "A program is needed to take a string containing a full name and to produce a new string of initials.",
-        "Some words in the full name will be ignored. For example, “the”, “and”, “of”, “for” and “to” may all",
-        "be ignored.",
-        "Each letter of the new string must be upper case.",
-        "For example:",
-        "Full name Initials",
-        "Integrated Development Environment IDE",
-        "The American Standard Code for Information Interchange ASCII",
-        "The programmer has decided to use the following global variables:",
-        "• a ten element 1D array IgnoreList of type STRING to store the ignored words",
-        "• a string FNString to store the full name string.",
-        "Assume that:",
-        "• each alphabetic character in the full name string may be either upper or lower case",
-        "• the full name string contains at least one word.",
-        "The programmer has started to define program modules as follows:",
-        "Module Description",
-        "• Called with an INTEGER as its parameter, representing the number of",
-        "a word in FNString",
-        "GetStart()",
-        "• Returns the character start position of that word in FNString or",
-        "returns -1 if that word does not exist",
-        "• For example: GetStart(3) applied to \"hot and cold\" returns 9",
-        "• Called with the position of the first character of a word in FNString",
-        "as its parameter",
-        "GetWord() • Returns the word from FNString",
-        "• For example: if FNString contains the string \"hot and cold\",",
-        "GetWord(9) returns \"cold\"",
-        "• Called with a STRING parameter representing a word",
-        "IgnoreWord()",
-        "• Searches for the word in the IgnoreList array",
-        "• Returns TRUE if the word is found, otherwise returns FALSE",
-        "• Processes the sequence of words in the full name one word at a time",
-        "• Calls GetStart(), GetWord() and IgnoreWord() to process",
-        "GetInitials()",
-        "each word to form the new string",
-        "• Outputs the new string"
+        "ENDFUNCTION"
       ]
     }
   ]

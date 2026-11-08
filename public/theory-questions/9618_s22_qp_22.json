@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "s22",
   "component": "22",
-  "totalMarks": 64,
-  "questionCount": 8,
+  "totalMarks": 68,
+  "questionCount": 17,
   "questions": [
     {
       "id": "1",
@@ -62,7 +62,7 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "An algorithm is described as follows:",
         "1. Input an integer value.",
@@ -73,8 +73,7 @@
         "6. Output the value of the count with a suitable message.",
         "Draw a program flowchart to represent the algorithm.",
         "START",
-        "END",
-        "[4]"
+        "END"
       ]
     },
     {
@@ -163,9 +162,117 @@
     {
       "id": "5",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Study the following pseudocode. Line numbers are for reference only."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "PROCEDURE Encode()"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE CountA, CountB, ThisNum : INTEGER"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE ThisChar : CHAR"
+      ]
+    },
+    {
+      "id": "13",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Flag : BOOLEAN"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CountA 0"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "CountB 10"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Flag TRUE"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "INPUT ThisNum"
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "WHILE ThisNum <> 0"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ThisChar LEFT(NUM_TO_STR(ThisNum), 1)"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF Flag = TRUE THEN"
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "21a",
           "label": "(a)",
           "text": "Procedure Encode() contains a loop structure.\nIdentify the type of loop and state the condition that ends the loop.\nDo not include pseudocode statements in your answer.\nType ______\nCondition ______",
           "marks": 2,
@@ -176,7 +283,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "21b",
           "label": "(b)",
           "text": "Complete the trace table below by dry running the procedure Encode() when the following\nvalues are input:\n12, 24, 57, 43, 56, 22, 31, 32, 47, 99, 0\nThe first row is already complete.\nThisNum ThisChar CountA CountB Flag OUTPUT\n0 10 TRUE",
           "marks": 6,
@@ -187,10 +294,65 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "21c",
           "label": "(c)",
-          "text": "Procedure Encode() is part of a modular program. Integration testing is to be carried out on\nthe program.\nDescribe integration testing.",
+          "text": "Procedure Encode() is part of a modular program. Integration testing is to be carried out on\nthe program.\nDescribe integration testing.\n6 A string represents a series of whole numbers, separated by commas.\nFor example:\n\"12,13,451,22\"\nAssume that:\n• the comma character ',' is used as a separator\n• the string contains only the characters '0' to '9' and the comma character ','.\nA procedure Parse will:\n• take the string as a parameter\n• extract each number in turn\n• calculate the total value and average value of all the numbers\n• output the total and average values with a suitable message.\nWrite pseudocode for the procedure.\nPROCEDURE Parse(InString : STRING)\nENDPROCEDURE \n7 A programming language has string functions equivalent to those given in the insert.\nThe language includes a LEFT() and a RIGHT() function, but it does not have a MID() function.",
           "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21a",
+          "label": "(a)",
+          "text": "Write pseudocode for an algorithm to implement your own version of the MID() function\nwhich will operate in the same way as that shown in the insert.\nDo not use the MID() function given in the insert, but you may use any of the other functions.\nAssume that the values passed to the function will be correct.",
+          "marks": 4,
+          "type": "use",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21b",
+          "label": "(b)",
+          "text": "The values passed to your MID() function in part (a) need to be validated.\nAssume that the values are of the correct data type.\nState two checks that could be applied to the values passed to the function.\n8 A program allows a user to save passwords used to log in to websites. A stored password is then\ninserted automatically when the user logs in to the corresponding website.\nA global 2D array Secret of type STRING stores the passwords together with the website domain\nname where they are used. Secret contains 1000 elements organised as 500 rows by 2 columns.\nUnused elements contain the empty string (\"\"). These may occur anywhere in the array.\nAn example of a part of the array is:\nArray element Value\nSecret[27, 1] \"thiswebsite.com\"\nSecret[27, 2]\n\"\"\nSecret[28, 1] \"thatwebsite.com\"\nSecret[28, 2]\n\"\"\nNote:\n• For security, the passwords are stored in an encrypted form, shown as \"\" in the\nexample.\n• The passwords cannot be used without being decrypted.\n• You may assume that the encrypted form of a password will NOT be an empty string.\nThe programmer has started to define program modules as follows:\nModule Description\n• Takes two parameters:\n○ a string\n○ a character\nExists()\n• Performs a case-sensitive search for the character in the string\n• Returns TRUE if the character occurs in the string, otherwise\nreturns FALSE\n• Takes a password as a parameter of type string\nEncrypt()\n• Returns the encrypted form of the password as a string\n• Takes an encrypted password as a parameter of type string\nDecrypt()\n• Returns the decrypted form of the password as a string\nNote: in a case-sensitive comparison, 'a' is not the same as 'A'.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21a",
+          "label": "(a)",
+          "text": "Write pseudocode for the module Exists().",
+          "marks": 5,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21b",
+          "label": "(b)",
+          "text": "A new module SearchDuplicates() will:\n• search for the first password that occurs more than once in the array and output a\nmessage each time a duplicate is found.\nFor example, if the same password was used for the three websites ThisWebsite.com,\nwebsite27.net and websiteZ99.org, then the following messages will be output:\n\"Password for ThisWebsite.com also used for website27.net\"\n\"Password for ThisWebsite.com also used for websiteZ99.org\"\n• end once all messages have been output.\nThe module will output a message if no duplicates are found.\nFor example:\n\"No duplicate passwords found\"\nWrite efficient pseudocode for the module SearchDuplicates(). Encrypt() and\nDecrypt() functions have been written.\nNote: It is necessary to decrypt each password before checking its value.",
+          "marks": 8,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "21c",
+          "label": "(c)",
+          "text": "A password has a fixed format, consisting of three groups of four alphanumeric characters,\nseparated by the hyphen character '-'.\nAn example of a password is:\n\"FxAf-3haV-Tq49\"\nEach password must:\n• be 14 characters long\n• be organised as three groups of four alphanumeric characters. The groups are separated\nby hyphen characters\n• not include any duplicated characters, except for the hyphen characters.\nAn algorithm is needed for a new function GeneratePassword(), which will generate and\nreturn a password in this format.\nAssume that the following modules have already been written:\nModule Description\n• Takes two parameters:\n○ a string\n○ a character\nExists()\n• Performs a case-sensitive search for the character in the\nstring\n• Returns TRUE if the character occurs in the string, otherwise\nreturns FALSE\n• Generates a single random character from within one of the\nfollowing ranges:\n○ 'a' to 'z'\nRandomChar()\n○ 'A' to 'Z'\n○ '0' to '9'\n• Returns the character\nNote: in a case-sensitive comparison, 'a' is not the same as 'A'.\nDescribe the algorithm for GeneratePassword().\nDo not use pseudocode statements in your answer.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 6,
           "type": "describe",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -198,21 +360,9 @@
           "parts": []
         }
       ],
-      "marks": 10,
+      "marks": 35,
       "text": [
-        "Study the following pseudocode. Line numbers are for reference only.",
-        "10 PROCEDURE Encode()",
-        "11 DECLARE CountA, CountB, ThisNum : INTEGER",
-        "12 DECLARE ThisChar : CHAR",
-        "13 DECLARE Flag : BOOLEAN",
-        "14 CountA 0",
-        "15 CountB 10",
-        "16 Flag TRUE",
-        "17 INPUT ThisNum",
-        "18 WHILE ThisNum <> 0",
-        "19 ThisChar LEFT(NUM_TO_STR(ThisNum), 1)",
-        "20 IF Flag = TRUE THEN",
-        "21 CASE OF ThisChar",
+        "CASE OF ThisChar",
         "22 '1' : CountA CountA + 1",
         "23 '2' : IF CountB < 10 THEN",
         "24 CountA CountA + 1",
@@ -234,137 +384,6 @@
         "40 ENDWHILE",
         "41 OUTPUT CountA",
         "42 ENDPROCEDURE"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A string represents a series of whole numbers, separated by commas.",
-        "For example:",
-        "\"12,13,451,22\"",
-        "Assume that:",
-        "• the comma character ',' is used as a separator",
-        "• the string contains only the characters '0' to '9' and the comma character ','.",
-        "A procedure Parse will:",
-        "• take the string as a parameter",
-        "• extract each number in turn",
-        "• calculate the total value and average value of all the numbers",
-        "• output the total and average values with a suitable message.",
-        "Write pseudocode for the procedure.",
-        "PROCEDURE Parse(InString : STRING)",
-        "ENDPROCEDURE [7]"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [
-        {
-          "id": "7a",
-          "label": "(a)",
-          "text": "Write pseudocode for an algorithm to implement your own version of the MID() function\nwhich will operate in the same way as that shown in the insert.\nDo not use the MID() function given in the insert, but you may use any of the other functions.\nAssume that the values passed to the function will be correct.",
-          "marks": 4,
-          "type": "use",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "7b",
-          "label": "(b)",
-          "text": "The values passed to your MID() function in part (a) need to be validated.\nAssume that the values are of the correct data type.\nState two checks that could be applied to the values passed to the function.",
-          "marks": 2,
-          "type": "state",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 6,
-      "text": [
-        "A programming language has string functions equivalent to those given in the insert.",
-        "The language includes a LEFT() and a RIGHT() function, but it does not have a MID() function."
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [
-        {
-          "id": "8a",
-          "label": "(a)",
-          "text": "Write pseudocode for the module Exists().",
-          "marks": 5,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "8b",
-          "label": "(b)",
-          "text": "A new module SearchDuplicates() will:\n• search for the first password that occurs more than once in the array and output a\nmessage each time a duplicate is found.\nFor example, if the same password was used for the three websites ThisWebsite.com,\nwebsite27.net and websiteZ99.org, then the following messages will be output:\n\"Password for ThisWebsite.com also used for website27.net\"\n\"Password for ThisWebsite.com also used for websiteZ99.org\"\n• end once all messages have been output.\nThe module will output a message if no duplicates are found.\nFor example:\n\"No duplicate passwords found\"\nWrite efficient pseudocode for the module SearchDuplicates(). Encrypt() and\nDecrypt() functions have been written.\nNote: It is necessary to decrypt each password before checking its value.",
-          "marks": 8,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "8c",
-          "label": "(c)",
-          "text": "A password has a fixed format, consisting of three groups of four alphanumeric characters,\nseparated by the hyphen character '-'.\nAn example of a password is:\n\"FxAf-3haV-Tq49\"\nEach password must:\n• be 14 characters long\n• be organised as three groups of four alphanumeric characters. The groups are separated\nby hyphen characters\n• not include any duplicated characters, except for the hyphen characters.\nAn algorithm is needed for a new function GeneratePassword(), which will generate and\nreturn a password in this format.\nAssume that the following modules have already been written:\nModule Description\n• Takes two parameters:\n○ a string\n○ a character\nExists()\n• Performs a case-sensitive search for the character in the\nstring\n• Returns TRUE if the character occurs in the string, otherwise\nreturns FALSE\n• Generates a single random character from within one of the\nfollowing ranges:\n○ 'a' to 'z'\nRandomChar()\n○ 'A' to 'Z'\n○ '0' to '9'\n• Returns the character\nNote: in a case-sensitive comparison, 'a' is not the same as 'A'.\nDescribe the algorithm for GeneratePassword().\nDo not use pseudocode statements in your answer.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
-          "marks": 6,
-          "type": "describe",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 19,
-      "text": [
-        "A program allows a user to save passwords used to log in to websites. A stored password is then",
-        "inserted automatically when the user logs in to the corresponding website.",
-        "A global 2D array Secret of type STRING stores the passwords together with the website domain",
-        "name where they are used. Secret contains 1000 elements organised as 500 rows by 2 columns.",
-        "Unused elements contain the empty string (\"\"). These may occur anywhere in the array.",
-        "An example of a part of the array is:",
-        "Array element Value",
-        "Secret[27, 1] \"thiswebsite.com\"",
-        "Secret[27, 2]",
-        "\"\"",
-        "Secret[28, 1] \"thatwebsite.com\"",
-        "Secret[28, 2]",
-        "\"\"",
-        "Note:",
-        "• For security, the passwords are stored in an encrypted form, shown as \"\" in the",
-        "example.",
-        "• The passwords cannot be used without being decrypted.",
-        "• You may assume that the encrypted form of a password will NOT be an empty string.",
-        "The programmer has started to define program modules as follows:",
-        "Module Description",
-        "• Takes two parameters:",
-        "○ a string",
-        "○ a character",
-        "Exists()",
-        "• Performs a case-sensitive search for the character in the string",
-        "• Returns TRUE if the character occurs in the string, otherwise",
-        "returns FALSE",
-        "• Takes a password as a parameter of type string",
-        "Encrypt()",
-        "• Returns the encrypted form of the password as a string",
-        "• Takes an encrypted password as a parameter of type string",
-        "Decrypt()",
-        "• Returns the decrypted form of the password as a string",
-        "Note: in a case-sensitive comparison, 'a' is not the same as 'A'."
       ]
     }
   ]

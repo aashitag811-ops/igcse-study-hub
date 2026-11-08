@@ -3,7 +3,7 @@
   "subjectCode": "0625",
   "session": "s23",
   "component": "53",
-  "totalMarks": 23,
+  "totalMarks": 40,
   "questionCount": 4,
   "questions": [
     {
@@ -34,7 +34,7 @@
             {
               "id": "1aii",
               "label": "(ii)",
-              "text": "Place the metre ruler on the pivot. Adjust the position of the metre ruler on the pivot until\nthe metre ruler is as near as possible to being balanced. Check that the position of the\ncentre of the load remains at the 5.0 cm mark.\nRecord, in Table 1.1, the scale reading p on the ruler at the position of the pivot.\nCalculate, and record in Table 1.1:\n• The distance a between the 5.0 cm mark and the pivot.\nUse your value of p and the equation a = p – 5.0.\n• The distance b between the 50.0 cm mark and the pivot.\nUse your value of p and the equation b = 50.0 – p.\nRepeat this procedure for values of M = 40 g, 60 g, 80 g and 100 g.\n\nTable 1.1\nM/ g p/ cm a/ cm b/ cm",
+              "text": "Place the metre ruler on the pivot. Adjust the position of the metre ruler on the pivot until\nthe metre ruler is as near as possible to being balanced. Check that the position of the\ncentre of the load remains at the 5.0 cm mark.\nRecord, in Table 1.1, the scale reading p on the ruler at the position of the pivot.\nCalculate, and record in Table 1.1:\n• The distance a between the 5.0 cm mark and the pivot.\nUse your value of p and the equation a = p – 5.0.\n• The distance b between the 50.0 cm mark and the pivot.\nUse your value of p and the equation b = 50.0 – p.\nRepeat this procedure for values of M = 40 g, 60 g, 80 g and 100 g.\nTable 1.1\nM/ g p/ cm a/ cm b/ cm",
               "marks": 2,
               "type": "calculate",
               "answerType": "calculate",
@@ -142,16 +142,106 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "Circuit B\nConnect a second 3Ω resistor between terminals P and Q so that it is in parallel with the first\n3Ω resistor, as shown in Fig. 2.2. The rest of the circuit must remain as in Fig. 2.1.",
-          "marks": null,
+          "text": "Circuit B\nConnect a second 3Ω resistor between terminals P and Q so that it is in parallel with the first\n3Ω resistor, as shown in Fig. 2.2. The rest of the circuit must remain as in Fig. 2.1.\n3 Ω\n3 Ω\nP Q\nFig. 2.2\nClose the switch.\nMeasure, and record in Table 2.1, the potential difference (p.d.) V across resistor U.\nMeasure, and record in Table 2.1, the current I in the circuit.\nOpen the switch.",
+          "marks": 1,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Circuit C\nConnect a third 3Ω resistor between terminals P and Q so that it is in parallel with the other\n3Ω resistors, as shown in Fig. 2.3. The rest of the circuit must remain as in Fig. 2.1.\n3 Ω\n3 Ω\nP Q\n3 Ω\nFig. 2.3\nClose the switch.\nMeasure, and record in Table 2.1, the potential difference (p.d.) V across resistor U.\nMeasure, and record in Table 2.1, the current I in the circuit.\nOpen the switch.",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "Calculate, and record in Table 2.1, the resistance R of resistor U for each combination of\nresistors.\nUse your readings from Table 2.1 and the equation R = .",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "A student suggests that the values of R should be the same.\nState whether your results support this suggestion. Justify your statement by reference\nto values from your results.\nstatement ______\njustification ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2e",
+          "label": "(e)",
+          "text": "A student determines the resistance of resistor U using a variable resistor to control the\ncurrent in the circuit.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ei",
+              "label": "(i)",
+              "text": "Briefly explain one advantage of using a variable resistor for this purpose rather than the\nprocedure carried out in (a), (b) and (c).",
+              "marks": 1,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2eii",
+              "label": "(ii)",
+              "text": "Draw the circuit symbol for a variable resistor.",
+              "marks": 1,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2f",
+          "label": "(f)",
+          "text": "Another student suggests that potential difference and current for resistor U are proportional.\nState how a graph of potential difference against current for resistor U can confirm this\nsuggestion.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 1,
+      "marks": 11,
       "text": [
         "In this experiment, you will investigate circuits containing different combinations of resistors.",
         "Fig. 2.1 shows circuit A which has been set up for you.",
@@ -165,96 +255,6 @@
       "id": "3",
       "context": [],
       "parts": [
-        {
-          "id": "3c",
-          "label": "(c)",
-          "text": "Circuit C\nConnect a third 3Ω resistor between terminals P and Q so that it is in parallel with the other\n3Ω resistors, as shown in Fig. 2.3. The rest of the circuit must remain as in Fig. 2.1.\n3 Ω\n3 Ω\nP Q\n3 Ω\nFig. 2.3\nClose the switch.\nMeasure, and record in Table 2.1, the potential difference (p.d.) V across resistor U.\nMeasure, and record in Table 2.1, the current I in the circuit.\nOpen the switch.",
-          "marks": 1,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3d",
-          "label": "(d)",
-          "text": "",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "3di",
-              "label": "(i)",
-              "text": "Calculate, and record in Table 2.1, the resistance R of resistor U for each combination of\nresistors.\nUse your readings from Table 2.1 and the equation R = .",
-              "marks": 3,
-              "type": "calculate",
-              "answerType": "calculate",
-              "hasDiagramRef": true,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3dii",
-              "label": "(ii)",
-              "text": "A student suggests that the values of R should be the same.\nState whether your results support this suggestion. Justify your statement by reference\nto values from your results.\nstatement ______\njustification ______",
-              "marks": 2,
-              "type": "state",
-              "answerType": "fill_blank",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "3e",
-          "label": "(e)",
-          "text": "A student determines the resistance of resistor U using a variable resistor to control the\ncurrent in the circuit.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "3ei",
-              "label": "(i)",
-              "text": "Briefly explain one advantage of using a variable resistor for this purpose rather than the\nprocedure carried out in (a), (b) and (c).",
-              "marks": 1,
-              "type": "explain",
-              "answerType": "long_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3eii",
-              "label": "(ii)",
-              "text": "Draw the circuit symbol for a variable resistor.",
-              "marks": 1,
-              "type": "draw",
-              "answerType": "diagram_only",
-              "hasDiagramRef": false,
-              "diagramOnly": true,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "3f",
-          "label": "(f)",
-          "text": "Another student suggests that potential difference and current for resistor U are proportional.\nState how a graph of potential difference against current for resistor U can confirm this\nsuggestion.\n\n3 In this experiment, you will investigate the reflection of light by two mirrors.\nCarry out the following instructions, using the separate ray-trace sheet provided.\nYou may refer to Fig. 3.1 for guidance.\nray-trace sheet\nhole\n6 cm\nNN\n50° 50°\nmirror\nmirror\nV i\nE G\neye\nFig. 3.1",
-          "marks": 1,
-          "type": "state",
-          "answerType": "short_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "3a",
           "label": "(a)",
@@ -347,7 +347,7 @@
         {
           "id": "3f",
           "label": "(f)",
-          "text": "Suggest one reason why different students, all doing this experiment carefully, may not\nobtain identical results.\n\nTie your ray-trace sheet into this booklet between pages 8 and 9.",
+          "text": "Suggest one reason why different students, all doing this experiment carefully, may not\nobtain identical results.\nTie your ray-trace sheet into this booklet between pages 8 and 9.",
           "marks": 1,
           "type": "suggest",
           "answerType": "long_answer",
@@ -358,22 +358,27 @@
       ],
       "marks": 11,
       "text": [
-        "Ω",
-        "3 Ω",
-        "P Q",
-        "Fig. 2.2",
-        "Close the switch.",
-        "Measure, and record in Table 2.1, the potential difference (p.d.) V across resistor U.",
-        "Measure, and record in Table 2.1, the current I in the circuit.",
-        "Open the switch.",
-        "[1]"
+        "In this experiment, you will investigate the reflection of light by two mirrors.",
+        "Carry out the following instructions, using the separate ray-trace sheet provided.",
+        "You may refer to Fig. 3.1 for guidance.",
+        "ray-trace sheet",
+        "hole",
+        "6 cm",
+        "NN",
+        "50° 50°",
+        "mirror",
+        "mirror",
+        "V i",
+        "E G",
+        "eye",
+        "Fig. 3.1"
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "A student investigates the rate of cooling of hot water in a container which has a lid.",
         "Plan an experiment which will enable him to compare the effect of lids of different thicknesses on",
@@ -392,7 +397,6 @@
         "not required to enter any readings in the table)",
         "• explain how to use the readings to reach a conclusion.",
         "You may draw a diagram if it helps to explain your plan.",
-        "[7]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

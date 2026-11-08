@@ -3,14 +3,14 @@
   "subjectCode": "0478",
   "session": "s16",
   "component": "11",
-  "totalMarks": 67,
+  "totalMarks": 75,
   "questionCount": 12,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "Some software can be described as free, freeware or shareware.",
         "Tick (✓) the appropriate boxes in the table below to show which features apply to these three",
@@ -23,8 +23,7 @@
         "purchased first",
         "The original software is subject to all copyright laws",
         "It is possible to distribute modified versions or",
-        "copies of the software to friends and family",
-        "[3]"
+        "copies of the software to friends and family"
       ]
     },
     {
@@ -250,24 +249,9 @@
     {
       "id": "7",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Each seat on a flight is uniquely identified on an LCD above the seat. For example, seat 035C is",
-        "shown as:",
-        "The first three characters are digits that represent the row.",
-        "The fourth character is the seat position in that row. This is a single letter, A to F, that is stored as a",
-        "hexadecimal value.",
-        "Each of the four display characters can be stored in a 4-bit register. For example, 0 and C would",
-        "be represented as:"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
       "parts": [
         {
-          "id": "8a",
+          "id": "7a",
           "label": "(a)",
           "text": "Show how the 4-bit registers would store the remaining two characters, 3 and 5.",
           "marks": 2,
@@ -278,16 +262,37 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "7b",
           "label": "(b)",
-          "text": "Identify which seat is stored in the following 4-bit registers.\n0 0 0 1\n1 0 0 1\n0 1 0 0\n1 1 1 0\n\n8 A bank offers an online service to its customers. The bank has developed a “SafeToUse” system\nthat asks each customer to enter four randomly chosen characters from their password each time\nthey log in.\nThe customer selects these four characters from drop-down boxes. For example:\nnd\nPlease select the 2 character\nth\n5 character\nth\n6 character\nth\n8 character",
+          "text": "Identify which seat is stored in the following 4-bit registers.\n0 0 0 1\n1 0 0 1\n0 1 0 0\n1 1 1 0",
           "marks": 2,
           "type": "identify",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 4,
+      "text": [
+        "Each seat on a flight is uniquely identified on an LCD above the seat. For example, seat 035C is",
+        "shown as:",
+        "The first three characters are digits that represent the row.",
+        "The fourth character is the seat position in that row. This is a single letter, A to F, that is stored as a",
+        "hexadecimal value.",
+        "Each of the four display characters can be stored in a 4-bit register. For example, 0 and C would",
+        "be represented as:",
+        "8 4 2 1",
+        "0:",
+        "0 0 0 0",
+        "C:",
+        "1 1 0 0"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
         {
           "id": "8a",
           "label": "(a)",
@@ -334,13 +339,20 @@
           "parts": []
         }
       ],
-      "marks": 9,
+      "marks": 5,
       "text": [
-        "4 2 1",
-        "0:",
-        "0 0 0 0",
-        "C:",
-        "1 1 0 0"
+        "A bank offers an online service to its customers. The bank has developed a “SafeToUse” system",
+        "that asks each customer to enter four randomly chosen characters from their password each time",
+        "they log in.",
+        "The customer selects these four characters from drop-down boxes. For example:",
+        "nd",
+        "Please select the 2 character",
+        "th",
+        "5 character",
+        "th",
+        "6 character",
+        "th",
+        "8 character"
       ]
     },
     {
@@ -388,7 +400,7 @@
       "id": "10",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "Six security issues and six descriptions are shown below.",
         "Draw a line to link each security issue to its correct description.",
@@ -426,8 +438,7 @@
         "Cookies",
         "data or files on a user’s computer;",
         "often causes the computer to crash or",
-        "run slowly",
-        "[5]"
+        "run slowly"
       ]
     },
     {
@@ -512,7 +523,7 @@
         {
           "id": "12c",
           "label": "(c)",
-          "text": "An airport uses the type of barcode shown in part (a) to advertise local places of interest.\nDescribe how a visitor landing at the airport could use these barcodes to help plan their visit.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "An airport uses the type of barcode shown in part (a) to advertise local places of interest.\nDescribe how a visitor landing at the airport could use these barcodes to help plan their visit.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 3,
           "type": "name",
           "answerType": "short_answer",

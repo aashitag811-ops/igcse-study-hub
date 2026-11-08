@@ -3,14 +3,14 @@
   "subjectCode": "9608",
   "session": "s21",
   "component": "11",
-  "totalMarks": 70,
+  "totalMarks": 75,
   "questionCount": 9,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "Draw one line from each software licence to its correct description.",
         "Software licence Description",
@@ -28,8 +28,7 @@
         "Commercial",
         "The original source code is made available",
         "for other developers who can then modify",
-        "and improve the software.",
-        "[3]"
+        "and improve the software."
       ]
     },
     {
@@ -301,7 +300,7 @@
         "01 <html>",
         "02 <body>",
         "04 <p>",
-        "05 <?PHP",
+        "05  ≤ PHP",
         "06 $message = \"Enter the current time\""
       ]
     },
@@ -317,18 +316,9 @@
     {
       "id": "08",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "?>"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
       "parts": [
         {
-          "id": "09a",
+          "id": "08a",
           "label": "(a)",
           "text": "The page is loaded and the value 16 is entered.\nState the output when the enter button is clicked.",
           "marks": 1,
@@ -339,7 +329,7 @@
           "parts": []
         },
         {
-          "id": "09b",
+          "id": "08b",
           "label": "(b)",
           "text": "Give the line number where the JavaScript function is called.",
           "marks": 1,
@@ -350,7 +340,7 @@
           "parts": []
         },
         {
-          "id": "09c",
+          "id": "08c",
           "label": "(c)",
           "text": "Give the identifier names of two variables used in the JavaScript code.",
           "marks": 1,
@@ -361,7 +351,7 @@
           "parts": []
         },
         {
-          "id": "09d",
+          "id": "08d",
           "label": "(d)",
           "text": "Tick (3) one box in each row to indicate whether each of the following statements is true or\nfalse.\nStatement True False\nThe program contains client-side and server-side code\nThe PHP code in the program will run on the client-side\nLine 19 of the code outputs the message \"Good day\"\nLine 18 of the code contains a conditional statement",
           "marks": 2,
@@ -372,9 +362,9 @@
           "parts": []
         },
         {
-          "id": "09e",
+          "id": "08e",
           "label": "(e)",
-          "text": "Examine the following list of terms:\nbandwidth browser compiler HTML interpreter\nJavaScript PHP router server server-side\ntransmission validation\nComplete the following sentences by filling in the missing terms from the list.\nSome terms may be used more than once. Some terms are not used.\n______ can be performed both client-side and server-side.\nIt is performed more rapidly by the ______ because there is no delay in\ntransmitting and receiving data to and from the ______ .\nIt is also performed on the server-side, because the client’s ______ may\nnot support ______ , so the data will still need checking to avoid errors.\n\n7 This question presents three scenarios.\nTick (3) one box for each scenario to indicate whether you think the behaviour shown is ethical or\nunethical. Justify your choice.",
+          "text": "Examine the following list of terms:\nbandwidth browser compiler HTML interpreter\nJavaScript PHP router server server-side\ntransmission validation\nComplete the following sentences by filling in the missing terms from the list.\nSome terms may be used more than once. Some terms are not used.\n______ can be performed both client-side and server-side.\nIt is performed more rapidly by the ______ because there is no delay in\ntransmitting and receiving data to and from the ______ .\nIt is also performed on the server-side, because the client’s ______ may\nnot support ______ , so the data will still need checking to avoid errors.\n7 This question presents three scenarios.\nTick (3) one box for each scenario to indicate whether you think the behaviour shown is ethical or\nunethical. Justify your choice.",
           "marks": 5,
           "type": "complete",
           "answerType": "fill_blank",
@@ -383,7 +373,7 @@
           "parts": []
         },
         {
-          "id": "09a",
+          "id": "08a",
           "label": "(a)",
           "text": "Marina has a very short deadline to create a piece of software for a client. Algorithm A is quick\nto code and simpler to test but has an inefficient run time. Algorithm B is more complex to\ncode and test but has a more efficient run time. She decides to implement algorithm A.\nEthical\nUnethical\nJustification ______",
           "marks": 2,
@@ -394,7 +384,7 @@
           "parts": []
         },
         {
-          "id": "09b",
+          "id": "08b",
           "label": "(b)",
           "text": "Doug is managing a project for a client that has fallen behind schedule. He asks all members\nof the project team to work extra hours and to cancel any holiday plans to get the project back\non schedule.\nEthical\nUnethical\nJustification ______",
           "marks": 2,
@@ -405,9 +395,9 @@
           "parts": []
         },
         {
-          "id": "09c",
+          "id": "08c",
           "label": "(c)",
-          "text": "Debbie is programming a car safety management system. She thinks that the test plan she\nhas been given is not adequate. She decides to discuss her concerns on a public internet\nforum.\nEthical\nUnethical\nJustification ______\n\n8 Jay is developing a computer game that allows users to create stories.",
+          "text": "Debbie is programming a car safety management system. She thinks that the test plan she\nhas been given is not adequate. She decides to discuss her concerns on a public internet\nforum.\nEthical\nUnethical\nJustification ______\n8 Jay is developing a computer game that allows users to create stories.",
           "marks": 2,
           "type": "discuss",
           "answerType": "fill_blank",
@@ -416,7 +406,7 @@
           "parts": []
         },
         {
-          "id": "09a",
+          "id": "08a",
           "label": "(a)",
           "text": "Jay uses a language translator to develop the computer game.",
           "marks": null,
@@ -426,7 +416,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "09ai",
+              "id": "08ai",
               "label": "(i)",
               "text": "Tick (3) one or more boxes in each row to identify the language translator(s) each\nstatement describes.\nStatement Assembler Interpreter Compiler\nTranslates and executes each line of source\ncode one line at a time\nTranslates low-level source code into machine\ncode\nMust be present in memory to execute the\ncode\nTranslates high-level source code into\nlow-level code",
               "marks": 4,
@@ -437,7 +427,7 @@
               "parts": []
             },
             {
-              "id": "09aii",
+              "id": "08aii",
               "label": "(ii)",
               "text": "Jay decides to use a compiler to develop the game.\nIdentify two benefits of using a compiler.\nBenefit 1 ______\nBenefit 2 ______",
               "marks": 2,
@@ -450,7 +440,7 @@
           ]
         },
         {
-          "id": "09b",
+          "id": "08b",
           "label": "(b)",
           "text": "The game generates a story which is stored as a text file.\nJay compresses the text file using lossless compression before sending it by email to his\nfriend.",
           "marks": null,
@@ -460,7 +450,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "09bi",
+              "id": "08bi",
               "label": "(i)",
               "text": "Identify two reasons for compressing the text file.",
               "marks": 2,
@@ -471,33 +461,23 @@
               "parts": []
             },
             {
-              "id": "09bii",
+              "id": "08bii",
               "label": "(ii)",
-              "text": "Explain the reasons why Jay compresses the text file with lossless compression instead\nof lossy compression.\n\n9 (a) Identify two differences between a public IP address and a private IP address.",
+              "text": "Explain the reasons why Jay compresses the text file with lossless compression instead\nof lossy compression.",
               "marks": 2,
-              "type": "identify",
-              "answerType": "short_answer",
+              "type": "explain",
+              "answerType": "long_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        },
-        {
-          "id": "09b",
-          "label": "(b)",
-          "text": "Complete the table by identifying the most appropriate term for each description.\nEach term must be different.\nDescription Term\nReceives data packets from a network and\nforwards them onto a similar network\nManages access to a centralised resource\nJoins networks that use different sets of\nrules to transmit data\nMonitors and controls incoming and\noutgoing network traffic based on set criteria\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
-          "marks": 4,
-          "type": "complete",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
         }
       ],
-      "marks": 30,
+      "marks": 26,
       "text": [
-        "</p>",
+        "?>",
+        "09 </p>",
         "11 24 hour clock hour<input id = \"Time\" value = \"\">",
         "12 <button onclick = \"timeOfDay()\">Enter</button>",
         "14 <script>",
@@ -514,6 +494,36 @@
         "27 </body>",
         "28 </html>"
       ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
+        {
+          "id": "9a",
+          "label": "(a)",
+          "text": "Identify two differences between a public IP address and a private IP address.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "9b",
+          "label": "(b)",
+          "text": "Complete the table by identifying the most appropriate term for each description.\nEach term must be different.\nDescription Term\nReceives data packets from a network and\nforwards them onto a similar network\nManages access to a centralised resource\nJoins networks that use different sets of\nrules to transmit data\nMonitors and controls incoming and\noutgoing network traffic based on set criteria\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "complete",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
     }
   ]
 }

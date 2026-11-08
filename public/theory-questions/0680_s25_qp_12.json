@@ -3,7 +3,7 @@
   "subjectCode": "0680",
   "session": "s25",
   "component": "12",
-  "totalMarks": 68,
+  "totalMarks": 80,
   "questionCount": 6,
   "questions": [
     {
@@ -85,7 +85,7 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "Complete the sentences about the El Niño Southern Oscillation phenomenon.",
         "Use words from the list. Each word may be used once, more than once or not at all.",
@@ -97,8 +97,7 @@
         "This causes the sea level along the coast of South America to ..................................... .",
         "There is more ..................................... water and more rainfall than normal around the coast",
         "of South America.",
-        "Marine fisheries in South America ..................................... .",
-        "[5]"
+        "Marine fisheries in South America ..................................... ."
       ]
     },
     {
@@ -164,7 +163,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "State two ways the oceans are a source of energy.\n\nSection B",
+          "text": "State two ways the oceans are a source of energy.\nSection B",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -250,22 +249,101 @@
         {
           "id": "4d",
           "label": "(d)",
-          "text": "The photograph shows mussels on a rock in the ocean.\nAn oil spill occurs in the ocean where these mussels live.\nThe table shows the oil concentration in the mussels after the oil spill.\noil concentration in mussels\nday after oil spill\n/ *ppm\n0 0\n1 480\n3 600\n4 420",
+          "text": "The photograph shows mussels on a rock in the ocean.\nAn oil spill occurs in the ocean where these mussels live.\nThe table shows the oil concentration in the mussels after the oil spill.\noil concentration in mussels\nday after oil spill\n/ *ppm\n0 0\n1 480\n3 600\n4 420\n5 110\n10 50\n15 40\n30 0\n35 0\n*ppm = parts per million",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "4di",
+              "label": "(i)",
+              "text": "Plot the data as a line graph.",
+              "marks": 4,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": false,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4dii",
+              "label": "(ii)",
+              "text": "The mussels were moved to oil-free water at the end of day 3.\nUse the table to describe the effect on the concentration of oil in the mussels after they\nare moved to oil-free water.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4diii",
+              "label": "(iii)",
+              "text": "Oil from spills can bioaccumulate in organisms.\nComplete the sentence.\nBioaccumulation occurs when an organism ______ a substance at a rate\nfaster than the substance is ______ .",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 8,
+      "marks": 15,
       "text": []
     },
     {
       "id": "5",
       "context": [],
       "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "The bar chart shows the annual rainfall at a weather station from 2003 to 2023.\nannual\nrainfall\n/ mm 400\n2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023\nyear",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5ai",
+              "label": "(i)",
+              "text": "Calculate the range in annual rainfall.\n______ mm",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aii",
+              "label": "(ii)",
+              "text": "The mean annual rainfall is 460 mm.\nDetermine the number of years when the rainfall was greater than the mean.",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5aiii",
+              "label": "(iii)",
+              "text": "Explain why crop yields decrease in years when the rainfall is much greater than the\nmean.",
+              "marks": 5,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
           "id": "5b",
           "label": "(b)",
@@ -425,14 +503,7 @@
         }
       ],
       "marks": 26,
-      "text": [
-        "110",
-        "10 50",
-        "15 40",
-        "30 0",
-        "35 0",
-        "*ppm = parts per million"
-      ]
+      "text": []
     },
     {
       "id": "6",
@@ -498,11 +569,11 @@
           "id": "6d",
           "label": "(d)",
           "text": "The Australian government have strategies to protect some threatened groups of organisms.\nThe bar chart shows the percentage of threatened groups which have strategies to protect\nthem.\nKey\ncritically endangered\nendangered\nvulnerable\ntotal: percentage of all species in each group that has some level of protection\npercentage\nof threatened\ngroups with\nstrategies\nmammals birds reptiles amphibians plants\nthreatened group\nCircle the threatened group that has the least total protection.\nmammals birds reptiles amphibians plants",
-          "marks": null,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         },
         {
@@ -542,7 +613,7 @@
         {
           "id": "6f",
           "label": "(f)",
-          "text": "Climate change is the biggest threat to biodiversity.\nTo what extent do you agree with this statement? Give reasons for your answer.\n\nThe boundaries and names shown, the designations used and the presentation of material on any maps contained in this question paper/insert do not imply\nofficial endorsement or acceptance by Cambridge Assessment International Education concerning the legal status of any country, territory, or area or any of its\nauthorities, or of the delimitation of its frontiers or boundaries.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Climate change is the biggest threat to biodiversity.\nTo what extent do you agree with this statement? Give reasons for your answer.\nThe boundaries and names shown, the designations used and the presentation of material on any maps contained in this question paper/insert do not imply\nofficial endorsement or acceptance by Cambridge Assessment International Education concerning the legal status of any country, territory, or area or any of its\nauthorities, or of the delimitation of its frontiers or boundaries.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 6,
           "type": "give",
           "answerType": "short_answer",

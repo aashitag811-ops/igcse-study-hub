@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w19",
   "component": "42",
-  "totalMarks": 51,
+  "totalMarks": 35,
   "questionCount": 5,
   "questions": [
     {
@@ -111,7 +111,7 @@
             {
               "id": "2cv",
               "label": "(v)",
-              "text": "Write program code for the SetPension()method in the SalaryEmployee()class.\n• The method takes a new value for Pension as a parameter.\n• If the parameter’s value is valid (it is TRUE or FALSE), the method returns TRUE and\nsets the parameter’s value.\n• Otherwise the method returns FALSE and does not set Pension.\nProgramming language ______\nProgram code\n\nQuestion 1 continues on the next page.",
+              "text": "Write program code for the SetPension()method in the SalaryEmployee()class.\n• The method takes a new value for Pension as a parameter.\n• If the parameter’s value is valid (it is TRUE or FALSE), the method returns TRUE and\nsets the parameter’s value.\n• Otherwise the method returns FALSE and does not set Pension.\nProgramming language ______\nProgram code\nQuestion 1 continues on the next page.",
               "marks": 4,
               "type": "write",
               "answerType": "fill_blank",
@@ -123,7 +123,7 @@
               "id": "2cvi",
               "label": "(vi)",
               "text": "A SalaryEmployee is paid a fixed monthly payment.\n• If the employee has worked a public holiday, they receive a 3% bonus payment.\nThis is calculated from their MonthlyPayment.\n• If the employee has worked 160 or more hours in a month, they receive an additional\n5% bonus payment, calculated from their MonthlyPayment.\n• If the employee pays into a pension, 4% will be subtracted from their\nMonthlyPayment.\nMonthly salary is the final payment the employee receives.\nFor example, Chris is a SalaryEmployee. His fixed MonthlyPayment is $1000. He has\nworked a public holiday. He has worked 165 hours this month. He pays into a pension.\n• The public holiday bonus is $30 (3% of $1000)\n• The hours worked bonus payment is $50 (5% of $1000)\n• The pension payment is $40 (4% of $1000)\nChris’s monthly salary is calculated as ($1000 + $30 + $50) − $40 = $1040\nThe function CalculateMonthlySalary()is used to calculate the monthly salary. It:\n• takes a SalaryEmployee as a parameter\n• calculates the bonus payments and pension payment\n• outputs the pension payment and total bonus payment\n• calculates and returns the monthly salary.\nWrite program code for the function CalculateMonthlySalary().\nProgramming language ______\nProgram code",
-              "marks": null,
+              "marks": 8,
               "type": "calculate",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
@@ -135,7 +135,7 @@
         {
           "id": "2d",
           "label": "(d)",
-          "text": "Noona describes an example of a feature of object-oriented programming (OOP). She says:\n“One method exists in the parent class but is overwritten in the child class, to behave\ndifferently.”\nIdentify the feature Noona has described.\n\n2 The number of cars that cross a bridge is recorded each hour. This number is placed in a circular\nqueue before being processed.",
+          "text": "Noona describes an example of a feature of object-oriented programming (OOP). She says:\n“One method exists in the parent class but is overwritten in the child class, to behave\ndifferently.”\nIdentify the feature Noona has described.\n2 The number of cars that cross a bridge is recorded each hour. This number is placed in a circular\nqueue before being processed.",
           "marks": 1,
           "type": "identify",
           "answerType": "short_answer",
@@ -177,11 +177,10 @@
           "parts": []
         }
       ],
-      "marks": 31,
+      "marks": 7,
       "text": [
         "F",
-        "11 10",
-        "[7]"
+        "11 10"
       ]
     },
     {
@@ -244,7 +243,7 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 8,
       "text": [
         "A bank wants to analyse how an automated teller machine (ATM) deals with transactions.",
         "The following state-transition table shows the transitions from one state to another for a transaction.",
@@ -272,8 +271,7 @@
         "complete cancelled PIN",
         "Checking Account",
         "account accessed",
-        "Input amount to withdraw",
-        "[8]"
+        "Input amount to withdraw"
       ]
     },
     {
@@ -283,7 +281,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "A programmer needs a program that multiplies a binary number by 4.\nThe programmer has started to write the program in the following table. The comment column\ncontains explanations for the missing program instructions.\nWrite the program using the given instruction set.\nInstruction\nLabel Comment\nOp code Operand\n// load contents of NUMBER\n// perform shift to multiply by 4\n// store contents of ACC in NUMBER\n// end program\nNUMBER: B00110110\n\nNote:\n# denotes immediate addressing\nB denotes a binary number, e.g. B01001010\n& denotes a hexadecimal number, e.g. &4A",
+          "text": "A programmer needs a program that multiplies a binary number by 4.\nThe programmer has started to write the program in the following table. The comment column\ncontains explanations for the missing program instructions.\nWrite the program using the given instruction set.\nInstruction\nLabel Comment\nOp code Operand\n// load contents of NUMBER\n// perform shift to multiply by 4\n// store contents of ACC in NUMBER\n// end program\nNUMBER: B00110110\nNote:\n# denotes immediate addressing\nB denotes a binary number, e.g. B01001010\n& denotes a hexadecimal number, e.g. &4A",
           "marks": 5,
           "type": "label",
           "answerType": "diagram_only",
@@ -294,7 +292,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "A programmer needs a program that counts the number of lower case letters in a string.\nThe programmer has started to write the program in the following table. The comment column\ncontains explanations for the missing program instructions.\nComplete the program using the given instruction set. A copy of the instruction set is provided\non the opposite page.\nInstruction\nLabel Comment\nOp code Operand\nLDR #0 // initialise Index Register to 0\nSTART: // load the next value from the STRING\n// perform bitwise AND operation with MASK\n// check if result is equal to MASK\n// if FALSE, jump to UPPER\n// increment COUNT\nUPPER: INC IX // increment the Index Register\n// decrement LENGTH\n// is LENGTH = 0 ?\n// if FALSE, jump to START\nEND // end program\nMASK: B00100000 // if bit 5 is 1, letter is lower case\nCOUNT: 0\nLENGTH: 5\nSTRING: B01001000 // ASCII code for 'H'\nB01100001 // ASCII code for 'a'\nB01110000 // ASCII code for 'p'\nB01110000 // ASCII code for 'p'\nB01011001 // ASCII code for 'Y'\n\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the location at the given address to\nLDD <address>\nACC.\nIndirect addressing. The address to be used is at the given address. Load\nLDI <address>\nthe contents of this second address to ACC.\nIndexed addressing. Form the address from <address> + the contents of\nLDX <address>\nthe Index Register. Copy the contents of this calculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nIndexed addressing. Form the address from <address> + the contents of\nSTX <address>\nthe Index Register. Copy the contents from ACC to this calculated address.\nADD <address> Add the contents of the given address to the ACC.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare was\nJPE <address>\nTrue.\nFollowing a compare instruction, jump to <address> if the compare was\nJPN <address>\nFalse.\nAND #n\nBitwise AND operation of the contents of ACC with the operand.\nBitwise AND operation of the contents of ACC with the contents of\nAND <address>\n<address>.\nXOR #n\nBitwise XOR operation of the contents of ACC with the operand.\nBitwise XOR operation of the contents of ACC with the contents of\nXOR <address>\n<address>.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nBitwise OR operation of the contents of ACC with the contents of\nOR <address>\n<address>.\n<address> can be an absolute address or a symbolic address.\nBits in ACC are shifted n places to the left. Zeros are introduced on the\nLSL #n\nright hand end.\nBits in ACC are shifted n places to the right. Zeros are introduced on the\nLSR #n\nleft hand end.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT\nOutput to the screen the character whose ASCII value is stored in ACC.\nEND\nReturn control to the operating system.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "A programmer needs a program that counts the number of lower case letters in a string.\nThe programmer has started to write the program in the following table. The comment column\ncontains explanations for the missing program instructions.\nComplete the program using the given instruction set. A copy of the instruction set is provided\non the opposite page.\nInstruction\nLabel Comment\nOp code Operand\nLDR #0 // initialise Index Register to 0\nSTART: // load the next value from the STRING\n// perform bitwise AND operation with MASK\n// check if result is equal to MASK\n// if FALSE, jump to UPPER\n// increment COUNT\nUPPER: INC IX // increment the Index Register\n// decrement LENGTH\n// is LENGTH = 0 ?\n// if FALSE, jump to START\nEND // end program\nMASK: B00100000 // if bit 5 is 1, letter is lower case\nCOUNT: 0\nLENGTH: 5\nSTRING: B01001000 // ASCII code for 'H'\nB01100001 // ASCII code for 'a'\nB01110000 // ASCII code for 'p'\nB01110000 // ASCII code for 'p'\nB01011001 // ASCII code for 'Y'\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the location at the given address to\nLDD <address>\nACC.\nIndirect addressing. The address to be used is at the given address. Load\nLDI <address>\nthe contents of this second address to ACC.\nIndexed addressing. Form the address from <address> + the contents of\nLDX <address>\nthe Index Register. Copy the contents of this calculated address to ACC.\nLDR #n\nImmediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nIndexed addressing. Form the address from <address> + the contents of\nSTX <address>\nthe Index Register. Copy the contents from ACC to this calculated address.\nADD <address> Add the contents of the given address to the ACC.\nINC <register>\nAdd 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n\nCompare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare was\nJPE <address>\nTrue.\nFollowing a compare instruction, jump to <address> if the compare was\nJPN <address>\nFalse.\nAND #n\nBitwise AND operation of the contents of ACC with the operand.\nBitwise AND operation of the contents of ACC with the contents of\nAND <address>\n<address>.\nXOR #n\nBitwise XOR operation of the contents of ACC with the operand.\nBitwise XOR operation of the contents of ACC with the contents of\nXOR <address>\n<address>.\nOR #n\nBitwise OR operation of the contents of ACC with the operand.\nBitwise OR operation of the contents of ACC with the contents of\nOR <address>\n<address>.\n<address> can be an absolute address or a symbolic address.\nBits in ACC are shifted n places to the left. Zeros are introduced on the\nLSL #n\nright hand end.\nBits in ACC are shifted n places to the right. Zeros are introduced on the\nLSR #n\nleft hand end.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT\nOutput to the screen the character whose ASCII value is stored in ACC.\nEND\nReturn control to the operating system.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 8,
           "type": "compare",
           "answerType": "long_answer",

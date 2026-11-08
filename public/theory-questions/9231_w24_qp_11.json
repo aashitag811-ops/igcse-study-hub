@@ -3,7 +3,7 @@
   "subjectCode": "9231",
   "session": "w24",
   "component": "11",
-  "totalMarks": 63,
+  "totalMarks": 69,
   "questionCount": 7,
   "questions": [
     {
@@ -35,8 +35,19 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Find, in terms of k, a matrix which transforms P onto S.",
+          "text": "Find, in terms of k, a matrix which transforms P onto S. \n2 2",
           "marks": 1,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Given that the area of P is 3k units , find the possible values of k.",
+          "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -44,7 +55,7 @@
           "parts": []
         }
       ],
-      "marks": 8,
+      "marks": 10,
       "text": [
         "The matrix M represents the sequence of two transformations in the x-y plane given by a stretch parallel",
         "to the x-axis, scale factor k (k ! 0), followed by a shear, x-axis fixed, with (0, 1) mapped to (k, 1).",
@@ -55,60 +66,36 @@
     {
       "id": "2",
       "context": [],
-      "parts": [
-        {
-          "id": "2d",
-          "label": "(d)",
-          "text": "Given that the area of P is 3k units , find the possible values of k. \n2 Prove by mathematical induction that, for all positive integers n,\n-n\n-1 2\n` j ` j\ntan x = P ( )x 1 + x ,\ndx\nwhere P ( )x is a polynomial of degree n - 1. \n4 3",
-          "marks": 2,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 2,
+      "parts": [],
+      "marks": null,
       "text": [
-        "2"
+        "Prove by mathematical induction that, for all positive integers n,",
+        "-n",
+        "-1 2",
+        "` j ` j",
+        "tan x = P ( )x 1 + x ,",
+        "dx",
+        "where P ( )x is a polynomial of degree n - 1. [6]",
+        "4 3"
       ]
     },
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "The quartic equation x + 2x - 1 = 0 has roots a b c d, , , ."
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
-          "text": "Find a quartic equation whose roots are a , b , c , d and state the value of a + b + c + d .",
+          "text": "Find a quartic equation whose roots are a , b , c , d and state the value of a + b + c + d .\n5 5 5 5",
           "marks": 5,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 5,
-      "text": [
-        "4 4 4 4 4 4 4"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "5b",
+          "id": "3b",
           "label": "(b)",
           "text": "Find the value of a + b + c + d . \n8 8 8 8",
           "marks": 3,
@@ -119,10 +106,32 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "3c",
           "label": "(c)",
-          "text": "Find the value of a + b + c + d . \n5k\n4 (a) Use the method of differences to find in terms of n and k, where k is a\n(5r + k) (5r + 5 + k)\nr=1\npositive constant. \n______ DO NOT WRITE IN THIS MARGIN\n5k 1\nIt is given that = .\n(5r + k) (5r + 5 + k) 3\nr=1",
+          "text": "Find the value of a + b + c + d . \n5k",
           "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The quartic equation x + 2x - 1 = 0 has roots a b c d, , , .",
+        "4 4 4 4 4 4 4 4"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Use the method of differences to find in terms of n and k, where k is a\n(5r + k) (5r + 5 + k)\nr=1\npositive constant. \n______ DO NOT WRITE IN THIS MARGIN\n5k 1\nIt is given that = .\n(5r + k) (5r + 5 + k) 3\nr=1",
+          "marks": 4,
           "type": "use",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
@@ -130,7 +139,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "Find the value of k. \n5k",
           "marks": 2,
@@ -141,9 +150,28 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "4c",
           "label": "(c)",
-          "text": "Hence find in terms of n. \n(5r + k) (5r + 5 + k)\nr=n\n5 (a) Show that the curve with Cartesian equation\n2 2\n` j\nx + y = 6xy\nhas polar equation r = 3 sin 2i. \nThe curve C has polar equation r = 3 sin 2i, for 0 G i G r.",
+          "text": "Hence find in terms of n. \n(5r + k) (5r + 5 + k)\nr=n",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Show that the curve with Cartesian equation\n2 2\n` j\nx + y = 6xy\nhas polar equation r = 3 sin 2i. \nThe curve C has polar equation r = 3 sin 2i, for 0 G i G r.",
           "marks": 2,
           "type": "calculate",
           "answerType": "calculate",
@@ -185,10 +213,8 @@
           "parts": []
         }
       ],
-      "marks": 20,
-      "text": [
-        "5 5 5"
-      ]
+      "marks": 13,
+      "text": []
     },
     {
       "id": "6",

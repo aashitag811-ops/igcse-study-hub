@@ -81,7 +81,7 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "The managers need to display the band names and performance dates for the bands that\nhave played at the Dominion Theatre.\nWrite a Data Manipulation Language (DML) query to do this.\n\nth",
+          "text": "The managers need to display the band names and performance dates for the bands that\nhave played at the Dominion Theatre.\nWrite a Data Manipulation Language (DML) query to do this.\nth",
           "marks": 3,
           "type": "write",
           "answerType": "short_answer",
@@ -183,7 +183,7 @@
             {
               "id": "2di",
               "label": "(i)",
-              "text": "The following sequence of six data values are stored into Queue-A:\nGH01, FG34, HD77, JH91, AS31, LP73\nShow on the diagram below the contents of Queue-A and its pointers at this stage\n(Stage 1). \nStage 1 Stage 2 Stage 3",
+              "text": "The following sequence of six data values are stored into Queue-A:\nGH01, FG34, HD77, JH91, AS31, LP73\nShow on the diagram below the contents of Queue-A and its pointers at this stage\n(Stage 1). \n4XHXH$ 6WDFN% 4XHXH$\nStage 1 Stage 2 Stage 3",
               "marks": 3,
               "type": "other",
               "answerType": "short_answer",
@@ -325,7 +325,7 @@
             {
               "id": "3av",
               "label": "(v)",
-              "text": "A programmer makes the statement:\n“For this instruction set, some of the instructions do not require an operand”\nCircle whether this statement is true or false.\nTrue / False\nExplain your choice with reference to the instruction set given.\n\nThe instruction set is repeated here for ease of reference.\nInstruction\nExplanation\nOpcode\nOpcode Operand\n(binary)\nDirect addressing. Load the contents of the given address\nLDD <address>\n0000 0100\nto ACC\nLDV <number>\n0000 0101 Load the given number to ACC\nSTO <address>\n0000 1000 Store the contents of ACC at the given address\nIndirect addressing. At the given address is the address to\nSTI <address>\n0000 1001\nbe used. Store the contents of ACC at this address\nIndirect addressing. At the given address is the address to\nLDI <address>\n0000 0110\nbe used. Load the contents of this second address to ACC\nINC ACC\n0000 0011 Add 1 to the contents of ACC\nINC <address>\n0000 0100 Increment the contents of the address\nOutput the character corresponding to the ASCII character\nOUTCH\n1000 0001\ncode in ACC\nInput a denary number from the keyboard and store in\nIN\n1001 0000\nACC\nJMP <address>\n1100 1000 Jump to the given address\nCMP #<number>\n1100 1001 Compare the contents of ACC with the given number\nIf the result of the previous compare instruction was a\nJPE <address>\n1110 0111\nmatch, jump to the given address\nEND\n1111 1111 Returns control to the operating system\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90",
+              "text": "A programmer makes the statement:\n“For this instruction set, some of the instructions do not require an operand”\nCircle whether this statement is true or false.\nTrue / False\nExplain your choice with reference to the instruction set given.\nThe instruction set is repeated here for ease of reference.\nInstruction\nExplanation\nOpcode\nOpcode Operand\n(binary)\nDirect addressing. Load the contents of the given address\nLDD <address>\n0000 0100\nto ACC\nLDV <number>\n0000 0101 Load the given number to ACC\nSTO <address>\n0000 1000 Store the contents of ACC at the given address\nIndirect addressing. At the given address is the address to\nSTI <address>\n0000 1001\nbe used. Store the contents of ACC at this address\nIndirect addressing. At the given address is the address to\nLDI <address>\n0000 0110\nbe used. Load the contents of this second address to ACC\nINC ACC\n0000 0011 Add 1 to the contents of ACC\nINC <address>\n0000 0100 Increment the contents of the address\nOutput the character corresponding to the ASCII character\nOUTCH\n1000 0001\ncode in ACC\nInput a denary number from the keyboard and store in\nIN\n1001 0000\nACC\nJMP <address>\n1100 1000 Jump to the given address\nCMP #<number>\n1100 1001 Compare the contents of ACC with the given number\nIf the result of the previous compare instruction was a\nJPE <address>\n1110 0111\nmatch, jump to the given address\nEND\n1111 1111 Returns control to the operating system\nASCII code table (part)\nCharacter Decimal Character Decimal Character Decimal\n<Space> 32 I 73 R 82\nA 65 J 74 S 83\nB 66 K 75 T 84\nC 67 L 76 U 85\nD 68 M 77 V 86\nE 69 N 78 W 87\nF 70 O 79 X 88\nG 71 P 80 Y 89\nH 72 Q 81 Z 90",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -338,7 +338,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "The user runs the following program and inputs the numbers 76, followed by 79 and 87.\nTrace the execution of the program by completing the trace table.\nAddress\nACC OUTPUT\n150 151 200 201 202\n200 0",
+          "text": "The user runs the following program and inputs the numbers 76, followed by 79 and 87.\nTrace the execution of the program by completing the trace table.\n,1\n287&+\n67,\n,1&\n,1&\n/''\n&03\n-1(\n(1'\nAddress\nACC OUTPUT\n150 151 200 201 202\n200 0",
           "marks": 6,
           "type": "other",
           "answerType": "short_answer",
@@ -514,10 +514,10 @@
           "label": "(c)",
           "text": "The integers in the MyList array are to be sorted using an insertion sort algorithm.\nThe original list is:\nMyList\n1 2 3 4 5 6 7\n14 10 11 3 48 32 20\nAs the insertion sort algorithm is applied, the numbers in the array will move.\nEach item in the array is considered in turn.\nThe trace table below shows the list after the second item has been considered.\nThe next item to be processed is 11.\nIn the table below, show the changing positions of the items. Circle the data item which is\nconsidered in each row.\n0\\/LVW",
           "marks": 3,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "list",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         }
       ],
@@ -581,7 +581,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Name one other resource which must be managed by the operating system.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "Name one other resource which must be managed by the operating system.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 1,
           "type": "name",
           "answerType": "short_answer",

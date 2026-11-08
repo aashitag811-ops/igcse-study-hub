@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w21",
   "component": "31",
-  "totalMarks": 62,
+  "totalMarks": 71,
   "questionCount": 10,
   "questions": [
     {
@@ -63,7 +63,7 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Draw one line from each programming paradigm to its most appropriate description.",
         "Programming paradigm Description",
@@ -82,8 +82,7 @@
         "with or without procedure calls",
         "Object-oriented",
         "Programs that specify the desired result",
-        "rather than how to get to it",
-        "[4]"
+        "rather than how to get to it"
       ]
     },
     {
@@ -175,7 +174,7 @@
             {
               "id": "5bii",
               "label": "(ii)",
-              "text": "A valid password is represented by the syntax diagram:\npassword\ncharacter digit\ncapital letter\nWrite the BNF notation of the syntax diagram for password.\n\n5 (a) Compare sequential and serial methods of file organisation.",
+              "text": "A valid password is represented by the syntax diagram:\npassword\ncharacter digit\ncapital letter\nWrite the BNF notation of the syntax diagram for password.\n5 (a) Compare sequential and serial methods of file organisation.",
               "marks": 4,
               "type": "compare",
               "answerType": "long_answer",
@@ -390,7 +389,7 @@
           "id": "9b",
           "label": "(b)",
           "text": "Find the shortest path between the Home and School nodes using the A* algorithm.\nShow your working in the table provided.\nThe first two rows in the table have been completed.\nHome\nh = 10 9\ng = 1 4\nA C\nB 6\nD 6\nSchool\nNode Cost from Home node (g) Heuristic (h) Total (f = g + h)\nHome 0 14 14\nA 1 10 11\nFinal path",
-          "marks": null,
+          "marks": 5,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -398,7 +397,7 @@
           "parts": []
         }
       ],
-      "marks": 5,
+      "marks": 10,
       "text": []
     },
     {
@@ -441,7 +440,7 @@
         {
           "id": "10d",
           "label": "(d)",
-          "text": "The function StackFull() checks whether a stack is full.\nThe function uses the variable TopOfStack to represent the pointer to the most recent\nposition used on the stack, and the variable Max to represent the maximum size of the stack.\nAssume TopOfStack and Max are global variables.\nFUNCTION StackFull() RETURNS BOOLEAN\nIF TopOfStack = Max THEN\nRETURN TRUE\nELSE\nRETURN FALSE\nENDIF\nENDFUNCTION\nAn algorithm AddInteger is required to add a new integer data element to a stack.\nThe stack is implemented as an array ArrayStack.\nThe function AddInteger() calls StackFull() and returns an appropriate message.\nComplete the pseudocode for the function AddInteger().\nFUNCTION AddInteger(NewInteger : INTEGER) RETURNS STRING\nENDFUNCTION\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "The function StackFull() checks whether a stack is full.\nThe function uses the variable TopOfStack to represent the pointer to the most recent\nposition used on the stack, and the variable Max to represent the maximum size of the stack.\nAssume TopOfStack and Max are global variables.\nFUNCTION StackFull() RETURNS BOOLEAN\nIF TopOfStack = Max THEN\nRETURN TRUE\nELSE\nRETURN FALSE\nENDIF\nENDFUNCTION\nAn algorithm AddInteger is required to add a new integer data element to a stack.\nThe stack is implemented as an array ArrayStack.\nThe function AddInteger() calls StackFull() and returns an appropriate message.\nComplete the pseudocode for the function AddInteger().\nFUNCTION AddInteger(NewInteger : INTEGER) RETURNS STRING\nENDFUNCTION\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 5,
           "type": "complete",
           "answerType": "long_answer",

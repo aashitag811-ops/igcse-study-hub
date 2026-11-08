@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w20",
   "component": "21",
-  "totalMarks": 70,
-  "questionCount": 5,
+  "totalMarks": 27,
+  "questionCount": 13,
   "questions": [
     {
       "id": "1",
@@ -131,9 +131,81 @@
     {
       "id": "05",
       "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "DECLARE Index : INTEGER"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OutString \"\""
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FOR Index 1 TO LENGTH(InString)"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NextChar MID(InString, Index, 1)"
+      ]
+    },
+    {
+      "id": "12",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NextChar LCASE(NextChar)"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF NextChar >= 'a' AND NextChar <= 'z'"
+      ]
+    },
+    {
+      "id": "15",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OutString OutString & NextChar"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
       "parts": [
         {
-          "id": "05a",
+          "id": "17a",
           "label": "(a)",
           "text": "The procedure is correctly called with three parameters of the appropriate data types, but the\nprocedure does not give the expected result.\nGive three different reasons why this might happen.",
           "marks": 3,
@@ -144,7 +216,7 @@
           "parts": []
         },
         {
-          "id": "05b",
+          "id": "17b",
           "label": "(b)",
           "text": "Write program code for the procedure OutputLines().\nNote: Parameter validation is not necessary.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
           "marks": 7,
@@ -155,7 +227,7 @@
           "parts": []
         },
         {
-          "id": "05c",
+          "id": "17c",
           "label": "(c)",
           "text": "A program is compiled without producing any errors.",
           "marks": null,
@@ -165,7 +237,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "05ci",
+              "id": "17ci",
               "label": "(i)",
               "text": "Describe one type of error that the program could still contain.",
               "marks": 2,
@@ -176,7 +248,7 @@
               "parts": []
             },
             {
-              "id": "05cii",
+              "id": "17cii",
               "label": "(ii)",
               "text": "Give two techniques that may be used to identify an error of the type given in part (c)(i).\nTechnique 1 ______\nTechnique 2 ______",
               "marks": 2,
@@ -189,9 +261,9 @@
           ]
         },
         {
-          "id": "05d",
+          "id": "17d",
           "label": "(d)",
-          "text": "State two reasons why the use of library subroutines can be a benefit in program development.\n\n4 A function, FormOut(), takes an integer parameter in the range 0 to 999 999 and returns a\nformatted string depending on two other parameter values.\nFormatting may incorporate the use of:\n• A prefix string to be added before the integer value (e.g. '$' or \"Total: \")\n• A comma as a thousand-separator (e.g. \"1,000\")\nThe function will be called as follows:\nMyString FormOut(Number, Prefix, AddComma)\nParameter Data type Description\nNumber INTEGER The positive integer value to be formatted.\nA string that will appear in front of the numeric value. Set to an\nPrefix STRING\nempty string if no prefix is required.\nTRUE if a comma is required in the formatted string.\nAddComma BOOLEAN\nFALSE if a comma is not required in the formatted string.",
+          "text": "State two reasons why the use of library subroutines can be a benefit in program development.\n4 A function, FormOut(), takes an integer parameter in the range 0 to 999 999 and returns a\nformatted string depending on two other parameter values.\nFormatting may incorporate the use of:\n• A prefix string to be added before the integer value (e.g. '$' or \"Total: \")\n• A comma as a thousand-separator (e.g. \"1,000\")\nThe function will be called as follows:\nMyString FormOut(Number, Prefix, AddComma)\nParameter Data type Description\nNumber INTEGER The positive integer value to be formatted.\nA string that will appear in front of the numeric value. Set to an\nPrefix STRING\nempty string if no prefix is required.\nTRUE if a comma is required in the formatted string.\nAddComma BOOLEAN\nFALSE if a comma is not required in the formatted string.",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -200,7 +272,7 @@
           "parts": []
         },
         {
-          "id": "05a",
+          "id": "17a",
           "label": "(a)",
           "text": "Fill in the tables to show two tests that could be carried out to test different aspects of the\nfunction.\nGive the expected result for each test.\nTEST 1\nParameter Value\nExpected return string:\nNumber\nPrefix\nAddComma\nTEST 2\nParameter Value\nExpected return string:\nNumber\nPrefix ______\nAddComma",
           "marks": 4,
@@ -211,9 +283,9 @@
           "parts": []
         },
         {
-          "id": "05b",
+          "id": "17b",
           "label": "(b)",
-          "text": "Write pseudocode for the function FormOut().\nRefer to the Appendix on pages 18–19 for the list of built-in functions and operators.\n\n5 A message may contain several hashtags.\nA hashtag is a string consisting of a hash character ‘#’, followed by one or more alphanumeric\ncharacters.\nA hashtag may be terminated by a space character, the start of the next hashtag, any other\nnon-alphanumeric character, or by the end of the message.\nFor example, the following message contains three hashtags:\n\"#Error27 is the result of #PoorPlanning by the #Designer\"\nThe hashtags in the message are \"#Error27\", \"#PoorPlanning\" and \"#Designer\".\nA program is being developed to process a message and extract each hashtag.\nA global 1D array of strings, TagString, will store each hashtag in a single element.\nUnused array elements will contain an empty string. The array will contain 10 000 elements.\nA developer has started to define the modules as follows:\nModule Description\n• Called with two parameters:\n• a message string\n• an integer giving the number of the required hashtag.\nFor example, GetStart(Message, 3) would search\nGetStart()\nfor the third hashtag in the string Message\n• Returns an integer value representing the start position\nof the hashtag in the message string, or value −1 if that\nhashtag does not exist\n• Called with two parameters:\n• a message string\n• an integer giving the hashtag start position within the\nGetTag()\nmessage\n• Returns the hashtag or an empty string if the character in\nthe message at the hashtag start position is not '#'\n• Called with a hashtag as a parameter\n• Returns the index position of the hashtag in array\nGetIndex()\nTagString\n• Returns the value −1 if the hashtag is not present in the\narray",
+          "text": "Write pseudocode for the function FormOut().\nRefer to the Appendix on pages 18–19 for the list of built-in functions and operators.\n5 A message may contain several hashtags.\nA hashtag is a string consisting of a hash character ‘#’, followed by one or more alphanumeric\ncharacters.\nA hashtag may be terminated by a space character, the start of the next hashtag, any other\nnon-alphanumeric character, or by the end of the message.\nFor example, the following message contains three hashtags:\n\"#Error27 is the result of #PoorPlanning by the #Designer\"\nThe hashtags in the message are \"#Error27\", \"#PoorPlanning\" and \"#Designer\".\nA program is being developed to process a message and extract each hashtag.\nA global 1D array of strings, TagString, will store each hashtag in a single element.\nUnused array elements will contain an empty string. The array will contain 10 000 elements.\nA developer has started to define the modules as follows:\nModule Description\n• Called with two parameters:\n• a message string\n• an integer giving the number of the required hashtag.\nFor example, GetStart(Message, 3) would search\nGetStart()\nfor the third hashtag in the string Message\n• Returns an integer value representing the start position\nof the hashtag in the message string, or value −1 if that\nhashtag does not exist\n• Called with two parameters:\n• a message string\n• an integer giving the hashtag start position within the\nGetTag()\nmessage\n• Returns the hashtag or an empty string if the character in\nthe message at the hashtag start position is not '#'\n• Called with a hashtag as a parameter\n• Returns the index position of the hashtag in array\nGetIndex()\nTagString\n• Returns the value −1 if the hashtag is not present in the\narray",
           "marks": 8,
           "type": "write",
           "answerType": "short_answer",
@@ -222,7 +294,7 @@
           "parts": []
         },
         {
-          "id": "05a",
+          "id": "17a",
           "label": "(a)",
           "text": "Write pseudocode for the module GetIndex().",
           "marks": 6,
@@ -233,7 +305,7 @@
           "parts": []
         },
         {
-          "id": "05b",
+          "id": "17b",
           "label": "(b)",
           "text": "Write pseudocode for the module GetStart().\nThe module description is repeated here for reference.\nModule Description\n• Called with two parameters:\n• a message string\n• an integer giving the number of the required hashtag. For\nexample, GetStart(Message, 3) would search for the\nGetStart()\nthird hashtag in the string Message\n• Returns an integer value representing the start position of the\nhashtag in the message string, or value −1 if that hashtag does\nnot exist",
           "marks": 6,
@@ -244,9 +316,9 @@
           "parts": []
         },
         {
-          "id": "05c",
+          "id": "17c",
           "label": "(c)",
-          "text": "Write program code for the module GetTag().\nThe module description is repeated here for reference.\nModule Description\n• Called with two parameters:\n• a message string\n• an integer giving the hashtag start position within the\nGetTag()\nmessage\n• Returns the hashtag or an empty string if the character in the\nmessage at the hashtag start position is not '#'\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar\nIf ThisChar is not an upper-case alphabetic character, it is returned unchanged.\nExample: LCASE('W') returns 'w'\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv\nExample: DIV(10,3) returns 3\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Write program code for the module GetTag().\nThe module description is repeated here for reference.\nModule Description\n• Called with two parameters:\n• a message string\n• an integer giving the hashtag start position within the\nGetTag()\nmessage\n• Returns the hashtag or an empty string if the character in the\nmessage at the hashtag start position is not '#'\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString: STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nMOD(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the remainder when ThisNum is divided by ThisDiv\nExample: MOD(10,3) returns 1\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns string \"BCD\"\nLCASE(ThisChar : CHAR) RETURNS CHAR\nreturns the character value representing the lower case equivalent of ThisChar\nIf ThisChar is not an upper-case alphabetic character, it is returned unchanged.\nExample: LCASE('W') returns 'w'\nDIV(ThisNum : INTEGER, ThisDiv : INTEGER) RETURNS INTEGER\nreturns the integer value representing the whole number part of the result when ThisNum is divided\nby ThisDiv\nExample: DIV(10,3) returns 3\nNUM_TO_STRING(x : REAL) RETURNS STRING\nreturns a string representation of a numeric value.\nNote: This function will also work if x is of type INTEGER\nExample: NUM_TO_STRING(87.5) returns \"87.5\"\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 8,
           "type": "write",
           "answerType": "fill_blank",
@@ -255,17 +327,9 @@
           "parts": []
         }
       ],
-      "marks": 48,
+      "marks": 5,
       "text": [
-        "DECLARE Index : INTEGER",
-        "07 OutString \"\"",
-        "09 FOR Index 1 TO LENGTH(InString)",
-        "11 NextChar MID(InString, Index, 1)",
-        "12 NextChar LCASE(NextChar)",
-        "14 IF NextChar >= 'a' AND NextChar <= 'z'",
-        "15 THEN",
-        "16 OutString OutString & NextChar",
-        "17 ENDIF",
+        "ENDIF",
         "19 ENDFOR",
         "21 OUTPUT OutString",
         "23 ENDPROCEDURE",
@@ -276,7 +340,6 @@
         "The scope of OutString",
         "The name of a function that is called",
         "A line number containing a logical operator",
-        "[5]",
         "3 The procedure OutputLines() outputs a number of lines from a text file.",
         "An example of the use of the procedure is given by the following pseudocode:",
         "CALL OutputLines(FileName, StartLine, NumberLines)",

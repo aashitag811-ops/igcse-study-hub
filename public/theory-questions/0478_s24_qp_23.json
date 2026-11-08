@@ -3,22 +3,21 @@
   "subjectCode": "0478",
   "session": "s24",
   "component": "23",
-  "totalMarks": 51,
+  "totalMarks": 56,
   "questionCount": 27,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 1,
       "text": [
         "Tick (3) one box to complete this sentence.",
         "This flowchart symbol",
         "A represents a subroutine.",
         "B represents a decision.",
         "C represents an input/output.",
-        "D represents a terminator.",
-        "[1]"
+        "D represents a terminator."
       ]
     },
     {
@@ -55,14 +54,13 @@
       "id": "3",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Describe the characteristics of the string and char data types and give an example of each.",
         "String ................................................................................................................................................",
         "Example ...........................................................................................................................................",
         "Char .................................................................................................................................................",
-        "Example ...........................................................................................................................................",
-        "[4]"
+        "Example ..........................................................................................................................................."
       ]
     },
     {
@@ -307,7 +305,7 @@
         {
           "id": "27c",
           "label": "(c)",
-          "text": "Explain how you could alter the original corrected algorithm to make sure that the\nnumber of elements being added to the array does not exceed the maximum size of the\narray (50 elements).\n\n5 The flowchart represents an algorithm.\nSTART\nL 0\nS 10000\nT 0\nA 0\nINPUT\nLimit\nCount 1\nINPUT\nValue\nIS IS\nNo No\nValue < S Value > L\n? ?\nYes Yes\nS Value L Value\nT T + Value\nIS\nNo\nCount >\nCount Count + 1\nLimit ?\nYes\nA T / Limit\nOUTPUT \"L = \", L, \" S = \",\nS, \" T = \", T, \" A = \", A\nSTOP",
+          "text": "Explain how you could alter the original corrected algorithm to make sure that the\nnumber of elements being added to the array does not exceed the maximum size of the\narray (50 elements).\n5 The flowchart represents an algorithm.\nSTART\nL 0\nS 10000\nT 0\nA 0\nINPUT\nLimit\nCount 1\nINPUT\nValue\nIS IS\nNo No\nValue < S Value > L\n? ?\nYes Yes\nS Value L Value\nT T + Value\nIS\nNo\nCount >\nCount Count + 1\nLimit ?\nYes\nA T / Limit\nOUTPUT \"L = \", L, \" S = \",\nS, \" T = \", T, \" A = \", A\nSTOP",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -351,7 +349,7 @@
         {
           "id": "27d",
           "label": "(d)",
-          "text": "State a more appropriate identifier for each of the variables L, S, T and A\nOriginal identifier Improved identifier\n\n6 A program is to be written that will accept integers that are between the values of 1 and 80\ninclusive.",
+          "text": "State a more appropriate identifier for each of the variables L, S, T and A\nOriginal identifier Improved identifier\n6 A program is to be written that will accept integers that are between the values of 1 and 80\ninclusive.",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -373,7 +371,7 @@
         {
           "id": "27b",
           "label": "(b)",
-          "text": "Describe what is meant by extreme test data.\n\n7 (a) The string operation SUBSTRING(FullText, X, Y) returns a string from FullText\nbeginning at position X that is Y characters long. The first character in FullText is in\nposition 1.\nWrite the pseudocode statements to:\n• store the string “IGCSE Computer Science at Cambridge” in FullText\n• extract and display the words “Computer Science” from the string and store it in a suitable\nvariable\n• output the original string in upper case.",
+          "text": "Describe what is meant by extreme test data.\n7 (a) The string operation SUBSTRING(FullText, X, Y) returns a string from FullText\nbeginning at position X that is Y characters long. The first character in FullText is in\nposition 1.\nWrite the pseudocode statements to:\n• store the string “IGCSE Computer Science at Cambridge” in FullText\n• extract and display the words “Computer Science” from the string and store it in a suitable\nvariable\n• output the original string in upper case.",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -384,7 +382,7 @@
         {
           "id": "27b",
           "label": "(b)",
-          "text": "Write the pseudocode statements to:\n• store the content of the variable you created in part (a) to a text file named\n\"Subjects.txt\"\n• close the text file at the end of the algorithm.\n\n8 A database table called Hangar1 stores details of a collection of historic aircraft at a museum.\nID Make Model Year Engines Airworthy\nJM1 Hawker Siddeley Nimrod 1966 4 Y\nJM2 Douglas DC-10 1970 3 Y\nJM3 Aérospatiale-BAC Concorde 1973 4 N\nPB1 De Havilland DH-9 1918 1 Y\nPB2 Hawker Fury 1935 1 Y\nPB3 Hawker Nimrod 1934 1 Y\nPM1 Fieseler Storch 1942 1 N\nPM2 Hawker Hurricane 1942 1 Y\nPM3 Supermarine Spitfire 1942 1 N\nPM4 Douglas C-47 Dakota 1942 2 N\nPS1 Boeing 314 Clipper 1936 4 N",
+          "text": "Write the pseudocode statements to:\n• store the content of the variable you created in part (a) to a text file named\n\"Subjects.txt\"\n• close the text file at the end of the algorithm.\n8 A database table called Hangar1 stores details of a collection of historic aircraft at a museum.\nID Make Model Year Engines Airworthy\nJM1 Hawker Siddeley Nimrod 1966 4 Y\nJM2 Douglas DC-10 1970 3 Y\nJM3 Aérospatiale-BAC Concorde 1973 4 N\nPB1 De Havilland DH-9 1918 1 Y\nPB2 Hawker Fury 1935 1 Y\nPB3 Hawker Nimrod 1934 1 Y\nPM1 Fieseler Storch 1942 1 N\nPM2 Hawker Hurricane 1942 1 Y\nPM3 Supermarine Spitfire 1942 1 N\nPM4 Douglas C-47 Dakota 1942 2 N\nPS1 Boeing 314 Clipper 1936 4 N",
           "marks": 3,
           "type": "write",
           "answerType": "short_answer",
@@ -417,7 +415,7 @@
         {
           "id": "27c",
           "label": "(c)",
-          "text": "Complete the SQL statement to display only the ID and model of all the aircraft that are\nairworthy.\nSELECT ID, ______\n______ ;\n\n9 A one-dimensional (1D) array Teams[] contains the names of 10 football teams in a local league.\nA two-dimensional (2D) array Results[] stores, for each team, the total number of:\n• games won\n• games drawn\n• games lost\n• points.\nThe position of any team’s data is the same in both arrays. For example the data in index 3 of\nResults[] belongs to the team in index 3 of Teams[]\nThe array data will be used to find the current leader of the league.\nThe variable Played stores the number of games played by each team. Each team plays the\nsame number of games.\nWrite a program that meets the following requirements:\n• allows the number of games played to be input and stored, with a maximum of 18 games\n• allows the names of the teams to be input and stored\n• allows the number of games won, drawn and lost to be input and stored for each team\n• validates the number of games played and the number of games won, drawn or lost against\nthe number of games played\n• calculates and stores the number of points for each team using three points for a win and one\npoint for a draw; there are no points for a loss\n• sorts the array Results[] into descending order of number of points, ensuring the\ncorresponding parallel array Teams[] is kept in the same order\n• determines how many teams have the highest number of points\n• outputs the name(s) of the winning team(s) along with the number of points achieved.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; you may assume that this has\nalready been done.\nAll inputs and outputs must contain suitable messages.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete the SQL statement to display only the ID and model of all the aircraft that are\nairworthy.\nSELECT ID, ______\n______ ;\n9 A one-dimensional (1D) array Teams[] contains the names of 10 football teams in a local league.\nA two-dimensional (2D) array Results[] stores, for each team, the total number of:\n• games won\n• games drawn\n• games lost\n• points.\nThe position of any team’s data is the same in both arrays. For example the data in index 3 of\nResults[] belongs to the team in index 3 of Teams[]\nThe array data will be used to find the current leader of the league.\nThe variable Played stores the number of games played by each team. Each team plays the\nsame number of games.\nWrite a program that meets the following requirements:\n• allows the number of games played to be input and stored, with a maximum of 18 games\n• allows the names of the teams to be input and stored\n• allows the number of games won, drawn and lost to be input and stored for each team\n• validates the number of games played and the number of games won, drawn or lost against\nthe number of games played\n• calculates and stores the number of points for each team using three points for a win and one\npoint for a draw; there are no points for a loss\n• sorts the array Results[] into descending order of number of points, ensuring the\ncorresponding parallel array Teams[] is kept in the same order\n• determines how many teams have the highest number of points\n• outputs the name(s) of the winning team(s) along with the number of points achieved.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; you may assume that this has\nalready been done.\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "fill_blank",

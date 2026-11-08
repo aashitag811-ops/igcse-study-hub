@@ -3,7 +3,7 @@
   "subjectCode": "0625",
   "session": "w23",
   "component": "62",
-  "totalMarks": 22,
+  "totalMarks": 40,
   "questionCount": 4,
   "questions": [
     {
@@ -113,8 +113,7 @@
       ],
       "marks": 11,
       "text": [
-        "hour",
-        "1 A student investigates the period of a pendulum.",
+        "A student investigates the period of a pendulum.",
         "Fig. 1.1 shows the set-up.",
         "clamp",
         "bob",
@@ -128,16 +127,95 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "The student places a sliding contact S at a distance l = 40.0 cm from B.\nShe measures the potential difference (p.d.) V across the length l of the resistance wire.\nShe measures the current I in the circuit.\nThe meters are shown in Fig. 2.2 and Fig. 2.3.\n2 0.4",
+          "text": "The student places a sliding contact S at a distance l = 40.0 cm from B.\nShe measures the potential difference (p.d.) V across the length l of the resistance wire.\nShe measures the current I in the circuit.\nThe meters are shown in Fig. 2.2 and Fig. 2.3.\n2 0.4\n3 0.6\n1 4 0.2 0.8\n1.0\n0 0\nV A\nFig. 2.2 Fig. 2.3",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ai",
+              "label": "(i)",
+              "text": "Write down the current I.\nI = ______",
+              "marks": 1,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2aii",
+              "label": "(ii)",
+              "text": "Record the potential difference V reading in the first row of Table 2.1.",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "The student repeats the procedure in (a) using l = 50.0 cm, 60.0 cm, 70.0 cm and 80.0 cm.\nThe readings are shown in Table 2.1.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": true,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Calculate, and record in Table 2.1, the values of resistance R using the equation\nR =",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Complete the column headings in Table 2.1. \nTable 2.1\nl/ V/ R/\n40.0\n50.0 1.5\n60.0 1.8\n70.0 2.1\n80.0 2.4",
+              "marks": 1,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "Plot a graph of R (y-axis) against V (x-axis). Start both axes at the origin (0,0).\nDraw the best-fit line.",
+          "marks": 4,
+          "type": "draw",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "Determine the gradient G of the graph. Show clearly on the graph how you obtained the\nnecessary information.\nG = ______",
+          "marks": 2,
+          "type": "calculate",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": null,
+      "marks": 11,
       "text": [
         "A student investigates the resistance of a wire.",
         "Fig. 2.1 shows the circuit used.",
@@ -152,62 +230,6 @@
       "id": "3",
       "context": [],
       "parts": [
-        {
-          "id": "3b",
-          "label": "(b)",
-          "text": "The student repeats the procedure in (a) using l = 50.0 cm, 60.0 cm, 70.0 cm and 80.0 cm.\nThe readings are shown in Table 2.1.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "3bi",
-              "label": "(i)",
-              "text": "Calculate, and record in Table 2.1, the values of resistance R using the equation\nR =",
-              "marks": 2,
-              "type": "calculate",
-              "answerType": "calculate",
-              "hasDiagramRef": true,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3bii",
-              "label": "(ii)",
-              "text": "Complete the column headings in Table 2.1. \nTable 2.1\nl/ V/ R/\n40.0\n50.0 1.5\n60.0 1.8\n70.0 2.1\n80.0 2.4",
-              "marks": 1,
-              "type": "complete",
-              "answerType": "long_answer",
-              "hasDiagramRef": true,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "3c",
-          "label": "(c)",
-          "text": "Plot a graph of R (y-axis) against V (x-axis). Start both axes at the origin (0,0).\nDraw the best-fit line.",
-          "marks": 4,
-          "type": "draw",
-          "answerType": "diagram_only",
-          "hasDiagramRef": false,
-          "diagramOnly": true,
-          "parts": []
-        },
-        {
-          "id": "3d",
-          "label": "(d)",
-          "text": "Determine the gradient G of the graph. Show clearly on the graph how you obtained the\nnecessary information.\nG = ______ \n3 A student investigates the cooling of water under different conditions.\nFig. 3.1 shows the set-up.\nthermometer\nbeaker\nbench\nFig. 3.1",
-          "marks": 2,
-          "type": "calculate",
-          "answerType": "fill_blank",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "3a",
           "label": "(a)",
@@ -346,19 +368,19 @@
       ],
       "marks": 11,
       "text": [
-        "0.6",
-        "1 4 0.2 0.8",
-        "1.0",
-        "0 0",
-        "V A",
-        "Fig. 2.2 Fig. 2.3"
+        "A student investigates the cooling of water under different conditions.",
+        "Fig. 3.1 shows the set-up.",
+        "thermometer",
+        "beaker",
+        "bench",
+        "Fig. 3.1"
       ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 7,
       "text": [
         "A student investigates the effect of changing the colour of light on the focal length of a lens.",
         "uv",
@@ -382,7 +404,6 @@
         "• draw a suitable table, with column headings, to show how you would display your readings",
         "(you are not required to enter any readings in the table)",
         "• state how you would use your results to reach a conclusion.",
-        "[7]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

@@ -262,7 +262,7 @@
         {
           "id": "14e",
           "label": "(e)",
-          "text": "Write the rule to show that X is a brother of Y.\nbrother(X, Y)\nIF ______\n\n3 A college has two types of student: full-time and part-time.\nAll students have their name and date of birth recorded.\nA full-time student has their address and telephone number recorded.\nA part-time student attends one or more courses. A fee is charged for each course. The number of\ncourses a part-time student attends is recorded, along with the total fee and whether or not the fee\nhas been paid.\nThe college needs a program to process data about its students. The program will use an object-\noriented programming language.",
+          "text": "Write the rule to show that X is a brother of Y.\nbrother(X, Y)\nIF ______\n3 A college has two types of student: full-time and part-time.\nAll students have their name and date of birth recorded.\nA full-time student has their address and telephone number recorded.\nA part-time student attends one or more courses. A fee is charged for each course. The number of\ncourses a part-time student attends is recorded, along with the total fee and whether or not the fee\nhas been paid.\nThe college needs a program to process data about its students. The program will use an object-\noriented programming language.",
           "marks": 4,
           "type": "name",
           "answerType": "fill_blank",
@@ -316,7 +316,7 @@
             {
               "id": "14biii",
               "label": "(iii)",
-              "text": "to create a new instance of FullTimeStudent with:\n• identifier: NewStudent\n• name: A. Nyone\n• date of birth: 12/11/1990\n• telephone number: 099111\nProgramming language ______\n\n4 A dictionary Abstract Data Type (ADT) has these associated operations:\n• Create dictionary (CreateDictionary)\n• Add key-value pair to dictionary (Add)\n• Delete key-value pair from dictionary (Delete)\n• Lookup value (Lookup)\nThe dictionary ADT is to be implemented as a two-dimensional array. This stores key-value pairs.\nThe pseudocode statement\nDECLARE Dictionary : Array[1:2000, 1:2] OF STRING\nreserves space for 2000 key-value pairs in array Dictionary.\nThe CreateDictionary operation initialises all elements of Dictionary to the empty string.",
+              "text": "to create a new instance of FullTimeStudent with:\n• identifier: NewStudent\n• name: A. Nyone\n• date of birth: 12/11/1990\n• telephone number: 099111\nProgramming language ______\n4 A dictionary Abstract Data Type (ADT) has these associated operations:\n• Create dictionary (CreateDictionary)\n• Add key-value pair to dictionary (Add)\n• Delete key-value pair from dictionary (Delete)\n• Lookup value (Lookup)\nThe dictionary ADT is to be implemented as a two-dimensional array. This stores key-value pairs.\nThe pseudocode statement\nDECLARE Dictionary : Array[1:2000, 1:2] OF STRING\nreserves space for 2000 key-value pairs in array Dictionary.\nThe CreateDictionary operation initialises all elements of Dictionary to the empty string.",
               "marks": 3,
               "type": "name",
               "answerType": "fill_blank",
@@ -383,7 +383,7 @@
             {
               "id": "14biv",
               "label": "(iv)",
-              "text": "Write pseudocode to implement the method you described in part (b) (iii). Choose line\nnumbers to indicate where your pseudocode should be inserted in the given pseudocode.\n10 PROCEDURE Add(NewKey : STRING, NewValue : STRING)\n20 Index ← Hash(NewKey)\n30 Dictionary[Index, 1] ← NewKey // store the key\n40 Dictionary[Index, 2] ← NewValue // store the value\n50 ENDPROCEDURE\n\nQuestion 5 begins on page 12.\n5 The table shows assembly language instructions for a processor which has one general purpose\nregister – the Accumulator (ACC).\nInstruction\nExplanation\nOp Code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC\nLDD <address>\nDirect addressing. Load the contents of the given address to ACC\nSTO <address>\nStore the contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register>\nAdd 1 to the contents of the register\nCMP <address>\nCompare the contents of ACC with the contents of <address>\nJPN <address>\nFollowing a compare instruction, jump to <address> if the compare\nwas False\nEND\nReturn control to the operating system",
+              "text": "Write pseudocode to implement the method you described in part (b) (iii). Choose line\nnumbers to indicate where your pseudocode should be inserted in the given pseudocode.\n10 PROCEDURE Add(NewKey : STRING, NewValue : STRING)\n20 Index ← Hash(NewKey)\n30 Dictionary[Index, 1] ← NewKey // store the key\n40 Dictionary[Index, 2] ← NewValue // store the value\n50 ENDPROCEDURE\nQuestion 5 begins on page 12.\n5 The table shows assembly language instructions for a processor which has one general purpose\nregister – the Accumulator (ACC).\nInstruction\nExplanation\nOp Code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC\nLDD <address>\nDirect addressing. Load the contents of the given address to ACC\nSTO <address>\nStore the contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register>\nAdd 1 to the contents of the register\nCMP <address>\nCompare the contents of ACC with the contents of <address>\nJPN <address>\nFollowing a compare instruction, jump to <address> if the compare\nwas False\nEND\nReturn control to the operating system",
               "marks": 4,
               "type": "compare",
               "answerType": "long_answer",
@@ -430,7 +430,7 @@
         {
           "id": "14b",
           "label": "(b)",
-          "text": "Using opcodes from the given table, write instructions to set the value at address 509 to 12.\n\n6 A company keeps details of its stock items in a file of records, StockFile.",
+          "text": "Using opcodes from the given table, write instructions to set the value at address 509 to 12.\n6 A company keeps details of its stock items in a file of records, StockFile.",
           "marks": 2,
           "type": "write",
           "answerType": "short_answer",
@@ -486,7 +486,7 @@
         {
           "id": "14c",
           "label": "(c)",
-          "text": "A stock report program uses a variable of type StockItem declared as follows:\nDECLARE ThisStockItem : Stockitem\nThe program reads each record in the file StockFile in turn.\nThe program outputs the fields ProductCode and NumberInStock for each record.\nWrite pseudocode for this.\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "A stock report program uses a variable of type StockItem declared as follows:\nDECLARE ThisStockItem : Stockitem\nThe program reads each record in the file StockFile in turn.\nThe program outputs the fields ProductCode and NumberInStock for each record.\nWrite pseudocode for this.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "short_answer",

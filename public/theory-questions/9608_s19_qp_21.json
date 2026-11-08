@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s19",
   "component": "21",
-  "totalMarks": 68,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -142,7 +142,7 @@
           "id": "3a",
           "label": "(a)",
           "text": "A student is developing an algorithm to search through a 1D array of 100 elements. Each\nelement of the array, Result, contains a REAL value.\nThe algorithm will output:\n• the average value of all the elements\n• the number of elements with a value of zero.\nThe structured English description of the algorithm is:\n1. SET Total value to 0\n2. SET Zero count to 0\n3. SELECT the first element\n4. ADD value of element to Total value\n5. IF element value is 0 then INCREMENT Zero count\n6. REPEAT from step 4 for next element, until element is last element\n7. SET Average to Total / 100\n8. OUTPUT a suitable message and Average\n9. OUTPUT a suitable message and Zero count\nWrite pseudocode for this algorithm.",
-          "marks": null,
+          "marks": 7,
           "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -152,7 +152,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "The student decides to change the algorithm and implement it as a procedure, ScanArray(),\nwhich will be called with three parameters.\nScanArray(AverageValue, ZeroCount, ArrayName)\nScanArray() will modify the first two parameters so that the new values are available to the\ncalling program or module.\nWrite the pseudocode procedure header for ScanArray().\n\nQuestion 4 begins on the next page.",
+          "text": "The student decides to change the algorithm and implement it as a procedure, ScanArray(),\nwhich will be called with three parameters.\nScanArray(AverageValue, ZeroCount, ArrayName)\nScanArray() will modify the first two parameters so that the new values are available to the\ncalling program or module.\nWrite the pseudocode procedure header for ScanArray().\nQuestion 4 begins on the next page.",
           "marks": 4,
           "type": "write",
           "answerType": "short_answer",
@@ -161,7 +161,7 @@
           "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 11,
       "text": []
     },
     {
@@ -227,7 +227,7 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "State the term used for changes that are made to a program in response to a specification\nchange.\n\nQuestion 5 begins on the next page.",
+          "text": "State the term used for changes that are made to a program in response to a specification\nchange.\nQuestion 5 begins on the next page.",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",
@@ -317,7 +317,7 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "The module, FindCD(), will check whether a given CD exists in the collection. The module\nwill be implemented as a function.\nThe function will:\n• be called with two strings as parameters, representing the artist name and CD title\n• return a string that gives the storage location, or an empty string if the given CD has not\nbeen found.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.\nWrite program code for the function FindCD().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\n\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of character ThisChar\nExample: ASC('A') returns 65\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (x not inclusive).\nExample: RAND(87) could return 35.43\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE",
+          "text": "The module, FindCD(), will check whether a given CD exists in the collection. The module\nwill be implemented as a function.\nThe function will:\n• be called with two strings as parameters, representing the artist name and CD title\n• return a string that gives the storage location, or an empty string if the given CD has not\nbeen found.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.\nWrite program code for the function FindCD().\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code\nAppendix\nBuilt-in functions (pseudocode)\nEach function returns an error if the function call is not properly formed.\nMID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING\nreturns a string of length y starting at position x from ThisString\nExample: MID(\"ABCDEFGH\", 2, 3) returns \"BCD\"\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of ThisString\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString\nExample: LEFT(\"ABCDEFGH\", 3) returns \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString\nExample: RIGHT(\"ABCDEFGH\", 3) returns \"FGH\"\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x\nExample: INT(27.5415) returns 27\nASC(ThisChar : CHAR) RETURNS INTEGER\nreturns the ASCII value of character ThisChar\nExample: ASC('A') returns 65\nRAND(x : INTEGER) RETURNS REAL\nreturns a real number in the range 0 to x (x not inclusive).\nExample: RAND(87) could return 35.43\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values\nOR\nExample: TRUE OR FALSE produces TRUE",
           "marks": 8,
           "type": "name",
           "answerType": "fill_blank",

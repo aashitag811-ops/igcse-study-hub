@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s23",
   "component": "11",
-  "totalMarks": 70,
+  "totalMarks": 53,
   "questionCount": 6,
   "questions": [
     {
@@ -169,21 +169,10 @@
             {
               "id": "2biii",
               "label": "(iii)",
-              "text": "Part of the database table BIRD_TYPE is shown:\nBirdID Name Size\n0123 Blackbird Medium\n0035 Jay Large\n0004 Raven Large\n0085 Robin Small\nThe database only supports these data types:\n• character\n• varchar\n• Boolean\n• integer\n• real\n• date\n• time\nWrite a Structured Query Language (SQL) script to define the table Bird_Type.",
-              "marks": 4,
+              "text": "Part of the database table BIRD_TYPE is shown:\nBirdID Name Size\n0123 Blackbird Medium\n0035 Jay Large",
+              "marks": null,
               "type": "name",
               "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "2biv",
-              "label": "(iv)",
-              "text": "The database tables are repeated here for reference:\nBIRD_TYPE(BirdID, Name, Size)\nBIRD_SEEN(SeenID, BirdID, Date, Location, PersonID)\nPERSON(PersonID, FirstName, LastName, EmailAddress)\nComplete the SQL script to return the number of birds of each size seen by the person\nwith the ID of J_123.\nSELECT BIRD_TYPE.Size, ______ (BIRD_TYPE.BirdID)\nAS NumberOfBirds\nFROM BIRD_TYPE, ______\nWHERE ______ = \"J_123\"\nAND BIRD_TYPE.BirdID = ______\n______ BIRD_TYPE.Size;",
-              "marks": 5,
-              "type": "name",
-              "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -191,17 +180,17 @@
           ]
         }
       ],
-      "marks": 16,
+      "marks": 7,
       "text": [
         "An organisation uses a database to store data about the types of bird that people have seen."
       ]
     },
     {
-      "id": "3",
+      "id": "0004",
       "context": [],
       "parts": [
         {
-          "id": "3a",
+          "id": "0004a",
           "label": "(a)",
           "text": "Describe how the Operating System manages the peripheral hardware devices of the\ncomputer.",
           "marks": 4,
@@ -212,7 +201,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "0004b",
           "label": "(b)",
           "text": "Hardware management is one key management task carried out by the Operating System.\nIdentify two other key management tasks carried out by the Operating System.",
           "marks": 2,
@@ -223,7 +212,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "0004c",
           "label": "(c)",
           "text": "The Operating System has utility software including defragmentation software.\nExplain how defragmentation can improve the performance of the computer.",
           "marks": 3,
@@ -234,7 +223,7 @@
           "parts": []
         },
         {
-          "id": "3d",
+          "id": "0004d",
           "label": "(d)",
           "text": "The computer stores data in binary form.",
           "marks": null,
@@ -244,7 +233,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3di",
+              "id": "0004di",
               "label": "(i)",
               "text": "State the difference between a kibibyte and a kilobyte.",
               "marks": 1,
@@ -255,7 +244,7 @@
               "parts": []
             },
             {
-              "id": "3dii",
+              "id": "0004dii",
               "label": "(ii)",
               "text": "Convert the denary number 964 into Binary Coded Decimal (BCD).",
               "marks": 1,
@@ -266,7 +255,7 @@
               "parts": []
             },
             {
-              "id": "3diii",
+              "id": "0004diii",
               "label": "(iii)",
               "text": "Convert the positive binary integer 11110010 into hexadecimal.",
               "marks": 1,
@@ -277,7 +266,7 @@
               "parts": []
             },
             {
-              "id": "3div",
+              "id": "0004div",
               "label": "(iv)",
               "text": "Give the smallest and largest two’s complement binary number that can be represented\nusing 8 bits.\nSmallest ______\nLargest ______",
               "marks": 2,
@@ -288,7 +277,7 @@
               "parts": []
             },
             {
-              "id": "3dv",
+              "id": "0004dv",
               "label": "(v)",
               "text": "Add the following two binary integers using binary addition. Show your working.\n1 0 1 1 0 0 0 0\n+ 0 0 0 1 1 0 1 1",
               "marks": 2,
@@ -299,7 +288,7 @@
               "parts": []
             },
             {
-              "id": "3dvi",
+              "id": "0004dvi",
               "label": "(vi)",
               "text": "Show the result of a 3‑place right logical shift on the binary number:\n11001100",
               "marks": 1,
@@ -312,9 +301,19 @@
           ]
         }
       ],
-      "marks": 17,
+      "marks": 4,
       "text": [
-        "A computer has an Operating System (OS)."
+        "Raven Large",
+        "0085 Robin Small",
+        "The database only supports these data types:",
+        "• character",
+        "• varchar",
+        "• Boolean",
+        "• integer",
+        "• real",
+        "• date",
+        "• time",
+        "Write a Structured Query Language (SQL) script to define the table Bird_Type."
       ]
     },
     {
@@ -453,11 +452,10 @@
       "id": "6",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "An interrupt is generated when a key is pressed on a computer keyboard.",
         "Explain how the computer handles this interrupt.",
-        "[5]",
         "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
         "publisher will be pleased to make amends at the earliest possible opportunity.",
         "To avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",

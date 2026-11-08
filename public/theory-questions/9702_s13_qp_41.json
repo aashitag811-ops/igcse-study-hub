@@ -3,13 +3,24 @@
   "subjectCode": "9702",
   "session": "s13",
   "component": "41",
-  "totalMarks": 80,
+  "totalMarks": 98,
   "questionCount": 12,
   "questions": [
     {
       "id": "1",
       "context": [],
       "parts": [
+        {
+          "id": "1a",
+          "label": "(a)",
+          "text": "State what is meant by a gravitational field.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
         {
           "id": "1b",
           "label": "(b)",
@@ -47,9 +58,9 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "The orbital period of the Earth about the Sun is T.\nFor\nExaminer’s\nUse",
+          "text": "The orbital period of the Earth about the Sun is T.\nExaminer’s",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -57,83 +68,99 @@
             {
               "id": "1ci",
               "label": "(i)",
-              "text": "Use ideas about circular motion to show that the mass M of the Sun is given by",
-              "marks": null,
-              "type": "calculate",
-              "answerType": "calculate",
+              "text": "Use ideas about circular motion to show that the mass M of the Sun is given by\n2 3\n4π R\nM =\nGT\nwhere R is the radius of the Earth’s orbit about the Sun and G is the gravitational\nconstant.\nExplain your working.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
               "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "The orbital period T of the Earth about the Sun is 3.16 × 10 s.\nThe radius of the Earth’s orbit is given in Fig. 1.1.\nUse the expression in (i) to determine the mass of the Sun.\nmass = ______ kg",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": true,
               "diagramOnly": false,
               "parts": []
             }
           ]
         }
       ],
-      "marks": 6,
-      "text": [
-        "2",
-        "capacitors in parallel, C = C + C + . . .",
-        "1 2",
-        "energy of charged capacitor, W = QV",
-        "resistors in series, R = R + R + . . .",
-        "1 2",
-        "resistors in parallel, 1/R = 1/R + 1/R + . . .",
-        "1 2",
-        "alternating current/voltage, x = x sin ωt",
-        "radioactive decay, x = x exp(–λt)",
-        "0.693",
-        "decay constant, λ =",
-        "Section A",
-        "For",
-        "Examiner’s",
-        "Use",
-        "Answer all the questions in the spaces provided.",
-        "1 (a) State what is meant by a gravitational field.",
-        "[2]"
-      ]
+      "marks": 13,
+      "text": []
     },
     {
       "id": "2",
       "context": [],
       "parts": [
         {
+          "id": "2a",
+          "label": "(a)",
+          "text": "State what is meant by an ideal gas.\nExaminer’s",
+          "marks": 3,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
           "id": "2b",
           "label": "(b)",
-          "text": "Two cylinders A and B are connected by a tube of negligible volume, as shown in\nFig. 2.1.\ncylinder A\ncylinder B\ntap T",
+          "text": "Two cylinders A and B are connected by a tube of negligible volume, as shown in\nFig. 2.1.\ncylinder A\ncylinder B\ntap T\n3 3\n2.5 × 10 cm\n3 3\n1.6 × 10 cm\n3.4 × 10 Pa\n300 K 4.9 × 10 Pa\ntube\nFig. 2.1\nInitially, tap T is closed. The cylinders contain an ideal gas at different pressures.\n3 3\ncm and contains gas at pressure",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Cylinder A has a constant volume of 2.5 × 10\n3.4 × 10 Pa and temperature 300 K.\nShow that cylinder A contains 0.34 mol of gas.\n3 3",
+              "marks": 1,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "Cylinder B has a constant volume of 1.6 × 10 cm and contains 0.20 mol of gas.\nWhen tap T is opened, the pressure of the gas in both cylinders is 3.9 × 10 Pa.\nExaminer’s\nNo thermal energy enters or leaves the gas.\nDetermine the final temperature of the gas.\ntemperature = ______ K",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "By reference to work done and change in internal energy, suggest why the temperature\nof the gas in cylinder A has changed.",
+          "marks": 3,
+          "type": "suggest",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": null,
-      "text": [
-        "3",
-        "4π R",
-        "M =",
-        "GT",
-        "where R is the radius of the Earth’s orbit about the Sun and G is the gravitational",
-        "constant.",
-        "Explain your working.",
-        "[3]"
-      ]
+      "marks": 9,
+      "text": []
     },
     {
       "id": "3",
       "context": [],
       "parts": [
-        {
-          "id": "3c",
-          "label": "(c)",
-          "text": "By reference to work done and change in internal energy, suggest why the temperature\nof the gas in cylinder A has changed.\n\n3 A ball is held between two fixed points A and B by means of two stretched springs, as shown\nFor\nin Fig. 3.1.\nExaminer’s\nUse\nA B\nball\nFig. 3.1\nThe ball is free to oscillate along the straight line AB. The springs remain stretched and the\nmotion of the ball is simple harmonic.\nThe variation with time t of the displacement x of the ball from its equilibrium position is\nshown in Fig. 3.2.\n2.0\nx / cm\n1.0\n0 0.2 0.4 0.6 0.8 1.0 t / s 1.2\n–1.0\n–2.0\nFig. 3.2",
-          "marks": 3,
-          "type": "suggest",
-          "answerType": "long_answer",
-          "hasDiagramRef": true,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "3a",
           "label": "(a)",
@@ -158,7 +185,7 @@
             {
               "id": "3aii",
               "label": "(ii)",
-              "text": "Show that the maximum acceleration of the ball is 5.2 m s .\nFor\nExaminer’s\nUse",
+              "text": "Show that the maximum acceleration of the ball is 5.2 m s .\nExaminer’s",
               "marks": 2,
               "type": "calculate",
               "answerType": "calculate",
@@ -182,7 +209,7 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "Calculate the displacement of the ball at which its kinetic energy is equal to one half of\nFor\nthe maximum kinetic energy.\nExaminer’s\nUse\ndisplacement = ______ cm",
+          "text": "Calculate the displacement of the ball at which its kinetic energy is equal to one half of\nthe maximum kinetic energy.\nExaminer’s\ndisplacement = ______ cm",
           "marks": 3,
           "type": "calculate",
           "answerType": "fill_blank",
@@ -191,19 +218,25 @@
           "parts": []
         }
       ],
-      "marks": 11,
+      "marks": 8,
       "text": [
-        "3",
-        "2.5 × 10 cm",
-        "3 3",
-        "1.6 × 10 cm",
-        "3.4 × 10 Pa",
-        "300 K 4.9 × 10 Pa",
-        "tube",
-        "Fig. 2.1",
-        "Initially, tap T is closed. The cylinders contain an ideal gas at different pressures.",
-        "3 3",
-        "cm and contains gas at pressure"
+        "A ball is held between two fixed points A and B by means of two stretched springs, as shown",
+        "in Fig. 3.1.",
+        "Examiner’s",
+        "A B",
+        "ball",
+        "Fig. 3.1",
+        "The ball is free to oscillate along the straight line AB. The springs remain stretched and the",
+        "motion of the ball is simple harmonic.",
+        "The variation with time t of the displacement x of the ball from its equilibrium position is",
+        "shown in Fig. 3.2.",
+        "2.0",
+        "x / cm",
+        "1.0",
+        "0 0.2 0.4 0.6 0.8 1.0 t / s 1.2",
+        "–1.0",
+        "–2.0",
+        "Fig. 3.2"
       ]
     },
     {
@@ -213,9 +246,9 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "Define electric potential at a point.\nFor\nExaminer’s\nUse",
+          "text": "Define electric potential at a point.\nExaminer’s",
           "marks": 2,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -224,7 +257,7 @@
         {
           "id": "4b",
           "label": "(b)",
-          "text": "A charged particle is accelerated from rest in a vacuum through a potential difference V.\nShow that the final speed v of the particle is given by the expression\n⎛ ⎞\n2Vq\n⎜ ⎟\nv =\n⎝ ⎠\nwhere is the ratio of the charge to the mass (the specific charge) of the particle.\n\n7 –1",
+          "text": "A charged particle is accelerated from rest in a vacuum through a potential difference V.\nShow that the final speed v of the particle is given by the expression\n⎛ ⎞\n2Vq\n⎜ ⎟\nv =\n⎝ ⎠\nwhere is the ratio of the charge to the mass (the specific charge) of the particle.\n7 –1",
           "marks": 2,
           "type": "calculate",
           "answerType": "calculate",
@@ -235,22 +268,33 @@
         {
           "id": "4c",
           "label": "(c)",
-          "text": "A particle with specific charge +9.58 × 10 C kg is moving in a vacuum towards a fixed\nmetal sphere, as illustrated in Fig. 4.1.\nmetal sphere",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
+          "text": "A particle with specific charge +9.58 × 10 C kg is moving in a vacuum towards a fixed\nmetal sphere, as illustrated in Fig. 4.1.\nmetal sphere\n5 –1\n2.5 × 10 m s\npotential +470 V\nparticle\nspecific charge\n7 –1\n+9.58 × 10 C kg\nFig. 4.1\n5 –1\nThe initial speed of the particle is 2.5 × 10 m s when it is a long distance from the\nsphere.\nThe sphere is positively charged and has a potential of +470V.\nUse the expression in (b) to determine whether the particle will reach the surface of the\nsphere.",
+          "marks": 3,
+          "type": "calculate",
+          "answerType": "calculate",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 7,
       "text": []
     },
     {
       "id": "5",
       "context": [],
       "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Define the tesla.\nExaminer’s",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
         {
           "id": "5b",
           "label": "(b)",
@@ -275,9 +319,9 @@
             {
               "id": "5bii",
               "label": "(ii)",
-              "text": "the flux linkage in the coil C.\nFor\nExaminer’s\nUse\nflux linkage = ______ Wb",
+              "text": "the flux linkage in the coil C.\nExaminer’s\nflux linkage = ______ Wb",
               "marks": 2,
-              "type": "use",
+              "type": "complete",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -320,29 +364,8 @@
           ]
         }
       ],
-      "marks": 8,
-      "text": [
-        "–1",
-        "2.5 × 10 m s",
-        "potential +470 V",
-        "particle",
-        "specific charge",
-        "7 –1",
-        "+9.58 × 10 C kg",
-        "Fig. 4.1",
-        "5 –1",
-        "The initial speed of the particle is 2.5 × 10 m s when it is a long distance from the",
-        "sphere.",
-        "The sphere is positively charged and has a potential of +470V.",
-        "Use the expression in (b) to determine whether the particle will reach the surface of the",
-        "sphere.",
-        "[3]",
-        "5 (a) Define the tesla.",
-        "For",
-        "Examiner’s",
-        "Use",
-        "[2]"
-      ]
+      "marks": 10,
+      "text": []
     },
     {
       "id": "6",
@@ -397,9 +420,7 @@
       "marks": 5,
       "text": [
         "A simple transformer is illustrated in Fig. 6.1.",
-        "For",
         "Examiner’s",
-        "Use",
         "load",
         "input",
         "resistor",
@@ -477,7 +498,6 @@
         "0 For",
         "surfaces are given in Fig. 7.1.",
         "Examiner’s",
-        "Use",
         "–19 14",
         "metal Φ/ 10 J f / 10 Hz",
         "sodium 3.8 5.8",
@@ -493,7 +513,7 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "State what is meant by a nuclear fusion reaction.\nFor\nExaminer’s\nUse",
+          "text": "State what is meant by a nuclear fusion reaction.\nExaminer’s",
           "marks": 2,
           "type": "state",
           "answerType": "short_answer",
@@ -525,7 +545,7 @@
             {
               "id": "8bii",
               "label": "(ii)",
-              "text": "The temperature in the core of the Sun is approximately 1.6 × 10 K.\nSuggest why such a high temperature is necessary for this reaction to take place.\n\nSection B\nFor\nExaminer’s\nUse\nAnswer all the questions in the spaces provided.",
+              "text": "The temperature in the core of the Sun is approximately 1.6 × 10 K.\nSuggest why such a high temperature is necessary for this reaction to take place.\nSection B\nExaminer’s",
               "marks": 2,
               "type": "suggest",
               "answerType": "long_answer",
@@ -591,7 +611,7 @@
         {
           "id": "9b",
           "label": "(b)",
-          "text": "A student designs the circuit of Fig. 9.1 to detect changes in temperature in the range\nFor\n0 °C to 100 °C.\nExaminer’s\nUse\n+V\nthermistor,\nresistance R\nresistor,\nconstant resistance R\nOUT\nFig. 9.1\nThe resistance of the thermistor is R and that of the resistor is R.\nThe student monitors the potential difference V .\nOUT\nState and explain",
+          "text": "A student designs the circuit of Fig. 9.1 to detect changes in temperature in the range\n0 °C to 100 °C.\nExaminer’s\n+V\nthermistor,\nresistance R\nresistor,\nconstant resistance R\nOUT\nFig. 9.1\nThe resistance of the thermistor is R and that of the resistor is R.\nThe student monitors the potential difference V .\nOUT\nState and explain",
           "marks": null,
           "type": "state",
           "answerType": "short_answer",
@@ -633,9 +653,9 @@
         {
           "id": "10a",
           "label": "(a)",
-          "text": "Distinguish between sharpness and contrast in X-ray imaging.\nFor\nExaminer’s\nUse\nsharpness: ______\ncontrast: ______",
+          "text": "Distinguish between sharpness and contrast in X-ray imaging.\nExaminer’s\nsharpness: ______\ncontrast: ______",
           "marks": 2,
-          "type": "use",
+          "type": "complete",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -676,7 +696,7 @@
             {
               "id": "10cii",
               "label": "(ii)",
-              "text": "Use your answer in (i) to suggest whether an X-ray image of the bone and muscle\nFor\nwould show good or poor contrast.\nExaminer’s\nUse",
+              "text": "Use your answer in (i) to suggest whether an X-ray image of the bone and muscle\nwould show good or poor contrast.\nExaminer’s",
               "marks": 2,
               "type": "suggest",
               "answerType": "long_answer",
@@ -731,7 +751,7 @@
         {
           "id": "11b",
           "label": "(b)",
-          "text": "The variation with frequency f of the amplitude A of the transmitted wave is shown in\nFor\nFig. 11.1.\nExaminer’s\nUse\n900 909 918\nf / kHz\nFig. 11.1\nFor this transmission, determine",
+          "text": "The variation with frequency f of the amplitude A of the transmitted wave is shown in\nFig. 11.1.\nExaminer’s\n900 909 918\nf / kHz\nFig. 11.1\nFor this transmission, determine",
           "marks": null,
           "type": "calculate",
           "answerType": "calculate",
@@ -777,9 +797,7 @@
       "marks": 8,
       "text": [
         "A radio station emits an amplitude-modulated wave for the transmission of music.",
-        "For",
-        "Examiner’s",
-        "Use"
+        "Examiner’s"
       ]
     },
     {
@@ -823,10 +841,8 @@
       "marks": 5,
       "text": [
         "An optic fibre is used for the transmission of digital telephone signals. The power input to the",
-        "For",
         "optic fibre is 9.8 mW. The effective noise level in the receiver circuit is 0.36μW, as illustrated",
         "Examiner’s",
-        "Use",
         "in Fig. 12.1.",
         "85 km",
         "receiver",

@@ -3,8 +3,8 @@
   "subjectCode": "9691",
   "session": "s15",
   "component": "21",
-  "totalMarks": 50,
-  "questionCount": 21,
+  "totalMarks": 61,
+  "questionCount": 20,
   "questions": [
     {
       "id": "1",
@@ -215,34 +215,29 @@
             {
               "id": "3bi",
               "label": "(i)",
-              "text": "Show the contents of the grid after the input of each pair of integer values. Circle whether\nthe input is valid or invalid. If the input is invalid state the reason.\nRow Column Grid content Reason (if invalid)\nvalid / invalid\n2 2\nvalid / invalid\n0 1\nvalid / invalid\n1 1\nvalid / invalid\n1 4\nvalid / invalid",
-              "marks": null,
+              "text": "Show the contents of the grid after the input of each pair of integer values. Circle whether\nthe input is valid or invalid. If the input is invalid state the reason.\nRow Column Grid content Reason (if invalid)\nvalid / invalid\n2 2\nvalid / invalid\n0 1\nvalid / invalid\n1 1\nvalid / invalid\n1 4\nvalid / invalid\n4 1\nvalid / invalid\n2 0\nvalid / invalid\n2 2",
+              "marks": 6,
               "type": "state",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "In a high-level programming language, write the function IsInputValid which takes\ntwo integers (row number and column number) as parameters and returns:\n• TRUE if the cell reference exists and is empty\n• FALSE if the cell reference is out of range or the cell contains a marker already\nProgramming language ______\nCode ______",
+              "marks": 5,
+              "type": "write",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
             }
           ]
-        }
-      ],
-      "marks": 9,
-      "text": [
-        "A board game is designed for two players, O and X.",
-        "At the beginning, all cells of a 3 x 3 grid are empty.",
-        "The players take turns in placing their marker in an empty cell of the grid; player O always starts.",
-        "The game ends when one player completes a row, column or diagonal or the grid is full.",
-        "Here is one example after three turns:",
-        "O X",
-        "Ali wants to write a program to play the game."
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
           "text": "Ali uses the top-down design approach for his overall program solution.\nHis design is as follows:\n01 GameEnd ← FALSE\n02 CurrentPlayer ← 'O'\n03 CALL DisplayGrid()",
           "marks": null,
@@ -253,14 +248,15 @@
           "parts": []
         }
       ],
-      "marks": null,
+      "marks": 20,
       "text": [
-        "1",
-        "valid / invalid",
-        "2 0",
-        "valid / invalid",
-        "2 2",
-        "[6]"
+        "A board game is designed for two players, O and X.",
+        "At the beginning, all cells of a 3 x 3 grid are empty.",
+        "The players take turns in placing their marker in an empty cell of the grid; player O always starts.",
+        "The game ends when one player completes a row, column or diagonal or the grid is full.",
+        "Here is one example after three turns:",
+        "O X",
+        "Ali wants to write a program to play the game."
       ]
     },
     {
@@ -436,7 +432,7 @@
         {
           "id": "21f",
           "label": "(f)",
-          "text": "The subroutine DisplayGrid is to output the state of play at any time.\nFor example, after three turns the display should look like:\n: : O\n: O X\n: : :\nwhere the character ‘:’ shows an empty cell.\nQuestion 3(f) continues on page 12.\nWrite program code for the subroutine algorithm represented by the flowchart:\n352&('85(\n'LVSOD\\*ULG\n(PSW\\&HOO ®¯\n)25\u00035RZ\n/LQH\n®¯\n)25\u0003&ROXPQ\n1R\nThe operator concatenates\n<HV\ntwo strings.\n1R\n<HV\n287387\n/LQH\n1R\n<HV\n(1'352&('85(\nProgramming language ______\nCode ______",
+          "text": "The subroutine DisplayGrid is to output the state of play at any time.\nFor example, after three turns the display should look like:\n: : O\n: O X\n: : :\nwhere the character ‘:’ shows an empty cell.\nQuestion 3(f) continues on page 12.\nWrite program code for the subroutine algorithm represented by the flowchart:\n352&('85(\n'LVSOD\\*ULG\n(PSW\\&HOO ®¯\n)255RZ\n/LQH\n®¯\n)25&ROXPQ\n1R\n*ULG>5RZ&ROXPQ@\n(PSW\\&HOO\nThe operator concatenates\n<HV\ntwo strings.\n/LQH /LQH ®¯\n/LQH /LQH ® ¯\n*ULG>5RZ&ROXPQ@ ®¯\n1R\n&ROXPQ\n<HV\n287387\n/LQH\n1R\n5RZ \"\n<HV\n(1'352&('85(\nProgramming language ______\nCode ______",
           "marks": 5,
           "type": "state",
           "answerType": "fill_blank",
@@ -458,7 +454,7 @@
         {
           "id": "21h",
           "label": "(h)",
-          "text": "When Ali has tested all individual modules he plans to do further testing.\nGive two types of testing Ali should do.\n1______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "When Ali has tested all individual modules he plans to do further testing.\nGive two types of testing Ali should do.\n1______\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
           "type": "name",
           "answerType": "fill_blank",

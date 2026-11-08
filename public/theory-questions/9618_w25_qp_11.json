@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w25",
   "component": "11",
-  "totalMarks": 68,
+  "totalMarks": 75,
   "questionCount": 10,
   "questions": [
     {
@@ -45,7 +45,7 @@
             {
               "id": "1aiii",
               "label": "(iii)",
-              "text": "Convert the 12-bit two’s complement binary integer into denary.\nShow your working.\n111110111100\nWorking ______\nDenary value ______\n\n* 0000800000003 * DFD",
+              "text": "Convert the 12-bit two’s complement binary integer into denary.\nShow your working.\n111110111100\nWorking ______\nDenary value ______\n* 0000800000003 * DFD",
               "marks": 2,
               "type": "complete",
               "answerType": "fill_blank",
@@ -79,7 +79,7 @@
             {
               "id": "1bii",
               "label": "(ii)",
-              "text": "Name and describe the error that can occur when binary addition is performed.\n\n* 0000800000004 * DFD",
+              "text": "Name and describe the error that can occur when binary addition is performed.\n* 0000800000004 * DFD",
               "marks": 2,
               "type": "name",
               "answerType": "short_answer",
@@ -111,7 +111,7 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "Explain why the database WORKEXPERIENCE is in Third Normal Form (3NF).\n\n* 0000800000005 * DFD",
+          "text": "Explain why the database WORKEXPERIENCE is in Third Normal Form (3NF).\n* 0000800000005 * DFD",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -143,8 +143,8 @@
             {
               "id": "2cii",
               "label": "(ii)",
-              "text": "Write an SQL script to return the total number of placements completed by the student\nwith ID LDEA01 at the company with ID NEAM. The total should be given an appropriate\nname.\n\n* 0000800000006 * DFD",
-              "marks": null,
+              "text": "Write an SQL script to return the total number of placements completed by the student\nwith ID LDEA01 at the company with ID NEAM. The total should be given an appropriate\nname.\n* 0000800000006 * DFD",
+              "marks": 4,
               "type": "name",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -156,7 +156,7 @@
         {
           "id": "2d",
           "label": "(d)",
-          "text": "The database tables are repeated here:\nSTUDENT(StudentID, FirstName, TelephoneNumber, UniversityName)\nPLACEMENT(PlacementID, StudentID, CompanyID, StartDate, EndDate,\nComplete)\nCOMPANY(CompanyID, CompanyName, MaxStudentsPerPlacement)\nExplain what is meant by referential integrity, and how it applies to this database.\n\n* 0000800000007 * DFD",
+          "text": "The database tables are repeated here:\nSTUDENT(StudentID, FirstName, TelephoneNumber, UniversityName)\nPLACEMENT(PlacementID, StudentID, CompanyID, StartDate, EndDate,\nComplete)\nCOMPANY(CompanyID, CompanyName, MaxStudentsPerPlacement)\nExplain what is meant by referential integrity, and how it applies to this database.\n* 0000800000007 * DFD",
           "marks": 3,
           "type": "explain",
           "answerType": "long_answer",
@@ -165,7 +165,7 @@
           "parts": []
         }
       ],
-      "marks": 9,
+      "marks": 13,
       "text": [
         "A relational database, WORKEXPERIENCE, stores data about students and the companies where",
         "they complete work experience.",
@@ -249,7 +249,7 @@
         {
           "id": "4d",
           "label": "(d)",
-          "text": "The ACC currently contains the following positive binary integer:\n1 1 1 0 0 0 1 1\nThe current contents of memory are:\nData\nAddress\n00100100\n99 00110001\n00110011\n10100011\n10101100\nWrite the contents of the ACC after the instruction OR 100 is carried out.\n\n* 0000800000010 * DFD",
+          "text": "The ACC currently contains the following positive binary integer:\n1 1 1 0 0 0 1 1\nThe current contents of memory are:\nData\nAddress\n00100100\n99 00110001\n00110011\n10100011\n10101100\nWrite the contents of the ACC after the instruction OR 100 is carried out.\n* 0000800000010 * DFD",
           "marks": 1,
           "type": "write",
           "answerType": "short_answer",
@@ -370,7 +370,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Identify two presentation features found in a typical Integrated Development Environment\n(IDE).\n\n* 0000800000011 * DFD",
+          "text": "Identify two presentation features found in a typical Integrated Development Environment\n(IDE).\n* 0000800000011 * DFD",
           "marks": 2,
           "type": "identify",
           "answerType": "short_answer",
@@ -414,7 +414,7 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "State three differences between Dynamic RAM (DRAM) and Static RAM (SRAM).\n\n* 0000800000012 * DFD",
+          "text": "State three differences between Dynamic RAM (DRAM) and Static RAM (SRAM).\n* 0000800000012 * DFD",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",
@@ -446,16 +446,16 @@
           "label": "(b)",
           "text": "Consider the following IP address:\n256.0.0.A\nCircle whether this IP address is IPv4, IPv6 or an invalid IP address.\nIPv4 IPv6 Invalid\nJustify your choice.",
           "marks": 2,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         },
         {
           "id": "7c",
           "label": "(c)",
-          "text": "A user types a Uniform Resource Locator (URL) into the address bar of a web browser to\naccess a web page.\nExplain how the web browser uses the URL to access the web page.\n\n* 0000800000013 * DFD",
+          "text": "A user types a Uniform Resource Locator (URL) into the address bar of a web browser to\naccess a web page.\nExplain how the web browser uses the URL to access the web page.\n* 0000800000013 * DFD",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -498,7 +498,7 @@
             {
               "id": "7diii",
               "label": "(iii)",
-              "text": "Explain how a bitmap image is compressed using run-length encoding (RLE).\n\n* 0000800000014 * DFD",
+              "text": "Explain how a bitmap image is compressed using run-length encoding (RLE).\n* 0000800000014 * DFD",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -543,7 +543,7 @@
         {
           "id": "8c",
           "label": "(c)",
-          "text": "Describe two social impacts of students using Artificial Intelligence (AI) to complete their\nhomework.\n\n* 0000800000015 * DFD",
+          "text": "Describe two social impacts of students using Artificial Intelligence (AI) to complete their\nhomework.\n* 0000800000015 * DFD",
           "marks": 4,
           "type": "describe",
           "answerType": "long_answer",
@@ -562,10 +562,9 @@
       "id": "9",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
-        "Describe the differences between a monitoring system and a control system.",
-        "[3]"
+        "Describe the differences between a monitoring system and a control system."
       ]
     },
     {
@@ -586,7 +585,7 @@
         {
           "id": "10b",
           "label": "(b)",
-          "text": "State why a 3D printer needs a buffer.\n\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "State why a 3D printer needs a buffer.\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 1,
           "type": "state",
           "answerType": "short_answer",

@@ -127,19 +127,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A binary tree stores data in ascending order. For example:",
-        "8 19"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
       "parts": [
         {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -149,7 +139,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ai",
+              "id": "2ai",
               "label": "(i)",
               "text": "Write program code to declare the class Node and its constructor.\nDo not declare the other methods.\nUse the appropriate constructor for your programming language.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program as Question2_J24.\nCopy and paste the program code into part 2(a)(i) in the evidence document.",
               "marks": 4,
@@ -160,7 +150,7 @@
               "parts": []
             },
             {
-              "id": "3aii",
+              "id": "2aii",
               "label": "(ii)",
               "text": "The get methods GetLeft(), GetRight()and GetData()each return the relevant\nattribute.\nWrite program code for the three get methods.\nSave your program.\nCopy and paste the program code into part 2(a)(ii) in the evidence document.",
               "marks": 3,
@@ -171,7 +161,7 @@
               "parts": []
             },
             {
-              "id": "3aiii",
+              "id": "2aiii",
               "label": "(iii)",
               "text": "The set methods SetLeft(), SetRight()and SetData()each take a parameter and\nthen store this in the relevant attribute.\nWrite program code for the three set methods.\nSave your program.\nCopy and paste the program code into part 2(a)(iii) in the evidence document.",
               "marks": 3,
@@ -184,7 +174,7 @@
           ]
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
           "text": "The class TreeClass stores the data about the binary tree.\nTreeClass\nTree[0:19] : Node an array of 20 elements of type Node\nFirstNode : INTEGER stores the index of the first node in the tree\nNumberNodes : INTEGER stores the quantity of nodes in the tree\nConstructor()\ninitialises FirstNode to −1 and NumberNodes to 0\ninitialises each element in Tree to a Node object with the\ndata value of −1\nInsertNode()\ntakes a Node object as a parameter, inserts it in the array\nand updates the pointer for its parent node\nOutputTree()\noutputs the left pointer, data and right pointer of each\nnode in Tree\nNodes cannot be deleted from this tree.",
           "marks": null,
@@ -194,7 +184,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3bi",
+              "id": "2bi",
               "label": "(i)",
               "text": "Write program code to declare the class TreeClass and its constructor.\nDo not declare the other methods.\nUse the appropriate constructor for your programming language.\nIf you are writing in Python, include attribute declarations using comments.\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
               "marks": 4,
@@ -205,7 +195,7 @@
               "parts": []
             },
             {
-              "id": "3bii",
+              "id": "2bii",
               "label": "(ii)",
               "text": "The method InsertNode()takes a Node object, NewNode, as a parameter and inserts\nit into the array Tree.\nInsertNode()first checks if the tree is empty.\nIf the tree is empty, InsertNode():\n• stores NewNode in the array Tree at index NumberNodes\n• increments NumberNodes\n• stores 0 in FirstNode.\nIf the tree is not empty, InsertNode():\n• stores NewNode in the array Tree at index NumberNodes\n• accesses the data in the array Tree at index FirstNode and compares it to the\ndata in NewNode\n• repeatedly follows the pointers until the correct position for NewNode is found\n• once the position is found, InsertNode()sets the left or right pointer of its parent\nnode\n• increments NumberNodes.\nWrite program code for InsertNode().\nSave your program.\nCopy and paste the program code into part 2(b)(ii) in the evidence document.",
               "marks": 6,
@@ -216,7 +206,7 @@
               "parts": []
             },
             {
-              "id": "3biii",
+              "id": "2biii",
               "label": "(iii)",
               "text": "The method OutputTree()outputs the left pointer, the data and the right pointer for\neach node that has been inserted into the tree. The outputs are in the order they are\nsaved in the array.\nIf there are no nodes in the array, the procedure outputs ‘No nodes’.\nWrite program code for OutputTree().\nSave your program.\nCopy and paste the program code into part 2(b)(iii) in the evidence document.",
               "marks": 4,
@@ -229,7 +219,7 @@
           ]
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -239,7 +229,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "2ci",
               "label": "(i)",
               "text": "The main program declares an instance of TreeClass with the identifier TheTree.\nWrite program code for the main program.\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
               "marks": 1,
@@ -250,7 +240,7 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "2cii",
               "label": "(ii)",
               "text": "The main program inserts the following integers into the binary tree in the order given:\nThe main program then calls the method OutputTree().\nWrite program code to amend the main program.\nSave your program.\nCopy and paste the program code into part 2(c)(ii) in the evidence document.",
               "marks": 4,
@@ -261,9 +251,9 @@
               "parts": []
             },
             {
-              "id": "3ciii",
+              "id": "2ciii",
               "label": "(iii)",
-              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 2(c)(iii) in the evidence document.\n\n3 A program sorts an array of integers and searches the array for a particular value.",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 2(c)(iii) in the evidence document.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -272,7 +262,46 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 30,
+      "text": [
+        "A binary tree stores data in ascending order. For example:",
+        "8 19",
+        "3 10",
+        "A computer program stores integers in a binary tree in ascending order. The program uses",
+        "Object‑Oriented Programming (OOP).",
+        "The binary tree is stored as a 1D array of nodes. Each node contains a left pointer, a data value",
+        "and a right pointer.",
+        "The class Node stores the data about a node.",
+        "Node",
+        "LeftPointer : INTEGER",
+        "stores the index of the node to the left in the binary tree",
+        "Data : INTEGER",
+        "stores the node’s data",
+        "RightPointer : INTEGER",
+        "stores the index of the node to the right in the binary tree",
+        "Constructor()",
+        "initialises Data to its parameter value",
+        "initialises LeftPointer and RightPointer to −1",
+        "GetLeft()",
+        "returns the left pointer",
+        "GetRight()",
+        "returns the right pointer",
+        "GetData()",
+        "returns the data value",
+        "SetLeft()",
+        "assigns the parameter to the left pointer",
+        "SetRight()",
+        "assigns the parameter to the right pointer",
+        "SetData()",
+        "assigns the parameter to the data"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
           "id": "3a",
           "label": "(a)",
@@ -409,7 +438,7 @@
             {
               "id": "3diii",
               "label": "(iii)",
-              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(d)(iii) in the evidence document.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "Test your program.\nTake a screenshot of the output(s).\nSave your program.\nCopy and paste the screenshot into part 3(d)(iii) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
               "type": "other",
               "answerType": "short_answer",
@@ -420,36 +449,9 @@
           ]
         }
       ],
-      "marks": 53,
+      "marks": 23,
       "text": [
-        "10",
-        "A computer program stores integers in a binary tree in ascending order. The program uses",
-        "Object‑Oriented Programming (OOP).",
-        "The binary tree is stored as a 1D array of nodes. Each node contains a left pointer, a data value",
-        "and a right pointer.",
-        "The class Node stores the data about a node.",
-        "Node",
-        "LeftPointer : INTEGER",
-        "stores the index of the node to the left in the binary tree",
-        "Data : INTEGER",
-        "stores the node’s data",
-        "RightPointer : INTEGER",
-        "stores the index of the node to the right in the binary tree",
-        "Constructor()",
-        "initialises Data to its parameter value",
-        "initialises LeftPointer and RightPointer to −1",
-        "GetLeft()",
-        "returns the left pointer",
-        "GetRight()",
-        "returns the right pointer",
-        "GetData()",
-        "returns the data value",
-        "SetLeft()",
-        "assigns the parameter to the left pointer",
-        "SetRight()",
-        "assigns the parameter to the right pointer",
-        "SetData()",
-        "assigns the parameter to the data"
+        "A program sorts an array of integers and searches the array for a particular value."
       ]
     }
   ]

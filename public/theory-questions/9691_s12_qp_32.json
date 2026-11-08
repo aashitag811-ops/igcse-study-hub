@@ -47,7 +47,7 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "The design is changed to the following:\nStudent (StudentName, TutorGroup, Tutor)\nStudentSubjectChoices (StudentName, Subject, Level, SubjectTeacher)\nUsing the data given in the original table, show how this data is now stored in the\nFor\nrevised table designs. Examiner's\nUse\nTable: Student\nStudentName TutorGroup Tutor\nTable: StudentSubjectChoices\nStudentName Subject Level SubjectTeacher",
+          "text": "The design is changed to the following:\nStudent (StudentName, TutorGroup, Tutor)\nStudentSubjectChoices (StudentName, Subject, Level, SubjectTeacher)\nUsing the data given in the original table, show how this data is now stored in the\nrevised table designs. Examiner's\nTable: Student\nStudentName TutorGroup Tutor\nTable: StudentSubjectChoices\nStudentName Subject Level SubjectTeacher",
           "marks": 3,
           "type": "design",
           "answerType": "long_answer",
@@ -90,7 +90,7 @@
             {
               "id": "1ciii",
               "label": "(iii)",
-              "text": "There is a relationship between tables Student and StudentSubjectChoices.\nFor\nExaminer's\nUse\nExplain how the relationship is established using a primary key and foreign key.",
+              "text": "There is a relationship between tables Student and StudentSubjectChoices.\nExplain how the relationship is established using a primary key and foreign key.",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -126,9 +126,7 @@
       "marks": 14,
       "text": [
         "A database is designed to store data about students at a college and the subjects that they",
-        "For",
         "study. Examiner's",
-        "Use",
         "• All students are based in a tutor group",
         "• A tutor supervises all the students in their tutor group",
         "• Each subject has one subject teacher only",
@@ -187,9 +185,9 @@
         {
           "id": "2d",
           "label": "(d)",
-          "text": "Floating point is to be used to represent real numbers with:\nFor\nExaminer's\nUse\n• 8 bits for the mantissa, followed by\n• 4 bits for the exponent\n• two’s complement used for both the mantissa and the exponent",
+          "text": "Floating point is to be used to represent real numbers with:\n• 8 bits for the mantissa, followed by\n• 4 bits for the exponent\n• two’s complement used for both the mantissa and the exponent",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -232,7 +230,7 @@
         {
           "id": "2e",
           "label": "(e)",
-          "text": "The developer of a new programming language decides that all real numbers will be\nFor\nstored using 20-bit normalised floating point representation. She cannot decide how Examiner's\nUse\nmany bits to use for the mantissa and how many for the exponent.\nExplain the trade-off between using either a large number of bits for the mantissa, or a\nlarge number of bits for the exponent.",
+          "text": "The developer of a new programming language decides that all real numbers will be\nstored using 20-bit normalised floating point representation. She cannot decide how Examiner's\nmany bits to use for the mantissa and how many for the exponent.\nExplain the trade-off between using either a large number of bits for the mantissa, or a\nlarge number of bits for the exponent.",
           "marks": 2,
           "type": "explain",
           "answerType": "long_answer",
@@ -243,10 +241,7 @@
       ],
       "marks": 12,
       "text": [
-        "A binary pattern can be used to represent different data used in a computer system.",
-        "For",
-        "Examiner's",
-        "Use"
+        "A binary pattern can be used to represent different data used in a computer system."
       ]
     },
     {
@@ -256,7 +251,7 @@
         {
           "id": "3a",
           "label": "(a)",
-          "text": "Customer names are stored in the array Customer.\nFor\nExaminer's\nAn algorithm is to be designed to perform a serial search of the array for a requested\nUse\ncustomer name.\nThe algorithm will use the variables shown in the table.\nStudy the table and the algorithm and fill in the gaps.\nIdentifier Data Type Description\nCustomer ARRAY[2000] OF STRING\nThe customer names\nIndex INTEGER\nIndex position in the customer array\nIsFound\nSearchName STRING\nThe requested customer name\n//Serial search algorithm\nINPUT\nIsFound ← FALSE\nIndex ← 1\nREPEAT\nIF Customer [ ] = SearchName\nTHEN\nIsFound ← TRUE\nOUTPUT “FOUND – at position ” Index “ in the array”\nELSE\nIndex ←\nENDIF\nUNTIL (IsFound = TRUE) OR\nIF\nTHEN\nOUTPUT “Customer name was NOT FOUND”\nENDIF",
+          "text": "Customer names are stored in the array Customer.\nAn algorithm is to be designed to perform a serial search of the array for a requested\ncustomer name.\nThe algorithm will use the variables shown in the table.\nStudy the table and the algorithm and fill in the gaps.\nIdentifier Data Type Description\nCustomer ARRAY[2000] OF STRING\nThe customer names\nIndex INTEGER\nIndex position in the customer array\nIsFound\nSearchName STRING\nThe requested customer name\n//Serial search algorithm\nINPUT\nIsFound ← FALSE\nIndex ← 1\nREPEAT\nIF Customer [ ] = SearchName\nTHEN\nIsFound ← TRUE\nOUTPUT “FOUND – at position ” Index “ in the array”\nELSE\nIndex ←\nENDIF\nUNTIL (IsFound = TRUE) OR\nIF\nTHEN\nOUTPUT “Customer name was NOT FOUND”\nENDIF",
           "marks": 7,
           "type": "name",
           "answerType": "short_answer",
@@ -278,9 +273,9 @@
         {
           "id": "3c",
           "label": "(c)",
-          "text": "A binary search may be an alternative algorithm to a serial search.\nFor\nExaminer's\nUse",
+          "text": "A binary search may be an alternative algorithm to a serial search.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -408,9 +403,9 @@
             {
               "id": "4diii",
               "label": "(iii)",
-              "text": "The reverse Polish expression 3 7 * 6 + 9 / is to be evaluated using a stack.\nFor\nExaminer's\nThe first available location on the stack is 1.\nUse\nShow how the contents of the stack change as this expression is evaluated.",
+              "text": "The reverse Polish expression 3 7 * 6 + 9 / is to be evaluated using a stack.\nThe first available location on the stack is 1.\nShow how the contents of the stack change as this expression is evaluated.",
               "marks": 4,
-              "type": "use",
+              "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -421,10 +416,7 @@
       ],
       "marks": 12,
       "text": [
-        "Expressions can be written in either infix or reverse Polish notation.",
-        "For",
-        "Examiner's",
-        "Use"
+        "Expressions can be written in either infix or reverse Polish notation."
       ]
     },
     {
@@ -456,9 +448,9 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Trace this assembly language program using the trace table below.\nFor\nExaminer's\nUse\n500 LDD 507\n501 INC\n502 STO 509\n503 LDD 508\n504 INC\n505 STO 510\n506 END\n507 22\n508 170\n509 0\n510 0\nMemory Address\n507 508 509 510\nAccumulator\n22 170 0 0",
+          "text": "Trace this assembly language program using the trace table below.\n500 LDD 507\n501 INC\n502 STO 509\n503 LDD 508\n504 INC\n505 STO 510\n506 END\n507 22\n508 170\n509 0\n510 0\nMemory Address\n507 508 509 510\nAccumulator\n22 170 0 0",
           "marks": 5,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -479,9 +471,7 @@
       "marks": 12,
       "text": [
         "The table shows the assembly language instructions for a processor which has one general",
-        "For",
         "purpose register – the Accumulator. Examiner's",
-        "Use",
         "Instruction",
         "Explanation",
         "Op Code Operand",
@@ -551,9 +541,9 @@
         {
           "id": "6c",
           "label": "(c)",
-          "text": "Any process can be described as either ‘processor bound’ or ‘input/output bound’.\nFor\nExaminer's\nUse",
+          "text": "Any process can be described as either ‘processor bound’ or ‘input/output bound’.",
           "marks": null,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -585,10 +575,7 @@
       ],
       "marks": 15,
       "text": [
-        "In a multiprogramming environment the operating system includes a scheduler.",
-        "For",
-        "Examiner's",
-        "Use"
+        "In a multiprogramming environment the operating system includes a scheduler."
       ]
     },
     {
@@ -598,9 +585,9 @@
         {
           "id": "7a",
           "label": "(a)",
-          "text": "Define what is meant by the term computer simulation.\nFor\nExaminer's\nUse",
+          "text": "Define what is meant by the term computer simulation.",
           "marks": 2,
-          "type": "use",
+          "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -631,7 +618,7 @@
         {
           "id": "7d",
           "label": "(d)",
-          "text": "The values input to the simulation will affect the outputs produced.\nGive one example for this checkout scenario of a change to an input which will directly\naffect the output.\nInput change\nEffect on the output\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "The values input to the simulation will affect the outputs produced.\nGive one example for this checkout scenario of a change to an input which will directly\naffect the output.\nInput change\nEffect on the output\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
           "type": "name",
           "answerType": "short_answer",

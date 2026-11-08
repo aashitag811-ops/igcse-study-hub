@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "m25",
   "component": "12",
-  "totalMarks": 68,
+  "totalMarks": 75,
   "questionCount": 7,
   "questions": [
     {
@@ -13,24 +13,16 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "Complete the sentences about number systems.\nUse the items from the list.\nSome of the items in the list will not be used. You should only use an item once.\nA B C D E F G\nH W X Y Z 0 1",
-          "marks": null,
+          "text": "Complete the sentences about number systems.\nUse the items from the list.\nSome of the items in the list will not be used. You should only use an item once.\nA B C D E F G\nH W X Y Z 0 1\n2 4 8 10 16 127 128\n255 256\nThe binary number system is base ______ . The smallest denary number that can be\nrepresented as an 8-bit binary number is ______ . The largest denary number that\ncan be represented as an 8-bit binary number is ______ .\nThe hexadecimal number system is base ______ . Each hexadecimal digit is\nequivalent to ______ bits. The numbers 1 to 9 are used and the number 10 is\nrepresented by ______ . The hexadecimal number system continues up to the\nnumber 15, which is represented by ______ .",
+          "marks": 7,
           "type": "complete",
-          "answerType": "long_answer",
+          "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": null,
-      "text": []
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "2b",
+          "id": "1b",
           "label": "(b)",
           "text": "Two 8-bit binary numbers are given.\nAdd the two 8-bit binary numbers using binary addition.\nGive your answer in binary. Show all your working.\n1 0 0 1 1 0 1 1\n+ 0 0 0 1 0 0 1 1",
           "marks": 3,
@@ -41,16 +33,24 @@
           "parts": []
         },
         {
-          "id": "2c",
+          "id": "1c",
           "label": "(c)",
-          "text": "Binary addition can result in overflow.\nTick (✓) one box to show the correct definition of overflow in binary addition.\nA The answer has created a negative number that cannot be represented\nin binary addition.\nB The answer is the result of a logical shift that cannot be performed in\nbinary addition.\nC The answer is too large to represent in the number of bits available.\nD The answer is too small to represent in the number of bits available.\n\n2 An artist creates an image on a computer.",
+          "text": "Binary addition can result in overflow.\nTick (✓) one box to show the correct definition of overflow in binary addition.\nA The answer has created a negative number that cannot be represented\nin binary addition.\nB The answer is the result of a logical shift that cannot be performed in\nbinary addition.\nC The answer is too large to represent in the number of bits available.\nD The answer is too small to represent in the number of bits available.",
           "marks": 1,
           "type": "tick",
           "answerType": "diagram_only",
           "hasDiagramRef": false,
           "diagramOnly": true,
           "parts": []
-        },
+        }
+      ],
+      "marks": 11,
+      "text": []
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
           "id": "2a",
           "label": "(a)",
@@ -142,18 +142,9 @@
           ]
         }
       ],
-      "marks": 21,
+      "marks": 17,
       "text": [
-        "4 8 10 16 127 128",
-        "255 256",
-        "The binary number system is base ......................... . The smallest denary number that can be",
-        "represented as an 8-bit binary number is ......................... . The largest denary number that",
-        "can be represented as an 8-bit binary number is ......................... .",
-        "The hexadecimal number system is base ......................... . Each hexadecimal digit is",
-        "equivalent to ......................... bits. The numbers 1 to 9 are used and the number 10 is",
-        "represented by ......................... . The hexadecimal number system continues up to the",
-        "number 15, which is represented by ......................... .",
-        "[7]"
+        "An artist creates an image on a computer."
       ]
     },
     {
@@ -165,10 +156,10 @@
           "label": "(a)",
           "text": "The computer has a Von Neumann architecture.\nCircle three registers that are found in the Von Neumann architecture.\naccumulator arithmetic register binary counter\nbinary register control register current data register\ncurrent instruction register data counter instruction counter\nlogical register program counter storage register",
           "marks": 3,
-          "type": "circle",
-          "answerType": "diagram_only",
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
-          "diagramOnly": true,
+          "diagramOnly": false,
           "parts": []
         },
         {
@@ -486,7 +477,7 @@
         {
           "id": "7c",
           "label": "(c)",
-          "text": "Integrated development environments (IDEs) provide translators.\nIdentify three other common functions of an IDE.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Integrated development environments (IDEs) provide translators.\nIdentify three other common functions of an IDE.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
           "type": "identify",
           "answerType": "short_answer",

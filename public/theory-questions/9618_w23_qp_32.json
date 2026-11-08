@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w23",
   "component": "32",
-  "totalMarks": 57,
+  "totalMarks": 73,
   "questionCount": 19,
   "questions": [
     {
@@ -40,12 +40,11 @@
       "id": "2",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Describe what is meant by composite and non‑composite data types.",
         "Composite ........................................................................................................................................",
-        "Non‑composite .................................................................................................................................",
-        "[4]"
+        "Non‑composite ................................................................................................................................."
       ]
     },
     {
@@ -85,7 +84,7 @@
       "id": "4",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 3,
       "text": [
         "Complete the following paragraph about a protocol suite, using words from the given list.",
         "Some words are not used.",
@@ -93,8 +92,7 @@
         "peer‑to‑peer queue stack star TCP/IP",
         "The protocols in a ............................................................................. determine the interconnectivity",
         "rules for a ............................................................................. network model such as the",
-        "............................................................................. model.",
-        "[3]"
+        "............................................................................. model."
       ]
     },
     {
@@ -202,7 +200,7 @@
       "id": "8",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 5,
       "text": [
         "Calculate the shortest distance between the Start and each of the destinations in the diagram",
         "using Dijkstra’s algorithm.",
@@ -211,8 +209,7 @@
         "Start",
         "Working ............................................................................................................................................",
         "Answers:",
-        "A B C D E F",
-        "[5]"
+        "A B C D E F"
       ]
     },
     {
@@ -283,12 +280,11 @@
       "id": "10",
       "context": [],
       "parts": [],
-      "marks": null,
+      "marks": 4,
       "text": [
         "Describe the features of the SIMD and MISD computer architectures.",
         "SIMD ................................................................................................................................................",
-        "MISD ................................................................................................................................................",
-        "[4]"
+        "MISD ................................................................................................................................................"
       ]
     },
     {
@@ -404,7 +400,7 @@
         {
           "id": "19c",
           "label": "(c)",
-          "text": "N is a person who might enjoy H if H is a hobby and N does not dislike H.\nWrite this as a rule.\nmight_enjoy(N, H)\nIF ______\n\n12 (a) Describe, with an example, what is meant by an exception.",
+          "text": "N is a person who might enjoy H if H is a hobby and N does not dislike H.\nWrite this as a rule.\nmight_enjoy(N, H)\nIF ______\n12 (a) Describe, with an example, what is meant by an exception.",
           "marks": 4,
           "type": "describe",
           "answerType": "fill_blank",
@@ -415,7 +411,7 @@
         {
           "id": "19b",
           "label": "(b)",
-          "text": "A pseudocode algorithm searches for a customer record in a random file\nAccountRecord.dat. A user inputs the name of the customer.\nThe records are stored using the user‑defined data type TAccount.\nTYPE TAccount\nDECLARE AccountNumber : INTEGER\nDECLARE Name : STRING\nDECLARE Address : STRING\nDECLARE Telephone : STRING\nENDTYPE\nIf the record is found, it is output, otherwise an error message is displayed.\nComplete the file handling pseudocode.\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE MaxSize : INTEGER\nDECLARE FoundFlag : BOOLEAN\nDECLARE SearchCustomer : STRING\nMaxSize 1000\nOPENFILE ______\nLocation 1\n______ FALSE\nOUTPUT \"Enter the customer’s name\"\n______ AND Location <= MaxSize\n______ \"AccountRecord.dat\", ______\nGETRECORD \"AccountRecord.dat\", Customer\nIF SearchCustomer = Customer.Name THEN\nOUTPUT \"Customer found: \"\nOUTPUT Customer // output customer record\nFoundFlag TRUE\nENDIF\nLocation Location + 1\nENDWHILE\nIF NOT FoundFlag THEN\nOUTPUT \"______\"\nENDIF\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "A pseudocode algorithm searches for a customer record in a random file\nAccountRecord.dat. A user inputs the name of the customer.\nThe records are stored using the user‑defined data type TAccount.\nTYPE TAccount\nDECLARE AccountNumber : INTEGER\nDECLARE Name : STRING\nDECLARE Address : STRING\nDECLARE Telephone : STRING\nENDTYPE\nIf the record is found, it is output, otherwise an error message is displayed.\nComplete the file handling pseudocode.\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE MaxSize : INTEGER\nDECLARE FoundFlag : BOOLEAN\nDECLARE SearchCustomer : STRING\nMaxSize 1000\nOPENFILE ______\nLocation 1\n______ FALSE\nOUTPUT \"Enter the customer’s name\"\n______ AND Location <= MaxSize\n______ \"AccountRecord.dat\", ______\nGETRECORD \"AccountRecord.dat\", Customer\nIF SearchCustomer = Customer.Name THEN\nOUTPUT \"Customer found: \"\nOUTPUT Customer // output customer record\nFoundFlag TRUE\nENDIF\nLocation Location + 1\nENDWHILE\nIF NOT FoundFlag THEN\nOUTPUT \"______\"\nENDIF\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 7,
           "type": "name",
           "answerType": "fill_blank",

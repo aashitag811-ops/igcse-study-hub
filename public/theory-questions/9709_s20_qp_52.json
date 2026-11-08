@@ -3,7 +3,7 @@
   "subjectCode": "9709",
   "session": "s20",
   "component": "52",
-  "totalMarks": 44,
+  "totalMarks": 47,
   "questionCount": 7,
   "questions": [
     {
@@ -13,7 +13,7 @@
       "marks": null,
       "text": [
         "For n values of the variable x, it is given that",
-        "Σ\u0000x − 50\u0001 = 144 and Σx = 944.",
+        "Σx − 50 = 144 and Σx = 944.",
         "Find the value of n. [3]"
       ]
     },
@@ -70,25 +70,9 @@
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Two machines, A and B, produce metal rods of a certain type. The lengths, in metres, of 19 rods",
-        "produced by machine A and 19 rods produced by machine B are shown in the following back-to-back",
-        "stem-and-leaf diagram.",
-        "A B",
-        "21 1 2 4",
-        "7 6 3 0 22 2 4 5 5 6",
-        "8 7 4 3 1 1 23 0 2 6 8 9 9",
-        "5 5 5 3 2 24 3 3 4 6"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Find the median and the interquartile range for machine A. \nIt is given that for machine B the median is 0.232 m, the lower quartile is 0.224 m and the upper\nquartile is 0.243 m.",
           "marks": 3,
@@ -99,7 +83,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "Draw box-and-whisker plots for A and B.",
           "marks": 3,
@@ -110,16 +94,35 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
-          "text": "Hence make two comparisons between the lengths of the rods produced by machine A and those\nproduced by machine B. \n4 Trees in the Redian forest are classified as tall, medium or short, according to their height. The heights\ncan be modelled by a normal distribution with mean 40 m and standard deviation 12 m. Trees with a\nheight of less than 25 m are classified as short.",
+          "text": "Hence make two comparisons between the lengths of the rods produced by machine A and those\nproduced by machine B.",
           "marks": 2,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "Two machines, A and B, produce metal rods of a certain type. The lengths, in metres, of 19 rods",
+        "produced by machine A and 19 rods produced by machine B are shown in the following back-to-back",
+        "stem-and-leaf diagram.",
+        "A B",
+        "21 1 2 4",
+        "7 6 3 0 22 2 4 5 5 6",
+        "8 7 4 3 1 1 23 0 2 6 8 9 9",
+        "5 5 5 3 2 24 3 3 4 6",
+        "4 3 1 0 25 6",
+        "Key: 7 22 4 means 0.227 m for machine A and 0.224 m for machine B."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -154,10 +157,11 @@
           "parts": []
         }
       ],
-      "marks": 16,
+      "marks": 8,
       "text": [
-        "3 1 0 25 6",
-        "Key: 7 22 4 means 0.227 m for machine A and 0.224 m for machine B."
+        "Trees in the Redian forest are classified as tall, medium or short, according to their height. The heights",
+        "can be modelled by a normal distribution with mean 40 m and standard deviation 12 m. Trees with a",
+        "height of less than 25 m are classified as short."
       ]
     },
     {
@@ -167,7 +171,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Show that P\u0000X = 3\u0001 = .",
+          "text": "Show that PX = 3 = .",
           "marks": 2,
           "type": "calculate",
           "answerType": "calculate",
@@ -185,9 +189,20 @@
           "hasDiagramRef": false,
           "diagramOnly": true,
           "parts": []
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "Find EX and VarX.",
+          "marks": 3,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": 5,
+      "marks": 8,
       "text": [
         "A fair three-sided spinner has sides numbered 1, 2, 3. A fair five-sided spinner has sides numbered",
         "1, 1, 2, 2, 3. Both spinners are spun once. For each spinner, the number on the side on which it",

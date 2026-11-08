@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "w21",
   "component": "21",
-  "totalMarks": 41,
+  "totalMarks": 45,
   "questionCount": 5,
   "questions": [
     {
@@ -57,8 +57,8 @@
         {
           "id": "1e",
           "label": "(e)",
-          "text": "Explain how your program completed the part of Task 3 which calculates the total number of\nsquash court bookings, finds the court(s) with the most bookings and displays this information.\nInclude any programming statements that you have used and fully explain the purpose of\neach statement.\n\nSection B starts on Page 8\nSection B",
-          "marks": null,
+          "text": "Explain how your program completed the part of Task 3 which calculates the total number of\nsquash court bookings, finds the court(s) with the most bookings and displays this information.\nInclude any programming statements that you have used and fully explain the purpose of\neach statement.\nSection B starts on Page 8\nSection B",
+          "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
           "hasDiagramRef": false,
@@ -66,7 +66,7 @@
           "parts": []
         }
       ],
-      "marks": 16,
+      "marks": 20,
       "text": [
         "All variables, constants and other identifiers must have meaningful names."
       ]
@@ -132,7 +132,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Identify another loop structure available in pseudocode.\n\n3 A program has been written to check the value of a measurement. The measurement must be a\npositive number and given to three decimal places, for example, 3.982",
+          "text": "Identify another loop structure available in pseudocode.\n3 A program has been written to check the value of a measurement. The measurement must be a\npositive number and given to three decimal places, for example, 3.982",
           "marks": 1,
           "type": "identify",
           "answerType": "short_answer",
@@ -177,7 +177,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "Explain why verification is needed and how verification could be performed by this program.\n\nQuestion 4 starts on Page 12\n4 The algorithm shown by this flowchart allows the input of examination marks for a class of students.\nA mark of –1 ends the process. If a mark is 80 or over then a distinction grade is awarded. The\nnumber of distinctions for the whole class is calculated. If this is over 50% of the class, the class is\nawarded a highly commended certificate.\nSTART\nCounter ← 0\nDistinction ← 0\nINPUT\nMark\nYes\nIS\nAward ← Distinction/Counter\nMark = –1?\nNo\nIS Yes OUTPUT\nCounter ← Counter + 1\n\"Highly\nAward > 0.5?\nCommended\"\nNo\nDistinction ← Distinction + 1\nEND\nIS\nYes\nMark >= 80?\nNo\nComplete a trace table for the algorithm using this input data:\n88, 74, 60, 90, 84, 87, 95, 72, 84, 66, –1\nCounter Distinction Mark Award\nOUTPUT\n\n5 A database table, APPLIANCE, is used to keep a record of kitchen appliances available for sale.\nThe following data is stored for each appliance:\n• CATEGORY – washer, dishwasher, fridge or freezer\n• ECONOMYRATING – A, B, C or D\n• MANUFACTURER – Baku or ABC\n• PRICE – price in $\n• CODE – a unique code allocated by the manufacturer e.g. B982\n• STOCK – number in stock.\nThe database management system uses these data types:\nText Number Currency Boolean\nThe ECONOMYRATING field and MANUFACTURER field have a data type of text.",
+          "text": "Explain why verification is needed and how verification could be performed by this program.\nQuestion 4 starts on Page 12\n4 The algorithm shown by this flowchart allows the input of examination marks for a class of students.\nA mark of –1 ends the process. If a mark is 80 or over then a distinction grade is awarded. The\nnumber of distinctions for the whole class is calculated. If this is over 50% of the class, the class is\nawarded a highly commended certificate.\nSTART\nCounter ← 0\nDistinction ← 0\nINPUT\nMark\nYes\nIS\nAward ← Distinction/Counter\nMark = –1?\nNo\nIS Yes OUTPUT\nCounter ← Counter + 1\n\"Highly\nAward > 0.5?\nCommended\"\nNo\nDistinction ← Distinction + 1\nEND\nIS\nYes\nMark >= 80?\nNo\nComplete a trace table for the algorithm using this input data:\n88, 74, 60, 90, 84, 87, 95, 72, 84, 66, –1\nCounter Distinction Mark Award\nOUTPUT\n5 A database table, APPLIANCE, is used to keep a record of kitchen appliances available for sale.\nThe following data is stored for each appliance:\n• CATEGORY – washer, dishwasher, fridge or freezer\n• ECONOMYRATING – A, B, C or D\n• MANUFACTURER – Baku or ABC\n• PRICE – price in $\n• CODE – a unique code allocated by the manufacturer e.g. B982\n• STOCK – number in stock.\nThe database management system uses these data types:\nText Number Currency Boolean\nThe ECONOMYRATING field and MANUFACTURER field have a data type of text.",
           "marks": 3,
           "type": "explain",
           "answerType": "long_answer",
@@ -199,7 +199,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "Complete the query-by-example grid to display only the category, manufacturer and code of\nthe appliances with an economy rating of A.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "Complete the query-by-example grid to display only the category, manufacturer and code of\nthe appliances with an economy rating of A.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 3,
           "type": "complete",
           "answerType": "long_answer",

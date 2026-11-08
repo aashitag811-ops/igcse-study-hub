@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s25",
   "component": "12",
-  "totalMarks": 75,
+  "totalMarks": 46,
   "questionCount": 7,
   "questions": [
     {
@@ -13,16 +13,44 @@
         {
           "id": "1a",
           "label": "(a)",
-          "text": "The table has six statements about the Von Neumann model for a computer system.\nThree of the statements are incorrect.\nStatement number Statement\nThe Program Counter (PC) stores the next instruction to be fetched from\nmemory.\nThe Arithmetic and Logic Unit (ALU) performs mathematical and logical\noperations.\n3 The Control Unit (CU) sends signals to other components on the data bus.\nThe Memory Data Register (MDR) transfers data to the memory address\nstored in the Memory Address Register (MAR).\n5 The MAR stores an address from memory.\n6 The Accumulator (ACC) stores the result of calculations.\nComplete the table by writing the three incorrect statement numbers and the corrected\nstatements.\nIncorrect\nCorrected statement\nstatement number",
-          "marks": 3,
-          "type": "complete",
-          "answerType": "long_answer",
+          "text": "The table has six statements about the Von Neumann model for a computer system.\nThree of the statements are incorrect.\nStatement number Statement\nThe Program Counter (PC) stores the next instruction to be fetched from\nmemory.\nThe Arithmetic and Logic Unit (ALU) performs mathematical and logical\noperations.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": null,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The Control Unit (CU) sends signals to other components on the data bus.",
+        "The Memory Data Register (MDR) transfers data to the memory address",
+        "stored in the Memory Address Register (MAR)."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "The MAR stores an address from memory."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "1b",
+          "id": "6b",
           "label": "(b)",
           "text": "Registers that are used in the Fetch-Execute (F-E) cycle include the PC, MAR, MDR and the\nACC.\nIdentify one other register and describe its role in the Fetch-Execute (F-E) cycle.\nRegister ______\nRole ______",
           "marks": 2,
@@ -33,37 +61,18 @@
           "parts": []
         },
         {
-          "id": "1c",
+          "id": "6c",
           "label": "(c)",
-          "text": "Explain how an interrupt from an input device will be detected and handled in the F-E cycle.",
+          "text": "Explain how an interrupt from an input device will be detected and handled in the F-E cycle.\n2 (a) Convert the denary integer 558 into 12-bit binary and hexadecimal.\nBinary ______\nHexadecimal ______",
           "marks": 4,
           "type": "explain",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 9,
-      "text": []
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
-        {
-          "id": "2a",
-          "label": "(a)",
-          "text": "Convert the denary integer 558 into 12-bit binary and hexadecimal.\nBinary ______\nHexadecimal ______",
-          "marks": 2,
-          "type": "complete",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         },
         {
-          "id": "2b",
+          "id": "6b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -73,7 +82,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2bi",
+              "id": "6bi",
               "label": "(i)",
               "text": "Convert the two’s complement binary integer 11100010 into denary.",
               "marks": 1,
@@ -84,7 +93,7 @@
               "parts": []
             },
             {
-              "id": "2bii",
+              "id": "6bii",
               "label": "(ii)",
               "text": "Write the smallest and the largest two’s complement binary integers that can be\nrepresented in 8 bits.\nSmallest ______\nLargest ______",
               "marks": 2,
@@ -97,26 +106,18 @@
           ]
         },
         {
-          "id": "2c",
+          "id": "6c",
           "label": "(c)",
-          "text": "Give one application where Binary Coded Decimal (BCD) is used and justify its use.\nApplication ______\nJustification ______",
+          "text": "Give one application where Binary Coded Decimal (BCD) is used and justify its use.\nApplication ______\nJustification ______\n3 A computer program uses a digital camera to read the words on an item.\nThe program can read the words that are written on the item, translate the words to a chosen\nlanguage and then output the words as audio. For example, when used in a supermarket, the\nprogram can output the words written on the labels on products.\nThe program uses Artificial Intelligence (AI).",
           "marks": 2,
           "type": "give",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 7,
-      "text": []
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "3a",
+          "id": "6a",
           "label": "(a)",
           "text": "Explain how AI is used in the computer program described.",
           "marks": 4,
@@ -127,7 +128,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "6b",
           "label": "(b)",
           "text": "State two social benefits of the use of AI in the computer program described.",
           "marks": 2,
@@ -138,7 +139,7 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "6c",
           "label": "(c)",
           "text": "The computer program is released under a commercial software licence.",
           "marks": null,
@@ -148,7 +149,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "6ci",
               "label": "(i)",
               "text": "Describe the features of a commercial software licence.",
               "marks": 3,
@@ -159,45 +160,20 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "6cii",
               "label": "(ii)",
-              "text": "Explain the reasons why an open source software licence might not be appropriate for\nthe computer program described.",
+              "text": "Explain the reasons why an open source software licence might not be appropriate for\nthe computer program described.\n4 (a) Write the logic expressions for the following logic circuit.\nR DO NOT WRITE IN THIS MARGIN\nX = ______\nY = ______",
               "marks": 3,
               "type": "explain",
-              "answerType": "long_answer",
+              "answerType": "fill_blank",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 12,
-      "text": [
-        "A computer program uses a digital camera to read the words on an item.",
-        "The program can read the words that are written on the item, translate the words to a chosen",
-        "language and then output the words as audio. For example, when used in a supermarket, the",
-        "program can output the words written on the labels on products.",
-        "The program uses Artificial Intelligence (AI)."
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
-        {
-          "id": "4a",
-          "label": "(a)",
-          "text": "Write the logic expressions for the following logic circuit.\nR DO NOT WRITE IN THIS MARGIN\nX = ______\nY = ______",
-          "marks": 2,
-          "type": "write",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
         },
         {
-          "id": "4b",
+          "id": "6b",
           "label": "(b)",
           "text": "Complete the truth table for the logic expression:\nX = NOT (A AND (B XOR C))\nA B C Working space X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
           "marks": 2,
@@ -208,8 +184,15 @@
           "parts": []
         }
       ],
-      "marks": 4,
-      "text": []
+      "marks": 3,
+      "text": [
+        "The Accumulator (ACC) stores the result of calculations.",
+        "Complete the table by writing the three incorrect statement numbers and the corrected",
+        "statements.",
+        "Incorrect",
+        "Corrected statement",
+        "statement number"
+      ]
     },
     {
       "id": "5",
@@ -458,7 +441,7 @@
             {
               "id": "7bii",
               "label": "(ii)",
-              "text": "The ACC currently contains the following binary value.\n0 0 0 1 1 1 0 1\nWrite the result after the instruction XOR #30 is run.\n\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+              "text": "The ACC currently contains the following binary value.\n0 0 0 1 1 1 0 1\nWrite the result after the instruction XOR #30 is run.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
               "type": "write",
               "answerType": "short_answer",

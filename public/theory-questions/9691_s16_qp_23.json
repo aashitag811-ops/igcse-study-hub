@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s16",
   "component": "23",
-  "totalMarks": 36,
+  "totalMarks": 52,
   "questionCount": 10,
   "questions": [
     {
@@ -39,7 +39,7 @@
         {
           "id": "2a",
           "label": "(a)",
-          "text": "Write program code to implement the flowchart opposite as the procedure VendingMachine.\nProgramming Language ______\nCode ______\n\nPROCEDURE VendingMachine\nINPUT SnackType\nCASE OF\n'A'\nSnackType\nPrice @\u000320\n'B'\nPrice @\u000340\n'C'\nPrice @\u000350\n'D'\nPrice @\u000380\nInitialise Total\nINPUT CoinValue\nTotal @\u0003Total + CoinValue\nNo\nIs Total >=\nPrice?\nYes\nThis is a\nprocedure call\nChangeDue @\u0003Total - Price\nOutputChange\nYes\nIs ChangeDue\n(ChangeDue)\n> 0?\nNo\nOUTPUT\n\"No Change\"\nENDPROCEDURE",
+          "text": "Write program code to implement the flowchart opposite as the procedure VendingMachine.\nProgramming Language ______\nCode ______\nPROCEDURE VendingMachine\nINPUT SnackType\nCASE OF\n'A'\nSnackType\nPrice @20\n'B'\nPrice @40\n'C'\nPrice @50\n'D'\nPrice @80\nInitialise Total\nINPUT CoinValue\nTotal @Total + CoinValue\nNo\nIs Total >=\nPrice?\nYes\nThis is a\nprocedure call\nChangeDue @Total - Price\nOutputChange\nYes\nIs ChangeDue\n(ChangeDue)\n> 0?\nNo\nOUTPUT\n\"No Change\"\nENDPROCEDURE",
           "marks": 8,
           "type": "write",
           "answerType": "fill_blank",
@@ -71,7 +71,7 @@
             {
               "id": "2bii",
               "label": "(ii)",
-              "text": "The flowchart in part (a) shows the procedure call OutputChange(ChangeDue). This\nprocedure outputs a message summarising the number of each coin value needed to\ngive the correct change.\nWrite program code for the procedure OutputChange.\nProgramming Language ______\nCode ______\n\nQuestion 3 begins on Page 9.",
+              "text": "The flowchart in part (a) shows the procedure call OutputChange(ChangeDue). This\nprocedure outputs a message summarising the number of each coin value needed to\ngive the correct change.\nWrite program code for the procedure OutputChange.\nProgramming Language ______\nCode ______\nQuestion 3 begins on Page 9.",
               "marks": 7,
               "type": "give",
               "answerType": "fill_blank",
@@ -279,7 +279,7 @@
               "id": "10bi",
               "label": "(i)",
               "text": "Dry run the procedure call SortIntoRankOrder. Complete the trace table.\nPointsTotal\nNoMore PointsTotal[x] <\nx Temp\nSwaps PointsTotal[x+1]\n[1] [2] [3] [4] [5] [6] [7] [8] [9] \n+5 +3 +4 +2 0 +1 -2 -1 -1 -3\nTRUE",
-              "marks": null,
+              "marks": 9,
               "type": "complete",
               "answerType": "long_answer",
               "hasDiagramRef": false,
@@ -290,7 +290,7 @@
               "id": "10bii",
               "label": "(ii)",
               "text": "Alessio writes a procedure DisplayRankOrderList. This procedure is to display the\ncompetitors’ names and their points totals in rank order.\nPROCEDURE DisplayRankOrderList\nOUTPUT \" Competitor Table\"\nOUTPUT \"Rank Name Points Total\"\nOUTPUT \"=========================================\"\nFOR i ← 1 TO 10\nOUTPUT i, CompetitorName[i], PointsTotal[i]\nENDFOR\nENDPROCEDURE\nWhen the output is published, some competitors complain that their points total and rank\nare not correct.\nExplain the error that Alessio has made.",
-              "marks": null,
+              "marks": 2,
               "type": "name",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -313,7 +313,7 @@
               "id": "10ci",
               "label": "(i)",
               "text": "Write program code to define a competitor record with identifier CompetitorRecord\nand the fields CompetitorName, CompetitorTelNumber, DateOfBirth,\nGameScores and PointsTotal.\nProgramming language ______\nCode ______",
-              "marks": null,
+              "marks": 5,
               "type": "write",
               "answerType": "fill_blank",
               "hasDiagramRef": false,
@@ -347,7 +347,7 @@
         {
           "id": "10e",
           "label": "(e)",
-          "text": "At the end of the day, the computer is shut down. Alessio wants to save the data from the\narray CompetitorData to a new sequential file CompetitorFile.DAT\nWrite program code for a procedure SaveToFile.\nProgramming language ______\nCode ______\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "text": "At the end of the day, the computer is shut down. Alessio wants to save the data from the\narray CompetitorData to a new sequential file CompetitorFile.DAT\nWrite program code for a procedure SaveToFile.\nProgramming language ______\nCode ______\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 5,
           "type": "name",
           "answerType": "fill_blank",
@@ -356,7 +356,7 @@
           "parts": []
         }
       ],
-      "marks": 17,
+      "marks": 33,
       "text": [
         "\"River\" 10 0 10 0",
         "Alessio now designs the procedures InputScoresAndCalcAverage and",

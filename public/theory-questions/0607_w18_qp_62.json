@@ -11,6 +11,17 @@
       "context": [],
       "parts": [
         {
+          "id": "1a",
+          "label": "(a)",
+          "text": "By continuing the spiral, show that Corner 10 is at (3, 3).",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
           "id": "1b",
           "label": "(b)",
           "text": "The length of the spiral from (0, 0) to Corner 4 is 6 units.\nFind the length of the spiral from (0, 0) to Corner 10 .",
@@ -24,7 +35,7 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Use your spiral to complete this table.\nCorner\nLengths added Length from (0, 0)\nnumber\n1 1 1",
+          "text": "Use your spiral to complete this table.\nCorner\nLengths added Length from (0, 0)\nnumber\n1 1 1\n2 2\n1 + 1\n3 4\n1 + 1 + 2\n4 6\n6 12\n1 + 1 + 2 + 2 + 3 + 3\n7 16\n1 + 1 + 2 + 2 + 3 + 3 + 4\n8 20\n1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5",
           "marks": null,
           "type": "complete",
           "answerType": "long_answer",
@@ -34,42 +45,14 @@
         }
       ],
       "marks": null,
-      "text": [
-        "2",
-        "−6 −4 −2 2 4 6",
-        "−2",
-        "−4",
-        "−6",
-        "The robot continues to turn and move in the same way.",
-        "1 (a) By continuing the spiral, show that Corner 10 is at (3, 3)."
-      ]
+      "text": []
     },
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "2",
-        "1 + 1"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "4",
-        "1 + 1 + 2"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4n",
+          "id": "2n",
           "label": "(n)",
           "text": "(L)\n1 2 2\n2 4 6\n3 6 12\n4 8 20\nn k\n` j\nn n+1",
           "marks": null,
@@ -80,7 +63,7 @@
           "parts": []
         },
         {
-          "id": "4a",
+          "id": "2a",
           "label": "(a)",
           "text": "Find a formula for n in terms of k.",
           "marks": null,
@@ -91,7 +74,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "2b",
           "label": "(b)",
           "text": "Use part (a) to show that the formula for the length, L, of the spiral from (0, 0) to Corner k is\nL = `k+2j.",
           "marks": null,
@@ -102,17 +85,39 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "2c",
           "label": "(c)",
-          "text": "Show that the formula gives the correct length of the spiral from (0, 0) to Corner 14 .\n3 (a) When k is an even number, find an expression, in terms of k, for the length of the spiral",
+          "text": "Show that the formula gives the correct length of the spiral from (0, 0) to Corner 14 .",
           "marks": null,
           "type": "calculate",
           "answerType": "calculate",
           "hasDiagramRef": false,
           "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "The table shows the length, L, of the spiral from (0, 0) to Corner k , where k is an even number.",
+        "Term number Length"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "When k is an even number, find an expression, in terms of k, for the length of the spiral",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": [
             {
-              "id": "4ci",
+              "id": "3ai",
               "label": "(i)",
               "text": "from Corner k - 1 to Corner k ,",
               "marks": null,
@@ -123,7 +128,7 @@
               "parts": []
             },
             {
-              "id": "4cii",
+              "id": "3aii",
               "label": "(ii)",
               "text": "from Corner k to Corner k + 1 .",
               "marks": null,
@@ -136,7 +141,7 @@
           ]
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -146,7 +151,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4bi",
+              "id": "3bi",
               "label": "(i)",
               "text": "Using question 2(b), find a formula, in terms of k, for the length, L, of the spiral\nfrom (0, 0) to Corner k + 1 .",
               "marks": null,
@@ -157,29 +162,26 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "3bii",
               "label": "(ii)",
-              "text": "Use your formula to show that the length of the spiral from (0, 0) to Corner 7 is 16.\n4 A corner on the spiral has co-ordinates (x, y).\nHorizontal lengths of the spiral are added to give the total horizontal length, H.\nx co-ordinate Total horizontal length\nHorizontal lengths",
+              "text": "Use your formula to show that the length of the spiral from (0, 0) to Corner 7 is 16.",
               "marks": null,
-              "type": "give",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "4bx",
-              "label": "(x)",
-              "text": "(H)\n1 1 1\n2 6\n1 + 2 + 3\n3 15\n1 + 2 + 3 + 4 + 5\n4 28\n1 + 2 + 3 + 4 + 5 + 6 + 7",
-              "marks": null,
-              "type": "other",
-              "answerType": "short_answer",
+              "type": "calculate",
+              "answerType": "calculate",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": null,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -237,7 +239,7 @@
             {
               "id": "4dii",
               "label": "(ii)",
-              "text": "The spiral has length 1560 from (0, 0) to the corner with co-ordinates (x, y).\nUse the formula in part (i) to find the value of x.\nB MODELLING (QUESTIONS 5 to 8)\nOPEN BOXES (20 marks)\nYou are advised to spend no more than 45 minutes on this part.\nThis task looks at maximum volumes when open boxes are made using regular shaped pieces of metal.\nJenny makes open triangular-based boxes from a piece of metal in the shape of an equilateral triangle.\nNOT TO\nSCALE\n30°\n30cm\nShe cuts equal sized pieces from each corner of the equilateral triangle.\nEach cut is at right angles to the side of the shape.\nNOT TO\ncut =\nSCALE\nheight\n30°\n30cm\nThe sides are folded up to form the vertical sides of an open triangular box.\nheight",
+              "text": "The spiral has length 1560 from (0, 0) to the corner with co-ordinates (x, y).\nUse the formula in part (i) to find the value of x.\nB MODELLING (QUESTIONS 5 to 8)\nOPEN BOXES (20 marks)\nYou are advised to spend no more than 45 minutes on this part.\nThis task looks at maximum volumes when open boxes are made using regular shaped pieces of metal.\nJenny makes open triangular-based boxes from a piece of metal in the shape of an equilateral triangle.\n30°\n30cm\nShe cuts equal sized pieces from each corner of the equilateral triangle.\nEach cut is at right angles to the side of the shape.\ncut =\nheight\n30°\n30cm\nThe sides are folded up to form the vertical sides of an open triangular box.\nheight",
               "marks": null,
               "type": "use",
               "answerType": "short_answer",
@@ -250,15 +252,10 @@
       ],
       "marks": null,
       "text": [
-        "6",
-        "6 12",
-        "1 + 1 + 2 + 2 + 3 + 3",
-        "7 16",
-        "1 + 1 + 2 + 2 + 3 + 3 + 4",
-        "8 20",
-        "1 + 1 + 2 + 2 + 3 + 3 + 4 + 4 + 5 + 5",
-        "2 The table shows the length, L, of the spiral from (0, 0) to Corner k , where k is an even number.",
-        "Term number Length"
+        "A corner on the spiral has co-ordinates (x, y).",
+        "Horizontal lengths of the spiral are added to give the total horizontal length, H.",
+        "x co-ordinate Total horizontal length",
+        "Horizontal lengths"
       ]
     },
     {
@@ -279,7 +276,7 @@
         {
           "id": "5b",
           "label": "(b)",
-          "text": "Here is an enlargement of one corner cut from the metal triangle.\nNOT TO\nSCALE\n2cm\ncm\n2cm\n30°",
+          "text": "Here is an enlargement of one corner cut from the metal triangle.\n2cm\ncm\n2cm\n30°",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
@@ -300,7 +297,7 @@
             {
               "id": "5bii",
               "label": "(ii)",
-              "text": "NOT TO\nSCALE\n30°\n30cm\nUsing OA = 17.32 cm and r = 4, find the area of the shaded triangle.\nYou should use this formula.\nArea = bcsin A\na b\nB c",
+              "text": "30°\n30cm\nUsing OA = 17.32 cm and r = 4, find the area of the shaded triangle.\nYou should use this formula.\nArea = bcsin A\na b\nB c",
               "marks": null,
               "type": "use",
               "answerType": "short_answer",
@@ -412,8 +409,6 @@
       "text": [
         "Jenny wants a model for the volume, Vcm , of the open box made from an equilateral triangle of side 30 cm.",
         "She makes a cut of length xcm at right angles to the side of the equilateral triangle.",
-        "NOT TO",
-        "SCALE",
         "cm O",
         "xcm",
         "30° 30°",

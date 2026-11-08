@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s16",
   "component": "42",
-  "totalMarks": 54,
+  "totalMarks": 48,
   "questionCount": 23,
   "questions": [
     {
@@ -232,15 +232,70 @@
       "parts": [],
       "marks": null,
       "text": [
-        "ELSE"
+        "ELSE",
+        "14 // move to the next list item"
       ]
     },
     {
-      "id": "14",
+      "id": "16",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "17",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "UNTIL IsFound = TRUE OR ....................................................................."
+      ]
+    },
+    {
+      "id": "18",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF IsFound = FALSE"
+      ]
+    },
+    {
+      "id": "19",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN"
+      ]
+    },
+    {
+      "id": "20",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "OUTPUT \"Not Found\""
+      ]
+    },
+    {
+      "id": "21",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ENDIF"
+      ]
+    },
+    {
+      "id": "22",
       "context": [],
       "parts": [
         {
-          "id": "14b",
+          "id": "22b",
           "label": "(b)",
           "text": "The recursive procedure X is defined as follows:\n01 PROCEDURE X(Index, Item)\n02 IF MyList[Index] > 0\n03 THEN\n04 IF MyList(Index) >= Item\n05 THEN\n06 MyList[Index] ← MyList[Index + 1]\n07 ENDIF\n08 CALL X(Index + 1, Item)\n09 ENDIF\n10 ENDPROCEDURE\nAn array MyList is used to store a sorted data set of non-zero integers. Unused cells contain\nzero.\n1 2 3 4 5 6 7 8 9 10\nMyList 3 5 8 9 13 16 27 0 0 0",
           "marks": null,
@@ -250,7 +305,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "14bi",
+              "id": "22bi",
               "label": "(i)",
               "text": "Complete the trace table for the dry-run of the pseudocode for the procedure\nCALL X(1, 9).\nMyList\nIndex Item\n1 2 3 4 5 6 7 8 9 10\n3 5 8 9 13 16 27 0 0 0\n1 9",
               "marks": 4,
@@ -261,9 +316,9 @@
               "parts": []
             },
             {
-              "id": "14bii",
+              "id": "22bii",
               "label": "(ii)",
-              "text": "State the purpose of procedure X when used with the array MyList.\n\n3 A car hire company hires cars to customers. Each time a car is hired, this is treated as a transaction.\nFor each transaction, the following data are stored.\nFor the customer:\n• customer name\n• ID number\nFor the hire:\n• car registration\n• hire start date\n• number of days hired\nThe transaction data are stored in a text file HIRE-TRANS. The file is made up of a file body,\nF_BODY, and a file trailer, F_TRAILER.\nF_BODY has one transaction, TRANS, on each line.",
+              "text": "State the purpose of procedure X when used with the array MyList.\n3 A car hire company hires cars to customers. Each time a car is hired, this is treated as a transaction.\nFor each transaction, the following data are stored.\nFor the customer:\n• customer name\n• ID number\nFor the hire:\n• car registration\n• hire start date\n• number of days hired\nThe transaction data are stored in a text file HIRE-TRANS. The file is made up of a file body,\nF_BODY, and a file trailer, F_TRAILER.\nF_BODY has one transaction, TRANS, on each line.",
               "marks": 1,
               "type": "state",
               "answerType": "short_answer",
@@ -274,7 +329,7 @@
           ]
         },
         {
-          "id": "14a",
+          "id": "22a",
           "label": "(a)",
           "text": "The first step in Jackson Structured Programming (JSP) design is to produce a JSP data\nstructure diagram.\nComplete the following JSP data structure diagram.\nHIRE-TRANS\nF_BODY",
           "marks": 7,
@@ -285,10 +340,10 @@
           "parts": []
         },
         {
-          "id": "14b",
+          "id": "22b",
           "label": "(b)",
-          "text": "The computer system will produce many printed reports.\nOne report is CAR_REPORT. This displays all hire data for all cars.\nFor each car, the following data are displayed:\n• the car data\n• a list of all the hires\n• the total number of hires\nA car with zero hires is not included on the report.\nComplete the following CAR_REPORT JSP data structure diagram.\nCAR_REPORT\nCAR\nNo hires One or more hires\nHIRE_LIST\nHIRE\n\n4 When a car reaches a certain age, a safety assessment has to be carried out. A car’s brakes and\ntyres must be tested. The tyre test result and the brakes test result for each car are recorded. If the\ncar passes the assessment, a safety certificate is issued.\nCars have a unique three-character registration.\nThe following knowledge base is used:\n01 car(a05).\n02 car(h04).\n03 car(a03).\n04 car(h07).\n05 car(a23).\n06 car(p05).\n07 car(b04).\n08 carRegYear(a05, 2015).\n09 carRegYear(h04, 2013).\n10 carRegYear(a03, 2008).\n11 carRegYear(h07, 2011).\n12 carRegYear(a23, 2008).\n13 carRegYear(p05, 2014).\n14 carRegYear(b04, 2014).",
-          "marks": null,
+          "text": "The computer system will produce many printed reports.\nOne report is CAR_REPORT. This displays all hire data for all cars.\nFor each car, the following data are displayed:\n• the car data\n• a list of all the hires\n• the total number of hires\nA car with zero hires is not included on the report.\nComplete the following CAR_REPORT JSP data structure diagram.\nCAR_REPORT\nCAR\nNo hires One or more hires\nHIRE_LIST\nHIRE\n4 When a car reaches a certain age, a safety assessment has to be carried out. A car’s brakes and\ntyres must be tested. The tyre test result and the brakes test result for each car are recorded. If the\ncar passes the assessment, a safety certificate is issued.\nCars have a unique three-character registration.\nThe following knowledge base is used:\n01 car(a05).\n02 car(h04).\n03 car(a03).\n04 car(h07).\n05 car(a23).\n06 car(p05).\n07 car(b04).\n08 carRegYear(a05, 2015).\n09 carRegYear(h04, 2013).\n10 carRegYear(a03, 2008).\n11 carRegYear(h07, 2011).\n12 carRegYear(a23, 2008).\n13 carRegYear(p05, 2014).\n14 carRegYear(b04, 2014).\n15 testBrakes(h07, pass).\n16 testTyres(h07, fail).\n17 testBrakes(a03, fail).\n18 testTyres(a03, fail).\n19 testBrakes(a23, pass).\n20 testTyres(a23, pass).",
+          "marks": 5,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": true,
@@ -296,73 +351,10 @@
           "parts": []
         }
       ],
-      "marks": 12,
+      "marks": 6,
       "text": [
-        "// move to the next list item",
-        "16 ENDIF",
-        "17 UNTIL IsFound = TRUE OR .....................................................................",
-        "18 IF IsFound = FALSE",
-        "19 THEN",
-        "20 OUTPUT \"Not Found\"",
-        "21 ENDIF",
-        "22 ENDIF",
-        "[6]",
-        "2 (a) (i) State what is meant by a recursively defined procedure.",
-        "[1]"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "testBrakes(h07, pass)."
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "testTyres(h07, fail)."
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "testBrakes(a03, fail)."
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "testTyres(a03, fail)."
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "testBrakes(a23, pass)."
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "testTyres(a23, pass)."
+        "ENDIF",
+        "2 (a) (i) State what is meant by a recursively defined procedure."
       ]
     },
     {
@@ -526,7 +518,7 @@
             {
               "id": "23dii",
               "label": "(ii)",
-              "text": "Explain the purpose of the pseudocode on lines 11 and 12.\n\n6 In a board game, one player has white pieces and the other player has black pieces. Players take\nalternate turns to move one of their pieces. White always makes the first move.\nThe game ends if:\n• a player is unable to make a move when it is their turn. In this case, there is no winner. This is\ncalled ‘stalemate’.\n• a player wins the game as a result of their last move and is called a ‘winner’.",
+              "text": "Explain the purpose of the pseudocode on lines 11 and 12.\n6 In a board game, one player has white pieces and the other player has black pieces. Players take\nalternate turns to move one of their pieces. White always makes the first move.\nThe game ends if:\n• a player is unable to make a move when it is their turn. In this case, there is no winner. This is\ncalled ‘stalemate’.\n• a player wins the game as a result of their last move and is called a ‘winner’.",
               "marks": 3,
               "type": "explain",
               "answerType": "long_answer",
@@ -605,7 +597,7 @@
             {
               "id": "23cii",
               "label": "(ii)",
-              "text": "For a class you identified in part(c)(i), state two properties and two methods.\nClass ______\nProperties\nMethods\n\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "text": "For a class you identified in part(c)(i), state two properties and two methods.\nClass ______\nProperties\nMethods\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 2,
               "type": "state",
               "answerType": "fill_blank",
