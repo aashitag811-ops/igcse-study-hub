@@ -627,10 +627,12 @@ function parseQP(rawText, opts = {}) {
           }
           if (bareCount >= 2) bareOk = false;
           // Also check the immediately preceding non-trivial line for a bare digit (axis/fraction).
-          // Skip page-header positions.
+          // STOP at page-header positions — do not look back past a page boundary into the
+          // previous page's content. A question number that appears as the first bare digit after
+          // a page header is a legitimate Q number, not an axis tick or fraction part.
           if (bareOk && i > 0) {
             for (let j = i - 1; j >= Math.max(0, i - 4); j--) {
-              if (pageHeaderIndices.has(j)) continue;
+              if (pageHeaderIndices.has(j)) break; // stop at page boundary
               const prev = lines[j].trim();
               if (!prev) continue;
               if (/^\d{1,2}$/.test(prev) && parseInt(prev) >= 1 && parseInt(prev) <= 100) {
