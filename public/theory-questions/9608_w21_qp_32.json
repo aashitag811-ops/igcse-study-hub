@@ -4,7 +4,7 @@
   "session": "w21",
   "component": "32",
   "totalMarks": 65,
-  "questionCount": 18,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -404,7 +404,7 @@
             {
               "id": "8bi",
               "label": "(i)",
-              "text": "Complete the following pseudocode algorithm to check the number of parking spaces\navailable.\n01 ForEver …………………………………………………………………………\n02 REPEAT\n03 FOR FloorNumber 1 TO …………………………………………………………………………\n04 SpaceAvailable 0\n05 FOR SpaceNumber 1 TO …………………………………………………………………………\n06 IF CheckSpace(FloorNumber, SpaceNumber)\n07 THEN\n08 SpaceAvailable SpaceAvailable + 1",
+              "text": "Complete the following pseudocode algorithm to check the number of parking spaces\navailable.\n01 ForEver …………………………………………………………………………\n02 REPEAT\n03 FOR FloorNumber 1 TO …………………………………………………………………………\n04 SpaceAvailable 0\n05 FOR SpaceNumber 1 TO …………………………………………………………………………\n06 IF CheckSpace(FloorNumber, SpaceNumber)\n07 THEN\n08 SpaceAvailable SpaceAvailable + 1\n09 ENDIF\n10 ENDFOR",
               "marks": null,
               "type": "complete",
               "answerType": "long_answer",
@@ -426,39 +426,13 @@
       ]
     },
     {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR"
-      ]
-    },
-    {
       "id": "11",
       "context": [],
       "parts": [],
       "marks": null,
       "text": [
-        "IF SpaceAvailable > …………………………………………………………………………"
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF SpaceAvailable > …………………………………………………………………………",
+        "12 THEN"
       ]
     },
     {
@@ -468,53 +442,16 @@
       "marks": null,
       "text": [
         "OUTPUT \"Floor \", …………………………………………………………………………,",
-        "\" empty parking spaces \"…………………………………………………………………………"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
+        "\" empty parking spaces \"…………………………………………………………………………",
+        "14 ELSE"
       ]
     },
     {
       "id": "15",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"Floor \", …………………………………………………………………………, \" full\""
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR",
-        "19 // delay loop",
-        "20 // delay loop"
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
       "parts": [
         {
-          "id": "21c",
+          "id": "15c",
           "label": "(c)",
           "text": "When a car is parked in a parking space, a bit is set in the appropriate memory location.\n• 32 memory locations are used for each floor with address X01 to X32, where X is the\nnumber of the floor.\n• Each location is one byte in length to hold the data for 8 parking spaces.\nFor example, memory location 101 is used for parking spaces 1 to 8 and memory location\n102 is used for parking spaces 9 to 16.\nThe table shows part of floor 1 with cars parked in parking spaces 4, 11, 16 ... and 255.\nMemory\nBits Parking space number\nlocation\n101 0 0 0 0 1 0 0 0 8 – 1\n102 1 0 0 0 0 1 0 0\n16 – 9\n… … … … … … … … … …\n132 0 1 0 0 0 0 0 0\n256 – 249",
           "marks": null,
@@ -524,7 +461,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "21ci",
+              "id": "15ci",
               "label": "(i)",
               "text": "The data in memory location 604 is shown.\n604 1 0 0 0 0 0 0 1\nState what this data represents.",
               "marks": 2,
@@ -535,7 +472,7 @@
               "parts": []
             },
             {
-              "id": "21cii",
+              "id": "15cii",
               "label": "(ii)",
               "text": "Explain the way in which the parking space 254 on floor 5 can be checked to see if it is\nempty.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 5,
@@ -550,7 +487,12 @@
       ],
       "marks": 6,
       "text": [
-        "UNTIL …………………………………………………………………………"
+        "OUTPUT \"Floor \", …………………………………………………………………………, \" full\"",
+        "16 ENDIF",
+        "17 ENDFOR",
+        "19 // delay loop",
+        "20 // delay loop",
+        "21 UNTIL …………………………………………………………………………"
       ]
     }
   ]

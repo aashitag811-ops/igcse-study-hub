@@ -35,13 +35,36 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "The table shows the number of ways to jump between stones when the maximum jump length is",
+          "text": "The table shows the number of ways to jump between stones when the maximum jump length is\n2 units.\nNumber of stones Number of ways\n2 1\n3 2\n4 3\n5 5\n6 8\n7 13\nThe numbers in the last column of the table form a sequence.",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Complete the table.",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Write down the rule to find further terms in this sequence.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
       "marks": null,
@@ -80,26 +103,43 @@
         {
           "id": "2c",
           "label": "(c)",
-          "text": "The table shows the number of ways to jump between stones when the maximum jump length is",
+          "text": "The table shows the number of ways to jump between stones when the maximum jump length is\n3 units.\nNumber of stones Number of ways\n2 1\n3 2\n4 4\n6 13\n7 24\nThe numbers in the last column of the table form a sequence.",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Use your answer to part (b) to help you complete the table.",
+              "marks": null,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Write down the rule to find further terms in this sequence.",
+              "marks": null,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
       "marks": null,
       "text": [
-        "units.",
-        "Number of stones Number of ways",
-        "2 1",
-        "3 2",
-        "4 3",
-        "5 5",
-        "6 8",
-        "7 13",
-        "The numbers in the last column of the table form a sequence."
+        "Another frog has a maximum jump length of 3 units.",
+        "There is only 1 way for this frog to jump between two stones.",
+        "There are 2 ways to jump between three stones."
       ]
     },
     {
@@ -187,14 +227,19 @@
       ],
       "marks": null,
       "text": [
-        "units.",
-        "Number of stones Number of ways",
-        "2 1",
-        "3 2",
-        "4 4",
-        "6 13",
-        "7 24",
-        "The numbers in the last column of the table form a sequence."
+        "The table shows the number of ways to jump between 2 to 9 stones when the maximum jump length is 1 to",
+        "8 units.",
+        "Maximum jump length",
+        "Number of stones",
+        "1 unit 2 units 3 units 4 units 5 units 6 units 7 units 8 units",
+        "2 1 1 1 1 1 1 1 1",
+        "3 1 2 2 2 2 2 2 2",
+        "4 1 3 4 4 4 4 4 4",
+        "5 1 5 8 8 8 8 8",
+        "6 1 8 13 15 16 16 16 16",
+        "7 1 13 24 29 31 32 32 32",
+        "8 1 56 61 63 64 64",
+        "9 1 120 125 127 128"
       ]
     },
     {

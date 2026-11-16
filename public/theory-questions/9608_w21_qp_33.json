@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w21",
   "component": "33",
-  "totalMarks": 66,
-  "questionCount": 11,
+  "totalMarks": 75,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -425,61 +425,29 @@
             {
               "id": "7bi",
               "label": "(i)",
-              "text": "Complete the pseudocode algorithm.\n01 Always …………………………………………………………………………\n02 REPEAT\n03 FOR FloorNumber 1 TO …………………………………………………………………………\n04 FOR SensorNumber 1 TO …………………………………………………………………………\n05 IF CheckSensor(FloorNumber, SensorNumber)\n06 THEN\n07 ScreenOut(FloorNumber, SensorNumber)",
-              "marks": null,
+              "text": "Complete the pseudocode algorithm.\n01 Always …………………………………………………………………………\n02 REPEAT\n03 FOR FloorNumber 1 TO …………………………………………………………………………\n04 FOR SensorNumber 1 TO …………………………………………………………………………\n05 IF CheckSensor(FloorNumber, SensorNumber)\n06 THEN\n07 ScreenOut(FloorNumber, SensorNumber)\n08 ENDIF\n09 ENDFOR\n10 ENDFOR\n12 // delay loop\n13 // delay loop\n14 UNTIL …………………………………………………………………………",
+              "marks": 4,
               "type": "complete",
               "answerType": "long_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
+            },
+            {
+              "id": "7bii",
+              "label": "(ii)",
+              "text": "Write a delay loop in pseudocode for lines 12 and 13 of the pseudocode algorithm.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
             }
           ]
-        }
-      ],
-      "marks": 7,
-      "text": [
-        "A large apartment block has 20 floors. On each floor there is one security camera and four sensors.",
-        "The image from each security camera is output to a display screen for that floor.",
-        "• There are 20 display screens in the reception area on the lowest floor.",
-        "• The data from the sensors are read and processed by a computer system.",
-        "• Warning messages can also be displayed on each display screen."
-      ]
-    },
-    {
-      "id": "08",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR",
-        "12 // delay loop",
-        "13 // delay loop"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "14c",
+          "id": "7c",
           "label": "(c)",
           "text": "If a sensor reading is out of range, a bit is set in a memory location allocated to that floor. The\naddresses for the memory locations are 401 to 420.\nFor example, memory location 401 is used to store the status of the sensors 1 to 4 on floor 1,\nmemory location 402 is used to store the status of the sensors 1 to 4 on floor 2.\nThe table shows data for some of the floors, with sensor 1 on floor 1 set, sensor 2 on floor 2\nset and sensors 3 and 4 on floor 20 set.\nBits\nMemory Sensor number\nlocation\n1 2 3 4 Floor\n0 0 0 0 1 0 0 0 1\n402 0 0 0 0 0 1 0 0\n… … … … … … … … … …\n0 0 0 0 0 0 1 1",
           "marks": null,
@@ -489,7 +457,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "14ci",
+              "id": "7ci",
               "label": "(i)",
               "text": "The data in memory location 410 is shown.\n410 0 0 0 0 0 1 0 1\nState what this data represents.",
               "marks": 2,
@@ -500,7 +468,7 @@
               "parts": []
             },
             {
-              "id": "14cii",
+              "id": "7cii",
               "label": "(ii)",
               "text": "Explain the way in which the data from sensor 3 on floor 7 can be checked.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.",
               "marks": 5,
@@ -513,9 +481,13 @@
           ]
         }
       ],
-      "marks": 4,
+      "marks": 20,
       "text": [
-        "UNTIL …………………………………………………………………………"
+        "A large apartment block has 20 floors. On each floor there is one security camera and four sensors.",
+        "The image from each security camera is output to a display screen for that floor.",
+        "• There are 20 display screens in the reception area on the lowest floor.",
+        "• The data from the sensors are read and processed by a computer system.",
+        "• Warning messages can also be displayed on each display screen."
       ]
     }
   ]

@@ -166,18 +166,9 @@
     {
       "id": "5",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "In a group of 20 musicians, there are 9 guitarists, 6 pianists and 5 drummers."
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
       "parts": [
         {
-          "id": "6a",
+          "id": "5a",
           "label": "(a)",
           "text": "Find the number of different ways in which the 6 musicians can be selected if there must be at\nleast 3 guitarists, at most 2 pianists and exactly 1 drummer. \nThree bands will be selected from the original group of 20 musicians. Each band will consist of\n3 guitarists, 1 pianist and 1 drummer. No musician can be in more than one band. The first band selected\nwill play at a concert in France, the second band selected will play in Italy and the third band selected\nwill play in Spain.",
           "marks": 4,
@@ -188,16 +179,27 @@
           "parts": []
         },
         {
-          "id": "6b",
+          "id": "5b",
           "label": "(b)",
-          "text": "Find the number of different ways in which these three bands can be selected. \n6 A bag contains 10 marbles, of which 4 are red and 6 are blue. Four marbles are selected from the bag at\nrandom, without replacement. The random variable X denotes the number of blue marbles selected.",
+          "text": "Find the number of different ways in which these three bands can be selected.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "In a group of 20 musicians, there are 9 guitarists, 6 pianists and 5 drummers.",
+        "6 musicians are selected from these 20 to perform at a concert."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
           "id": "6a",
           "label": "(a)",
@@ -232,9 +234,10 @@
           "parts": []
         }
       ],
-      "marks": 16,
+      "marks": 9,
       "text": [
-        "musicians are selected from these 20 to perform at a concert."
+        "A bag contains 10 marbles, of which 4 are red and 6 are blue. Four marbles are selected from the bag at",
+        "random, without replacement. The random variable X denotes the number of blue marbles selected."
       ]
     }
   ]

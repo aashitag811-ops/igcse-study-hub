@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "s24",
   "component": "32",
-  "totalMarks": 72,
-  "questionCount": 24,
+  "totalMarks": 75,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -352,8 +352,42 @@
     {
       "id": "10",
       "context": [],
-      "parts": [],
-      "marks": null,
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "Jane is a client who would like to choose the activity surfing and she has already done sailing.\nWrite additional clauses to represent this information.",
+          "marks": 4,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10b",
+          "label": "(b)",
+          "text": "Using the variable List, the goal:\nchoice(List, rowing)\nreturns\nList = petra, eliza\nWrite the result returned by the goal:\nchoice(List, sailing)\nList = ______",
+          "marks": 1,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "10c",
+          "label": "(c)",
+          "text": "C is a client who would like to choose A if A is an activity and C has not already done A.\nWrite this as a rule:\nmay_choose_activity(C, A)\nIF ______",
+          "marks": 4,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 9,
       "text": [
         "A declarative programming language is used to allow clients to choose daily activities at the",
         "beach.",
@@ -366,173 +400,42 @@
         "07 client(antonio).",
         "08 client(henry).",
         "09 client(eliza).",
-        "10 client(rebeka)."
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "client(danny)."
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "client(erik)."
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "client(simone)."
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "client(petra)."
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "client(frankie)."
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice(petra, rowing)."
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice(frankie, sailing)."
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice(erik, sailing)."
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice(eliza, rowing)."
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice(stevie, jetskiing)."
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice(henry, sailing)."
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "done(henry, jetskiing)."
-      ]
-    },
-    {
-      "id": "23",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "done(rebeka, jetskiing)."
-      ]
-    },
-    {
-      "id": "24",
-      "context": [],
-      "parts": [
-        {
-          "id": "24a",
-          "label": "(a)",
-          "text": "Jane is a client who would like to choose the activity surfing and she has already done sailing.\nWrite additional clauses to represent this information.",
-          "marks": 4,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "24b",
-          "label": "(b)",
-          "text": "Using the variable List, the goal:\nchoice(List, rowing)\nreturns\nList = petra, eliza\nWrite the result returned by the goal:\nchoice(List, sailing)\nList = ______",
-          "marks": 1,
-          "type": "write",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "24c",
-          "label": "(c)",
-          "text": "C is a client who would like to choose A if A is an activity and C has not already done A.\nWrite this as a rule:\nmay_choose_activity(C, A)\nIF ______\n11 Explain what is meant by Reinforcement Learning in relation to Artificial Intelligence.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
-          "marks": 4,
-          "type": "explain",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 9,
-      "text": [
-        "done(antonio, kayaking).",
+        "10 client(rebeka).",
+        "11 client(danny).",
+        "12 client(erik).",
+        "13 client(simone).",
+        "14 client(petra).",
+        "15 client(frankie).",
+        "16 choice(petra, rowing).",
+        "17 choice(frankie, sailing).",
+        "18 choice(erik, sailing).",
+        "19 choice(eliza, rowing).",
+        "20 choice(stevie, jetskiing).",
+        "21 choice(henry, sailing).",
+        "22 done(henry, jetskiing).",
+        "23 done(rebeka, jetskiing).",
+        "24 done(antonio, kayaking).",
         "These clauses have the meanings:",
         "Clause Meaning",
         "Paddle boarding is an activity.",
         "Stevie is a client.",
         "Petra has chosen rowing.",
         "Henry has already done jet skiing."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": 3,
+      "text": [
+        "Explain what is meant by Reinforcement Learning in relation to Artificial Intelligence.",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
       ]
     }
   ]

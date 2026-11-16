@@ -437,7 +437,7 @@
         {
           "id": "11b",
           "label": "(b)",
-          "text": "In OOP, a class contains attributes and methods.\nComplete the pseudocode for the class Car to enable objects to be created. The class needs\nto include:\n• string attributes to store the make, model, body type and fuel type\n• an integer attribute to store the number of cars of that type built.\nThe attributes must be available only through the methods of the class.\nCLASS ______\nPRIVATE Make : STRING\nPRIVATE ______\nPUBLIC PROCEDURE New(CarMake : STRING, ______ ,\n______)\nMake ← ______\nModel ← ______\nBodyType ← CarBodyType\nFuel ← \"\"\nNumberBuilt ← 0\nENDPROCEDURE\nGetFuel()\nGetNumberBuilt()",
+          "text": "In OOP, a class contains attributes and methods.\nComplete the pseudocode for the class Car to enable objects to be created. The class needs\nto include:\n• string attributes to store the make, model, body type and fuel type\n• an integer attribute to store the number of cars of that type built.\nThe attributes must be available only through the methods of the class.\nCLASS ______\nPRIVATE Make : STRING\nPRIVATE ______\nPUBLIC PROCEDURE New(CarMake : STRING, ______ ,\nMake ← ______\nModel ← ______\nBodyType ← CarBodyType\nFuel ← \"\"\nNumberBuilt ← 0\nENDPROCEDURE\nGetFuel()\nGetNumberBuilt()",
           "marks": 5,
           "type": "complete",
           "answerType": "fill_blank",
@@ -456,7 +456,7 @@
         {
           "id": "12a",
           "label": "(a)",
-          "text": "The array Names[0:99] is in alphabetical order.\nComplete this pseudocode binary search algorithm.\nLower ← 0\nMid ← 0\nExit ← FALSE\nOUTPUT \"Enter the name to be found \"\nINPUT Target\nREPEAT\n______ THEN\nOUTPUT Target, \" does not exist\"\nExit ← TRUE\nENDIF\nMid ← Lower + (Upper – Lower + 1) DIV 2\nIF Names[Mid] < Target THEN\nLower ← ______\nENDIF\nIF Names[Mid] > Target THEN\nENDIF\n______ THEN\nOUTPUT Target, \" was found at location \", Mid\nExit ← TRUE\nENDIF",
+          "text": "The array Names[0:99] is in alphabetical order.\nComplete this pseudocode binary search algorithm.\nLower ← 0\nMid ← 0\nExit ← FALSE\nOUTPUT \"Enter the name to be found \"\nINPUT Target\nREPEAT\nOUTPUT Target, \" does not exist\"\nExit ← TRUE\nENDIF\nMid ← Lower + (Upper – Lower + 1) DIV 2\nIF Names[Mid] < Target THEN\nLower ← ______\nENDIF\nIF Names[Mid] > Target THEN\nENDIF\nOUTPUT Target, \" was found at location \", Mid\nExit ← TRUE\nENDIF",
           "marks": 6,
           "type": "name",
           "answerType": "fill_blank",

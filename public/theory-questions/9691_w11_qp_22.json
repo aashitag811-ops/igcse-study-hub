@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w11",
   "component": "22",
-  "totalMarks": 67,
+  "totalMarks": 75,
   "questionCount": 3,
   "questions": [
     {
@@ -157,30 +157,29 @@
             {
               "id": "1gi",
               "label": "(i)",
-              "text": "Name the other two types.",
-              "marks": null,
+              "text": "Name the other two types.\n2",
+              "marks": 2,
               "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1gii",
+              "label": "(ii)",
+              "text": "Nathan has written the PhoneSales module, which now needs testing.\n• ContractLength, the number of months of the contract, can be only 12, 18 or 24\n• FreeTexts, the number of free text messages per month must be in the range\n0 to 600\nGive six different items of test data other than invalid data which thoroughly test\nthe two rules given above. Give a reason for each choice.\nContractLength FreeTexts Reason\n20 Invalid data for ContractLength\n1000 Invalid data for FreeTexts",
+              "marks": 6,
+              "type": "give",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 14,
-      "text": [
-        "Nathan is designing a software solution for stock control in a mobile phone shop. He has a",
-        "colleague called Andre who will help him write the program. Nathan decides to modularise Examiner's",
-        "the solution."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "2h",
+          "id": "1h",
           "label": "(h)",
           "text": "",
           "marks": null,
@@ -190,7 +189,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2hi",
+              "id": "1hi",
               "label": "(i)",
               "text": "Write a Boolean expression to validate ContractLength.",
               "marks": 2,
@@ -201,7 +200,7 @@
               "parts": []
             },
             {
-              "id": "2hii",
+              "id": "1hii",
               "label": "(ii)",
               "text": "Write a Boolean expression to validate FreeTexts.",
               "marks": 2,
@@ -212,9 +211,9 @@
               "parts": []
             },
             {
-              "id": "2hiii",
+              "id": "1hiii",
               "label": "(iii)",
-              "text": "Describe a possible problem that could occur if ContractLength is not validated.\n2 Ahmed is writing a program to record the data of members of the school football squad.\nThe input data will be validated. One input is the number of years a member has played for Examiner's\nthe team. This will be 0, 1 or 2.\nThe flowchart for the validation of number of years is shown below.\nINPUT\nNumberOfYears\nCASE:\nNumberOfYears\nOUTPUT ‘Invalid OUTPUT ‘Valid\ndata. Try again’ data entered’",
+              "text": "Describe a possible problem that could occur if ContractLength is not validated.",
               "marks": 2,
               "type": "describe",
               "answerType": "long_answer",
@@ -223,7 +222,19 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 28,
+      "text": [
+        "Nathan is designing a software solution for stock control in a mobile phone shop. He has a",
+        "colleague called Andre who will help him write the program. Nathan decides to modularise Examiner's",
+        "the solution."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
           "id": "2a",
           "label": "(a)",
@@ -370,9 +381,18 @@
           "parts": []
         }
       ],
-      "marks": 37,
+      "marks": 31,
       "text": [
-        "[2]"
+        "Ahmed is writing a program to record the data of members of the school football squad.",
+        "The input data will be validated. One input is the number of years a member has played for Examiner's",
+        "the team. This will be 0, 1 or 2.",
+        "The flowchart for the validation of number of years is shown below.",
+        "INPUT",
+        "NumberOfYears",
+        "CASE:",
+        "NumberOfYears",
+        "OUTPUT ‘Invalid OUTPUT ‘Valid",
+        "data. Try again’ data entered’"
       ]
     },
     {

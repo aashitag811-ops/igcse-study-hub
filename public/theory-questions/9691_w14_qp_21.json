@@ -4,7 +4,7 @@
   "session": "w14",
   "component": "21",
   "totalMarks": 35,
-  "questionCount": 9,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -143,7 +143,7 @@
         {
           "id": "4a",
           "label": "(a)",
-          "text": "The program calls the function PasswordCheck with the stored password as parameter.\nIf the user enters the correct password the function returns the value TRUE.\nEach time the password is entered incorrectly, the message “Wrong password” is output.\nIf the user enters an incorrect password 3 times, the user is told that access is denied, and\nthe function returns the value FALSE.\nComplete the flowchart using the given statements. Ensure that only statement numbers are\npresent on the flowchart.\nFUNCTION\nPasswordCheck(StoredPassword)\nStatement Statement\nnumber\n1 OUTPUT “Wrong password”\n2 OUTPUT “Access denied”\n3 INPUT Password\n4 RETURN TRUE\nOUTPUT",
+          "text": "The program calls the function PasswordCheck with the stored password as parameter.\nIf the user enters the correct password the function returns the value TRUE.\nEach time the password is entered incorrectly, the message “Wrong password” is output.\nIf the user enters an incorrect password 3 times, the user is told that access is denied, and\nthe function returns the value FALSE.\nComplete the flowchart using the given statements. Ensure that only statement numbers are\npresent on the flowchart.\nFUNCTION\nPasswordCheck(StoredPassword)\nStatement Statement\nnumber\n1 OUTPUT “Wrong password”\n2 OUTPUT “Access denied”\n3 INPUT Password\n4 RETURN TRUE\nOUTPUT\n5 is NumberOfTries > 2 ?\n“Enter password”\n6 is StoredPassword = Encrypted Password ?",
           "marks": null,
           "type": "complete",
           "answerType": "long_answer",
@@ -185,25 +185,6 @@
         "InitialiseArrayCounts",
         "InputStudentChoices",
         "OutputTallyChart"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "is NumberOfTries > 2 ?",
-        "“Enter password”"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "is StoredPassword = Encrypted Password ?"
       ]
     },
     {

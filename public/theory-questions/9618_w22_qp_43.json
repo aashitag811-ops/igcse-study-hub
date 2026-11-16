@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "w22",
   "component": "43",
-  "totalMarks": 33,
-  "questionCount": 5,
+  "totalMarks": 75,
+  "questionCount": 3,
   "questions": [
     {
       "id": "1",
@@ -134,8 +134,98 @@
             {
               "id": "2aiii",
               "label": "(iii)",
-              "text": "The program is tested with the following cards:\nNumber Colour\n1 red\n2 red",
-              "marks": null,
+              "text": "The program is tested with the following cards:\nNumber Colour\n1 red\n2 red\n3 red\n4 red\n5 red\n1 blue\n2 blue\n3 blue\n4 blue\n5 blue\n1 yellow\n2 yellow\n3 yellow\n4 yellow\n5 yellow\nWrite program code to declare each of these cards as a variable of type Card in the\nmain program.\nSave your program.\nCopy and paste the program code into part 2(a)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Write program code to declare the class Hand, its attributes and constructor.\nDo not write the get methods.\nUse your programming language appropriate constructor.\nAll attributes must be private. If you are writing in Python, include attribute declarations\nusing comments.\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
+              "marks": 6,
+              "type": "use",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "The get method GetCard() takes an index as a parameter and returns the card stored\nat that index in the array.\nWrite program code for the method GetCard().\nSave your program.\nCopy and paste the program code into part 2(b)(ii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "Two players are declared with 5 cards each.\nPlayer 1 has the cards: 1 red, 2 red, 3 red, 4 red, 1 yellow.\nPlayer 2 has the cards: 2 yellow, 3 yellow, 4 yellow, 5 yellow, 1 blue.\nWrite program code to declare player 1 and player 2 as objects of type Hand, with the\ncards indicated.\nSave your program.\nCopy and paste the program code into part 2(b)(iii) in the evidence document.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The function CalculateValue() takes a player’s hand as a parameter and returns a score\ncalculated using the following rules:\n• If a card is red, 5 points are added to the player’s score.\n• If a card is blue, 10 points are added to the player’s score.\n• If a card is yellow, 15 points are added to the player’s score.\n• The number of each card in the hand is added to the player’s score.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2ci",
+              "label": "(i)",
+              "text": "Write program code for the function CalculateValue().\nAssume that there are only 5 cards in the player’s hand in this function.\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
+              "marks": 6,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2cii",
+              "label": "(ii)",
+              "text": "Amend the main program by writing program code to use the function\nCalculateValue() for each of the two players. The player with the highest score wins.\nOutput an appropriate message to identify the winning player, or if the game was a draw\n(both players have the same number of points).\nSave your program.\nCopy and paste the program code into part 2(c)(ii) in the evidence document.",
+              "marks": 4,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2ciii",
+              "label": "(iii)",
+              "text": "Test your program.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 2(c)(iii) in the evidence document.",
+              "marks": 1,
               "type": "other",
               "answerType": "short_answer",
               "hasDiagramRef": false,
@@ -145,7 +235,7 @@
           ]
         }
       ],
-      "marks": 8,
+      "marks": 31,
       "text": [
         "A computer program is being developed that uses a set of cards. The program is written using",
         "object-oriented programming.",
@@ -180,117 +270,9 @@
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "red"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "red"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5b",
-          "label": "(b)",
-          "text": "",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "5bi",
-              "label": "(i)",
-              "text": "Write program code to declare the class Hand, its attributes and constructor.\nDo not write the get methods.\nUse your programming language appropriate constructor.\nAll attributes must be private. If you are writing in Python, include attribute declarations\nusing comments.\nSave your program.\nCopy and paste the program code into part 2(b)(i) in the evidence document.",
-              "marks": 6,
-              "type": "use",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "5bii",
-              "label": "(ii)",
-              "text": "The get method GetCard() takes an index as a parameter and returns the card stored\nat that index in the array.\nWrite program code for the method GetCard().\nSave your program.\nCopy and paste the program code into part 2(b)(ii) in the evidence document.",
-              "marks": 2,
-              "type": "write",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "5biii",
-              "label": "(iii)",
-              "text": "Two players are declared with 5 cards each.\nPlayer 1 has the cards: 1 red, 2 red, 3 red, 4 red, 1 yellow.\nPlayer 2 has the cards: 2 yellow, 3 yellow, 4 yellow, 5 yellow, 1 blue.\nWrite program code to declare player 1 and player 2 as objects of type Hand, with the\ncards indicated.\nSave your program.\nCopy and paste the program code into part 2(b)(iii) in the evidence document.",
-              "marks": 2,
-              "type": "write",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "5c",
-          "label": "(c)",
-          "text": "The function CalculateValue() takes a player’s hand as a parameter and returns a score\ncalculated using the following rules:\n• If a card is red, 5 points are added to the player’s score.\n• If a card is blue, 10 points are added to the player’s score.\n• If a card is yellow, 15 points are added to the player’s score.\n• The number of each card in the hand is added to the player’s score.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "5ci",
-              "label": "(i)",
-              "text": "Write program code for the function CalculateValue().\nAssume that there are only 5 cards in the player’s hand in this function.\nSave your program.\nCopy and paste the program code into part 2(c)(i) in the evidence document.",
-              "marks": 6,
-              "type": "write",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "5cii",
-              "label": "(ii)",
-              "text": "Amend the main program by writing program code to use the function\nCalculateValue() for each of the two players. The player with the highest score wins.\nOutput an appropriate message to identify the winning player, or if the game was a draw\n(both players have the same number of points).\nSave your program.\nCopy and paste the program code into part 2(c)(ii) in the evidence document.",
-              "marks": 4,
-              "type": "identify",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "5ciii",
-              "label": "(iii)",
-              "text": "Test your program.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 2(c)(iii) in the evidence document.\n3 A binary tree consists of nodes. Each node has 3 integer values: a left pointer, data and a right\npointer.\nThe binary tree is stored using a global 2D array.\nThe pseudocode declaration for the array is:\nDECLARE ArrayNodes : ARRAY[0:19, 0:2] OF INTEGER\nFor example:\n• ArrayNodes[0, 0] stores the left pointer for the first node.\n• ArrayNodes[0, 1] stores the data for the first node.\n• ArrayNodes[0, 2] stores the right pointer for the first node.\n–1 indicates a null pointer, or null data.",
-              "marks": 1,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "5a",
+          "id": "3a",
           "label": "(a)",
           "text": "Write program code to:\n• declare the global 2D array ArrayNodes\n• initialise all 3 integer values to –1 for each node.\nSave your program as Question3_N22.\nCopy and paste the program code into part 3(a) in the evidence document.",
           "marks": 3,
@@ -301,7 +283,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "3b",
           "label": "(b)",
           "text": "The binary tree stores the following values:\nIndex Left pointer Data Right pointer\n0 1 20 5\n1 2 15 –1\n2 –1 3 3\n3 –1 9 4\n4 –1 10 –1\n5 –1 58 –1\n6 –1 –1 –1\nFreeNode stores the index of the first free element in the array, initialised to 6.\nRootPointer stores the index of the first node in the tree, initialised to 0.\nAmend your program by writing program code to store the given data in ArrayNodes and\ninitialise the free node and root node pointers.\nSave your program.\nCopy and paste the program code into part 3(b) in the evidence document.",
           "marks": 2,
@@ -312,7 +294,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "3c",
           "label": "(c)",
           "text": "The following recursive pseudocode function searches the binary tree for a given value. If the\nvalue is found, the function must return the index of the value. If the value is not found, the\nfunction must return –1.\nThe function is incomplete. There are four incomplete statements.\nFUNCTION SearchValue(Root : INTEGER,\nValueToFind : INTEGER) RETURNS INTEGER\nIF Root = –1 THEN\nRETURN –1\nELSE\nIF ArrayNodes[Root, 1] = ValueToFind THEN\nRETURN ______\nELSE\nIF ArrayNodes[Root, 1] = –1 THEN\nRETURN –1\nENDIF\nENDIF\nENDIF\nIF ArrayNodes[Root, 1] ______ ValueToFind THEN\nRETURN SearchValue(ArrayNodes[______, 0], ValueToFind)\nENDIF\nIF ArrayNodes[Root, ______] < ValueToFind THEN\nRETURN SearchValue(ArrayNodes[Root, 2], ValueToFind)\nENDIF\nENDFUNCTION\nWrite program code for the function SearchValue().\nSave your program.\nCopy and paste the program code into part 3(c) in the evidence document.",
           "marks": 5,
@@ -323,7 +305,7 @@
           "parts": []
         },
         {
-          "id": "5d",
+          "id": "3d",
           "label": "(d)",
           "text": "A post order traversal performs the following operation:\n• visit the left node\n• visit the right node\n• output the root.\nFor example, in the following tree, the output would be: 3 9 25 60 50\n25 60\n3 9\nAn outline of the PostOrder() procedure is:\n• If left node is not empty, make a recursive call with the left node as the root.\n• If right node is not empty, make a recursive call with the right node as the root.\n• Output the current root node.\nThe procedure PostOrder() takes the root node as a parameter.\nWrite program code for the procedure PostOrder().\nSave your program.\nCopy and paste the program code into part 3(d) in the evidence document.",
           "marks": 7,
@@ -334,7 +316,7 @@
           "parts": []
         },
         {
-          "id": "5e",
+          "id": "3e",
           "label": "(e)",
           "text": "",
           "marks": null,
@@ -344,7 +326,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5ei",
+              "id": "3ei",
               "label": "(i)",
               "text": "Amend the main program by writing program code to:\n• call the function SearchValue() to find the position of the number 15 in the tree\n• use the result from SearchValue() to output either the index of the value if found,\nor an appropriate message to state that the value was not found\n• call the procedure PostOrder().\nSave your program.\nCopy and paste the program code into part 3(e)(i) in the evidence document.",
               "marks": 3,
@@ -355,7 +337,7 @@
               "parts": []
             },
             {
-              "id": "5eii",
+              "id": "3eii",
               "label": "(ii)",
               "text": "Test your program.\nTake a screenshot to show the output.\nCopy and paste the screenshot into part 3(e)(ii) in the evidence document.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 1,
@@ -368,23 +350,18 @@
           ]
         }
       ],
-      "marks": 2,
+      "marks": 21,
       "text": [
-        "red",
-        "1 blue",
-        "2 blue",
-        "3 blue",
-        "4 blue",
-        "5 blue",
-        "1 yellow",
-        "2 yellow",
-        "3 yellow",
-        "4 yellow",
-        "5 yellow",
-        "Write program code to declare each of these cards as a variable of type Card in the",
-        "main program.",
-        "Save your program.",
-        "Copy and paste the program code into part 2(a)(iii) in the evidence document."
+        "A binary tree consists of nodes. Each node has 3 integer values: a left pointer, data and a right",
+        "pointer.",
+        "The binary tree is stored using a global 2D array.",
+        "The pseudocode declaration for the array is:",
+        "DECLARE ArrayNodes : ARRAY[0:19, 0:2] OF INTEGER",
+        "For example:",
+        "• ArrayNodes[0, 0] stores the left pointer for the first node.",
+        "• ArrayNodes[0, 1] stores the data for the first node.",
+        "• ArrayNodes[0, 2] stores the right pointer for the first node.",
+        "–1 indicates a null pointer, or null data."
       ]
     }
   ]

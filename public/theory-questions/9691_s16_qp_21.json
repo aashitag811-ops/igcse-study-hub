@@ -146,16 +146,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "City Centre"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "University"
+        "City Centre",
+        "4 University"
       ]
     },
     {
@@ -187,7 +179,7 @@
         {
           "id": "5c",
           "label": "(c)",
-          "text": "Use the flowchart opposite to write program code for the procedure TicketCalculator.\nProgramming language ______\nCode ______\nPROCEDURE TicketCalculator\nINPUT Origin\nINPUT Destination\nInitialise Distance\nYes\nSwap Origin and\nIs Origin > Destination?\nDestination\nNo\ni@Origin\nLoop\nDistance@Distance + Interval[i] Increment i\nNo\nIs i = Destination - 1?\nYes\nTicketPrice @ Distance * 0.25\nOUTPUT TicketPrice\nENDPROCEDURE\n3 Alessio has been asked to write a computerised table booking system for a restaurant. The\nrestaurant has 12 tables, each seating between 2 and 8 people.\nThe restaurant manager wants the following facilities:\n• take a new booking\n• cancel a booking\n• report on which table(s) are available\nAs a first attempt, Alessio designs his program to take bookings for one evening only. Each table is\nonly booked once per evening.\nHe writes the pseudocode for his main program:\nCALL Initialisation\nEndProgram ← FALSE\nREPEAT\nCALL DisplayOptions\nINPUT Option\nCASE OF Option\n1: CALL TakeBooking\n2: CALL CancelBooking\n3: CALL AvailableTablesReport\n4: EndProgram ← TRUE\nOTHERWISE OUTPUT \"Error – invalid input\"\nENDCASE\nUNTIL EndProgram = TRUE\nEach booking is for a number of customers (size of the group). Each table has a number of seats.\nThe procedure Initialisation will set up arrays TableSeats, Booked and GroupSize as\nfollows:\nTableNumber TableSeats Booked GroupSize\n2 FALSE 0\n1 1 1\n2 FALSE 0\n2 2 2\n2 FALSE 0\n3 3 3\n2 FALSE 0\n4 4 4\n4 FALSE 0\n5 5 5",
+          "text": "Use the flowchart opposite to write program code for the procedure TicketCalculator.\nProgramming language ______\nCode ______\nPROCEDURE TicketCalculator\nINPUT Origin\nINPUT Destination\nInitialise Distance\nYes\nSwap Origin and\nIs Origin > Destination?\nDestination\nNo\ni@Origin\nLoop\nDistance@Distance + Interval[i] Increment i\nNo\nIs i = Destination - 1?\nYes\nTicketPrice @ Distance * 0.25\nOUTPUT TicketPrice\nENDPROCEDURE\n3 Alessio has been asked to write a computerised table booking system for a restaurant. The\nrestaurant has 12 tables, each seating between 2 and 8 people.\nThe restaurant manager wants the following facilities:\n• take a new booking\n• cancel a booking\n• report on which table(s) are available\nAs a first attempt, Alessio designs his program to take bookings for one evening only. Each table is\nonly booked once per evening.\nHe writes the pseudocode for his main program:\nCALL Initialisation\nEndProgram ← FALSE\nREPEAT\nCALL DisplayOptions\nINPUT Option\nCASE OF Option\n1: CALL TakeBooking\n2: CALL CancelBooking\n3: CALL AvailableTablesReport\n4: EndProgram ← TRUE\nOTHERWISE OUTPUT \"Error – invalid input\"\nENDCASE\nUNTIL EndProgram = TRUE\nEach booking is for a number of customers (size of the group). Each table has a number of seats.\nThe procedure Initialisation will set up arrays TableSeats, Booked and GroupSize as\nfollows:\nTableNumber TableSeats Booked GroupSize\n2 FALSE 0\n1 1 1\n2 FALSE 0\n2 2 2\n2 FALSE 0\n3 3 3\n2 FALSE 0\n4 4 4\n4 FALSE 0\n5 5 5\n6 4 6 FALSE 6 0\n4 FALSE 0\n7 7 7\n4 FALSE 0\n8 8 8",
           "marks": 10,
           "type": "use",
           "answerType": "fill_blank",
@@ -218,14 +210,17 @@
       "parts": [],
       "marks": null,
       "text": [
-        "4 6 FALSE 6 0",
-        "4 FALSE 0",
-        "7 7 7",
-        "4 FALSE 0",
-        "8 8 8",
-        "6 FALSE 0",
-        "9 9 9",
-        "6 FALSE 0",
+        "FALSE 0",
+        "9 9 9"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "FALSE 0",
         "10 10 10"
       ]
     },

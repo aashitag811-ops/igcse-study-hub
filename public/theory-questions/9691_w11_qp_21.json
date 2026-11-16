@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w11",
   "component": "21",
-  "totalMarks": 74,
+  "totalMarks": 75,
   "questionCount": 3,
   "questions": [
     {
@@ -58,16 +58,105 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "The three basic programming constructs used to control the flow of information are:\nsequence, selection and iteration.\nState the two constructs that are used in your code.",
-          "marks": null,
+          "text": "The three basic programming constructs used to control the flow of information are:\nsequence, selection and iteration.\nState the two constructs that are used in your code.\n2",
+          "marks": 1,
           "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Describe what is meant by iteration.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Ahmed thinks it will be a good idea to allow only three attempts at getting the input data\ncorrect. If it is not a valid entry after three attempts, a message 'Please check which Examiner's\nvalues are allowed' should be output.\nModify the flowchart to include this additional check.\nINPUT Position\nYes\nPosition=‘d’?\nNo\nYes\nPosition=‘f’?\nNo\nYes\nOUTPUT ‘Valid\nPosition=‘g’?\ndata entered’\nNo\nOUTPUT ‘Invalid\ndata. Try again’",
+          "marks": 5,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "Ahmed needs to store more information about the players. He creates a record\nstructure that contains PlayerID (a whole number between 1 and 50), Sex (m or f), Examiner's\nPlayerName, Position (f, d or g), and DateOfBirth.\nComplete the table.\nField Name Data Type Field Size (bytes)\nPlayerID\nSex\nPlayerName\nPosition\nDateOfBirth",
+          "marks": 10,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1g",
+          "label": "(g)",
+          "text": "The squad has 30 players. Ahmed stores the records in an array called Squad. To\ncalculate how many players are defenders he designs this pseudocode: Examiner's\nDtotal ← 0\nArrayPosition ← 1\nREPEAT\nIF Squad[ArrayPosition].Position = 'd'\nTHEN\nDtotal ← Dtotal + 1\nENDIF\nArrayPosition ← ArrayPosition + 1\nUNTIL ArrayPosition = 30\nThis pseudocode will only consider the first 29 records in the array.",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "1gi",
+              "label": "(i)",
+              "text": "State the name of this type of error.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1gii",
+              "label": "(ii)",
+              "text": "State the line that needs changing.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1giii",
+              "label": "(iii)",
+              "text": "Re-write this line to ensure the pseudocode will consider all 30 records.",
+              "marks": 1,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "1h",
+          "label": "(h)",
+          "text": "Re-write this updated pseudocode using a WHILE loop ensuring that it will check all\nrecords in the array.",
+          "marks": 3,
+          "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 7,
+      "marks": 31,
       "text": [
         "Ahmed is writing a program to record the data of members of the school football squad.",
         "The input data will need to be validated. One input will be the position of each player. Is Examiner's",
@@ -93,95 +182,6 @@
       "id": "2",
       "context": [],
       "parts": [
-        {
-          "id": "2d",
-          "label": "(d)",
-          "text": "Describe what is meant by iteration.",
-          "marks": 2,
-          "type": "describe",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "2e",
-          "label": "(e)",
-          "text": "Ahmed thinks it will be a good idea to allow only three attempts at getting the input data\ncorrect. If it is not a valid entry after three attempts, a message 'Please check which Examiner's\nvalues are allowed' should be output.\nModify the flowchart to include this additional check.\nINPUT Position\nYes\nPosition=‘d’?\nNo\nYes\nPosition=‘f’?\nNo\nYes\nOUTPUT ‘Valid\nPosition=‘g’?\ndata entered’\nNo\nOUTPUT ‘Invalid\ndata. Try again’",
-          "marks": 5,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "2f",
-          "label": "(f)",
-          "text": "Ahmed needs to store more information about the players. He creates a record\nstructure that contains PlayerID (a whole number between 1 and 50), Sex (m or f), Examiner's\nPlayerName, Position (f, d or g), and DateOfBirth.\nComplete the table.\nField Name Data Type Field Size (bytes)\nPlayerID\nSex\nPlayerName\nPosition\nDateOfBirth",
-          "marks": 10,
-          "type": "name",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "2g",
-          "label": "(g)",
-          "text": "The squad has 30 players. Ahmed stores the records in an array called Squad. To\ncalculate how many players are defenders he designs this pseudocode: Examiner's\nDtotal ← 0\nArrayPosition ← 1\nREPEAT\nIF Squad[ArrayPosition].Position = 'd'\nTHEN\nDtotal ← Dtotal + 1\nENDIF\nArrayPosition ← ArrayPosition + 1\nUNTIL ArrayPosition = 30\nThis pseudocode will only consider the first 29 records in the array.",
-          "marks": null,
-          "type": "calculate",
-          "answerType": "calculate",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "2gi",
-              "label": "(i)",
-              "text": "State the name of this type of error.",
-              "marks": 1,
-              "type": "state",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "2gii",
-              "label": "(ii)",
-              "text": "State the line that needs changing.",
-              "marks": 1,
-              "type": "state",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "2giii",
-              "label": "(iii)",
-              "text": "Re-write this line to ensure the pseudocode will consider all 30 records.",
-              "marks": 1,
-              "type": "write",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "2h",
-          "label": "(h)",
-          "text": "Re-write this updated pseudocode using a WHILE loop ensuring that it will check all\nrecords in the array.\n2 Nathan is designing a software solution for stock control in a mobile phone shop. He has a\ncolleague, called Andre, who will help him write the program. Nathan decides to Examiner's\nmodularise the solution.",
-          "marks": 3,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
         {
           "id": "2a",
           "label": "(a)",
@@ -396,9 +396,11 @@
           ]
         }
       ],
-      "marks": 51,
+      "marks": 28,
       "text": [
-        "[1]"
+        "Nathan is designing a software solution for stock control in a mobile phone shop. He has a",
+        "colleague, called Andre, who will help him write the program. Nathan decides to Examiner's",
+        "modularise the solution."
       ]
     },
     {

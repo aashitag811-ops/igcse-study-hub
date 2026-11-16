@@ -4,7 +4,7 @@
   "session": "w23",
   "component": "33",
   "totalMarks": 71,
-  "questionCount": 21,
+  "questionCount": 12,
   "questions": [
     {
       "id": "1",
@@ -203,7 +203,7 @@
         {
           "id": "8a",
           "label": "(a)",
-          "text": "A pseudocode algorithm finds a customer account record in a random file and outputs it. The\nrecords are stored using the user-defined data type TAccount.\nTYPE TAccount\nDECLARE AccountNumber : INTEGER\nDECLARE LastName : STRING\nDECLARE FirstName : STRING\nDECLARE Address : STRING\nDECLARE ContactNumber : STRING\nENDTYPE\nComplete the file handling pseudocode.\nThe function Hash() takes the customer account number as a parameter, calculates and\nreturns the hash value.\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE AccountFile : STRING\n______ \"AccountRecords.dat\"\n______ AccountFile ______\nOUTPUT \"Please enter an account number\"\nINPUT Customer.AccountNumber\nLocation Hash(______)\nSEEK ______ , Location\n______ AccountFile, ______\nOUTPUT Customer // output customer record\nCLOSEFILE AccountFile",
+          "text": "A pseudocode algorithm finds a customer account record in a random file and outputs it. The\nrecords are stored using the user-defined data type TAccount.\nTYPE TAccount\nDECLARE AccountNumber : INTEGER\nDECLARE LastName : STRING\nDECLARE FirstName : STRING\nDECLARE Address : STRING\nDECLARE ContactNumber : STRING\nENDTYPE\nComplete the file handling pseudocode.\nThe function Hash() takes the customer account number as a parameter, calculates and\nreturns the hash value.\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE AccountFile : STRING\nOUTPUT \"Please enter an account number\"\nINPUT Customer.AccountNumber\nLocation Hash(______)\nSEEK ______ , Location\nOUTPUT Customer // output customer record\nCLOSEFILE AccountFile",
           "marks": 5,
           "type": "complete",
           "answerType": "fill_blank",
@@ -308,7 +308,7 @@
         {
           "id": "10b",
           "label": "(b)",
-          "text": "Complete the pseudocode function Pop() to pop an item from Stack.\n// popping an item from the stack\nFUNCTION Pop()______\nDECLARE Item : REAL\nItem 0\n______ BasePointer THEN\nItem ______\nTopPointer ______\nELSE\nOUTPUT \"The stack is empty – error\"\nENDIF\nENDFUNCTION",
+          "text": "Complete the pseudocode function Pop() to pop an item from Stack.\n// popping an item from the stack\nFUNCTION Pop()______\nDECLARE Item : REAL\nItem 0\nItem ______\nTopPointer ______\nELSE\nOUTPUT \"The stack is empty – error\"\nENDIF\nENDFUNCTION",
           "marks": 5,
           "type": "complete",
           "answerType": "fill_blank",
@@ -359,96 +359,29 @@
         "08 subject(biology).",
         "09 student(tomaz).",
         "10 student(josephine).",
-        "11 student(elspeth)."
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "student(nico)."
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "student(teresa)."
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "student(pietre)."
+        "11 student(elspeth).",
+        "12 student(nico).",
+        "13 student(teresa).",
+        "14 student(pietre).",
+        "15 choice1(tomaz, mathematics).",
+        "16 choice1(teresa, chemistry).",
+        "17 choice1(pietre, mathematics).",
+        "18 choice1(nico, mathematics).",
+        "19 choice1(elspeth, chemistry).",
+        "20 choice2(tomaz, computer_science).",
+        "21 choice2(nico, geography).",
+        "These clauses have the meanings:",
+        "Clause Meaning",
+        "Mathematics is a subject.",
+        "Tomaz is a student."
       ]
     },
     {
       "id": "15",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice1(tomaz, mathematics)."
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice1(teresa, chemistry)."
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice1(pietre, mathematics)."
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice1(nico, mathematics)."
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice1(elspeth, chemistry)."
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "choice2(tomaz, computer_science)."
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
       "parts": [
         {
-          "id": "21a",
+          "id": "15a",
           "label": "(a)",
           "text": "Anthony is a student who would like to study history and geography.\nWrite additional clauses to represent this information.",
           "marks": 3,
@@ -459,7 +392,7 @@
           "parts": []
         },
         {
-          "id": "21b",
+          "id": "15b",
           "label": "(b)",
           "text": "Using the variable X, the goal:\nchoice1(X, chemistry)\nreturns\nX = teresa, elspeth\nWrite the result returned by the goal:\nchoice1(X, mathematics)\nX = ______",
           "marks": 1,
@@ -470,7 +403,7 @@
           "parts": []
         },
         {
-          "id": "21c",
+          "id": "15c",
           "label": "(c)",
           "text": "Students must choose two different subjects such that:\nN may choose S, if N is a student and S is a subject and N has not chosen S as the first\nchoice.\nWrite this as a rule.\nmay_choose_subject(N, S)\nIF ______\n12 Artificial neural networks have played a significant role in the development of machine learning.\nExplain what is meant by the term artificial neural network.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
@@ -483,12 +416,7 @@
       ],
       "marks": 8,
       "text": [
-        "choice2(nico, geography).",
-        "These clauses have the meanings:",
-        "Clause Meaning",
-        "Mathematics is a subject.",
-        "Tomaz is a student.",
-        "15 Tomaz has chosen mathematics as his first choice.",
+        "Tomaz has chosen mathematics as his first choice.",
         "20 Tomaz has chosen computer science as his second choice."
       ]
     }

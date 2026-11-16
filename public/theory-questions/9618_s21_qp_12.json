@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s21",
   "component": "12",
-  "totalMarks": 67,
+  "totalMarks": 75,
   "questionCount": 8,
   "questions": [
     {
@@ -35,16 +35,39 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Example data from the table RENTAL are given:\nRentalID CustomerID HouseID MonthlyCost DepositPaid\n1 22 15B5L 1000.00 Yes",
+          "text": "Example data from the table RENTAL are given:\nRentalID CustomerID HouseID MonthlyCost DepositPaid\n1 22 15B5L 1000.00 Yes\n2 13 3F 687.00 No\n3 1 12AB 550.00 Yes\n4 3 37 444.50 Yes",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "1ci",
+              "label": "(i)",
+              "text": "Complete the following Data Definition Language (DDL) statement to define the table\nRENTAL.\nCREATE ______ ______ (\nRentalID INTEGER NOT NULL,\nCustomerID INTEGER NOT NULL,\nHouseID ______ (5) NOT NULL,\nMonthlyCost ______ NOT NULL,\nDepositPaid BOOLEAN NOT NULL,\n);",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1cii",
+              "label": "(ii)",
+              "text": "Write a Data Manipulation Language (DML) script to return the first name and last name\nof all customers who have not paid their deposit.",
+              "marks": 4,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 8,
+      "marks": 16,
       "text": [
         "Raj owns houses that other people rent from him. He has a database that stores details about",
         "the people who rent houses, and the houses they rent. The database, HOUSE_RENTALS, has the",
@@ -57,27 +80,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "13 3F 687.00 No"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1 12AB 550.00 Yes"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
       "parts": [
         {
-          "id": "4a",
+          "id": "2a",
           "label": "(a)",
           "text": "Explain the reasons why it is important that Aisha acts ethically in relation to her team\nmembers.",
           "marks": 2,
@@ -88,7 +93,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "2b",
           "label": "(b)",
           "text": "The team are developing a computer game where the user plays a board game (such as\nchess) against the computer.\nDescribe how the computer would use Artificial Intelligence (AI) to play the board game.",
           "marks": 3,
@@ -99,18 +104,28 @@
           "parts": []
         },
         {
-          "id": "4c",
+          "id": "2c",
           "label": "(c)",
-          "text": "The final game will be released under a licence.\nTick (3) one or more boxes in each row to identify the licence(s) each statement describes.\nFree Open\nCommercial\nStatement Software Source Shareware\nSoftware\nFoundation Initiative\nThe user can edit the source code\nThe user must always pay before being\nable to use the software\nThe user can redistribute the software\nThe user always gets a trial period\n3 A logic expression is given:\nS = (A AND B AND C) OR (B XOR C)",
+          "text": "The final game will be released under a licence.\nTick (3) one or more boxes in each row to identify the licence(s) each statement describes.\nFree Open\nCommercial\nStatement Software Source Shareware\nSoftware\nFoundation Initiative\nThe user can edit the source code\nThe user must always pay before being\nable to use the software\nThe user can redistribute the software\nThe user always gets a trial period",
           "marks": 4,
           "type": "identify",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Aisha manages a team of software developers."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "3a",
           "label": "(a)",
           "text": "Draw the logic circuit for the given expression.\nB S",
           "marks": 4,
@@ -121,16 +136,27 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "3b",
           "label": "(b)",
-          "text": "Complete the truth table for the logic expression:\nS = (A AND B AND C) OR (B XOR C)\nWorking space\nA B C S\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n4 The table shows part of the instruction set for a processor. The processor has one general purpose\nregister, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nOpcode Operand\nLDM #n\nImmediate addressing. Load the number n to ACC\nDirect addressing. Load the contents of the location at the given address to\nLDD <address>\nACC\nSTO <address>\nStore contents of ACC at the given address\nADD <address>\nAdd the contents of the given address to the ACC\nINC <register> Add 1 to the contents of the register (ACC or IX)\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX)\nCMP <address>\nCompare the contents of ACC with the contents of <address>\nJPE <address> Following a compare instruction, jump to <address> if the compare was True\nJPN <address>\nFollowing a compare instruction, jump to <address> if the compare was False\nJMP <address>\nJump to the given address\nIN Key in a character and store its ASCII value in ACC\nOUT\nOutput to the screen the character whose ASCII value is stored in ACC\nEND\nReturn control to the operating system\n# denotes a denary number, e.g. #123\nThe current contents of the main memory and selected values from the ASCII character set are:\nAddress Instruction ASCII code table (selected codes only)\n70 IN\nASCII code Character\n71 CMP 100 65 A\n72 JPE 80 66 B\n73 CMP 101 67 C\n74 JPE 76 68 D\n75 JMP 80\n76 LDD 102\n77 INC ACC\nSTO 102\nJMP 70\n80 LDD 102\n81 DEC ACC\n82 STO 102\n83 JMP 70\n100 68\n101 65\n102 100",
+          "text": "Complete the truth table for the logic expression:\nS = (A AND B AND C) OR (B XOR C)\nWorking space\nA B C S\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1",
           "marks": 2,
-          "type": "compare",
+          "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "A logic expression is given:",
+        "S = (A AND B AND C) OR (B XOR C)"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -166,10 +192,10 @@
             {
               "id": "4bii",
               "label": "(ii)",
-              "text": "An assembly language program needs to test if bit number 2 in memory address 300\nis a 1.\nComplete the assembly language instruction to perform this test.\n______ #4",
+              "text": "An assembly language program needs to test if bit number 2 in memory address 300\nis a 1.\nComplete the assembly language instruction to perform this test.",
               "marks": 1,
               "type": "complete",
-              "answerType": "fill_blank",
+              "answerType": "long_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -188,9 +214,58 @@
           ]
         }
       ],
-      "marks": 23,
+      "marks": 8,
       "text": [
-        "3 37 444.50 Yes"
+        "The table shows part of the instruction set for a processor. The processor has one general purpose",
+        "register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Opcode Operand",
+        "LDM #n",
+        "Immediate addressing. Load the number n to ACC",
+        "Direct addressing. Load the contents of the location at the given address to",
+        "LDD <address>",
+        "ACC",
+        "STO <address>",
+        "Store contents of ACC at the given address",
+        "ADD <address>",
+        "Add the contents of the given address to the ACC",
+        "INC <register> Add 1 to the contents of the register (ACC or IX)",
+        "DEC <register>",
+        "Subtract 1 from the contents of the register (ACC or IX)",
+        "CMP <address>",
+        "Compare the contents of ACC with the contents of <address>",
+        "JPE <address> Following a compare instruction, jump to <address> if the compare was True",
+        "JPN <address>",
+        "Following a compare instruction, jump to <address> if the compare was False",
+        "JMP <address>",
+        "Jump to the given address",
+        "IN Key in a character and store its ASCII value in ACC",
+        "OUT",
+        "Output to the screen the character whose ASCII value is stored in ACC",
+        "END",
+        "Return control to the operating system",
+        "# denotes a denary number, e.g. #123",
+        "The current contents of the main memory and selected values from the ASCII character set are:",
+        "Address Instruction ASCII code table (selected codes only)",
+        "70 IN",
+        "ASCII code Character",
+        "71 CMP 100 65 A",
+        "72 JPE 80 66 B",
+        "73 CMP 101 67 C",
+        "74 JPE 76 68 D",
+        "75 JMP 80",
+        "76 LDD 102",
+        "77 INC ACC",
+        "STO 102",
+        "JMP 70",
+        "80 LDD 102",
+        "81 DEC ACC",
+        "82 STO 102",
+        "83 JMP 70",
+        "100 68",
+        "101 65",
+        "102 100"
       ]
     },
     {
@@ -200,7 +275,7 @@
         {
           "id": "5a",
           "label": "(a)",
-          "text": "Complete the following descriptions of internal components of a computer by writing the\nmissing terms.\nThe ______ transmits the signals to coordinate events based\non the electronic pulses of the ______ .\nThe ______ carries data to the components, while the\n______ carries the address where data needs to be written to\nor read from.\nThe ______ performs mathematical operations and\nlogical comparisons.",
+          "text": "Complete the following descriptions of internal components of a computer by writing the\nmissing terms.\nThe ______ transmits the signals to coordinate events based\non the electronic pulses of the ______ .\nThe ______ carries data to the components, while the\nor read from.\nThe ______ performs mathematical operations and\nlogical comparisons.",
           "marks": 5,
           "type": "complete",
           "answerType": "fill_blank",

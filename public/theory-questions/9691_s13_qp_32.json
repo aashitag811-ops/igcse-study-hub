@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s13",
   "component": "32",
-  "totalMarks": 82,
+  "totalMarks": 90,
   "questionCount": 8,
   "questions": [
     {
@@ -538,31 +538,50 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "The diagram shows the current contents of main memory with a list of programs\nwaiting to be scheduled. Examiner's\nOTHER",
+          "text": "The diagram shows the current contents of main memory with a list of programs\nwaiting to be scheduled. Examiner's\nOTHER\n10 Gb\nPROG6\n20 Gb\nPartition 1\n30 Gb\nPROG7\n40 Gb\n50 Gb\nPROG8\n60 Gb\nPartition 2\nPROG9\n70 Gb\n80 Gb\nCurrently waiting to be loaded are:\n• PROG16 (batch processing requiring 25 Gb)\n• PROG17 (interactive processing requiring 8 Gb)\n• PROG44 (interactive processing requiring 9 Gb)\n• PROG45 (interactive processing requiring 8 Gb)\n• PROG23 (batch processing requiring 15 Gb)",
           "marks": null,
           "type": "list",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 4,
-      "text": [
-        "A multiprogramming, multi-user operating system organises the available memory into two",
-        "fixed sized partitions.",
-        "• Partition 1 – size 30 Gb – is used only for batch processing",
-        "• Partition 2 – size 40 Gb – is used only for interactive processing at a terminal",
-        "A program, once loaded, occupies the same memory locations until its execution is",
-        "complete."
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "If PROG6 completes execution, which programs (if any) can be loaded next?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "If PROG8 completes execution, which programs (if any) can be loaded next?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "Describe two variations on this use of partitions which may make more efficient\nuse of memory.",
+              "marks": 2,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "10c",
+          "id": "6c",
           "label": "(c)",
           "text": "10 Gb of the main memory is labelled OTHER and will not be used for the execution of\napplication programs. Examiner's\nName two possible items of software this memory will be used for.\n2",
           "marks": 2,
@@ -573,17 +592,43 @@
           "parts": []
         },
         {
-          "id": "10d",
+          "id": "6d",
           "label": "(d)",
-          "text": "Any program loaded is always in one of three possible states. One is the ‘running’ state\nmeaning the job currently has use of the processor.\nName and describe the two other states.\n7 (a) A user-defined function CountCharacter is defined, using pseudocode, as follows:\nFUNCTION CountCharacter(ThisArray : CHAR, UBound : INTEGER,\nThisCharacter : CHAR) RETURNS INTEGER\nThe function checks each element in the array ThisArray with upper bound UBound.\nThe function returns the number of times ThisCharacter appears in ThisArray.\nIf the function is incorrectly formed it will give a ‘COMPILE ERROR’.\nThe function is used with the three arrays shown below:\nSubscript/Index\nIdentifier 1 2 3 4 5 6 7 8 9 10\nCity1\nL O N D O N\nCity2\nN E W <Space> Y O R K\nCity3\nS T O C K H O L M\nWhat is returned by the following function calls?",
+          "text": "Any program loaded is always in one of three possible states. One is the ‘running’ state\nmeaning the job currently has use of the processor.\nName and describe the two other states.",
           "marks": 4,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A multiprogramming, multi-user operating system organises the available memory into two",
+        "fixed sized partitions.",
+        "• Partition 1 – size 30 Gb – is used only for batch processing",
+        "• Partition 2 – size 40 Gb – is used only for interactive processing at a terminal",
+        "A program, once loaded, occupies the same memory locations until its execution is",
+        "complete."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
+        {
+          "id": "7a",
+          "label": "(a)",
+          "text": "A user-defined function CountCharacter is defined, using pseudocode, as follows:\nFUNCTION CountCharacter(ThisArray : CHAR, UBound : INTEGER,\nThisCharacter : CHAR) RETURNS INTEGER\nThe function checks each element in the array ThisArray with upper bound UBound.\nThe function returns the number of times ThisCharacter appears in ThisArray.\nIf the function is incorrectly formed it will give a ‘COMPILE ERROR’.\nThe function is used with the three arrays shown below:\nSubscript/Index\nIdentifier 1 2 3 4 5 6 7 8 9 10\nCity1\nL O N D O N\nCity2\nN E W <Space> Y O R K\nCity3\nS T O C K H O L M\nWhat is returned by the following function calls?",
+          "marks": null,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": [
             {
-              "id": "10di",
+              "id": "7ai",
               "label": "(i)",
               "text": "CountCharacter(City1, 6, ‘O’)",
               "marks": 1,
@@ -594,7 +639,7 @@
               "parts": []
             },
             {
-              "id": "10dii",
+              "id": "7aii",
               "label": "(ii)",
               "text": "CountCharacter(City2, ‘R’, 8)",
               "marks": 1,
@@ -605,7 +650,7 @@
               "parts": []
             },
             {
-              "id": "10diii",
+              "id": "7aiii",
               "label": "(iii)",
               "text": "CountCharacter(City3, 9, ‘t’)",
               "marks": 1,
@@ -616,7 +661,7 @@
               "parts": []
             },
             {
-              "id": "10div",
+              "id": "7aiv",
               "label": "(iv)",
               "text": "CountCharacter(City2, ’W’)",
               "marks": 1,
@@ -629,7 +674,7 @@
           ]
         },
         {
-          "id": "10b",
+          "id": "7b",
           "label": "(b)",
           "text": "A programmer writes pseudocode to report whether or not a string value ThisValue is\nfound in the string array ThisArray. This is designed as a function StringFound\nwhich returns a Boolean value.",
           "marks": null,
@@ -639,7 +684,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "10bi",
+              "id": "7bi",
               "label": "(i)",
               "text": "Show the function header for function StringFound.",
               "marks": 3,
@@ -650,7 +695,7 @@
               "parts": []
             },
             {
-              "id": "10bii",
+              "id": "7bii",
               "label": "(ii)",
               "text": "Use the following numbers to label your function header above.\n1. Function parameter(s)\n2. Where the return data type is stated",
               "marks": 2,
@@ -661,7 +706,7 @@
               "parts": []
             },
             {
-              "id": "10biii",
+              "id": "7biii",
               "label": "(iii)",
               "text": "Write a single statement which calls the function StringFound to search for the\nvalue “LISBON” in the array CapitalCities (upper bound 300). The function\nreturns the value to variable CityWasFound in the calling statement.",
               "marks": 2,
@@ -674,29 +719,8 @@
           ]
         }
       ],
-      "marks": 13,
-      "text": [
-        "Gb",
-        "PROG6",
-        "20 Gb",
-        "Partition 1",
-        "30 Gb",
-        "PROG7",
-        "40 Gb",
-        "50 Gb",
-        "PROG8",
-        "60 Gb",
-        "Partition 2",
-        "PROG9",
-        "70 Gb",
-        "80 Gb",
-        "Currently waiting to be loaded are:",
-        "• PROG16 (batch processing requiring 25 Gb)",
-        "• PROG17 (interactive processing requiring 8 Gb)",
-        "• PROG44 (interactive processing requiring 9 Gb)",
-        "• PROG45 (interactive processing requiring 8 Gb)",
-        "• PROG23 (batch processing requiring 15 Gb)"
-      ]
+      "marks": 11,
+      "text": []
     },
     {
       "id": "8",

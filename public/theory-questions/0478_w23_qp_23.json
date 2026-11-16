@@ -4,7 +4,7 @@
   "session": "w23",
   "component": "23",
   "totalMarks": 56,
-  "questionCount": 18,
+  "questionCount": 13,
   "questions": [
     {
       "id": "1",
@@ -130,16 +130,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Password = OldList[Posn]"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Password = OldList[Posn]",
+        "07 THEN"
       ]
     },
     {
@@ -157,16 +149,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "ELSE Posn Posn + 1"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "ELSE Posn Posn + 1",
+        "10 ENDIF"
       ]
     },
     {
@@ -184,16 +168,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Found"
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Found",
+        "13 THEN"
       ]
     },
     {
@@ -202,16 +178,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "OUTPUT \"Password has been used before\""
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
+        "OUTPUT \"Password has been used before\"",
+        "15 ELSE"
       ]
     },
     {
@@ -226,18 +194,9 @@
     {
       "id": "17",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OldList[Posn] NewPassword"
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
       "parts": [
         {
-          "id": "18a",
+          "id": "17a",
           "label": "(a)",
           "text": "Identify the three errors in the pseudocode and suggest corrections.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______",
           "marks": 3,
@@ -248,7 +207,7 @@
           "parts": []
         },
         {
-          "id": "18b",
+          "id": "17b",
           "label": "(b)",
           "text": "Complete this flowchart for the corrected algorithm:\nSTART\nSTOP\n6 There are three descriptions of logic gates. Each logic gate has two inputs A and B with one\noutput X.\nIdentify each logic gate.\nComplete a truth table for each logic gate.",
           "marks": 6,
@@ -259,7 +218,7 @@
           "parts": []
         },
         {
-          "id": "18a",
+          "id": "17a",
           "label": "(a)",
           "text": "The only time the output is 1 is when both inputs are 1.\nA B X\nLogic gate ______\n0 0\nComplete the truth table for this description.\n0 1\n1 0\n1 1",
           "marks": 2,
@@ -270,7 +229,7 @@
           "parts": []
         },
         {
-          "id": "18b",
+          "id": "17b",
           "label": "(b)",
           "text": "The output is 1 when both inputs are different.\nA B X\nLogic gate ______\n0 0\nComplete the truth table for this description.\n0 1\n1 0\n1 1",
           "marks": 2,
@@ -281,7 +240,7 @@
           "parts": []
         },
         {
-          "id": "18c",
+          "id": "17c",
           "label": "(c)",
           "text": "The only time the output is 1 is when both inputs are 0.\nA B X\nLogic gate ______\n0 0\nComplete the truth table for this description.\n0 1\n1 0\n1 1",
           "marks": 2,
@@ -292,7 +251,7 @@
           "parts": []
         },
         {
-          "id": "18d",
+          "id": "17d",
           "label": "(d)",
           "text": "Consider this logic expression:\nX = (NOT A OR NOT B) OR NOT C\nDraw a logic circuit for this logic expression. Each logic gate must have a maximum of two\ninputs. Do not attempt to simplify this logic expression.\n7 A program uses both local variables and global variables.\nDescribe two differences between local variables and global variables.\nDifference 1 ______\nDifference 2 ______\n8 This is an algorithm to find if a batch of parts has been manufactured successfully.\nSTART\nAccept 0\nReject 0\nINPUT PartOK\nNo\nIS PartOK\nReject Reject + 1\n= 'Y'?\nYes\nAccept Accept + 1\nNo\nIS Accept\n= 10 ?\nYes\nYes\nIS Reject\nError Reject/Accept * 100\n> 1 ?\nNo\nOUTPUT\n\"Too many rejected \",\nOUTPUT\nError, \"% error\"\n\"Success\"\nSTOP",
           "marks": 5,
@@ -303,7 +262,7 @@
           "parts": []
         },
         {
-          "id": "18a",
+          "id": "17a",
           "label": "(a)",
           "text": "Complete the trace table using this data:\nY, Y, Y, N, Y, Y, Y, Y, N, Y, Y, Y, Y\nAccept Reject PartOK Error\nOUTPUT",
           "marks": 5,
@@ -314,7 +273,7 @@
           "parts": []
         },
         {
-          "id": "18b",
+          "id": "17b",
           "label": "(b)",
           "text": "Describe how the algorithm should be changed to accept ‘Y’ or ‘y’ for a successfully\nmanufactured part.\n9 A sanctuary for pheasants has set up a new database table called PheasantList to store details\nof the different species of bird at the sanctuary. Part of this table is given, showing: species,\ndescription, number of birds at the sanctuary, if the birds are breeding or not, and number of\nyoung born this year.\nSpecies Description NumberBirds Breeding Young\nEdwards blue-black with white tail 5 Yes 0\nJapanese green dark green with pale grey tail 2 Yes 2\nReeves golden, white and red scaled plumage 4 Yes 1\nCrawfords Kalij glossy blue-black plumage 4 No 0\nCrested fireback blue-black with black tail 3 No 0\nTrue silver white laced top half and black lower half 7 Yes 1\nSiamese fireback grey plumage with crimson legs and feet 5 No 0\nMikado iridescent plumage with white striped wings 3 Yes 4\nRed junglefowl many colours 2 Yes 0\nHimalayan monal many colours with metallic green crest 3 Yes 2\nWhite eared white with ear tufts 5 Yes 3\nBrown eared brown with ear tufts 9 Yes 1\nRing necked long tail with white ring neck 2 Yes 2\nGolden rainbow coloured 3 Yes 4",
           "marks": 3,
@@ -325,7 +284,7 @@
           "parts": []
         },
         {
-          "id": "18a",
+          "id": "17a",
           "label": "(a)",
           "text": "State the number of records and fields in this part of the database table.\nRecords ______\nFields ______",
           "marks": 2,
@@ -336,7 +295,7 @@
           "parts": []
         },
         {
-          "id": "18b",
+          "id": "17b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -346,7 +305,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "18bi",
+              "id": "17bi",
               "label": "(i)",
               "text": "Give the name of a field that could be used for the primary key.",
               "marks": 1,
@@ -357,7 +316,7 @@
               "parts": []
             },
             {
-              "id": "18bii",
+              "id": "17bii",
               "label": "(ii)",
               "text": "Explain why the sanctuary might decide not to use the field in (b)(i) as the primary key.",
               "marks": 1,
@@ -368,7 +327,7 @@
               "parts": []
             },
             {
-              "id": "18biii",
+              "id": "17biii",
               "label": "(iii)",
               "text": "A new field SpeciesID is added to the database table.\nThis field contains a six-character code, for example Ph0001.\nGive a reason why this field would be a better primary key.",
               "marks": 1,
@@ -381,7 +340,7 @@
           ]
         },
         {
-          "id": "18c",
+          "id": "17c",
           "label": "(c)",
           "text": "Write the output that would be given by this structured query language (SQL) statement:\nSELECT Species, Description\nFROM PheasantList\nWHERE NumberBirds > 6;",
           "marks": 2,
@@ -392,9 +351,9 @@
           "parts": []
         },
         {
-          "id": "18d",
+          "id": "17d",
           "label": "(d)",
-          "text": "Complete this SQL statement to display all the species of pheasant where the birds are\nbreeding and there were no young born this year:\nSELECT ______\nFROM ______\nWHERE ______\n______ ;\n10 A weather station takes temperature readings once an hour for a week. These temperatures are\nstored in a two-dimensional (2D) array Temperatures[]\nEach column contains 24 readings for a single day. The first temperature is recorded at 00:00 and\nthe final temperature at 23:00. There are seven columns, one for each day of the week, starting\nwith Monday and ending with Sunday.\nThe variables MaxDay, MinDay and AvDay are used to store the maximum, minimum, and\naverage temperatures for a day. The variables MaxWeek, MinWeek and AvWeek are used to store\nthe maximum, minimum, and average temperatures for the week.\nThe array has already been set up and the data stored.\nWrite a program that meets the following requirements:\n• finds the maximum and minimum temperatures for each day\n• calculates the average temperature for each day\n• outputs for each day:\n– name of the day, for example Monday\n– maximum temperature\n– minimum temperature\n– average temperature\n• finds the maximum and minimum temperatures for the week\n• calculates the average temperature for the week\n• outputs:\n– maximum temperature for the week\n– minimum temperature for the week\n– average temperature for the week.\nAll temperatures output must be rounded to two decimal places.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll inputs and outputs must contain suitable messages.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nYou do not need to initialise the data in the array Temperatures[]\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete this SQL statement to display all the species of pheasant where the birds are\nbreeding and there were no young born this year:\nSELECT ______\nFROM ______\nWHERE ______\n10 A weather station takes temperature readings once an hour for a week. These temperatures are\nstored in a two-dimensional (2D) array Temperatures[]\nEach column contains 24 readings for a single day. The first temperature is recorded at 00:00 and\nthe final temperature at 23:00. There are seven columns, one for each day of the week, starting\nwith Monday and ending with Sunday.\nThe variables MaxDay, MinDay and AvDay are used to store the maximum, minimum, and\naverage temperatures for a day. The variables MaxWeek, MinWeek and AvWeek are used to store\nthe maximum, minimum, and average temperatures for the week.\nThe array has already been set up and the data stored.\nWrite a program that meets the following requirements:\n• finds the maximum and minimum temperatures for each day\n• calculates the average temperature for each day\n• outputs for each day:\n– name of the day, for example Monday\n– maximum temperature\n– minimum temperature\n– average temperature\n• finds the maximum and minimum temperatures for the week\n• calculates the average temperature for the week\n• outputs:\n– maximum temperature for the week\n– minimum temperature for the week\n– average temperature for the week.\nAll temperatures output must be rounded to two decimal places.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll inputs and outputs must contain suitable messages.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nYou do not need to initialise the data in the array Temperatures[]\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "fill_blank",
@@ -405,7 +364,8 @@
       ],
       "marks": 39,
       "text": [
-        "ENDIF"
+        "OldList[Posn] NewPassword",
+        "18 ENDIF"
       ]
     }
   ]

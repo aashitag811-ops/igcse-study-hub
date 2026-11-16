@@ -215,7 +215,7 @@
             {
               "id": "2aiii",
               "label": "(iii)",
-              "text": "The table shows a module definition for BinarySearch in three programming languages.\nStudy one of the examples. Indicate your choice by circling A, B or C:\nA B C\nA) Python\n01 def BinarySearch(List, Low, High, SearchItem):\n02 Index = -1",
+              "text": "The table shows a module definition for BinarySearch in three programming languages.\nStudy one of the examples. Indicate your choice by circling A, B or C:\nA B C\nA) Python\n01 def BinarySearch(List, Low, High, SearchItem):\n02 Index = -1\n03 while (Index == -1) AND (Low <= High):",
               "marks": null,
               "type": "list",
               "answerType": "short_answer",
@@ -233,30 +233,13 @@
       ]
     },
     {
-      "id": "03",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "while (Index == -1) AND (Low <= High):"
-      ]
-    },
-    {
       "id": "04",
       "context": [],
       "parts": [],
       "marks": null,
       "text": [
-        "Middle = (High + Low) // 2"
-      ]
-    },
-    {
-      "id": "05",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "if List[Middle] == SearchItem:"
+        "Middle = (High + Low) // 2",
+        "05 if List[Middle] == SearchItem:"
       ]
     },
     {
@@ -265,16 +248,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Index = Middle"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "elif List[Middle] < SearchItem:"
+        "Index = Middle",
+        "07 elif List[Middle] < SearchItem:"
       ]
     },
     {
@@ -283,16 +258,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Low = Middle + 1"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "else:"
+        "Low = Middle + 1",
+        "09 else:"
       ]
     },
     {
@@ -301,7 +268,52 @@
       "parts": [],
       "marks": null,
       "text": [
-        "High = Middle - 1"
+        "High = Middle - 1",
+        "11 return(Middle)",
+        "B) Pascal/Delphi",
+        "01 FUNCTION BinarySearch(VAR List : ARRAY OF INTEGER; Low, High,",
+        "SearchItem : INTEGER) : INTEGER;",
+        "02 VAR Index, Middle : INTEGER;",
+        "03 BEGIN",
+        "04 Index := -1;",
+        "05 WHILE (Index = -1) & (Low <= High) DO",
+        "06 BEGIN"
+      ]
+    },
+    {
+      "id": "07",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Middle := (High + Low) DIV 2;"
+      ]
+    },
+    {
+      "id": "08",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "IF List[Middle] = SearchItem"
+      ]
+    },
+    {
+      "id": "09",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "THEN Index := Middle"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "ELSE IF List[Middle] < SearchItem"
       ]
     },
     {
@@ -310,20 +322,7 @@
       "parts": [],
       "marks": null,
       "text": [
-        "return(Middle)",
-        "B) Pascal/Delphi",
-        "01 FUNCTION BinarySearch(VAR List : ARRAY OF INTEGER; Low, High,",
-        "SearchItem : INTEGER) : INTEGER;",
-        "02 VAR Index, Middle : INTEGER;",
-        "03 BEGIN",
-        "04 Index := -1;",
-        "05 WHILE (Index = -1) & (Low <= High) DO",
-        "06 BEGIN",
-        "07 Middle := (High + Low) DIV 2;",
-        "08 IF List[Middle] = SearchItem",
-        "09 THEN Index := Middle",
-        "10 ELSE IF List[Middle] < SearchItem",
-        "11 THEN Low := Middle + 1"
+        "THEN Low := Middle + 1"
       ]
     },
     {
@@ -332,16 +331,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "ELSE High := Middle - 1;"
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "END;"
+        "ELSE High := Middle - 1;",
+        "13 END;"
       ]
     },
     {
@@ -350,7 +341,32 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Result := Middle;"
+        "Result := Middle;",
+        "15 END;",
+        "C) Visual Basic",
+        "01 Function BinarySearch(ByRef List() As Integer, ByVal Low As Integer,",
+        "ByVal High As Integer, ByVal SearchItem As Integer) As Integer",
+        "02 Dim Index, Middle As Integer",
+        "03 Index = -1",
+        "04 Do While (Index = -1) & (Low <= High)",
+        "05 Middle = (High + Low) \\ 2",
+        "06 If List(Middle) = SearchItem Then",
+        "07 Index = Middle",
+        "08 ElseIf List(Middle) < SearchItem Then",
+        "09 Low = Middle + 1",
+        "10 Else",
+        "11 High = Middle - 1",
+        "12 End If",
+        "13 Loop"
+      ]
+    },
+    {
+      "id": "14",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "BinarySearch = Middle"
       ]
     },
     {
@@ -427,24 +443,7 @@
       ],
       "marks": 2,
       "text": [
-        "END;",
-        "C) Visual Basic",
-        "01 Function BinarySearch(ByRef List() As Integer, ByVal Low As Integer,",
-        "ByVal High As Integer, ByVal SearchItem As Integer) As Integer",
-        "02 Dim Index, Middle As Integer",
-        "03 Index = -1",
-        "04 Do While (Index = -1) & (Low <= High)",
-        "05 Middle = (High + Low) \\ 2",
-        "06 If List(Middle) = SearchItem Then",
-        "07 Index = Middle",
-        "08 ElseIf List(Middle) < SearchItem Then",
-        "09 Low = Middle + 1",
-        "10 Else",
-        "11 High = Middle - 1",
-        "12 End If",
-        "13 Loop",
-        "14 BinarySearch = Middle",
-        "15 End Function",
+        "End Function",
         "The programming environment reported a syntax error in the BinarySearch code.",
         "State the line number: .......................................................................................................",
         "Write the correct code for this line."

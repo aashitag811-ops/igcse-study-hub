@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s20",
   "component": "23",
-  "totalMarks": 71,
+  "totalMarks": 75,
   "questionCount": 5,
   "questions": [
     {
@@ -140,33 +140,56 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "The following pseudocode algorithm has been developed to check whether a string contains\na valid password.\nTo be a valid password, a string must:\n• be longer than five characters\n• contain at least one numeric digit\n• contain at least one upper case letter\n• contain at least one other character (not a numeric digit or an upper case letter).\n10 FUNCTION Check(InString : STRING) RETURNS BOOLEAN\n12 DECLARE Index : INTEGER\n13 DECLARE StrLen : INTEGER\n14 DECLARE NumUpper, NumDigit : INTEGER\n15 DECLARE NextChar : CHAR\n16 DECLARE NumOther : INTEGER\n18 NumUpper 0\n19 NumDigit 0\n21 StrLen LENGTH(InString)\n22 IF StrLen < 6\n23 THEN\n24 RETURN FALSE\n25 ELSE\n26 FOR Index 1 TO StrLen - 1\n27 // loop for each character\n28 NextChar MID(InString, Index, 1)\n29 IF NextChar >= '0' AND NextChar <= '9'\n30 THEN\n31 NumDigit NumDigit + 1 // count digits\n32 ELSE\n33 IF NextChar >= 'A' AND NextChar <= 'Z'\n34 THEN\n35 NumUpper NumUpper + 1 // count upper case\n36 ENDIF\n37 ENDIF\n38 ENDFOR\n39 ENDIF\n41 NumOther StrLen – (NumDigit – NumUpper)\n42 IF NumDigit >= 1 AND NumUpper >= 1 AND NumOther >= 1\n43 THEN\n44 RETURN TRUE\n45 ELSE\n46 RETURN FALSE\n47 ENDIF\n49 ENDFUNCTION\nThe pseudocode does not work under all circumstances.\nThe function was dry run with the string \"1234AP\" and the following trace table was\nproduced. The string is an invalid password, but the pseudocode returned the value\nTRUE.\nTrace\nStrLen Index NextChar NumUpper NumDigit NumOther\ntable row\n1 6 0 0\n1 '1'\n2 '2'\n5 2\n3 '3'",
+          "text": "The following pseudocode algorithm has been developed to check whether a string contains\na valid password.\nTo be a valid password, a string must:\n• be longer than five characters\n• contain at least one numeric digit\n• contain at least one upper case letter\n• contain at least one other character (not a numeric digit or an upper case letter).\n10 FUNCTION Check(InString : STRING) RETURNS BOOLEAN\n12 DECLARE Index : INTEGER\n13 DECLARE StrLen : INTEGER\n14 DECLARE NumUpper, NumDigit : INTEGER\n15 DECLARE NextChar : CHAR\n16 DECLARE NumOther : INTEGER\n18 NumUpper 0\n19 NumDigit 0\n21 StrLen LENGTH(InString)\n22 IF StrLen < 6\n23 THEN\n24 RETURN FALSE\n25 ELSE\n26 FOR Index 1 TO StrLen - 1\n27 // loop for each character\n28 NextChar MID(InString, Index, 1)\n29 IF NextChar >= '0' AND NextChar <= '9'\n30 THEN\n31 NumDigit NumDigit + 1 // count digits\n32 ELSE\n33 IF NextChar >= 'A' AND NextChar <= 'Z'\n34 THEN\n35 NumUpper NumUpper + 1 // count upper case\n36 ENDIF\n37 ENDIF\n38 ENDFOR\n39 ENDIF\n41 NumOther StrLen – (NumDigit – NumUpper)\n42 IF NumDigit >= 1 AND NumUpper >= 1 AND NumOther >= 1\n43 THEN\n44 RETURN TRUE\n45 ELSE\n46 RETURN FALSE\n47 ENDIF\n49 ENDFUNCTION\nThe pseudocode does not work under all circumstances.\nThe function was dry run with the string \"1234AP\" and the following trace table was\nproduced. The string is an invalid password, but the pseudocode returned the value\nTRUE.\nTrace\nStrLen Index NextChar NumUpper NumDigit NumOther\ntable row\n1 6 0 0\n1 '1'\n2 '2'\n5 2\n3 '3'\n4 '4'\n9 4\n10 5 'A'",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 5,
-      "text": []
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "3bi",
+              "label": "(i)",
+              "text": "The pseudocode algorithm contains two errors.\nState how the given trace table indicates the existence of each error.\nError 1 ______\nError 2 ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3bii",
+              "label": "(ii)",
+              "text": "Give the line number of each error in the pseudocode algorithm and write the modified\npseudocode to correct each error.\nLine number for error 1 ______\nCorrect pseudocode ______\nLine number for error 2 ______\nCorrect pseudocode ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "4c",
+          "id": "3c",
           "label": "(c)",
-          "text": "The term adaptive maintenance refers to amendments that are made in response to\nchanges to the program specification. These changes usually affect the program algorithm.\nName one other part of the design that can change as a result of adaptive maintenance.\n4 A global 1D array, Contact, of type STRING is used to store a list of names and email addresses.\nThere are 1000 elements in the array. Each element stores one data item. The format of each\ndata item is as follows:\n<Name>':'<EmailAddress>\nName and EmailAddress are both variable-length strings.\nFor example:\n\"Wan Zhu:zwan99@mymail.com\"\nA function, Extract(), is part of the program that processes the array. A string data item is\npassed to the function as a parameter. The function will return the Name part. Validation is not\nnecessary.",
+          "text": "The term adaptive maintenance refers to amendments that are made in response to\nchanges to the program specification. These changes usually affect the program algorithm.\nName one other part of the design that can change as a result of adaptive maintenance.",
           "marks": 1,
           "type": "name",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -190,11 +213,18 @@
           "parts": []
         }
       ],
-      "marks": 9,
+      "marks": 8,
       "text": [
-        "'4'",
-        "9 4",
-        "10 5 'A'"
+        "A global 1D array, Contact, of type STRING is used to store a list of names and email addresses.",
+        "There are 1000 elements in the array. Each element stores one data item. The format of each",
+        "data item is as follows:",
+        "<Name>':'<EmailAddress>",
+        "Name and EmailAddress are both variable-length strings.",
+        "For example:",
+        "\"Wan Zhu:zwan99@mymail.com\"",
+        "A function, Extract(), is part of the program that processes the array. A string data item is",
+        "passed to the function as a parameter. The function will return the Name part. Validation is not",
+        "necessary."
       ]
     },
     {

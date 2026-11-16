@@ -3,8 +3,8 @@
   "subjectCode": "0607",
   "session": "s23",
   "component": "51",
-  "totalMarks": 10,
-  "questionCount": 7,
+  "totalMarks": 36,
+  "questionCount": 5,
   "questions": [
     {
       "id": "1",
@@ -66,51 +66,16 @@
         {
           "id": "3a",
           "label": "(a)",
-          "text": "Complete this table using your answers to Question 1 and Question 2 and any patterns you notice.\nNumber of winning lines\nSize of grid\nHorizontal Vertical Diagonal Total\n3 by 3 8",
-          "marks": null,
+          "text": "Complete this table using your answers to Question 1 and Question 2 and any patterns you notice.\nNumber of winning lines\nSize of grid\nHorizontal Vertical Diagonal Total\n3 by 3 8\n4 by 4\n5 by 5\n6 by 6\n7 by 7\n20 by 20",
+          "marks": 3,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": null,
-      "text": []
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "by 4"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "by 5"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "by 6"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "7b",
+          "id": "3b",
           "label": "(b)",
           "text": "A grid is n by n.\nYou need n s in a line to win.\nFind an expression, in terms of n, for the number of winning lines.",
           "marks": 2,
@@ -121,7 +86,7 @@
           "parts": []
         },
         {
-          "id": "7c",
+          "id": "3c",
           "label": "(c)",
           "text": "Jibreel draws a very large square grid.\nHe thinks there will be 583 winning lines of s on his grid.\nGive a reason why he is wrong.",
           "marks": 1,
@@ -132,18 +97,26 @@
           "parts": []
         },
         {
-          "id": "7d",
+          "id": "3d",
           "label": "(d)",
-          "text": "Harriet draws a square grid with 324 squares.\nFind the number of winning lines of s on this grid.\n4 A grid is n by n.\nIn a different game a winning line is one less than n.\nTo make a line, the s must be in squares that are next to each other.",
+          "text": "Harriet draws a square grid with 324 squares.\nFind the number of winning lines of s on this grid.",
           "marks": 3,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
-          "id": "7a",
+          "id": "4a",
           "label": "(a)",
           "text": "In a 3 by 3 grid you need two s in a line to win.\nThese diagrams show some of the diagonal winning lines.\nComplete the table to find the number of winning lines with two s.\nYou may use the grids below the table to help you.\nNumber of winning lines\nSize of grid\nHorizontal Vertical Diagonal Total\n3 by 3 20",
           "marks": 2,
@@ -154,7 +127,7 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "4b",
           "label": "(b)",
           "text": "In a 4 by 4 grid you need three s in a line to win.\nComplete the table to find the number of winning lines with three s.\nYou may use the grids below the table to help you.\nNumber of winning lines\nSize of grid\nHorizontal Vertical Diagonal Total\n4 by 4",
           "marks": 2,
@@ -165,7 +138,7 @@
           "parts": []
         },
         {
-          "id": "7c",
+          "id": "4c",
           "label": "(c)",
           "text": "Copy your results from part (a) and part (b) into this table.\nComplete the table.\nYou may use the grids below the table to help you.\nNumber of winning lines\nSize of grid\nHorizontal Vertical Diagonal Total\n3 by 3\n4 by 4\n5 by 5\nn by n",
           "marks": 4,
@@ -176,18 +149,30 @@
           "parts": []
         },
         {
-          "id": "7d",
+          "id": "4d",
           "label": "(d)",
-          "text": "In an n by n grid you need (n – 1) s in a line to win.\nn must be at least 3.\nIn one grid the total number of winning lines is a square number less than 50.\nFind the grid size.\n5 A rectangular grid has height 2 and width at least 2.\nYou need two s in a line to win.\nThese diagrams show all the winning lines with two s on a 2 by 3 grid.\nThere are 11\nwinning lines",
+          "text": "In an n by n grid you need (n – 1) s in a line to win.\nn must be at least 3.\nIn one grid the total number of winning lines is a square number less than 50.\nFind the grid size.",
           "marks": 4,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "A grid is n by n.",
+        "In a different game a winning line is one less than n.",
+        "To make a line, the s must be in squares that are next to each other."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
-          "id": "7a",
+          "id": "5a",
           "label": "(a)",
           "text": "Complete the table for the number of winning lines with two s.\nYou may use the grid below the table to help you.\nNumber of winning lines\nSize of grid\nHorizontal Vertical Diagonal Total\n2 by 2 2 2 2 6\n2 by 3 4 3 4 11\n2 by 4\n2 by 5\n2 by w",
           "marks": 5,
@@ -198,7 +183,7 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "5b",
           "label": "(b)",
           "text": "A 2 by w grid has 111 winning lines with two s.\nFind the width of the grid.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
@@ -209,10 +194,13 @@
           "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 8,
       "text": [
-        "by 7",
-        "20 by 20"
+        "A rectangular grid has height 2 and width at least 2.",
+        "You need two s in a line to win.",
+        "These diagrams show all the winning lines with two s on a 2 by 3 grid.",
+        "There are 11",
+        "winning lines"
       ]
     }
   ]

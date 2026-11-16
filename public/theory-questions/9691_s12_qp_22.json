@@ -4,7 +4,7 @@
   "session": "s12",
   "component": "22",
   "totalMarks": 73,
-  "questionCount": 8,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -356,27 +356,9 @@
     {
       "id": "06",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Happening ← Happening(Num - 1) + Num"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "08",
-      "context": [],
       "parts": [
         {
-          "id": "08a",
+          "id": "06a",
           "label": "(a)",
           "text": "Calculate the value returned by the function call Happening(4).\nShow your working.\nHappening(4)=",
           "marks": 6,
@@ -387,7 +369,7 @@
           "parts": []
         },
         {
-          "id": "08b",
+          "id": "06b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -397,7 +379,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "08bi",
+              "id": "06bi",
               "label": "(i)",
               "text": "State two line numbers in the given pseudocode (other than lines 01 and 08) that\nshow the subroutine is a function. Give your reason for choosing these. Examiner's\nLine numbers\nReason",
               "marks": 3,
@@ -408,7 +390,7 @@
               "parts": []
             },
             {
-              "id": "08bii",
+              "id": "06bii",
               "label": "(ii)",
               "text": "State the line number in the given pseudocode that shows the function is\nrecursive. Give your reason for choosing this.\nLine number\nReason",
               "marks": 2,
@@ -421,7 +403,7 @@
           ]
         },
         {
-          "id": "08c",
+          "id": "06c",
           "label": "(c)",
           "text": "State what will happen if the function is called with Happening(-1).",
           "marks": 1,
@@ -432,7 +414,7 @@
           "parts": []
         },
         {
-          "id": "08d",
+          "id": "06d",
           "label": "(d)",
           "text": "The same process could have been solved iteratively using a FOR loop.\nDiscuss the merits of iterative and recursive solutions to this problem, particularly when\nthe initial value of Num is very large.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
@@ -445,7 +427,9 @@
       ],
       "marks": 16,
       "text": [
-        "ENDFUNCTION"
+        "Happening ← Happening(Num - 1) + Num",
+        "07 ENDIF",
+        "08 ENDFUNCTION"
       ]
     }
   ]

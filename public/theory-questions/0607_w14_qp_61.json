@@ -9,27 +9,9 @@
     {
       "id": "1",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "by 1 by 1"
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "by 2 by 2"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
       "parts": [
         {
-          "id": "3a",
+          "id": "1a",
           "label": "(a)",
           "text": "How many small cubes is this cube made from?",
           "marks": null,
@@ -40,7 +22,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "1b",
           "label": "(b)",
           "text": "Explain why there are only 3 crosses on each small cube.",
           "marks": null,
@@ -51,18 +33,28 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "1c",
           "label": "(c)",
-          "text": "Find the total number of crosses on the 2 by 2 by 2 cube.\n2 Look at the 3 by 3 by 3 cube.",
+          "text": "Find the total number of crosses on the 2 by 2 by 2 cube.",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": null,
+      "text": [
+        "Look at the 2 by 2 by 2 cube."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
-          "id": "3a",
+          "id": "2a",
           "label": "(a)",
           "text": "How many small cubes is this cube made from?",
           "marks": null,
@@ -73,7 +65,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
           "text": "How many of these small cubes have 3 crosses on them?",
           "marks": null,
@@ -84,42 +76,58 @@
           "parts": []
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
-          "text": "There are 12 small cubes with 2 crosses on them.\nThere is 1 small cube with no crosses on it.\nHow many small cubes have only 1 cross on them?\n3 Complete this table.\nYou may use the dotty grid on page 7 to help you.\nNumber of small cubes with\nTotal number\nSize of cube\nof small cubes\n0 crosses 1 cross 2 crosses 3 crosses\n2 by 2 by 2 0 0\n3 by 3 by 3 1 12",
+          "text": "There are 12 small cubes with 2 crosses on them.\nThere is 1 small cube with no crosses on it.\nHow many small cubes have only 1 cross on them?",
           "marks": null,
-          "type": "complete",
-          "answerType": "long_answer",
+          "type": "tick",
+          "answerType": "diagram_only",
           "hasDiagramRef": false,
-          "diagramOnly": false,
+          "diagramOnly": true,
           "parts": []
         }
       ],
       "marks": null,
       "text": [
-        "by 3 by 3",
-        "This investigation is about the number of crosses that can be marked on cubes.",
-        "Look at the 1 by 1 by 1 cube.",
-        "It is made from 1 small cube.",
-        "It has 6 crosses on it (3 crosses are on the faces not seen on the diagram).",
-        "1 Look at the 2 by 2 by 2 cube."
+        "Look at the 3 by 3 by 3 cube."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Complete this table.",
+        "You may use the dotty grid on page 7 to help you.",
+        "Number of small cubes with",
+        "Total number",
+        "Size of cube",
+        "of small cubes",
+        "0 crosses 1 cross 2 crosses 3 crosses",
+        "2 by 2 by 2 0 0",
+        "3 by 3 by 3 1 12",
+        "4 by 4 by 4 64 8 24",
+        "5 by 5 by 5 27 54 8"
       ]
     },
     {
       "id": "4",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "by 4 by 4 64 8 24"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5b",
+          "id": "4a",
+          "label": "(a)",
+          "text": "To work out the number of crosses on the 3 by 3 by 3 cube, complete the following.\n1 small cube with 0 crosses gives 0 crosses\n12 small cubes with 2 crosses gives ______ crosses\nTotal = ______ crosses",
+          "marks": null,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
           "label": "(b)",
           "text": "The total number of crosses can also be worked out by the following method.\nComplete the following.\nThe number of crosses on one face of the 3 by 3 by 3 cube is ______\nSo the total number of crosses on all the 6 faces is ______",
           "marks": null,
@@ -130,7 +138,7 @@
           "parts": []
         },
         {
-          "id": "5c",
+          "id": "4c",
           "label": "(c)",
           "text": "Find the total number of crosses on a 4 by 4 by 4 cube.",
           "marks": null,
@@ -141,9 +149,9 @@
           "parts": []
         },
         {
-          "id": "5d",
+          "id": "4d",
           "label": "(d)",
-          "text": "Find an expression, in terms of n, for the total number of crosses on an n by n by n cube.\n5 The number of small cubes with 0 crosses forms a sequence.\nSize of cube 2 by 2 by 2 3 by 3 by 3 4 by 4 by 4 5 by 5 by 5 n by n by n\nNumber of\nsmall cubes 0 1 8 27\nwith 0 crosses\nFor an n by n by n cube, find an expression, in terms of n, for the number of small cubes with 0 crosses.",
+          "text": "Find an expression, in terms of n, for the total number of crosses on an n by n by n cube.",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
@@ -153,14 +161,20 @@
         }
       ],
       "marks": null,
+      "text": []
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
       "text": [
-        "by 5 by 5 27 54 8",
-        "4 (a) To work out the number of crosses on the 3 by 3 by 3 cube, complete the following.",
-        "1 small cube with 0 crosses gives 0 crosses",
-        "................ small cubes with 1 cross gives 6 crosses",
-        "12 small cubes with 2 crosses gives ............... crosses",
-        "................ small cubes with 3 crosses gives ............... crosses",
-        "Total = ............... crosses"
+        "The number of small cubes with 0 crosses forms a sequence.",
+        "Size of cube 2 by 2 by 2 3 by 3 by 3 4 by 4 by 4 5 by 5 by 5 n by n by n",
+        "Number of",
+        "small cubes 0 1 8 27",
+        "with 0 crosses",
+        "For an n by n by n cube, find an expression, in terms of n, for the number of small cubes with 0 crosses."
       ]
     },
     {

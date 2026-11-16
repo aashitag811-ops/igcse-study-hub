@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "s24",
   "component": "31",
-  "totalMarks": 71,
-  "questionCount": 22,
+  "totalMarks": 75,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -298,144 +298,9 @@
     {
       "id": "8",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A declarative programming language is used to represent the features that are available and the",
-        "features that are unavailable on different body styles of a car.",
-        "01 feature(sunroof).",
-        "02 feature(automatic_tailgate).",
-        "03 feature(heated_seats).",
-        "04 feature(extra_seats).",
-        "05 feature(reversing_camera).",
-        "06 feature(dashboard_camera).",
-        "07 feature(air_conditioning).",
-        "08 feature(heated_windscreen)."
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "feature(satnav)."
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "bodystyle(saloon)."
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "bodystyle(hatchback)."
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "bodystyle(estate)."
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "bodystyle(minivan)."
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "bodystyle(convertible)."
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "available(sunroof, hatchback)."
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "available(sunroof, minivan)."
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "available(reversing_camera, hatchback)."
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "available(extra_seats, minivan)."
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "available(reversing_camera, saloon)."
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "unavailable(sunroof, convertible)."
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "unavailable(automatic_tailgate, saloon)."
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
       "parts": [
         {
-          "id": "22a",
+          "id": "8a",
           "label": "(a)",
           "text": "Sliding doors is a feature that is available on a minivan but unavailable on a hatchback.\nWrite additional clauses to represent this information.",
           "marks": 3,
@@ -446,7 +311,7 @@
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "8b",
           "label": "(b)",
           "text": "Using the variable Options, the goal:\navailable(Options, saloon)\nreturns\nOptions = reversing_camera\nWrite the result returned by the goal:\navailable(Options, hatchback)\nOptions = ______",
           "marks": 1,
@@ -457,18 +322,77 @@
           "parts": []
         },
         {
-          "id": "22c",
+          "id": "8c",
           "label": "(c)",
-          "text": "F may be available for B if F is a feature and B is a body style and F is not unavailable for that\nbody style.\nWrite this as a rule:\nmay_choose_option(F, B)\nIF ______\n9 Explain what is meant by Deep Learning in relation to Artificial Intelligence (AI).\n10 (a) State a condition that must be true for an array to be searchable for a binary search.",
+          "text": "F may be available for B if F is a feature and B is a body style and F is not unavailable for that\nbody style.\nWrite this as a rule:\nmay_choose_option(F, B)\nIF ______",
           "marks": 4,
-          "type": "state",
+          "type": "write",
           "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "A declarative programming language is used to represent the features that are available and the",
+        "features that are unavailable on different body styles of a car.",
+        "01 feature(sunroof).",
+        "02 feature(automatic_tailgate).",
+        "03 feature(heated_seats).",
+        "04 feature(extra_seats).",
+        "05 feature(reversing_camera).",
+        "06 feature(dashboard_camera).",
+        "07 feature(air_conditioning).",
+        "08 feature(heated_windscreen).",
+        "09 feature(satnav).",
+        "10 bodystyle(saloon).",
+        "11 bodystyle(hatchback).",
+        "12 bodystyle(estate).",
+        "13 bodystyle(minivan).",
+        "14 bodystyle(convertible).",
+        "15 available(sunroof, hatchback).",
+        "16 available(sunroof, minivan).",
+        "17 available(reversing_camera, hatchback).",
+        "18 available(extra_seats, minivan).",
+        "19 available(reversing_camera, saloon).",
+        "20 unavailable(sunroof, convertible).",
+        "21 unavailable(automatic_tailgate, saloon).",
+        "22 unavailable(extra_seats, hatchback).",
+        "These clauses have the meanings:",
+        "Clause Meaning",
+        "Sunroof is a feature.",
+        "Saloon is a body style.",
+        "Sunroof is available on a hatchback.",
+        "Sunroof is unavailable on a convertible."
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": 3,
+      "text": [
+        "Explain what is meant by Deep Learning in relation to Artificial Intelligence (AI)."
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
+        {
+          "id": "10a",
+          "label": "(a)",
+          "text": "State a condition that must be true for an array to be searchable for a binary search.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "10b",
           "label": "(b)",
           "text": "Complete the given pseudocode to find an item in a 1D array Names of type STRING using a\nbinary search.\nDECLARE Names : ARRAY[1:100000] OF STRING\nDECLARE TopOfList : INTEGER\nDECLARE EndOfList : INTEGER\nDECLARE CurrentItem : INTEGER\nDECLARE ToFind : STRING\nDECLARE Found : BOOLEAN\nDECLARE NotInList : BOOLEAN\nTopOfList ← 1\nEndOfList ← 100000\nOUTPUT \"Which name do you wish to find? \"\nINPUT ToFind\nNotInList ← FALSE\nWHILE ______ AND ______\nCurrentItem ← (TopOfList + EndOfList) DIV 2\nIF ______ THEN\nFound ← TRUE\nELSE\nIF TopOfList >= EndOfList THEN\nELSE\nIF ToFind > Names[CurrentItem] THEN\nELSE\nEndOfList ← CurrentItem – 1\nENDIF\nENDIF\nENDIF\nENDWHILE\nIF Found = TRUE THEN\nOUTPUT \"Item found at position \", CurrentItem, \" in array\"\nELSE\nOUTPUT \"Item not in array\"\nENDIF",
           "marks": 5,
@@ -479,18 +403,26 @@
           "parts": []
         },
         {
-          "id": "22c",
+          "id": "10c",
           "label": "(c)",
-          "text": "Describe the performance of a binary search in relation to the number of data items in the\narray being searched. Refer to Big O notation in your answer.\n11 Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.",
+          "text": "Describe the performance of a binary search in relation to the number of data items in the\narray being searched. Refer to Big O notation in your answer.",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 8,
+      "text": []
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [
         {
-          "id": "22a",
+          "id": "11a",
           "label": "(a)",
           "text": "State two features of RISC processors.",
           "marks": 2,
@@ -501,7 +433,7 @@
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "11b",
           "label": "(b)",
           "text": "Outline the process of interrupt handling as it could be applied to RISC or CISC processors.",
           "marks": 3,
@@ -512,7 +444,7 @@
           "parts": []
         },
         {
-          "id": "22c",
+          "id": "11c",
           "label": "(c)",
           "text": "Explain how pipelining affects interrupt handling for RISC processors.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
@@ -523,15 +455,10 @@
           "parts": []
         }
       ],
-      "marks": 23,
+      "marks": 8,
       "text": [
-        "unavailable(extra_seats, hatchback).",
-        "These clauses have the meanings:",
-        "Clause Meaning",
-        "Sunroof is a feature.",
-        "Saloon is a body style.",
-        "Sunroof is available on a hatchback.",
-        "Sunroof is unavailable on a convertible."
+        "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are",
+        "two types of processor."
       ]
     }
   ]

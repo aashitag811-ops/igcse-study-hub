@@ -372,13 +372,11 @@
         "WHILE NOT Stored AND Location <= Max",
         "GETRECORD \"StockList.dat\", ..........................................................................................",
         "IF CurrentStock = \"\" THEN",
-        "...................................................................................... \"StockList.dat\", NewStock",
         "Stored ← TRUE",
         "ELSE",
         "Location ← Location + 1",
         "ENDIF",
         "ENDWHILE",
-        "................................................................................................................................................ THEN",
         "OUTPUT \"The new item has not been stored as the file was full.\"",
         "ENDIF",
         "CLOSEFILE \"StockList.dat\""

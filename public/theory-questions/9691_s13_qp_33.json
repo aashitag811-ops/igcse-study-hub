@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "s13",
   "component": "33",
-  "totalMarks": 80,
+  "totalMarks": 89,
   "questionCount": 8,
   "questions": [
     {
@@ -492,24 +492,61 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "A multiprogramming, multi-user operating system organises the available memory into\nthree fixed sized partitions. A program once loaded occupies the same memory\nlocations until its execution is complete.\n• Partition1 – size 30 Gb – is used only for batch processing\n• Partition2 – size 20 Gb – is used for most interactive processing including\nremote-access users\n• Partition3 – size 40 Gb – is used only for interactive sessions in the Computer\nLaboratory\nThe diagram shows the current contents of main memory at 08:30 hrs with a list of\nprograms to be loaded.\nOTHER",
+          "text": "A multiprogramming, multi-user operating system organises the available memory into\nthree fixed sized partitions. A program once loaded occupies the same memory\nlocations until its execution is complete.\n• Partition1 – size 30 Gb – is used only for batch processing\n• Partition2 – size 20 Gb – is used for most interactive processing including\nremote-access users\n• Partition3 – size 40 Gb – is used only for interactive sessions in the Computer\nLaboratory\nThe diagram shows the current contents of main memory at 08:30 hrs with a list of\nprograms to be loaded.\nOTHER\n10 Gb\n20 Gb\nPROG10\nPartition1\n30 Gb\n40 Gb\nSTAFF65\n50 Gb\nPartition2\n60 Gb\nSTUDENT2\nSTUDENT23\n70 Gb\n80 Gb\nPartition3\n90 Gb\n100 Gb\nCurrently waiting to be scheduled are:\n• STAFF17 (teacher log-on from a computer in their office – requiring 8 Gb)\n• PROG16 (batch processing – requiring 25 Gb)",
           "marks": null,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 4,
-      "text": []
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "6bi",
+              "label": "(i)",
+              "text": "Which jobs (if any) can be loaded?",
+              "marks": 1,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6bii",
+              "label": "(ii)",
+              "text": "Two students decided to do some work in the Computer Laboratory before their\nlesson at 09:00 hrs. The 09:00 hrs lesson has 12 students.\nComment on the size chosen for Partition3.",
+              "marks": 2,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biii",
+              "label": "(iii)",
+              "text": "10 Gb of the main memory is labelled OTHER and will not be used for the\nexecution of application programs. Examiner's\nName two possible items of software this memory will be used for.\n2",
+              "marks": 2,
+              "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "6biv",
+              "label": "(iv)",
+              "text": "Any program loaded is always in one of three possible states. One is the ‘runnable’\nstate meaning the program would like the use of the processor.\nName and describe the two other states.",
+              "marks": 4,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "10c",
+          "id": "6c",
           "label": "(c)",
           "text": "Memory management may also use paging.",
           "marks": null,
@@ -519,7 +556,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "10ci",
+              "id": "6ci",
               "label": "(i)",
               "text": "Explain what is meant by paging.",
               "marks": 2,
@@ -530,9 +567,9 @@
               "parts": []
             },
             {
-              "id": "10cii",
+              "id": "6cii",
               "label": "(ii)",
-              "text": "Give one benefit of using paging.\n7 A user-defined function FoundBigger is defined, using pseudocode, as follows:\nFUNCTION FoundBigger(ThisArray : INTEGER, UBound : INTEGER,\nThisValue : INTEGER) RETURNS BOOLEAN\nThe function checks each element in the array ThisArray with upper bound UBound.\nThe function returns a Boolean value to show if ThisValue is bigger than any of the values\nin ThisArray.\nIf the function is incorrectly formed it will give a ‘COMPILE ERROR’.\nThe function is used with the three arrays shown below:\nSubscript/Index\nIdentifier 1 2 3 4 5 6 7 8 9 10\nList1\n17 0 23 11 16 4\nList2\n13 16 16 0 20 22 20 19 11 23\nList3\n41 29 34 39 39 44 0",
+              "text": "Give one benefit of using paging.",
               "marks": 1,
               "type": "give",
               "answerType": "short_answer",
@@ -541,9 +578,17 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 16,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "10a",
+          "id": "7a",
           "label": "(a)",
           "text": "What is returned by the following function calls?",
           "marks": null,
@@ -553,7 +598,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "10ai",
+              "id": "7ai",
               "label": "(i)",
               "text": "FoundBigger(List3, 7, 50)",
               "marks": 1,
@@ -564,7 +609,7 @@
               "parts": []
             },
             {
-              "id": "10aii",
+              "id": "7aii",
               "label": "(ii)",
               "text": "FoundBigger(List3, 7, 41)",
               "marks": 1,
@@ -575,7 +620,7 @@
               "parts": []
             },
             {
-              "id": "10aiii",
+              "id": "7aiii",
               "label": "(iii)",
               "text": "FoundBigger(65, List1)",
               "marks": 1,
@@ -586,7 +631,7 @@
               "parts": []
             },
             {
-              "id": "10aiv",
+              "id": "7aiv",
               "label": "(iv)",
               "text": "FoundBigger(List2, 10, “27”)",
               "marks": 1,
@@ -599,7 +644,7 @@
           ]
         },
         {
-          "id": "10b",
+          "id": "7b",
           "label": "(b)",
           "text": "A programmer writes pseudocode to calculate an employee’s net pay with a function\nCalcNetPay. Examiner's\nThe calculation is done using:\n• Employee’s pay grade (a single character: F, P or C)\n• Hours worked that week\nShow the function header for CalcNetPay.",
           "marks": 3,
@@ -610,28 +655,24 @@
           "parts": []
         }
       ],
-      "marks": 10,
+      "marks": 7,
       "text": [
-        "Gb",
-        "20 Gb",
-        "PROG10",
-        "Partition1",
-        "30 Gb",
-        "40 Gb",
-        "STAFF65",
-        "50 Gb",
-        "Partition2",
-        "60 Gb",
-        "STUDENT2",
-        "STUDENT23",
-        "70 Gb",
-        "80 Gb",
-        "Partition3",
-        "90 Gb",
-        "100 Gb",
-        "Currently waiting to be scheduled are:",
-        "• STAFF17 (teacher log-on from a computer in their office – requiring 8 Gb)",
-        "• PROG16 (batch processing – requiring 25 Gb)"
+        "A user-defined function FoundBigger is defined, using pseudocode, as follows:",
+        "FUNCTION FoundBigger(ThisArray : INTEGER, UBound : INTEGER,",
+        "ThisValue : INTEGER) RETURNS BOOLEAN",
+        "The function checks each element in the array ThisArray with upper bound UBound.",
+        "The function returns a Boolean value to show if ThisValue is bigger than any of the values",
+        "in ThisArray.",
+        "If the function is incorrectly formed it will give a ‘COMPILE ERROR’.",
+        "The function is used with the three arrays shown below:",
+        "Subscript/Index",
+        "Identifier 1 2 3 4 5 6 7 8 9 10",
+        "List1",
+        "17 0 23 11 16 4",
+        "List2",
+        "13 16 16 0 20 22 20 19 11 23",
+        "List3",
+        "41 29 34 39 39 44 0"
       ]
     },
     {

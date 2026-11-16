@@ -384,10 +384,10 @@
         {
           "id": "11a",
           "label": "(a)",
-          "text": "A medical centre uses objects of the class Appointment to record treatments given and\nmedication prescribed during each doctor’s appointment. Some of the attributes required in\nthe class are listed in the table.\nAttribute Data type Description\nDateSeen DATE date of treatment\nTreatments STRING treatments given\nMedications STRING\nmedications prescribed\nPatients are identified by a unique 8-digit number, beginning with the patient’s year of birth,\nfor example, 20108989.\nDoctors are identified by their name, for example, A N Other.\nComplete the class diagram for Appointment, to include:\n• attribute and data type for the identification of the patient\n• attribute and data type for the identification of the doctor\n• methods to assign date seen, treatments given and medications prescribed\n• method to return the date seen and the attributes for the patient and the doctor.\nAppointment\nDateSeen : DATE\n______ : ______\n______ : ______\nTreatments : STRING\nMedications : STRING\nSetPatientID(PatientNumber : INTEGER)\nSetDoctor(DoctorID : STRING)\nGetTreatments()\nGetMedications()",
+          "text": "A medical centre uses objects of the class Appointment to record treatments given and\nmedication prescribed during each doctor’s appointment. Some of the attributes required in\nthe class are listed in the table.\nAttribute Data type Description\nDateSeen DATE date of treatment\nTreatments STRING treatments given\nMedications STRING\nmedications prescribed\nPatients are identified by a unique 8-digit number, beginning with the patient’s year of birth,\nfor example, 20108989.\nDoctors are identified by their name, for example, A N Other.\nComplete the class diagram for Appointment, to include:\n• attribute and data type for the identification of the patient\n• attribute and data type for the identification of the doctor\n• methods to assign date seen, treatments given and medications prescribed\n• method to return the date seen and the attributes for the patient and the doctor.\nAppointment\nDateSeen : DATE\nTreatments : STRING\nMedications : STRING\nSetPatientID(PatientNumber : INTEGER)\nSetDoctor(DoctorID : STRING)\nGetTreatments()\nGetMedications()",
           "marks": 5,
           "type": "name",
-          "answerType": "fill_blank",
+          "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []

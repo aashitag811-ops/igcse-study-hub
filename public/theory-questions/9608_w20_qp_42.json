@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "w20",
   "component": "42",
-  "totalMarks": 67,
-  "questionCount": 12,
+  "totalMarks": 75,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -190,93 +190,9 @@
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A declarative programming language is used to represent the following knowledge base.",
-        "01 person(jordan).",
-        "02 person(gita).",
-        "03 person(paolo)."
-      ]
-    },
-    {
-      "id": "04",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "person(cassie)."
-      ]
-    },
-    {
-      "id": "05",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "animal(cat)."
-      ]
-    },
-    {
-      "id": "06",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "animal(hamster)."
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "animal(gecko)."
-      ]
-    },
-    {
-      "id": "08",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "animal(fish)."
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "has_pet(cassie, gecko)."
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "has_pet(paolo, fish)."
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "has_pet(cassie, cat)."
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
       "parts": [
         {
-          "id": "12a",
+          "id": "3a",
           "label": "(a)",
           "text": "Clive is a person who has a pet guinea pig and a pet gecko.\nWrite additional clauses to represent this information.",
           "marks": 4,
@@ -287,7 +203,7 @@
           "parts": []
         },
         {
-          "id": "12b",
+          "id": "3b",
           "label": "(b)",
           "text": "Using the variable PetOwner, the goal:\nhas_pet(PetOwner, cat)\nreturns:\nPetOwner = cassie, jordan\nWrite the result that is returned by the goal:\nhas_pet(cassie, PetAnimals)\nPetAnimals = ______",
           "marks": 1,
@@ -298,18 +214,45 @@
           "parts": []
         },
         {
-          "id": "12c",
+          "id": "3c",
           "label": "(c)",
-          "text": "Z wants a pet Y, if Z is a person and Y is an animal and Z does not have a pet Y.\nWrite this as a rule.\nwants_pet(______ , ______)\nIF ______\n4 A programmer wants to create a mobile application to record the number of calories a person eats\nin a day.\nThe programmer has designed the class, FoodItem, to store details for each item of food.\nThe following diagram shows the design for the FoodItem class.\nFoodItem\nFoodID : STRING // initialised in constructor to parameter value\nName : STRING // initialised in constructor to an empty string\nCalories : INTEGER // initialised in constructor to 0\nConstructor() // method used to create an instance of the\n// FoodItem class and initialise its attributes\nGetFoodID() // returns FoodID\nGetName() // returns Name\nGetCalories() // returns Calories\nSetFoodID() // sets the FoodID to the parameter value\nSetName() // sets the Name to the parameter value\nSetCalories() // validates the parameter value to make sure\n// it is a positive integer less than 2000, and\n// then sets Calories to this value",
+          "text": "Z wants a pet Y, if Z is a person and Y is an animal and Z does not have a pet Y.\nWrite this as a rule.\nwants_pet(______ , ______)\nIF ______",
           "marks": 5,
-          "type": "name",
+          "type": "write",
           "answerType": "fill_blank",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A declarative programming language is used to represent the following knowledge base.",
+        "01 person(jordan).",
+        "02 person(gita).",
+        "03 person(paolo).",
+        "04 person(cassie).",
+        "05 animal(cat).",
+        "06 animal(hamster).",
+        "07 animal(gecko).",
+        "08 animal(fish).",
+        "09 has_pet(cassie, gecko).",
+        "10 has_pet(paolo, fish).",
+        "11 has_pet(cassie, cat).",
+        "12 has_pet(jordan, cat).",
+        "These clauses have the following meanings:",
+        "Clause Meaning",
+        "Jordan is a person",
+        "A cat is an animal",
+        "Cassie has a pet gecko"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
-          "id": "12a",
+          "id": "4a",
           "label": "(a)",
           "text": "Write program code for the Constructor() method.\nUse the appropriate constructor method for your chosen programming language.\nProgramming language ______\nProgram code",
           "marks": 3,
@@ -320,7 +263,7 @@
           "parts": []
         },
         {
-          "id": "12b",
+          "id": "4b",
           "label": "(b)",
           "text": "Write program code for the GetCalories() method.\nProgramming language ______\nProgram code",
           "marks": 2,
@@ -331,7 +274,7 @@
           "parts": []
         },
         {
-          "id": "12c",
+          "id": "4c",
           "label": "(c)",
           "text": "The method SetCalories() validates the integer parameter value that is passed to it. It\nchecks that the value is positive and is less than 2000.\nThe method sets Calories to the parameter value and returns TRUE if the parameter value\nis valid. It returns FALSE if the parameter value is not valid.\nWrite pseudocode for the SetCalories() method.",
           "marks": 4,
@@ -342,7 +285,7 @@
           "parts": []
         },
         {
-          "id": "12d",
+          "id": "4d",
           "label": "(d)",
           "text": "The following is a class diagram for the application.\nCustomerProfile FoodItem\nName : STRING FoodID : STRING\nEmail : STRING Name : STRING\nTotalCalories : INTEGER Calories : INTEGER\nGetName() GetFoodID()\nGetEmail() GetName()\nGetTotalCalories() GetCalories()\nSetName() SetFoodID()\nSetEmail() SetName()\nSetTotalCalories() SetCalories()\nDailyCalories\nDate : DATE\nTotalCalories : INTEGER\nGetDate()\nSetDate()\nGetTotalCalories()\nSetTotalCalories()",
           "marks": null,
@@ -352,7 +295,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "12di",
+              "id": "4di",
               "label": "(i)",
               "text": "The attributes of the class, CustomerProfile, are declared as private.\nExplain why it is good practice to declare class attributes as private.",
               "marks": 2,
@@ -363,7 +306,7 @@
               "parts": []
             },
             {
-              "id": "12dii",
+              "id": "4dii",
               "label": "(ii)",
               "text": "Explain what is meant by inheritance, using an example from the class diagram.",
               "marks": 2,
@@ -374,7 +317,7 @@
               "parts": []
             },
             {
-              "id": "12diii",
+              "id": "4diii",
               "label": "(iii)",
               "text": "Explain what is meant by polymorphism, using an example from the class diagram.",
               "marks": 2,
@@ -387,7 +330,7 @@
           ]
         },
         {
-          "id": "12e",
+          "id": "4e",
           "label": "(e)",
           "text": "Object-oriented programming is an example of a programming paradigm. Another example is\nimperative programming.\nExplain what is meant by the imperative programming paradigm.",
           "marks": 2,
@@ -398,7 +341,7 @@
           "parts": []
         },
         {
-          "id": "12f",
+          "id": "4f",
           "label": "(f)",
           "text": "Testing is regularly performed during the development of software.",
           "marks": null,
@@ -408,7 +351,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "12fi",
+              "id": "4fi",
               "label": "(i)",
               "text": "Independent modules are combined to create the final program. Testing is performed to\nmake sure they interact correctly.\nIdentify this type of testing.",
               "marks": 1,
@@ -419,7 +362,7 @@
               "parts": []
             },
             {
-              "id": "12fii",
+              "id": "4fii",
               "label": "(ii)",
               "text": "Testing is performed to prove to the customer that the system works correctly and meets\nthe requirements specified in the design.\nIdentify this type of testing.",
               "marks": 1,
@@ -430,20 +373,125 @@
               "parts": []
             },
             {
-              "id": "12fiii",
+              "id": "4fiii",
               "label": "(iii)",
-              "text": "Test plans are used when testing data. One item that would be included in a test plan is\nexample test data.\nIdentify two other items that would appear in a test plan.\n5 The following table shows part of the instruction set for a processor that has one general purpose\nregister, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nOp code Operand\nLDM #n\nImmediate addressing. Load the number n to ACC.\nDirect addressing. Load the contents of the location at the given\nLDD <address>\naddress to ACC.\nIndirect addressing. The address to be used is at the given address.\nLDI <address>\nLoad the contents of this second address to ACC.\nIndexed addressing. Form the address from <address> + the contents\nLDX <address> of the Index Register. Copy the contents of this calculated address to\nACC.\nLDR #n Immediate addressing. Load the number n to IX.\nSTO <address>\nStore the contents of ACC at the given address.\nIndexed addressing. Form the address from <address> + the contents\nSTX <address>\nof the Index Register. Copy the contents of ACC to this calculated\naddress.\nADD <address> Add the contents of the given address to ACC.\nINC <register> Add 1 to the contents of the register (ACC or IX).\nDEC <register>\nSubtract 1 from the contents of the register (ACC or IX).\nJMP <address>\nJump to the given address.\nCMP <address>\nCompare the contents of ACC with the contents of <address>.\nCMP #n Compare the contents of ACC with number n.\nFollowing a compare instruction, jump to <address> if the compare\nJPE <address>\nwas True.\nFollowing a compare instruction, jump to <address> if the compare\nJPN <address>\nwas False.\nIN\nKey in a character and store its ASCII value in ACC.\nOUT Output to the screen the character whose ASCII value is stored in ACC.\nEND Return control to the operating system.\nConsider the following pseudocode algorithm:\nLength 0\nINPUT Character\nWHILE Character <> \".\"\nMessage\nMessage & Character\nLength Length + 1\nINPUT Character\nENDWHILE\nComplete the table by writing assembly language code for the algorithm, using the given instruction\nset.\nInstruction\nLabel Comment\nOp code Operand\n// initialise IX to zero\n// initialise LENGTH\nLOOP: // input character\n// is character a FULLSTOP (.) ?\n// jump to ENDP if TRUE\n// store character in MESSAGE +\ncontents of IX\n// increment IX\n// increment LENGTH\n// jump to LOOP\nENDP: END // end program\nLENGTH:\nFULLSTOP: B01100000 // ASCII code for a full stop (.)\nMESSAGE:\n6 The following diagram represents a linked list.\nData Pointer\nA B C D Ø\nThe symbol Ø represents a null pointer.",
+              "text": "Test plans are used when testing data. One item that would be included in a test plan is\nexample test data.\nIdentify two other items that would appear in a test plan.",
               "marks": 2,
               "type": "identify",
               "answerType": "short_answer",
-              "hasDiagramRef": true,
+              "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 21,
+      "text": [
+        "A programmer wants to create a mobile application to record the number of calories a person eats",
+        "in a day.",
+        "The programmer has designed the class, FoodItem, to store details for each item of food.",
+        "The following diagram shows the design for the FoodItem class.",
+        "FoodItem",
+        "FoodID : STRING // initialised in constructor to parameter value",
+        "Name : STRING // initialised in constructor to an empty string",
+        "Calories : INTEGER // initialised in constructor to 0",
+        "Constructor() // method used to create an instance of the",
+        "// FoodItem class and initialise its attributes",
+        "GetFoodID() // returns FoodID",
+        "GetName() // returns Name",
+        "GetCalories() // returns Calories",
+        "SetFoodID() // sets the FoodID to the parameter value",
+        "SetName() // sets the Name to the parameter value",
+        "SetCalories() // validates the parameter value to make sure",
+        "// it is a positive integer less than 2000, and",
+        "// then sets Calories to this value"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": 8,
+      "text": [
+        "The following table shows part of the instruction set for a processor that has one general purpose",
+        "register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Op code Operand",
+        "LDM #n",
+        "Immediate addressing. Load the number n to ACC.",
+        "Direct addressing. Load the contents of the location at the given",
+        "LDD <address>",
+        "address to ACC.",
+        "Indirect addressing. The address to be used is at the given address.",
+        "LDI <address>",
+        "Load the contents of this second address to ACC.",
+        "Indexed addressing. Form the address from <address> + the contents",
+        "LDX <address> of the Index Register. Copy the contents of this calculated address to",
+        "ACC.",
+        "LDR #n Immediate addressing. Load the number n to IX.",
+        "STO <address>",
+        "Store the contents of ACC at the given address.",
+        "Indexed addressing. Form the address from <address> + the contents",
+        "STX <address>",
+        "of the Index Register. Copy the contents of ACC to this calculated",
+        "address.",
+        "ADD <address> Add the contents of the given address to ACC.",
+        "INC <register> Add 1 to the contents of the register (ACC or IX).",
+        "DEC <register>",
+        "Subtract 1 from the contents of the register (ACC or IX).",
+        "JMP <address>",
+        "Jump to the given address.",
+        "CMP <address>",
+        "Compare the contents of ACC with the contents of <address>.",
+        "CMP #n Compare the contents of ACC with number n.",
+        "Following a compare instruction, jump to <address> if the compare",
+        "JPE <address>",
+        "was True.",
+        "Following a compare instruction, jump to <address> if the compare",
+        "JPN <address>",
+        "was False.",
+        "IN",
+        "Key in a character and store its ASCII value in ACC.",
+        "OUT Output to the screen the character whose ASCII value is stored in ACC.",
+        "END Return control to the operating system.",
+        "Consider the following pseudocode algorithm:",
+        "Length 0",
+        "INPUT Character",
+        "WHILE Character <> \".\"",
+        "Message",
+        "Message & Character",
+        "Length Length + 1",
+        "INPUT Character",
+        "ENDWHILE",
+        "Complete the table by writing assembly language code for the algorithm, using the given instruction",
+        "set.",
+        "Instruction",
+        "Label Comment",
+        "Op code Operand",
+        "// initialise IX to zero",
+        "// initialise LENGTH",
+        "LOOP: // input character",
+        "// is character a FULLSTOP (.) ?",
+        "// jump to ENDP if TRUE",
+        "// store character in MESSAGE +",
+        "contents of IX",
+        "// increment IX",
+        "// increment LENGTH",
+        "// jump to LOOP",
+        "ENDP: END // end program",
+        "LENGTH:",
+        "FULLSTOP: B01100000 // ASCII code for a full stop (.)",
+        "MESSAGE:"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "12a",
+          "id": "6a",
           "label": "(a)",
           "text": "The node with the data value C is removed from the list.\nShow the new state of the linked list.",
           "marks": 2,
@@ -454,7 +502,7 @@
           "parts": []
         },
         {
-          "id": "12b",
+          "id": "6b",
           "label": "(b)",
           "text": "State what happens to the node with the data value C when it is removed from the list.",
           "marks": 1,
@@ -465,7 +513,7 @@
           "parts": []
         },
         {
-          "id": "12c",
+          "id": "6c",
           "label": "(c)",
           "text": "State what is meant by a null pointer.",
           "marks": 1,
@@ -476,7 +524,7 @@
           "parts": []
         },
         {
-          "id": "12d",
+          "id": "6d",
           "label": "(d)",
           "text": "The linked list is implemented as a 1D array, LinkedList. The array is declared as a record\ndata type, with two fields, Data and Pointer.\nThe function FindValue() takes as a parameter, the value to be searched for in the linked\nlist. The function follows the pointers in the linked list. It returns -1 if the value is not found, or\nit returns the pointer to the value if it is found.\nThe global variable StartPointer points to the first element in the list.\nWrite pseudocode for the function FindValue().",
           "marks": 8,
@@ -487,7 +535,7 @@
           "parts": []
         },
         {
-          "id": "12e",
+          "id": "6e",
           "label": "(e)",
           "text": "A linked list and a record are both examples of abstract data types.\nIdentify and describe one other abstract data type.\nAbstract data type ______\nDescription ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 4,
@@ -498,14 +546,12 @@
           "parts": []
         }
       ],
-      "marks": 47,
+      "marks": 16,
       "text": [
-        "has_pet(jordan, cat).",
-        "These clauses have the following meanings:",
-        "Clause Meaning",
-        "Jordan is a person",
-        "A cat is an animal",
-        "Cassie has a pet gecko"
+        "The following diagram represents a linked list.",
+        "Data Pointer",
+        "A B C D Ø",
+        "The symbol Ø represents a null pointer."
       ]
     }
   ]

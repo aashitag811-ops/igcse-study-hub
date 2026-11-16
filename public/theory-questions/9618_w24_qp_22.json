@@ -167,7 +167,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "A function to add a value to ThisStack is expressed in pseudocode as shown.\nThe function will return a value to indicate whether the operation was successful or not.\nComplete the pseudocode by filling in the gaps.\nFUNCTION Push(ThisValue : REAL) RETURNS BOOLEAN\nDECLARE ReturnValue : BOOLEAN\nIF ______ THEN\nRETURN ______ // stack is already full\nENDIF\n______ ThisValue\nSP ______\nOnStack OnStack + 1\nRETURN TRUE\nENDFUNCTION",
+          "text": "A function to add a value to ThisStack is expressed in pseudocode as shown.\nThe function will return a value to indicate whether the operation was successful or not.\nComplete the pseudocode by filling in the gaps.\nFUNCTION Push(ThisValue : REAL) RETURNS BOOLEAN\nDECLARE ReturnValue : BOOLEAN\nIF ______ THEN\nRETURN ______ // stack is already full\nENDIF\nSP ______\nOnStack OnStack + 1\nRETURN TRUE\nENDFUNCTION",
           "marks": 4,
           "type": "complete",
           "answerType": "fill_blank",

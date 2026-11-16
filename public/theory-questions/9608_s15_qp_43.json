@@ -4,7 +4,7 @@
   "session": "s15",
   "component": "43",
   "totalMarks": 72,
-  "questionCount": 9,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -33,74 +33,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A declarative programming language is used to represent the knowledge base shown below:",
-        "01 dairy_product(cheese).",
-        "02 meat(beef)."
-      ]
-    },
-    {
-      "id": "03",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "meat(chicken)."
-      ]
-    },
-    {
-      "id": "04",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "meat(lamb)."
-      ]
-    },
-    {
-      "id": "05",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "made_with(burger, beef)."
-      ]
-    },
-    {
-      "id": "06",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "made_with(kofta, lamb)."
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "made_with(quiche, cheese)."
-      ]
-    },
-    {
-      "id": "08",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "made_with(quiche, egg)."
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
       "parts": [
         {
-          "id": "09a",
+          "id": "2a",
           "label": "(a)",
           "text": "More facts are to be included.\nLaasi is made with the dairy products milk and yogurt.\nWrite additional clauses to record this.",
           "marks": 4,
@@ -111,7 +46,7 @@
           "parts": []
         },
         {
-          "id": "09b",
+          "id": "2b",
           "label": "(b)",
           "text": "Using the variable TypeOfMeat, the goal\nmeat(TypeOfMeat)\nreturns\nTypeOfMeat = beef, chicken, lamb\nWrite the result returned by the goal:\nmade_with(quiche, Ingredient)\nIngredient = ______",
           "marks": 2,
@@ -122,18 +57,42 @@
           "parts": []
         },
         {
-          "id": "09c",
+          "id": "2c",
           "label": "(c)",
-          "text": "Complete the rule to list the dishes made with meat.\ncontains_meat(Dish)\nIF ______\n3 An insurance company calculates the cost of car insurance from a basic price.\nThe driver may:\n• get a discount on the basic price of the insurance\n• have to pay an extra charge\nThe decision is arrived at as follows:\n• for a driver aged 25 or over:\n•• 5% discount if no previous accident\n•• no discount if a previous accident\n• for a driver under the age of 25:\n•• 5% discount if no previous accident and licence held for 3 or more years\n•• no discount if a previous accident but licence held for 3 or more years\n•• no discount if no previous accident but licence held for less than 3 years\n•• 10% extra charge if a previous accident and licence held for less than 3 years",
+          "text": "Complete the rule to list the dishes made with meat.\ncontains_meat(Dish)\nIF ______",
           "marks": 4,
           "type": "complete",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "A declarative programming language is used to represent the knowledge base shown below:",
+        "01 dairy_product(cheese).",
+        "02 meat(beef).",
+        "03 meat(chicken).",
+        "04 meat(lamb).",
+        "05 made_with(burger, beef).",
+        "06 made_with(kofta, lamb).",
+        "07 made_with(quiche, cheese).",
+        "08 made_with(quiche, egg).",
+        "09 made_with(quiche, flour).",
+        "These clauses have the following meaning:",
+        "Clause Explanation",
+        "Cheese is a dairy product",
+        "Beef is a meat",
+        "A burger is made with beef"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
         {
-          "id": "09a",
+          "id": "3a",
           "label": "(a)",
           "text": "Complete the decision table.\nAge under 25 Y Y Y Y N N N N\nPrevious accident Y Y N N Y Y N N\nConditionsLicence held for 3 or\nY N Y N Y N Y N\nmore years\n10% extra charge\nNo discount\nActions\n5% discount",
           "marks": 6,
@@ -144,7 +103,7 @@
           "parts": []
         },
         {
-          "id": "09b",
+          "id": "3b",
           "label": "(b)",
           "text": "Simplify your solution by removing redundancies.\nAge under 25\nPrevious accident\nConditionsLicence held for 3 or\nmore years\n10% extra charge\nNo discount\nActions\n5% discount",
           "marks": 3,
@@ -155,18 +114,40 @@
           "parts": []
         },
         {
-          "id": "09c",
+          "id": "3c",
           "label": "(c)",
-          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function\nCostPercentageChange. This function returns the percentage change from the basic price\nas an integer. A discount should be shown as a negative integer. An extra charge should be\nshown as a positive integer.\nIdentifier Data type Comment\nDriverAge INTEGER\nAge of driver in years\nHadAccident BOOLEAN\nWhether driver has had a previous accident\nYearsLicenceHeld INTEGER\nNumber of years the driver has held licence\nWrite program code for this function.\nProgramming language ______\n4 A sports club stores data about its members. A program is to be written using an object-oriented\nprogramming language.\nA Member class is designed. Two subclasses have been identified:\n• FullMember\n• JuniorMember",
+          "text": "The simplified table produced in part (b) is used as a design for program code.\nThe following identifier table shows the parameters to be passed to the function\nCostPercentageChange. This function returns the percentage change from the basic price\nas an integer. A discount should be shown as a negative integer. An extra charge should be\nshown as a positive integer.\nIdentifier Data type Comment\nDriverAge INTEGER\nAge of driver in years\nHadAccident BOOLEAN\nWhether driver has had a previous accident\nYearsLicenceHeld INTEGER\nNumber of years the driver has held licence\nWrite program code for this function.\nProgramming language ______",
           "marks": 6,
           "type": "design",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "An insurance company calculates the cost of car insurance from a basic price.",
+        "The driver may:",
+        "• get a discount on the basic price of the insurance",
+        "• have to pay an extra charge",
+        "The decision is arrived at as follows:",
+        "• for a driver aged 25 or over:",
+        "•• 5% discount if no previous accident",
+        "•• no discount if a previous accident",
+        "• for a driver under the age of 25:",
+        "•• 5% discount if no previous accident and licence held for 3 or more years",
+        "•• no discount if a previous accident but licence held for 3 or more years",
+        "•• no discount if no previous accident but licence held for less than 3 years",
+        "•• 10% extra charge if a previous accident and licence held for less than 3 years"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
-          "id": "09a",
+          "id": "4a",
           "label": "(a)",
           "text": "Draw an inheritance diagram for these classes.",
           "marks": 3,
@@ -177,7 +158,7 @@
           "parts": []
         },
         {
-          "id": "09b",
+          "id": "4b",
           "label": "(b)",
           "text": "The design for the Member class consists of\n• properties\n•• MemberName\n•• MemberID\n•• SubscriptionPaid\n• methods\n•• SetMemberName\n•• SetMemberID\n•• SetSubscriptionPaid\nWrite program code for the class definition of the superclass Member.\nProgramming language ______",
           "marks": 5,
@@ -188,7 +169,7 @@
           "parts": []
         },
         {
-          "id": "09c",
+          "id": "4c",
           "label": "(c)",
           "text": "Additionally a DateOfBirth property is required for the JuniorMember class.",
           "marks": null,
@@ -198,7 +179,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "09ci",
+              "id": "4ci",
               "label": "(i)",
               "text": "Write program code for the class definition for the subclass JuniorMember.",
               "marks": 3,
@@ -209,9 +190,9 @@
               "parts": []
             },
             {
-              "id": "09cii",
+              "id": "4cii",
               "label": "(ii)",
-              "text": "Write program code to create a new instance of JuniorMember. Use identifier\nNewMember with the following data:\nname Ahmed with member ID 12347, born on 12/11/2001, who has paid his subscription.\n5 A stack Abstract Data Type (ADT) has these associated operations:\n• create stack\n• add item to stack (push)\n• remove item from stack (pop)\nThe stack ADT is to be implemented as a linked list of nodes.\nEach node consists of data and a pointer to the next node.",
+              "text": "Write program code to create a new instance of JuniorMember. Use identifier\nNewMember with the following data:\nname Ahmed with member ID 12347, born on 12/11/2001, who has paid his subscription.",
               "marks": 3,
               "type": "name",
               "answerType": "short_answer",
@@ -220,9 +201,23 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "A sports club stores data about its members. A program is to be written using an object-oriented",
+        "programming language.",
+        "A Member class is designed. Two subclasses have been identified:",
+        "• FullMember",
+        "• JuniorMember"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
-          "id": "09a",
+          "id": "5a",
           "label": "(a)",
           "text": "There is one pointer: the top of stack pointer, which points to the last item added to the stack.\nDraw a diagram to show the final state of the stack after the following operations are carried\nout.\nCreateStack\nPush(\"Ali\")\nPush(\"Jack\")\nPop\nPush(\"Ben\")\nPush(\"Ahmed\")\nPop\nPush(\"Jatinder\")\nAdd appropriate labels to the diagram to show the final state of the stack. Use the space on the left\nas a workspace. Show your final answer in the node shapes on the right:",
           "marks": 3,
@@ -233,7 +228,7 @@
           "parts": []
         },
         {
-          "id": "09b",
+          "id": "5b",
           "label": "(b)",
           "text": "Using pseudocode, a record type, Node, is declared as follows:\nTYPE Node\nDECLARE Name : STRING\nDECLARE Pointer : INTEGER\nENDTYPE\nThe statement\nDECLARE Stack : ARRAY[1:10] OF Node\nreserves space for 10 nodes in array Stack.",
           "marks": null,
@@ -243,7 +238,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "09bi",
+              "id": "5bi",
               "label": "(i)",
               "text": "The CreateStack operation links all nodes and initialises the TopOfStackPointer\nand FreePointer.\nComplete the diagram to show the value of all pointers after CreateStack has been\nexecuted.\nStack\nTopOfStackPointer Name Pointer\nFreePointer",
               "marks": 1,
@@ -254,9 +249,9 @@
               "parts": []
             },
             {
-              "id": "09bii",
+              "id": "5bii",
               "label": "(ii)",
-              "text": "The algorithm for adding a name to the stack is written, using pseudocode, as a\nprocedure with the header\nPROCEDURE Push (NewName)\nWhere NewName is the new name to be added to the stack. The procedure uses the\nvariables as shown in the identifier table.\nIdentifier Data type Description\nStack Array[1:10] OF Node\nNewName STRING\nName to be added\nFreePointer INTEGER\nPointer to next free node in array\nTopOfStackPointer INTEGER Pointer to first node in stack\nTempPointer INTEGER\nTemporary store for copy of FreePointer\nPROCEDURE Push(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nStack[FreePointer].Name ← NewName\n// take a temporary copy and\n// then adjust free pointer\nTempPointer ← FreePointer\nFreePointer ← Stack[FreePointer].Pointer\n// link current node to previous top of stack\nStack[TempPointer].Pointer ← TopOfStackPointer\n// adjust TopOfStackPointer to current node\nTopOfStackPointer ← TempPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure Pop. Use the variables listed in the identifier table.\nPROCEDURE Pop()\n// Report error if Stack is empty\nOUTPUT Stack [______].Name\n// take a copy of the current top of stack pointer\n// update the top of stack pointer\n// link released node to free list\nENDPROCEDURE\n6 A recursively defined procedure X is defined below:\nPROCEDURE X(BYVALUE n : INTEGER)\nIF (n = 0) OR (n = 1)\nTHEN\nOUTPUT n\nELSE\nCALL X(n DIV 2)\nOUTPUT (n MOD 2)\nENDIF\nENDPROCEDURE",
+              "text": "The algorithm for adding a name to the stack is written, using pseudocode, as a\nprocedure with the header\nPROCEDURE Push (NewName)\nWhere NewName is the new name to be added to the stack. The procedure uses the\nvariables as shown in the identifier table.\nIdentifier Data type Description\nStack Array[1:10] OF Node\nNewName STRING\nName to be added\nFreePointer INTEGER\nPointer to next free node in array\nTopOfStackPointer INTEGER Pointer to first node in stack\nTempPointer INTEGER\nTemporary store for copy of FreePointer\nPROCEDURE Push(BYVALUE NewName : STRING)\n// Report error if no free nodes remaining\nIF FreePointer = 0\nTHEN\nReport Error\nELSE\n// new name placed in node at head of free list\nStack[FreePointer].Name ← NewName\n// take a temporary copy and\n// then adjust free pointer\nTempPointer ← FreePointer\nFreePointer ← Stack[FreePointer].Pointer\n// link current node to previous top of stack\nStack[TempPointer].Pointer ← TopOfStackPointer\n// adjust TopOfStackPointer to current node\nTopOfStackPointer ← TempPointer\nENDIF\nENDPROCEDURE\nComplete the pseudocode for the procedure Pop. Use the variables listed in the identifier table.\nPROCEDURE Pop()\n// Report error if Stack is empty\nOUTPUT Stack [______].Name\n// take a copy of the current top of stack pointer\n// update the top of stack pointer\n// link released node to free list\nENDPROCEDURE",
               "marks": 5,
               "type": "name",
               "answerType": "fill_blank",
@@ -265,9 +260,24 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A stack Abstract Data Type (ADT) has these associated operations:",
+        "• create stack",
+        "• add item to stack (push)",
+        "• remove item from stack (pop)",
+        "The stack ADT is to be implemented as a linked list of nodes.",
+        "Each node consists of data and a pointer to the next node."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "09a",
+          "id": "6a",
           "label": "(a)",
           "text": "Explain what is meant by recursively defined.",
           "marks": 1,
@@ -278,7 +288,7 @@
           "parts": []
         },
         {
-          "id": "09b",
+          "id": "6b",
           "label": "(b)",
           "text": "Explain how a stack is used during the execution of a recursive procedure.",
           "marks": 2,
@@ -289,7 +299,7 @@
           "parts": []
         },
         {
-          "id": "09c",
+          "id": "6c",
           "label": "(c)",
           "text": "Dry run the procedure X by completing the trace table for the procedure call:\nCALL X(40)\nCall\nn (n = 0) OR (n = 1) n DIV 2 n MOD 2\nnumber\n1 40 FALSE 20\nOUTPUT ______",
           "marks": 6,
@@ -300,7 +310,7 @@
           "parts": []
         },
         {
-          "id": "09d",
+          "id": "6d",
           "label": "(d)",
           "text": "State the process that is carried out by procedure X.",
           "marks": 1,
@@ -311,7 +321,7 @@
           "parts": []
         },
         {
-          "id": "09e",
+          "id": "6e",
           "label": "(e)",
           "text": "Write program code for procedure X.\nProgramming language ______\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 5,
@@ -322,14 +332,18 @@
           "parts": []
         }
       ],
-      "marks": 63,
+      "marks": 15,
       "text": [
-        "made_with(quiche, flour).",
-        "These clauses have the following meaning:",
-        "Clause Explanation",
-        "Cheese is a dairy product",
-        "Beef is a meat",
-        "A burger is made with beef"
+        "A recursively defined procedure X is defined below:",
+        "PROCEDURE X(BYVALUE n : INTEGER)",
+        "IF (n = 0) OR (n = 1)",
+        "THEN",
+        "OUTPUT n",
+        "ELSE",
+        "CALL X(n DIV 2)",
+        "OUTPUT (n MOD 2)",
+        "ENDIF",
+        "ENDPROCEDURE"
       ]
     }
   ]

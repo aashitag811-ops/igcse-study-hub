@@ -3,36 +3,15 @@
   "subjectCode": "0607",
   "session": "w20",
   "component": "51",
-  "totalMarks": 6,
-  "questionCount": 4,
+  "totalMarks": 33,
+  "questionCount": 2,
   "questions": [
     {
       "id": "1",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Squares are piled in a pattern, like this:",
-        "1 square on the bottom row",
-        "Total = 1 square"
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "squares on the bottom row",
-        "Total = 3 squares"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
       "parts": [
         {
-          "id": "3a",
+          "id": "1a",
           "label": "(a)",
           "text": "On the dotty paper, complete the next two diagrams in this sequence.",
           "marks": 2,
@@ -43,7 +22,7 @@
           "parts": []
         },
         {
-          "id": "3b",
+          "id": "1b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -53,7 +32,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3bi",
+              "id": "1bi",
               "label": "(i)",
               "text": "Complete the table.\nNumber of squares\n1 2 3 4 5 6\non the bottom row (s)\nTotal number\n1 3 6\nof squares (T)",
               "marks": 3,
@@ -64,10 +43,10 @@
               "parts": []
             },
             {
-              "id": "3bii",
+              "id": "1bii",
               "label": "(ii)",
-              "text": "When the number of squares on the bottom row is 3 the total number of squares is 6.\nUse this information to explain how to calculate the total number of squares when there are",
-              "marks": null,
+              "text": "When the number of squares on the bottom row is 3 the total number of squares is 6.\nUse this information to explain how to calculate the total number of squares when there are\n4 squares on the bottom row.",
+              "marks": 1,
               "type": "explain",
               "answerType": "long_answer",
               "hasDiagramRef": false,
@@ -75,20 +54,9 @@
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 5,
-      "text": [
-        "squares on the bottom row",
-        "Total = 6 squares"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "4c",
+          "id": "1c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -98,7 +66,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4ci",
+              "id": "1ci",
               "label": "(i)",
               "text": "Write down the number of extra squares needed to change a pattern with 9 squares on the\nbottom row to one with 10 squares on the bottom row.",
               "marks": 1,
@@ -109,7 +77,7 @@
               "parts": []
             },
             {
-              "id": "4cii",
+              "id": "1cii",
               "label": "(ii)",
               "text": "Calculate the total number of squares when there are 10 squares on the bottom row.",
               "marks": 2,
@@ -122,7 +90,7 @@
           ]
         },
         {
-          "id": "4d",
+          "id": "1d",
           "label": "(d)",
           "text": "",
           "marks": null,
@@ -132,7 +100,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4di",
+              "id": "1di",
               "label": "(i)",
               "text": "A formula for finding the total number of squares, T, in terms of the number of squares on the\nbottom row, s, is\nT = ks + s, where k is a constant.\nUse the results in part (b)(i) to find the value of k.",
               "marks": 2,
@@ -143,9 +111,9 @@
               "parts": []
             },
             {
-              "id": "4dii",
+              "id": "1dii",
               "label": "(ii)",
-              "text": "A pattern has 12 squares on the bottom row.\nShow that your formula in part (i) gives the correct total number of squares.\n2 Black squares and white squares are now piled on top of each other like this:\n1 square on the bottom row\nHeight = 2 squares\nTotal = 2 squares\n2 squares on the bottom row\nHeight = 3 squares\nTotal = 6 squares 3 squares on the bottom row\nHeight = 4 squares\nTotal = 12 squares",
+              "text": "A pattern has 12 squares on the bottom row.\nShow that your formula in part (i) gives the correct total number of squares.",
               "marks": 3,
               "type": "calculate",
               "answerType": "calculate",
@@ -154,9 +122,25 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 14,
+      "text": [
+        "Squares are piled in a pattern, like this:",
+        "1 square on the bottom row",
+        "Total = 1 square",
+        "2 squares on the bottom row",
+        "Total = 3 squares",
+        "3 squares on the bottom row",
+        "Total = 6 squares"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
-          "id": "4a",
+          "id": "2a",
           "label": "(a)",
           "text": "On the dotty paper, complete the next diagram in the sequence.",
           "marks": 1,
@@ -167,7 +151,7 @@
           "parts": []
         },
         {
-          "id": "4b",
+          "id": "2b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -177,7 +161,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4bi",
+              "id": "2bi",
               "label": "(i)",
               "text": "Complete the table.\nNumber of squares\n1 2 3 4 5 6\non the bottom row (s)\nHeight (H) 2 3 4",
               "marks": 1,
@@ -188,7 +172,7 @@
               "parts": []
             },
             {
-              "id": "4bii",
+              "id": "2bii",
               "label": "(ii)",
               "text": "Write down a formula for the height, H, in terms of the number of squares on the bottom\nrow, s.",
               "marks": 1,
@@ -201,7 +185,7 @@
           ]
         },
         {
-          "id": "4c",
+          "id": "2c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -211,7 +195,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4ci",
+              "id": "2ci",
               "label": "(i)",
               "text": "Complete the table.\nNumber of squares\n1 2 3 4 5 6\non the bottom row (s)\nTotal number\n2 6 12\nof squares (T)",
               "marks": 3,
@@ -222,7 +206,7 @@
               "parts": []
             },
             {
-              "id": "4cii",
+              "id": "2cii",
               "label": "(ii)",
               "text": "Find a formula for the total number of squares, T, in terms of the number of squares on the\nbottom row, s.",
               "marks": 4,
@@ -233,7 +217,7 @@
               "parts": []
             },
             {
-              "id": "4ciii",
+              "id": "2ciii",
               "label": "(iii)",
               "text": "Find the total number of squares in a pattern with 15 squares on the bottom row.",
               "marks": 2,
@@ -246,7 +230,7 @@
           ]
         },
         {
-          "id": "4d",
+          "id": "2d",
           "label": "(d)",
           "text": "Write down a formula to calculate the number of black squares, N, in a pattern with s squares on\nthe bottom row.",
           "marks": 1,
@@ -257,7 +241,7 @@
           "parts": []
         },
         {
-          "id": "4e",
+          "id": "2e",
           "label": "(e)",
           "text": "Calculate the number of white squares, the number of black squares and the total number of\nsquares in a pattern with 50 squares on the bottom row.\nNumber of white squares = ______\nNumber of black squares = ______\nTotal number of squares = ______",
           "marks": null,
@@ -268,7 +252,7 @@
           "parts": []
         },
         {
-          "id": "4f",
+          "id": "2f",
           "label": "(f)",
           "text": "",
           "marks": null,
@@ -278,7 +262,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4fi",
+              "id": "2fi",
               "label": "(i)",
               "text": "A pattern of black squares and white squares has 561 black squares.\nFind the number of squares in the bottom row.",
               "marks": 3,
@@ -289,12 +273,12 @@
               "parts": []
             },
             {
-              "id": "4fii",
+              "id": "2fii",
               "label": "(ii)",
-              "text": "Is it possible to have a pattern of black squares and white squares with a total of 480 squares?\nGive a reason for your answer.\n______ because ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+              "text": "Is it possible to have a pattern of black squares and white squares with a total of 480 squares?\nGive a reason for your answer.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
               "marks": 3,
               "type": "give",
-              "answerType": "fill_blank",
+              "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
@@ -302,9 +286,17 @@
           ]
         }
       ],
-      "marks": 1,
+      "marks": 19,
       "text": [
-        "squares on the bottom row."
+        "Black squares and white squares are now piled on top of each other like this:",
+        "1 square on the bottom row",
+        "Height = 2 squares",
+        "Total = 2 squares",
+        "2 squares on the bottom row",
+        "Height = 3 squares",
+        "Total = 6 squares 3 squares on the bottom row",
+        "Height = 4 squares",
+        "Total = 12 squares"
       ]
     }
   ]

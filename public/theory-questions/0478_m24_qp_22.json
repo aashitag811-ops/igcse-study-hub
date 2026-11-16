@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "m24",
   "component": "22",
-  "totalMarks": 46,
+  "totalMarks": 67,
   "questionCount": 11,
   "questions": [
     {
@@ -113,16 +113,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Cost <> 0 OR Sell <> 0"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Cost <> 0 OR Sell <> 0",
+        "07 THEN"
       ]
     },
     {
@@ -140,16 +132,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "OUTPUT \"Profit is \", Profit"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "NEXT"
+        "OUTPUT \"Profit is \", Profit",
+        "10 NEXT"
       ]
     },
     {
@@ -271,9 +255,9 @@
         {
           "id": "11c",
           "label": "(c)",
-          "text": "Complete this structured query language (SQL) statement to display only the storage code,\nprice and size in square metres of all the storage units where there is a hoist available.\nSELECT ______\nFROM ______\nWHERE ______ ;\n10 A programmer has written a program that will be maintained by another programmer.\nExplain how the program can be written to make sure it can be easily maintained by the other\nprogrammer.\n11 Students in a class are recording the amount of time in minutes spent in front of a screen for each\nday of the week.\nThe one-dimensional (1D) array StudentName[] contains the names of the students in the class.\nThe two-dimensional (2D) array ScreenTime[] is used to input the number of minutes on each\nday spent in front of a screen.\nThe position of each student’s data in the two arrays is the same. For example, the student stored\nat index 10 in StudentName[] and ScreenTime[] is the same.\nThe variable ClassSize contains the number of students in the class.\nWrite a program that meets these requirements:\n• allows all the students to enter their daily minutes of screen times for the past week\n• calculates the total number of minutes of screen time for each student in the week\n• counts, for each student, the number of days with more than 300 minutes of screen time\n• calculates the average weekly minutes of screen time for the whole class\n• finds the student with the lowest weekly minutes of screen time\n• outputs for each student:\n– name\n– total week’s screen time in hours and minutes\n– number of days with more than 300 minutes of screen time\n• outputs the average weekly minutes of screen time for the whole class\n• outputs the name of the student with the lowest weekly screen time.\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll inputs and outputs must contain suitable messages.\nAssume that the array StudentName[] and the variable ClassSize already contain the\nrequired data.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete this structured query language (SQL) statement to display only the storage code,\nprice and size in square metres of all the storage units where there is a hoist available.\nSELECT ______\nFROM ______\nWHERE ______ ;",
           "marks": 4,
-          "type": "name",
+          "type": "complete",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
@@ -283,6 +267,57 @@
       "marks": 26,
       "text": [
         "UNTIL Cost = 0 OR Sell = 0"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": 6,
+      "text": [
+        "A programmer has written a program that will be maintained by another programmer.",
+        "Explain how the program can be written to make sure it can be easily maintained by the other",
+        "programmer."
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": 15,
+      "text": [
+        "Students in a class are recording the amount of time in minutes spent in front of a screen for each",
+        "day of the week.",
+        "The one-dimensional (1D) array StudentName[] contains the names of the students in the class.",
+        "The two-dimensional (2D) array ScreenTime[] is used to input the number of minutes on each",
+        "day spent in front of a screen.",
+        "The position of each student’s data in the two arrays is the same. For example, the student stored",
+        "at index 10 in StudentName[] and ScreenTime[] is the same.",
+        "The variable ClassSize contains the number of students in the class.",
+        "Write a program that meets these requirements:",
+        "• allows all the students to enter their daily minutes of screen times for the past week",
+        "• calculates the total number of minutes of screen time for each student in the week",
+        "• counts, for each student, the number of days with more than 300 minutes of screen time",
+        "• calculates the average weekly minutes of screen time for the whole class",
+        "• finds the student with the lowest weekly minutes of screen time",
+        "• outputs for each student:",
+        "– name",
+        "– total week’s screen time in hours and minutes",
+        "– number of days with more than 300 minutes of screen time",
+        "• outputs the average weekly minutes of screen time for the whole class",
+        "• outputs the name of the student with the lowest weekly screen time.",
+        "You must use pseudocode or program code and add comments to explain how your code works.",
+        "All inputs and outputs must contain suitable messages.",
+        "Assume that the array StudentName[] and the variable ClassSize already contain the",
+        "required data.",
+        "You do not need to declare any arrays or variables; you may assume that this has already been",
+        "done.",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
       ]
     }
   ]

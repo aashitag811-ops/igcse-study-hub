@@ -3,8 +3,8 @@
   "subjectCode": "0478",
   "session": "s26",
   "component": "22",
-  "totalMarks": 55,
-  "questionCount": 11,
+  "totalMarks": 70,
+  "questionCount": 10,
   "questions": [
     {
       "id": "1",
@@ -161,16 +161,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "CASE OF AccountID = Accounts[Row, 1]"
-      ]
-    },
-    {
-      "id": "08",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "CASE OF AccountID = Accounts[Row, 1]",
+        "08 THEN"
       ]
     },
     {
@@ -179,16 +171,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "OUTPUT \"The customer’s name is \", Accounts[1, 2]"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "OUTPUT \"The customer’s name is \", Accounts[1, 2]",
+        "10 ENDIF"
       ]
     },
     {
@@ -297,7 +281,7 @@
         {
           "id": "11c",
           "label": "(c)",
-          "text": "Describe one reason why the InStock field is not needed in the table.\n© Cambridge University Press & Assessment 2026 0478/22/M/J/26\nTrace ID: PC-0FF7083EE7\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000013 * DFD\n© Cambridge University Press & Assessment 2026 0478/22/M/J/26 [Turn over\nTrace ID: PC-0FF7083EE7\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000014 * DFD\n10 A program is required to record and analyse the daily rainfall in millimetres for one year. Assume\na year has 365 days.\nThe one-dimensional (1D) array Rainfall[] is used to store the daily rainfall measurements.\nWrite a program for the following requirements:\n• Initialise the array Rainfall[] to zero.\n• Input the rainfall measurement in millimetres for each day and store it in the array.\n• Calculate the following statistics after all the inputs have been made for the year:\n◦ the total rainfall for the year in centimetres (1 centimetre = 10 millimetres), rounded to\ntwo decimal places\n◦ the mean average daily rainfall in millimetres, rounded to four decimal places\n◦ the total number of days with no rainfall\n◦ the longest number of consecutive days in which there was no rainfall.\n• Output all the calculated statistics with clear and appropriate messaging.\n• If the longest number of consecutive days in which there was no rainfall is 15 or more,\noutput a message to indicate there was a drought (a long period when there is little or\nno rainfall).\nYou must use pseudocode or program code and add comments to explain how your code works.\nAll arrays, variables or constants used must be declared for this algorithm.\nAll inputs and outputs must contain suitable messages.\n© Cambridge University Press & Assessment 2026 0478/22/M/J/26\nTrace ID: PC-0FF7083EE7\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000015 * DFD\n© Cambridge University Press & Assessment 2026 0478/22/M/J/26 [Turn over\nTrace ID: PC-0FF7083EE7\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000016 * DFD\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in our Copyright\nAcknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live\nexamination series.\n© Cambridge University Press & Assessment 2026 0478/22/M/J/26\nTrace ID: PC-0FF7083EE7\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/",
+          "text": "Describe one reason why the InStock field is not needed in the table.\n© Cambridge University Press & Assessment 2026 0478/22/M/J/26\nTrace ID: PC-0FF7083EE7\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000013 * DFD\n© Cambridge University Press & Assessment 2026 0478/22/M/J/26 [Turn over\nTrace ID: PC-0FF7083EE7\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n0478/22 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 0478/22 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000014 * DFD",
           "marks": 2,
           "type": "describe",
           "answerType": "long_answer",
@@ -309,6 +293,59 @@
       "marks": 36,
       "text": [
         "NEXT Row"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": 15,
+      "text": [
+        "A program is required to record and analyse the daily rainfall in millimetres for one year. Assume",
+        "a year has 365 days.",
+        "The one-dimensional (1D) array Rainfall[] is used to store the daily rainfall measurements.",
+        "Write a program for the following requirements:",
+        "• Initialise the array Rainfall[] to zero.",
+        "• Input the rainfall measurement in millimetres for each day and store it in the array.",
+        "• Calculate the following statistics after all the inputs have been made for the year:",
+        "◦ the total rainfall for the year in centimetres (1 centimetre = 10 millimetres), rounded to",
+        "two decimal places",
+        "◦ the mean average daily rainfall in millimetres, rounded to four decimal places",
+        "◦ the total number of days with no rainfall",
+        "◦ the longest number of consecutive days in which there was no rainfall.",
+        "• Output all the calculated statistics with clear and appropriate messaging.",
+        "• If the longest number of consecutive days in which there was no rainfall is 15 or more,",
+        "output a message to indicate there was a drought (a long period when there is little or",
+        "no rainfall).",
+        "You must use pseudocode or program code and add comments to explain how your code works.",
+        "All arrays, variables or constants used must be declared for this algorithm.",
+        "All inputs and outputs must contain suitable messages.",
+        "© Cambridge University Press & Assessment 2026 0478/22/M/J/26",
+        "Trace ID: PC-0FF7083EE7",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "0478/22 Question Paper June 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 0478/22 Question Paper June 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000015 * DFD",
+        "© Cambridge University Press & Assessment 2026 0478/22/M/J/26 [Turn over",
+        "Trace ID: PC-0FF7083EE7",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "0478/22 Question Paper June 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 0478/22 Question Paper June 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/",
+        "* 0000800000016 * DFD",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in our Copyright",
+        "Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live",
+        "examination series.",
+        "© Cambridge University Press & Assessment 2026 0478/22/M/J/26",
+        "Trace ID: PC-0FF7083EE7",
+        "Re-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.",
+        "Licensed for hosting on papacambridge.com only.",
+        "0478/22 Question Paper June 2026 | Source: papacambridge.com",
+        "PapaCambridge · papacambridge.com 0478/22 Question Paper June 2026",
+        "Downloaded from PapaCambridge - https://papacambridge.com/"
       ]
     }
   ]

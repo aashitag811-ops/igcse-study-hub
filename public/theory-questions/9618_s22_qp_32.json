@@ -120,29 +120,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A declarative language is used to represent the following facts about a school.",
-        "01 teaches(alan, mathematics).",
-        "02 teaches(ioana, geography)."
-      ]
-    },
-    {
-      "id": "03",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "teaches(nina, history)."
-      ]
-    },
-    {
-      "id": "04",
-      "context": [],
       "parts": [
         {
-          "id": "04a",
+          "id": "2a",
           "label": "(a)",
           "text": "More facts are to be included. Sam studies history and Nina is his tutor.\nWrite the additional clauses to record these facts.",
           "marks": 2,
@@ -153,7 +133,7 @@
           "parts": []
         },
         {
-          "id": "04b",
+          "id": "2b",
           "label": "(b)",
           "text": "Using the variable Student, the goal:\nstudies(Student, history)\nreturns\nStudent = freya, ahmed, kim\nWrite the result returned by the goal:\nstudies(Student, geography)\nStudent = ______",
           "marks": 1,
@@ -164,98 +144,24 @@
           "parts": []
         },
         {
-          "id": "04c",
+          "id": "2c",
           "label": "(c)",
-          "text": "Write the goal, using the variable X, to find all the students who have a tutor that teaches\nthem. For example, Hua has Alan for a tutor and is also taught mathematics by Alan.\n3 The TCP/IP protocol suite has four layers. The application layer provides user services.",
+          "text": "Write the goal, using the variable X, to find all the students who have a tutor that teaches\nthem. For example, Hua has Alan for a tutor and is also taught mathematics by Alan.",
           "marks": 4,
           "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
-        {
-          "id": "04a",
-          "label": "(a)",
-          "text": "Identify two protocols used by this layer. Describe the use of each protocol.\nProtocol 1 ______\nDescription ______\nProtocol 2 ______\nDescription ______",
-          "marks": 4,
-          "type": "identify",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "04b",
-          "label": "(b)",
-          "text": "Identify two other layers of the TCP/IP protocol suite. Describe the function of each layer.\nLayer 1 ______\nDescription ______\nLayer 2 ______\nDescription ______\n4 The following syntax diagrams show the syntax of:\n• a variable\n• an unsigned integer\n• a letter\n• a digit\n• an operator\n• an assignment statement.\nvariable\nletter unsigned integer\nunsigned integer\ndigit digit\nletter digit\nX 1\nY 2\nZ 3\noperator\nassignment\nstatement\nvariable = variable operator variable",
-          "marks": 4,
-          "type": "identify",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "04a",
-          "label": "(a)",
-          "text": "The following assignment statements are invalid. State the reason in each case.\nX1 = Y2 – 12\nReason ______\nZ = Y12 + Z1\nReason ______",
-          "marks": 2,
-          "type": "state",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "04b",
-          "label": "(b)",
-          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n<letter> has been completed for you.\n<variable> ::= ______\n<unsigned_integer> ::= ______\n<letter> ::= X | Y | Z\n<digit> ::= ______\n<operator> ::= ______\n<assignment_statement> ::= ______",
-          "marks": 5,
-          "type": "complete",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "04c",
-          "label": "(c)",
-          "text": "The syntax of an assignment statement is changed to allow each of the variables on the\nright-hand side of the ‘=’ symbol to be either a variable or an unsigned integer.",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "04ci",
-              "label": "(i)",
-              "text": "Draw a syntax diagram for the new syntax of the assignment statement.",
-              "marks": 3,
-              "type": "draw",
-              "answerType": "diagram_only",
-              "hasDiagramRef": true,
-              "diagramOnly": true,
-              "parts": []
-            },
-            {
-              "id": "04cii",
-              "label": "(ii)",
-              "text": "Write the Backus-Naur Form (BNF) for your syntax diagram.",
-              "marks": 3,
-              "type": "write",
-              "answerType": "short_answer",
-              "hasDiagramRef": true,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
         }
       ],
-      "marks": 28,
+      "marks": 7,
       "text": [
-        "teaches(alan, statistics).",
+        "A declarative language is used to represent the following facts about a school.",
+        "01 teaches(alan, mathematics).",
+        "02 teaches(ioana, geography).",
+        "03 teaches(nina, history).",
+        "04 teaches(alan, statistics).",
         "06 studies(ahmed, history).",
         "07 studies(freya, history).",
         "08 studies(kim, history).",
@@ -272,6 +178,122 @@
         "01 Alan teaches mathematics.",
         "Ahmed studies history.",
         "Alan is Kim’s tutor."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "Identify two protocols used by this layer. Describe the use of each protocol.\nProtocol 1 ______\nDescription ______\nProtocol 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "Identify two other layers of the TCP/IP protocol suite. Describe the function of each layer.\nLayer 1 ______\nDescription ______\nLayer 2 ______\nDescription ______",
+          "marks": 4,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
+      "text": [
+        "The TCP/IP protocol suite has four layers. The application layer provides user services."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "The following assignment statements are invalid. State the reason in each case.\nX1 = Y2 – 12\nReason ______\nZ = Y12 + Z1\nReason ______",
+          "marks": 2,
+          "type": "state",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n<letter> has been completed for you.\n<variable> ::= ______\n<unsigned_integer> ::= ______\n<letter> ::= X | Y | Z\n<digit> ::= ______\n<operator> ::= ______\n<assignment_statement> ::= ______",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4c",
+          "label": "(c)",
+          "text": "The syntax of an assignment statement is changed to allow each of the variables on the\nright-hand side of the ‘=’ symbol to be either a variable or an unsigned integer.",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "4ci",
+              "label": "(i)",
+              "text": "Draw a syntax diagram for the new syntax of the assignment statement.",
+              "marks": 3,
+              "type": "draw",
+              "answerType": "diagram_only",
+              "hasDiagramRef": true,
+              "diagramOnly": true,
+              "parts": []
+            },
+            {
+              "id": "4cii",
+              "label": "(ii)",
+              "text": "Write the Backus-Naur Form (BNF) for your syntax diagram.",
+              "marks": 3,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": [
+        "The following syntax diagrams show the syntax of:",
+        "• a variable",
+        "• an unsigned integer",
+        "• a letter",
+        "• a digit",
+        "• an operator",
+        "• an assignment statement.",
+        "variable",
+        "letter unsigned integer",
+        "unsigned integer",
+        "digit digit",
+        "letter digit",
+        "X 1",
+        "Y 2",
+        "Z 3",
+        "operator",
+        "assignment",
+        "statement",
+        "variable = variable operator variable"
       ]
     },
     {

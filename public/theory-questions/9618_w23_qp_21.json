@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w23",
   "component": "21",
-  "totalMarks": 61,
+  "totalMarks": 75,
   "questionCount": 8,
   "questions": [
     {
@@ -107,16 +107,27 @@
         {
           "id": "3a",
           "label": "(a)",
-          "text": "The stack is implemented using two variables and a 1D array of 8 elements as shown.\nThe variables are used to reference individual elements of the array, in such a way that:\n• the array is filled from the lowest indexed element towards the highest\n• all the elements of the array are available for the stack.\nComplete the diagram to represent the state of the stack as shown above.\nArray Data\nelement",
-          "marks": null,
+          "text": "The stack is implemented using two variables and a 1D array of 8 elements as shown.\nThe variables are used to reference individual elements of the array, in such a way that:\n• the array is filled from the lowest indexed element towards the highest\n• all the elements of the array are available for the stack.\nComplete the diagram to represent the state of the stack as shown above.\nArray Data\nelement\n5 Variable\n4 TopOfStack\nBottomOfStack",
+          "marks": 3,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "A function Push() will add a value onto the stack by manipulating the array and variables in\npart (a).\nBefore adding a value onto the stack, the algorithm will check that space is available.\nIf the value is added to the stack, the function will return TRUE, otherwise it will return FALSE.\nThe algorithm is expressed in five steps.\nComplete the steps.\n1. If ______ then return FALSE\n2. Otherwise ______ TopOfStack\n3. Use TopOfStack as an ______ to the array.\n4. Set the element at this ______ to the ______ being added.\n5. Return ______ .",
+          "marks": 5,
+          "type": "complete",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         }
       ],
-      "marks": null,
+      "marks": 8,
       "text": [
         "The diagram represents an Abstract Data Type (ADT).",
         "The operation of this stack may be summarised as follows:",
@@ -133,22 +144,11 @@
       ]
     },
     {
-      "id": "5",
+      "id": "4",
       "context": [],
       "parts": [
         {
-          "id": "5b",
-          "label": "(b)",
-          "text": "A function Push() will add a value onto the stack by manipulating the array and variables in\npart (a).\nBefore adding a value onto the stack, the algorithm will check that space is available.\nIf the value is added to the stack, the function will return TRUE, otherwise it will return FALSE.\nThe algorithm is expressed in five steps.\nComplete the steps.\n1. If ______ then return FALSE\n2. Otherwise ______ TopOfStack\n3. Use TopOfStack as an ______ to the array.\n4. Set the element at this ______ to the ______ being added.\n5. Return ______ .\n4 A global array is declared in pseudocode as follows:\nDECLARE Data : ARRAY[1:150] OF STRING\nA function TooMany() will:\n1. take two parameters:\n• a string (the search string)\n• an integer (the maximum value)\n2. count the number of strings in the array that exactly match the search string\n3. return TRUE if the count is greater than the maximum value, otherwise will return FALSE",
-          "marks": 5,
-          "type": "complete",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "5a",
+          "id": "4a",
           "label": "(a)",
           "text": "Write pseudocode for the function TooMany().",
           "marks": 6,
@@ -159,7 +159,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "The global array is changed to a 2D array, organised as 150 rows by 2 columns. It is declared\nin pseudocode as follows:\nDECLARE Data : ARRAY[1:150, 1:2] OF STRING\nThe algorithm for the function in part (a) is changed. Strings will only be counted if both of\nthe following conditions are true:\n• The current row is an even number.\n• The search string exactly matches the value in either column.\nWrite pseudocode to check these conditions.\nAssume that the row index is contained in variable Row and the search string in variable\nSearch.",
           "marks": 3,
@@ -170,11 +170,16 @@
           "parts": []
         }
       ],
-      "marks": 3,
+      "marks": 9,
       "text": [
-        "Variable",
-        "4 TopOfStack",
-        "BottomOfStack"
+        "A global array is declared in pseudocode as follows:",
+        "DECLARE Data : ARRAY[1:150] OF STRING",
+        "A function TooMany() will:",
+        "1. take two parameters:",
+        "• a string (the search string)",
+        "• an integer (the maximum value)",
+        "2. count the number of strings in the array that exactly match the search string",
+        "3. return TRUE if the count is greater than the maximum value, otherwise will return FALSE"
       ]
     },
     {

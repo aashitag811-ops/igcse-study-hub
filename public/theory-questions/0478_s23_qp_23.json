@@ -3,8 +3,8 @@
   "subjectCode": "0478",
   "session": "s23",
   "component": "23",
-  "totalMarks": 60,
-  "questionCount": 12,
+  "totalMarks": 75,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -131,25 +131,9 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Counter Counter + 1"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDCASE"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDWHILE"
+        "Counter Counter + 1",
+        "09 ENDCASE",
+        "10 ENDWHILE"
       ]
     },
     {
@@ -289,7 +273,7 @@
         {
           "id": "12d",
           "label": "(d)",
-          "text": "Give the output that would be produced by the structured query language (SQL) statement:\nSELECT Name, NumberGuest, Rate$\nFROM Site1\nWHERE NumberGuest >= 10;\n11 A two-dimensional (2D) array Contacts[] is used to store names and telephone numbers. All\nthe data is stored as strings. The array must have the capacity to store 100 contacts in the form of:\n• column 1 – contact names as: last name, first name\nfor example: Smith, John\n• column 2 – telephone numbers.\nThe variable CurrentSize shows how many contacts are in the array.\nWrite a program that meets the following requirements:\n• display a menu of choices:\n○ enter new contact details\n○ display all the contact details\n○ delete all the contact details\n• validate the menu input\n• allow up to a maximum of five new contacts to be added to the array at any one time\n• do not allow more than 100 contacts in total\n• after new contacts have been added, sort the array by contact name, as long as there are at\nleast two contacts in the array\n• output the whole of the array\n• delete the contents of the array.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; you may assume that this has\nalready been done.\nAll inputs and outputs must contain suitable messages.\nYou do not need to initialise the data in the array Contacts[] and the variable CurrentSize\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Give the output that would be produced by the structured query language (SQL) statement:\nSELECT Name, NumberGuest, Rate$\nFROM Site1\nWHERE NumberGuest >= 10;",
           "marks": 3,
           "type": "name",
           "answerType": "short_answer",
@@ -301,6 +285,43 @@
       "marks": 39,
       "text": [
         "OUTPUT \"The average value of your numbers is \", Total / 100"
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": 15,
+      "text": [
+        "A two-dimensional (2D) array Contacts[] is used to store names and telephone numbers. All",
+        "the data is stored as strings. The array must have the capacity to store 100 contacts in the form of:",
+        "• column 1 – contact names as: last name, first name",
+        "for example: Smith, John",
+        "• column 2 – telephone numbers.",
+        "The variable CurrentSize shows how many contacts are in the array.",
+        "Write a program that meets the following requirements:",
+        "• display a menu of choices:",
+        "○ enter new contact details",
+        "○ display all the contact details",
+        "○ delete all the contact details",
+        "• validate the menu input",
+        "• allow up to a maximum of five new contacts to be added to the array at any one time",
+        "• do not allow more than 100 contacts in total",
+        "• after new contacts have been added, sort the array by contact name, as long as there are at",
+        "least two contacts in the array",
+        "• output the whole of the array",
+        "• delete the contents of the array.",
+        "You must use pseudocode or program code and add comments to explain how your code works.",
+        "You do not need to declare any arrays, variables or constants; you may assume that this has",
+        "already been done.",
+        "All inputs and outputs must contain suitable messages.",
+        "You do not need to initialise the data in the array Contacts[] and the variable CurrentSize",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
       ]
     }
   ]

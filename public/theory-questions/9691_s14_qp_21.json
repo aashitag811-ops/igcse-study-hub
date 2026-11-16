@@ -3,8 +3,8 @@
   "subjectCode": "9691",
   "session": "s14",
   "component": "21",
-  "totalMarks": 52,
-  "questionCount": 10,
+  "totalMarks": 25,
+  "questionCount": 9,
   "questions": [
     {
       "id": "1",
@@ -47,98 +47,16 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "If the child chooses the number 7, the screen displays:\n7 Times Table\n=============\n1 × 7 = 7",
-          "marks": null,
-          "type": "other",
+          "text": "If the child chooses the number 7, the screen displays:\n7 Times Table\n=============\n1 × 7 = 7\n2 × 7 = 14\n3 × 7 = 21\n4 × 7 = 28\n5 × 7 = 35\n6 × 7 = 42\n7 × 7 = 49\n8 × 7 = 56\n9 × 7 = 63\n10 × 7 = 70\nPress any key\nThe algorithm to produce this output is The program needs the following three integer\nrepresented by the flowchart below: variables:\n• Number\nSTART\n• i\n• Result\nInput\nIn a high-level language, write programming\nNumber\nstatements to implement the algorithm.\nLanguage\nOutput\nCode\ntitle\nLoop for i\nfrom 1 to 10\nResult i * Number\nOutput\ni × Number = Result\nNo\nend of loop?\nYes\nOutput\n“Press any key” \nEND",
+          "marks": 6,
+          "type": "write",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        }
-      ],
-      "marks": 4,
-      "text": [
-        "A teacher wants to write a program to help young children learn their multiplication tables."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 14"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 21"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 28"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 35"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 42"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 49"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 56"
-      ]
-    },
-    {
-      "id": "9",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "× 7 = 63"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "10c",
+          "id": "1c",
           "label": "(c)",
           "text": "The teacher wants the program to:\n• show a visual representation of a multiplication\n• ask the child to key in an answer.\nFor example, the multiplication of 3 × 4 is represented as shown.\n3 × 4\n****\n****\n****\nWhat is the answer? _______\nThis grid of asterisks (*) is produced by the procedure call:\nShowMultiplicationGrid(3, 4)\nComplete the pseudocode for this procedure:\nPROCEDURE ShowMultiplicationGrid(Number1, Number2)\nFOR Row\nFOR Column\nOUTPUT\nENDFOR\nENDPROCEDURE",
           "marks": 5,
@@ -149,16 +67,92 @@
           "parts": []
         },
         {
-          "id": "10d",
+          "id": "1d",
           "label": "(d)",
-          "text": "The function CheckAnswerCorrect gives the child three chances to type in the correct\nanswer. The function returns TRUE if the child typed the correct answer, and FALSE if all\nthree attempts are incorrect.\nComplete the flowchart opposite, using the given statements. Label each blank symbol with\nthe correct statement number.\nFUNCTION\nCheckAnswerCorrect(Number1, Number2)\n1 Output “Incorrect. Try again.”\nR  Number1 * Number2\n2 Output “Correct. Well done!”\n3 Output “You need to practice more.\nThe correct answer is ” R\n4 Output “Type your answer.”\n5 Return FALSE\n6 Is NumberOfTries > 2 ?\nIs AnswerNumber = R ?\n8 Is AnswerString digits only ?\n9 NumberOfTries  0\nINPUT\n10 NumberOfTries  NumberOfTries + 1\nAnswerString\nNo\nYes\nConvert AnswerString\nto AnswerNumber\nNo\nNo\nYes Yes\nReturn TRUE\nENDFUNCTION\n2 The teacher wants a new program to test children. A sequence of multiplication questions is\ndisplayed. If a child inputs 3 incorrect answers for a question, the program outputs the number of\nquestions the child answers correctly. Then the program stops.\nThe program design uses the following functions and procedures.\nFunction or procedure name Description\nRandom(X)\nA function that returns a whole number in the\nrange 1 to X inclusive\nDisplay(Number1, Number2)\nA procedure that produces the output\n5 × 8 = ?\nwhen Number1 is 5 and Number2 is 8\nCheckAnswerCorrect(Number1, Number2)\nThe procedure from Question 1(d)\nTestScoreTotal\nA function that returns the number of questions\nanswered correctly",
-          "marks": 10,
-          "type": "name",
-          "answerType": "short_answer",
+          "text": "The function CheckAnswerCorrect gives the child three chances to type in the correct\nanswer. The function returns TRUE if the child typed the correct answer, and FALSE if all\nthree attempts are incorrect.\nComplete the flowchart opposite, using the given statements. Label each blank symbol with\nthe correct statement number.\nFUNCTION\nCheckAnswerCorrect(Number1, Number2)\n1 Output “Incorrect. Try again.”\nR  Number1 * Number2",
+          "marks": null,
+          "type": "complete",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 15,
+      "text": [
+        "A teacher wants to write a program to help young children learn their multiplication tables."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Output “Correct. Well done!”"
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Output “You need to practice more.",
+        "The correct answer is ” R"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Output “Type your answer.”"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Return FALSE"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Is NumberOfTries > 2 ?",
+        "Is AnswerNumber = R ?"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Is AnswerString digits only ?"
+      ]
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NumberOfTries  0",
+        "INPUT"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [
         {
           "id": "10a",
           "label": "(a)",
@@ -350,35 +344,36 @@
           ]
         }
       ],
-      "marks": 48,
+      "marks": 10,
       "text": [
-        "× 7 = 70",
-        "Press any key",
-        "The algorithm to produce this output is The program needs the following three integer",
-        "represented by the flowchart below: variables:",
-        "• Number",
-        "START",
-        "• i",
-        "• Result",
-        "Input",
-        "In a high-level language, write programming",
-        "Number",
-        "statements to implement the algorithm.",
-        "Language",
-        "Output",
-        "Code",
-        "title",
-        "Loop for i",
-        "from 1 to 10",
-        "Result i * Number",
-        "Output",
-        "i × Number = Result",
+        "NumberOfTries  NumberOfTries + 1",
+        "AnswerString",
         "No",
-        "end of loop?",
         "Yes",
-        "Output",
-        "“Press any key” [6]",
-        "END"
+        "Convert AnswerString",
+        "to AnswerNumber",
+        "No",
+        "No",
+        "Yes Yes",
+        "Return TRUE",
+        "ENDFUNCTION",
+        "2 The teacher wants a new program to test children. A sequence of multiplication questions is",
+        "displayed. If a child inputs 3 incorrect answers for a question, the program outputs the number of",
+        "questions the child answers correctly. Then the program stops.",
+        "The program design uses the following functions and procedures.",
+        "Function or procedure name Description",
+        "Random(X)",
+        "A function that returns a whole number in the",
+        "range 1 to X inclusive",
+        "Display(Number1, Number2)",
+        "A procedure that produces the output",
+        "5 × 8 = ?",
+        "when Number1 is 5 and Number2 is 8",
+        "CheckAnswerCorrect(Number1, Number2)",
+        "The procedure from Question 1(d)",
+        "TestScoreTotal",
+        "A function that returns the number of questions",
+        "answered correctly"
       ]
     }
   ]

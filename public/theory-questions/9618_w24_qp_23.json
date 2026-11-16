@@ -163,26 +163,9 @@
     {
       "id": "4",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "An examination paper has a maximum of 75 marks. One of five pass grades (A to E) is assigned,",
-        "depending on the mark obtained. The lowest mark for a given grade is known as the grade boundary.",
-        "A program is being written to process examination marks.",
-        "The five grade boundaries are stored in a global 1D array GB of type INTEGER, for example:",
-        "Index Value Comment",
-        "1 65 The minimum mark for an A grade.",
-        "2 57 The minimum mark for a B grade.",
-        "3 43 The minimum mark for a C grade.",
-        "4 35 The minimum mark for a D grade."
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "4a",
           "label": "(a)",
           "text": "The pseudocode algorithm to determine whether a paper should be checked is as shown.\nThe mark for the paper is stored in variable Mark. Global variables Mark, Index, Upper and\nLower are declared as integers.\nComplete the pseudocode.\nFOR Index ← 1 TO ______\nLower ← GB[Index] - 2\nUpper ← ______\nIF Mark ______ AND Mark ______ THEN\nOUTPUT \"Check this paper\"\nENDIF\nNEXT Index",
           "marks": 4,
@@ -193,7 +176,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "An alternative algorithm to determine if a paper needs to be checked uses a global 1D array\nCheck, containing 76 elements of type BOOLEAN. The indices of the array are from 0 to 75\n(inclusive), corresponding to the range of possible marks.\nAn element value in Check is TRUE if the index is within 2 marks of a grade boundary. For\nexample, in the case where the C grade boundary is 43 the corresponding part of the Check\narray would be as follows:\nIndex Value\nFALSE\nTRUE\nTRUE\nTRUE\n← The grade boundary for a C grade\nTRUE\nTRUE\nFALSE",
           "marks": null,
@@ -203,7 +186,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "4bi",
               "label": "(i)",
               "text": "The mark for a given paper is stored in variable Mark.\nDescribe how an algorithm would use the Check array to determine whether this paper\nshould be checked.",
               "marks": 2,
@@ -214,9 +197,9 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "4bii",
               "label": "(ii)",
-              "text": "A procedure GBInitialise() will initialise the Check array using values from the GB\narray.\nNote it can be assumed that the maximum grade boundary value for A is 70 and the\nminimum value for E is 15.\nWrite pseudocode for the procedure.\n5 A software developer follows a program development life cycle. The life cycle divides the\ndevelopment process into various stages.",
+              "text": "A procedure GBInitialise() will initialise the Check array using values from the GB\narray.\nNote it can be assumed that the maximum grade boundary value for A is 70 and the\nminimum value for E is 15.\nWrite pseudocode for the procedure.",
               "marks": 6,
               "type": "write",
               "answerType": "short_answer",
@@ -225,7 +208,28 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "An examination paper has a maximum of 75 marks. One of five pass grades (A to E) is assigned,",
+        "depending on the mark obtained. The lowest mark for a given grade is known as the grade boundary.",
+        "A program is being written to process examination marks.",
+        "The five grade boundaries are stored in a global 1D array GB of type INTEGER, for example:",
+        "Index Value Comment",
+        "1 65 The minimum mark for an A grade.",
+        "2 57 The minimum mark for a B grade.",
+        "3 43 The minimum mark for a C grade.",
+        "4 35 The minimum mark for a D grade.",
+        "5 27 The minimum mark for an E grade.",
+        "Any paper that achieves a mark within 2 marks of a grade boundary must be checked. Using the",
+        "given table, a paper with 45 marks would need to be checked."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
           "id": "5a",
           "label": "(a)",
@@ -249,11 +253,10 @@
           "parts": []
         }
       ],
-      "marks": 19,
+      "marks": 7,
       "text": [
-        "27 The minimum mark for an E grade.",
-        "Any paper that achieves a mark within 2 marks of a grade boundary must be checked. Using the",
-        "given table, a paper with 45 marks would need to be checked."
+        "A software developer follows a program development life cycle. The life cycle divides the",
+        "development process into various stages."
       ]
     },
     {

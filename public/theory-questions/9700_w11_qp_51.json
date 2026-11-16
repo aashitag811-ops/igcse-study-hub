@@ -4,7 +4,7 @@
   "session": "w11",
   "component": "51",
   "totalMarks": 30,
-  "questionCount": 3,
+  "questionCount": 2,
   "questions": [
     {
       "id": "1",
@@ -197,16 +197,83 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "Adult fruit flies are about 2.5 mm long. Suggest how the student might have observed\nthe last abdominal segment in order to sex them.\nThe three crosses the student carried out were:\ncross 1 pure breeding fruit flies with grey bodies and long wings × pure breeding\nflies with ebony bodies and short wings\ncross 2 the offspring of cross 1 (offspring 1) were crossed with each other\ncross 3 offspring 1 × pure breeding flies with ebony bodies and short wings\n• male and female pupae were transferred to separate breeding units\n• the number of newly emerged adult flies in each phenotype was counted.\nTable 2.1 shows the results of the three crosses.\nExaminer’s\nTable 2.1\ntotal\nnumber of offspring of each\ncross parental phenotypes number of\nphenotypes\noffspring\npure breeding pure breeding 62 grey body\n1 grey body × ebony body 62 long wings\nlong wings short wings\n42 grey body 13 ebony body\noffspring 1 offspring 1\nlong wings long wings\n2 grey body × grey body 75\n15 grey body 5 ebony body\nlong wings long wings\nshort wings short wings\n15 grey body 13 ebony body\noffspring 1 pure breeding\nlong wings long wings",
+          "text": "Adult fruit flies are about 2.5 mm long. Suggest how the student might have observed\nthe last abdominal segment in order to sex them.\nThe three crosses the student carried out were:\ncross 1 pure breeding fruit flies with grey bodies and long wings × pure breeding\nflies with ebony bodies and short wings\ncross 2 the offspring of cross 1 (offspring 1) were crossed with each other\ncross 3 offspring 1 × pure breeding flies with ebony bodies and short wings\n• male and female pupae were transferred to separate breeding units\n• the number of newly emerged adult flies in each phenotype was counted.\nTable 2.1 shows the results of the three crosses.\nExaminer’s\nTable 2.1\ntotal\nnumber of offspring of each\ncross parental phenotypes number of\nphenotypes\noffspring\npure breeding pure breeding 62 grey body\n1 grey body × ebony body 62 long wings\nlong wings short wings\n42 grey body 13 ebony body\noffspring 1 offspring 1\nlong wings long wings\n2 grey body × grey body 75\n15 grey body 5 ebony body\nlong wings long wings\nshort wings short wings\n15 grey body 13 ebony body\noffspring 1 pure breeding\nlong wings long wings\n3 grey body × ebony body 64\n19 grey body 17 ebony body\nlong wings short wings\nshort wings short wings",
           "marks": 1,
           "type": "suggest",
           "answerType": "long_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
+        },
+        {
+          "id": "2c",
+          "label": "(c)",
+          "text": "The student concluded that the results of cross 2 showed that the two genes were on\nseparate chromosomes. State the evidence for this conclusion.",
+          "marks": 1,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "2d",
+          "label": "(d)",
+          "text": "The student used the chi-squared test (χ test) to analyse the results for cross 3. The\nstudent predicted that the numbers of fruit flies with each phenotype in this cross should\nbe in the ratio 1 : 1 : 1 : 1.",
+          "marks": null,
+          "type": "tick",
+          "answerType": "diagram_only",
+          "hasDiagramRef": false,
+          "diagramOnly": true,
+          "parts": [
+            {
+              "id": "2di",
+              "label": "(i)",
+              "text": "State the null hypothesis for this test.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2dii",
+              "label": "(ii)",
+              "text": "Complete Table 2.2 to calculate the value of χ for the results of cross 3.\nThe equation for the calculation of χ is:\n(O – E) O = Observed result\nχ² = Σ\nE = Expected result\nTable 2.2\n(O – E)\noffspring phenotype O E\ngrey bodies long wings 15\ngrey bodies short wings 19\nebony bodies long wings 13\nebony bodies short wings 17\nχ² =\nTable 2.3 shows some critical values for chi-squared at four different probability levels.\nExaminer’s\nTable 2.3\ndegrees of freedom probability (p)\n0.10 0.05 0.01 0.001\n1 2.71 3.84 6.64 10.83\n2 4.61 5.99 9.21 13.82\n3 6.25 7.82 11.34 16.27\n4 7.78 9.49 13.28 18.46",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "calculate",
+              "hasDiagramRef": true,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2diii",
+              "label": "(iii)",
+              "text": "State why the student should look for the critical value at 3 degrees of freedom in\nthis investigation.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2div",
+              "label": "(iv)",
+              "text": "State the conclusion from the χ value calculated in part (ii).\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 3,
+      "marks": 10,
       "text": [
         "A student carried out some investigations into the inheritance of body colour and wing length",
         "in the fruit fly, Drosophila melanogaster, to test the hypothesis:",
@@ -220,86 +287,6 @@
         "• after mating and egg laying, the adult fruit flies were removed",
         "• newly emerged adult fruit flies were sexed by observing the shape of the last",
         "abdominal segment."
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [
-        {
-          "id": "3c",
-          "label": "(c)",
-          "text": "The student concluded that the results of cross 2 showed that the two genes were on\nseparate chromosomes. State the evidence for this conclusion.",
-          "marks": 1,
-          "type": "state",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "3d",
-          "label": "(d)",
-          "text": "The student used the chi-squared test (χ test) to analyse the results for cross 3. The\nstudent predicted that the numbers of fruit flies with each phenotype in this cross should\nbe in the ratio 1 : 1 : 1 : 1.",
-          "marks": null,
-          "type": "tick",
-          "answerType": "diagram_only",
-          "hasDiagramRef": false,
-          "diagramOnly": true,
-          "parts": [
-            {
-              "id": "3di",
-              "label": "(i)",
-              "text": "State the null hypothesis for this test.",
-              "marks": 1,
-              "type": "state",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3dii",
-              "label": "(ii)",
-              "text": "Complete Table 2.2 to calculate the value of χ for the results of cross 3.\nThe equation for the calculation of χ is:\n(O – E) O = Observed result\nχ² = Σ\nE = Expected result\nTable 2.2\n(O – E)\noffspring phenotype O E\ngrey bodies long wings 15\ngrey bodies short wings 19\nebony bodies long wings 13\nebony bodies short wings 17\nχ² =\nTable 2.3 shows some critical values for chi-squared at four different probability levels.\nExaminer’s\nTable 2.3\ndegrees of freedom probability (p)\n0.10 0.05 0.01 0.001\n1 2.71 3.84 6.64 10.83\n2 4.61 5.99 9.21 13.82\n3 6.25 7.82 11.34 16.27\n4 7.78 9.49 13.28 18.46",
-              "marks": 3,
-              "type": "calculate",
-              "answerType": "calculate",
-              "hasDiagramRef": true,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3diii",
-              "label": "(iii)",
-              "text": "State why the student should look for the critical value at 3 degrees of freedom in\nthis investigation.",
-              "marks": 1,
-              "type": "state",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "3div",
-              "label": "(iv)",
-              "text": "State the conclusion from the χ value calculated in part (ii).\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
-              "marks": 1,
-              "type": "state",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        }
-      ],
-      "marks": 7,
-      "text": [
-        "grey body × ebony body 64",
-        "19 grey body 17 ebony body",
-        "long wings short wings",
-        "short wings short wings"
       ]
     }
   ]

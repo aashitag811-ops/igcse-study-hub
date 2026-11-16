@@ -4,7 +4,7 @@
   "session": "w17",
   "component": "22",
   "totalMarks": 42,
-  "questionCount": 16,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -251,16 +251,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF FirstID > SecondID"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF FirstID > SecondID",
+        "09 THEN"
       ]
     },
     {
@@ -284,45 +276,9 @@
     {
       "id": "12",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Product[J + 1] Temp"
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR"
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
       "parts": [
         {
-          "id": "16a",
+          "id": "12a",
           "label": "(a)",
           "text": "Write program code for the procedure, TestRandom.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\nProgram code",
           "marks": 16,
@@ -333,7 +289,7 @@
           "parts": []
         },
         {
-          "id": "16b",
+          "id": "12b",
           "label": "(b)",
           "text": "Name three features of a typical IDE that would help a programmer to debug a program.\nExplain how each of these could be used in the debugging of the TestRandom procedure\nfrom part (a).\nFeature 1 ______\nExplanation ______\nFeature 2 ______\nExplanation ______\nFeature 3 ______\nExplanation ______",
           "marks": 6,
@@ -344,7 +300,7 @@
           "parts": []
         },
         {
-          "id": "16c",
+          "id": "12c",
           "label": "(c)",
           "text": "The procedure is developed and run using the call TestRandom(200). No system errors\nare produced.\nTo ensure that the procedure works correctly, you need to check the output.\nDescribe two checks you should make to suggest the program works correctly.\n5 A sports club maintains a record of the email address of each of its members. The details are\nstored in a text file, EmailDetails.txt. The format of each line of the text file is as follows:\n<MembershipNumber><EmailAddress>\n• MembershipNumber is a four-character string of numerals\n• EmailAddress is a variable-length string\nWhen members leave the club their details need to be removed from the file.\nA procedure, RemoveDetails is required. This will perform the following actions:\n1. Input the MembershipNumber of the club member to be removed\n2. Create a new file, NewEmailDetails.txt\n3. Copy all the lines from EmailDetails.txt to NewEmailDetails.txt, except the line\nwith the matching MembershipNumber\nWrite pseudocode for the procedure, RemoveDetails.\nFor the built-in functions list, refer to the Appendix on page 15.\nAppendix\nBuilt-in functions (pseudocode)\nIn each function, if the function call is not properly formed, the function returns an error.\nMODULUS(x : INTEGER, y : INTEGER) RETURNS INTEGER\nreturns the remainder when x is divided by y using integer arithmetic.\nExample: MODULUS(5, 2) will return 1\nINT(x : REAL) RETURNS INTEGER\nreturns the integer part of x.\nExample: INT(27.5415) returns 27\nLENGTH(ThisString : STRING) RETURNS INTEGER\nreturns the integer value representing the length of string ThisString.\nExample: LENGTH(\"Happy Days\") returns 10\nLEFT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns leftmost x characters from ThisString.\nExample: LEFT(\"ABCDEFGH\", 3) returns string \"ABC\"\nRIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING\nreturns rightmost x characters from ThisString.\nExample: RIGHT(\"ABCDEFGH\", 3) returns string \"FGH\"\nTONUM(ThisString : STRING) RETURNS INTEGER\nreturns a numeric value equivalent to ThisString.\nExample: TONUM(\"1201\") returns integer value 1201\nOperators (pseudocode)\nOperator Description\nConcatenates (joins) two strings.\nExample: \"Summer\" & \" \" & \"Pudding\" produces \"Summer Pudding\"\nPerforms a logical AND on two Boolean values.\nAND\nExample: TRUE AND FALSE produces FALSE\nPerforms a logical OR on two Boolean values.\nOR\nExample: TRUE OR FALSE produces TRUE\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 2,
@@ -357,7 +313,11 @@
       ],
       "marks": 8,
       "text": [
-        "ENDPROCEDURE",
+        "Product[J + 1] Temp",
+        "13 ENDFOR",
+        "14 ENDIF",
+        "15 ENDFOR",
+        "16 ENDPROCEDURE",
         "The pseudocode on page 8 contains a number of errors. Complete the following table to show:",
         "• the line number of the error",
         "• the error itself",

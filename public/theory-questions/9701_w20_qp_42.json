@@ -3,7 +3,7 @@
   "subjectCode": "9701",
   "session": "w20",
   "component": "42",
-  "totalMarks": 85,
+  "totalMarks": 100,
   "questionCount": 7,
   "questions": [
     {
@@ -47,37 +47,50 @@
         {
           "id": "1b",
           "label": "(b)",
-          "text": "Three separate experiments were carried out at 400K with different starting concentrations of\nH (g) and I (g). The results are shown in the table.\n2 2\nrate of reaction\n–3 –3\nexperiment [H (g)]/moldm [I (g)]/moldm\n2 –3 –1\n/moldm s\n–2 –2 –17\n1 1.0 × 10 1.0 × 10 2.0 × 10\n–1 –1 –15",
+          "text": "Three separate experiments were carried out at 400K with different starting concentrations of\nH (g) and I (g). The results are shown in the table.\n2 2\nrate of reaction\n–3 –3\nexperiment [H (g)]/moldm [I (g)]/moldm\n2 –3 –1\n/moldm s\n–2 –2 –17\n1 1.0 × 10 1.0 × 10 2.0 × 10\n–1 –1 –15\n2 1.0 × 10 1.0 × 10 2.0 × 10\n–1 –1 –14\n3 5.0 × 10 5.0 × 10 5.0 × 10",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 3,
-      "text": [
-        "The rate of the reaction H (g) + I (g) 2HI(g) is studied.",
-        "2 2"
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1.0 × 10 1.0 × 10 2.0 × 10",
-        "–1 –1 –14"
-      ]
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "1bi",
+              "label": "(i)",
+              "text": "Use the data, and the order of reaction with respect to H (g) given in (a)(ii), to deduce the\norder of reaction with respect to I (g).\nExplain your answer, giving data in support of your explanation.",
+              "marks": 3,
+              "type": "explain",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1bii",
+              "label": "(ii)",
+              "text": "Use information from (a)(ii) and your answer to (b)(i) to write the rate equation for the\nforward reaction.\nrate = ______",
+              "marks": 1,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1biii",
+              "label": "(iii)",
+              "text": "Use your rate equation and data from experiment 1 to calculate the value of the rate\nconstant, k, for the forward reaction at 400K. Include units for k.\nk = ______ units = ______",
+              "marks": 2,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "3c",
+          "id": "1c",
           "label": "(c)",
           "text": "At 400K the rate constant for the forward reaction is approximately 1000 times greater than\nthe rate constant for the backward reaction. The overall orders of the forward and backward\nreactions are the same.\nforward reaction H (g) + I (g) → 2HI(g)\n2 2\nbackward reaction 2HI(g) → H (g) + I (g)\n2 2",
           "marks": null,
@@ -87,7 +100,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "1ci",
               "label": "(i)",
               "text": "Use this information to explain what will happen if equal concentrations of HI(g), H (g) and\nI (g) are mixed at 400K.\nYou should comment on:",
               "marks": 1,
@@ -98,9 +111,9 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "1cii",
               "label": "(ii)",
-              "text": "At 700K the rate constant for the forward reaction is approximately 50 times greater than\nthe rate constant for the backward reaction.\nUse this information and the information in (c)(i) to deduce the signs of the ∆H values of\nthe forward and backward reactions. Explain your answer.\n2 (a) Write an expression for the K of the weak acid HA in terms of the concentrations of the species\ninvolved.\nK =\n+ –3 –3",
+              "text": "At 700K the rate constant for the forward reaction is approximately 50 times greater than\nthe rate constant for the backward reaction.\nUse this information and the information in (c)(i) to deduce the signs of the ∆H values of\nthe forward and backward reactions. Explain your answer.",
               "marks": 2,
               "type": "explain",
               "answerType": "long_answer",
@@ -109,9 +122,31 @@
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "The rate of the reaction H (g) + I (g) 2HI(g) is studied.",
+        "2 2"
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
+        {
+          "id": "2a",
+          "label": "(a)",
+          "text": "Write an expression for the K of the weak acid HA in terms of the concentrations of the species\ninvolved.\nK =\n+ –3 –3",
+          "marks": 1,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
-          "id": "3b",
+          "id": "2b",
           "label": "(b)",
           "text": "The hydroxylammonium ion, HONH , is a weak acid. A 1.00 × 10 moldm solution of\nhydroxylammonium ions has a pH of 4.41.",
           "marks": null,
@@ -121,7 +156,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "3bi",
+              "id": "2bi",
               "label": "(i)",
               "text": "Calculate the K of HONH .\na 3\nK = ______",
               "marks": 2,
@@ -132,7 +167,7 @@
               "parts": []
             },
             {
-              "id": "3bii",
+              "id": "2bii",
               "label": "(ii)",
               "text": "Calculate the pK of HONH .\na 3\npK = ______ \n–11 3 –9",
               "marks": 1,
@@ -145,17 +180,36 @@
           ]
         },
         {
-          "id": "3c",
+          "id": "2c",
           "label": "(c)",
-          "text": "The solubility product of manganese(II) hydroxide, Mn(OH) , in water is 1.1 × 10 mol dm at\n298K.\nCalculate the solubility of Mn(OH) in water at 298K.\n–3\nsolubility = ______ moldm \n3 (a) The energy cycle shown can be used, along with suitable data, to calculate the enthalpy\n2+\nchange of hydration of Ca (g).\nEach arrow indicates a transformation, W, X, Y and Z. Each transformation consists of one or\nmore steps.\n2+ –\nCa (g) + 2Cl (g)\nCa(s) + Cl (g)\nCaCl (s)\nCaCl (aq)\nThe following data and data from the Data Booklet should be used.\n–1\nelectron affinity of Cl(g) = –349kJmol\n–1\nenthalpy change of atomisation of Ca(s) = +193kJmol\n–1\nenthalpy change of formation of CaCl (s) = –795kJmol\n–1\nenthalpy change of solution of CaCl (s) = –83kJmol\n– –1\nenthalpy change of hydration of Cl (g) = –364kJmol",
+          "text": "The solubility product of manganese(II) hydroxide, Mn(OH) , in water is 1.1 × 10 mol dm at\n298K.\nCalculate the solubility of Mn(OH) in water at 298K.\n–3\nsolubility = ______ moldm",
           "marks": 2,
           "type": "calculate",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "The energy cycle shown can be used, along with suitable data, to calculate the enthalpy\n2+\nchange of hydration of Ca (g).\nEach arrow indicates a transformation, W, X, Y and Z. Each transformation consists of one or\nmore steps.\n2+ –\nCa (g) + 2Cl (g)\nCa(s) + Cl (g)\nCaCl (s)\nCaCl (aq)\nThe following data and data from the Data Booklet should be used.\n–1\nelectron affinity of Cl(g) = –349kJmol\n–1\nenthalpy change of atomisation of Ca(s) = +193kJmol\n–1\nenthalpy change of formation of CaCl (s) = –795kJmol\n–1\nenthalpy change of solution of CaCl (s) = –83kJmol\n– –1\nenthalpy change of hydration of Cl (g) = –364kJmol",
+          "marks": null,
+          "type": "calculate",
+          "answerType": "calculate",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
           "parts": [
             {
-              "id": "3ci",
+              "id": "3ai",
               "label": "(i)",
               "text": "Calculate the value of the enthalpy change corresponding to transformation W.\nShow your working.\n–1\nenthalpy change W = ______ kJ mol",
               "marks": 2,
@@ -166,7 +220,7 @@
               "parts": []
             },
             {
-              "id": "3cii",
+              "id": "3aii",
               "label": "(ii)",
               "text": "Use your answer to (a)(i) and other data to calculate the value of the enthalpy change\ncorresponding to transformation Z.\n–1\nenthalpy change Z = ______ kJmol \n2+",
               "marks": 2,
@@ -177,7 +231,7 @@
               "parts": []
             },
             {
-              "id": "3ciii",
+              "id": "3aiii",
               "label": "(iii)",
               "text": "Use your answer to (a)(ii) to calculate the enthalpy change of hydration of Ca (g).\n2+ –1\nenthalpy change of hydration of Ca (g) = ______ kJmol",
               "marks": 2,
@@ -188,7 +242,7 @@
               "parts": []
             },
             {
-              "id": "3civ",
+              "id": "3aiv",
               "label": "(iv)",
               "text": "Write an expression, in terms of W, X, Y and/or Z, to show how the enthalpy changes of\ntwo of the transformations can be used to calculate the lattice energy of CaCl (s).\nlattice energy of CaCl (s) = ______",
               "marks": 1,
@@ -199,7 +253,7 @@
               "parts": []
             },
             {
-              "id": "3cv",
+              "id": "3av",
               "label": "(v)",
               "text": "State whether the lattice energy of CaCl (s) is more or less exothermic than the lattice\nenergy of MgF (s).\nExplain your answer.",
               "marks": 1,
@@ -247,9 +301,7 @@
         }
       ],
       "marks": 13,
-      "text": [
-        "5.0 × 10 5.0 × 10 5.0 × 10"
-      ]
+      "text": []
     },
     {
       "id": "4",
@@ -577,10 +629,10 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "Ethanoic acid, CH CO2H and trichloroethanoic acid, CCl CO2H, are both carboxylic acids.\n3 3\nEthanoic acid can be used to make ethanamide, CH CONH .\n3 2\nPlace these three compounds in order of acidity, starting with the least acidic.\nExplain your answer.\n______ < ______ < ______\nleast acidic most acidic\nH, and ethanedioic acid, HO CCO H, are two other carboxylic acids.",
+          "text": "Ethanoic acid, CH CO2H and trichloroethanoic acid, CCl CO2H, are both carboxylic acids.\n3 3\nEthanoic acid can be used to make ethanamide, CH CONH .\n3 2\nPlace these three compounds in order of acidity, starting with the least acidic.\nExplain your answer.\nleast acidic most acidic\nH, and ethanedioic acid, HO CCO H, are two other carboxylic acids.",
           "marks": 3,
           "type": "explain",
-          "answerType": "fill_blank",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -866,10 +918,10 @@
         {
           "id": "7d",
           "label": "(d)",
-          "text": "Describe the relative basicities of ammonia, ethylamine and phenylamine, starting with the\nleast basic.\nExplain your answer in terms of their structures.\n______ < ______ < ______\nleast basic most basic",
+          "text": "Describe the relative basicities of ammonia, ethylamine and phenylamine, starting with the\nleast basic.\nExplain your answer in terms of their structures.\nleast basic most basic",
           "marks": 3,
           "type": "describe",
-          "answerType": "fill_blank",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []

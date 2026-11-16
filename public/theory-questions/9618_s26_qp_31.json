@@ -4,7 +4,7 @@
   "session": "s26",
   "component": "31",
   "totalMarks": 75,
-  "questionCount": 24,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -416,8 +416,42 @@
     {
       "id": "11",
       "context": [],
-      "parts": [],
-      "marks": null,
+      "parts": [
+        {
+          "id": "11a",
+          "label": "(a)",
+          "text": "Betty is a customer who owns a large TV and wants a Blu‑ray player.\nWrite additional facts to represent this information.\n© Cambridge University Press & Assessment 2026 9618/31/M/J/26\nTrace ID: PC-503B1E93F4\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/31 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/31 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000015 * DFD",
+          "marks": 3,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11b",
+          "label": "(b)",
+          "text": "Using the variable Owner, the goal:\nowns(media_player, Owner)\nreturns\nOwner = petrov, allan\nWrite the result of using the goal:\nowns(projector, Owner)\nOwner = ______",
+          "marks": 1,
+          "type": "write",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "11c",
+          "label": "(c)",
+          "text": "D may be available for A to buy if D is a device and A is a customer and A does not own\nthat device.\nWrite this as a rule:\nmay_buy_device(D, A)\nIF ______\n© Cambridge University Press & Assessment 2026 9618/31/M/J/26\nTrace ID: PC-503B1E93F4\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/31 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/31 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (Cambridge University Press & Assessment) to trace copyright holders, but if any items requiring clearance\nhave unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in our Copyright\nAcknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live\nexamination series.\nCambridge International Education is the name of our awarding body and a part of Cambridge University Press & Assessment, which is a department of the\nUniversity of Cambridge.\n© Cambridge University Press & Assessment 2026 9618/31/M/J/26\nTrace ID: PC-503B1E93F4\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/31 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/31 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/",
+          "marks": 4,
+          "type": "name",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 8,
       "text": [
         "A declarative programming language is used to show which home cinema devices customers",
         "already have and which devices they want.",
@@ -431,158 +465,20 @@
         "08 device(centre_speaker).",
         "09 device(surround_speakers).",
         "10 customer(petrov).",
-        "11 customer(margaret)."
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "customer(steffan)."
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "customer(susan)."
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "customer(allan)."
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "customer(sammy)."
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "owns(projector, petrov)."
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "owns(media_player, petrov)."
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "owns(projector, susan)."
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "owns(projector, sammy)."
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "owns(media_player, allan)."
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "owns(bluray_player, steffan)."
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "wants(main_speakers, margaret)."
-      ]
-    },
-    {
-      "id": "23",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "wants(surround_speakers, susan)."
-      ]
-    },
-    {
-      "id": "24",
-      "context": [],
-      "parts": [
-        {
-          "id": "24a",
-          "label": "(a)",
-          "text": "Betty is a customer who owns a large TV and wants a Blu‑ray player.\nWrite additional facts to represent this information.\n© Cambridge University Press & Assessment 2026 9618/31/M/J/26\nTrace ID: PC-503B1E93F4\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/31 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/31 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000015 * DFD",
-          "marks": 3,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "24b",
-          "label": "(b)",
-          "text": "Using the variable Owner, the goal:\nowns(media_player, Owner)\nreturns\nOwner = petrov, allan\nWrite the result of using the goal:\nowns(projector, Owner)\nOwner = ______",
-          "marks": 1,
-          "type": "write",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "24c",
-          "label": "(c)",
-          "text": "D may be available for A to buy if D is a device and A is a customer and A does not own\nthat device.\nWrite this as a rule:\nmay_buy_device(D, A)\nIF ______\n© Cambridge University Press & Assessment 2026 9618/31/M/J/26\nTrace ID: PC-503B1E93F4\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/31 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/31 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000016 * DFD\nreasonable effort has been made by the publisher (Cambridge University Press & Assessment) to trace copyright holders, but if any items requiring clearance\nhave unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in our Copyright\nAcknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live\nexamination series.\nCambridge International Education is the name of our awarding body and a part of Cambridge University Press & Assessment, which is a department of the\nUniversity of Cambridge.\n© Cambridge University Press & Assessment 2026 9618/31/M/J/26\nTrace ID: PC-503B1E93F4\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/31 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/31 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/",
-          "marks": 4,
-          "type": "name",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 8,
-      "text": [
-        "wants(medium_tv, steffan).",
+        "11 customer(margaret).",
+        "12 customer(steffan).",
+        "13 customer(susan).",
+        "14 customer(allan).",
+        "15 customer(sammy).",
+        "16 owns(projector, petrov).",
+        "17 owns(media_player, petrov).",
+        "18 owns(projector, susan).",
+        "19 owns(projector, sammy).",
+        "20 owns(media_player, allan).",
+        "21 owns(bluray_player, steffan).",
+        "22 wants(main_speakers, margaret).",
+        "23 wants(surround_speakers, susan).",
+        "24 wants(medium_tv, steffan).",
         "These facts (clauses) have the meanings:",
         "fact meaning",
         "01 A projector is a device.",

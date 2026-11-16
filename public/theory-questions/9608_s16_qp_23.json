@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s16",
   "component": "23",
-  "totalMarks": 6,
+  "totalMarks": 16,
   "questionCount": 6,
   "questions": [
     {
@@ -55,16 +55,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "DegF = INT(DegF)"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "DegF = INT(DegF)",
+        "4 ENDIF"
       ]
     },
     {
@@ -105,7 +97,7 @@
         {
           "id": "6a",
           "label": "(a)",
-          "text": "The first attempt at writing the pseudocode for this function is shown below.\nComplete the pseudocode.\nFor the built-in functions list, refer to the Appendix on the last page.\nFUNCTION Decrypt(______ , ______) RETURNS CHAR\nDECLARE Found : ______\nDECLARE ______ : INTEGER\nDECLARE OriginalChar : CHAR\nIndex 1 // ______\nFound FALSE\n//search for CipherChar in Lookup:\nWHILE ______\n//compare CipherChar with this array element:\nIF ______\nTHEN\n______//Set the flag\nELSE\nIndex ______//Move to next array element\nENDIF\nENDWHILE\n//dropped out of loop so must have found CipherChar:\n______//convert Index to original character\nRETURN ______\nENDFUNCTION\nQuestion 3 continues on page 8.",
+          "text": "The first attempt at writing the pseudocode for this function is shown below.\nComplete the pseudocode.\nFor the built-in functions list, refer to the Appendix on the last page.\nFUNCTION Decrypt(______ , ______) RETURNS CHAR\nDECLARE Found : ______\nDECLARE ______ : INTEGER\nDECLARE OriginalChar : CHAR\nIndex 1 // ______\nFound FALSE\n//search for CipherChar in Lookup:\nWHILE ______\n//compare CipherChar with this array element:\nIF ______\nTHEN\nELSE\nIndex ______//Move to next array element\nENDIF\nENDWHILE\n//dropped out of loop so must have found CipherChar:\nRETURN ______\nENDFUNCTION\nQuestion 3 continues on page 8.",
           "marks": 11,
           "type": "compare",
           "answerType": "fill_blank",
@@ -195,14 +187,24 @@
         {
           "id": "6b",
           "label": "(b)",
-          "text": "Claudia needs to output a list of all the CDs in a particular location.\nShe designs a procedure, OutputLocationList, to do this. She also chooses the following\nidentifiers:\nIdentifier Data type\nCDTitle STRING\nCDArtist STRING\nCDLocation STRING\nThe procedure will:\n• prompt for the name of the location\n• input the location (such as “Rack3-23”)\n• search the file for all CDs at this location\n• output the title and artist of each CD found\n• output the total number of CDs found at that location (such as “17 CDs found”)\nWrite program code for the procedure OutputLocationList.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______\n6 A string-handling function has been developed.\nFor the built-in functions list, refer to the Appendix on the last page.\nThe pseudocode for this function is shown below.\nFUNCTION SF(ThisString : STRING) RETURNS STRING\nDECLARE x : CHAR\nDECLARE NewString : STRING\nDECLARE Flag : BOOLEAN\nDECLARE m, n : INTEGER\nFlag TRUE\nNewString \"\"\nm LENGTH(ThisString)\nFOR n 1 TO m\nIF Flag = TRUE\nTHEN\nx UCASE(MID(ThisString, n, 1))\nFlag FALSE\nELSE\nx LCASE(MID(ThisString, n, 1))\nENDIF\nNewString NewString & x\nIF x = \" \"\nTHEN\nFlag TRUE\nENDIF\nENDFOR\nRETURN NewString\nENDFUNCTION",
+          "text": "Claudia needs to output a list of all the CDs in a particular location.\nShe designs a procedure, OutputLocationList, to do this. She also chooses the following\nidentifiers:\nIdentifier Data type\nCDTitle STRING\nCDArtist STRING\nCDLocation STRING\nThe procedure will:\n• prompt for the name of the location\n• input the location (such as “Rack3-23”)\n• search the file for all CDs at this location\n• output the title and artist of each CD found\n• output the total number of CDs found at that location (such as “17 CDs found”)\nWrite program code for the procedure OutputLocationList.\nVisual Basic and Pascal: You should include the declaration statements for variables.\nPython: You should show a comment statement for each variable used with its data type.\nProgramming language ______",
           "marks": 10,
           "type": "name",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "UNTIL x = 5"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
           "id": "6a",
           "label": "(a)",
@@ -272,9 +274,35 @@
           ]
         }
       ],
-      "marks": 6,
+      "marks": 10,
       "text": [
-        "UNTIL x = 5"
+        "A string-handling function has been developed.",
+        "For the built-in functions list, refer to the Appendix on the last page.",
+        "The pseudocode for this function is shown below.",
+        "FUNCTION SF(ThisString : STRING) RETURNS STRING",
+        "DECLARE x : CHAR",
+        "DECLARE NewString : STRING",
+        "DECLARE Flag : BOOLEAN",
+        "DECLARE m, n : INTEGER",
+        "Flag TRUE",
+        "NewString \"\"",
+        "m LENGTH(ThisString)",
+        "FOR n 1 TO m",
+        "IF Flag = TRUE",
+        "THEN",
+        "x UCASE(MID(ThisString, n, 1))",
+        "Flag FALSE",
+        "ELSE",
+        "x LCASE(MID(ThisString, n, 1))",
+        "ENDIF",
+        "NewString NewString & x",
+        "IF x = \" \"",
+        "THEN",
+        "Flag TRUE",
+        "ENDIF",
+        "ENDFOR",
+        "RETURN NewString",
+        "ENDFUNCTION"
       ]
     }
   ]

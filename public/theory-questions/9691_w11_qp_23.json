@@ -3,7 +3,7 @@
   "subjectCode": "9691",
   "session": "w11",
   "component": "23",
-  "totalMarks": 67,
+  "totalMarks": 75,
   "questionCount": 3,
   "questions": [
     {
@@ -157,30 +157,29 @@
             {
               "id": "1gi",
               "label": "(i)",
-              "text": "Name the other two types.",
-              "marks": null,
+              "text": "Name the other two types.\n2",
+              "marks": 2,
               "type": "name",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "1gii",
+              "label": "(ii)",
+              "text": "Andre has written the Sales module, which now needs testing.\n• InvoiceNumber has the format yy-nnnn e.g. 11-0035 is the 35th invoice of the\nyear 2011\n• PromotionCode can be 'gold', 'silver' or 'bronze' only\nGive six different items of test data, other than invalid data, which thoroughly test\nthe two rules given above. Give a reason for each choice.\nInvoiceNumber PromotionCode Reason\n130092 Invalid data for InvoiceNumber\nglod Invalid data for PromotionCode",
+              "marks": 6,
+              "type": "give",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
             }
           ]
-        }
-      ],
-      "marks": 14,
-      "text": [
-        "Nathan is designing a software solution for stock control in a computer shop. He has a",
-        "colleague, called Andre, who will help him write the program. Nathan decides to Examiner's",
-        "modularise the solution."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "2h",
+          "id": "1h",
           "label": "(h)",
           "text": "",
           "marks": null,
@@ -190,7 +189,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2hi",
+              "id": "1hi",
               "label": "(i)",
               "text": "Write a Boolean expression to validate PromotionCode.",
               "marks": 2,
@@ -201,7 +200,7 @@
               "parts": []
             },
             {
-              "id": "2hii",
+              "id": "1hii",
               "label": "(ii)",
               "text": "Describe the problems that could occur if PromotionCode is not validated.",
               "marks": 2,
@@ -212,9 +211,9 @@
               "parts": []
             },
             {
-              "id": "2hiii",
+              "id": "1hiii",
               "label": "(iii)",
-              "text": "Design a screen which lets the user choose which type of sales report they would\nlike to view.\n2 Ahmed is writing a program to record the data of members of the school hockey club.\nThe input data will be validated. One input will be the playing position of each member. Is Examiner's\nhe/she a forward, defender or goalkeeper? These will be entered as F, D or G.\nThe flowchart for the validation of the playing position is shown below.\nINPUT Position\nYes\nPosition=‘F’?\nNo\nYes\nPosition=‘D’?\nNo\nYes\nOUTPUT ‘Valid\nPosition=‘G’?\ndata entered’\nNo\nOUTPUT ‘Invalid\ndata. Try again’",
+              "text": "Design a screen which lets the user choose which type of sales report they would\nlike to view.",
               "marks": 2,
               "type": "design",
               "answerType": "long_answer",
@@ -223,7 +222,19 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 28,
+      "text": [
+        "Nathan is designing a software solution for stock control in a computer shop. He has a",
+        "colleague, called Andre, who will help him write the program. Nathan decides to Examiner's",
+        "modularise the solution."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
           "id": "2a",
           "label": "(a)",
@@ -370,9 +381,26 @@
           "parts": []
         }
       ],
-      "marks": 37,
+      "marks": 31,
       "text": [
-        "[2]"
+        "Ahmed is writing a program to record the data of members of the school hockey club.",
+        "The input data will be validated. One input will be the playing position of each member. Is Examiner's",
+        "he/she a forward, defender or goalkeeper? These will be entered as F, D or G.",
+        "The flowchart for the validation of the playing position is shown below.",
+        "INPUT Position",
+        "Yes",
+        "Position=‘F’?",
+        "No",
+        "Yes",
+        "Position=‘D’?",
+        "No",
+        "Yes",
+        "OUTPUT ‘Valid",
+        "Position=‘G’?",
+        "data entered’",
+        "No",
+        "OUTPUT ‘Invalid",
+        "data. Try again’"
       ]
     },
     {

@@ -4,7 +4,7 @@
   "session": "w21",
   "component": "22",
   "totalMarks": 45,
-  "questionCount": 22,
+  "questionCount": 9,
   "questions": [
     {
       "id": "1",
@@ -170,126 +170,9 @@
     {
       "id": "9",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF Operator"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "1: Answer Value1 + Value2"
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "2: Answer Value1 - Value2"
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "3: Answer Value1 * Value2"
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "4: Answer Value1 / Value2"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDCASE"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"The answer is \", Value1"
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"Do you wish to enter more values (Yes or No)?\""
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "INPUT MoreValues"
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF MoreValues = \"No\""
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Continue 1"
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
       "parts": [
         {
-          "id": "22a",
+          "id": "9a",
           "label": "(a)",
           "text": "Find the five errors in the pseudocode and suggest a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______\nError 5 ______\nCorrection ______",
           "marks": 5,
@@ -300,7 +183,7 @@
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "9b",
           "label": "(b)",
           "text": "The algorithm needs changing to allow only the numbers 1, 2, 3, or 4 to be entered for the\ninput variable Operator.\nWrite the pseudocode to perform this task and state where in the algorithm it would be\nlocated.\nPseudocode ______\nLocation in algorithm ______\n5 The flowchart represents an algorithm.\nThe algorithm will terminate if –1 is entered at the List input.\nSTART\nList1 ← 0\nList2 ← 0\nINPUT\nList\nIS\nYes\nList = –1 ?\nNo\nINPUT\nValue\nYes\nIS\nList1 ← List1 + Value\nList = 1 ?\nNo\nIS Yes\nList2 ← List2 + Value\nList = 2 ?\nOUTPUT\n\"List 1 = \", List1\nNo\nOUTPUT\nOUTPUT\n\"Input Error\"\n\"List 2 = \", List2\nIS\nYes\nList1 > List2 ?\nNo\nOUTPUT\n\"List 1 is greatest\"\nOUTPUT\n\"List 2 is greatest\"\nEND\nComplete the trace table for the algorithm using this input data:\n2, 77, 2, 16, 1, 35, 2, –7, 5, 18, 1, 11, 1, 12, 2, 20, –1, 18\nList Value List1 List2\nOUTPUT\n6 A pet supplier uses the database table, STOCK, to keep records of its products for pets.\nThe fields are:\nField name Description\nProductID code to identify the product\nProductName name of product\nProductDescription information about the product\nAnimal type of animal the product is for, e.g. cat, bird, horse\nProductType type of product, e.g. food, toy, medicine\nInStock whether the product is in stock or not",
           "marks": 5,
@@ -311,7 +194,7 @@
           "parts": []
         },
         {
-          "id": "22a",
+          "id": "9a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -321,7 +204,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "22ai",
+              "id": "9ai",
               "label": "(i)",
               "text": "Identify the field that could have a Boolean data type.",
               "marks": 1,
@@ -332,7 +215,7 @@
               "parts": []
             },
             {
-              "id": "22aii",
+              "id": "9aii",
               "label": "(ii)",
               "text": "Identify the field that should be used as the primary key.",
               "marks": 1,
@@ -345,7 +228,7 @@
           ]
         },
         {
-          "id": "22b",
+          "id": "9b",
           "label": "(b)",
           "text": "Complete the query-by-example grid to output the products intended for a cat that are in\nstock. Display only the primary key and the name of the products. The output should be\nsorted by the primary key.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 4,
@@ -358,7 +241,20 @@
       ],
       "marks": 16,
       "text": [
-        "UNTIL Continue = 0"
+        "IF Operator",
+        "10 1: Answer Value1 + Value2",
+        "11 2: Answer Value1 - Value2",
+        "12 3: Answer Value1 * Value2",
+        "13 4: Answer Value1 / Value2",
+        "14 ENDCASE",
+        "15 OUTPUT \"The answer is \", Value1",
+        "16 OUTPUT \"Do you wish to enter more values (Yes or No)?\"",
+        "17 INPUT MoreValues",
+        "18 IF MoreValues = \"No\"",
+        "19 THEN",
+        "20 Continue 1",
+        "21 ENDIF",
+        "22 UNTIL Continue = 0"
       ]
     }
   ]

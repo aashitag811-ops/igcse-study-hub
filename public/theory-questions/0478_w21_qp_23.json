@@ -97,18 +97,9 @@
     {
       "id": "4",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Counter Counter − 2"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "4a",
           "label": "(a)",
           "text": "Find the four errors in the pseudocode and write a correction for each error.\nError 1 ______\nCorrection ______\nError 2 ______\nCorrection ______\nError 3 ______\nCorrection ______\nError 4 ______\nCorrection ______",
           "marks": 4,
@@ -119,7 +110,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "The pseudocode for this algorithm could be shortened by the use of a FOR … NEXT loop.\nRewrite the algorithm using a FOR … NEXT loop.\n3 A program has been written to check the length and content of a password. The password must be\neight or more characters long and contain at least one special character, for example, Secret!*!",
           "marks": 3,
@@ -130,7 +121,7 @@
           "parts": []
         },
         {
-          "id": "5a",
+          "id": "4a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -140,7 +131,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5ai",
+              "id": "4ai",
               "label": "(i)",
               "text": "State suitable examples of normal and erroneous test data that could be used to test this\nprogram. For each example give the reason for your choice of test data.\nNormal test data example ______\nReason ______\nErroneous test data example ______\nReason ______",
               "marks": 4,
@@ -151,7 +142,7 @@
               "parts": []
             },
             {
-              "id": "5aii",
+              "id": "4aii",
               "label": "(ii)",
               "text": "Explain why two pieces of boundary test data are required for this program.\nGive an example of each piece of boundary test data.",
               "marks": 3,
@@ -164,16 +155,27 @@
           ]
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
-          "text": "Describe two methods of verification that could be used to verify this data as it is input.\nMethod 1 ______\nMethod 2 ______\n4 The algorithm, shown by this flowchart, allows the input of examination marks for a class of\nstudents. A mark of 999 ends the process. If a mark is 40 or over then a pass grade is awarded.\nThe number of pass grades is calculated for the whole class. If this is under 50% of the class, the\nclass is offered extra help.\nSTART\nCounter 0\nPass 0\nINPUT\nMark\nIS\nYes\nMark = 999 ? Help Pass / Counter\nNo\nIS\nYes\nOUTPUT\nCounter Counter + 1\nHelp < 0.5 ?\n\"Extra Help\"\nNo\nIS\nYes\nPass Pass + 1 Mark >= 40 ?\nEND\nNo\nComplete a trace table for the algorithm using this input data:\n88, 24, 60, 30, 44, 17, 25, 22, 54, 6, 999, −1\nCounter Pass Mark Help\nOUTPUT\n5 A database table, COMPUTER, is used to keep a record of computers available for sale.\nThe following data is stored for each computer:\n• CATEGORY – desktop, laptop or tablet\n• WEIGHT – weight in kilograms\n• MANUFACTURER – ICN, Linoldo, Pear or JoeSing\n• PRICE – price in $\n• CODE – a unique code allocated by the manufacturer, e.g. P771\n• STOCK – quantity in stock.\nA database management system uses these data types:\nText Number Currency Boolean\nThe CATEGORY field and MANUFACTURER field have a data type of text.",
+          "text": "Describe two methods of verification that could be used to verify this data as it is input.\nMethod 1 ______\nMethod 2 ______\n4 The algorithm, shown by this flowchart, allows the input of examination marks for a class of\nstudents. A mark of 999 ends the process. If a mark is 40 or over then a pass grade is awarded.\nThe number of pass grades is calculated for the whole class. If this is under 50% of the class, the\nclass is offered extra help.\nSTART\nCounter 0\nPass 0\nINPUT\nMark\nIS\nYes\nMark = 999 ? Help Pass / Counter\nNo\nIS\nYes\nOUTPUT\nCounter Counter + 1\nHelp < 0.5 ?\n\"Extra Help\"\nNo\nIS\nYes\nPass Pass + 1 Mark >= 40 ?\nEND\nNo\nComplete a trace table for the algorithm using this input data:\n88, 24, 60, 30, 44, 17, 25, 22, 54, 6, 999, −1\nCounter Pass Mark Help\nOUTPUT",
           "marks": 4,
           "type": "describe",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "Counter Counter − 2",
+        "5 ENDWHILE"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
           "id": "5a",
           "label": "(a)",
@@ -197,9 +199,19 @@
           "parts": []
         }
       ],
-      "marks": 25,
+      "marks": 7,
       "text": [
-        "ENDWHILE"
+        "A database table, COMPUTER, is used to keep a record of computers available for sale.",
+        "The following data is stored for each computer:",
+        "• CATEGORY – desktop, laptop or tablet",
+        "• WEIGHT – weight in kilograms",
+        "• MANUFACTURER – ICN, Linoldo, Pear or JoeSing",
+        "• PRICE – price in $",
+        "• CODE – a unique code allocated by the manufacturer, e.g. P771",
+        "• STOCK – quantity in stock.",
+        "A database management system uses these data types:",
+        "Text Number Currency Boolean",
+        "The CATEGORY field and MANUFACTURER field have a data type of text."
       ]
     }
   ]

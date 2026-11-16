@@ -3,7 +3,7 @@
   "subjectCode": "0478",
   "session": "m17",
   "component": "22",
-  "totalMarks": 24,
+  "totalMarks": 30,
   "questionCount": 8,
   "questions": [
     {
@@ -140,25 +140,9 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Num18 = Num18 + Age"
-      ]
-    },
-    {
-      "id": "06",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDWHILE"
+        "Num18 = Num18 + Age",
+        "06 ENDIF",
+        "07 ENDWHILE"
       ]
     },
     {
@@ -168,32 +152,10 @@
         {
           "id": "08b",
           "label": "(b)",
-          "text": "Explain the differences between a WHILE … DO … ENDWHILE and a REPEAT … UNTIL\nloop.\n6 A database table, DEVICE, has been set up to record the electronic equipment used in a small\nbusiness.\nDevice ID Device Type User Purchase Purchase Portable\nDate Price ($)\n3 Desktop Alan Swales 14/02/2017 1350.00 N\n4 Laptop Chantel Law 01/02/2016 1460.00 Y\n5 Tablet Abdula Saud 31/12/2016 1000.00 Y\n6 Desktop Abdula Saud 14/03/2017 1000.00 N\n7 Laptop Alan Swales 15/03/2016 1700.00 Y\n8 Tablet Taona Jaji 16/12/2016 470.00 Y",
+          "text": "Explain the differences between a WHILE … DO … ENDWHILE and a REPEAT … UNTIL\nloop.\n6 A database table, DEVICE, has been set up to record the electronic equipment used in a small\nbusiness.\nDevice ID Device Type User Purchase Purchase Portable\nDate Price ($)\n3 Desktop Alan Swales 14/02/2017 1350.00 N\n4 Laptop Chantel Law 01/02/2016 1460.00 Y\n5 Tablet Abdula Saud 31/12/2016 1000.00 Y\n6 Desktop Abdula Saud 14/03/2017 1000.00 N",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "08a",
-          "label": "(a)",
-          "text": "The query-by-example grid below selects certain records.\nField: User Portable Purchase Price ($)\nTable: DEVICE DEVICE DEVICE\nSort: Ascending\nShow: 3\nCriteria: Y >1000\nor:\nShow what would be the output from the query-by-example.",
-          "marks": 2,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "08b",
-          "label": "(b)",
-          "text": "Complete the query-by-example grid below to select all Desktop devices that were either\npurchased before 31/12/2016 or cost under $1000. Only show the Device ID and Device\nType.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
-          "marks": 4,
-          "type": "name",
-          "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -250,6 +212,47 @@
         "Num ← Num * Counter",
         "A[Counter] ← Num",
         "NEXT"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "Laptop Alan Swales 15/03/2016 1700.00 Y"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "The query-by-example grid below selects certain records.\nField: User Portable Purchase Price ($)\nTable: DEVICE DEVICE DEVICE\nSort: Ascending\nShow: 3\nCriteria: Y >1000\nor:\nShow what would be the output from the query-by-example.",
+          "marks": 2,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "Complete the query-by-example grid below to select all Desktop devices that were either\npurchased before 31/12/2016 or cost under $1000. Only show the Device ID and Device\nType.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+          "marks": 4,
+          "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Tablet Taona Jaji 16/12/2016 470.00 Y"
       ]
     }
   ]

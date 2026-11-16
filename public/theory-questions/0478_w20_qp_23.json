@@ -4,7 +4,7 @@
   "session": "w20",
   "component": "23",
   "totalMarks": 46,
-  "questionCount": 22,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -96,16 +96,8 @@
         "An engineer is called if there are more than 10 temperature readings below –25 degrees.",
         "An alarm sounds if there are more than 5 temperature readings above –18 degrees.",
         "01 TooHot 0",
-        "02 TooCold 1000"
-      ]
-    },
-    {
-      "id": "03",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "REPEAT"
+        "02 TooCold 1000",
+        "03 REPEAT"
       ]
     },
     {
@@ -132,16 +124,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Temperature < -25"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Temperature < -25",
+        "07 THEN"
       ]
     },
     {
@@ -150,16 +134,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "TooCold TooCold – 1"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "TooCold TooCold – 1",
+        "09 ENDIF"
       ]
     },
     {
@@ -168,114 +144,16 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Temperature > -18"
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Temperature > -18",
+        "11 THEN"
       ]
     },
     {
       "id": "12",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "TooHot TooHot + 1"
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "UNTIL TooHot > 5 OR TooCold > 10"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF TooHot < 5"
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "INPUT \"Alarm!!\""
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF TooCold > 10"
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"Call the Engineer\""
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
       "parts": [
         {
-          "id": "22a",
+          "id": "12a",
           "label": "(a)",
           "text": "Give the line number(s) from the algorithm of:\nan assignment statement ______\na loop ______\na counting statement ______\na selection statement ______",
           "marks": 4,
@@ -286,7 +164,7 @@
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "12b",
           "label": "(b)",
           "text": "Give line numbers where the four errors are to be found in the pseudocode. Suggest a\ncorrection for each error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______",
           "marks": 4,
@@ -297,7 +175,7 @@
           "parts": []
         },
         {
-          "id": "22c",
+          "id": "12c",
           "label": "(c)",
           "text": "Explain how you could extend the algorithm to count the number of times the temperature\nreadings are within the range –18 degrees to –25 degrees inclusive.\n3 Four programming concepts and five descriptions are shown.\nDraw a line to connect each Programming concept to its correct Description. Not all Descriptions\nwill be connected to a Programming concept.\nProgramming concept Description\nA subroutine that does not have to\nValidation\nreturn a value\nAn automatic check to ensure that data\ninput is reasonable and sensible\nVerification\nA subroutine that always returns\na value\nProcedure\nAn overview of a program or subroutine\nA check to ensure that data input\nFunction\nmatches the original\nQuestion 4 starts on Page 12.\n4 This flowchart represents an algorithm that allows the input of two numbers and performs a\ncalculation.\nThe predefined function MOD finds the remainder from integer division for example X 8 MOD 5\ngives X a value of 3.\nSTART\nINPUT\nY,Z\nIS Yes\nEND\nY = 0 ?\nNo\nIS Yes\nA Y MOD Z\nY > Z ?\nNo\nA Z MOD Y\nYes IS\nOUTPUT\nA = 0 ?\n\"Valid\"\nNo\nOUTPUT\n\"Invalid\"",
           "marks": 4,
@@ -308,7 +186,7 @@
           "parts": []
         },
         {
-          "id": "22a",
+          "id": "12a",
           "label": "(a)",
           "text": "Complete a trace table for this set of input data:\n11, 4, 6, 2, 3, 9, 3, 2, 2, 6, 0, 0, 1, 1\nY Z A\nOUTPUT",
           "marks": 4,
@@ -319,7 +197,7 @@
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "12b",
           "label": "(b)",
           "text": "Explain the purpose of this algorithm.\n5 A marine wildlife rescue centre uses a database table, MARINE, to keep records of its creatures.\nCreature Class Quantity Ready for release Offspring\nManta Ray Fish 3 Y N\nShort-tailed Albatross Bird 4 Y N\nEmperor Penguin Bird 50 Y Y\nBluefin Tuna Fish 2 N N\nManatee Mammal 4 Y N\nHawksbill Turtle Reptile 10 Y Y\nHammerhead Shark Fish 3 Y N\nYellow-eyed Penguin Bird 4 Y N\nKemp’s Ridley Sea Turtle Reptile 1 Y N",
           "marks": 2,
@@ -330,7 +208,7 @@
           "parts": []
         },
         {
-          "id": "22a",
+          "id": "12a",
           "label": "(a)",
           "text": "State how many fields and how many records are shown in this table.\nNumber of fields ______\nNumber of records ______",
           "marks": 2,
@@ -341,7 +219,7 @@
           "parts": []
         },
         {
-          "id": "22b",
+          "id": "12b",
           "label": "(b)",
           "text": "Show the output that would be given by this query-by-example.\nField: Creature Class Ready for release\nTable: MARINE MARINE MARINE\nSort:\nShow: 3 3\nCriteria: =\"Bird\"\nor:",
           "marks": 2,
@@ -352,7 +230,7 @@
           "parts": []
         },
         {
-          "id": "22c",
+          "id": "12c",
           "label": "(c)",
           "text": "Complete the query-by-example grid to display the creatures, in ascending order of quantity,\nthat have no offspring and are ready for release. Display only the creature field.\nField:\nTable:\nSort:\nShow:\nCriteria:\nor:\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 4,
@@ -365,7 +243,17 @@
       ],
       "marks": 26,
       "text": [
-        "ENDIF"
+        "TooHot TooHot + 1",
+        "13 ENDIF",
+        "14 UNTIL TooHot > 5 OR TooCold > 10",
+        "15 IF TooHot < 5",
+        "16 THEN",
+        "17 INPUT \"Alarm!!\"",
+        "18 ENDIF",
+        "19 IF TooCold > 10",
+        "20 THEN",
+        "21 OUTPUT \"Call the Engineer\"",
+        "22 ENDIF"
       ]
     }
   ]

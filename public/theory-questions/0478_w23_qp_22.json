@@ -4,7 +4,7 @@
   "session": "w23",
   "component": "22",
   "totalMarks": 48,
-  "questionCount": 14,
+  "questionCount": 13,
   "questions": [
     {
       "id": "1",
@@ -108,16 +108,8 @@
         "01 DECLARE City ARRAY[1:50, 1:2] OF BOOLEAN",
         "02 DECLARE Count : INTEGER",
         "03 DECLARE Out : INTEGER",
-        "04 Count 1"
-      ]
-    },
-    {
-      "id": "05",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF"
+        "04 Count 1",
+        "05 IF"
       ]
     },
     {
@@ -298,7 +290,7 @@
         {
           "id": "14d",
           "label": "(d)",
-          "text": "Complete the structured query language (SQL) to return the code and breed of all the horses\nwhose breed originated in Scotland.\n______ Code, Breed,\nFROM ______\nWHERE ______ = \"Scotland\";\n11 A wood flooring company stores the names of up to 100 customers in a one‑dimensional (1D) array\nCustomers[]. A two‑dimensional (2D) array Quotations[] stores details of each customer’s\nquotation:\n• length of room (one decimal place)\n• width of room (one decimal place)\n• area of wood required (rounded up to next whole number)\n• choice of wood index (whole number)\n• price of wood required in dollars (two decimal places).\nThe floor measurements (room length and room width) are taken in metres. All floors are rectangles\nand room measurements must be between 1.5 and 10.0 inclusive.\nThe index of any customer’s data is the same in both arrays. For example, a customer named in\nindex 4 of Customers[] corresponds to the data in index 4 of Quotations[]\nThe wood choices available are:\nIndex Wood type Price per square metre ($)\n1 Laminate 29.99\n2 Pine 39.99\n3 Oak 54.99\nThe data are stored in two 1D arrays named WoodType[] and Price[]. The index of the wood\ntype and price in their arrays share the same index number.\nWrite a program that meets the following requirements:\n• input a new customer’s name, room length and room width\n• check that each measurement is valid\n• output an error message and require the measurement to be re‑entered until it is valid\n• calculate the area of the room by multiplying together the length of the room and the width of\nthe room\n• input the choice of wood and find its price per square metre\n• calculate the price of the wood needed\n• store all data in the relevant array\n• output the customer’s quotation to include: the name of the customer, the choice of wood and\nthe calculated price of the wood required\n• continue to accept the next customer.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nYou will need to initialise WoodType[] and Price[]\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete the structured query language (SQL) to return the code and breed of all the horses\nwhose breed originated in Scotland.\nFROM ______\nWHERE ______ = \"Scotland\";\n11 A wood flooring company stores the names of up to 100 customers in a one‑dimensional (1D) array\nCustomers[]. A two‑dimensional (2D) array Quotations[] stores details of each customer’s\nquotation:\n• length of room (one decimal place)\n• width of room (one decimal place)\n• area of wood required (rounded up to next whole number)\n• choice of wood index (whole number)\n• price of wood required in dollars (two decimal places).\nThe floor measurements (room length and room width) are taken in metres. All floors are rectangles\nand room measurements must be between 1.5 and 10.0 inclusive.\nThe index of any customer’s data is the same in both arrays. For example, a customer named in\nindex 4 of Customers[] corresponds to the data in index 4 of Quotations[]\nThe wood choices available are:\nIndex Wood type Price per square metre ($)\n1 Laminate 29.99\n2 Pine 39.99\n3 Oak 54.99\nThe data are stored in two 1D arrays named WoodType[] and Price[]. The index of the wood\ntype and price in their arrays share the same index number.\nWrite a program that meets the following requirements:\n• input a new customer’s name, room length and room width\n• check that each measurement is valid\n• output an error message and require the measurement to be re‑entered until it is valid\n• calculate the area of the room by multiplying together the length of the room and the width of\nthe room\n• input the choice of wood and find its price per square metre\n• calculate the price of the wood needed\n• store all data in the relevant array\n• output the customer’s quotation to include: the name of the customer, the choice of wood and\nthe calculated price of the wood required\n• continue to accept the next customer.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nYou will need to initialise WoodType[] and Price[]\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 3,
           "type": "name",
           "answerType": "fill_blank",

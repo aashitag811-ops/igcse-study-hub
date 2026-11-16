@@ -4,7 +4,7 @@
   "session": "s17",
   "component": "32",
   "totalMarks": 70,
-  "questionCount": 12,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -562,7 +562,7 @@
             {
               "id": "6bi",
               "label": "(i)",
-              "text": "Complete the following pseudocode algorithm for the routine.\n01 ForEver ______\n02 REPEAT\n03 FOR FloorCounter 1 TO NumberOfFloors\n04 FOR SensorCounter 1 TO ______\n05 READ Sensor(SensorCounter)on Floor(FloorCounter)\n06 IF Sensor value outside range",
+              "text": "Complete the following pseudocode algorithm for the routine.\n01 ForEver ______\n02 REPEAT\n03 FOR FloorCounter 1 TO NumberOfFloors\n04 FOR SensorCounter 1 TO ______\n05 READ Sensor(SensorCounter)on Floor(FloorCounter)\n06 IF Sensor value outside range\n07 THEN",
               "marks": null,
               "type": "complete",
               "answerType": "fill_blank",
@@ -585,60 +585,11 @@
       ]
     },
     {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
       "id": "08",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT “Problem on Floor ”, FloorCounter"
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR"
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDFOR",
-        "12 //",
-        "13 // Delay loop",
-        "14 // Delay loop",
-        "15 //"
-      ]
-    },
-    {
-      "id": "16",
       "context": [],
       "parts": [
         {
-          "id": "16c",
+          "id": "08c",
           "label": "(c)",
           "text": "An alternative method of reading and processing sensor data is to use interrupts. Each sensor\nis connected so that it can send an interrupt signal to the processor if its value changes.\nOn receipt of an interrupt signal, the processor carries out a number of steps as shown in the\nfollowing diagram.\nInterrupt 1. Disable interrupts\n2. Save current task\n3. Identify source of\ninterrupt\n4. Jump to Interrupt\nService Routine\n5. Restore task\nReturn to task 6. Enable interrupts",
           "marks": null,
@@ -648,7 +599,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16ci",
+              "id": "08ci",
               "label": "(i)",
               "text": "State the purpose of step 3.",
               "marks": 1,
@@ -659,7 +610,7 @@
               "parts": []
             },
             {
-              "id": "16cii",
+              "id": "08cii",
               "label": "(ii)",
               "text": "Explain what happens at step 4.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 2,
@@ -674,7 +625,15 @@
       ],
       "marks": 3,
       "text": [
-        "UNTIL ........................................................................................................................."
+        "OUTPUT “Problem on Floor ”, FloorCounter",
+        "09 ENDIF",
+        "10 ENDFOR",
+        "11 ENDFOR",
+        "12 //",
+        "13 // Delay loop",
+        "14 // Delay loop",
+        "15 //",
+        "16 UNTIL ........................................................................................................................."
       ]
     }
   ]

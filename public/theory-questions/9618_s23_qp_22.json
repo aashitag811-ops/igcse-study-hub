@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "s23",
   "component": "22",
-  "totalMarks": 54,
-  "questionCount": 11,
+  "totalMarks": 58,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -149,51 +149,17 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Red Front of Queue Pointer"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Green"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Blue"
+        "Red Front of Queue Pointer",
+        "6 Green",
+        "7 Blue"
       ]
     },
     {
       "id": "8",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Pink End of Queue Pointer"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "D45"
-      ]
-    },
-    {
-      "id": "9",
       "context": [],
       "parts": [
         {
-          "id": "9b",
+          "id": "8b",
           "label": "(b)",
           "text": "The design of the queue is completed and the number of locations is increased.\nA function AddToQueue() has been written. It takes a string as a parameter and adds this to\nthe queue. The function will return TRUE if the string was added successfully.\nA procedure FileToQueue() will add each line from the file to the queue. This procedure\nwill end when all lines have been added or when the queue is full.\nDescribe the algorithm for procedure FileToQueue().\nDo not use pseudocode in your answer.\n4 A function GetNum() will:\n1. take two parameters: a string and a character\n2. count the number of times that the character occurs in the string\n3. return the count.\nAny comparison between characters needs to be case sensitive. For example, character 'a' and\ncharacter 'A' are not identical.\nWrite pseudocode for function GetNum().\n5 A programmer has produced the following pseudocode to output the square root of the numbers\nfrom 1 to 10.\nLine numbers are for reference only.",
           "marks": 5,
@@ -204,10 +170,9 @@
           "parts": []
         }
       ],
-      "marks": 1,
+      "marks": 5,
       "text": [
-        "D60",
-        "State the number of data items in the queue."
+        "Pink End of Queue Pointer"
       ]
     },
     {
@@ -304,49 +269,16 @@
         {
           "id": "11b",
           "label": "(b)",
-          "text": "The program includes a module to validate a Personal Identification Number (PIN). This is\nused when customers pay for goods using a bank card.\nA state‑transition diagram has been produced for this module.\nThe table show the inputs, outputs and states for this part of the program:\nCurrent state Input Output Next state\nS1 Input PIN S2\nS2 Re‑input PIN Display error S2\nS2 Cancel Re‑prompt S1\nS2 Valid PIN Enable payment S4\nS2 Too many tries Block Account S3\nComplete the state‑transition diagram to represent the information given in the table.\nS2\nSTART\nS1\nCancel | Re-prompt\n8 A computer shop assembles computers using items bought from several suppliers. A text file\nStock.txt contains information about each item.\nInformation for each item is stored as a single line in the Stock.txt file in the format:\n<ItemNum><SupplierCode><Description>\nValid item information is as follows:\nFormat Comment\nunique number for each item in the range\nItemNum 4 numeric characters\n″0001″ to ″5999″ inclusive\nSupplierCode 3 alphabetic characters to identify the supplier of the item\nDescription\na string a minimum of 12 characters\nThe file is organised in ascending order of ItemNum and does not contain all possible values in\nthe range.\nA programmer has started to define program modules as follows:\nModule Description\nOnlyAlpha() • called with a parameter of type string\n(already written)\n• returns TRUE if the string contains only alphabetic characters,\notherwise returns FALSE\nCheckInfo()\n• called with a parameter of type string representing a line of item\ninformation\n• checks to see whether the item information in the string is valid\n• returns TRUE if the item information is valid, otherwise returns\nFALSE",
+          "text": "The program includes a module to validate a Personal Identification Number (PIN). This is\nused when customers pay for goods using a bank card.\nA state‑transition diagram has been produced for this module.\nThe table show the inputs, outputs and states for this part of the program:\nCurrent state Input Output Next state\nS1 Input PIN S2\nS2 Re‑input PIN Display error S2\nS2 Cancel Re‑prompt S1\nS2 Valid PIN Enable payment S4\nS2 Too many tries Block Account S3\nComplete the state‑transition diagram to represent the information given in the table.\nS2\nSTART\nS1\nCancel | Re-prompt",
           "marks": 4,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
-        },
-        {
-          "id": "11a",
-          "label": "(a)",
-          "text": "Write pseudocode for module CheckInfo().\nModule OnlyAlpha() should be used as part of your solution.",
-          "marks": 7,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "11b",
-          "label": "(b)",
-          "text": "A new module is defined as follows:\nModule Description\nAddItem()\n• called with a parameter of type string representing valid information\nfor a new item that is not currently in the Stock.txt file\n• creates a new file NewStock.txt from the contents of the file\nStock.txt and adds the new item information at the appropriate\nplace in the NewStock.txt file\nAs a reminder, the file Stock.txt is organised in ascending order of ItemNum and does not\ncontain all possible values in the range.\nWrite pseudocode for module AddItem().",
-          "marks": 7,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "11c",
-          "label": "(c)",
-          "text": "The program contains modules SuppExists() and CheckSupplier(). These have been\nwritten but contain errors. These modules are called from several places in the main program\nand testing of the main program (integration testing) has had to stop.\nIdentify a method that can be used to continue testing the main program before the errors in\nthese modules have been corrected and describe how this would work.\nMethod ______\nDescription ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
-          "marks": 3,
-          "type": "identify",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
         }
       ],
-      "marks": 34,
+      "marks": 17,
       "text": [
         "Num 1.0",
         "40 REPEAT",
@@ -362,6 +294,74 @@
         "Function SQRT() is a library function and contains no errors.",
         "The program code compiles without errors, but the program gives unexpected results. These are",
         "caused by a design error."
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Write pseudocode for module CheckInfo().\nModule OnlyAlpha() should be used as part of your solution.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "A new module is defined as follows:\nModule Description\nAddItem()\n• called with a parameter of type string representing valid information\nfor a new item that is not currently in the Stock.txt file\n• creates a new file NewStock.txt from the contents of the file\nStock.txt and adds the new item information at the appropriate\nplace in the NewStock.txt file\nAs a reminder, the file Stock.txt is organised in ascending order of ItemNum and does not\ncontain all possible values in the range.\nWrite pseudocode for module AddItem().",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8c",
+          "label": "(c)",
+          "text": "The program contains modules SuppExists() and CheckSupplier(). These have been\nwritten but contain errors. These modules are called from several places in the main program\nand testing of the main program (integration testing) has had to stop.\nIdentify a method that can be used to continue testing the main program before the errors in\nthese modules have been corrected and describe how this would work.\nMethod ______\nDescription ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer‑related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "marks": 3,
+          "type": "identify",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 17,
+      "text": [
+        "A computer shop assembles computers using items bought from several suppliers. A text file",
+        "Stock.txt contains information about each item.",
+        "Information for each item is stored as a single line in the Stock.txt file in the format:",
+        "<ItemNum><SupplierCode><Description>",
+        "Valid item information is as follows:",
+        "Format Comment",
+        "unique number for each item in the range",
+        "ItemNum 4 numeric characters",
+        "″0001″ to ″5999″ inclusive",
+        "SupplierCode 3 alphabetic characters to identify the supplier of the item",
+        "Description",
+        "a string a minimum of 12 characters",
+        "The file is organised in ascending order of ItemNum and does not contain all possible values in",
+        "the range.",
+        "A programmer has started to define program modules as follows:",
+        "Module Description",
+        "OnlyAlpha() • called with a parameter of type string",
+        "(already written)",
+        "• returns TRUE if the string contains only alphabetic characters,",
+        "otherwise returns FALSE",
+        "CheckInfo()",
+        "• called with a parameter of type string representing a line of item",
+        "information",
+        "• checks to see whether the item information in the string is valid",
+        "• returns TRUE if the item information is valid, otherwise returns",
+        "FALSE"
       ]
     }
   ]

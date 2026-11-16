@@ -111,8 +111,8 @@ async function extractText(pdfPath) {
 // Only strip lines that are clearly standalone page chrome — never content lines.
 
 const NOISE_RE = [
-  // Barcode-like numeric lines  "* 0000800000001 *"
-  /^\* [\d ]+ \*$/,
+  // Barcode-like numeric lines  "* 0000800000001 *" or "* 0000800000001 * DFD" (PapaCambridge)
+  /^\* [\d ]+ \*( DFD)?$/,
   // Unicode garbage (3-char runs of non-ASCII) — encoding artefacts
   /^[\x80-\uFFFF]{3,}$/,
   // Page header: "0610/42/F/M/25" OR "0610/42/M/J/25" (with optional © UCLES YYYY prefix)
@@ -130,6 +130,7 @@ const NOISE_RE = [
   /^DFD$/,
   // Copyright footer lines
   /^©\s*(UCLES|Cambridge)\s+\d{4}/i,
+  /^©\s*Cambridge University Press/i,
   /^Cambridge Assessment International Education/i,
   /^This document has \d+ pages?/i,
   /^Permission to reproduce/i,
@@ -179,6 +180,17 @@ const NOISE_RE = [
   /^Use$/,
   // "For Examiner's Use" as a combined line
   /^For\s+Examiner'?s?\s+Use$/i,
+  // PapaCambridge watermark lines (appear on every page of downloaded papers)
+  /^Trace ID:\s*PC-/i,
+  /^Re-uploading,?\s*mirroring/i,
+  /^Licensed for hosting on papacambridge/i,
+  /^\d{4}\/\d{2} Question Paper .* \| Source:/i,
+  /^PapaCambridge\s*[·•]\s*papacambridge/i,
+  /^Downloaded from PapaCambridge/i,
+  // Cambridge IGCSE cover text
+  /^Cambridge IGCSE$/i,
+  // "Calculators must not be used in this paper" — instruction that appears on every page
+  /^Calculators must not be used in this paper\.?$/i,
 ];
 
 // NOISE_RE_NO_DIGITS: same as NOISE_RE but without the standalone-digits rule.
@@ -554,20 +566,24 @@ function parseQP(rawText, opts = {}) {
       // isTrivialMathRest: rest is ONLY digit(s) and spaces (e.g. "3" = exponent, "2 2" = fraction num).
       // These should never be a question opener even at exact match position.
       const isTrivialMathRest = rtrim.length > 0 && /^[\d\s]+$/.test(rtrim);
+      // isUnitOnlyRest: rest is ONLY a measurement unit (e.g. "cm", "kg", "mm", "m") — diagram label.
+      // "8 cm" in a diagram means 8 cm measurement, not Q8 with content "cm".
+      const isUnitOnlyRest = rtrim.length > 0 && /^[a-z]{1,4}(\s+[a-z]{1,4})*$/.test(rtrim) && rtrim.length <= 6;
       const isCleanOpener = opts.isMathsShortAnswer
         // Maths short-answer rules:
         //   - Bare: always ok (handled by bareOk guards)
-        //   - Exact match: accept unless rest is ONLY digits/spaces (trivial math = exponent/fraction).
+        //   - Exact match: accept unless rest is ONLY digits/spaces or a bare measurement unit.
         //       "10 of the counters" → exact match → accept (sentence content)
         //       "10 b = dm + 2mk"  → exact match → accept (formula question)
         //       "12 3" → trivial (only "3") → reject (exponent fragment)
+        //       "8 cm" → unit-only → reject (diagram measurement label)
         //   - Skip-ahead: only reject if rest is trivial math OR starts with lowercase without any
         //       real word content. Allow algebra/science notation that starts lowercase.
         //       "10 NOT TO" → isRestMath → reject
         //       "10 b = dm + 2mk" → skip → not trivial, has letters → accept
         ? (isBare ||
-           (isExactMatch && !isTrivialMathRest) ||                  // exact match, non-trivial rest
-           (!isExactMatch && !isTrivialMathRest && !isRestMath))    // skip-ahead, not a trivial/pure math expr
+           (isExactMatch && !isTrivialMathRest && !isUnitOnlyRest) ||    // exact match, non-trivial, not unit-only
+           (!isExactMatch && !isTrivialMathRest && !isRestMath))         // skip-ahead, not a trivial/pure math expr
         // Non-maths structured papers: must start with "(a)" or a capital letter + at least one space
         // (blocks single-word probability labels like "Finishes")
         : (isBare || /^\([a-z]\)/.test(rtrim) || (/^[A-Z]/.test(rtrim) && /\s/.test(rtrim)));

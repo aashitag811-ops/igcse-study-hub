@@ -4,7 +4,7 @@
   "session": "w24",
   "component": "23",
   "totalMarks": 43,
-  "questionCount": 30,
+  "questionCount": 17,
   "questions": [
     {
       "id": "1",
@@ -61,7 +61,6 @@
         "scripts database validation variable",
         "Database tables consist of ...................................... and ...................................... .",
         "Rows are ...................................... .",
-        "...................................... are fields.",
         "Structured query language (SQL) ...................................... are used to query data."
       ]
     },
@@ -122,16 +121,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "C C + 1"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDWHILE"
+        "C C + 1",
+        "10 ENDWHILE"
       ]
     },
     {
@@ -210,16 +201,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF SUBSTRING(Password, Index, 1) = '!'"
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF SUBSTRING(Password, Index, 1) = '!'",
+        "16 THEN"
       ]
     },
     {
@@ -228,16 +211,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Found TRUE"
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "Found TRUE",
+        "18 ENDIF"
       ]
     },
     {
@@ -246,105 +221,16 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Index Index + 1"
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDWHILE"
+        "Index Index + 1",
+        "20 ENDWHILE"
       ]
     },
     {
       "id": "21",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF NOT Found"
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "23",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Accept FALSE"
-      ]
-    },
-    {
-      "id": "24",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "25",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF Accept"
-      ]
-    },
-    {
-      "id": "26",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "27",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"Accepted\""
-      ]
-    },
-    {
-      "id": "28",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
-      ]
-    },
-    {
-      "id": "29",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"Rejected\""
-      ]
-    },
-    {
-      "id": "30",
-      "context": [],
       "parts": [
         {
-          "id": "30a",
+          "id": "21a",
           "label": "(a)",
           "text": "Complete the three trace tables using the data shown for each one.\nData: MYWORD\nPassword Accept Index Found\nOUTPUT\nData: M!word\nPassword Accept Index Found\nOUTPUT\nData: My!Hidden\nPassword Accept Index Found\nOUTPUT",
           "marks": 6,
@@ -355,7 +241,7 @@
           "parts": []
         },
         {
-          "id": "30b",
+          "id": "21b",
           "label": "(b)",
           "text": "State the rules that the password must meet.\n11 Building materials are sold in bags. A new database table called BuildStock has been set up to\nstore details about the materials for sale. Part of this table is given.\nMtNo Name InStock WeightKg PricePerBag NumberBags\nMT01 Builders sand Yes 50 4.50 50\nMT02 Sharp sand Yes 25 3.50 21 DO NOT WRITE IN THIS MARGIN\nMT03 Red sand No 50 2.75 0\nMT04 Cement No 25 6.85 0\nMT05 Chippings Yes 50 35.00 50\nMT06 Cobbles No 75 67.35 0\nMT07 Pebbles small Yes 50 34.50 3\nMT08 Pebbles medium Yes 25 25.50 10\nMT12 Pebbles large Yes 75 62.75 20\nMT15 Washed gravel Yes 50 12.75 12\nMT16 Pea gravel Yes 100 15.95 24",
           "marks": 3,
@@ -366,7 +252,7 @@
           "parts": []
         },
         {
-          "id": "30a",
+          "id": "21a",
           "label": "(a)",
           "text": "Write the output from this structured query language (SQL) statement.\nSELECT MtNo, Name\nFROM BuildStock\nWHERE WeightKg = 75\nORDER BY PricePerBag;",
           "marks": 3,
@@ -377,7 +263,7 @@
           "parts": []
         },
         {
-          "id": "30b",
+          "id": "21b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -387,7 +273,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "30bi",
+              "id": "21bi",
               "label": "(i)",
               "text": "Complete this SQL statement to display only the names of all the materials that are out\nof stock.\nSELECT ______\nFROM ______\nWHERE ______",
               "marks": 2,
@@ -398,7 +284,7 @@
               "parts": []
             },
             {
-              "id": "30bii",
+              "id": "21bii",
               "label": "(ii)",
               "text": "Explain how another SQL statement using a different field could be used to display the\nsame information.\n12 Members of a litter picking group complete a litter pick every month. Members’ names are stored\nin one-dimensional (1D) array PickerName[]\nEach member stores the weight of the litter they have picked in another one-dimensional (1D)\narray PickedWeight[]\nThe weights are in kilograms with one decimal place, for example 8.4\nThe position of each member’s data in the two arrays is the same. For example, the member\nstored at index 10 in PickerName[] and at index 10 in PickedWeight[] is the same.\nEvery month, there is a small prize awarded to the members of the group who have the two\nheaviest weights. Certificates are awarded to all members with a pick weight of over three\nkilograms.\nWrite a program that meets the following requirements:\n• allows the weight of members’ picks to be input and validated\n• sorts the arrays PickedWeight[] and PickerName[] in descending order of weight\n• outputs the member names and the pick weights of the members with the two heaviest picks\nand identifies them as “Best in Group” and “Second best in Group”\n• stores the names of all the members who will receive a certificate in the array\nPickerCertificate[]\n• outputs a message stating the number of certificates to be printed.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables; you may assume that this has already been\ndone.\nAll inputs and outputs must contain suitable messages.\nYou do not need to initialise the data in the array PickerName[]\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
               "marks": 2,
@@ -413,7 +299,16 @@
       ],
       "marks": 16,
       "text": [
-        "ENDIF"
+        "IF NOT Found",
+        "22 THEN",
+        "23 Accept FALSE",
+        "24 ENDIF",
+        "25 IF Accept",
+        "26 THEN",
+        "27 OUTPUT \"Accepted\"",
+        "28 ELSE",
+        "29 OUTPUT \"Rejected\"",
+        "30 ENDIF"
       ]
     }
   ]

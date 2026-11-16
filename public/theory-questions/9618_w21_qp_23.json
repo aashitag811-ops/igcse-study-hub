@@ -3,8 +3,8 @@
   "subjectCode": "9618",
   "session": "w21",
   "component": "23",
-  "totalMarks": 36,
-  "questionCount": 7,
+  "totalMarks": 65,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -210,7 +210,7 @@
             {
               "id": "3bii",
               "label": "(ii)",
-              "text": "The state of the queue after other operations are carried out is shown:\n0 Frog\n1 Cat\n2 Fish\n3 Elk Front of queue pointer",
+              "text": "The state of the queue after other operations are carried out is shown:\n0 Frog\n1 Cat\n2 Fish\n3 Elk Front of queue pointer\n4 Wasp\n5 Bee",
               "marks": null,
               "type": "state",
               "answerType": "short_answer",
@@ -225,38 +225,11 @@
       "text": []
     },
     {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Wasp"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Bee"
-      ]
-    },
-    {
       "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Mouse End of queue pointer"
-      ]
-    },
-    {
-      "id": "7",
       "context": [],
       "parts": [
         {
-          "id": "7c",
+          "id": "6c",
           "label": "(c)",
           "text": "The queue is implemented using a 1D array.\nDescribe the algorithm that should be used to modify the end of queue pointer when adding\nan item to the queue.\nYour algorithm should detect any potential error conditions.\n4 A program controls the heating system in a sports hall.\nPart of the program involves reading a value from a sensor. The sensor produces a numeric value\nthat represents the temperature. The value is an integer, which should be in the range 0 to 40\ninclusive.\nA program function has been written to validate the values from the sensor.",
           "marks": 3,
@@ -267,7 +240,7 @@
           "parts": []
         },
         {
-          "id": "7a",
+          "id": "6a",
           "label": "(a)",
           "text": "A test plan is needed to test the function.\nComplete the table. The first line has been completed for you.\nYou can assume that the sensor will generate only integer data values.\nTest Test data value Explanation Expected outcome\n1 23 Normal data Data is accepted",
           "marks": 4,
@@ -278,18 +251,32 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "6b",
           "label": "(b)",
-          "text": "A program module controls the heaters. This module operates as follows:\n• If the temperature is below 10, switch the heaters on.\n• If the temperature is above 20, switch the heaters off.\nComplete the following state-transition diagram for the heating system:\nStart\nHeaters\nHeaters\nOn\nOff\n5 The following data items will be recorded each time a student successfully logs on to the school\nnetwork:\nData item Example data\nStudent ID \"CJL404\"\n\"Lib01\"\nHost ID\n\"08:30, June 01, 2021\"\nTime and date\nThe Student ID is six characters long. The other two data items are of variable length.\nA single string will be formed by concatenating the three data items. A separator character will\nneed to be inserted between items two and three.\nFor example:\n\"CJL404Lib01<separator>08:30, June 01, 2021\"\nEach string represents one log entry.\nA programmer decides to store the concatenated strings in a 1D array LogArray that contains\n2000 elements. Unused array elements will contain an empty string.",
+          "text": "A program module controls the heaters. This module operates as follows:\n• If the temperature is below 10, switch the heaters on.\n• If the temperature is above 20, switch the heaters off.\nComplete the following state-transition diagram for the heating system:\nStart\nHeaters\nHeaters\nOn\nOff",
           "marks": 3,
           "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": true,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 2,
+      "text": [
+        "Mouse End of queue pointer",
+        "7 Ant",
+        "Complete the following diagram to show the state of the queue after the following",
+        "operations:",
+        "Remove one item, and then add “Dolphin” and “Shark”."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
         {
-          "id": "7a",
+          "id": "5a",
           "label": "(a)",
           "text": "Suggest a suitable separator character and give a reason for your choice.\nCharacter ______\nReason ______",
           "marks": 2,
@@ -300,7 +287,7 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "5b",
           "label": "(b)",
           "text": "The choice of data structure was made during one stage of the program development life\ncycle.\nIdentify this stage.",
           "marks": 1,
@@ -311,18 +298,43 @@
           "parts": []
         },
         {
-          "id": "7c",
+          "id": "5c",
           "label": "(c)",
-          "text": "A function LogEvents() will:\n• take a Student ID as a parameter\n• for each element in the array that matches the Student ID parameter:\nadd the value of the array element to the existing text file LogFile\nassign an empty string to the array element\n• count the number of lines added to the file\n• return this count.\nWrite pseudocode for the function LogEvents().\n6 A mobile phone has a touchscreen. The screen is represented by a grid, divided into 800 rows\nand 1280 columns.\nThe grid is represented by a 2D array Screen of type INTEGER. An array element will be set to 0\nunless the user touches that part of the screen.\nMany array elements are set to 1 by a single touch of a finger or a stylus.\nThe following diagram shows a simplified touchscreen. The dark line represents a touch to the\nscreen. All grid elements that are wholly or partly inside the outline will be set to 1. These elements\nare shaded.\nThe element shaded in black represents the centre point.\nA program is needed to find the coordinates (the row and column) of the centre point. The centre\npoint on the diagram above is row 6, column 11.\nAssume:\n• the user may only touch one area at a time\n• screen rotation does not affect the touchscreen.\nThe programmer has started to define program modules as follows:\nModule Description\n• Called with three parameters of type INTEGER:\na row number\nSetRow()\nthe number of pixels to be skipped starting from column 1\n(generates test\nthe number of pixels that should be set to 1\ndata)\n• Sets the required number of pixels to 1\nFor example, SetRow(3, 8, 5) will give row 3 as in the diagram shown.\n• Takes two parameters of type INTEGER:\na row number\na start column (1 or 1280)\nSearchInRow()\n• Searches the given row from the start column (either left to right or right to left)\nfor the first column that contains an element set to 1\n• Returns the column number of the first element in the given row that is set to 1\n• Returns −1 if no element is set to 1\n• Takes two parameters of type INTEGER:\na column number\na start row (1 or 800)\nSearchInCol()\n• Searches the given column from the start row (either up or down) for the first\nrow that contains an element set to 1\n• Returns the row number of the first element in the given column that is set to 1\n• Returns −1 if no element is set to 1",
+          "text": "A function LogEvents() will:\n• take a Student ID as a parameter\n• for each element in the array that matches the Student ID parameter:\nadd the value of the array element to the existing text file LogFile\nassign an empty string to the array element\n• count the number of lines added to the file\n• return this count.\nWrite pseudocode for the function LogEvents().",
           "marks": 7,
-          "type": "give",
+          "type": "write",
           "answerType": "short_answer",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 10,
+      "text": [
+        "The following data items will be recorded each time a student successfully logs on to the school",
+        "network:",
+        "Data item Example data",
+        "Student ID \"CJL404\"",
+        "\"Lib01\"",
+        "Host ID",
+        "\"08:30, June 01, 2021\"",
+        "Time and date",
+        "The Student ID is six characters long. The other two data items are of variable length.",
+        "A single string will be formed by concatenating the three data items. A separator character will",
+        "need to be inserted between items two and three.",
+        "For example:",
+        "\"CJL404Lib01<separator>08:30, June 01, 2021\"",
+        "Each string represents one log entry.",
+        "A programmer decides to store the concatenated strings in a 1D array LogArray that contains",
+        "2000 elements. Unused array elements will contain an empty string."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "7a",
+          "id": "6a",
           "label": "(a)",
           "text": "Write pseudocode to implement the module SetRow().",
           "marks": 5,
@@ -333,7 +345,7 @@
           "parts": []
         },
         {
-          "id": "7b",
+          "id": "6b",
           "label": "(b)",
           "text": "The module description of SearchInRow() is provided here for reference.\nModule Description\n• Takes two parameters of type INTEGER:\na row number\na start column (1 or 1280)\nSearchInRow() • Searches the given row from the start column (either left to right or right to left)\nfor the first column that contains an element set to 1\n• Returns the column number of the first element in the given row that is set to 1\n• Returns −1 if no element is set to 1\nWrite pseudocode to implement the module SearchInRow().",
           "marks": 8,
@@ -344,7 +356,7 @@
           "parts": []
         },
         {
-          "id": "7c",
+          "id": "6c",
           "label": "(c)",
           "text": "The following new module is introduced:\nModule Description\n• Called with a row number as an INTEGER\n• Uses SearchInRow() to find the first and last columns in the given row which\nGetCentreCol()\nhave an array element set to 1\n• Returns the index of the column midway between the first and last columns\n• Returns −1 if no element is set to 1\nWrite pseudocode to implement the module GetCentreCol().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 6,
@@ -355,12 +367,49 @@
           "parts": []
         }
       ],
-      "marks": 2,
+      "marks": 19,
       "text": [
-        "Ant",
-        "Complete the following diagram to show the state of the queue after the following",
-        "operations:",
-        "Remove one item, and then add “Dolphin” and “Shark”."
+        "A mobile phone has a touchscreen. The screen is represented by a grid, divided into 800 rows",
+        "and 1280 columns.",
+        "The grid is represented by a 2D array Screen of type INTEGER. An array element will be set to 0",
+        "unless the user touches that part of the screen.",
+        "Many array elements are set to 1 by a single touch of a finger or a stylus.",
+        "The following diagram shows a simplified touchscreen. The dark line represents a touch to the",
+        "screen. All grid elements that are wholly or partly inside the outline will be set to 1. These elements",
+        "are shaded.",
+        "The element shaded in black represents the centre point.",
+        "A program is needed to find the coordinates (the row and column) of the centre point. The centre",
+        "point on the diagram above is row 6, column 11.",
+        "Assume:",
+        "• the user may only touch one area at a time",
+        "• screen rotation does not affect the touchscreen.",
+        "The programmer has started to define program modules as follows:",
+        "Module Description",
+        "• Called with three parameters of type INTEGER:",
+        "a row number",
+        "SetRow()",
+        "the number of pixels to be skipped starting from column 1",
+        "(generates test",
+        "the number of pixels that should be set to 1",
+        "data)",
+        "• Sets the required number of pixels to 1",
+        "For example, SetRow(3, 8, 5) will give row 3 as in the diagram shown.",
+        "• Takes two parameters of type INTEGER:",
+        "a row number",
+        "a start column (1 or 1280)",
+        "SearchInRow()",
+        "• Searches the given row from the start column (either left to right or right to left)",
+        "for the first column that contains an element set to 1",
+        "• Returns the column number of the first element in the given row that is set to 1",
+        "• Returns −1 if no element is set to 1",
+        "• Takes two parameters of type INTEGER:",
+        "a column number",
+        "a start row (1 or 800)",
+        "SearchInCol()",
+        "• Searches the given column from the start row (either up or down) for the first",
+        "row that contains an element set to 1",
+        "• Returns the row number of the first element in the given column that is set to 1",
+        "• Returns −1 if no element is set to 1"
       ]
     }
   ]

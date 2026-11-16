@@ -327,7 +327,7 @@
             {
               "id": "6bi",
               "label": "(i)",
-              "text": "Complete the SQL script to return the number of devices stored in the database for the\nstaff member with the first name ‘Ali’ and last name ‘Khan’.\nSELECT ______ (STAFF.StaffID)\nFROM ______\nINNER JOIN DEVICE\n______ STAFF.StaffID = DEVICE.StaffID\nWHERE STAFF.FirstName = 'Ali'\n______ STAFF.LastName = 'Khan';",
+              "text": "Complete the SQL script to return the number of devices stored in the database for the\nstaff member with the first name ‘Ali’ and last name ‘Khan’.\nSELECT ______ (STAFF.StaffID)\nFROM ______\nINNER JOIN DEVICE\nWHERE STAFF.FirstName = 'Ali'",
               "marks": 4,
               "type": "name",
               "answerType": "fill_blank",

@@ -4,7 +4,7 @@
   "session": "w13",
   "component": "22",
   "totalMarks": 75,
-  "questionCount": 11,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -222,16 +222,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Password = \"Aisha\""
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Password = \"Aisha\"",
+        "7 THEN"
       ]
     },
     {
@@ -240,33 +232,16 @@
       "parts": [],
       "marks": null,
       "text": [
-        "OUTPUT \"Password correct\""
-      ]
-    },
-    {
-      "id": "9",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
+        "OUTPUT \"Password correct\"",
+        "9 ELSE"
       ]
     },
     {
       "id": "10",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"No valid password entered\""
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
       "parts": [
         {
-          "id": "11b",
+          "id": "10b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -276,7 +251,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "11bi",
+              "id": "10bi",
               "label": "(i)",
               "text": "Complete the trace table using \"Aisha\" as input.\nPassword Attempt Password = \"Aisha\"\nAttempt Password Output\n= \"Aisha\" > 3 OR Attempt > 3\nAisha",
               "marks": 3,
@@ -287,7 +262,7 @@
               "parts": []
             },
             {
-              "id": "11bii",
+              "id": "10bii",
               "label": "(ii)",
               "text": "Complete the trace table using the following sequence of inputs:\n\"aisha\", \"Asha\", \"AISHA\"\nPassword Attempt Password = \"Aisha\"\nAttempt Password Output\n= \"Aisha\" > 3 OR Attempt > 3",
               "marks": 5,
@@ -300,7 +275,7 @@
           ]
         },
         {
-          "id": "11c",
+          "id": "10c",
           "label": "(c)",
           "text": "This piece of code does not do what Aisha intended. There is an error.",
           "marks": null,
@@ -310,7 +285,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "11ci",
+              "id": "10ci",
               "label": "(i)",
               "text": "State the type of error.",
               "marks": 1,
@@ -321,7 +296,7 @@
               "parts": []
             },
             {
-              "id": "11cii",
+              "id": "10cii",
               "label": "(ii)",
               "text": "There are several ways to correct this. One is to change line 5.\nRewrite line 5.",
               "marks": 1,
@@ -334,7 +309,7 @@
           ]
         },
         {
-          "id": "11d",
+          "id": "10d",
           "label": "(d)",
           "text": "State why someone’s name is not a good password.",
           "marks": 1,
@@ -345,7 +320,7 @@
           "parts": []
         },
         {
-          "id": "11e",
+          "id": "10e",
           "label": "(e)",
           "text": "Describe how to choose a more secure password.\nQuestion 3 continues on page 12.",
           "marks": 2,
@@ -356,7 +331,7 @@
           "parts": []
         },
         {
-          "id": "11f",
+          "id": "10f",
           "label": "(f)",
           "text": "Having entered a correct password, Aisha wants to present a menu screen.\nThe user is to enter a number between 1 and 4 to make a choice. Examiner's\n• Option 1 - email\n• Option 2 - social network\n• Option 3 - schoolwork\n• Option 4 - favourite websites\nThe number entered is to be stored in a variable, Choice. Each option calls an\nappropriate procedure.",
           "marks": null,
@@ -366,7 +341,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "11fi",
+              "id": "10fi",
               "label": "(i)",
               "text": "Write program code which\n• inputs the user’s choice,\n• validates this choice,\n• uses nested IF statements to call the appropriate procedure.\nProgramming language\nCode",
               "marks": 6,
@@ -377,7 +352,7 @@
               "parts": []
             },
             {
-              "id": "11fii",
+              "id": "10fii",
               "label": "(ii)",
               "text": "Rewrite your IF statements using a CASE/SELECT statement to implement the\nmenu options. Examiner's\n4 Aisha writes the following pseudocode for a recursive function that works out the greatest\ncommon divisor of two positive integers: Examiner's\n0 FUNCTION Divisor(x, y)\n1 IF y = 0\n2 THEN\n3 RETURN x\n4 ELSE\n5 x ← x MOD y\n6 RETURN Divisor(y, x)\n7 ENDIF\n8 ENDFUNCTION",
               "marks": 4,
@@ -390,7 +365,7 @@
           ]
         },
         {
-          "id": "11a",
+          "id": "10a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -400,7 +375,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "11ai",
+              "id": "10ai",
               "label": "(i)",
               "text": "Trace the call Divisor(8, 2).\nx y RETURN\nLine number\n0 8 2",
               "marks": 2,
@@ -411,7 +386,7 @@
               "parts": []
             },
             {
-              "id": "11aii",
+              "id": "10aii",
               "label": "(ii)",
               "text": "Trace the call Divisor(38, 7).\nx y RETURN\nLine number\n0 38 7",
               "marks": 4,
@@ -424,7 +399,7 @@
           ]
         },
         {
-          "id": "11b",
+          "id": "10b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -434,7 +409,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "11bi",
+              "id": "10bi",
               "label": "(i)",
               "text": "State the purpose of line 1.",
               "marks": 1,
@@ -445,7 +420,7 @@
               "parts": []
             },
             {
-              "id": "11bii",
+              "id": "10bii",
               "label": "(ii)",
               "text": "State what would happen if line 1 were not present.",
               "marks": 1,
@@ -458,7 +433,7 @@
           ]
         },
         {
-          "id": "11c",
+          "id": "10c",
           "label": "(c)",
           "text": "What happens if x is less than y?\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 3,
@@ -471,7 +446,8 @@
       ],
       "marks": 34,
       "text": [
-        "ENDIF"
+        "OUTPUT \"No valid password entered\"",
+        "11 ENDIF"
       ]
     }
   ]

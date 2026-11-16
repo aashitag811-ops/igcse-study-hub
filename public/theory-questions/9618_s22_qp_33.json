@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s22",
   "component": "33",
-  "totalMarks": 67,
+  "totalMarks": 75,
   "questionCount": 9,
   "questions": [
     {
@@ -84,38 +84,9 @@
     {
       "id": "2",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A declarative language is used to represent the following facts about cats.",
-        "01 type(leopard, wild).",
-        "02 type(lion, wild)."
-      ]
-    },
-    {
-      "id": "03",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "type(cheetah, wild)."
-      ]
-    },
-    {
-      "id": "04",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "type(savannah, hybrid)."
-      ]
-    },
-    {
-      "id": "05",
-      "context": [],
       "parts": [
         {
-          "id": "05a",
+          "id": "2a",
           "label": "(a)",
           "text": "More facts are to be included. A caracal is a wild cat with short hair.\nWrite the additional clauses to record these facts.",
           "marks": 2,
@@ -126,7 +97,7 @@
           "parts": []
         },
         {
-          "id": "05b",
+          "id": "2b",
           "label": "(b)",
           "text": "Using the variable Cat, the goal:\nhair(Cat, medium)\nreturns\nCat = leopard, cheetah, savannah\nWrite the result returned by the goal:\nhair(Cat, long)\nCat = ______",
           "marks": 1,
@@ -137,7 +108,7 @@
           "parts": []
         },
         {
-          "id": "05c",
+          "id": "2c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -147,7 +118,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "05ci",
+              "id": "2ci",
               "label": "(i)",
               "text": "Write the goal, using the variable Pet, to find all the domestic cats.",
               "marks": 1,
@@ -158,100 +129,27 @@
               "parts": []
             },
             {
-              "id": "05cii",
+              "id": "2cii",
               "label": "(ii)",
-              "text": "Write the goal, using the variable WildSpotty, to find all the wild cats with spots.\n3 Data can be sent over networks using either circuit switching or packet switching.\nDescribe both methods of data transmission. Include a different advantage and disadvantage for\neach method.\nCircuit switching ______\nAdvantage ______\nDisadvantage ______\nPacket switching ______\nAdvantage ______\nDisadvantage ______\n4 Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.",
+              "text": "Write the goal, using the variable WildSpotty, to find all the wild cats with spots.",
               "marks": 2,
-              "type": "describe",
-              "answerType": "fill_blank",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        },
-        {
-          "id": "05a",
-          "label": "(a)",
-          "text": "Describe what is meant by RISC and CISC processors.\nRISC ______\nCISC ______",
-          "marks": 4,
-          "type": "describe",
-          "answerType": "fill_blank",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "05b",
-          "label": "(b)",
-          "text": "Identify two differences between RISC and CISC processors.\n5 Part of a program’s calculations uses the integer variables j, k, m, n and p.\nj = 3\nk = 2\nm = 10\nn = (j + k)/(j - k)\np = m * (m - j * k)",
-          "marks": 2,
-          "type": "identify",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "05a",
-          "label": "(a)",
-          "text": "Write the Reverse Polish Notation (RPN) for the expression:\n(j + k)/(j - k)",
-          "marks": 2,
-          "type": "write",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "05b",
-          "label": "(b)",
-          "text": "",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "05bi",
-              "label": "(i)",
-              "text": "Show the changing contents of the stack as the value for p is calculated from its RPN\nexpression:\nm m j k * - *",
-              "marks": 4,
-              "type": "other",
+              "type": "write",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
               "parts": []
-            },
-            {
-              "id": "05bii",
-              "label": "(ii)",
-              "text": "Describe the main steps in the evaluation of this RPN expression using a stack.",
-              "marks": 4,
-              "type": "describe",
-              "answerType": "long_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
             }
           ]
-        },
-        {
-          "id": "05c",
-          "label": "(c)",
-          "text": "State two other uses of a stack.",
-          "marks": 2,
-          "type": "state",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
         }
       ],
-      "marks": 24,
+      "marks": 6,
       "text": [
-        "type(persian, domestic).",
+        "A declarative language is used to represent the following facts about cats.",
+        "01 type(leopard, wild).",
+        "02 type(lion, wild).",
+        "03 type(cheetah, wild).",
+        "04 type(savannah, hybrid).",
+        "05 type(persian, domestic).",
         "07 hair(leopard, medium).",
         "08 hair(lion, short).",
         "09 hair(cheetah, medium).",
@@ -267,6 +165,127 @@
         "A leopard is a type of wild cat.",
         "A lion has short hair.",
         "A savannah has spots."
+      ]
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [],
+      "marks": 8,
+      "text": [
+        "Data can be sent over networks using either circuit switching or packet switching.",
+        "Describe both methods of data transmission. Include a different advantage and disadvantage for",
+        "each method.",
+        "Circuit switching ...............................................................................................................................",
+        "Advantage ........................................................................................................................................",
+        "Disadvantage ...................................................................................................................................",
+        "Packet switching ..............................................................................................................................",
+        "Advantage ........................................................................................................................................",
+        "Disadvantage ..................................................................................................................................."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
+        {
+          "id": "4a",
+          "label": "(a)",
+          "text": "Describe what is meant by RISC and CISC processors.\nRISC ______\nCISC ______",
+          "marks": 4,
+          "type": "describe",
+          "answerType": "fill_blank",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "4b",
+          "label": "(b)",
+          "text": "Identify two differences between RISC and CISC processors.",
+          "marks": 2,
+          "type": "identify",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are",
+        "two types of processor."
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Write the Reverse Polish Notation (RPN) for the expression:\n(j + k)/(j - k)",
+          "marks": 2,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "5b",
+          "label": "(b)",
+          "text": "",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "5bi",
+              "label": "(i)",
+              "text": "Show the changing contents of the stack as the value for p is calculated from its RPN\nexpression:\nm m j k * - *",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "5bii",
+              "label": "(ii)",
+              "text": "Describe the main steps in the evaluation of this RPN expression using a stack.",
+              "marks": 4,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
+        {
+          "id": "5c",
+          "label": "(c)",
+          "text": "State two other uses of a stack.",
+          "marks": 2,
+          "type": "state",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 12,
+      "text": [
+        "Part of a program’s calculations uses the integer variables j, k, m, n and p.",
+        "j = 3",
+        "k = 2",
+        "m = 10",
+        "n = (j + k)/(j - k)",
+        "p = m * (m - j * k)"
       ]
     },
     {

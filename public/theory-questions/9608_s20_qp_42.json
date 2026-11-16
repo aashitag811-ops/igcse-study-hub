@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "s20",
   "component": "42",
-  "totalMarks": 72,
-  "questionCount": 14,
+  "totalMarks": 75,
+  "questionCount": 8,
   "questions": [
     {
       "id": "1",
@@ -178,95 +178,9 @@
     {
       "id": "5",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "A declarative programming language is used to represent the following knowledge base.",
-        "01 person(william).",
-        "02 person(deeraj).",
-        "03 person(ingrid).",
-        "04 person(meghan).",
-        "05 country(england)."
-      ]
-    },
-    {
-      "id": "06",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "country(spain)."
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "country(bangladesh)."
-      ]
-    },
-    {
-      "id": "08",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "country(new_zealand)."
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "country(malaysia)."
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "country(mauritius)."
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "visited(william, spain)."
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "visited(ingrid, new_zealand)."
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "visited(deeraj, spain)."
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
       "parts": [
         {
-          "id": "14a",
+          "id": "5a",
           "label": "(a)",
           "text": "Gina is a person who has visited Cyprus.\nWrite additional clauses to represent this information.",
           "marks": 3,
@@ -277,7 +191,7 @@
           "parts": []
         },
         {
-          "id": "14b",
+          "id": "5b",
           "label": "(b)",
           "text": "Write the result returned by the goal:\nvisited(X, spain).\nX = ______",
           "marks": 2,
@@ -288,18 +202,47 @@
           "parts": []
         },
         {
-          "id": "14c",
+          "id": "5c",
           "label": "(c)",
-          "text": "P might visit C, if P is a person, C is a country and P has not visited C.\nWrite this as a rule.\nmightvisit(P , C)\nIF ______\n6 Object-oriented programming has several features. These include containment, classes, methods\nand properties.",
+          "text": "P might visit C, if P is a person, C is a country and P has not visited C.\nWrite this as a rule.\nmightvisit(P , C)\nIF ______",
           "marks": 4,
           "type": "write",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A declarative programming language is used to represent the following knowledge base.",
+        "01 person(william).",
+        "02 person(deeraj).",
+        "03 person(ingrid).",
+        "04 person(meghan).",
+        "05 country(england).",
+        "06 country(spain).",
+        "07 country(bangladesh).",
+        "08 country(new_zealand).",
+        "09 country(malaysia).",
+        "10 country(mauritius).",
+        "11 visited(william, spain).",
+        "12 visited(ingrid, new_zealand).",
+        "13 visited(deeraj, spain).",
+        "14 visited(meghan, spain).",
+        "These clauses have the following meanings:",
+        "Clause Meaning",
+        "02 Deeraj is a person",
+        "England is a country",
+        "William has visited Spain"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "14a",
+          "id": "6a",
           "label": "(a)",
           "text": "Describe what is meant by containment.",
           "marks": 3,
@@ -310,18 +253,29 @@
           "parts": []
         },
         {
-          "id": "14b",
+          "id": "6b",
           "label": "(b)",
-          "text": "Identify two other features of object-oriented programming.\n7 A programmer is creating a computer game. The programmer has designed the class, Character,\nfor the characters in the game.\nThe following class diagram shows the design for the Character class.\nCharacter\nName : STRING // initialised in constructor to the parameter\nvalue passed to the constructor\nSkill : INTEGER // initialised in constructor to 0\nHealth : INTEGER // initialised in constructor to 50\nShield : INTEGER // initialised in constructor to a random value\nbetween 1 and 25 (inclusive)\nConstructor() // method used to create and initialise an object\nGetName() // returns Name value\nGetSkill() // returns Skill value\nGetHealth() // returns Health value\nGetShield() // returns Shield value\nSetSkill() // increases Skill by the parameter value\nSetHealth() // increases or decreases Health by the parameter\nvalue\nSetShield() // increases or decreases Shield value by the\nparameter value",
+          "text": "Identify two other features of object-oriented programming.",
           "marks": 2,
-          "type": "name",
+          "type": "identify",
           "answerType": "short_answer",
-          "hasDiagramRef": true,
+          "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 5,
+      "text": [
+        "Object-oriented programming has several features. These include containment, classes, methods",
+        "and properties."
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "14a",
+          "id": "7a",
           "label": "(a)",
           "text": "Write program code for the Constructor() method. Use the appropriate constructor\nmethod for your chosen programming language.\nProgramming language ______\nProgram code",
           "marks": 5,
@@ -332,7 +286,7 @@
           "parts": []
         },
         {
-          "id": "14b",
+          "id": "7b",
           "label": "(b)",
           "text": "Write program code for the GetSkill() method.\nProgramming language ______\nProgram code",
           "marks": 2,
@@ -343,7 +297,7 @@
           "parts": []
         },
         {
-          "id": "14c",
+          "id": "7c",
           "label": "(c)",
           "text": "The method SetSkill() validates the parameter value and updates the value of Skill.\nThe method is passed an INTEGER parameter that must be between 10 and 25 (inclusive). A\nvalue outside of this is not valid.\nIf the parameter value is valid, the method will increase Skill by the parameter value. The\nmaximum value that Skill can be increased to is 200. For example:\n• Skill currently stores 180\n• it is passed a valid parameter value of 25\n• Skill will now store 200.\nThe method must return:\n• –1 if the parameter value is not valid\n• 1 if the value of Skill is updated and Skill is less than 200\n• 0 if the value of Skill is 200.\nWrite program code for the SetSkill() method.\nProgramming language ______\nProgram code",
           "marks": 6,
@@ -354,7 +308,7 @@
           "parts": []
         },
         {
-          "id": "14d",
+          "id": "7d",
           "label": "(d)",
           "text": "There are five characters in the game. All the character objects are stored in a 1D array.\nWrite pseudocode to declare the array, CharacterArray, to store the five character\nobjects.",
           "marks": 2,
@@ -365,9 +319,9 @@
           "parts": []
         },
         {
-          "id": "14e",
+          "id": "7e",
           "label": "(e)",
-          "text": "The game has the character with the name Victory.\nWrite program code to create the character Victory as an instance of the class Character.\nThe object needs to be stored in the first element of the array CharacterArray.\nProgramming language ______\nProgram code\nQuestion 8 begins on the next page.\n8 Files can be structured in serial, sequential or random format.\nTick (3) one box in each row to show whether the statement applies to Serial, Sequential or\nRandom format.\nStatement Serial Sequential Random\nUses a hashing algorithm\nNo key field is used when storing data, for example,\nit is stored in chronological order\nCollisions can occur\nLeast efficient for a very large number of records\nMost efficient for a very large number of records\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
+          "text": "The game has the character with the name Victory.\nWrite program code to create the character Victory as an instance of the class Character.\nThe object needs to be stored in the first element of the array CharacterArray.\nProgramming language ______\nProgram code\nQuestion 8 begins on the next page.",
           "marks": 3,
           "type": "name",
           "answerType": "fill_blank",
@@ -376,14 +330,52 @@
           "parts": []
         }
       ],
-      "marks": 32,
+      "marks": 18,
       "text": [
-        "visited(meghan, spain).",
-        "These clauses have the following meanings:",
-        "Clause Meaning",
-        "02 Deeraj is a person",
-        "England is a country",
-        "William has visited Spain"
+        "A programmer is creating a computer game. The programmer has designed the class, Character,",
+        "for the characters in the game.",
+        "The following class diagram shows the design for the Character class.",
+        "Character",
+        "Name : STRING // initialised in constructor to the parameter",
+        "value passed to the constructor",
+        "Skill : INTEGER // initialised in constructor to 0",
+        "Health : INTEGER // initialised in constructor to 50",
+        "Shield : INTEGER // initialised in constructor to a random value",
+        "between 1 and 25 (inclusive)",
+        "Constructor() // method used to create and initialise an object",
+        "GetName() // returns Name value",
+        "GetSkill() // returns Skill value",
+        "GetHealth() // returns Health value",
+        "GetShield() // returns Shield value",
+        "SetSkill() // increases Skill by the parameter value",
+        "SetHealth() // increases or decreases Health by the parameter",
+        "value",
+        "SetShield() // increases or decreases Shield value by the",
+        "parameter value"
+      ]
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [],
+      "marks": 3,
+      "text": [
+        "Files can be structured in serial, sequential or random format.",
+        "Tick (3) one box in each row to show whether the statement applies to Serial, Sequential or",
+        "Random format.",
+        "Statement Serial Sequential Random",
+        "Uses a hashing algorithm",
+        "No key field is used when storing data, for example,",
+        "it is stored in chronological order",
+        "Collisions can occur",
+        "Least efficient for a very large number of records",
+        "Most efficient for a very large number of records",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge."
       ]
     }
   ]

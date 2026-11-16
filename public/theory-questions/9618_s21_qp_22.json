@@ -4,7 +4,7 @@
   "session": "s21",
   "component": "22",
   "totalMarks": 61,
-  "questionCount": 15,
+  "questionCount": 13,
   "questions": [
     {
       "id": "1",
@@ -318,16 +318,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "OutString OutString & NextChar"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "OutString OutString & NextChar",
+        "14 ENDIF"
       ]
     },
     {
@@ -342,18 +334,9 @@
     {
       "id": "17",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "RETURN OutString"
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
       "parts": [
         {
-          "id": "19a",
+          "id": "17a",
           "label": "(a)",
           "text": "Give a test string that could be used to show that all four formatting requirements have been\napplied correctly.\nUse the symbol ‘∇’ to represent a space character.",
           "marks": 3,
@@ -364,7 +347,7 @@
           "parts": []
         },
         {
-          "id": "19b",
+          "id": "17b",
           "label": "(b)",
           "text": "The FormatName() procedure should assign a value to the global variable FString.\nThere is a fault in the program, which means that the assignment does not always take place.\nExplain two ways of exposing the fault.\n8 A program is needed to take a string containing a full name and to produce a new string of initials.\nSome words in the full name will be ignored. For example, “the”, “and”, “of”, “for” and “to” may all\nbe ignored.\nEach letter of the new string must be upper case.\nFor example:\nFull name Initials\nIntegrated Development Environment IDE\nThe American Standard Code for Information Interchange ASCII\nThe programmer has decided to use the following global variables:\n• a ten element 1D array IgnoreList of type STRING to store the ignored words\n• a string FNString to store the full name string.\nAssume that:\n• each alphabetic character in the full name string may be either upper or lower case\n• the full name string contains at least one word.\nThe programmer has started to define program modules as follows:\nModule Description\n• Called with an INTEGER as its parameter, representing the number of\na word in FNString\nGetStart()\n• Returns the character start position of that word in FNString or\nreturns -1 if that word does not exist\n• For example: GetStart(3) applied to \"hot and cold\" returns 9\n• Called with the position of the first character of a word in FNString\nas its parameter\nGetWord() • Returns the word from FNString\n• For example: if FNString contains the string \"hot and cold\",\nGetWord(9) returns \"cold\"\n• Called with a STRING parameter representing a word\nIgnoreWord()\n• Searches for the word in the IgnoreList array\n• Returns TRUE if the word is found, otherwise returns FALSE\n• Processes the sequence of words in the full name one word at a time\n• Calls GetStart(), GetWord() and IgnoreWord() to process\nGetInitials()\neach word to form the new string\n• Outputs the new string",
           "marks": 2,
@@ -375,7 +358,7 @@
           "parts": []
         },
         {
-          "id": "19a",
+          "id": "17a",
           "label": "(a)",
           "text": "Write pseudocode for the module IgnoreWord().",
           "marks": 5,
@@ -386,7 +369,7 @@
           "parts": []
         },
         {
-          "id": "19b",
+          "id": "17b",
           "label": "(b)",
           "text": "Write pseudocode for the module GetInitials().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 8,
@@ -399,7 +382,8 @@
       ],
       "marks": 18,
       "text": [
-        "ENDFUNCTION"
+        "RETURN OutString",
+        "19 ENDFUNCTION"
       ]
     }
   ]

@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "w21",
   "component": "32",
-  "totalMarks": 71,
+  "totalMarks": 75,
   "questionCount": 10,
   "questions": [
     {
@@ -120,27 +120,9 @@
     {
       "id": "4",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "The following syntax diagrams for a particular programming language show the syntax of:",
-        "• a digit",
-        "• a capital letter",
-        "• a character.",
-        "digit capital letter",
-        "0 A",
-        "1 E",
-        "2 I",
-        "3 O",
-        "4 U"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
       "parts": [
         {
-          "id": "5a",
+          "id": "4a",
           "label": "(a)",
           "text": "Write the Backus-Naur Form (BNF) notation of the syntax diagram for character.",
           "marks": 2,
@@ -151,7 +133,7 @@
           "parts": []
         },
         {
-          "id": "5b",
+          "id": "4b",
           "label": "(b)",
           "text": "A password must begin with a character and be followed by one or more digits or capital\nletters.",
           "marks": null,
@@ -161,7 +143,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "5bi",
+              "id": "4bi",
               "label": "(i)",
               "text": "State an example of a valid password.",
               "marks": 1,
@@ -172,17 +154,48 @@
               "parts": []
             },
             {
-              "id": "5bii",
+              "id": "4bii",
               "label": "(ii)",
-              "text": "A valid password is represented by the syntax diagram:\npassword\ncharacter digit\ncapital letter\nWrite the BNF notation of the syntax diagram for password.\n5 (a) Compare sequential and serial methods of file organisation.",
+              "text": "A valid password is represented by the syntax diagram:\npassword\ncharacter digit\ncapital letter\nWrite the BNF notation of the syntax diagram for password.",
               "marks": 4,
-              "type": "compare",
-              "answerType": "long_answer",
+              "type": "write",
+              "answerType": "short_answer",
               "hasDiagramRef": true,
               "diagramOnly": false,
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": 7,
+      "text": [
+        "The following syntax diagrams for a particular programming language show the syntax of:",
+        "• a digit",
+        "• a capital letter",
+        "• a character.",
+        "digit capital letter",
+        "0 A",
+        "1 E",
+        "2 I",
+        "3 O",
+        "4 U",
+        "5 character"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Compare sequential and serial methods of file organisation.",
+          "marks": 4,
+          "type": "compare",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
           "id": "5b",
@@ -207,10 +220,8 @@
           "parts": []
         }
       ],
-      "marks": 9,
-      "text": [
-        "character"
-      ]
+      "marks": 6,
+      "text": []
     },
     {
       "id": "6",

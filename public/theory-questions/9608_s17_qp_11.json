@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "s17",
   "component": "11",
-  "totalMarks": 56,
-  "questionCount": 19,
+  "totalMarks": 73,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -379,9 +379,9 @@
             {
               "id": "4dii",
               "label": "(ii)",
-              "text": "A second instruction has been written in hexadecimal as:",
-              "marks": null,
-              "type": "other",
+              "text": "A second instruction has been written in hexadecimal as:\n05 3F\nWrite the equivalent assembly language instruction, with the operand in denary.",
+              "marks": 2,
+              "type": "write",
               "answerType": "short_answer",
               "hasDiagramRef": false,
               "diagramOnly": false,
@@ -390,7 +390,7 @@
           ]
         }
       ],
-      "marks": 10,
+      "marks": 12,
       "text": [
         "The following table shows part of the instruction set for a processor. The processor has one",
         "general purpose register, the Accumulator (ACC) and an Index Register (IX).",
@@ -415,11 +415,11 @@
       ]
     },
     {
-      "id": "05",
+      "id": "5",
       "context": [],
       "parts": [
         {
-          "id": "05a",
+          "id": "5a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -429,7 +429,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "05ai",
+              "id": "5ai",
               "label": "(i)",
               "text": "Describe how the data logger calculates the parity bit for each of the bytes in the data\nblock.",
               "marks": 2,
@@ -440,7 +440,7 @@
               "parts": []
             },
             {
-              "id": "05aii",
+              "id": "5aii",
               "label": "(ii)",
               "text": "State the two missing parity bits labelled A and B.\nA = ______\nB = ______",
               "marks": 1,
@@ -451,7 +451,7 @@
               "parts": []
             },
             {
-              "id": "05aiii",
+              "id": "5aiii",
               "label": "(iii)",
               "text": "Describe how the computer uses the parity byte to perform a further check on the\nreceived data bytes.",
               "marks": 2,
@@ -464,7 +464,7 @@
           ]
         },
         {
-          "id": "05b",
+          "id": "5b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -474,7 +474,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "05bi",
+              "id": "5bi",
               "label": "(i)",
               "text": "A second data block is received as shown in the following table. There are errors in this\ndata block.\nIdentify and then circle two bits in the table which must be changed to remove the errors.\nBit position\n7 6 5 4 3 2 1 0\n1 0 0 0 1 1 0 0\n0 0 1 0 0 0 0 0\n0 0 1 1 0 1 0 1\n1 1 1 1 0 0 0 1\n1 1 0 0 0 0 1 0\n0 0 1 0 0 1 0 0\n0 0 0 0 0 0 0 1\n0 1 0 1 1 0 0 0",
               "marks": 2,
@@ -485,7 +485,7 @@
               "parts": []
             },
             {
-              "id": "05bii",
+              "id": "5bii",
               "label": "(ii)",
               "text": "Explain how you arrived at your answers for part (b)(i).",
               "marks": 3,
@@ -498,11 +498,9 @@
           ]
         }
       ],
-      "marks": 2,
+      "marks": 10,
       "text": [
-        "3F",
-        "Write the equivalent assembly language instruction, with the operand in denary.",
-        "5 A computer receives data from a remote data logger. Each data block is a group of 8 bytes.",
+        "A computer receives data from a remote data logger. Each data block is a group of 8 bytes.",
         "A block is made up of seven data bytes and a parity byte.",
         "Each data byte has a parity bit using odd parity. The parity byte also uses odd parity.",
         "The following table shows a data block before transmission. Bit position 0 is the parity bit.",
@@ -623,142 +621,74 @@
         {
           "id": "7c",
           "label": "(c)",
-          "text": "A web page used for data capture consists of:\n• two text boxes for the entry of:\n• a product code\n• the number of items to be purchased.\n• a button which is clicked when the user wants to submit this order.\nStudy the following web page.\n1 <html>\n2 <head>\n3 <title>Untitled Document</title>\n4 <script language=\"JavaScript\">\n6 function myButton_onmousedown()\n7 {",
+          "text": "A web page used for data capture consists of:\n• two text boxes for the entry of:\n• a product code\n• the number of items to be purchased.\n• a button which is clicked when the user wants to submit this order.\nStudy the following web page.\n1 <html>\n2 <head>\n3 <title>Untitled Document</title>\n4 <script language=\"JavaScript\">\n6 function myButton_onmousedown()\n7 {\n8 var Message1 = \"ERROR – Order refused\";\n9 var Message2 = \"Product code OK\";\n10 var x = document.forms[\"form1\"][\"txtProductCode\"].value;\n11 if (x == \"\")\n12 {\n13 alert(Message1)\n14 }\n15 else\n16 {\n17 alert(Message2)\n18 }\n19 }\n20 </script>\n22 </head>\n23 <body>\n24 <form name = form1>\n25 <label>Product code: </label>\n26 <input type=\"text\" name=\"txtProductCode\" >\n27 <label>Number: </label>\n28 <input type=\"text\" name=\"txtNumber\" size = \"5\" >\n29 <p>\n30 <label>Submit order: </label>\n31 <input type=\"button\" name=\"btnSubmit\" Value = \"Submit\"\n33 onMouseDown = \"myButton_onmousedown()\" >\n34 </p>\n35 </form>\n37 </body>\n38 </html>",
           "marks": null,
-          "type": "other",
+          "type": "name",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "7ci",
+              "label": "(i)",
+              "text": "The developer has used three variables in the JavaScript code. State the identifiers used.",
+              "marks": null,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7cii",
+              "label": "(ii)",
+              "text": "The button has an event whose identifier is onMouseDown. When the submit button is\nclicked, some code is executed.\nState the line numbers that contain this code.\nFrom line ______ to line ______",
+              "marks": 1,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7ciii",
+              "label": "(iii)",
+              "text": "The JavaScript code uses a selection statement.\nState the line number that contains the condition.\nLine number: ______",
+              "marks": 1,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7civ",
+              "label": "(iv)",
+              "text": "Describe the purpose of the validation check that the code performs.",
+              "marks": 1,
+              "type": "describe",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "7cv",
+              "label": "(v)",
+              "text": "Name and describe two other types of validation check that could be appropriate for this\ndata capture form.\nValidation check: ______\nDescription ______\nValidation check: ______\nDescription ______\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
+              "marks": 4,
+              "type": "name",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 6,
+      "marks": 13,
       "text": [
         "The design of a web-based application can require the use of client-side scripting."
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "var Message1 = \"ERROR – Order refused\";"
-      ]
-    },
-    {
-      "id": "9",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "var Message2 = \"Product code OK\";"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "var x = document.forms[\"form1\"][\"txtProductCode\"].value;"
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "if (x == \"\")"
-      ]
-    },
-    {
-      "id": "12",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "{"
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "alert(Message1)"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "}"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "else"
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "{"
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "alert(Message2)"
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "}"
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "}",
-        "20 </script>",
-        "22 </head>",
-        "23 <body>",
-        "24 <form name = form1>",
-        "25 <label>Product code: </label>",
-        "26 <input type=\"text\" name=\"txtProductCode\" >",
-        "27 <label>Number: </label>",
-        "28 <input type=\"text\" name=\"txtNumber\" size = \"5\" >",
-        "29 <p>",
-        "30 <label>Submit order: </label>",
-        "31 <input type=\"button\" name=\"btnSubmit\" Value = \"Submit\"",
-        "33 onMouseDown = \"myButton_onmousedown()\" >",
-        "34 </p>",
-        "35 </form>",
-        "37 </body>",
-        "38 </html>"
       ]
     }
   ]

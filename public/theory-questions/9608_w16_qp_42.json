@@ -4,7 +4,7 @@
   "session": "w16",
   "component": "42",
   "totalMarks": 62,
-  "questionCount": 16,
+  "questionCount": 14,
   "questions": [
     {
       "id": "1",
@@ -279,7 +279,7 @@
             {
               "id": "4aiii",
               "label": "(iii)",
-              "text": "The table shows a module definition for BubbleSort in three programming languages.\nStudy one of the examples. Indicate your choice by circling A, B or C:\nA B C\nA) Python\n01 def BubbleSort(SList, Max):\n02 NoMoreSwaps = False\n03 while NoMoreSwaps == False:\n04 NoMoreSwaps = True",
+              "text": "The table shows a module definition for BubbleSort in three programming languages.\nStudy one of the examples. Indicate your choice by circling A, B or C:\nA B C\nA) Python\n01 def BubbleSort(SList, Max):\n02 NoMoreSwaps = False\n03 while NoMoreSwaps == False:\n04 NoMoreSwaps = True\n05 for i in (Max - 1):\n06 if SList[i] > SList[i + 1]:",
               "marks": null,
               "type": "other",
               "answerType": "short_answer",
@@ -294,24 +294,6 @@
       "text": [
         "Circle the programming language that you have studied:",
         "Visual Basic (console mode) Python Pascal Delphi (console mode)"
-      ]
-    },
-    {
-      "id": "05",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "for i in (Max - 1):"
-      ]
-    },
-    {
-      "id": "06",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "if SList[i] > SList[i + 1]:"
       ]
     },
     {
@@ -357,8 +339,16 @@
         "06 FOR i := 1 TO (Max – 1)",
         "07 IF SList[i] > SList[i + 1]",
         "08 THEN",
-        "09 BEGIN",
-        "10 NoMoreSwaps := TRUE;"
+        "09 BEGIN"
+      ]
+    },
+    {
+      "id": "10",
+      "context": [],
+      "parts": [],
+      "marks": null,
+      "text": [
+        "NoMoreSwaps := TRUE;"
       ]
     },
     {
@@ -385,16 +375,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "SList[i + 1] := Temp;"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "END;"
+        "SList[i + 1] := Temp;",
+        "14 END;"
       ]
     },
     {
@@ -403,15 +385,30 @@
       "parts": [],
       "marks": null,
       "text": [
-        "UNTIL NoMoreSwaps;"
+        "UNTIL NoMoreSwaps;",
+        "16 END;",
+        "C) Visual Basic",
+        "01 Sub BubbleSort(ByRef SList() As Integer, ByVal Max As Integer)",
+        "02 Dim NoMoreSwaps As Boolean, i, Temp As Integer",
+        "03 Do",
+        "04 NoMoreSwaps = True",
+        "05 For i : 0 To (Max – 1)",
+        "06 If SList(i) > SList(i + 1) Then",
+        "07 NoMoreSwaps = True",
+        "08 Temp = SList(i)",
+        "09 SList(i) = SList(i + 1)",
+        "10 SList(i + 1) = Temp",
+        "11 End If",
+        "12 Next",
+        "13 Loop Until (NoMoreSwaps = True)"
       ]
     },
     {
-      "id": "16",
+      "id": "14",
       "context": [],
       "parts": [
         {
-          "id": "16b",
+          "id": "14b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -421,7 +418,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "16bi",
+              "id": "14bi",
               "label": "(i)",
               "text": "State whether programs written in your programming language are compiled or\ninterpreted.",
               "marks": 1,
@@ -432,7 +429,7 @@
               "parts": []
             },
             {
-              "id": "16bii",
+              "id": "14bii",
               "label": "(ii)",
               "text": "A programmer corrects the syntax error and tests the function. It does not perform as\nexpected. The items are not fully in order.\nState the type of error ______\nWrite the line number where the error occurs.\nWrite the correct code for this line.",
               "marks": 2,
@@ -443,7 +440,7 @@
               "parts": []
             },
             {
-              "id": "16biii",
+              "id": "14biii",
               "label": "(iii)",
               "text": "State the programming environment you have used when debugging program code.\nName two debugging features and describe how they are used.\neffort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will\nbe pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge International\nExaminations Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cie.org.uk after\nthe live examination series.\nCambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of Cambridge Local\nExaminations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
               "marks": 4,
@@ -458,22 +455,7 @@
       ],
       "marks": 2,
       "text": [
-        "END;",
-        "C) Visual Basic",
-        "01 Sub BubbleSort(ByRef SList() As Integer, ByVal Max As Integer)",
-        "02 Dim NoMoreSwaps As Boolean, i, Temp As Integer",
-        "03 Do",
-        "04 NoMoreSwaps = True",
-        "05 For i : 0 To (Max – 1)",
-        "06 If SList(i) > SList(i + 1) Then",
-        "07 NoMoreSwaps = True",
-        "08 Temp = SList(i)",
-        "09 SList(i) = SList(i + 1)",
-        "10 SList(i + 1) = Temp",
-        "11 End If",
-        "12 Next",
-        "13 Loop Until (NoMoreSwaps = True)",
-        "14 End Sub",
+        "End Sub",
         "The programming environment reported a syntax error in the BubbleSort code.",
         "State the line number ........................................................................................................................",
         "Write the correct code for this line."

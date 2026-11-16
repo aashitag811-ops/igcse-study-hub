@@ -354,7 +354,7 @@
         {
           "id": "11b",
           "label": "(b)",
-          "text": "Complete the following pseudocode for the function Dequeue to remove the front item from\nthe queue.\nFUNCTION Dequeue RETURNS STRING\nDECLARE Item : STRING\n______ > 0 THEN\nItem ← ______\nIF Length = 0 THEN\nCALL Initialise // reset the pointers\nELSE\nIF FrontPointer > MaxSize THEN\n______ ← 1\nENDIF\nENDIF\nELSE\nOUTPUT \"The print queue was empty – error!\"\nItem ← \"\"\nENDIF\nRETURN Item\nENDFUNCTION",
+          "text": "Complete the following pseudocode for the function Dequeue to remove the front item from\nthe queue.\nFUNCTION Dequeue RETURNS STRING\nDECLARE Item : STRING\nItem ← ______\nIF Length = 0 THEN\nCALL Initialise // reset the pointers\nELSE\nIF FrontPointer > MaxSize THEN\nENDIF\nENDIF\nELSE\nOUTPUT \"The print queue was empty – error!\"\nItem ← \"\"\nENDIF\nRETURN Item\nENDFUNCTION",
           "marks": 4,
           "type": "complete",
           "answerType": "fill_blank",

@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "s21",
   "component": "41",
-  "totalMarks": 46,
-  "questionCount": 10,
+  "totalMarks": 75,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -250,8 +250,30 @@
             {
               "id": "4bi",
               "label": "(i)",
-              "text": "The table shows the contents of the three fields in each record stored in the 1D array\nbinaryTree.\nComplete the table to show the contents of binaryTree from part (a).\nrootPointer Index leftPointer data rightPointer\n0 M\nfreePointer 1 C\n2 A\n3 L\n4 G",
-              "marks": null,
+              "text": "The table shows the contents of the three fields in each record stored in the 1D array\nbinaryTree.\nComplete the table to show the contents of binaryTree from part (a).\nrootPointer Index leftPointer data rightPointer\n0 M\nfreePointer 1 C\n2 A\n3 L\n4 G\n5 R\n6 W\n7 J\n8 D\n9 P\n10 H",
+              "marks": 4,
+              "type": "complete",
+              "answerType": "long_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4bii",
+              "label": "(ii)",
+              "text": "Write pseudocode to declare the array binaryTree to store up to 100 objects of type\nnode.",
+              "marks": 2,
+              "type": "write",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "4biii",
+              "label": "(iii)",
+              "text": "A pre-order traversal on the following tree would output M C A G R L W\nC R\nA G L W\nThe pre-order traversal can be written as a recursive procedure:\n1. output the root node\n2. follow the left pointer and repeat from step 1\n3. follow the right pointer and repeat from step 1.\nComplete the pseudocode recursive procedure preOrder().\nPROCEDURE preOrder(BYVALUE rootPointer : INTEGER)\nENDPROCEDURE",
+              "marks": 6,
               "type": "complete",
               "answerType": "long_answer",
               "hasDiagramRef": false,
@@ -261,7 +283,7 @@
           ]
         }
       ],
-      "marks": 2,
+      "marks": 14,
       "text": [
         "Chon creates a binary tree structure to store options that the user can select from a menu (M) in",
         "his program.",
@@ -272,54 +294,9 @@
     {
       "id": "5",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "R"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "W"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "J"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "D"
-      ]
-    },
-    {
-      "id": "9",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "P"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
       "parts": [
         {
-          "id": "10a",
+          "id": "5a",
           "label": "(a)",
           "text": "The pseudocode function binarySearch()performs a binary search to find a given value in\nthe global array, dataArray. If the value is found, the function returns its index. If the value\nis not found, the function returns –1.\nComplete the pseudocode for the function binarySearch().\nFUNCTION binarySearch(BYVALUE upper, lower, searchValue : INTEGER)\nRETURNS INTEGER\nDECLARE flag : INTEGER\nDECLARE mid : INTEGER\nflag -2\nmid 0\nWHILE flag <> -1\nmid lower + ((upper − lower) …………………………………………)\nIF upper < lower\nTHEN\nRETURN …………………………………………\nELSE\nIF dataArray(mid) < searchValue\nTHEN\n………………………………………… …………………………………………\nELSE\nIF dataArray(mid) > searchValue\nTHEN\n………………………………………… …………………………………………\nELSE\nRETURN …………………………………………\nENDIF\nENDIF\nENDIF\nENDWHILE\nENDFUNCTION",
           "marks": 4,
@@ -330,18 +307,120 @@
           "parts": []
         },
         {
-          "id": "10b",
+          "id": "5b",
           "label": "(b)",
-          "text": "The binary search algorithm can be written recursively.\nWrite program code for a recursive function recursiveBinarySearch().\nProgramming language ______\nProgram code\n6 The table shows assembly language instructions for a processor that has one general purpose\nregister, the Accumulator (ACC), and an Index Register (IX).\nInstruction\nExplanation\nLabel Op Operand\ncode\nLDM #n Immediate addressing. Load the number n to ACC\nDirect addressing. Load the contents of the location at\nLDD <address>\nthe given address to ACC\nIndexed addressing. Form the address from <address>\nLDX <address>\n+ the contents of the Index Register. Copy the contents\nof this calculated address to ACC\nLDR #n Immediate addressing. Load the number n to IX\nSTO <address> Store contents of ACC at the given address\nADD <address> Add the contents of the given address to ACC\nINC <register> Add 1 to the contents of the register (ACC or IX)\nBitwise AND operation of the contents of ACC with the\nAND <address>\ncontents of <address>\nBitwise XOR operation of the contents of ACC with the\nXOR <address>\ncontents of <address>\nBitwise OR operation of the contents of ACC with the\nOR <address>\ncontents of <address>\nOutput to screen the character whose ASCII value is\nOUT\nstored in ACC\nCompare the contents of ACC with the contents of\nCMP <address>\n<address>\nCMP #n Compare the contents of ACC with number n\nFollowing a compare instruction, jump to <address> if\nJPE <address>\nthe compare was True\nFollowing a compare instruction, jump to <address> if\nJPN <address>\nthe compare was False\nJMP\nJump to the given address\n<address>\nEND\nReturn control to the operating system\n<label>: <op\nLabels an instruction\n<operand>\ncode>\n<label>: <data>\nGives a symbolic address <label> to the memory\nlocation with contents <data>\nAn algorithm takes each letter of a stored 5-letter word and checks if the letter is upper case.\nIf the letter is upper case, it outputs the letter.\nIf the letter is not upper case, it converts the letter to upper case and then outputs it.\nAll ASCII upper case letters have 010 as the three most significant bits.\nAssume each letter is alphabetic.\nComplete the assembly language program for the algorithm described using the instruction set\nprovided on the previous page.\nInstruction\nComment\nLabel Op code Operand\nLDR #0 // load zero to IX\n// load count and check if it is 5\nJPE endP // jump to end\nLDX word // load letter from indexed address word\n// check if it is upper case\nCMP #0\nJPE output // jump to output if it is upper case\nLDX word // load letter from indexed address word\n// convert to upper case\noutput: OUT // output the character\n// increase count by 1\nINC IX // increase IX by 1\nJMP start // return to start\nendP: end // end the program\nword: B01001000\nB01101111\nB01110101\nB01110011\nB01100101\nmask1: B00100000\nmask2: B11011111\ncount: 0\n7 Giles is writing a program that uses a stack.\nThe stack stores up to 1000 integers in the 1D array, stackArray.",
+          "text": "The binary search algorithm can be written recursively.\nWrite program code for a recursive function recursiveBinarySearch().\nProgramming language ______\nProgram code",
           "marks": 5,
-          "type": "compare",
+          "type": "write",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "A binary search algorithm searches for data in a sorted array."
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [],
+      "marks": 6,
+      "text": [
+        "The table shows assembly language instructions for a processor that has one general purpose",
+        "register, the Accumulator (ACC), and an Index Register (IX).",
+        "Instruction",
+        "Explanation",
+        "Label Op Operand",
+        "code",
+        "LDM #n Immediate addressing. Load the number n to ACC",
+        "Direct addressing. Load the contents of the location at",
+        "LDD <address>",
+        "the given address to ACC",
+        "Indexed addressing. Form the address from <address>",
+        "LDX <address>",
+        "+ the contents of the Index Register. Copy the contents",
+        "of this calculated address to ACC",
+        "LDR #n Immediate addressing. Load the number n to IX",
+        "STO <address> Store contents of ACC at the given address",
+        "ADD <address> Add the contents of the given address to ACC",
+        "INC <register> Add 1 to the contents of the register (ACC or IX)",
+        "Bitwise AND operation of the contents of ACC with the",
+        "AND <address>",
+        "contents of <address>",
+        "Bitwise XOR operation of the contents of ACC with the",
+        "XOR <address>",
+        "contents of <address>",
+        "Bitwise OR operation of the contents of ACC with the",
+        "OR <address>",
+        "contents of <address>",
+        "Output to screen the character whose ASCII value is",
+        "OUT",
+        "stored in ACC",
+        "Compare the contents of ACC with the contents of",
+        "CMP <address>",
+        "<address>",
+        "CMP #n Compare the contents of ACC with number n",
+        "Following a compare instruction, jump to <address> if",
+        "JPE <address>",
+        "the compare was True",
+        "Following a compare instruction, jump to <address> if",
+        "JPN <address>",
+        "the compare was False",
+        "JMP",
+        "Jump to the given address",
+        "<address>",
+        "END",
+        "Return control to the operating system",
+        "<label>: <op",
+        "Labels an instruction",
+        "<operand>",
+        "code>",
+        "<label>: <data>",
+        "Gives a symbolic address <label> to the memory",
+        "location with contents <data>",
+        "An algorithm takes each letter of a stored 5-letter word and checks if the letter is upper case.",
+        "If the letter is upper case, it outputs the letter.",
+        "If the letter is not upper case, it converts the letter to upper case and then outputs it.",
+        "All ASCII upper case letters have 010 as the three most significant bits.",
+        "Assume each letter is alphabetic.",
+        "Complete the assembly language program for the algorithm described using the instruction set",
+        "provided on the previous page.",
+        "Instruction",
+        "Comment",
+        "Label Op code Operand",
+        "LDR #0 // load zero to IX",
+        "// load count and check if it is 5",
+        "JPE endP // jump to end",
+        "LDX word // load letter from indexed address word",
+        "// check if it is upper case",
+        "CMP #0",
+        "JPE output // jump to output if it is upper case",
+        "LDX word // load letter from indexed address word",
+        "// convert to upper case",
+        "output: OUT // output the character",
+        "// increase count by 1",
+        "INC IX // increase IX by 1",
+        "JMP start // return to start",
+        "endP: end // end the program",
+        "word: B01001000",
+        "B01101111",
+        "B01110101",
+        "B01110011",
+        "B01100101",
+        "mask1: B00100000",
+        "mask2: B11011111",
+        "count: 0"
+      ]
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "10a",
+          "id": "7a",
           "label": "(a)",
           "text": "The procedure setUpStack()takes two parameters:\n• the array, stackArray\n• a pointer to the last element pushed onto the stack, topOfStack\nThe procedure initialises all array elements to −1 and the pointer to −1.\nWrite pseudocode for the procedure setUpStack().",
           "marks": 3,
@@ -352,7 +431,7 @@
           "parts": []
         },
         {
-          "id": "10b",
+          "id": "7b",
           "label": "(b)",
           "text": "The function pop() pops and returns the item from the top of the stack. If the stack is empty,\nit returns −1.\nWrite pseudocode for the function pop().\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
           "marks": 3,
@@ -363,9 +442,10 @@
           "parts": []
         }
       ],
-      "marks": 4,
+      "marks": 6,
       "text": [
-        "H"
+        "Giles is writing a program that uses a stack.",
+        "The stack stores up to 1000 integers in the 1D array, stackArray."
       ]
     }
   ]

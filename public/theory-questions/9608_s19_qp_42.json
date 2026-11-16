@@ -3,8 +3,8 @@
   "subjectCode": "9608",
   "session": "s19",
   "component": "42",
-  "totalMarks": 70,
-  "questionCount": 27,
+  "totalMarks": 61,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -278,16 +278,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF List[LowerBound] = SearchValue"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF List[LowerBound] = SearchValue",
+        "10 THEN"
       ]
     },
     {
@@ -296,16 +288,62 @@
       "parts": [],
       "marks": null,
       "text": [
-        "ValueFound TRUE"
+        "ValueFound TRUE",
+        "12 ELSE"
       ]
     },
     {
-      "id": "12",
+      "id": "13",
+      "context": [],
+      "parts": [
+        {
+          "id": "13b",
+          "label": "(b)",
+          "text": "The following is an example of a sorting algorithm. It sorts the data in the array ArrayData.\n01 TempValue \"\"\n02 REPEAT\n03 Sorted TRUE\n04 FOR Count 0 TO 4\n05 IF ArrayData[Count] > ArrayData[Count + 1]\n06 THEN\n07 TempValue ArrayData[Count + 1]\n08 ArrayData[Count + 1] ArrayData[Count]\n09 ArrayData[Count] TempValue",
+          "marks": null,
+          "type": "other",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": null,
+      "text": [
+        "IF List[MidPoint] < SearchValue",
+        "14 THEN",
+        "15 UpperBound MidPoint + 1",
+        "16 ELSE",
+        "17 UpperBound MidPoint – 1",
+        "18 ENDIF",
+        "19 IF LowerBound > MidPoint",
+        "20 THEN",
+        "21 NotInList TRUE",
+        "22 ENDIF",
+        "23 ENDIF",
+        "24 ENDWHILE",
+        "26 IF ValueFound = FALSE",
+        "27 THEN",
+        "28 OUTPUT \"The value is in the list\"",
+        "29 ELSE",
+        "30 OUTPUT \"The value is not found in the list\"",
+        "31 ENDIF",
+        "Note:",
+        "The pseudocode function",
+        "ROUND(Reall : REAL) RETURNS INTEGER",
+        "rounds a number to the nearest integer value.",
+        "For example: ROUND(4.5) returns 5 and ROUND(4.4) returns 4"
+      ]
+    },
+    {
+      "id": "10",
       "context": [],
       "parts": [],
       "marks": null,
       "text": [
-        "ELSE"
+        "Sorted FALSE",
+        "11 ENDIF",
+        "12 ENDFOR"
       ]
     },
     {
@@ -314,214 +352,7 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF List[MidPoint] < SearchValue"
-      ]
-    },
-    {
-      "id": "14",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "UpperBound MidPoint + 1"
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "UpperBound MidPoint – 1"
-      ]
-    },
-    {
-      "id": "18",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "19",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF LowerBound > MidPoint"
-      ]
-    },
-    {
-      "id": "20",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "21",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "NotInList TRUE"
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "23",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "24",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDWHILE"
-      ]
-    },
-    {
-      "id": "26",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "IF ValueFound = FALSE"
-      ]
-    },
-    {
-      "id": "27",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
-      ]
-    },
-    {
-      "id": "28",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "OUTPUT \"The value is in the list\""
-      ]
-    },
-    {
-      "id": "29",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
-      ]
-    },
-    {
-      "id": "30",
-      "context": [],
-      "parts": [
-        {
-          "id": "30b",
-          "label": "(b)",
-          "text": "The following is an example of a sorting algorithm. It sorts the data in the array ArrayData.\n01 TempValue \"\"\n02 REPEAT\n03 Sorted TRUE\n04 FOR Count 0 TO 4\n05 IF ArrayData[Count] > ArrayData[Count + 1]\n06 THEN\n07 TempValue ArrayData[Count + 1]\n08 ArrayData[Count + 1] ArrayData[Count]\n09 ArrayData[Count] TempValue\n10 Sorted FALSE\n11 ENDIF\n12 ENDFOR\n13 UNTIL Sorted = TRUE",
-          "marks": null,
-          "type": "other",
-          "answerType": "short_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": [
-            {
-              "id": "30bi",
-              "label": "(i)",
-              "text": "Complete the trace table for the algorithm given in part (b), for the ArrayData values\ngiven in the table.\nArrayData\nCount TempValue Sorted\n0 1 2 3 4 5\n5 20 12 25 32 29",
-              "marks": 4,
-              "type": "complete",
-              "answerType": "long_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "30bii",
-              "label": "(ii)",
-              "text": "Rewrite lines 4 to 12 of the algorithm in part (b) using a WHILE loop instead of a FOR\nloop.",
-              "marks": 3,
-              "type": "other",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "30biii",
-              "label": "(iii)",
-              "text": "Identify the algorithm shown in part (b).",
-              "marks": 1,
-              "type": "identify",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            },
-            {
-              "id": "30biv",
-              "label": "(iv)",
-              "text": "Identify another sorting algorithm.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nCambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.",
-              "marks": 1,
-              "type": "identify",
-              "answerType": "short_answer",
-              "hasDiagramRef": false,
-              "diagramOnly": false,
-              "parts": []
-            }
-          ]
-        }
-      ],
-      "marks": 9,
-      "text": [
-        "OUTPUT \"The value is not found in the list\"",
-        "31 ENDIF",
-        "Note:",
-        "The pseudocode function",
-        "ROUND(Reall : REAL) RETURNS INTEGER",
-        "rounds a number to the nearest integer value.",
-        "For example: ROUND(4.5) returns 5 and ROUND(4.4) returns 4"
+        "UNTIL Sorted = TRUE"
       ]
     }
   ]

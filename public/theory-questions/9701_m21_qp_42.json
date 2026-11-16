@@ -3,7 +3,7 @@
   "subjectCode": "9701",
   "session": "m21",
   "component": "42",
-  "totalMarks": 94,
+  "totalMarks": 100,
   "questionCount": 7,
   "questions": [
     {
@@ -264,26 +264,50 @@
         {
           "id": "3d",
           "label": "(d)",
-          "text": "A student collects some data for the reaction of H O with acidified IO , as shown in the table.\n2 2 3\n– +\n[H O ] [IO ] [H ] initial rate of reaction\n2 2\nexperiment\n–3 –3 –3 –3 –1\n/moldm /moldm /moldm /moldm s\n–5\n1 0.0500 0.0700 0.025 1.47 × 10\n–5\n2 0.100 0.0700 0.050 2.94 × 10\n–5\n3 0.100 0.140 0.025 5.88 × 10\n–5",
+          "text": "A student collects some data for the reaction of H O with acidified IO , as shown in the table.\n2 2 3\n– +\n[H O ] [IO ] [H ] initial rate of reaction\n2 2\nexperiment\n–3 –3 –3 –3 –1\n/moldm /moldm /moldm /moldm s\n–5\n1 0.0500 0.0700 0.025 1.47 × 10\n–5\n2 0.100 0.0700 0.050 2.94 × 10\n–5\n3 0.100 0.140 0.025 5.88 × 10\n–5\n4 0.150 0.140 0.025 8.82 × 10\n– +",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
-        }
-      ],
-      "marks": 6,
-      "text": [
-        "Iodates are compounds that contain the IO anion."
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [
+          "parts": [
+            {
+              "id": "3di",
+              "label": "(i)",
+              "text": "Use the data to determine the order of reaction with respect to [H O ], [IO ] and [H ].\n2 2 3\nShow your reasoning.\norder with respect to [H O ] = ______\n2 2\norder with respect to [IO ] = ______\norder with respect to [H ] = ______",
+              "marks": 3,
+              "type": "calculate",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3dii",
+              "label": "(ii)",
+              "text": "Use your answer to (d)(i) to write the rate equation for this reaction.\nrate = ______",
+              "marks": 1,
+              "type": "use",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "3diii",
+              "label": "(iii)",
+              "text": "Calculate the value of the rate constant, k, using data from experiment 4 and your answer\nto (d)(ii).\nGive the units of k.\nk = ______\nunits = ______",
+              "marks": 2,
+              "type": "give",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        },
         {
-          "id": "4e",
+          "id": "3e",
           "label": "(e)",
           "text": "Pb(IO )2 is only sparingly soluble in water at 25°C.\n–13 3 –9\nThe solubility product, K , of Pb(IO ) is 3.69 × 10 mol dm at 25°C.\nsp 3 2",
           "marks": null,
@@ -293,7 +317,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4ei",
+              "id": "3ei",
               "label": "(i)",
               "text": "Write an expression for the solubility product of Pb(IO ) .\n3 2\nK =\nsp\n–3",
               "marks": 1,
@@ -304,7 +328,7 @@
               "parts": []
             },
             {
-              "id": "4eii",
+              "id": "3eii",
               "label": "(ii)",
               "text": "Calculate the solubility, in moldm , of Pb(IO ) at 25°C.\n3 2\n–3\nsolubility = ______ moldm",
               "marks": 2,
@@ -317,7 +341,7 @@
           ]
         },
         {
-          "id": "4f",
+          "id": "3f",
           "label": "(f)",
           "text": "NH IO is an unstable compound that readily decomposes when warmed. The decomposition\n4 3\nreaction is shown.\n1 1 1\n–1\nNH IO (s) → N (g) + O (g) + I (g) + 2H O(l) ∆H = –154.6kJmol\n4 3 2 2 2 2 2 2 2",
           "marks": null,
@@ -327,7 +351,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "4fi",
+              "id": "3fi",
               "label": "(i)",
               "text": "Usethedatainthetabletocalculatetheentropychangeofreaction,∆S, of the decomposition\nof NH IO (s).\n4 3\n–1 –1\ncompound S /JK mol\nNH IO (s) 42\n4 3\nN (g) 192\nO (g) 205\nI (g)\nH O(l) 70\n–1 –1\n∆S = ______ JK mol",
               "marks": 2,
@@ -338,9 +362,9 @@
               "parts": []
             },
             {
-              "id": "4fii",
+              "id": "3fii",
               "label": "(ii)",
-              "text": "This reaction is feasible at all temperatures.\nExplain why, using the data in (f) and your answer to (f)(i).\n4 The transition elements are able to form stable complexes with a wide range of molecules and ions.",
+              "text": "This reaction is feasible at all temperatures.\nExplain why, using the data in (f) and your answer to (f)(i).",
               "marks": 1,
               "type": "explain",
               "answerType": "long_answer",
@@ -349,7 +373,17 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 18,
+      "text": [
+        "Iodates are compounds that contain the IO anion."
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [
         {
           "id": "4a",
           "label": "(a)",
@@ -474,10 +508,9 @@
           ]
         }
       ],
-      "marks": 17,
+      "marks": 11,
       "text": [
-        "0.150 0.140 0.025 8.82 × 10",
-        "– +"
+        "The transition elements are able to form stable complexes with a wide range of molecules and ions."
       ]
     },
     {

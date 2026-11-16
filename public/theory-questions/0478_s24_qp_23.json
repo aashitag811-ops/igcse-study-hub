@@ -4,7 +4,7 @@
   "session": "s24",
   "component": "23",
   "totalMarks": 56,
-  "questionCount": 27,
+  "questionCount": 24,
   "questions": [
     {
       "id": "1",
@@ -228,16 +228,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Response = 'N'"
-      ]
-    },
-    {
-      "id": "22",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Response = 'N'",
+        "22 THEN"
       ]
     },
     {
@@ -246,16 +238,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Continue FALSE"
-      ]
-    },
-    {
-      "id": "24",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
+        "Continue FALSE",
+        "24 ELSE"
       ]
     },
     {
@@ -264,16 +248,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "Count Count + 1"
-      ]
-    },
-    {
-      "id": "26",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "Count Count + 1",
+        "26 ENDIF"
       ]
     },
     {
@@ -415,7 +391,7 @@
         {
           "id": "27c",
           "label": "(c)",
-          "text": "Complete the SQL statement to display only the ID and model of all the aircraft that are\nairworthy.\nSELECT ID, ______\n______ ;\n9 A one-dimensional (1D) array Teams[] contains the names of 10 football teams in a local league.\nA two-dimensional (2D) array Results[] stores, for each team, the total number of:\n• games won\n• games drawn\n• games lost\n• points.\nThe position of any team’s data is the same in both arrays. For example the data in index 3 of\nResults[] belongs to the team in index 3 of Teams[]\nThe array data will be used to find the current leader of the league.\nThe variable Played stores the number of games played by each team. Each team plays the\nsame number of games.\nWrite a program that meets the following requirements:\n• allows the number of games played to be input and stored, with a maximum of 18 games\n• allows the names of the teams to be input and stored\n• allows the number of games won, drawn and lost to be input and stored for each team\n• validates the number of games played and the number of games won, drawn or lost against\nthe number of games played\n• calculates and stores the number of points for each team using three points for a win and one\npoint for a draw; there are no points for a loss\n• sorts the array Results[] into descending order of number of points, ensuring the\ncorresponding parallel array Teams[] is kept in the same order\n• determines how many teams have the highest number of points\n• outputs the name(s) of the winning team(s) along with the number of points achieved.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; you may assume that this has\nalready been done.\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Complete the SQL statement to display only the ID and model of all the aircraft that are\nairworthy.\nSELECT ID, ______\n9 A one-dimensional (1D) array Teams[] contains the names of 10 football teams in a local league.\nA two-dimensional (2D) array Results[] stores, for each team, the total number of:\n• games won\n• games drawn\n• games lost\n• points.\nThe position of any team’s data is the same in both arrays. For example the data in index 3 of\nResults[] belongs to the team in index 3 of Teams[]\nThe array data will be used to find the current leader of the league.\nThe variable Played stores the number of games played by each team. Each team plays the\nsame number of games.\nWrite a program that meets the following requirements:\n• allows the number of games played to be input and stored, with a maximum of 18 games\n• allows the names of the teams to be input and stored\n• allows the number of games won, drawn and lost to be input and stored for each team\n• validates the number of games played and the number of games won, drawn or lost against\nthe number of games played\n• calculates and stores the number of points for each team using three points for a win and one\npoint for a draw; there are no points for a loss\n• sorts the array Results[] into descending order of number of points, ensuring the\ncorresponding parallel array Teams[] is kept in the same order\n• determines how many teams have the highest number of points\n• outputs the name(s) of the winning team(s) along with the number of points achieved.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays, variables or constants; you may assume that this has\nalready been done.\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
           "marks": 4,
           "type": "name",
           "answerType": "fill_blank",

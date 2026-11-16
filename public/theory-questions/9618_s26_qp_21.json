@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s26",
   "component": "21",
-  "totalMarks": 73,
+  "totalMarks": 75,
   "questionCount": 9,
   "questions": [
     {
@@ -93,16 +93,39 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "The user will select from three possible wash options.\nThe pseudocode for the washing machine program contains a procedure WashCycle()\nPROCEDURE WashCycle()\n// declaration of variables has been omitted\n// TimeSoFar is a global variable which changes\n// as the procedure is executed\nFinished FALSE\nTimeSoFar 0.0\nOUTPUT \"Option (1/2/3)\"\nINPUT OptionNumber\nCASE OF OptionNumber:\n// WashTime is the total wash time in minutes\n1 : WashTime 60\n2 : WashTime 90",
+          "text": "The user will select from three possible wash options.\nThe pseudocode for the washing machine program contains a procedure WashCycle()\nPROCEDURE WashCycle()\n// declaration of variables has been omitted\n// TimeSoFar is a global variable which changes\n// as the procedure is executed\nFinished FALSE\nTimeSoFar 0.0\nOUTPUT \"Option (1/2/3)\"\nINPUT OptionNumber\nCASE OF OptionNumber:\n// WashTime is the total wash time in minutes\n1 : WashTime 60\n2 : WashTime 90\n3 : WashTime 120\nENDCASE\nWHILE Finished = FALSE\nTimeRemaining WashTime – INT(TimeSoFar)\nENDWHILE\nENDPROCEDURE",
           "marks": null,
           "type": "other",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
-          "parts": []
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "The programmer uses an Integrated Development Environment (IDE) to develop and\nrun the washing machine program.\nState the IDE feature to display the current value for any variable during the execution\nof the program.\n© Cambridge University Press & Assessment 2026 9618/21/M/J/26\nTrace ID: PC-0464F2DC74\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/21 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/21 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000005 * DFD",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "When option 3 is selected, the programmer interrupts execution when the TimeSoFar\nis 17.6 minutes.\nState the current value for TimeRemaining\n© Cambridge University Press & Assessment 2026 9618/21/M/J/26 [Turn over\nTrace ID: PC-0464F2DC74\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/21 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/21 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000006 * DFD",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
         }
       ],
-      "marks": 5,
+      "marks": 7,
       "text": [
         "A washing machine contains:",
         "• two trays for the washing powder",
@@ -138,7 +161,7 @@
         {
           "id": "3b",
           "label": "(b)",
-          "text": "The analysis stage has ended.\nComplete the statements about the development of the new system.\nBefore any programming is started, the ______ stage for the\nproposed new system must be completed.\nFor this large project, the tasks will be broken down into several\n______ ; each will be coded by a different programming team.\nOnce each team has completed its work, ______ testing must be\ncarried out.\nBefore the new system is delivered to the business, ______ testing\nwill be carried out in-house.\nIt is decided to install the software initially in only one of the call centres where\n______ testing will be carried out.\nThe new software is finally rolled out to all five call centres. In the first week of its use, staff\nreport that the software still requires extra features which were not originally agreed. The\nsoftware is withdrawn until ______ maintenance is completed.\n© Cambridge University Press & Assessment 2026 9618/21/M/J/26\nTrace ID: PC-0464F2DC74\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/21 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/21 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000007 * DFD",
+          "text": "The analysis stage has ended.\nComplete the statements about the development of the new system.\nBefore any programming is started, the ______ stage for the\nproposed new system must be completed.\nFor this large project, the tasks will be broken down into several\nOnce each team has completed its work, ______ testing must be\ncarried out.\nBefore the new system is delivered to the business, ______ testing\nwill be carried out in-house.\nIt is decided to install the software initially in only one of the call centres where\nThe new software is finally rolled out to all five call centres. In the first week of its use, staff\nreport that the software still requires extra features which were not originally agreed. The\nsoftware is withdrawn until ______ maintenance is completed.\n© Cambridge University Press & Assessment 2026 9618/21/M/J/26\nTrace ID: PC-0464F2DC74\nRe-uploading, mirroring or re-hosting this file on any other website or domain is unauthorised and traceable.\nLicensed for hosting on papacambridge.com only.\n9618/21 Question Paper June 2026 | Source: papacambridge.com\nPapaCambridge · papacambridge.com 9618/21 Question Paper June 2026\nDownloaded from PapaCambridge - https://papacambridge.com/\n* 0000800000007 * DFD",
           "marks": 6,
           "type": "complete",
           "answerType": "fill_blank",
@@ -149,12 +172,8 @@
       ],
       "marks": 9,
       "text": [
-        ": WashTime 120",
-        "ENDCASE",
-        "WHILE Finished = FALSE",
-        "TimeRemaining WashTime – INT(TimeSoFar)",
-        "ENDWHILE",
-        "ENDPROCEDURE"
+        "A business operates five call centres. The software currently in use in each call centre is to be",
+        "replaced; a new system will be developed by a software company."
       ]
     },
     {

@@ -3,7 +3,7 @@
   "subjectCode": "9618",
   "session": "s23",
   "component": "32",
-  "totalMarks": 61,
+  "totalMarks": 75,
   "questionCount": 11,
   "questions": [
     {
@@ -74,68 +74,9 @@
     {
       "id": "3",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Several syntax diagrams are shown.",
-        "digit letter",
-        "0 A",
-        "1 C",
-        "2 E",
-        "3 G"
-      ]
-    },
-    {
-      "id": "4",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "I"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "K"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "M"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "O"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Q"
-      ]
-    },
-    {
-      "id": "9",
-      "context": [],
       "parts": [
         {
-          "id": "9a",
+          "id": "3a",
           "label": "(a)",
           "text": "State whether each variable is valid or invalid and give a reason for your choice in each case.\n9SW ______\nReason ______\nUWY ______\nReason ______",
           "marks": 2,
@@ -146,7 +87,7 @@
           "parts": []
         },
         {
-          "id": "9b",
+          "id": "3b",
           "label": "(b)",
           "text": "<word> contains one or more letters.\nComplete the Backus‑Naur Form (BNF) for <word> and use this to complete the BNF for\n<variable>.\n<word> ::= ______\n<variable> ::= ______",
           "marks": 3,
@@ -157,7 +98,7 @@
           "parts": []
         },
         {
-          "id": "9c",
+          "id": "3c",
           "label": "(c)",
           "text": "Vehicle registrations must begin with two letters and be followed by one, two or three digits.\nValid letters and digits are shown in the syntax diagrams on page 4.",
           "marks": null,
@@ -167,7 +108,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "9ci",
+              "id": "3ci",
               "label": "(i)",
               "text": "State an example of a valid vehicle registration.",
               "marks": 1,
@@ -178,23 +119,101 @@
               "parts": []
             },
             {
-              "id": "9cii",
+              "id": "3cii",
               "label": "(ii)",
-              "text": "Draw a syntax diagram for a vehicle registration.\n4 Draw one line from each Object‑Oriented Programming (OOP) term to its most appropriate\ndescription.\nOOP term Description\nmethods used to return the value of\na property\nEncapsulation\nthe process of putting data and\nmethods together as a single unit\nGetters\nmethods used to update the value of\na property\nPolymorphism\nallows methods to be redefined for\nderived classes\nSetters\nenables the defining of a new class\nthat inherits from a parent class\n5 (a) Encryption is used to scramble data to make it meaningless if intercepted.\nDescribe the purpose of quantum cryptography.",
+              "text": "Draw a syntax diagram for a vehicle registration.",
               "marks": 3,
-              "type": "describe",
-              "answerType": "long_answer",
+              "type": "draw",
+              "answerType": "diagram_only",
               "hasDiagramRef": true,
-              "diagramOnly": false,
+              "diagramOnly": true,
               "parts": []
             }
           ]
+        }
+      ],
+      "marks": 9,
+      "text": [
+        "Several syntax diagrams are shown.",
+        "digit letter",
+        "0 A",
+        "1 C",
+        "2 E",
+        "3 G",
+        "4 I",
+        "5 K",
+        "6 M",
+        "7 O",
+        "8 Q",
+        "9 S",
+        "variable",
+        "letter digit"
+      ]
+    },
+    {
+      "id": "4",
+      "context": [],
+      "parts": [],
+      "marks": 4,
+      "text": [
+        "Draw one line from each Object‑Oriented Programming (OOP) term to its most appropriate",
+        "description.",
+        "OOP term Description",
+        "methods used to return the value of",
+        "a property",
+        "Encapsulation",
+        "the process of putting data and",
+        "methods together as a single unit",
+        "Getters",
+        "methods used to update the value of",
+        "a property",
+        "Polymorphism",
+        "allows methods to be redefined for",
+        "derived classes",
+        "Setters",
+        "enables the defining of a new class",
+        "that inherits from a parent class"
+      ]
+    },
+    {
+      "id": "5",
+      "context": [],
+      "parts": [
+        {
+          "id": "5a",
+          "label": "(a)",
+          "text": "Encryption is used to scramble data to make it meaningless if intercepted.\nDescribe the purpose of quantum cryptography.",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
         },
         {
-          "id": "9b",
+          "id": "5b",
           "label": "(b)",
-          "text": "Explain the differences between symmetric and asymmetric cryptography when encrypting\nand decrypting data.\n6 (a) Write pseudocode statements to declare the composite data type, TAppointments, to hold\ndata about patients for a dental clinic. It will include for each patient:\n• name (first name and last name)\n• date of birth\n• telephone number\n• date of last appointment\n• date of next appointment\n• all treatments are complete (yes or no).",
+          "text": "Explain the differences between symmetric and asymmetric cryptography when encrypting\nand decrypting data.",
           "marks": 3,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 5,
+      "text": []
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
+        {
+          "id": "6a",
+          "label": "(a)",
+          "text": "Write pseudocode statements to declare the composite data type, TAppointments, to hold\ndata about patients for a dental clinic. It will include for each patient:\n• name (first name and last name)\n• date of birth\n• telephone number\n• date of last appointment\n• date of next appointment\n• all treatments are complete (yes or no).",
+          "marks": 4,
           "type": "name",
           "answerType": "short_answer",
           "hasDiagramRef": false,
@@ -202,38 +221,84 @@
           "parts": []
         },
         {
-          "id": "9b",
+          "id": "6b",
           "label": "(b)",
-          "text": "This pseudocode algorithm reads dental records stored in a random file using the user‑defined\ndata type TAppointments and prints the contents of the file, one record at a time.\nComplete this file handling pseudocode:\nDECLARE DentalRecord : ARRAY[1:250] OF TAppointments\nDECLARE DentalFile : STRING\nDECLARE Count : INTEGER\nDentalFile \"DentalFile.dat\"\nOUTPUT \"The file \", DentalFile, \" contains these records:\"\nOPENFILE ______\n______ 1\nREPEAT\nSEEK DentalFile, Count\nOUTPUT DentalRecord[Count]\nCount Count + 1\n______(DentalFile)\n7 (a) State two examples of where it would be appropriate to use packet switching.",
+          "text": "This pseudocode algorithm reads dental records stored in a random file using the user‑defined\ndata type TAppointments and prints the contents of the file, one record at a time.\nComplete this file handling pseudocode:\nDECLARE DentalRecord : ARRAY[1:250] OF TAppointments\nDECLARE DentalFile : STRING\nDECLARE Count : INTEGER\nDentalFile \"DentalFile.dat\"\nOUTPUT \"The file \", DentalFile, \" contains these records:\"\nOPENFILE ______\nREPEAT\nSEEK DentalFile, Count\nOUTPUT DentalRecord[Count]\nCount Count + 1",
           "marks": 5,
-          "type": "state",
+          "type": "complete",
           "answerType": "fill_blank",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 9,
+      "text": []
+    },
+    {
+      "id": "7",
+      "context": [],
+      "parts": [
         {
-          "id": "9b",
-          "label": "(b)",
-          "text": "Give four differences between circuit switching and packet switching.\n8 (a) Describe the use of pipelining in Reduced Instruction Set Computers (RISC).",
-          "marks": 4,
-          "type": "give",
+          "id": "7a",
+          "label": "(a)",
+          "text": "State two examples of where it would be appropriate to use packet switching.",
+          "marks": 2,
+          "type": "state",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         },
         {
-          "id": "9b",
+          "id": "7b",
           "label": "(b)",
-          "text": "The processing of instructions is divided into five stages:\n• instruction fetch (IF)\n• instruction decode (ID)\n• operand fetch (OF)\n• instruction execute (IE)\n• write back result (WB)\nEach stage is carried out using a different register when pipelining is used.\nComplete the table to show how a program consisting of six instructions would be completed\nusing pipelining.\nClock cycles\n1 2 3 4 5 6 7 8 9 10 11 12\nIF\nID\nOF\nIE\nProcessor stages\nWB\n9 This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0",
+          "text": "Give four differences between circuit switching and packet switching.",
+          "marks": 4,
+          "type": "give",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "8",
+      "context": [],
+      "parts": [
+        {
+          "id": "8a",
+          "label": "(a)",
+          "text": "Describe the use of pipelining in Reduced Instruction Set Computers (RISC).",
+          "marks": 2,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "8b",
+          "label": "(b)",
+          "text": "The processing of instructions is divided into five stages:\n• instruction fetch (IF)\n• instruction decode (ID)\n• operand fetch (OF)\n• instruction execute (IE)\n• write back result (WB)\nEach stage is carried out using a different register when pipelining is used.\nComplete the table to show how a program consisting of six instructions would be completed\nusing pipelining.\nClock cycles\n1 2 3 4 5 6 7 8 9 10 11 12\nIF\nID\nOF\nIE\nProcessor stages\nWB",
           "marks": 4,
           "type": "complete",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 6,
+      "text": []
+    },
+    {
+      "id": "9",
+      "context": [],
+      "parts": [
         {
           "id": "9a",
           "label": "(a)",
@@ -290,11 +355,27 @@
           "parts": []
         }
       ],
-      "marks": 35,
+      "marks": 10,
       "text": [
-        "S",
-        "variable",
-        "letter digit"
+        "This truth table represents a logic circuit.",
+        "INPUT OUTPUT",
+        "A B C D Z",
+        "0 0 0 0 1",
+        "0 0 0 1 1",
+        "0 0 1 0 1",
+        "0 0 1 1 1",
+        "0 1 0 0 0",
+        "0 1 0 1 0",
+        "0 1 1 0 1",
+        "0 1 1 1 1",
+        "1 0 0 0 0",
+        "1 0 0 1 0",
+        "1 0 1 0 0",
+        "1 0 1 1 0",
+        "1 1 0 0 0",
+        "1 1 0 1 0",
+        "1 1 1 0 0",
+        "1 1 1 1 0"
       ]
     },
     {
@@ -345,7 +426,7 @@
         {
           "id": "11a",
           "label": "(a)",
-          "text": "The pseudocode shown represents a queue Abstract Data Type (ADT) with procedures for\ninitialisation and to add new items. It is incomplete.\nCONSTANT MaxLength = 50\nDECLARE FrontPointer : INTEGER\nDECLARE RearPointer : INTEGER\nDECLARE Length : INTEGER\nDECLARE Queue : ARRAY[0 : MaxLength – 1] OF STRING\n// initialisation of queue\nPROCEDURE Initialise\nFrontPointer ‑1\n______ 0\nENDPROCEDURE\n// adding a new item to the queue\nPROCEDURE Enqueue(NewItem : STRING)\nIF ______ THEN\nRearPointer ______\nIF RearPointer > MaxLength – 1 THEN\nRearPointer 0\nENDIF\nLength Length + 1\nENDIF\nENDPROCEDURE",
+          "text": "The pseudocode shown represents a queue Abstract Data Type (ADT) with procedures for\ninitialisation and to add new items. It is incomplete.\nCONSTANT MaxLength = 50\nDECLARE FrontPointer : INTEGER\nDECLARE RearPointer : INTEGER\nDECLARE Length : INTEGER\nDECLARE Queue : ARRAY[0 : MaxLength – 1] OF STRING\n// initialisation of queue\nPROCEDURE Initialise\nFrontPointer ‑1\nENDPROCEDURE\n// adding a new item to the queue\nPROCEDURE Enqueue(NewItem : STRING)\nIF ______ THEN\nRearPointer ______\nIF RearPointer > MaxLength – 1 THEN\nRearPointer 0\nENDIF\nLength Length + 1\nENDIF\nENDPROCEDURE",
           "marks": null,
           "type": "draw",
           "answerType": "diagram_only",

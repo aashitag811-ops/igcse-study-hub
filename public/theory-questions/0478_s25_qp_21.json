@@ -3,8 +3,8 @@
   "subjectCode": "0478",
   "session": "s25",
   "component": "21",
-  "totalMarks": 60,
-  "questionCount": 17,
+  "totalMarks": 75,
+  "questionCount": 11,
   "questions": [
     {
       "id": "1",
@@ -135,16 +135,8 @@
         "03 REPEAT",
         "04 OUTPUT \"Please enter a guess\"",
         "05 INPUT G",
-        "06 IF G > N"
-      ]
-    },
-    {
-      "id": "07",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "06 IF G > N",
+        "07 THEN"
       ]
     },
     {
@@ -153,16 +145,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "OUTPUT \"The number is lower than your guess\""
-      ]
-    },
-    {
-      "id": "09",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
+        "OUTPUT \"The number is lower than your guess\"",
+        "09 ELSE"
       ]
     },
     {
@@ -171,16 +155,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF G < N"
-      ]
-    },
-    {
-      "id": "11",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF G < N",
+        "11 THEN"
       ]
     },
     {
@@ -189,53 +165,18 @@
       "parts": [],
       "marks": null,
       "text": [
-        "OUTPUT \"The number is lower than your guess\""
-      ]
-    },
-    {
-      "id": "13",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "OUTPUT \"The number is lower than your guess\"",
+        "13 ENDIF"
       ]
     },
     {
       "id": "14",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Counter Counter + 1"
-      ]
-    },
-    {
-      "id": "15",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "16",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "UNTIL G = N"
-      ]
-    },
-    {
-      "id": "17",
-      "context": [],
       "parts": [
         {
-          "id": "17a",
+          "id": "14a",
           "label": "(a)",
-          "text": "Identify the line numbers of the four errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______\n______ DO NOT WRITE IN THIS MARGIN",
+          "text": "Identify the line numbers of the four errors in the pseudocode and suggest a correction for\neach error.\nError 1 line number ______\nCorrection ______\nError 2 line number ______\nCorrection ______\nError 3 line number ______\nCorrection ______\nError 4 line number ______\nCorrection ______",
           "marks": 4,
           "type": "identify",
           "answerType": "fill_blank",
@@ -244,7 +185,7 @@
           "parts": []
         },
         {
-          "id": "17b",
+          "id": "14b",
           "label": "(b)",
           "text": "Identify one method to make the algorithm maintainable.\nGive an example.\n7 Consider the logic expression:\nX = (A AND B) XOR (B OR NOT C)",
           "marks": 2,
@@ -255,7 +196,7 @@
           "parts": []
         },
         {
-          "id": "17a",
+          "id": "14a",
           "label": "(a)",
           "text": "Draw a logic circuit for this logic expression.\nEach logic gate must have a maximum of two inputs.\nDo not simplify the logic expression.\nB X\nDO NOT WRITE IN THIS MARGINC",
           "marks": 4,
@@ -266,7 +207,7 @@
           "parts": []
         },
         {
-          "id": "17b",
+          "id": "14b",
           "label": "(b)",
           "text": "Complete the truth table for the given logic expression.\nWorking space\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n8 A bus company has set up a new database table called BUS to store details of the buses leaving\nthe main bus terminal.\nRouteID Destination Stops Driver Time Return\nBC01 Town Centre 10 B Smith 9:00 Yes\nBC02 The Fountain 5 A Patel 9:10 Yes DO NOT WRITE IN THIS MARGIN\nBC03 The Palace 9 B Hayes 9:28 No\nBC04 City Park 12 W Gao 9:55 Yes\nBC05 City Mall 9 R Hussein 10:10 No\nBC06 Swan Lake 14 S Clarke 10:33 No\nBC07 Guildhall Square 7 J Page 11:34 No\nBC08 Sunset Quay 6 A Patel 12:01 Yes\nBC10 Fort Worthington 15 E Carr 12:01 Yes\nBC12 The Observatory 18 B Smith 13:27 No\nBC14 East Seaport 11 B Scott 14:07 No\nBC15 The Football Ground 12 J Page 14:46 Yes\nBC19 The Cricket Ground 11 B Hayes 15:14 No\nBC23 Temple Ruins 14 W Gao 16:16 No\nBC27 The University 9 A Patel 16:45 No",
           "marks": 4,
@@ -277,7 +218,7 @@
           "parts": []
         },
         {
-          "id": "17a",
+          "id": "14a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -287,7 +228,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "17ai",
+              "id": "14ai",
               "label": "(i)",
               "text": "Identify one appropriate data type for the field Return",
               "marks": 1,
@@ -298,7 +239,7 @@
               "parts": []
             },
             {
-              "id": "17aii",
+              "id": "14aii",
               "label": "(ii)",
               "text": "State the reason for the data type chosen.",
               "marks": 1,
@@ -311,7 +252,7 @@
           ]
         },
         {
-          "id": "17b",
+          "id": "14b",
           "label": "(b)",
           "text": "Write the output from the structured query language (SQL) statement:\nSELECT RouteID, Destination, Time\nFROM BUS\nWHERE Driver = \"A Patel\";",
           "marks": 2,
@@ -322,7 +263,7 @@
           "parts": []
         },
         {
-          "id": "17c",
+          "id": "14c",
           "label": "(c)",
           "text": "Complete the SQL statement to display only the destination of the buses that have a return.\nSELECT ______\n9 The variables A and B are used in a program. A holds a whole number and B holds text.",
           "marks": 3,
@@ -333,7 +274,7 @@
           "parts": []
         },
         {
-          "id": "17a",
+          "id": "14a",
           "label": "(a)",
           "text": "Write pseudocode statements to declare the variables A and B",
           "marks": 2,
@@ -344,7 +285,7 @@
           "parts": []
         },
         {
-          "id": "17b",
+          "id": "14b",
           "label": "(b)",
           "text": "The function Odds(X) returns ‘Odd’ if the value of X is an odd number and returns ‘Even’ if\nthe value of X is an even number.\nWrite pseudocode statements to:\n• define the function\n• call the function using parameter A and store the return item in variable B\nFunction definition ______\nFunction call ______\n10 The flowchart represents an algorithm to calculate grades.\nSTART\nINPUT\nScore\nIS Score\nYes\nGrade \"C\"\n>= 40 ?\nNo\nIS Score\nYes\nGrade \"B\"\n>= 60 ?\nNo\nIS Score\nYes\nGrade \"A\"\n>= 80 ?\nNo\nGrade \"D\"\nOUTPUT \"You\nachieved a \", Grade\nSTOP",
           "marks": 6,
@@ -355,7 +296,7 @@
           "parts": []
         },
         {
-          "id": "17a",
+          "id": "14a",
           "label": "(a)",
           "text": "Complete the trace table for the algorithm, using the input data:\n21, 46, 63, 91, 12\nScore Grade\nOUTPUT",
           "marks": 3,
@@ -366,9 +307,9 @@
           "parts": []
         },
         {
-          "id": "17b",
+          "id": "14b",
           "label": "(b)",
-          "text": "Explain how the flowchart can be changed to produce the correct output.\n11 The one-dimensional (1D) array CompetitorName[] contains the names of 25 competitors in a\ntournament that includes five events.\nAnother two-dimensional (2D) array CompetitorScore[] contains the points scored by each\ncompetitor in the five events. The first dimension of this array contains the index of the competitor\nfrom CompetitorName[] and the second dimension contains their scores.\nEach competitor receives a score out of 100 for each event. These scores are manually entered\ninto CompetitorScore[]\nMedals are awarded to the competitor or the competitors who have:\n• the highest points scored in each of the five events\n• the highest total points scored for all five events.\nThe one-dimensional (1D) array Points[] stores the total number of points scored for each\ncompetitor.\nWrite a program that meets the following requirements:\n• takes as input, valid scores (between 0 and 100), for each competitor in each of the five\nevents\n• calculates the highest points scored for each event\n• outputs the names of the competitors who receive a medal for the highest points scored\n• calculates the highest total points scored for the five events\n• outputs the names of the competitors with the highest total points scored for the five events.\nYou must use pseudocode or program code and add comments to explain how your code works.\nYou do not need to declare any arrays or variables.\nAll inputs and outputs must contain suitable messages.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nTo avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge\nAssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download\nat www.cambridgeinternational.org after the live examination series.\nLocal Examinations Syndicate (UCLES), which is a department of the University of Cambridge.",
+          "text": "Explain how the flowchart can be changed to produce the correct output.",
           "marks": 4,
           "type": "explain",
           "answerType": "long_answer",
@@ -379,7 +320,46 @@
       ],
       "marks": 36,
       "text": [
-        "OUTPUT \"Well done, you took \", Guess, \" attempts\""
+        "Counter Counter + 1",
+        "15 ENDIF",
+        "16 UNTIL G = N",
+        "17 OUTPUT \"Well done, you took \", Guess, \" attempts\""
+      ]
+    },
+    {
+      "id": "11",
+      "context": [],
+      "parts": [],
+      "marks": 15,
+      "text": [
+        "The one-dimensional (1D) array CompetitorName[] contains the names of 25 competitors in a",
+        "tournament that includes five events.",
+        "Another two-dimensional (2D) array CompetitorScore[] contains the points scored by each",
+        "competitor in the five events. The first dimension of this array contains the index of the competitor",
+        "from CompetitorName[] and the second dimension contains their scores.",
+        "Each competitor receives a score out of 100 for each event. These scores are manually entered",
+        "into CompetitorScore[]",
+        "Medals are awarded to the competitor or the competitors who have:",
+        "• the highest points scored in each of the five events",
+        "• the highest total points scored for all five events.",
+        "The one-dimensional (1D) array Points[] stores the total number of points scored for each",
+        "competitor.",
+        "Write a program that meets the following requirements:",
+        "• takes as input, valid scores (between 0 and 100), for each competitor in each of the five",
+        "events",
+        "• calculates the highest points scored for each event",
+        "• outputs the names of the competitors who receive a medal for the highest points scored",
+        "• calculates the highest total points scored for the five events",
+        "• outputs the names of the competitors with the highest total points scored for the five events.",
+        "You must use pseudocode or program code and add comments to explain how your code works.",
+        "You do not need to declare any arrays or variables.",
+        "All inputs and outputs must contain suitable messages.",
+        "reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the",
+        "publisher will be pleased to make amends at the earliest possible opportunity.",
+        "To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge",
+        "Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download",
+        "at www.cambridgeinternational.org after the live examination series.",
+        "Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge."
       ]
     }
   ]

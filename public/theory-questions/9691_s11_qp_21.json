@@ -3,8 +3,8 @@
   "subjectCode": "9691",
   "session": "s11",
   "component": "21",
-  "totalMarks": 75,
-  "questionCount": 8,
+  "totalMarks": 42,
+  "questionCount": 6,
   "questions": [
     {
       "id": "1",
@@ -137,42 +137,16 @@
       "parts": [],
       "marks": null,
       "text": [
-        "IF Word(Index)='a'"
-      ]
-    },
-    {
-      "id": "5",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "THEN"
+        "IF Word(Index)='a'",
+        "5 THEN"
       ]
     },
     {
       "id": "6",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "Count ← Count + 1"
-      ]
-    },
-    {
-      "id": "7",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
       "parts": [
         {
-          "id": "8a",
+          "id": "6a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -182,7 +156,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8ai",
+              "id": "6ai",
               "label": "(i)",
               "text": "Complete the trace table for this pseudocode using ‘banana’ as input.\nThe first seven rows have been filled in. Examiner's\nWord Count Index Word(Index) Word(Index)= 'a'\nbanana\nfalse",
               "marks": 6,
@@ -193,10 +167,10 @@
               "parts": []
             },
             {
-              "id": "8aii",
+              "id": "6aii",
               "label": "(ii)",
-              "text": "Complete this trace table for the pseudocode using ‘Ant’ as input.\n1 INPUT Word\n2 Count ← 0\n3 LOOP FOR Index ← 1 TO length(Word)\n4 IF Word(Index)='a'\n5 THEN\n6 Count ← Count + 1\n7 ENDIF\n8 ENDLOOP\nWord Count Index Word(Index) Word(Index)='a'\nAnt",
-              "marks": 3,
+              "text": "Complete this trace table for the pseudocode using ‘Ant’ as input.\n1 INPUT Word\n2 Count ← 0\n3 LOOP FOR Index ← 1 TO length(Word)\n4 IF Word(Index)='a'\n5 THEN",
+              "marks": null,
               "type": "complete",
               "answerType": "long_answer",
               "hasDiagramRef": false,
@@ -204,9 +178,21 @@
               "parts": []
             }
           ]
-        },
+        }
+      ],
+      "marks": 6,
+      "text": [
+        "Count ← Count + 1",
+        "7 ENDIF",
+        "8 ENDLOOP"
+      ]
+    },
+    {
+      "id": "6",
+      "context": [],
+      "parts": [
         {
-          "id": "8b",
+          "id": "6b",
           "label": "(b)",
           "text": "Raul wants uppercase 'A' to be counted as well as each lower case 'a'.\nRe-write line 4 of the pseudocode so that every ‘A’ is included in the count.",
           "marks": 2,
@@ -217,7 +203,7 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "6c",
           "label": "(c)",
           "text": "",
           "marks": null,
@@ -227,7 +213,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8ci",
+              "id": "6ci",
               "label": "(i)",
               "text": "The pseudocode has features that make it easy to understand. State two such\nfeatures. Examiner's\nFeature 1\nFeature 2\nProgram code is to be produced from the pseudocode.",
               "marks": 2,
@@ -238,7 +224,7 @@
               "parts": []
             },
             {
-              "id": "8cii",
+              "id": "6cii",
               "label": "(ii)",
               "text": "State one other feature that could be introduced to make the program code easy\nto understand.",
               "marks": 1,
@@ -249,7 +235,7 @@
               "parts": []
             },
             {
-              "id": "8ciii",
+              "id": "6ciii",
               "label": "(iii)",
               "text": "State two reasons why it is important for the program to be easily understood.\nReason 1\nReason 2",
               "marks": 2,
@@ -262,7 +248,7 @@
           ]
         },
         {
-          "id": "8d",
+          "id": "6d",
           "label": "(d)",
           "text": "Each letter in the alphabet has an ASCII code.",
           "marks": null,
@@ -272,7 +258,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8di",
+              "id": "6di",
               "label": "(i)",
               "text": "What form does an ASCII code take?",
               "marks": 1,
@@ -283,7 +269,7 @@
               "parts": []
             },
             {
-              "id": "8dii",
+              "id": "6dii",
               "label": "(ii)",
               "text": "Describe how ASCII codes can be used to arrange two lower case letters in\nalphabetical order.",
               "marks": 3,
@@ -294,7 +280,7 @@
               "parts": []
             },
             {
-              "id": "8diii",
+              "id": "6diii",
               "label": "(iii)",
               "text": "Describe how two words (lower case letters only) can be arranged in alphabetical\norder.\n3 Raul writes a program which will keep a tally of the number of times each letter appears in a\ngiven text. He uses an array of size 26 to store the totals for each letter. He then initialised Examiner's\neach element of the array.",
               "marks": 4,
@@ -307,7 +293,7 @@
           ]
         },
         {
-          "id": "8a",
+          "id": "6a",
           "label": "(a)",
           "text": "What value should Raul give each element?",
           "marks": 1,
@@ -318,7 +304,7 @@
           "parts": []
         },
         {
-          "id": "8b",
+          "id": "6b",
           "label": "(b)",
           "text": "Define the array and initialise each element of the array using a high-level\nprogramming language of your choice.\nLanguage\nCode",
           "marks": 4,
@@ -329,7 +315,7 @@
           "parts": []
         },
         {
-          "id": "8c",
+          "id": "6c",
           "label": "(c)",
           "text": "Write the statements required to update the array when a letter has been read.\n4 The following pseudocode is a recursive function where n is an integer.\nFUNCTION prod(n)\nIF n = 1\nTHEN\nprod ← 1\nELSE\nprod ← n * prod(n-1)\nENDIF\nRETURN",
           "marks": 3,
@@ -340,7 +326,7 @@
           "parts": []
         },
         {
-          "id": "8a",
+          "id": "6a",
           "label": "(a)",
           "text": "",
           "marks": null,
@@ -350,7 +336,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8ai",
+              "id": "6ai",
               "label": "(i)",
               "text": "What value is returned by prod(1)?",
               "marks": 1,
@@ -361,7 +347,7 @@
               "parts": []
             },
             {
-              "id": "8aii",
+              "id": "6aii",
               "label": "(ii)",
               "text": "What value is returned by prod(3)?",
               "marks": 1,
@@ -374,7 +360,7 @@
           ]
         },
         {
-          "id": "8b",
+          "id": "6b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -384,7 +370,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8bi",
+              "id": "6bi",
               "label": "(i)",
               "text": "What happens if the parameter passed is -1?",
               "marks": 2,
@@ -395,7 +381,7 @@
               "parts": []
             },
             {
-              "id": "8bii",
+              "id": "6bii",
               "label": "(ii)",
               "text": "What changes will need to be made to the pseudocode to address the problem in",
               "marks": null,
@@ -408,7 +394,7 @@
           ]
         },
         {
-          "id": "8b",
+          "id": "6b",
           "label": "(b)",
           "text": "",
           "marks": null,
@@ -418,7 +404,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "8bi",
+              "id": "6bi",
               "label": "(i)",
               "text": "?",
               "marks": 2,
@@ -431,7 +417,7 @@
           ]
         },
         {
-          "id": "8c",
+          "id": "6c",
           "label": "(c)",
           "text": "Rewrite this function in pseudocode as an iterative function.\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 4,
@@ -442,9 +428,13 @@
           "parts": []
         }
       ],
-      "marks": 42,
+      "marks": 3,
       "text": [
-        "ENDLOOP"
+        "Count ← Count + 1",
+        "7 ENDIF",
+        "8 ENDLOOP",
+        "Word Count Index Word(Index) Word(Index)='a'",
+        "Ant"
       ]
     }
   ]

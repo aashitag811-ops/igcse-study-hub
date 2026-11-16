@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "w19",
   "component": "42",
-  "totalMarks": 35,
+  "totalMarks": 75,
   "questionCount": 5,
   "questions": [
     {
@@ -23,28 +23,29 @@
             {
               "id": "1ai",
               "label": "(i)",
-              "text": "Add the correct activities and times to the following Program Evaluation Review\nTechnique (PERT) chart for the software development.\nThree of the activities and times have been done for you.\n1 2 3 4 8",
-              "marks": null,
+              "text": "Add the correct activities and times to the following Program Evaluation Review\nTechnique (PERT) chart for the software development.\nThree of the activities and times have been done for you.\n1 2 3 4 8\n2 F\n11 10",
+              "marks": 7,
               "type": "draw",
               "answerType": "diagram_only",
               "hasDiagramRef": false,
               "diagramOnly": true,
               "parts": []
+            },
+            {
+              "id": "1aii",
+              "label": "(ii)",
+              "text": "The dashed line connecting nodes 10 and 11 indicates a dummy activity.\nState the purpose of a dummy activity.",
+              "marks": 1,
+              "type": "state",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
             }
           ]
-        }
-      ],
-      "marks": null,
-      "text": [
-        "A technology company needs software to calculate how much each employee should be paid."
-      ]
-    },
-    {
-      "id": "2",
-      "context": [],
-      "parts": [
+        },
         {
-          "id": "2b",
+          "id": "1b",
           "label": "(b)",
           "text": "A bonus payment may be added to an employee’s salary. A pension payment may also be\nsubtracted from an employee’s salary.\nThe company needs to assess what additions and subtractions should be made to the salary\nof each employee. There are three conditions to check:\n• If the employee has worked a public holiday, they receive a 3% bonus payment.\n• If the employee has worked 160 or more hours in a month, they receive an additional 5%\nbonus payment.\n• If the employee pays into a pension, the company subtracts 4% for the pension payment.\nComplete the decision table to show the additions and subtractions.\nRules\nPublic holiday Y Y Y Y N N N N\nConditions Hours >= 160 Y Y N N Y Y N N\nPension Y N Y N Y N Y N\n3% bonus payment\nActions 5% bonus payment\n4% pension payment",
           "marks": 3,
@@ -55,7 +56,7 @@
           "parts": []
         },
         {
-          "id": "2c",
+          "id": "1c",
           "label": "(c)",
           "text": "The company decides to implement a program for the software using object-oriented\nprogramming (OOP).\nEach employee has a unique employee ID, name, address and date of birth. There are two\ntypes of employee: salary and apprenticeship.\nSalaried employees are paid a fixed monthly payment. The hours a salary employee works in\na month are recorded to calculate bonus payments. They may receive bonus payments and\nmake pension payments (given in part(b)).\nApprenticeship employees are paid weekly. They receive an hourly rate of pay. Apprenticeship\nemployees do not receive bonus payments or make pension payments.",
           "marks": null,
@@ -65,7 +66,7 @@
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2ci",
+              "id": "1ci",
               "label": "(i)",
               "text": "Complete the following class diagram for the program.\nEmployee\nEmployeeID : STRING\nName : STRING\nAddress : STRING\nDateOfBirth : Date\nConstructor()\nGetEmployeeID()\nGetName()\nGetAddress()\nGetDateOfBirth()\nSetEmployeeID()\nSetName()\nSetAddress()\nSetDateOfBirth()\nSalaryEmployee ApprenticeshipEmployee\nMonthlyPayment : CURRENCY\nHoursThisMonth: REAL\nPublicHoliday : BOOLEAN\nPension : BOOLEAN\nConstructor()\nGetMonthlyPayment() ______\nGetHoursThisMonth()\nGetPublicHoliday()\nGetHourlyRate()\nGetPension()\nGetHoursThisWeek()\nSetMonthlyPayment()\nSetHourlyRate()\nSetHoursThisMonth()\nSetPublicHoliday()\nSetPension()",
               "marks": 3,
@@ -76,7 +77,7 @@
               "parts": []
             },
             {
-              "id": "2cii",
+              "id": "1cii",
               "label": "(ii)",
               "text": "Write program code for the Constructor() in the Employee class.\nAll properties are sent as parameters.\nProgramming language ______\nProgram code",
               "marks": 4,
@@ -87,7 +88,7 @@
               "parts": []
             },
             {
-              "id": "2ciii",
+              "id": "1ciii",
               "label": "(iii)",
               "text": "Write program code for the GetEmployeeID()method in the Employee class.\nThe get method returns the value of the EmployeeID property.\nProgramming language ______\nProgram code",
               "marks": 2,
@@ -98,7 +99,7 @@
               "parts": []
             },
             {
-              "id": "2civ",
+              "id": "1civ",
               "label": "(iv)",
               "text": "Write program code for the SetEmployeeID()method in the Employee class.\nThe set method takes the new value as its parameter.\nProgramming language ______\nProgram code",
               "marks": 2,
@@ -109,7 +110,7 @@
               "parts": []
             },
             {
-              "id": "2cv",
+              "id": "1cv",
               "label": "(v)",
               "text": "Write program code for the SetPension()method in the SalaryEmployee()class.\n• The method takes a new value for Pension as a parameter.\n• If the parameter’s value is valid (it is TRUE or FALSE), the method returns TRUE and\nsets the parameter’s value.\n• Otherwise the method returns FALSE and does not set Pension.\nProgramming language ______\nProgram code\nQuestion 1 continues on the next page.",
               "marks": 4,
@@ -120,7 +121,7 @@
               "parts": []
             },
             {
-              "id": "2cvi",
+              "id": "1cvi",
               "label": "(vi)",
               "text": "A SalaryEmployee is paid a fixed monthly payment.\n• If the employee has worked a public holiday, they receive a 3% bonus payment.\nThis is calculated from their MonthlyPayment.\n• If the employee has worked 160 or more hours in a month, they receive an additional\n5% bonus payment, calculated from their MonthlyPayment.\n• If the employee pays into a pension, 4% will be subtracted from their\nMonthlyPayment.\nMonthly salary is the final payment the employee receives.\nFor example, Chris is a SalaryEmployee. His fixed MonthlyPayment is $1000. He has\nworked a public holiday. He has worked 165 hours this month. He pays into a pension.\n• The public holiday bonus is $30 (3% of $1000)\n• The hours worked bonus payment is $50 (5% of $1000)\n• The pension payment is $40 (4% of $1000)\nChris’s monthly salary is calculated as ($1000 + $30 + $50) − $40 = $1040\nThe function CalculateMonthlySalary()is used to calculate the monthly salary. It:\n• takes a SalaryEmployee as a parameter\n• calculates the bonus payments and pension payment\n• outputs the pension payment and total bonus payment\n• calculates and returns the monthly salary.\nWrite program code for the function CalculateMonthlySalary().\nProgramming language ______\nProgram code",
               "marks": 8,
@@ -133,16 +134,26 @@
           ]
         },
         {
-          "id": "2d",
+          "id": "1d",
           "label": "(d)",
-          "text": "Noona describes an example of a feature of object-oriented programming (OOP). She says:\n“One method exists in the parent class but is overwritten in the child class, to behave\ndifferently.”\nIdentify the feature Noona has described.\n2 The number of cars that cross a bridge is recorded each hour. This number is placed in a circular\nqueue before being processed.",
+          "text": "Noona describes an example of a feature of object-oriented programming (OOP). She says:\n“One method exists in the parent class but is overwritten in the child class, to behave\ndifferently.”\nIdentify the feature Noona has described.",
           "marks": 1,
           "type": "identify",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
-        },
+        }
+      ],
+      "marks": 35,
+      "text": [
+        "A technology company needs software to calculate how much each employee should be paid."
+      ]
+    },
+    {
+      "id": "2",
+      "context": [],
+      "parts": [
         {
           "id": "2a",
           "label": "(a)",
@@ -177,10 +188,10 @@
           "parts": []
         }
       ],
-      "marks": 7,
+      "marks": 12,
       "text": [
-        "F",
-        "11 10"
+        "The number of cars that cross a bridge is recorded each hour. This number is placed in a circular",
+        "queue before being processed."
       ]
     },
     {

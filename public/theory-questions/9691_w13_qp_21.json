@@ -3,8 +3,8 @@
   "subjectCode": "9691",
   "session": "w13",
   "component": "21",
-  "totalMarks": 67,
-  "questionCount": 10,
+  "totalMarks": 75,
+  "questionCount": 7,
   "questions": [
     {
       "id": "1",
@@ -58,16 +58,49 @@
         {
           "id": "1c",
           "label": "(c)",
-          "text": "Name two features of a high-level programming language that help with this modular\napproach. Examiner's",
-          "marks": null,
+          "text": "Name two features of a high-level programming language that help with this modular\napproach. Examiner's\n2",
+          "marks": 2,
           "type": "name",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1d",
+          "label": "(d)",
+          "text": "Juan realises that he will have to pass data from one module to another.\nExplain how this is done.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1e",
+          "label": "(e)",
+          "text": "Juan will need the program to hold large amounts of data. His design will include\nreading the data from the sequentially-organised resource file into several arrays. Examiner's\nDescribe three differences between the features of an array and a sequential file.",
+          "marks": 6,
+          "type": "describe",
+          "answerType": "long_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "1f",
+          "label": "(f)",
+          "text": "Juan wants to use an array, NumberOfCopies to store whole numbers.\nIn a high-level programming language:\n• declare the array of size 5000\n• initialise the array to 0\nProgramming language\nCode",
+          "marks": 4,
+          "type": "use",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 10,
+      "marks": 24,
       "text": [
         "The Computing Department has a problem keeping track of its teaching resources. Juan, a",
         "student, has been asked to design and program a solution as his computing project. It will Examiner's",
@@ -81,39 +114,17 @@
       "context": [],
       "parts": [
         {
-          "id": "2d",
-          "label": "(d)",
-          "text": "Juan realises that he will have to pass data from one module to another.\nExplain how this is done.",
-          "marks": 2,
-          "type": "explain",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "2e",
-          "label": "(e)",
-          "text": "Juan will need the program to hold large amounts of data. His design will include\nreading the data from the sequentially-organised resource file into several arrays. Examiner's\nDescribe three differences between the features of an array and a sequential file.",
-          "marks": 6,
-          "type": "describe",
-          "answerType": "long_answer",
-          "hasDiagramRef": false,
-          "diagramOnly": false,
-          "parts": []
-        },
-        {
-          "id": "2f",
-          "label": "(f)",
-          "text": "Juan wants to use an array, NumberOfCopies to store whole numbers.\nIn a high-level programming language:\n• declare the array of size 5000\n• initialise the array to 0\nProgramming language\nCode\n2 (a) Juan has little programming experience, but has to write code for this program. He has\nwritten the following pseudocode statements. Examiner's\nFor each statement describe what is wrong and write a correct version.",
-          "marks": 4,
+          "id": "2a",
+          "label": "(a)",
+          "text": "Juan has little programming experience, but has to write code for this program. He has\nwritten the following pseudocode statements. Examiner's\nFor each statement describe what is wrong and write a correct version.",
+          "marks": null,
           "type": "describe",
           "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": [
             {
-              "id": "2fi",
+              "id": "2ai",
               "label": "(i)",
               "text": "IF Index > 5000 OR < 0 THEN OUTPUT \"Error\"\nDescription\nCorrect statement",
               "marks": 2,
@@ -124,7 +135,7 @@
               "parts": []
             },
             {
-              "id": "2fii",
+              "id": "2aii",
               "label": "(ii)",
               "text": "NumberOfCopies[Index] + 1 ← NumberOfCopies[Index]\nDescription\nCorrect statement",
               "marks": 2,
@@ -135,7 +146,7 @@
               "parts": []
             },
             {
-              "id": "2fiii",
+              "id": "2aiii",
               "label": "(iii)",
               "text": "NumberOfCopies[Index] ← \"three\"\nDescription\nCorrect statement",
               "marks": 2,
@@ -170,10 +181,8 @@
           "parts": []
         }
       ],
-      "marks": 24,
-      "text": [
-        "[2]"
-      ]
+      "marks": 18,
+      "text": []
     },
     {
       "id": "3",
@@ -280,16 +289,8 @@
       "parts": [],
       "marks": null,
       "text": [
-        "R ← 0"
-      ]
-    },
-    {
-      "id": "6",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ELSE"
+        "R ← 0",
+        "6 ELSE"
       ]
     },
     {
@@ -298,33 +299,16 @@
       "parts": [],
       "marks": null,
       "text": [
-        "R ← N + Add(N – 1)"
-      ]
-    },
-    {
-      "id": "8",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "ENDIF"
+        "R ← N + Add(N – 1)",
+        "8 ENDIF"
       ]
     },
     {
       "id": "9",
       "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "RETURN R"
-      ]
-    },
-    {
-      "id": "10",
-      "context": [],
       "parts": [
         {
-          "id": "10a",
+          "id": "9a",
           "label": "(a)",
           "text": "What is the scope of the variable R?",
           "marks": 1,
@@ -335,7 +319,7 @@
           "parts": []
         },
         {
-          "id": "10b",
+          "id": "9b",
           "label": "(b)",
           "text": "State the line number which shows that this function is recursive.",
           "marks": 1,
@@ -346,7 +330,7 @@
           "parts": []
         },
         {
-          "id": "10c",
+          "id": "9c",
           "label": "(c)",
           "text": "List the function calls that are generated by an initial call of Add(3).\nreasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the\npublisher will be pleased to make amends at the earliest possible opportunity.\nUniversity of Cambridge International Examinations is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of University of\nCambridge Local Examinations Syndicate (UCLES), which is itself a department of the University of Cambridge.",
           "marks": 3,
@@ -359,7 +343,8 @@
       ],
       "marks": 5,
       "text": [
-        "ENDFUNCTION"
+        "RETURN R",
+        "10 ENDFUNCTION"
       ]
     }
   ]

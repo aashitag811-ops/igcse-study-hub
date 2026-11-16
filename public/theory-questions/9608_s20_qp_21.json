@@ -3,7 +3,7 @@
   "subjectCode": "9608",
   "session": "s20",
   "component": "21",
-  "totalMarks": 58,
+  "totalMarks": 75,
   "questionCount": 6,
   "questions": [
     {
@@ -65,38 +65,93 @@
         {
           "id": "2b",
           "label": "(b)",
-          "text": "The following pseudocode algorithm has been developed to check whether a string contains\na valid password.\nTo be a valid password, a string must:\n• be longer than 6 characters\n• contain at least one lower case letter\n• contain at least one upper case letter\n• contain at least one non-alphabetic character.\n10 FUNCTION Check(InString : STRING) RETURNS BOOLEAN\n12 DECLARE Index : INTEGER\n13 DECLARE StrLen : INTEGER\n14 DECLARE NumUpper, NumLower : INTEGER\n15 DECLARE NumNonAlpha : INTEGER\n16 DECLARE NextChar : CHAR\n18 NumUpper 0\n19 NumLower 0\n20 NumNonAlpha 0\n22 StrLen LENGTH(InString)\n23 IF StrLen < 7\n24 THEN\n25 RETURN FALSE\n26 ELSE\n27 FOR Index 1 TO StrLen\n28 NextChar MID(InString, Index, 1)\n29 IF NextChar >= 'a' AND NextChar <= 'z'\n30 THEN\n31 NumLower NumLower + 1\n32 ELSE\n33 IF NextChar > 'A' AND NextChar <= 'Z'\n34 THEN\n35 NumUpper NumUpper + 1\n36 ELSE\n37 NumNonAlpha NumNonAlpha + 1\n38 ENDIF\n39 ENDIF\n40 ENDFOR\n41 ENDIF\n43 IF (NumUpper >= 1) AND (NumLower >= 1) AND (NumNonAlpha >= 1)\n44 THEN\n45 RETURN TRUE\n46 ELSE\n47 RETURN FALSE\n48 ENDIF\n50 ENDFUNCTION\nRefer to the Appendix on page 21 for a list of built-in pseudocode functions and operators.\nThe pseudocode does not work under all circumstances.\nA dry run performed on the function Check(), with the string \"crAsh99\", produced the\nfollowing trace table.\nThe string is a valid password, but the pseudocode would return the value FALSE.\nTrace\nStrLen Index NextChar NumUpper NumLower NumNonAlpha\ntable row\n7 0 0 0\n1 'c'\n4 2 'r'\n5 2",
+          "text": "The following pseudocode algorithm has been developed to check whether a string contains\na valid password.\nTo be a valid password, a string must:\n• be longer than 6 characters\n• contain at least one lower case letter\n• contain at least one upper case letter\n• contain at least one non-alphabetic character.\n10 FUNCTION Check(InString : STRING) RETURNS BOOLEAN\n12 DECLARE Index : INTEGER\n13 DECLARE StrLen : INTEGER\n14 DECLARE NumUpper, NumLower : INTEGER\n15 DECLARE NumNonAlpha : INTEGER\n16 DECLARE NextChar : CHAR\n18 NumUpper 0\n19 NumLower 0\n20 NumNonAlpha 0\n22 StrLen LENGTH(InString)\n23 IF StrLen < 7\n24 THEN\n25 RETURN FALSE\n26 ELSE\n27 FOR Index 1 TO StrLen\n28 NextChar MID(InString, Index, 1)\n29 IF NextChar >= 'a' AND NextChar <= 'z'\n30 THEN\n31 NumLower NumLower + 1\n32 ELSE\n33 IF NextChar > 'A' AND NextChar <= 'Z'\n34 THEN\n35 NumUpper NumUpper + 1\n36 ELSE\n37 NumNonAlpha NumNonAlpha + 1\n38 ENDIF\n39 ENDIF\n40 ENDFOR\n41 ENDIF\n43 IF (NumUpper >= 1) AND (NumLower >= 1) AND (NumNonAlpha >= 1)\n44 THEN\n45 RETURN TRUE\n46 ELSE\n47 RETURN FALSE\n48 ENDIF\n50 ENDFUNCTION\nRefer to the Appendix on page 21 for a list of built-in pseudocode functions and operators.\nThe pseudocode does not work under all circumstances.\nA dry run performed on the function Check(), with the string \"crAsh99\", produced the\nfollowing trace table.\nThe string is a valid password, but the pseudocode would return the value FALSE.\nTrace\nStrLen Index NextChar NumUpper NumLower NumNonAlpha\ntable row\n7 0 0 0\n1 'c'\n4 2 'r'\n5 2\n3 'A'\n4 's'\n10 5 'h'\n11 4\n6 '9'\n7 '9'",
           "marks": null,
           "type": "list",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": [
+            {
+              "id": "2bi",
+              "label": "(i)",
+              "text": "Describe how the completed trace table may be used to identify the error in the\npseudocode. In your answer, refer to the trace table row number(s).",
+              "marks": 2,
+              "type": "identify",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2bii",
+              "label": "(ii)",
+              "text": "State the pseudocode line number that has to be changed to correct the error and write\nthe correct pseudocode for the complete line.\nLine number ______\nCorrect pseudocode ______",
+              "marks": 2,
+              "type": "state",
+              "answerType": "fill_blank",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            },
+            {
+              "id": "2biii",
+              "label": "(iii)",
+              "text": "Rewrite lines 29 to 39 of the original pseudocode using a CASE structure.\nQuestion 3 begins on the next page.",
+              "marks": 4,
+              "type": "other",
+              "answerType": "short_answer",
+              "hasDiagramRef": false,
+              "diagramOnly": false,
+              "parts": []
+            }
+          ]
+        }
+      ],
+      "marks": 13,
+      "text": []
+    },
+    {
+      "id": "3",
+      "context": [],
+      "parts": [
+        {
+          "id": "3a",
+          "label": "(a)",
+          "text": "A mobile phone provider has developed an account management program. The program\nincludes a procedure, AddCredit(). The procedure is called with two parameters, TopUp\nand PhoneNum.\nThe relevant part of the identifier table and the program flowchart for the procedure are as\nshown:\nIdentifier Type Description\nTopUp REAL\nThe amount of credit to be added\nPhoneNum STRING\nThe unique customer phone number\nBalance REAL The current amount of credit\nMultiple REAL\nThe amount of credit bonus\nTakes the phone number as a parameter and returns the current\nGetBalance() FUNCTION\nbalance\nTakes the phone number and the new balance as parameters and\nSetBalance() PROCEDURE\nupdates the account with the new balance\nSTART\nSet Multiple\nto 1\nSet Balance to\nGetBalance(PhoneNum)\nIs\nYES\nSet Multiple to\nBalance > 10 ?\n1.25\nNO\nIs YES\nSet Multiple to\nBalance > 5 ?\n1.1\nNO\nSet TopUp to\nTopUp * Multiple\nSetBalance(PhoneNum, Balance + TopUp)\nEND\nWrite pseudocode to implement the procedure AddCredit(). The pseudocode must follow\nthe algorithm represented by the flowchart. Declare any local variables used.",
+          "marks": 7,
+          "type": "write",
+          "answerType": "short_answer",
+          "hasDiagramRef": false,
+          "diagramOnly": false,
+          "parts": []
+        },
+        {
+          "id": "3b",
+          "label": "(b)",
+          "text": "The following pseudocode searches for a string \"Chris\" in a 1D array and outputs the index\npositions where the string is found.\nDECLARE NameList : ARRAY [1:100] OF STRING\nDECLARE n : INTEGER\nFOR n 1 TO 100\nIF NameList[n] = \"Chris\"\nTHEN\nOUTPUT \"Found at: \" & NUM_TO_STRING(n)\nENDIF\nENDFOR\nThe pseudocode needs to be modified as follows:\n• Write the search as a procedure, Search(), that takes the search string as a parameter.\n• Change the array to a 2D array. The first dimension contains names and the second\ndimension contains the corresponding status.\nFor example:\nNameList[23, 1] \"Chris\" // name\nNameList[23, 2] \"On Holiday\" // status\n• Detect a match only when the name contains the search string and the status contains\n\"Active\".\n• If a match has been detected, the procedure will output a single message giving all of\nthe index positions where a match occurred. For example, \"Found at: 3 6 22\".\n• If no match has been detected, the procedure will output a suitable message.\nRefer to the Appendix on page 21 for a list of built-in pseudocode functions and operators.\nWrite the pseudocode for the procedure Search(). Assume the array has been declared\nglobally.",
+          "marks": 8,
+          "type": "name",
           "answerType": "short_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
         }
       ],
-      "marks": 5,
+      "marks": 15,
       "text": []
-    },
-    {
-      "id": "3",
-      "context": [],
-      "parts": [],
-      "marks": null,
-      "text": [
-        "'A'"
-      ]
     },
     {
       "id": "4",
       "context": [],
       "parts": [
         {
-          "id": "4b",
-          "label": "(b)",
-          "text": "The following pseudocode searches for a string \"Chris\" in a 1D array and outputs the index\npositions where the string is found.\nDECLARE NameList : ARRAY [1:100] OF STRING\nDECLARE n : INTEGER\nFOR n 1 TO 100\nIF NameList[n] = \"Chris\"\nTHEN\nOUTPUT \"Found at: \" & NUM_TO_STRING(n)\nENDIF\nENDFOR\nThe pseudocode needs to be modified as follows:\n• Write the search as a procedure, Search(), that takes the search string as a parameter.\n• Change the array to a 2D array. The first dimension contains names and the second\ndimension contains the corresponding status.\nFor example:\nNameList[23, 1] \"Chris\" // name\nNameList[23, 2] \"On Holiday\" // status\n• Detect a match only when the name contains the search string and the status contains\n\"Active\".\n• If a match has been detected, the procedure will output a single message giving all of\nthe index positions where a match occurred. For example, \"Found at: 3 6 22\".\n• If no match has been detected, the procedure will output a suitable message.\nRefer to the Appendix on page 21 for a list of built-in pseudocode functions and operators.\nWrite the pseudocode for the procedure Search(). Assume the array has been declared\nglobally.\n4 (a) An inexperienced user buys a games program. A program fault occurs while the user is\nplaying the game.\nExplain what is meant by a program fault.",
-          "marks": 8,
-          "type": "name",
-          "answerType": "short_answer",
+          "id": "4a",
+          "label": "(a)",
+          "text": "An inexperienced user buys a games program. A program fault occurs while the user is\nplaying the game.\nExplain what is meant by a program fault.",
+          "marks": 2,
+          "type": "explain",
+          "answerType": "long_answer",
           "hasDiagramRef": false,
           "diagramOnly": false,
           "parts": []
@@ -124,14 +179,8 @@
           "parts": []
         }
       ],
-      "marks": 14,
-      "text": [
-        "'s'",
-        "10 5 'h'",
-        "11 4",
-        "6 '9'",
-        "7 '9'"
-      ]
+      "marks": 8,
+      "text": []
     },
     {
       "id": "5",
